@@ -1,3 +1,8 @@
+2002-10-18 carol <carol@gimp.org>
+
+    * resources/gradients/index.html and mgo-gradients.py: added the
+    directory, the images and the index page.
+
 2002-10-17 scizzo <scizzo@gimp.org>
 
 	* tutorials/index.html: Gnome Icons now added to the list.

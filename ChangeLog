@@ -1,3 +1,28 @@
+2003-09-19  Branko Collin <collin@xs4all.nl>
+
+	* about/index.html
+	* about/introduction.html: Spelling, naming, links and real lists.
+	I commented out A tags for broken links, but left the link text as 
+	a reminder.
+	
+	* resources/palettes
+	* resources/palettes/index.html
+	* resources/palettes/op2.png
+	* resources/palettes/plasma.png
+	* resources/palettes/visibone.png
+	* resources/palettes/visibone2.png
+	* resources/palettes/web.png: Added a Palettes directory in the 
+	resources section, including a few palettes and an index file.
+	
+	* mail_lists.htrw
+	* develop/index.htrw
+	* links/index.html: Changed the word 'URLs' to 'Links' where it
+	was incorrectly used. A URL is a string of the form 
+	protocol://address, whereas a link is a text or image or other
+	object tied to a URL that can be activated. Probably not very
+	important in the grand scheme of things, but it has been bugging
+	me for a while.
+
 2003-09-19  Ville Pätsi <drc@gimp.org>
 
 	* includes/wgo-page-init.xhtml: Added height="100%" to the content

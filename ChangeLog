@@ -1,3 +1,10 @@
+2003-08-17 scizzo <scizzo@gimp.org>
+
+	* /images/wilberright.jpeg: Added this image provided by Branko. 
+	Closes bug: #119819
+	* /includes/wgo-page-init.xhtml: Changed the header to use the new
+	jpeg image.
+
 2003-08-16 scizzo <scizzo@gimp.org>
 
 	* /style/default.css: Changed color values for em.caution, em.warn and

@@ -13,5 +13,5 @@
 </p>
 <p>
   <A href="http://groups.yahoo.com/group/gimpi/">GIMPImages</a><br />
-  need to get something from their FAQ for here.
+  GIMPI is a group dedicated to exchange of images created or manipulated with GIMP.
 </p>

@@ -2,6 +2,8 @@
 
 	* includes/menu.inc: changed documentation link to point to /docs
 
+	* documentation.html: file removed
+
 	* ChangeLog: extracted martijns entry from cvs log and added to
 	ChangeLog file
 	

@@ -1,10 +1,10 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - How To Get and Build the Stable GIMP from CVS</title>
+<title>GIMP - How To Get the Stable GIMP from CVS</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
-<div class="heading">CVS Is Not That Scary</div>
+<h1>CVS Is Not That Scary</h1>
 
-<div class="subtitle">or Get and Build CVS GIMP 1.2 </div>
+<h2>or Get Your Stable GIMP from CVS</h2>
 <p>
   Contributers: Branko Collins, Rodney Dawes, Will Lashell, Roger Leigh, Mitch Natterer, Sven Neumann, Rapha&euml;l Quinet, Manish Singh, Carol Spears, Nathan C. Summers, Jeff Trefftz, Lourens Veen, Chris Want, (and Kirstens grandparents). 
 </p>
@@ -16,20 +16,20 @@
 </p>
 <p>
    The first step is to download and compile
-   <a href="../../downloads.html">The GIMP tarball</a>. 
+   <a href="http:Package-GIMP-stable-tarball">The GIMP tarball</a>. 
    This will help to clean any distribution problems up and give you experience with modern gimp compiling. This will also ensure that all libraries needed for building the plug-ins are correctly installed on your system (e.g., TIFF, PNG, JPEG, MPEG, perl, Gtk-Perl, etc.) 
 </p>
 <p>
-   The second step is to see if you have CVS packages installed. Type <kbd>cvs --help</kbd>. If you get a list of the cvs help options, you are in business. If not, you should follow your distribution or system admins instructions on how to install the CVS software on your computer. 
+   The second step is to see if you have <a href="http:Package-cvs">CVS packages</a> installed. Type <kbd>cvs --version</kbd>. If you get a list of the cvs help options, you are in business. If not, you should follow your distribution or system admins instructions on how to install the CVS software on your computer. 
 </p>
-<div class="heading">First Gets</div>
-<div class="subtitle">Introductory Steps</div>
+<h2>First Gets</h2>
+<h3>Introductory Steps</h3>
 <ul>
    <li>
       The first thing to do is to create a directory to use for CVS. Open a terminal (like xterm or GNOME terminal). Create your directory. For example, with <kbd>mkdir cvs</kbd>. Change into the new directory (<kbd>cd cvs</kbd>). CVS installs itself into nicely named module directories. Next you need to set the CVSROOT variable. With bash-like shells, select and paste or type: 
-   <pre>
+   <kbd>
       export CVSROOT=':pserver:anonymous@anoncvs.gimp.org:/cvs/gnome'
-   </pre>
+   </kbd>
    </li>
    <li>
      Be sure to copy this  
@@ -68,22 +68,23 @@
 <p>
    These introductory steps need to be taken only the first time. When you are able to successfully download the module, you need never worry about these steps again. 
 </p>
-<div class="heading">Updating</div>
+<h2>Updating</h2>
 <p>
    Later, when you want to refresh your versions, go into the cvs directory and type <kbd>cvs update</kbd>. To refresh just one module, go into the subdirectory for that module and enter <kbd>cvs update</kbd>. As simple as that. 
 </p>
-<div class="heading">Compiling</div>
+<h2>Compiling</h2>
 <p>
-   The first time you compile anything it can be complicated. Rest assured, GIMP is no exception. This section is no longer about CVS  but now about building an active piece of software. Active as it is being updated and worked on, sometimes on a nightly basis. Please be patient. 
+   The first time you compile anything it can be complicated. Rest assured, GIMP is no exception. For help with compiling your fresh stable gimp checkout, 
+   see the <a href="wgo:unix-howtos_stable_cvs_build">Build Your Stable GIMP from CVS</a> how to. 
 </p>
 
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        How To &copy; 2002 <a href="mailto:bex@gimp.org">Rebecca J. Walter</a>
+        How To Get Your Stable GIMP from CVS &copy; 2002 <a href="mail:People-Walter_Rebecca_J">Rebecca J. Walter</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-webmaster">webmaster@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -122,6 +122,17 @@ div.heading {
   font-weight: bold;
   text-align: center;
 }
+ h1 {
+  background: #f5f5f5;
+  color: black;
+  border-style: solid; 
+  border-color: #d0d0d0;
+  border-width: 1px;
+  padding: 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
 
 div.newsheading {
   background: #42638d;
@@ -155,6 +166,11 @@ td.map {
 }
 
 div.subtitle {
+  font-weight: bold;
+  clear: both;
+}
+
+ h2 {
   font-weight: bold;
   clear: both;
 }

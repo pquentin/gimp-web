@@ -1,3 +1,26 @@
+2003-03-04  Carol Spears  <carol@gimp.org>
+
+        * Fiddled some in unix/:
+                unix/index.html: created an index-in.html which will generate the
+                    index.html using the /admin/gimp-web-url dictionary.  used the
+                    new file to generate the old file.  also i changed the <div="*heading" />'s
+                    to the logical <hn />.
+                unix/howtos/bugzilla-in.html and bugzilla.html added bex how-to to the
+                    list.  made it use the /admin/gimp-web-url dictionary for the urls.
+                unix/howtos/cvs-stable.html this file has been removed, split up and 
+                    replaced with:
+                unix/howtos/stable-cvs-get.html which is generated from 
+                unix/howtos/stable-cvs-get-in.html which i also added.
+                unix/howtos/stable-cvs-build.html which is generated from 
+                unix/howtos/stable-cvs-build-in.html which i added.
+                unix/howtos/template.html this file has been removed and replaced with:
+                unix/howtos/howto-template.html which is generated from 
+                unix/howtos/howto-template-in.html which i also added.
+                style/default.css hopefully was fixed to reflect the addition of the <hn>'s.
+                admin/gimp-web-urls is the dictionary for the attribute-rewriter
+                unix/howtos/gimpenv added as promised in the build cvs gimp how to
+                unix/howtos/HACKING as promised in the build tutorial
+
 2003-02-27  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Modifed includes/wgo-admin-ini.xhtml to include a menu link to

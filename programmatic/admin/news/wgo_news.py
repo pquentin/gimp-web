@@ -193,10 +193,10 @@ class news:
 
 def header(headers=[]):
   headers = headers + ["Content-type: text/html"]
-  for h in headers: print h
-  print
+  print string.join(headers, "\n")
 
-  return (wgo_admin.header("www.gimp.org - Administration", [config.news_dir + "/news-admin.css"]))
+  return (wgo_admin.header("www.gimp.org - Administration",
+                           [ {"rel" : "stylesheet", "href" : config.news_dir + "/news-admin.css", "type" : "text/css", "media" : "screen"} ]))
 
 def footer(prefix=None):
   return (wgo_admin.footer(prefix))

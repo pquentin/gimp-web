@@ -371,6 +371,8 @@
 ["href", "maillist:GIMP-announce-archive",          { "href": "http://lists.xcf.berkeley.edu/lists/gimp-announce"}]
 ["href", "maillist:GIMP-developer",                 { "href": "http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-developer"}]
 ["href", "maillist:GIMP-developer-archive",         { "href": "http://lists.xcf.berkeley.edu/lists/gimp-developer/"}]
+["href", "maillist:GIMP-web",                       { "href": "http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-web/"}]
+["href", "maillist:GIMP-web-archive",               { "href": "http://lists.xcf.berkeley.edu/lists/gimp-web/"}]
 ["href", "maillist:GIMP-developer-windows",         { "href": "http://groups.yahoo.com/group/gimpwin-dev/"}]
 ["href", "maillist:GIMP-developer-windows-archive", { "href": "http://groups.yahoo.com/group/gimpwin-dev/messages"}]
 ["href", "maillist:GIMP-user",                      { "href": "http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-user"}]

@@ -133,8 +133,8 @@
      </li>
      <li>
         <p>
-           Select your &quot;operating system&quot;. <a href="wgo:wingimp">WinGIMP</a> and 
-           <a href="wgo:gimp-unix">GNU/Linux GIMP</a> bugs are not always identical. It would be 
+           Select your &quot;operating system&quot;. <a href="wgo:windows">WinGIMP</a> and 
+           <a href="wgo:unix">GNU/Linux GIMP</a> bugs are not always identical. It would be 
            annoying to get a Linux GIMP developer trying to reproduce a WinGIMP-specific 
            bug. &quot;Under OS Details&quot; (OS, operating system), provide specifics 
            about the version of your operating system. For Linux, provide the distro and 

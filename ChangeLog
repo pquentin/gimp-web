@@ -1,3 +1,11 @@
+2004-03-10  Niklas M <scizzo@gimp.org>
+
+	* admin/gimp-web-urls: Add GIMP-web mailinglist links.
+	* mail_lists.htrw: Add gimp-web to the mailinglists.
+	* bugs/howtos/bugzilla.htrw: Changed 2 links that was not being
+	changed during the build of the site.
+	* about/index.htrw: Removed link to google.
+
 2004-02-17  Niklas M <scizzo@gimp.org>
 
 	* admin/gimp-web-urls: Changed original links to the Photo Edit

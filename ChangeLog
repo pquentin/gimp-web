@@ -1,5 +1,8 @@
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
+	* unix/index.htrw: SunFreeware is a .com, not .org.  Mention Mike
+	Sweet's name in the link to his page.
+
 	* windows/index.htrw: Better description of the differences
 	between the installer and the zip archives.  This should really
 	fix bug #119539, this time.

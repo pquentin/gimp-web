@@ -108,6 +108,11 @@ font-service 7100/udp #X Font Service
    configuration files accordingly!
 </p>
 <p>
+   Once you have completed installation of both font types, your 
+   <a href="wgo:os2-howtos-XF86Config3_Files">Xf86Config</a> will have
+   two additional lines in it.
+</p>
+<p>
    <em class="hellbrokeloose">WARNING!</em> If you select a corrupt font in an X program for 
    display the fontserver may crash. Unfortunately, this leads to the X server 
    also crashing. If you see your X programs not responding correctly after 

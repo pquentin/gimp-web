@@ -1,5 +1,10 @@
 2003-04-12  Carol Spears  <carol@gimp.org>
 
+    * os2/howtos/install_font__xfree86.htrw, added a paragraph and a link to the final
+                                             XF86Config file.
+
+2003-04-12  Carol Spears  <carol@gimp.org>
+
     * style/default.css, added pre style (text) to move the text pages away from
                          the margin.  still considering a "notepad" style for the
                          windows section.  i copied the span.filter class into

@@ -1,3 +1,8 @@
+2004-03-15  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/stable.htrw
+	* admin/gimp-web-urls: changed gimp-1.4 references to gimp-2.0.
+
 2004-03-14  Niklas M <scizzo@gimp.org>
 
 	* team.htrw: Removed me from being tutorial coordinator.

@@ -1,12 +1,16 @@
 2002-10-07  scizzo <scizzo@gimp.org>
 
+	* tutorials/Changing_Background_Color_2/: Added the second
+	Changing Background Color tutorial.
+
 	* tutorials/Changing_Background_Color_1/: Added the first
 	Changing Background Color tutorial. "A little rude though".
 
 	* tutorials/Film_Grain: Added the Film Grain tutorial.
 	Fixed the index a bit more.
 	
-	* Changelog: Added the scizzo@gimp.org address instead.
+	* Changelog: Added the scizzo@gimp.org address instead of
+	scizzo@se.debian.net
 	
 2002-10-06  carol <carol@gimp.org>
 

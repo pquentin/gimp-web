@@ -1,0 +1,97 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Changing Background Color 2</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Changing Background Color 2</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  Many times you have an image with a colored background, like the one below and you want to take out the background to use the image's subject in a composition.
+  With gimp there are many ways to achieve this, one of which is using a plug-in specifically designed for this: Changing Background Color 1.
+</p>
+<p class="images">
+  <img src="img1_initial.jpg" alt=""/>
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="img3_step1.png" alt=""/>
+</p>
+<p>
+  In this tutorial I explore the select by color option to remove a particular color from the image. The first step, after you have loaded the image of course,
+  is to click on the image with the right mouse button, and choose the option "select-&gt;by color" as seen above:
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="img4_step2.png" alt=""/>
+</p>
+<p>
+  After choosing that option a dialog window will appear. This window shows several options. The black square on the left side shows the current selection.
+  Anything that appears white is selected, anything that is black is not. When you strart using the dialog you will see what this means. On the right side
+  there are two options we will consider for the moment. The first one is the Selection Mode. We will use the add option, which means any color we click on
+  will be added to the selection. The other setting is the Fuzziness Threshold. When you click on a color, the higher this setting is, the more similar colors
+  to the one you clicked on will be selected. You can start by using the default setting and increasing it if you need to add more colors faster, or decrease
+  it if you're selecting more then you want. Select by color dialog 
+</p>
+
+<div class="subtitle">Step 3</div>
+<p class="images">
+  <img src="img5_step3.png" alt=""/>
+</p>
+<p>
+  Now it's time to start selecting the color you want to remove. Just start clicking on the color you don't want and watch the selection update. 
+  If that didn't select all the color you want, continue clicking on the unselected parts until you get the desired result.
+</p>
+
+<div class="subtitle">Step 4</div>
+<p class="images">
+  <img src="img6_step4.png" alt=""/>
+</p>
+<p>
+  Finally, there is one last step before you can remove the background. You have to add an alpha channel (a common term for transparency in images) to your image.
+  To do that you have to use the right button on the mouse to get the image menu and go to layers and add alpha channel.
+</p>
+
+<div class="subtitle">Step 5</div>
+<p class="images">
+  <img src="img7_step5.png" alt=""/>
+</p>
+<p>
+  With the selection complete and with an alpha channel just choose from the image menu "Edit-&gt;Clear", and the image background will e gone.
+</p>
+
+<div class="subtitle">Step 6</div>
+<p class="images">
+  <img src="img8_step6.png" alt=""/>
+</p>
+<p>
+  After the last step you should get something like this in Gimp.
+  <br />
+  You can now use this image in a composition or in a web page with a different background like below:
+</p>
+
+<div class="subtitle">Final</div>
+<p class="images">
+  <img src="img2_final.png" alt=""/>
+</p>
+<p>
+  Of course you still have to take care of the details if you want to merge an image perfectly into another.
+</p>
+<p>
+  The sunflower image was taken by the photographer Raymond Lofthouuse.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:bit-at-mospan-bitbit-dot-org">Francisco Bustamante Hempe (bit)</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

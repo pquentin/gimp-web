@@ -1,5 +1,9 @@
 2003-09-20  Raphael Quinet  <quinet@gamers.org>
 
+	* programmatic/downloads/mirrorfmt.py (do_file): If a link to a
+	mirror site contains a comment (anything after some whitespace),
+	the comment must not be included in the link.
+
 	* programmatic/downloads/.cvsignore: Ignore generated file
 	mirrors.xhtml.
 

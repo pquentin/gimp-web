@@ -3,6 +3,7 @@
 import sys
 import xhtml
 import time
+import string
 
 def do_file(filename):
 
@@ -19,7 +20,15 @@ def do_file(filename):
                 print xhtml.dt(l)
             else:
                 l = l.lstrip()
-                print xhtml.dd(xhtml.hyperlink(l, {"href" : l}))
+                idx = 0
+                while idx < len(l) and l[idx] not in string.whitespace:
+                    idx = idx + 1
+                if idx < len(l):
+                    # split the link (before whitespace) from the comment
+                    print xhtml.dd(xhtml.hyperlink(l[0:idx], {"href" : l[0:idx]})
+                                   + l[idx:len(l)])
+                else:
+                    print xhtml.dd(xhtml.hyperlink(l, {"href" : l}))
                 pass
             pass
         pass

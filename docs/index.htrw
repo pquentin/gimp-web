@@ -10,9 +10,9 @@
     HTML versions are available in several languages:
     <ul>
       <li><a href="wgo:docs-gimp_help-en">English</a></li>
-      <li><a href="wgo:docs-gimp_help-de">German</a></li>
-      <li><a href="wgo:docs-gimp_help-fr">French</a></li>
-      <li><a href="wgo:docs-gimp_help-sv">Swedish</a></li>
+      <li><a href="wgo:docs-gimp_help-de">German</a> (Deutsch)</li>
+      <li><a href="wgo:docs-gimp_help-fr">French</a> (Français)</li>
+      <li><a href="wgo:docs-gimp_help-sv">Swedish</a> (Svenska)</li>
       <li><a href="wgo:docs-gimp_help-zh_CN">Chinese</a></li>
     </ul></li>
     <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>

@@ -1,5 +1,11 @@
 2004-08-27  Raphaël Quinet  <quinet@gamers.org>
 
+	* docs/index.htrw: Added the language names in their own language
+	(in parenthesis after the English versions) as suggested by Roman
+	Joost.
+
+2004-08-27  Raphaël Quinet  <quinet@gamers.org>
+
 	* docs/index.htrw: 
 	* admin/gimp-web-urls: Added a link to the Chinese version of the
 	GIMP user manual.

@@ -6,7 +6,7 @@
 <h1>Documentation</h1>
 <h2>The GIMP Documentation</h2>
   <ul>
-    <li><!-- a href="gimp-docs/" -->The GIMP Documentation<!-- /a --></li>
+    <li><a href="wiki:GimpDocs">The GIMP Documentation</a></li>
     <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
   </ul>
 <h2>Other GIMP Documentation</h2>

@@ -300,6 +300,9 @@
 ["alt",    "wgo:image-book-here",  { "alt":    "Name_Your"}]
 
 
+["href", "wiki:GimpDocs",  { "href": "http://wiki.gimp.org/gimp/GimpDocs"}]
+
+
 ["href", "plugin-home:pygimp-stable",                      { "href": "http://www.daa.com.au/~james/software/pygimp/"}]
 ["href", "plugin-author:pygimp-Henstridge_James",          { "href": "mailto:jamesNOSPAM@daa.com.au"}]
 ["href", "plugin-home:gimpfreetype-stable",                { "href": "http://freetype.gimp.org/"}]

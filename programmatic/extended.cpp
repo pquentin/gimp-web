@@ -45,6 +45,10 @@ input[type="text"] {
   font-size:  8px;
 }
 
+dl.download-mirror dt { 
+  font-weight: bold;
+  margin-top: 2ex;
+}
 
 /* my line drawing hacks and experiments */
 table.ld {

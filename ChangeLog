@@ -1,86 +1,97 @@
+2003-06-21  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Integrated the whole thing into the site build.
+
+        * Added the stylesheet extended.css to includes/wgo-styles.xhtml
+
+        * Added style for the CSS class download-mirror.
+
+        * Added programmatic/downloads which contains mirrorfmt.py and
+        MIRRORS, the FTP mirror list
+
 2003-06-21 scizzo <scizzo@gimp.org>
 
-	* /downloads/: Add this section for the downloads of GIMP.
-	* /includes/: Fixed the files that needs downloads in the menu.
+        * /downloads/: Add this section for the downloads of GIMP.
+        * /includes/: Fixed the files that needs downloads in the menu.
 
 2003-06-21 Branko Collin <collin@xs4all.nl>
 
-	* /admin/todo.xhtml: Add "done" to the todo list for the Windows stuff.
+        * /admin/todo.xhtml: Add "done" to the todo list for the Windows stuff.
 
-	* /windows/index.htrw: Add this file that finishes the windows
-	section.
-	
-	* /windows/index.html, develop.html, download.html, get_started.html:
-	Removed these files.
+        * /windows/index.htrw: Add this file that finishes the windows
+        section.
+        
+        * /windows/index.html, develop.html, download.html, get_started.html:
+        Removed these files.
 
 2003-06-20 scizzo <scizzo@gimp.org>
 
-	* /admin/todo.xhtml: Add that the tutorials are done.
-	
-	* tutorials/Image_Pipes/example1.xcf.gz, example_arrows.xcf.gz,
-	* example_patter2.xcf.gz, tater_tot.gih.gz: The files and links where
-	missing in the tutorial.
-	
-	* /tutorials/Image_Pipes/: A lot of bug fixes. Add more tags to make
-	it look more like the original tutorial. Fixed a few missing links.
-	Fixed position of paragraphs and add some more paragraphs.
-	
-	* /tutorials/Image_Pipes2/: Center the text in the "How Do You Make a
-	New Brush?" step.
-	
-	* /tutorials/Draw_A_Paint_Brush/tutorial.xcf.gz: Add this file it was
-	missing in the tutorial. Fixed a link to gimp-savvy.
-	
-	* /tutorials/Using_GAP/: Fixed a few missing tags.
-	* /tutorials/Advanced_Animations/: Fixed a few missing tags. Fixed a
-	few missing links. Fixed a few typos.
-	
-	* /tutorials/Image_Map/: Updated a filter path. Add the perlotine link.
-	* /tutorials/Basic_Scheme/: Changed the code a bit. Fixed a few small problems 
-	with the look of the code examples.
-	
-	* /tutorials/Basic_Perl/: Removed a few <br /> that was breaking the
-	look of the <pre>.
+        * /admin/todo.xhtml: Add that the tutorials are done.
+        
+        * tutorials/Image_Pipes/example1.xcf.gz, example_arrows.xcf.gz,
+        * example_patter2.xcf.gz, tater_tot.gih.gz: The files and links where
+        missing in the tutorial.
+        
+        * /tutorials/Image_Pipes/: A lot of bug fixes. Add more tags to make
+        it look more like the original tutorial. Fixed a few missing links.
+        Fixed position of paragraphs and add some more paragraphs.
+        
+        * /tutorials/Image_Pipes2/: Center the text in the "How Do You Make a
+        New Brush?" step.
+        
+        * /tutorials/Draw_A_Paint_Brush/tutorial.xcf.gz: Add this file it was
+        missing in the tutorial. Fixed a link to gimp-savvy.
+        
+        * /tutorials/Using_GAP/: Fixed a few missing tags.
+        * /tutorials/Advanced_Animations/: Fixed a few missing tags. Fixed a
+        few missing links. Fixed a few typos.
+        
+        * /tutorials/Image_Map/: Updated a filter path. Add the perlotine link.
+        * /tutorials/Basic_Scheme/: Changed the code a bit. Fixed a few small problems 
+        with the look of the code examples.
+        
+        * /tutorials/Basic_Perl/: Removed a few <br /> that was breaking the
+        look of the <pre>.
 
 2003-06-19 scizzo <scizzo@gimp.org>
 
-	* index.html, bugs.html, registry.html, template.html: Removed files.
-	* index.htrw, bugs.htrw, registry.htrw, template.htrw: Added files.
-	* /style/default.css: Removed the borders around the images. This
-	makes a lot of images look better then with the border.
-	
-	* /tutorials/The_Basics: Bug fix that said image to the left instead
-	of image above. Add Keep Trans to the drop shadow step.
-	
-	* /tutorials/Borders_On_Selections/: Fixed a typo.
-	* /tutorials/Anti-Aliased_Threshold: Changed (Image|Colors|Desaturate)
-	to "<Image> Image -> Colors -> Desaturate".
-	
-	* /tutorials/Bezier_Selections/: Bug fix in "What is it?" about image
-	placement in the tutorial. Intention: Linked "Drawing Shapes with
-	Bezier" to the tutorial on the site.
-	
-	* /tutorials/Custom_Brushes/: Note: needs a class.
-	* /tutorials/Drawing_Shapes/: Fixed the missing links in the tutorial.
-	Missing tags from the original tutorial fixed.
-	
-	* /tutorials/Film_Grain/film-grain-vertical.pat: Add this file it was
-	missing in the tutorial.
-	
-	* /tutorials/Film_Grain/gimp-grey-modes.diff: This was also missing.
-	Fixed the links to the files.
-	
-	* /tutorials/Film_Grain/index.htrw: Fixed some tags to go with the
-	original tutorial. Fixed a few links that was not added.
-	
-	* /tutorials/Changing_Background_Color_1/: Did some changes in the
-	paragraphs to make them more clear and look more like the original tutorial.
-	
-	* /tutorials/Changing_Background_Color_2/: Changed the words "below"
-	to "above". Add some paragraphs to make the tutorial more readable.
-	
-	* /tutorials/Simple_Animations/: Fixed a few missing tags that is
-	being used in the original tutorial. Fixed a small typo.
+        * index.html, bugs.html, registry.html, template.html: Removed files.
+        * index.htrw, bugs.htrw, registry.htrw, template.htrw: Added files.
+        * /style/default.css: Removed the borders around the images. This
+        makes a lot of images look better then with the border.
+        
+        * /tutorials/The_Basics: Bug fix that said image to the left instead
+        of image above. Add Keep Trans to the drop shadow step.
+        
+        * /tutorials/Borders_On_Selections/: Fixed a typo.
+        * /tutorials/Anti-Aliased_Threshold: Changed (Image|Colors|Desaturate)
+        to "<Image> Image -> Colors -> Desaturate".
+        
+        * /tutorials/Bezier_Selections/: Bug fix in "What is it?" about image
+        placement in the tutorial. Intention: Linked "Drawing Shapes with
+        Bezier" to the tutorial on the site.
+        
+        * /tutorials/Custom_Brushes/: Note: needs a class.
+        * /tutorials/Drawing_Shapes/: Fixed the missing links in the tutorial.
+        Missing tags from the original tutorial fixed.
+        
+        * /tutorials/Film_Grain/film-grain-vertical.pat: Add this file it was
+        missing in the tutorial.
+        
+        * /tutorials/Film_Grain/gimp-grey-modes.diff: This was also missing.
+        Fixed the links to the files.
+        
+        * /tutorials/Film_Grain/index.htrw: Fixed some tags to go with the
+        original tutorial. Fixed a few links that was not added.
+        
+        * /tutorials/Changing_Background_Color_1/: Did some changes in the
+        paragraphs to make them more clear and look more like the original tutorial.
+        
+        * /tutorials/Changing_Background_Color_2/: Changed the words "below"
+        to "above". Add some paragraphs to make the tutorial more readable.
+        
+        * /tutorials/Simple_Animations/: Fixed a few missing tags that is
+        being used in the original tutorial. Fixed a small typo.
 
 2003-06-18  Helvetix Victorinox  <helvetix@mysterious.org>
 

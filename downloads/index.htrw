@@ -27,5 +27,8 @@
   please take a look at the install help page.
 </p>
 
+<h1>FTP and Web Mirrors</h1>
+<!--#include virtual="mirrors.xhtml" -->
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

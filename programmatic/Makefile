@@ -2,9 +2,9 @@
 #
 include Makefile.defs
 
-.PHONY: all usage clean install
+.PHONY: all usage clean install admin contest about develop webtools downloads
 
-all: webtools usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest about develop
+all: webtools usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest about develop downloads
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>target"; exit 1; fi
@@ -38,19 +38,22 @@ wgo_config.py: Makefile Makefile.defs
 	) > wgo_config.py
 
 admin: wgo_config.py
-	cd admin && $(MAKE) all
+	$(MAKE) -C admin all
 
 contest: wgo_config.py
-	cd contest && $(MAKE) all
+	$(MAKE) -C contest all
 
 about: wgo_config.py
-	cd about && $(MAKE) all
+	$(MAKE) -C about all
 
 develop: wgo_config.py
-	cd develop && $(MAKE) all
+	$(MAKE) -C develop all
+
+downloads: wgo_config.py
+	$(MAKE) -C downloads all
 
 webtools:
-	cd tools && $(MAKE) SRCDIR=${SRCDIR} all
+	$(MAKE) SRCDIR=${SRCDIR} -C tools all
 
 extended.css:
 
@@ -58,13 +61,13 @@ rdf-news.css: rdf-news.cpp
 
 clean mrproper:
 	/bin/rm -f wgo_config.py extended.css *.pyc *~ rdf-news.css
-	cd contest && $(MAKE) clean
-	cd admin && $(MAKE) clean
-	cd about && $(MAKE) clean
-	cd develop && $(MAKE) clean
-	cd tools && $(MAKE) clean
+	$(MAKE) -C contest clean
+	$(MAKE) -C admin clean
+	$(MAKE) -C about clean
+	$(MAKE) -C develop clean
+	$(MAKE) -C tools clean
 
-install: install-common install-admin install-contest install-about install-develop
+install: install-common install-admin install-contest install-about install-develop install-downloads
 
 install-common: all
 	install --mode=755 -d ${LIBDIR}
@@ -80,17 +83,20 @@ install-common: all
 	install --mode=644 rdf-news.css  ${DocumentRoot}/style/
 
 install-admin: admin
-	cd admin && $(MAKE) install
+	$(MAKE) -C admin install
 
 install-contest: contest
-	cd contest && $(MAKE) install
+	$(MAKE) -C contest install
 
 install-about: about
-	cd about && $(MAKE) install
+	$(MAKE) -C about install
 
 install-develop: develop
-	cd develop && $(MAKE) install
+	$(MAKE) -C develop install
+
+install-downloads: downloads
+	$(MAKE) -C downloads install
 
 dirs: wgo_config.py
-	cd admin && $(MAKE) dirs
-	cd contest && $(MAKE) dirs
+	$(MAKE) -C admin dirs
+	$(MAKE) -C contest dirs

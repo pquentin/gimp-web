@@ -1,3 +1,14 @@
+2004-03-15  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/Changing_Background_Color_1/dnd.png
+	* tutorials/Changing_Background_Color_1/layer_create.png
+	* tutorials/Changing_Background_Color_1/layer_move.png
+	* tutorials/Changing_Background_Color_1/menu.png: New screenshots
+	contributed by Harish Narayanan <harish@gamebox.net> for 2.0.
+
+	* tutorials/Changing_Background_Color_1/index.htrw: Use the new
+	image layer_move.png.
+
 2004-03-15  Shawn T. Amundson <amundson@gimp.org>
 
 	* M install.sh

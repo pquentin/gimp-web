@@ -101,6 +101,7 @@
 <h2>Step 5</h2>
 <p class="images">
   <img src="layer_create.png" alt="" />
+  <img src="layer_move.png" alt="" />
 </p>
 <p>
   Now create a New Layer (have Forground set to Red when you do this). Lower the newly created layer.

@@ -1,7 +1,7 @@
 2003-04-20 scizzo <scizzo@gimp.org>
 
 	* admin/gimp-web-urls: Fixed the tutorial links. Moved them around so
-	I can find them faster.
+	I can find them faster. Removed the comments.
 
 	* tutorials/Blending_Exposures/
 	* tutorials/Blown_Out_Highlights/

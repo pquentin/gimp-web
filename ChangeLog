@@ -1,3 +1,7 @@
+2005-01-22  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.2.3 release.
+
 2005-01-21  Raphaël Quinet  <raphael@gimp.org>
 
 	* unix/fonts.htrw (href): update URL for Fontconfig User Manual.

@@ -1,5 +1,13 @@
 2004-11-05  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/index.htrw
+	* about/splash/splash-images/splash-cvs.htrw
+	* admin/gimp-web-urls: removed other views on the splash screen
+	history which haven't ever been used and which would cause even
+	more work to update.
+
+2004-11-05  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/splash-images/splash-2.1.htrw: some fixes.
 
 2004-11-05  Niklas M <scizzo@gimp.org>

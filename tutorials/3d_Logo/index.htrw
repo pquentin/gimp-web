@@ -39,7 +39,7 @@
   Duplicate the text layer (text) twice. One for the highlight effect (highlight) and one for the shaded part of the effect (lowlight). 
   The highlight layer needs to be white, so select that layer, check the Keep Trans. box on the Layers, Channels, &amp; Paths dialog, and fill it with white. 
   You can do this easily by dragging the white color swatch from the toolbox over to the image (assuming that the highlight layer is currently selected). 
-  Keep Trans. means "Keep Transparency"; this will ensure that any transformations or fills made to that layer will only affect the non-transparent part of the image.
+  Keep Trans. means &quot;Keep Transparency&quot;; this will ensure that any transformations or fills made to that layer will only affect the non-transparent part of the image.
 </p>
 
 <h2>Step 4</h2>
@@ -295,15 +295,15 @@
 </p>
 
 <p>
- The original tutorial can be found <a href="http://syngin.gimp.no/tutorials/logo.html">here</a>.
+ The original tutorial can be found <a href="tutorial:3-d_Floating_Logo-Mel_Boyce">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:synging-at-gimp-dot-org">Mel Boyce (syngin)</a>
+        Tutorial &copy; 2002 <a href="home:People-Boyce_Mel">Mel Boyce (syngin)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Boyce_Mel">syngin-at-gimp-dot-org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

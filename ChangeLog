@@ -1,3 +1,12 @@
+2003-04-10  Carol Spears  <carol@gimp.org>
+
+    * os2/howtos/install_gimp_xfree86.html, missing </a>.
+
+2003-04-10  Carol Spears  <carol@gimp.org>
+
+    * tutorials/3d_Logo/index.html removed.
+    * tutorials/3d_Logo/index.htrw added.
+
 2003-04-10 scizzo <scizzo@gimp.org>
 
 	* todo.xhtml: This file was a duplicate of the todo.xhtml in admin.
@@ -6,21 +15,21 @@
 
 2003-04-10  Carol Spears  <carol@gimp.org>
 
-        * os2/howtos/install_gimp_xfree86.html, missing </a>.
+    * os2/howtos/install_gimp_xfree86.html, missing </a>.
 
 2003-04-10  Carol Spears  <carol@gimp.org>
 
-        * admin/gimp-web-urls, typos.
-        * os2/howtos/install_font_xfree86.html, typos.
-        * os2/howtos/install_gimp_xfree86.html, typos.
+    * admin/gimp-web-urls, typos.
+    * os2/howtos/install_font_xfree86.html, typos.
+    * os2/howtos/install_gimp_xfree86.html, typos.
 
 2003-04-10  Carol Spears  <carol@gimp.org>
 
-        * admin/gimp-web-urls, added some, fixed others.
-        * os2/index.html, udated and edited.
-        * os2/howtos/, added this directory.
-        * os2/howtos/install_font_xfree86.html, added this file.
-        * os2/howtos/install_gimp_xfree86.html, added this file.
+    * admin/gimp-web-urls, added some, fixed others.
+    * os2/index.html, udated and edited.
+    * os2/howtos/, added this directory.
+    * os2/howtos/install_font_xfree86.html, added this file.
+    * os2/howtos/install_gimp_xfree86.html, added this file.
 
 2003-04-09 scizzo <scizzo@gimp.org>
 
@@ -30,26 +39,26 @@
 
 2003-04-09  Carol Spears  <carol@gimp.org>
 
-        * admin/gimp-web-urls, added some, fixed others.
+    * admin/gimp-web-urls, added some, fixed others.
 
 2003-04-08  Carol Spears  <carol@gimp.org>
 
-        * os2/index.html, removed this file.
-        * os2/index.htrw, added this file.
-        * admin/gimp-web-urls, added some more.
-        * unix/man-gimptool-1.2.html, fixed some bad urls.
-        * unix/user_install.html, removed this file.
-        * unix/tile_cache.html, removed this file.
-        * unix/user_install.htrw, added this converted file.
-        * unix/howtos/tile_cache.htrw, added this converted file.
-        * unix/index.html, adjusted things here.
-        * admin/gimp-web-urls, added some, alphabetized some also.
+    * os2/index.html, removed this file.
+    * os2/index.htrw, added this file.
+    * admin/gimp-web-urls, added some more.
+    * unix/man-gimptool-1.2.html, fixed some bad urls.
+    * unix/user_install.html, removed this file.
+    * unix/tile_cache.html, removed this file.
+    * unix/user_install.htrw, added this converted file.
+    * unix/howtos/tile_cache.htrw, added this converted file.
+    * unix/index.html, adjusted things here.
+    * admin/gimp-web-urls, added some, alphabetized some also.
 
 2003-04-08  Carol Spears  <carol@gimp.org>
 
-        * unix/man-gimprc-1.html, fixed it.
-        * admin/gimp-web-urls, added some.
-        * unix/man-gimp-1.2.html, minor edits.
+    * unix/man-gimprc-1.html, fixed it.
+    * admin/gimp-web-urls, added some.
+    * unix/man-gimp-1.2.html, minor edits.
 
 2003-04-04  Helvetix Victorinox  <helvetix@mysterious.org>
 

@@ -1,5 +1,24 @@
 2004-03-14  Raphaël Quinet  <quinet@gamers.org>
 
+	* tutorials/index.htrw: Bezier Selections are now replaced by
+	Paths.  Wording updates.
+
+	* tutorials/Bezier_Selections/bezier_button.png
+	* tutorials/Bezier_Selections/bezier_box.png
+	* tutorials/Bezier_Selections/bezier_curve.png: Updated for 2.0.
+
+	* tutorials/Bezier_Selections/bezier_button.gif
+	* tutorials/Bezier_Selections/bezier_box.gif
+	* tutorials/Bezier_Selections/bezier_curve.gif: Removed.
+
+	* tutorials/Bezier_Selections/index.htrw: Re-wrote several parts
+	of the text because the Path tool has now replaced the old Bezier
+	Selections.  Updated the title of the tutorial.
+
+	* tutorials/Tileable_Textures/index.htrw: Fixed a typo.
+
+2004-03-14  Raphaël Quinet  <quinet@gamers.org>
+
 	* tutorials/Tileable_Textures/index.htrw: Updated to reflect the
 	new layout of the paintbrush options dialog.
 

@@ -2,40 +2,46 @@
 <title>GIMP - Bezier Selections</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<h1>Bezier Selections</h1>
+<h1>Simple Paths (Bezier Selections)</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Kuosmanen_Tuomas">Tuomas Kuosmanen</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
 <p>
-   Bezier selection is a powerful tool in The Gimp. 
+   The Path tool (previously known as Bezier Selection) is a powerful tool in The Gimp. 
    The rectangle- and ellipse-selections are not very flexible if you happen to need something more special.
    And since many of us gimpers don't have a graphics tablet, 
-   it's not so easy to make the mouse pointer move the way you want. Bezier selection fixes the 
-   problem by using smooth mathematical curves instead your own shaky mouse trail. 
-   Beziers are also very useful when used with gradient fills, see 
+   it's not so easy to make the mouse pointer move the way you want.  The paths can solve the 
+   problem by using smooth mathematical curves instead your own shaky mouse trail.
+   Paths are also very useful when used with gradient fills, see 
    <a href="/tutorials/Drawing_Shapes/">Drawing Shapes with Bezier</a> for more information on this great tool. 
 </p>
 
 <h2>What is it?</h2>
 <p class="images">
-  <img src="bezier_box.gif" alt="" />
+  <img src="bezier_box.png" alt="" />
 </p>
 <p>
-   <img src="bezier_button.gif" alt="" /> Bezier selection is a tool to make complex 
+   <img src="bezier_button.png" alt="" /> The Path tool can make complex 
    selections by specifying certain points that are connected together with a curve. 
    So to make a box you would specify four points, one for each corner of the box. Example in image above. 
    The great thing is the corners don't have to be 90 degrees. 
-   After selecting the fourth point, click on the first point to close the curve 
-   (beziers have to be closed - at least at the moment in the current Gimp). 
-   Finally click inside our 'box' to turn it into a selection. 
-   Of course you can have as many points as you need. 
+   <br />
+   In older versions of the Gimp (1.2.x), you had to close all paths by joining the
+   last point of the path to the first one.  This is not necessary anymore in 2.0 and
+   later versions, but this is still useful to create closed shapes such as a box.
+   So after creating the fourth point, press and hold the Ctrl key and click on the
+   first point to close the path.  Of course you can have as many points as you need. 
+   <br />
+   Finally, click the "Stroke Path" button (in the Path Options dialog) or use the menu
+   Edit->Stroke Path... to draw the new shape.  You can also use the button "Create
+   Selection from Path" if you want to have a selection that you can fill or stroke.
 </p>
 
 <h2>Modifying the curves</h2>
 <p class="images">
-  <img src="bezier_curve.gif" alt="" />
+  <img src="bezier_curve.png" alt="" />
 </p>
 <p>
    Straight lines alone are a useful thing, but it's not all. 
@@ -46,23 +52,27 @@
    circles are those familiar points we used with the box in the previous section. 
    The little boxes are those handles. The handles are not visible by default, 
    you must drag them 'out' from a point. To make the handles visible 
-   1.  click to a point to make it active, 
-   2. click again on the same point and 
+   1. click to a point to make it active, 
+   2. while pressing the Ctrl key, click again on the same point and 
    3. drag the handles out with the mousebutton still pressed down. 
    You notice the curves between the points are not straight anymore. You can control the shapes 
    by dragging the handles around. 
 </p>
 
 <h2>A Few Tips</h2>
-<ol>
-  <li>Always before modifying any points or handles, click the handle or a point to make it active</li>
-  <li>To move just one handle and leave the opposite side in its place, click on the handle to activate it and press shift while dragging it</li>
-  <li>To move the points around, activate a point (or its handle) and drag it around with ctrl pressed down</li>
-  <li>When you are satisfied with the shape, click inside the curves to turn it into a selection</li>
-</ol>
+<ul>
+  <li>Always before modifying any points or handles, click the handle or a point to make it active.</li>
+  <li>To have a smooth curve, both handles should be aligned at each point.  Press Shift while dragging a handle to ensure that the other one remains aligned.</li>
+  <li>A path can have multiple components.  If you have closed a path, you can create a new component by clicking where you want to place the first point of the new component.</li>
+  <li>If you want to create several components without closing them, press Shift and click where you want to start a new one.</li>
+  <li>When you are satisfied with the shape, you can use Stroke Path or Create Selection from Path.</li>
+  <li>The default installation of the Gimp creates a dock containing the tabs "Layers, Channels, Paths, Undo".  Click on the Paths tab to manage your paths.</li>
+</ul>
 
 <p>
   The original tutorial can be found <a href="tutorial:Bezier_Selections-Tuomas_Kuosmanen">here</a>.
+  <br />
+  It was updated for Gimp 2.0 by Raphaël Quinet.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>

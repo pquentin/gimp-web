@@ -25,8 +25,8 @@
   <img src="sobel.jpeg" alt="" />
 </p>
 <p>
-  Straightforward Sobel edge detect (<span class="filter">&lt;Image&gt; Filters -&gt; Edge -&gt; Detect/Sobel</span>) 
-  of original (don't forget to save a copy of the original)
+  Straightforward Sobel edge detect (<span class="filter">&lt;Image&gt; Filters -&gt; Edge-Detect -&gt; Sobel</span>) 
+  of original (don't forget to save a copy of the original) The Sobel edge detect should be done on the background image (without an alpha channel) rather than a copy of the background (which has an alpha channel).
 </p>
 
 <h2>3. Equalised &amp; desaturated Sobel</h2>
@@ -34,9 +34,9 @@
   <img src="equalised_sobel.jpeg" alt="" />
 </p>
 <p>
-  Bring out detail with an auto-equalise (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Auto/Equalize</span>) 
+  Bring out detail with an auto-equalise (<span class="filter">&lt;Image&gt; Layer -&gt; Colors -&gt; Auto -&gt; Auto-Equalize</span>) 
   of the sobel edge detect, 
-  and convert it to greys using desaturate (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Desaturate</span>).
+  and convert it to greys using desaturate (<span class="filter">&lt;Image&gt; Layer -&gt; Colors -&gt; Desaturate</span>).
 </p>
 
 <h2>4. Curves window for how to do a highpass filter</h2>
@@ -66,7 +66,7 @@
 </p>
 <p>
   Small trick to get to black-on-transparent. Invert the Sobel edge detect (you did keep a copy, right?) with 
-  <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span> and apply our highpass-filtered copy as a mask. 
+  <span class="filter">&lt;Image&gt; Layer -&gt; Colors -&gt; Invert</span> and apply our highpass-filtered copy as a mask. 
   To do this, open the Layers &amp; Channels dialog (if it's not open already), and add a layer mask to the layer with the inverted edge detect layer 
   (<span class="filter">&lt;Image&gt; Edit -&gt; Copy</span> with the highpass layer selected, 
   <span class="filter">&lt;Layer&gt; Add Layer Mask</span> 

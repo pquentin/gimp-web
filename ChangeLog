@@ -1,3 +1,9 @@
+2004-03-11  Dave Neary  <bolsh@gimp.org>
+
+	* tutorials/Photo_To_Sketch/index.htrw: Updated the photo to 
+	sketch tutorial text for 2.0. I'll updated the screenshots in 
+	a while.
+
 2004-03-10  Niklas M <scizzo@gimp.org>
 
 	* admin/gimp-web-urls: Add GIMP-web mailinglist links.

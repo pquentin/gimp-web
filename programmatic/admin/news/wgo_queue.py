@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
 # www.gimp.org website administration and tools
@@ -21,8 +21,6 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
-
-from __future__ import nested_scopes
 
 import email
 import email.MIMEMessage

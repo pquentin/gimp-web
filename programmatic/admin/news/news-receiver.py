@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
 #
@@ -37,7 +37,7 @@ import types
 import cgi
 import mailbox
 
-sys.path.append('__LIBDIR__')
+sys.path.append('${LIBDIR}')
 
 import xhtml
 import wgo

@@ -2,7 +2,7 @@
 export DocumentRoot=""
 export LIBDIR=${DocumentRoot}/cgi-common
 export PYTHONPATH:=.:${LIBDIR}:${PYTHONPATH}
-export PYTHON?=python
+export PYTHON=python2.2
 
 # a few convenient transforms for making cgi scripts, css files, and
 # shell scripts with variable substitution and macros
@@ -10,9 +10,9 @@ export PYTHON?=python
 	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $< $@
 
 %.cgi: %.py
-	sed -e 's|__LIBDIR__|${LIBDIR}|g' $< > $@
+	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@
 	chmod a+rx $@
 
 %: %.sh
-	sed -e 's|__LIBDIR__|${LIBDIR}|g' $< > $@
+	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@
 	chmod a+rx $@

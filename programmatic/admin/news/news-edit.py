@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
 #
@@ -38,7 +38,7 @@ import sys
 import time
 import types
 
-sys.path.append('__LIBDIR__')
+sys.path.append('${LIBDIR}')
 
 import xhtml
 import wgo

@@ -12,7 +12,7 @@ contest: gallery-edit.cgi
 gallery-edit.cgi: gallery-edit.py
 
 clean mrproper:
-	/bin/rm -f gallery-edit.cgi
+	/bin/rm -f gallery-edit.cgi *~
 
 install: install-first
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
 # www.gimp.org website administration and tools

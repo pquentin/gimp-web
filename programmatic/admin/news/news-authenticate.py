@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ${PYTHON}
 
 import fcntl
 import email
@@ -17,7 +17,7 @@ import cgi
 import mailbox
 import cgitb; cgitb.enable()
 
-sys.path.append('__LIBDIR__')
+sys.path.append('${LIBDIR}')
 
 import xhtml
 import wgo_news

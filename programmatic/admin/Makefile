@@ -28,7 +28,7 @@ dot-password:
 clean mrproper:
 	cd news && $(MAKE) clean
 	cd contest && $(MAKE) clean
-	/bin/rm -f dot-forward dot-htaccess wgo-admin.css
+	/bin/rm -f dot-forward dot-htaccess wgo-admin.css *~
 
 install: install-first install-news install-contest
 

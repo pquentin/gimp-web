@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 # "every tool is a weapon, if you hold it right."
 #
@@ -38,7 +38,7 @@ import cgi
 import mailbox
 import cgitb; cgitb.enable()
 
-sys.path.append('__LIBDIR__')
+sys.path.append('${LIBDIR}')
 
 import xhtml
 import wgo

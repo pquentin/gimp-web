@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
 # www.gimp.org website administration and tools
@@ -36,7 +36,7 @@ import types
 import cgi
 import cgitb; cgitb.enable()
 
-sys.path.append('__LIBDIR__')
+sys.path.append('${LIBDIR}')
 
 import xhtml
 import wgo

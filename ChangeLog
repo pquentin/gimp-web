@@ -1,5 +1,13 @@
 2003-09-20  Raphael Quinet  <quinet@gamers.org>
 
+	* about/index.htrw: Removed the links to the ChangeLogs and splash
+	screen gallery, as proposed on the list.  The e-mail addresses
+	must be stripped out of the ChangeLogs (or obfuscated) and the
+	format of the files will probably change anyway (breaking the
+	links).  The splash screen gallery is also likely to be
+	re-organized in the near future, with better thumbnails and a
+	structure that would be less confusing.
+
 	* programmatic/downloads/mirrorfmt.py (do_file): If a link to a
 	mirror site contains a comment (anything after some whitespace),
 	the comment must not be included in the link.

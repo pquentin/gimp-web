@@ -1,3 +1,9 @@
+2002-11-27 carol <carol@gimp.org>
+
+	* about/index.html, about/*.png: cleaned up the splash images.
+
+	* about/splash-cvs.html, added the 1.3 versions of the splash.
+
 2002-11-26 scizzo <scizzo@gimp.org>
 
         * tutorials/Image_Map/: First port of the Image_Map tutorial.

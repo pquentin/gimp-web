@@ -107,15 +107,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="home:People-Steiner_Jacub">here</a>.
+  The original tutorial can be found <a href="tutorial:Advanced_Animations-Jakub_Steiner">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mail:People-Steiner_Jacub">Jakub Steiner (jimmac)</a>
+        Tutorial &copy; 2002 <a href="home:People-Steiner_Jacub">Jakub Steiner (jimmac)</a>
       </span>
       <span id="footerright">
-        <a href="mail:People-webmaster">webmaster@gimp.org</a>
+        <a href="mail:People-Steiner_Jacub">jimmac@ximian.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

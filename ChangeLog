@@ -1,3 +1,11 @@
+2003-04-14 scizzo <scizzo@gimp.org>
+
+	* /tutorials/Advanced_Animations/index.htrw,
+	* /tutorials/Basic_Perl/index.htrw,
+	* /tutorials/Basic_Scheme/index.htrw: Changed the links using the new
+	layout with name linked to homepage and mail address on the right
+	replacing webmaster@gimp.org.
+
 2003-04-14  Carol Spears  <carol@gimp.org>
 
     * admin/gimp-web-urls, edited, added and such.

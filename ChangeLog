@@ -1,5 +1,10 @@
 2003-08-17 scizzo <scizzo@gimp.org>
 
+	* /includes/wgo-page-init.xhtml: Moved things around a little more to
+	make the final menu. Changed "GIMP Links" to "Links".
+
+2003-08-17 scizzo <scizzo@gimp.org>
+
 	* /resources/brushes/index.html, mgo-brushes.py: Changed the size for
 	the images. Branko made the bug report and also provided the
 	information about what needed to be changed. This closes: #119211

@@ -43,26 +43,7 @@ In general, expect about 3-4 times as long as a Linux kernel 2.2
 compile (for Linux systems of course).  In other words, its a long
 compile.  That's what 300,000+ lines of code get you.</p>
 
-<h2>Stable version (2.0.x)</h2>
-
-<ul>
-  <li>Recent version of <b>pkg-config</b> is needed and you can grab them at 
-  <a href="http://www.freedesktop.org/software/pkgconfig/">http://www.freedesktop.org/software/pkgconfig/</a></li>
-  <li><b>GTK+ 2.2.2</b> or newer (Gimp Toolkit). The GIMP toolkit can be found at
-  <a href="ftp://ftp.gimp.org/pub/gtk/">ftp://ftp.gimp.org/pub/gtk/</a><br />
-  GTK+-2.2 depends also on recent versions of:
-  <ul>
-  <li><b>GLib</b></li> 
-  <li><b>Pango</b></li> 
-  <li><b>ATK</b> and you can download them from <a href="ftp://ftp.gimp.org/">ftp://ftp.gimp.org/</a><br />
-  </li></ul></li>
-  <li><b>PangoFT2</b> a pango backend that uses <b>FreeType2</b> (Make sure you have FreeType2 installed before installing Pango).
-  Downloads can be found at <a href="http://www.freetype.org/">http://www.freetype.org/</a></li>
-  <li><b>libart2</b> grab the module from libart_lgpl on the GNOME CVS or get the tarball at
-  <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a></li>
-</ul>
-
-<h2>Development version (2.1.x)</h2>
+<h2>Stable version (2.2.x)</h2>
 
 <ul>
   <li>

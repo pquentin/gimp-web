@@ -66,35 +66,7 @@ minimum of 128 MB of RAM is recommended, but actually you should have
 the following is a list of what you will need to run the GIMP on your
 system:</p>
 
-<p>For the stable version (2.0.x):</p>
-
-<ul>
-  <li>A recent version of <b>pkg-config</b> is needed and you can grab
-  them at <a
-  href="http://www.freedesktop.org/software/pkgconfig/">http://www.freedesktop.org/software/pkgconfig/</a></li>
-
-  <li><b>GTK+ 2.2.2</b> or newer (Gimp Toolkit). The GIMP toolkit can
-  be found at <a
-  href="ftp://ftp.gimp.org/pub/gtk/">ftp://ftp.gimp.org/pub/gtk/</a><br />
-  GTK+-2.2 depends also on recent versions of:
-  <ul>
-  <li><b>GLib</b></li> 
-  <li><b>Pango</b></li> 
-  <li><b>ATK</b> and you can download them from <a
-  href="ftp://ftp.gimp.org/">ftp://ftp.gimp.org/</a><br />
-  </li></ul></li>
-
-  <li><b>PangoFT2</b> a pango backend that uses <b>FreeType2</b> (Make
-  sure you have FreeType2 installed before installing Pango).
-  Downloads can be found at <a
-  href="http://www.freetype.org/">http://www.freetype.org/</a></li>
-
-  <li><b>libart2</b> grab the module from libart_lgpl on the GNOME CVS
-  or get the tarball at <a
-  href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a></li>
-</ul>
-
-<p>For the development version (2.1.x):</p>
+<p>For the stable version (2.2):</p>
 
 <ul>
   <li>

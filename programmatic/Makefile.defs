@@ -2,8 +2,8 @@
 export OWNER=apache
 export DocumentRoot=""
 export LIBDIR=${DocumentRoot}/cgi-common
-export PYTHON=python
-export PYTHONPATH=.:${LIBDIR}:${PYTHONPATH}
+export PYTHONPATH:=.:${LIBDIR}:${PYTHONPATH}
+export PYTHON?=python
 
 # a few convenient transforms for making cgi scripts, css files, and
 # shell scripts with variable substitution and macros
@@ -17,4 +17,3 @@ export PYTHONPATH=.:${LIBDIR}:${PYTHONPATH}
 %: %.sh
 	sed -e 's|__LIBDIR__|${LIBDIR}|g' $< > $@
 	chmod a+rx $@
-

@@ -5,6 +5,9 @@
 	* about/splash.html and about/splash/*.png  added some gallery images and 
     started on a gallery layout.
 
+	* about/splash.html and about/splash/*.png  removed all the images (starting
+    over) 
+
 2002-11-24 scizzo <scizzo@gimp.org>
 
         * tutorials/index.html: Fixed the index for the tutorials in the HTML

@@ -3,6 +3,9 @@
         * resources/brushes/index.html, resources/patterns/index.html, 
         mgo-brushes.py, and mgo-patterns.py removed a very naughty and
         in error </p>
+        
+        * resources/gradients.html and mgo-gradients.py: changed the style
+        tag. 
 
 2002-10-19 gsromero
 	

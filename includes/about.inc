@@ -24,6 +24,7 @@
     site. And some people have reported success in getting GIMP to run in
     <a href="http://www.macgimp.org/">MacOS X</a>.
   </p>
+</div>
 
 <div class="heading"><span class="title">Features and Capabilities</span><span class="date"></span>&nbsp;</div>
 <div class="item">

@@ -1,5 +1,9 @@
 2004-03-23  Niklas M <scizzo@gimp.org>
 
+	* downloads/install_help.htrw: Some tag updates.
+
+2004-03-23  Niklas M <scizzo@gimp.org>
+
 	* source/index.htrw: Made a new source page to contain as much
 	information as possible. This one needs editing with links and styles.
 

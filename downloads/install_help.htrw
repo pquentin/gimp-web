@@ -21,7 +21,7 @@ page.</p>
   <li><a href="#add-pkg">Other Packages</a></li>
 </ul>
 
-<h1><a name="requirements">Requirements</a></h1>
+<a name="requirements"><h1>Requirements</h1></a>
 <h2>Main Requirements</h2>
 
 <p>Well, it is necessary to have a C compiler and related tools to
@@ -62,7 +62,7 @@ compile.  That's what 300,000+ lines of code get you.</p>
   <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a></li>
 </ul>
 
-<h1><a name="comp-inst">GIMP Compilation and Installation</a></h1>
+<a name="comp-inst"><h1>GIMP Compilation and Installation</h1></a>
 
 <p>After grabbing the GIMP distribution, you are ready to compile and
 install.  The main site for the latest offical GIMP distribution is <a

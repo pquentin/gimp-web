@@ -1,0 +1,116 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Image Map Tutorial</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Image Map Tutorial</div>
+
+<div class="subtitle">Intention</div>
+<p class="images">
+  <img src="imap-table1-1-0.png" alt=""/>
+  <img src="dialog-imagemap-t.png" alt=""/>
+</p>
+<p>
+  In my opinion, it is hard to come up with a good application for an image map. For many online applications, it is simply overkill. 
+  However, to emulate the behavior of a GIMP Dialog seems to be a perfect place for this powerful web tool.
+</p>
+<p>
+  The image to the left comes from a previous tutorial about how to use perlotine. The tutorial slices this image further, 
+  but since The GIMP Image Map Plug-in and image maps in general use coordinates, we can use a less complicated table for this.
+</p>
+<p>
+  Above is a screenshot of The GIMP Image Map Plug-in, it has been scaled down for a nicer page. It can be somewhat scary at first. 
+  I tried to arrow and number the few areas I am worried about for this tutorial. So, relax.
+</p>
+
+<div class="subtitle">1. Goodies-&gt;Create Guides</div>
+<p class="images">
+  <img src="dialog-createguides.png" alt=""/>
+  <img src="imagemap1-zoom.png" alt=""/>
+</p>
+<p>
+  This is a screenshot of the Create Guides Dialog (left image). We get to change every single option before we are done. Whee!
+</p>
+<p>
+  I came to this tutorial prepared with a perfectly wonderful colorpicker script that I stole from <a href="http://the-light.com/colclick.html">Victor S. Engel</a>. 
+  The only problem with his colorpicker is that it didn't look like The GIMP. :) If you "View Source" of that page, 
+  you can see that there is a similar line to each image map coordinate area. So, into the "Base URL" box, put the stuff that will be the same on each. 
+  I am going to deal with the colors (256 of them, eek!) after I make the image map. 
+  So, put <b>javascript:GetClick()" onmouseover="GetColor('</b>  into the bottom box. The Image Map Plug-in will put the href=" into the html for you.
+</p>
+<p>
+  Once I started to write this tutorial, I discovered that the Image Map Plug-in has the ability to do the zooming and such. 
+  Too late, for me, I guess as I used The GIMPs tools for measuring to determine the information for the rest of the Create Guides information. 
+  The original image was still open, so it was hard not to think about using it. Here is a screen shot of <span class="filter">View-&gt;Zoom-&gt;4:1</span>
+</p>
+<p>
+  I used The GIMPs nifty measure tool to determine that the rectangles are all 10 pixels tall and 14 pixels wide. 
+  The black lines in between are only one pixel wide also.
+</p>
+<p>
+  You can do the math or count the squares, but the Visibone2 palette has 16 colors across and 16 colors down. 
+  I used the mouse on guides to determine the start point of the first image map area. That is all of the configurable things in this dialog. Time to click "Apply".
+</p>
+
+<div class="subtitle">2. Map Image</div>
+<p class="images">
+  <img src="dialog-guides-image.png" alt=""/>
+</p>
+<p>
+  Once you hit "Apply" the guides will draw themselves on the image map preview window. You can see if you hit the right places on your image. 
+  This tutorial certainly makes it look like I got it right the first time ;)
+</p>
+<p>
+  At this point, for this project, you can jump right to "4. File Save"as it is totally done for our use.
+</p>
+
+<div class="subtitle">3. Table Editor</div>
+<p class="images">
+  <img src="dialog-guides-urlset.png" alt=""/>
+</p>
+<p>
+  Since 256 elements is way to much to edit by hand, so I ended up using a different way to finish the information at each point. 
+  However, I played with the editor a bit. It was easy to use and figure out. Highlight the text in the pictured portion of the 
+  Image Map Dialog area by clicking on the area in the image preview. (shown above). Honestly, I don't have that much experience with html renderers, 
+  if you have the experience and would like to fill this portion of the tutorial in with something smart about editing your image map elements, feel free. 
+  I fully admit that I only used a small small part of this great plug-ins ability. 256 elements was out of the reach of my short attention span.
+</p>
+
+<div class="subtitle">4. File-&gt;Save As</div>
+<p>
+  I am not going to bore you with the directions to <span class="filter">File-&gt;Save As</span>. Instead, check out my product <a href="imap1.html">here</a>. 
+  It needs the colors placed at the end of the lines. This information is already found in The GIMP Palette directory, 
+  usually located at ~.gimp-1.2/palettes/. This was the <a href="Visibone2">Visibone2</a> palette. I posed this problem to my friend bex and went to sleep. 
+  When I awoke, she had solved my dilemma by writing the <a href="bextruder.sh.txt">bextruder shell script</a>.
+</p>
+<p>
+  This puppy takes each line from <a href="Visibone2.txt">Visibone2.txt</a>, gets a color from the <a href="Visibine2">Visibone2</a> 
+  in your home directory and puts it on the end of the line. Then plops a ')&gt; on the end of that, producing a file called <a href="visibone.html">visibone.html</a>. 
+  This didn't work. bex did exactly what I told her to do and I had forgotten a ". The plop at the end should have been a ')"&gt;. 
+  It was easy enough to fix with any editors global replace thingie .... My "working chunk of html" is called <a href="bexcolored.html">bexcolored.html</a>. 
+  The script should be easy to edit to use any palette. That is why I brought up the missing".
+</p>
+<p>
+ <form>
+  If all goes well, clicking on <a href="javascript:popup('bexcolorpicker-tutpop.html', document.forms[0].bg)">this little pop-up</a>
+  containing this <a href="bexcolorpicker-tuthtml.html">htmlized html of an online colorpicker</a> should put your color choice
+  into this box here&nbsp;--&gt;<input TYPE="text" name="bg" value="#" size="8">.
+ </form>
+</p>
+
+<p>
+  The original tutorial can be found <a href="http://carol.gimp.org/mygimp/tutorials/">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:carol@gimp.org">Carol Spears (carol)</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

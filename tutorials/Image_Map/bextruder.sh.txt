@@ -1,0 +1,24 @@
+#!/bin/bash
+
+ tmp="tmp.$$"
+sed -e 's/.*#\([0-9A-Fa-f][0-9A-Fa-f]*\).*/\1/;t;d' < ~/.gimp-1.2/palettes/Visibone2 > "$tmp"
+while read line; do color[$n]="$line"; n=$[$n+1]; done < "$tmp"
+rm -f "$tmp"
+
+#echo "Color 0 is ${color[0]}";
+#echo "Color 5 is ${color[5]}";
+
+n=0
+while read line; do html[$n]="$line"; n=$[$n+1]; done < Visibone2.txt
+
+#echo "${html[1]}"
+
+rm visibone.html
+n=0; while [ $n -lt ${#color[*]} ]; do 
+echo "${html[$n]}${color[$n]}')>" >> visibone.html
+n=$[$n+1]; 
+done
+
+echo "The combined file has been saved as visibone.html"
+
+

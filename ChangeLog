@@ -1,3 +1,7 @@
+2002-11-26 scizzo <scizzo@gimp.org>
+
+        * tutorials/Image_Map/: First port of the Image_Map tutorial.
+
 2002-11-26 carol <carol@gimp.org>
 
 	* about/splash.html, about/splash/*.png: i removed these

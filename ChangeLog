@@ -1,4 +1,9 @@
-2003-09-19  Branko Collin <collin@xs4all.nl>
+2003-09-19  Ville Pätsi  <drc@gimp.org
+
+	* includes/wgo-page-init.xhtml: Fiddled with width/height tags again.
+	Should be working now.
+
+2003-09-19  Branko Collin  <collin@xs4all.nl>
 
 	* about/index.html
 	* about/introduction.html: Spelling, naming, links and real lists.
@@ -23,7 +28,7 @@
 	important in the grand scheme of things, but it has been bugging
 	me for a while.
 
-2003-09-19  Ville Pätsi <drc@gimp.org>
+2003-09-19  Ville Pätsi  <drc@gimp.org>
 
 	* includes/wgo-page-init.xhtml: Added height="100%" to the content
 	table to make the menu reach the bottom.

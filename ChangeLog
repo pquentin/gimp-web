@@ -1,3 +1,18 @@
+2002-10-21 rockwlrs <rock@gimp.org>
+
+	* about/authors.html: list of authors and contributors
+	
+	* about/authorsgen.pl: tools/authorsgen/authorsgen.pl from the GIMP
+	source distribution, modified to create a webpage instead
+
+	* about/contributors: tools/authorsgen/contributors from the GIMP
+	source distribution.
+
+	* about/index.html: changed authors link to point to the right file
+
+	* install.exclude: added authorsgen.pl and contributors
+
+
 2002-10-21 gsromero
 
 	* maillists.html: fixed a missing LI.

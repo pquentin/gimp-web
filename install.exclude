@@ -5,5 +5,7 @@ CVS
 /README.repository
 /README.tutorials
 /resources/brushes/mgo-brushes.py
+/about/authorgen.pl
+/about/contributors
 *.*~
 *~

@@ -52,15 +52,9 @@ recommended, but the more RAM the better.</p>
 
 <h2>Help and Documentation</h2>
 
-<p>The GIMP comes with extensive help files. Once you have started the
-program, press <kbd>F1</kbd>. Should you get an error message at that
-time, you may need to set your help browser to 'Web Browser' in the
-Preferences: this will tell the GIMP to use your default web browser
-for viewing the help pages.  You may also have to install the help
-pages from a separate package (gimp-help), depending on how your
-version of the GIMP was packaged. Note: due to historical reasons,
-older versions of the GIMP (before 2.0) used 'Netscape' to mean 'your
-default web browser'.</p>
+<ul>
+  <li><a href="wgo:docs">GIMP Documentation</a></li>
+</ul>
 
 <p>The GIMP's user interface is designed to let you work as
 efficiently as possible.  The trade-off is that first time users need

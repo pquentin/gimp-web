@@ -157,11 +157,6 @@ to build the GIMP.</p>
 
 <ul>
   <li><a href="wgo:docs">GIMP Documentation</a></li>
-  <li><a href="fonts.html">How to get and install fonts</a> for GIMP 2.0</li>
-  <li><a href="wgo:unix-manpage-stable_gimp">man gimp</a></li>
-  <li><a href="wgo:unix-manpage-stable_gimptool">man gimptool</a></li>
-  <li><a href="wgo:unix-manpage-stable_gimprc">man gimprc</a></li>
-  <li><a href="wgo:unix-manpage-stable_gimp_remote">man gimp-remote</a></li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

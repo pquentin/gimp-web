@@ -103,11 +103,12 @@ for more details.</p>
 
 <h2>Help and Documentation</h2>
 
-<p>The GIMP itself comes with a built-in help system.  Once you have
-started the program, press <kbd>F1</kbd>.</p>
+<ul>
+  <li><a href="wgo:docs">GIMP Documentation</a></li>
+</ul>
 
-<p>The <a href="http://www.xdarwin.org/forum">XDarwin forums</a> are one place 
-to discuss compatibility and installation questions.<br />
+<p>The <a href="http://www.xdarwin.org/forum">XDarwin forums</a> are
+one place to discuss compatibility and installation questions.<br />
 In addition, there are forums at the <a
 href="http://gug.sunsite.dk/">GIMP User Group</a>.</p>
 

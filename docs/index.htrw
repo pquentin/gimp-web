@@ -4,19 +4,28 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Documentation</h1>
-<h2>The GIMP Documentation</h2>
-  <ul>
-    <li><a href="wiki:GimpDocs">The GIMP User Manual</a><br />
-    HTML versions are available in several languages:
+
+<h2>The GIMP User Manual</h2>
+  <p>
+    The GIMP comes with extensive help files. Once you have started
+    the program, press <kbd>F1</kbd>. Should you get an error message
+    at that time, you may need to set your help browser to 'Web
+    Browser' in the Preferences: this will tell the GIMP to use your
+    default web browser for viewing the help pages.  You may also have
+    to install the help pages from a separate package (gimp-help),
+    depending on how your version of the GIMP was packaged.
+  </p>
+
+  <p>
+    The user manual is available in several languages:
     <ul>
       <li><a href="wgo:docs-gimp_help-en">English</a></li>
       <li><a href="wgo:docs-gimp_help-de">German</a> (Deutsch)</li>
       <li><a href="wgo:docs-gimp_help-fr">French</a> (Français)</li>
       <li><a href="wgo:docs-gimp_help-sv">Swedish</a> (Svenska)</li>
       <li><a href="wgo:docs-gimp_help-zh_CN">Chinese</a></li>
-    </ul></li>
-    <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
-  </ul>
+    </ul>
+  </p>
 
 <h2>GIMP Manual Pages</h2>
   <ul>
@@ -28,9 +37,11 @@
 
 <h2>Other GIMP Documentation</h2>
   <ul>
+    <li><a href="unix/fonts.html">How to install fonts</a>for GIMP 2.0</li>
     <li><a href="python/pygimp.html">GIMP Python Module Documentation</a></li>
     <li><a href="scheme_plugin/">GIMP Script-fu Documentation</a></li>
     <li><a href="gimp-print/print.html">GIMP Print Documentation</a></li>
+    <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
     <li><a href="plug-in/plug-in.html">Writing a Plug-In</a></li>
   </ul>
 

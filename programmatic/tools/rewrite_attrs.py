@@ -75,7 +75,14 @@ def print_warning(filename):
   sys.stdout.write("<!-- rewrite-attrs.py $Revision$ automatically generated this file from " + filename + ".  Do not edit.-->\n")
   return
     
-
+def sanity_check(filename, attrs):
+  for (a, v) in attrs:
+    if type(v) == type(None):
+      sys.stderr.write("Warning: " + filename + ": attribute '" + a + "' has no value.  See http://www.w3.org/TR/xhtml1/#h-4.5 and http://www.w3.org/TR/xhtml1/#C_10\n")
+      pass
+    pass
+  return
+  
 class xhtml_parser(HTMLParser.HTMLParser):
   def __init__(self, filename, quiet_flag=False):
     self.filename = filename
@@ -97,6 +104,8 @@ class xhtml_parser(HTMLParser.HTMLParser):
       self.comment_already_printed = True
       pass
 
+    sanity_check(self.filename, attrs)
+    
     sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + ">")
     return
 

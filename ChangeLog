@@ -1,17 +1,23 @@
+2003-04-13  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Modified rewrite_attr.py to print a warning message on finding
+        an attribute with no value.
+
+
 2003-04-13 scizzo <scizzo@gimp.org>
 
-	* /includes/wgo-xhtml-fini.xhtml: Fixed a problem with the validation
-	link not falling to the bottom of the site. Now it works.
+        * /includes/wgo-xhtml-fini.xhtml: Fixed a problem with the validation
+        link not falling to the bottom of the site. Now it works.
 
-	* /tutorials/Basic_Perl/index.html: Removed this file.
-	* /tutorials/Basic_Perl/index.htrw: Add this file. Fixed a few minor
-	tags in the file.
-	* /tutorials/Basic_Scheme/index.html: Removed this file.
-	* /tutorials/Basic_Scheme/index.htrw: Add this file. Fixed a few tag
-	problems. Another tag problem with <dl compact>, changed to only <dl>.
-	A few more tag fixes to get the site valid.
+        * /tutorials/Basic_Perl/index.html: Removed this file.
+        * /tutorials/Basic_Perl/index.htrw: Add this file. Fixed a few minor
+        tags in the file.
+        * /tutorials/Basic_Scheme/index.html: Removed this file.
+        * /tutorials/Basic_Scheme/index.htrw: Add this file. Fixed a few tag
+        problems. Another tag problem with <dl compact>, changed to only <dl>.
+        A few more tag fixes to get the site valid.
 
-	* /admin/gimp-web-urls: Add People-Lehmann_Marc to the links.
+        * /admin/gimp-web-urls: Add People-Lehmann_Marc to the links.
 
 2003-04-13  Helvetix Victorinox  <helvetix@mysterious.org>
 

@@ -161,7 +161,7 @@
 ["href", "tutorial:Using_GAP-Jakub_Steiner",		        { "href": "http://jimmac.musichall.cz/popup.php3?img=gap&mapa="}]
 ["href", "tutorial:Working_with_the_Image-Kevin_Turner",	{ "href": "http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro"}]
 
-["href", "os2-howto:Installing_XFree86/OS2_3.3.x-Hennecke_Christian",	    { "http://www.os2world.com/os2files/xfree86/installation.html"}]
+["href", "os2-howto:Installing_XFree86/OS2_3.3.x-Hennecke_Christian",	    { "href" "http://www.os2world.com/os2files/xfree86/installation.html"}]
 ["href", "os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian",	    { "href": "http://www.os2voice.org/VNL/past_issues/VNL0403H/vnewsf6.htm"}]
 ["href", "os2-howto:Font_Installation_in_xfree86/os2-Hennecke_Christian",	{ "href": "http://www.os2world.com/os2files/xfree86/font_install.html"}]
 

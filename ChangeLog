@@ -1,3 +1,19 @@
+2002-10-30 carol <carol@gimp.org>
+
+	* development.html: after quite a bit of thought i removed rockwlrs url
+    on this document.  mitch gave me a list of things he wanted on the developer
+    section, they need to be dug up before we start adding new things here.
+    
+    * docs/index.html:  added the things that should be quick to grab and put
+    into place and one wishlist item.  added the directory docs/ , docs/gimp-docs
+    docs/scriptfu, docs/print, docs/python, docs/cookbook.  i also removed
+    documentation.html.
+    
+	* unix/user_install.html: added this file.  set up an outline and generated
+    screenshots (ui-calibrate.png, ui-log.png, ui-moniter, ui-performance.png,
+    ui-personal.png, ui-performance.png, ui-welcome.png.  someone needs to change
+    the text. it is scary.
+
 2002-10-30 rockwlrs <rock@gimp.org>
 
 	* development.html: added a "link" to the Developers' Cookbook so that

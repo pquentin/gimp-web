@@ -1,5 +1,5 @@
 <a name="maillists">
-<div class="subtitle">Mailinglists</div>
+<div class="subtitle">Mail List URLs</div>
 <p>
   <A href="maillists.html">Mail List Descriptions</a><br />
   A more thorough overview of The GIMP related mail lists.

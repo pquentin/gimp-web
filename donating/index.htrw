@@ -7,15 +7,18 @@
 <p>
   Donating money to the GIMP is easy!  The guys at the <a
   href="http:Package-Gnome">GNOME Foundation</a> have graciously
-  agreed to act as fiscal agents for us, which means we can offer tax
-  deductible donations in the US.
+  agreed to act as fiscal agents for us. The contribution is being
+  made to GNOME Foundation, on behalf of the GIMP Project.  The GNOME
+  Foundation is a tax-exempt, non-profit 501(c)(3) organization and
+  all donations are tax-deductible in the USA.
 </p>
 <p>
-  There are 2 ways to support the GIMP financially, and get as many of
-  the <a href="wgo:dev">GIMP Developers</a> as possible to the GIMP
-  Developers Conference, taking place in Norway as a sub-event of <a
-  href="http:guadec">GUADEC</a> at the end of June, as well as
-  expenses associated with the establishment of the GIMP Foundation:
+  There are 3 ways to support the GIMP financially.  Financial help is
+  needed to get as many of the <a href="wgo:dev">GIMP Developers</a>
+  as possible to the GIMP Developers Conference taking place in Norway
+  as a sub-event of <a href="http:guadec">GUADEC</a> at the end of
+  June.  Financial help will also be need to cover the expenses
+  associated with the establishment of the GIMP Foundation.
 </p>
 
 <h2>Cheque</h2>
@@ -44,6 +47,30 @@
   href="mailto:fundraising@gnome.org">fundraising@gnome.org</a>,
   requesting bank details, and specifying that you are donating to the
   GIMP.
+</p>
+
+<h3>Paypal</h3>
+<p>
+  Donate to gimp@gnome.org, this will notify us, and the GNOME board,
+  that funds have been donated to the GIMP.  Credit card donations are
+  also accepted via this route.
+</p>
+<p>
+  Please indicate whether you would like your donation to remain anonymous, as
+  otherwise you will be listed as a sponsor of the GIMP on the gimp.org web-pages.
+</p>
+<p>
+  <form method="post" action="https://www.paypal.com/cgi-bin/webscr">
+    <input value="_xclick" name="cmd" type="hidden">
+    <input value="gimp@gnome.org" name="business" type="hidden">
+    <input value="Donation to GIMP Project" name="item_name" type="hidden">
+    <input value="106" name="item_number" type="hidden">
+    <!-- <input value="http://www.gimp.org/donating/thanks.html"
+           name="return" type="hidden"> -->
+    <input value="1" name="no_shipping" type="hidden">
+    <input alt="Support the GIMP" name="submit" border="0"
+           src="donate.png" type="image">
+  </form>
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

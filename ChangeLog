@@ -1,5 +1,11 @@
 2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* donating/donate.png
+	* donating/index.htrw: added paypal information, rephrased the
+	introduction.
+
+2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* unix/index.htrw: added link to Slackware 9.1 binary. Fixes bug
 	#138327.
 

@@ -1,3 +1,7 @@
+2002-10-11 scizzo <scizzo@gimp.org>
+
+	* tutorials/Straight_Line: Test of new class and screenshots.
+
 2002-10-11 brix <brix@gimp.org>
 
 	* style/default.css: separated #main rule into td#main and

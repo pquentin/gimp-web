@@ -1,0 +1,44 @@
+Installation instructions for gimp-web module
+---------------------------------------------
+
+Below you will find the options and steps needed to build and test the gimp-web
+module for work in HEAD branch.
+
+To be able to build the site you will need a few things installed and running
+in a correct way to test the site, the list below tells you the dependencies
+needed to test the site.
+
+  1. Apache with SSI support. The site uses SSI to use include files in the
+  html files. For SSI instructions go to this website:
+  http://scizzo.gimp.org/gnu-linux/howto/apache_ssi.html
+
+  To get a real life example of a httpd.conf file with SSI support you can also
+  look at: http://www.gimp.org/admin/howto.html
+
+  2. Python 2.2 or better. The build system uses Python for the main build.
+
+To build the site for the first time you will have to do some thinking about
+where to place the build you are doing, this means that you should have a
+backup ready. Follow the steps below to get a good example of how the build
+system works.
+
+  % mkdir /home/wgo   # Directory where the test site will be
+
+Run the following command with the user root in the root directory of gimp-web.
+Username below means the username you will use on the machine.
+
+  % chown -R apache . ; PYTHON=python2.2 ./install.sh /home/wgo ; chown -R
+    username .
+
+The site will now be installed and should be available with html files in
+/home/wgo directory. To be able to test the things being changed in the
+gimp-web module you just reinstall the site after doing the changes. So, first
+make the changes in gimp-web and then test them by building the site again
+with:
+
+  % chown -R apache . ; PYTHON=python2.2 ./install.sh /home/wgo ; chown -R
+    username .
+
+And after doing this test you can commit it to the gimp-web module. Remember to
+look in the .cvsignore file to find out what is going to be ignored when
+commiting.

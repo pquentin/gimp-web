@@ -1,5 +1,11 @@
 2004-03-23  Henrik Brix Andersen  <brix@gimp.org>
 
+	* images/news-icons/Wilber_icon_Kit.xcf
+	* images/news-icons/gimp_construction.png: do not show the brush
+	shadow when there is no brush, set PNG background color to white
+
+2004-03-23  Henrik Brix Andersen  <brix@gimp.org>
+
 	* about/splash/splash-images/.cvsignore: shut up cvs
 
 2004-03-23  Henrik Brix Andersen  <brix@gimp.org>

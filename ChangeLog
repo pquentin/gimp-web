@@ -1,5 +1,56 @@
 2002-09-22  Henrik Brix Andersen  <brix@scienceworld.dk>
 
+	* includes/team.inc, includes/webteam.inc, index.php:
+	renamed /includes/webteam.inc to /includes/team.inc
+
+	* ChangeLog: updated changelog
+
+	* includes/about.inc:
+	oops. my mistake. reverted to version 1.6 (thanks carol)
+
+	* ChangeLog: regenerated the changelog from cvs log entries
+
+	* includes/webteam.inc: added "GIMP Core Team" list
+
+	* ChangeLog: started using the changlog
+
+	* index.php: replaced <?xml ... ?> with <?php echo '<?xml ... ?>' ?>.
+	thanks to CyBeR
+
+	* includes/about.inc: added "" to comment
+
+	* includes/about.inc: changed html comment to php comment.
+	that way the comment is not shown in the browsers src code view.
+
+	* includes/tutorials.inc:
+	added str_replace () to filter out underscores ("_") and replace them with spaces (" ").
+
+	* includes/webteam.inc: corrected spelling of Ville Pätsi
+
+	* includes/webteam.inc: removed the optional date line
+
+	* index.php: added "webteam" case to switch statement
+
+2002-09-22  carol  <carol@fungus>
+
+	* ChangeLog, includes/webteam.inc, index.php:
+	2002-09-21  Carol Spears  <carol@gimp.org>
+		* index.php:  changed GIMP Links: title to GIMP Links url
+		* index.php:  put a FIXME url around The GIMP Web Team
+		* webteam.inc:  added this file
+
+	* ChangeLog: 2002-09-21  Carol Spears  <carol@gimp.org>
+		* remembered ChangeLog too late ...
+
+	* includes/about.inc: 2002-09-21  Carol Spears  <carol@gimp.org>
+		* commented about.inc
+
+	* ChangeLog:
+	2002-09-21  Carol Spears  <carol@gimp.org>
+		* added ChangeLog
+
+2002-09-22  Henrik Brix Andersen  <brix@scienceworld.dk>
+
 	* includes/about.inc:
 	oops. my mistake. reverted to version 1.6 (thanks carol)
 

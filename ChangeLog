@@ -1,3 +1,7 @@
+2003-02-24 scizzo <scizzo@gimp.org>
+
+	* /admin/: Copied the READMEs and TODOs to /admin/
+
 2003-02-22  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Added programmatic/wgo_develop.py as the "develop" style for

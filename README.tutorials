@@ -4,5 +4,10 @@ Screenshots:
   * Set the background color displayed in your gimp toolbox to be
 	white (#FFFFFF)
   * Save As png and use the gimp defaults.
+  * Use max size: 400x400 if larger then crop the important parts 
+  	in the screenshot.
+  * Theme should be standard GTK+ theme.
+  * Use a 2px black border around the image. And no window frames.
+  
 Text:
   * Use the template.  Use standard xhtml.

@@ -1,6 +1,8 @@
 2004-12-19  Sven Neumann  <sven@gimp.org>
 
-	* images/news-icons: removed.
+	* programmatic/admin/news/wgo_news.py: fixed typo.
+
+	* images/news-icons: removed, these images aren't used.
 
 2004-12-19  Sven Neumann  <sven@gimp.org>
 

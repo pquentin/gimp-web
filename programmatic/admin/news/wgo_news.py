@@ -253,7 +253,7 @@ icon_descs = {
   "release"           : "[Release]",
   "wilber_painter"    : "[Wilber the Painter]",
   "wilber_wizard"     : "[Wilber the Wizard]",
-  "wilber_work"       : "[Wilber the Painting Builder]"
+  "wilber_work"       : "[Wilber the Painting Builder]",
   "wilber_reading"    : "[Wilber Reading]"
 }
 

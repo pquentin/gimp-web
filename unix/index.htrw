@@ -11,9 +11,10 @@
 systems.  In addition to the source code distribution here on
 www.gimp.org, you can get binaries for various flavors of Unix.</p>
 
-<p>
-At the moment we know about the following binary packages for GIMP 2.0
-on Unix:
+<p> At the moment we know about the following binary packages for GIMP
+2.0 on Unix. These binaries are provided by GIMP users. We did not
+test them; use at your own risk.
+
 <ul>
  <li>GNU/Linux on ix86
    <ul>
@@ -29,8 +30,6 @@ on Unix:
    </ul>
  </li>
 </ul>
-These binaries are provided by GIMP users. We did not test them; use
-at your own risk.
 </p>
 
 <p>If you cannot find a pre-compiled package of GIMP 2.0 for your

@@ -1,5 +1,7 @@
 2004-03-29  Sven Neumann  <sven@gimp.org>
 
+	* unix/index.htrw: fiddled with the layout a bit.
+
 	* windows/index.htrw: added links in the Configuration section.
 	These links point to the pages in the Unix section but
 	configuration is not really platform-dependant and should probably

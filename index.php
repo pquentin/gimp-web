@@ -83,6 +83,9 @@
                 $file = "includes/os2.inc";
                 break;
 
+              case "links":
+                $file = "includes/links.inc";
+                break;
               case "team":
                 $file = "includes/team.inc";
                 break;
@@ -99,7 +102,7 @@
     </table>
     
     <div id="linkbar">
-      <span class="linkitem"><a href="FIXME">GIMP Links</a></span>
+      <span class="linkitem"><a href="?page=links">GIMP Links</a></span>
       <span class="linkitem"><a href="http://gug.sunsite.dk">GIMP User Group</a></span>
       <span class="linkitem"><a href="http://gimp-savvy.com/BOOK/index.html">Grokking the GIMP</a></span>
       <span class="linkitem"><a href="FIXME">Mailing Lists</a></span>

@@ -1,6 +1,8 @@
 2003-04-04  Helvetix Victorinox  <helvetix@mysterious.org>
 
-        * Little css tweaks on the news administration pages.
+        * Remove multiple blank lines from preprocessed CSS output.
+        * A left border on the news index admin pages.
+        * Little css tweaks on the news administration pages to make lines line up.
         * Reversed the order in which the news blotter was displayed.  New news is at the top.
                 
 

@@ -11,30 +11,35 @@
   Archives: <a href="maillist:GIMP-user-archive">XCF</a>,
   <a href="maillist:GIMP-user-m-a-archive">mail-archive</a>,
   <a href="maillist:GIMP-user-aims-archive">AIMS</a>,
-  <a href="maillist:GIMP-user-spin-archive">spinics</a></dd>
+  <a href="maillist:GIMP-user-spin-archive">spinics</a>,
+  <a href="maillist:GIMP-user-gmane-archive">Gmane</a></dd>
 
   <dt><a href="maillist:GIMP-announce">GIMP Announce</a></dt>
   <dd>Learn of the new tarballs, without all of the help and development.
   This is a very low-traffic list.<br />
   Archives: <a href="maillist:GIMP-announce-archive">XCF</a>,
-  <a href="maillist:GIMP-announce-aims-archive">AIMS</a></dd>
+  <a href="maillist:GIMP-announce-aims-archive">AIMS</a>,
+  <a href="maillist:GIMP-announce-gmane-archive">Gmane</a></dd>
 
   <dt><a href="maillist:GIMP-user-windows">GIMPwin-users</a></dt>
   <dd>Especially for users of the Windows version of GIMP.<br />
   Archives: <a href="maillist:GIMP-user-windows-archive">Yahoo</a>,
-  <a href="maillist:GIMP-user-windows-spin-archive">spinics</a></dd>
+  <a href="maillist:GIMP-user-windows-spin-archive">spinics</a>,
+  <a href="maillist:GIMP-user-windows-gmane-archive">Gmane</a></dd>
 
   <dt><a href="maillist:GIMP-developer">GIMP Developer</a></dt>
   <dd>The GIMP developer mail list. For plug-in developers and core program
   developers; discussion about the source code.<br />
   Archives: <a href="maillist:GIMP-developer-archive">XCF</a>,
   <a href="maillist:GIMP-developer-m-a-archive">mail-archive</a>,
-  <a href="maillist:GIMP-developer-aims-archive">AIMS</a></dd>
+  <a href="maillist:GIMP-developer-aims-archive">AIMS</a>,
+  <a href="maillist:GIMP-developer-gmane-archive">Gmane</a></dd>
 
   <dt><a href="maillist:GIMP-web">GIMP web</a></dt>
   <dd>The GIMP web mail list. For discussion about the contents and
   structure of this web site.<br />
-  Archives: <a href="maillist:GIMP-web-archive">XCF</a></dd>
+  Archives: <a href="maillist:GIMP-web-archive">XCF</a>,
+  <a href="maillist:GIMP-web-gmane-archive">Gmane</a></dd>
 
   <dt><a href="maillist:GIMP-docs">GIMP docs</a></dt>
   <dd>The GIMP documentation mail list. For discussion about the

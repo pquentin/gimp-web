@@ -1,3 +1,10 @@
+2004-12-18  Raphaël Quinet  <raphael@gimp.org>
+
+	* mail_lists.htrw
+	* admin/gimp-web-urls:  Added links to several list archives
+	provided by the Gmane mail-to-news gateway.  They seem to have the
+	only working public archive of the gimp-web list, for example.
+
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
 	* about/splash/index.htrw: link to the man-page for more info.

@@ -1,5 +1,12 @@
 2004-12-19  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/Makefile
+	* programmatic/admin/news/wgo_news.py
+	* programmatic/admin/news/wilber_reading.png: allow to use the new
+	icon from the news system.
+
+2004-12-19  Sven Neumann  <sven@gimp.org>
+
 	* images/wilber_reading.png: a PNG version of an icon we used on
 	the old wgo page. I would like to be able to use this as news icon.
 

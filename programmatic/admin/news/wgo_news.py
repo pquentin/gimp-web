@@ -220,7 +220,8 @@ icons = {
   "Release"                   : "release-0.1.png",
   "Wilber the Painter"        : "wilber_painter.png",
   "Wilber the Wizard"         : "wilber_wizard.png",
-  "Wilber the Painter Builder" : "wilber_work.png" }
+  "Wilber the Painter Builder" : "wilber_work.png",
+  "Wilber Reading"            : "wilber_reading.png" }
 
 def icon_option_list(selected):
   options = ""
@@ -253,6 +254,7 @@ icon_descs = {
   "wilber_painter"    : "[Wilber the Painter]",
   "wilber_wizard"     : "[Wilber the Wizard]",
   "wilber_work"       : "[Wilber the Painting Builder]"
+  "wilber_reading"    : "[Wilber Reading]"
 }
 
 def icon_desc_by_name(name):

@@ -1,7 +1,23 @@
 2002-09-23  Henrik Brix Andersen  <brix@gimp.org>
 
-	* default.css: removed "width: 100%;" from #navbar and #linkbar.
+	* includes/documentation.inc:
+	forgot to remove includes/documentation.inc
+
+	* about.html, authoring.html, development.html, documentation.html, includes/about.inc, includes/authoring.inc, includes/blank.inc, includes/development.inc, includes/footer.inc, includes/header.inc, includes/linkbar.inc, includes/links.inc, includes/macintosh.inc, includes/menu.inc, includes/news.inc, includes/os2.inc, includes/registry.inc, includes/resources.inc, includes/team.inc, includes/tutorials.inc, includes/unix.inc, includes/windows.inc, index.html, index.php, links.html, macintosh.html, os2.html, registry.html, resources.html, team.html, template.html, tutorials.html, unix.html, windows.html:
+	moved from using php to using ssi (yosh insisted ;)
+
+	* style/default.css: added #navbar to the @media print rule
+
+	* style/default.css:
+	added a special (p.tutorial) paragraph to be used in tutorials
+
+	* ChangeLog: updated changelog
+
+	* style/default.css: removed "width: 100%;" from #navbar and #linkbar.
 	this caused the horizontal slider always being shown in opera/mozilla.
+
+	* ChangeLog: updated changelog.
+	changed my e-mail addy.
 
 	* includes/links.inc: file added.
 
@@ -66,8 +82,7 @@
 
 2002-09-21  Henrik Brix Andersen  <brix@gimp.org>
 
-	* includes/tutorials.inc, tutorials/Anti-Aliased_Treshold/curves.jpg, tutorials/Anti-Aliased_Treshold/effect.jpg, tutorials/Anti-Aliased_Treshold/finished.jpg, tutorials/Anti-Aliased_Treshold/index.inc, tutorials/Anti-Aliased_Treshold/original.jpg, tutorials/Anti-Aliased_Treshold/threshold.jpg:
-	moved tutorials to /tutorials
+	* includes/tutorials.inc: moved tutorials to /tutorials
 
 	* includes/tutorials.inc:
 	do not list the CVS directory as a tutorial ;)
@@ -157,7 +172,7 @@
 
 	* style/default.css, index.php: fixed display of several news items
 
-2002-09-20  Carol Spears <carol@gimp.org>
+2002-09-20  Carol Spears  <carol@gimp.org>
 
 	* index.php:
 	removed the rest of the spaces in the top bar <div></div>

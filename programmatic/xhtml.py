@@ -811,6 +811,11 @@ class input(x_xml.Xml):
       def __init__(self, attrs={}):
         return (x_xml.xml_init.__init__(self, input.textarea, attrs))
       pass
+
+    class fini(x_xml.xml_fini):
+      def __init__(self):
+        return (x_xml.xml_fini.__init__(self, input.textarea))
+      pass
     pass
 
   class select(x_xml.Xml):
@@ -821,6 +826,11 @@ class input(x_xml.Xml):
       def __init__(self, attrs={}):
         return (x_xml.xml_init.__init__(self, input.select, attrs))
       pass
+
+    class fini(x_xml.xml_fini):
+      def __init__(self):
+        return (x_xml.xml_fini.__init__(self, input.select))
+      pass
     pass
 
   class option(x_xml.Xml):
@@ -830,6 +840,11 @@ class input(x_xml.Xml):
     class init(x_xml.xml_init):
       def __init__(self, attrs={}):
         return (x_xml.xml_init.__init__(self, input.option, attrs))
+      pass
+
+    class fini(x_xml.xml_fini):
+      def __init__(self):
+        return (x_xml.xml_fini.__init__(self, input.option))
       pass
     pass
   pass

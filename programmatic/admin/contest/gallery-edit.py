@@ -158,7 +158,6 @@ def display_gallery(form):
 
   images_per_page = 8
 
-
   next_page_index = this_page_index + images_per_page
   prev_page_index = this_page_index - images_per_page
 
@@ -172,7 +171,7 @@ def display_gallery(form):
     prev = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_index)}, "&lt;")
     pass
 
-  print xhtml.table.init({"style" : "width: 100%; font-size: large; padding: 0; border-spacing: 0; border-collapse: collapse;"})
+  print xhtml.table.init({"style" : "width: 100%; font-size: large; padding: 0; border-spacing: 0; border-collapse: collapse; border: 1px solid black;"})
   print xhtml.table.row.init()
   print xhtml.table.cell({"style" : "border: 1px solid black; font-size: normal; font-weight: bold;" }, prev)
 
@@ -185,7 +184,7 @@ def display_gallery(form):
     if i == position:
       print xhtml.table.cell({"style" : "width: 1%; border: 1px solid gray; background: none #32537d;", "title" : "image %d, i=%d" % (index, i)}, link)
     else:
-      print xhtml.table.cell({"style" : "width: 1%; border: 1px solid gray;", "title" : "image %d, i=%d" % (index, i)}, link)
+      print xhtml.table.cell({"style" : "width: 1%; border: none;", "title" : "image %d, i=%d" % (index, i)}, link)
       pass
     pass
   print xhtml.table.cell({"style" : "border: 1px solid black; font-size: large; font-weight: bold;" }, next)

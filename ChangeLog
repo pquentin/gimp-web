@@ -1,3 +1,9 @@
+2004-12-05  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/admin/contest/gallery-edit.py (display_gallery): 
+	Some visual changes in the indicator of where the currently
+	display page is versus the total of all gallery images.
+
 2004-12-03  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* programmatic/admin/contest/gallery-edit.py (display_gallery): 

@@ -1,4 +1,4 @@
-2<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - for Windows</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->

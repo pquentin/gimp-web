@@ -3,6 +3,10 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Changing Background Color 2</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Hempe_Bustamante_Francisco">Francisco Bustamante Hempe</a> and may not 
+  be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p class="images">

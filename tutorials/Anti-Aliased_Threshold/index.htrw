@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Anti-Aliased Threshold Tutorial</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Pätsi_Ville">Ville Pätsi</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>

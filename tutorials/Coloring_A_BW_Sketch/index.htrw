@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Coloring A BW Sketch</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Lamberto_Marco">Marco (LM) Lamberto</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
@@ -12,7 +15,7 @@
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="hikachan_t0.jpg" alt=""/>
+  <img src="hikachan_t0.jpg" alt="" />
 </p>
 <p>
   Create a new image of the wanted size and place below the sketch layer a pure white background layer. Now turn the mode for the sketch layer into multiply.
@@ -21,7 +24,7 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="hikachan_t1.jpg" alt=""/>
+  <img src="hikachan_t1.jpg" alt="" />
 </p>
 <p>
   Now let's start playing with colours!
@@ -33,7 +36,7 @@
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="hikachan_t2.jpg" alt=""/>
+  <img src="hikachan_t2.jpg" alt="" />
 </p>
 <p>
   Create a "Skin" layer over the "Details" one. Here I've coloured the skin and the shoes with the paint tool and the airbrush.
@@ -42,7 +45,7 @@
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="hikachan_t3.jpg" alt=""/>
+  <img src="hikachan_t3.jpg" alt="" />
 </p>
 <p>
   The "Details#2" layer is used for some extra details like the white text over the blue doughnut. I've used it because I want be able to change and retouch
@@ -51,7 +54,7 @@
 
 <h2>Step 5</h2>
 <p class="images">
-  <img src="hikachan_t4.jpg" alt=""/>
+  <img src="hikachan_t4.jpg" alt="" />
 </p>
 <p>
   The "Hairs" layer contains ... well, what do you think will contain a layer called "Hairs"? Yeah, right answer! ;P
@@ -61,7 +64,7 @@
 
 <h2>Final</h2>
 <p class="images">
-  <img src="hikachan_t5.jpg" alt=""/>
+  <img src="hikachan_t5.jpg" alt="" />
 </p>
 <p>
   Finally I've added a "Shadows" layer for making the doughnut and the other elements less flat.

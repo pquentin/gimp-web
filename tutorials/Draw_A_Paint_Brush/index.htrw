@@ -3,6 +3,10 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Draw A Paint Brush</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Kuosmanen_Tuomas">Tuomas Kuosmanen</a> and may not be used 
+  without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
@@ -233,15 +237,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://tigert.gimp.org/gimp/tutorials/drawing_a_paintbrush/">here</a>.
+  The original tutorial can be found <a href="tutorial:Draw_A_Paint_Brush-Tuomas_Kuosmanen">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:tigert@gimp.org">Tuomas Kuosmanen (tigert)</a>
+        Tutorial &copy; 2002 <a href="home:People-Kuosmanen_Tuomas">Tuomas Kuosmanen (tigert)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Kuosmanen_Tuomas">tigert@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -76,7 +76,10 @@
 ["href", "home:People-Jeschke_Eric_R",	       { "href": "http://redskiesatnight.com/"}]
 
 ["href", "mail:People-Jones_Sam",              { "href": "mailto:samjones@io.com"}]
+["href", "home:People-Jones_Sam",	       { "href": "http://www.electricossuary.com/"}]
+
 ["href", "mail:People-Kidd_Eric",              { "href": "mailto:eric.kidd@pobox.com"}]
+["href", "home:People-Kidd_Eric",	       { "href": "http://www.randomhacks.net/"}]
 
 ["href", "mail:People-Kuosmanen_Tuomas",       { "href": "mailto:tigert@gimp.org"}]
 ["href", "home:People-Kuosmanen_Tuomas",       { "href": "http://tigert.gimp.org"}]
@@ -88,6 +91,8 @@
 ["href", "home:People-Lamberto_Marco",         { "href": "http://www.sunnyspot.org"}]
 
 ["href", "mail:People-Lautenbacher_Jens",      { "href": "mailto:jtl@gimp.org"}]
+["href", "home:People-Lautenbacher_Jens",      { "href": "http://www.gimp.org/"}]
+
 ["href", "mail:People-Lehmann_Marc",	       { "href": "mailto:pcg@goof.com"}]
 
 ["href", "mail:People-Likins_Adrian",          { "href": "mailto:adrian@gimp.org"}]
@@ -96,8 +101,11 @@
 ["href", "mail:People-Mattisson_Niklas",       { "href": "mailto:scizzo@gimp.org"}]
 ["href", "home:People-Mattisson_Niklas",       { "href": "http://scizzo.lnx.nu"}]
 
+["href", "mail:People-Mena-Quintero_Federico", { "href": "mailto:federico@gnu.org"}]
 ["href", "home:People-Mena-Quintero_Federico", { "href": "http://primates.helixcode.com/~federico/"}]
+
 ["href", "mail:People-Neary_Dave",             { "href": "mailto:bolsh@gimp.org"}]
+["href", "home:People-Neary_Dave",	       { "href": "http://www.gimp.org/"}]
 
 ["href", "mail:People-Neumann_Sven",           { "href": "mailto:sven@gimp.org"}]
 ["href", "home:People-Neumann_Sven",           { "href": "http://sven.gimp.org"}]
@@ -121,11 +129,13 @@
 ["href", "home:People-Summers_Nathan_C",       { "href": "http://www.gimp.org/~rock/"}]
 
 ["href", "mail:People-Turner_Kevin",           { "href": "http://sourceforge.net/sendmessage.php?touser=9300"}]
+["href", "home:People-Turner_Kevin",	       { "href": "http://sourceforge.net/users/acapnotic/"}]
 
 ["href", "mail:People-Victorinox_Helvetix",    { "href": "helvetix@mysterious.org"}]
 ["href", "home:People-Victorinox_Helvetix",    { "href": "http://www.mysterious.org"}]
 
 ["href", "mail:People-Walter_Rebecca_J",       { "href": "mailto:bex@gimp.org"}]
+["href", "home:People-Walter_Rebecca_J",       { "href": "http://home13.inet.tele.dk/rjp/"}]
 
 ["href", "mail:People-Weisbeek_Martijn",       { "href": "mailto:m.weisbeek@home.nl"}]
 
@@ -282,6 +292,7 @@
 
 
 ["href", "tutorial:GIMPLite_Quickies-Carol_Spears",         { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
+["href", "tutorial:The_Basics-Jens_Lautenbacher",           { "href": "http://www.gimp.org/tut-basic.html"}]
 ["href", "tutorial:Straight_Line-Seth_Burgess",             { "href": "http://www.gimp.org/~sjburges/straightline/straightline.html"}]
 ["href", "tutorial:Borders_On_Selections-Francisco_Bustamante_Hempe",    { "href": "http://bitbit.org/cms.php/gimp/tutorials/stroke_selection.html"}]
 ["href", "tutorial:Anti-Aliased_Threshold-Ville_Pätsi",     { "href": "http://drc.gimp.org/"}]
@@ -302,7 +313,9 @@
  
 
 ["href", "tutorial:Image_Pipes-Adrian_Likins",              { "href": "http://adrian.gimp.org/gimppipe/"}]
+["href", "tutorial:Image_Pipes2-Sam_Jones",		    { "href": "http://carol.gimp.org/gimp/tutorials/pipe_more/"}]
 ["href", "tutorial:Golden_Text-Simon_Budig",                { "href": "http://www.home.unix-ag.org/simon/gimp/golden.html"}]
+["href", "tutorial:Photo_To_Sketch-Dave_Neary",		    { "href": "http://carol.gimp.org/mygimp/tutorials/photo_sketch/"}]
 ["href", "tutorial:Draw_A_Paint_Brush-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/drawing_a_paintbrush/"}]
 ["href", "tutorial:Creating_Icons-Jakub_Steiner",           { "href": "http://developer.ximian.com/articles/tutorials/icons/output/index.html"}]
 ["href", "tutorial:Using_GAP-Jakub_Steiner",                { "href": "http://jimmac.musichall.cz/popup.php3?img=gap&mapa="}]

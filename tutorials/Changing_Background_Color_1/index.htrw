@@ -3,12 +3,15 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Changing Background Color 1</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Burgess_Seth">Seth Burgess</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p class="images">
-  <img src="pr.png" alt=""/>
+  <img src="pr.png" alt="" />
   to
-  <img src="pr_red.png" alt=""/>
+  <img src="pr_red.png" alt="" />
 </p>
 <p>
   This tutorial shows you how you can effeciently replace the background of an image with another in GIMP, through the use of the color to alpha plug-in.
@@ -18,33 +21,34 @@
 
 <h2>Why Not a Selection</h2>
 <p class="images">
-  <img src="problem1.png" alt=""/>
-  <img src="problem2.png" alt=""/>
-  <img src="problem3.png" alt=""/>
+  <img src="problem1.png" alt="" />
+  <img src="problem2.png" alt="" />
+  <img src="problem3.png" alt="" />
 </p>
 <p class="images">
-  <img src="problem1a.png" alt=""/>
-  <img src="problem2a.png" alt=""/>
-  <img src="problem3a.png" alt=""/>
+  <img src="problem1a.png" alt="" />
+  <img src="problem2a.png" alt="" />
+  <img src="problem3a.png" alt="" />
 </p>
 <p class="images">
-  <img src="pr1.png" alt=""/>
-  <img src="pr2.png" alt=""/>
-  <img src="pr3.png" alt=""/>
+  <img src="pr1.png" alt="" />
+  <img src="pr2.png" alt="" />
+  <img src="pr3.png" alt="" />
 </p>
 <p>
   The common approach to doing many things in GIMP is to first get a good selection. However, when removing an anti-aliased object from its background 
   is not a good idea, as shown above. You'll note that each of the three zoomed in selections above have varying amounts of the green-blue mix selected.
   When these are filled, we are left with flat black and slightly blueish-green pixels between them, or no transition to black at all.
   Compare each with the target image below. The left one has a blue border around it. This looks somewhat neat, but not what we're going for. The middle
-  one is close, but there are some ugly visble pixels still. You can try getting rid of all the ugly pixels, but then you'll end up with something jagged like on the right.
+  one is close, but there are some ugly visble pixels still. You can try getting rid of all the ugly pixels, 
+  but then you'll end up with something jagged like on the right.
   You can spend hours trying to find something that will work perfectly, but you won't. Anything short of the rightmost image has some blue in the pixel,
   which will stick out. You can go too far, and blend it back to something close, but this is time consuming. Instead, may I suggest the rest of the tutorial?
 </p>
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="menu.png" alt=""/>
+  <img src="menu.png" alt="" />
 </p>
 <p>
   The first step is to activate the color to alpha plug-in. Its menu location is 
@@ -55,15 +59,15 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="select_bg.png" alt=""/>
+  <img src="select_bg.png" alt="" />
 </p>
 <p>
-  Next use the <img src="picker_button.png" alt=""/> Color Picker Tool to select the background color. 
+  Next use the <img src="picker_button.png" alt="" /> Color Picker Tool to select the background color. 
 </p>
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="dnd.png" alt=""/>
+  <img src="dnd.png" alt="" />
 </p>
 <p>
   When you used the color picker to select the background, a window with the color popped up. Click, hold, and drag from the color portion of this
@@ -73,8 +77,8 @@
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="pr_alpha.png" alt=""/>
-  <img src="solution_zoom.png" alt=""/>
+  <img src="pr_alpha.png" alt="" />
+  <img src="solution_zoom.png" alt="" />
 </p>
 <p>
   There should now be a nice green and alpha image with no trace of the blue left. Next add the new background.
@@ -82,7 +86,7 @@
 
 <h2>Step 5</h2>
 <p class="images">
-  <img src="layer_create.png" alt=""/>
+  <img src="layer_create.png" alt="" />
 </p>
 <p>
   Now create a New Layer (have Forground set to Red when you do this). Lower the newly created layer.
@@ -90,7 +94,7 @@
 
 <h2>Final</h2>
 <p class="images">
-  <img src="pr_red.png" alt=""/>
+  <img src="pr_red.png" alt="" />
 </p>
 <p>
  The image should now be green on red, with no trace of blue!

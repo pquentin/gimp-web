@@ -4,6 +4,9 @@
 <link style type="text/css" rel="alternate stylesheet" type="text/css" title="helvetix fixes" href="http://oak.mysterious.org:8082/style/helvetix-fixes.css" />
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Basic Scheme</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Grobgeld_Dov">Dov Grobgeld</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>

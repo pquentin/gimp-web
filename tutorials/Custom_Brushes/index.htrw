@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Custom Brushes Tutorial</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Lad_Gautam_N">Gautam N. Lad</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>

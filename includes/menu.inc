@@ -3,7 +3,7 @@
           <a href="/about/">About GIMP</a><br/>
           <a href="/resources/">Resources</a><br/>
           <a href="/registry.html">Plug-In Registry</a><br/>
-          <a href="/documentation.html">Documentation</a><br/>
+          <a href="/docs/">Documentation</a><br/>
           <a href="/tutorials/">Tutorials</a><br/>
           <a href="/bugs/">Bugs</a><br/>
           <a href="/development.html">Development</a><br/>

@@ -170,7 +170,6 @@ def preview(form):
     fp.write(form["image"].value)
     fp.close()
     os.system("convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
-    wgo.displaycmd("which convert")
   except Exception, e:
     try: os.remove(image_path)
     except: pass

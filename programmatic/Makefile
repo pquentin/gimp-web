@@ -2,7 +2,7 @@
 #
 include Makefile.defs
 
-all: usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest
+all: usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest about
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>target"; exit 1; fi
@@ -41,6 +41,8 @@ admin: wgo_config.py
 contest: wgo_config.py
 	cd contest && $(MAKE) all
 
+about: wgo_config.py
+	cd about && $(MAKE) all
 extended.css:
 
 rdf-news.css: rdf-news.cpp
@@ -50,15 +52,16 @@ clean mrproper:
 	cd contest && $(MAKE) clean
 	cd admin && $(MAKE) clean
 
-install: install-common install-admin install-contest
+install: install-common install-admin install-contest install-about
 
 install-common: all
 	install --mode=755 -d ${LIBDIR}
-	install             wgo_config.py ${LIBDIR}
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py   > ${LIBDIR}/wgo.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xhtml.py > ${LIBDIR}/xhtml.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' rdf.py   > ${LIBDIR}/rdf.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xml.py   > ${LIBDIR}/xml.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py       > ${LIBDIR}/wgo.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xhtml.py     > ${LIBDIR}/xhtml.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' rdf.py       > ${LIBDIR}/rdf.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' x_xml.py     > ${LIBDIR}/x_xml.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' changelog.py > ${LIBDIR}/changelog.py
+	install            wgo_config.py ${LIBDIR}
 	install --mode=644 extended.css  ${DocumentRoot}/style/
 	install --mode=644 rdf-news.css  ${DocumentRoot}/style/
 
@@ -67,6 +70,9 @@ install-admin: admin
 
 install-contest: contest
 	cd contest && $(MAKE) install
+
+install-about: about
+	cd about && $(MAKE) install
 
 dirs: wgo_config.py
 	cd admin && $(MAKE) dirs

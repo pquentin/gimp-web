@@ -39,7 +39,7 @@ def error(text):
 # This is highly dependent upon the layout in the include files, which
 # makes this messy. XXX
 #
-def header(title, css_list, left_menu):
+def header(title, links, left_menu):
   extended_css = "/style/extended.css"
   
   print
@@ -47,14 +47,11 @@ def header(title, css_list, left_menu):
   print xhtml.title(title)
 
   print xhtml.link(None, {"rel" : "stylesheet", "href" : extended_css, "type" : "text/css", "media" : "screen", "title" : title})
-  for href in css_list:
+
+  for href in links:
     print xhtml.link(None, {"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen", "title" : title})
     pass
 
-
-  print xhtml.include('%s/admin/wgo-admin-head.xhtml' % (config.DocumentRoot_path))
-
-  
   print xhtml.include('%s/includes/header_posttitle.inc' % (config.DocumentRoot_path))
   print xhtml.include(left_menu)
   return (True)

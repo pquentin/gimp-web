@@ -32,135 +32,365 @@ import inspect
 
 sys.path = ['${LIBDIR}'] + sys.path
 
-import xml
+import x_xml
 
-class RDF(xml.xml):
+class RDF(x_xml.xml):
   defaults = {
-      "xmlns:rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "xmlns:" : "http://www.gimp.org/RDF/v0.1"
+      "xmlns:rdf"  : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xmlns:dc"   : "http://purl.org/dc/elements/1.1/",
+      "xmlns:gimp" : "http://www.gimp.org/RDF/v0.1"
       }
   tag = "rdf:RDF"
 
-  class init(xml.xml_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, RDF, attrs))
+      return (x_xml.xml_init.__init__(self, RDF, attrs))
     pass
 
-  class fini(xml.xml_fini):
+  class fini(x_xml.xml_fini):
     def __init__(self):
-      return (xml.xml_fini.__init__(self, RDF))
+      return (x_xml.xml_fini.__init__(self, RDF))
     pass
   pass
 
-class content(xml.xml):
+class content(x_xml.xml):
   defaults = { }
   tag = "content"
 
-  class init(xml.xml_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, content, attrs))
+      return (x_xml.xml_init.__init__(self, content, attrs))
     pass
 
-  class fini(xml.xml_fini):
+  class fini(x_xml.xml_fini):
     def __init__(self):
-      return (xml.xml_fini.__init__(self, content))
+      return (x_xml.xml_fini.__init__(self, content))
     pass
   pass
 
 
-class link(xml.xml):
+class link(x_xml.xml):
   defaults = { }
   tag = "link"
 
-  class init(xml.xml_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, link, attrs))
+      return (x_xml.xml_init.__init__(self, link, attrs))
     pass
 
-  class fini(xml.xml_fini):
+  class fini(x_xml.xml_fini):
     def __init__(self):
-      return (xml.xml_fini.__init__(self, link))
+      return (x_xml.xml_fini.__init__(self, link))
     pass
   
   pass
 
 
-class date(xml.xml):
-  defaults = { }
-  tag = "dc:date"
-
-  class init(xml.xml_init):
-    def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, date, attrs))
-    pass
-
-  class fini(xml.xml_fini):
-    def __init__(self):
-      return (xml.xml_fini.__init__(self, date))
-    pass
-  
-  pass
-
-class channel(xml.xml):
+class channel(x_xml.xml):
   defaults = { }
   tag = "channel"
 
-  class init(xml.xml_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, channel, attrs))
+      return (x_xml.xml_init.__init__(self, channel, attrs))
     pass
 
-  class fini(xml.xml_fini):
+  class fini(x_xml.xml_fini):
     def __init__(self):
-      return (xml.xml_fini.__init__(self, channel))
+      return (x_xml.xml_fini.__init__(self, channel))
     pass
   
   pass
 
-class title(xml.xml):
+class title(x_xml.xml):
   defaults = { }
   tag = "title"
 
-  class init(xml.xml_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, title, attrs))
+      return (x_xml.xml_init.__init__(self, title, attrs))
     pass
 
-  class fini(xml.xml_fini):
+  class fini(x_xml.xml_fini):
     def __init__(self):
-      return (xml.xml_fini.__init__(self, title))
+      return (x_xml.xml_fini.__init__(self, title))
     pass
   
   pass
 
-class description(xml.xml):
+class description(x_xml.xml):
   defaults = { }
   tag = "description"
 
-  class init(xml.xml_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, description, attrs))
+      return (x_xml.xml_init.__init__(self, description, attrs))
     pass
 
-  class fini(xml.xml_fini):
+  class fini(x_xml.xml_fini):
     def __init__(self):
-      return (xml.xml_fini.__init__(self, description))
+      return (x_xml.xml_fini.__init__(self, description))
     pass
   
   pass
 
-class item(xml.xml):
+class item(x_xml.xml):
   defaults = { }
   tag = "item"
 
-  class init(xml.xml_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xml.xml_init.__init__(self, item, attrs))
+      return (x_xml.xml_init.__init__(self, item, attrs))
     pass
 
-  class fini(xml.xml_fini):
+  class fini(x_xml.xml_fini):
     def __init__(self):
-      return (xml.xml_fini.__init__(self, item))
+      return (x_xml.xml_fini.__init__(self, item))
     pass
   
   pass
+
+# Dublin Core Metadata Element Set
+# http://web.resource.org/rss/1.0/modules/dc/
+
+class dc_title(x_xml.xml):
+  defaults = { }
+  tag = "dc:title"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_creator(x_xml.xml):
+  defaults = { }
+  tag = "dc:creator"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_subject(x_xml.xml):
+  defaults = { }
+  tag = "dc:subject"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_description(x_xml.xml):
+  defaults = { }
+  tag = "dc:description"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+
+class dc_publisher(x_xml.xml):
+  defaults = { }
+  tag = "dc:publisher"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_contributor(x_xml.xml):
+  defaults = { }
+  tag = "dc:contributor"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_date(x_xml.xml):
+  defaults = { }
+  tag = "dc:date"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_type(x_xml.xml):
+  defaults = { }
+  tag = "dc:type"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_format(x_xml.xml):
+  defaults = { }
+  tag = "dc:format"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_identifier(x_xml.xml):
+  defaults = { }
+  tag = "dc:identifier"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_source(x_xml.xml):
+  defaults = { }
+  tag = "dc:source"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_language(x_xml.xml):
+  defaults = { }
+  tag = "dc:language"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_relation(x_xml.xml):
+  defaults = { }
+  tag = "dc:relation"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_coverage(x_xml.xml):
+  defaults = { }
+  tag = "dc:coverage"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+
+class dc_rights(x_xml.xml):
+  defaults = { }
+  tag = "dc:rights"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, date, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, date))
+    pass
+  
+  pass
+

@@ -33,7 +33,7 @@ import sys
 import time
 import types
 
-sys.path.append('${LIBDIR}')
+sys.path = ['${LIBDIR}'] + sys.path
 
 import xhtml
 import wgo

@@ -1,7 +1,7 @@
 # -*- Makefile -*-
 export DocumentRoot=""
 export LIBDIR=${DocumentRoot}/cgi-common
-export PYTHONPATH:=.:${LIBDIR}:${PYTHONPATH}
+export PYTHONPATH:=${LIBDIR}:${PYTHONPATH}
 export PYTHON?=python2.2
 
 # a few convenient transforms for making cgi scripts, css files, and
@@ -9,10 +9,13 @@ export PYTHON?=python2.2
 %.css: %.cpp
 	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $< $@
 
+%.css: %.cPP
+	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $< $@
+
 %.cgi: %.py
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@
-	chmod a+rx $@
+	chmod 755 $@
 
 %: %.sh
-	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@
-	chmod a+rx $@
+	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${DocumentRoot}|${DocumentRoot}|g' $< > $@
+	chmod 755 $@

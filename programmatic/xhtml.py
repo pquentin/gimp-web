@@ -22,6 +22,12 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
+#
+#  All of this is to make XHTML (1.0) conformant markup.
+#
+#  See accompanying Python scripts for examples of how I use this.
+#
+
 import types
 import string
 import sys
@@ -30,12 +36,11 @@ import cgi
 import base64
 from UserDict import *
 
-import xml
+import x_xml
 
 color = {}
 
 # rfc2396_reserved = [";", "/", "?", ":", "@", "&", "=", "+", "$", ","]
-
 #html_coreattrs = {"id", "class", "style", "title"}
 
 def rawfile(filename):
@@ -124,6 +129,8 @@ def print_form(form, label="Form Contents"):
   print "</div>"
 
   return
+
+##################################################################
 
 class html_attrs(UserDict):
   def __init__(self, attrs):
@@ -315,15 +322,73 @@ class comment(__html__):
     return None
   pass
 
-class list(__html__):
+class xlist(__html__):
   def __init__(self, content=None, attrs={}):
     __html__.__init__(self, content, attrs, "<ul%s>", "</ul>")
     return None
+
+  class init(xyz_init):
+    def __init__(self, attrs={}):
+      a = dict(list.defaults)
+      a.update(attrs)
+      return (xyz_init.__init__(self, a, "<ul%s>"))
+    pass
+  
+  class fini(xyz_fini):
+    def __init__(self, attrs={}):
+      return (xyz_fini.__init__(self, "</ul>"))
+    pass
 
   class item(__html__):
     def __init__(self, content=None, attrs={}):
       __html__.__init__(self, content, attrs, "<li%s>", "</li>")
       return None
+    pass
+  pass
+
+
+class face_tt(x_xml.xml):
+  defaults = { }
+  tag = "tt"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, face_tt, attrs))
+    pass
+  
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, face_tt))
+    pass
+
+
+class list(x_xml.xml):
+  defaults = { }
+  tag = "ul"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, list, attrs))
+    pass
+  
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, list))
+    pass
+
+  class item(x_xml.xml):
+    defaults = { }
+    tag = "li"
+
+    class init(x_xml.xml_init):
+      def __init__(self, attrs={}):
+        return (x_xml.xml_init.__init__(self, list.item, attrs))
+      pass
+  
+    class fini(x_xml.xml_fini):
+      def __init__(self):
+        return (x_xml.xml_fini.__init__(self, list.item))
+      pass
     pass
   pass
 
@@ -475,7 +540,22 @@ class head(__html__):
     pass
   pass
 
-class text(__html__):
+class text(x_xml.xml):
+  defaults = { }
+  tag = None
+  
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, text, attrs))
+    pass
+  
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, text))
+    pass
+  pass
+
+class xtext(__html__):
   def __init__(self, content=None, attrs={}):
     __html__.__init__(self, content, attrs, "", "")
     return None
@@ -610,7 +690,7 @@ class script(__html__):
 
 class pre(__html__):
   def __init__(self, content=None, attrs={}):
-    __html__.__init__(self, escape(content), attrs, "<pre%s>", "</pre>")
+    __html__.__init__(self, quote(content), attrs, "<pre%s>", "</pre>")
     return None
 
   class init(xyz_init):

@@ -71,7 +71,7 @@ def generate_rdf(queue):
   print >>fp, rdf.RDF.init()
   
   print >>fp, rdf.link("http://mmmaybe.gimp.org")
-  print >>fp, rdf.date(time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+  print >>fp, rdf.dc_date(time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
   print >>fp, rdf.channel(rdf.title('GIMP Dot Org')
                           + rdf.description('gimp.org news')
                           + rdf.link('http://mmmaybe.gimp.org'),

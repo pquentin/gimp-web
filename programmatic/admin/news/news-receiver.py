@@ -37,7 +37,7 @@ import types
 import cgi
 import mailbox
 
-sys.path.append('${LIBDIR}')
+sys.path = ['${LIBDIR}'] + sys.path
 
 import xhtml
 import wgo

@@ -17,7 +17,7 @@
 	slashes to directory links (thanks to UnNamed for spotting this)
 
 	* includes/linkbar.inc: added links to /books.html and
-	/mailinglists.html
+	/maillists.html
 
 	* books.html: file added
 	

@@ -1,3 +1,8 @@
+2002-11-20 scizzo <scizzo@gimp.org>
+
+        * tutorials/index.html: Add the Perlotine and Image Map tutorials
+        to the list of HTML tutorials.
+
 2002-11-19 scizzo <scizzo@gimp.org>
 
         * tutorials/Photo_Edit/*/index.html: Fixed the class tags for the filters.

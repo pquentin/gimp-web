@@ -29,7 +29,7 @@
   the selection tools to draw simple or complex shapes.
 </p>
 <p>
-  <a href="Bezier_Selections/">Bezier Selections</a>  Use bezier curves like The GIMP Masters do.
+  <a href="Bezier_Selections/">Paths (Bezier Selections)</a>  Use paths (bezier curves) like The GIMP Masters do.
 </p>
 <p>
   <a href="Quickmask/">Quickmask</a> Use Quickmask to make a vignette of your photos.
@@ -46,8 +46,8 @@
 
 <h2><a name="Intermediate"></a>Intermediate</h2>
 <p>
-  <a href="Drawing_Shapes/">Drawing Shapes With Bezier</a> Make a dimensional box
-  with bezier curves and gradients.
+  <a href="Drawing_Shapes/">Drawing Shapes With Paths</a> Make a dimensional box
+  with paths (bezier curves) and gradients.
 </p>
 <p>
   <a href="Anti-Aliased_Threshold/">Anti-Aliased Threshold</a>  Use curves and modes

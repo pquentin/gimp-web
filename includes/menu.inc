@@ -1,6 +1,6 @@
         <td id="menu">
           <a href="/index.html">News</a><br/>
-          <a href="/about.html">About GIMP</a><br/>
+          <a href="/about/">About GIMP</a><br/>
           <a href="/resources.html">Resources</a><br/>
           <a href="/registry.html">Plug-In Registry</a><br/>
           <a href="/documentation.html">Documentation</a><br/>

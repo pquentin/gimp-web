@@ -12,6 +12,7 @@ CVS
 *~
 .#*
 /news
+/contest/gallery
 /includes/news.inc
 /programmatic
 /crontab

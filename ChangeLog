@@ -1,3 +1,7 @@
+2003-02-09  Manish Singh  <yosh@gimp.org>
+
+	* install.exclude: exclude contest gallery directory
+
 2003-02-10  Carol Spears  <carol@gimp.org>
 
         * Changed some Linux to GNU/Linux:

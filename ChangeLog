@@ -1,6 +1,17 @@
+2003-02-27  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Deleted programmatic/about/changelog-xhtml.css
+        * Deleted programmatic/about/changelog-xhtml-mono.css
+        * Deleted programmatic/about/film-gimp
+        * Deleted programmatic/about/gegl-unstable
+        * Deleted programmatic/about/gimp-unstable
+        * Deleted programmatic/about/gimp-print
+
+        They are all build targets which I inadvertently checked in.
+
 2003-02-27  Manish Singh  <yosh@gimp.org>
 
-	* moved to gnomecvs
+        * moved to gnomecvs
 
 2003-02-24  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 

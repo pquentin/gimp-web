@@ -1,3 +1,8 @@
+2002-12-11 spiderworm <dimillet@hotmail.com>
+
+	* developer/bugzilla-fixed-test.cgi: added this to test the python web modules on
+	the server, will remove later.
+
 2002-12-10 carol <carol@gimp.org>
 
 	* develop/, includes/menu.inc:  i got a CVS directory into the wrong develop___/  

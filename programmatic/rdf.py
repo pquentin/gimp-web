@@ -159,12 +159,12 @@ class dc_title(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_title, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_title))
     pass
   
   pass
@@ -175,12 +175,12 @@ class dc_creator(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_creator, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_creator))
     pass
   
   pass
@@ -191,12 +191,12 @@ class dc_subject(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_subject, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_subject))
     pass
   
   pass
@@ -207,12 +207,12 @@ class dc_description(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_description, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_description))
     pass
   
   pass
@@ -224,12 +224,12 @@ class dc_publisher(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_publisher, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_publisher))
     pass
   
   pass
@@ -240,12 +240,12 @@ class dc_contributor(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_contributor, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_contributor))
     pass
   
   pass
@@ -256,12 +256,12 @@ class dc_date(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_date, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_date))
     pass
   
   pass
@@ -272,12 +272,12 @@ class dc_type(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_type, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_type))
     pass
   
   pass
@@ -288,12 +288,12 @@ class dc_format(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_format, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_format))
     pass
   
   pass
@@ -304,12 +304,12 @@ class dc_identifier(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_identifier, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_identifier))
     pass
   
   pass
@@ -320,12 +320,12 @@ class dc_source(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_source, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_source))
     pass
   
   pass
@@ -336,12 +336,12 @@ class dc_language(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_language, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_language))
     pass
   
   pass
@@ -352,12 +352,12 @@ class dc_relation(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_relation, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_relation))
     pass
   
   pass
@@ -368,12 +368,12 @@ class dc_coverage(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_coverage, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_coverage))
     pass
   
   pass
@@ -384,12 +384,12 @@ class dc_rights(x_xml.xml):
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (x_xml.xml_init.__init__(self, date, attrs))
+      return (x_xml.xml_init.__init__(self, dc_rights, attrs))
     pass
 
   class fini(x_xml.xml_fini):
     def __init__(self):
-      return (x_xml.xml_fini.__init__(self, date))
+      return (x_xml.xml_fini.__init__(self, dc_rights))
     pass
   
   pass

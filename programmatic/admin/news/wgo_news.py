@@ -39,7 +39,10 @@ import sys
 import time
 import types
 
+sys.path = ['${LIBDIR}'] + sys.path
+
 import wgo
+import rdf
 import wgo_queue
 import news_config as config
 
@@ -159,12 +162,11 @@ class news:
   def as_rdf(self):
     iso_date = time.strftime("%Y-%m-%dT%H:%M:%SZ",  rfc822.parsedate(self["date"]))
 
-    s = '<item rdf:about="http://www.w3.org/News/2003#item9">'
-    s += '<title>' + self["subject"] + '</title>\n'
-    s += '<description>' + self["body"] + '</description>\n'
-    s += '<link>http://mmmaybe.gimp.org/</link>\n'
-    s += '<dc:date>' + xhtml.quote(iso_date) + '</dc:date>\n'
-    s += '</item>\n'
+    s = rdf.item(rdf.title(self["subject"])
+                 + rdf.description(self["body"])
+                 + rdf.link("http://mmmaybe.gimp.org")
+                 + rdf.dc_date(xhtml.quote(iso_date)),
+                 about={'rdf:about' : "http://www.w3.org/News/2003#item9"})
     return (s)
   
   def to_queue(self, queue):

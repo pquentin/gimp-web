@@ -1,5 +1,10 @@
 2004-12-10  Michael Schumacher <schumaml@cvs.gnome.org>
 
+	* about/selling.htrw: fixed minor spelling error. Fixes bug
+	#156508
+	
+2004-12-10  Michael Schumacher <schumaml@cvs.gnome.org>
+
 	* source/index.htrw: changed links to fontconfig from
 	http://x2.freedesktop.org/software/fontconfig to 
 	http://freedesktop.org/fontconfig/release/

@@ -69,7 +69,7 @@
           Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, 
           Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, 
           Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, 
-          Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, 
+          Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item, Some boring news item 
         </td>
       </tr>
     </table>

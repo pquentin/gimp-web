@@ -1,5 +1,11 @@
 2005-01-26  Raphaël Quinet  <raphael@gimp.org>
 
+	* programmatic/downloads/MIRRORS: synced this file with the master
+	list on the ftp site: removed outdated mirror in France, updated
+	the other french mirror according to bug #162793.
+
+2005-01-26  Raphaël Quinet  <raphael@gimp.org>
+
 	* windows/index.htrw: Tor does not provide GIMP packages anymore,
 	so his packages are only for developers.  In addition, mention
 	that Windows 95 is not supported by GTK+ 2.4 (and GIMP 2.2).

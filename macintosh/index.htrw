@@ -71,10 +71,11 @@ to run the GIMP on your Macintosh:</p>
   <li>X Windowing Layer<br /> 
   The GIMP uses a separate windowing layer, the X11 windowing
   protocol, on Mac OS X, which must be installed first.  There are
-  various ways to install an X11 protocol window server.  The XDarwin
-  project provides this functionality.  Apple has recently started
-  building their own version of this windowing layer, based on XFree86,
-  which is called X11.app.  It is available as a beta release from <a
+  various ways to install an X11 protocol window server.  The <a
+  href="http://www.xdarwin.org/">XDarwin project</a> provides this
+  functionality.  Apple has recently started building their own
+  version of this windowing layer, based on XFree86, which is called
+  X11.app.  It is available as a beta release from <a
   href="http://www.apple.com/macosx/x11">www.apple.com/macosx/x11/</a>.</li>
 
   <li>dlcompat<br /> 

@@ -1,4 +1,7 @@
-2003-09-21  Raphael Quinet  <quinet@gamers.org>
+2003-09-22  Raphael Quinet  <quinet@gamers.org>
+
+	* macintosh/index.htrw: Added direct link to the XDarwin project,
+	as suggested by Mat Caughron.
 
 	* ChangeLogs/1.2.3/*
 	* ChangeLogs/*: Removed all these files.  They will have to be

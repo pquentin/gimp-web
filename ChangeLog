@@ -1,3 +1,8 @@
+2004-03-23  Sven Neumann  <sven@gimp.org>
+
+	* unix/index.htrw: threw out some outdated stuff and put a link to
+	the Fedora RPM packages by drc.
+
 2004-03-23  Niklas M <scizzo@gimp.org>
 
 	* downloads/index.htrw: Fixed download link for stable.

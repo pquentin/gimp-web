@@ -11,45 +11,18 @@
 systems.  In addition to the source code distribution here on
 www.gimp.org, you can get binaries for various flavors of Unix.</p>
 
+<p>
+At the moment we know about the following binary packages for GIMP 2.0
+on Unix:
 <ul>
-  <li>Most <b>Linux</b> distributions include the GIMP in their list
-  of packages.  If you have a GNU/Linux system, the easiest way to
-  install the GIMP is to use the packages provided by your
-  distributor.  Using these packages will also ensure that all
-  dependencies are satisfied.<br />
-  Even if your distribution does not have the latest version, you may
-  still be able to get it in the appropriate binary packages: some
-  GIMP users provide their own updated packages and make them
-  available for download.  Some of them are announced on our news
-  page, some others can be found via <a
-  href="http://rpmfind.net/linux/rpm2html/search.php?query=gimp">rpmfind</a>
-  or other search services.</li>
-
-  <li>For <b>Solaris</b>, some GIMP packages can be found on <a
-  href="http://www.sunfreeware.com/">sunfreeware</a>.  They may also
-  be found on some supplemental free software CDs distributed with
-  Solaris.</li>
-
-  <li>For <b>AIX</b>, you can find some packages from the <a
-  href="http://aixpdslib.seas.ucla.edu/packages/gimp.html">AIX PDSLIB
-  site</a> and the necessary libraries in any mirror of
-  ftp.gimp.org, in <code>gtk/binary/AIX/</code>.</li>
-
-  <li>For <b>IRIX</b>, you can have a look at <a
-  href="http://www.easysw.com/~mike/gimp/">Mike Sweet's page</a>.</li>
-
-  <li>Various versions of the GIMP have been reported to work on other
-  systems, such as <b>FreeBSD</b>, <b>HP-UX</b>, <b>OSF/1</b> and
-  others.  If you are willing to provide some packages for one of
-  these systems for download from your site, please <a
-  href="wgo:webmasters">contact us</a> and we will add a link to your
-  site here.</li>
+ <li><a href="ftp://ftp.gimp.org/pub/users/drc">Fedora Core 1 (RPM)</a>
 </ul>
+</p>
 
-<p>If you cannot find a pre-compiled package for your system or if it
-is too old, then you should <a href="/source/">build and install the
-GIMP from the source code</a>.  This is not that hard, so don't be
-afraid and give it a try.</p>
+<p>If you cannot find a pre-compiled package of GIMP 2.0 for your
+system, you can <a href="/source/">build and install the GIMP from the
+source code</a>.  This is not that hard, so don't be afraid and give
+it a try.</p>
 
 <h2>Requirements</h2>
 

@@ -1,3 +1,11 @@
+2004-03-22  Henrik Brix Andersen  <brix@gimp.org>
+
+	* macintosh/index.htrw: added a link to
+	http://gimp-app.sourceforge.net/
+
+	* includes/wgo-page-init.xhtml: removed reference to OS/2 pages as
+	there is no OS/2 support for GIMP 2.0.
+
 2004-03-22  Raphaël Quinet  <quinet@gamers.org>
 
 	* programmatic/downloads/MIRRORS: Added new mirror in the

@@ -23,6 +23,10 @@ an easier task. These include:</p>
   installs the GIMP in <code>/opt/local/bin</code>.  MacGIMP efforts
   are led by <a href="mail:People-Caughron-Mat">Mat Caughron</a>.</li>
 
+  <li><a href="http://gimp-app.sourceforge.net/">Gimp.app</a> provides
+  a self contained application bundle of the GIMP for OS X. Gimp.app
+  requires Apples X11.app</li>
+
   <li><a
   href="http://fink.sourceforge.net/pdb/package.php/gimp">Fink</a> is
   a package management system hosted by <a

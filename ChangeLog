@@ -1,12 +1,11 @@
+2002-10-05  carol <carol@gimp.org>
+
+	* tutorials/index.html: corrected the link to the Straight Line Tutorial
+	
 2002-10-05  scizzo <scizzo@se.debian.net>
 
 	* tutorials/Straight_Line/: Added the Straight_Line tutorial.
 	
-2002-10-03  carol  <carol@gimp.org>
-
-	* README.repository: added instructions to edit ChangeLog and then
-	  to paste the ChangeLog entry into the cvs log.
-
 2002-10-02  scizzo  <scizzo@fungus>
 
 	* README.tutorials:

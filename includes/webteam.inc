@@ -1,3 +1,10 @@
+<div class="heading"><span class="title">The GIMP Core Team</span><span class="date"></span>&nbsp;</div>
+<div class="item">
+    <ul>
+      <li>Release Maintainer, N. N.</li>
+    </ul>
+</div>
+
 <div class="heading"><span class="title">The GIMP Web Team</span><span class="date"></span>&nbsp;</div>
 <div class="item">
     <ul>

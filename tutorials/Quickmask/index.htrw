@@ -12,7 +12,7 @@
   <img src="blur-15.jpg" alt="" />
 </p>
 <p>
-  This tutorial shows how you can do vignette effects using a new feature of GIMP called QuickMask.
+  This tutorial shows how you can do vignette effects using a feature of GIMP called QuickMask.
   QuickMask is a convenient way to modify selections using pixel-changing tools such as the paintbrush, eraser, or any plug-in filter.
   It lets you make very precise adjustments to your selections. This tutorial doesn't use QuickMask for complex masking; it's intended
   to show how you can use it to create quick and easy vignette effects.
@@ -24,7 +24,7 @@
 </p>
 <p>
   For your first step, load up an image. Any image will do.
-  GIMP 1.1.7, a development version of GIMP, introduced QuickMask. The QuickMask control buttons are located at the lower-left side of the image.
+  GIMP 1.1.7, a development version of GIMP, introduced QuickMask. The QuickMask control button is located at the lower-left side of the image.
 </p>
 
 <h2>Step 2</h2>
@@ -94,7 +94,7 @@
   <img src="newsprint.png" alt="" />
 </p>
 <p>
-  I used some blurring and the <span class="filter">&lt;Image&gt; Filters -&gt; Render -&gt; Newsprint</span> plugin to get this effect.
+  I used some blurring and the <span class="filter">&lt;Image&gt; Filters -&gt; Distorts -&gt; Newsprint</span> plugin to get this effect.
 </p>
 
 <p class="images">

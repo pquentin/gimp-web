@@ -5,30 +5,21 @@
 
 <h1>Tutorials</h1>
 
-<h2>Beginner</h2>
+<p>[<a href="#Beginner">Beginner</a>
+| <a href="#Intermediate">Intermediate</a>
+| <a href="#Expert">Expert</a>
+| <a href="#Photo">Photo Editing</a>
+| <a href="#Web">Web</a>
+| <a href="#Script">Script Authoring</a>]</p>
+
+<h2><a name="Beginner"></a>Beginner</h2>
 <p>
   <a href="Lite_Quickies/">GIMPLite Quickies</a>  Use The GIMP for your graphics
   needs without learning advanced computer graphics methods.
 </p>
 <p>
-  <a href="The_Basics/">The Basics</a>  The famous &quot;GIMP Floating Logos&quot; 
-  rescued from the original GIMP web site and slightly modified to fit here.  Even
-  if you hate images of text on the web, this tutorial gives you some of the basic
-  layer manipulation techniques.  The knowledge can be applied to many many imaging
-  projects and the logo *is* pretty cool ... 
-</p>
-<p>
-  <a href="Straight_Line/">Straight Line Tutorial</a>  'Tis somewhat rude. Perhaps the
-  exact right frame of mind which to approach The GIMP with though, at least 
-  the first few times ....
-</p>
-<p>
-  <a href="Borders_On_Selections/">Borders On Selections</a>  Use curves and modes
-  to transform your photo into a pen and ink watercolor like image. 
-</p>
-<p>
-  <a href="Anti-Aliased_Threshold/">Anti-Aliased Threshold</a>  Use curves and modes
-  to transform your photo into a pen and ink watercolor like image. 
+  <a href="Borders_On_Selections/">Draw On Selections Borders</a>  Use
+  the selection tools to draw simple or complex shapes.
 </p>
 <p>
   <a href="Bezier_Selections/">Bezier Selections</a>  Use bezier curves like The GIMP Masters do.
@@ -41,13 +32,19 @@
   of removing red eye from photos.
 </p>
 <p>
-  <a href="Custom_Brushes/">Custom Brushes</a> Make custom brushes for your GIMP.
+  <a href="Straight_Line/">Straight Line Tutorial</a>  'Tis somewhat rude. Perhaps the
+  exact right frame of mind which to approach The GIMP with though, at least 
+  the first few times ....
 </p>
 
-<h2>Intermediate</h2>
+<h2><a name="Intermediate"></a>Intermediate</h2>
 <p>
   <a href="Drawing_Shapes/">Drawing Shapes With Bezier</a> Make a dimensional box
   with bezier curves and gradients.
+</p>
+<p>
+  <a href="Anti-Aliased_Threshold/">Anti-Aliased Threshold</a>  Use curves and modes
+  to transform your photo into a pen and ink watercolor like image. 
 </p>
 <p>
   <a href="Film_Grain/">Film Grain</a> Give your photos the appearence of film grain
@@ -65,7 +62,14 @@
   <a href="Coloring_A_BW_Sketch/">Coloring A BW Sketch</a> Color sketches anime style.
 </p>
 <p>
-  <a href="3d_Logo/">3-d Floating Logo</a> Another GIMP Floating Logo method, this one uses modes
+  <a href="The_Basics/">Simple Floating Logo</a>  The famous &quot;GIMP Floating Logos&quot; 
+  rescued from the original GIMP web site and slightly modified to fit here.  Even
+  if you hate images of text on the web, this tutorial gives you some of the basic
+  layer manipulation techniques.  The knowledge can be applied to many many imaging
+  projects and the logo *is* pretty cool ... 
+</p>
+<p>
+  <a href="3d_Logo/">3D Floating Logo</a> Another GIMP Floating Logo method, this one uses modes
   along with layers and select tools.
 </p>
 <p>
@@ -75,8 +79,11 @@
 <p>
  <a href="Simple_Animations/">Simple Animations</a> Learn how to work with GIMP's layers as animation frames.
 </p>
+<p>
+  <a href="Custom_Brushes/">Custom Brushes</a> Make custom brushes for your GIMP.
+</p>
 
-<h2>Expert</h2>
+<h2><a name="Expert"></a>Expert</h2>
 <p>
   <a href="Image_Pipes/">Make GIMP Image Pipes</a> Rank and Dimension.  The GIMP's
   Image Pipes can do alot.  
@@ -106,9 +113,12 @@
  <a href="Advanced_Animations/">Advanced Animations</a> Learn how to make an animation with GAP.
 </p>
 
-<h2>Photo Editing</h2>
+<h2><a name="Photo"></a>Photo Editing</h2>
 <p>
   <a href="Color2BW/">Color2BW</a> Converting Color Images to B&amp;W.
+</p>
+<p>
+  <a href="Selective_Color/">Selective Colorization</a> Convert images to black and white and restore color selectively.
 </p>
 <p>
   <a href="Reducing_CCD_Noise/">Reducing CCD Noise</a> Learn how to reduce the CCD Noise in photos.
@@ -134,11 +144,8 @@
 <p>
   <a href="Smart_Sharpening/">"Smart" Sharpening</a> Sharpen images without making noise more noticable.
 </p>
-<p>
-  <a href="Selective_Color/">Selective Colorization</a> Convert images to black and white and restore color selectively.
-</p>
 
-<h2>HTML</h2>
+<h2><a name="Web"></a>Web</h2>
 <p>
   <a href="Perlotine/">Perlotine</a> Get your image in place with the help of perlotine and tables.
 </p>
@@ -147,7 +154,7 @@
 </p>
 
 
-<h2>Script Authoring (Presented Alphabetically)</h2>
+<h2><a name="Script"></a>Script Authoring</h2>
 <p>
   <a href="Drawables/">Working With The Image</a> Before you script, know what an
   image is and isn't and what a drawable is. Or at least be able to take a good guess
@@ -168,6 +175,12 @@
   <a href="Basic_Scheme2/">GIMP Script-Fu 2</a> Another Write Scheme for The GIMP.
 </p>
 
+<p>[<a href="#Beginner">Beginner</a>
+| <a href="#Intermediate">Intermediate</a>
+| <a href="#Expert">Expert</a>
+| <a href="#Photo">Photo Editing</a>
+| <a href="#Web">Web</a>
+| <a href="#Script">Script Authoring</a>]</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,8 @@
+2003-08-23  Raphael Quinet  <raphael@gamers.org>
+
+	* tutorials/index.htrw: Re-ordered the links to some tutorials and
+	improved the description of some of them.  Fixes bug #111699.
+
 2003-08-22  Henrik Brix Andersen  <brix@gimp.org>
 
 	* bugs/index.htrw

@@ -1,5 +1,17 @@
 2003-04-13  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * Fixed tutorial/Borders_On_Selections
+        * Fixed tutorial/Anti_Aliased_Threshold
+        * Fixed tutorial/Quickmask
+        * Fixed tutorial/Red_Eye_Removal
+        * Fixed tutorial/Custom_Brushes
+        * Fixed tutorial/3d_Logo
+        * Fixed tutorial/Image_Pipes2
+        * Fixed tutorial/Golden_Text
+        * Fixed tutorial/Photo_To_Sketch
+        * Fixed tutorial/Creating_Icons
+        * Fixed tutorial/Using_Gap
+        * Fixed tutorial/Advanced_Animations
         * Fixed tutorial/Reducing_CCD_Noise
         * Fixed tutorial/ContrastMask
         * Fixed tutorial/Sepia_Toning

@@ -13,7 +13,7 @@
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="logo-00.png" alt=""/>
+  <img src="logo-00.png" alt="" />
 </p>
 <p>
   Fire up The GIMP and create a new image. I used a white background at 500px by 200px. I feel this size it adequate as my
@@ -22,7 +22,7 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="logo-01.png" alt=""/>
+  <img src="logo-01.png" alt="" />
 </p>
 <p>
   Start by laying down some text that is wider than 400px and not too thin. I've used a font called Pricedown. The text should 
@@ -33,7 +33,7 @@
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="logo-02.png" alt=""/>
+  <img src="logo-02.png" alt="" />
 </p>
 <p>
   Duplicate the text layer (text) twice. One for the highlight effect (highlight) and one for the shaded part of the effect (lowlight). 
@@ -44,19 +44,20 @@
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="logo-03.png" alt=""/>
+  <img src="logo-03.png" alt="" />
 </p>
 <p>
   Duplicate the text layer again and move it to the top of the Layers stack (use the little up facing arrow head on the Layers, Channels, &amp; Paths dialog). 
   Make sure that Keep Trans. is un-checked and then blur it. I used Gaussian Blur (RLE) at 10 pixels. When I did the original logo, it was set lower than 
   this to make the effect less rounded.
-  <br /><br /> 
+</p>
+<p>
   You will need to make sure that the layer boundary is larger than the layer so that the blur can spread nicely. Step 2 mentions this.
 </p>
 
 <h2>Step 5</h2>
 <p class="images">
-  <img src="logo-04.png" alt=""/>
+  <img src="logo-04.png" alt="" />
 </p>
 <p>
   Duplicate the blurred layer once (tmp1 and tmp2). These layers are used to create the edge lighting for the text.
@@ -64,7 +65,7 @@
 
 <h2>Step 6</h2>
 <p class="images">
-  <img src="logo-05.png" alt=""/>
+  <img src="logo-05.png" alt="" />
 </p>
 <p>
   Nudge one of the blurred layers (tmp1) down and to the right about 5 pixels. The precise number of pixels depends on how blurred and thus how round
@@ -75,7 +76,7 @@
 
 <h2>Step 7</h2>
 <p class="images">
-  <img src="logo-06.png" alt=""/>
+  <img src="logo-06.png" alt="" />
 </p>
 <p>
   Now create a selection using the blurred layer (the one you moved in step 6) using Alpha to Selection. This selection is a precise selection based
@@ -85,7 +86,7 @@
 
 <h2>Step 8</h2>
 <p class="images">
-  <img src="logo-07.png" alt=""/>
+  <img src="logo-07.png" alt="" />
 </p>
 <p>
   Now that the layer is selected...
@@ -93,7 +94,7 @@
 
 <h2>Step 9</h2>
 <p class="images">
-  <img src="logo-08.png" alt=""/>
+  <img src="logo-08.png" alt="" />
 </p>
 <p>
   Select the highlight layer and... 
@@ -101,7 +102,7 @@
 
 <h2>Step 10</h2>
 <p class="images">
-  <img src="logo-09.png" alt=""/>
+  <img src="logo-09.png" alt="" />
 </p>
 <p>
   Cut (edit/cut or <kbd>CTRL+X</kbd> on PC or <kbd>Command+X</kbd> on Mac). This will remove the blurred layers selection from the highlight layer. 
@@ -113,7 +114,7 @@
 
 <h2>Step 11</h2>
 <p class="images">
-  <img src="logo-10.png" alt=""/>
+  <img src="logo-10.png" alt="" />
 </p>
 <p>
   I like to take quasi-breaks while doing some images, and this is one of those times. A good time to roll a cigarette or grab a cup coffee. I also tend
@@ -122,7 +123,7 @@
 
 <h2>Step 12</h2>
 <p class="images">
-  <img src="logo-11.png" alt=""/>
+  <img src="logo-11.png" alt="" />
 </p>
 <p>
   Now we'll add the first elements of 3D-ness to the logo. The original text layer is the base layer for any color you want to add. I'll use grey70,
@@ -132,7 +133,7 @@
 
 <h2>Step 13</h2>
 <p class="images">
-   <img src="logo-12.png" alt=""/>
+   <img src="logo-12.png" alt="" />
 </p>
 <p>
   As you can see, it's starting to look like something now.
@@ -140,7 +141,7 @@
 
 <h2>Step 14</h2>
 <p class="images">
-  <img src="logo-13.png" alt=""/>
+  <img src="logo-13.png" alt="" />
 </p>
 <p>
   Click the blank piece of paper on the Layers, Channels, &amp;  Paths dialog and make a new transparent layer called outline. Move this new layer down the
@@ -149,7 +150,7 @@
 
 <h2>Step 15</h2>
 <p class="images">
-  <img src="logo-14.png" alt=""/>
+  <img src="logo-14.png" alt="" />
 </p>
 <p>
   Select the original text layer (the one you added some color to) and do the Alpha to Selection trick again. 
@@ -161,7 +162,7 @@
 
 <h2>Step 16</h2>
 <p class="images">
-  <img src="logo-15.png" alt=""/>
+  <img src="logo-15.png" alt="" />
 </p>
 <p>
   And this is what it looks like.
@@ -169,7 +170,7 @@
 
 <h2>Step 17</h2>
 <p class="images">
-  <img src="logo-16.png" alt=""/>
+  <img src="logo-16.png" alt="" />
 </p>
 <p>
   Fill the layer with black and deselect (<kbd>CTRL+SHIFT+A</kbd> on PC or <kbd>Command+SHIFT+A</kbd> on Mac). 
@@ -177,14 +178,15 @@
   Now, duplicate that layer and lower the copy below the original outline layer. Make sure that Keep Trans. is not checked, and blur it. 
   I like soft shadows, so I used a Gaussian Blur (RLE) of about 30 pixels. Drop the Opacity of the layer down to about 50 and nudge it 
   to the right and down until it looks okay.
-  <br /><br />
+</p>
+<p>
   A nice way to fill selection areas or layers that have Keep Trans. selected, is to simply drag the color from the 
   toolbox color swatch to the layer.
 </p>
 
 <h2>Step 18</h2>
 <p class="images">
-  <img src="logo-17.png" alt=""/>
+  <img src="logo-17.png" alt="" />
 </p>
 <p>
   This is what the Layers, Channels, &amp; Paths dialog should look like. 
@@ -192,7 +194,7 @@
 
 <h2>Step 19</h2>
 <p class="images">
-  <img src="logo-18.png" alt=""/>
+  <img src="logo-18.png" alt="" />
 </p>
 <p>
   I've duplicated the highlight and lowlight layers and made them all blend with the lower layers using the Overlay mode. This helps to make the edges more 3D.
@@ -200,7 +202,7 @@
 
 <h2>Step 20</h2>
 <p class="images">
-  <img src="logo-19.png" alt=""/>
+  <img src="logo-19.png" alt="" />
 </p>
 <p>
   Create a new transparent layer called rust and select the bezier tool (shown here as the depressed button).
@@ -208,7 +210,7 @@
 
 <h2>Step 21</h2>
 <p class="images">
-  <img src="logo-20.png" alt=""/>
+  <img src="logo-20.png" alt="" />
 </p>
 <p>
   Rust isn't uniform and I've decided to only worry about the lower half of the letters. Use the bezier tool on the new rust 
@@ -217,7 +219,7 @@
 
 <h2>Step 22</h2>
 <p class="images">
-  <img src="logo-21.png" alt=""/>
+  <img src="logo-21.png" alt="" />
 </p>
 <p>
   This. Click inside the bezier path once you close it (close it by clicking one the first node). 
@@ -227,7 +229,7 @@
 
 <h2>Step 23</h2>
 <p class="images">
-  <img src="logo-22.png" alt=""/>
+  <img src="logo-22.png" alt="" />
 </p>
 <p>
   Pick a nice bright orange or brown color for the rust. My site logo used a reddy-borwn color, but here I've chosen a bright orange. 
@@ -238,7 +240,7 @@
 
 <h2>Step 24</h2>
 <p class="images">
-  <img src="logo-23.png" alt=""/>
+  <img src="logo-23.png" alt="" />
 </p>
 <p>
   Change the Layer Mode of the rust layer to Muliply (Burn). 
@@ -246,7 +248,7 @@
 
 <h2>Step 25</h2>
 <p class="images">
-  <img src="logo-24.png" alt=""/>
+  <img src="logo-24.png" alt="" />
 </p>
 <p>
   The image should now look a little like this. Don't worry, it'll look better soon.
@@ -254,7 +256,7 @@
 
 <h2>Step 26</h2>
 <p class="images">
-  <img src="logo-25.png" alt=""/>
+  <img src="logo-25.png" alt="" />
 </p>
 <p>
   With the rust layer selected, add a Layer Mask.
@@ -262,7 +264,7 @@
 
 <h2>Step 27</h2>
 <p class="images">
-  <img src="logo-26.png" alt=""/>
+  <img src="logo-26.png" alt="" />
 </p>
 <p>
   Making sure that you reset the color swatches on the toolbox, use the gradient tool to make a gradient in the Layer Mask so it looks like this. 
@@ -270,7 +272,7 @@
 
 <h2>Step 28</h2>
 <p class="images">
-  <img src="logo-27.png" alt=""/>
+  <img src="logo-27.png" alt="" />
 </p>
 <p>
   The image should now look like this.
@@ -278,7 +280,7 @@
 
 <h2>Final</h2>
 <p class="images">
-  <img src="logo-28.png" alt=""/>
+  <img src="logo-28.png" alt="" />
 </p>
 <p>
   With a little playing around you can get to this. I duplicated the rust layer and moved them (the original rust and the copy) down the stack until 

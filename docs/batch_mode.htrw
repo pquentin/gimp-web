@@ -33,7 +33,7 @@ Options:
   -i, --no-interface      Run without a user interface.
   --batch-interpreter &lt;procedure&gt;
                           The procedure to process batch commands with.
-  -b, --batch &lt;commands&gt;   Process commands in batch mode.
+  -b, --batch &lt;commands&gt;  Process commands in batch mode.
   ...
 </pre>
 <p>

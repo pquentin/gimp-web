@@ -1,3 +1,10 @@
+2004-12-10  Michael Schumacher <schumaml@cvs.gnome.org>
+
+	* source/index.htrw: changed links to fontconfig from
+	http://x2.freedesktop.org/software/fontconfig to 
+	http://freedesktop.org/fontconfig/release/
+	Fixes bug #159449
+
 2004-12-07  Simon Budig <simon@gimp.org>
 
 	* about/splash/contest/index.htrw: Add a link to Mukund's voting

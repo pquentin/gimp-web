@@ -96,10 +96,12 @@ system:</p>
 
 <p>For the development version (2.1.x):</p>
 
-<p>The development version of The GIMP depends on newer versions of
-GLib (at least 2.4.0), GTK+ (at least 2.4.1) and Pango (at least 1.4.0).
-It doesn't add any new dependencies though.
-</p>
+<ul>
+  <li>
+    The development version depends on newer versions of GLib (at
+    least 2.4.0), GTK+ (at least 2.4.1) and Pango (at least 1.4.0).
+  </li>
+</ul>
 
 
 <p>Note that if you compile and install the GIMP from sources, you

@@ -1,6 +1,20 @@
 2003-04-14  Carol Spears  <carol@gimp.org>
 
     * admin/gimp-web-urls, edited, added and such.
+    * about/introduction.html, removed this file.
+    * about/introduction.htrw, added this file.
+    * about/index.htrw, removed the inc containing the important urls.
+    * about/COPYING, added this file.
+    * about/history.html, removed this file.
+    * about/history.htrw, added this file.
+    * about/gimp_splash-unknown.png, added this file.
+    * about/gimp_splash-unknown-t.png, added this file.
+    * about/splash/index.htrw, added this file.
+    * about/splash/stable.htrw, added this file.
+
+2003-04-14  Carol Spears  <carol@gimp.org>
+
+    * admin/gimp-web-urls, edited, added and such.
     * about/index.html, removed this file
     * about/index.htrw, added this file
     * about/ancient_history.htrw stole this from sjburgesilicious and added it.

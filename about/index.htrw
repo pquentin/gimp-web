@@ -4,16 +4,24 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>About GIMP</h1>
-<h2><a href="introduction.html">Introduction to The GIMP</a></h2>
+<h2>Introduction to The GIMP</h2>
 <p>
   GIMP is an acronym for GNU Image Manipulation Program. It
   is a freely distributed program for such tasks
   as photo retouching, image composition and image authoring.
   The terms of usage and rules about copying are clearly listed in the
-  <a name="src-COPYING" href="COPYING">GNU GENERAL PUBLIC LICENSE</a>.
-  (<a href="introduction.html">more ...</a>)
+  <a href="wgo:license">GNU GENERAL PUBLIC LICENSE</a>.
+  (<a href="wgo:about-introduction">more ...</a>)
 </p>
-<!--#include virtual="/includes/urls_important.inc" -->
+<h2>Important URLs</h2>
+  <ul>
+    <li><a href="home:gimp">The GNU Image Manipulation Program</a></li>
+    <li><a href="wgo:license"></a></li>
+    <li><a href="home:gnu">GNU Project</a></li>
+    <li><a href="home:gimp-bugzilla-stable">GIMP Bugzilla</a></li>
+    <li><a href="home:gtk">The GIMP Tool Kit</a></li>
+    <li><a href="home:google">Google</a></li>
+  </ul>
 <h2>GIMP History</h2>
   <ul>
     <li><a href="wgo:about-history">History of The GIMP</a></li>
@@ -32,13 +40,14 @@
     <li><a href="wgo:about-splash-1-1">1.1 Tarball Splash Screens</a></li>
     <li><a href="wgo:about-splash-1-3">1.3 Tarball Splash Screens</a></li>
     <li><a href="wgo:about-splash-cvs">The Whole Repository of Splash Screens</a></li>
+    <li><a href="wgo:about-splash">Access to Raw Archives</a></li>
   </ul>
 <h2>Awards won by The GIMP</h2>
 <p>
   The GIMP has won several awards through time. Perhaps one day they should be gathered
   and put on a page here.  ;)
 </p>
-<h2>The GIMP Authors</h2>
+<h2>The GIMP Authors, Contributors, &amp; Maintainers</h2>
   <ul>
     <li><a href="wgo:about-authors">Authors and Contributors</a></li>
     <li><a href="wgo:about-maintainers">Maintainers</a></li>
@@ -47,37 +56,38 @@
 <h2><a href="wgo:about-screenshots">Screen Shots</a></h2>
 <h2><a href="wgo:about-mediakit">Media Kit</a></h2><br/>
 <h2>The GIMP in the Real World</h2>
-<p>The GIMP On the Web</p>
+<h3>The GIMP On the Web</h3>
   <ul>
     <li><a href="online:flamingtext">Flaming Text Logo Generator</a></li>
     <li><a href="online:cooltext">Cooltext Logo Generator</a></li>
+    <li><a href="online:fu_gen">Fu_GEN</a></li>
   </ul>
-<p>The GIMP In Film</p>
+<h3>The GIMP In Film</h3>
   <ul>
     <li><a href="http://www.linuxjournal.com/article.php?sid=6148">Linux and &lt;i&gt;Scoopy-Doo&lt;/i&gt;</a></li>
   </ul>
-<p>The GIMP In Medicine &amp; Science</p>
+<h3>The GIMP In Medicine &amp; Science</h3>
   <ul>
     <li><a href="http://lists.xcf.berkeley.edu/lists/gimp-developer/2001-August/005513.html">Particle Size Analysis</a></li>
     <li><a href="FIXME"></a>The GIMP edge detect for X-Rays</li>
   </ul>
-<p>The GIMP In the Computer World</p>
+<h3>The GIMP In the Computer World</h3>
   <ul>
     <li><a href="http://www.advogato.org/article/550.html">The GIMP Transcends Bias</a></li>
   </ul>
-<p>The GIMP In Commercial Art</p>
+<h3>The GIMP In Commercial Art</h3>
   <ul>
     <li><a href="http://lists.xcf.berkeley.edu/lists/gimp-user/2002-June/004709.html">The GIMP makes book covers</a></li>
   </ul>
-<p>The GIMP In Education</p>
+<h3>The GIMP In Education</h3>
   <ul>
     <li>pending research</li>
   </ul>
-<p>The GIMP In Electronics</p>
+<h3>The GIMP In Electronics</h3>
   <ul>
     <li>pending research</li>
   </ul>
-<p>The GIMP In the Corporate World</p>
+<h3>The GIMP In the Corporate World</h3>
   <ul>
     <li>pending research</li>
   </ul>

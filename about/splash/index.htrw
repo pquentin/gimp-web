@@ -1,0 +1,18 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - About GIMP</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP Splash Archive</h1>
+<h2>Splash Screens</h2>
+  <ul>
+    <li><a href="wgo:about-splash-stable">Stable Splash Screens</a></li>
+    <li><a href="wgo:about-splash-1-1">1.1 Tarball Splash Screens</a></li>
+    <li><a href="wgo:about-splash-1-3">1.3 Tarball Splash Screens</a></li>
+    <li><a href="wgo:about-splash-cvs">The Whole Repository of Splash Screens</a></li>
+    <li><a href="wgo:about-splash-archive-gimp">Access to Raw gimp Archives</a></li>
+    <li><a href="wgo:about-splash-archive-1.1">Access to Raw gimp-1.1 Archives</a></li>
+    <li><a href="wgo:about-splash-archive-1.3">Access to Raw gimp-1.3 Archives</a></li>
+  </ul>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

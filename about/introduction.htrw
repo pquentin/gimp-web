@@ -24,8 +24,8 @@
 </p>  
 <p>
   GIMP is written and developed under X11 on UNIX platforms.
-  There is an <a href="http://www.netlabs.org/gimp/">OS/2 port</a> in development. 
-  There is also a native <a href="http://www.gimp.org/win32/">win32 port</a>.
+  There is an <a href="http:Package-GIMP-os2-stable-xfree86">OS/2 port</a> in development. 
+  There is also a native <a href="http:Package-GIMP-windows">win32 port</a>.
   And some people have reported success in getting GIMP to run in
   <a href="http://www.macgimp.org/">MacOS X</a>.
 </p>

@@ -1,5 +1,11 @@
 2004-09-25  Sven Neumann  <sven@gimp.org>
 
+	* about/linking.htrw: avoid a linebreak in the title attribute; it
+	showed up as an unprintable character in the tooltip (at least in
+	firefox).
+
+2004-09-25  Sven Neumann  <sven@gimp.org>
+
 	* downloads/index.htrw: updated for 2.0.5 release.
 
 2004-09-20  Sven Neumann  <sven@gimp.org>

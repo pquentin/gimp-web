@@ -1,4 +1,9 @@
-2004-03-21  Niklas M <scizzo@gimp.org>
+2004-03-22  Niklas M <scizzo@gimp.org>
+
+	* admin/gimp-web-urls: Fixed two links that was bogus in the list for
+	the splash screens.
+
+2004-03-22  Niklas M <scizzo@gimp.org>
 
 	* about/screenshot.htrw: Removed this file.
 	* about/splash-images/*.png, *.htrw: Files moved here.

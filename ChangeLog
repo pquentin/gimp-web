@@ -2,7 +2,8 @@
 
 	* bugs/howtos/submit-patch.htrw: replaced > by &gt;, suggested
 	doing a make clean before generating patch file and added the -r
-	argument to the diff command. Updated copyright.
+	argument to the diff command. Updated copyright. Made it valid
+	XHTML.
 
 2003-09-03  Raphael Quinet  <quinet@gamers.org>
 

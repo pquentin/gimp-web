@@ -39,7 +39,7 @@
   <li>Check out a copy of the source code from CVS</li>
   <li>Apply your changes to the source</li>
   <li>Re-compile and make sure it works as expected</li>
-  <li>Generate the patch file using <kbd>cvs diff -up &gt; /path/to/patchfile.patch</li>
+  <li>Generate the patch file using <kbd>cvs diff -up &gt; /path/to/patchfile.patch</kbd></li>
   <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
   <li>Submit the patch using Bugzilla, see below</li>
 </ul>
@@ -87,7 +87,7 @@
 </p>
 <ol>
   <li>Test the patch locally on your own machine and look if it closes the bug there.</li>
-  <li>Find the bug it is closing in the <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">Open bugs</a> list.</li>
+  <li>Find the bug it is closing in the <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">Open bugs</a> list.</li>
   <li>Attach the patch to the bug report.</li>
   <li>Explain what the patch is doing and if there might be any problems with the patch.</li>
   <li>If you want to send a mail to the gimp-devel list and explain it there also. 

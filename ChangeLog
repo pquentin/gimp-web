@@ -1,3 +1,10 @@
+2002-12-06 carol <carol@gimp.org>
+
+	* tutorials/Anti-Alias_Treshhold/, tutorials/Anti-Alias_Threshhold:
+    removed the mispelled directory and added the (i hope) properly spelled one.
+
+	* tutorials/Channel_Mixer:  removed this directory.
+    
 2002-11-30 carol <carol@gimp.org>
 
 	* TODO:  a big list of everything that needs to be done.

@@ -24,10 +24,9 @@ img {
   border: none;
 }
 
-img.tutorial {
-  text-align: center;
+img.images {
+  border: solid black 1px;
 }
-
 
 p.news {
   margin: 0.75em 0px;
@@ -132,7 +131,7 @@ div.subtitle {
 }
 
 span.filter {
-  font-decoration: bold;
+  font-weight: bold;
 }
 
 #linkbar, #navbar {

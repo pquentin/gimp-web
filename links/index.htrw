@@ -7,75 +7,60 @@
 This page contains the best links to interesting GIMP-sites:
 <!--#include virtual="/includes/urls_important.inc" -->
 
-
 <h2>Other Useful Links</h2>
 <ul>
-    <li><a href="#maillists">Mailinglists</a></li>
-    <li><a href="#org">The GIMP Organization</a></li>
-    <li><a href="#tuts">Tutorials</a></li>
-    <li><a href="#clubs">Communities</a></li>
-    <li><a href="#developer">Developer</a></li>
-    <li><a href="#created">Created with GIMP</a></li>
-    <li><a href="#more">More GIMP-links</a></li>
-    <li><a href="#other">Other Graphics Applications</a></li>
+  <li><a href="#maillists">Mailinglists</a></li>
+  <li><a href="#org">The GIMP Organization</a></li>
+  <li><a href="#tuts">Tutorials</a></li>
+  <li><a href="#clubs">Communities</a></li>
+  <li><a href="#developer">Developer</a></li>
+  <li><a href="#created">Created with GIMP</a></li>
+  <li><a href="#more">More GIMP-links</a></li>
+  <li><a href="#other">Other Graphics Applications</a></li>
 </ul>
 
-<p>&nbsp;</p>
-<h2><a name="maillists">Mailinglists</a></h2>
-<p>
-  <a href="/mail_lists.html">The GIMP Maillist Page</a><br />
-  A more thorough overview of The GIMP related mail lists and some mail list
-  ettiquette.
-</p>
+<h2><a name="maillists"></a>Mailinglists</h2>
+
+<p><a href="/mail_lists.html">The GIMP Maillist Page</a><br /> A more
+thorough overview of The GIMP related mail lists and some mail list
+ettiquette.</p>
 
 
-<p>&nbsp;</p>
-<h2><a name="org">The GIMP Organization</a></h2>
+<h2><a name="org"></a>The GIMP Organization</h2>
 <!--#include virtual="/includes/urls_go-utility.inc" -->
-<p>
-  <a href="org.html">More ...</a><br />
-</p>
+<p><a href="org.html">More ...</a></p>
 
 
-<p>&nbsp;</p>
-<h2><a name="developer">Developer</a></h2>
+<h2><a name="developer"></a>Developer</h2>
 <!--#include virtual="/includes/urls_go-developer.inc" -->
 
-<p>&nbsp;</p>
-<h2><a name="tuts">Tutorials</a></h2>
-<p>
-  <a href="http://gug.sunsite.dk/?page=tutorials">Tutorials-page from GIMP Usergroup (GUG)</a><br />
-  The GUG-website has some cool GIMP-tutorials online.
-</p>
-<p>
-  <a href="http://empyrean.lib.ndsu.nodak.edu/~nem/gimp/tuts/">Pointers to GIMP-tutorials</a><br />
-  This site has pointers to GIMP-tutorials all over the Internet. Some are outdated, but most tutorials show nice GIMP-tips &amp; tricks.
+
+<h2><a name="tuts"></a>Tutorials</h2>
+
+<p><a href="http://gug.sunsite.dk/?page=tutorials">Tutorials-page from GIMP Usergroup (GUG)</a><br />
+The GUG-website has some cool GIMP-tutorials online.
 </p>
 
-<p>&nbsp;</p>
-<h2><a name="more">More GIMP-links</a></h2>
-<p>
-  <a href="http://gimp.pagina.nl">GIMP-startpagina</a> <small>(Dutch version)</small><br />
-  Just one page, but contains the most up-to-date collection of links to GIMP-sites
-</p>
-<p>
-  <a href="http://gimp.start4all.com">GIMP-startpage</a> <small>(English version)</small><br />
-  Essentially the same as the one above, but this time in English
-</p>
-<p>
-  <a href="http://dmoz.org/Computers/Software/Graphics/Image_Editing/The_GIMP/">GIMP-category from ODP</a><br />
-  This OpenDirectoryProject-category holds links to GIMP-sites (like this page)
-</p>
-<p>
-  <a href="http://dmoz.org/World/Nederlands/Computers/Graphics/Software/GIMP/">Dutch GIMP-category from ODP</a><br />
-  This OpenDirectoryProject-category contains only links to Dutch GIMP-sites
-</p>
+<p><a href="http://empyrean.lib.ndsu.nodak.edu/~nem/gimp/tuts/">Pointers to GIMP-tutorials</a><br />
+This site has pointers to GIMP-tutorials all over the Internet. Some are outdated, but most tutorials show nice GIMP-tips &amp; tricks.</p>
 
 
+<h2><a name="more"></a>More GIMP-links</h2>
+
+<p><a href="http://gimp.pagina.nl">GIMP-startpagina</a> <small>(Dutch version)</small><br />
+Just one page, but contains the most up-to-date collection of links to GIMP-sites.</p>
+
+<p><a href="http://gimp.start4all.com">GIMP-startpage</a> <small>(English version)</small><br />
+Essentially the same as the one above, but this time in English.</p>
+
+<p><a href="http://dmoz.org/Computers/Software/Graphics/Image_Editing/The_GIMP/">GIMP-category from ODP</a><br />
+This OpenDirectoryProject-category holds links to GIMP-sites (like this page).</p>
+
+<p><a href="http://dmoz.org/World/Nederlands/Computers/Graphics/Software/GIMP/">Dutch GIMP-category from ODP</a><br />
+This OpenDirectoryProject-category contains only links to Dutch GIMP-sites.</p>
 
 
-<p>&nbsp;</p>
-<h2><a name="clubs">Clubs &amp; Communities</a></h2>
+<h2><a name="clubs"></a>Clubs &amp; Communities</h2>
 <p>
   <a href="http://www.gimpforce.org">GIMP Usergroup (GUG)</a><br />
   Meet fellow-GIMP-users here and see what they created using GIMP
@@ -89,8 +74,8 @@ This page contains the best links to interesting GIMP-sites:
   Dutch-spoken community to promote GIMP-usage in The Netherlands
 </p>
 
-<p>&nbsp;</p>
-<h2><a name="created">Created with GIMP</a></h2>
+
+<h2><a name="created"></a>Created with the GIMP</h2>
 <p>
   <a href="http://gug.sunsite.dk/gallery.php">Galleries from GUG</a><br />
   The largest collection of GIMP-created graphics
@@ -105,8 +90,7 @@ This page contains the best links to interesting GIMP-sites:
 </p>
 
 
-<p>&nbsp;</p>
-<h2><a name="other">Other Graphics Applications</a></h2>
+<h2><a name="other"></a>Other Graphics Applications</h2>
 <p>
   <a href="http://www.imagemagick.org/">ImageMagick</a><br />
   A robust collection of tools and libraries that work at the command line as well.

@@ -1,5 +1,11 @@
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
+	* links/index.htrw: Change the anchors to be empty instead of
+	enclosing the text of the h2 elements, because this caused all
+	headings to be highlighted as if they were links.  Removed the
+	extra empty paragraphs.  Reformatted the code a bit, like in some
+	other pages.
+
 	* links/.cvsignore: Added this file to take care of the new files
 	created by Niklas.
 

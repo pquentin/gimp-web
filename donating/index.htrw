@@ -59,19 +59,17 @@
   Please indicate whether you would like your donation to remain anonymous, as
   otherwise you will be listed as a sponsor of the GIMP on the gimp.org web-pages.
 </p>
-<p>
-  <form method="post" action="https://www.paypal.com/cgi-bin/webscr">
-    <input value="_xclick" name="cmd" type="hidden">
-    <input value="gimp@gnome.org" name="business" type="hidden">
-    <input value="Donation to GIMP Project" name="item_name" type="hidden">
-    <input value="106" name="item_number" type="hidden">
-    <!-- <input value="http://www.gimp.org/donating/thanks.html"
-           name="return" type="hidden"> -->
-    <input value="1" name="no_shipping" type="hidden">
-    <input alt="Support the GIMP" name="submit" border="0"
-           src="donate.png" type="image">
-  </form>
-</p>
+<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
+  <input value="_xclick" name="cmd" type="hidden" />
+  <input value="gimp@gnome.org" name="business" type="hidden" />
+  <input value="Donation to GIMP Project" name="item_name" type="hidden" />
+  <input value="106" name="item_number" type="hidden" />
+  <!-- <input value="http://www.gimp.org/donating/thanks.html"
+         name="return" type="hidden" /> -->
+  <input value="1" name="no_shipping" type="hidden" />
+  <input alt="Support the GIMP" name="submit"
+         src="donate.png" type="image" />
+</form>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

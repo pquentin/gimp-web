@@ -1,3 +1,8 @@
+2002-10-10 brix <brix@gimp.org>
+	
+	* includes/tutnavbar.inc: changed the href to work with the (new)
+	tutorials/index.html
+
 2002-10-09  scizzo <scizzo@gimp.org>
 
 	* tutorials/Image_Pipes/: Started to work on the tutorial Image Pipes.

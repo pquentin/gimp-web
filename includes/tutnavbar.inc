@@ -1,3 +1,3 @@
     <div id="navbar">
-      <a href="/tutorials.html">Back</a>
+      <a href="/tutorials">Back</a>
     </div>

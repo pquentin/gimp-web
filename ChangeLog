@@ -1,5 +1,11 @@
 2003-08-25  Raphael Quinet  <quinet@gamers.org>
 
+	* tutorials/index.htrw: Use the new navindex class.
+
+	* style/default.css (p.navindex): New style for small index bars
+	used for intra-page navigation.  Changed the comment at the top of
+	the file.
+
 	* includes/header_posttitle.inc
 	* includes/wgo-admin-init.xhtml
 	* includes/wgo-develop-init.xhtml

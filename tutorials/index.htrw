@@ -5,7 +5,7 @@
 
 <h1>Tutorials</h1>
 
-<p>[<a href="#Beginner">Beginner</a>
+<p class="navindex">[<a href="#Beginner">Beginner</a>
 | <a href="#Intermediate">Intermediate</a>
 | <a href="#Expert">Expert</a>
 | <a href="#Photo">Photo Editing</a>
@@ -175,7 +175,7 @@
   <a href="Basic_Scheme2/">GIMP Script-Fu 2</a> Another Write Scheme for The GIMP.
 </p>
 
-<p>[<a href="#Beginner">Beginner</a>
+<p class="navindex">[<a href="#Beginner">Beginner</a>
 | <a href="#Intermediate">Intermediate</a>
 | <a href="#Expert">Expert</a>
 | <a href="#Photo">Photo Editing</a>

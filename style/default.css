@@ -1,6 +1,5 @@
-/* Here is the elements used for the different parts example: #menu and so on.
- * If you need more options to be added here you need to talk with scizzo,carol,brix or
- * Helvetix about it before we make any changes here. */
+/* Default style sheet for www.gimp.org -- be careful if you edit it. */
+/* $Id$ */
 
 body {
   background: white;
@@ -126,6 +125,11 @@ p.images img {
 
 p.images {
   text-align: center;
+}
+
+p.navindex {
+  text-align: center;
+  font-size: 80%;
 }
 
 span.newstitle {

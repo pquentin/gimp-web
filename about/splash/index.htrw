@@ -11,18 +11,22 @@
 </p>
 <h2>Splash Screen galleries (Image archives)</h2>
 <ul>
-  <li><a href="wgo:about-splash-stable">Stable Splash Screens</a></li>
-  <li><a href="wgo:about-splash-1-1">1.1 Tarball Splash Screens</a></li>
-  <li><a href="wgo:about-splash-1-3">1.3 Tarball Splash Screens</a></li>
+  <li><a href="wgo:about-splash-stable">Stable GIMP Splash Screens</a></li>
+  <li><a href="wgo:about-splash-1-1">GIMP 1.1 Splash Screens</a></li>
+  <li><a href="wgo:about-splash-1-3">GIMP 1.3 Splash Screens</a></li>
+<!--
   <li><a href="wgo:about-splash-cvs">The Whole Repository of Splash Screens</a></li>
+  -->
 </ul>
 
+<!--
 <h2>Splash Screens (Raw archives)</h2>
 <ul>
   <li><a href="wgo:about-splash-archive-gimp">Access to Raw gimp Archives</a></li>
   <li><a href="wgo:about-splash-archive-1.1">Access to Raw gimp-1.1 Archives</a></li>
   <li><a href="wgo:about-splash-archive-1.3">Access to Raw gimp-1.3 Archives</a></li>
 </ul>
+  -->
 
 <h1>Create your own splash screen</h1>
 <p>

@@ -242,7 +242,7 @@
 ["alt",    "wgo:image-about-splash-stable-1.2",  { "alt":    "splash-1.2"}]
 
 ["href",   "wgo:image-about-splash-stable-2.0",  { "href":   "/about/splash/splash-images/gimp_splash-unknown-t.png"}]
-["src",    "wgo:image-about-splash-stable-2.0",  { "src":    "/about/splash/splash-images/gimp_splash-unknown.png"}]
+["src",    "wgo:image-about-splash-stable-2.0",  { "src":    "/about/splash/splash-images/gimp_splashpng.1.19.png"}]
 ["width",  "wgo:image-about-splash-stable-2.0",  { "width":  "150px"}]
 ["height", "wgo:image-about-splash-stable-2.0",  { "height": "145px"}]
 ["alt",    "wgo:image-about-splash-stable-2.0",  { "alt":    "splash-2.0"}]

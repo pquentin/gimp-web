@@ -68,9 +68,75 @@
   artist: Sven and Tim Pritlove</p>
 </td><td>
   <h2>tarball:  1.3.11</h2>
+  <a href="gimp_splashpng.1.5.png"><img src="gimp_splashpng.1.5-t.png" width="150" height="145" alt="1.5"/></a>
+  <p>CVS: 1.5<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.12</h2>
   <a href="gimp_splashpng.1.6.png"><img src="gimp_splashpng.1.6-t.png" width="150" height="145" alt="1.6"/></a>
-  <p>CVS: 1.?<br />
-  artist: unknown</p>
+  <p>CVS: 1.6<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.13</h2>
+  <p>CVS: 1.8<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.14</h2>
+  <p>CVS: 1.11<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.15</h2>
+  <p>CVS: 1.11<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.16</h2>
+  <p>CVS: 1.12<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.17</h2>
+  <p>CVS: 1.14<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.18</h2>
+  <p>CVS: 1.14<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.19</h2>
+  <p>CVS: 1.15<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.20</h2>
+  <p>CVS: 1.15<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.21</h2>
+  <p>CVS: 1.16<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.22</h2>
+  <p>CVS: 1.17<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  1.3.23</h2>
+  <p>CVS: 1.17<br />
+  artist: jimmac</p>
+</td></tr>
+</td><td>
+  <h2>tarball:  2.0pre</h2>
+  <p>CVS: 1.18<br />
+  artist: jimmac</p>
 </td></tr>
 
 </table>

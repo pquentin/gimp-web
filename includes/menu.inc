@@ -1,17 +1,17 @@
         <td id="menu">
-          <a href="index.html">News</a><br/>
-          <a href="about.html">About GIMP</a><br/>
-          <a href="resources.html">Resources</a><br/>
-          <a href="registry.html">Plug-In Registry</a><br/>
-          <a href="documentation.html">Documentation</a><br/>
-          <a href="tutorials.html">Tutorials</a><br/>
-          <a href="authoring.html">Script Authoring</a><br/>
-          <a href="development.html">Development</a><br/>
+          <a href="/index.html">News</a><br/>
+          <a href="/about.html">About GIMP</a><br/>
+          <a href="/resources.html">Resources</a><br/>
+          <a href="/registry.html">Plug-In Registry</a><br/>
+          <a href="/documentation.html">Documentation</a><br/>
+          <a href="/tutorials.html">Tutorials</a><br/>
+          <a href="/authoring.html">Script Authoring</a><br/>
+          <a href="/development.html">Development</a><br/>
           <br/>
-          <a href="unix.html">GIMP for Unix</a><br/>
-          <a href="windows.html">GIMP for Windows</a><br/>
-          <a href="macintosh.html">GIMP for Macintosh</a><br/>
-          <a href="os2.html">GIMP for OS/2</a><br/>
+          <a href="/unix.html">GIMP for Unix</a><br/>
+          <a href="/windows.html">GIMP for Windows</a><br/>
+          <a href="/macintosh.html">GIMP for Macintosh</a><br/>
+          <a href="/os2.html">GIMP for OS/2</a><br/>
           <br/>
           Newest Plug-Ins:<br/>
           <a href="FIXME">Gaussian blur * (1.0)</a><br/>

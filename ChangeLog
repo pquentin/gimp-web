@@ -1,3 +1,58 @@
+2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
+
+	* tutorials/index.html, about/index.html, unix/index.html:
+	updated hrefs to reflect new file location
+
+	* includes/menu.inc, unix.html, unix/index.html:
+	moved unix.html to unix/index.html
+
+	* includes/menu.inc, tutorials.html, tutorials/index.html:
+	moved tutorials.html to tutorials/index.html
+
+	* about/index.html: moved about.html to about/index.html
+
+	* about.html, includes/menu.inc: moved
+
+	* windows.html: deleted unused file
+
+2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
+
+	* README.repository:
+	added a note about the tutorials template directory
+
+	* README.repository:
+	added a note on who can change the file permissions
+
+	* README.repository: added a third note about cvs log entries
+
+	* ChangeLog: changelog updated from cvs log entries
+
+	* README.repository: added a note about file permissions
+
+	* README.repository: fixed typo
+
+	* ChangeLog: changelog updated
+
+	* README.repository: file added. READ IT! Please... ;)
+
+	* install.exclude: added README.repository to list of excluded files
+
+2002-09-29  carol  <carol@fungus>
+
+	* unix/man-gimp-1.2.html:
+	changed the urls from cgi/man2html to web locations
+
+2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
+
+	* ChangeLog: changelog updated
+
+	* includes/header_posttitle.inc: reverted brankos changes.
+	the image is not supposed to have an alt text.
+	alt texts are primarily used in text-only browsers, and they need not see our logo.
+	take a look in either lynx or links; you'll see.
+
+	* ChangeLog: changelog updated
+
 2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
 
 	* README.repository: added a note about file permissions

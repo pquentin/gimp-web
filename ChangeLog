@@ -1,6 +1,9 @@
 2003-05-01  Helvetix Victorinox  <helvetix@mysterious.org>
 
-        * Added .cvsignore files for the tutorials:
+        * Added .cvsignore files for:
+                os2/howtos
+                programmatic/tools
+                programmatic/about/ChangeLogs
                 3d_Logo/.cvsignore
                 Advanced_Animations/.cvsignore
                 Anti-Aliased_Threshold/.cvsignore

@@ -1,3 +1,9 @@
+2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
+
+	* books/index.htrw
+	* admin/gimp-web-urls: corrected the URL for Essential GIMP for
+	Web Professionals. Fixes bug #142937.
+
 2004-05-15  Sven Neumann  <sven@gimp.org>
 
 	* donating/index.htrw: rephrased a sentence.

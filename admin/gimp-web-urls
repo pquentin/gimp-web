@@ -258,7 +258,7 @@
 ["alt",    "wgo:image-about-splash-unknown",  { "alt":    "unknown"}]
 
 
-["href",   "wgo:book-essential_gimp_for_web_professionals",    { "href":   "http://www.phptr.com/essential/gimp/"}]
+["href",   "wgo:book-essential_gimp_for_web_professionals",    { "href":   "http://www.phptr.com/essential/gimp"}]
 ["src",    "wgo:image-book-gimp_for_web_professionals",  { "src":    "/books/essential_gimp_for_web_professionals.png"}]
 ["width",  "wgo:image-book-gimp_for_web_professionals",  { "width":  "100px"}]
 ["height", "wgo:image-book-gimp_for_web_professionals",  { "height": "148px"}]

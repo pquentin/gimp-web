@@ -52,7 +52,42 @@ def file_path(qname, file):
   
 def message_path(qname, messageid):
   return (file_path(qname, messageid))
+
+def generate_rdf(queue):
+  rdf_file = file_path(queue, "news.rdf")
   
+  dirpath = canonical_path(queue)
+  names = map(lambda t: dirpath + t, os.listdir(dirpath))
+  names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
+  news_items = map(lambda f: wgo_news.news(f, False), names)
+  news_items = filter(lambda n: n.valid, news_items)
+             
+  news_blotter = file_path(queue, news_config.news_blotter)
+    
+  fp = open(rdf_file, "w")
+  print >>fp, '<?xml version="1.0"?>'
+  print >>fp, '<?xml-stylesheet href="style/rdf-news.css" type="text/css"?>'
+  print >>fp, '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://my.netscape.com/rdf/simple/0.9/">'
+  print >>fp, '<link>http://mmmaybe.gimp.org/</link>'
+  print >>fp, '<dc:date>'+ time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()) + '</dc:date>'
+  print >>fp, '<channel rdf:about="http://www.w3.org/2000/08/w3c-synd/home.rss">'
+  print >>fp, '  <title>GIMP Dot Org</title>'
+  print >>fp, '  <description>gimp.org news</description>'
+  print >>fp, '  <link>http://mmmaybe.gimp.org</link>'
+  print >>fp, '</channel>'
+  map(lambda n: fp.write(n.as_rdf()), news_items)
+  print >>fp, '\n</rdf:RDF>'
+  fp.close()
+  
+  os.chmod(news_blotter, 0666)
+
+  # this is not the best way to handle this XXX
+  if queue == news_config.current_queue:
+    os.system("/bin/cp %s %s" % (rdf_file, wgo.config.DocumentRoot_path + "/news.rdf"))
+    pass
+  
+  return (rdf_file)
+
 def generate_blotter(queue):
   dirpath = canonical_path(queue)
 
@@ -76,5 +111,6 @@ def generate_blotter(queue):
       os.system("/bin/cp %s %s" % (news_blotter, wgo.config.DocumentRoot_path + "/includes/news.inc"))
       pass
     pass
-  
+
+  generate_rdf(queue)
   return (news_blotter)

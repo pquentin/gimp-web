@@ -2,7 +2,7 @@
 #
 include Makefile.defs
 
-all: usage wgo_config.py extended.css wgo-css.cpp admin contest
+all: usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>target"; exit 1; fi
@@ -43,6 +43,8 @@ contest: wgo_config.py
 
 extended.css:
 
+rdf-news.css: rdf-news.cpp
+
 clean mrproper:
 	/bin/rm -f wgo_config.py extended.css *.pyc *~
 	cd contest && $(MAKE) clean
@@ -56,6 +58,7 @@ install-common: all
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo.py > ${LIBDIR}/wgo.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' xhtml.py > ${LIBDIR}/xhtml.py
 	install --mode=644 extended.css  ${DocumentRoot}/style/
+	install --mode=644 rdf-news.css  ${DocumentRoot}/style/
 
 install-admin: admin
 	cd admin && $(MAKE) install

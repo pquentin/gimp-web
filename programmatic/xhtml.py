@@ -94,25 +94,9 @@ def environ():
   print div.fini()
   return (None)
 
-def validate(text = "validate"):
-  if os.environ.has_key("SERVER_ADDR") and os.environ.has_key("SERVER_PORT") and os.environ.has_key("REQUEST_URI"):
-    url = "http://" + os.environ["SERVER_ADDR"] + ":" + os.environ["SERVER_PORT"] + os.environ["REQUEST_URI"]
-
-    uri = ("http://validator.w3.org/check?uri="
-           + escape(url)
-           + quote("&charset=(detect automatically)")
-           + quote("&doctype=Inline")
-           + quote("&ss=1")
-           + quote("&sp=1")
-           + quote("&outline=1")
-           + quote("&sp=1")
-           + quote("&noatt=0")
-           + quote("&No200=1")
-           + quote("&verbose=1"))
-    
-    return (div(hyperlink(text, {"href" :uri})))
-
-  return ("")
+def validate(text="validate", attrs={}):
+  attrs.update({"href" : "http://validator.w3.org/check/referer"})
+  return div(hyperlink(text, attrs))
 
 
 def print_form(form, label="Form Contents"):

@@ -156,6 +156,17 @@ class news:
     
     return (s)
 
+  def as_rdf(self):
+    iso_date = time.strftime("%Y-%m-%dT%H:%M:%SZ",  rfc822.parsedate(self["date"]))
+
+    s = '<item rdf:about="http://www.w3.org/News/2003#item9">'
+    s += '<title>' + self["subject"] + '</title>\n'
+    s += '<description>' + self["body"] + '</description>\n'
+    s += '<link>http://mmmaybe.gimp.org/</link>\n'
+    s += '<dc:date>' + xhtml.quote(iso_date) + '</dc:date>\n'
+    s += '</item>\n'
+    return (s)
+  
   def to_queue(self, queue):
     filename = wgo_queue.message_path(queue, self["message-id"])
     fp = open(filename, "w")

@@ -1,3 +1,8 @@
+2002-12-25 scizzo <scizzo@gimp.org>
+
+        * tutorials/Color2BW/index.html: Fixed the broken link to the
+        PS tutorial for Color2B&W.
+
 2002-12-24 scizzo <scizzo@gimp.org>
 
         * tutorials/Lite_Quickies/: Removed alt="" on line 42. Validator

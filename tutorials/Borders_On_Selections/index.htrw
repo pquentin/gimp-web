@@ -9,17 +9,19 @@
 </p>
 
 <h2>Intention</h2>
-<p class="images">
-  <img src="img14_step1.png" alt="" />
-</p>
 <p>
   Since Gimp is an image manipulation program and not a painting program 
   it doesn't include tools to draw shapes like squares and circles.
   However this doesn't mean you can't paint them, in fact there are 
   some interesting options regarding this subject when it comes to the gimp.
   The solution is to use the selection stroking capabilities of the Gimp. 
+</p>
+<p class="images">
+  <img src="img14_step1.png" alt="" />
+</p>
+<p>
   This option can be accesed on the image menu (right button click 
-  on the image), by going to <span class="filter">&lt;Image&gt; Edit -&gt; Stroke</span>.
+  on the image), by going to <span class="filter">&lt;Image&gt; Edit -&gt; Stroke Selection</span>.
 </p>
 
 <h2>Step 1</h2>
@@ -51,12 +53,22 @@
 
 <h2>Step 4</h2>
 <p class="images">
+  <img src="img15b_stroke.png" alt="" />
+</p>
+<p>
+  When all the options are selected you can click on <span class="filter">&lt;Image&gt; Edit -&gt; Stroke</span>. 
+  You will get a dialog allowing you to set many options for stroking your selection, including dashed lines and other fancy features.
+  If you select Stroke Using a Paint Tool, you will be able to use the brush that you have selected.
+</p>
+
+<h2>Step 5</h2>
+<p class="images">
   <img src="img17_result.png" alt="" />
 </p>
 <p>
-  When all the options are selected you can finally click on <span class="filter">&lt;Image&gt; Edit -&gt; Stroke</span>. 
-  Using a small brush and selecting a blue color here is 
-  the result for the selection made above:
+  When all the options are selected you can finally click on OK. 
+  Using a fuzzy brush and selecting a blue color here is 
+  the result for the selection made above.
 </p>
 
 <h2>Examples</h2>

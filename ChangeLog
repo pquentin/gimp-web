@@ -1,3 +1,10 @@
+2004-03-14  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/Borders_On_Selections/index.htrw: Adapted the text to
+	GIMP 2.0, including new stroke options dialog.
+
+	* tutorials/Borders_On_Selections/img*: New screenshots of 2.0.
+
 2004-03-13  Niklas M <scizzo@gimp.org>
 
 	* windows/index.htrw: Changed a sentence that Branko wanted to change

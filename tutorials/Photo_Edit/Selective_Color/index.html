@@ -1,0 +1,165 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Selective Colorization</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Selective Colorization</div>
+
+<div class="subtitle">Intention</div>
+<p class="images">
+  <img src="before.jpg" alt=""/>
+  <img src="after.jpg" alt=""/>
+</p>
+<p>
+  In this tutorial I will explain how to convert a color photograph to a B&amp;W one with color restored to selective areas. 
+  With the right subject this can give really striking results, as you can see for yourself. This technique is elsewhere referred to sometimes as "hand coloring" :-)
+  <br /><br />
+  The basic technique is to duplicate the color photograph, convert the duplicate to B&amp;W, and paste it as a new layer on top of the color image. Add an opaque layer 
+  mask and then selectively paint transparency into the upper mask, exposing the color photograph underneath.
+  <br /><br />
+  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a reader comment I saw in 
+  <a href="http://www.photo.net/digital/editing/hand-coloring">a "hand-coloring" tutorial on photo.net</a> (great web site by the way, I recommend it).
+</p>
+
+<div class="subtitle">The Procedure</div>
+<p class="images">
+  <img src="original.jpg" alt=""/>
+</p>
+<p>
+  Here is the original example image, loaded into The GIMP.
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="image2.jpg" alt=""/>
+</p>
+<p>
+  Duplicate the image (Ctrl+D).
+  <br />
+  By whatever method suits you best, convert the duplicate image to B&amp;W. Once you have gotten the B&amp;W version that you like, 
+  change it back to RGB mode (<span class="filter">Image/Mode/RGB</span>).
+  <br /><br />
+  In this example, I tried the <a href="/tutorials/Photo_Edit/Channel_Mixer/">channel mixer</a>, but ended up in this case preferring 
+  a simple conversion to grayscale (<span class="filter">Image/Mode/Grayscale</span>), then back to RGB.
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="layers1.jpg" alt=""/>
+  <img src="newlayeroptions.jpg" alt=""/>
+  <img src="layers2.jpg" alt=""/>
+</p>
+<p>
+  Open the Layers dialog (Ctrl+L). Make sure that the original color image is selected in the Image drop down box. Click on the new layer button at the bottom of the dialog.
+  <br />
+  Here I've named the new layer "B&amp;W"
+  <br />
+  Make sure the new layer is selected in the layers dialog.
+</p>
+
+<div class="subtitle">Step 3</div>
+<p class="images">
+  <img src="layers3.jpg" alt=""/>
+  <img src="layers4.jpg" alt=""/>
+</p>
+<p>
+  Go to the B&amp;W image and select all, then copy (Ctrl+A then Ctrl+C). Then go to the color image window and paste (Ctrl+V). 
+  The B&amp;W image should be pasted into that layer, obscuring the color image.
+  <br />
+  Click the anchor button in the Layers dialog to anchor the pasted image.
+  <br />
+  You can close the B&amp;W image window you just copied from now, if you want.
+</p>
+
+<div class="subtitle">Step 4</div>
+<p class="images">
+  <img src="addmaskoptions.jpg" alt=""/>
+  <img src="layers5.jpg" alt=""/>
+</p>
+<p>
+  In the Layers dialog, right-click on the B&amp;W layer and select "Add Layer Mask". In the Add Mask Options dialog, select White (Full Opacity).
+</p>
+
+<div class="subtitle">Step 5</div>
+<p class="images">
+  <img src="toolbox.jpg" alt=""/>
+  <img src="brushes1.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="image3.jpg" alt=""/>
+</p>
+<p>
+  Make sure that Black is selected as the foreground color in the toolbox. We're going to paint transparency into the layer mask to reveal the color image below.
+  <br />
+  Bring up the Brushes dialog (<span class="filter">Dialogs/Brushes</span>) and select a big brush. 
+  In the toolbox, select the paint tool (<img src="paint.jpg" alt=""/>). Begin painting the interior of the parts you want to be in color.
+</p>
+
+<div class="subtitle">Step 6</div>
+<p class="images">
+  <img src="image4.jpg" alt=""/>
+</p>
+<p>
+  When you get to the edges of the colored part, zoom in to make life easier.
+</p>
+
+<div class="subtitle">Step 7</div>
+<p class="images">
+  <img src="brushes2.jpg" alt=""/>
+  <img src="image5.jpg" alt=""/>
+</p>
+<p>
+  At the very boundaries of the colored image I typically zoom in to 300% or so. Switch to a small, feathered brush and very carefully paint the edges.
+  <br /><br />
+  If you only paint a little at a time it makes it much easier to use the GIMP's excellent undo feature if you accidentally stray outside the boundary. 
+  If for some reason you can't undo, don't worry: just switch to white paint and paint opacity back over your mistake to repair the mask.
+</p>
+
+<div class="subtitle">Final Step</div>
+<p class="images">
+  <img src="final.jpg" alt=""/>
+</p>
+<p>
+  When your all done, go over the colored part carefully to see if there are any gray (opaque) specks that you missed. Then zoom out and have a look. Voila!
+</p>
+
+<div class="subtitle">Tips</div>
+<p class="images">
+  <img src="tablet.jpg" alt=""/>
+</p>
+<ul>
+  <li>For this kind of fine paint work, a pen tablet like this Wacom one is very useful. For photo retouching you don't need any bigger than a 4x5 model.</li>
+  <li>In this example I restored the original color from the color image, but there is no reason that you couldn't paint other colors onto the second layer. 
+  Just make sure that the image is selected and not the layer mask in the upper layer of the Layers dialog 
+  (click on either the image icon or the mask icon to select the one you want to work on).</li>
+  <li>Try blurring the lower color layer, or running one of the interesting "artistic" filters on it (pastels, oil painting, etc). 
+  You probably want to do this before you create the B&amp;W copy.</li>
+</ul>
+
+<div class="subtitle">Other Examples</div>
+<p class="images">
+  <img src="example2.jpg" alt=""/>
+  <img src="example3.jpg" alt=""/>
+</p>
+
+<div class="subtitle">Further Reading</div>
+<ul>
+  <li><a href="http://www.photo.net/digital/editing/hand-coloring">a "hand-coloring" tutorial on photo.net</a></li>
+</ul>
+
+<p>
+  The original tutorial can be found <a href="http://cs.uhh.hawaii.edu/~jeschke/photography/articles/gimp/SelectiveColorization/">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:jeschke@mano.uhh.hawaii.edu">Eric Jeschke</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

@@ -21,18 +21,19 @@ www.gimp.org, you can get binaries for various flavors of Unix.</p>
   still be able to get it in the appropriate binary packages: some
   GIMP users provide their own updated packages and make them
   available for download.  Some of them are announced on our news
-  page, some others can be found via rpmfind or other search services.
-  (<em>FIXME: add some links</em>)</li>
+  page, some others can be found via <a
+  href="http://rpmfind.net/linux/rpm2html/search.php?query=gimp">rpmfind</a>
+  or other search services.</li>
 
   <li>For <b>Solaris</b>, some GIMP packages can be found on <a
   href="http://www.sunfreeware.com/">sunfreeware</a>.  They may also
   be found on some supplemental free software CDs distributed with
   Solaris.</li>
 
-  <li>For <b>AIX</b>, you can find some packages <a
-  href="http://aixpdslib.seas.ucla.edu/packages/gimp.html">here</a> or
-  <a
-  href="http://ftp.iasi.roedu.net/mirrors/ftp.gimp.org/gtk/binary/AIX/">here</a>.</li>
+  <li>For <b>AIX</b>, you can find some packages from the <a
+  href="http://aixpdslib.seas.ucla.edu/packages/gimp.html">AIX PDSLIB
+  site</a> and the necessary libraries in any mirror of
+  ftp.gimp.org, in <code>gtk/binary/AIX/</code>.</li>
 
   <li>For <b>IRIX</b>, you can have a look at <a
   href="http://www.easysw.com/~mike/gimp/">Mike Sweet's page</a>.</li>

@@ -1,3 +1,11 @@
+2002-12-18 carol <carol@gimp.org>
+
+	* tutorials/Script_Image/: removed 
+
+	* tutorials/Drawables/index.html: added and edited down to drawables only.
+
+	* tutorials/index.html: reflected the change
+
 2002-12-16 carol <carol@gimp.org>
 
 	* developer/bugzilla*: moved the scripts to develop/

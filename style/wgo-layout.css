@@ -1,0 +1,60 @@
+/*
+ * $Id$
+ */
+body {
+  background: #f5f5f5;
+  color: black;
+  font-family: arial,helvetica,sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#banner {
+  background-image: url("../images/barbg.png");
+  background-repeat: repeat-x;
+  height: 100px;
+}
+      
+#titlebarleft {
+  float: left;
+}
+      
+#titlebarright {
+  float: right;
+}
+      
+#sidebar {
+  color:           black;
+  font-weight:     bold;
+  padding:         1em;
+  border-right:    1px solid #d0d0d0;
+  border-collapse: collapse;
+  vertical-align:  top;
+  white-space:     nowrap;
+  width:           12em;
+  float:           left;
+}
+
+#sidebar a {
+  display: block;
+  width:   auto;
+}
+      
+#flow {
+  background: white none;
+  border-left: 1px solid #d0d0d0;
+  border-collapse: collapse;
+  margin-left: 14em;
+  padding: 1em 1em 2em 1em;
+}
+      
+#page-footer {
+  clear: both;
+  background: white;
+}
+
+#colophon { 
+  background: white none;
+  height: 4em;
+}
+

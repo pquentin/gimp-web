@@ -1,0 +1,82 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Image Pipes</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Image Pipes</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  Gimp 1.1 and the soon to come 1.2 introduce alot of new features, including the ability to use full color "pixmap brushes". 
+  In addition, you can also combine single frame pixmap brushes into a "image pipe". A Gimp Image Pipe allows you to spray out 
+  series of full color pixmaps. To make it more flexible, the order the images are painted onto the campus can depend on direction, angle, speed, or other factors.
+</p>
+<p>
+  This effect can be used in many ways, from a simple way to paint repeated images, or as sophisticated texture generation.
+  The flexibilty in the way images are sequenced and composited to the canvas on the image can make creating a imae pipe to do what you want 
+  seem difficult. However, for almost all common image pipes it is easy to set them up.
+</p>
+
+<div class="subtitle">Example 1</div>
+<p class="images">
+  <img src="example1_ss.gif" alt=""/>
+</p>
+<p>
+  Taking a set of images and making a image pipe out of them is a common configuration.
+  The easiest way to do this is to create each indivual image as a separate layer in an image, much like you would if you were going to save 
+  an animated image. And in fact this is often a convient way to think of image pipe creation. As designing an animation of which snapshots 
+  are going to be composited to the canvas.
+  Lets start with a simple example image, an 8 layer image. In this case, with the numbers 1-8 on each layer. This will help to make it more 
+  obvious what the various "ranks" do. 
+</p>
+<p>
+  There isnt currently a loader for gih (the gimp image pipe, so I include the source xcf images here.
+  To start creating a image pipe, you will need to save the file in the ".gih" extension. To use the brush immediately, 
+  you probabaly want to save it in the brushes/ subdir of your gimp directory (probabaly ~/.gimp-1.1).
+  To save the image you will be presented with a save dialog for the GIH plugin. (Image above)
+</p>
+<p class="images">
+  <img src="example_1.jpg" alt=""/>
+</p>
+<p>
+  For a simple image like this, the only values you usually need to change are "Spacing", The "Number of Cells", the number of "Ranks", 
+  and the "selection" for each rank. Spacing is pretty much the same as for regular brushes. It indicate what percentage of a brush width 
+  or height that the cursor moves between each time the shape is pasted. Ranks indicates how many levels of variation to use by the Selection values. 
+  For this image, the value of ranks should be equal to the number of images in the stack. Since it is possible to have multi-dimensional pipes, 
+  there needs to be a way to set more than one rank.
+</p>
+<p>
+  For this example, we are going to choose to select from the rank using method "incremental". This essential means that the images will be selected 
+  in the order they are in the layer stack.
+  <br /><br />
+  Other options include:
+  <br /><br />
+  Random: selects the images in a random order.
+  <br /><br />
+  Angular: selects the images based on the angle the brush is moving at.
+  <br /><br />
+  Velocity: selects the images based on the velocity the brush is moving at.
+  <br /><br />
+  Pressure: selects the images based on the pressure of the brush (requires a pressure sensitive tablet)
+  <br /><br />
+  xtilt: selects the images based on the xtilt (also requires a tablet)
+  <br /><br />
+  ytilt: selects the images based on the ytilt (also requires a tablet)
+</p>
+<p>
+  After saving the image, you can "refresh" the brush list and then select the new image. For an example of what this can do, tale a look at the
+  example image above (also making use of the fun gradient brushes).
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:adrian@gimp.org">Adrian Likins (adrian)</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

@@ -68,7 +68,7 @@ def footer(prefix=None):
   #                                      "data" : 'data:binary, ' + xhtml.rawfile('/home/asdf/public_html/helvetix/anybrowser.png')})
 
   if config.validate:
-    print xhtml.div(xhtml.validate("version 0.92", {"class" : "watermark"}),
+    print xhtml.div(xhtml.validate("version 0210", {"class" : "watermark"}),
                     {"class" : "watermark",
                      "style" : "color: #f0f0f0; float left;"})
 

@@ -9,17 +9,17 @@
 
 <table>
       <tr><td>
-        <img src="cmprssed.jpg" style="width:300px; height:150px; alt="cmprssed.jpg"></img><br></br>
+        <img src="cmprssed.jpg" style="width:300px; height:150px" alt="cmprssed.jpg"></img><br></br>
         <p>Quality .06</p>
       </td><td>
-        <img src="compressed.jpg" style="width:300px; height:150px; alt="compressed.jpg"></img><br></br>
+        <img src="compressed.jpg" style="width:300px; height:150px" alt="compressed.jpg"></img><br></br>
         <p>Quality .42</p>
       </td></tr>
       <tr><td>
-        <img src="default.jpg" style="width:300px; height:150px; alt="default.jpg"></img><br></br>
+        <img src="default.jpg" style="width:300px; height:150px" alt="default.jpg"></img><br></br>
         <p>Quality .85</p>
       </td><td>
-        <img src="uncompressed.jpg" style="width:300px; height:150px; alt="uncompressed.jpg"></img><br></br>
+        <img src="uncompressed.jpg" style="width:300px; height:150px" alt="uncompressed.jpg"></img><br></br>
         <p>Quality 1.00</p>
 </td></tr></table>
 

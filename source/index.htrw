@@ -53,7 +53,7 @@
   and subscribe to the gimp-developer mailing list if you compile the code from CVS.
 </p>
 
-<a name="source"><h1>GIMP Source Code</h1></a>
+<h1><a name="source">GIMP Source Code</a></h1>
 <p>
   The GIMP source code is distributed as tarballs. It is available
   from the GIMP FTP site and its <a href="wgo:downloads-mirrors">mirrors</a>.
@@ -65,7 +65,7 @@
   </dl>
 </p>
 
-<a name="requirements"><h1>GIMP Requirements</h1></a>
+<h1><a name="requirements">GIMP Requirements</a></h1>
 <p>
   All requirements below must be met to be able compiling GIMP from source.
   This list might change depending on the releases being worked on during
@@ -144,7 +144,7 @@
 </td></tr></table>
 
 
-<a name="gimp_from_cvs"><h1>GIMP from CVS</h1></a>
+<h1><a name="gimp_from_cvs">GIMP from CVS</a></h1>
 <p>
   If you want to work with GIMP from CVS. Then the following howtos are written to give
   you a fast introduction. To find out more about GIMP and CVS related topics;
@@ -159,7 +159,7 @@
   instructions for each operating system.
 </p>
 
-<a name="optional_packages"><h1>Optional packages</h1></a>
+<h1><a name="optional_packages">Optional packages</a></h1>
 <p>
   To make it easy for you to understand how to get GIMP and what is required to run GIMP,
   the list of packages has been done below. Not only is the list for the required packages

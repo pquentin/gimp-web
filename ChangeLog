@@ -1,5 +1,10 @@
 2004-03-31  Niklas M <scizzo@gimp.org>
 
+	* source/index.htrw: Changed the anchors for the headlines so that
+	they are displayed correct when site is rendered.
+
+2004-03-31  Niklas M <scizzo@gimp.org>
+
 	* unix/index.htrw: Added link to gentoo-portage for gentoo users.
 
 2004-03-31  Sven Neumann  <sven@gimp.org>

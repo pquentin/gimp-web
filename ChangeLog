@@ -1,3 +1,12 @@
+2003-02-22 scizzo <scizzo@gimp.org>
+
+	* /includes/wgo-develop-init.xhtml, wgo-develop-fini.xhtml: Add the
+	includes for the changelogs to use. Maybe they should have a different
+	name?
+
+	* /develop/example-changelog.html: Add a example for the changelogs to
+	use. Any thing in question about this file?
+
 2003-02-20  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * All programmatic uses of the include files properly handle

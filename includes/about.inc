@@ -55,7 +55,7 @@
 </div>
 <?php
 /*
-How About The GIMP gets updated.  first you send it to the developer list
+How "About The GIMP" gets updated.  first you send it to the developer list
 Then you let them hammer out the guilt on #gimp:
 
 19:00 (sjburges) an extremely capable piece of software with many capabilities...

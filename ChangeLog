@@ -1,3 +1,11 @@
+2005-01-18  Raphaël Quinet  <raphael@gimp.org>
+
+	* books/index.htrw
+	* books/guerilla_guide_to_great_graphics_with_the_gimp.png
+	* admin/gimp-web-urls: Added information about the book "Guerilla
+	Guide to Great Graphics with The GIMP" and thumbnail image of its
+	cover, as suggested in bug #162441.
+
 2005-01-18  Sven Neumann  <sven@gimp.org>
 
 	* about/splash/stable.htrw: center content of table cells.

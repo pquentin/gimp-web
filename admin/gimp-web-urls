@@ -312,6 +312,12 @@
 ["height", "wgo:image-book-the_gimp_pocket_reference",  { "height": "160px"}]
 ["alt",    "wgo:image-book-the_gimp_pocket_reference",  { "alt":    "Neumann_Sven"}]
 
+["href",   "wgo:book-guerilla_guide_to_great_graphics_with_the_gimp",        { "href":   "http://www.gimp.org/"}]
+["src",    "wgo:image-book-guerilla_guide_to_great_graphics_with_the_gimp",  { "src":    "/books/guerilla_guide_to_great_graphics_with_the_gimp.png"}]
+["width",  "wgo:image-book-guerilla_guide_to_great_graphics_with_the_gimp",  { "width":  "100px"}]
+["height", "wgo:image-book-guerilla_guide_to_great_graphics_with_the_gimp",  { "height": "123px"}]
+["alt",    "wgo:image-book-guerilla_guide_to_great_graphics_with_the_gimp",  { "alt":    "Busch_David_L"}]
+
 ["href",   "wgo:book-here",        { "href":   "http://www.gimp.org/"}]
 ["src",    "wgo:image-book-here",  { "src":    "/books/here.png"}]
 ["width",  "wgo:image-book-here",  { "width":  "100px"}]

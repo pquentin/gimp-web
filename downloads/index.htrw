@@ -5,12 +5,12 @@
 
 <h1>Downloads</h1>
 
-<p>The GIMP releases available from gimp.org and its mirrors contain
-the source code and have to be compiled in order to be installed on
-your system.  If you do not want to compile the GIMP yourself, there
-are several sites providing pre-compiled binaries for various
-platforms.  For detailed information on the install process and
-requirements, please take a look at the <a
+<p>The GIMP releases available from gimp.org and its
+<a href="#mirrors">mirrors</a> contain the source code and have to be
+compiled in order to be installed on your system.  If you do not want
+to compile the GIMP yourself, there are several sites providing
+pre-compiled binaries for various platforms.  For detailed information
+on the install process and requirements, please take a look at the <a
 href="install_help.html">install help</a> page.</p>
 
 <h2>Source for version 2.0 (Stable)</h2>

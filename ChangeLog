@@ -2,6 +2,7 @@
 
         * tutorials/Photo_Edit/*/: Add the copyright as the author wanted it
         to be. Also changed e-mail to author. Fixed the tutorial hyperlink.
+        Fixed the mail addresses.
 
         * tutorials/index.html: Removed the ND_Filter photo edit tutorial from
         the list. Changed the synopses for the Photo Edit tutorials from

@@ -1,3 +1,11 @@
+2002-11-20 carol <carol@gimp.org>
+
+	* links.html: moved some of the clusters around, added a few others
+
+	* links/index.html: added the directory and copied links.html into it,
+    getting it ready for that magical "more ..." stuff brix did to 
+    about/index.html
+
 2002-11-20 brix <brix@gimp.org>
 
 	* includes/menu.inc: changed documentation link to point to /docs

@@ -1,7 +1,7 @@
 2004-03-22  Sven Neumann  <sven@gimp.org>
 
 	* admin/gimp-web-urls: fixed wgo:image-about-splash-stable-1.2, it
-	had src and href mixed.
+	had src and href exchanged.
 
 2004-03-22  Niklas M <scizzo@gimp.org>
 

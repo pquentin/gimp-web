@@ -53,9 +53,11 @@
       <li>Much, much more!</li>
     </ul>
 </div>
-<!---How About The GIMP gets updated.  first you send it to the developer list --->
-<!---Then you let them hammer out the guilt on #gimp:                          --->
-<!---
+<?php
+/*
+How About The GIMP gets updated.  first you send it to the developer list
+Then you let them hammer out the guilt on #gimp:
+
 19:00 (sjburges) an extremely capable piece of software with many capabilities...
 19:02 (UnNamed) sjburges: what?
 19:02 (sjburges) carol's description of gimp
@@ -83,4 +85,5 @@ snipped recipe for oven baked chicken
 
 19:36  + carol wonders what the chances are that sjburgesilicious is the original author even
 19:36  + carol bluwahhahahahs all over the floor
---->
+*/
+?>

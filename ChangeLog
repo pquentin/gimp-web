@@ -4,10 +4,13 @@
         
         * resources/gradients/mgo-gradients.py the script is added
         
-        
         * resources/patterns/index.html: changed the <li>'s to <div>'s
         
         * resources/patterns/mgo-patterns.py the script is added
+        
+        * resources/patterns/index.html: manually removed some patterns
+        i have in my home directory that were added to the list 
+        incorrectly
         
 2002-10-18 scizzo <scizzo@gimp.org>
 

@@ -1,31 +1,67 @@
-There are six basic steps to building and installing the
-GIMP:
+Installation instructions for GIMP 2.0
+--------------------------------------
 
-  1. You need to have installed GTK version 1.2.8 or better. Do not try
-     to use the unstable GTK+ versions 1.3.x, it will not work.
-  2. You may want to install other third party libraries or programs that
-     are needed for some of the available plugins: TIFF, PNG, JPEG, MPEG,
-     perl, etc.
-  3. You may want to install the freefont package so you have the fonts
-     most scripts use by default. 
-     Grab it from ftp://ftp.gimp.org/pub/gimp/fonts/
-  4. Configure the GIMP by running the `configure' script.
-     You may want to pass some options to it, see below.
-  5. Build the GIMP by running `make'.
-  6. Install the GIMP by running `make install' or `make install-strip'.
-  7. Optionally install the separate gimp-data-extras package.
+There are some basic steps to building and installing the GIMP.
 
-Please make sure you don't have any old GTK, jpeg, etc. libraries lying
-around on your system, otherwise configure will fail to find the new
-ones.
+The most important part is to make sure the requirements for a build
+are fulfilled.  We depend on a number of tools and libraries which are
+listed below. For libraries this means you need to also have the
+header files installed.
+
+Please note that GIMP 1.2 and GIMP 2.0 peacefully coexist. You don't
+need to uninstall the 1.2 version.
+
+  1. You need to have installed a recent version of pkg-config available
+     from http://www.freedesktop.org/software/pkgconfig/.  
+
+  2. You need to have installed GTK+ version 2.2.2 or better. Do not
+     try to use an older GTK+ version (1.2.x), it will not work.
+     GTK+-2.2 itself needs recent versions of GLib, Pango and ATK.
+     Sources for these can be grabbed from ftp://ftp.gtk.org/.
+     GTK+-2.x and friends can be installed side by side with GTK+-1.2.
+
+  3. We require PangoFT2, a Pango backend that uses FreeType2. Make sure 
+     you have FreeType2 and fontconfig installed before you compile Pango.
+     FreeType2 can be downloaded from http://www.freetype.org/.
+     Fontconfig from http://x2.freedesktop.org/software/fontconfig.
+
+  4. We use libart2. Grab the module libart_lgpl out of GNOME CVS or
+     fetch the tarball from
+     ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/
+
+  5. You may want to install other third party libraries or programs that
+     are needed for some of the available plugins. We recommend to check
+     that the following libraries are installed: libpng, libjpeg,
+     libtiff, gimp-print (4.2.x), gtkhtml-2, libmng, librsvg, libwmf.
+
+  6. Configure the GIMP by running the `configure' script. You may want
+     to pass some options to it, see below.
+
+  7. Build the GIMP by running `make'. The use of GNU make is recommened.
+     If you need to tweak the build to make it work with other flavours
+     of make, we'd appreciate if you'd send us a patch with the changes.
+
+  8. Install the GIMP by running `make install'. In order to avoid clashes
+     with other versions of The GIMP, we install a binary called gimp-2.0.
+     By default there's also a link created so that you can type 'gimp'
+     to start gimp-2.0. If you have the 1.2 version installed, you should
+     still be able to run it using 'gimp-1.2'.
+
+Unless you are experienced with building software from source, you
+should not attempt to build all these libraries yourself. We suggest
+you check if your distributor has development packages of them.
+
+Please make sure you don't have any old GTK+-2.x, jpeg, etc. libraries 
+lying around on your system, otherwise configure may fail to find the 
+new ones.
 
 Generic instructions for configuring and compiling auto-configured
 packages are included below. Here is an illustration of commands that
 might be used to build and install the GIMP. The actual configuration,
 compilation and installation output is not shown.
 
-  % tar xvfz gimp-1.2.x.tar.gz   # unpack the sources
-  % cd gimp-1.2.x                # change to the toplevel directory
+  % tar xvfz gimp-2.0.x.tar.gz   # unpack the sources
+  % cd gimp-2.0.x                # change to the toplevel directory
   % ./configure                  # run the `configure' script
   % make                         # build the GIMP
   % make install                 # install the GIMP
@@ -37,98 +73,126 @@ options can be listed using the command `./configure --help'. There
 are five commands special options the GIMP `configure' script
 recognizes. These are:
 
-  1. --enable-shared and --disable-shared. This option affects whether
+  --enable-shared and --disable-shared.  This option affects whether
      shared libraries will be built or not. Shared libraries provide
-     for much smaller executables, but they are difficult to debug
-     with. If you are interested in doing development, it is probably
-     wise to specify `--disable-shared'. The default is to enable
-     shared libraries.
+     for much smaller executables. The default is to enable shared
+     libraries. Disabling shared libraries is almost never a good idea.
 
-  2. --enable-debug and --disable-debug. This option causes the build
+  --enable-debug and --disable-debug.  This option causes the build
      process to compile with debugging enabled. If debugging is
      disabled, the GIMP will instead be compiled with optimizations turned
      on. The default is for debugging to be disabled. NOTE: This
      option is intended primarily as a convenience for developers.
 
-  3. --enable-ansi and --disable-ansi. This option causes stricter
+  --enable-ansi and --disable-ansi.  This option causes stricter
      ANSI C checking to be performed when compiling with GCC. The
      default is for strict checking to be disabled. NOTE: This option
      is intended primarily as a convenience for developers.
 
-  4. --enable-gimpdir=DIR. This option changes the default directory
-     the gimp uses to search for its configuration files from ~/.gimp-1.2 
-     (the directory .gimp-1.2 in the users home directory) to DIR.
-  
-  5. --disable-print. The print plug-in requires a recent version of
+  --enable-gimpdir=DIR.  This option changes the default directory
+     the gimp uses to search for its configuration files from ~/.gimp-2.0 
+     (the directory .gimp-2.0 in the users home directory) to DIR.
+
+  --without-libtiff, --without-libjpeg, --without-libpng.  configure
+     will bail out if libtiff, libjpeg or libpng can not be found. You
+     better fix the underlying problem and install these libraries with
+     their header files. If you absolutely want to compile GIMP without
+     support for TIFF, JPEG or PNG you need to explicitely disable
+     them using the options given above.
+ 
+  --without-exif.  If libexif is available, the JPEG plug-in will use
+     it to keep EXIF data in your JPEG files intact.  If this is
+     causing any trouble at compile-time, you can build --without-exif.
+     Get libexif from http://www.sourceforge.net/projects/libexif.
+
+  --without-mng, --without-aa.  The MNG plug-in needs libmng and
+     configure checks for its presense. If for some reason you don't
+     want to build the MNG plug-in even though the library is installed,
+     use --without-mng to disable it expliticely. The same switch exists
+     for aalib, use --without-aa if you run into problems.
+
+  --with-gif-compression=[lzw|rle|none].  Allows to tune the compression
+     algorithm used by the GIF plug-in. If you are afraid of Unisys' LZW
+     patent, you can go for simple run-length encoding or even configure
+     the plug-in to create uncompressed GIFs.
+
+  --enable-gtk-doc.  This option controls whether the libgimp API
+     references will be created using gtk-doc. The HTML pages are 
+     included in a standard tarball, so you will only need this if you
+     are building from CVS.
+
+  --with-html-dir=PATH.  This option allows to specify where the
+     libgimp API reference should be installed. You might want to modify
+     the path so it points to the place where glib and gtk+ installled
+     their API references so that the libgimp reference can link to
+     them.
+
+  --disable-print.  The print plug-in requires a recent version of
      libgimpprint. If you don't have it already installed, download
-     it from http://gimp-print.sourceforge.net/. If you want to compile
-     GIMP without support for printing, use the --disable-print option.
+     it from http://gimp-print.sourceforge.net/. You need to pass
+     --without-gimp to gimp-print's configure script to build it without
+     having gimp-1.2 installed. If you want to compile GIMP without
+     support for printing, use the --disable-print option.
 
-  6. --enable-perl and --disable-perl. The perl extension does not build
-     on all systems. If you experience problems use --disable-perl
-     and gimp will not even try to built it. The perl extension does
-     not usually respect the normal configure prefix but uses perl's
-     instead. You can force it to use a different prefix by giving it as
-     an argument to the --enable-perl option (--enable-perl=/my/prefix),
-     however, you will usually have to set PERL5LIB or equivalent
-     environment variables, otherwise gimp-perl will not run or you will
-     get many errors on startup. See README.perl for even finer grained
-     control about installation paths (and distribution making).
+  --enable-mp. This options control whether to build GIMP with or without
+     support for multiple processors. This option is off by default. If
+     you do have multiply processors and run GIMP with an OS supporting
+     them you will like to enable this features to use all of your
+     horsepower. Enabling it on singleprocessor systems won't harm but
+     cause a bit processing overhead.
 
-  7. --enable-nls and --disable-nls. This option changes whether to build
-     GIMP with or without localisation support. This option is enabled by
-     default. If you'd like to enjoy GIMP in your native language, assuming 
-     the necessary catalogs are available, then leave this option on. If
-     you'd like to have an English GIMP in every case then turn this option
-     off; this will also decrease the binary size by a few bits.
-  
-  8. --with-mp. This options control whether to build GIMP with or without
-     support for multiple processors. This option is off by default. If you
-     do have multiply processors and run GIMP with an OS supporting them
-     you will like to enable this features to use all of your horsepower.
-     Enabling it on singleprocessor systems won't harm but cause a bit
-     processing overhead.
+  --with-sendmail=[PATH]. This option is used to tell GIMP where to find
+     the sendmail command. Normally this options don't have to be used
+     because configure tries to find it in the usual places.
 
-  9. --with-sendmail=[]. This option is used to tell GIMP where to find
-     this command. Normally this options don't have to be used because
-     configure tries to find it in the usual places.
-  
+  --with-desktop-dir=[PATH]. This option specifies where to install
+     links to the gimp desktop files. These files are used by desktop
+     environments that comply to the specs published at freedesktop.org.
+     The default value ${prefix}/share should be fine if your desktop
+     environment is installed in the same prefix as gimp. No links are
+     created if the desktop directories don't exist or you used
+     --without-desktop-dir.
+
+  --disable-default-binary. Use this option if you don't want to make
+     gimp-2.0 the default gimp installation. Otherwise a link called
+     gimp pointing to the gimp-2.0 executable will be installed.
+
 The `make' command builds several things:
- - The libraries `libgimp/libgimp.la', `libgimp/libgimpi.la' and
-   `libgimp/libgimpui.la'. The `.la' suffix is used by libtool, the
-    program used to ease the compilation of shared libraries on
-    different platforms.
- - The plug-in programs in the `plug-ins' subdirectory.
- - The main GIMP program in `app/gimp'.
+ - A bunch of public libraries in the directories starting with 'libgimp'.
+ - The plug-in programs in the 'plug-ins' directory.
+ - Some modules in the 'modules' subdirectory.
+ - The main GIMP program 'gimp-2.0' in `app'.
 
 The `make install' commands installs the gimp header files associated 
-with libgimp and the libgimp library, the plug-ins, some data files and 
-the GIMP executable. After running `make install' and assuming the build 
-process was successful you should be able to run `gimp'.
+with the libgimp libraries, the plug-ins, some data files and the GIMP 
+executable. After running `make install' and assuming the build process 
+was successful you should be able to run `gimp'.
 
-Using `make install-strip' will remove unneeded debugging cruft and 
-unused functions from the binaries which will reduce the size of the
-GIMP and its plug-ins. 
 
 When ./configure fails
 ======================
 
-'configure' tries to compile and run a short GTK program. There are
+'configure' uses pkg-config, a tool that replaces the old foo-config
+scripts. The most recent version is available from 
+	http://www.freedesktop.org/software/pkgconfig/
+
+'configure' tries to compile and run a short GTK+ program. There are
 several reasons why this might fail:
 
-* The 'gtk-config' script installed with GTK could not be found.
-  (This script is used to get information about where GTK is
-   installed.)
+* pkg-config could not find the file 'gtk+-2.0.pc' that gets installed 
+  with GTK. (This file is used to get information about where GTK+ is
+  installed.)
 
-  Fix: Either make sure that this program is in your path, or set
-  the environment variable GTK_CONFIG to the full pathname to
-  this program before running configure.
+  Fix: Either make sure that this file is in the path where pkg-config 
+  looks for it (try 'pkg-config --debug' or add the location of 
+  gtk+-2.0.pc to the environment variable PKG_CONFIG_PATH before running 
+  configure.
 
-* The GTK libraries were not found at run time. The details
-  of how to fix this problem will depend on the system:
+* Libraries you installed are not found when you attempt to start gimp.
+  The details of how to fix this problem will depend on the system:
 
-  Fix: On Linux and other systems using ELF libraries, add the
-  directory to /etc/ld.so.conf or to the environment variable 
+  On Linux and other systems using ELF libraries, add the directory to
+  holding the library to /etc/ld.so.conf or to the environment variable
   LD_LIBRARY_PATH, and run 'ldconfig'.
 
   On other systems, it may be necessary to encode this path
@@ -139,30 +203,15 @@ several reasons why this might fail:
   or
     LDFLAGS="-Wl,-rpath -Wl,/home/joe/lib" ./configure
 
-* An old version of the GTK libraries was found instead of 
+* An old version of the GTK+ libraries was found instead of 
   your newly installed version. This commonly happens if a
-  binary package of GTK was previously installed on your system,
-  and you later compiled GTK from source.
+  binary package of GTK+ was previously installed on your system,
+  and you later compiled GTK+ from source.
 
   Fix: remove the old libraries and include files.
 
-* The perl extension does not detect all combinations of libraries and
-  packages it needs to built properly, causing compilation to stop
-  prematurely.
-  
-  Fix: use configure with the "--disable-perl" switch or install perl
-  (version>=5.005) and the Perl-Gtk-interface.
-
 A detailed log of the ./configure output is written to the file
 config.log. This may help diagnose problems.
-
-If you are sure of what you're doing, you can bypass the sanity check and
-just go by what gtk-config by using the --disable-gtktest option. Please
-only use this in dire circumstances.
-
-After fixing a problem, it is safest to delete the file 'config.cache'
-before re-running ./configure.
-
 
 
 When ./configure fails on plug-ins
@@ -186,8 +235,6 @@ Set your CPPFLAGS environment variable to look for the header file in a
 certain place, e.g. if you are working in a bash shell you would say:
       export CPPFLAGS="-I<path_to_header_file> -I<path_to_another_one>"
 before you run configure.
-
-It's wise to remove the file 'config.cache' before re-running configure.
 
 
 

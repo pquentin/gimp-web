@@ -1,0 +1,21 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - The GNU Image Manipulation Program</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<p>The GIMP is the GNU Image Manipulation Program.  It is a freely
+distributed piece of software for such tasks as photo retouching,
+image composition and image authoring.  It works on many operating
+systems, in many languages.</p>
+
+<p>This is the official web site of the GIMP, and contains information
+about downloading, installing, using, and enhancing it.  This site
+also serves as a distribution point for the latest releases.  We try
+to provide as much information about the GIMP community and related
+projects as possible.  Hopefully you will find what you need here.
+Grab a properly chilled beverage and enjoy.</p>
+
+
+<!--#include virtual="/includes/news.inc" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

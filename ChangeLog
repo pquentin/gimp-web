@@ -1,5 +1,8 @@
 2004-12-01  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* index2.html:
+	Alternative home page to display automatically generated news.
+
 	* programmatic/admin/news/icons/wilber_painter.png
 	* programmatic/admin/news/icons/wilber_wizard.png
 	* programmatic/admin/news/icons/wilber_work.png

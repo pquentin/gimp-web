@@ -9,6 +9,8 @@
 2002-11-10 brix <brix@gimp.org>
 
 	* books/index.html: added more descriptions and website links
+
+	* style/default.css: added margins to div.code
 	
 2002-11-09 scizzo <scizzo@gimp.org>
 

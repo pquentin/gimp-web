@@ -146,6 +146,9 @@ div.code {
   border: solid 2px black;
   font-family: monospace;
   white-space: pre;
+  margin: 1.33em 0px;
+  margin-left: 40px; 
+  margin-right: 40px;
 }
 
 #linkbar, #navbar {

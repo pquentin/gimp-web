@@ -131,6 +131,11 @@ img.icon {
   margin: 5px;
 }
 
+img.mao {
+  margin: 0px;
+  padding: 0px;
+}
+
 div.subtitle {
   font-weight: bold;
   clear: both;

@@ -6,6 +6,8 @@
 	* windows/index.htrw: added links to /docs/ on all platform-specific
 	pages and collected common links in the platform-neutral section.
 	
+	* admin/gimp-web-urls: removed links to old man-pages.
+
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
 	* docs/index.htrw: link to man-pages.

@@ -1,0 +1,22 @@
+#!/usr/bin/perl -d
+
+# <sjburges@gimp.org>
+use Gimp qw(:auto);
+use Gimp::Fu;
+use Gimp::Util;
+# Gimp::set_trace(TRACE_ALL); # uncomment to do tracing
+
+register "example", "Example", "Dumb example for debugging",
+         "Seth Burgess", "Seth Burgess <sjburges\@gimp.org>", "1.0",
+         "<Toolbox>/Xtns/Dumb Example", "*", [], sub {
+	 
+   $DB::single = 1; # Enter single step if using -d
+   
+   $fname = "/home/seth/dumb.jpg";
+   $img = gimp_file_load($fname, $fname);
+   $img->display_new();
+
+   return();
+};
+
+exit main;

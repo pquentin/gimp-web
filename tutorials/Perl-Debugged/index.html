@@ -1,0 +1,255 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Perl Debugged</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Perl Debuggde</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  The Perl module for Gimp is a nice evolution of the scripting interface of Gimp. It removes the dependence on the relatively rarely encountered 
+  scheme language of script-fu and replaces it with one that is familiar to a much larger audience. In doing so, the perl interface to gimp also 
+  can take advantage of many of the features that have been added to perl over the years.
+  <br /><br />
+  My aim in creating this tutorial is to make debugging scripts easier. We'll touch on the facilities provided by the Gimp module, 
+  and then focus on using the perl debugger to interactively develop scripts.
+  <br /><br />
+  To illustrate the points in this tutorial, this is a simple script that will change as we progress:
+</p>
+<div class="code">
+#!/usr/bin/perl
+
+use Gimp qw(:auto);
+use Gimp::Fu;
+use Gimp::Util;
+
+register "example", "Example", "Dumb example for debugging",
+   "Seth Burgess", "Seth Burgess ", "1.0",
+    "/Xtns/Dumb Example", "*", [], sub {
+   
+   $fname = "/home/seth/dumb.jpg";
+   $img = gimp_file_load($fname, $fname);
+   $img-&gt;display_new();
+
+   return();
+   };
+
+exit main;
+</div>
+
+<div class="subtitle">Gimp::set_trace</div>
+<p>
+  The gimp module provides tracing ability, which is a form of debugging. 
+  To activate this, start gimp from an XTerm, and place the following at the top of the script:
+</p>
+<div class="code">
+#!/usr/bin/perl
+
+use Gimp qw(:auto);
+use Gimp::Fu;
+use Gimp::Util;
+
+<b>Gimp::set_trace(TRACE_ALL);</b>
+
+register "example", "Example", "Dumb example for debugging",
+   "Seth Burgess", "Seth Burgess ", "1.0",
+   "/Xtns/Dumb Example", "*", [], sub {
+
+   $fname = "/home/seth/dumb.jpg";
+   $img = gimp_file_load($fname, $fname);
+   $img-&gt;display_new();
+
+   return();
+   };
+
+exit main;
+</div>
+<p>
+  This will give the maximum amount of tracing information, displayed on the console window you start gimp from. 
+  You can cut back on what all gets displayed by using an "or'ed" combination of the following other options in place of TRACE_ALL:
+</p>
+<table BGCOLOR="#CCFFCC">
+<tr><td WIDTH=20%>TRACE_NONE</td><td WIDTH=40%>         turn off tracing</td></tr>
+<tr><td>TRACE_CALL</td><td>     trace only Gimp Procedural Database (PDB) calls (including arguments and return values)</td></tr>
+<tr><td>TRACE_TYPE</td><td>      also print the parameter types</td></tr>
+<tr><td>TRACE_NAME</td><td>     print the parameter names</td></tr>
+<tr><td>TRACE_DESC</td><td>     print the parameter descriptions</td></tr>
+</table>
+<p>
+  Using TRACE_ALL can let you see easily what parameters are wrong so you can fix misbehaviour in scripts. 
+  It provides a powerful history of what could be going wrong in your script.
+</p>
+
+<div class="subtitle">Perl Debugger</div>
+<p>
+  Perl comes with a debugger built in, which we can effectively utilize for interactive execution of our scripts. 
+  To invoke this, put a -d on the invocation line for the script as follows:
+</p>
+<div class="code">
+#!/usr/bin/perl <b>-d</b>
+
+use Gimp qw(:auto);
+use Gimp::Fu;
+use Gimp::Util;
+# Gimp::set_trace(TRACE_ALL); # uncomment to do tracing
+
+register "example", "Example", "Dumb example for debugging",
+   "Seth Burgess", "Seth Burgess &lt;sjburges\@gimp.org&gt;, "1.0",
+   "/Xtns/Dumb Example", "*", [], sub {
+
+   $fname = "/home/seth/dumb.jpg";
+   $img = gimp_file_load($fname, $fname);
+   $img-&gt;display_new();
+
+   return();
+};
+
+exit main;
+</div>
+<p>
+  If you change a Gimp-Perl script to utilize this, you'll notice gimp halting on startup. This is because gimp is querying the plug-in, 
+  and it is halting due to having debugging enabled. Just type 'c' in the window, and then 'q' to let gimp continue loading:
+</p>
+<div class="code">
+Enter h or `h h' for help, or `man perldebug' for more help.
+
+main::(/home/seth/.gimp-1.3/plug-ins/demo:21):
+21:     };
+  DB&lt;1&gt; c
+Debugged program terminated.  Use q to quit or R to restart,
+  use O inhibit_exit to avoid stopping after program termination,
+  h q, h R or h O to get additional info.  
+  DB&lt;1&gt; q
+</div>
+<p>
+  This is not a part of the script we're really intrested in - its the registration of the plug-in with gimp. It turns out to be a really annoying behaviour, 
+  since every time we modify the script we'll need to do this on startup. Luckily we have another way of attacking this provided by the Gimp module - that is the Perl Server.
+  <br /><br />
+  First, move your script out of your plug-ins directory to somewhere else. Then startup gimp. Start the Perl Server by going to <span class="filter">Xtns -&gt; Perl Server</span>. 
+  You'll see something like the following in the XTerm window of gimp:
+</p>
+<div class="code">
+989020828: server version 1.201 started
+989020828: accepting connections on /tmp/gimp-perl-serv-uid-1000/gimp-perl-serv
+</div>
+<p>
+  Now from another XTerm, execute the script (just type its name). This will immediately start debugging the new script. 
+  You can set a breakpoint on a line of your choice and execute 'c' to let it execute until that line.
+</p>
+<div class="code">
+  DB&lt;1&gt; b 13
+  DB&lt;2&gt; c
+    13:        $fname = "/home/seth/dumb.jpg";
+</div>
+<p>
+  You can now examine variables with perl functions (print $fname) and modify them during runtime. 
+  You can change the point of execution, and do most everything you'd expect from a debugger.
+</p>
+
+<div class="subtitle">$DB::single</div>
+<p>
+  Instead of having to remember what line the intresting part of your script starts on and set a breakpoint there, 
+  perl provides a way to programmatically jump into single-step mode. Add the following to the top of your sub:
+</p>
+<div class="code">
+#!/usr/bin/perl -d
+
+use Gimp qw(:auto);
+use Gimp::Fu;
+use Gimp::Util;
+# Gimp::set_trace(TRACE_ALL); # uncomment to do tracing
+
+register "example", "Example", "Dumb example for debugging",
+  "Seth Burgess", "Seth Burgess &lt;sjburges\@gimp.org&gt;", "1.0",
+  "/Xtns/Dumb Example", "*", [], sub {
+
+  <b>$DB::single = 1; # Enter single step if using -d</b>
+
+  $fname = "/home/seth/dumb.jpg";
+  $img = gimp_file_load($fname, $fname);
+  $img-&gt;display_new();
+
+  return();
+};
+
+exit main;
+</div>
+<p>
+  Now when you run your script, hit 'c' and it will break on the entry of the sub {} call. Using $DB::single will only have any effect when using -d - its ignored otherwise, 
+  so you can leave it in scripts without any side effects.
+</p>
+
+<div class="subtitle">Example Session</div>
+<p>
+  After invoking the perl server, I run 'Example' from a commandline shell:
+</p>
+<div class="code">
+Default die handler restored.
+
+Loading DB routines from perl5db.pl version 1.07
+Editor support available.
+
+Enter h or `h h' for help, or `man perldebug' for more help.
+
+main::(./Example:20):   };
+  DB&lt;1&gt; c
+main::CODE(0x83f240c)(./Example:15):
+15:        $fname = "/home/seth/dumb.jpg";
+  DB&lt;1&gt; n
+main::CODE(0x83f240c)(./Example:16):
+16:        $img = gimp_file_load($fname, $fname);
+  DB&lt;1&gt; print $fname
+/home/seth/dumb.jpg
+  DB&lt;2&gt; $fname = "/home/seth/foo.png";
+
+  DB&lt;3&gt; print $fname
+/home/seth/foo.png
+  DB&lt;4&gt; n
+main::CODE(0x83f240c)(./Example:17):
+17:        $img-&gt;display_new();
+  DB&lt;4&gt; n
+main::CODE(0x83f240c)(./Example:19):
+19:        return();
+  DB&lt;4&gt; c
+Debugged program terminated.  Use q to quit or R to restart,
+  use O inhibit_exit to avoid stopping after program termination,
+  h q, h R or h O to get additional info.
+  DB&lt;4&gt; q
+</div>
+<p>
+  This example session shows changing a value of a variable at run-time so to load a different file than the one hard-coded into the script. 
+  Note that I continue ('c') and it stops immediately after $DB::single is set.
+  <br /><br />
+  Far more complex debugging is possible, but this should give you a good taste of what its all about.
+</p>
+
+<div class="subtitle">Conclusion</div>
+<p>
+  Thats all there is to it! I hope this has been useful to you.
+  <br /><br />
+  You can <a href="perldebug.tar.gz">download a compressed copy</a> of this tutorial.  You can also get a <a href="Example">copy of the script</a>.
+  Feel free to use either/both however you want.
+  <br /><br />
+  This tutorial has gone over the basics of using the Gimp module for tracing, the Perl Server for starting your scripts, 
+  and using the perl debugger to interactively execute your scripts. If you have comments, questions, 
+  or suggestions about this tutorial, please drop me a line.
+  <br /><br />
+  Happy GIMPing, Seth
+</p>
+
+<p>
+  The original tutorial can be found <a href="http://www.gimp.org/~sjburges/perl_debug/intro.html">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:sjburges@gimp.org">Seth Burgess (sjburges)</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

@@ -1,3 +1,9 @@
+2002-10-22 brix <brix@gimp.org>
+	
+	* books.html, books/index.html: renamed /books.html to /books/index.html
+
+	* includes/linkbar.inc: changed link from /books.html to /books/
+	
 2002-10-21 carol <carol@gimp.org>
         
         * resources/gradients/index.html, resources/gradients/mgo-gradients.py

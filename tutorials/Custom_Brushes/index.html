@@ -1,0 +1,86 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Custom Brushes Tutorial</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Custom Brushes Tutorial</div>
+
+<div class="subtitle">Intention</div>
+<p>
+   Along with the brushes already included, you can create custom brushes using two methods. 
+   One which is a black-n-white brush which is saved in .GBR extension. The content of this brush is treated as an alpha-channel. 
+   This means that any pixel that is pure black is treated as a transparent pixel. However, we will be creating brushes that use pictures 
+   with colour and this brush will also have multiple images.
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="thumb1.jpg" alt=""/>
+</p>
+<p>
+  Create a new image the size of the brush you will be creating. For out exanmple, we will be creating a 64x64 image.
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="thumb2.jpg" alt=""/>
+</p>
+<p>
+  Go to the Layers dialog and delete the layer called Background (if there is one) and then create 3 layers. Make sure that when creating the layers,
+  the fill type is Transparent. Give them any name you want. We will be just namnig them Layer1, Layer2, and Layer3. 
+  The layer name really doesn't matter in this case. 
+</p>
+
+<div class="subtitle">Step 3</div>
+<p class="images">
+  <img src="thumb3.jpg" alt=""/>
+</p>
+<p>
+  Draw the images you want in the layers that were already created. In our case we will be drawing a picture of a happy face in 3 colours 
+  (red, green and yellow). At the end your layers should look something like this (see image on the left).
+  <br />
+  NOTE: Make sure you save your image as a standard GIMP .XCF file because GIMP cannot re-open a picture brush once it's saved.
+</p>
+
+<div class="subtitle">Step 4</div>
+<p class="images">
+  <img src="thumb4.jpg" alt=""/>
+</p>
+<p>
+  The last step is to save our brush as a GIMP picture brush. The extension of this kind of brush is .GIH. So right click on the image, then choose File-&gt;Save As....
+  Because all brushes resides in the /gimp/brushes folder go to that folder and type in a name for the brush. For our example, the brush was named HAPPY.GIH
+  <br />
+  Then Save As Pixmap Brush Pipe dialog will ask you how you want to save the image. Since we have 3 layers make sure we put 3 in the Ranks edit box.
+  You can also choose how you want the images to appear as you move the mouse aruond. In mose cases Random will do fine.
+  <br />
+  NOTE: The Spacing (Percent) means how many spaces will occur before the next image is drawn. If the value is lower, then the image will be drawn more frequent.
+  You can also adjust this value in the Brush dialog. 
+</p>
+
+<div class="subtitle">Final</div>
+<p class="images">
+  <img src="thumb5.jpg" alt=""/>
+</p>
+<p>
+  To see our brush, go to the Brushes dialog and hit the Refresh button. Our happy image should appear in the dialog. If it doesn't, make sure you have 
+  saved the brush in the /gimp/brushes folder and that it has an extension of .GIH. You will note that our little picture on the right has a little red
+  triangle in the bottom right corner. This tells us that the brush as multiple pictures in them.
+  <br />
+  Let's test our brush. Select our brush from the brush dialog, create a simple image and start drawing. 
+</p>
+<p class="images">
+  <img src="thumb6.jpg" alt=""/>
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:author@host.org">Gautam N. Lad</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

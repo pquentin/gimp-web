@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.2
+#!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
 # Copyright (C) 2002, 2003 Helvetix Victorinox, a pseudonym,

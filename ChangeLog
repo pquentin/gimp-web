@@ -1,3 +1,12 @@
+2003-06-15  Manish Singh  <yosh@gimp.org>
+
+	* admin/example.html: remove generated file
+
+	* programmatic/apache_ssi.py
+	* programmatic/tools/rewrite_attrs.py
+	* programmatic/tools/ssi-pp.py
+	* programmatic/tools/subst.py: use #!/usr/bin/env ${PYTHON}
+
 2003-05-01  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added tutorials/.cvsignore

@@ -17,63 +17,65 @@
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="thumb1.jpg" alt="" />
+  <img src="thumb1.png" alt="" />
 </p>
 <p>
-  Create a new image the size of the brush you will be creating. For out exanmple, we will be creating a 64x64 image.
+  Create a new image the size of the brush you will be creating. For our example, we will be creating a 64x64 image.  Create it with a transparent background.
 </p>
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="thumb2.jpg" alt="" />
+  <img src="thumb2.png" alt="" />
 </p>
 <p>
-  Go to the Layers dialog and delete the layer called Background (if there is one) and then create 3 layers. Make sure that when creating the layers,
-  the fill type is Transparent. Give them any name you want. We will be just namnig them Layer1, Layer2, and Layer3. 
-  The layer name really doesn't matter in this case. 
+  Go to the Layers dialog and create additional layers with the fill type Transparent (if necessary, delete or clear the background layer if you forgot to make it transparent when creating the image).
+  <br />
+  Give them any name you want. We will be just naming them Layer1, Layer2, and Layer3. 
+  The layer name really don't matter in this case.
 </p>
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="thumb3.jpg" alt="" />
+  <img src="thumb3.png" alt="" />
 </p>
 <p>
   Draw the images you want in the layers that were already created. In our case we will be drawing a picture of a happy face in 3 colours 
   (red, green and yellow). At the end your layers should look something like this (see image above).
-  <br />
-  NOTE: Make sure you save your image as a standard GIMP .XCF file because GIMP cannot re-open a picture brush once it's saved.
+  You can save a copy of your image in .xcf format now, in case you want to edit it later.
 </p>
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="thumb4.jpg" alt="" />
+  <img src="thumb4.png" alt="" />
 </p>
 <p>
-  The last step is to save our brush as a GIMP picture brush. The extension of this kind of brush is .GIH. So right click on the image, then choose 
+  The last step is to save your brush as a GIMP picture brush. The extension of this kind of brush is .GIH. So right click on the image, then choose 
   <span class="filter">&lt;Image&gt; File -&gt; Save As....</span>
-  Because all brushes resides in the /gimp/brushes folder go to that folder and type in a name for the brush. For our example, the brush was named HAPPY.GIH
+  IF you want the GIMP to be able to use your new brush, you have to save it in the "brushes" folder inside your personal GIMP folder (for Linux and other UNIX systems, this is usually in "~/.gimp-2.0/brushes/").  So select that folder and type in a name for the brush. For our example, the brush was named <b>happy.gih</b>
   <br />
-  Then Save As Pixmap Brush Pipe dialog will ask you how you want to save the image. Since we have 3 layers make sure we put 3 in the Ranks edit box.
-  You can also choose how you want the images to appear as you move the mouse aruond. In mose cases Random will do fine.
+  The Save As Pixmap Brush Pipe dialog will ask you how you want to save the image. Since we have 3 layers make sure to put 3 in the Ranks edit box.
+  You can also choose how you want the images to appear as you move the mouse aruond. In most cases Random will do fine.
   <br />
-  NOTE: The Spacing (Percent) means how many spaces will occur before the next image is drawn. 
-  If the value is lower, then the image will be drawn more frequent.
+  NOTE: The Spacing (Percent) means how much space is left before the next image is drawn. 
+  If the value is lower, then the image will be drawn more frequently.
   You can also adjust this value in the Brush dialog. 
 </p>
 
 <h2>Final</h2>
 <p class="images">
-  <img src="thumb5.jpg" alt="" />
+  <img src="thumb5.png" alt="" />
 </p>
 <p>
   To see our brush, go to the Brushes dialog and hit the Refresh button. Our happy image should appear in the dialog. If it doesn't, make sure you have 
-  saved the brush in the /gimp/brushes folder and that it has an extension of .GIH. You will note that our little picture on the right has a little red
-  triangle in the bottom right corner. This tells us that the brush as multiple pictures in them.
+  saved the brush in the GIMP "brushes" folder and that it has an extension of .GIH.
+  <br />
+  You will note that our little picture on the right has a little red
+  triangle in the bottom right corner. This tells us that the brush contains multiple pictures.  You can click on the brush image and hold the mouse button to see a preview of the brush.  The brush animation will show you that it contains the three images.
   <br />
   Let's test our brush. Select our brush from the brush dialog, create a simple image and start drawing. 
 </p>
 <p class="images">
-  <img src="thumb6.jpg" alt="" />
+  <img src="thumb6.png" alt="" />
 </p>
 
 <p>

@@ -1,3 +1,16 @@
+2004-03-17  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/Straight_Line/exp2.png: As suggested by Seth, I re-did
+	the image to get rid of a bug in the original version.
+
+	* tutorials/Custom_Brushes/thumb*.png: Added new 2.0 screenshots.
+
+	* tutorials/Custom_Brushes/thumb*.jpg: Removed.
+
+	* tutorials/Custom_Brushes/index.htrw: Updated for 2.0, fixed
+	several typos, replaced the *.jpg links with *.png.  The PNG files
+	are significantly smaller and look better.
+
 2004-03­17  Ville Pätsi  <drc@gimp.org>
 
 	* style/wgo.css: Fixed news icons. Changed "p.news img" to "div.news

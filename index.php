@@ -4,6 +4,13 @@
   <head>
     <title>GIMP - The GNU Image Manipulation Program</title>
     <link rel="stylesheet" type="text/css" href="style/default.css"/>
+    
+    <?php
+      if (isset ($tutorial)) {
+        echo '<style type="text/css">#linkbar, #menu { display: none; }</style>';
+      }
+    ?>
+
   </head>
  
   <body>

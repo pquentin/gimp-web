@@ -21,3 +21,5 @@ CVS
 *.ssi
 *.htrw
 *.pyc
+/install.config
+/install.config.sample

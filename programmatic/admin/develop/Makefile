@@ -31,12 +31,12 @@ clean mrproper:
 install: install-first
 
 install-first: all
-	install --mode=755 -d `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
-	install --mode=755 changelogs.cgi `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
-	install --mode=755 gimp-unstable   \
+	install -m 755 -d `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
+	install -m 755 changelogs.cgi `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
+	install -m 755 gimp-unstable   \
 	                   gegl-unstable   \
 	                   gimp-help       \
 	                   gimp-print      \
 	                   film-gimp       \
 	                   changelog-cron `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
-	install --mode=755 index.html     `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
+	install -m 755 index.html     `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop

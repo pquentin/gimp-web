@@ -31,12 +31,12 @@ contest_config.py: Makefile ../Makefile.defs
 	 echo "images_dir='/contest/images/'"                         ; \
 	 echo "images_path='${DocumentRoot}' + images_dir"            ; \
 		echo                                                         ; \
-	 echo "spool_dir='/var/spool/wgo-contest/'  # must end in trailing /" ; \
-	 echo "spool_path='${DocumentRoot}' + spool_dir # must end in trailing /" ; \
+	 echo "spool_dir='/wgo-contest/'  # must end in trailing /" ; \
+	 echo "spool_path='${DataRoot}' + spool_dir # must end in trailing /" ; \
 		echo                                                         ; \
 	 echo "tmp_directory_ttl=60"                                  ; \
-	 echo "gallery_dir='/var/spool/wgo-contest-current/'"         ; \
-	 echo "gallery_path='${DocumentRoot}'+gallery_dir"            ; \
+	 echo "gallery_dir='/wgo-contest-current/'"         ; \
+	 echo "gallery_path='${DataRoot}'+gallery_dir"            ; \
 	 echo "permission=0644"                                       ; \
 	 echo "debug=0"                                               ; \
 	 echo "validator=0"                                           ; \
@@ -53,13 +53,13 @@ clean mrproper:
 	/bin/rm -f *.pyc *.cgi wgo-contest.css contest_config.py *~
 
 install: all
-	install --mode=755 -d ${LIBDIR}
-	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/include
-	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/icons
-	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/images
-	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.icon_path'`
-	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.spool_path'`
-	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.gallery_path'`
+	install -m 755 -d ${LIBDIR}
+	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/include
+	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/icons
+	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/images
+	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.icon_path'`
+	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.spool_path'`
+	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.gallery_path'`
 
 	install contest_config.py \
 	        wgo_contest.py         ${LIBDIR}

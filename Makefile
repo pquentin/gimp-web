@@ -50,24 +50,24 @@ target:
 	@echo "Choose a target among: clean, all, install or cvsignore"; exit 1
 
 mirrors:
-	make -C programmatic downloads
-	make -C programmatic install-downloads
+	$(MAKE) -C programmatic downloads
+	$(MAKE) -C programmatic install-downloads
 
 webtools:
-	make -C programmatic webtools
+	$(MAKE) -C programmatic webtools
 
 programmatic:
-	make -C programmatic all
+	$(MAKE) -C programmatic all
 
 crontab:
-	make -C crontab all
+	$(MAKE) -C crontab all
 
 install: all
-	make -C programmatic install
-	make -C crontab install
+	$(MAKE) -C programmatic install
+	$(MAKE) -C crontab install
 
 clean:
-	make -C programmatic clean
+	$(MAKE) -C programmatic clean
 	rm -f ${TARGETS}
 
 cvsignore:

@@ -27,11 +27,11 @@ install: install-first
 
 install-first: all
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' ChangeLog.py        > ${LIBDIR}/ChangeLog.py && chmod 755 ${LIBDIR}/ChangeLog.py
-	install --mode=755 gimp-unstable   \
+	install -m 755 gimp-unstable   \
 	                   gegl-unstable   \
 	                   gimp-help       \
 	                   gimp-print      \
 	                   film-gimp       \
 	                   changelog-cron             `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=644 changelog-xhtml.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=644 changelog-xhtml-mono.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
+	install -m 644 changelog-xhtml.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
+	install -m 644 changelog-xhtml-mono.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs

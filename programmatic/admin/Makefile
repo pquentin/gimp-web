@@ -36,13 +36,13 @@ clean mrproper:
 install: install-first install-news install-contest install-devel
 
 install-first: all
-	install --mode=744 dot-forward   ${DocumentRoot}/.forward
+	install -m 744 dot-forward   ${DocumentRoot}/.forward
 
 	install wgo_admin.py            ${LIBDIR}
 
-	install --mode=755 -d `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
-	#install --mode=744 dot-htaccess ${DocumentRoot}/admin/.htaccess
-	install --mode=744 dot-password `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/passwords
+	install -m 755 -d `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
+	#install -m 744 dot-htaccess ${DocumentRoot}/admin/.htaccess
+	install -m 744 dot-password `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/passwords
 
 	install wgo-admin.css           `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/style
 	install howto.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`

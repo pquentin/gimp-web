@@ -30,8 +30,8 @@ wgo_config.py: Makefile Makefile.defs
 	 echo "admin_path='${DocumentRoot}' + admin_dir"              ; \
 	 echo "includes_dir='/includes/'"                             ; \
 	 echo "includes_path='${DocumentRoot}' + includes_dir"        ; \
-	 echo "spool_dir='/var/spool/' # must end in trailing /"      ; \
-	 echo "spool_path='${DocumentRoot}' + spool_dir # must end in trailing /" ; \
+	 echo "spool_dir='/' # must end in trailing /"      ; \
+	 echo "spool_path='${DataRoot}' + spool_dir # must end in trailing /" ; \
 		echo                                                         ; \
 	 echo "debug=0"                                               ; \
 	 echo "validate=True"                                         ; \
@@ -70,7 +70,7 @@ clean mrproper:
 install: install-common install-admin install-contest install-about install-develop install-downloads
 
 install-common: all
-	install --mode=755 -d ${LIBDIR}
+	install -m 755 -d ${LIBDIR}
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py        > ${LIBDIR}/wgo.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo_develop.py        > ${LIBDIR}/wgo_develop.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' apache_ssi.py > ${LIBDIR}/apache_ssi.py
@@ -79,8 +79,8 @@ install-common: all
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' x_xml.py      > ${LIBDIR}/x_xml.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' changelog.py  > ${LIBDIR}/changelog.py
 	install            wgo_config.py ${LIBDIR}
-	install --mode=644 extended.css  ${DocumentRoot}/style/
-	install --mode=644 rdf-news.css  ${DocumentRoot}/style/
+	install -m 644 extended.css  ${DocumentRoot}/style/
+	install -m 644 rdf-news.css  ${DocumentRoot}/style/
 
 install-admin: admin
 	$(MAKE) -C admin install

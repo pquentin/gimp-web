@@ -1,9 +1,28 @@
-#!/bin/sh -x
+#!/bin/bash
 
-if test "x$1" != x ; then
-  INSTALLDIR=$1
-else
-  echo 2>&1 "Usage: install.sh DESTDIR"
+if [ ! -f install.config ]; then
+  echo ""
+  echo "Install procedure requires install.config file."
+  echo "See install.config.sample for an example."
+  echo ""
+  exit 1
+fi
+
+source install.config
+
+if [ "x${HTDOCS_DIR}" = "x" ]; then
+  echo ""
+  echo "HTDOCS_DIR must be specified in install.config."
+  echo "See install.config.sample for an example."
+  echo ""
+  exit 1
+fi
+
+if [ "x${DATA_DIR}" = "x" ]; then
+  echo ""
+  echo "DATA_DIR must be specified in install.config."
+  echo "See install.config.sample for an example."
+  echo ""
   exit 1
 fi
 
@@ -11,8 +30,10 @@ if test -z "$PYTHON" ; then
   PYTHON=python
 fi
 
-make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all programmatic install 2>&1 | tee make.out
-ls -l ${INSTALLDIR}/var/spool/wgo-contest-current | tee -a make.out
-echo done >> make.out
+if test -z "$MAKE" ; then
+  MAKE=make
+fi
 
+${MAKE} PYTHON=${PYTHON} DocumentRoot=${HTDOCS_DIR} DataRoot=${DATA_DIR} clean all programmatic install 2>&1 | tee make.out
+echo done >> make.out
 

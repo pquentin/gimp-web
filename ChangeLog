@@ -1,3 +1,30 @@
+
+2004-03-15  Shawn T. Amundson <amundson@gimp.org>
+
+	* M .cvsignore
+	  M Makefile
+	  A install.config.sample
+	  M install.exclude
+	  M install.sh
+	  M programmatic/Makefile
+	  M programmatic/about/ChangeLogs/Makefile
+	  M programmatic/admin/Makefile
+	  M programmatic/admin/contest/Makefile
+	  M programmatic/admin/develop/Makefile
+	  M programmatic/admin/news/Makefile
+	  M programmatic/contest/Makefile
+	  M programmatic/develop/Makefile
+	  M programmatic/downloads/Makefile: modifications to install.sh
+	to use bash and source a configuration file (install.config);
+	modifications to Makefiles to work with FreeBSD (install -m instead
+	of install --mode) and use $(MAKE) instead of "make".  Also changed
+	from $DocumentRoot/var/spool/... to $DataRoot/ for files which are
+	to be owned by webserver.
+
+	* M team.htrw: change Carol from "Contributor" to "Web Guru";
+	changed; remove "Former Web Coordinator" line; change Raphael
+	from "Web Coordinator" to "Web Guru"; added me as a Contributor. 
+
 2004-03-15  Sven Neumann  <sven@gimp.org>
 
 	* about/splash/stable.htrw

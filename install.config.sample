@@ -1,0 +1,2 @@
+export HTDOCS_DIR=/www/gimp.gui.org/htdocs
+export DATA_DIR=/www/gimp.gui.org/data

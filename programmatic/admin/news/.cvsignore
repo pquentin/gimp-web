@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+news-admin.css
+news-batch.cgi
+news-edit-action.cgi
+news-edit.cgi
+news-index.cgi
+news-receiver
+news_config.py

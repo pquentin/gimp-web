@@ -1,3 +1,5 @@
+*.pyc
+*.pyo
 contest.cgi
 contest_config.py
 gallery.cgi

@@ -58,8 +58,8 @@ install: all
 	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/icons
 	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`/images
 	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.icon_path'`
-	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.spool_path'`
-	install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.gallery_path'`
+	if [ ! -d "`${PYTHON} -c 'import contest_config; print contest_config.spool_path'`" ]; then install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.spool_path'`; fi
+	if [ ! -d "`${PYTHON} -c 'import contest_config; print contest_config.gallery_path'`"; then install -m 755 -d `${PYTHON} -c 'import contest_config; print contest_config.gallery_path'`; fi
 
 	install contest_config.py \
 	        wgo_contest.py         ${LIBDIR}

@@ -60,7 +60,7 @@ clean mrproper:
 install: install-news
 
 install-news: all
-	install -m 755 -d `${PYTHON} -c 'import news_config; print news_config.news_path'`
+	if [ ! -d "`${PYTHON} -c 'import news_config; print news_config.news_path'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; print news_config.news_path'`; fi
 	install include/news-archive_footer.html `${PYTHON} -c 'import news_config; print news_config.news_path'`
 	install include/news-archive_header.html `${PYTHON} -c 'import news_config; print news_config.news_path'`
 	install include/news-current_footer.html `${PYTHON} -c 'import news_config; print news_config.news_path'`
@@ -74,7 +74,7 @@ install-news: all
 	install news-edit.cgi                    `${PYTHON} -c 'import news_config; print news_config.news_path'`
 	install news-index.cgi                   `${PYTHON} -c 'import news_config; print news_config.news_path'`
 
-	install -m 755 -d `${PYTHON} -c 'import news_config; print news_config.icon_path'`
+	if [ ! -d "`${PYTHON} -c 'import news_config; print news_config.icon_path'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; print news_config.icon_path'`; fi
 	install icons/gimp_code.png              `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/gimp_construction.png      `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/release-0.1.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
@@ -86,6 +86,6 @@ install-news: all
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo_news.py > ${LIBDIR}/wgo_news.py
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo_queue.py > ${LIBDIR}/wgo_queue.py
 
-	install -m 755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.pending_queue)'`
-	install -m 755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.current_queue)'`
-	install -m 755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.archive_queue)'`
+	if [ ! -d "`${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.pending_queue)'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.pending_queue)'`; fi
+	if [ ! -d "`${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.current_queue)'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.current_queue)'`; fi
+	if [ ! -d "`${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.archive_queue)'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.archive_queue)'`; fi

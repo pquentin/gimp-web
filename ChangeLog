@@ -1,3 +1,12 @@
+2004-03-15  Shawn T. Amundson <amundson@gimp.org>
+
+	* M install.sh
+	  M programmatic/admin/news/Makefile
+	  M programmatic/contest/Makefile: install.sh now tries to
+	detect the presence of python2.2 if $PYTHON is not set; 
+	changed Makefiles to check for existance of data directories
+	before running install to create them
+
 2004-03-14  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* programmatic/tools/apache_ssi.py: SSI preprocessor makes the

@@ -26,8 +26,12 @@ if [ "x${DATA_DIR}" = "x" ]; then
   exit 1
 fi
 
-if test -z "$PYTHON" ; then
-  PYTHON=python
+if [ -z "$PYTHON" ]; then
+  if [ "`which python2.2`" != "" ]; then
+    PYTHON=python2.2
+  else
+    PYTHON=python
+  fi
 fi
 
 if test -z "$MAKE" ; then

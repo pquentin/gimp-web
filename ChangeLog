@@ -1,3 +1,8 @@
+2002-10-03  carol  <carol@gimp.org>
+
+	* README.repository: added instructions to edit ChangeLog and then
+	  to paste the ChangeLog entry into the cvs log.
+
 2002-10-02  scizzo  <scizzo@fungus>
 
 	* README.tutorials:

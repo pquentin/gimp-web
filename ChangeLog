@@ -8,6 +8,11 @@
 
 	* about/splash.html: more image name fixing and some cosmetics.
 
+	* about/splash/gimp/*, about/splash/gimp-1.1/* and about/splash/gimp-1.3/*: 
+    added the complete cvs archives of the splashscreens (as gathered by yosh)
+
+	* about/splash.html: some cosmetics.
+
 2002-11-24 carol <carol@gimp.org>
 
 	* about/splash.html: added this file.

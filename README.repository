@@ -19,7 +19,8 @@ added you should contact brix.
 
 when adding an html file that has SSI directives (the <!--#... --> lines) in it, 
 the file needs to be 'chmod +x file.html' (yes, the *.html file needs to be 
-executeable!).
+executeable!). furthermore, it need to be executeable at 'cvs add file.html';
+it's a pain to change the permissions when the file is already checked in.
 
 more to follow...
 

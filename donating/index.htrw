@@ -1,0 +1,50 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Donating</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Donating to the GIMP</h1>
+<p>
+  Donating money to the GIMP is easy!  The guys at the <a
+  href="http:Package-Gnome">GNOME Foundation</a> have graciously
+  agreed to act as fiscal agents for us, which means we can offer tax
+  deductible donations in the US.
+</p>
+<p>
+  There are 2 ways to support the GIMP financially, and get as many of
+  the <a href="wgo:dev">GIMP Developers</a> as possible to the GIMP
+  Developers Conference, taking place in Norway as a sub-event of <a
+  href="http:guadec">GUADEC</a> at the end of June, as well as
+  expenses associated with the establishment of the GIMP Foundation:
+</p>
+
+<h2>Cheque</h2>
+<p>
+  Cheque, made payable to the <a href="http:Package-Gnome">GNOME
+  Foundation</a>, and sent to:
+</p>
+<p>
+  GNOME Foundation<br />
+  c/o Novell, Inc.<br />
+  8 Cambridge Center<br />
+  Floor 5<br />
+  Cambridge, MA 02142<br />
+  USA
+</p>
+<p>
+  with a cover-letter (or a note in the "memo" field) saying it is for
+  the GIMP.  You can additionally send a mail saying that you have
+  donated to <a href="mail:People-Neary_Dave">Dave Neary</a>, if you
+  want to.
+</p>
+
+<h2>Wire Transfer</h2>
+<p>
+  Send an email to <a
+  href="mailto:fundraising@gnome.org">fundraising@gnome.org</a>,
+  requesting bank details, and specifying that you are donating to the
+  GIMP.
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -416,3 +416,5 @@
 ["href", "document:news-announce-0",   { "href": "http://groups.google.com/groups?selm=48s543%24r7b%40agate.berkeley.edu&amp;oe=UTF-8&amp;output=gplain"}]
 ["href", "document:news-announce-0.54",{ "href": "http://groups.google.com/groups?selm=cola-liw-824385260-28937-1%40oravannahka.helsinki.fi&amp;output=gplain"}]
 ["href", "document:wilberdust",        { "href": "http://anoncvs.gnome.gr.jp/viewcvs.cgi/gimp-plugins-unstable/wilberdust?rev=1.1&amp;content-type=text/vnd.viewcvs-markup"}]
+
+["href", "http:guadec",                { "href": "http://www.guadec.org"}]

@@ -98,7 +98,9 @@
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
     <div>
       <span id="footerleft">
-	How To &copy; 2005 <a href="mail:People-Budig_Simon">Simon Budig</a>
+	How To &copy; 2005 <a href="mail:People-Budig_Simon">Simon Budig</a>.
+	Licensed under the terms of the
+	<a href="http://www.gnu.org/licenses/gpl.html">GNU GPL</a>.
       </span>
       <span id="footerright">
         <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>

@@ -1,3 +1,7 @@
+2005-04-01  Simon Budig  <simon@gimp.org>
+
+	* unix/howtos/gimp-midi.htrw: clarified licensing terms.
+
 2005-03-29  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Simple_Animations/index.htrw: fixed a menu item.

@@ -2,6 +2,8 @@
 
 	* about/index.html:  added some historical urls to the history list
     
+	* tutorials/index.html:  shuffled the index page around a bit
+    
 2002-11-03 rockwlrs <rock@gimp.org>
 
 	* about/ChangeLogs/ChangeLog.pl: a script that autogenerates web pages

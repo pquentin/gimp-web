@@ -137,7 +137,7 @@ span.linkitem:after {
 
 @media print {
 
-#linkbar, #menu {
+#navbar, #linkbar, #menu {
   display: none
 }
 

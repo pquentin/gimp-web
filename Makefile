@@ -15,10 +15,10 @@ export PYTHONPATH=programmatic:
 
 # how to make an html from a .htrw file
 %.html: %.htrw
-	#programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
-	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $< > $@
+	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
+	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.x > $@
 	rm -f $<.x
-	chmod 755 $@
+#	chmod 755 $@
 
 RWSOURCES=$(shell find . -name '*.htrw' -print)
 RWTARGETS=$(RWSOURCES:.htrw=.html)
@@ -36,6 +36,7 @@ all: usage includes rsync webtools crontab ${TARGETS}
 
 includes:
 	rsync -rlt --delete --exclude-from=install.exclude includes ${DocumentRoot}
+	touch ${DocumentRoot}/mirrors.xhtml
 
 usage:
 	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; exit 1; fi

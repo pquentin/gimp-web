@@ -1,3 +1,33 @@
+2003-09-19  Raphael Quinet  <quinet@gamers.org>
+
+	* includes/wgo-tutorial-init.xhtml
+	* includes/wgo-tutorial-fini.xhtml
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-page-fini.xhtml: Use a table instead of a div + CSS
+	for the menu and main contents of the pages.  This is basically
+	restoring the table that was used before I replaced it with CSS on
+	2003-08-31.  This removes the ability to toggle the menu on and
+	off (which was useful for the tutorials), but this fixes the
+	various bugs that were reported for several browsers.
+	Unfortunately, this also means that the text-only browsers such as
+	w3m will have navigation problems again, because of the tables.
+	Other browsers such as Netscape 4.x are affected as well.
+
+	* programmatic/tools/rewrite_attrs.py (xhtml_parser.handle_pi):
+	Added a new method for correctly printing the processing
+	instruction at the top of each file.  The <?xml version...?> line
+	was missing from all processed files.
+
+	* Makefile (%.html): Re-enabled the combined SSI processing and
+	attribute rewriting.  Added a small hack (temporary) for
+	mirrors.xhtml.  A better solution should be found later.
+
+	* admin/gimp-web-urls: Added NOSPAM to most e-mail addresses.
+	Note that many pages contain some addresses as part of the text of
+	the page (especially the footers of the tutorials) and the spam
+	harvesters are known to grab these as well, so they should be
+	removed or changed as soon as possible.
+
 2003-09-18  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* Wrapped each news article in a <p> ... </p>

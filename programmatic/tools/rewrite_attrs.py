@@ -92,6 +92,10 @@ class xhtml_parser(HTMLParser.HTMLParser):
     self.comment_already_printed = False
     return HTMLParser.HTMLParser.__init__(self)
 
+  def handle_pi(self, tag):
+    sys.stdout.write("<?" + tag + ">")
+    return
+
   def handle_starttag(self, tag, attrs):
     self.serial += 1
 

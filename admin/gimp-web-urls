@@ -33,114 +33,114 @@
 ["href", "http:Package-fonts-os2-typ1inst",    { "href": "http://www.os2world.com/os2files/files/type1inst.zip"}]
 ["href", "http:Package-fonts-os2-xfsttos2",    { "href": "ftp://hobbes.nmsu.edu/pub/os2/system/x11/xfsttos2.zip"}]
 
-["href", "mail:People-Andersen_Henrik_Brix",   { "href": "mailto:brix@gimp.org"}]
+["href", "mail:People-Andersen_Henrik_Brix",   { "href": "mailto:brixNOSPAM@gimp.org"}]
 ["href", "home:People-Andersen_Henrik_Brix",   { "href": "http://brix.gimp.org/"}]
 
-["href", "mail:People-Beane_Zach",             { "href": "mailto:xach@gimp.org"}]
+["href", "mail:People-Beane_Zach",             { "href": "mailto:xachNOSPAM@gimp.org"}]
 ["href", "home:People-Beane_Zach",             { "href": "http://www.xach.com/"}]
 
-["href", "mail:People-Beppu_John",             { "href": "mailto:beppu@cpan.org"}]
+["href", "mail:People-Beppu_John",             { "href": "mailto:beppuNOSPAM@cpan.org"}]
 ["href", "home:People-Beppu_John",        { "href": "http://beppu.lbox.org/"}]
 
 ["href", "mail:People-Boyce_Mel",              { "href": "mailto:syngin-at-gimp-dot-org"}]
 ["href", "home:People-Boyce_Mel",              { "href": "http://syngin.gimp.org/"}]
 
-["href", "mail:People-Budig_Simon",            { "href": "mailto:Simon.Budig@unix-ag.org"}]
+["href", "mail:People-Budig_Simon",            { "href": "mailto:Simon.BudigNOSPAM@unix-ag.org"}]
 ["href", "home:People-Budig_Simon",            { "href": "http://www.home.unix-ag.org/simon/"}]
 
-["href", "mail:People-Burgess_Seth",           { "href": "mailto:sjburges@gimp.org"}]
+["href", "mail:People-Burgess_Seth",           { "href": "mailto:sjburgesNOSPAM@gimp.org"}]
 ["href", "home:People-Burgess_Seth",           { "href": "http://www.gimp.org/~sjburges/"}]
 
-["href", "mail:People-Caughron-Mat",	       { "href": "mailto:mat@macgimp.org"}]
+["href", "mail:People-Caughron-Mat",	       { "href": "mailto:matNOSPAM@macgimp.org"}]
 ["href", "home:People-Caughron-Mat",	       { "href": "http://www.phpconsulting.com/"}]
 
-["href", "mail:People-Collin_Branko",          { "href": "mailto:collin@xs4all.nl"}]
+["href", "mail:People-Collin_Branko",          { "href": "mailto:collinNOSPAM@xs4all.nl"}]
 ["href", "home:People-Collin_Branko",          { "href": "http://www.xs4all.nl/~collin/"}]
 
-["href", "mail:People-Grobgeld_Dov",           { "href": "mailto:dov@imagic.weizmann.ac.il"}]
+["href", "mail:People-Grobgeld_Dov",           { "href": "mailto:dovNOSPAM@imagic.weizmann.ac.il"}]
 ["href", "home:People-Grobgeld_Dov",           { "href": "http://imagic.weizmann.ac.il/~dov/"}]
 
-["href", "mail:People-Gschwend_Adrian",        { "href": "mailto:webmaster@netlabs.org"}]
+["href", "mail:People-Gschwend_Adrian",        { "href": "mailto:webmasterNOSPAM@netlabs.org"}]
 ["href", "home:People-Gschwend_Adrian",        { "href": "http://www.netlabs.org/"}]
 
 ["href", "mail:People-Hempe_Bustamante_Francisco",    { "href": "mailto:bit-at-mospan-bitbit-dot-org"}]
 ["href", "home:People-Hempe_Bustamante_Francisco",    { "href": "http://bitbit.org/"}]
 
-["href", "mail:People-Hennecke_Christian",     { "href": "mailto:christian.hennecke@ruhr-uni-bochum.de"}]
+["href", "mail:People-Hennecke_Christian",     { "href": "mailto:christian.henneckeNOSPAM@ruhr-uni-bochum.de"}]
 ["href", "home:People-Hennecke_Christian",     { "href": "http://www.os2world.com/os2files/"}]
 
-["href", "mail:People-Henstridge_James",       { "href": "mailto:james@daa.com.au"}]
+["href", "mail:People-Henstridge_James",       { "href": "mailto:jamesNOSPAM@daa.com.au"}]
 ["href", "home:People-Henstridge_James",       { "href": "http://www.daa.com.au/~james/"}]
 
-["href", "mail:People-Jensen_Atte_André",      { "href": "mailto:atte@wanadoo.nl"}]
+["href", "mail:People-Jensen_Atte_André",      { "href": "mailto:atteNOSPAM@wanadoo.nl"}]
 ["href", "home:People-Jensen_Atte_André",      { "href": "http://home.wanadoo.nl/atte/"}]
 
-["href", "mail:People-Jeschke_Eric_R",         { "href": "mailto:eric@redskiesatnight.com"}]
+["href", "mail:People-Jeschke_Eric_R",         { "href": "mailto:ericNOSPAM@redskiesatnight.com"}]
 ["href", "home:People-Jeschke_Eric_R",        { "href": "http://redskiesatnight.com/"}]
 
-["href", "mail:People-Jones_Sam",              { "href": "mailto:samjones@io.com"}]
+["href", "mail:People-Jones_Sam",              { "href": "mailto:samjonesNOSPAM@io.com"}]
 ["href", "home:People-Jones_Sam",        { "href": "http://www.electricossuary.com/"}]
 
-["href", "mail:People-Kidd_Eric",              { "href": "mailto:eric.kidd@pobox.com"}]
+["href", "mail:People-Kidd_Eric",              { "href": "mailto:eric.kiddNOSPAM@pobox.com"}]
 ["href", "home:People-Kidd_Eric",        { "href": "http://www.randomhacks.net/"}]
 
-["href", "mail:People-Kuosmanen_Tuomas",       { "href": "mailto:tigert@gimp.org"}]
+["href", "mail:People-Kuosmanen_Tuomas",       { "href": "mailto:tigertNOSPAM@gimp.org"}]
 ["href", "home:People-Kuosmanen_Tuomas",       { "href": "http://tigert.gimp.org/"}]
 
-["href", "mail:People-Lad_Gautam_N",           { "href": "mailto:gautam@cubicdesign.com"}]
+["href", "mail:People-Lad_Gautam_N",           { "href": "mailto:gautamNOSPAM@cubicdesign.com"}]
 ["href", "home:People-Lad_Gautam_N",           { "href": "http://www.cubicdesign.com/"}]
 
-["href", "mail:People-Lamberto_Marco",         { "href": "mailto:lm@sunnyspot.org"}]
+["href", "mail:People-Lamberto_Marco",         { "href": "mailto:lmNOSPAM@sunnyspot.org"}]
 ["href", "home:People-Lamberto_Marco",         { "href": "http://www.sunnyspot.org/"}]
 
-["href", "mail:People-Lautenbacher_Jens",      { "href": "mailto:jtl@gimp.org"}]
+["href", "mail:People-Lautenbacher_Jens",      { "href": "mailto:jtlNOSPAM@gimp.org"}]
 ["href", "home:People-Lautenbacher_Jens",      { "href": "http://www.gimp.org/"}]
 
-["href", "mail:People-Lehmann_Marc",        { "href": "mailto:pcg@goof.com"}]
+["href", "mail:People-Lehmann_Marc",        { "href": "mailto:pcgNOSPAM@goof.com"}]
 
-["href", "mail:People-Likins_Adrian",          { "href": "mailto:adrian@gimp.org"}]
+["href", "mail:People-Likins_Adrian",          { "href": "mailto:adrianNOSPAM@gimp.org"}]
 ["href", "home:People-Likins_Adrian",          { "href": "http://adrian.gimp.org/"}]
 
-["href", "mail:People-Mattisson_Niklas",       { "href": "mailto:scizzo@gimp.org"}]
+["href", "mail:People-Mattisson_Niklas",       { "href": "mailto:scizzoNOSPAM@gimp.org"}]
 ["href", "home:People-Mattisson_Niklas",       { "href": "http://scizzo.lnx.nu/"}]
 
-["href", "mail:People-Mena-Quintero_Federico", { "href": "mailto:federico@gnu.org"}]
+["href", "mail:People-Mena-Quintero_Federico", { "href": "mailto:federicoNOSPAM@gnu.org"}]
 ["href", "home:People-Mena-Quintero_Federico", { "href": "http://primates.helixcode.com/~federico/"}]
 
-["href", "mail:People-Neary_Dave",             { "href": "mailto:bolsh@gimp.org"}]
+["href", "mail:People-Neary_Dave",             { "href": "mailto:bolshNOSPAM@gimp.org"}]
 ["href", "home:People-Neary_Dave",        { "href": "http://www.gimp.org/"}]
 
-["href", "mail:People-Neumann_Sven",           { "href": "mailto:sven@gimp.org"}]
+["href", "mail:People-Neumann_Sven",           { "href": "mailto:svenNOSPAM@gimp.org"}]
 ["href", "home:People-Neumann_Sven",           { "href": "http://sven.gimp.org/"}]
 
-["href", "mail:People-Pätsi_Ville",            { "href": "mailto:drc@gimp.org"}]
+["href", "mail:People-Pätsi_Ville",            { "href": "mailto:drcNOSPAM@gimp.org"}]
 ["href", "home:People-Pätsi_Ville",            { "href": "http://drc.gnome.org/"}]
 
-["href", "mail:People-Romero_Guillermo_S",     { "href": "mailto:famrom@infernal-iceberg.com"}]
+["href", "mail:People-Romero_Guillermo_S",     { "href": "mailto:famromNOSPAM@infernal-iceberg.com"}]
 ["href", "home:People-Romero_Guillermo_S",     { "href": "http://www.infernal-iceberg.com/gimp/"}]
 
-["href", "mail:People-Singh_Manish",           { "href": "mailto:yosh@gimp.org"}]
+["href", "mail:People-Singh_Manish",           { "href": "mailto:yoshNOSPAM@gimp.org"}]
 ["href", "home:People-Singh_Manish",           { "href": "http://www.yosh.com/"}]
 
-["href", "mail:People-Spears_Carol",           { "href": "mailto:carol@gimp.org"}]
+["href", "mail:People-Spears_Carol",           { "href": "mailto:carolNOSPAM@gimp.org"}]
 ["href", "home:People-Spears_Carol",           { "href": "http://carol.gimp.org/"}]
 
-["href", "mail:People-Steiner_Jacub",          { "href": "mailto:jimmac@ximian.com"}]
+["href", "mail:People-Steiner_Jacub",          { "href": "mailto:jimmacNOSPAM@ximian.com"}]
 ["href", "home:People-Steiner_Jacub",          { "href": "http://jimmac.musichall.cz/"}]
 
-["href", "mail:People-Summers_Nathan_C",       { "href": "mailto:rock@gimp.org"}]
+["href", "mail:People-Summers_Nathan_C",       { "href": "mailto:rockNOSPAM@gimp.org"}]
 ["href", "home:People-Summers_Nathan_C",       { "href": "http://www.gimp.org/~rock/"}]
 
 ["href", "mail:People-Turner_Kevin",           { "href": "http://sourceforge.net/sendmessage.php?touser=9300"}]
 ["href", "home:People-Turner_Kevin",        { "href": "http://sourceforge.net/users/acapnotic/"}]
 
-["href", "mail:People-Victorinox_Helvetix",    { "href": "mailto:helvetix@mysterious.org"}]
+["href", "mail:People-Victorinox_Helvetix",    { "href": "mailto:helvetixNOSPAM@mysterious.org"}]
 ["href", "home:People-Victorinox_Helvetix",    { "href": "http://www.mysterious.org/"}]
 
-["href", "mail:People-Walter_Rebecca_J",       { "href": "mailto:bex@gimp.org"}]
+["href", "mail:People-Walter_Rebecca_J",       { "href": "mailto:bexNOSPAM@gimp.org"}]
 ["href", "home:People-Walter_Rebecca_J",       { "href": "http://home13.inet.tele.dk/rjp/"}]
 
-["href", "mail:People-Weisbeek_Martijn",       { "href": "mailto:m.weisbeek@home.nl"}]
+["href", "mail:People-Weisbeek_Martijn",       { "href": "mailto:m.weisbeekNOSPAM@home.nl"}]
 
 ["href", "mail:People-author",                 { "href": "mailto:webmaster@gimp.org"}]
 ["href", "mail:People-webmaster",              { "href": "mailto:webmaster@gimp.org"}]
@@ -292,10 +292,10 @@
 
 
 ["href", "plugin-home:pygimp-stable",                      { "href": "http://www.daa.com.au/~james/software/pygimp/"}]
-["href", "plugin-author:pygimp-Henstridge_James",          { "href": "mailto:james@daa.com.au"}]
+["href", "plugin-author:pygimp-Henstridge_James",          { "href": "mailto:jamesNOSPAM@daa.com.au"}]
 ["href", "plugin-home:gimpfreetype-stable",                { "href": "http://freetype.gimp.org/"}]
 ["href", "plugin-home:gimpfreetype-os2-stable",            { "href": "http://groups.yahoo.com/group/gimp-os2/files/"}]
-["href", "plugin-author:gimpfreetype-Neumann_Sven",        { "href": "mailto:sven@gimp.org"}]
+["href", "plugin-author:gimpfreetype-Neumann_Sven",        { "href": "mailto:svenNOSPAM@gimp.org"}]
 
 ["href", "plugin-archive:gimp",         { "href": "http://registry.gimp.org/"}]
 ["href", "plugin-archive:os2",          { "href": "http://cip.uni-trier.de/thielen/teamos2/gimp_a/"}]

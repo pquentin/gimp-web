@@ -74,16 +74,16 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://www.cubicdesign.com/">here</a>.
+  The original tutorial can be found <a href="tutorial:Custom_Brushes-Lad_Gautam_N">here</a>.
 </p>
 
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:gautam@cubicdesign.com">Gautam N. Lad</a>
+        Tutorial &copy; 2002 <a href="home:People-Lad_Gautam_N">Gautam N. Lad</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Lad_Gautam_N">gautam@cubicdesign.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

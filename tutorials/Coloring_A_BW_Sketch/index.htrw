@@ -69,15 +69,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://the.sunnyspot.org/slm/tut_skcol.html">here</a>.
+  The original tutorial can be found <a href="tutorial:Coloring_A_BW_Sketch-Marco_LM_Lamberto">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:lm@sunnyspot.org">Marco (LM) Lamberto</a>
+        Tutorial &copy; 2002 <a href="home:People-Lamberto_Marco">Marco (LM) Lamberto</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Lamberto_Marco">lm@sunnyspot.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,5 +1,27 @@
 2003-04-20 scizzo <scizzo@gimp.org>
 
+	* admin/gimp-web-urls: Fixed the tutorial links. Moved them around so
+	I can find them faster.
+
+	* tutorials/Blending_Exposures/
+	* tutorials/Blown_Out_Highlights/
+	* tutorials/Blur_Overlays/
+	* tutorials/Color2BW/: Updated with the new gimp-web-urls.
+	
+	* tutorials/Anti-Aliased_Threshold/index.html
+	* tutorials/Coloring_A_BW_Sketch/index.html
+	* tutorials/ContrastMask/index.html
+	* tutorials/Creating_Icons/index.html
+	* tutorials/Custom_Brushes/index.html: Removed these files.
+	
+	* tutorials/Anti-Aliased_Threshold/index.htrw
+	* tutorials/Coloring_A_BW_Sketch/index.htrw
+	* tutorials/ContrastMask/index.htrw
+	* tutorials/Creating_Icons/index.htrw
+	* tutorials/Custom_Brushes/index.htrw: Added these files.
+
+2003-04-20 scizzo <scizzo@gimp.org>
+	 
 	* admin/gimp-web-urls: Added home:People-Jeschke_Eric_R.
 	* tutorials/Blending_Exposures/, tutorials/Blown_Out_Highlights/,
 	tutorials/Blur_Overlays/, tutorials/Color2BW/: Changed tutorial: to

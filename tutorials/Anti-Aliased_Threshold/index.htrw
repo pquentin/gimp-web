@@ -45,15 +45,15 @@
   in the layers dialog, you get nice results displayed above.
 </p>
 <p>
- The original tutorial can be found <a href="http://drc.gimp.org/">here</a>.
+ The original tutorial can be found <a href="tutorial:Anti-Aliased_Threshold-Ville_Pätsi">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-       Tutorial &copy; 2002 <a href="mailto:drc@gimp.org">Ville Pätsi (drc)</a>
+       Tutorial &copy; 2002 <a href="home:People-Pätsi_Ville">Ville Pätsi (drc)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Pätsi_Ville">drc@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

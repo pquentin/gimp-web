@@ -280,35 +280,80 @@
 ["href", "plugin-archive:gimp",         { "href": "http://registry.gimp.org"}]
 ["href", "plugin-archive:os2",          { "href": "http://cip.uni-trier.de/thielen/teamos2/gimp_a/"}]
 
+#
+# Start of tutorial section with original links.
 
-["href", "tutorial:3-d_Floating_Logo-Mel_Boyce",            { "href": "http://syngin.gimp.no/tutorials/logo.html"}]
-["href", "tutorial:Advanced_Animations-Jakub_Steiner",      { "href": "http://jimmac.musichall.cz/tutor2.php3"}]
-["href", "tutorial:Anti-Aliased_Threshold-Ville_Pätsi",     { "href": "http://drc.gimp.org/"}]
-["href", "tutorial:Basic_Perl-Dov_Grobgeld",                { "href": "http://imagic.weizmann.ac.il/~dov/gimp/perl-tut.html"}]
-["href", "tutorial:Basic_Scheme-Dov_Grobgeld",              { "href": "http://imagic.weizmann.ac.il/~dov/gimp/scheme-tut.html"}]
-["href", "tutorial:Basic_Scheme2-John_Beppu",               { "href": "http://www.linux-mag.com/2002-01/power_01.html"}]
-["href", "tutorial:Bezier_Selections-Tuomas_Kuosmanen",     { "href": "http://tigert.gimp.org/gimp/tutorials/bezier/"}]
+#
+# Beginner tutorials
+#
+
+["href", "tutorial:GIMPLite_Quickies-Carol_Spears",         { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
+["href", "tutorial:Straight_Line-Seth_Burgess",             { "href": "http://www.gimp.org/~sjburges/straightline/straightline.html"}]
 ["href", "tutorial:Borders_On_Selections-Francisco_Bustamante_Hempe",    { "href": "http://bitbit.org/cms.php/gimp/tutorials/stroke_selection.html"}]
-["href", "tutorial:CCD_Noise_removal-Atte_André_Jensen",    { "href": "http://home.wanadoo.nl/atte/gimp/"}]
+["href", "tutorial:Anti-Aliased_Threshold-Ville_Pätsi",     { "href": "http://drc.gimp.org/"}]
+["href", "tutorial:Bezier_Selections-Tuomas_Kuosmanen",     { "href": "http://tigert.gimp.org/gimp/tutorials/bezier/"}]
+["href", "tutorial:Quickmask-Zach_Beane",                   { "href": "http://www.xach.com/gimp/tutorials/quickmask/"}]
+["href", "tutorial:Red_Eye_Removal-Carol_Spears",           { "href": "http://carol.gimp.org/other/sloth/diary/redeye.html"}]
+["href", "tutorial:Custom_Brushes-Lad_Gautam_N",	    { "href": "http://http://www.cubicdesign.com/"}]
+
+#
+# Intermediate tutorials
+# 
+
+["href", "tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/bezier_shapes/"}]
+["href", "tutorial:Film_Grain-Eric_Kidd",                   { "href": "http://carol.gimp.org/gimp/tutorials/film-grain/"}]
 ["href", "tutorial:Changing_Background1-Seth_Burgess",      { "href": "http://www.gimp.org/~sjburges/color_to_alpha/demo/color2alpha.html"}]
 ["href", "tutorial:Changing_Background2-Francisco_Bustamante_Hempe",    { "href": "http://bitbit.org/cms.php/gimp/tutorials/remove_one_color.html"}]
 ["href", "tutorial:Coloring_A_BW_Sketch-Marco_LM_Lamberto", { "href": "http://the.sunnyspot.org/slm/tut_skcol.html"}]
-["href", "tutorial:Creating_Icons-Jakub_Steiner",           { "href": "http://developer.ximian.com/articles/tutorials/icons/output/index.html"}]
-["href", "tutorial:Draw_A_Paint_Brush-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/drawing_a_paintbrush/"}]
-["href", "tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/bezier_shapes/"}]
-["href", "tutorial:Film_Grain-Eric_Kidd",                   { "href": "http://carol.gimp.org/gimp/tutorials/film-grain/"}]
-["href", "tutorial:GIMPLite_Quickies-Carol_Spears",         { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
-["href", "tutorial:Golden_Text-Simon_Budig",                { "href": "http://www.home.unix-ag.org/simon/gimp/golden.html"}]
-["href", "tutorial:Image_Pipes-Adrian_Likins",              { "href": "http://adrian.gimp.org/gimppipe/"}]
-["href", "tutorial:Photo_Edit-Eric_R_Jeschke",              { "href": "http://redskiesatnight.com/"}]
-["href", "tutorial:Quickmask-Zach_Beane",                   { "href": "http://www.xach.com/gimp/tutorials/quickmask/"}]
-["href", "tutorial:Red_Eye_Removal-Carol_Spears",           { "href": "http://carol.gimp.org/other/sloth/diary/redeye.html"}]
-["href", "tutorial:Perl_Debugged-Seth_Burgess",             { "href": "http://www.gimp.org/~sjburges/perl_debug/intro.html"}]
-["href", "tutorial:Simple_Animations-Jakub_Steiner",        { "href": "http://jimmac.musichall.cz/tutor1.php3"}]
-["href", "tutorial:Straight_Line-Seth_Burgess",             { "href": "http://www.gimp.org/~sjburges/straightline/straightline.html"}]
+["href", "tutorial:3-d_Floating_Logo-Mel_Boyce",            { "href": "http://syngin.gimp.no/tutorials/logo.html"}]
 ["href", "tutorial:Tilable_Textures-Adrian_Likins",         { "href": "http://adrian.gimp.org/texture_tut/"}]
+["href", "tutorial:Simple_Animations-Jakub_Steiner",        { "href": "http://jimmac.musichall.cz/tutor1.php3"}]
+
+#
+# Expert tutorials
+# 
+
+["href", "tutorial:Image_Pipes-Adrian_Likins",              { "href": "http://adrian.gimp.org/gimppipe/"}]
+["href", "tutorial:Golden_Text-Simon_Budig",                { "href": "http://www.home.unix-ag.org/simon/gimp/golden.html"}]
+["href", "tutorial:Draw_A_Paint_Brush-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/drawing_a_paintbrush/"}]
+["href", "tutorial:Creating_Icons-Jakub_Steiner",           { "href": "http://developer.ximian.com/articles/tutorials/icons/output/index.html"}]
 ["href", "tutorial:Using_GAP-Jakub_Steiner",                { "href": "http://jimmac.musichall.cz/popup.php3?img=gap&mapa="}]
-["href", "tutorial:Working_with_the_Image-Kevin_Turner",    { "href": "http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro"}]
+["href", "tutorial:Advanced_Animations-Jakub_Steiner",      { "href": "http://jimmac.musichall.cz/tutor2.php3"}]
+
+#
+# Photo Editing tutorials
+# 
+
+["href", "tutorial:Color2BW-Eric_R_Jeschke",                { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:Reducing_CCD_Noise-Eric_R_Jeschke",      { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:CCD_Noise_removal-Atte_André_Jensen",    { "href": "http://home.wanadoo.nl/atte/gimp/"}]
+["href", "tutorial:ContrastMask-Eric_R_Jeschke",            { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:Sepia_Toning-Eric_R_Jeschke",            { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:Blur_Overlays-Eric_R_Jeschke",           { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:Blown_Out_Highlights-Eric_R_Jeschke",    { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:Blending_Exposures-Eric_R_Jeschke",      { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:Smart_Sharpening-Eric_R_Jeschke",        { "href": "http://redskiesatnight.com/"}]
+["href", "tutorial:Selective_Color-Eric_R_Jeschke",         { "href": "http://redskiesatnight.com/"}]
+
+#
+# HTML tutorials
+# 
+
+["href", "tutorial:Perlotine-Carol_Spears",		    { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
+["href", "tutorial:Image_Map-Carol_Spears",		    { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
+
+#
+# Script Authoring (Presented Alphabetically) tutorials
+#
+
+["href", "tutorial:Drawables-Kevin_Turner",		    { "href": "http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro"}]
+["href", "tutorial:Basic_Perl-Dov_Grobgeld",                { "href": "http://imagic.weizmann.ac.il/~dov/gimp/perl-tut.html"}]
+["href", "tutorial:Perl_Debugged-Seth_Burgess",             { "href": "http://www.gimp.org/~sjburges/perl_debug/intro.html"}]
+["href", "tutorial:Basic_Scheme-Dov_Grobgeld",              { "href": "http://imagic.weizmann.ac.il/~dov/gimp/scheme-tut.html"}]
+["href", "tutorial:Basic_Scheme2-John_Beppu",               { "href": "http://www.linux-mag.com/2002-01/power_01.html"}]
+
+#
+# End of tutorial section
 
 ["href", "os2-howto:SANE-Bakan_Franz",                                       { "href": "http://home.tiscalinet.de/fbakan/sane-os2-configuration.htm"}]
 ["href", "os2-howto:Installing_XFree86/OS2_3.3.x-Hennecke_Christian",        { "href": "http://www.os2world.com/os2files/xfree86/installation.html"}]

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><title>Manpage of GTK+</title>
+<style types="text/css">
+DIV.section {margin-left:2cm}
+</style></head>
+<body>
+<h1>GTK+</h1>
+Section: 1.0.2 (1)<br>Updated: 11 May 1998<br><a href="#index">Index</a>
+<hr>
+
+<a name="lbAB"> </a>
+<h2>NAME</h2>
+
+gtk-config - script to get information about the installed version of GTK+
+<a name="lbAC"> </a>
+<h2>SYNOPSIS</h2>
+
+<b>gtk-config</b>
+
+[--prefix<i>[=DIR]</i>] [--exec-prefix<i>[=DIR]</i>] [--version] [--libs] [--cflags]
+<a name="lbAD"> </a>
+<h2>DESCRIPTION</h2>
+
+<p>
+
+<i>gtk-config</i> is a tool that is used to configure to determine
+the compiler and linker flags that should be used to compile
+and link programs that use <i>GTK+</i>. It is also used internally
+to the .m4 macros for GNU autoconf that are included with <i>GTK+</i>.
+<a name="lbAE"> </a>
+</p><h2>OPTIONS</h2>
+
+
+<i>gtk-config</i> accepts the following options:
+<dl compact=""><dt><b>--version</b>
+
+</dt><dd>
+Print the currently installed version of <i>GTK+</i> on the standard output.
+</dd><dt><b>--libs</b>
+
+</dt><dd>
+Print the linker flags that are necessary to link a <i>GTK+</i> program.
+</dd><dt><b>--cflags</b>
+
+</dt><dd>
+Print the compiler flags that are necessary to compile a <i>GTK+</i> program.
+</dd><dt><b>--prefix=PREFIX</b>
+
+</dt><dd>
+If specified, use PREFIX instead of the installation prefix that <i>GTK+</i>
+was built with when computing the output for the --cflags and
+--libs options. This option is also used for the exec prefix
+if --exec-prefix was not specified. This option must be specified
+before any --libs or --cflags options.
+</dd><dt><b>--exec-prefix=PREFIX</b>
+
+</dt><dd>
+If specified, use PREFIX instead of the installation exec prefix that
+<i>GTK+</i> was built with when computing the output for the --cflags
+and --libs options.  This option must be specified before any
+--libs or --cflags options.
+</dd></dl>
+<a name="lbAF"> </a>
+<h2>SEE ALSO</h2>
+
+<B><A HREF="man-gimp.1.html">gimp</A></B>(5),
+
+<B><A HREF="man-gimptool-1.2.html">gimptool</A></B>(1),
+
+<a name="lbAG"> </a>
+<h2>COPYRIGHT</h2>
+
+Copyright ©  1995 Spencer Kimball and Peter Mattis
+<p>
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.
+
+</p><hr>
+<a name="index"> </a><h2>Index</h2>
+<dl><dt><a href="#lbAB">NAME</a></dt><dd>
+</dd><dt><a href="#lbAC">SYNOPSIS</a></dt><dd>
+</dd><dt><a href="#lbAD">DESCRIPTION</a></dt><dd>
+</dd><dt><a href="#lbAE">OPTIONS</a></dt><dd>
+</dd><dt><a href="#lbAF">SEE ALSO</a></dt><dd>
+</dd><dt><a href="#lbAG">COPYRIGHT</a></dt><dd>
+</dd></dl>
+<hr>
+This document was created by
+<a href="http://mmmaybe.gimp.orghttp://www.w3.org/Tools/man2html.html">man2html</a>,
+using the manual pages.<br>
+Time: 08:49:53 GMT, September 30, 2002
+</body></html>

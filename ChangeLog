@@ -1,3 +1,8 @@
+2002-11-24 scizzo <scizzo@gimp.org>
+
+        * tutorials/index.html: Fixed the index for the tutorials in the HTML
+        section.
+
 2002-11-23 carol <carol@gimp.org>
 
 	* tutorials/Photo_Edit/ND_Filter: removed at the request of the author.
@@ -18,7 +23,7 @@
         * team.html: Eric Jeschke to Eric R. Jeschke to make it go
         with the tutorials.
 
-        * tutorials/html/Perlotine/: First port of the perlotine tutorial.
+        * tutorials/Perlotine/: First port of the perlotine tutorial.
 
 2002-11-22 scizzo <scizzo@gimp.org>
 

@@ -1,3 +1,7 @@
+2003-02-16  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Incipient changes in the linkbar for the admin pages.
+
 2003-02-15  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Added wgo-admin-{init,fini}.xhtml for the administration pages.

@@ -30,6 +30,8 @@
     
 	* style/default.css, tutorials/Perlotine/index.html: added a tag that will 
     hopefully help the tables in the perlotine tutorial. td.map
+    
+    * about/splash-cvs.html: added the missing two splashes.
 
 2002-11-25 carol <carol@gimp.org>
 

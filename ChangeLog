@@ -1,3 +1,8 @@
+2003-01-05 brix <brix@gimp.org>
+
+	* style/default.css: added a div.debug class. maybe the background
+	color needs to change?
+	
 2002-12-27 scizzo <scizzo@gimp.org>
 
         * tutorials/Changing_Background_Color_1/index.html: Moved the icon for

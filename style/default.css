@@ -166,6 +166,17 @@ div.code {
   margin-right: 40px;
 }
 
+div.debug {
+  color: black;
+  background: #ddddff;
+  border: solid 2px black;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1.33em 0px;
+  margin-left: 40px; 
+  margin-right: 40px;
+}
+
 div.book-of-wilber { font-size: large; 
 	background: #CC9966 url(../images/wilberbook.jpg);
 	font-family:  postantiqua, "zapf chancery", "urw chancery l", fantasy;

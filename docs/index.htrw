@@ -27,6 +27,20 @@
     </ul>
   </p>
 
+<h2>Configuration</h2>
+  <ul>
+    <li><a href="wgo:unix-guide_stable_user_install">The first time
+      you run the GIMP</a>.<br />  When you run the GIMP for the first
+      time, it will install some files in your home directory and it
+      will show you some dialogs that give you the opportunity to
+      adapt it to your environment.</li>
+    <li><a href="wgo:unix-howtos-tile_cache">How to set the tile
+      cache</a>.<br />  The tile cache tells the GIMP how much memory
+      it can use before swapping some image data to disk.  Setting the
+      size of the tile cache can be critical for the performance of
+      your system.</li>
+  </ul>
+
 <h2>GIMP Manual Pages</h2>
   <ul>
     <li><a href="wgo:manpage-gimp">gimp (1)</a></li>
@@ -37,13 +51,18 @@
 
 <h2>Other GIMP Documentation</h2>
   <ul>
-    <li><a href="unix/fonts.html">How to install fonts</a>for GIMP 2.0</li>
+    <li><a href="unix/fonts.html">How to install fonts</a> for GIMP 2.0</li>
     <li><a href="python/pygimp.html">GIMP Python Module Documentation</a></li>
     <li><a href="scheme_plugin/">GIMP Script-fu Documentation</a></li>
     <li><a href="gimp-print/print.html">GIMP Print Documentation</a></li>
-    <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
-    <li><a href="plug-in/plug-in.html">Writing a Plug-In</a></li>
   </ul>
+
+<h2>GIMP Developer Documentation</h2>
+  <ul>
+   <li><a href="wgo:dev">developer.gimp.org</a></li>
+   <li><a href="plug-in/plug-in.html">Writing a Plug-In</a></li>
+  </ul>
+
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

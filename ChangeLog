@@ -1,6 +1,12 @@
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
 	* docs/index.htrw
+	* unix/index.htrw: moved more links to helpful docs from the UNIX
+	section to Documentation.
+
+2004-12-18  Sven Neumann  <sven@gimp.org>
+
+	* docs/index.htrw
 	* macintosh/index.htrw
 	* unix/index.htrw
 	* windows/index.htrw: added links to /docs/ on all platform-specific

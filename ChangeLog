@@ -1,3 +1,8 @@
+2004-12-18  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/contest/index.htrw: integrated the jury's
+	announcement into the splash contest page.
+
 2004-12-18  Raphaël Quinet  <raphael@gimp.org>
 
 	* mail_lists.htrw

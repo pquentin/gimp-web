@@ -44,23 +44,42 @@
   <h3>Submissions</h3>
   <p>
     The contest is now closed. You can view the current submissions in the 
-    <a href="/contest/gallery.cgi">gallery</a>. 
-  </p>
-  <p>
-    If you want to judge on the submitted splashes please head for
-    <a href="http://www.mukund.org/temp/gimp/judge/">Mukunds voting system</a>
-    and cast your vote. The result there will help in making the final
-    decision.
-  </p>
-  <p>
-    The winner will be announced and committed to CVS as soon as possible. 
-    The winner will receive a GIMP t-shirt or polo shirt from 
-    <a href="http://sourcewear.com">SourceWear</a>, and the honour of having 
-    their splash screen on millions of desktops worldwide.
+    <a href="/contest/gallery.cgi">gallery</a> or in the
+    <a href="http://www.mukund.org/temp/gimp/judge/">public voting system</a>.
   </p>
 
-  <h3>Good luck!</h3>
-
+  <h3>Results</h3>
+  <p>
+    The jury has now made it's choice and we have a winner:
+    <a href="http://gimp.org/contest/gallery.cgi?display=image&name=2004120221004924733">"work in progress..." by Bill Luhtala</a> has been choosen as the
+    splash image for Gimp 2.2.
+  </p>
+  <p>
+    It was quite tough to make a choice, there were a *lot* of good entries
+    to choose from.
+  </p>
+  <p>
+    We have decided to not announce a 2nd and 3rd place. However, there were
+    a few entries that should not get lost in the vast amount of submissions.
+  </p>
+  <p>
+   The image <a href="http://gimp.org/contest/gallery.cgi?display=image&name=200412020943599827">"Wilber painting Wilma"
+   by Philip Lafleur</a> will be used for the About dialog in GIMP 2.2.
+  </p>
+  <p>
+   Further honorable mentions in no particular order:
+   <ul>
+    <li><a href="http://gimp.org/contest/gallery.cgi?display=image&name=200412020906377591">"Digital Watercolors" by Morgan Quirk</a>: Great concept.</li>  
+    <li><a href="http://gimp.org/contest/gallery.cgi?display=image&name=2004120419031214235">"Grassy" by D. Brian Gosnell</a>: Great modesty.</li>
+    <li><a href="http://gimp.org/contest/gallery.cgi?display=image&name=2004120604011931453">"Animals" by John Garcia & Alla Satinova</a>: Great menagerie.</li>
+    <li><a href="http://gimp.org/contest/gallery.cgi?display=image&name=200412020944269928">"Daisy" by Martin Thorsen Ranang</a>: Great painting.</li>
+    <li><a href="http://gimp.org/contest/gallery.cgi?display=image&name=200412020944109864">"Sailing" by Daniel Kenzelmann</a>: Great mood.</li>
+   </ul>
+  </p>
+  <p>
+   It was fun to watch the enthusiasm and creativity of the contestants and
+   we'd like to thank all participants for your efforts. Keep up the good work!
+  </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

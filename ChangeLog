@@ -11,6 +11,11 @@
         * resources/patterns/index.html: manually removed some patterns
         i have in my home directory that were added to the list 
         incorrectly
+       
+        * resources/brushes/index.html: changed the <li>'s to <div>'s
+        
+        * resources/brushes/mgo-brushes.py the script is added
+        
         
 2002-10-18 scizzo <scizzo@gimp.org>
 

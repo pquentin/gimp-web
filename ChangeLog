@@ -1,5 +1,11 @@
 2004-03-22  Niklas M <scizzo@gimp.org>
 
+	* screenshots/solaris_screenshot1.png, solaris_screenhot1_thumb.jpg:
+	Added screenshot provided from Raphael with Solaris and CDE.
+	* screenshots/index.htrw: Added new section for Unix platforms.
+
+2004-03-22  Niklas M <scizzo@gimp.org>
+
 	* admin/gimp-web-urls: Found some more links that was not properly
 	returned according to the moves of the splashes.
 

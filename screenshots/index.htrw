@@ -19,6 +19,14 @@
   <p style="text-align: left;">1280x1024 Swedish</p>
 </div>
 
+<h2>Unix Screenshots</h2>
+<div style="float: left;">
+  <a href="solaris_screenshot1.png">
+  <img src="solaris_screenshot1_thumb.jpg" alt="Solaris Screenshot" />
+  </a>
+  <p style="text-align: left;">1024x768 English</p>
+</div>
+
 <h2>Windows Screenshots</h2>
 <div style="float: left;">
   <a href="windowsxp_screenshot1.png" style="margin-right: 1cm;">
@@ -44,7 +52,7 @@
   <a href="macosx_screenshot1.png">
   <img src="macosx_screenshot1_thumb.jpg" alt="MacOS X Screenshot" />
   </a>
-  <p style="text-align: left;">1024x768 English</p>
+  <p style="text-align: left;">1023x767 English</p>
 </div>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

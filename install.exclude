@@ -1,4 +1,5 @@
 CVS
+.cvsignore
 /ChangeLog
 /install.sh
 /install.exclude

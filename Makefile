@@ -19,7 +19,10 @@ export PYTHONPATH=programmatic:
 RWSOURCES=$(shell find . -name '*.htrw' -print)
 RWTARGETS=$(RWSOURCES:.htrw=.html)
 
-TARGETS=${RWTARGETS}
+SSISOURCES=$(shell find . -name '*.ssi' -print)
+SSITARGETS=$(SSISOURCES:.ssi=.html)
+
+TARGETS=${RWTARGETS} ${SSITARGETS}
 
 .PHONY: all usage webtools install clean cvsignore programmatic
 
@@ -41,8 +44,8 @@ install: all
 
 clean:
 	make -C programmatic clean
-	/bin/rm -f ${TARGETS} ${RWTARGETS}
+	rm -f ${TARGETS}
 
 cvsignore:
-	@for i in ${RWTARGETS} ; do basename $${i} >> `dirname $${i}`/.cvsignore ; done
-	@for i in `find -name '.cvsignore' -print` ; do echo sort -u $${i} -o $${i}  ;	done
+	@for i in ${TARGETS} ; do basename $${i} >> `dirname $${i}`/.cvsignore ; done
+	@for i in `find -name '.cvsignore' -print` ; do sort -u $${i} -o $${i}  ;	done

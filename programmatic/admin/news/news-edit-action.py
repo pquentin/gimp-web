@@ -1,7 +1,6 @@
 #!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
-#
 # www.gimp.org website administration and tools
 #
 # Copyright (C) 2002, 2003 Helvetix Victorinox, a pseudonym,
@@ -25,14 +24,10 @@
 
 import cgi
 import cgitb; cgitb.enable()
-import email
 import errno
-import fcntl
 import getopt
-import mimetypes
 import os
 import re
-import rfc822
 import string
 import sys
 import time
@@ -52,8 +47,7 @@ def main():
 
   if not (form.has_key("message-id") and form.has_key("action") and form.has_key("queue")) and not (form.has_key("subject") and form.has_key("body")):
     wgo_news.header()
-    wgo.error("Malformed request")
-    wgo_news.footer()
+    wgo_news.footer(wgo.error("Malformed http request."))
     return (-1)
   
   action = string.lower(xhtml.unescape(form["action"].value))
@@ -71,7 +65,13 @@ def main():
     queue = ""
     pass
 
-  news = wgo_news.news(form)
+  try:
+    news = wgo_news.news(form)
+  except:
+    wgo_news.header()
+    wgo_news.footer(wgo.error("The news article is malformed.  Perhaps it is missing a subject line, or it has no body."))
+    return (-1)
+    
 
   if action == "save":
     news.to_queue(queue)
@@ -119,8 +119,7 @@ def main():
     wgo_news.header(goto)
   else:
     wgo_news.header()
-    print wgo.error(string.capitalize(action) + " " + string.capitalize(status))
-    wgo_news.footer()
+    wgo_news.footer(wgo.error(string.capitalize(action) + " " + string.capitalize(status)))
     pass
     
   return (0)

@@ -49,15 +49,27 @@ def header(title, css_list, left_menu):
   print xhtml.include(left_menu)
   return (True)
 
-def footer():
+def footer(prefix=None):
+
+  if prefix != None:
+    print prefix
+    pass
+  
   print xhtml.include('%s/includes/linkbar.inc' % (config.DocumentRoot_path))
   
   #print xhtml.object("doesn't work", {"standby": "loading", "type" : "image/png",
   #"data" : 'data:base64, ' + xhtml.encodefile('/home/asdf/public_html/helvetix/anybrowser.png')})
   #                                      "data" : 'data:binary, ' + xhtml.rawfile('/home/asdf/public_html/helvetix/anybrowser.png')})
   if config.validate: print xhtml.validate()
-  else: print config.validate
+
   print xhtml.div("version 1.0", {"class" : "watermark"})
   print xhtml.include('%s/includes/footer.inc' % (config.DocumentRoot_path))
   return (True)
 
+def displaycmd(cmd):
+  fp = os.popen(cmd, "r")
+  lines = fp.readlines()
+  for l in lines:
+    print '<pre style="color: grey;">' + l + '</pre>'
+    pass
+  return

@@ -6,7 +6,6 @@
 # Copyright (C) 2002, 2003 Helvetix Victorinox, a pseudonym,
 # Mountain View, California
 # 
-#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -23,15 +22,11 @@
 # USA
 
 import fcntl
-import email
 import errno
-import getopt
-import mimetypes
 import os
 import re
 import stat
 import sys
-import time
 import types
 import cgi
 import cgitb; cgitb.enable()
@@ -51,7 +46,7 @@ def html_index_page(queue, news):
 
   filename = wgo_queue.message_path(queue, message_id)
   
-  target = "news-edit.cgi?message-id=" + xhtml.quote(message_id) + "&amp;queue=" + xhtml.quote(queue)
+  edit_target = "news-edit.cgi?message-id=" + xhtml.quote(message_id) + "&amp;queue=" + xhtml.quote(queue)
 
   checkbox_attrs = { "class" : "news-index", "name" : xhtml.quote(news["message-id"]) }
   if len(news["body"]) < 2:
@@ -63,14 +58,12 @@ def html_index_page(queue, news):
   print xhtml.table.row(
     xhtml.table.cell(xhtml.quote(news["date"]), attrs)
     + xhtml.table.cell(xhtml.mailto(news["from"]), attrs)
-    + xhtml.table.cell(xhtml.hyperlink(news["subject"], {"href" : target, "class" : "news-index"}), attrs)
+    + xhtml.table.cell(xhtml.hyperlink(news["subject"], {"href" : edit_target, "class" : "news-index"}), attrs)
     + xhtml.table.cell(xhtml.input.checkbox(checkbox_attrs), attrs), attrs)
     
   return (1)
 
 def main(queue):
-  print "Content-type: text/html"
-  
   wgo_news.header()
 
   if queue in [wgo_news.config.pending_queue, wgo_news.config.current_queue, wgo_news.config.archive_queue]:
@@ -78,7 +71,8 @@ def main(queue):
     names = map(lambda t: dirpath + "/" + t, os.listdir(dirpath))
     names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
 
-    news = map(wgo_news.news, names)
+    #news = map(wgo_news.news, names)
+    news = map(lambda f: wgo_news.news(f, False), names)
     news = filter(lambda n: n.valid, news)
 
     print xhtml.include('%s%s_header.html' % (wgo_news.config.news_path, queue))
@@ -93,7 +87,7 @@ def main(queue):
     print xhtml.include('%s/%s_footer.html' % (wgo_news.config.news_path, queue))
     print xhtml.include(wgo_queue.generate_blotter(queue))
   else:
-    wgo.error("Malformed Request")
+    print wgo.error("Malformed Request")
     pass
   
   wgo_news.footer()

@@ -3,8 +3,8 @@
 # "every tool is a weapon, if you hold it right."
 #
 # www.gimp.org website administration and tools
-# Copyright (C) 2002, 2003  Helvetix Victorinox, pseudonym
-# 
+#
+# Copyright (C) 2002, 2003  Helvetix Victorinox, a pseudonym
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,17 +25,14 @@ import fcntl
 import email
 import errno
 import getopt
-import mimetypes
 import os
 import re
-import rfc822
 import stat
 import sys
 import time
 import types
 import Cookie
 import cgi
-import mailbox
 import cgitb; cgitb.enable()
 
 sys.path.append('${LIBDIR}')

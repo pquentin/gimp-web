@@ -1,7 +1,6 @@
 #!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
-#
 # www.gimp.org website administration and tools
 #
 # Copyright (C) 2002, 2003 Helvetix Victorinox, a pseudonym,

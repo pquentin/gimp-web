@@ -56,53 +56,56 @@ class news:
   image_header = "X-wgo-image"
   editor_header = "X-wgo-editor"
 
-  def __init__(self, source=None):
+  def __init__(self, source=None, raise_exception=True):
     self.valid = False
 
-    if source == None:
-      self.msg = email.Message.Message()
-      self.msg["Date"] = rfc822.formatdate(time.mktime(time.gmtime()))
-      self.msg["From"] = "<wilber@news.gimp.org> Wilber Gimp"
-      self.msg["Message-Id"] = "<" + time.strftime("%Y%m%d%H%M%S-") + str(os.getpid()) + "@news.gimp.org>" 
-      self.msg["Reply-To"] = ""
-      self.msg["Subject"] = "(none)"
-      self.msg[news.editor_header] = ""
-      self.msg[news.image_header] = ""
-      self.msg.set_payload("")
-      self.msg.epilogue = ""
-      self.valid = True
-    elif str(source.__class__) == 'cgi.FieldStorage':
-      self.msg = email.Message.Message()
-      self.msg["Date"] = rfc822.formatdate(time.mktime(rfc822.parsedate(xhtml.unescape(source["date"].value))))
-      self.msg["From"] = xhtml.unescape(source["from"].value)
-      self.msg["Message-Id"] = xhtml.unescape(source["message-id"].value)
-      self.msg["Reply-To"] = ""
-      self.msg["Subject"] = xhtml.unescape(source["subject"].value)
-      self.msg[news.editor_header] = xhtml.unescape(source["editor"].value)
-      self.msg[news.image_header] = xhtml.unescape(source["image"].value)
-      self.msg.set_payload(xhtml.unescape(source["body"].value))
-      self.msg.epilogue = ""
-      self.valid = True
-    elif str(source.__class__) == "<type 'str'>":
-      try:
+    try:
+      if source == None:
+        self.msg = email.Message.Message()
+        self.msg["Date"] = rfc822.formatdate(time.mktime(time.gmtime()))
+        self.msg["From"] = "<wilber@news.gimp.org> Wilber Gimp"
+        self.msg["Message-Id"] = "<" + time.strftime("%Y%m%d%H%M%S-") + str(os.getpid()) + "@news.gimp.org>" 
+        self.msg["Reply-To"] = ""
+        self.msg["Subject"] = "(none)"
+        self.msg[news.editor_header] = ""
+        self.msg[news.image_header] = ""
+        self.msg.set_payload("")
+        self.msg.epilogue = ""
+        self.valid = True
+      elif str(source.__class__) == 'cgi.FieldStorage':
+        self.msg = email.Message.Message()
+        self.msg["Date"] = rfc822.formatdate(time.mktime(rfc822.parsedate(xhtml.unescape(source["date"].value))))
+        self.msg["From"] = xhtml.unescape(source["from"].value)
+        self.msg["Message-Id"] = xhtml.unescape(source["message-id"].value)
+        self.msg["Reply-To"] = ""
+        self.msg["Subject"] = xhtml.unescape(source["subject"].value)
+        self.msg[news.editor_header] = xhtml.unescape(source["editor"].value)
+        self.msg[news.image_header] = xhtml.unescape(source["image"].value)
+        self.msg.set_payload(xhtml.unescape(source["body"].value))
+        self.msg.epilogue = ""
+        self.valid = True
+      elif str(source.__class__) == "<type 'str'>":
         fd = open(source, "r")
         self.msg = email.message_from_file(fd)
         fd.close()
         self.valid = True
-      except:
+      elif str(source.__class__) == 'email.Message.Message':
+        self.msg = source
+        self.valid = True
+        pass
+      else:
+        self.valid = False
+        pass
+
+      if hasattr(self, 'msg'):
+        if not self.msg.has_key(news.image_header): self.msg[news.image_header] = ""
+        if not self.msg.has_key(news.editor_header): self.msg[news.editor_header] = ""
         pass
       pass
-    elif str(source.__class__) == 'email.Message.Message':
-      self.msg = source
-      self.valid = True
-      pass
-    else:
+    except:
       self.valid = False
-      pass
-
-    if hasattr(self, 'msg'):
-      if not self.msg.has_key(news.image_header): self.msg[news.image_header] = ""
-      if not self.msg.has_key(news.editor_header): self.msg[news.editor_header] = ""
+      if raise_exception:
+        raise ValueError
       pass
     
     return (None)
@@ -137,21 +140,19 @@ class news:
       
     return (self)
        
-  def as_news_item(self):               # As a line in the index
+  def as_news_item(self):               # As a line in the blotter
     iso_date = time.strftime(config.datetime_format, rfc822.parsedate(self["date"]))
 
     s = str(xhtml.div(xhtml.span(xhtml.quote(self["subject"]), {"class" : "newstitle"})
                       + xhtml.span(xhtml.quote(iso_date), {"class" : "newsdate"})
                       + "&nbsp;", {"class" : "newsheading"}))
 
-    if icon_by_name(self["image"]) == "":
-      s += str(xhtml.para(self["body"], {"class" : "news"}))
+    img = ""
+    if icon_by_name(self["image"]) != "":
+      img = xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]), "alt" : icon_by_name(self["image"])})
       pass
-    else:
-      s += str(xhtml.para(xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]),
-                                       "alt" : icon_by_name(self["image"])}) + self["body"],
-                          {"class" : "news"}))
-      pass
+
+    s += str(xhtml.para(img + self["body"], {"class" : "news"}))
     
     return (s)
 
@@ -161,6 +162,15 @@ class news:
     print >>fp, self.msg
     fp.close()
     os.chmod(filename, config.news_permission)
+    wgo_queue.generate_blotter(queue)
+    return (0)
+
+  def from_queue(self, queue):
+    filename = wgo_queue.message_path(queue, self["message-id"])
+    if os.path.exists(filename):
+      os.remove(filename)
+      wgo_queue.generate_blotter(queue)
+      pass
     return (0)
 
   pass
@@ -174,8 +184,8 @@ def header(headers=[]):
   
   return (wgo.header("www.gimp.org - Administration", [config.news_dir + "/news-admin.css"], wgo.config.DocumentRoot_path + '/includes/admin-menu.inc'))
 
-def footer():
-  return (wgo.footer())
+def footer(prefix=None):
+  return (wgo.footer(prefix))
 
 
 icons = {

@@ -110,8 +110,7 @@ def main():
   form = cgi.FieldStorage()
 
   if not (form.has_key("message-id") and form.has_key("queue")):
-    print wgo.error("Malformed Request")
-    wgo_news.footer()
+    wgo_news.footer(wgo.error("Malformed Request"))
     return (1)
 
   queue = form["queue"].value
@@ -126,23 +125,23 @@ def main():
     this_queue = wgo_news.config.archive_queue
     other_queue = wgo_news.config.archive_queue
   else:
-    wgo.error("Malformed request")
-    wgo_news.footer()
+    wgo_news.footer(wgo.error("Malformed request"))
     return (1)
 
   message_id = xhtml.unescape(form["message-id"].value)
 
-  m = wgo_news.news(wgo_queue.message_path(this_queue, message_id))
-
-  if not m.valid:
+  try:
+    m = wgo_news.news(wgo_queue.message_path(this_queue, message_id))
+  except:
     m = wgo_news.news()
     m["message-id"] = message_id
     m["date"] = rfc822.formatdate(time.time())
     pass
 
-  editor = "wilber@gimp.org"
   if os.environ.has_key("REMOTE_USER"):
     editor = os.environ["REMOTE_USER"]
+  else:
+    editor = "wilber@gimp.org"
     pass
   
   html_news_edit(this_queue, other_queue, m, editor)

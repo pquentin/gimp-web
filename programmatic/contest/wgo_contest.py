@@ -2,8 +2,7 @@
 # -*- mode: python py-indent-offset: 2; -*-
 #
 # www.gimp.org website administration and tools
-# Copyright (C) 2002, 2003  Helvetix Victorinox, pseudonym
-# 
+# Copyright (C) 2002, 2003  Helvetix Victorinox, a pseudonym
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -76,7 +75,8 @@ class gallery_image:
   def _ashtml(self, which="image"):
     return (xhtml.span(self["title"], {"class" : "title"})
             + (xhtml.image({"src" : self[which]}))
-            + (xhtml.span(self["author"] + "&nbsp;", {"class": "author"}) + xhtml.span("&nbsp;") + xhtml.span("&nbsp;" + xhtml.character_reference(self["email"]), {"class" : "email"})))
+            + (xhtml.span(self["author"] + "&nbsp;", {"class": "author"}) + xhtml.span("&nbsp;")
+               + xhtml.span("&nbsp;" + xhtml.character_reference(self["email"]), {"class" : "email"})))
 
   def ashtml(self, which="image"):
     return (xhtml.table(xhtml.table.row(xhtml.table.cell(xhtml.div(self["title"], {"class" : "title"}), {"colspan": 2}))

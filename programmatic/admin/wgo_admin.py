@@ -22,17 +22,13 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
-import email
-import email.MIMEMessage
 import cgi
 import errno
 import fcntl
 import getopt
-import xhtml
 import mimetypes
 import os
 import re
-import rfc822
 import stat
 import string
 import sys
@@ -40,6 +36,7 @@ import time
 import types
 
 import wgo
+import xhtml
 
 def head_boilerplate(css=[], headers=[]):
   headers = headers + ["Content-type: text/html"]

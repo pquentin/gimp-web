@@ -170,13 +170,14 @@ def preview(form):
     fp.write(form["image"].value)
     fp.close()
     os.system("/usr/X11R6/bin/convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
+    wgo.displaycmd("which convert")
   except Exception, e:
     try: os.remove(image_path)
     except: pass
     try: os.remove(thumb_path)
     except: pass
-    wgo.error(str(e))
-    wgo_contest.footer()
+    
+    wgo_contest.footer(wgo.error(str(e)))
     return (1)
 
   form = xhtml.form(xhtml.input.submit({"name" : "approve", "value" : "APPROVE"})

@@ -1,4 +1,4 @@
-
+clicking approve on an empty article fails.
 
 The file includes/news.inc needs to be owned by the web server user.
 

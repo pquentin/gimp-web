@@ -22,16 +22,11 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
-import email
-import email.MIMEMessage
-import cgi
 import errno
 import fcntl
 import getopt
-import mimetypes
 import os
 import re
-import rfc822
 import stat
 import string
 import sys
@@ -42,14 +37,6 @@ import wgo
 import wgo_news
 import news_config
 import xhtml
-
-def mysystem(string):
-  fp = os.popen(string, "r")
-  for l in fp.readlines():
-    print l
-    pass
-  fp.close()
-  return (0)
 
 def safe_filename(path):
   path = str(path)
@@ -72,7 +59,8 @@ def generate_blotter(queue):
   if dirpath != None:
     names = map(lambda t: dirpath + t, os.listdir(dirpath))
     names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
-    news_items = filter(lambda n: n.valid, map(wgo_news.news, names))
+    news_items = map(lambda f: wgo_news.news(f, False), names)
+    news_items = filter(lambda n: n.valid, news_items)
              
     news_blotter = file_path(queue, news_config.news_blotter)
     
@@ -81,11 +69,7 @@ def generate_blotter(queue):
     map(lambda n: fp_out.write(n.as_news_item()), news_items)
     print >>fp_out, "<!-- end chartae -->"
     fp_out.close()
-
-    try:
-      os.chmod(news_blotter, 0666)
-    except:
-      pass
+    os.chmod(news_blotter, 0666)
 
     # this is not the best way to handle this XXX
     if queue == news_config.current_queue:

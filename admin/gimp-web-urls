@@ -175,6 +175,7 @@
 ["href", "wgo:dev-howtos-bugzilla",            { "href": "/bugs/howtos/bugzilla.html"}]
 ["href", "wgo:dev-howtos-subpatch",	       { "href": "/bugs/howtos/submit-patch.html"}]
 ["href", "wgo:docs",                           { "href": "/docs/"}]
+["href", "wgo:docs-batch",                     { "href": "/docs/batch_mode.html"}]
 
 ["href", "wgo:docs-gimp_help",                 { "href": "http://docs.gimp.org/"}]
 ["href", "wgo:docs-gimp_help-en",              { "href": "http://docs.gimp.org/en/"}]

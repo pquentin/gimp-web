@@ -1,5 +1,7 @@
 2005-01-04  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls: added "wgo:docs-batch".
+
 	* docs/batch_mode.htrw: largely rewritten.
 
 2005-01-04  Sven Neumann  <sven@gimp.org>

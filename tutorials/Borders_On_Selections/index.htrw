@@ -63,15 +63,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://bitbit.org/cms.php/gimp/tutorials/stroke_selection.html">here</a>.
+  The original tutorial can be found <a href="tutorial:Borders_On_Selections-Francisco_Bustamante_Hempe">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:bit-at-mospan-bitbit-dot-org">Francisco Bustamante Hempe (bit)</a>
+        Tutorial &copy; 2002 <a href="home:People-Hempe_Bustamante_Francisco">Francisco Bustamante Hempe (bit)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Hempe_Bustamante_Francisco">bit-at-mospan-bitbit-dot-org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

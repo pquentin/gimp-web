@@ -110,15 +110,15 @@
 </ul>
 
 <p>
-  The original tutorial can be found <a href="http://www.gimp.org/~sjburges/color_to_alpha/demo/color2alpha.html">here</a>.
+  The original tutorial can be found <a href="tutorial:Changing_Background1-Seth_Burgess">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:sjburges@gimp.org">Seth Burgess (sjburges)</a>
+        Tutorial &copy; 2002 <a href="home:People-Burgess_Seth">Seth Burgess (sjburges)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Burgess_Seth">sjburges@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

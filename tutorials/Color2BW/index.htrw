@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Converting Color Images to B&amp;W</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
@@ -233,15 +233,15 @@
 </ul>
 
 <p>
-  The original tutorial (possibly with updated information) may be found <a href="http://redskiesatnight.com/">here</a>.
+  The original tutorial (possibly with updated information) may be found <a href="tutorial:Photo_Edit-Eric_R_Jeschke">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a>
+        Tutorial &copy; 2002 <a href="tutorial:Photo_Edit-Eric_R_Jeschke">Eric R. Jeschke</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Jeschke_Eric_R">eric@redskiesatnight.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

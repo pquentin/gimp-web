@@ -1,3 +1,19 @@
+2003-04-15 scizzo <scizzo@gimp.org>
+
+	* /tutorials/Blown_Out_Highlights/index.html,
+	* /tutorials/Blur_Overlays/index.html,
+	* /tutorials/Borders_On_Selections/index.html,
+	* /tutorials/Changing_Background_Color_1/index.html,
+	* /tutorials/Changing_Background_Color_2/index.html,
+	* /tutorials/Color2BW/index.html: Removed these files.
+	
+	* /tutorials/Blown_Out_Highlights/index.htrw,
+	* /tutorials/Blur_Overlays/index.htrw,
+	* /tutorials/Borders_On_Selections/index.htrw,
+	* /tutorials/Changing_Background_Color_1/index.htrw,
+	* /tutorials/Changing_Background_Color_2/index.htrw,
+	* /tutorials/Color2BW/index.htrw: Add these files.
+
 2003-04-14 scizzo <scizzo@gimp.org>
 
 	* /admin/gimp-web-urls: Add John Beppu homepage link.

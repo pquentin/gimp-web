@@ -90,7 +90,7 @@ def main(queue):
     print xhtml.include('%s/%s_footer.html' % (wgo_news.config.news_path, queue))
     print xhtml.hyperlink("XML", { "class" : "faux-button",
                                    "style" : "background: #ff6600 none; color: white; font-weight: bold; padding: 0 .5em 0 .5em; font-size: medium;",
-                                   "href"  : "/var/spool/news-pending/news.rdf"})
+                                   "href"  : wgo.config.spool_dir + queue + "/news.rdf"})
 
     print xhtml.include(wgo_queue.generate_blotter(queue))
   else:

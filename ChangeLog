@@ -1,3 +1,8 @@
+2003-09-20  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/admin/develop/Makefile (install-first): install
+	  index.html in /admin/develop
+
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
 	* os2/index.htrw: I forgot to add the "Configuration" section.

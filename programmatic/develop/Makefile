@@ -2,12 +2,13 @@
 
 include ../Makefile.defs
 
-all: usage ChangeLog changelog-xhtml.css changelog-xhtml-mono.css
+all: usage ChangeLog changelog-xhtml.css changelog-xhtml-mono.css index.html
 
 usage:
 
 ChangeLog: changelog-cron gimp-unstable gegl-unstable gimp-help gimp-print film-gimp
 
+index.html: index.htrw
 gimp-unstable: gimp-unstable.sh
 gegl-unstable: gegl-unstable.sh
 gimp-help: gimp-help.sh
@@ -31,6 +32,6 @@ install-first: all
 	                   gimp-help       \
 	                   gimp-print      \
 	                   film-gimp       \
-	                   changelog-cron `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/develop
-	install --mode=644 changelog-xhtml.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/develop
+	                   changelog-cron           `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/develop
+	install --mode=644 changelog-xhtml.css      `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/develop
 	install --mode=644 changelog-xhtml-mono.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/develop

@@ -2,7 +2,7 @@
 
 include ../../Makefile.defs
 
-all: develop usage ChangeLog
+all: develop usage ChangeLog index.html
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot> target"; exit 1; fi
@@ -13,6 +13,7 @@ changelogs.cgi: changelogs.py
 
 ChangeLog: changelog-cron gimp-unstable gegl-unstable gimp-help gimp-print film-gimp
 
+index.html: index.htrw
 gimp-unstable: gimp-unstable.sh
 gegl-unstable: gegl-unstable.sh
 gimp-help: gimp-help.sh
@@ -32,10 +33,10 @@ install: install-first
 install-first: all
 	install --mode=755 -d `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
 	install --mode=755 changelogs.cgi `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
-
 	install --mode=755 gimp-unstable   \
 	                   gegl-unstable   \
 	                   gimp-help       \
 	                   gimp-print      \
 	                   film-gimp       \
 	                   changelog-cron `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop
+	install --mode=755 index.html     `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/develop

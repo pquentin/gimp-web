@@ -1,3 +1,8 @@
+2003-03-07  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Made tiny wordsmithing to Carol's how-to how-to in
+          unix/howtos/howto-template.htrw
+
 2003-03-06  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Fixed an obvious cut-and-paste typo in the build rule for

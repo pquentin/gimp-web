@@ -3,3 +3,5 @@ CVS
 /install.sh
 /install.exclude
 /README.repository
+*.*~
+*~

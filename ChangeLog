@@ -1,3 +1,17 @@
+2002-10-18 carol <carol@gimp.org>
+
+    * maillists.html: put the best information there that i have right now
+
+2002-10-18 carol <carol@gimp.org>
+
+    * resources/gradients/*.png and mgo-gradients.py: one more redrawing
+    of the gradients.
+
+2002-10-18 carol <carol@gimp.org>
+
+    * resources/gradients/*.png and mgo-gradients.py: the gradient is now
+    rendered from right to left instead of corner to corner.
+
 2002-10-18 brix <brix@gimp.org>
 	* includes/tutnavbar.inc, includes/menu.inc: added trailing
 	slashes to directory links (thanks to UnNamed for spotting this)

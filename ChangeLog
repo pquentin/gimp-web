@@ -1,7 +1,12 @@
 2003-05-01  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added .cvsignore files for:
+                unix/
+                unix/howtos
                 os2/howtos
+                programmatic/
+                books/.cvsignore
+                about/.cvsignore
                 programmatic/tools
                 programmatic/about/ChangeLogs
                 3d_Logo/.cvsignore

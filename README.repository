@@ -4,8 +4,8 @@ will follow shortly.
 
 First of all: Do not change the layout of the site, not even if you
 think it's just a minor bugfix/change! If you feel you have an idea to
-how the design/layout can be improved, you should contact either drc
-or brix.
+how the design/layout can be improved, you should contact either drc,
+brix or carol.
 
 Second: when adding a new page be sure to use the template.html file.
 There are classes for the heading and the subtitles. Use them. Do not

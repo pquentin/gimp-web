@@ -1,3 +1,11 @@
+2002-10-19 carol <carol@gimp.org>
+        
+        * style/default.css: centered the bottom navigation by adding
+        "text-align: center;" to the linkbar.
+
+        * readme.repository:  added my name (carol) to the people who can
+        make style changes.
+        
 2002-10-19 scizzo <scizzo@gimp.org>
 
         * tutorials/Advanced_Animations/: Forgot to add the .xcf.bz2

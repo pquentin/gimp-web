@@ -255,17 +255,8 @@
 </tr>
 
 <tr>
-<td>libexif</td>
-<td>0.5.12</td>
-<td>-</td>
-<td><a href="http://sourceforge.net/projects/libexif">Download</a></td>
-<td>EXIF tag support for JPEGs</td>
-<td>Optional</td>
-</tr>
-
-<tr>
 <td>gimp-print</td>
-<td>4.2.0</td>
+<td>&gt;= 4.2.6</td>
 <td>-</td>
 <td><a href="http://gimp-print.sourceforge.net">Download</a></td>
 <td>Gimp-print</td>
@@ -273,8 +264,25 @@
 </tr>
 
 <tr>
+<td>aalib</td>
+<td>&gt;= 1.4</td>
+<td>-</td>
+<td><a href="http://aa-project.sourceforge.net/aalib/">Download</a></td>
+<td>ASCII art library</td>
+<td>Optional</td>
+
+<tr>
+<td>libexif</td>
+<td>&gt;= 0.5.12</td>
+<td>-</td>
+<td><a href="http://sourceforge.net/projects/libexif">Download</a></td>
+<td>EXIF tag support for JPEGs</td>
+<td>Optional</td>
+</tr>
+
+<tr>
 <td>libjpeg</td>
-<td>v6b</td>
+<td>&gt;= v6b</td>
 <td><a href="ftp://ftp.uu.net/graphics/jpeg/">Download</a></td>
 <td>-</td>
 <td>JPEG support</td>
@@ -283,7 +291,7 @@
 
 <tr>
 <td>libpng</td>
-<td>1.2.5</td>
+<td>&gt;= 1.2.5</td>
 <td><a href="ftp://ftp.gimp.org/pub/gimp/libs/">Download</a></td>
 <td><a href="http://www.libpng.org/">Download</a></td>
 <td>PNG support</td>
@@ -292,7 +300,7 @@
 
 <tr>
 <td>libtiff</td>
-<td>3.5.7</td>
+<td>&gt;= 3.5.7</td>
 <td><a href="ftp://ftp.gimp.org/pub/gimp/libs/">Download</a></td>
 <td><a href="http://www.remotesensing.org/libtiff/">Download</a></td>
 <td>TIFF support</td>
@@ -301,7 +309,7 @@
 
 <tr>
 <td>libmng</td>
-<td>...</td>
+<td>&gt;= 1.0.5</td>
 <td>-</td>
 <td><a href="http://www.libmng.com/">Download</a></td>
 <td>MNG support</td>
@@ -309,8 +317,17 @@
 </tr>
 
 <tr>
+<td>libxpm</td>
+<td>&gt;= 4.3.0</td>
+<td><a href="ftp://ftp.x.org/contrib/libraries/">Download</a></td>
+<td><a href="http://koala.ilog.fr/ftp/pub/xpm/">Download</a></td>
+<td>XPM support</td>
+<td>Optional</td>
+</tr>
+
+<tr>
 <td>librsvg</td>
-<td>&gt;=2.2</td>
+<td>&gt;= 2.2</td>
 <td><a href="ftp://ftp.gnome.org/mirror/gnome.org/sources/librsvg/">Download</a></td>
 <td><a href="http://librsvg.sourceforge.net/">Download</a></td>
 <td>Scalable Vector Graphics</td>
@@ -319,7 +336,7 @@
 
 <tr>
 <td>libwmf</td>
-<td>...</td>
+<td>&gt;= 0.2.8</td>
 <td>-</td>
 <td><a href="http://wvware.sourceforge.net/libwmf.html">Download</a></td>
 <td>Library to convert wmf files</td>
@@ -328,10 +345,28 @@
 
 <tr>
 <td>zlib</td>
-<td>1.1.4</td>
+<td>&gt;= 1.1.4</td>
 <td><a href="ftp://ftp.gimp.org/pub/gimp/libs/">Download</a></td>
 <td><a href="http://www.gzip.org/zlib/">Download</a></td>
 <td>Compression routines</td>
+<td>Optional</td>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>&gt;= 2.2.0</td>
+<td><a href="ftp://ftp.python.org/pub/python/">Download</a></td>
+<td><a href="http://www.python.org/">Download</a></td>
+<td>Python support</td>
+<td>Optional</td>
+</tr>
+
+<tr>
+<td>Perl</td>
+<td>&gt;= 5.8</td>
+<td><a href="ftp://ftp.funet.fi/pub/CPAN/src/">Download</a></td>
+<td><a href="http://ftp.funet.fi/pub/CPAN/src/">Download</a></td>
+<td>Perl support</td>
 <td>Optional
 </td></tr></table>
 

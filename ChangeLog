@@ -1,3 +1,7 @@
+2004-11-11  Niklas M <scizzo@gimp.org>
+
+	* source/index.htrw: Added more optional packages.
+
 2004-11-05  Niklas M <scizzo@gimp.org>
 
 	* source/index.htrw: some fixes.

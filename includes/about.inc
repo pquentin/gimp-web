@@ -32,25 +32,25 @@
     This is only a very quickly thrown together list of GIMP features. This is only the tip of the iceberg.
   </p>
     <ul>
-      <li> Full suite of painting tools including Brush, Pencil, Airbrush, Clone,etc.
-      <li> Tile based memory managent so image size is limited only by available disk space.
-      <li> Sub-pixel sampling for all paint tools for high quality anti-aliasing
-      <li> Full alpha channel support
-      <li> Layers and channels
-      <li> A Procedural Database for calling internal GIMP functions from external programs as in Script-fu
-      <li> Advanced scripting capabilities
-      <li> Multiple Undo/Redo (limited only by diskspace)
-      <li> Virtually unlimited number of images open at one time
-      <li> Extremely powerful gradient editor and blend tool.
-      <li> Load and save animations in a convenient frame-as-layer format.
-      <li> Transformation tools including rotate, scale, shear and flip.
-      <li> File formats supported include gif, jpg, png, xpm, tiff, tga, mpeg, ps, pdf, pcx, bmp, and many others.
-      <li> Load, display, convert, save to many file formats.
-      <li> Selection tools including rectangle, ellipse, free, fuzzy, bezier and intelligent.
-      <li> Plug-ins which allow for the easy addition of new file formats and new effect filters.
-      <li> Over 100 plugins already available.
-      <li> Supports custom brushes and patterns
-      <li> Much, much more!
+      <li/> Full suite of painting tools including Brush, Pencil, Airbrush, Clone,etc.
+      <li/> Tile based memory managent so image size is limited only by available disk space.
+      <li/> Sub-pixel sampling for all paint tools for high quality anti-aliasing
+      <li/> Full alpha channel support
+      <li/> Layers and channels
+      <li/> A Procedural Database for calling internal GIMP functions from external programs as in Script-fu
+      <li/> Advanced scripting capabilities
+      <li/> Multiple Undo/Redo (limited only by diskspace)
+      <li/> Virtually unlimited number of images open at one time
+      <li/> Extremely powerful gradient editor and blend tool.
+      <li/> Load and save animations in a convenient frame-as-layer format.
+      <li/> Transformation tools including rotate, scale, shear and flip.
+      <li/> File formats supported include gif, jpg, png, xpm, tiff, tga, mpeg, ps, pdf, pcx, bmp, and many others.
+      <li/> Load, display, convert, save to many file formats.
+      <li/> Selection tools including rectangle, ellipse, free, fuzzy, bezier and intelligent.
+      <li/> Plug-ins which allow for the easy addition of new file formats and new effect filters.
+      <li/> Over 100 plugins already available.
+      <li/> Supports custom brushes and patterns
+      <li/> Much, much more!
     </ul>
 </div>
 

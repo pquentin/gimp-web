@@ -3,14 +3,14 @@
  */
       
 a {
-  background: transparent;
+  background: transparent none repeat scroll 0% 0%;
   color: #17457c;
   text-decoration: none;
   font-weight: bold;
 }
       
 a:hover {
-  background: transparent;
+  background: transparent none repeat scroll 0% 0%;
   color: #991e1e;
   text-decoration: underline;
   font-weight: bold;
@@ -38,20 +38,18 @@ p.images {
 }
       
 p {
-  margin: 1.33em 0px;
-  margin-left:  3em;
-  margin-right: 3em;
+  margin: 1.33em 3em 0em 3em;
   text-align: justify;
 }
       
-li {
+pxuli {
   margin-left:  3em;
   margin-right: 3em;
   text-align: justify;
 }
       
 div.heading {
-  background:    #f5f5f5;
+  background:    #f5f5f5 none repeat scroll 0% 0%;
   color:         black;
   border-style:  solid; 
   border-color:  #d0d0d0;
@@ -63,7 +61,7 @@ div.heading {
 }
       
 .newsheading {
-  background:  #42638d;
+  background:  #42638d none repeat scroll 0% 0%;
   color:       #eeeeee;
   padding:     5px;
   font-weight: bold;
@@ -111,44 +109,42 @@ span.filter {
       
 pre.code {
   color: black;
-  background: #f5f5f5;
+  background: #f5f5f5 none repeat scroll 0% 0%;
   border: solid 2px black;
   font-family: monospace;
   white-space: pre;
-  margin: 1.33em 0px;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin: 1.33em 3em 0em 3em;
   padding: 1.33em;
 }
       
 pre.debug {
   color: black;
-  background: #ddddff;
+  background: #ddddff none repeat scroll 0% 0%;
   border: solid 2px black;
   font-family: monospace;
   white-space: pre;
-  margin: 1.33em 0px;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin: 1.33em 3em 0px 3em;
   padding: 1.33em;
 }
       
 div.book-of-wilber {
   font-size: large;
-  background: #CC9966 url(../images/wilberbook.jpg);
+  background: #cc9966 url(../images/wilberbook.jpg) repeat scroll 0% 0%;
+  color: black;
   font-family:  postantiqua, "zapf chancery", "urw chancery l", fantasy;
-  border: medium groove; 
+  border: medium groove white;
   padding: 1em;
 }
       
 #linkbar, #navbar {
-  clear: both;
-  background: #f5f5f5;
-  color: black;
-  border: solid #d0d0d0;
+  background: #f5f5f5 none repeat scroll 0% 0%;
   border-width: 1px 0px 1px 0px;
-  padding: 5px 5px 5px 5px;
+  border-style: solid;
+  border-color: #d0d0d0;
+  clear: both;
+  color: black;
   font-weight: bold;
+  padding: 5px 5px 5px 5px;
   text-align: center;
 }
 
@@ -161,6 +157,31 @@ div.book-of-wilber {
   float: right;
   padding: 1em;
 }
+
+.developer { 
+  font-size: xx-small;
+  background: transparent none repeat scroll 0% 0%;
+  color: red;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.developer focus:focus { 
+
+ }
+      
+.developer legend { 
+  background: transparent none repeat scroll 0% 0%;
+  color: black;
+}
+
+.developer a { 
+  background: transparent none repeat scroll 0% 0%;
+  font-size: xx-small;
+  color: black;
+  padding: 0 1em 0 0;
+}
+      
       
 @media print {
   #navbar, #linkbar, #sidebar {

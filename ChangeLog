@@ -1,5 +1,7 @@
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
+	* docs/index.htrw: link to man-pages.
+
 	* admin/gimp-web-urls
 	* man/gimp-remote.html
 	* man/gimp.html

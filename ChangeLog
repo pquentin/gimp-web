@@ -1,3 +1,10 @@
+2003-03-22 scizzo <scizzo@gimp.org>
+
+	* style/old-default.css: This is the old default.css file.
+	
+	* style/default.css: Add a new updated and cleaned up css file. Hope
+	  this looks better then the old one.
+
 2003-03-21 scizzo <scizzo@gimp.org>
 
 	* Site: Now uses <hx> instead of <div class=""> tags.

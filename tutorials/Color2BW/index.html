@@ -2,12 +2,12 @@
 <title>GIMP - Converting Color Images to B&amp;W</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<div class="heading">Converting Color Images to B&amp;W</div>
+<h1>Converting Color Images to B&amp;W</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
 </p>
 
-<div class="subtitle">Intention</div>
+<h2>Intention</h2>
 <p class="images">
   <img src="before-384x288.jpg" alt=""/>
   <img src="after-384x288.jpg" alt=""/>
@@ -27,7 +27,7 @@
   We'll examine each of these in turn.
 </p>
 
-<div class="subtitle">The Procedure</div>
+<h2>The Procedure</h2>
 <p class="images">
   <img src="image-original-481x397.jpg" alt=""/>
 </p>
@@ -35,7 +35,7 @@
   Here is an example image, loaded into The GIMP. I thought it might look nice as a black and white image.
 </p>
 
-<div class="subtitle"><a name="grayscale">Via Grayscale</a></div>
+<h2><a name="grayscale">Via Grayscale</a></h2>
 <p class="images">
   <img src="image-grayscale-481x397.jpg" alt=""/>
   <img src="image-grayscale-zoom100-481x397.jpg" alt=""/>
@@ -53,7 +53,7 @@
   I suspect the GIMP uses a similar formula. My experiments with the Channel Mixer (more on this below) support this.
 </p>
 
-<div class="subtitle"><a name="desaturate">Via Desaturate</a></div>
+<h2><a name="desaturate">Via Desaturate</a></h2>
 <p class="images">
   <img src="image-desaturate-481x397.jpg" alt=""/>
   <img src="image-desaturate-zoom100-481x397.jpg" alt=""/>
@@ -70,7 +70,7 @@
   the algorithm is giving us a remix of 60% of the clean, detailed green channel.
 </p>
 
-<div class="subtitle"><a name="decomposeRGB">Via Decompose RGB</a></div>
+<h2><a name="decomposeRGB">Via Decompose RGB</a></h2>
 <p class="images">
   <img src="decompose-rgb-186x265.jpg" alt=""/>
 </p>
@@ -100,7 +100,7 @@
   RGB decomposition is important to give you an idea of where the important information is in your image, and where the noise is.
 </p>
 
-<div class="subtitle"><a name="decomposeHSV">Via Decompose HSV</a></div>
+<h2><a name="decomposeHSV">Via Decompose HSV</a></h2>
 <p class="images">
   <img src="decompose-hsv-186x265.jpg" alt=""/>
   <img src="image-value-481x397.jpg" alt=""/>
@@ -110,7 +110,7 @@
   Right-click on the original image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. Select the HSV option and click OK.
 </p>
 
-<div class="subtitle"><a name="decomposeLAB">Via Decompose LAB</a></div>
+<h2><a name="decomposeLAB">Via Decompose LAB</a></h2>
 <p class="images">
   <img src="decompose-lab-186x265.jpg" alt=""/>
   <img src="image-lightness-481x397.jpg" alt=""/>
@@ -132,7 +132,7 @@
   I downloaded it from the <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself.
 </p>
 
-<div class="subtitle"><a name="decomposeCMYK">Via Decompose CMYK</a></div>
+<h2><a name="decomposeCMYK">Via Decompose CMYK</a></h2>
 <p class="images">
   <img src="decompose-cmyk-186x265.jpg" alt=""/>
   <img src="image-black-481x397.jpg" alt=""/>
@@ -141,7 +141,7 @@
   Just for fun I tried decomposing into CMYK. The Black channel is interesting: it resembles a negative.
 </p>
 
-<div class="subtitle"><a name="channelmixer">Via Channel Mixer</a></div>
+<h2><a name="channelmixer">Via Channel Mixer</a></h2>
 <p class="images">
   <img src="channelmixer-481x307.jpg" alt=""/>
 </p>
@@ -181,7 +181,7 @@
   I downloaded it from <a href="http://registry.gimp.org/plugin?id=1918">the GIMP Plug-in Registry</a> and compiled it myself.
 </p>
 
-<div class="subtitle">Tips</div>
+<h2>Tips</h2>
 <ul>
   <li>Once you have a good B&amp;W version of your image you may be interested in adding some simulated film grain.</li>
   <li>If you are wondering what the "Preserve Luminosity" option does in the Channel Mixer, I have the answer. 
@@ -198,7 +198,7 @@
   that the scale values from the sliders always adds up to 100%. Of course, strange things happen when any of the sliders have large negative values.</li>
 </ul>
 
-<div class="subtitle">Other Examples</div>
+<h2>Other Examples</h2>
 <p class="images">
   <img src="middlesister-384x259.jpg" alt=""/>
   <img src="middlesister-bw-384x259.jpg" alt=""/>
@@ -216,7 +216,7 @@
   <b>Right image</b>: Converted using channel mixer.
 </p>
 
-<div class="subtitle">Further Reading</div>
+<h2>Further Reading</h2>
 <ul>
   <li><a href="http://www.microweb.com/idig/content/seybold/imgchanl.htm">A discussion of what's in the red, green and blue channels of a digital image</a>.</li>
   <li>A <a href="http://luminous-landscape.com/tutorials/b-w_better.shtml">Photoshop channel mixer tutorial</a> 

@@ -1,3 +1,10 @@
+2003-03-20 scizzo <scizzo@gimp.org>
+
+	* /tutorials/*/index.html: Now uses the <hx> tags for headings instead
+	of <div class="">.
+
+	* /tutorials/Perlotine/*.html: Looked at the validation more.
+
 2003-03-19  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * install.sh (log): Added a timestamp to the install log: make.out

@@ -2,9 +2,9 @@
 <title>GIMP - Basic Perl</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<div class="heading">Basic Perl</div>
+<h1>Basic Perl</h1>
 
-<div class="subtitle">Intention</div>
+<h2>Intention</h2>
 <p>
   One of the wonderful features of GIMP is that it all its functionality may be accessed through scripting. 
   So far most of the script programming for Gimp has been done through Scheme through Script-Fu. 
@@ -18,7 +18,7 @@
   and will instead concentrate on the use GIMP together with the of the perl modules Gimp and Gimp::Fu, written by Marc Lehmann, <a href="mailto:pcg@goof.com">pcg@goof.com</a>
 </p>
 
-<div class="subtitle">1. What You Need</div>
+<h2>1. What You Need</h2>
 <p>
   The Perl::Gimp tutorial scripts have been tested with the following versions:
 </p>
@@ -33,7 +33,7 @@
   It is also possible to download them in RPM format from the ftp.gimp.org website.
 </p>
 
-<div class="subtitle">2. The Gimp module</div>
+<h2>2. The Gimp module</h2>
 <p>
   Most scripts make use of the simplified interface Gimp::Fu provided with the Gimp module. 
   Gimp::Fu provides a framework for entering parameters to the script in a frame like interface, 
@@ -57,7 +57,7 @@
   The use of the ":auto" statement makes perl automatically include all of the gimp PDB functions and constants into the perl name space.
 </p>
 
-<div class="subtitle">3. The GIMP PDB</div>
+<h2>3. The GIMP PDB</h2>
 <p>
   Before going into the details of the Perl-Fu script, we will describe how to access the various the functionality of GIMP. 
   All functions known to GIMP are available through the procedural database (PDB). All the PDB functions may be called from perl, as will be seen below. 
@@ -118,7 +118,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
   only the drawable should be given as argument in the calling sequence.
 </p>
 
-<div class="subtitle">4. Gimp::Fu and the register function</div>
+<h2>4. Gimp::Fu and the register function</h2>
 <p>
   Gimp-Fu is perl's answer to Script-Fu. It provides a simplified method for accepting parameters for a script through a Gtk interface, 
   just like script-fu, but as we shall see below, it has some additional bells and whistles.
@@ -206,7 +206,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
  </li>
 </ol>
 
-<div class="subtitle">4.2 A commented script</div>
+<h2>4.2 A commented script</h2>
 <p>
   The following Gimp::Fu script example shows the steps described in the previous section. 
   It registeres a script that takes two values, the size of the image and a color, and then produces an image of the requested size with the requested color. 
@@ -293,7 +293,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
   Choosing the default values creates result like image above.
 </p>
 
-<div class="subtitle">5. Object oriented syntax</div>
+<h2>5. Object oriented syntax</h2>
 <p>
   Gimp::Fu provides an alternative object-oriented syntax for the image and the drawable commands. 
   Here is a table showing the procedural vs the object oriented syntax for a few commands:
@@ -313,7 +313,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
   Note that the object oriented syntax is only syntactic sugar that makes the calling syntax cleaner in some cases. The error messages are still given in the procedural format.
 </p>
 
-<div class="subtitle">6. Painting areas with selections</div>
+<h2>6. Painting areas with selections</h2>
 <p>
   In the uni script the function gimp_edit_fill was called to fill the whole image. Looking at the info for gimp_edit_fill in the DB browser we find the following:
 </p>
@@ -436,7 +436,7 @@ exit main();
   The result when run on our previous image.
 </p>
 
-<div class="subtitle">6.1 Complex selections</div>
+<h2>6.1 Complex selections</h2>
 <p>
   Besides rectangular selections elliptical selections may also be created through the PDB functions 
   gimp_ellipse_select() and gimp_free_select() which allows the selection of ellipses and polygons.
@@ -448,7 +448,7 @@ exit main();
   Search for ``select'' in the DB Browser to see a list of all the selection related functions.
 </p>
 
-<div class="subtitle">6.2 Loops</div>
+<h2>6.2 Loops</h2>
 <p>
   In perl it is trivial to write loops that together with the various selecton tools gives powerful creative possibilities. 
   Here is an example that mixes colors in circles. There is nothing really new here, but it shows the power of the what we have described above.
@@ -503,7 +503,7 @@ exit main();
   The result.
 </p>
 
-<div class="subtitle">7. Creating text, Hello World - writing text in an image</div>
+<h2>7. Creating text, Hello World - writing text in an image</h2>
 <p>
   To create text the PDB function gimp_text_fontname() may be used. In this function the font is specified in the X11 font conventions. 
   (There are also some older functions, gimp_text and gimp_text_ext in which the different X11 fields are specified explicitely.)
@@ -633,7 +633,7 @@ exit main();
   The result shown in the dialog and the resulting image above.
 </p>
 
-<div class="subtitle">8. Floating selections</div>
+<h2>8. Floating selections</h2>
 <p>
   When a region has been selected through one of the selection routines the area outlined by the selection may be copied to the cut-buffer through the gimp_edit_copy command. 
   The cut-buffer may subsequently be pasted into a different layer through the gimp_edit_paste command. 
@@ -694,7 +694,7 @@ register "horiz_cat", "Horizontal concat", "Horizontal Concat",
 exit main();
 </pre>
 
-<div class="subtitle">9. The Perl Server and stand-alone scripts</div>
+<h2>9. The Perl Server and stand-alone scripts</h2>
 <p>
   So far the scripts have all been started from the menu structure within menu. But there is another possibility and that is to run the scripts from the command line, 
   as a normal perl program. When run this way the script tries to connect to the Perl-Server, and if it fails it will launch gimp on its own. 
@@ -725,7 +725,7 @@ exit main();
   <b>Note:</b>The image is saved to the directory where gimp was started from and not to the directory in which the scripts were invoked, unless a complete path is given!
 </p>
 
-<div class="subtitle">10. End notes</div>
+<h2>10. End notes</h2>
 <p>
   This tutorial has covered only a small part of the possibilities available to a script writer. 
   In particular the following issues available to Gimp::Perl scripts have not been covered:

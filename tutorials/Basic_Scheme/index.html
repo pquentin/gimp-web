@@ -2,9 +2,9 @@
 <title>GIMP - Basic Scheme</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<div class="heading">Basic Scheme</div>
+<h1>Basic Scheme</h1>
 
-<div class="subtitle">Intention</div>
+<h2>Intention</h2>
 <p>
   One of the wonderful features of GIMP is that it all its functionality may be accessed through scripting. 
   The major scripting language for the GIMP that has been attached to it today is Scheme. 
@@ -12,7 +12,7 @@
   without getting into the programming language theory that is so typical of other Scheme references.
 </p>
 
-<div class="subtitle">1. Expressions</div>
+<h2>1. Expressions</h2>
 <p>
   Scheme is a lisp variants and all expressions are surrounded by parens. E.g. a list which will calculate the sum of 3 and 4 is written
 </p>
@@ -36,7 +36,7 @@
 </pre>
 <br />
 
-<div class="subtitle">2. Functions</div>
+<h2>2. Functions</h2>
 <p>
   Aside from the four arithmetic functions that are represented through the symbols + - * / there are lots of other functions built into the language. 
   All of them have the form
@@ -58,7 +58,7 @@
 </pre>
 <br />
 
-<div class="subtitle">3. Variables and lists</div>
+<h2>3. Variables and lists</h2>
 <p>
   Variables may be declared and set through the set! command. (These variables will be global but this should not bother the casual gimp programmer). 
   Here are a couple of assignments:
@@ -86,7 +86,7 @@
 </pre>
 <br />
 
-<div class="subtitle">3.1 car, cdr and friends (*)</div>
+<h2>3.1 car, cdr and friends (*)</h2>
 <p>
   A list in Scheme is always composed of a head and a tail. The head is the first entry in the list, and the tail is the list of the rest of the elements. 
   This means that the list (255 127 63) really means (255 (127 (63 ()))) but Scheme allows the previous form as a shortcut. 
@@ -123,7 +123,7 @@
   This is e.g. the case for the important functions gimp-new-image and gimp-new-layer used below.
 </p>
 
-<div class="subtitle">3.2 Local variables (*)</div>
+<h2>3.2 Local variables (*)</h2>
 <p>
   More experienced scheme programmers mostly use local variables instead of the global variables described above. 
   This is considered better programming practice and this construct should be recognized in order to be able to read others ScriptFu scripts.
@@ -139,7 +139,7 @@
   Here a and b have a local scope and retain their values only up to the closing paren matching the one before let* .
 </p>
 
-<div class="subtitle">4. The GIMP PDB</div>
+<h2>4. The GIMP PDB</h2>
 <p>
   All functionality of GIMP is available through the procedural database (PDB). 
   Each procedural database function has a corresponding scheme function mapping. E.g.
@@ -161,7 +161,7 @@
   The different types will be explained below.
 </p>
 
-<div class="subtitle">5. Registering the script with Script-Fu</div>
+<h2>5. Registering the script with Script-Fu</h2>
 <p>
   After a function has been written it has to be registered with script-fu before it can be used. 
   This is done through the scheme function script-fu-register. The registering has following purposes:
@@ -208,7 +208,7 @@
   <li> A default value.</li>
 </ol>
 
-<div class="subtitle">6. A commented script</div>
+<h2>6. A commented script</h2>
 <p>
   The following script <b>uni.scm</b> receives two parameter from the user, the size of the image, and a color and goes on to 
   produce a uniform image of the requested size and the requested color. Not very useful, but it shows the essential steps in producing a script-fu script.
@@ -274,7 +274,7 @@
 </pre>
 <br />
 
-<div class="subtitle">6.1 Hanging a script in the image menu</div>
+<h2>6.1 Hanging a script in the image menu</h2>
 <p>
   In the <b>uni-img</b> script it was placed under <b>Xtns/...</b> in the main Gimp window. This is done to create a new image that is independant of earlier images. 
   It is also possible to create a script which works on an already existing image. If in <b>script-fu-register</b> as the second argument is written:
@@ -325,7 +325,7 @@
 </pre>
 <br />
 
-<div class="subtitle">7. Painting areas with selections</div>
+<h2>7. Painting areas with selections</h2>
 <p>
   In uni-img we called the procedure gimp-edit-fill to fill the whole image. Looking at the info for gimp-edit-fill in the DB browser we find the following:
 </p>
@@ -438,7 +438,7 @@ The blur is a gaussian blur with the specified feather radius.
 </pre>
 <br />
 
-<div class="subtitle">8. Loops</div>
+<h2>8. Loops</h2>
 <p>
   The only looping construct that exists in Script-Fu is <b>while</b>
 </p>
@@ -465,14 +465,14 @@ The blur is a gaussian blur with the specified feather radius.
 </pre>
 <br />
 
-<div class="subtitle">9. Floating selections</div>
+<h2>9. Floating selections</h2>
 <p>
   When pasting an image from the clipboard, or when creating text in a a drawable, the result is not put directly in the drawable. 
   Instead it is put into a special temporary layer known as a floating selection. The floating selection may be manipulated in several ways, 
   and finally it is merged into its associated layer, a process known as anchoring.
 </p>
 
-<div class="subtitle">9.1 Hello World - writing text in an image</div>
+<h2>9.1 Hello World - writing text in an image</h2>
 <p>
   When creating text through the gimp-text command, the text is always put into a temporary layer. This temporary layer then has to be anchored. 
   Here is an example of creating some text which is pasted into the current drawable:
@@ -522,7 +522,7 @@ The blur is a gaussian blur with the specified feather radius.
   All the commands between the commands gimp-undo-push-group-begin and gimp-undo-push-group-end are undone together if the undo command is issued.
 </p>
 
-<div class="subtitle">9.2 Copying a selection</div>
+<h2>9.2 Copying a selection</h2>
 <p>
   To copy a selection, the command gimp-edit-copy is used. It places a copy of the selection contents in the cut-buffer. 
   The contents of the cut-buffer may then be pasted into a layer, the same layer or another one, and it is then pasted as a floating layer.

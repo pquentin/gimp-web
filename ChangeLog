@@ -1,5 +1,9 @@
 2003-03-05  Carol Spears  <carol@gimp.org>
 
+        * style/default.css: added font-sizes to hn's there
+
+2003-03-05  Carol Spears  <carol@gimp.org>
+
         * Fixed some typos in unix/:
                 unix/index-in.html
                 unix/howtos/bugzilla-in.html 

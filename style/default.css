@@ -131,6 +131,7 @@ div.heading {
   padding: 5px;
   margin-bottom: 30px;
   font-weight: bold;
+  font-size: 105%;
   text-align: center;
 }
 
@@ -173,6 +174,13 @@ div.subtitle {
  h2 {
   font-weight: bold;
   clear: both;
+  font-size: 105%;
+}
+
+ h3 {
+  font-weight: bold;
+  clear: both;
+  font-size: 100%;
 }
 
 span.filter {

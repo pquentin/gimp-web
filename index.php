@@ -35,8 +35,8 @@
           <a href="?page=os2">GIMP for OS/2</a><br/>
           <br/>
           Newest Plug-Ins:<br/>
-          <a href="1">Gaussian blur * (1.0)</a><br/>
-          <a href="1">PSD Import/Export (2.7)</a><br/>
+          <a href="FIXME">Gaussian blur * (1.0)</a><br/>
+          <a href="FIXME">PSD Import/Export (2.7)</a><br/>
           <br/>
           <br/>
         </td>
@@ -96,9 +96,9 @@
       GIMP Links :
       <span class="linkitem"><a href="http://gug.sunsite.dk">GIMP User Group</a></span>
       <span class="linkitem"><a href="http://gimp-savvy.com/BOOK/index.html">Grokking the GIMP</a></span>
-      <span class="linkitem"><a href="1">Mailing Lists</a></span>
-      <span class="linkitem"><a href="1">FAQ's</a></span>
-      <span class="linkitem"><a href="1">GIMP Books</a></span>
+      <span class="linkitem"><a href="FIXME">Mailing Lists</a></span>
+      <span class="linkitem"><a href="FIXME">FAQ's</a></span>
+      <span class="linkitem"><a href="FIXME">GIMP Books</a></span>
     </div>
 
     <div>

@@ -166,13 +166,18 @@ class news:
 
 
   def as_rdf(self):
+    http_host = config.default_http_host
+    if os.environ.has_key("HTTP_HOST"):
+      http_host = os.environ["HTTP_HOST"]
+      pass
+
     iso_date = time.strftime("%Y-%m-%dT%H:%M:%SZ",  rfc822.parsedate(self["date"]))
 
     s = rdf.item(rdf.title(self["subject"])
-                 + rdf.description(rdf.quote(self["body"]))
-                 + rdf.link("http://" + os.environ["HTTP_HOST"])
+                 + rdf.description(rdf.quote(self["body"])) + "\n"
+                 + rdf.link("http://" + http_host) + "\n"
                  + rdf.dc_date(rdf.quote(iso_date)),
-                 {'rdf:about' : "http://" + os.environ["HTTP_HOST"]})
+                 {'rdf:about' : "http://" + http_host}) + "\n"
     return (s)
 
   

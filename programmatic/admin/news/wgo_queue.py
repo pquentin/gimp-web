@@ -55,6 +55,12 @@ def message_path(qname, messageid):
   return (file_path(qname, messageid))
 
 def generate_rdf(queue):
+
+  http_host = news_config.default_http_host
+  if os.environ.has_key("HTTP_HOST"):
+    http_host = os.environ["HTTP_HOST"]
+    pass
+
   rdf_file = file_path(queue, "news.rdf")
   
   dirpath = canonical_path(queue)
@@ -69,17 +75,17 @@ def generate_rdf(queue):
   fp = open(rdf_file, "w")
   print >>fp, '<?xml version="1.0"?>'
   print >>fp, '<?xml-stylesheet href="/style/rdf-news.css" type="text/css"?>'
-  print >>fp, '<!-- this data is automatically generated on %s by wgo_queue.generate_rdf and friends -->' % (time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+  print >>fp, '<!-- this data is automatically generated on %s by wgo_queue.generate_rdf $Revision$ -->' % (time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
   
   print >>fp, rdf.RDF.init()
   
   print >>fp, rdf.channel(rdf.title('GIMP Dot Org') + "\n"
                           + rdf.dc_creator("Wilber Gimp's Publishing Agent: $Revision$") + "\n"
                           + rdf.dc_date(str(time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))) + "\n"
-                          + rdf.link('http://' + os.environ["HTTP_HOST"]) + "\n"
+                          + rdf.link('http://' + http_host) + "\n"
                           + rdf.description(rdf.quote('gimp.org news')) + "\n"
-                          + rdf.seq(rdf.items(string.join(map(lambda n: rdf.li({"resource" : "http://" + os.environ["HTTP_HOST"]}) + "\n", news_items)))) + "\n",
-                          { "rdf:about" : "http://" + os.environ["HTTP_HOST"] + "/news.rdf" }
+                          + rdf.seq(rdf.items(string.join(map(lambda n: rdf.li({"resource" : "http://" + http_host}) + "\n", news_items)))) + "\n",
+                          { "rdf:about" : "http://" + http_host + "/news.rdf" }
                           )
   
   map(lambda n: fp.write(str(n.as_rdf())), news_items)
@@ -123,6 +129,7 @@ def generate_blotter(queue):
     pass
 
   generate_rdf(queue)
+  
   return (news_blotter)
 
 

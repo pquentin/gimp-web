@@ -49,8 +49,10 @@ def html_index_page(queue, news):
   edit_target = "news-edit.cgi?message-id=" + xhtml.quote(message_id) + "&amp;queue=" + xhtml.quote(queue)
 
   checkbox_attrs = { "class" : "news-index", "name" : xhtml.quote(news["message-id"]) }
+  title = ""
   if len(news["body"]) < 2:
-    checkbox_attrs.update({"disabled" : "disabled"})
+    checkbox_attrs.update({"disabled" : "disabled", "title" : "this article has no body"})
+    title = "this article has no body"
     pass
            
   attrs = { "class" : "news-index" }
@@ -58,7 +60,7 @@ def html_index_page(queue, news):
   print xhtml.table.row(
     xhtml.table.cell(xhtml.quote(news["date"]), attrs)
     + xhtml.table.cell(xhtml.mailto(news["from"]), attrs)
-    + xhtml.table.cell(xhtml.hyperlink(news["subject"], {"href" : edit_target, "class" : "news-index"}), attrs)
+    + xhtml.table.cell(xhtml.hyperlink(news["subject"], {"href" : edit_target, "class" : "news-index", "title" : title}), attrs)
     + xhtml.table.cell(xhtml.input.checkbox(checkbox_attrs), attrs), attrs)
     
   return (1)
@@ -86,6 +88,10 @@ def main(queue):
     map(lambda n: html_index_page(queue, n), news)
                 
     print xhtml.include('%s/%s_footer.html' % (wgo_news.config.news_path, queue))
+    print xhtml.hyperlink("XML", { "class" : "faux-button",
+                                   "style" : "background: #ff6600 none; color: white; font-weight: bold; padding: 0 .5em 0 .5em; font-size: medium;",
+                                   "href"  : "/var/spool/news-pending/news.rdf"})
+
     print xhtml.include(wgo_queue.generate_blotter(queue))
   else:
     print wgo.error("Malformed Request")

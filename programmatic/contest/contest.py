@@ -166,10 +166,10 @@ def preview(form):
   title = form.getvalue("title", "")
 
   try:
-    fp = os.popen("/usr/X11R6/bin/convert - 'png:%s'" % (image_path), "w")
+    fp = os.popen("convert - 'png:%s'" % (image_path), "w")
     fp.write(form["image"].value)
     fp.close()
-    os.system("/usr/X11R6/bin/convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
+    os.system("convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
     wgo.displaycmd("which convert")
   except Exception, e:
     try: os.remove(image_path)

@@ -71,4 +71,5 @@ def displaycmd(cmd):
   for l in lines:
     print '<pre style="color: grey;">' + l + '</pre>'
     pass
+  fp.close()
   return

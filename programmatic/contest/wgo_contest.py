@@ -170,5 +170,5 @@ def header(headers=[]):
   return (wgo.header('GIMP - Splash Image Contest', [config.contest_dir + "wgo-contest.css"], wgo.config.DocumentRoot_path + "/includes/menu.inc"))
 
 
-def footer():
-  return (wgo.footer())
+def footer(prefix=None):
+  return (wgo.footer(prefix))

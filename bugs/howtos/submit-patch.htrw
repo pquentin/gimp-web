@@ -32,14 +32,14 @@
   To generate the patch you need to check out a copy of the source code from CVS. More information on how
   to do this can be found in the <a href="wgo:unix-howtos-stable_cvs_get">CVS HOWTO</a>. After you have made the
   changes to the source code and made sure it compiles and works as expected, you can create the patch file using
-  the command <kbd>cvs diff -up > /path/to/patchfile.patch</kbd>. It is recommended to include the <kbd>diff -up</kbd>
+  the command <kbd>cvs diff -up &gt; /path/to/patchfile.patch</kbd>. It is recommended to include the <kbd>diff -up</kbd>
   line in ~/.cvsrc. To summarize the steps:
 </p>
 <ul>
   <li>Check out a copy of the source code from CVS</li>
   <li>Apply your changes to the source</li>
   <li>Re-compile and make sure it works as expected</li>
-  <li>Generate the patch file using <kbd>cvs diff -up > /path/to/patchfile.patch</li>
+  <li>Generate the patch file using <kbd>cvs diff -up &gt; /path/to/patchfile.patch</li>
   <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
   <li>Submit the patch using Bugzilla, see below</li>
 </ul>
@@ -53,7 +53,7 @@
   your changes to the source. Start by downloading the source code of the latest release, extract it and make a copy
   of the entire source directory. After you have made your changes to one of the source directories and made sure it
   compiles and works as expected, you can create the patch file using the command
-  <kbd>diff -up /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd>. To summarize the steps:
+  <kbd>diff -rup /path/to/unmodified/source /path/to/modified/source &gt; /path/to/patchfile.patch</kbd>. To summarize the steps:
 </p>
 <ul>
   <li>Download the source code of the latest release</li>
@@ -61,7 +61,8 @@
   <li>Make a copy of the source code directory</li>
   <li>Apply your changes to the copy of the source code</li>
   <li>Re-compile and make sure it works as expected</li>
-  <li>Generate the patch file using <kbd>diff -up /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd></li>
+  <li>Do a <kbd>make clean</kbd> to remove files generated during build</li>
+  <li>Generate the patch file using <kbd>diff -rup /path/to/unmodified/source /path/to/modified/source &gt; /path/to/patchfile.patch</kbd></li>
   <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
   <li>Submit the patch using Bugzilla, see below</li>
 </ul>

@@ -1,5 +1,9 @@
 2004-03-23  Sven Neumann  <sven@gimp.org>
 
+	* unix/ui-*.png: updated screenshots for 2.0.
+
+2004-03-23  Sven Neumann  <sven@gimp.org>
+
 	* unix/man-gimp-1.2.html
 	* unix/man-gimp-remote-1.2.html
 	* unix/man-gimprc.1.html

@@ -1,5 +1,9 @@
 2004-11-20  Sven Neumann  <sven@gimp.org>
 
+	* source/index.htrw: mention 2.2 in the requirements list.
+
+2004-11-20  Sven Neumann  <sven@gimp.org>
+
 	* index.htrw: removed inclusion of generated news and added news
 	for the 2.0.6 and 2.2-pre2 releases.
 

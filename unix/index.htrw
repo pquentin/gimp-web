@@ -5,6 +5,7 @@
 
 <h1>GIMP for Unix</h1>
 <h2><a href="INSTALL">Installation Instructions</a></h2>
+
 <h2>GNU/Linux How To's</h2>
   <ul>
     <li><a href="wgo:unix-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
@@ -12,6 +13,7 @@
     <li><a href="wgo:dev-howtos-bugzilla">How To Bugzilla</a></li>
     <li><a href="wgo:unix-howtos-tile_cache">How To Set The Tile Cache</a></li>
   </ul>
+
 <h2>The GIMP's Documentation</h2>
   <ul>
     <li><a href="wgo:docs-gimp_help">Help Documentation</a></li>
@@ -21,6 +23,7 @@
     <li><a href="wgo:unix-manpage-stable_gimp_remote">man gimp-remote</a></li>
     <li><a href="wgo:unix-manpage-stable_gtk_config">man gtk-config</a></li>
   </ul>
+
 <h2>The GIMP's Preferences</h2>
   <ul>
     <li><a href="wgo:unix-guide_stable_user_install">user_install</a></li>

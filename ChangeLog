@@ -1,3 +1,7 @@
+2004-11-04  Niklas M <scizzo@gimp.org>
+
+	* unix/index.htrw: Updated the requirements information for 2.2.
+
 2004-11-03  Sven Neumann  <sven@gimp.org>
 
 	* about/splash/stable.htrw: added a teaser for 2.2.

@@ -98,8 +98,29 @@ system:</p>
 
 <ul>
   <li>
-    The development version depends on newer versions of GLib (at
-    least 2.4.0), GTK+ (at least 2.4.1) and Pango (at least 1.4.0).
+    A recent version of <b>pkg-config</b> is needed and you can grab
+    them at <a href="http://www.freedesktop.org/software/pkgconfig/">
+    http://www.freedesktop.org/software/pkgconfig/</a>
+  </li>
+  <li>
+    <b>GTK+ 2.4.4</b> or better (Gimp Toolkit). The GIMP toolkit can be found at
+    <a href="ftp://ftp.gtk.org/">ftp://ftp.gtk.org/</a> GTK+ 2.4.4 also needs
+    the following packages. (Either the version listed or newer)
+  <ul>
+    <li><b>GLib 2.4.5</b></li>
+    <li><b>Pango 1.4.0</b></li>
+    <li><b>ATK</b></li>
+  </ul></li>
+  <li>
+    <b>PangoFT2</b> a Pango backend that uses <b>FreeType2</b> 
+    (Make sure you have FreeType2 installed before installing Pango).
+    Downloads can be found at 
+    <a href="http://www.freetype.org/">http://www.freetype.org/</a>
+  </li>
+  <li>
+    <b>libart2</b> Grab the module libart_lgpl out of GNOME CVS or
+    fetch the tarball from <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">
+    ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a>
   </li>
 </ul>
 

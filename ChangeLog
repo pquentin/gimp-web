@@ -1,5 +1,9 @@
 2003-09-22  Raphael Quinet  <quinet@gamers.org>
 
+	* downloads/install_help.htrw: Added a mention about the build
+	time for current CVS using a relatively old machine (P3).  This
+	will be moved to the source section later.
+
 	* windows/index.htrw: Added a note about the CDs available for
 	purchase from www.wingimp.org.
 

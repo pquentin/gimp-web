@@ -179,6 +179,7 @@
 ["href", "wgo:docs-gimp_help-de",              { "href": "http://docs.gimp.org/de/"}]
 ["href", "wgo:docs-gimp_help-fr",              { "href": "http://docs.gimp.org/fr/"}]
 ["href", "wgo:docs-gimp_help-sv",              { "href": "http://docs.gimp.org/sv/"}]
+["href", "wgo:docs-gimp_help-zh_CN",           { "href": "http://docs.gimp.org/zh_CN/"}]
 
 ["href", "wgo:downloads",                      { "href": "/downloads/"}]
 ["href", "wgo:downloads-mirrors",              { "href": "/downloads/#mirrors"}]

@@ -6,13 +6,15 @@
 <h1>Documentation</h1>
 <h2>The GIMP Documentation</h2>
   <ul>
-    <li><a href="wiki:GimpDocs">The GIMP User Manual</a></li>
+    <li><a href="wiki:GimpDocs">The GIMP User Manual</a><br />
+    HTML versions are available in several languages:
     <ul>
-      <li><b>HTML</b>: <a href="wgo:docs-gimp_help-en">English</a>, 
-      <a href="wgo:docs-gimp_help-de">German</a>, 
-      <a href="wgo:docs-gimp_help-fr">French</a>, 
-      <a href="wgo:docs-gimp_help-sv">Swedish</a></li>
-    </ul>
+      <li><a href="wgo:docs-gimp_help-en">English</a></li>
+      <li><a href="wgo:docs-gimp_help-de">German</a></li>
+      <li><a href="wgo:docs-gimp_help-fr">French</a></li>
+      <li><a href="wgo:docs-gimp_help-sv">Swedish</a></li>
+      <li><a href="wgo:docs-gimp_help-zh_CN">Chinese</a></li>
+    </ul></li>
     <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
   </ul>
 <h2>Other GIMP Documentation</h2>

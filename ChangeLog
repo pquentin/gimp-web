@@ -1,3 +1,8 @@
+2004-03­17  Ville Pätsi  <drc@gimp.org>
+
+	* style/wgo.css: Fixed news icons. Changed "p.news img" to "div.news
+	img".
+
 2004-03-15  Raphaël Quinet  <quinet@gamers.org>
 
 	* tutorials/Changing_Background_Color_1/picker_button.png: 2.0

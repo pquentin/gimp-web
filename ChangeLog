@@ -1,3 +1,8 @@
+2002-10-21 gsromero
+	
+	* maillists.html: added first try with list etiquette, using ul
+	for the items.
+
 2002-10-20 carol <carol@gimp.org>
         
         * resources/brushes/index.html, resources/patterns/index.html, 

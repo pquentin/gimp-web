@@ -55,23 +55,16 @@ afraid and give it a try.</p>
 
 <p>The GIMP runs on most Unix systems using X11 (the X Window System).
 If your system can run a graphical web browser, chances are that it
-can also run the GIMP.  It runs well even on relatively old PCs
-(Pentium 200) or on old workstations (Ultra1).  The amount of memory
-can be an important factor, especially if you intend to work on large
-images.  A minimum of 64 MB of RAM is recommended, but several GB do
-not hurt.  In addition the the basic X11 libraries, the following is a
-list of what you will need to run the GIMP on your system:</p>
+can also run the GIMP.  It runs even on relatively old PCs (Pentium
+200) or on old workstations (Ultra1).  The amount of memory can be an
+important factor, especially if you intend to work on large images.  A
+minimum of 128 MB of RAM is recommended, but actually you should have
+256 MB or more, and several GB do not hurt when you want to edit
+<i>really</i> large images.  In addition the the basic X11 libraries,
+the following is a list of what you will need to run the GIMP on your
+system:</p>
 
-<p>For the stable version (1.2.x):</p>
-
-<ul>
-  <li><b>GTK+-1.2</b> (Gimp Toolkit). The GIMP toolkit can be found at
-  <a href="ftp://ftp.gimp.org/pub/gtk/">ftp://ftp.gimp.org/pub/gtk/</a>
-  Do not try to use the GTK+-2.2.0 version, it will not work with this
-  release.</li>
-</ul>
-
-<p>For the development version (1.3.x):</p>
+<p>For the stable version (2.0.x):</p>
 
 <ul>
   <li>A recent version of <b>pkg-config</b> is needed and you can grab
@@ -97,6 +90,12 @@ list of what you will need to run the GIMP on your system:</p>
   <li><b>libart2</b> grab the module from libart_lgpl on the GNOME CVS
   or get the tarball at <a
   href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a></li>
+</ul>
+
+<p>For the development version (2.1.x):</p>
+
+<ul>
+  <li>The development cycle for 2.1.x has not started yet.</li>
 </ul>
 
 <p>Note that if you compile and install the GIMP from sources, you

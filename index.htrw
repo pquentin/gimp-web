@@ -27,8 +27,13 @@ Grab a properly chilled beverage and enjoy.</p>
     supposed to follow later this month. Screenshots of the
     development version are available from <a
     href="http://developer.gimp.org/screenshots.html">developer.gimp.org</a>
-    and the GIMP Wiki has a comprehensive list of <a
-    href="http://wiki.gimp.org/gimp/WhatsNew2">new features</a>.
+    and the GIMP Wiki has a comprehensive list of
+    <a href="http://wiki.gimp.org/gimp/WhatsNew2">new features</a>.
+  </p>
+  <p>
+    Before installing this version, please read the
+    <a href="ftp://ftp.gimp.org/pub/gimp/v2.2/testing/README">release
+    notes</a>.
   </p>
 </div>
 

@@ -1,3 +1,15 @@
+2002-11-20 brix <brix@gimp.org>
+
+	* includes/menu.inc: changed documentation link to point to /docs
+
+	* ChangeLog: extracted martijns entry from cvs log and added to
+	ChangeLog file
+	
+2002-11-20 martijn <m.weisbeek@home.nl>
+
+	* links.html: Links-page now contains the best GIMP-links
+	available (IMHO)
+
 2002-11-20 scizzo <scizzo@gimp.org>
 
         * tutorials/index.html: Add the Perlotine and Image Map tutorials

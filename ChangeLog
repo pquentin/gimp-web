@@ -1,3 +1,7 @@
+2003-10-27  Sven Neumann  <sven@gimp.org>
+
+	* books/index.htrw: removed trailing slash; fixes #125598.
+
 2003-10-06  Ville Pätsi  <drc@gimp.org>
 
 	* style/wgo.css: Removed "div.news p".

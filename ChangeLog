@@ -1,3 +1,9 @@
+2003-01-05 brix <brix@gimp.org>
+
+	* style/default.css: Changed div.code and div.debug to pre.code
+	and pre.debug to solve the IE line-wrap	problem. 
+	tutorials/*/index.html should be changed accordingly.
+	
 2003-01-05 scizzo <scizzo@gimp.org>
 
 	* tutorials/Perl-Debugged/index.html: Trying to fix the line-wrap

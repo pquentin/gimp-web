@@ -155,7 +155,7 @@ span.filter {
   font-weight: bold;
 }
 
-div.code {
+pre.code {
   color: black;
   background: #f5f5f5;
   border: solid 2px black;
@@ -167,7 +167,7 @@ div.code {
   padding: 1.33em;
 }
 
-div.debug {
+pre.debug {
   color: black;
   background: #ddddff;
   border: solid 2px black;

@@ -1,29 +1,30 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - Controlling Gimp with MIDI devices</title>
+<title>GIMP - Controlling GIMP with MIDI devices</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
 
-<h1>Controlling Gimp with MIDI devices</h1>
+<h1>Controlling GIMP with MIDI devices</h1>
 
-<h2>What??</h2>
+<h2>What?</h2>
 <p>
-   The Gimp 2.2 comes with a module that allows to control the GIMP with
-   MIDI devices. Currently only Linux is supported with either the OSS or
-   the ALSA sound drivers. It might work on other platforms as well when
-   there is a way to access the raw MIDI stream by opening a device.
+   GIMP 2.2 comes with a module that allows to control it using MIDI
+   devices.  Currently this is only supported on Linux with either the
+   OSS or the ALSA sound drivers. It might work on other platforms as
+   well if there is a way to access the raw MIDI stream by opening a
+   device.
 </p>
 
-<h2>Enabling the Midi Module</h2>
+<h2>Enabling the MIDI Module</h2>
 
 <p>
    To make the UI of Gimp's MIDI controller visible you need to edit a
    configuration file when the Gimp is not running. Open
-   <tt>.gimp-2.2/controllerrc</tt> in an editor and add the following to the
-   end of the file:
+   <tt>~/.gimp-2.2/controllerrc</tt> in an editor and add the following
+   lines to the end of the file:
 </p>
 
 <pre class="code">
-(GimpControllerInfo "Midi"
+(GimpControllerInfo "MIDI"
     (enabled yes)
     (debug-events yes)
     (controller "ControllerMidi"
@@ -35,10 +36,10 @@
 <p>
    Then start the GIMP from a shell (so that you can see textual output we
    need later), open the preferences, go to the "Input Controllers" page in
-   the "Input Devices" section and select the newly appeared "Midi" Tab.
+   the "Input Devices" section and select the newly appeared "MIDI" Tab.
 </p>
 
-<h2>Configuring the Midi Source</h2>
+<h2>Configuring the MIDI Source</h2>
 
 <h3>ALSA:</h3>
 <p>
@@ -76,7 +77,7 @@
 <h2>Assigning Actions to Events</h2>
 
 <p>
-   You can now use this information to map Midi Events to Actions in the
+   You can now use this information to map MIDI Events to Actions in the
    Gimp. At the bottom of the configuration page is a list with all events
    that Gimp can recognize. Scroll to the event that you want to assign an
    action to and doubleclick its entry. Then select an Action from the
@@ -85,7 +86,7 @@
 </p>
 
 <p>
-   Please note that some actions fit perfectly to some Midi Events: Actions
+   Please note that some actions fit perfectly to some MIDI Events: Actions
    like "context-background-blue-set" can immediately use the numerical
    value provided by midi controller events.
 </p>

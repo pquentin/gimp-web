@@ -1,3 +1,8 @@
+2005-01-14  Sven Neumann  <sven@gimp.org>
+
+	* docs/index.htrw
+	* unix/howtos/gimp-midi.htrw: s/Midi/MIDI/g
+
 2005-01-14  Simon Budig  <simon@gimp.org>
 
 	* unix/howtos/gimp-midi.htrw: minor tweaks.
@@ -19,7 +24,7 @@
 	* tutorials/Basic_Batch/index.htrw: changed syntax of examples so
 	it works with bash as well as with tcsh.
 
-2005-01-05  Sven Neumann  <neumann@jpk.com>
+2005-01-05  Sven Neumann  <sven@gimp.org>
 
 	* admin/gimp-web-urls: removed url for batch mode again.
 

@@ -1,3 +1,8 @@
+2002-10-06  carol <carol@gimp.org>
+
+	* team.html: added scizzo to the team and made a section for tutorial 
+	authors
+	
 2002-10-06  scizzo <scizzo@se.debian.net>
 
 	* tutorials/index.html: Changed the Bezier_Curves to Bezier_Selections.

@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>GIMPLite Quickies</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2004 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
@@ -19,16 +19,16 @@
 <p>
   A couple of words about the images used here. The came from <a href="http://antwrp.gsfc.nasa.gov/apod/astropix.html">APOD</a>, 
   Astronomy Picture Ofthe Day. The screenshots were taken on my desktop which is sporting this 
-  <a href="http://antwrp.gsfc.nasa.gov/apod/ap020328.html">APOD</a> image.
+  <a href="http://antwrp.gsfc.nasa.gov/apod/ap040309.html">APOD</a> image.
 </p>
 <p>
   All you should need to know to start here is how to find your image and open it. <span class="filter">File -&gt; Open</span>.
 </p>
 
-<h2>Change the Size of an Image (Scale)</h2>
+<h2><a id="scale">Change the Size of an Image (Scale)</a></h2>
 <p class="images">
-  <a href="scale-menu.png"><img src="scale-menu-t.png" alt="" /></a>
-  <a href="scale-dialog.png"><img src="scale-dialog-t.png" alt="" /></a>
+  <a href="scale-menu.png"><img src="scale-menu-t.png" alt="scale-menu"></img></a>
+  <a href="scale-dialog.png"><img src="scale-dialog-t.png" alt="scale-dialog"></img></a>
 </p>
 <p>
   Problem: you have a huge image and you want to put it nicely for viewing on a web page. The GIMP is a quick solution. 
@@ -42,7 +42,8 @@
 </p>
 <p>
   The other thing to look at in the titlebar is the mode. If it says RGB in the title bar, you are fine. 
-  If it says Indexed or grayscale there, you should read the Change the Mode Quickie.
+  If it says Indexed or grayscale there, you should read the <a 
+  href="#mode">Change the Mode Quickie</a>.
 </p>
 <p>
   Image entry in the menu and the sub menu from the screenshot should revel itself. Click on "Scale Image...". 
@@ -63,10 +64,10 @@
   and height and have it look correct. So only change one and let The GIMP change the rest. To change the other length see the crop quickie.
 </p>
 
-<h2>Make jpegs Smaller</h2>
+<h2><a id="reduce">Make jpegs Smaller</a></h2>
 <p class="images">
-  <a href="jpegsave-menu.png"><img src="jpegsave-menu-t.png" alt="" /></a>
-  <a href="jpegsave-dialog-de.png"><img src="jpegsave-dialog-de-t.png" alt="" /></a>
+  <a href="jpegsave-menu.png"><img src="jpegsave-menu-t.png" alt="jpegsave-menu"></img></a>
+  <a href="jpegsave-dialog-de.png"><img src="jpegsave-dialog-de-t.png" alt="jpegsave-dialog"></img></a>
 </p>
 <p>
   You can make your jpegs smaller without changing the pixel width of the image. Actually you can change the weight of the image a lot. 
@@ -80,7 +81,8 @@
 <p>
   I generally type the filename I want into the text box, but the Extension drop menu can tell you the available file formats 
   (depending on the libraries you have installed and the conditions of the image you are trying to save). If The GIMP complains right now, 
-  or if "JPEG" is grayed out in the Extensions menu you should just cancel out of everything and step through the Change the Mode  Quickie.
+  or if "JPEG" is grayed out in the Extensions menu you should just cancel out of everything and step through the <a 
+  href="#mode">Change the Mode  Quickie</a>.
 </p>
 <p>
   In the JPEG Save Dialog, you can opt for The GIMP defaults which reduce the size quite a bit, without hurting the visual quality in a way that I can detect. 
@@ -99,16 +101,17 @@
   but the difference in what you actually see is fairly interesting.
 </p>
 
-<h2>Crop An Image</h2>
+<h2><a id="crop">Crop An Image</a></h2>
 <p class="images">
-  <a href="crop-menu.png"><img src="crop-menu-t.png" alt="" /></a>
-  <a href="crop-dialog.png"><img src="crop-dialog-t.png" alt="" /></a>
+  <a href="crop-menu.png"><img src="crop-menu-t.png" alt="crop-menu"></img></a>
+  <a href="crop-dialog.png"><img src="crop-dialog-t.png" alt="crop-dialog"></img></a>
 </p>
 <p>
   Many reasons to need to crop an image. Making rectangles square, or making squares into rectangles. Cutting alot of useless background 
-  to bring out the subject better. etc. To get to the crop tool, you can either push the button on the toolbox <img src="crop-button.png" alt="" /> 
+  to bring out the subject better. etc. To get to the crop tool, you can either push the button on the toolbox <img src="crop-button.png" alt="crop-button"></img> 
   or right click on the image and follow the menu <span class="filter">&lt;Image&gt; Tools -&gt; Transform Tools -&gt; Crop &amp; Resize</span>. 
-  This will change the cursor and allow you to click and drag a rectangular shape. Once again, 
+  This will change the cursor and allow you to click and drag a rectangular shape. The button in the toolbox
+  is the nicest way to get to any of the tools.  
   I have chosen one of the huge and beautiful <a href="http://antwrp.gsfc.nasa.gov/apod/ap021108.html">APOD</a> images, 
   <a href="ngc6369_heritage_big.jpg">ngc6369 heritage</a>.
 </p>
@@ -118,31 +121,36 @@
   on this first swipe with the crop tool, since a little dialog will pop up and you can make a better choice for your new borders there..
 </p>
 <p>
-  Here is the little "Crop &amp; Resize Information Dialog". This screenshot is showing the information about the borders we defined in our click and drag. 
+  After completeing the click and drag motion, a little &quot;<a 
+  href="crop-dialog.png">Crop &amp; Resize Information</a> Dialog&quot; (shown 
+  above also) pops up, telling you information about the borders that were defined in the click and drag. 
   We will have to change all of the numbers. If you would like to make this rectangular image square, you should find the width and height 
-  from the Get Image Information Quickie. Use the smallest of the two lengths to determine the size of the square. In my 300 x 226 pixel image, 
-  the best I can get is a 226 x 226 pixel square, and I will need to make sure the Y origin is 0. At that point, I use the image and the squares 
-  to get the best part of the image for the area. The upper right and lower left crop squares will move the border preview box. 
-  The other two will change the dimensions, so be careful. I have a <a href="crop-dialog1.png">screenshot</a> of this, 
+  from the <a 
+  href="#info">Get Image Information Quickie</a>. Use the smallest of the two lengths to determine the size of the square. In my 300 x 225 pixel image, 
+  the largest square I can get is 225 x 225 pixels, and I will need to make sure the Y origin is 0. At that point, I use the image and the squares 
+  to get the best part of the image for the area. The upper right and lower left crop squares will move the marked area. 
+  The other two (upper left and lower right) will change the dimensions of the marked area, so be careful. I have a <a href="crop-dialog1.png">screenshot</a> of this, 
   right after I fixed the width and height and the Y origin, but before the final positoning. The arrows show the move points.
 </p>
 <p>
-  I decided that the image looked the best with the <a href="crop-dialog2.png">X Origin at 39</a>. 
+  I decided that the image looked the best with the <a href="crop-dialog2.png">X Origin at 42</a>. 
   The final image appears <a href="ngc6369_heritage_sq.jpg">here</a>.
 </p>
 
-<h2>Find Info About Your Image</h2>
+<h2><a id="info">Find Info About Your Image</a></h2>
 <p class="images">
-  <a href="info-menu.png"><img src="info-menu-t.png" alt="" /></a>
-  <a href="info-dialog.png"><img src="info-dialog-t.png" alt="" /></a>
+  <a href="info-menu.png"><img src="info-menu-t.png" alt="info-menu"></img></a>
+  <a href="info-dialog.png"><img src="info-dialog-t.png" alt="info-dialog"></img></a>
 </p>
 <p>
   This window will tell you the pixel lengths. Right click on the image and follow <span class="filter">&lt;Image&gt; View -&gt; Info Window...</span> Here is a screenshot of a 
-  <a href="info-calculator.png">calculator</a> which also gives lots of good information. I got another image from 
-  <a href="http://antwrp.gsfc.nasa.gov/apod/ap001113.html">APOD</a> It is pretty big. You can see in the dialog above, it is 2241 x 1548 pixels.
+  <a href="info-calculator.png">calculator</a> which also gives lots of good information. I got another <a 
+  href="quintet_hst_big.jpg">image</a> from 
+  <a href="http://antwrp.gsfc.nasa.gov/apod/ap001113.html">APOD</a> It is pretty big. (Not as big as Saturn though) You can see in the dialog above, it is 2241 x 1548 pixels.
 </p>
 <p>
-  If you are just making a square out of a rectangle, like in the Crop An Image  Quickie, you need only to open the dialog and find 
+  If you are just making a square out of a rectangle, like in the <a 
+  href="#crop">Crop An Image  Quickie</a>, you need only to open the dialog and find 
   the lesser length and use that as described. Since this is very little information, and definately not enough to fill the space 
   between the menu thumbnail and the dialog screenshot in my layout, I thought I would run through some calculator exercises 
   that might help you to meet your image needs.
@@ -155,8 +163,18 @@
   The final <a href="quintet_hst_6x4.jpg">image</a> should "appear" as a 6x4 inch photo on most monitors.
 </p>
 <p>
+  There will be problems whenever mixing scanned photos with digital photos and also
+  with scanned negatives.  Modern film developing machines automatically crop one
+  half of an inch off from each image -- the rumor is that the photo printing machines
+  match a certain style of camera view.  If you are preparing an
+  image to be printed on a machine like this; or if you are planning on a gallery
+  where the images are from different sources, some intelligent cropping to fit the
+  best size for the medium you have chosen will be a plus.  If this is confusing;
+  please blame the photo printing industry and not TheGIMP.
+</p>
+<p>
   You can change the Resolution of your image as well, using the same methods as we used in the Scale, although, in my somewhat limited use, 
-  the issue is more about how many pixels. Let's say you want to get this image printed at the photo lab. 300 pixels for every inch is necessary. 
+  the issue is more about how many pixels. Let's say you want to get this image printed at the photo lab. 300 pixels for every inch is preferred. 
   This original image will print easily as a 7 x 5 photo. 2241px/300ppi = 7.47in. Get out your calculator for the short side. 1548/300 = _.
 </p>
 <p>
@@ -166,60 +184,92 @@
   for instance my friend printed images and then scanned them back in. Terrible business!
 </p>
 
-<h2>Change the Mode</h2>
+<h2><a name="mode">Change the Mode</a></h2>
 <p class="images">
-  <a href="mode-menu.png"><img src="mode-menu-t.png" alt="" /></a>
-  <img src="mode-dialog.png" alt="" />
+  <a href="mode-menu.png"><img src="mode-menu-t.png" alt="mode-menu"></img></a>
+  <img src="mode-dialog.png" alt="mode-dialog"></img>
 </p>
-<p>
-  When you are using The GIMP and some of your options are "<a href="mode-sample.png">grayed</a>" or it complained when you tried to save it and you didn't like 
-  the results of agreeing to "<a href="mode-export.png">Export</a>" it, quite often it is an image that is the wrong Mode. I can see the image mode in my window decoration. 
-  Change the mode via right click on the image and then follow the menus through <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt;</span>List of Available Modes. 
-  Using another <a href="http://antwrp.gsfc.nasa.gov/apod/ap950622.html">APOD</a> image, lets check out modes ...
-</p>
-<p>
-  Usually, when your options are grayed out in the menu, you need for the image to be <a href="mode-menu2.png">RGB, not Indexed</a>. It is the difference in how the 
-  color information is understood. Indexed is 256 or less colors, is small but lacks information and is difficult to manipulate. 
-  RGB is millions of colors, easier to manipulate yet quite big to remember all these millions of colors. 
-  Check this first when determining why you cannot select something from a menu or get that "<a href="mode-export.png">Export</a>"
-</p>
-<p>
-  The next most common issue you might be having with grayed out plug-ins and other options is <a href="mode-alpha.png">Alpha</a>. 
-  Don't worry about Alpha beyond these two facts. 1) you cannot have transparent areas on your image without it. 
-  2) you cannot save as a jpeg with it. Right click on the image and follow the menus <span class="filter">&lt;Image&gt; Layers -&gt; Add Alpha Channel</span>. 
-  If it is <a href="mode-alphano.png">grayed out</a>, you have this alpha channel already and your image is ready to have transparency. 
-  The way to remove the alpha channel is not so obvious. Right click on the image, <span class="filter">&lt;Image&gt; Layers -&gt; Flatten Image</span> 
-  <a href="mode-flatten-menu.png">removes the alpha channel</a>, makes the menu entry gray. 
-  Some plug-ins want the Alpha Channel, some don't, so be prepared to try it both ways.
-</p>
-<p>
-  <b>Case of grayed out JPEG option:</b><br />
-  <a href="mode-jpegno.png"><span class="filter">&lt;Image&gt;File-&gt;Save As...</span>[Extension: JPEG]</a> is not an option. 
-  First, <a href="mode-flatten-menu.png"><span class="filter">&lt;Image&gt;Layers-&gt;Flatten Image</span></a>. 
-  Then <a href="mode-menu.png"><span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;RGB</span></a>
-</p>
-<p>
-  <b>Case of not being able to erase:</b><br />
-  <a href="mode-alpha.png"><span class="filter">&lt;Image&gt;Layers-&gt;Add Alpha Channel</span></a>, should do the trick. 
-  A Sample of both types on one image can be seen <a href="mode-sample2.png">here</a>.
-</p>
-<p>
-  <b>Case of grayed out GIF option:</b><br />
-  <a href="mode-gifno.png"><span class="filter">&lt;Image&gt;File-&gt;Save As...</span>[Extension: GIF]</a> is not an option. 
-  <a href="mode-menu.png"><span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Indexed....</span></a> 
-  Best to just hit "Okay" in the <a href="mode-index.png">dialog</a> that pops up.
-</p>
+<p>As with anything else, images come in different kinds and serve
+different purposes. Sometimes, a small size is important (for web sites)
+and at other times, retaining a high colour depth in all its glory (a family portrait) is what you want. 
+The gimp can handle all of this, and more, primarily by converting
+between three fundamental modes, as seen in this menu.
+In order to switch your image to one of these modes, you open it and
+follow that menu and click the mode you want.</p>
 
-<h2>Flip An Image</h2>
+<p><b>RGB -</b> This is the default mode, used for high quality rich
+colour images. This is also the mode to do most of your image work with
+including <a
+href="#scale">scaling</a>, <a 
+href="#crop">cropping</a> and even <a 
+href="#flip">flipping</a> as it gives the computer more information to work
+with.  This extra information also makes RGB Mode the largest to store as a 
+result.</p>
+
+<p>A little bit of detail if you are interested. Each pixel or point
+when in this mode consists of three different components. R-&gt;Red,
+G-&gt;Green, B-&gt;Blue. Each of these in turn can have an intensity value of
+0-255. So, at every pixel, what you see is an additive combination of
+these three components. All these combinations result in a way to
+represent millions of colours.</p>
+
+<p>As an example to practice with images have been provided in various sizes
+and formats.  Indexed images of different sizes: from a very old <a 
+href="">APOD</a> a small <a 
+href="">gif</a> and a larger gif <a 
+href="">of the same image</a> from a later <a 
+href="">APOD</a>.  Also the same image in RGB as provided by <a 
+href="http://earthobservatory.nasa.gov/Newsroom/NewImages/images.php3?img_id=4573">Earth Observatory</a>
+a <a 
+href="AS17-148-22727.jpg">smaller version</a> and a <a 
+href="AS17-148-22727_lrg.jpg">huge version<</p>
+
+<p><b>Indexed -</b> This is the mode usually used when file size is of
+concern, or when you are working with images with few colours. It
+involves using a fixed number of colours, 256 or less, at each point to
+represent the colour at that point. The gimp defaults to attempting to
+figure out an "optimum palette" to best represent your image. Try it,
+you can undo it if you don't like the results, or use a custom palette
+or more colours.</p>
 <p class="images">
-  <a href="flip-menu.png"><img src="flip-menu-t.png" alt="" /></a>
-  <img src="flip-dialog.png" alt="" />
+<a href="mode-index.png">
+<img src="mode-index-t.png" alt="mode-index"></img></a>
+</p>
+<p>As you might expect, since the information needed to represent the
+colour at each pixel is less, the file size is a lot smaller. However,
+sometimes, there will be options in the various menus that seem to have
+been <a href="mode-menu-greyed.png">"greyed"</a> out for no apparent
+reason. This usually means the filter or option cannot be applied when
+your image is in its current mode. Changing the mode to RGB as
+outlined above should solve this issue. If that doesn't work either,
+perhaps the option you're trying requires your layer to have the ability
+to be transparent. This can be done just as easily via
+(Image)->Layer->Transparency->Add Alpha Channel.</p>
+<p class="images">
+<a href="mode-alpha.png">
+<img src="mode-alpha-t.png" alt="mode-alpha"></img></a>
+</p>
+<p><b>Grayscale -</b> In case you want to convert your brilliant colour
+image to something that's black and white (with a lot of shades of
+grey), this is one of the easiest ways in which to do it. Some photos do
+look a lot fancier when displayed in grayscale. Again, if you're
+interested in some detail, this is achieved by taking the RGB values at
+the pixels in your image, and suitably weighted averaging them to get an
+<i>intensity</i> at that point.</p>
+
+<p>There is no need to convert an image to a specific mode before saving
+it in your favourite format, as the gimp is smart enough to <a
+href="mode-export.png">export</a>.</p>
+<h2><a id="flip">Flip An Image</a></h2>
+<p class="images">
+  <a href="flip-menu.png"><img src="flip-menu-t.png" alt="flip-menu"></img></a>
+  <img src="flip-dialog.png" alt="flip-dialog"></img>
 </p>
 <p>
   When you need the person in the photo looking in the other direction, or you need to top of the image to be the bottom. 
   Mirroring the image (sort of). Right click on the image and follow the menus 
   <span class="filter">&lt;Image&gt; Tools -&gt; Transform Tools -&gt; Flip</span>, 
-  or use the button on the toolbox. <img src="flip-button.png" alt="" />
+  or use the button on the toolbox. <img src="flip-button.png" alt="flip-button"></img>
 </p>
 <p>
   Using another <a href="http://antwrp.gsfc.nasa.gov/apod/ap021114.html">APOD</a> image I demonstrated all 
@@ -238,16 +288,16 @@
   The flips are all displayed on one page for you, <a href="flips.html">here</a>. One might ask themselves, useful? or filler for a pre-established format?
 </p>
 
-<h2>Rotate An Image</h2>
+<h2><a id="rotate">Rotate An Image</a></h2>
 <p class="images">
-  <a href="rotate-menu.png"><img src="rotate-menu-t.png" alt="" /></a>
+  <a href="rotate-menu.png"><img src="rotate-menu-t.png" alt="rotate-menu"></img></a>
 </p>
 <p>
   Let's say you turned your brand new digital camera to get a vertical shot, now some of your images are on their sides. 
   Right click on the image, and follow the menus <span class="filter">&lt;Image&gt; Image -&gt; Transforms -&gt; Rotate -&gt; 90 degrees</span> 
   (or 270 depending on the orientation). 
   Using an <a href="http://antwrp.gsfc.nasa.gov/apod/ap000228.html">APOD</a> image. I rotated it once to demonstrate. 
-  <a href="sombrero_vlt-270.jpg">270 degrees</a>.
+  <a href="sombrero_vlt-270.jpg">90 degrees CCW</a>.
 </p>
 
 <p>
@@ -256,7 +306,7 @@
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="home:People-Spears_Carol">Carol Spears (carol)</a>
+        Tutorial &copy; 2004 <a href="home:People-Spears_Carol">Carol Spears (carol)</a> &amp; Harish Narayanan
       </span>
       <span id="footerright">
         <a href="mail:People-Spears_Carol">carol@gimp.org</a>

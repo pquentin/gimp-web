@@ -1,3 +1,12 @@
+2004-03-18  Carol Spears <carol@gimp.org>
+    * fixed a typo in /unix/user_install.htrw
+    * updated images in /tutorials/Lite_Quickies
+    * added quintet_hst_big.jpg, crop-dialog.png, info-dialog.png
+    * added AS17-148-22727.jpg, AS17-148-22727_lrg.jpg, earth_1_apollo17_big.gif
+    * fixed xhtml /tutorials/Lite_Quickies/index.htrw,jpegrace.htrw,flips.htrw
+    * removed mode-alphano.png, mode-flatten-menu.png, mode-gifno.png, mode-jpegno.png,
+      mode-menu2.png, mode-sample.png, mode-sample2.png
+
 2004-03-18  Raphaël Quinet  <quinet@gamers.org>
 
 	* tutorials/Quickmask/index.htrw: Minor changes.  Updated the

@@ -52,7 +52,7 @@
 <h2>Monitor Resolution</h2>
 <p>
     Monitor Resolution is the ratio of pixels, horizontally and vertically
-    (<a href="ui-moniter.png">screenshot</a>).
+    (<a href="ui-monitor.png">screenshot</a>).
 </p>
 <ol>
     <li>Get Resolution from windowing system</li>

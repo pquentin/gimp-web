@@ -4,29 +4,29 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>jpeg race</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2004 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
 </p>
 
 <table>
       <tr><td>
-        <img src="sunspot_swedish_label2.jpg" width="401" height="291" alt="original"/><br />
+        <img src="sunspot_swedish_label2.jpg" style="width:401px;height:291px;" alt="original"></img><br></br>
         <p>original</p>
      </td><td>
-        <img src="flip-sample-h.png" width="401" height="291" alt="horizontal"/><br />
+        <img src="flip-sample-h.png" style="width:401px;height:291px;" alt="horizontal"></img><br></br>
         <p>horizontal flip</p>
      </td></tr>
      <tr><td>
-        <img src="flip-sample-v.png" width="401" height="291" alt="vertical"/><br />
+        <img src="flip-sample-v.png" style="width:401px;height:291px;" alt="vertical"></img><br></br>
         <p>vertical flip</p>
      </td><td>
-        <img src="flip-sample-b.png" width="401" height="291" alt="both"/><br />
+        <img src="flip-sample-b.png" style="width:401px;height:291px;" alt="both"></img><br></br>
         <p>horizontal and vertical flips</p>
 </td></tr></table>
 
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="home:People-Spears_Carol">Carol Spears (carol)</a>
+        Tutorial &copy; 2004 <a href="home:People-Spears_Carol">Carol Spears (carol)</a>
       </span>
       <span id="footerright">
         <a href="mail:People-Spears_Carol">carol@gimp.org</a>

@@ -4,22 +4,22 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>jpeg race</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2004 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
 </p>
 
 <table>
       <tr><td>
-        <img src="cmprssed.jpg" width="350" height="175" alt="cmprssed.jpg"/><br/>
+        <img src="cmprssed.jpg" style="width:300px; height:150px; alt="cmprssed.jpg"></img><br></br>
         <p>Quality .06</p>
       </td><td>
-        <img src="compressed.jpg" width="350" height="175" alt="compressed.jpg"/><br/>
-        <p>Quality .38</p>
+        <img src="compressed.jpg" style="width:300px; height:150px; alt="compressed.jpg"></img><br></br>
+        <p>Quality .42</p>
       </td></tr>
       <tr><td>
-        <img src="default.jpg" width="350" height="175" alt="default.jpg"/><br/>
-        <p>Quality .75</p>
+        <img src="default.jpg" style="width:300px; height:150px; alt="default.jpg"></img><br></br>
+        <p>Quality .85</p>
       </td><td>
-        <img src="uncompressed.jpg" width="350" height="175" alt="uncompressed.jpg"/><br/>
+        <img src="uncompressed.jpg" style="width:300px; height:150px; alt="uncompressed.jpg"></img><br></br>
         <p>Quality 1.00</p>
 </td></tr></table>
 

@@ -12,3 +12,15 @@ from the 1-2 tarball:
   unix/README.perl
   windows/README.win32
   
+from gnome annoncvs trees:
+  ChangeLog gimp HEAD  
+  ChangeLog gimp 1.2
+  ChangeLog gimp-help
+  ChangeLog gegl
+from sourceforge
+  ChangeLog gimp-print
+  ChangeLog filmgimp
+from an online query:
+  bugzilla new bugs
+  bugzilla fixed bugs
+  plug-ins

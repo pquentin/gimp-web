@@ -4,58 +4,71 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Getting Involved</h1>
+
 <h2>Intention</h2>
-<p>
-  All of you who wants to help with the development of GIMP have a lot of different choices
-  to get going with the development. This page is not platform specific so the information provided here
-  is for development as it is today. The list of different ways to help is listed below.
-</p>
+
+<p>GIMP is <span class="help" title="software that may be modified and
+distributed freely, as long as you do not deny other users these
+freedoms">Free Software</span> and a part of the <a
+href="http://www.gnu.org/">GNU Project</a>.  In the free software
+world, there is generally no distinction between users and
+developers. As in a friendly neighbourhood, everybody pitches in to
+help their neighbors.  Please consider the time you give in assistance
+to others as payment.</p>
+
+<p>Ways in which you can help:</p>
 <ul>
-  <li>Bug reports</li>
-  <li>Web development</li>
-  <li>Writting tutorials</li>
-  <li>Hacking</li>
+  <li>program new features,</li>
+  <li>debug existing features,</li>
+  <li>report <a href="wgo:bugs">bugs</a>--errors in the program,</li>
+  <li>add <a href="/docs/">documentation</a>,</li>
+  <li>translate the GIMP to your own language,</li>
+  <li>translate the documentation,</li>
+  <li>write <a href="/tutorials/">tutorials</a>,</li>
+  <li>improve this web site,</li>
+  <li>make artwork for the GIMP used in or with the GIMP,</li>
+  <li>let people know you used the GIMP for your artwork,</li>
+  <li>sell or give away copies of the GIMP, or</li>
+  <li>help others to learn to use the GIMP.</li>
 </ul>
-<p>
-  A few developers put a small wiki page together to help with the "Getting Involved" topic.
-  The wiki page is located <a href="http://wiki.gimp.org/gimp/GettingStartedWithGimp">here</a>.
-</p>
+
+<p>As you can see, everyone can help.</p>
 
 <h2>Bug reports</h2>
-<p>
-  GIMP is not a bug free application nor is any other application so reporting the bugs that you
-  will encounter is very important to the development, it helps the developers to make GIMP more stable
-  and more bug free.
-</p>
-<p>
-  You don't have to be a developer or a everyday user to report bugs but it can
-  be hard to report a bug the first time you try it out but don't just quit the whole bug report if you
-  think it is hard instead look at the links below and you will find some very good help about this.
-</p>
-<ul>
-  <li><a href="/bugs/">Bugs</a> section on this page.</li>
-  <li><a href="http://www.bugzilla.org/">bugzilla.org</a> the main bugzilla website</li>
-</ul>
+
+<p>GIMP is not a bug-free application nor is any other application so
+reporting the bugs that you will encounter is very important to the
+development, it helps the developers to make GIMP more stable and more
+bug free.</p>
+
+<p>You don't have to be a developer or a everyday user to report bugs.
+It can be hard to report a bug the first time you try it out but don't
+just quit the whole bug report if you think it is hard.  Instead, look
+at the <a href="wgo:bugs">bugs</a> page you will find some very good
+help about this.</p>
 
 <h2>Web development</h2>
-<p>
-  Creating websites that contains useful information is very important. It is actually just as important as
-  doing bug reports. A website is containing a lot of information that is needed for the development to move on
-  and it also contains information that will help the public to understand what the application is all about.
-</p>
+
+<p>Creating websites that contain useful information is very
+important.  It is actually just as important as doing bug reports.  A
+website contains a lot of information that is needed for the
+development to move on and it also contains information that will help
+the public to understand what the application is all about.</p>
 
 <h2>Hacking</h2>
-<p>
-  This is the part where people are always needed to help with the development and this is also
-  the part that is the hardest to start with. Though there are websites and files to give you a
-  good look at how hacking is being done in the GIMP.
-</p>
-<p>
-  The site you should keep updated with and the site that is updated all the time with new development
-  help guides is located at <a href="http://developer.gimp.org/">http://developer.gimp.org/</a>.
-  If you have the GIMP installed at the moment then there are some files you should look at in the source
-  code that might help you a little.
-</p>
+
+<p>This is the part where people are always needed to help with the
+development and this is also the part that is the hardest to start
+with.  Though there are websites and files to give you a good look at
+how hacking is being done in the GIMP.</p>
+
+<p>The site you should keep updated with and the site that is updated
+all the time with new development help guides is located at <a
+href="http://developer.gimp.org/">http://developer.gimp.org/</a>.  If
+you have the GIMP installed at the moment then there are some files
+you should look at in the source code that might help you a
+little.</p>
+
 <ul>
   <li><b>HACKING</b><br />
   <i>(Contains a lot of information that you need to know if you want to start coding)</i></li><br />

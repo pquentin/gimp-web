@@ -228,6 +228,11 @@ em.hellbrokeloose {
   font-weight: bold;
 }
 
+.help, acronym {
+  border-bottom: 1px dashed #9999cc;
+  cursor: help;
+}
+
 kbd {
   font-weight: bold;
 }

@@ -1,43 +1,49 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - GIMP for Windows</title>
+<title>GIMP - for Windows</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>GIMP for Windows</h1>
 
-<h2>Download</h2>
+<h2>Getting and Installing the GIMP</h2>
 
-<p>This site, www.gimp.org, only distributes the source code to the GIMP (the building blocks). You can however download executable versions at the sites of <a href="http://www2.arnes.si/~sopjsimo/gimp/">Jernej Simoncic</a> (for users) and <a href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Tor Lillqvist</a> (for developers).</p>
+<p>This site, www.gimp.org, only distributes the source code to the
+GIMP (the building blocks). You can however download executable
+versions at the sites of <a
+href="http://www2.arnes.si/~sopjsimo/gimp/">Jernej Simoncic</a> (for
+users) and <a
+href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Tor
+Lillqvist</a> (for developers).</p>
 
-<h2>Our support</h2>
+<h2>Requirements</h2>
 
-<p>The GIMP comes with extensive help files. Once you have started the program, press F1. Should you get an error message at that time, you may need to set your help browser to Netscape in the Preferences. ('Netscape' is GIMP-speak for 'your default web browser', and need not be a Netscape product.)</p>
+<p>The GIMP should run on Windows 95/98/ME/NT4/2000/XP.  It is
+recommended to use an NT-based version of Windows (NT4, 2000 or XP).
+The amount of memory can be an important factor, especially if you
+intend to work on large images.  A minimum of 64 MB of RAM is
+recommended, but several GB do not hurt.</p>
 
-<p>The GIMP's user interface is designed to let you work as efficiently as possible. The trade-off is that first time users need an <a href="http://members.home.nl/m.weisbeek/gimp/">introduction to the GIMP's user interface</a>, such as the one written by Martijn Weisbeek.</p>
+<h2>Configuration</h2>
 
-<p>Other useful links can be found at the bottom of each page on this site.</p>
+<p><em class="hellbrokeloose">FIXME:</em> <em>add something here, like
+in the UNIX section.</em></p>
 
-<h2>Your support</h2>
+<h2>Help and Documentation</h2>
 
-<p>GIMP is so-called <span title="software that may be modified and distributed freely, as long as you do not deny other users these freedoms">free software</span> and a part of the <a href="home:gnu">GNU Project</a>. In the free software world, there is generally no distinction between users and developers. As in a friendly neighbourhood, everybody pitches in and everybody helps everybody else. Consider that your payment.</p>
+<p>The GIMP comes with extensive help files. Once you have started the
+program, press <kbd>F1</kbd>. Should you get an error message at that
+time, you may need to set your help browser to Netscape in the
+Preferences. ('Netscape' is GIMP-speak for 'your default web browser',
+and need not be a Netscape product.)</p>
 
-<p>Ways in which you can help:</p>
+<p>The GIMP's user interface is designed to let you work as
+efficiently as possible.  The trade-off is that first time users need
+an <a href="http://members.home.nl/m.weisbeek/gimp/">introduction to
+the GIMP's user interface</a>, such as the one written by Martijn
+Weisbeek.</p>
 
-<ul>
-<li><a href="/develop/">program new features</a>,</li>
-<li><a href="/develop/">debug existing features</a>,</li>
-<li><a href="home:gimp-bugzilla-stable">report bugs</a>--errors in the program (read the <a href="/unix/howtos/bugzilla.html">instructions</a> first),</li>
-<li><a href="/docs/">add documentation</a>,</li>
-<li>translate the GIMP to your own language,</li>
-<li>translate the documentation,</li>
-<li><a href="/tutorials/">write tutorials</a>,</li>
-<li>make artwork for the GIMP used in or with the GIMP,</li>
-<li>let people know you used the GIMP for your artwork,</li>
-<li>sell or give away copies of the GIMP, or</li>
-<li>help others to learn to use the GIMP.</li>
-</ul>
-
-<p>As you can see, everyone can help.</p>
+<p>Other useful links can be found at the bottom of each page on this
+site.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

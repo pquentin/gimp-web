@@ -1,3 +1,19 @@
+2003-09-21  Raphael Quinet  <quinet@gamers.org>
+
+	* unix/index.htrw
+	* windows/index.htrw
+	* macintosh/index.htrw
+	* os2/index.htrw: Re-organized the platform-specific sections so
+	that they share a similar structure: "Getting and Installing the
+	GIMP", "Requirements", "Configuration", "Help and Documentation".
+	This should fix bug #119537, bug #119538 and bug #119539.
+
+	* style/wgo.css (help, acronym): added new style for elements that
+	have a title (help tip).
+
+	* develop/index.htrw: Recycled some parts of the Mac section "Your
+	support" (now gone) to revise the first part of this page.
+
 2003-09-21 scizzo <scizzo@gimp.org>
 
 	* /unix/index.htrw: Commented out "Help Documentation" and 
@@ -40,6 +56,8 @@
 	from main menu.
 
 2003-09-20  Raphael Quinet  <quinet@gamers.org>
+
+	* downloads/.cvsignore: Updated the file with "make cvsignore".
 
 	* downloads/install_help.html
 	* downloads/install_help.htrw: Renamed the .html file to .htrw,

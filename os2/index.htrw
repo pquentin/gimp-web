@@ -1,11 +1,12 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - GIMP for OS/2</title>
+<title>GIMP - for OS/2</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>GIMP for OS/2</h1>
 
-<h2>Small and Persistant Group</h2>
+<h2>Getting and Installing the GIMP</h2>
+
 <ul>
    <li><a href="http://www.os2world.com/os2files/">OS/2 Software -- including The GIMP</a></li>
    <li><a href="info:OS2_GIMP_PM">Everblue with GIMP</a></li>
@@ -14,7 +15,12 @@
    <li><a href="info:OS2_GIMP_en">Team OS/2 GIMP English</a></li>
 </ul>
 
-<h2>OS/2 How To's</h2>
+<h2>Requirements</h2>
+
+<p><em class="hellbrokeloose">FIXME:</em> <em>add something here.</em></p>
+
+<h2>Help and Documentation</h2>
+
 <ul>
    <li><a href="os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian">Installing XFree86/OS2 4.3.0</a></li>
    <li><a href="wgo:os2-howtos_xfree86_install_fonts">How To Install Fonts In OS2/xfree86</a></li>
@@ -22,14 +28,14 @@
    <li><a href="wgo:os2-howtos-tile_cache">How To Set Your OS2/GIMP Tile Cache</a></li>
 </ul>
 
-<h2>OS/2 Mail Lists That Might Help</h2>
+<p>OS/2 mailing lists:</p>
 <ul>
    <li><a href="maillist:GIMP-user-os2">GIMP-os2</a> (<a href="maillist:GIMP-user-os2-archives">archives</a>)</li>
    <li><a href="maillist:SANE-os2">SANE-os2</a> (<a href="maillist:SANE-os2-archives">archives</a>)</li>
 </ul>
 
 <h2>OS/2 Screenshots</h2>
-<h3>Unknowingly contributed by Platon Fomichev, Khairil Yusof, Pierre Lucas, and Christoph Vogelbusch</h3>
+<p>Unknowingly contributed by Platon Fomichev, Khairil Yusof, Pierre Lucas, and Christoph Vogelbusch</p>
 <ul>
    <li><a href="gimp118-1.jpg">gimp-1.1.8 (Eek!)</a></li>
    <li><a href="gimp118-2.jpg">gimp-1.1.8 <span class="path">File -&gt;Open</span></a></li>

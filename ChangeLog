@@ -2,6 +2,9 @@
 
 	* about/splash.html: added this file.
 
+	* about/splash.html and about/splash/*.png  added some gallery images and 
+    started on a gallery layout.
+
 2002-11-24 scizzo <scizzo@gimp.org>
 
         * tutorials/index.html: Fixed the index for the tutorials in the HTML

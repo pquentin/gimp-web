@@ -14,12 +14,8 @@ fi
 log=${INSTALLDIR}/install.out
 
 /bin/rm -f  ${log}
-
 date >> ${log}
-
-make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean webtools all programmatic install
-
+make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean webtools all programmatic install >> ${log}
 make -C crontab all install 2>&1 >> ${log}
-
 ls -l ${INSTALLDIR}/var/spool/wgo-contest-current  >> ${log}
 

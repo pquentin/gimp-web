@@ -1,5 +1,7 @@
 2003-04-26  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * install.sh (log): Redirect output from make into install.out text file
+
         * install.exclude: Don't install *.pyc files.  Let them be
           generated on the fly.
 

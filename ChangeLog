@@ -8,6 +8,9 @@
     
 2002-10-16 scizzo <scizzo@gimp.org>
 
+	* tutorials/Simple_Animations: Add the first version of the Simple
+	Animation tutorial.
+
 	* tutorials/index.html: Split the animations into Simple and Advanced.
 
 	* tutorials/Golden_Text/: Add the first version of the Golden_Text tutorial.

@@ -26,6 +26,8 @@
 
 	* about/splash.html: added this template.
 
+	* about/index.html: added Splash History to History Section.
+
 2002-11-21 carol <carol@gimp.org>
 
 	* links.html: added some more urls. fixed somethings. reflected these

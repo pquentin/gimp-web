@@ -1,5 +1,11 @@
 2003-09-09  Raphael Quinet  <quinet@gamers.org>
 
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-admin-init.xhtml: The correct spelling of the
+	onLoad event handler in XHTML is onload, not onLoad.
+
+2003-09-09  Raphael Quinet  <quinet@gamers.org>
+
 	* style/wgo.css
 	* style/wgo.js
 	* includes/wgo-admin-fini.xhtml

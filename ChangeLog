@@ -3,6 +3,9 @@
     * resources/gradients/index.html and mgo-gradients.py: added the
     directory, the images and the index page.
 
+    * resources/index.html i removed everything there isn't a directory
+    for.  :)
+
 2002-10-17 scizzo <scizzo@gimp.org>
 
 	* tutorials/index.html: Gnome Icons now added to the list.

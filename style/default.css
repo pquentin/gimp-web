@@ -69,6 +69,7 @@ p {
 #main {
   padding: 10px;
   vertical-align: top;
+  width: 100%;
 }
 
 div.heading {

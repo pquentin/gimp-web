@@ -28,9 +28,9 @@ function popup(url, textbox)
 
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<div class="heading">Image Map Tutorial</div>
+<h1>Image Map Tutorial</h1>
 
-<div class="subtitle">Intention</div>
+<h2>Intention</h2>
 <p class="images">
   <img src="imap-table1-1-0.png" alt=""/>
   <img src="dialog-imagemap-t.png" alt=""/>
@@ -48,7 +48,7 @@ function popup(url, textbox)
   I tried to arrow and number the few areas I am worried about for this tutorial. So, relax.
 </p>
 
-<div class="subtitle">1. Goodies-&gt;Create Guides</div>
+<h2>1. Goodies-&gt;Create Guides</h2>
 <p class="images">
   <img src="dialog-createguides.png" alt=""/>
   <img src="imagemap1-zoom.png" alt=""/>
@@ -57,7 +57,8 @@ function popup(url, textbox)
   This is a screenshot of the Create Guides Dialog (left image). We get to change every single option before we are done. Whee!
 </p>
 <p>
-  I came to this tutorial prepared with a perfectly wonderful colorpicker script that I stole from <a href="http://the-light.com/colclick.html">Victor S. Engel</a>. 
+  I came to this tutorial prepared with a perfectly wonderful colorpicker script that I stole from 
+  <a href="http://the-light.com/colclick.html">Victor S. Engel</a>. 
   The only problem with his colorpicker is that it didn't look like The GIMP. :) If you "View Source" of that page, 
   you can see that there is a similar line to each image map coordinate area. So, into the "Base URL" box, put the stuff that will be the same on each. 
   I am going to deal with the colors (256 of them, eek!) after I make the image map. 
@@ -74,10 +75,11 @@ function popup(url, textbox)
 </p>
 <p>
   You can do the math or count the squares, but the Visibone2 palette has 16 colors across and 16 colors down. 
-  I used the mouse on guides to determine the start point of the first image map area. That is all of the configurable things in this dialog. Time to click "Apply".
+  I used the mouse on guides to determine the start point of the first image map area. 
+  That is all of the configurable things in this dialog. Time to click "Apply".
 </p>
 
-<div class="subtitle">2. Map Image</div>
+<h2>2. Map Image</h2>
 <p class="images">
   <img src="dialog-guides-image.png" alt=""/>
 </p>
@@ -89,7 +91,7 @@ function popup(url, textbox)
   At this point, for this project, you can jump right to "4. File Save"as it is totally done for our use.
 </p>
 
-<div class="subtitle">3. Table Editor</div>
+<h2>3. Table Editor</h2>
 <p class="images">
   <img src="dialog-guides-urlset.png" alt=""/>
 </p>
@@ -101,18 +103,22 @@ function popup(url, textbox)
   I fully admit that I only used a small small part of this great plug-ins ability. 256 elements was out of the reach of my short attention span.
 </p>
 
-<div class="subtitle">4. File-&gt;Save As</div>
+<h2>4. File-&gt;Save As</h2>
 <p>
-  I am not going to bore you with the directions to <span class="filter">File-&gt;Save As</span>. Instead, check out my product <a href="imap1.html">here</a>. 
+  I am not going to bore you with the directions to <span class="filter">File-&gt;Save As</span>. 
+  Instead, check out my product <a href="imap1.html">here</a>. 
   It needs the colors placed at the end of the lines. This information is already found in The GIMP Palette directory, 
-  usually located at ~.gimp-1.2/palettes/. This was the <a href="Visibone2">Visibone2</a> palette. I posed this problem to my friend bex and went to sleep. 
+  usually located at ~.gimp-1.2/palettes/. This was the <a href="Visibone2">Visibone2</a> palette. 
+  I posed this problem to my friend bex and went to sleep. 
   When I awoke, she had solved my dilemma by writing the <a href="bextruder.sh.txt">bextruder shell script</a>.
 </p>
 <p>
   This puppy takes each line from <a href="Visibone2.txt">Visibone2.txt</a>, gets a color from the <a href="Visibine2">Visibone2</a> 
-  in your home directory and puts it on the end of the line. Then plops a ')&gt; on the end of that, producing a file called <a href="visibone.html">visibone.html</a>. 
+  in your home directory and puts it on the end of the line. Then plops a ')&gt; on the end of that, 
+  producing a file called <a href="visibone.html">visibone.html</a>. 
   This didn't work. bex did exactly what I told her to do and I had forgotten a ". The plop at the end should have been a ')"&gt;. 
-  It was easy enough to fix with any editors global replace thingie .... My "working chunk of html" is called <a href="bexcolored.html">bexcolored.html</a>. 
+  It was easy enough to fix with any editors global replace thingie .... 
+  My "working chunk of html" is called <a href="bexcolored.html">bexcolored.html</a>. 
   The script should be easy to edit to use any palette. That is why I brought up the missing".
 </p>
 <p>

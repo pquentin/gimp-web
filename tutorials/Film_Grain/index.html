@@ -2,9 +2,9 @@
 <title>GIMP - Film Grain Tutorial</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<div class="heading">Film Grain Tutorial</div>
+<h1>Film Grain Tutorial</h1>
 
-<div class="subtitle">Intention</div>
+<h2>Intention</h2>
 <p>
   This tutorial assumes a patched version of GIMP 1.2.2. Please don't distribute binaries which include this patch; 
   it creates non-standard XCF files, which would suprise users terribly. Real-world images have lots of noise: 
@@ -13,13 +13,13 @@
   then this tutorial is for you.
 </p>
 
-<div class="subtitle">Why Would Anyone Want to Ruin Perfectly Good Images?</div>
+<h2>Why Would Anyone Want to Ruin Perfectly Good Images?</h2>
 <p>
   Perhaps you've rendered a gorgeous 3D scene, but want to make it look more like a photograph. Perhaps you're compositing 
   two different photos, and need make the grain match. Or maybe you're just perverse.
 </p>
 
-<div class="subtitle">Extracting the Film Grain</div>
+<h2>Extracting the Film Grain</h2>
 <p>
   This is a subject for another, longer tutorial. But here are the basic steps:
 </p>
@@ -39,7 +39,7 @@
   In the following example, we'll use a weird, vertically-striped noise pattern. It looks like some kind of scanner noise, or perhaps an artifact of old newsprint.
 </p>
 
-<div class="subtitle">Ruining a Perfectly Good Image</div>
+<h2>Ruining a Perfectly Good Image</h2>
 <p class="images">
   <img src="sailboat-01-original.jpg" alt=""/>
   <img src="sailboat-08-grain-masked-rebalanced.jpg" alt=""/>
@@ -50,7 +50,7 @@
   Technically, it's better, but it's unnecessary for most images.)
 </p>
 
-<div class="subtitle">Step 2</div>
+<h2>Step 2</h2>
 <p class="images">
   <img src="sailboat-02-luminosity.jpg" alt=""/>
   <img src="sailboat-03-grain.jpg" alt=""/>
@@ -59,7 +59,7 @@
   Next add a new layer to the image, and use the bucket to fill it with your tileable noise.
 </p>
 
-<div class="subtitle">Step 3</div>
+<h2>Step 3</h2>
 <p class="images">
   <img src="sailboat-04-grain-added.jpg" alt=""/>
 </p>
@@ -67,7 +67,7 @@
   Position the noise layer above the image layer, and set the mode to Grey Addition. (Again, this won't work unless the patch has been installed.)
 </p>
 
-<div class="subtitle">Step 4</div>
+<h2>Step 4</h2>
 <p class="images">
   <img src="sailboat-05-luminosity-blurred.jpg" alt=""/>
 </p>
@@ -79,7 +79,7 @@
   This will cause the grain to show through strongly in the shadows and midtones, but not in the highlights.
 </p>
 
-<div class="subtitle">Step 5</div>
+<h2>Step 5</h2>
 <p class="images">
   <img src="sailboat-08-grain-masked-rebalanced.jpg" alt=""/>
 </p>
@@ -91,7 +91,7 @@
   Here's the Layers, Channels &amp; Paths dialog for the finished image.
 </p>
 
-<div class="subtitle">Related Techniques</div>
+<h2>Related Techniques</h2>
 <p>
   You can use various brushes in the mask layer to selectively edit the grain. You can also use the bucket tool in Pattern Fill, Grey Addition 
   mode to fill a selection with grain directly.

@@ -2,9 +2,9 @@
 <title>GIMP - Perl Debugged</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<div class="heading">Perl Debugged</div>
+<h1>Perl Debugged</h1>
 
-<div class="subtitle">Intention</div>
+<h2>Intention</h2>
 <p>
   The Perl module for Gimp is a nice evolution of the scripting interface of Gimp. It removes the dependence on the relatively rarely encountered 
   scheme language of script-fu and replaces it with one that is familiar to a much larger audience. In doing so, the perl interface to gimp also 
@@ -36,7 +36,7 @@ register "example", "Example", "Dumb example for debugging",
 exit main;
 </pre>
 
-<div class="subtitle">Gimp::set_trace</div>
+<h2>Gimp::set_trace</h2>
 <p>
   The gimp module provides tracing ability, which is a form of debugging. 
   To activate this, start gimp from an XTerm, and place the following at the top of the script:
@@ -79,7 +79,7 @@ exit main;
   It provides a powerful history of what could be going wrong in your script.
 </p>
 
-<div class="subtitle">Perl Debugger</div>
+<h2>Perl Debugger</h2>
 <p>
   Perl comes with a debugger built in, which we can effectively utilize for interactive execution of our scripts. 
   To invoke this, put a -d on the invocation line for the script as follows:
@@ -121,10 +121,13 @@ Debugged program terminated.  Use q to quit or R to restart,
   DB&lt;1&gt; q
 </pre>
 <p>
-  This is not a part of the script we're really intrested in - its the registration of the plug-in with gimp. It turns out to be a really annoying behaviour, 
-  since every time we modify the script we'll need to do this on startup. Luckily we have another way of attacking this provided by the Gimp module - that is the Perl Server.
+  This is not a part of the script we're really intrested in - its the registration of the plug-in with gimp. 
+  It turns out to be a really annoying behaviour, 
+  since every time we modify the script we'll need to do this on startup. Luckily we have another way of 
+  attacking this provided by the Gimp module - that is the Perl Server.
   <br /><br />
-  First, move your script out of your plug-ins directory to somewhere else. Then startup gimp. Start the Perl Server by going to <span class="filter">Xtns -&gt; Perl Server</span>. 
+  First, move your script out of your plug-ins directory to somewhere else. Then startup gimp. Start the Perl Server by going to 
+  <span class="filter">Xtns -&gt; Perl Server</span>. 
   You'll see something like the following in the XTerm window of gimp:
 </p>
 <pre class="debug">
@@ -145,7 +148,7 @@ Debugged program terminated.  Use q to quit or R to restart,
   You can change the point of execution, and do most everything you'd expect from a debugger.
 </p>
 
-<div class="subtitle">$DB::single</div>
+<h2>$DB::single</h2>
 <p>
   Instead of having to remember what line the intresting part of your script starts on and set a breakpoint there, 
   perl provides a way to programmatically jump into single-step mode. Add the following to the top of your sub:
@@ -178,7 +181,7 @@ exit main;
   so you can leave it in scripts without any side effects.
 </p>
 
-<div class="subtitle">Example Session</div>
+<h2>Example Session</h2>
 <p>
   After invoking the perl server, I run 'Example' from a commandline shell:
 </p>
@@ -222,7 +225,7 @@ Debugged program terminated.  Use q to quit or R to restart,
   Far more complex debugging is possible, but this should give you a good taste of what its all about.
 </p>
 
-<div class="subtitle">Conclusion</div>
+<h2>Conclusion</h2>
 <p>
   Thats all there is to it! I hope this has been useful to you.
   <br /><br />

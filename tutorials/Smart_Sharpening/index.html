@@ -2,12 +2,12 @@
 <title>GIMP - "Smart" Sharpening</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<div class="heading">"Smart" Sharpening</div>
+<h1>"Smart" Sharpening</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
 </p>
 
-<div class="subtitle">Intention</div>
+<h2>Intention</h2>
 <p class="images">
   <img src="before.jpg" alt=""/>
   <img src="after.jpg" alt=""/>
@@ -33,13 +33,13 @@
   <a href="warp-sharp.html">New information and comparison with the "warp sharp" script!</a>
 </p>
 
-<div class="subtitle">The Procedure</div>
+<h2>The Procedure</h2>
 <p>
   You may want to maximize your browser window to properly see this tutorial. I didn't want to shrink the image windows down like I usually do for the other tutorials 
   since sharpening and noise are subtle and really show up better at these larger sizes.
 </p>
 
-<div class="subtitle">Step 1</div>
+<h2>Step 1</h2>
 <p class="images">
   <img src="image-original.jpg" alt=""/>
 </p>
@@ -50,7 +50,7 @@
   Sharpening should always be the last step that you do.
 </p>
 
-<div class="subtitle">Step 2</div>
+<h2>Step 2</h2>
 <p class="images">
   <img src="decompose.jpg" alt=""/>
   <img src="layers1.jpg" alt=""/>
@@ -79,7 +79,7 @@
   I suggest you minimize (but not close) the hue and saturation (or A and B) windows. We'll need them later, but you don't want to accidentally pick one of them in the next few steps.
 </p>
 
-<div class="subtitle">Step 3</div>
+<h2>Step 3</h2>
 <p class="images">
   <img src="edgedetection.jpg" alt=""/>
   <img src="image-edgedetect-grayscale.jpg" alt=""/>
@@ -99,7 +99,7 @@
   detecting random CCD noise as edges.
 </p>
 
-<div class="subtitle">Step 4</div>
+<h2>Step 4</h2>
 <p class="images">
   <img src="levels1.jpg" alt=""/>
   <img src="image-edgedetect-grayscale-levels1.jpg" alt=""/>
@@ -115,7 +115,7 @@
   How much you'll need to tweak this really depends on the image. There wasn't a lot of spurious edges shown here, so a small adjustment was all that was necessary.
 </p>
 
-<div class="subtitle">Step 5</div>
+<h2>Step 5</h2>
 <p class="images">
   <img src="iirgaussianblur.jpg" alt=""/>
   <img src="image-edgedetect-grayscale-levels-blur.jpg" alt=""/>
@@ -125,7 +125,7 @@
   A radius of between 3 and 10 pixels (horizontal and vertical) should be enough. In the example I used 7.
 </p>
 
-<div class="subtitle">Step 6</div>
+<h2>Step 6</h2>
 <p class="images">
   <img src="levels2.jpg" alt=""/>
   <img src="image-edgedetect-grayscale-levels2.jpg" alt=""/>
@@ -136,7 +136,7 @@
   In this example I pulled the white point slider down a bit.
 </p>
 
-<div class="subtitle">Step 7</div>
+<h2>Step 7</h2>
 <p class="images">
   <img src="layers2.jpg" alt=""/>
   <img src="newchanneloptions.jpg" alt=""/>
@@ -148,7 +148,7 @@
   Click on the new channel button (<img src="newlayer.jpg" alt=""/>) at the bottom of the dialog to create a new channel. Name it "Sharpening Mask".
 </p>
 
-<div class="subtitle">Step 8</div>
+<h2>Step 8</h2>
 <p class="images">
   <img src="layers4.jpg" alt=""/>
 </p>
@@ -167,7 +167,7 @@
   Select the Layers tab in the Layers dialog and click on the anchor button (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
 </p>
 
-<div class="subtitle">Step 9</div>
+<h2>Step 9</h2>
 <p class="images">
   <img src="layers6.jpg" alt=""/>
   <img src="image-lab-selection.jpg" alt=""/>
@@ -182,7 +182,7 @@
   You can experiment with feathering the selection here if you want; I usually don't.
 </p>
 
-<div class="subtitle">Step 10</div>
+<h2>Step 10</h2>
 <p class="images">
   <img src="layers7.jpg" alt=""/>
   <img src="unsharpmask.jpg" alt=""/>
@@ -202,7 +202,7 @@
   If you're not happy with the results, undo and try the sharpen step again with different parameters. 
 </p>
 
-<div class="subtitle">Step 11</div>
+<h2>Step 11</h2>
 <p class="images">
   <img src="compose.jpg" alt=""/>
   <img src="image-lab-composed.jpg" alt=""/>
@@ -216,7 +216,7 @@
   Click OK; this should create a new composite image.
 </p>
 
-<div class="subtitle">Final Step</div>
+<h2>Final Step</h2>
 <p class="images">
   <img src="image-original-zoomed100-crop.jpg" alt=""/>
   <img src="image-luminosityedgesharpened-zoomed100-crop.jpg" alt=""/>
@@ -244,7 +244,7 @@
   Check out the shadow noise in the larger images on the <a href="shortcuts.html">smart sharpening shortcuts and variations page</a>.
 </p>
 
-<div class="subtitle">Tips</div>
+<h2>Tips</h2>
 <ul>
   <li>If this seems like too long and complicated of a process, you might be interested in looking at some shortcuts and variations that are still better than a simple sharpening step.</li>
   <li>Some very well-respected experts on image manipulation (e.g. Real World Photoshop, Blatner and Fraser--great book) suggest that mode changes in and out of RGB are not to be taken lightly. 
@@ -314,7 +314,7 @@
   It is a great tool to monitor what is happening to your image "numerically" as you edit it.
 </p>
 
-<div class="subtitle">Other Examples</div>
+<h2>Other Examples</h2>
 <p class="images">
   <img src="example1-original-crop.jpg" alt=""/>
 </p>
@@ -344,7 +344,7 @@
   Right image: Standard unsharp mask (Amt=0.50)
 </p>
 
-<div class="subtitle">Further Reading</div>
+<h2>Further Reading</h2>
 <ul>
   <li><a href="http://www.creativepro.com/printerfriendly/story/11242.html">Almost Everything You Wanted to Know About Sharpening in Photoshop</a></li>
   <li>Follow-up article to the above, <a href="http://www.creativepro.com/printerfriendly/story/12189.html">A Two-Pass Approach to Sharpening in Photoshop</a></li>

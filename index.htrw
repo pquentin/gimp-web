@@ -16,8 +16,8 @@ projects as possible.  Hopefully you will find what you need here.
 Grab a properly chilled beverage and enjoy.</p>
 
 <h1 class="newsheading">
-  <span class="newstitle">The GIMP at 21C3</span>
-  <span class="newsdate">2004-11-24</span>&nbsp;
+  <span class="newstitle">The Great 2.2 Splash Screen Contest</span>
+  <span class="newsdate">2004-11-29</span>&nbsp;
 </h1>
 <div class="news">
   <img alt="[?]" src="/images/news-icons/gimp_code.png"></img>
@@ -28,6 +28,31 @@ Grab a properly chilled beverage and enjoy.</p>
     you always wanted to meet with other GIMP addicts, consider to
     come to Berlin (Germany), December 27th to 29th.
   </p>
+</div>
+
+<h1 class="newsheading">
+  <span class="newstitle">The GIMP at 21C3</span>
+  <span class="newsdate">2004-11-24</span>&nbsp;
+</h1>
+<div class="news">
+  <img alt="Contest" src="/images/news-icons/gimp_construction.png"></img>
+  <p>
+    With the imminent release of the GIMP 2.2, the time has come
+to find the ideal splash screen to go with it. The contest will
+be open until next Sunday the 5th of December, at which point the
+winning entry will be chosen and committed to CVS.
+  </p>
+  <p>
+    The winning entry should be based on <a
+    href="http://primates.ximian.com/~jimmac/blog/GIMP/GimpSplashTemplate/">jimmac's
+   splash screen template</a> and should be sent with the 
+   subject "2.2 Splash Screen contest" to the GIMP user's
+   list at gimp-user@lists.xcf.berkeley.edu. The winner will 
+   receive a GIMP related prize, which has yet to be determined.
+ </p>
+ <p>
+   Good luck, and get splashing!
+ </p>
 </div>
 
 <h1 class="newsheading">

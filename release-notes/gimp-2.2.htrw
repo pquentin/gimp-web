@@ -29,14 +29,14 @@
   software, its capabilities are ultimately limited only by the
   collective imagination of the community of free software
   contributors. More information about the GIMP is available at
-  <a href="http://www.gimp.org/">www.gimp.org</a>.
+  <a href="home:gimp">www.gimp.org</a>.
 </p>
 
 <h2>Download</h2>
 <p>
   The GIMP can be downloaded as source code from ftp.gimp.org or from
   one of the mirrors listed in the <a
-  href="/downloads">Downloads</a> section. We expect that binary
+  href="wgo:downloads">Downloads</a> section. We expect that binary
   packages for the different supported platforms and distributions
   will show up soon. Unless you are experienced with building software
   from source, you should wait until binary packages become available.
@@ -70,7 +70,7 @@
   gimp-help-2 is available from 
   <a href="ftp://ftp.gimp.org/pub/gimp/help/testing/">ftp.gimp.org</a>. 
   The manual can also be accessed online at
-  <a href="http://docs.gimp.org/">docs.gimp.org</a>.
+  <a href="wgo:docs">docs.gimp.org</a>.
 </p>
 
 <h2>Bugs</h2>
@@ -79,8 +79,8 @@
   already seen quite some testing but a lot has changed since version
   GIMP 2.0 and we could very well have introduced new bugs. If you
   find any , make sure you report them at <a
-  href="http://bugzilla.gnome.org/">bugzilla.gnome.org</a> (after
-  checking that it isn't reported already).
+  href="home:gimp-bugzilla">bugzilla.gnome.org</a> (after checking
+  that it isn't reported already).
 </p>
 
 <h2>What's New in GIMP 2.2</h2>
@@ -89,7 +89,7 @@
   <a href="http://wiki.gimp.org/gimp/WhatsNew2">GIMP Wiki</a>. For a
   detailed list of changes, please have a look at the NEWS file, which
   is contained in the tarball and available online at
-  <a href="http://developer.gimp.org/NEWS">developer.gimp.org</a>.
+  <a href="wgo:dev-news">developer.gimp.org</a>.
 </p>
 
 <h2>What's Next</h2>

@@ -1,5 +1,13 @@
 2004-12-19  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls: added URL for NEWS on dgo.
+
+	* release-notes/gimp-2.2.html: removed ...
+
+	* release-notes/gimp-2.2.htrw: ... and readded as .htrw file.
+
+2004-12-19  Sven Neumann  <sven@gimp.org>
+
 	* release-notes/gimp-2.2.html: some minor tweaks.
 
 2004-12-19  Niklas M <scizzo@gimp.org>

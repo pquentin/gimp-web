@@ -2,7 +2,7 @@
 #
 include Makefile.defs
 
-all: usage wgo_config.py tools extended.css rdf-news.css wgo-css.cpp admin contest about develop
+all: webtools usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest about develop
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>target"; exit 1; fi
@@ -47,8 +47,8 @@ about: wgo_config.py
 develop: wgo_config.py
 	cd develop && $(MAKE) all
 
-tools:
-	cd tools && $(MAKE) all
+webtools:
+	cd tools && $(MAKE) SRCDIR=${SRCDIR} all
 
 extended.css:
 

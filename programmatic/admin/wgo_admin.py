@@ -49,8 +49,9 @@ def header(title, links):
 
   print xhtml.link({"rel" : "stylesheet", "href" : "/style/extended.css", "type" : "text/css", "media" : "screen"})
   print xhtml.link({"rel" : "stylesheet", "href" : "/style/wgo-admin.css", "type" : "text/css", "media" : "screen"})
-  for href in links:
-    print xhtml.link({"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen"})
+
+  for link in links:
+    print xhtml.link(link)
     pass
 
   print wgo.page_init('admin')
@@ -59,9 +60,7 @@ def header(title, links):
 
 
 def footer(prefix=None):
-  if prefix != None:
-    print prefix
-    pass
+  if prefix != None: print prefix
   
   print wgo.page_fini('admin')
   print wgo.xhtml_fini()

@@ -83,6 +83,7 @@ def main():
     if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
       os.remove(wgo_queue.message_path(queue, news["message-id"]))
       pass
+    
     link = xhtml.hyperlink("Continue", { "href" : "news-index.cgi?%s" % (queue)})
     status = "success"
     goto = ["Location: news-index.cgi?%s" % (queue)]
@@ -91,6 +92,7 @@ def main():
     if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
       os.remove(wgo_queue.message_path(queue, news["message-id"]))
       pass
+    
     link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
     status = "success"
     goto = ["Location: news-index.cgi?%s" % (queue)]
@@ -99,6 +101,7 @@ def main():
     if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
       os.remove(wgo_queue.message_path(queue, news["message-id"]))
       pass
+    
     link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
     status = "success"
     goto = ["Location: news-index.cgi?%s" % (queue)]
@@ -106,6 +109,7 @@ def main():
     if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
       os.remove(wgo_queue.message_path(queue, news["message-id"]))
       pass
+    
     link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
     status = "success"
     goto = ["Location: news-index.cgi?%s" % (queue)]

@@ -23,13 +23,18 @@ input[type="text"] {
   font-family:   arial,helvetica,sans-serif;
   font-size:     x-small;
   font-weight:   bold;
-  padding:       1px 2px 1px 2px;
-  margin: 2px 2px 2px 2px;
+  padding:       .1em .2em .1em .2em;
+  margin:        0 0 0 0 ;
   text-decoration: none;
 }
 
-input[type="submit"]:hover {
+.faux-button:hover, input[type="submit"]:hover {
   text-decoration: underline;
+  background:    WGO_BUTTON_BG none;
+  border-bottom: 1px solid WGO_BUTTON_LOLITE;
+  border-left:   1px solid WGO_BUTTON_HILITE;
+  border-right:  1px solid WGO_BUTTON_LOLITE;
+  border-top:    1px solid WGO_BUTTON_HILITE;
 }
 
 .watermark { 

@@ -29,8 +29,9 @@ import stat
 import sys
 import types
 import time
+import string
 import cgi
-#import cgitb; cgitb.enable()
+import cgitb; cgitb.enable()
 
 sys.path = ['${LIBDIR}'] + sys.path
 
@@ -80,9 +81,9 @@ def rebuild(script):
     fp = os.popen(wgo.config.admin_path + "/develop/" + script, "r")
     lines = fp.readlines()
     fp.close()
-    print xhtml.para.init()
-    map(lambda l: sys.stdout.write(l + "<br />"), lines)
-    print xhtml.para.fini()
+    print xhtml.para(string.join(lines, "<br />\n"))
+  else:
+    # log the potentially nefarious activity
     pass
 
   print xhtml.hyperlink("Continue", {"href" : "changelogs.cgi"})
@@ -117,7 +118,7 @@ def main():
     print xhtml.para("Normally, the ChangeLog files are automatically updated from an automated cron(1) job.")
     print xhtml.para("You may force a particular ChangeLog file to be updated here.")
                     
-    print xhtml.table.init({"class" : "wgo-admin", "style" : "width: 100%;"})
+    print xhtml.table.init({"class" : "wgo-admin", "style" : "width: 100%; border-width: 0 0 0 0;"})
     print xhtml.table.row(xhtml.table.header("ChangeLog", {"style" : "text-align: left;"})
                           + xhtml.table.header("Last Update", {"style" : "text-align: left;"})
                           + xhtml.table.header("", {"style" : "text-align: left;"}))

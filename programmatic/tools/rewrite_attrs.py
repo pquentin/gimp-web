@@ -52,11 +52,12 @@ import re
 import HTMLParser
 import getopt
 
+sys.path = ['${SRCDIR}'] + sys.path
 
 import x_xml
 
 def rewrite_attrs(attrs):
-  d = {}
+  d = dict()
   map(lambda (a, v): d.update(substitute(a, v)), attrs)
   
   return (d)
@@ -70,8 +71,32 @@ def substitute(a, v):
 
   return ({a: v})
 
+def print_warning(filename):
+  sys.stdout.write("<!-- rewrite-attrs.py automatically generated this file from " + filename + ".  Do not edit.-->\n")
+  return
+    
+
 class xhtml_parser(HTMLParser.HTMLParser):
+  def __init__(self, filename, quiet_flag=False):
+    self.filename = filename
+    self.quiet = quiet_flag
+    self.serial = 0
+    self.ok_to_print_comment = False
+    self.comment_already_printed = False
+    return HTMLParser.HTMLParser.__init__(self)
+
   def handle_starttag(self, tag, attrs):
+    self.serial += 1
+
+    if self.serial == 1:
+      self.ok_to_print_comment = True
+      pass
+
+    if self.ok_to_print_comment and not self.comment_already_printed and not self.quiet:
+      print_warning(self.filename)
+      self.comment_already_printed = True
+      pass
+
     sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + ">")
     return
 
@@ -80,7 +105,8 @@ class xhtml_parser(HTMLParser.HTMLParser):
     return
 
   def handle_startendtag(self, tag, attrs):
-    sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + ">")
+    sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + " />")
+    self.serial += 1
     return
 
   def handle_data(self, data):
@@ -96,7 +122,8 @@ class xhtml_parser(HTMLParser.HTMLParser):
     return
   
   def handle_comment(self, data):
-    sys.stdout.write("<!--" + data + " -->")
+    sys.stdout.write("<!--" + data + "-->")
+    self.ok_to_print_comment = True
     return
   
   def handle_decl(self, decl):
@@ -105,7 +132,7 @@ class xhtml_parser(HTMLParser.HTMLParser):
   
   pass
 
-def rewrite_dictionary(filename):
+def load_rewrite_dictionary(filename):
   dictionary = {}
   
   fp = open(filename, "r")
@@ -132,33 +159,36 @@ def rewrite_dictionary(filename):
   
   return (dictionary)
 
-Version = """XML Attribute Rewriter, version $Version:$
+Version = """XML Attribute Rewriter, version $Revision$
 Copyright (C) 2003 Helvetix Victorinox, a pseudonym.
 This is free software; see the source code for copying conditions.
-There is ABSOLUTELY NO WARRANTY; not even for MERCHANTIBILITY or
-FITNESS FOR A PARTICULAR PURPOSE.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTIBILITY or FITNESS
+FOR A PARTICULAR PURPOSE.
 
 Report bugs to: <HELVETIX@Mysterious.ORG>"""
 
 def usage(name):
+  print Version
   print "Usage:", name, "[OPTION] [FILE]"
   print "Rewrite XML attributes from one value to another."
   print
   print "  -h, --help                This message"
-  print "  -d dictionary             Use dictionary as the substitution dictionary."
-  print "  -dictionary dictionary    Use dictionary as the substitution dictionary."
+  print "  -d file, -dictionary file Use file as the substitution dictionary."
+  print "  -q, --quiet               No 'automatically generated' comment."
   print "  -v                        Print version and exit"
   return
   
 if __name__ == "__main__":
 
   try:
-    opts, args = getopt.getopt(sys.argv[1:], "hd:v", ["help", "version", "dictionary="])
+    opts, args = getopt.getopt(sys.argv[1:], "hd:vq", ["help", "version", "dictionary=", "quiet"])
   except getopt.GetoptError:
     usage(sys.argv[0])
     sys.exit(2)
     pass
   
+  quiet_flag = False
+
   for o, a in opts:
     if o in ("-h", "--help"):
       usage(sys.argv[0])
@@ -166,7 +196,11 @@ if __name__ == "__main__":
       pass
     
     if o in ("-d", "--dictionary"):
-      dictionary = rewrite_dictionary(a)
+      dictionary = load_rewrite_dictionary(a)
+      pass
+
+    if o in ("-q", "--quiet"):
+      quiet_flag = True
       pass
 
     if o in ("-v", "--version"):
@@ -176,15 +210,13 @@ if __name__ == "__main__":
     pass
 
 
-  x = xhtml_parser()
+  xhtml = xhtml_parser(args[0], quiet_flag)
 
-  for a in args:
-    fp = open(a, "r")
-    x.feed(fp.read())
-    fp.close()
-    pass
+  fp = open(args[0], "r")
+  sys.stdout.write('<?xml version="1.0" encodings="iso-8859-1" standalone="yes"?>')
+  xhtml.feed(fp.read())
+  fp.close()
     
-  x.close()
+  xhtml.close()
   
   sys.exit(0)
-

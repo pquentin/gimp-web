@@ -1,7 +1,10 @@
+include ../Makefile.defs
 
+all: rewrite_attrs
 
-all:
-	ln -s ../x_xml.py .
+rewrite_attrs: rewrite_attrs.py
+	sed -e 's|$${SRCDIR}|${SRCDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@
+	chmod 755 $@
 
 clean:
-	/bin/rm -f x_xml.py *.pyc *~
+	/bin/rm -f *.pyc *~ rewrite_attrs

@@ -4,33 +4,48 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Everyone Loves Screenshots!</h1>
-<h2>Macintosh Screenshots</h2>
-<h3>Contributed by Mat Caughron</h3>
-<ul>
-  <li><a href="/macintosh/2002edition.jpg">gimp-1.2</a></li>
-  <li><a href="/macintosh/MacGIMPfamily.jpg">gimp-1.2 again</a></li>
-</ul>
 
-<h2>OS/2 Screenshots</h2>
-<h3>Unknowingly contributed by Platon Fomichev, Khairil Yusof, Pierre Lucas, and Christoph Vogelbusch</h3>
-<ul>
-   <li><a href="/os2/gimp118-1.jpg">gimp-1.1.8 (Eek!)</a></li>
-   <li><a href="/os2/gimp118-2.jpg">gimp-1.1.8 <span class="path">File -&gt;Open</span></a></li>
-   <li><a href="/os2/gimp118-3.jpg">gimp-1.1.8 <span class="path">File -&gt;New</span></a></li>
-   <li><a href="/os2/gimp118-4.jpg">gimp-1.1.8 <span class="path">File -&gt;Preferences -&gt;Directories</span></a></li>
-   <li><a href="/os2/mydesk.jpg">Enlightenment/GNOME desktop with The GIMP</a></li>
-   <li><a href="/os2/mydesk2.jpg">Enlightenment/GNOME desktop with The GIMP</a></li>
-   <li><a href="/os2/mEgEdtop.jpg">Enlightenment desktop with The GIMP</a></li>
-   <li><a href="/os2/epplets.jpg">Enlightenment desktop with The GIMP</a></li>
-</ul>
+<h2>Linux Screenshots</h2>
+<div style="float: left;">
+  <a href="linux_screenshot1.png" style="margin-right: 1cm;">
+  <img src="linux_screenshot1_thumb.png" alt="Grid, Fullscreen Screenshot" />
+  </a>
+  <p style="text-align: left;">1024x768 English</p>
+</div>
+<div style="float: left;">
+  <a href="linux_screenshot2.png">
+  <img src="linux_screenshot2_thumb.png" alt="Linux Screenshot" />
+  </a>
+  <p style="text-align: left;">1280x1024 Swedish</p>
+</div>
 
 <h2>Windows Screenshots</h2>
+<div style="float: left;">
+  <a href="windowsxp_screenshot1.png" style="margin-right: 1cm;">
+  <img src="windowsxp_screenshot1_thumb.png" alt="Windows XP Screenshot" />
+  </a>
+  <p style="text-align: left;">1024x768 German</p>
+</div>
+<div style="float: left;">
+  <a href="windowsxp_screenshot2.png" style="margin-right: 1cm;">
+  <img src="windowsxp_screenshot2_thumb.png" alt="Windows XP Screenshot2" />
+  </a>
+  <p style="text-align: left;">1024x768 German</p>
+</div>
+<div style="float: left;">
+  <a href="windowsxp_screenshot3.png">
+  <img src="windowsxp_screenshot3_thumb.png" alt="Windows XP Screenshot3" />
+  </a>
+  <p style="text-align: left;">1024x768 German</p>
+</div>
 
-<h3>Contributed by Branko Collin</h3>
-<ul>
-<li><a href="/windows/threshold-hue-channel.png">gimp-1.2, threshold</a> (finding the natural mask in the hue channel)</li>
-<li><a href="/windows/quickmask-selection-detail.png">gimp-1.2, quick mask</a> (painting a fuzzy selection, detail)</li>
-</ul>
+<h2>Macintosh Screenshots</h2>
+<div style="float: left;">
+  <a href="macosx_screenshot1.png">
+  <img src="macosx_screenshot1_thumb.png" alt="MacOS X Screenshot" />
+  </a>
+  <p style="text-align: left;">1024x768 English</p>
+</div>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,7 +1,7 @@
 2003-04-13 scizzo <scizzo@gimp.org>
 
 	* /includes/wgo-xhtml-fini.xhtml: Fixed a problem with the validation
-	link not falling to the bottom of the site.
+	link not falling to the bottom of the site. Now it works.
 
 	* /tutorials/Basic_Perl/index.html: Removed this file.
 	* /tutorials/Basic_Perl/index.htrw: Add this file. Fixed a few minor

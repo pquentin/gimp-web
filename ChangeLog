@@ -1,5 +1,22 @@
 2003-02-12 scizzo <scizzo@gimp.org>
 
+	* /includes/wgo-xhtml-fini.xhtml: Fixed the validation link and add it
+	into a <div>.
+
+	* /tutorials/Photo_To_Sketch/*, /tutorials/Quickmask/*,
+	/tutorials/Red_Eye_Removal/*, /tutorials/Reducing_CCD_Noise/*,
+	/tutorials/Selective_Color/*, /tutorials/Selective_Gaussian_Blur/*,
+	/tutorials/Sepia_Toning/*, /tutorials/Simple_Animations/*,
+	/tutorials/Smart_Sharpening/*, /tutorials/Straight_Line/*,
+	/tutorials/The_Basics/*, /tutorials/Tileable_Textures/*,
+	/tutorials/Using_GAP/*, /tutorials/template/*: Now uses the new
+	include files.
+
+	* /tutorials/index.html: Using the new include files and fixed a
+	validation problem.
+
+2003-02-12 scizzo <scizzo@gimp.org>
+
 	* 3d_Logo/*, Advanced_Animations/*, Anti-Aliased_Threshold/*,
 	Basic_Perl/*, Basic_Scheme/*, Basic_Scheme2/*, Bezier_Selections/*, 
 	Blending_Exposures/*, Blown_Out_Highlights/*, Blur_Overlays/*, 

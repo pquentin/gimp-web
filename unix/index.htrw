@@ -14,6 +14,7 @@
     <li><a href="wgo:unix-howtos-tile_cache">How To Set The Tile Cache</a></li>
   </ul>
 
+
 <h2>The GIMP's Documentation</h2>
   <ul>
     <li><a href="wgo:docs-gimp_help">Help Documentation</a></li>
@@ -23,6 +24,7 @@
     <li><a href="wgo:unix-manpage-stable_gimp_remote">man gimp-remote</a></li>
     <li><a href="wgo:unix-manpage-stable_gtk_config">man gtk-config</a></li>
   </ul>
+
 
 <h2>The GIMP's Preferences</h2>
   <ul>

@@ -11,29 +11,66 @@
 ["href", "http:Package-GIMP-os2-PM",        { "href": "http://everblue.netlabs.org/?show=download"}]
 
 ["href", "mail:People-Beane_Zach",			    { "href": "mailto:xach@gimp.org"}]
+["href", "home:People-Beane_Zach",			    { "href": "http://www.xach.com"}]
+
 ["href", "mail:People-Beppu_John",			    { "href": "mailto:beppu@cpan.org"}]
+
 ["href", "mail:People-Boyce_Mel",			    { "href": "mailto:syngin-at-gimp-dot-org"}]
+["href", "home:People-Boyce_Mel",			    { "href": "http:syngin.gimp.org"}]
+
 ["href", "mail:People-Budig_Simon",			    { "href": "mailto:Simon.Budig@unix-ag.org"}]
+["href", "home:People-Budig_Simon",			    { "href": "http://www.home.unix-ag.org/simon/"}]
+
 ["href", "mail:People-Burgess_Seth",			{ "href": "mailto:sjburges@gimp.org"}]
+["href", "home:People-Burgess_Seth",			{ "href": "http://www.gimp.org/~sjburges/"}]
+
 ["href", "mail:People-Gschwend_Adrian",			{ "href": "mailto:webmaster@netlabs.org"}]
+["href", "home:People-Gschwend_Adrian",			{ "href": "http://www.netlabs.org"}]
+
 ["href", "mail:People-Grobgeld_Dov",			{ "href": "mailto:dov@imagic.weizmann.ac.il"}]
+["href", "home:People-Grobgeld_Dov",			{ "href": "http://imagic.weizmann.ac.il/~dov/"}]
+
 ["href", "mail:People-Hempe_Bustamante_Francisco",	{ "href": "mailto:bit-at-mospan-bitbit-dot-org"}]
+["href", "home:People-Hempe_Bustamante_Francisco",	{ "href": "http://bitbit.org/"}]
+
 ["href", "mail:People-Jensen_Atte_André",		{ "href": "mailto:atte@wanadoo.nl"}]
+["href", "home:People-Jensen_Atte_André",		{ "href": "http://home.wanadoo.nl/atte/"}]
+
 ["href", "mail:People-Jeschke_Eric_R",			{ "href": "mailto:eric@redskiesatnight.com"}]
 ["href", "mail:People-Jones_Sam",			    { "href": "mailto:samjones@io.com"}]
 ["href", "mail:People-Kidd_Eric",			    { "href": "mailto:eric.kidd@pobox.com"}]
+
 ["href", "mail:People-Kuosmanen_Tuomas",		{ "href": "mailto:tigert@gimp.org"}]
+["href", "home:People-Kuosmanen_Tuomas",		{ "href": "http://tigert.gimp.org"}]
+
 ["href", "mail:People-Lad_Gautam_N",			{ "href": "mailto:gautam@cubicdesign.com"}]
+["href", "home:People-Lad_Gautam_N",			{ "href": "http://www.cubicdesign.com"}]
+
 ["href", "mail:People-Lamberto_Marco",			{ "href": "mailto:lm@sunnyspot.org"}]
+["href", "home:People-Lamberto_Marco",			{ "href": "http://www.sunnyspot.org"}]
+
 ["href", "mail:People-Lautenbacher_Jens",		{ "href": "mailto:jtl@gimp.org"}]
+
 ["href", "mail:People-Likins_Adrian",			{ "href": "mailto:adrian@gimp.org"}]
+["href", "home:People-Likins_Adrian",			{ "href": "http://adrian.gimp.org"}]
+
+["href", "home:People-Mena-Quintero_Federico	{ "href": "http://primates.helixcode.com/~federico/"}]
 ["href", "mail:People-Neary_Dave",			    { "href": "mailto:bolsh@gimp.org"}]
+
 ["href", "mail:People-Pätsi_Ville",			    { "href": "mailto:drc@gimp.org"}]
-["href", "mail:People-Romero_Guillermo_S	    { "href": "mailto:famrom@infernal-iceberg.com"}]
+["href", "home:People-Pätsi_Ville",			    { "href": "http://drc.gnome.org"}]
+
+["href", "mail:People-Romero_Guillermo_S",	    { "href": "mailto:famrom@infernal-iceberg.com"}]
+
 ["href", "mail:People-Spears_Carol",    		{ "href": "mailto:carol@gimp.org"}]
+["href", "home:People-Spears_Carol",    		{ "href": "http://carol.gimp.org"}]
+
 ["href", "mail:People-Steiner_Jacub",			{ "href": "mailto:jimmac@ximian.com"}]
+["href", "home:People-Steiner_Jacub",			{ "href": "http://jimmac.musichall.cz/"}]
+
 ["href", "mail:People-Turner_Kevin",			{ "href": "mailto:http://sourceforge.net/sendmessage.php?touser=9300"}]
 ["href", "mail:People-Walter_Rebecca_J",		{ "href": "mailto:bex@gimp.org"}]
+
 ["href", "mail:People-author",          		{ "href": "mailto:webmaster@gimp.org"}]
 ["href", "mail:People-webmaster",       		{ "href": "mailto:webmaster@gimp.org"}]
 
@@ -47,6 +84,7 @@
 ["href", "wgo:mail_lists",                      { "href": "/mail_lists.html"}]
 ["href", "wgo:dev-howtos-bugzilla",             { "href": "/unix/howtos/bugzilla.html"}]
 ["href", "wgo:docs-gimp_help",                  { "href": "/docs/gimp-help/"}]
+["href", "wgo:gimp-os2",                        { "href": "/os2/"}]
 ["href", "wgo:gimp-unix",                       { "href": "/unix/"}]
 ["href", "wgo:gimp-windows",                    { "href": "/windows/"}]
 ["href", "wgo:unix-gimprc",                     { "href": "/unix/gimprc"}]

@@ -1,3 +1,7 @@
+2003-04-09  Carol Spears  <carol@gimp.org>
+
+        * admin/gimp-web-urls, added some, fixed others.
+
 2003-04-08  Carol Spears  <carol@gimp.org>
 
         * os2/index.html, removed this file.

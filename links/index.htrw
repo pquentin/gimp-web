@@ -21,17 +21,16 @@ This page contains the best links to interesting GIMP-sites:
 </ul>
 
 <p>&nbsp;</p>
-<a name="maillists"></a>
-<!--#include virtual="/includes/urls_maillist.inc" -->
+<h2><a name="maillists">Mailinglists</a></h2>
 <p>
-  <a href="mail_lists.html">The GIMP Maillist Page</a><br />
+  <a href="/mail_lists.html">The GIMP Maillist Page</a><br />
   A more thorough overview of The GIMP related mail lists and some mail list
   ettiquette.
 </p>
 
 
 <p>&nbsp;</p>
-<h2><a name="org">The GIMP (dis)Organization</a></h2>
+<h2><a name="org">The GIMP Organization</a></h2>
 <!--#include virtual="/includes/urls_go-utility.inc" -->
 <p>
   <a href="org.html">More ...</a><br />

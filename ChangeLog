@@ -1,3 +1,10 @@
+2004-12-01  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/admin/news/icons/wilber_painter.png
+	* programmatic/admin/news/icons/wilber_wizard.png
+	* programmatic/admin/news/icons/wilber_work.png
+	Added missing icons.
+
 2004-11-30  Manish Singh  <yosh@gimp.org>
 
 	* about/splash/contest/index.htrw

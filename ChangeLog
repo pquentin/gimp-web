@@ -1,5 +1,9 @@
 2004-03-22  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls: more links with src and href exchanged.
+
+2004-03-22  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/splash-images/gimp_splashpng.*-t.png
 	* about/splash/splash-images/splash-1.3.htrw
 	* admin/gimp-web-urls: added splash thumbnails, flattened PNGs.

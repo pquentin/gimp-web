@@ -6,6 +6,12 @@
 
 	* template.html: added more code examples.
 
+	* windows/index.html, windows/download.html,
+	windows/get_started.html: replaced <h?>...</h?> with the
+	appropiate divs and removed references to winmenu.inc
+
+	* windows/winmenu.inc: file removed
+
 2002-10-21 gsromero
 	
 	* maillists.html: added first try with list etiquette, using ul

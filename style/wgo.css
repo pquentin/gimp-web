@@ -251,9 +251,12 @@ td.map {
   font-weight: bold;
   vertical-align: top;
   white-space: nowrap;
-  position: absolute;
+/*--------------------------------------------------
+*   position: absolute;
+*--------------------------------------------------*/
   top: 100px;
   left: 0px;
+  height: 100%;
 }
 
 #menu a {
@@ -285,7 +288,9 @@ td.map {
 
 #main {
   padding: 10px;
-  margin-left: 11em;
+/*--------------------------------------------------
+*   margin-left: 11em;
+*--------------------------------------------------*/
   vertical-align: top;
 }
 

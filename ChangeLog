@@ -1,4 +1,8 @@
-2003-09-19  Ville Pätsi  <drc@gimp.org
+2003-09-19  Ville Pätsi  <drc@gimp.org>
+
+	* style/wgo.css: Fixed some styles left from the div layout.
+
+2003-09-19  Ville Pätsi  <drc@gimp.org>
 
 	* includes/wgo-page-init.xhtml: Fiddled with width/height tags again.
 	Should be working now.

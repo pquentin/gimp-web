@@ -4,6 +4,7 @@
 
         * tutorials/Selective_Gaussian_Blur/: Add the first port of the
         Selective Gaussian Blur tutorial. Minor HTML and Image fixes.
+        I am really tired....forgot one <br />.
 
         * tutorials/index.html: Changed Channel Mixer to Color2BW.
         Removed Selection Overview. Add CCD Noise removal to the list of

@@ -1,0 +1,14 @@
+things i would like to access automatically:
+
+from the 1-2 tarball:
+  about/authors.html from AUTHORS
+  about/mediakit.html useful items from data/ and docs/
+  docs/developer_docs/
+  docs/gimp-help/
+  resources/
+  unix/INSTALL
+  unix/README
+  unix/README.i118
+  unix/README.perl
+  windows/README.win32
+  

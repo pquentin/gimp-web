@@ -1,3 +1,25 @@
+2002-11-30 carol <carol@gimp.org>
+
+	* TODO:  a big list of everything that needs to be done.
+
+	* TODO.gnomecvs:  a smaller list of everything that needs to be done
+    before the module can be moved to gnomecvs.
+
+	* TODO.auto:  a smaller list of the scripts that need to be written.
+
+	* unix/index.html:  removed FAQ url, fixed the gimp-help url.  added the url
+    to tile_cache.html.
+
+	* unix/user_install.html:  added the url to tile_cache.html.
+
+	* docs/index.html, docs/gimp-help, docs/devlop-docs:  added the directories and
+    reflected the additions in the index page.
+
+	* maillists.html, mail_lists.html, includes/linkbar.inc, links/index:  changed 
+    the file name from maillists.html to mail_lists.html as i saw this one printed
+    in a book as a wgo document.  the change was reflected everywhere that i can 
+    think of.
+
 2002-11-27 carol <carol@gimp.org>
 
 	* includes/news.inc: pave the way to stop the web project with some fun

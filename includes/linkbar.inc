@@ -6,7 +6,7 @@
       <a href="/links/index.html">GIMP Links</a> |
       <a href="http://gug.sunsite.dk">GIMP User Group</a> | 
       <a href="http://gimp-savvy.com/BOOK/index.html">Grokking the GIMP</a> |
-      <a href="/maillists.html">Mailing Lists</a> |
+      <a href="/mail_lists.html">Mailing Lists</a> |
       <a href="/contest/index.html">Contest</a> |
       <a href="/books/">GIMP Books</a>
     </div>

@@ -1,0 +1,51 @@
+pgo TODO.gnomecvs List:
+these things need to be done before i will consider moving the module to
+gnomecvs.
+
+(Alphabetically)
+about/ChangLogs/:
+    Changelog.pl:  the wgo2 wrapper needs to be stripped from this script and 
+       replaced with <pre></pre> tags as the only people who read these for real
+       will probably get pissy with the nice html.
+       
+       the rest  of the script needs to be written (for the remaining ChangeLogs
+   
+contest/index.html
+contest/archives/index.html
+   a python mechanism needs to be in place to upload images and write them to a
+   web page.       
+   
+development/index.html:
+   a few moments can be spent with the developers to fill this document in
+   before the move.
+
+docs/cookbook/:
+   a working cvs module containing a docbook before we move.
+
+docs/developer_docs/:
+   these should be in place.
+
+docs/gimp-help/:
+   needs to be put into place.
+    
+links/index.html and includes/url-*.inc:
+   needs much more and needs to be utilized throughout the site more.
+
+news/index.html and includes/news.inc:
+   something that works here
+
+resources/
+   these pages need to draw two at a time.  these pages need more content as well.
+
+tutorials/
+   images should be resized but it might be easier for niklas (scizzo) to do this
+   from a different cvs server.  style should be fixed.
+
+unix/INSTALL:
+   this should be broken down into "Installation Instructions" and
+   then offer INSTALL (as copied from the current tarball) and HACKING (copied
+   daily from CVS).  README, README.i118, README.perl also.
+
+unix/howtos/cvs-stable.html:
+   this document should be split into getting gimp* from cvs and compiling gimp*
+

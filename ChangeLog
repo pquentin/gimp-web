@@ -1,5 +1,16 @@
 2003-02-10  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
+        * Added tutorials/Perlotine/index2.html as an example of using the
+          new include files for tutorials, and includes my old tweaks to
+          make the page purty despite a lack of understanding basic
+          design. Caveat!
+
+        * Added tutorials/Perlotine/index1.html as an example of using the
+          new include files for tutorials.
+
+        * Added wgo-tutorial-init.xhtml and wgo-tutorial-fini.xhtml for
+          page layout of the tutorials.
+
         * Contest gallery no longer requires "whack-a-mole" skills when
           trying to click a button.  <input> elements are replaced with <a>
           elements of class "faux-button"

@@ -1,3 +1,16 @@
+2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
+
+	* includes/header_posttitle.inc: reverted brankos changes.
+	the image is not supposed to have an alt text.
+	alt texts are primarily used in text-only browsers, and they need not see our logo.
+	take a look in either lynx or links; you'll see.
+
+	* ChangeLog: changelog updated
+
+2002-09-28  branko  <branko@fungus>
+
+	* windows/download.html: typo
+
 2002-09-28  branko  <branko@fungus>
 
 	* windows/download.html: typo

@@ -1,5 +1,11 @@
 2004-04-02  Sven Neumann  <sven@gimp.org>
 
+	* macintosh/index.htrw: after some investigation on the web,
+	removed the openosx.com link again. This doesn't seem to be
+	anywhere close to a serious business.
+
+2004-04-02  Sven Neumann  <sven@gimp.org>
+
 	* macintosh/index.htrw: removed link to osxgnu.org because the
 	gimp offered there is outdated. Added link to openosx.com.
 

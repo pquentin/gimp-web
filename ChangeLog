@@ -1,3 +1,67 @@
+2002-10-01  Henrik Brix Andersen  <brix@gimp.org>
+
+	* authoring.html, bugs/index.html, includes/menu.inc:
+	deleted the script authoring menu entry.
+	replaced it with "Bugs".
+
+	* includes/menu.inc, resources.html:
+	updated the menu to reflect the new file locations.
+	deleted unused file.
+
+2002-10-01  carol  <carol@fungus>
+
+	* resources/index.html: fixed a url
+
+	* resources/index.html:
+	lost some </a> tags somewhere. they are back now.
+
+	* resources/index.html:
+	the rest of the commit. i moved resources.html to resources/index.html.
+
+	* resources/brushes/index.html, resources/devel-docs/index.html:
+	i moved resources.html to resources/index.html.  i added the brushes and
+	devel-docs directory and an outline of the index pages to each.
+
+2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
+
+	* install.exclude: added *.*~ and *~ to excluded files
+
+	* install.sh: added --delete-excluded to rsync command
+
+	* ChangeLog: changelog updated
+
+	* includes/menu.inc: updated hrefs to match new file locations
+
+	* macintosh.html, macintosh/index.html:
+	renamed macintosh.html to macintosh/index.html
+
+	* os2.html, os2/index.html: renamed os2.html to os2/index.html
+
+2002-09-30  carol  <carol@fungus>
+
+	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html, macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html, macintosh/man-gtk-config.html, os2/man-gimp-1.2.html, os2/man-gimp-remote-1.2.html, os2/man-gimprc.1.html, os2/man-gimptool-1.2.html, os2/man-gtk-config.html, unix/man-gimp-1.2.html, unix/man-gimp-remote-1.2.html, unix/man-gimprc.1.html, unix/man-gimptool-1.2.html, unix/man-gtk-config.html, windows/man-gimp-1.2.html, windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html, windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
+	manpages everywhere.  i edited the urls to not use my cgi-bin. also added
+	the directory for the other two os
+
+2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
+
+	* ChangeLog: changelog updated
+
+	* tutorials/index.html, about/index.html, unix/index.html:
+	updated hrefs to reflect new file location
+
+	* includes/menu.inc, unix.html, unix/index.html:
+	moved unix.html to unix/index.html
+
+	* includes/menu.inc, tutorials.html, tutorials/index.html:
+	moved tutorials.html to tutorials/index.html
+
+	* about/index.html: moved about.html to about/index.html
+
+	* about.html, includes/menu.inc: moved
+
+	* windows.html: deleted unused file
+
 2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
 
 	* includes/menu.inc: updated hrefs to match new file locations

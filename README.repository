@@ -1,26 +1,34 @@
 This is a quick-n-dirty README file on the dos and donts of this
-repository (the new www.gimp.org).
-A better and more well written one will follow shortly.
+repository (the new www.gimp.org). A better and more well written one
+will follow shortly.
 
 First of all: Do not change the layout of the site, not even if you
 think it's just a minor bugfix/change! If you feel you have an idea to
-how the design/layout can be improved, you should contact either
-drc or brix.
+how the design/layout can be improved, you should contact either drc
+or brix.
 
 Second: when adding a new page be sure to use the template.html file.
 There are classes for the heading and the subtitles. Use them. Do not
-use <h?>...</h?> or other stuff like that as this is not consistent with 
-the rest of the layout. also avoid putting hrefs (links) in the subtitles.
+use <h?>...</h?> or other stuff like that as this is not consistent
+with the rest of the layout. also avoid putting hrefs (links) in the
+subtitles.
 
-the pages needs to be written in xhtml 1.0 strict and you should validate
-your page using w3cs validator. the styles used are written in css2, but
-the style/ directory is off limits. if you find that you need a new style/rule
-added you should contact brix.
+the pages needs to be written in xhtml 1.0 strict and you should
+validate your page using w3cs validator. the styles used are written
+in css2, but the style/ directory is off limits. if you find that you
+need a new style/rule added you should contact brix.
 
-when adding an html file that has SSI directives (the <!--#... --> lines) in it, 
-the file needs to be 'chmod +x file.html' (yes, the *.html file needs to be 
-executeable!). furthermore, it need to be executeable at 'cvs add file.html';
-it's a pain to change the permissions when the file is already checked in.
+when adding an html file that has SSI directives (the <!--#... -->
+lines) in it, the file needs to be 'chmod +x file.html' (yes, the
+*.html file needs to be executeable!). furthermore, it need to be
+executeable at 'cvs add file.html'; it's a pain to change the
+permissions when the file is already checked in.
+
+third: as with any cvs repository, well written comments are a must.
+when adding/modifying a file be sure to add a descriptive comment to
+the cvs log. don't bother to add the line to the ChangeLog file as
+this file is rebuilt from scratch using the cvs log entries from time
+to time.
 
 more to follow...
 

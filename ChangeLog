@@ -1,5 +1,10 @@
 2004-03-27  Raphaël Quinet  <quinet@gamers.org>
 
+	* about/selling.htrw: Added link to "Selling Free Software" as
+	suggested by Dave.
+
+2004-03-27  Raphaël Quinet  <quinet@gamers.org>
+
 	* source/index.htrw: Corrected link to libwmf.  Fixes bug
 	#138243.
 

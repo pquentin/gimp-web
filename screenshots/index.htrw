@@ -6,12 +6,14 @@
 <h1>Everyone Loves Screenshots!</h1>
 
 <h2>Linux Screenshots</h2>
+<!--
 <div style="float: left;">
   <a href="linux_screenshot1.png" style="margin-right: 1cm;">
   <img src="linux_screenshot1_thumb.jpg" alt="Grid, Fullscreen Screenshot" />
   </a>
   <p style="text-align: left;">1024x768 English</p>
 </div>
+-->
 <div style="float: left;">
   <a href="linux_screenshot2.png">
   <img src="linux_screenshot2_thumb.jpg" alt="Linux Screenshot" />

@@ -1,3 +1,35 @@
+2002-12-08 carol <carol@gimp.org>
+
+	* bugs.html:  added.
+	* bugs/index.html:  removed.
+
+  Me and CVS had issues with these so i removed them:
+	* development/index.html, 
+    * development/people.jpg
+	* development/stable.html
+	* development/unstable.html
+	* development/print.html
+	* development/film.html
+	* development/bugzilla-new.html
+	* development/bugzilla-fixed.html
+	* development/plugins.html
+	* development/help.html
+
+  Added these:
+	* developer/index.html, 
+    * developer/people.jpg
+	* developer/stable.html
+	* developer/unstable.html
+	* developer/print.html
+	* developer/film.html
+	* developer/bugzilla-new.html
+	* developer/bugzilla-fixed.html
+	* developer/plugins.html
+	* developer/help.html
+
+  Fixed it in this:
+	* includes/menu.inc: changed the url from development/ to developer/
+
 2002-12-07 scizzo <scizzo@gimp.org>
 
         * team.html: Add Atte André Jensen to the tutorial authors list.

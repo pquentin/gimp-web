@@ -1,7 +1,11 @@
 2003-04-21  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * Thanks to Sven's eagle-eyed review, I've quoted the description
+          content according to the RDF spec.  Added a few more nice-to-have
+          elements, and some reasonable content for <link> and <dc:creator>.
+
         * Fixed a bit more code rot in programmatic/admin/news/wgo_news.py
-        to keep up with programmatic/rdf.py
+          to keep up with programmatic/rdf.py
 
 2003-04-19 carol <cspears@cablespeed.com>
 

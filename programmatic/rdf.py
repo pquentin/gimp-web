@@ -34,18 +34,25 @@ sys.path = ['${LIBDIR}'] + sys.path
 
 import x_xml
 
+def quote(s):
+  s = string.replace(s, "&", "&amp;")
+  s = string.replace(s, "<", "&lt;")
+  s = string.replace(s, ">", "&gt;")
+  return (s)
+  
 # Namespaces should appear to be imported into Python as well.
-# Otherwise, I have to write all these silly wrappers.
+# Otherwise, I have to write all these silly wrappers. XXX
 
 class RDF(x_xml.Xml):
   defaults = {
-    "xmlns" : "http://purl.org/rss/1.0/",
+    "xmlns"       : "http://purl.org/rss/1.0/",
+    "xmlns:dc"    : "http://purl.org/dc/elements/1.1/",
+    "xmlns:rdf"   : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    
     "xmlns:admin" : "http://webns.net/mvcb/",
-    "xmlns:dc" : "http://purl.org/dc/elements/1.1/",
-    "xmlns:rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xmlns:syn" : "http://purl.org/rss/1.0/modules/syndication/",
-    "xmlns:taxo" : "http://purl.org/rss/1.0/modules/taxonomy/",
-    "xmlns:gimp" : "http://www.gimp.org/RDF/v0.1"
+    "xmlns:syn"   : "http://purl.org/rss/1.0/modules/syndication/",
+    "xmlns:taxo"  : "http://purl.org/rss/1.0/modules/taxonomy/",
+    "xmlns:gimp"  : "http://www.gimp.org/RDF/v0.1"
     }
   tag = "rdf:RDF"
 
@@ -144,6 +151,49 @@ class description(x_xml.Xml):
 class item(x_xml.Xml):
   defaults = { }
   tag = "item"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, item, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, item))
+    pass
+  
+  pass
+
+class items(x_xml.Xml):
+  defaults = { }
+  tag = "items"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, item, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, item))
+    pass
+  
+  pass
+
+class li(x_xml.Xml):
+  defaults = { }
+  tag = "rdf:li"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, item, attrs))
+    pass
+
+  pass
+
+class seq(x_xml.Xml):
+  defaults = { }
+  tag = "rdf:Seq"
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):

@@ -169,10 +169,10 @@ class news:
     iso_date = time.strftime("%Y-%m-%dT%H:%M:%SZ",  rfc822.parsedate(self["date"]))
 
     s = rdf.item(rdf.title(self["subject"])
-                 + rdf.description(self["body"])
-                 + rdf.link("http://mmmaybe.gimp.org")
-                 + rdf.dc_date(xhtml.quote(iso_date)),
-                 {'rdf:about' : "http://www.w3.org/News/2003#item9"})
+                 + rdf.description(rdf.quote(self["body"]))
+                 + rdf.link("http://" + os.environ["HTTP_HOST"])
+                 + rdf.dc_date(rdf.quote(iso_date)),
+                 {'rdf:about' : "http://" + os.environ["HTTP_HOST"]})
     return (s)
 
   

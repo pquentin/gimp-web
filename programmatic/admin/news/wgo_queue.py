@@ -66,6 +66,8 @@ def generate_rdf(queue):
              
   news_blotter = file_path(queue, news_config.news_blotter)
 
+  xhtml.environ()
+  
   fp = open(rdf_file, "w")
   print >>fp, '<?xml version="1.0"?>'
   print >>fp, '<?xml-stylesheet href="/style/rdf-news.css" type="text/css"?>'
@@ -73,10 +75,13 @@ def generate_rdf(queue):
   
   print >>fp, rdf.RDF.init()
   
-  #print >>fp, rdf.link("http://mmmaybe.gimp.org")
-  #print >>fp, rdf.dc_date(time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
-  print >>fp, rdf.channel(rdf.title('GIMP Dot Org') + rdf.description('gimp.org news') + rdf.link('http://mmmaybe.gimp.org'),
-                          { "rdf:about" : "http://www.w3.org/2000/08/w3c-synd/home.rss" }
+  print >>fp, rdf.channel(rdf.title('GIMP Dot Org') + "\n"
+                          + rdf.dc_creator("Wilber Gimp's Publishing Agent: $Revision$") + "\n"
+                          + rdf.dc_date(str(time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))) + "\n"
+                          + rdf.link('http://' + os.environ["HTTP_HOST"]) + "\n"
+                          + rdf.description(rdf.quote('gimp.org news')) + "\n"
+                          + rdf.seq(rdf.items(string.join(map(lambda n: rdf.li({"resource" : "http://" + os.environ["HTTP_HOST"]}) + "\n", news_items)))) + "\n",
+                          { "rdf:about" : "http://" + os.environ["HTTP_HOST"] + "/news.rdf" }
                           )
   
   map(lambda n: fp.write(str(n.as_rdf())), news_items)

@@ -3,7 +3,7 @@
 include ../Makefile.defs
 CSSFLAGS=-I../
 
-all: usage admin news contest
+all: usage admin news contest devel
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot> target"; exit 1; fi
@@ -15,6 +15,9 @@ news:
 
 contest:
 	cd contest && $(MAKE) all
+
+devel:
+	cd develop && $(MAKE) all
 
 wgo-admin.css: wgo-admin.cpp
 
@@ -30,7 +33,7 @@ clean mrproper:
 	cd contest && $(MAKE) clean
 	/bin/rm -f dot-forward dot-htaccess wgo-admin.css *~
 
-install: install-first install-news install-contest
+install: install-first install-news install-contest install-devel
 
 install-first: all
 	install --mode=744 dot-forward   ${DocumentRoot}/.forward
@@ -41,8 +44,11 @@ install-first: all
 	#install --mode=744 dot-htaccess ${DocumentRoot}/admin/.htaccess
 	install --mode=744 dot-password `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/passwords
 
-	install wgo-admin.css           `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
+	install wgo-admin.css           `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/style
 	install howto.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
+
+install-devel: devel
+	cd develop && $(MAKE) install
 
 install-news: news
 	cd news && $(MAKE) install

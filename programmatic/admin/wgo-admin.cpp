@@ -9,6 +9,42 @@ a.news-index {
   text-decoration: underline;
 }
 
+/* distill out a common look to the table for the admin/ stuff */
+table.wgo-admin {
+  font-size: small;
+  border: 1px solid black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+table.wgo-admin tr {
+  color: black;
+}
+
+
+table.wgo-admin th {
+  background: WGO_NEWS_INDEX_HEADER_BG none;
+  border-right: 1px solid white;
+  color: WGO_NEWS_INDEX_HEADER_FG;
+  padding: 1px 0px 1px .25em;
+  text-align: left;
+}
+
+table.wgo-admin td {
+  background: WGO_NEWS_INDEX_BG none;
+  border-bottom: 1px solid black;
+  color: black;
+  padding: 1px 0px 1px 0px;
+  text-indent: 0.25em;
+}
+
+table.wgo-admin td input[type="checkbox"] {
+  background: WGO_NEWS_INDEX_BG none;
+  border-bottom: 1px solid black;
+  color: black;
+  text-indent: 0.25em;
+}
+
 
 /* ---------------- */
 table.news-index {

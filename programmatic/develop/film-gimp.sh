@@ -2,8 +2,10 @@
 
 changelog=${LIBDIR}/ChangeLog.py
 destdir=${DocumentRoot}/develop
+tmpdir=${DocumentRoot}/var/spool/filmgimp
 
-cd ${DocumentRoot}/var/spool
+mkdir ${tmpdir}
+cd ${tmpdir}
 
 nlogs=10
 date=`date +%y-%m-%d`
@@ -12,7 +14,7 @@ title="FilmGIMP ChangeLog - Last ${nlogs} Entries" # Don't show the date (for so
 
 /usr/bin/cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/filmgimp checkout filmgimp/ChangeLog filmgimp/data/ChangeLog
 
-${changelog} -f xhtml -n ${nlogs} -t "${title}" -i filmgimp/ChangeLog > ${destdir}/film.html
-${changelog} -f text  -n ${nlogs} -t "${title}" -i filmgimp/ChangeLog > ${destdir}/file.txt
+${changelog} -f xhtml -n ${nlogs} -t "${title}" -i ${tmpdir}/filmgimp/ChangeLog > ${destdir}/film.html
+${changelog} -f text  -n ${nlogs} -t "${title}" -i ${tmpdir}/filmgimp/ChangeLog > ${destdir}/file.txt
 
-/bin/rm -rf ${DocumentRoot}/var/spool/filmgimp
+/bin/rm -rf ${tmpdir}

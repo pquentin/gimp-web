@@ -34,14 +34,9 @@ import types
 import wgo
 import xhtml
 
-# def head_boilerplate(css=[], headers=[]):
-#   headers = headers + ["Content-type: text/html"]
-#   for h in headers: print h
-
-#   return (header("GIMP - Developer", css))
 
 def header(title, links):
-#  print
+
   print wgo.xhtml_init()
   
   print xhtml.title(title)
@@ -49,8 +44,8 @@ def header(title, links):
 
   print xhtml.link({"rel" : "stylesheet", "href" : "/style/extended.css", "type" : "text/css", "media" : "screen"})
 
-  for href in links:
-    print xhtml.link({"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen"})
+  for link in links:
+    print xhtml.link(link)
     pass
 
   print wgo.page_init('develop')

@@ -7,10 +7,10 @@ export PYTHON?=python2.2
 # a few convenient transforms for making cgi scripts, css files, and
 # shell scripts with variable substitution and macros
 %.css: %.cpp
-	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $< $@
+	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $<  |sed -e 's/\\#/#/g' > $@
 
 %.css: %.cPP
-	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $< $@
+	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $<  |sed -e 's/\\#/#/g' > $@
 
 %.cgi: %.py
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@

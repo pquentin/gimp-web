@@ -3,16 +3,19 @@
 changelog=${LIBDIR}/ChangeLog.py
 destdir=${DocumentRoot}/develop
 
-cd ${DocumentRoot}/var/spool
+tmpdir=${DocumentRoot}/var/spool/gimp-unstable
+
+mkdir ${tmpdir}
+cd ${tmpdir}
 
 nlogs=10
 date=`date +%y-%m-%d`
 
-title="Help ChangeLog - Last ${nlogs} Entries" # Don't show the date (for some reason)
+title="Help ChangeLog - Last ${nlogs} Entries" # Don't show the date
 
 /usr/bin/cvs -d :pserver:anonymous@anoncvs.gimp.org:/cvs/gnome checkout gimp-help/ChangeLog
 
-${changelog} -f xhtml -n ${nlogs} -t "${title}" -i gimp-help/ChangeLog > ${destdir}/help.html
-${changelog} -f text  -n ${nlogs} -t "${title}" -i gimp-help/ChangeLog > ${destdir}/help.txt
+${changelog} -f xhtml -n ${nlogs} -t "${title}" -i ${tmpdir}/gimp-help/ChangeLog > ${destdir}/help.html
+${changelog} -f text  -n ${nlogs} -t "${title}" -i ${tmpdir}/gimp-help/ChangeLog > ${destdir}/help.txt
 
-/bin/rm -rf gimp-help/
+/bin/rm -rf ${tmpdir}

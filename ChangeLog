@@ -1,5 +1,8 @@
 2003-02-27  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
+        * Modifed includes/wgo-admin-ini.xhtml to include a menu link to
+          administering the ChangeLogs
+
         * Added programmatic/admin/develop/changelogs.py
         * Added programmatic/admin/develop/film-gimp.sh
         * Added programmatic/admin/develop/gegl-unstable.sh

@@ -69,7 +69,6 @@ def main(queue):
   if queue in [wgo_news.config.pending_queue, wgo_news.config.current_queue, wgo_news.config.archive_queue]:
     dirpath = wgo.config.spool_path + queue
     names = map(lambda t: dirpath + "/" + t, os.listdir(dirpath))
-    #names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
     names.sort(lambda a, b: cmp(os.stat(a).st_mtime, os.stat(b).st_mtime))
 
     news = map(lambda f: wgo_news.news(f, False), names)

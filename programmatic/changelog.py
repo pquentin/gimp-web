@@ -118,9 +118,16 @@ class Log:
     date = self.date
     email = self.email
     
-    if date == None: date = "unknown date"
-    if email == None: email = ""
-    s = date + "\t" + self.who + "\t" + email + "\n\n"
+    if date == None:
+      date = "unknown date"
+      pass
+    
+    if email == None:
+      email = ""
+      s = date + "\t" + self.who + "\t\n\n"
+    else:
+      s = date + "\t" + self.who + "\t<" + email + ">\n\n"
+      pass
 
     for entry in self.body:
       entry = "* " + entry
@@ -196,13 +203,13 @@ class ChangeLog:
       pass
     
     email = None
-    match = re.search("(<[^>]+>)", header)
+    match = re.search("<([^>]+)>", header)
     if match != None:
       email = match.expand("\\1")
-      header = header.replace(email, "")
+      header = header.replace("<" + email + ">", "")
       pass
     
-    if email != None: header = header.replace(email, "")
+    if email != None: header = header.replace("<" + email + ">", "")
     if date != None: header = header.replace(date, "")
     
     who = header.strip()

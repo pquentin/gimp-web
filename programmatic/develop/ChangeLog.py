@@ -70,10 +70,11 @@ def xhtml_interpolate_bug(text):
 # Format NLOGS worth of log entries from the ChangeLog file INPUT as xhtml
 #
 def changelog_as_xhtml(input, nlogs, title=""):
-  wgo_develop.header("GIMP - ChangeLog", ["/about/ChangeLogs/changelog-xhtml.css"])
+  wgo_develop.header("GIMP - ChangeLog",
+                     [{"rel" : "stylesheet", "href" : "/about/ChangeLogs/changelog-xhtml.css", "type" : "text/css", "media" : "screen"}])
 
   print xhtml.div(title, {"class" : "heading"})
-  #print xhtml.h1(title, {"class" : "heading"})
+  # print xhtml.h1(title, {"class" : "heading"})
   
   print xhtml.div.init({"class" : "changelog"})
 
@@ -82,7 +83,7 @@ def changelog_as_xhtml(input, nlogs, title=""):
   for log in changelog_entries.logs[0:nlogs]:
     print xhtml.div(xhtml.span(xhtml.quote(log.date),     {"class" : "date"})
                     + xhtml.span(xhtml.quote(log.who),    {"class" : "author"})
-                    + xhtml.span(xhtml.mailto(log.email), {"class" : "email"}), {"class" : "changelog-log"})
+                    + xhtml.span("<" + xhtml.mailto(log.email) + ">", {"class" : "email"}), {"class" : "changelog-log"})
     
     print xhtml.list.init()
     

@@ -49,6 +49,11 @@ table.ld {
   vertical-align: middle;
   visibility:     visible;
   width:          100%;
+  background: white none;
+}
+
+table.ld tr { 
+  background: white none;
 }
 
 table.ld td {
@@ -60,26 +65,9 @@ table.ld td {
   text-align:     center;
   vertical-align: middle;
   visibility:     visible;
+  background:     white none;
 }
 
-/*
-table.ld td.l----- { padding: 1px 1px 1px 1px; border-width: 0px 0px 0px 0px; border-style: solid; }
-table.ld td.l----x { padding: 1px 1px 1px 0px; border-width: 0px 0px 0px 1px; border-style: solid; }
-table.ld td.l---x- { padding: 1px 1px 0px 1px; border-width: 0px 0px 1px 0px; border-style: solid; }
-table.ld td.l---xx { padding: 1px 1px 0px 0px; border-width: 0px 0px 1px 1px; border-style: solid; }
-table.ld td.l--x-- { padding: 1px 0px 1px 1px; border-width: 0px 1px 0px 0px; border-style: solid; }
-table.ld td.l--x-x { padding: 1px 0px 1px 0px; border-width: 0px 1px 0px 1px; border-style: solid; }
-table.ld td.l--xx- { padding: 1px 0px 0px 1px; border-width: 0px 1px 1px 0px; border-style: solid; }
-table.ld td.l--xxx { padding: 1px 0px 0px 0px; border-width: 0px 1px 1px 1px; border-style: solid; }
-table.ld td.l-x--- { padding: 0px 1px 1px 1px; border-width: 1px 0px 0px 0px; border-style: solid; }
-table.ld td.l-x--x { padding: 0px 1px 1px 0px; border-width: 1px 0px 0px 0px; border-style: solid; }
-table.ld td.l-x-x- { padding: 0px 1px 0px 1px; border-width: 1px 0px 1px 0px; border-style: solid; }
-table.ld td.l-x-xx { padding: 0px 1px 0px 0px; border-width: 1px 0px 1px 1px; border-style: solid; }
-table.ld td.l-xx-- { padding: 0px 0px 1px 1px; border-width: 1px 1px 0px 0px; border-style: solid; }
-table.ld td.l-xx-x { padding: 0px 0px 1px 0px; border-width: 1px 1px 0px 1px; border-style: solid; }
-table.ld td.l-xxx- { padding: 0px 0px 0px 1px; border-width: 1px 1px 1px 0px; border-style: solid; }
-table.ld td.l-xxxx { padding: 0px 0px 0px 0px; border-width: 1px 1px 1px p1x; border-style: solid; }
-*/
 table.ld td.l----- { padding: 1px 1px 1px 1px; border-width: 0px 0px 0px 0px; }
 table.ld td.l----x { padding: 1px 1px 1px 0px; border-width: 0px 0px 0px 1px; }
 table.ld td.l---x- { padding: 1px 1px 0px 1px; border-width: 0px 0px 1px 0px; }

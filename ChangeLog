@@ -1,5 +1,8 @@
 2003-09-24  Raphael Quinet  <quinet@gamers.org>
 
+	* unix/fonts.htrw: Added correct links to urw-fonts.tar.gz and
+	fonts.dir after copying these files on the FTP server.
+
 	* unix/index.htrw: Improved the description of links to the AIX
 	versions of the GIMP.  Added a link to a query for GIMP at
 	rpmfind.net.

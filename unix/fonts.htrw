@@ -58,13 +58,15 @@ href="http://www.ghostscript.com/">ghostscript</a>, quality versions
 of the standard 35 Type 1 PostScript fonts are shipped.  They were
 donated and licenced under the GPL by <a
 href="http://www.urwpp.de/english/home.htm">URW</a>.  You can get this
-package together with a custom made <code><a
-href="fonts.dir">fonts.dir</a></code> and <code>fonts.scale</code>
-file (which is the same as the fonts.dir file) from <a
-href="urw-fonts.tar.gz">here</a> (FIXME: broken link, to be updated).
-The <code>fonts.dir</code> was specially made to match the original
-Adobe names of the fonts, e.g. Times, Helvetica etc. With XFree86,
-these fonts are a must to have!</p>
+package from <a
+href="ftp://ftp.gimp.org/pub/gimp/fonts/urw-fonts.tar.gz">here</a>.
+You will probably want to use a custom made <code><a
+href="ftp://ftp.gimp.org/pub/gimp/fonts/urw-adobe-fonts.dir">fonts.dir</a></code>
+(save that file as fonts.dir) and <code>fonts.scale</code> file (which
+is the same as the fonts.dir file).  The <code>fonts.dir</code> was
+specially made to match the original Adobe names of the fonts,
+e.g. Times, Helvetica etc.  With XFree86, these fonts are a must to
+have!</p>
 
 <p>Just make sure that the fontpath lists the 75dpi or 100dpi bitmap
 fonts <b>before</b> the URW fonts, and make sure you have the string

@@ -227,6 +227,12 @@ td.map {
   padding: 0px;
 }
 
+form {
+  margin: 1.33em 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 /* Changes here should only be done if you know exactly what you are doing.
  * Changes done here will change the appearence of the whole site and should
  * be left up to the designer of the site to change. Contact the designer for

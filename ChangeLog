@@ -1,5 +1,12 @@
 2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* style/wgo.css
+	* donating/index.htrw: argh - putting the form in an image
+	paragraph wont help much. Added a CSS style to indent the form
+	correctly instead.
+
+2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* donating/index.htrw: put donate.png in an image class paragraph.
 
 2004-05-22  Henrik Brix Andersen  <brix@gimp.org>

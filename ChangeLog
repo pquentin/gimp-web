@@ -1,3 +1,8 @@
+2004-04-18  Niklas M <scizzo@gimp.org>
+
+	* unix/index.htrw: Made a start of a BSD list and added the freebsd ports
+	links to the list.
+
 2004-04-14  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: link to the mirrors from the top of the

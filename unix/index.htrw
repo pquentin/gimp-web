@@ -35,6 +35,13 @@ test them; use at your own risk.
      </li>
    </ul>
  </li>
+ <li>BSD
+   <ul>
+     <li>
+	     <a href="http://www.freebsd.org/cgi/ports.cgi?query=gimp&stype=all">FreeBSD</a>
+	   </li>
+	 </ul>
+ </li>
 </ul>
 </p>
 

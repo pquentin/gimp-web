@@ -1,3 +1,9 @@
+2005-01-26  Dave Neary  <bolsh@gimp.org>
+
+	* books/index.htrw: Added Cédric Gemy's free book on the 
+	GIMP - in French - which he has recently updated for the GIMP
+	2.2.
+
 2005-01-26  Raphaël Quinet  <raphael@gimp.org>
 
 	* tutorials/The_Basics/index.htrw: Update the path of the Levels

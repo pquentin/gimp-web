@@ -276,6 +276,12 @@
 ["alt",    "wgo:image-about-splash-unknown",  { "alt":    "unknown"}]
 
 
+["href",   "wgo:book-a_la_sos_gimp",    { "href":       "http://www.le-radar.com"}]
+["src",    "wgo:image-book-a_la_sos_gimp",  { "src":    "/books/a_la_sos_gimp.png"}]
+["width",  "wgo:image-book-a_la_sos_gimp",  { "width":  "100px"}]
+["height", "wgo:image-book-a_la_sos_gimp",  { "height": "137px"}]
+["alt",    "wgo:image-book-a_la_sos_gimp",  { "alt": "Gemy_Cedric"}]
+
 ["href",   "wgo:book-essential_gimp_for_web_professionals",    { "href":   "http://www.phptr.com/essential/gimp"}]
 ["src",    "wgo:image-book-gimp_for_web_professionals",  { "src":    "/books/essential_gimp_for_web_professionals.png"}]
 ["width",  "wgo:image-book-gimp_for_web_professionals",  { "width":  "100px"}]

@@ -5,9 +5,30 @@
 
 <h1>Books about The GIMP</h1>
 
+<h2>(A la) SOS GIMP</h2>
+<p>
+  <img class="icon" src="wgo:image-book-a_la_sos_gimp" 
+       alt="wgo:image-book-a_la_sos_gimp"
+       width="wgo:image-book-a_la_sos_gimp"
+       height="wgo:image-book-a_la_sos_gimp"/>
+  <strong>Author:</strong> C&eacute;dric Gemy<br/>
+  <strong>Format:</strong> Paperback, 256pp.<br/>
+  <strong>ISBN:</strong> 2-9521703-1-2<br/>
+  <strong>Date:</strong> January 2005<br/>
+  <strong>Website:</strong> <a
+href="wgo:book-a_la_sos_gimp">http://www.le-radar.com/</a><br/>
+  <br/>
+  <strong>Description:</strong> This book in French, released
+  under the Free Documentation License, contains loads of tips
+  and tutorials for the GIMP, as well as giving a thorough tour 
+  of the main tools and features. It is in its second edition,
+  and has recently been updated to cover the GIMP 2.2.
+</p>
+
 <h2>Essential GIMP for Web Professionals</h2>
 <p>
-  <img class="icon" src="wgo:image-book-gimp_for_web_professionals" alt=""
+  <img class="icon" src="wgo:image-book-gimp_for_web_professionals" 
+       alt="wgo:image-book-gimp_for_web_professionals"
        width="wgo:image-book-gimp_for_web_professionals"
        height="wgo:image-book-gimp_for_web_professionals"/>
   <strong>Author:</strong> Michael J. Hammel<br/>

@@ -1,0 +1,84 @@
+This directory contains splash screens grabbed from the gimp cvs tree. 
+Eventually they (the guest lecturer) got sick of coaching me on how  to get them
+that they went ahead and got them for me.  Actually, the irc log is funny, sad
+and educational (good luck if you want to do it yourself):
+
+First day ...
+-=[retrieving the splashes via cvs]=-
+13:25 (yosh) carol: run cvs status -v gimp_splash.ppm
+13:27 [carol] hmm, what is this output?
+13:28 (yosh) GIMP_1_1_26              (revision: 1.6)
+13:28 (yosh) tarball version    (cvs internal version)
+13:29 (yosh) and you can cvs up -r internalver to get each version
+13:29 (yosh) and the tags let you map them to the tarball version
+13:30 [carol] eh, will i have problems with where this saves them?
+13:31 (yosh) ?
+13:31 [carol] oh, it will save them into a module called internalver?
+13:31 (yosh) no
+13:31 (yosh) it'll save them in gimp_splash.ppm
+13:32 (yosh) you need to copy it out somewhere for each ver
+13:32 [carol] well, okie dokie then
+13:32 [carol] thanks for the cvs lesson :)
+13:32 (yosh) also, 1.0 splash is in gimp1_0_splash.ppm and 1.3 is in 
+          data/images/gimp_splash.png
+
+Later that day ...
+21:01 [carol] http://tigert.gimp.org/gimp/gimp-splash-history/splashes/1.02.png
+21:01 [carol] how do i get this?
+21:03 [yosh] hm
+21:03 [yosh] oh!
+21:03 [carol] well it didn't make it in a tarball
+21:03 [carol] but the 1.1's did
+21:03 [yosh] cvs co -r1.1 gimp/gimp1_1_splash.ppm
+21:03 [yosh] the files got renamed
+21:03 [yosh] cvs blows
+21:04 [carol] okie dokie
+21:04 [carol] how frustrating!
+21:04 [yosh] yes
+21:04 [yosh] cvs has no facility to actually rename things
+21:04 [yosh] there is gimp1_0_splash.ppm
+21:04 [yosh] gimp1_1_splash.ppm
+21:04 [yosh] gimp_splash.ppm
+21:04 [carol] ohohoh!
+21:05 [carol] interview with kitty karisle tomorrow on Sunday Weekend Edition
+21:05 [yosh] and data/images/gimp_splash.png
+21:05 [yosh] cool!
+
+
+New day now ...
+00:26 [yosh] for i in `seq 1 12`; do cvs up -r1.$i 
+          gimp1_1_splash.ppm; cp gimp1_1_splash.ppm 
+          gimp1_1_splash.ppm.1.$i; done
+00:26 [yosh] I let bash be sedated ;)
+00:26 [carol] that was the script?
+00:26 [carol] heh
+00:27 [yosh] had to do similar for gimp_splash.ppm and 
+          gimp_splash.png
+
+Trying to get a good version list (still) ...
+01:09 [carol] it gave me a huge list of existing tags
+01:10 [yosh] yes, that is what you want
+01:10 [yosh] GIMP_1_1_21              (revision: 1.3)
+01:10 [yosh] so gimp_splash.ppm.1.3 goes with 1.1.21
+01:11 [carol] so far they don't match then
+01:12 [yosh] they should..
+01:12 [carol] that is with tigerts version numbers
+01:12 [carol] i will check what i got from you
+01:15 [carol] my tarball for 1.1.0 had version 1.7 in it
+01:15 [yosh] where is the tarball?
+01:15 [carol] cvs says it is 1.1
+01:16 [carol] well it might be gone now
+01:17 [carol] okay right here
+01:18 [carol] my tarball had a different image in it
+01:18 [carol] this list says it has that warning one
+01:19 [yosh] 1.1.0 used gimp1_1_splash.ppm
+01:19 [yosh] GIMP_1_1_0: 1.5
+01:19 [yosh] so gimp1_1_splash.ppm.1.5 should match it
+01:19 [yosh] (and it does)
+01:20 [carol] wow
+01:20 [carol] finally
+01:22 [carol] man, i am not fun with this
+01:22 [yosh] it goes gimp_splash.ppm.1.1 for 1.0, gimp1_1_splash* 
+          -> gimp_splash for 1.1, gimp_splash.ppm.1.11 for 1.2, 
+          gimp_splash.ppm.1.12 for 1.3, then gimp_splash.{gif,png} 
+          for the rest

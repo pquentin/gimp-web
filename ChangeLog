@@ -1,5 +1,14 @@
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls
+	* man/gimp-remote.html
+	* man/gimp.html
+	* man/gimprc.html
+	* man/gimptool-2.0.html: added HTML versions of man-pages for
+	GIMP 2.2, this time to a platform-neutral location.
+
+2004-12-18  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/splash-images/gimp-splash-1.6-t.png
 	* about/splash/splash-images/gimp-splash-1.6.png
 	* admin/gimp-web-urls: added gimp-2.2 splash image.

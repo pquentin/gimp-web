@@ -1,0 +1,80 @@
+<html><head>
+<title>GIMP-REMOTE man page</title>
+<meta name="generator" content="roffit 0.6">
+<STYLE type="text/css">
+P.level0 {
+ padding-left: 2em;
+}
+
+P.level1 {
+ padding-left: 4em;
+}
+
+P.level2 {
+ padding-left: 6em;
+}
+
+span.emphasis {
+ font-style: italic;
+}
+
+span.bold {
+ font-weight: bold;
+}
+
+span.manpage {
+ font-weight: bold;
+}
+
+h2.nroffsh {
+ background-color: #e0e0e0;
+}
+
+span.nroffip {
+ font-weight: bold;
+ font-size: 120%;
+ font-family: monospace;
+}
+
+p.roffit {
+ text-align: center;
+ font-size: 80%;
+}
+</STYLE>
+</head><body>
+
+<p class="level0">
+<p class="level0"><a name="NAME"></a><h2 class="nroffsh">NAME</h2>
+<p class="level0">gimp-remote - tells a running GIMP to open a (local or remote) image file. <a name="SYNOPSIS"></a><h2 class="nroffsh">SYNOPSIS</h2>
+<p class="level0"><span Class="bold">gimp-remote</span> [-h] [--help] [-v] [--version] [--display <span Class="emphasis">display</span>] [-e] [--existing] [-q] [--query]  [-s] [--no-splash] <span Class="emphasis">filename</span> ... 
+<p class="level0">
+<p class="level0"><a name="DESCRIPTION"></a><h2 class="nroffsh">DESCRIPTION</h2>
+<p class="level0"><span Class="emphasis">gimp-remote</span> is a small utility that tells a running GIMP to open one or more (local or remote) image files.  It does so by searching for a GIMP toolbox on the active display.  If it can find a GIMP toolbox, a synthetic drop event is created which makes GIMP think the files would have been dropped onto the toolbox. More than one filename or URL can be specified on the commandline.  
+<p class="level0">If no GIMP window is found, <span Class="emphasis">gimp-remote</span> will start a new GIMP instance and ask it to load the specified images. If no filename or URL is given, <span Class="emphasis">gimp-remote</span> will start a new GIMP. This behaviour can be altered using the command-line options described below. 
+<p class="level0">
+<p class="level0"><a name="OPTIONS"></a><h2 class="nroffsh">OPTIONS</h2>
+<p class="level0">
+<p class="level0"><span Class="emphasis">gimp-remote</span> accepts the following options: 
+<p class="level0"><span Class="bold">-h, --help</span> Display a list of all commandline options. 
+<p class="level0"><span Class="bold">-v, --version</span> Output the version info. 
+<p class="level0"><span Class="bold">--display  display</span> Use the designated X display. 
+<p class="level0"><span Class="bold">-e, --existing</span> If no running GIMP instance is found, don't start a new one but exit. 
+<p class="level0"><span Class="bold">-q, --query</span> Check if GIMP is running and exit. A status code of 0 indicates that a GIMP toolbox window has been found on this display. 
+<p class="level0"><span Class="bold">-s, --no-splash</span> When starting GIMP, do not show the splash screen. 
+<p class="level0">
+<p class="level0"><a name="EXAMPLES"></a><h2 class="nroffsh">EXAMPLES</h2>
+<p class="level0">
+<p class="level0"><span Class="bold">gimp-remote\ <a href="http://www.gimp.org/images/wilber_the_gimp.png">http://www.gimp.org/images/wilber_the_gimp.png</a></span> Loads the image from the GIMP website into a running GIMP or starts a new one. 
+<p class="level0"><span Class="bold">gimp-remote\ wilber.xcf\ wilma.xcf</span> Loads the local files wilber.xcf and wilma.xcf into a running GIMP or starts a new one.  
+<p class="level0">
+<p class="level0"><a name="ENVIRONMENT"></a><h2 class="nroffsh">ENVIRONMENT</h2>
+<p class="level0">
+<p class="level0"><span Class="bold">DISPLAY</span> to get the default host and display number. 
+<p class="level0">
+<p class="level0"><a name="AUTHORS"></a><h2 class="nroffsh">AUTHORS</h2>
+<p class="level0">Sven Neumann and Simon Budig. 
+<p class="level0">
+<p class="level0"><a name="SEE"></a><h2 class="nroffsh">SEE ALSO</h2>
+<p class="level0"><span Class="manpage">gimp (1)</span> <span Class="manpage"> </span> <span Class="manpage">gimprc (5)</span> <span Class="manpage"> </span> <span Class="manpage">gimptool (1)</span> <p class="roffit">
+ This HTML page was made with <a href="http://daniel.haxx.se/projects/roffit/">roffit</a>.
+</body></html>

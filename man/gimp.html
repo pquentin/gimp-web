@@ -1,0 +1,151 @@
+<html><head>
+<title>GIMP man page</title>
+<meta name="generator" content="roffit 0.6">
+<STYLE type="text/css">
+P.level0 {
+ padding-left: 2em;
+}
+
+P.level1 {
+ padding-left: 4em;
+}
+
+P.level2 {
+ padding-left: 6em;
+}
+
+span.emphasis {
+ font-style: italic;
+}
+
+span.bold {
+ font-weight: bold;
+}
+
+span.manpage {
+ font-weight: bold;
+}
+
+h2.nroffsh {
+ background-color: #e0e0e0;
+}
+
+span.nroffip {
+ font-weight: bold;
+ font-size: 120%;
+ font-family: monospace;
+}
+
+p.roffit {
+ text-align: center;
+ font-size: 80%;
+}
+</STYLE>
+</head><body>
+
+<p class="level0">
+<p class="level0"><a name="NAME"></a><h2 class="nroffsh">NAME</h2>
+<p class="level0">gimp - an image manipulation and paint program. 
+<p class="level0">
+<p class="level0"><a name="SYNOPSIS"></a><h2 class="nroffsh">SYNOPSIS</h2>
+<p class="level0"><span Class="bold">gimp</span> [-h] [--help] [-v] [--version] [--verbose] [--no-shm] [--no-cpu-accel] [--display <span Class="emphasis">display</span>] [-d] [--no-data] [-f] [--no-fonts] [-i] [--no-interface] [-s] [--no-splash] [--session <span Class="emphasis">&lt;name&gt;</span>] [-g] [--gimprc <span Class="emphasis">&lt;gimprc&gt;</span>] [--system-gimprc <span Class="emphasis">&lt;gimprc&gt;</span>] [--dump-gimprc</span>] [--console-messages] [--debug-handlers] [--batch-interpreter <span Class="emphasis">&lt;procedure&gt;</span>] [-b] [--batch <span Class="emphasis">&lt;commands&gt;</span>] [<span Class="emphasis">filename</span>] ... 
+<p class="level0">
+<p class="level0"><a name="DESCRIPTION"></a><h2 class="nroffsh">DESCRIPTION</h2>
+<p class="level0">The <span Class="emphasis">GIMP</span> is the GNU Image Manipulation Program. It is used to edit and manipulate images. It can load and save a variety of image formats and can be used to convert between formats. GIMP can also be used as a paint program. It features a set of drawing and painting tools such as airbrush, clone, pencil, and paint brush. Painting and drawing tools can be applied to an image with a variety of paint modes.  It also offers an extensive array of selection tools like rectangle, ellipse, fuzzy select, bezier select, intelligent scissors, and select by color. GIMP offers a variety of plugins that perform a variety of image manipulations.  Examples include bumpmap, edge detect, gaussian blur, and many others. In addition, GIMP has several scripting extension which allow for advanced non-interactive processing and creation of images. 
+<p class="level0">
+<p class="level0"><a name="OPTIONS"></a><h2 class="nroffsh">OPTIONS</h2>
+<p class="level0">
+<p class="level0">The <span Class="emphasis">gimp</span> accepts the following options: 
+<p class="level0"><span Class="bold">-h, --help</span> Display a list of all commandline options. 
+<p class="level0"><span Class="bold">-v, --version</span> Output the version info. 
+<p class="level0"><span Class="bold">--verbose</span> Show startup messages. 
+<p class="level0"><span Class="bold">--no-shm</span> Do not use shared memory between GIMP and its plugins.  Instead of using shared memory, GIMP will send the data via pipe. This will result in slower performance than using shared memory. 
+<p class="level0"><span Class="bold">--no-cpu-accel</span> Do not use CPU accelerations such as MMX or SSE even if GIMP detects that your CPU provides this functionality. 
+<p class="level0"><span Class="bold">-d, --no-data</span> Do not load patterns, gradients, palettes, or brushes. Often useful in non-interactive situations where startup time is to be minimized. 
+<p class="level0"><span Class="bold">-f, --no-fonts</span> Do not load any fonts. No text functionality will be available if this option is used. 
+<p class="level0"><span Class="bold">-i, --no-interface</span> Run without a user interface. 
+<p class="level0"><span Class="bold">--display display</span> Use the designated X display. 
+<p class="level0"><span Class="bold">-s, --no-splash</span> Do not show the splash screen. 
+<p class="level0"><span Class="bold">--session &lt;name&gt;</span> Use a different sessionrc for this GIMP session. The given session name is appended to the default sessionrc filename. 
+<p class="level0"><span Class="bold">-g, --gimprc &lt;gimprc&gt;</span> Use an alternative gimprc instead of the default one. Useful in cases where plugins paths or machine specs may be different. 
+<p class="level0"><span Class="bold">--system-gimprc &lt;gimprc&gt;</span> Use an alternate system gimprc file. 
+<p class="level0"><span Class="bold">--dump-gimprc</span> Output a gimprc file with default settings. 
+<p class="level0"><span Class="bold">--debug-handlers</span> Enable debugging signal handlers. 
+<p class="level0"><span Class="bold">-c, --console-messages</span> Do not popup dialog boxes on errors or warnings. Print the messages on the console instead. 
+<p class="level0"><span Class="bold">--stack-trace-mode {never|query|always}</span> If a stack-trace should be generated in case of fatal signals. 
+<p class="level0"><span Class="bold">--pdb-compat-mode {off|on|warn}</span> If the PDB should provide aliases for deprecated functions. 
+<p class="level0"><span Class="bold">--batch-interpreter &lt;procedure&gt;</span> Speficies the procedure to use to process batch events. The default is to let Script-Fu evaluate the commands. 
+<p class="level0"><span Class="bold">-b, --batch &lt;commands&gt;</span> Execute the set of <span Class="emphasis">&lt;commands&gt;</span> non-interactively. The set of <span Class="emphasis">&lt;commands&gt;</span> is typically in the form of a script that can be executed by one of the GIMP scripting extensions. When <span Class="emphasis">&lt;commands&gt;</span> is <span Class="bold">-</span> the commands are read from standard input. 
+<p class="level0">
+<p class="level0">
+<p class="level0"><a name="ENVIRONMENT"></a><h2 class="nroffsh">ENVIRONMENT</h2>
+<p class="level0">
+<p class="level0"><span Class="bold">DISPLAY</span> to get the default host and display number. 
+<p class="level0"><span Class="bold">XENVIRONMENT</span> to get the name of a resource file that overrides the global resources stored in the RESOURCE_MANAGER property. 
+<p class="level0">
+<p class="level0"><a name="FILES"></a><h2 class="nroffsh">FILES</h2>
+<p class="level0">GIMP's data files are stored in ${prefix}/share/gimp/2.0, where ${prefix}  is set on install, but is typically /usr/local. GIMP's system-wide configuration files are stored in ${prefix}/etc/gimp/2.0. Most GIMP configuration is read in from the user's init file, <span Class="bold">$HOME</span>/.gimp-2.2/gimprc. The system wide equivalent is in ${prefix}/etc/gimprc. The system wide file is parsed  first and the user gimprc can override the system settings.  ${prefix}/etc/gimprc_user is the default gimprc placed in users' home directories the first time GIMP is run. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/devicerc - holds settings for input devices together with the tool, colors, brush, pattern and gradient  associated to that device. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/documents - lists all images that have been  opened or saved using GIMP. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/gtkrc - users set of GIMP-specific GTK config settings. Options such as widget color and fonts sizes can be set here. 
+<p class="level0">${prefix}/etc/gimp/2.0/gtkrc - sytem wide default set of GIMP-specific GTK+ config settings. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/menurc - user's set of keybindings. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/parasiterc - Description of all available GIMP parasites. This is file is recreated everytime GIMP starts up. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/sessionrc - This file takes session-specific info (that is info, you want to keep between two GIMP sessions). You are not supposed to edit it manually, but of course you can do. This file will be entirely rewritten every time you quit the GIMP. If this file isn't found, defaults are used. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/templaterc - Image templates are kept in this file. New images can conveniently created from these templates. If this file isn't found, defaults are used. 
+<p class="level0">${prefix}/etc/gimp/2.0/unitrc - default user unit database. It contains the unit definitions for centimeters, meters, feet, yards, typographic points and typographic picas and is placed in users home directories the first time the GIMP is ran. If this file isn't found, defaults are used. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/unitrc - This file contains your user unit database. You can modify this list with the unit editor. You are not supposed to edit it manually, but of course you can do.  This file will be entirely rewritten every time you quit the GIMP. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/plug-ins - location of user installed plugins. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/pluginrc - plugin initialization values are stored here. This file is parsed on startup and regenerated if need be. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/modules - location of user installed modules. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/tmp - default location that GIMP uses as temporary space. 
+<p class="level0">${prefix}/share/gimp/2.0/brushes - system wide brush files. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/brushes - user created and installed brush files. These files are in the .gbr, .gih or .vbr file formats. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/curves - Curve profiles and presets as saved from  the Curves tool. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/gimpressionist - Presets and user created brushes  and papers are stored here. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/levels - Level profiles and presets as saved from  the Levels tool. 
+<p class="level0">${prefix}/share/gimp/2.0/palettes - the system wide palette files. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/palettes - user created and modified palette files. This files are in the .gpl format. 
+<p class="level0">${prefix}/share/gimp/2.0/patterns - basic set of patterns for use in GIMP. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/patterns - user created and installed gimp pattern files. This files are in the .pat format. 
+<p class="level0">${prefix}/share/gimp/2.0/gradients - standard system wide set of gradient files. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/gradients - user created and installed gradient files. 
+<p class="level0">${prefix}/share/gimp/2.0/scripts - system wide directory of scripts used in Script-Fu and other scripting extensions. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/scripts - user created and installed scripts. 
+<p class="level0">${prefix}/share/gimp/2.0/gflares - system wide directory used by the gflare plug-in. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/gflares - user created and installed gflare files. 
+<p class="level0">${prefix}/share/gimp/2.0/gfig - system wide directory used by the gfig plug-in. 
+<p class="level0"><span Class="bold">$HOME</span>/.gimp-2.2/gfig - user created and installed gfig files. 
+<p class="level0">${prefix}/share/gimp/2.0/images/gimp-splash.png - the default image used for the GIMP splash screen. 
+<p class="level0">${prefix}/share/gimp/2.0/images/gimp-logo.png - image used in the GIMP about dialog. 
+<p class="level0">${prefix}/share/gimp/2.0/tips/gimp-tips.xml - tips as displayed in the "Tip of the Day" dialog box. 
+<p class="level0">
+<p class="level0"><a name="SPLASH"></a><h2 class="nroffsh">SPLASH IMAGES</h2>
+<p class="level0">GIMP comes with a default image for the splash screen but it allows system administrators and users to customize the splash screen by providing other images. The image to be used with the splash screen is choosen as follows: 
+<p class="level0">
+<p class="level0"><a name="1"></a><span class="nroffip">1.</span> 
+<p class="level1">GIMP tries to load a random splash screen from the directory <span Class="bold">$HOME</span>/.gimp-2.2/splashes. 
+<p class="level0"><a name="2"></a><span class="nroffip">2.</span> 
+<p class="level1">It then falls back to using <span Class="bold">$HOME</span>/.gimp-2.2/gimp-splash.png. 
+<p class="level0"><a name="3"></a><span class="nroffip">3.</span> 
+<p class="level1">If the user didn't install any custom splash images, a random image is picked from ${prefix}/share/gimp/2.0/splashes. 
+<p class="level0"><a name="4"></a><span class="nroffip">4.</span> 
+<p class="level1">As a last resort, GIMP uses the default splash image located at ${prefix}/share/gimp/2.0/images/gimp-splash.png. 
+<p class="level1">
+<p class="level1"><a name="SUGGESTIONS"></a><h2 class="nroffsh">SUGGESTIONS AND BUG REPORTS</h2>
+<p class="level0">Any bugs found should be reported to the online bug-tracking system available on the web at <a href="http://bugzilla.gnome.org">http://bugzilla.gnome.org</a>/. Before reporting bugs, please check to see if the bug has already been reported. 
+<p class="level0">When reporting GIMP bugs, it is important to include a reliable way to reproduce the bug, version number of GIMP (and probably GTK), OS name and version, and any relevant hardware specs. If a bug is causing a crash, it is very useful if a stack trace can be provided. And of course, patches to rectify the bug are even better. 
+<p class="level0">
+<p class="level0"><a name="OTHER"></a><h2 class="nroffsh">OTHER INFO</h2>
+<p class="level0">The canonical place to find GIMP info is at <a href="http://www.gimp.org">http://www.gimp.org</a>/. Here you can find links to just about many other GIMP sites, tutorials, data sets, mailing list archives, and more. 
+<p class="level0">There is also a GIMP User Manual available at  <a href="http://manual.gimp.org">http://manual.gimp.org</a>/ that goes into much more detail  about the interactive use of GIMP. 
+<p class="level0">The latest version of GIMP and the GTK+ libs is always available at  ftp://ftp.gimp.org/. 
+<p class="level0">
+<p class="level0"><a name="AUTHORS"></a><h2 class="nroffsh">AUTHORS</h2>
+<p class="level0">Spencer Kimball and Peter Mattis. 
+<p class="level0">With patches, fixes, plugins, extensions, scripts, translations, documentation, and more from lots  and lots of people all over the world. 
+<p class="level0">
+<p class="level0"><a name="SEE"></a><h2 class="nroffsh">SEE ALSO</h2>
+<p class="level0"><span Class="manpage">gimprc (5)</span> <span Class="manpage"> </span> <span Class="manpage">gimptool (1)</span> <span Class="manpage"> </span> <span Class="manpage">gimp-remote (1)</span> <p class="roffit">
+ This HTML page was made with <a href="http://daniel.haxx.se/projects/roffit/">roffit</a>.
+</body></html>

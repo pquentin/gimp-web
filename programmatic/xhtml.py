@@ -626,6 +626,16 @@ class pre(__html__):
   def __init__(self, content=None, attrs={}):
     __html__.__init__(self, escape(content), attrs, "<pre%s>", "</pre>")
     return None
+
+  class init(xyz_init):
+    def __init__(self, attrs={}):
+      return (xyz_init.__init__(self, attrs, "<pre%s>"))
+    pass
+  
+  class fini(xyz_fini):
+    def __init__(self, attrs={}):
+      return (xyz_fini.__init__(self, "</pre>"))
+    pass
   pass
 
 class label(__html__):

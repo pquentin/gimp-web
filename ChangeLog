@@ -1,3 +1,10 @@
+2005-01-04  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* tutorials/Perl-Debugged/index.htrw
+	* tutorials/Basic_Scheme/index.htrw
+	* tutorials/Basic_Perl/index.htrw:
+	Removed references to the helvetix-fixes alternative stylesheet.
+
 2005-01-04  Sven Neumann  <sven@gimp.org>
 
 	* admin/gimp-web-urls: added "wgo:docs-batch".

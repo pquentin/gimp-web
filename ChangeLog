@@ -1,5 +1,10 @@
 2004-03-22  Niklas M <scizzo@gimp.org>
 
+	* admin/gimp-web-urls: Found some more links that was not properly
+	returned according to the moves of the splashes.
+
+2004-03-22  Niklas M <scizzo@gimp.org>
+
 	* admin/gimp-web-urls: Fixed one more link that I forgot at the last
 	commit.
 

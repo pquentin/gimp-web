@@ -1,3 +1,8 @@
+2003-01-24 brix <brix@gimp.org>
+
+	* TODO: added a section about table-less design with links to
+	Helvetix' example implementation
+
 2003-01-20  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Supporting ChangeLogs

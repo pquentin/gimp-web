@@ -1,5 +1,7 @@
 2002-10-16 scizzo <scizzo@gimp.org>
 
+	* tutorials/index.html: Split the animations into Simple and Advanced.
+
 	* tutorials/Golden_Text/: Add the first version of the Golden_Text tutorial.
 
 	* tutorials/Draw_A_Paint_Brush/: Did the first 9 steps in the

@@ -1,5 +1,22 @@
 2004-03-14  Raphaël Quinet  <quinet@gamers.org>
 
+	* tutorials/Anti-Aliased_Threshold/curves.png: New Curves dialog
+	from 2.0.
+
+	* tutorials/Anti-Aliased_Threshold/curves.jpg: Removed.
+
+	* tutorials/Anti-Aliased_Threshold/index.htrw: Updated for 2.0.
+
+	* tutorials/Drawing_Shapes/*.gif
+	* tutorials/Drawing_Shapes/*.png: Replaced old 1.x GIF images by
+	new PNG images from GIMP 2.0.
+
+	* tutorials/Drawing_Shapes/index.htrw: Re-wrote several parts
+	of the text because the Path tool has now replaced the old Bezier
+	Selections.  Updated the title of the tutorial.
+
+2004-03-14  Raphaël Quinet  <quinet@gamers.org>
+
 	* tutorials/index.htrw: Bezier Selections are now replaced by
 	Paths.  Wording updates.
 

@@ -2,7 +2,7 @@
 <title>GIMP - Drawing Shapes with Bezier Tool</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
-<h1>Drawing Shapes with Bezier Tool</h1>
+<h1>Drawing Shapes with the Path Tool</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Kuosmanen_Tuomas">Tuomas Kuosmanen</a> and may not be used 
   without permission of the author.
@@ -10,19 +10,19 @@
 
 <h2>Intention</h2>
 <p>
-  Bezier selection can be used in many creative ways. Maybe the best thing in it is the smooth, beautiful curves it produces. 
-  But you can also use Bezier to create different polygonal shapes if you don't 'pull out the handles'. 
+  The Path Tool (replacing the old Bezier Selection tool) can be used in many creative ways. Maybe the best thing in it is the smooth, beautiful curves it produces. 
+  But you can also use paths to create different polygonal shapes if you don't 'pull out the handles'. 
   Polygonal shapes are especially useful when painting some geometric objects, 
   as you can draw one side at a time (into different layers if you want).
 </p>
 
-<h2>Shapes with Bezier!?</h2>
+<h2>Shapes with Paths!?</h2>
 <p class="images">
-  <img src="box.gif" alt=""/>
+  <img src="box.png" alt=""/>
 </p>
 <p>
   This tutorial is about making simple geometrical shapes with The Gimp. 
-  I will concentrate on the Bezier tool since I find it so useful for this purpose. 
+  I will concentrate on the Path tool since I find it so useful for this purpose. 
   I hope you get some help and new stuff to put in your Gimp Tricks Sack :) I personally use this technique for nearly all my work.
 </p>
 <p>
@@ -30,7 +30,7 @@
   This is not a 'back to basics' -tutorial. You should be familiar with Gimp's dialogs and menus. 
   I was thinking about this, and I did not want to make this an 'entry level' thing, 
   basically to avoid bloating this too big and duplicating other people's work. 
-  <a href="/tutorials/Bezier_Selections/">Beziers are covered in my other tutorial</a>, 
+  <a href="/tutorials/Bezier_Selections/">Paths are covered in my other tutorial</a>, 
   and I recommend you to read it before going further if you find the material here confusing. 
   If you are new to Gimp I suggest you to go to the Gimp homepage in <a href="home:gimp">www.gimp.org</a> and 
   first read through the Documentation section there. 
@@ -40,13 +40,14 @@
 <p>
   First we must <b>create a new image</b> for our creation. Make the <b>size 256x256</b> pixels and choose <b>RGB</b> for the type. 
   The image background should be white. 
-  Open the Layers &amp; Channels -dialog with the right-button-menu: 
-  <span class="filter">&lt;Image&gt; Dialogs -&gt; Layers, Channels &amp; Paths...</span>
+  During this tutorial, you will have to use the Layers tab and optionally the Paths tab from the dock "Layers, Channels, Paths, Undo".  This dock is present in the default installation of the Gimp.  You can also get these tabs using
+  <span class="filter">&lt;Image&gt; Dialogs -&gt; Layers</span> and
+  <span class="filter">&lt;Image&gt; Dialogs -&gt; Paths</span>.
 </p>
 
 <h2>1. Left side</h2>
 <p class="images">
-  <img src="box_numb.gif" alt=""/>
+  <img src="box_numb.png" alt=""/>
 </p>
 <p>
   Now create a new transparent layer, and name it <i>Left_side</i> so you know what layer I'll talk about later on. 
@@ -57,22 +58,24 @@
   Imagine the blue cube on the right side into your canvas, we'll be doing side #1 now.
 </p>
 <p class="images">
-  <img src="left_side.gif" alt=""/>
+  <img src="left_side.png" alt=""/>
 </p>
 <p>
-  <img src="bezier_tool.gif" alt=""/> Choose the Bezier-selection tool and make something like the side #1 on the blue cube, 
+  <img src="bezier_button.png" alt=""/> Choose the Path tool and make something like the side #1 on the blue cube, 
   think about the perspective. (If this causes you trouble, don't worry. You will learn by experience).
 </p>
 <p>
   You can adjust the points' places if you can't get them right at the first try, 
-  see the <a href="/tutorials/Bezier_Selections/">Bezier tutorial</a> for more information on that. 
-  Your bezier should look something like the one on the right. 
+  see the <a href="/tutorials/Bezier_Selections/">Path tutorial</a> for more information on that. 
+  Your path should look something like the one on the right. 
 </p>
 <p>
-  Once you are satisfied with your 'box' click inside it to make the selection.
+  Once you are satisfied with your "box", convert it to a selection
+  using the button "Create Selection from Path" (in the Path Options
+  dialog) or using "Selection to Path" (in the Paths tab).
 </p>
 <p class="images">
-  <img src="gradient1.gif" alt=""/>
+  <img src="gradient1.png" alt=""/>
 </p>
 <p>
   Next we must choose some nice colors for our gradient, 
@@ -80,10 +83,10 @@
   (we are making a blue box, remember?) Something like that on the image nearby.
 </p>
 <p class="images">
-  <img src="colors.gif" alt=""/>
+  <img src="colors.png" alt=""/>
 </p>
 <p>
-  <img src="gradient_tool.gif" alt=""/> Select the gradient-fill tool and, starting from the top-left of the selection, 
+  <img src="gradient_button.png" alt=""/> Select the gradient-fill tool and, starting from the top-left of the selection, 
   'drag' the gradient quite far down-right (see the arrow in the image. This way you get a quite light-colored face for the cube, 
   and it is just what we want here. We also want the lighter end of the gradient to be near our imaginative light source. 
   (The light was coming from the left)
@@ -91,11 +94,11 @@
 
 <h2>2. Right side</h2>
 <p class="images">
-  <img src="gradient2.gif" alt=""/>
+  <img src="gradient2.png" alt=""/>
 </p>
 <p>
   Now on to the right side, side #2. Create a new transparent layer and name it <i>Right_side</i>. 
-  Use the Bezier Tool and try to make the right side of the cube and turn it into a selection.
+  Use the Path Tool and try to make the right side of the cube and turn it into a selection.
 </p>
 <p>
   Take the Gradient Tool again and, still with the same colors, make a gradient from farther up-left 
@@ -108,14 +111,14 @@
 
 <h2>3. Top side</h2>
 <p class="images">
-  <img src="gradient3.gif" alt=""/>
+  <img src="gradient3.png" alt=""/>
 </p>
 <p>
   Our final ultimate task is to create the top, side #3. 
   Again, create a new transparent layer and name it (who quessed? :) <i>Top_side</i>.
 </p>
 <p>
-  Now you probably know we want to make yet one bezier selection and this time the gradient has to be even lighter than in the first side. 
+  Now you probably know we want to make yet another path and this time the gradient has to be even lighter than in the first side. 
   So I suggest you lighten the dark blue color a fair amount, it's easier to get a light gradient that way.
   This time you pull the gradient from left to right, according the arrow in the picture. Once you find the shading look good, 
   you can flatten the image and our little tutorial-cube is finished. 
@@ -124,13 +127,13 @@
 
 <h2>4. Finished Work</h2>
 <p class="images">
-  <img src="finished_image.gif" alt=""/>
+  <img src="finished_image.png" alt=""/>
 </p>
 <p>
   Now you have a cool image of a Light-Source-Shaded Cube. 
-  You can choose <span class="filter">&lt;Image&gt; Layers -&gt; Flatten Image</span> to merge the layers togerher 
+  You can choose <span class="filter">&lt;Image&gt; Image -&gt; Flatten Image</span> to merge the layers togerher 
   so you can save as jpeg or any other format than xcf. Or, better still, from the layers dialog, make the background invisible 
-  and choose <span class="filter">&lt;Image&gt; Layers -&gt; Merge Visible Layers</span> so you will have the background on a 
+  and choose <span class="filter">&lt;Image&gt; Image -&gt; Merge Visible Layers</span> so you will have the background on a 
   separate layer and you can work further on it if you like.
 </p>
 <p>
@@ -149,6 +152,8 @@
 
 <p>
   The original tutorial can be found <a href="tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen">here</a>.
+  <br />
+  It was updated for Gimp 2.0 by Raphaël Quinet.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>

@@ -1,5 +1,8 @@
 2003-01-26 scizzo <scizzo@gimp.org>
 
+	* todo.xhtml: Made some notes. And add my name to the mailinglist
+	thingys.
+
 	* includes/urls_maillist.inc: Removed the GIMPwin list because this
 	list is going to be removed and moved to GIMP Developer list.
 

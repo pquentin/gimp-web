@@ -1,3 +1,10 @@
+2002-11-12 scizzo <scizzo@gimp.org>
+
+        * tutorials/index.html: Add the Photo To Sketch tutorial.
+
+        * tutorials/Photo_To_Sketch/: Made the first port of the
+        Photo To Sketch tutorial.
+
 2002-11-10 carol <carol@gimp.org>
 
         * tutorials/index.html, put the basic tutorial first in the list

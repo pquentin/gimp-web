@@ -1,3 +1,14 @@
+2003-08-25  Raphael Quinet  <quinet@gamers.org>
+
+	* includes/header_posttitle.inc
+	* includes/wgo-admin-init.xhtml
+	* includes/wgo-develop-init.xhtml
+	* includes/wgo-howto-bugs-init.xhtml
+	* includes/wgo-howto-unix-init.xhtml
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-tutorial-init.xhtml: Added a slightly more
+	descriptive alt attribute "[The GIMP]" for the image "thegimp.png"
+	in order to fix at least a part of bug #117380.
 
 2004-08-24  Branko Collin <collin@xs4all.nl>
 

@@ -133,6 +133,7 @@ img.icon {
 
 div.subtitle {
   font-weight: bold;
+  clear: both;
 }
 
 span.filter {
@@ -147,7 +148,6 @@ div.code {
   white-space: pre;
 }
 
-
 #linkbar, #navbar {
   clear: both;
   background: #f5f5f5;
@@ -157,10 +157,6 @@ div.code {
   padding: 5px 5px 5px 5px;
   font-weight: bold;
   text-align: center;
-}
-
-span.linkitem:after {
-  content: " |";
 }
 
 #footerleft {

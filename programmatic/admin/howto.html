@@ -13,17 +13,49 @@
   </p>
   <fieldset>
     <legend><b>http.conf excerpt</b></legend>
-    <pre>
+<pre>
 NameVirtualHost 63.199.184.245:8082
 
 &lt;VirtualHost 63.199.184.245:8082&gt;
     ServerAdmin root@localhost
     DocumentRoot "/home/wgo"
+    Alias /error/ "/home/wgo/error/"
     &lt;Directory "/home/wgo"&gt;
-        AllowOverride Options FileInfo AuthConfig Limit
-        Options Indexes ExecCGI MultiViews SymLinksIfOwnerMatch IncludesNoExec
-        Options +Includes
+      AllowOverride Options FileInfo AuthConfig Limit
+      Options Indexes ExecCGI MultiViews SymLinksIfOwnerMatch IncludesNoExec
+      Options +Includes
     &lt;/Directory&gt;
+    &lt;Directory "/home/wgo/error"&gt;
+        Options MultiViews IncludesNoExec
+        AllowOverride None
+        AddOutputFilter Includes html
+        AddHandler type-map var
+        Order allow,deny
+        Allow from all
+        LanguagePriority en es de fr
+        ForceLanguagePriority Prefer Fallback
+    &lt;/Directory&gt;
+
+    ErrorDocument 400 /error/HTTP_400.html.var
+    ErrorDocument 401 /error/HTTP_401.html.var
+    ErrorDocument 403 /error/HTTP_403.html.var
+    ErrorDocument 404 /error/HTTP_404.html.var
+    ErrorDocument 405 /error/HTTP_405.html.var
+    ErrorDocument 408 /error/HTTP_408.html.var
+    ErrorDocument 410 /error/HTTP_410.html.var
+    ErrorDocument 411 /error/HTTP_411.html.var
+    ErrorDocument 412 /error/HTTP_412.html.var
+    ErrorDocument 413 /error/HTTP_413.html.var
+    ErrorDocument 414 /error/HTTP_414.html.var
+    ErrorDocument 415 /error/HTTP_415.html.var
+    ErrorDocument 500 /error/HTTP_500.html.var
+    ErrorDocument 501 /error/HTTP_501.html.var
+    ErrorDocument 502 /error/HTTP_502.html.var
+    ErrorDocument 503 /error/HTTP_503.html.var
+    ErrorDocument 506 /error/HTTP_506.html.var
+
+    AddType text/xml  .rdf
+    AddType text/xml  .rss
     XBitHack on
     ServerName wgo.mysterious.org
 &lt;/VirtualHost&gt;

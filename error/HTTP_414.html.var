@@ -1,0 +1,89 @@
+Content-language: de
+Content-type: text/html
+Body:----------de--
+<!--#set var="TITLE" value="&Uuml;bergebener URI zu gro&szlig;!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    Der bei der Anfrage &uuml;bermittelte URI &uuml;berschreitet
+    die maximale L&auml;nge.
+    Die Anfrage kann nicht ausgef&uuml;hrt werden.
+    
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------de--
+
+Content-language: en
+Content-type: text/html
+Body:----------en--
+<!--#set var="TITLE" value="Submitted URI too large!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    The length of the requested URL exceeds the capacity limit for this server.
+    The request cannot be processed.
+   
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+<!--#include virtual="include/bottom.html" -->
+----------en--
+
+Content-language: es
+Content-type: text/html
+Body:----------es--
+<!--#set var="TITLE" value="Submitted URI too large!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+	Su solicitud no puede procesarse debido a que la
+	longitud del URL excede la capacidad limite del 
+	servidor. 
+    
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------es--
+
+Content-language: fr
+Content-type: text/html
+Body:----------fr--
+<!--#set var="TITLE" value="L'URI demandee est trop longue!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    La longueur de l'URL demand&eacute;e exc&egrave;de la limite de
+    capacit&egrave; pour ce serveur. Nous ne pouvons donner suite
+    &agrave; votre requ&ecirc;te.
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------fr--
+
+Content-language: sv
+Content-type: text/html
+Body:----------sv--
+<!--#set var="TITLE" value="Submitted URI too large!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    L&auml;ngden p&aring; adressen som efterfr&aring;gas &ouml;verskrider
+    kapacitetsgr&auml;nsen f&ouml;r denna server. F&ouml;rfr&aring;gan kan
+    inte verkst&auml;llas.
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------sv--

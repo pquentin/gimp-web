@@ -1,0 +1,69 @@
+Content-language: de
+Content-type: text/html
+Body:----------de--
+<!--#set var="TITLE" value="Content-Length-Angabe fehlerhaft!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<h2>Die Anfrage kann nicht beantwortet werden.</h2>
+<p>
+    Bei Verwendung der <!--#echo encoding="none" var="REDIRECT_REQUEST_METHOD"-->-Methode
+    mu&szlig; ein korrekter <code>Content-Length</code>-Header
+    angegeben werden. 
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------de--
+
+Content-language: en
+Content-type: text/html
+Body:----------en--
+<!--#set var="TITLE" value="Bad Content-Length!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<p>
+    A request with the <!--#echo encoding="none" var="REDIRECT_REQUEST_METHOD"-->
+    method requires a valid <code>Content-Length</code> header.
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------en--
+
+Content-language: fr
+Content-type: text/html
+Body:----------fr--
+<!--#set var="TITLE" value="Longueur du contenu ill&eacute;gal!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<p>
+    Une requ&ecirc;te utilisant la m&eacute;thode <!--#echo encoding="none" var="REDIRECT_REQUEST_METHOD"-->
+    n&eacute;cessite un header valable <code>Content-Length</code> (indiquant la longueur).
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------fr--
+
+Content-language: sv
+Content-type: text/html
+Body:----------sv--
+<!--#set var="TITLE" value="Felaktig Content-Length!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<p>
+    En f&ouml;rfr&aring;gan med <!--#echo encoding="none" var="REDIRECT_REQUEST_METHOD"-->
+    metoden kr&auml;ver ett korrekt <code>Content-Length</code> huvud.
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------sv--

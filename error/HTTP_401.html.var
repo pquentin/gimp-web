@@ -1,0 +1,128 @@
+Content-language: de
+Content-type: text/html
+Body:----------de--
+<!--#set var="TITLE" value="Authentikation fehlgeschlagen!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<p>
+    Der Server konnte nicht verifizieren, ob Sie authorisiert sind,
+    auf den URL "<!--#echo encoding="url" var="REDIRECT_URL"-->" zuzugreifen.
+    Entweder wurden falsche Referenzen (z.B. ein falsches Passwort)
+    angegeben oder ihr Browser versteht nicht, wie die geforderten
+    Referenzen zu &uuml;bermitteln sind.
+</p>
+<p>
+    Sofern Sie f&uuml;r den Zugriff berechtigt sind, &uuml;berpr&uuml;fen Sie bitte
+    die eingegebene User-ID und das Passwort und versuchen Sie es erneut.  
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------de--
+
+Content-language: en
+Content-type: text/html
+Body:----------en--
+<!--#set var="TITLE" value="Authentication required!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<p>
+    This server could not verify that you are authorized to access
+    the URL "<!--#echo encoding="url" var="REDIRECT_URL" -->".
+    You either supplied the wrong credentials (e.g., bad password), or your
+    browser doesn't understand how to supply the credentials required.
+</p>
+<p>
+    In case you are allowed to request the document, please
+    check your user-id and password and try again.
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------en--
+
+Content-language: es
+Content-type: text/html
+Body:----------es--
+<!--#set var="TITLE" value="Authentication required!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<p>
+    El servidor no puede certificar que usted este autorizado
+    para accesar el URL "<!--#echo encoding="url" var="REDIRECT_URL" -->".
+    Usted pudo suministrar informaci&oacute;n incorrecta accidentalmente
+    (ejem. una contrase&ntilde;a inv&aacute;lida) o, el buscador no sabe 
+    como suministrar la informaci&oacute;n requerida.
+</p>
+<p>
+    En caso de que a usted le este permitido el uso del
+    documento requerido, le solicitamos de la manera mas atenta
+    que porfavor vuelva a intentar la operaci&oacute;n suministrando
+    nuevamente su numero de identificaci&oacute;n y su contrase&ntilde;a.
+</p>
+
+ Muchas Gracias.
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------es--
+
+Content-language: fr
+Content-type: text/html
+Body:----------fr--
+<!--#set var="TITLE" value="Autorisation requise!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<p>
+    Ce server n'a pas &eacute;t&eacute; en mesure de v&eacute;rifier que
+    vous &ecirc;tes autoris&eacute; &agrave; acc&eacute;der &agrave; cette
+    URL "<!--#echo encoding="url" var="REDIRECT_URL" -->".
+
+    Vous avez ou bien fourni des coordonn&eacute;es erron&eacute;es
+    (p.ex. mot de passe inexact) ou bien votre navigateur ne parvient
+    pas &agrave; fournir les donn&eacute;es exactes.
+</p>
+<p>
+    Si vous &ecirc;tez autoris&eacute; &agrave; requ&eacute;rir le document,
+    veuillez v&eacute;rifier votre nom d'utilisateur et votre mot de passe
+    et r&eacute;essayer.
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------fr--
+
+Content-language: sv
+Content-type: text/html
+Body:----------sv--
+<!--#set var="TITLE" value="Autentisering kr&auml;vs!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+<p>
+    Servern kunde inte verifiera att du har till&aring;telse att bes&ouml;ka 
+    adressen "<!--#echo encoding="url" var="REDIRECT_URL" -->".
+    Antingen angav du felaktiga uppgifter (ex. fel l&ouml;senord) eller s&aring;
+    st&ouml;djer inte din webbl&auml;sare detta autentiseringss&auml;tt.
+</p>
+<p>
+    Om du har till&aring;telse att bes&ouml;ka sidan, v&auml;nligen kontrollera ditt 
+    anv&auml;ndarnamn samt l&ouml;senord och f&ouml;rs&ouml;k igen.
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------sv--

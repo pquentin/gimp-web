@@ -1,0 +1,153 @@
+Content-language: de
+Content-type: text/html
+Body:----------de--
+<!--#set var="TITLE" value="Objekt nicht gefunden!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<h2>Der angeforderte URL konnte auf dem Server nicht gefunden werden.</h2>
+<p>
+  <!--#if expr="$HTTP_REFERER" -->
+
+    Der Link auf der
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">verweisenden
+    Seite</a> scheint falsch oder nicht mehr aktuell zu sein.
+    Bitte informieren Sie den Autor
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">dieser Seite</a>
+    &uuml;ber den Fehler.
+
+  <!--#else -->
+
+    Sofern Sie den URL manuell eingegeben haben,
+    &uuml;berpr&uuml;fen Sie bitte die Schreibweise und versuchen Sie es erneut.
+
+  <!--#endif -->
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------de--
+
+Content-language: en
+Content-type: text/html
+Body:----------en--
+<!--#set var="TITLE" value="Object not found!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Eeek!</h1>
+<h2>The requested URL was not found on this server.</h2>
+
+<p>
+  <!--#if expr="$HTTP_REFERER" -->
+    The link on the
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">referring
+    page</a> seems to be wrong or outdated.  Please inform the author of
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">that page</a>
+    about this error.
+
+  <!--#else -->
+    If you entered the URL manually please check your
+    spelling and try again.
+  <!--#endif -->
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------en--
+
+Content-language: es
+Content-type: text/html
+Body:----------es--
+<!--#set var="TITLE" value="Object not found!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<h2>El URL requerido no ha sido localizado en este servidor.</h2>
+<p>
+  <!--#if expr="$HTTP_REFERER" -->
+
+    El URL en la
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">p&aacute;gina
+    referida</a> parece tener algun error o estar fuera de tiempo. Porfavor
+    comunique al autor de
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">la
+    p&aacute;gina</a> acerca del error.
+
+  <!--#else -->
+
+    Si usted provisiono el URL de manera manual le solicitamos
+    que porfavor revise los datos e intente de nuevo.
+
+  <!--#endif -->
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------es--
+
+Content-language: fr
+Content-type: text/html
+Body:----------fr--
+<!--#set var="TITLE" value="Objet non trouv&eacute;!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<h2>L'URL requise n'a pu etre trouv&eacute;e sur ce serveur.</h2>
+<p>
+  <!--#if expr="$HTTP_REFERER" -->
+
+    La r&eacute;f&eacute;rence sur
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">la page
+    cit&eacute;e</a>
+    semble &ecirc;tre erron&eacute;e ou perim&eacute;e. Nous vous prions
+    d'informer l'auteur de
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">cette page</a>
+    de cette erreur.
+
+  <!--#else -->
+
+    Si vous avez tap&eacute; l'URL &agrave; la main, veuillez v&eacute;rifier
+    l'orthographe et r&eacute;essayer.
+
+  <!--#endif -->
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------fr--
+
+Content-language: sv
+Content-type: text/html
+Body:----------sv--
+<!--#set var="TITLE" value="Objektet hittas ej!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+<h2>Den efterfr&aring;gade adressen hittades inte p&aring; denna server.</h2>
+<p>
+  <!--#if expr="$HTTP_REFERER" -->
+
+    L&auml;nken p&aring; den
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">tidigare sidan</a> 
+    verkar vara felaktig eller inaktuell. V&auml;nligen informera f&ouml;rfattaren av
+    <a href="<!--#echo encoding="url" var="HTTP_REFERER"-->">sidan</a>
+    om felet.
+
+  <!--#else -->
+
+    Om du skrev in adressen manuellt s&aring; kontrollera din stavning och
+    f&ouml;rs&ouml;k igen.
+
+  <!--#endif -->
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------sv--

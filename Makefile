@@ -24,11 +24,14 @@ SSITARGETS=$(SSISOURCES:.ssi=.html)
 
 TARGETS=${RWTARGETS} ${SSITARGETS}
 
-.PHONY: all usage webtools install clean cvsignore programmatic
+.PHONY: all usage webtools install clean cvsignore programmatic rsync includes crontab 
 
-all: usage webtools ${TARGETS}
+all: usage includes rsync webtools crontab ${TARGETS}
 	rsync -rlt --delete --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
+
+includes:
+	rsync -rlt --delete --exclude-from=install.exclude includes ${DocumentRoot}
 
 usage:
 	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; exit 1; fi
@@ -39,8 +42,12 @@ webtools:
 programmatic:
 	make -C programmatic all
 
+crontab:
+	make -C crontab all
+
 install: all
 	make -C programmatic install
+	make -C crontab install
 
 clean:
 	make -C programmatic clean

@@ -1,0 +1,87 @@
+Content-language: de
+Content-type: text/html
+Body:----------de--
+<!--#set var="TITLE" value="Zeitlimit &uuml;berschritten!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    Der Server konnte nicht mehr l&auml;nger auf die Beendigung
+    der Browseranfrage warten; die Netzwerkverbindung wurde
+    vom Server geschlossen.
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------de--
+
+Content-language: en
+Content-type: text/html
+Body:----------en--
+<!--#set var="TITLE" value="Request time-out!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    The server closed the network connection because the browser
+    didn't finish the request within the specified time.
+   
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------en--
+
+Content-language: es
+Content-type: text/html
+Body:----------es--
+<!--#set var="TITLE" value="Request time-out!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+	El servidor ha cerrado la conecci&oacute;n de red 
+	debido a que el buscador no termino la solicitud
+	dentro del tiempo especificado.
+    
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------es--
+
+Content-language: fr
+Content-type: text/html
+Body:----------fr--
+<!--#set var="TITLE" value="Requ&ecirc;te trop longue !" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    Le serveur a ferm&eacute; la connection car le navigateur n'a pas 
+    fini la requ&ecirc;te dans le temps sp&eacute;cifi&eacute;.
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------fr--
+
+Content-language: sv
+Content-type: text/html
+Body:----------sv--
+<!--#set var="TITLE" value="Request time-out!" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - <!--#echo var="TITLE" --></title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<h1>Eeek!</h1>
+
+    Servern st&auml;ngde f&ouml;rbindelsen d&auml;rf&ouml;r att
+    webbl&auml;saren inte avslutade f&ouml;rfr&aring;gan inom
+    f&ouml;rbest&auml;md tid.
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->
+----------sv--

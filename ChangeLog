@@ -1,6 +1,32 @@
-2003-07-20  Helvetix Victorinox  <helvetix@gimp.org>
+2003-07-21  Helvetix Victorinox  <helvetix@gimp.org>
 
-	* about/index.htrw: Fixed bad url rewrite line. (fixes bug #117194)
+	* install.sh
+	* Makefile: tune up, code reduction.
+
+2003-07-20  Helvetix Victorinox  <helvetix@gimp.org>
+	* error/
+	* error/HTTP_400.html.var
+	* error/HTTP_401.html.var
+	* error/HTTP_403.html.var
+	* error/HTTP_404.html.var
+	* error/HTTP_405.html.var
+	* error/HTTP_408.html.var
+	* error/HTTP_410.html.var
+	* error/HTTP_411.html.var
+	* error/HTTP_412.html.var
+	* error/HTTP_413.html.var
+	* error/HTTP_414.html.var
+	* error/HTTP_501.html.var
+	* error/HTTP_502.html.var
+	* error/HTTP_503.html.var
+	* error/HTTP_506.html.var:
+	New directory to contain customised version of httpd
+	server error reports.
+
+	* programmatic/admin/howto.html: updated with new details for the
+	httpd.conf file
+
+	* about/index.htrw: Fixed bad url rewrite line. (fixes part of bug #117194)
 
 	* programmatic/downloads/mirrorfmt.py: be tidy and close the open file before exiting.
 

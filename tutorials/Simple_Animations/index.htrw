@@ -20,21 +20,24 @@
   <img src="flower-layers.png" alt=""/>
 </p>
 <p>
-  We'll create a very simple web banner. Let's start with a new image 468x60 px. Use white as the background color. 
+  We'll create a very simple web banner. Let's start with a new image <b>468x60 px</b>. Use white as the background color. 
   Create new transparent layer. Select the whole image with <kbd>Ctrl+A</kbd> and fill it with black (<kbd>Ctrl+,</kbd>). 
-  Shrink the selection by 1 px ( <span class="filter">&lt;image&gt; Selection -&gt; shrink</span>) and delete the selection with <kbd>Ctrl+K</kbd>. 
-  We created a 1 px frame around out banner.
+  Shrink the selection by <b>1 px</b> (<span class="filter">&lt;image&gt; Selection -&gt; shrink</span>) 
+  and delete the selection with <kbd>Ctrl+K</kbd>. We created a 1 px frame around out banner.
 </p>
 <p>
-  Now it's time to put our logo or the main theme picture into the banner. I have prepared a masked-out flower you see on the picture on the left. 
-  I just pasted the flower below the border frame, used alpha to selection, 
+  Now it's time to put our logo or the main theme picture into the banner. 
+  I have prepared a masked-out flower you see on the picture on the left. 
+  I just pasted the flower below the border frame, used <b>alpha to selection</b>, 
   created an empty layer below it and filled the selection with black using <kbd>Ctrl+,</kbd>. 
-  After that I blurred the shadow using Gaussian blur RLE and ofset it by 2px to bottom right. I couldn't resist adding the interlace effect using 
-  <span class="filter">&lt;image&gt; Filters -&gt; Render -&gt; Grid</span> and a layer mask. In that layer mask i applied a b/w gradient, 
-  so that the left of the flower is not interlaced.
+  After that I blurred the shadow using <b>Gaussian blur RLE</b> 
+  and offset it by 2px to bottom right. I couldn't resist adding the interlace effect using 
+  <span class="filter">&lt;image&gt; Filters -&gt; Render -&gt; Grid</span> and a layer mask. 
+  In that layer mask i applied a b/w gradient, so that the left of the flower is not interlaced.
 </p>
 <p>
-  This part of the tutorial is not the key element, so feel free to experiment. Once you're ready flatten the image using the 
+  This part of the tutorial is not the key element, so feel free to experiment. 
+  Once you're ready flatten the image using the 
   <span class="filter">&lt;image&gt; Layers -&gt; Flatten Image</span>. 
 </p>
 
@@ -43,14 +46,16 @@
   <img src="flower-text.png" alt=""/>
 </p>
 <p>
-  Now we're ready for the actual animation work. We will be creating a banner consisting of, say three lines of text being animated. 
-  Each frame will consist of the flower image and accompanied by some text. I don't want to make this boring, so lets make it three frames. 
-  The first step will naturally be to copy our flattened image two times using the duplicate layer button in the layers window.
+  Now we're ready for the actual animation work. We will be creating a banner consisting of, 
+  say three lines of text being animated. Each frame will consist of the flower image and 
+  accompanied by some text. I don't want to make this boring, so lets make it three frames. 
+  The first step will naturally be to copy our flattened image two times using the 
+  <b>duplicate layer</b> button in the layers window.
 </p>
 <p>
   Then we'll use the standard text tool to put a small text note on every frame. 
   After typing the text onto the frame, GIMP will create a floating selection, 
-  that you need to position right using the move tool and anchor using <kbd>Ctrl+H</kbd>. 
+  that you need to position right using the <b>move</b> tool and anchor using <kbd>Ctrl+H</kbd>. 
   The positioning might be crucial for the final animation, so you can use the 
   following trick to make the positioning a piece of cake. Before using the text tool, 
   set the layer (frame) transparency to a lower value, so you could see the layer below it. 
@@ -62,9 +67,11 @@
   <img src="flower-anim.png" alt=""/>
 </p>
 <p>
-  In every GIF animation you are allowed to specify the delay between frames. That way you can create a 12 second animation using only a few frames, 
-  because the delay does not have to be constant. In GIMP you specify the delay as a layer comment. Just double-click the layer comment in the layers' 
-  window and a delay in ms enclosed in brackets ().
+  In every GIF animation you are allowed to specify the delay between frames. 
+  That way you can create a 12 second animation using only a few frames, 
+  because the delay does not have to be constant. In GIMP you specify 
+  the delay as a layer comment. Just double-click the layer comment in the layers' 
+  window and a delay in <b>ms</b> enclosed in brackets <b>()</b>.
 </p>
 <p>
   To check if the timing is good, you can preview the animation using the 
@@ -79,20 +86,23 @@
   <img src="easyanim.gif" alt=""/>
 </p>
 <p>
-  In the last step, we'll use a very handy function for applying a filter to multiple layers. 
+  In the last step, we'll use a very handy function for <i>applying a filter to multiple layers</i>. 
   Before we do that, we need to create a new image out of the third frame. 
   In GIMP 1.1+ it's as simple as dragging the layer preview from the layers window to the toolbar. 
-  Now duplicate the image four times. With a rectangular select tool, 
-  draw a selction around the text. Now we're ready to apply a gaussian blur filter on every layer using varying parameters. Use the 
-  <span class="filter">&lt;image&gt; Filters -&gt; Filter All Layers</span> function and select plug-in-gauss-rle2 
-  from the list and press the apply varying button. 
+  Now duplicate the image <i>four times</i>. With a rectangular select tool, 
+  draw a selction around the text. Now we're ready to apply a 
+  <b>gaussian blur</b> filter on every layer using varying parameters. Use the 
+  <span class="filter">&lt;image&gt; Filters -&gt; Filter All Layers</span> function 
+  and select <b>plug-in-gauss-rle2</b> from the list and press the <b>apply varying</b> button. 
   The blur dialog pops up. Now we need to specify parameters for the lowest layer in the stack, ie. our first frame.
 </p>
 <p>
-  We want to blur the text away in time, so for the first frame, let's specify a lower value. We'll blur in horizontal direction only, 
-  so let's make it v:0 h:2. After you click OK another dialog shows up. 
-  Here, choose continue and specify parameters for the last frame. We'll go for 20 px horizontal blur. 
-  You can backup the progress, but for now we will make the filter apply on all layers inbetween by clicking on continue in the next dialog. 
+  We want to blur the text away in time, so for the first frame, let's specify a lower value. 
+  We'll blur in horizontal direction only, so let's make it <b>v:0 h:2</b>. 
+  After you click <b>OK</b> another dialog shows up. Here, choose <b>continue</b> and specify 
+  parameters for the last frame. We'll go for <b>20 px</b> horizontal blur. 
+  You can backup the progress, but for now we will make the filter 
+  apply on all layers inbetween by clicking on <b>continue</b> in the next dialog. 
   All we need to do now is to drag the layers back to the original image.
 </p>
 
@@ -103,18 +113,26 @@
 <p>
   Now we only need to save our animation as GIF. Before we do that, let's optimize the animation using the 
   <span class="filter">&lt;image&gt; Filters -&gt; Animation -&gt; Animation Optimize</span> function. 
-  This will create a new image using a different mode than what we have now. You can use two different modes for every frame of your animation. 
-  You can either use the replace mode (default), which will replace the old frame with the new one. It's like taking the frame out before adding a new one. 
-  The other is the combine method, in which the new frame is added to the previous frame. That way only changes need to be updated. 
-  That's what animation optimize basically does. The file size gets tremendously smaller. Now we need to index the image using 
+  This will create a new image using a different mode than what we have now. 
+  You can use two different modes for every frame of your animation. 
+  You can either use the <b>replace</b> mode (default), which will replace 
+  the old frame with the new one. It's like taking the frame out before adding a new one. 
+  The other is the <b>combine</b> method, in which the new frame is added to the previous frame. 
+  That way only changes need to be updated. 
+  That's what <b>animation optimize</b> basically does. The file size gets tremendously smaller. 
+  Now we need to index the image using 
   <span class="filter">&lt;image&gt;Image-&gt; Mode -&gt; Indexed</span> function (<kbd>Alt+I</kbd>).
 </p>
 <p>
-  Try to use as little colors as possible and avoid dithering. Both number of colors and dithering tend to enlarge the filesize dramaticaly. 
-  I used no color dithering and generated 32 color pallette. The file size of the banner is about 7kB. If you now save the image as GIF, 
-  GIMP will ask whether it should save the image as an animation, which is exactly what we need. In the save as GIF dialog, you can specify the default delay 
-  (in our example it will be used for the blured frames) and disposal method. You can use your WWW browser to check the animation, or you can use the animation 
-  playback function in the animation section of the image menu.
+  Try to use as little colors as possible and avoid dithering. 
+  Both number of colors and dithering tend to enlarge the filesize dramaticaly. 
+  I used no color dithering and generated 32 color pallette. 
+  The file size of the banner is about 7kB. If you now save the image as GIF, 
+  GIMP will ask whether it should save the image as an animation, 
+  which is exactly what we need. In the save as GIF dialog, you can specify the default delay 
+  (in our example it will be used for the blured frames) and disposal method. 
+  You can use your WWW browser to check the animation, 
+  or you can use the <b>animation playback</b> function in the <b>animation</b> section of the image menu.
 </p>
 <p class="images">
   <img src="flower-banner.gif" alt=""/>

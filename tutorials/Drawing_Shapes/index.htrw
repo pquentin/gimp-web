@@ -30,13 +30,15 @@
   This is not a 'back to basics' -tutorial. You should be familiar with Gimp's dialogs and menus. 
   I was thinking about this, and I did not want to make this an 'entry level' thing, 
   basically to avoid bloating this too big and duplicating other people's work. 
-  Beziers are covered in my other tutorial, and I recommend you to read it before going further if you find the material here confusing. 
-  If you are new to Gimp I suggest you to go to the Gimp homepage in www.gimp.org and first read through the Documentation section there. 
+  <a href="/tutorials/Bezier_Selections/">Beziers are covered in my other tutorial</a>, 
+  and I recommend you to read it before going further if you find the material here confusing. 
+  If you are new to Gimp I suggest you to go to the Gimp homepage in <a href="home:gimp">www.gimp.org</a> and 
+  first read through the Documentation section there. 
 </p>
 
 <h2>Let's get started!</h2>
 <p>
-  First we must create a new image for our creation. Make the size 256x256 pixels and choose RGB for the type. 
+  First we must <b>create a new image</b> for our creation. Make the <b>size 256x256</b> pixels and choose <b>RGB</b> for the type. 
   The image background should be white. 
   Open the Layers &amp; Channels -dialog with the right-button-menu: 
   <span class="filter">&lt;Image&gt; Dialogs -&gt; Layers, Channels &amp; Paths...</span>
@@ -47,8 +49,9 @@
   <img src="box_numb.gif" alt=""/>
 </p>
 <p>
-  Now create a new transparent layer, and name it Left_side so you know what layer I'll talk about later on. 
-  Make sure you have the new layer active by checking the layers-dialog. If it is not selected, click the layer's name in the dialog.
+  Now create a new transparent layer, and name it <i>Left_side</i> so you know what layer I'll talk about later on. 
+  Make sure you have the new layer active by checking the layers-dialog. 
+  If it is not selected, click the layer's name in the dialog.
 </p>
 <p>
   Imagine the blue cube on the right side into your canvas, we'll be doing side #1 now.
@@ -61,7 +64,8 @@
   think about the perspective. (If this causes you trouble, don't worry. You will learn by experience).
 </p>
 <p>
-  You can adjust the points' places if you can't get them right at the first try, see the  Bezier tutorial  for more information on that. 
+  You can adjust the points' places if you can't get them right at the first try, 
+  see the <a href="/tutorials/Bezier_Selections/">Bezier tutorial</a> for more information on that. 
   Your bezier should look something like the one on the right. 
 </p>
 <p>
@@ -71,7 +75,8 @@
   <img src="gradient1.gif" alt=""/>
 </p>
 <p>
-  Next we must choose some nice colors for our gradient, choose white for the foreground color and some dark-blue for the background 
+  Next we must choose some nice colors for our gradient, 
+  choose white for the foreground color and some dark-blue for the background 
   (we are making a blue box, remember?) Something like that on the image nearby.
 </p>
 <p class="images">
@@ -89,7 +94,7 @@
   <img src="gradient2.gif" alt=""/>
 </p>
 <p>
-  Now on to the right side, side #2. Create a new transparent layer and name it Right_side. 
+  Now on to the right side, side #2. Create a new transparent layer and name it <i>Right_side</i>. 
   Use the Bezier Tool and try to make the right side of the cube and turn it into a selection.
 </p>
 <p>
@@ -106,13 +111,15 @@
   <img src="gradient3.gif" alt=""/>
 </p>
 <p>
-  Our final ultimate task is to create the top, side #3. Again, create a new transparent layer and name it (who quessed? :) Top_side.
+  Our final ultimate task is to create the top, side #3. 
+  Again, create a new transparent layer and name it (who quessed? :) <i>Top_side</i>.
 </p>
 <p>
   Now you probably know we want to make yet one bezier selection and this time the gradient has to be even lighter than in the first side. 
   So I suggest you lighten the dark blue color a fair amount, it's easier to get a light gradient that way.
   This time you pull the gradient from left to right, according the arrow in the picture. Once you find the shading look good, 
-  you can flatten the image and our little tutorial-cube is finished. Now apply for your 'Cube Gimp Licence' from the nearest Gimp Station ;)
+  you can flatten the image and our little tutorial-cube is finished. 
+  Now apply for your 'Cube Gimp Licence' from the nearest Gimp Station ;)
 </p>
 
 <h2>4. Finished Work</h2>

@@ -14,9 +14,12 @@
   <img src="pr_red.png" alt="" />
 </p>
 <p>
-  This tutorial shows you how you can effeciently replace the background of an image with another in GIMP, through the use of the color to alpha plug-in.
-  The aim is to show the advantages of using the color to alpha plug-in over selection-based techniques. To illustrate this, this tutorial will use the above
-  images as source and destination. This tutorial doesn't address the complexities of handling real-world photos in this manner, but does briefly discuss it at the end.
+  This tutorial shows you how you can effeciently replace the background of an image with another in GIMP, 
+  through the use of the color to alpha plug-in.
+  The aim is to show the advantages of using the color to alpha plug-in over selection-based techniques. 
+  To illustrate this, this tutorial will use the above
+  images as source and destination. This tutorial doesn't address the complexities of 
+  handling real-world photos in this manner, but does briefly discuss it at the end.
 </p>
 
 <h2>Why Not a Selection</h2>
@@ -36,14 +39,25 @@
   <img src="pr3.png" alt="" />
 </p>
 <p>
-  The common approach to doing many things in GIMP is to first get a good selection. However, when removing an anti-aliased object from its background 
-  is not a good idea, as shown above. You'll note that each of the three zoomed in selections above have varying amounts of the green-blue mix selected.
-  When these are filled, we are left with flat black and slightly blueish-green pixels between them, or no transition to black at all.
-  Compare each with the target image below. The left one has a blue border around it. This looks somewhat neat, but not what we're going for. The middle
-  one is close, but there are some ugly visble pixels still. You can try getting rid of all the ugly pixels, 
+  The common approach to doing many things in GIMP is to first get a good selection. 
+  However, when removing an anti-aliased object from its background is not a good idea, as shown above. 
+</p>
+<p>
+  You'll note that each of the three zoomed in selections above have varying amounts of the green-blue mix selected.
+  When these are filled, we are left with flat black and slightly blueish-green pixels between them, 
+  or no transition to black at all.
+</p>
+<p>
+  Compare each with the target image below. The left one has a blue border around it. 
+  This looks somewhat neat, but not what we're going for. The middle one is close, 
+  but there are some ugly visble pixels still. You can try getting rid of all the ugly pixels, 
   but then you'll end up with something jagged like on the right.
-  You can spend hours trying to find something that will work perfectly, but you won't. Anything short of the rightmost image has some blue in the pixel,
-  which will stick out. You can go too far, and blend it back to something close, but this is time consuming. Instead, may I suggest the rest of the tutorial?
+</p>
+<p>
+  You can spend hours trying to find something that will work perfectly, but you won't. 
+  Anything short of the rightmost image has some blue in the pixel,
+  which will stick out. You can go too far, and blend it back to something close, 
+  but this is time consuming. Instead, may I suggest the rest of the tutorial?
 </p>
 
 <h2>Step 1</h2>

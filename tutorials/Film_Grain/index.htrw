@@ -9,7 +9,8 @@
 
 <h2>Intention</h2>
 <p>
-  This tutorial assumes a patched version of GIMP 1.2.2. Please don't distribute binaries which include this patch; 
+  This tutorial assumes a <a href="gimp-grey-modes.diff">patched</a> version of GIMP 1.2.2. 
+  Please don't distribute binaries which include this patch; 
   it creates non-standard XCF files, which would suprise users terribly. Real-world images have lots of noise: 
   film grain, scanner lines, CCD noise, paper texture, and just about anything else you can imagine. Computer-generated
   images, on the other hand, tend to be too real. If you need to make computer-generated images look like real-world ones,
@@ -30,16 +31,20 @@
   <li>Take a noisy image.</li>
   <li>Duplicate it into a new layer.</li>
   <li>Blur it to remove the noise.</li>
-  <li>Set the blurred layer to Grey Subtraction mode to extract the noise. (You need to install the above patch to get this mode.)</li>
+  <li>Set the blurred layer to <b>Grey Subtraction</b> mode to extract the noise. 
+  (You need to install the above patch to get this mode.)</li>
   <li>Flatten the image.</li>
   <li>Choose an interesting area of the noise, and make it into a tileable pattern.</li>
 </ol>
 <p class="images">
-  <img src="film-grain-vertical.jpg" alt=""/>
+  <img src="film-grain-vertical.jpg" alt=""/>(<a href="film-grain-vertical.pat">GIMP pattern file</a>)
 </p>
 <p>
-  Some good ways of making tileable patterns include Make Seamless, the Resynthesizer and Homogenizer, mirroring, and hand-editing. You'll have to experiment a bit.
-  In the following example, we'll use a weird, vertically-striped noise pattern. It looks like some kind of scanner noise, or perhaps an artifact of old newsprint.
+  Some good ways of making tileable patterns include <b>Make Seamless</b>, 
+  the <a href="http://www.csse.monash.edu.au/~pfh/resynthesizer/">Resynthesizer and Homogenizer</a>, 
+  mirroring, and hand-editing. You'll have to experiment a bit.
+  In the following example, we'll use a weird, vertically-striped noise pattern. 
+  It looks like some kind of scanner noise, or perhaps an artifact of old newsprint.
 </p>
 
 <h2>Ruining a Perfectly Good Image</h2>
@@ -68,7 +73,8 @@
   <img src="sailboat-04-grain-added.jpg" alt=""/>
 </p>
 <p>
-  Position the noise layer above the image layer, and set the mode to Grey Addition. (Again, this won't work unless the patch has been installed.)
+  Position the noise layer above the image layer, and set the mode to <b>Grey Addition</b>. 
+  (Again, this won't work unless the patch has been installed.)
 </p>
 
 <h2>Step 4</h2>
@@ -76,10 +82,13 @@
   <img src="sailboat-05-luminosity-blurred.jpg" alt=""/>
 </p>
 <p>
-  So far, so good. But the noise is too strong in the shadows and highlights of the image. To demphasize it, we can use a layer mask.
+  So far, so good. But the noise is too strong in the shadows and highlights of the image. 
+  To demphasize it, we can use a layer mask.
   <br />
-  First, add a layer mask to the noise layer. Then, make a copy of the image, gaussian blur it with a radius of 15 pixels, and paste 
-  the blurred image into the layer mask. Use <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span> to swap bright for dark. 
+  First, add a layer mask to the noise layer. Then, make a copy of the image, 
+  gaussian blur it with a radius of 15 pixels, and paste 
+  the blurred image into the layer mask. 
+  Use <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span> to swap bright for dark. 
   This will cause the grain to show through strongly in the shadows and midtones, but not in the highlights.
 </p>
 
@@ -92,19 +101,21 @@
   We want to make the midtones bright, and the shadows and hightlights dark.
   You can adjust the curves to taste. Curves Dialog This increases the grain in the midtones, and reduces it elsewhere.
   <br />
-  Here's the Layers, Channels &amp; Paths dialog for the finished image.
+  Here's the <b>Layers, Channels &amp; Paths</b> dialog for the finished image.
 </p>
 
 <h2>Related Techniques</h2>
 <p>
-  You can use various brushes in the mask layer to selectively edit the grain. You can also use the bucket tool in Pattern Fill, Grey Addition 
-  mode to fill a selection with grain directly.
+  You can use various brushes in the mask layer to selectively edit the grain. 
+  You can also use the bucket tool in <b>Pattern Fill</b>, <b>Grey Addition</b> mode to fill a selection with grain directly.
   <br />
   Many kinds of noise can be created using 
   <span class="filter">&lt;Image&gt; Filters -&gt; Noise -&gt; Scatter HSV</span>. You can apply this directly to an image, 
   or to a film grain pattern.
   <br />
-  To denoise an image, try <span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Selective Guassian Blur</span>. It's slow, but very nifty.
+  To denoise an image, 
+  try <span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Selective Guassian Blur</span>. 
+  It's slow, but very nifty.
 </p>
 
 <p>

@@ -55,7 +55,8 @@
 </p>
 <p>
   It's getting funny now: Use the bumpmap plugin with the blurred text layer as a bumpmap on the plasma layer. 
-  You can play with the other parameters, but they have sensible defaults. You'll get the image to the left. Now (still on the plasma layer) 
+  You can play with the other parameters, but they have sensible defaults. 
+  You'll get an image like the one above. Now (still on the plasma layer) 
   choose Add layer mask from the layer dialog menu. Choose the mask to be white. Nothing will change on the image for now, 
   but the layer dialog will look like this:
 </p>
@@ -72,8 +73,10 @@
 </p>
 <p>
   Now activate the text layer again. (you don't have to make the layers on top invisible to work on this layer. 
-  It's enough that you activate it in the layers dialog.) Now do <span class="filter">&lt;Image&gt; Edit -&gt; Copy</span>. Make sure you have the mask of the top 
-  layer selected and the layer is activated. Choose <span class="filter">&lt;Image&gt; Edit -&gt; Paste</span>. You will again get a floating selection, 
+  It's enough that you activate it in the layers dialog.) 
+  Now do <span class="filter">&lt;Image&gt; Edit -&gt; Copy</span>. Make sure you have the mask of the top 
+  layer selected and the layer is activated. 
+  Choose <span class="filter">&lt;Image&gt; Edit -&gt; Paste</span>. You will again get a floating selection, 
   shown in the layer dialog like this:
 </p>
 <p class="images">
@@ -102,16 +105,20 @@
   Now you'll see that the image of the logo isn't very sharp. We'll change this now. Make sure you have selected the plasma 
   layer's mask and open <span class="filter">&lt;Image&gt; Image -&gt; Adjust -&gt; Levels</span>. 
   This tool is one of the most important tools you have! Play with the little 
-  triangles you'll see in the two grey gradients and watch their effect on the image. For now, try to achieve something like the following:
+  triangles you'll see in the two grey gradients and watch their effect on the image. 
+  For now, try to achieve something like the following:
 </p>
 <p class="images">
   <img src="tut-basic-dia-6.gif" alt="" />
 </p>
 <p>
   What we do here is making the border of the mask sharper, and by that means, sharpening the whole picture 
-  (the area which is neither 100% opaque nor transparent will become smaller). But we can easily avoid the picture getting pixel-steps by 
-  leaving still a smooth transition between opaque and transparent parts of the layer. (If you didn't realize it by now - I bet you did - the 
-  layer mask works in such a way that all black parts of the mask will become transparent parts of the layer and all white parts will stay opaque
+  (the area which is neither 100% opaque nor transparent will become smaller). 
+  But we can easily avoid the picture getting pixel-steps by 
+  leaving still a smooth transition between opaque and transparent parts of the layer. 
+  (If you didn't realize it by now - I bet you did - the 
+  layer mask works in such a way that all black parts of 
+  the mask will become transparent parts of the layer and all white parts will stay opaque
   (with smooth transitions realized by values of grey).
 </p>
 
@@ -120,22 +127,26 @@
   <img src="tut-basic-7.gif" alt="" />
 </p>
 <p>
-  Using the layer menu you will have noticed the entry Duplicate Layer. Use this now. Then use Apply Layer Mask and Lower Layer which should 
+  Using the layer menu you will have noticed the entry Duplicate Layer. 
+  Use this now. Then use Apply Layer Mask and Lower Layer which should 
   leave you with something like this:
 </p>
 <p class="images">
   <img src="tut-basic-dia-7.gif" alt="" />
 </p>
 <p>
-  Make sure you checked Preserve Transparency and then use the paint tool to make the copy of the logo black (You don't have to be careful: 
-  The preserve transparency button will let you paint only on opaque parts of the image). This will give you:
+  Make sure you checked Preserve Transparency (Keep Trans.) and then use the 
+  paint tool to make the copy of the logo black (You don't have to be careful: 
+  The preserve transparency (Keep Trans.) button will let you paint only on opaque parts of the image). This will give you:
 </p>
 <p class="images">
   <img src="tut-basic-dia-8.gif" alt="" />
 </p>
 <p>
-  Now make sure you unchecked the button again, blur the layer and move it (with the move tool) some pixels to the right and downwards. 
-  Adjust the transparency with the slider so the background will shine through: You've just generated a so-called drop shadow, which 
+  Now make sure you unchecked the button again, 
+  blur the layer and move it (with the move tool) some pixels to the right and downwards. 
+  Adjust the transparency with the slider so the background will shine through: 
+  You've just generated a so-called drop shadow, which 
   greatly enhances the 3d effect and is used in very many places.
 </p>
 <p class="images">

@@ -121,7 +121,7 @@ p.news {
 }
 
 p.images img {
-  border: solid black 2px;
+  border: none;
 }
 
 p.images {

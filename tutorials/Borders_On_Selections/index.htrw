@@ -13,9 +13,12 @@
   <img src="img14_step1.png" alt="" />
 </p>
 <p>
-  Since Gimp is an image manipulation program and not a painting program it doesn't include tools to draw shapes like squares and circles.
-  However this doesn't mean you can paint them, in fact there are some interesting options regarding this subject when it comes to the gimp.
-  The solution is to use the selection stroking capabilities of the Gimp. This option can be accesed on the image menu (right button click 
+  Since Gimp is an image manipulation program and not a painting program 
+  it doesn't include tools to draw shapes like squares and circles.
+  However this doesn't mean you can't paint them, in fact there are 
+  some interesting options regarding this subject when it comes to the gimp.
+  The solution is to use the selection stroking capabilities of the Gimp. 
+  This option can be accesed on the image menu (right button click 
   on the image), by going to <span class="filter">&lt;Image&gt; Edit -&gt; Stroke</span>.
 </p>
 

@@ -13,7 +13,7 @@
   <img src="img1_initial.jpg" alt="" />
 </p>
 <p>
-  Many times you have an image with a colored background, like the one below and you want to take 
+  Many times you have an image with a colored background, like the one above and you want to take 
   out the background to use the image's subject in a composition.
   With gimp there are many ways to achieve this, one of which is 
   using a plug-in specifically designed for this: <a href="/tutorials/Changing_Background_Color_1/">Changing Background Color 1</a>.
@@ -37,11 +37,15 @@
 <p>
   After choosing that option a dialog window will appear. This window shows several options. 
   The black square on the left side shows the current selection.
-  Anything that appears white is selected, anything that is black is not. 
+  Anything that appears white is selected, anything that is black is not.
+</p>
+<p>
   When you strart using the dialog you will see what this means. On the right side
   there are two options we will consider for the moment. The first one is the Selection Mode. 
   We will use the add option, which means any color we click on
-  will be added to the selection. The other setting is the Fuzziness Threshold. 
+  will be added to the selection. The other setting is the Fuzziness Threshold.
+</p>
+<p>
   When you click on a color, the higher this setting is, the more similar colors
   to the one you clicked on will be selected. You can start by using the default 
   setting and increasing it if you need to add more colors faster, or decrease

@@ -1,3 +1,41 @@
+2002-12-08 scizzo <scizzo@gimp.org>
+
+        * tutorials/Smart_Sharpening/index.html: Fixed the links to the
+        outside HTML examples. Spelling was wrong in step 5 for the class of
+        the filter.
+
+        * tutorials/Blown_Out_Highlights/index.html: Fixes in the HTML tags.
+        Try to fix the last classes for the filters.
+
+        * tutorials/Selective_Color/: Fixed the link to channel mixer tutorial
+        now links to /tutorials/Color2BW/#channelmixer.
+
+        * tutorials/index.html: Anti-Aliased_Treshold was wrong so I changed
+        it to Anti-Aliased_Threshold otherwise the tutorial was not loaded on
+        the page. (Maybe that spelling is wrong?)
+
+        * tutorials/Quickmask/index.html: Add another <Image> to the tags of filter
+        options to the tutorial.
+
+        * tutorials/Custom_Brushes/index.html: Fixed one more class="filter"
+        in the tutorial.
+
+        * tutorials/Drawing_Shapes/index.html: Small fixes nothing that would
+        make a big differense.
+
+        * tutorials/Changing_Background_Color_2/index.html: Fixed a spelling
+        in the tutorial.
+
+        * tutorials/Tileable_Textures/index.html: Changed Image->Channel
+        Ops->Offset to Filter->Map->Make Seamless. Fixed the classes for
+        filtering.
+
+        * tutorials/Using_GAP/index.html: Made the "Advanced Animation" a link
+        to /tutorials/Advanced_Animations/
+
+        * tutorials/Advanced_Animations/index.html: Made the "Using GAP" a link to
+        /tutorials/Using_GAP/
+
 2002-12-08 carol <carol@gimp.org>
 
 	* bugs.html:  added.

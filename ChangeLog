@@ -1,3 +1,9 @@
+2004-05-10  Henrik Brix Andersen  <brix@gimp.org>
+
+	* unix/index.htrw: removed the links to xach.com again since we
+	agreed not to link to those RPMs from our web site (which I didn't
+	know). My apologies.
+
 2004-05-08  Henrik Brix Andersen  <brix@gimp.org>
 
 	* unix/index.htrw: added link to RPMs provided by xach.com,

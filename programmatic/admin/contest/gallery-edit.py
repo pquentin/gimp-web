@@ -193,31 +193,20 @@ def display_gallery(form):
   print xhtml.table.row.fini()
   print xhtml.table.fini()
   
-  if tableless == 0:
-    print xhtml.table.init({"cellspacing" : 6, "cellpadding" : 0, "border" : 0, "class" : "gallery"})
+  print xhtml.table.init({"style" : "border-spacing: 6; padding: 0; border: none;", "class" : "gallery"})
 
+  print xhtml.table.row.init()
+  map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[this_page_index : this_page_index + (images_per_page / 2)])
+  print xhtml.table.row.fini()
+
+  if len(names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page + 1]) > 0:
     print xhtml.table.row.init()
-    map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[this_page_index:this_page_index+(images_per_page/2)])
+    map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))),
+        names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page])
     print xhtml.table.row.fini()
-
-    if len(names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page + 1]) > 0:
-      print xhtml.table.row.init()
-      map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))),
-          names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page])
-      print xhtml.table.row.fini()
-      pass
+    pass
     
-    print xhtml.table.fini()
-    pass
-  else:
-    print xhtml.div.init({"style" : "vertical-align: bottom;"})
-    print xhtml.div("&nbsp;", {"style" : "clear: both;"})
-    for k in names[this_page_index:next_page_index]:
-      print xhtml.div(format(k), {"style" : "float: left; margin: 1em;"})
-      pass
-    print xhtml.div("&nbsp;", {"style" : "clear: both;"})
-    print xhtml.div.fini()
-    pass
+  print xhtml.table.fini()
 
   wgo_admin.footer()
   return

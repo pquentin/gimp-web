@@ -4,6 +4,11 @@
         I want the author to see the tutorial before I make changes so the
         old images are back also. Small fixes in the language and link.
 
+        * tutorials/*/index.html: Add the sites to the original tutorials
+        on the tutorials that had a real site that is.
+
+        * tutorials/Drawing_Shapes/: Fixed the bug about the .xcf.gz file.
+
 2002-10-21 rockwlrs <rock@gimp.org>
 
 	* about/authors.html: list of authors and contributors

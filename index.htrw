@@ -15,7 +15,38 @@ to provide as much information about the GIMP community and related
 projects as possible.  Hopefully you will find what you need here.
 Grab a properly chilled beverage and enjoy.</p>
 
-<!--#include virtual="/includes/news.inc" -->
+<h1 class="newsheading">
+  <span class="newstitle">Another GIMP 2.2 Pre-Release</span>
+  <span class="newsdate">2004-11-20</span>
+</h1>
+<div class="news">
+  <img alt="[?]" src="/images/news-icons/release-dev.png"></img>
+  <p>
+    The GIMP developers have prepared another pre-release for GIMP
+    2.2.  Unless major problems show up, the GIMP 2.2.0 release is
+    supposed to follow later this month. Screenshots of the
+    development version are available from <a
+    href="http://developer.gimp.org/screenshots.html">developer.gimp.org</a>
+    and the GIMP Wiki has a comprehensive list of <a
+    href="http://wiki.gimp.org/gimp/WhatsNew2">new features</a>.
+  </p>
+</div>
+
+<h1 class="newsheading">
+  <span class="newstitle">GIMP 2.0.6 Released</span>
+  <span class="newsdate">2004-11-03</span>
+</h1>
+<div class="news">
+  <img alt="[?]" src="/images/news-icons/release-0.1.png"></img>
+  <p>
+    GIMP version 2.0.6 is is now available from the <a
+    href="/downloads/">Downloads</a> section. This is a bug-fix
+    release in the stable 2.0 series. It fixes a couple of smaller
+    problems and a crash that occurred with Pango-1.2 (but not with
+    newer versions of Pango). This is the last release in the GIMP
+    2.0, tree which will be obsoleted by GIMP 2.2 very soon.
+  </p>
+</div>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

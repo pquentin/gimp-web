@@ -1,5 +1,10 @@
 2004-11-20  Sven Neumann  <sven@gimp.org>
 
+	* index.htrw: removed inclusion of generated news and added news
+	for the 2.0.6 and 2.2-pre2 releases.
+
+2004-11-20  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/splash-images/gimp-splash-1.5-t.png
 	* about/splash/splash-images/gimp-splash-1.5.png
 	* about/splash/splash-images/splash-2.1.htrw: added 2.2-pre2 splash.

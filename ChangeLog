@@ -1,3 +1,8 @@
+2004-12-19  Niklas M <scizzo@gimp.org>
+
+	* release-notes/gimp-2.2.html: Added file and directory with 
+	information about 2.2 release.
+
 2004-12-19  Niklas M  <scizzo@gimp.org>
 
 	* unix/index.htrw: Removed 2.0 requirements. Made 2.2 stable.

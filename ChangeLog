@@ -1,6 +1,30 @@
 2003-08-29  Raphael Quinet  <quinet@gamers.org>
 
 	* includes/wgo-admin-fini.xhtml,
+	* includes/wgo-page-fini.xhtml: Darn!  The substitutions do not
+	work in these included files.  Replaced wgo:webmasters by the path
+	to /webmasters.html.
+
+	* source/howtos/cvsrc: Slightly improved version of the default
+	cvsrc.
+
+	* source/howtos/gimpenv,
+	* source/howtos/stable-cvs-build.htrw,
+	* source/howtos/stable-cvs-get.htrw,
+	* unix/howtos/cvsrc,
+	* unix/howtos/gimpenv,
+	* unix/howtos/stable-cvs-build.htrw,
+	* unix/howtos/stable-cvs-get.htrw: Moved from /unix to /source in
+	order to fix bug #119246.  We still need an index page for that
+	section before being able to close that bug report.
+
+	* unix/howtos/HACKING: Removed.  It should be replaced by a
+	symbolic link to a checked-out CVS gimp tree.  I will deal with
+	that later, so the link will be broken for the moment.
+
+2003-08-29  Raphael Quinet  <quinet@gamers.org>
+
+	* includes/wgo-admin-fini.xhtml,
 	* includes/wgo-page-fini.xhtml: Updated copyright year to 2003,
 	changed link to webmasters.
 

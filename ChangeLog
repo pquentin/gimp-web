@@ -1,3 +1,9 @@
+003-03-06  Carol Spears  <carol@gimp.org>
+
+        * style/default.css: moved the font sizes up by 5% for the hn's :)
+
+        * unix/howtos: removed all html and added htrw equivelents.
+
 2003-03-05  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Modified programmatic/contest/gallery.py to use the standard

@@ -26,6 +26,7 @@ import sys
 import cgi
 import getopt
 import sre as re
+import string
 
 sys.path = ['${LIBDIR}'] + sys.path # add the WGO CGI library directory to the Python import path
 
@@ -110,7 +111,7 @@ def changelog_as_xhtml(input, nlogs, title=""):
   
   return (0)
 
-def changelog_as_rdf(input, nlogs title=""):
+def changelog_as_rdf(input, nlogs, title=""):
 
   print xhtml.xml()
 
@@ -119,7 +120,7 @@ def changelog_as_rdf(input, nlogs title=""):
   changelog_entries = changelog.ChangeLog(input)
 
   for log in changelog_entries.logs[0:nlogs]:
-    print rdf.item(rdf.description(log.body))
+    print rdf.item(rdf.description(string.join(log.body)))
     print rdf.dc_creator(log.who)
     print rdf.dc_date(log.date)
     pass
@@ -135,7 +136,6 @@ def usage(name):
   print
   print "  -h, --help                Print this message"
   print "  -f, --format=<format>     Output in <format> (xhtml, text, rss)"
-  print "  -i, --input=<filename>    Input from <filename>"
   print "  -n, --nlogs=<number>      Print <number> of log entries and exit"
   print "  -t, --title=<string>      Print <string> as the top heading element content"
   print "  -v                        Print version and exit"
@@ -151,7 +151,7 @@ if __name__ == '__main__':
   title = ""
   
   try:
-    options, args = getopt.getopt(sys.argv[1:], "hf:i:n:vt:", ["help", "format=", "input=", "nlogs=", "version", "title="])
+    options, args = getopt.getopt(sys.argv[1:], "hf:n:vt:", ["help", "format=", "nlogs=", "version", "title="])
   except getopt.GetoptError:
     usage(sys.argv[0])
     sys.exit(2)
@@ -163,8 +163,6 @@ if __name__ == '__main__':
       sys.exit(0)
     elif option in ("-f", "--format"):
       output_format = value
-    elif option in ("-i", "--input"):
-      input = value
     elif option in ("-n", "--nlogs"):
       nlogs = int(value)
     elif option in ("-t", "--title"):
@@ -175,14 +173,16 @@ if __name__ == '__main__':
       pass
     pass
 
-  if output_format == "xhtml":
-    sys.exit(changelog_as_xhtml(input, nlogs, title))
-  elif output_format == "text":
-    sys.exit(changelog_as_text(input, nlogs, title))
-  elif output_format == "rss":
-    sys.exit(changelog_as_rss(input, nlogs, title))
-  else:
-    print >>sys.stderr, output_format, "is an unsupported output format."
+  for input in args:
+    if output_format == "xhtml":
+      sys.exit(changelog_as_xhtml(input, nlogs, title))
+    elif output_format == "text":
+      sys.exit(changelog_as_text(input, nlogs, title))
+    elif output_format == "rss" or output_format == "rdf":
+      sys.exit(changelog_as_rdf(input, nlogs, title))
+    else:
+      print >>sys.stderr, output_format, "is an unsupported output format."
+      pass
     pass
 
   sys.exit(-1)

@@ -147,20 +147,20 @@ class Log:
 
 class ChangeLog:
   def __init__(self, input=None):
-    self.logs = []
     if input != None:
       if str(input.__class__) == "<type 'str'>":
+        self.logs = []
         fp = open(input, "r")
-        pass
-
-      lines = fp.readlines()
-
-      while len(lines) > 0:
-        lines = self.parse(lines)
-        pass
-      
+        lines = fp.readlines()
+        while len(lines) > 0:
+          lines = self.parse(lines)
+          pass
+        return (None)
       pass
-
+    
+    print "Changelog.__init__: bad argument. ", input
+    sys.exit(1)
+    self.logs = None
     return (None)
 
   def __repr__(self):

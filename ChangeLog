@@ -1,3 +1,8 @@
+2003-04-21  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Fixed a bit more code rot in programmatic/admin/news/wgo_news.py
+        to keep up with programmatic/rdf.py
+
 2003-04-19 carol <cspears@cablespeed.com>
 
     * /about/splash-stable.htrw, removed this file

@@ -159,6 +159,9 @@ class item(x_xml.Xml):
 
 # Dublin Core Metadata Element Set
 # http://web.resource.org/rss/1.0/modules/dc/
+#
+# Again, namespaces should be imported (somehow) so they appear
+# without all writting all the wrappers by hand.
 
 class dc_title(x_xml.Xml):
   defaults = { }

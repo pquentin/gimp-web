@@ -172,7 +172,7 @@ class news:
                  + rdf.description(self["body"])
                  + rdf.link("http://mmmaybe.gimp.org")
                  + rdf.dc_date(xhtml.quote(iso_date)),
-                 about={'rdf:about' : "http://www.w3.org/News/2003#item9"})
+                 {'rdf:about' : "http://www.w3.org/News/2003#item9"})
     return (s)
 
   

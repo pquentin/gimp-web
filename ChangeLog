@@ -1,3 +1,10 @@
+2004-11-30  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/contest/index.htrw
+	* about/splash/contest/template.jpg
+	* about/splash/contest/template.xcf.bz2: added a page for the
+	splash contest. I wonder if it will show up ...
+
 2004-11-29  Sven Neumann  <sven@gimp.org>
 
 	* index.htrw: put the splash screen contest back up but w/o

@@ -7,6 +7,12 @@
 <h2>The GIMP Documentation</h2>
   <ul>
     <li><a href="wiki:GimpDocs">The GIMP Documentation</a></li>
+    <ul>
+      <li><b>HTML</b>: <a href="wgo:docs-gimp_help-en">English</a>, 
+      <a href="wgo:docs-gimp_help-de">German</a>, 
+      <a href="wgo:docs-gimp_help-fr">French</a>, 
+      <a href="wgo:docs-gimp_help-sv">Swedish</a></li>
+    </ul>
     <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
   </ul>
 <h2>Other GIMP Documentation</h2>

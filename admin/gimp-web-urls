@@ -175,6 +175,10 @@
 ["href", "wgo:dev-howtos-subpatch",	       { "href": "/bugs/howtos/submit-patch.html"}]
 ["href", "wgo:docs",                           { "href": "/docs/"}]
 ["href", "wgo:docs-gimp_help",                 { "href": "/docs/gimp-help/"}]
+["href", "wgo:docs-gimp_help-en",              { "href": "http://docs.gimp.org/en/"}]
+["href", "wgo:docs-gimp_help-de",              { "href": "http://docs.gimp.org/de/"}]
+["href", "wgo:docs-gimp_help-fr",              { "href": "http://docs.gimp.org/fr/"}]
+["href", "wgo:docs-gimp_help-sv",              { "href": "http://docs.gimp.org/sv/"}]
 
 ["href", "wgo:downloads",                      { "href": "/downloads/"}]
 ["href", "wgo:downloads-mirrors",              { "href": "/downloads/#mirrors"}]

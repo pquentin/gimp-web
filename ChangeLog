@@ -1,3 +1,8 @@
+2004-07-26  Niklas M <scizzo@gimp.org>
+
+	* /admin/gimp-web-urls: Added documentation links for the languages.
+	* /docs/index.htrw: Made a few changes to have the languages with links.
+
 2004-07-25  Niklas M <scizzo@gimp.org>
 
 	* /INSTALL: Added this file to help with installing the website.

@@ -1,3 +1,8 @@
+2004-03-13  Niklas M <scizzo@gimp.org>
+
+	* windows/index.htrw: Changed a sentence that Branko wanted to change
+	before the move.
+
 2004-03-12  Dave Neary  <bolsh@gimp.org>
 
 	* tutorials/Photo_To_Sketch/index.htrw: Removed dead link.

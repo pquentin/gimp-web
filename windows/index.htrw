@@ -28,9 +28,9 @@ versions from the following sites:</p>
 
 <h2>Requirements</h2>
 
-<p>The GIMP should run on Windows 95/98/ME/NT4/2000/XP.  It is
-recommended to use an NT-based version of Windows (NT4, 2000 or XP).
-The amount of memory can be an important factor, especially if you
+<p>The GIMP 1.2 should run on Windows 95/98/ME/NT4/2000/XP. It is
+recommended to use an NT-based version of Windows (NT4, 2000 or XP) for
+GIMP 2.0. The amount of memory can be an important factor, especially if you
 intend to work on large images.  A minimum of 64 MB of RAM is
 recommended, but several GB do not hurt.</p>
 

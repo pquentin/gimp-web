@@ -1,5 +1,9 @@
 2004-03-23  Henrik Brix Andersen  <brix@gimp.org>
 
+	* about/splash/splash-images/.cvsignore: shut up cvs
+
+2004-03-23  Henrik Brix Andersen  <brix@gimp.org>
+
 	* Makefile (%.html): run rewrite_attrs with the -q (quiet) flag to
 	suppress the <!-- This file was automatically generated
 	from... --> comment at the top of every file.  These comments

@@ -1,3 +1,79 @@
+2002-09-28  branko  <branko@fungus>
+
+	* windows/download.html: typo
+
+2002-09-27  branko  <branko@fungus>
+
+	* windows/download.html, windows/get_started.html:
+	download and 'getting started' pages for GIMP for Windows
+
+	* windows/winmenu.inc: sub menu for Windows pages
+
+	* windows/index.html: sketchy Windows page moved here
+
+	* includes/menu.inc: New folder for Windows pages
+
+	* includes/header_posttitle.inc: ALT text for "The GIMP"
+
+2002-09-27  carol  <carol@fungus>
+
+	* about.html, team.html:
+	added name attributes to the url lists in about.html so that hopefully they
+	can be maintained along with the main url list.
+
+	added branko to the webteam! yay! i love a first commit!!
+
+2002-09-27  Henrik Brix Andersen  <brix@gimp.org>
+
+	* ChangeLog: changelog updated
+
+2002-09-27  carol  <carol@fungus>
+
+	* unix/howtos/cvs-stable.html: put bex name on it
+
+	* unix.html:
+	hopefully i fixed the extra bullet in "The GIMP's Documentation" section
+
+	* unix.html:
+	put url in the proper place this time. i will sleep before i do more.
+
+	* unix.html: put the navigation back on
+
+	* unix.html: added a url to the recently upload gimp-help directory
+
+	* unix.html: i fixed the stuff at the top that i missed the first time.
+
+	* team.html: spelled yosh's real name wrong :)
+
+	* unix/howtos/cvs-stable.html, unix/howtos/cvsrc:
+	the cvs portion of bex's howto.  need to edit the second half and put it on
+	the page.
+
+2002-09-27  yosh  <yosh@fungus>
+
+	* install.exclude, install.sh: installation scripts
+
+2002-09-27  carol  <carol@fungus>
+
+	* team.html:
+	added Guest Lecturer to the team.  awaiting new names in the ChangeLog to make
+	the team list bigger and more wuvvy.  :)
+
+	* unix.html, unix/gimprc, unix/gimprc.html, unix/gtkrc, unix/gtkrc.html, unix/man-gimp-1.2.html, unix/man-gimp-remote-1.2.html, unix/man-gimprc.1.html, unix/man-gimptool-1.2.html:
+	i added the unix directory.  i copied the gimprc and the gtkrc from my
+	/usr/local/etc/gimp/1.2/.  i made some unformatted html for them.  i don't
+	know if this will fly or not. might be nice to have an rc style for these
+	things.  i decided to have different rc files for the different oses so
+	that we have the option to add extra comments to each if necessary.
+
+	i used man2html to convert the various gimp manpages to html.
+
+	i modified unix.html to see these.
+
+2002-09-26  branko  <branko@fungus>
+
+	* windows.html: first sketch
+
 2002-09-27  Carol Spears <carol@gimp.org>
 
 	* unix/howtos/cvs-stable.html: put bex name on it

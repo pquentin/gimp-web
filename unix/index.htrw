@@ -25,10 +25,10 @@ test them; use at your own risk.
        <a href="http://packages.debian.org/unstable/graphics/gimp">Debian unstable (deb)</a>
      </li>
      <li>
-       <a href="http://download.fedora.redhat.com/pub/fedora/linux/core/updates/2/i386/">Fedora Core 2 (RPM)</a>
+       <a href="http://download.fedora.redhat.com/pub/fedora/linux/core/updates/3/i386/">Fedora Core 3 (RPM)</a>
      </li>
      <li>
-       <a href="http://ftp.gwdg.de/pub/linux/usr-local-bin/9.1/">SuSE 9.1 (RPM)</a>
+       <a href="http://ftp.gwdg.de/pub/linux/suse/apt/SuSE/9.2-i386/RPMS.suser-guru/">SuSE 9.2 (RPM)</a>
      </li>
      <li>
        <a href="http://packages.gentoo.org/packages/?category=media-gfx;name=gimp">Gentoo Portage</a>

@@ -42,6 +42,7 @@ sys.path.append('${LIBDIR}')
 import xhtml
 import wgo
 import wgo_news
+import wgo_queue
 
 def main(argv):
 
@@ -63,16 +64,15 @@ def main(argv):
         n["subject"] = cgi.escape(s)
         n["body"] = cgi.escape(n["body"])
 
-        directory = wgo_news.queue_canonical_path(wgo_news.config.pending_queue)
+        directory = wgo_queue.canonical_path(wgo_news.config.pending_queue)
         os.system('mkdir -p ' + directory)
         
-        filename = wgo_news.queue_message_path(wgo_news.config.pending_queue, n["message-id"])
+        filename = wgo_queue.message_path(wgo_news.config.pending_queue, n["message-id"])
 
         n.to_queue(wgo_news.config.pending_queue)
         
         try:
           os.chmod(filename, wgo_news.config.news_permission)
-          #os.chown(filename, wgo_news.config.news_user_uid)
         except:
           pass
         pass

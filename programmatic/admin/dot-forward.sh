@@ -1,1 +1,1 @@
-|__NEWSDIR__/news-receiver
+|${LIBDIR}/news-receiver

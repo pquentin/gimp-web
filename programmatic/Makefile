@@ -5,7 +5,7 @@ include Makefile.defs
 all: usage wgo_config.py extended.css wgo-css.cpp admin contest
 
 usage:
-	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot> target"; exit 1; fi
+	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>target"; exit 1; fi
 
 # names ending in 'path' are full pathnames
 # otherwise, they are relative to DocumentRoot
@@ -67,3 +67,7 @@ install-admin: admin
 
 install-contest: contest
 	cd contest && $(MAKE) install
+
+dirs: wgo_config.py
+	cd admin && $(MAKE) dirs
+	cd contest && $(MAKE) dirs

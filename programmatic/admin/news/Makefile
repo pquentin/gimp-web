@@ -68,7 +68,6 @@ install-news: all
 	install news-edit-action.cgi             `${PYTHON} -c 'import news_config; print news_config.news_path'`
 	install news-edit.cgi                    `${PYTHON} -c 'import news_config; print news_config.news_path'`
 	install news-index.cgi                   `${PYTHON} -c 'import news_config; print news_config.news_path'`
-	install news-receiver                    `${PYTHON} -c 'import news_config; print news_config.news_path'`
 
 	install --mode=755 -d `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/gimp_code.png              `${PYTHON} -c 'import news_config; print news_config.icon_path'`
@@ -77,6 +76,7 @@ install-news: all
 	install icons/release-dev.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 
 	install news_config.py ${LIBDIR}
+	install news-receiver  ${LIBDIR}
 
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo_news.py > ${LIBDIR}/wgo_news.py
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo_queue.py > ${LIBDIR}/wgo_queue.py

@@ -175,7 +175,7 @@ def preview(form):
     except: pass
     try: os.remove(thumb_path)
     except: pass
-    wgo_contest.error(str(e))
+    wgo.error(str(e))
     wgo_contest.footer()
     return (1)
 

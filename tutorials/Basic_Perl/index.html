@@ -499,11 +499,245 @@ exit main();
   The result.
 </p>
 
+<div class="subtitle">7. Creating text, Hello World - writing text in an image</div>
+<p>
+  To create text the PDB function gimp_text_fontname() may be used. In this function the font is specified in the X11 font conventions. 
+  (There are also some older functions, gimp_text and gimp_text_ext in which the different X11 fields are specified explicitely.)
+  Here is an example of a script that creates an image containing "Hello world".
+</p>
+<div class="code">
+#!/usr/local/bin/perl
+use Gimp ":auto";
+use Gimp::Fu;
+sub text1 {
+    my($font, $text) = @_;
+    # Create a new image
+    $img = gimp_image_new(350, 100, RGB);
+    # Create a new layer and draw it to the image at the top
+    $drw = gimp_layer_new($img, $img-&gt;width, $img-&gt;height,
+                    RGB, "BG", 100, NORMAL_MODE);
+    $drw-&gt;add_layer(-1);
+    gimp_palette_set_background("black");
+    gimp_edit_fill($drw, BG_IMAGE_FILL);
+    # Choose color of text
+    gimp_palette_set_foreground([255,255,0]);
+    # Create the text
+    my $border = 10;
+    my $text_layer = gimp_text_fontname($drw,  0, 0, $text,
+                                  $border, 1,
+                                  xlfd_size($font), $font);
+    gimp_floating_sel_anchor($text_layer);
+    return $img;
+}
+# register the script
+register "hello_world1", "basic text", "basic text", "Dov", "Dov",
+    "1999-05-14",
+    "&lt;Toolbox&gt;/Xtns/Perl-Fu/Tutorial/Basic text 1",
+    "*",
+    [
+     [PF_FONT, "font", "font", "-*-utopia-bold-r-*-*-70-*-*-*-*-*-*-*"],
+     [PF_STRING, "text", "text", "Hello world!"]
+    ],
+    \&amp;text1;
+# Handle over control to gimp
+exit main();
+</div>
+<p class="images">
+  <img src="hello-world1.png" alt=""/>
+</p>
+<p>
+  The result above:
+</p>
+<p>
+  The script makes use of the function xlfd_size which extracts the size of the font from the X11 font name. 
+  This is necessary as the authors of gimp_text_fontname decided that the font size within the fontname is ignored.
+  <br /><br />
+  One thing to note in this script is that the text that is created on line 24 is a floating layer, than needs to be anchored to its parent layer. 
+  This is done in line 27 through the call to gimp_floating_sel_anchor().
+  <br /><br />
+  This script suffers from the problem that the image size is unrelated to the text size. 
+  This is taken care of in the following more complex example which shows the basic steps for a logo generating script.
+</p>
+<ul>
+  <li>Creation of an image arbitrary size</li>
+  <li>Creation of a background drawable of an arbitrary size</li>
+  <li>Creation of text layer which exactly fits the text with the command gimp_text_fontname().</li>
+  <li>Resizing the image and the background to the size of the text layer.</li>
+</ul>
+<p>
+  The result is an image composed of two layers; a transparent text layer on top of a uniform background.
+</p>
+<div class="code">
+#!/usr/local/bin/perl
+use Gimp ":auto";
+use Gimp::Fu;
+sub basic_logo {
+    my($font, $border, $text, $bgcolor, $fgcolor) = @_;
+    # Create a new image of an arbitrary size with
+    $img = gimp_image_new(100, 100, RGB);
+    # Create a new layer for the background of arbitrary size, and
+    # add it to the image
+    my $background = gimp_layer_new($img, 100, 100,
+                              RGB, "Background", 100,
+                              NORMAL_MODE);
+    gimp_image_add_layer($background, 1);
+    # Choose color of text
+    gimp_palette_set_foreground($fgcolor);
+    # Create the text layer. Using -1 as the drawable creates a new layer.
+    my $text_layer = gimp_text_fontname($img, -1, 0, 0, $text,
+                                  $border, 1,
+                                  xlfd_size($font), $font);
+    # Get size of the text drawable and resize the image and the
+    # background layer to this size.
+    my($width, $height) = ($text_layer-&gt;width, $text_layer-&gt;height);
+    gimp_image_resize($img, $width, $height, 0, 0);
+    gimp_layer_resize($background, $width, $height, 0, 0);
+    # Fill the background layer now when it has the right size.
+    gimp_palette_set_background($bgcolor);
+    gimp_edit_fill($background, BG_IMAGE_FILL);
+    return $img;
+}
+# register the script
+register "basic_logo", "basic logo", "basic logo",
+    "Dov Grobgeld", "Dov Grobgeld",
+    "1999-06-09",
+    "&lt;Toolbox&gt;/Xtns/Perl-Fu/Tutorial/Basic Logo",
+    "*",
+    [
+     [PF_FONT,   "font",     "font",   "-*-utopia-bold-r-*-*-70-*-*-*-*-*-*-*"],
+     [PF_INT,    "border",   "border", "10"],
+     [PF_STRING, "text",     "text", "Hello world!"],
+     [PF_COLOR,  "bg_color", "Background color", [40,180,160]],
+     [PF_COLOR,  "fg_color", "Background color", [255,255,0]],
+    ],
+    \&amp;basic_logo;
+# Handle over control to gimp
+exit main();
+</div>
+
+<p class="images">
+  <img src="basic-logo-dialog.png" alt=""/>
+  <img src="basic-logo.png" alt=""/>
+</p>
+<p>
+  Note the special syntax of gimp_image_text_fontname()  in line 23 in basic-logo with an image specified for a first parameter, and the drawable = -1. 
+  This is in contradiction to the rule above that the image should not be specified for PDB functions that take both an image and a drawable as the first two parameters. 
+  But since the drawable=-1, which has no image related to it, an image explicitely be provided. The special case drawable=-1 means that instead of creating a floating layer, 
+  a new image layer will be created.
+  <br /><br />
+  The result shown in the dialog and the resulting image above.
+</p>
+
+<div class="subtitle">8. Floating selections</div>
+<p>
+  When a region has been selected through one of the selection routines the area outlined by the selection may be copied to the cut-buffer through the gimp_edit_copy command. 
+  The cut-buffer may subsequently be pasted into a different layer through the gimp_edit_paste command. 
+  When a layer is pasted it becomes a floating selection. This floating selection may be moved to its required position by the command gimp_layer_set_offsets, 
+  and finally it is pasted by the gimp_floating_sel_anchor  command. Another way of determining the position of a pasted layer is to create a selection in the 
+  target image before the cut-buffer is pasted.
+</p>
+<p>
+  This is illustrated in the following program, which works on one image and takes as a parameter an another image, 
+  which it concatinates to the right of the first image. The lines 28-38 shows how the second image is copied and glued into the first image.
+</p>
+<div class="code">
+#!/usr/local/bin/perl
+use Gimp qw( :auto );
+use Gimp::Fu;
+sub horiz_cat {
+    my($img1, $drw1, $drw2) = @_;
+    # Get image 2
+    $img1 = $drw1-&gt;image();
+    my $img2 = gimp_drawable_image($drw2);
+    # Get sizes through OO syntax
+    my($w1, $h1) = ($drw1-&gt;width, $drw1-&gt;height);
+    my($w2, $h2) = ($drw2-&gt;width, $drw2-&gt;height);
+    # The new height is the maximum height of the images
+    my $hmax = $h1 &gt; $h2 ? $h1 : $h2;
+    # Create an undo group
+    gimp_undo_push_group_start($img1);
+    # Resize the drawable layer to make room for the img
+    gimp_image_resize($img1, $w1+$w2, $hmax, 0, ($hmax-$h1)/2);
+    gimp_layer_resize($drw1, $w1+$w2, $hmax, 0, ($hmax-$h1)/2);
+    # Copy $drawable2 and paste it into the new space of $drawable1
+    # select all of img2
+    gimp_selection_all($img2);
+    # copy it to the clipboard
+    gimp_edit_copy($drw2);
+    # make a selection in img 1 in the position where it is to be pasted
+    gimp_rect_select($img1, $w1, ($hmax-$h2)/2, $w2, $h2, 0,0,0);
+    # paste and then anchor it
+    my $floating_layer = gimp_edit_paste($drw1, 0);
+    gimp_floating_sel_anchor($floating_layer);
+    # Close the undo group
+    gimp_undo_push_group_start($img1);
+    # Update the display
+    gimp_displays_flush();
+    return undef;
+}
+# register the script
+register "horiz_cat", "Horizontal concat", "Horizontal Concat",
+    "Dov Grobgeld", "Dov Grobgeld",
+    "1999-05-4",
+    "<Image>/Perl-Fu/Tutorial/Horizontal Concat",
+    "*",
+    [
+     [PF_DRAWABLE,   "drawable",     "Drawable to concatinate",   undef],
+    ],
+    \&amp;horiz_cat;
+# Handle over control to gimp
+exit main();
+</div>
+
+<div class="subtitle">9. The Perl Server and stand-alone scripts</div>
+<p>
+  So far the scripts have all been started from the menu structure within menu. But there is another possibility and that is to run the scripts from the command line, 
+  as a normal perl program. When run this way the script tries to connect to the Perl-Server, and if it fails it will launch gimp on its own. 
+  If you plan to run several scripts this way, it is obviously much faster to run the Perl-Server since launching gimp takes quite a bit of time. 
+  The perl-server may be started from the Xtns menu.
+  <br /><br />
+  When a perl-fu script is run from the command line, the result is the same as when it is run through the menus, 
+  except of the fact that it may be run with the --output parameter in case it will save the result to a file instead of displaying it within gimp. 
+  This is great for batch creation of logos, etc.
+  <br /><br />
+  The filename for the --output has some special magic that allows to set some special image saving parameters, like interlace, quality factor, etc. 
+  See the Gimp::Fu man page for details. Note that the normal rules about image and file types are still valid, thus e.g. in order to save an image as a gif file, 
+  it must be converted from RGB to an indexed script. Currently this functionality must be included in each script, 
+  but it is possible that a future version of Gimp::Fu, includes this conversion as an option.
+  <br /><br />
+  Here are two invocations of the scripts declared above, but with output written to a jpg file and a png file. As we said above, 
+  we can't save them as gif as the scripts do not index the images.
+</p>
+<p>
+  perl-gimp-from-shell:
+</p>
+<pre>uni -o /tmp/uni.ppm -size 100 -color "#5050ff"</pre>
+<pre>basic-logo -font '-*-utopia-*-r-*-*-100-*-*-*-*-*-*-*' -o /tmp/bl.ppm -text "Perl rules"</pre>
+<p>
+  <b>Note:</b> that due to a bug in my version of Gimp/Perl I was not able to output images in any format but in ppm and gif. Your milage may vary. 
+  Another importent use of this interface is that it enables running the perl debugger on the perl-fu scripts.
+  <br /><br />
+  <b>Note:</b>The image is saved to the directory where gimp was started from and not to the directory in which the scripts were invoked, unless a complete path is given!
+</p>
+
+<div class="subtitle">10. End notes</div>
+<p>
+  This tutorial has covered only a small part of the possibilities available to a script writer. 
+  In particular the following issues available to Gimp::Perl scripts have not been covered:
+</p>
+<ul>
+  <li>The possibility of writing customized Gtk interfaces.</li>
+  <li>Writing fullfledged plug-ins that manipulate the tile data through the Perl Data Language (PDL) module.</li>
+  <li>Using Perl::Gimp in a CGI environment.</li>
+  <li>How to fill with gradients in a plugin</li>
+  <li>How to do "free selections".</li>
+</ul>
+
 </div>
 <!--#include virtual="/includes/tutnavbar.inc" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:user@host.org">Author Name</a>
+        Tutorial &copy; 2002 <a href="mailto:dov@imagic.weizmann.ac.il">Dov Grobgeld</a>
       </span>
       <span id="footerright">
         <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>

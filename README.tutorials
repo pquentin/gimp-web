@@ -12,5 +12,8 @@ Screenshots:
 Text:
   * Use the template.  Use standard xhtml.
   	(For more info about xhtml and such see README.repository.)
-  * Use small explanations. If using plugin/script then write the full 
-  	path to the plugin/script. Example: <Image>->Filters->Blur->Blur
+  * Use small explanations. If using plug-in/script then write the full 
+  	path to the plug-in/script. Use the "filter" class to make the
+        path stand out from the rest of the text.
+
+        Example: <span class="filter">&lt;Image&gt;/Filters/Blur/Blur</span>

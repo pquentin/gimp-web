@@ -3,97 +3,69 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>Fonts in the GIMP for Unix</h1>
+<h1>Fonts in GIMP 2.0</h1>
 
-<h2>Using Truetype fonts with the GIMP and X</h2>
+<p>In GIMP 2.0 font rendering is handled significantly different from
+the way it was done in GIMP 1.0 and 1.2. GIMP no longer uses the X
+server to render the fonts. Instead it uses Pango and the FreeType
+library. Font configuration is handled by a small library called
+Fontconfig. As a result you get much better font rendering with real
+antialiasing, support for bidirectional text and various scripts.
+</p>
 
-<p>All font rendering in GIMP 1.0 and 1.2 is done by the X server that
-the GIMP is a client of.  This is done differently in the newer
-versions of the GIMP (1.3, still in development) but we will focus on
-the stable version 1.2 here.  So installing fonts "for GIMP" is really
-a matter of making the X server properly use those fonts.</p>
+<p> GIMP 2.0 handles a variety of font formats, most notably TrueType,
+OpenType and Type1. It should be emphasized that it does not use the X
+server or any X font server, so don't be surprised if GIMP doesn't see
+the fonts you configured in your X11 setup.
+</p>
 
-<p>Most X servers support Adobe Type1 fonts and bitmap fonts.  If you
-are using a recent version of XFree86 (4.x) or some commercial X
-servers, your server will also support TrueType fonts natively.  In
-this case, you only have to install the TrueType fonts in a directory
-that is read by your X server (for example,
-"<code>/usr/X11R6/lib/X11/fonts/truetype</code>") or in any other
-directory, as long as you add this directory to your font path (using
-"xset fp+ /path/to/the/truetype/fonts") and create the files
-<kbd>fonts.dir</kbd> and <kbd>fonts.scale</kbd> using a program such
-as <code>ttmkfdir</code>.</p>
+<h2>Setting up Fonts for GIMP 2.0</h2>
 
-<p>But if you are using an older X server (XFree86 3.x) that does not
-support TrueType fonts, then you will need the help of a font server.
-Here are some font servers that support TrueType fonts.  Keep in mind
-that you will only need to use these if your X server does not support
-TrueType fonts natively:</p>
+<p>GIMP uses Fontconfig to handle fonts, so setting up fonts for GIMP
+2.0 is merely a job of setting up Fontconfig. But GIMP is not the only
+application that uses Fontconfig. Recent desktops such as GNOME-2.4
+use it as well, so there's a good chance that everything is properly
+setup already and fonts will just work for you. If they don't, you
+will have to create or edit your font configuration file as explained
+in the <a
+href="http://pdx.freedesktop.org/~fontconfig/fontconfig-user.html/">Fontconfig
+User Manual</a>.</p>
 
-<ul>
-  <li><a
-  href="http://www.dcs.ed.ac.uk/home/jec/programs/xfsft/">xfsft</a>, a
-  Truetype font server based on the Freetype Library.  You will also
-  find several useful links on that page.</li>
+<h2>Adding Fonts (system-wide)</h2>
 
-  <li><a href="http://www.joerg-pommnitz.de/TrueType/xfsft.html">Joerg
-  Pomnitz' xfsft page</a>, a page including an old linux binary of
-  xfsft and some utils (ttfmkdir).</li>
+<p>As soon as Fontconfig is properly setup, adding fonts is just a
+matter of placing them into a directory that is searched by
+Fontconfig.  Have a look at <tt>/etc/fonts/fonts.conf</tt> (and
+perhaps <tt>/etc/fonts/local.conf</tt>) to find out what directories
+are searched. After copying the fonts there, you should run
+<b>fc-cache</b> to regenerate the fonts cache. Fonts added this
+way will be available to all applications using Fontconfig.</p>
 
-  <li><a href="ftp://sunsite.unc.edu/pub/Linux/X11/fonts/">Xfstt on
-  sunsite</a>, the source package for Herbert D|rr's xfstt.</li>
-</ul>
+<h2>Adding Fonts (for GIMP only)</h2>
 
-<h2>Using Type 1 Postscript fonts with the GIMP and X</h2>
+<p>You might want to install fonts for use with GIMP only or you might
+not have permissions to install fonts system-wide. To make this
+possible, GIMP 2.0 also looks for fonts in the GIMP specific font
+search path that can be configured in your <tt>gimprc</tt> or from the
+<i>Preferences Dialog</i>. So, in order to install fonts to be used
+with GIMP, you can just copy them to <tt>~/.gimp-2.0/fonts</tt>, press
+the <i>Refresh</i> button in the <i>Fonts</i> dialog and start using
+them.</p>
 
-<p>Before TrueType fonts became so common, Type 1 fonts were the
-reference for scalable fonts in X.  Nowadays, it is much easier to
-find TrueType fonts than Type 1 fonts, especially if you are looking
-for free fonts or for international fonts with a good coverage of
-accented characters.  But if you are looking for quality fonts, Type 1
-Postscript fonts are still a good choice.</p>
+<h2>Known Problems</h2>
 
-<p>With newer releases of <a
-href="http://www.ghostscript.com/">ghostscript</a>, quality versions
-of the standard 35 Type 1 PostScript fonts are shipped.  They were
-donated and licenced under the GPL by <a
-href="http://www.urwpp.de/english/home.htm">URW</a>.  You can get this
-package from <a
-href="ftp://ftp.gimp.org/pub/gimp/fonts/urw-fonts.tar.gz">here</a>.
-You will probably want to use a custom made <code><a
-href="ftp://ftp.gimp.org/pub/gimp/fonts/urw-adobe-fonts.dir">fonts.dir</a></code>
-(save that file as fonts.dir) and <code>fonts.scale</code> file (which
-is the same as the fonts.dir file).  The <code>fonts.dir</code> was
-specially made to match the original Adobe names of the fonts,
-e.g. Times, Helvetica etc.  With XFree86, these fonts are a must to
-have!</p>
+<p>There have been reports of crashes at startup when GIMP scans your
+font directories. These crashes should go away as soon as you update
+to a newer version of fontconfig (>= 2.2.0). As a quick workaround you
+can start gimp with the <b>--no-fonts</b> command-line option but of
+course you will not be able to use the text tool then.</p>
 
-<p>Just make sure that the fontpath lists the 75dpi or 100dpi bitmap
-fonts <b>before</b> the URW fonts, and make sure you have the string
-<kbd>":unscaled"</kbd> appended to the bitmap font's fontpath.  This
-way, the bitmap fonts will be used if they match, and the Type 1
-versions will be used if the font needs to be scaled (this may only
-work with XFree86...).  Below is the relevant section from a typical
-XF86Config file.</p>
+<p>Another known problem is that Pango 1.2 cannot load fonts that
+don't provide an Unicode character mapping. A lot of symbol fonts fall
+into this category. On some systems using such a font can cause GIMP
+to crash. Updating to Pango 1.4 will fix this problem and makes symbol
+fonts available in The GIMP.</p>
 
-<pre>
-    Section "Files"
-       RgbPath    "/usr/X11R6/lib/X11/rgb"
-       FontPath   "/usr/X11R6/lib/X11/fonts/misc:unscaled"
-       FontPath   "/usr/X11R6/lib/X11/fonts/75dpi:unscaled"
-       FontPath   "/usr/X11R6/lib/X11/fonts/100dpi:unscaled"
-       FontPath   "/usr/X11R6/lib/X11/fonts/URW"
-       FontPath   "/usr/X11R6/lib/X11/fonts/Type1"
-       FontPath   "/usr/X11R6/lib/X11/fonts/Speedo"
-       FontPath   "/usr/X11R6/lib/X11/fonts/misc"
-       FontPath   "/usr/X11R6/lib/X11/fonts/75dpi"
-       FontPath   "/usr/X11R6/lib/X11/fonts/100dpi"
-    EndSection
-</pre>
-
-<p>The package has a file called <code>Fontmap</code> from the
-ghostscript distribution.  Please refer to that file for more info on
-licensing, copyright and information about the fonts and URW.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,16 @@
+2002-10-06  scizzo <scizzo@se.debian.net>
+
+	* tutorials/index.html: Changed the Bezier_Curves to Bezier_Selections.
+
+	* tutorials/Borders_On_Selection/: Added the Stroke tutorial.
+	Also changed the text for the images to tell "Image above"
+	because of the layout.
+
+	* tutorials/Bezier_Curves/: Added the tutorial for beginner Bezier.
+	Also in this changed to "Image above" because of the layout.
+	
+	* tutorials/Straight_Line/index.html: Main title was not set.
+	
 2002-10-05  carol <carol@gimp.org>
 
 	* tutorials/index.html: corrected the link to the Straight Line Tutorial

@@ -3,6 +3,9 @@
 	* links.html: added some more urls. fixed somethings. reflected these
     changes in links/index.html as well.
 
+	* links/index.html, links/org.html: branched many of the gimp.org sites
+    onto their own page.
+
 2002-11-20 carol <carol@gimp.org>
 
 	* links.html: moved some of the clusters around, added a few others

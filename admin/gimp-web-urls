@@ -164,6 +164,7 @@
 ["href", "os2-howto:Installing_XFree86/OS2_3.3.x-Hennecke_Christian",	    { "href": "http://www.os2world.com/os2files/xfree86/installation.html"}]
 ["href", "os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian",	    { "href": "http://www.os2voice.org/VNL/past_issues/VNL0403H/vnewsf6.htm"}]
 ["href", "os2-howto:Font_Installation_in_xfree86/os2-Hennecke_Christian",	{ "href": "http://www.os2world.com/os2files/xfree86/font_install.html"}]
+["href", "os2-howto:GIMP_Installation_xfree86/os2-Hennecke_Christian",	{ "href": "http://www.os2world.com/os2files/xfree86/font_install.html"}]
 
 ["href", "maillist:GIMP-os2-url",	    { "href": "http://groups.yahoo.com/group/gimp-os2/"}]
 ["href", "maillist:GIMP-os2-archives",	{ "href": "http://groups.yahoo.com/group/gimp-os2/messages"}]

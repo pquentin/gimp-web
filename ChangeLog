@@ -4,6 +4,11 @@
 	Forgot to add the jpg images.
 
 	* tutorials/Straight_Line/: Trying to make the tutorial better.
+
+	* tutorials/: Changed the image position of a few tutorials to
+	make them look better with the layout.
+
+	* README.tutorials: Add a standard font to use in the screenshots.
 	
 2002-10-13 scizzo <scizzo@gimp.org>
 

@@ -1,3 +1,11 @@
+2003-04-13 scizzo <scizzo@gimp.org>
+
+	* tutorials/Basic_Perl/index.html: Removed this file.
+	* tutorials/Basic_Perl/index.htrw: Add this file. Fixed a few minor
+	tags in the file.
+
+	* admin/gimp-web-urls: Add People-Lehmann_Marc to the links.
+
 2003-04-13  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Fixed tutorial/Borders_On_Selections

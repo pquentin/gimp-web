@@ -9,7 +9,7 @@ drc or brix.
 
 Second: when adding a new page be sure to use the template.html file.
 There are classes for the heading and the subtitles. Use them. Do not
-use <h?>...<h?> or other stuff like that as this is not consistent with 
+use <h?>...</h?> or other stuff like that as this is not consistent with 
 the rest of the layout. also avoid putting hrefs (links) in the subtitles.
 
 the pages needs to be written in xhtml 1.0 strict and you should validate

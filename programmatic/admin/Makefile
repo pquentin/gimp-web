@@ -43,7 +43,6 @@ install-first: all
 
 	install wgo-admin.css           `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 	install index.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
-	install wgo-admin-head.xhtml    `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 	install howto.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 
 install-news: news

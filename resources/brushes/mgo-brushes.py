@@ -33,8 +33,8 @@ def write_brush_page(bg_colour, fg_colour, page_location):
         iwidth = width + 31
         center = iwidth/2.0
         num_strokes = 2
-        new_width = 32
-        new_height = 32
+        new_width = 31
+        new_height = 31
         pdb.gimp_paintbrush_default(drawable, num_strokes, [center, center])
         pdb.gimp_image_scale(image, new_width, new_height)
         pdb.gimp_file_save(image, drawable, page_location + pname + '.png', pname + '.png')

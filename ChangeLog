@@ -1,5 +1,14 @@
 2003-08-17 scizzo <scizzo@gimp.org>
 
+	* /resources/brushes/index.html, mgo-brushes.py: Changed the size for
+	the images. Branko made the bug report and also provided the
+	information about what needed to be changed. This closes: #119211
+
+	* /downloads/INSTALL: Add this file.
+	* /downloads/index.htrw: Fixed link to INSTALL.
+
+2003-08-17 scizzo <scizzo@gimp.org>
+
 	* /images/wilberright.jpeg: Added this image provided by Branko. 
 	Closes bug: #119819
 	* /includes/wgo-page-init.xhtml: Changed the header to use the new

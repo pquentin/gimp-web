@@ -1,7 +1,16 @@
 2002-11-09 scizzo <scizzo@gimp.org>
 
-	* tutorials/Photo_Edit/Smart_Sharpening: First port of the
-	Smart Sharpening tutorial.
+        * tutorials/Photo_Edit/Smart_Sharpening: First port of the 
+        Smart Sharpening tutorial. Fixed the Further read links.
+
+        * tutorials/Photo_Edit/Reducing_CCD_Noise/index.html: Add
+        the Further read links.
+
+        * tutorials/Photo_Edit/ND_Filter/index.html: Add the Further read
+        link to the site to make it complete.
+
+        * tutorials/Photo_Edit/Sepia_Toning/index.html: Fixed the Further
+        read links.
 
 2002-11-08 brix <brix@gimp.org>
 

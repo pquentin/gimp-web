@@ -1,3 +1,9 @@
+2004-04-07  Raphaël Quinet  <quinet@gamers.org>
+
+	* windows/index.htrw: The external browser option for the help
+	browser is now labeled "Web Browser", not "Netscape".  Fixes bug
+	#138719.
+
 2004-04-05  Raphaël Quinet  <quinet@gamers.org>
 
 	* bugs/index.htrw: Replaced "&" in hrefs by "&amp;" in order to

@@ -54,9 +54,13 @@ recommended, but several GB do not hurt.</p>
 
 <p>The GIMP comes with extensive help files. Once you have started the
 program, press <kbd>F1</kbd>. Should you get an error message at that
-time, you may need to set your help browser to Netscape in the
-Preferences. ('Netscape' is GIMP-speak for 'your default web browser',
-and need not be a Netscape product.)</p>
+time, you may need to set your help browser to 'Web Browser' in the
+Preferences: this will tell the GIMP to use your default web browser
+for viewing the help pages.  You may also have to install the help
+pages from a separate package (gimp-help), depending on how your
+version of the GIMP was packaged. Note: due to historical reasons,
+older versions of the GIMP (before 2.0) used 'Netscape' to mean 'your
+default web browser'.</p>
 
 <p>The GIMP's user interface is designed to let you work as
 efficiently as possible.  The trade-off is that first time users need

@@ -9,21 +9,25 @@ about/ChangLogs/:
        will probably get pissy with the nice html.
        
        the rest  of the script needs to be written (for the remaining ChangeLogs
+
+       DONE 1/20/2003  Helvetix
    
 contest/index.html
 contest/archives/index.html
    a python mechanism needs to be in place to upload images and write them to a
    web page.       
+
+       DONE 1/5/2003 Helvetix
    
 development/:  (daily grabbing of the last 10)
    from gnome annoncvs trees:
-     ChangeLog gimp HEAD  unstable.html
-     ChangeLog gimp 1.2  stable.html
-     ChangeLog gimp-help  help.html
-     ChangeLog gegl  gegl.html
+     ChangeLog gimp HEAD  unstable.html   DONE 1/22/2003 Helvetix
+     ChangeLog gimp 1.2  stable.html      DONE 1/22/2003 Helvetix
+     ChangeLog gimp-help  help.html       DONE 1/23/2003 Helvetix
+     ChangeLog gegl  gegl.html            DONE 1/23/2003 Helvetix
    from sourceforge
-     ChangeLog gimp-print  print.html
-     ChangeLog filmgimp  film.html
+     ChangeLog gimp-print  print.html     DONE 1/24/2003 Helvetix
+     ChangeLog filmgimp  film.html        DONE 1/25/2003 Helvetix
    from an online query:
      bugzilla new bugs  bugzilla-new.html
      bugzilla fixed bugs  bugzilla-fixed.html
@@ -47,6 +51,8 @@ links/index.html and includes/url-*.inc:
 
 news/index.html and includes/news.inc:
    something that works here
+
+  DONE 11/12/2002 Helvetix
 
 resources/
    these pages need to draw two at a time.  these pages need more content as well.

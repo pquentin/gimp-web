@@ -1,4 +1,7 @@
 pgo TODO List:
+
+        * Think the three TODO lists should be made into one.
+          Helvetix
 (Alphabetically)
 
         * a crontabs directory in CVS is fine, it should 
@@ -21,6 +24,10 @@ about/ChangLogs/:
        
        it would be nice if this could be rewritten in python so it can easily be
        added to the rest of the web-making stuff.
+
+       DONE 1/20/2003  Helvetix
+   
+
        
 about/authors.html:
    this page is perfect.  however it was generated from a script that apparently
@@ -84,6 +91,8 @@ contest/archives/index.html
    released, the collection is archived and a new one begins.  the whole thing
    needs to be made.
     
+       DONE 1/5/2003 Helvetix
+
 development/index.html:
    i suggest letting the developers determine what goes here.  urls, suggestions on
    how to contribute, links to bug lists.  what have you.  non-dynamic information

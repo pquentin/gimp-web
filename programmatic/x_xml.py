@@ -138,3 +138,59 @@ def header():
   return ('<?xml version="1.0" encoding="iso-8859-1"?>')
 
 
+def xml_(**attrs):
+  defaults = {"version" : "1.0", "encoding" : "iso-8859-1"}
+  a = dict(defaults)
+  a.update(attrs)
+  return '<?xml' + format_attrs(a) + '?>'
+
+
+class element:
+  def __init__(self, start_tag, end_tag):
+    self.start_tag = start_tag
+    self.end_tag = end_tag
+    self.defaults = { }
+    return (None)
+
+  def __call__(self, content, **what):
+    self.content = content
+    self.attrs = what;
+    return str(self)
+  
+  def __getitem__(self, name):
+    return (self.attrs[name])
+  
+  def __setitem__(self, name, value):
+    self.attrs[name] = value
+    return (None)
+  
+  def __coerce__(self, other):
+    return (str(self), str(other))
+  
+  def __repr__(self):
+    self.attrs = dict(self.defaults)
+    self.attrs.update(attrs)
+
+    start = "<" + self.start_tag + format_attrs(self.attrs) + ">"
+
+    if self.end_tag == None:
+      if self.content != None:
+        print >>sys.stderr, "Content cannot appear in '%s' because the end tag is forbidden." % (self.start_tag)
+      else:
+        return (start)
+      pass
+    else:
+      return (start + self.content + "<" + self.end_tag + ">")
+    pass
+
+  def init(self, **what):
+    self.attrs = what;
+    return ("<" + self.start_tag + format_attrs(self.attrs) + ">")
+
+  def fini(self):
+    return ("<" + self.end_tag + ">")
+  
+  pass
+
+if __name__ == "__main__":
+  print xml_()

@@ -12,14 +12,14 @@ from the 1-2 tarball:
   unix/README.perl
   windows/README.win32
   
-from gnome annoncvs trees:
-  ChangeLog gimp HEAD  
-  ChangeLog gimp 1.2
-  ChangeLog gimp-help
-  ChangeLog gegl
+     ChangeLog gimp HEAD  unstable.html   DONE 1/22/2003 Helvetix
+     ChangeLog gimp 1.2  stable.html      DONE 1/22/2003 Helvetix
+     ChangeLog gimp-help  help.html       DONE 1/23/2003 Helvetix
+     ChangeLog gegl  gegl.html            DONE 1/23/2003 Helvetix
 from sourceforge
-  ChangeLog gimp-print
-  ChangeLog filmgimp
+     ChangeLog gimp-print  print.html     DONE 1/24/2003 Helvetix
+     ChangeLog filmgimp  film.html        DONE 1/25/2003 Helvetix
+
 from an online query:
   bugzilla new bugs
   bugzilla fixed bugs

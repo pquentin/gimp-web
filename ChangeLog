@@ -1,10 +1,12 @@
-2002-11-20 carol <carol@gimp.org>
+2002-11-21 carol <carol@gimp.org>
 
 	* links.html: added some more urls. fixed somethings. reflected these
     changes in links/index.html as well.
 
 	* links/index.html, links/org.html: branched many of the gimp.org sites
     onto their own page.
+
+	* team.html: added martijn (yay!)
 
 2002-11-20 carol <carol@gimp.org>
 

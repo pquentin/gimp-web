@@ -1,3 +1,11 @@
+2004-03-14  Niklas M <scizzo@gimp.org>
+
+	* screenshots/*_thumb.png: Removed the png previews.
+	* screenshots/*_thumb.jpg: Added new previews in jpeg format. Not as
+	big as the pngs.
+	* screenshots/index.htrw: Added the new previews to be jpg instead of
+	png.
+
 2004-03-14  Raphaël Quinet  <quinet@gamers.org>
 
 	* tutorials/Straight_Line/*.png: Updated the screenshots for 2.0.

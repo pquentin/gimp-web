@@ -8,13 +8,13 @@
 <h2>Linux Screenshots</h2>
 <div style="float: left;">
   <a href="linux_screenshot1.png" style="margin-right: 1cm;">
-  <img src="linux_screenshot1_thumb.png" alt="Grid, Fullscreen Screenshot" />
+  <img src="linux_screenshot1_thumb.jpg" alt="Grid, Fullscreen Screenshot" />
   </a>
   <p style="text-align: left;">1024x768 English</p>
 </div>
 <div style="float: left;">
   <a href="linux_screenshot2.png">
-  <img src="linux_screenshot2_thumb.png" alt="Linux Screenshot" />
+  <img src="linux_screenshot2_thumb.jpg" alt="Linux Screenshot" />
   </a>
   <p style="text-align: left;">1280x1024 Swedish</p>
 </div>
@@ -22,19 +22,19 @@
 <h2>Windows Screenshots</h2>
 <div style="float: left;">
   <a href="windowsxp_screenshot1.png" style="margin-right: 1cm;">
-  <img src="windowsxp_screenshot1_thumb.png" alt="Windows XP Screenshot" />
+  <img src="windowsxp_screenshot1_thumb.jpg" alt="Windows XP Screenshot" />
   </a>
   <p style="text-align: left;">1024x768 German</p>
 </div>
 <div style="float: left;">
   <a href="windowsxp_screenshot2.png" style="margin-right: 1cm;">
-  <img src="windowsxp_screenshot2_thumb.png" alt="Windows XP Screenshot2" />
+  <img src="windowsxp_screenshot2_thumb.jpg" alt="Windows XP Screenshot2" />
   </a>
   <p style="text-align: left;">1024x768 German</p>
 </div>
 <div style="float: left;">
   <a href="windowsxp_screenshot3.png">
-  <img src="windowsxp_screenshot3_thumb.png" alt="Windows XP Screenshot3" />
+  <img src="windowsxp_screenshot3_thumb.jpg" alt="Windows XP Screenshot3" />
   </a>
   <p style="text-align: left;">1024x768 German</p>
 </div>
@@ -42,7 +42,7 @@
 <h2>Macintosh Screenshots</h2>
 <div style="float: left;">
   <a href="macosx_screenshot1.png">
-  <img src="macosx_screenshot1_thumb.png" alt="MacOS X Screenshot" />
+  <img src="macosx_screenshot1_thumb.jpg" alt="MacOS X Screenshot" />
   </a>
   <p style="text-align: left;">1024x768 English</p>
 </div>

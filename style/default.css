@@ -178,6 +178,18 @@ pre.debug {
   padding: 1.33em;
 }
 
+em.caution {
+  color: yellow;
+}
+
+em.warn {
+  color: orange;
+}
+
+em.hellbrokeloose {
+  color: red;
+}
+
 kbd {
   font-weight: bold;
 }

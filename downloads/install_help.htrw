@@ -36,34 +36,19 @@ space.  This will vary depending on architecture of course.  A full
 GIMP install including all the gimp-data packs can be 20 megs or
 more.</p>
 
-<p>A full compile of the stable version takes 18-20 minutes on a PPro
-200 or K-6 200 with 64 megs of RAM.  A full compile of the development
-version takes about as long on a P4 or Athlon (as of September 2003, a
-build from CVS on a P3 650MHz with 256 megs of RAM takes 28 minutes).
+<p>A full compile of the stable version takes 1-2 hours on a PPro
+200 or K-6 200 with 64 megs of RAM. On a P4 or Athlon with 256 megs 
+of RAM, a build can take 20-30 minutes.
 In general, expect about 3-4 times as long as a Linux kernel 2.2
 compile (for Linux systems of course).  In other words, its a long
 compile.  That's what 300,000+ lines of code get you.</p>
 
-<h2>Stable version (1.2.x)</h2>
-
-<ul>
-  <li><b>GTK+-1.2</b> (Gimp Toolkit). The GIMP toolkit can be found at
-  <a href="ftp://ftp.gimp.org/pub/gtk/">ftp://ftp.gimp.org/pub/gtk/</a>
-  Don't try to use the GTK+-2.2.0 version, it will not work with this
-  release.</li>
-</ul>
-
-<h2>Development version (1.3.x)</h2>
-
-<p>This is the development release and should be used for testing only
-and not for everyday work, you are using the development release on
-your own risk of crashes and maybe even lose work that has been
-done. You have been warned.</p>
+<h2>Stable version (2.0.x)</h2>
 
 <ul>
   <li>Recent version of <b>pkg-config</b> is needed and you can grab them at 
   <a href="http://www.freedesktop.org/software/pkgconfig/">http://www.freedesktop.org/software/pkgconfig/</a></li>
-  <li><b>GTK+ 2.2.0</b> or newer (Gimp Toolkit). The GIMP toolkit can be found at
+  <li><b>GTK+ 2.2.2</b> or newer (Gimp Toolkit). The GIMP toolkit can be found at
   <a href="ftp://ftp.gimp.org/pub/gtk/">ftp://ftp.gimp.org/pub/gtk/</a><br />
   GTK+-2.2 depends also on recent versions of:
   <ul>
@@ -89,7 +74,8 @@ href="./">download page</a>.</p>
 must be installed first. Look in Requirements above to find out
 more.</p>
 
-<p>Compile using: <kbd>./configure &amp;&amp; make &amp;&amp; make install</kbd></p>
+<p>Compile as a normal user using: <kbd>./configure &amp;&amp; make</kbd> 
+and then as root <kbd>make install</kbd></p>
 
 <p>If all goes well, a good while later, you will have a brand
 spanking new GIMP to play with.  Unfortunately, it has been rumored
@@ -107,7 +93,7 @@ href="INSTALL">INSTALL</a> file from the main GIMP distribution.</p>
 libgimpprint, which is now distributed as a separate package.  The
 previous versions of the GIMP (up to 1.2.3) included all files as part
 of the GIMP distribution, but you should now download and install
-libgimpprint separately from the Gimp-Print site:</p>
+libgimpprint 4.2.6 separately from the Gimp-Print site:</p>
 
 <p><a href="http://gimp-print.sourceforge.net/">http://gimp-print.sourceforge.net/</a></p>
 
@@ -156,5 +142,12 @@ above.  Same deal, different lib.  The places to look are at:</p>
 
 <p><a href="ftp://ftp.x.org/contrib/libraries/">ftp://ftp.x.org/contrib/libraries/</a></p>
   
+<h2>I have no SVG support</h2>
+
+<p>SVG support requires at least version 2.2 of the rsvg library from 
+gnome.org. This can be found at:</p>
+
+<p><a href="ftp://ftp.gnome.org/mirror/gnome.org/sources/librsvg/2.6/">ftp://ftp.gnome.org/mirror/gnome.org/sources/librsvg/</a></p>
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,8 @@
+2004-03-23  Dave Neary  <bolsh@gimp.org>
+
+	* downloads/install_help.htrw: Update stable version to 2.0.
+	Added information on getting rsvg.
+
 2004-03-22  Henrik Brix Andersen  <brix@gimp.org>
 
 	* source/index.htrw

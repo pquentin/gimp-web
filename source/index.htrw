@@ -4,70 +4,245 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>GIMP from Source</h1>
-
-<!-- FIXME: the contents of this page should be improved.  Some parts
-of the install_help page (currenly under /downloads/) should be moved
-here (or in a separate page under /source/) and that page should be
-deleted from the /downloads/ directory. -->
-
-<p>The official distribution of the GIMP is the source code,
-distributed in tar files from the GIMP ftp site and its <a
-href="wgo:downloads-mirrors">mirrors</a>.  The same source code can be
-compiled to create binaries for different platforms such as <a
-href="wgo:unix">Linux</a>, <a href="wgo:windows">Windows</a>, <a
-href="wgo:macintosh">MacOS X</a>, <a href="wgo:unix">Solaris</a>, and
-many others.  Depending on your needs, you may want to get one of
-these versions:</p>
-
+<p>
+  The official distribution of the GIMP is the source code,
+  distributed in tar files from the GIMP ftp site and its <a
+  href="wgo:downloads-mirrors">mirrors</a>. The same source code can be
+  compiled to create binaries for different platforms such as <a
+  href="wgo:unix">Linux</a>, <a href="wgo:windows">Windows</a>, <a
+  href="wgo:macintosh">MacOS X</a>, <a href="wgo:unix">Solaris</a>, and
+  many others.
+</p>
 <ul>
-
-<li>The <strong>stable version</strong> is recommended for most users.
-Pre-compiled binaries of the stable GIMP are usually available for
-many platforms (see the platform-specific pages for more details), so
-you do not even have to compile the code yourself.</li>
-
-<li>The <strong>unstable version</strong> is for those who want to
-check the progress towards the next stable release, and who want to
-help the developers by testing the code and reporting bugs.  The
-unstable version contains more features than the stable version but it
-may crash from time to time so be sure to save your work often.  If
-you are using this version, it could be a good idea to subscribe to
-some of the GIMP <a href="wgo:mail_lists">mailing lists</a> (gimp-user
-or gimp-developer) so that you can follow the discussions about new
-features and known bugs.</li>
-
-<li>The versions from <strong>CVS</strong>.  This is for those who
-want to live on the bleeding edge.  This will give you the latest
-version of the source code with the latest features, but also with the
-latest bugs (eeek!).  CVS maintains several versions of the code
-called "branches" so you can fetch the latest version ("HEAD") or a
-stable version from a maintenance branch.  If you intend to <a
-href="wgo:develop">contribute</a> to the development of the GIMP, then
-you should try CVS.  As the code is constantly evolving and features
-are added (or removed) every day, you should have a look at the <a
-href="wgo:dev">developers' site</a> and subscribe to the
-gimp-developer mailing list if you compile the code from CVS.</li>
-
+  <li><a href="#requirements">GIMP Requirements</a></li>
+  <li><a href="#gimp_from_cvs">GIMP from CVS</a></li>
+  <li><a href="#optional_packages">Optional packages</a></li>
 </ul>
 
-<p>In order to compile the GIMP from a tarball or from CVS, you will
-need several tools such as a compiler and some libraries.  The
-requirements may vary depending on the version that you are trying to
-compile (stable, unstable or CVS).  A basic list of requirements and
-some guidelines for compiling and installing the GIMP are provided <a
-href="/downloads/install_help.html">on a separate
-page</a><!-- FIXME: move the contents of that page here -->.</p>
+<h2>Stable version</h2>
+<p>
+  Is recommended for most users. Pre-compiled binaries of the stable GIMP are usually available 
+  for many platforms (see the platform-specific pages for more details), 
+  so you do not even have to compile the code yourself.
+</p>
 
-<p>If you want to get and build the GIMP from CVS, the following pages
-will help you:</p>
+<h2>Unstable version</h2>
+<p>
+  For those who want to check the progress towards the next stable release, 
+  and who want to help the developers by testing the code and reporting bugs. 
+  The unstable version contains more features than the stable version but 
+  it may crash from time to time so be sure to save your work often. 
+  If you are using this version, it could be a good idea to subscribe to 
+  some of the GIMP <a href="wgo:mail_lists">mailing lists</a> 
+  (gimp-user or gimp-developer) so that you can follow the 
+  discussions about new features and known bugs.
+</p>
 
+<h2>CVS versions</h2>
+<p>
+  This is for those who want to live on the bleeding edge. 
+  This will give you the latest version of the source code with 
+  the latest features, but also with the latest bugs (eeek!). 
+  CVS maintains several versions of the code called "branches" so you can 
+  fetch the latest version ("HEAD") or a stable version from a maintenance branch. 
+  If you intend to <a href="wgo:develop">contribute</a> to the development 
+  of the GIMP, then you should try CVS. As the code is constantly evolving 
+  and features are added (or removed) every day, 
+  you should have a look at the <a href="wgo:dev">developers' site</a> 
+  and subscribe to the gimp-developer mailing list if you compile the code from CVS.
+</p>
+
+<a name="requirements"><h1>GIMP Requirements</h1></a>
+<p>
+  All requirements below must be met to be able compiling GIMP from source.
+  This list might change depending on the releases being worked on during
+  development of GIMP. Look at the files INSTALL and README in the tarballs for details.
+</p>
+<table width="100%" cellspacing="0" cellpadding="2" style="text-align: left; margin: 1.33em 0px; margin-left: 40px; margin-right: 40px; border-style: solid; border-color: #d0d0d0; border-width: 1px;">
+<tr>
+  <th style="background-color: #f5f5f5;">Package</th>
+  <th style="background-color: #f5f5f5;">Version</th>
+  <th style="background-color: #f5f5f5;">FTP</th>
+  <th style="background-color: #f5f5f5;">HTTP</th>
+  <th style="background-color: #f5f5f5;">Description</th>
+</tr>
+<tr>
+<td>pkg-config</td>
+<td>0.15.0</td>
+<td>-</td>
+<td><a href="http://www.freedesktop.org/software/pkgconfig/">Download</a></td>
+<td>A system for managing library compile/link flags</td>
+</tr>
+
+<tr>
+<td>GTK+</td>
+<td>2.2.2</td>
+<td><a href="ftp://ftp.gimp.org/pub/gtk/">Download</a></td>
+<td>-</td>
+<td>The GIMP toolkit</td>
+</tr>
+
+<tr>
+<td>GLib</td>
+<td>2.2.0</td>
+<td><a href="ftp://ftp.gtk.org/">Download</a></td>
+<td>-</td>
+<td>Glib Convenience Library</td>
+</tr>
+
+<tr>
+<td>Pango</td>
+<td>1.2.0</td>
+<td><a href="ftp://ftp.gtk.org/">Download</a></td>
+<td>-</td>
+<td>Text layout engine</td>
+</tr>
+
+<tr>
+<td>ATK</td>
+<td>1.2.0</td>
+<td><a href="ftp://ftp.gtk.org/pub/gtk/v2.2/">Download</a></td>
+<td>-</td>
+<td>Accessibility Toolkit</td>
+</tr>
+
+<tr>
+<td>FreeType2</td>
+<td>2.0.9</td>
+<td>-</td>
+<td><a href="http://www.freetype.org/">Download</a></td>
+<td colspan="2">Font rendering</td>
+</tr>
+
+<tr>
+<td>Fontconfig</td>
+<td>2.2.0</td>
+<td>-</td>
+<td><a href="http://x2.freedesktop.org/software/fontconfig">Download</a></td>
+<td>Font Configuration</td>
+</tr>
+
+<tr>
+<td>libart2</td>
+<td>2</td>
+<td><a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">Download</a></td>
+<td>-</td>
+<td>Vector rendering
+</td></tr></table>
+
+
+<a name="gimp_from_cvs"><h1>GIMP from CVS</h1></a>
+<p>
+  If you want to work with GIMP from CVS. Then the following howtos are written to give
+  you a fast introduction. To find out more about GIMP and CVS related topics;
+  <a href="wgo:dev">http://developer.gimp.org/</a> should answer the questions you need.
+</p>
 <ul>
   <li><a href="wgo:source-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
   <li><a href="wgo:source-howtos-stable_cvs_build">Build The Stable GIMP from CVS</a></li>
 </ul>
+<p>
+  See the platform-specific pages for additional requirements and 
+  instructions for each operating system.
+</p>
 
-<p>See the platform-specific pages for additional requirements and
-instructions for each operating system.</p>
+<a name="optional_packages"><h1>Optional packages</h1></a>
+<p>
+  To make it easy for you to understand how to get GIMP and what is required to run GIMP,
+  the list of packages has been done below. Not only is the list for the required packages
+  but also for the packages that can be added to support other things like fileformats etc.
+</p>
+
+<table width="100%" cellspacing="0" cellpadding="2" style="text-align: left; margin: 1.33em 0px; margin-left: 40px; margin-right: 40px; border-style: solid; border-color: #d0d0d0; border-width: 1px;">
+<tr>
+  <th style="background-color: #f5f5f5;">Package</th>
+  <th style="background-color: #f5f5f5;">Version</th>
+  <th style="background-color: #f5f5f5;">FTP</th>
+  <th style="background-color: #f5f5f5;">HTTP</th>
+  <th style="background-color: #f5f5f5;">Description</th>
+  <th style="background-color: #f5f5f5;">Dependency</th>
+</tr>
+
+<tr>
+<td>libexif</td>
+<td>0.5.12</td>
+<td>-</td>
+<td><a href="http://sourceforge.net/projects/libexif">Download</a></td>
+<td>EXIF tag support for JPEGs</td>
+<td>Optional</td>
+</tr>
+
+<tr>
+<td>gimp-print</td>
+<td>4.2.0</td>
+<td>-</td>
+<td><a href="http://gimp-print.sourceforge.net">Download</a></td>
+<td>Gimp-print</td>
+<td>Optional (explicit disable)</td>
+</tr>
+
+<tr>
+<td>libjpeg</td>
+<td>v6b</td>
+<td><a href="ftp://ftp.uu.net/graphics/jpeg/">Download</a></td>
+<td>-</td>
+<td>JPEG support</td>
+<td>Optional (explicit disable)</td>
+</tr>
+
+<tr>
+<td>libpng</td>
+<td>1.2.5</td>
+<td><a href="ftp://ftp.gimp.org/pub/gimp/libs/">Download</a></td>
+<td><a href="http://www.libpng.org/">Download</a></td>
+<td>PNG support</td>
+<td>Optional (explicit disable)</td>
+</tr>
+
+<tr>
+<td>libtiff</td>
+<td>3.5.7</td>
+<td><a href="ftp://ftp.gimp.org/pub/gimp/libs/">Download</a></td>
+<td><a href="http://www.remotesensing.org/libtiff/">Download</a></td>
+<td>TIFF support</td>
+<td>Optional (explicit disable)</td>
+</tr>
+
+<tr>
+<td>libmng</td>
+<td>...</td>
+<td>-</td>
+<td><a href="http://www.libmng.com/">Download</a></td>
+<td>MNG support</td>
+<td>Optional (plugin won't be built)</td>
+</tr>
+
+<tr>
+<td>librsvg</td>
+<td>&gt;=2.2</td>
+<td><a href="ftp://ftp.gnome.org/mirror/gnome.org/sources/librsvg/">Download</a></td>
+<td><a href="http://librsvg.sourceforge.net/">Download</a></td>
+<td>Scalable Vector Graphics</td>
+<td>Optional (plugin won't be built)</td>
+</tr>
+
+<tr>
+<td>libwmf</td>
+<td>...</td>
+<td>-</td>
+<td><a href="http://wvware.sourceforge.net/libwmf.htm">Download</a></td>
+<td>Library to convert wmf files</td>
+<td>Optional (plugin won't be built)</td>
+</tr>
+
+<tr>
+<td>zlib</td>
+<td>1.1.4</td>
+<td><a href="ftp://ftp.gimp.org/pub/gimp/libs/">Download</a></td>
+<td><a href="http://www.gzip.org/zlib/">Download</a></td>
+<td>Compression routines</td>
+<td>Optional
+</td></tr></table>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

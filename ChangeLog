@@ -2,9 +2,10 @@
 
 	* admin/gimp-web-urls: added contest page.
 
-	* index.htrw: link to the splash contest.
+	* index.htrw
+	* about/splash/index.htrw: link to the splash contest.
 
-	* about/splash/contest/index.htrw: tried to fix the layout.
+	* about/splash/contest/index.htrw: fixed layout.
 
 2004-11-30  Sven Neumann  <sven@gimp.org>
 

@@ -4,7 +4,8 @@ pgo TODO List:
 about/ChangLogs/:
     Changelog.pl:  the wgo2 wrapper needs to be stripped from this script and 
        replaced with <pre></pre> tags as the only people who read these for real
-       will probably get pissy with the nice html.
+       will probably get pissy with the nice html.  this is the ChangeLog from the
+       current stable tarball.
        
        the rest  of the script needs to be written (for the remaining ChangeLogs
        
@@ -33,8 +34,8 @@ about/introduction.html:
    complete rewrite would suit me fine.
    
 about/mediakit.html:
-   needs to be rendered useful by someone who knows what the media would need have
-   here.
+   needs to be rendered useful by someone who knows what the media would need to
+   have here.
        
 about/screenshots.html:
    i stole a gif from simon of all of the menu tree.  other screenshots can prolly
@@ -79,10 +80,12 @@ development/index.html:
    then let the interested developers play on developer.gimp.org where all is forgiven
    if it goes alittle stale.  this page should start out stale.  easy to maintain 
    that way.
-    
+   
+   the last 10 ChangeLog entries from any gimp project that has annon cvs access.
+   
 docs/cookbook/:
-   pipedream.  would be a 2 hour job for someone with the experience and the knowledge.
-   nobody like that has the time.
+   some outline and a place to upload nice little gimp script pieces.  this was
+   nomis and akks very good idea, and should be implemented.
     
 docs/developer_docs/:
    i need to figure out how to get these to build on my computer and then i will

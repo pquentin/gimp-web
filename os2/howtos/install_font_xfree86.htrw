@@ -13,6 +13,9 @@
   <a href="http:Package-GIMP-fonts">Type1</a> and TrueType fonts (e.g. in The GIMP) installed 
   on &quot;normal&quot; OS/2 some things have to be done.
 </p>
+<p>
+  The sample configuration files presented here are only exerpts of a whole document.
+</p>
 <h2>1. Type1 fonts</h2>
 <p>
   To install Type1 fonts open your XF86Config file and go to the 
@@ -122,7 +125,7 @@ font-service 7100/udp #X Font Service
 </p>
 <h2>The Original How To</h2>
 <p>
-   The <a href="os2-howto:Font_Installation_in_xfree86/os2-Hennecke_Christian">original how to</a> and several others can be found on Christian's site, 
+   The <a href="os2-howto:Font_Installation_in_xfree86/os2-Hennecke_Christian">original how to</a> and several others can be found on 
    <a href="home:People-Hennecke_Christian">www.os2world.com</a>.
 </p>
 

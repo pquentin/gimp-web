@@ -1,3 +1,26 @@
+2003-04-12  Carol Spears  <carol@gimp.org>
+
+    * style/default.css, added pre style (text) to move the text pages away from
+                         the margin.  still considering a "notepad" style for the
+                         windows section.  i copied the span.filter class into
+                         span.path.  we should consider using it named this way, as
+                         even the filter is a path.  i hope the designer doesn't get
+                         angry .... 
+    * admin/gimp-web-urls, added some from suggestions from the gimp-os2 list.
+    * os2/index.htrw, screenshots, whee! (also added epplets.jpg, gimp118-1.jpg,
+                      gimp118-2.jpg, gimp118-3.jpg, gimp118-4.jpg, mydesk.jpg, 
+                      mydesk2.jpg, and mEgEdtop.jpg.
+    * os2/howtos/install_font__xfree86.htrw, put the authors meta tags on the page.
+                                             some style changes.
+    * os2/howtos/install_gimp__xfree86.htrw, put the authors meta tags on the page, made
+                                             changes suggested on gimp-os2 maillist.
+    * os2/howtos/XF86Config_Files_type1.html, twiddled with the style.
+    * os2/howtos/XF86Config_Files_truetype.html, twiddled with the style.
+    * os2/howtos/XF86Config_Files_original.html, twiddled with the style.
+    * os2/howtos/XF86Config_Files.html, twiddled with the style.
+    * os2/howtos/services.html, twiddled with the style.
+                                             
+
 2003-04-11  Carol Spears  <carol@gimp.org>
 
     * os2/howtos/install_font__xfree86.htrw, added recent changes.

@@ -44,7 +44,7 @@
 <p>
   The archive contains the three files: rencase.exe, type1inst and t1embed. Copy 
   rencase.exe into your path and the other two files into the same directory 
-  (e.g. \Perl\lib). The tool rencase.exe can be used to convert filenames to 
+  (e.g. <span class="path">\Perl\lib</span>). The tool rencase.exe can be used to convert filenames to 
   upper- or lowercase. This is important since the type1inst script isn't case 
   sensitive, but the X server is and it will not start if the entries in the 
   desription files don't exactly match the filenames.
@@ -75,7 +75,7 @@
 <ul>
   <li>Get the TrueType fontserver <a href="http:Package-fonts-os2-xfsttos2">xfsttos2</a> 
       and unzip the archive into the root of your XFree86/OS2 drive.</li>
-  <li>Copy the TrueType fonts you want to install to /XFree86/lib/X11/fonts/Truetype.</li>
+  <li>Copy the TrueType fonts you want to install to <span class="path">/XFree86/lib/X11/fonts/Truetype</span>.</li>
   <li>Convert the fonts' filenames to lowercase using <kbd>rencase&nbsp;-l&nbsp;*</kbd> in the fonts' directory.</li>
   <li>Start <kbd>xfstt&nbsp;-once</kbd> without starting XFree86/OS2.</li>
   <li>Add the line
@@ -89,8 +89,8 @@ FontPath &quot;inet/127.0.0.1:7100&quot;
 font-service 7100/tcp #X Font Service
 font-service 7100/udp #X Font Service
       </pre>
-      into the <a href="wgo:os2-howtos-services">%ETC%\services file</a> (%ETC% is the value of the ETC environment 
-      variable, on Warp 4 bootdrive:\MPTN\ETC). Again 7100 is the font server's 
+      into the <a href="wgo:os2-howtos-services"><span class="path">%ETC%\services</span> file</a> (%ETC% is the value of the ETC environment 
+      variable, on Warp 4 bootdrive:<span class="path">\MPTN\ETC</span>). Again 7100 is the font server's 
       port.</li>
 </ul>
 <p>

@@ -6,6 +6,7 @@
 ["href", "http:Package-libtool",            { "href": "http://www.gnu.org/software/libtool/libtool.html"}]
 ["href", "http:Package-man2html",           { "href": "http://www.w3.org/Tools/man2html.html"}]
 ["href", "http:Package-Gnome",              { "href": "http://www.gnome.org"}]
+["href", "http:Package-SANE",               { "href": "http://www.mostang.com/sane/"}]
 
 ["href", "http:Package-GIMP-stable",        { "href": "ftp://ftp.gimp.org/pub/gimp/stable"}]
 ["href", "http:Package-GIMP-unstable",      { "href": "ftp://ftp.gimp.org/pub/gimp/unstable"}]
@@ -16,10 +17,12 @@
 ["href", "http:Package-GTK-stable",         { "href": "ftp://ftp.gimp.org/pub/gtk/"}]
 ["href", "http:Package-GTK-unstable",       { "href": "ftp://ftp.gimp.org/pub/gtk/unstable"}]
 
-["href", "http:Package-GIMP-os2-stable-xfree86",    { "href": "http://os2ports.com/browse/index_html?dir=pub/os2/unix/xfree86/ports/GIMP"}]
+["href", "http:Package-GIMP-os2-stable-xfree86",    { "href": "http://birdy.os2.ru/u_gnome_download.html"}]
 ["href", "http:Package-GIMP-os2-stable-PM",         { "href": "http://everblue.netlabs.org/?show=download"}]
 ["href", "http:Package-GTK-os2-stable",             { "href": "http://os2ports.com/browse/index_html?dir=pub/os2/unix/xfree86/ports/GIMP"}]
+["href", "http:Package-GTK-os2-stable-themes",      { "href": "http://birdy.os2.ru/n_gnome_download.html"}]
 ["href", "http:Package-perl-os2",                   { "href": "http://www.gus.biysk.ru/ftp/OS2/PERL/"}]
+["href", "http:Package-SANE-os2-stable",            { "href": "http://home.tiscalinet.de/fbakan/sane109.htm"}]
 ["href", "http:Package-emx-os2",                    { "href": "http://hobbes.nmsu.edu/cgi-bin/h-browse?dir=/pub/os2/dev/emx/v0.9d"}]
 ["href", "http:Package-xfree86-os2",                { "href": "http://os2ports.com/browse/index_html?dir=pub/os2/unix/xfree86"}]
 ["href", "http:Package-xfree86_4-os2",              { "href": "ftp://ftp.netlabs.org/pub/xfree86/"}]
@@ -133,7 +136,7 @@
 ["href", "wgo:os2-howtos-gimp_xfree86_install",        { "href": "/os2/howtos/install_gimp_xfree86.html"}]
 ["href", "wgo:os2-howtos-services",                    { "href": "/os2/howtos/services.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files",           { "href": "/os2/howtos/XF86Config3_Files.html"}]
-["href", "wgo:os2-howtos-XF86Config3_Files_original",  { "href": "/os2/howtos/XF86Config3_Files.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_original",  { "href": "/os2/howtos/XF86Config3_Files-original.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files_truetype",  { "href": "/os2/howtos/XF86Config3_Files_truetype.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files_type1",     { "href": "/os2/howtos/XF86Config3_Files_type1.html"}]
 
@@ -141,6 +144,7 @@
 ["href", "plugin-home:gimpfreetype-os2-stable",	        { "href": "http://groups.yahoo.com/group/gimp-os2/files/"}]
 ["href", "plugin-author:gimpfreetype-Neumann_Sven",	    { "href": "mailto:sven@gimp.org"}]
 
+["href", "plugin-archive:gimp",	     { "href": "http://registry.gimp.org"}]
 ["href", "plugin-archive:os2",	     { "href": "http://cip.uni-trier.de/thielen/teamos2/gimp_a/"}]
 
 
@@ -173,6 +177,7 @@
 ["href", "tutorial:Using_GAP-Jakub_Steiner",		        { "href": "http://jimmac.musichall.cz/popup.php3?img=gap&mapa="}]
 ["href", "tutorial:Working_with_the_Image-Kevin_Turner",	{ "href": "http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro"}]
 
+["href", "os2-howto:SANE-Bakan_Franz",          	    { "href": "http://home.tiscalinet.de/fbakan/sane-os2-configuration.htm"}]
 ["href", "os2-howto:Installing_XFree86/OS2_3.3.x-Hennecke_Christian",	    { "href": "http://www.os2world.com/os2files/xfree86/installation.html"}]
 ["href", "os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian",	    { "href": "http://www.os2voice.org/VNL/past_issues/VNL0403H/vnewsf6.htm"}]
 ["href", "os2-howto:Font_Installation_in_xfree86/os2-Hennecke_Christian",	{ "href": "http://www.os2world.com/os2files/xfree86/font_install.html"}]

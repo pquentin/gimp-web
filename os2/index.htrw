@@ -22,6 +22,18 @@
    <li><a href="wgo:os2-howtos_xfree86_install_fonts">How To Install Fonts In OS2/xfree86</a></li>
    <li><a href="wgo:os2-howtos-gimp_xfree86_install">How To Install GIMP For OS2/xfree86</a></li>
 </ul>
+<h2>OS/2 Screenshots</h2>
+<h3>unknowingly contributed by Platon Fomichev, Khairil Yusof, Pierre Lucas, and Christoph Vogelbusch</h3>
+<ul>
+   <li><a href="gimp118-1.jpg">gimp-1.1.8 (Eek!)</a></li>
+   <li><a href="gimp118-2.jpg">gimp-1.1.8 <span class="path">File -&gt;Open</span></a></li>
+   <li><a href="gimp118-3.jpg">gimp-1.1.8 <span class="path">File -&gt;New</span></a></li>
+   <li><a href="gimp118-4.jpg">gimp-1.1.8 <span class="path">File -&gt;Preferences -&gt;Directories</span></a></li>
+   <li><a href="mydesk.jpg">a GNOME/2 desktop with The GIMP</a></li>
+   <li><a href="mEgEdtop.jpg">a GNOME/2 desktop with The GIMP</a></li>
+   <li><a href="mydesk2.jpg">a GNOME/2 desktop with The GIMP</a></li>
+   <li><a href="epplets.jpg">a GNOME/2 desktop with The GIMP</a></li>
+</ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

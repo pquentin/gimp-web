@@ -140,6 +140,10 @@ span.filter {
   font-weight: bold;
 }
 
+span.path {
+  font-weight: bold;
+}
+
 span.different {
   font-weight: bold;
   background-color:   transparent;
@@ -176,6 +180,18 @@ pre.debug {
   color: black;
   background: #ddddff;
   border: solid 2px black;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1.33em 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 1.33em;
+}
+
+
+pre.text {
+  color: black;
+  background: #ddddff;
   font-family: monospace;
   white-space: pre;
   margin: 1.33em 0px;

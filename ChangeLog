@@ -3,7 +3,7 @@
         * team.html: Add Atte André Jensen to the tutorial authors list.
 
         * tutorials/Selective_Gaussian_Blur/: Add the first port of the
-        Selective Gaussian Blur tutorial.
+        Selective Gaussian Blur tutorial. Minor HTML and Image fixes.
 
         * tutorials/index.html: Changed Channel Mixer to Color2BW.
         Removed Selection Overview. Add CCD Noise removal to the list of

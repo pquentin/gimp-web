@@ -1,5 +1,8 @@
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
+	* links/.cvsignore: Added this file to take care of the new files
+	created by Niklas.
+
 	* unix/index.htrw: SunFreeware is a .com, not .org.  Mention Mike
 	Sweet's name in the link to his page.
 

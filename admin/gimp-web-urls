@@ -175,7 +175,8 @@
 ["href", "wgo:dev-howtos-bugzilla",            { "href": "/bugs/howtos/bugzilla.html"}]
 ["href", "wgo:dev-howtos-subpatch",	       { "href": "/bugs/howtos/submit-patch.html"}]
 ["href", "wgo:docs",                           { "href": "/docs/"}]
-["href", "wgo:docs-gimp_help",                 { "href": "/docs/gimp-help/"}]
+
+["href", "wgo:docs-gimp_help",                 { "href": "http://docs.gimp.org/"}]
 ["href", "wgo:docs-gimp_help-en",              { "href": "http://docs.gimp.org/en/"}]
 ["href", "wgo:docs-gimp_help-cs",              { "href": "http://docs.gimp.org/cs/"}]
 ["href", "wgo:docs-gimp_help-de",              { "href": "http://docs.gimp.org/de/"}]

@@ -1,3 +1,7 @@
+2003-08-10  Raphael Quinet  <quinet@gamers.org>
+
+	* about/index.htrw: trivial fix for bug #119489 (stray <i> tags).
+
 2003-08-07 scizzo <scizzo@gimp.org>
 
 	* /macintosh/index.htrw: Fixed a link bug to Mats email.

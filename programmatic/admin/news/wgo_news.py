@@ -37,6 +37,7 @@ import stat
 import string
 import sys
 import time
+import calendar
 import types
 
 sys.path = ['${LIBDIR}'] + sys.path
@@ -66,7 +67,7 @@ class news:
     try:
       if source == None:
         self.msg = email.Message.Message()
-        self.msg["Date"] = rfc822.formatdate(time.mktime(time.gmtime()))
+        self.msg["Date"] = rfc822.formatdate()
         self.msg["From"] = "<wilber@news.gimp.org> Wilber Gimp"
         self.msg["Message-Id"] = "<" + time.strftime("%Y%m%d%H%M%S-") + str(os.getpid()) + "@news.gimp.org>" 
         self.msg["Reply-To"] = ""
@@ -78,7 +79,7 @@ class news:
         self.valid = True
       elif str(source.__class__) == 'cgi.FieldStorage':
         self.msg = email.Message.Message()
-        self.msg["Date"] = rfc822.formatdate(time.mktime(rfc822.parsedate(xhtml.unescape(source["date"].value))))
+        self.msg["Date"] = rfc822.formatdate(calendar.timegm(rfc822.parsedate(xhtml.unescape(source["date"].value))))
         self.msg["From"] = xhtml.unescape(source["from"].value)
         self.msg["Message-Id"] = xhtml.unescape(source["message-id"].value)
         self.msg["Reply-To"] = ""

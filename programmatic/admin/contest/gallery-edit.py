@@ -145,8 +145,6 @@ def display_gallery(form):
   wgo_admin.header('www.gimp.org - Administration - Splash Image',
                    [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
 
-  # XXX The algorithms in this function are a mess.
-  # The variable images_per_page is supposed to work out a nice layout, but for now the layout is hardcoded as two rows of four images.
   names = get_gallery_names()
 
   if len(names) == 0:                   # If there's nothing to do, return
@@ -170,7 +168,7 @@ def display_gallery(form):
     prev = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_index)}, prev)
     pass
 
-  print xhtml.table.init({"class" : "contest-edit-progress-bar"})
+  print xhtml.table.init({"class" : "contest-progress-bar"})
   print xhtml.table.row.init()
   print xhtml.table.cell({"id" : "prev"}, prev)
 

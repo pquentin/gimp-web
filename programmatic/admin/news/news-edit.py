@@ -86,8 +86,8 @@ def html_news_edit(this_queue, other_queue, msg, editor):
   
   print xhtml.table.row(xhtml.table.cell("&nbsp;"))
   
-  print xhtml.table.row(xhtml.table.cell(xhtml.input.submit({"name" : "action", "value" : "save", "title" : "save changes"}) + "&nbsp;"
-                                         + approve_disapprove + "&nbsp;"
+  print xhtml.table.row(xhtml.table.cell(xhtml.input.submit({"name" : "action", "value" : "save", "title" : "save changes"})
+                                         + "&nbsp;" + approve_disapprove + "&nbsp;"
                                          + xhtml.input.submit({"name" : "action", "value" : "delete", "title" : "delete this article"}),
                                          {"colspan" : "2"}))
   
@@ -133,7 +133,7 @@ def main():
   except:
     m = wgo_news.news()
     m["message-id"] = message_id
-    m["date"] = rfc822.formatdate(time.time())
+    m["date"] = rfc822.formatdate()
     pass
 
   if os.environ.has_key("REMOTE_USER"):

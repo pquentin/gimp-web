@@ -43,6 +43,8 @@ import wgo_queue
 def main():
   form = cgi.FieldStorage()
 
+  #wgo.config.debug = True
+  
   if wgo.config.debug: xhtml.print_form(form)
 
   if not (form.has_key("message-id") and form.has_key("action") and form.has_key("queue")) and not (form.has_key("subject") and form.has_key("body")):

@@ -1,3 +1,22 @@
+2004-12-28  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/contest/gallery.py
+	* programmatic/admin/contest/gallery-edit.py:
+	* programmatic/contest/gallery.py
+	* programmatic/contest/wgo-contest.cpp
+	* programmatic/contest/wgo_contest.py
+
+	Display 12 images per page.  Code cleanup.
+	
+	* programmatic/admin/wgo-admin.cpp
+	* programmatic/admin/news/news-edit-action.py
+	* programmatic/admin/news/news-edit.py
+	* programmatic/admin/news/wgo_news.py
+
+	Fixed bug 161496: News system messes with time stamps. The problem
+	was inadvertant conversion to and from UTC and localtime.
+
+
 2004-12-28  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.2.1 release.

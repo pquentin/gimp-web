@@ -57,7 +57,6 @@ def get_gallery_names():
   names.sort()
   return (names)
   
-
 def format(name):
   view_button = {"name" : "action", "value" : "view"}
   view = "gallery.cgi?display=image&amp;name=" + name
@@ -77,49 +76,62 @@ def display_gallery(form):
 
   names = get_gallery_names()
 
-  index = int(form.getfirst("index", "0"))
-  tableless = int(form.getfirst("tableless", "0"))
-  images_per_page = 8
+  if len(names) == 0:
+    wgo_contest.folio_fini();
+    return
 
-  next = ""
-  next_page_images = index + images_per_page + 1
-  if index < len(names) and len(names) >= next_page_images:
-    next = xhtml.hyperlink("NEXT", {"class" : "faux-button", "href" : "gallery.cgi?display=GALLERY&amp;index=%d" % (next_page_images)})
+  this_page_index = int(form.getfirst("index", "0"))
+
+  images_per_page = 12
+
+  next_page_index = this_page_index + images_per_page
+  prev_page_index = this_page_index - images_per_page
+
+  next = "&gt;"
+  if this_page_index < len(names) and len(names) >= next_page_index:
+    next = xhtml.hyperlink({"href" : "gallery.cgi?mode=GALLERY&amp;index=%d" % (next_page_index)}, next)
     pass
 
-  prev = ""
-  prev_page_images = index - images_per_page - 1
-  if index >= images_per_page:
-    prev = xhtml.hyperlink("PREV", {"class" : "faux-button", "href" : "gallery.cgi?display=GALLERY&amp;index=%d" % (prev_page_images)})
+  prev = "&lt;"
+  if this_page_index >= images_per_page:
+    prev = xhtml.hyperlink({"href" : "gallery.cgi?mode=GALLERY&amp;index=%d" % (prev_page_index)}, prev)
     pass
 
-  print xhtml.div(xhtml.span(prev, {"style" : "float: left;"}) + xhtml.span(next, {"style" : "float: right;"}) + "&nbsp;", {"style" : "height 10ex;"})
+  print xhtml.table.init({"class" : "contest-progress-bar"})
+  print xhtml.table.row.init()
+  print xhtml.table.cell({"id" : "prev"}, prev)
 
-  if tableless == 0:
-    if len(names) > 0:
-      print xhtml.table.init({"cellspacing" : 6, "cellpadding" : 0, "border" : 0, "class" : "gallery"})
-      print xhtml.table.row.init()
-      map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))), names[index:index+(images_per_page/2)])
-      print xhtml.table.row.fini()
+  position = this_page_index * 100 / len(names)
 
-      if len(names[index+(images_per_page/2):index+images_per_page + 1]) > 0:
-        print xhtml.table.row.init()
-        map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))), names[index+(images_per_page/2):index+images_per_page + 1])
-        print xhtml.table.row.fini()
-        pass
-      
-      print xhtml.table.fini()
+  for i in range(0, 100):
+    index = len(names) * i / 100
+    link = "&nbsp;"
+    if i == position:
+      print xhtml.table.cell({"id" : "current-position", "title" : "image %d (%d%%)" % (this_page_index, i)}, link)
+    else:
+      print xhtml.table.cell(link)
       pass
     pass
-  else:                                 # table-less layout
-    print xhtml.div.init({"style" : "vertical-align: bottom;"})
-    print xhtml.div("&nbsp;", {"style" : "clear: both;"})
-    for k in names[index:next_page_images]:
-      print xhtml.div(format(k), {"style" : "float: left; margin: 1em;"})
-      pass
-    print xhtml.div("&nbsp;", {"style" : "clear: both;"})
-    print xhtml.div.fini()
-    pass
+  print xhtml.table.cell({"id" : "next" }, next)
+  print xhtml.table.row.fini()
+  print xhtml.table.fini()
+  
+
+  print xhtml.table.init({"class" : "contest-image-gallery"})
+
+  row_start = this_page_index
+  row = names[row_start : row_start + 4]
+  print xhtml.table.row("".join(map(lambda k: str(xhtml.table.cell(format(k))), row)))
+
+  row_start = this_page_index + 4
+  row = names[row_start : row_start + 4]
+  print xhtml.table.row("".join(map(lambda k: str(xhtml.table.cell(format(k))), row)))
+
+  row_start = this_page_index + 8
+  row = names[row_start : row_start + 4]
+  print xhtml.table.row("".join(map(lambda k: str(xhtml.table.cell(format(k))), row)))
+
+  print xhtml.table.fini()
 
   # Comment out submission when contest is closed.
   #print xhtml.div(xhtml.hyperlink("Submit an image", {"href" : "/contest/contest.cgi"}))
@@ -143,7 +155,93 @@ def display_image(form):
   wgo_contest.folio_fini()
 
   return
+
+def display_slideshow(form):
+  names = get_gallery_names()
+
+  if len(names) == 0:
+    wgo_contest.folio_init()
+    wgo_contest.folio_fini()
+    return
   
+  name = os.path.basename(form.getvalue("image", names[0]))
+  refresh = int(form.getvalue("refresh", "5"))
+  fullscreen = form.getvalue("fullscreen", "")
+  style = form.getvalue("style", "")
+  if refresh < 2:
+    refresh = 2
+
+  entry = wgo_contest.gallery_image(name)
+
+  image_file = wgo_contest.gallery_file(entry["name"], ".png")
+
+  next_name = name[0]
+  for i in range(0, len(names)):
+    if names[i] == name:
+      next_name = names[(i + 1) % len(names)]
+      break
+    pass
+
+  url = "gallery.cgi?display=slideshow&image=%s" % (next_name)
+  if (fullscreen == "true"):
+    fullscreen_attr = "&fullscreen=true"
+    refresh_attr    = "&refresh=%d" % (refresh)
+    if style != "":
+      style_attr      = "&style=" + style
+    else:
+      style_attr    = ""
+    
+    wgo.http_preamble(["Content-Type: text/html", "Refresh: " + str(refresh) + ";url=" + url + refresh_attr + fullscreen_attr + style_attr])
+
+    print xhtml.html.init()
+    print xhtml.head()
+    print xhtml.body.init({"style" : "background: black; color: white;"})
+    if style == "":
+      fill_window = xhtml.hyperlink({"style" : "color: gray;", "href" : url + refresh_attr + fullscreen_attr + "&style=width:100%;"}, "[fill window]")
+    else:
+      fill_window = xhtml.hyperlink({"style" : "color: gray;", "href" : url + refresh_attr + fullscreen_attr}, "[normal size]")
+    
+    print xhtml.span({"style" : "font-size: small; margin-top: 10ex; margin-bottom: 5ex;"},
+                     xhtml.hyperlink({"style" : "color: gray;", "href" : url + fullscreen_attr + style_attr + "&refresh=%s" % (5)}, "5s") +  " " + 
+                     xhtml.hyperlink({"style" : "color: gray;", "href" : url + fullscreen_attr + style_attr + "&refresh=%s" % (10)}, "10s") + " " +
+                     xhtml.hyperlink({"style" : "color: gray;", "href" : url + fullscreen_attr + style_attr + "&refresh=%s" % (15)}, "15s") + " " +
+                     xhtml.hyperlink({"style" : "color: gray;", "href" : url + fullscreen_attr + style_attr + "&refresh=%s" % (20)}, "20s") + " " +
+                     fill_window
+                     )
+
+    print xhtml.table.init({"style" : "text-align: center; vertical-align: middle; width: 100%;"})
+    print xhtml.table.row(
+      xhtml.table.cell(xhtml.image({"style" : "%s" % (style), "src" : image_file})) +
+      xhtml.table.cell({"style" : "font-size: xx-large; text-align: right; padding-right: 5%;" },
+                       "<i>" + entry["title"] + "</i><br />&nbsp;" + entry["author"])
+      )
+    print xhtml.table.fini()
+
+    print xhtml.body.fini()
+    print xhtml.html.fini()
+    pass
+  else:
+    url = "gallery.cgi?display=slideshow&image=%s&refresh=%d" % (next_name, refresh)
+    wgo.http_preamble(["Content-Type: text/html", "Refresh: %s;url=%s" % (refresh, url)])
+    wgo.header("page", "GIMP Splash Image Slideshow", [{"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "wgo-contest.css", "type" : "text/css"}])
+
+    print xhtml.span({"style" : "font-size: small; margin-bottom: 5ex;"},
+                     xhtml.hyperlink({"href" : "gallery.cgi?display=slideshow&image=%s&refresh=%s" % (next_name, 5)}, "[5s]") +  " " + 
+                     xhtml.hyperlink({"href" : "gallery.cgi?display=slideshow&image=%s&refresh=%s" % (next_name, 10)}, "[10s]") + " " +
+                     xhtml.hyperlink({"href" : "gallery.cgi?display=slideshow&image=%s&refresh=%s" % (next_name, 15)}, "[15s]") + " " +
+                     xhtml.hyperlink({"href" : "gallery.cgi?display=slideshow&image=%s&refresh=%s" % (next_name, 20)}, "[20s]") + " " +
+                     xhtml.hyperlink({"href" : "gallery.cgi?display=slideshow&image=%s&refresh=%s&fullscreen=true" % (next_name, refresh)}, "[full window]")
+                     )
+    print xhtml.table.init({"class" : "splash-slideshow"})
+    print xhtml.table.row(
+      xhtml.table.cell(xhtml.image({"src" : image_file})) +
+      xhtml.table.cell("<i>" + entry["title"] + "</i><br />&nbsp;" + entry["author"])
+      )
+    print xhtml.table.fini()
+
+    wgo_contest.folio_fini()
+    pass
+  return
 
 def main(argv):
   form = cgi.FieldStorage()
@@ -152,6 +250,7 @@ def main(argv):
   
   if display in ["gallery", "GALLERY"]: display_gallery(form)
   elif display in ["image", "IMAGE"]: display_image(form)
+  elif display in ["slideshow", "SLIDESHOW"]: display_slideshow(form)
   else:
     pass
 

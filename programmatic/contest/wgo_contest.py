@@ -187,13 +187,7 @@ def spool_path(name, suffix=""):
 
 def folio_init(title=""):
   wgo.http_preamble(["Content-Type: text/html"])
-
   wgo.header("page", title, [{"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css"}])
-  #print wgo.xhtml_init()
-  #print xhtml.title(title)
-  #print wgo.look_feel()
-  #print xhtml.link({"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css"})
-  #print wgo.page_init()
   return
 
 def folio_fini():

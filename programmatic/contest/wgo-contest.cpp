@@ -137,4 +137,51 @@ table th {
 }
 
 
+table.contest-progress-bar {
+		width: 100%;
+		font-size: large;
+		padding: 0;
+		border-spacing: 0;
+		border-collapse: collapse;
+		border: 1px solid black;
+		border-top: none;
+		margin-bottom: 1em;
+}
 
+table.contest-progress-bar a {
+		display: block;
+}
+
+table.contest-progress-bar td {
+		width: 1%;
+		border: none;
+}
+
+table.contest-progress-bar td#current-position {
+		width: 1%;
+		border: 1px solid gray;
+		background: none WGO_BLUE;
+}
+
+table.contest-progress-bar td#prev,
+table.contest-progress-bar td#next {
+		/*border: 1px solid black;*/
+		font-size: normal;
+		font-weight: bold;
+}
+
+table.contest-image-gallery { 
+		border-spacing: 6;
+		padding: 0;
+		border: none;
+}
+
+table.splash-slideshow {
+
+}
+
+table.splash-slideshow td + td {
+		width: 100%;
+		text-align: left;
+		font-size: xx-large;
+}

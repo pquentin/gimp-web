@@ -1,3 +1,11 @@
+2002-10-18 scizzo <scizzo@gimp.org>
+
+        * tutorials/Drawing_Shapes/: Add the Shapes tutorial.
+
+        * tutorials/Bezier_Selections/: Fixed the author name.
+
+        * tutorials/Tileable_Textures/: Fixed the author name.
+
 2002-10-18 carol <carol@gimp.org>
 
     * maillists.html: put the best information there that i have right now

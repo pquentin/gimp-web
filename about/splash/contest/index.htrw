@@ -80,10 +80,10 @@
   </p>
 
   <h3>The Jury</h3>
-   <i>Joao S. O. Bueno Calligaris</i></br>
-   <i>Michael Schumacher</i></br>
-   <i>Adam D. Moss</i></br>
-   <i>Alan Horkan</i></br>
+   <i>Joao S. O. Bueno Calligaris</i><br/>
+   <i>Michael Schumacher</i><br/>
+   <i>Adam D. Moss</i><br/>
+   <i>Alan Horkan</i><br/>
    <i>Simon Budig</i>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

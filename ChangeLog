@@ -1,3 +1,10 @@
+2003-09-21 scizzo <scizzo@gimp.org>
+
+	* /includes/wgo-admin-init.xhtml
+	* /includes/wgo-admin-fini.xhtml: Fixed these files because they broke
+	the layout of the site when going to admin pages. Also add a few extra
+	breaks to make the menu look better.
+
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
 	* unix/index.htrw

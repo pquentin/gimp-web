@@ -1,3 +1,16 @@
+2003-08-29  Raphael Quinet  <quinet@gamers.org>
+
+	* includes/wgo-admin-fini.xhtml,
+	* includes/wgo-page-fini.xhtml: Updated copyright year to 2003,
+	changed link to webmasters.
+
+	* webmasters.htrw: New file describing how to get in touch with
+	the webmasters.
+
+	* admin/gimp-web-urls: Added new link to the new webmasters page,
+	to the team page, to the bugs page and a new link for submitting
+	bugs related to this web site.  Added the missing trailing slashes
+	to many URLs.
 
 2004-08-26  Branko Collin <collin@xs4all.nl>
 

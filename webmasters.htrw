@@ -1,0 +1,47 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Webmasters</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Contacting the webmasters</h1>
+
+<p>This site is maintained by a team of volunteers who are constantly
+trying to improve it.  We are all GIMP users and some of us are also
+GIMP developers.  If you have a question or a comment about the GIMP,
+we will do our best to help you.  However, we get a <em>lot</em> of
+mail and we may not be able to answer all queries.  The best way to
+get support is to post your questions and comments to one of the <a
+href="wgo:mail_lists">mailing lists</a> or to the GIMP newsgroup
+(comp.graphics.apps.gimp).<p>
+
+<p>If you have a problem with the GIMP and you think that you have
+found a bug or if you would like to suggest a new feature, you can
+also take a look at our <a href="wgo:bugs">bugs page</a>.  Your
+problem may have been solved already.</p>
+
+<h2>Problems on this web site?</h2>
+
+<p>If you detected a problem on one of our pages, such as a broken
+link or some incorrect information, please use Bugzilla to <a
+href="home:gimp-bugzilla-wgo-submit">submit a bug report for this web
+site</a>.  Several GIMP contributors are keeping an eye on the bug
+database regularly so this is probably the best way to tell us about
+these problems and to get a timely response.</p>
+
+<h2>Download mirrors</h2>
+
+<p>You can also use Bugzilla to <a
+href="home:gimp-bugzilla-wgo-submit">notify us</a> if a mirror of
+ftp.gimp.org is gone or if a new one has recently been added.  If you
+want to set up a new mirror, you will have to request rsync access
+from the ftp-admin.  We can provide more details through Bugzilla.</p>
+
+<h2>Last resort</h2>
+
+<p>If you really want to send us some mail, then you can send it to
+webmasters@gimp.org.  We'll try and help you out as much as possible,
+but this e-mail alias is not read frequently.  Using Bugzilla will
+usually provide a much faster response (hours instead of months).</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

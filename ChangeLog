@@ -1,5 +1,27 @@
 2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
 
+	* README.repository: file added. READ IT! Please... ;)
+
+	* install.exclude: added README.repository to list of excluded files
+
+2002-09-29  carol  <carol@fungus>
+
+	* unix/man-gimp-1.2.html:
+	changed the urls from cgi/man2html to web locations
+
+2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
+
+	* ChangeLog: changelog updated
+
+	* includes/header_posttitle.inc: reverted brankos changes.
+	the image is not supposed to have an alt text.
+	alt texts are primarily used in text-only browsers, and they need not see our logo.
+	take a look in either lynx or links; you'll see.
+
+	* ChangeLog: changelog updated
+
+2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
+
 	* includes/header_posttitle.inc: reverted brankos changes.
 	the image is not supposed to have an alt text.
 	alt texts are primarily used in text-only browsers, and they need not see our logo.

@@ -1,5 +1,9 @@
 2002-09-22  Henrik Brix Andersen  <brix@scienceworld.dk>
 
+	* includes/webteam.inc: added "GIMP Core Team" list
+
+	* ChangeLog: started using the changlog
+
 	* index.php: replaced <?xml ... ?> with <?php echo '<?xml ... ?>' ?>.
 	thanks to CyBeR
 
@@ -16,6 +20,24 @@
 	* includes/webteam.inc: removed the optional date line
 
 	* index.php: added "webteam" case to switch statement
+
+2002-09-22  Carol Spears  <carol@gimp.org>
+
+	* ChangeLog, includes/webteam.inc, index.php:
+	2002-09-21  Carol Spears  <carol@gimp.org>
+		* index.php:  changed GIMP Links: title to GIMP Links url
+		* index.php:  put a FIXME url around The GIMP Web Team
+		* webteam.inc:  added this file
+
+	* ChangeLog: 2002-09-21  Carol Spears  <carol@gimp.org>
+		* remembered ChangeLog too late ...
+
+	* includes/about.inc: 2002-09-21  Carol Spears  <carol@gimp.org>
+		* commented about.inc
+
+	* ChangeLog:
+	2002-09-21  Carol Spears  <carol@gimp.org>
+		* added ChangeLog
 
 2002-09-21  Henrik Brix Andersen  <brix@scienceworld.dk>
 
@@ -36,9 +58,95 @@
 	* index.php:
 	added php code to hide #menu and #linkbar when a tutorial is shown
 
-2002-09-21  Carol Spears  <carol@gimp.org>
-	* added ChangeLog
-	* commented about.inc
-	* index.php:  changed GIMP Links: title to GIMP Links url
-	* index.php:  put a FIXME url around The GIMP Web Team	
-	* webteam.inc:  added this file
+2002-09-20  Henrik Brix Andersen  <brix@scienceworld.dk>
+
+	* style/default.css: added @media print { ... } rule.
+	try it out using your browsers print-preview :)
+
+	* includes/about.inc: added closing tag to list items
+	(should work this time)
+
+	* includes/about.inc: added closing tag to list items
+
+	* includes/about.inc: fixed </p> tag position
+
+	* includes/news.inc: added missing </p>
+
+	* index.php: added two line breaks after the menu
+
+	* index.php: updated the hrefs in the linkbar
+
+	* includes/os2.inc, includes/macintosh.inc, includes/windows.inc, includes/unix.inc, includes/development.inc, includes/authoring.inc, includes/tutorials.inc, includes/documentation.inc, includes/registry.inc, includes/resources.inc:
+	empty page added
+
+	* style/default.css: added "width: 100%" to #main.
+	this fixed the display of an empty (main) page
+
+	* index.php: synced hrefs with new cases (in menu)
+
+	* index.php: added remaining cases to switch ($page)
+
+	* index.php: added "GIMP for OS/2" menu item
+
+	* includes/about.inc: added missing close tag </div>
+
+	* includes/news.inc:
+	fixed order of news item: newest on top (just for the looks)
+
+	* includes/about.inc:
+	page added. content taken unmodified from http://www.gimp.org/the_gimp_about.html
+
+	* style/default.css: added custom style for <p>...</p> paragraphs.
+	removed margin-bottom from div.heading (will be handled by paragraphs)
+
+	* includes/news.inc: added <p>...</p> paragraphs
+
+	* style/default.css: added "width: 100%;" to #layout
+
+	* includes/blank.inc, includes/news.inc:
+	separated (test) news out from /index.php.
+	also created blank.inc (template)
+
+	* index.php:
+	added a switch statement to determine what page the user requested.
+	seperated the (test) news items out into includes/news.inc.
+
+	* style/default.css: code clean up.
+	minor fixes to the layout.
+
+	* index.php: fixed missing </div> in titlebar.
+	removed spaces from headings.
+	minor fixes to the layout
+
+	* index.php, style/default.css:
+	finally fixed the "extra space" bug in mozilla.
+	needed to re-designed the entire titlebar.
+
+	* style/default.css:
+	added "margin: 0px" and "border-collapse: collapse" to #layout.
+	this removes the exstra space between the titlebar, the table and the link bar.
+	(at least in opera, mozilla still has problems with exstra space between the titlebar
+	and the table)
+
+	* style/default.css: made news item text double justified
+
+	* style/default.css, index.php: fixed display of several news items
+
+2002-09-20  Carol Spears  <carol@gimp.org>
+
+	* index.php:
+	removed the rest of the spaces in the top bar <div></div>
+
+	* index.php:
+	removed many of the spaces in the  <div><img bla></div> tags for the top bar
+
+2002-09-19  Henrik Brix Andersen  <brix@scienceworld.dk>
+
+	* index.php: cvs test
+
+	* images/barbg.png, images/nicefolder.png, images/thegimp.png, images/wilberright.png, index.php, style/default.css:
+	Initial check in
+
+	* images/barbg.png, images/nicefolder.png, images/thegimp.png, images/wilberright.png, index.php, style/default.css:
+	New file.
+

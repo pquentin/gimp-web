@@ -131,6 +131,10 @@ div.subtitle {
   font-weight: bold;
 }
 
+span.filter {
+  font-decoration: bold;
+}
+
 #linkbar, #navbar {
   clear: both;
   background: #f5f5f5;

@@ -1,3 +1,8 @@
+2005-01-21  Raphaël Quinet  <raphael@gimp.org>
+
+	* unix/fonts.htrw (href): update URL for Fontconfig User Manual.
+	Thanks to Maxwell Terpstra and Thierry Moisan (bug #164543).
+
 2005-01-18  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/.cvsignore

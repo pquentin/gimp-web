@@ -1,3 +1,40 @@
+2002-09-26  Henrik Brix Andersen  <brix@gimp.org>
+
+	* template.html: updated the template to use the new header files
+
+	* includes/header.inc: removed old header file
+
+	* tutorials/Anti-Aliased_Treshold/index.html, includes/header_pretitle.inc, includes/header_posttitle.inc, about/screenshots.html, about/mediakit.html, about/introduction.html, about/history.html, about/awards.html, windows.html, unix.html, tutorials.html, team.html, resources.html, registry.html, os2.html, macintosh.html, links.html, index.html, documentation.html, development.html, authoring.html, about.html:
+	files modified to use the new headers.
+	this allows the title to be set from subpages, as requested by carol
+
+	* ChangeLog: changelog updated
+
+2002-09-25  Carol Spears  <carol@gimp.org>
+
+	* about.html: some missing </li>'s
+
+	* about.html: took the <p></p> off from the <ul></ul>'s
+
+2002-09-25  Henrik Brix Andersen  <brix@gimp.org>
+
+	* tutorials.html: added "Maybe we should add an icon/image?"
+
+	* tutorials.html: added a bogus description
+
+	* ChangeLog: changelog updated
+
+2002-09-25  Carol Spears  <carol@gimp.org>
+
+	* about.html:
+	added a more to the end of the introduction blurb to indicate that there is more
+	elsewhere.
+
+	* about/awards.html, about/history.html, about/introduction.html, about/mediakit.html, about/screenshots.html:
+	put these templates in place :)
+
+	* about.html: ported about.html to the layout plans
+
 2002-09-25  Carol Spears  <carol@gimp.org>
 
 	* about.html:

@@ -1,5 +1,10 @@
 2004-11-30  Dave Neary  <bolsh@gimp.org>
 
+	* about/splash/contest/index.htrw: Changed a couple of
+	phrases to avoid a repeated sentence.
+
+2004-11-30  Dave Neary  <bolsh@gimp.org>
+
 	* about/splash/contest/index.htrw
 	* index.htrw: Update news item and contest page to point
 	to the live.gnome.org page for the splash screen entries.

@@ -27,7 +27,7 @@
   clicking outside of the selection with the move tool still active. You will notice that the pointer changes into a down-arrow 
   when you're outside of the floating selection and into a 4-arrow when inside it. This is to give visual feedback which of the 
   two actions (moving or anchoring) a click will trigger.
-  You should have one layer with black text on white background. Using <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span> you 
+  You should have one layer with black text on white background. Using <span class="filter">&lt;Image&gt; Layer -&gt; Colors -&gt; Invert</span> you 
   will achieve something like the picture above.
 </p>
 
@@ -103,7 +103,7 @@
 </p>
 <p>
   Now you'll see that the image of the logo isn't very sharp. We'll change this now. Make sure you have selected the plasma 
-  layer's mask and open <span class="filter">&lt;Image&gt; Image -&gt; Adjust -&gt; Levels</span>. 
+  layer's mask and open <span class="filter">&lt;Image&gt; Layers -&gt; Colors -&gt; Levels</span>. 
   This tool is one of the most important tools you have! Play with the little 
   triangles you'll see in the two grey gradients and watch their effect on the image. 
   For now, try to achieve something like the following:

@@ -1,5 +1,9 @@
 2005-01-26  Raphaël Quinet  <raphael@gimp.org>
 
+	* tutorials/The_Basics/index.htrw: Update the path of the Levels
+	tools from "<Image> Image -> Adjust -> Levels" to "<Image> Layers
+	-> Colors -> Levels".  Fixes bug #141752.
+
 	* programmatic/downloads/MIRRORS: synced this file with the master
 	list on the ftp site: removed outdated mirror in France, updated
 	the other french mirror according to bug #162793.

@@ -1,3 +1,11 @@
+2003-09-23 scizzo <scizzo@gimp.org>
+
+	* /includes/wgo-page-init.xhtml
+	* wgo-howto-bugs-init.xhtml
+	* wgo-howto-source-init.xhtml
+	* wgo-howto-unix-init.xhtml
+	* wgo-tutorial-init.xhtml: Added "Resources" again.
+
 2003-09-23  Raphael Quinet  <quinet@gamers.org>
 
 	* style/wgo.css: Added #titlebar to the sections that should not

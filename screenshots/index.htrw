@@ -24,5 +24,13 @@
    <li><a href="/os2/epplets.jpg">Enlightenment desktop with The GIMP</a></li>
 </ul>
 
+<h2>Windows Screenshots</h2>
+
+<h3>Contributed by Branko Collin</h3>
+<ul>
+<li><a href="/windows/threshold-hue-channel.png">gimp-1.2, threshold</a> (finding the natural mask in the hue channel)</li>
+<li><a href="/windows/quickmask-selection-detail.png">gimp-1.2, quick mask</a> (painting a fuzzy selection, detail)</li>
+</ul>
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

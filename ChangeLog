@@ -1,4 +1,9 @@
 
+2004-08-24  Branko Collin <collin@xs4all.nl>
+
+	* screenshots/index.htrw
+	* windows/*.png: Added two Windows screenshots
+
 2003-08-23  Branko Collin <collin@xs4all.nl>
 
 	* resources/gradients/*.png: compressed all image files better,

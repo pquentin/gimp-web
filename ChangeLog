@@ -1,5 +1,10 @@
 2004-09-25  Sven Neumann  <sven@gimp.org>
 
+	* develop/index.htrw: don't encourage selling GIMP too much.
+	Giving away copies is the way to help, for free or not.
+
+2004-09-25  Sven Neumann  <sven@gimp.org>
+
 	* about/linking.htrw: avoid a linebreak in the title attribute; it
 	showed up as an unprintable character in the tooltip (at least in
 	firefox).

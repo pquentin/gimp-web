@@ -121,7 +121,8 @@ def display_gallery(form):
     print xhtml.div.fini()
     pass
 
-  print xhtml.div(xhtml.hyperlink("Submit an image", {"href" : "/contest/contest.cgi"}))
+  # Comment out submission when contest is closed.
+  #print xhtml.div(xhtml.hyperlink("Submit an image", {"href" : "/contest/contest.cgi"}))
 
   wgo_contest.folio_fini()
   return

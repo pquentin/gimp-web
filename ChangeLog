@@ -1,3 +1,8 @@
+2003-04-18  Sven Neumann  <sven@gimp.org>
+
+	* books/index.html: removed ...
+	* books/index.htrw: ... and added with converted links.
+
 2003-04-16 carol <cspears@cablespeed.com>
 
 	* /admin/gimp-web-urls, added the attributes for the images in the books 

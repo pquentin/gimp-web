@@ -1,3 +1,15 @@
+2003-09-20  Raphael Quinet  <quinet@gamers.org>
+
+	* programmatic/downloads/MIRRORS: Updated the list of mirrors
+	according to the latest updates that I made on the ftp site.
+
+	* downloads/index.htrw: Use absolute path instead of relative path
+	for including /downloads/mirrors.xhtml.
+
+	* Makefile (mirrors): Added new rule for generating and installing
+	the file mirrors.xhtml, which has to be installed before we can
+	build /downloads/index.html.
+
 2003-09-19  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* programmatic/admin/news/news-edit.py,

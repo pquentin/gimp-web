@@ -18,7 +18,6 @@ export PYTHONPATH=programmatic:
 	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
 	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.x > $@
 	rm -f $<.x
-#	chmod 755 $@
 
 RWSOURCES=$(shell find . -name '*.htrw' -print)
 RWTARGETS=$(RWSOURCES:.htrw=.html)
@@ -28,18 +27,21 @@ SSITARGETS=$(SSISOURCES:.ssi=.html)
 
 TARGETS=${RWTARGETS} ${SSITARGETS}
 
-.PHONY: all usage webtools install clean cvsignore programmatic rsync includes crontab 
+.PHONY: all usage webtools mirrors install clean cvsignore programmatic rsync includes crontab 
 
-all: usage includes rsync webtools crontab ${TARGETS}
+all: usage includes rsync webtools mirrors crontab ${TARGETS}
 	rsync -rlt --delete --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
 
 includes:
 	rsync -rlt --delete --exclude-from=install.exclude includes ${DocumentRoot}
-	touch ${DocumentRoot}/mirrors.xhtml
 
 usage:
 	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; exit 1; fi
+
+mirrors:
+	make -C programmatic downloads
+	make -C programmatic install-downloads
 
 webtools:
 	make -C programmatic webtools

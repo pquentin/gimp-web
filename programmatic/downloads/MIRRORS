@@ -19,6 +19,7 @@ Finland
 
 France
      ftp://ftp.minet.net/pub/gimp/
+     http://ftp.iut-bm.univ-fcomte.fr/pub/gimp/ (web access)
 
 Germany
      ftp://ftp.fh-heilbronn.de/pub/mirrors/ftp.gimp.org/
@@ -61,6 +62,7 @@ Romania
 
 Russia
      ftp://ftp.sai.msu.su/pub/unix/graphics/gimp/mirror/
+     http://gimp.tsuren.net/mirror/gimp/ (web access)
 
 Sweden
      ftp://ftp.acc.umu.se/pub/gimp/
@@ -68,7 +70,7 @@ Sweden
      http://ftp.sunet.se/pub/gnu/gimp/ (web access)
 
 Taiwan
-     ftp://linux.cis.nctu.edu.tw/packages/X/gimp/
+     ftp://linux.cis.nctu.edu.tw/X/gimp/gimp/
 
 Turkey
      ftp://ftp.hun.edu.tr/pub/linux/gimp/

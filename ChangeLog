@@ -1,4 +1,17 @@
+2002-09-25  carol  <carol@fungus>
+
+	* about.html:
+	added a more to the end of the introduction blurb to indicate that there is more
+	elsewhere.
+
+	* about/awards.html, about/history.html, about/introduction.html, about/mediakit.html, about/screenshots.html:
+	put these templates in place :)
+
+	* about.html: ported about.html to the layout plans
+
 2002-09-24  Henrik Brix Andersen  <brix@gimp.org>
+
+	* ChangeLog: changelog updated
 
 	* tutorials/Anti-Aliased_Treshold/index.html:
 	hack: now the x-bit should be set

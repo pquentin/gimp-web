@@ -1,3 +1,7 @@
+2003-06-26  Sven Neumann  <sven@gimp.org>
+
+	* includes/wgo-page-init.xhtml: fixed typo (bug #116010).
+
 2003-06-21  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Integrated the whole thing into the site build.

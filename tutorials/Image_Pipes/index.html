@@ -49,22 +49,101 @@
   in the order they are in the layer stack.
   <br /><br />
   Other options include:
-  <br /><br />
-  Random: selects the images in a random order.
-  <br /><br />
-  Angular: selects the images based on the angle the brush is moving at.
-  <br /><br />
-  Velocity: selects the images based on the velocity the brush is moving at.
-  <br /><br />
-  Pressure: selects the images based on the pressure of the brush (requires a pressure sensitive tablet)
-  <br /><br />
-  xtilt: selects the images based on the xtilt (also requires a tablet)
-  <br /><br />
-  ytilt: selects the images based on the ytilt (also requires a tablet)
 </p>
+<ul>
+<p>
+  <b>Random:</b> selects the images in a random order.
+  <br />
+  <b>Angular:</b> selects the images based on the angle the brush is moving at.
+  <br />
+  <b>Velocity:</b> selects the images based on the velocity the brush is moving at.
+  <br />
+  <b>Pressure:</b> selects the images based on the pressure of the brush (requires a pressure sensitive tablet)
+  <br />
+  <b>xtilt:</b> selects the images based on the xtilt (also requires a tablet)
+  <br />
+  <b>ytilt:</b> selects the images based on the ytilt (also requires a tablet)
+</p>
+</ul>
 <p>
   After saving the image, you can "refresh" the brush list and then select the new image. For an example of what this can do, tale a look at the
   example image above (also making use of the fun gradient brushes).
+</p>
+
+<div class="subtitle">Example 2</div>
+<p class="images">
+  <img src="example2_ss.gif" alt=""/>
+</p>
+<p>
+  Tater Tots! This pipe is a good example of making a image pipe out of a series of images. Each layer has a a bit of an image cut out and placed 
+  on a transparent background. Any areas that are transparent in the image will be transparent in the brush as well. To add a bit more of a "3D" effect, 
+  a slight drop shadow was adding to each layer in the image. Save this image as gih with the parameters as indicated in the following screenshot.
+</p>
+<p class="images">
+  <img src="tater_tot.jpg" alt=""/>
+</p>
+<p>
+  An example of the use of this image:
+</p>
+
+<div class="subtitle">Example 3</div>
+<p class="images">
+  <img src="example3_ss.gif" alt=""/>
+</p>
+<p>
+  An example of a two dimensional pipe
+  A interesting use for image pipe would be to simulate a natural media situration. For example, maybe a brush that has ten different versions based that correlate to tablet pressure. 
+  For this example, I'll use a somewhat contrived example for simplicity sake. It will use the "angular" paramater in for per layer dimension, and a "random" paramter to select which 
+  of the multiple images to use. I use this in a couple of brushes to "humanize" the output. Instead of having the same image stamped out over and over, it varies a little randomly.
+  The example source image is a 8 layer image, with each layer split in two with a guide. The guide isnt require but it makes it easier to create.
+  <br />
+  A screenshot of the layers dialog showing creation of an image of this type.(Image above)
+</p>
+<p class="images">
+  <img src="example3_ss2.gif" alt=""/>
+</p>
+<p>
+  You will want to save the image with the values show here:
+</p>
+
+<div class="subtitle">Example 4</div>
+<p class="images">
+  <img src="example4_ss.gif" alt=""/>
+</p>
+<p>
+  Using a image pipe as a way to generate textures.
+  Making tileable textures with gradient brushes is a tutorial on how to generate textures with just graident brushes.
+  A lot of the same techniques that are used there can be used Image Pipes as well. The main advantage to using image pipes is that the brush as well as the 
+  color can change as you paint, which adds an extra dimension to the textures.
+  For this example, it is just another one brush per layer situation. The example source image is available.
+  The image is saved with the paramaters as in image above.
+</p>
+<p class="images">
+  <img src="example_pattern.jpg" alt=""/>
+</p>
+<p>
+  Example output.
+</p>
+
+<div class="subtitle">Example 5</div>
+<p class="images">
+  <img src="example5_ss.gif" alt=""/>
+</p>
+<p>
+  Converting a PSP image tube to a gimp Image Pipe 
+  There are lots of "Image Tubes" created with and for Paint Shop Pro available on the internet. Gimp can load these files and save them as gimp image pipes. 
+  Unfortunately, unless you really like pictures of teddy bears, puppy dogs, and unicorns, finding good PSP Tubes isnt so easy. 
+  There is a .tub loader plugin in gimp that you can use to load .tub files you find on the net. Then you can turn around and save these files as a .gih file. 
+  Were going to start with a .tub file available from Hood's PSP Tubes 
+  I'll use the Fireball example on that page for this example. 
+  The file needs to be loaded as a regular image, then saved as a gih image. Sometimes you may need to make some best guesses as to the save parameters. 
+  An example of what the image window will look like after initially loading the .tub file.
+</p>
+<p class="images">
+  <img src="example_5_2.gif" alt=""/>
+</p>
+<p>
+  Saving this file as a .gih file, and using the paramaters as shown above.
 </p>
 
 </div>

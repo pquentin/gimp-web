@@ -26,6 +26,8 @@
 	* tutorials/Image_Map/index.html: added the javascript into the "invisible"
     head so the pop-up window will work.
     
+	* tutorials/Image_Map/bexcolorpicker-tutpop.html: fixed the image paths.
+    
 2002-11-25 carol <carol@gimp.org>
 
 	* about/splash.html,about/splash/*.png  and about/splash/*.txt:  added

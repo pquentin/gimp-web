@@ -1,5 +1,10 @@
 2003-08-13 scizzo <scizzo@gimp.org>
 
+	* /downloads/install_help.html: Fixed a broken link to GIMP for
+	Windows that I missed before.
+
+2003-08-13 scizzo <scizzo@gimp.org>
+
 	* /includes/wgo-page-init.xhtml: Add screenshots to the menu. Change
 	the logo so both images links to http://www.gimp.org/ reported in bug:
 	#119480

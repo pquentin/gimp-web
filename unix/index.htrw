@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>GIMP for Unix</h1>
-<h2><a href="INSTALL">Installation Instructions</a></h2>
+<h2><a href="/downloads/INSTALL">Installation Instructions</a></h2>
 
 <h2>GNU/Linux How To's</h2>
   <ul>

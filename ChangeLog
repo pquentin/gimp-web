@@ -1,5 +1,10 @@
 2003-09-21 scizzo <scizzo@gimp.org>
 
+	* /unix/index.htrw: Add "/downloads/INSTALL" as file for the
+	"Installation Instructions" link.
+
+2003-09-21 scizzo <scizzo@gimp.org>
+
 	* /docs/index.htrw: Commented out "The GIMP Documentation".
 	* /os2/index.htrw: Add a link to os2files for "OS/2 Software".
 	* /includes/wgo-xhtml-fini.xhtml: Commented out Validation link.

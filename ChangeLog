@@ -1,3 +1,7 @@
+2002-10-05  scizzo <scizzo@se.debian.net>
+
+	* tutorials/Straight_Line/: Added the Straight_Line tutorial.
+	
 2002-10-03  carol  <carol@gimp.org>
 
 	* README.repository: added instructions to edit ChangeLog and then

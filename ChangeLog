@@ -1,3 +1,8 @@
+2002-10-19 scizzo <scizzo@gimp.org>
+
+        * tutorials/Advanced_Animations/: Forgot to add the .xcf.bz2
+        file to make the tutorial complete.
+
 2002-10-18 carol <carol@gimp.org>
         
         * resources/gradients/index.html: changed the <li>'s to <div>'s
@@ -14,7 +19,7 @@
        
         * resources/brushes/index.html: changed the <li>'s to <div>'s
         
-        * resources/brushes/mgo-brushes.py the script is added
+        * resources/brushes/mgo-brushes.py: the script is added
         
         
 2002-10-18 scizzo <scizzo@gimp.org>

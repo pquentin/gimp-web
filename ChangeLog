@@ -1,7 +1,8 @@
 2003-01-05 scizzo <scizzo@gimp.org>
 
 	* tutorials/Perl-Debugged/index.html: Add the div.debug to the right
-	places in the tutorial. Fixed a typo.
+	places in the tutorial. Fixed a typo. Changed a few things in the
+	tables for the tutorial.
 
 2003-01-05 brix <brix@gimp.org>
 

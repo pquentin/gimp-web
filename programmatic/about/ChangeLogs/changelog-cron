@@ -1,0 +1,9 @@
+#!/bin/sh
+
+/home/wgo/about/ChangeLogs/film-gimp
+/home/wgo/about/ChangeLogs/gegl-unstable
+/home/wgo/about/ChangeLogs/gimp-help
+/home/wgo/about/ChangeLogs/gimp-print
+/home/wgo/about/ChangeLogs/gimp-unstable
+
+exit 0

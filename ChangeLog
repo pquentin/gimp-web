@@ -1,4 +1,10 @@
-2002-12-0 carol <carol@gimp.org>
+2002-12-10 carol <carol@gimp.org>
+
+	* develop/, includes/menu.inc:  i got a CVS directory into the wrong develop___/  
+    things were messed up bad.  i completely changed the name and was careful 
+    with CVS/ this time. made the change in the menu.inc file
+
+2002-12-09 carol <carol@gimp.org>
 
 	* TODO.gnomecvs:  updated.
 

@@ -12,28 +12,41 @@
     artwork associated with a major release of the GNOME! 
   </p>
 
+  <h3>Contest Results</h3>
+  <p>
+    The contest is now closed. Thanks to everyone who submitted entries. In
+    just a few days, we gathered more than 220 entries - a tribute to the
+    popularity and success of GNOME. There were many high quality entries
+    which made choosing a final splash screen very difficult. However, a
+    decision had to be made, so, the splash screen chosen is:
+  </p>
+  <img src="/var/wgo-contest-current/2005030317223820222.png" alt="contest winner image" width="450" height="300">
+  <p>
+    Thanks to Sami &quot;alump&quot; Viitanen for this wonderful splash screen.
+  </p>
+  <p>
+    Here are some of the reasons it was chosen:
+
+    <ul>
+    <li>GNOME is growing fast, and it becomes more mature than ever after every release. The splash screen shows this with the height chart style background.</li>
+    <li>The colour scheme and design is clean and simple.</li>
+    <li>No English text: think localisation, all entries with texts such as &quot;loading&quot; &quot;blahblah&quot; would be no good for non-english users.</li>
+    <li>A matter of taste of the people running this contest.</li>
+    </ul>
+  </p>
+
+  <h3>Who ran the contest?</h3>
+  <p>
+    thos &amp; toady: Please don't complain to us if your tastes differs from ours - we can't please everyone!
+  </p>
+
   <h3>Submissions</h3>
   <p>
-Contest rules are as follows:
+    You can view all the submissions in the
+    <a href="/contest/gallery.cgi">contest gallery page</a>.
   </p>
 
-<ul>
-<li> The closing date for entries is March 3, 2005.
-<li> All entries must be released under Creative Commons &quot;share and share alike&quot; license.
-<li> No plagiarism: you must have permission if you create any derivative works.
-<li> Size should be 450x300 pixels.
-</ul>
-
-  <p>
-    Please use the <a href="/contest/contest.cgi">submission form</a> to submit
-    your entries.
-  </p>
-  <p>
-    You can view the submissions in the <a href="/contest/gallery.cgi">contest 
-    gallery page</a>.
-  </p>
-
-  <h3>Good luck!</h3>
+  <!-- <h3>Good luck!</h3> -->
 
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -286,6 +286,8 @@ def approved(form):
   
 
 def main(argv):
+  return (0)
+
   form = cgi.FieldStorage()
 
   if os.environ.has_key("GATEWAY_INTERFACE"):

@@ -4,6 +4,8 @@
     the splash images from cvs (yosh co'ed them) resized them and put them
     in the table in splash.html.
 
+	* about/splash.html: brix helped me to see the error in the image names.
+
 2002-11-24 carol <carol@gimp.org>
 
 	* about/splash.html: added this file.

@@ -1,3 +1,8 @@
+2005-02-21  Raphaël Quinet  <raphael@gimp.org>
+
+	* admin/gimp-web-urls,
+	* docs/index.htrw: Added link to Dutch version of the docs.
+
 2005-02-18  Raphaël Quinet  <raphael@gimp.org>
 
 	* develop/index.htrw,

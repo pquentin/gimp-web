@@ -1,8 +1,19 @@
+2003-09-19  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/admin/news/news-edit.py,
+	  programmatic/admin/news/news-edit-action.py,
+	  programmatic/admin/news/wgo_news.py: Get the quoting correct
+	  for editing a news article which contains html entities.
+
 2003-09-19  Ville Pätsi  <drc@gimp.org>
 
 	* style/wgo.css: Added clear: left; to h1.
 
 2003-09-19  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/admin/news/news-edit.py,
+	  programmatic/admin/news/wgo_news.py: Get the quoting correct
+	  for editing a news article which contains html entities.
 
 	* Added version id to news articles in the main (current news)
 	  blotter.

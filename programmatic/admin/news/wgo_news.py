@@ -85,7 +85,7 @@ class news:
         self.msg["Subject"] = xhtml.unescape(source["subject"].value)
         self.msg[news.editor_header] = xhtml.unescape(source["editor"].value)
         self.msg[news.image_header] = xhtml.unescape(source["image"].value)
-        self.msg.set_payload(xhtml.unescape(source["body"].value))
+        self.msg.set_payload(source["body"].value)
         self.msg.epilogue = ""
         self.valid = True
       elif str(source.__class__) == "<type 'str'>":

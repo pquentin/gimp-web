@@ -75,7 +75,7 @@ def main():
 
   if action == "save":
     news.to_queue(queue)
-    link = xhtml.hyperlink("Continue", { "href" : "news-edit.cgi?message-id=%s&queue=%s" % (xhtml.escape(news["message-id"]), queue)})
+    link = xhtml.hyperlink("Continue", { "href" : "news-edit.cgi?message-id=%s&queue=%s" % (news["message-id"], queue)})
     status = "success"
     goto = ["Location: news-edit.cgi?message-id=%s&queue=%s" % (xhtml.escape(news["message-id"]), queue)]
   elif action == "approve":

@@ -78,8 +78,8 @@ def html_news_edit(this_queue, other_queue, msg, editor):
   print xhtml.table.row(xhtml.table.cell("Date:")       + xhtml.table.cell(xhtml.input.text({"name" : "date", "value" : msg["date"] }), {"id" : "date"}))
   print xhtml.table.row(xhtml.table.cell("Image:")      + xhtml.table.cell(image_selector, {"id" : "image"}))
   print xhtml.table.row(xhtml.table.cell("Editor:")     + xhtml.table.cell("wilber", {"id" : "editor"}))
-  
-  print xhtml.table.row(xhtml.table.cell(xhtml.input.textarea(msg["body"], {"name"  : "body", "cols" : 80, "rows"  : 20 }), {"colspan" : "2"}))
+
+  print xhtml.table.row(xhtml.table.cell(xhtml.input.textarea(xhtml.quote(msg["body"]), {"name"  : "body", "cols" : 80, "rows"  : 20 }), {"colspan" : "2"}))
   
   print xhtml.table.row(xhtml.table.cell("&nbsp;"))
   

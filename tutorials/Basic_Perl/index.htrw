@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Basic Perl</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<link style type="text/css" rel="alternate stylesheet" type="text/css" title="helvetix fixes" href="/style/helvetix-fixes.css" />
+<link style type="text/css" rel="alternate stylesheet" type="text/css" title="helvetix fixes" href="http://oak.mysterious.org:8082/style/helvetix-fixes.css" />
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Basic Perl</h1>
 

@@ -1,48 +1,63 @@
+2003-04-18  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * The default New news article always available in the pending
+        queue, now has a default Subject line of "NEW NEWS" instead of
+        "(none)"
+
+        * My proposed css fixes are now applied by selecting an alternate
+        style sheet from your browser.
+
+        * Didn't check in ChangeLog last night for these:
+        - tutorials/Basic_Perl/index.htrw
+        - tutorials/Basic_Scheme/index.htrw
+        - tutorials/Image_Map/index.html;
+        - tutorials/Perl-Debugged/index.html
+
 2003-04-18  Sven Neumann  <sven@gimp.org>
 
-	* books/index.html: removed ...
-	* books/index.htrw: ... and added with converted links.
+        * books/index.html: removed ...
+        * books/index.htrw: ... and added with converted links.
 
 2003-04-16 carol <cspears@cablespeed.com>
 
-	* /admin/gimp-web-urls, added the attributes for the images in the books 
+        * /admin/gimp-web-urls, added the attributes for the images in the books 
       section
 
 2003-04-16 carol <cspears@cablespeed.com>
 
-	* /admin/gimp-maintainers, added this file
+        * /admin/gimp-maintainers, added this file
 
 2003-04-15 scizzo <scizzo@gimp.org>
 
-	* /tutorials/Blown_Out_Highlights/index.html,
-	* /tutorials/Blur_Overlays/index.html,
-	* /tutorials/Borders_On_Selections/index.html,
-	* /tutorials/Changing_Background_Color_1/index.html,
-	* /tutorials/Changing_Background_Color_2/index.html,
-	* /tutorials/Color2BW/index.html: Removed these files.
-	
-	* /tutorials/Blown_Out_Highlights/index.htrw,
-	* /tutorials/Blur_Overlays/index.htrw,
-	* /tutorials/Borders_On_Selections/index.htrw,
-	* /tutorials/Changing_Background_Color_1/index.htrw,
-	* /tutorials/Changing_Background_Color_2/index.htrw,
-	* /tutorials/Color2BW/index.htrw: Add these files.
+        * /tutorials/Blown_Out_Highlights/index.html,
+        * /tutorials/Blur_Overlays/index.html,
+        * /tutorials/Borders_On_Selections/index.html,
+        * /tutorials/Changing_Background_Color_1/index.html,
+        * /tutorials/Changing_Background_Color_2/index.html,
+        * /tutorials/Color2BW/index.html: Removed these files.
+        
+        * /tutorials/Blown_Out_Highlights/index.htrw,
+        * /tutorials/Blur_Overlays/index.htrw,
+        * /tutorials/Borders_On_Selections/index.htrw,
+        * /tutorials/Changing_Background_Color_1/index.htrw,
+        * /tutorials/Changing_Background_Color_2/index.htrw,
+        * /tutorials/Color2BW/index.htrw: Add these files.
 
 2003-04-14 scizzo <scizzo@gimp.org>
 
-	* /admin/gimp-web-urls: Add John Beppu homepage link.
-	* /tutorials/Basic_Scheme2/index.html: Removed this file.
-	* /tutorials/Basic_Scheme2/index.htrw: Add this file.
-	* /tutorials/Bezier_Selections/index.html: Removed this file.
-	* /tutorials/Bezier_Selections/index.htrw: Add this file.
-	* /tutorials/Blending_Exposures/index.html: Removed this file.
-	* /tutorials/Blending_Exposures/index.htrw: Add this file.
+        * /admin/gimp-web-urls: Add John Beppu homepage link.
+        * /tutorials/Basic_Scheme2/index.html: Removed this file.
+        * /tutorials/Basic_Scheme2/index.htrw: Add this file.
+        * /tutorials/Bezier_Selections/index.html: Removed this file.
+        * /tutorials/Bezier_Selections/index.htrw: Add this file.
+        * /tutorials/Blending_Exposures/index.html: Removed this file.
+        * /tutorials/Blending_Exposures/index.htrw: Add this file.
 
-	* /tutorials/Advanced_Animations/index.htrw,
-	* /tutorials/Basic_Perl/index.htrw,
-	* /tutorials/Basic_Scheme/index.htrw: Changed the links using the new
-	layout with name linked to homepage and mail address on the right
-	replacing webmaster@gimp.org.
+        * /tutorials/Advanced_Animations/index.htrw,
+        * /tutorials/Basic_Perl/index.htrw,
+        * /tutorials/Basic_Scheme/index.htrw: Changed the links using the new
+        layout with name linked to homepage and mail address on the right
+        replacing webmaster@gimp.org.
 
 2003-04-14  Carol Spears  <carol@gimp.org>
 

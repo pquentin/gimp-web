@@ -78,7 +78,9 @@ def main(queue):
 
     # If this is the pending queue, then create one initialised news article for display.
     if queue == wgo_news.config.pending_queue:
-      html_index_page(queue, wgo_news.news())
+      n = wgo_news.news()
+      n["Subject"] = "NEW NEWS"
+      html_index_page(queue, n)
       pass
 
     map(lambda n: html_index_page(queue, n), news)

@@ -136,6 +136,11 @@ img.map {
   padding: 0px;
 }
 
+td.map {
+  margin: 0px;
+  padding: 0px;
+}
+
 div.subtitle {
   font-weight: bold;
   clear: both;

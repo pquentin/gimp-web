@@ -21,13 +21,16 @@
 	* tutorials/index.html: changed the index to reflect the directory change
 
 	* style/default.css, tutorials/Perlotine/index.html: added a tag that will 
-    hopefully help the tables in the perlotine tutorial.
+    hopefully help the tables in the perlotine tutorial. img.map
 
 	* tutorials/Image_Map/index.html: added the javascript into the "invisible"
     head so the pop-up window will work.
     
 	* tutorials/Image_Map/bexcolorpicker-tutpop.html: fixed the image paths.
     
+	* style/default.css, tutorials/Perlotine/index.html: added a tag that will 
+    hopefully help the tables in the perlotine tutorial. td.map
+
 2002-11-25 carol <carol@gimp.org>
 
 	* about/splash.html,about/splash/*.png  and about/splash/*.txt:  added

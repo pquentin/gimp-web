@@ -28,7 +28,7 @@ test them; use at your own risk.
        <a href="http://download.fedora.redhat.com/pub/fedora/linux/core/updates/2/i386/">Fedora Core 2 (RPM)</a>
      </li>
      <li>
-       <a href="http://www.usr-local-bin.org/gimp.php">SuSE 9.1 (RPM)</a>
+       <a href="http://ftp.gwdg.de/pub/linux/usr-local-bin/9.1/">SuSE 9.1 (RPM)</a>
      </li>
      <li>
        <a href="http://packages.gentoo.org/packages/?category=media-gfx;name=gimp">Gentoo Portage</a>
@@ -41,9 +41,9 @@ test them; use at your own risk.
  <li>BSD
    <ul>
      <li>
-	     <a href="http://www.freebsd.org/cgi/ports.cgi?query=gimp&stype=all">FreeBSD</a>
-	   </li>
-	 </ul>
+       <a href="http://www.freebsd.org/cgi/ports.cgi?query=gimp&stype=all">FreeBSD</a>
+     </li>
+   </ul>
  </li>
 </ul>
 </p>

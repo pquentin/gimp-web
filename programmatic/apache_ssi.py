@@ -93,10 +93,10 @@ Report bugs to: <HELVETIX@Mysterious.ORG>"""
       if element == "include":
         output += self.parse(os.path.normpath(self.document_root + attrs["virtual"]))
       elif element == "set":
-        value = self.__interpolate_variable(attrs["value"])
+        value = self.__interpolate_variables(attrs["value"])
         self.variables.update({attrs["var"]: value})
       elif element == "echo":
-        output += self.__interpolate_variable(attrs["var"])
+        output += self.__interpolate_variables(attrs["var"])
       else:
         print >>sys.stderr, "Unsupported SSI element", element, "in", body[ssi.start():ssi.end()]
         raise AttributeError

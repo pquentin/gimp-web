@@ -1,3 +1,10 @@
+2004-03-14  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/tools/apache_ssi.py: SSI preprocessor makes the
+	  permissions on output files the same as the input file.
+
+	* programmatic/admin/news/Makefile (news_config.py): Moved images
+	  for news out of /admin/
 
 2004-03-15  Shawn T. Amundson <amundson@gimp.org>
 

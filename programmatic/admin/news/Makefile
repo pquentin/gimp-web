@@ -31,7 +31,7 @@ news_config.py: Makefile ../../Makefile.defs
 	 echo "news_dir=wgo_config.admin_dir + 'news/'"           ; \
 	 echo "news_path=wgo_config.DocumentRoot_path + news_dir" ; \
 		echo                                                     ; \
-	 echo "icon_dir=news_dir + 'icons/'"                      ; \
+	 echo "icon_dir='/images/news-icons/'" ; \
 	 echo "icon_path=wgo_config.DocumentRoot_path + icon_dir" ; \
 		echo                                                     ; \
 	 echo "pending_queue='news-pending'"                      ; \

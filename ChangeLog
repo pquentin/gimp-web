@@ -1,3 +1,40 @@
+2002-10-02  carol  <carol@fungus>
+
+	* os2/man-gimprc.1.html, tutorials/index.html:
+	one manpage that got forgotten is removed now
+
+	some minor edits to the tutorials list
+
+	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html, macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html, macintosh/man-gtk-config.html, os2/man-gimp-1.2.html, os2/man-gimp-remote-1.2.html, os2/man-gimptool-1.2.html, os2/man-gtk-config.html, windows/man-gimp-1.2.html, windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html, windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
+	i remove the man pages from the poor os's that don't get manpages. i had
+	*no* idea.  aren't they mad?
+
+	* resources/devel-docs/index.html, tutorials/index.html:
+	i fixed the tags, this time on a different file.
+
+	the titles have been put on the tutorials index page.  descriptions prolly
+	need major help, especially towards the end.
+
+2002-10-01  carol  <carol@fungus>
+
+	* resources/brushes/index.html:
+	i need to work on this online so i can check before i commit. two stupid
+	</a> tags added
+
+	* resources/brushes/index.html:
+	added some additional instructions, or wishes to the needs to be edited
+	text on this page.
+
+	* resources/brushes/index.html:
+	removed some formating that didn't belong there
+
+	* resources/brushes/index.html:
+	edited the list of gbr to contain just gbr.
+
+	* resources/brushes/index.html:
+	added a list of the brushes that come with the initial gimp installation.
+	separated into classic brushes (gbr) and animated brushes (gih)
+
 2002-10-01  Henrik Brix Andersen  <brix@gimp.org>
 
 	* authoring.html, bugs/index.html, includes/menu.inc:

@@ -1,5 +1,9 @@
 2004-11-05  Niklas M <scizzo@gimp.org>
 
+	* source/index.htrw: some fixes.
+
+2004-11-05  Niklas M <scizzo@gimp.org>
+
 	* source/index.htrw: Added requirements for 2.2.
 
 2004-11-05  Sven Neumann  <sven@gimp.org>

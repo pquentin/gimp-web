@@ -9,11 +9,18 @@
 
 <p>This site, www.gimp.org, only distributes the source code to the
 GIMP (the building blocks). You can however download executable
-versions at the sites of <a
-href="http://www2.arnes.si/~sopjsimo/gimp/">Jernej Simoncic</a> (for
-users) and <a
-href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Tor
-Lillqvist</a> (for developers).</p>
+versions from the following sites:</p>
+
+<ul>
+  <li><a href="http://www2.arnes.si/~sopjsimo/gimp/">Jernej
+  Simoncic</a> provides an installer program that automates the
+  installation process.  This is the most convenient way to install
+  the GIMP for Windows.</li>
+
+  <li><a href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Tor
+  Lillqvist</a> provides several zip archives containing the program,
+  libraries and various resources for users and developers.</li>
+</ul>
 
 <h2>Requirements</h2>
 

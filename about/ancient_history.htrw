@@ -4,14 +4,12 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>A Brief History of GIMP </h1>
-<p>
-  <blockquote>
-<em class="caution">NOTE:</em> This history has actually become a historical document
+
+<blockquote><p><em class="caution">NOTE:</em> This history has actually become a historical document
 all on its own. Some of the dates are not accurate (due to internet technology
 limitation (google hadn't indexed usenet yet). Yet still a good document with
-many of the details perfectly intact. (editor comment) 
-  </blockquote>
-</p>
+many of the details perfectly intact. (editor comment)</p></blockquote>
+
 <p>
 With all the talk and theorizing going on about free software development 
 models, I thought that it might be a good idea to actually give an example.  

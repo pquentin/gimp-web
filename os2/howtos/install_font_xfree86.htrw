@@ -1,12 +1,12 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - How To Install Fonts In OS2/xfree86</title>
-<meta name="author" content="Christian Hennecke">
-<meta name="description" content="Installing fonts on XFree86/OS2 for The GIMP">
+<meta name="author" content="Christian Hennecke" />
+<meta name="description" content="Installing fonts on XFree86/OS2 for The GIMP" />
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
 
 <h1>How To Install Fonts In OS2/xfree86</h1>
-<p><cite>Thanks to Khairil Yusof and others on the XFree86/OS2 mailing list.</cite>
+<p><cite>Thanks to Khairil Yusof and others on the XFree86/OS2 mailing list.</cite></p>
 <p>
   The <a href="http:Package-xfree86-os2">XFree86/OS2</a> distribution contains several font packages. To be able to 
   additionally use the 

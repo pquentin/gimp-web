@@ -71,11 +71,11 @@ little.</p>
 
 <ul>
   <li><b>HACKING</b><br />
-  <i>(Contains a lot of information that you need to know if you want to start coding)</i></li><br />
+  <i>(Contains a lot of information that you need to know if you want to start coding)</i></li>
   <li><b>README</b><br />
-  <i>(The main README file for the GIMP and should be read by everyone)</i></li><br />
+  <i>(The main README file for the GIMP and should be read by everyone)</i></li>
   <li><b>README.i18n</b><br />
-  <i>(This is the localisation of the GIMP README)</i></li><br />
+  <i>(This is the localisation of the GIMP README)</i></li>
   <li><b>README.win32</b><br />
   <i>(The win32 README)</i></li>
 </ul>

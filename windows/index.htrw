@@ -35,8 +35,19 @@ recommended, but several GB do not hurt.</p>
 
 <h2>Configuration</h2>
 
-<p><em class="hellbrokeloose">FIXME:</em> <em>add something here, like
-in the UNIX section.</em></p>
+<dl>
+
+<dt>The first time you run the GIMP.</dt>
+<dd>When you run the GIMP for the first time, it will install some 
+files in your home directory and it will show you some dialogs that 
+give you the opportunity to adapt it to your environment.</dd>
+
+<dt>How to set the tile cache.</dt>
+<dd>The tile cache tells the GIMP how much memory it can use before 
+swapping some image data to disk. Setting the size of the tile cache 
+can be critical for the performance of your system.</dd>
+
+<dl>
 
 <h2>Help and Documentation</h2>
 

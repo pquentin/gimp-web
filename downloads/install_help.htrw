@@ -22,7 +22,7 @@ page.</p>
   <li><a href="#add-pkg">Other Packages</a></li>
 </ul>
 
-<a name="requirements"><h1>Requirements</h1></a>
+<h1><a name="requirements">Requirements</a></h1>
 <h2>Main Requirements</h2>
 
 <p>Well, it is necessary to have a C compiler and related tools to
@@ -77,14 +77,13 @@ done. You have been warned.</p>
   <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a></li>
 </ul>
 
-<a name="comp-inst"><h1>GIMP Compilation and Installation</h1></a>
+<h1><a name="comp-inst">GIMP Compilation and Installation</a></h1>
 
 <p>After grabbing the GIMP distribution, you are ready to compile and
 install.  The main site for the latest offical GIMP distribution is <a
 href="ftp://ftp.gimp.org/pub/gimp/">ftp://ftp.gimp.org/pub/gimp/</a>
 but you should consider using one of the mirrors listed on the <a
-href="./">download page</a>.
-</p>
+href="./">download page</a>.</p>
 
 <p>GIMP makes use of the Gimp Toolkit (GTK+) and other libraries that
 must be installed first. Look in Requirements above to find out
@@ -95,7 +94,7 @@ more.</p>
 <p>If all goes well, a good while later, you will have a brand
 spanking new GIMP to play with.  Unfortunately, it has been rumored
 that it isn't always that easy.  So, here are a few common problems
-and some solutions...</p>
+and some solutions ...</p>
 
 <p>For some more specific info, you may want to read the <a
 href="INSTALL">INSTALL</a> file from the main GIMP distribution.</p>

@@ -99,6 +99,7 @@
        down everything you can clearly, you will create a decent bug report.
     </p>
   </li>
+  <li>
   <ol>
      <li>
         <p>
@@ -175,6 +176,7 @@
         </p>
      </li>
  </ol>
+ </li>
 </ol>
 
 <h2><a name="enhance">Enhancing Bug Reports</a></h2>

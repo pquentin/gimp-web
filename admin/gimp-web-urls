@@ -25,7 +25,7 @@
 ["href", "http:Package-perl-os2",              { "href": "http://www.gus.biysk.ru/ftp/OS2/PERL/"}]
 ["href", "http:Package-SANE-os2-stable",       { "href": "http://home.tiscalinet.de/fbakan/sane-os2.htm"}]
 ["href", "http:Package-emx-os2",               { "href": "http://hobbes.nmsu.edu/cgi-bin/h-browse?dir=/pub/os2/dev/emx/v0.9d"}]
-["href", "http:Package-memsize-os2",           { "href": "http://hobbes.nmsu.edu/cgi-bin/h-search?key=memsize&pushbutton=Search"}]
+["href", "http:Package-memsize-os2",           { "href": "http://hobbes.nmsu.edu/cgi-bin/h-search?key=memsize&amp;pushbutton=Search"}]
 ["href", "http:Package-xfree86-os2",           { "href": "http://os2ports.com/browse/index_html?dir=pub/os2/unix/xfree86"}]
 ["href", "http:Package-xfree86_4-os2",         { "href": "ftp://ftp.netlabs.org/pub/xfree86/"}]
 ["href", "http:Package-xfree86-os2-xcenter",   { "href": "http://www.xworkplace.org/"}]
@@ -150,7 +150,7 @@
 ["href", "home:gimp-bugzilla",                 { "href": "http://bugzilla.gnome.org/"}]
 ["href", "home:gimp-bugzilla-stable",          { "href": "http://bugs.gimp.org/"}]
 ["href", "home:gimp-bugzilla_components",      { "href": "http://bugzilla.gnome.org/describecomponents.cgi?product=GIMP"}]
-["href", "home:gimp-bugzilla_stable_current",  { "href": "http://bugzilla.gnome.org/buglist.cgi?product=GIMP&version=1.1.x&version=1.2&version=1.2.1&version=1.2.2&version=1.2.2-pre1&version=1.2.2-pre2&version=1.2.2-pre3&version=1.2.3-pre1&version=unspecified&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&form_name=query"}]
+["href", "home:gimp-bugzilla_stable_current",  { "href": "http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;version=1.1.x&amp;version=1.2&amp;version=1.2.1&amp;version=1.2.2&amp;version=1.2.2-pre1&amp;version=1.2.2-pre2&amp;version=1.2.2-pre3&amp;version=1.2.3-pre1&amp;version=unspecified&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;form_name=query"}]
 ["href", "home:gimp-bugzilla-wgo-submit",      { "href": "http://bugzilla.gnome.org/enter_bug.cgi?product=GIMP&amp;component=www.gimp.org&amp;version=Current%20CVS&amp;op_sys=All"}]
 ["href", "home:gimp-ftp",                      { "href": "ftp://ftp.gimp.org/"}]
 ["href", "home:gnu",                           { "href": "http://www.gnu.org/"}]
@@ -328,7 +328,7 @@
 ["href", "tutorial:Photo_To_Sketch-Dave_Neary",      { "href": "http://carol.gimp.org/mygimp/tutorials/photo_sketch/"}]
 ["href", "tutorial:Draw_A_Paint_Brush-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/drawing_a_paintbrush/"}]
 ["href", "tutorial:Creating_Icons-Jakub_Steiner",           { "href": "http://developer.ximian.com/articles/tutorials/icons/output/index.html"}]
-["href", "tutorial:Using_GAP-Jakub_Steiner",                { "href": "http://jimmac.musichall.cz/popup.php3?img=gap&mapa="}]
+["href", "tutorial:Using_GAP-Jakub_Steiner",                { "href": "http://jimmac.musichall.cz/popup.php3?img=gap&amp;mapa="}]
 ["href", "tutorial:Advanced_Animations-Jakub_Steiner",      { "href": "http://jimmac.musichall.cz/tutor2.php3"}]
  
 
@@ -393,6 +393,6 @@
 
 ["href", "document:news-original",     { "href": "http://groups.google.com/groups?selm=petm-2907952329370001%40charnley.hip.berkeley.edu&amp;output=gplain"}]
 ["href", "document:news-follow_up",    { "href": "http://groups.google.com/groups?selm=3ua2hd%24bbv%40agate.berkeley.edu&amp;output=gplain"}]
-["href", "document:news-announce-0",   { "href": "http://groups.google.com/groups?selm=48s543%24r7b%40agate.berkeley.edu&oe=UTF-8&output=gplain"}]
-["href", "document:news-announce-0.54",{ "href": "http://groups.google.com/groups?selm=cola-liw-824385260-28937-1%40oravannahka.helsinki.fi&output=gplain"}]
-["href", "document:wilberdust",        { "href": "http://anoncvs.gnome.gr.jp/viewcvs.cgi/gimp-plugins-unstable/wilberdust?rev=1.1&content-type=text/vnd.viewcvs-markup"}]
+["href", "document:news-announce-0",   { "href": "http://groups.google.com/groups?selm=48s543%24r7b%40agate.berkeley.edu&amp;oe=UTF-8&amp;output=gplain"}]
+["href", "document:news-announce-0.54",{ "href": "http://groups.google.com/groups?selm=cola-liw-824385260-28937-1%40oravannahka.helsinki.fi&amp;output=gplain"}]
+["href", "document:wilberdust",        { "href": "http://anoncvs.gnome.gr.jp/viewcvs.cgi/gimp-plugins-unstable/wilberdust?rev=1.1&amp;content-type=text/vnd.viewcvs-markup"}]

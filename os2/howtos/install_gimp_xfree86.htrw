@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - How To Install GIMP For OS2/xfree86</title>
-<meta name="author" content="Christian Hennecke">
-<meta name="description" content="Installation instructions for GIMP for XFree86/OS2">
+<meta name="author" content="Christian Hennecke" />
+<meta name="description" content="Installation instructions for GIMP for XFree86/OS2" />
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
 

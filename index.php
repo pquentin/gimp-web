@@ -8,6 +8,8 @@
     <?php
       if (isset ($tutorial)) {
         echo '<style type="text/css">#linkbar, #menu { display: none; }</style>';
+      } else {
+        echo '<style type="text/css">#navbar { display: none; }</style>';
       }
     ?>
 
@@ -99,6 +101,9 @@
       <span class="linkitem"><a href="FIXME">Mailing Lists</a></span>
       <span class="linkitem"><a href="FIXME">FAQ's</a></span>
       <span class="linkitem"><a href="FIXME">GIMP Books</a></span>
+    </div>
+    <div id="navbar">
+      <a href="?page=<?php echo $page;?>">Go Back</a>
     </div>
 
     <div>

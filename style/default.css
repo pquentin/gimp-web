@@ -97,6 +97,14 @@ div.item {
   text-align: justify; 
 }
 
+div.subtitle {
+  font-weight: bold;
+}
+
+div.images {
+  text-align: center;
+}
+
 #linkbar, #navbar {
   clear: both;
   background: #f5f5f5;

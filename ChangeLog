@@ -1,5 +1,7 @@
 2004-03-23  Sven Neumann  <sven@gimp.org>
 
+	* source/howtos/stable-cvs-get.htrw: small update for 2.0.
+
 	* unix/fonts.htrw: completely rewritten. Please review and fix
 	errors!
 

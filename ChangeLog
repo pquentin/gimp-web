@@ -1,3 +1,9 @@
+2003-08-05 scizzo <scizzo@gimp.org>
+
+	* /downloads/index.htrw: Changed the content in this file to close bug
+	#118909. Binary links have been added and we might want to change the
+	links even more to link directly to the downloads on thoose sites.
+
 2003-08-03 scizzo <scizzo@gimp.org>
 
 	* /about/splash-1.1.html: Fixed broken link reported in bug #118755.

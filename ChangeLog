@@ -1,3 +1,18 @@
+2004-01-07  Raphaël Quinet  <quinet@gamers.org>
+
+	* style/wgo.css: Replaced "div.news img" by "p.news img" because
+	the images have been inside a <p> and not a <div> since a while.
+
+	* includes/news.inc: Added &nbsp; at the end of the headings for
+	these sample news items in order to avoid strange display
+	artifacts due to the fact that both <span> elements included in
+	<h1> have "float" set in the style sheet.
+
+	* includes/wgo-admin-fini.xhtml:
+	* includes/wgo-develop-fini.xhtml:
+	* includes/wgo-tutorial-fini.xhtml:
+	* includes/wgo-page-fini.xhtml: Updated copyright year to 2004.
+
 2004-01-05  Raphaël Quinet  <quinet@gamers.org>
 
 	* resources/index.htrw: Removed the visible FIXME, added a comment

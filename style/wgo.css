@@ -74,6 +74,10 @@ div.book-of-wilber {
   padding: 1em;
 }
 
+div.news {
+    clear: both;
+}
+
 p {
   margin: 1.33em 0px;
   margin-left: 40px;
@@ -85,11 +89,7 @@ p.news {
   text-align: left;
 }
 
-div.news {
-    clear: both;
-}
-
-div.news img {
+p.news img {
     float: left;
     padding: 0em 1em 0em 0em;
 }

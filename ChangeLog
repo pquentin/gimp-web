@@ -14,6 +14,9 @@
 	* links.html, includes/linkbar.inc: removed links.html and reflected the
     change in linkbar.inc
 
+	* links.html, includes/urls_important.inc, about/index.html:  moved the
+    important GIMP urls into an includes file.  
+
 2002-11-20 carol <carol@gimp.org>
 
 	* links.html: moved some of the clusters around, added a few others

@@ -1,3 +1,17 @@
+2004-01-05  Raphaël Quinet  <quinet@gamers.org>
+
+	* resources/index.htrw: Removed the visible FIXME, added a comment
+	saying that some downloadable files will be available soon.
+
+	* Makefile: If news.inc is not present in the target directory,
+	install it so that the site can be bootstrapped (this is a kludge
+	that should be removed later, when the news are stored in CVS).
+	Added some comments about other things that should be fixed soon
+	after the move.
+
+	* includes/news.inc: Changed the default news items.  The old ones
+	did not work with the new style sheet.
+
 2004-01-03  Raphaël Quinet  <quinet@gamers.org>
 
 	* source/index.htrw: Removed the visible FIXME, explained what are

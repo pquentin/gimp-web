@@ -1,4 +1,13 @@
-#
+# FIXME: This Makefile is not very clean.  It should be rewritten
+# using autoconf or at least using a similar style:
+# - one Makefile per directory (taking care of the files in that
+#   directory only),
+# - keep a clear difference between recursive and non-recursive rules,
+# - always use target names consistently ("make mirrors" should not
+#   "make something else" in another directory),
+# - do not process directories more than once during "make all",
+# - no rules except "make install" should install files (all other
+#   rules should only work in the source directories).
 #
 
 export PYTHONPATH=$(shell pwd)/programmatic:
@@ -18,11 +27,17 @@ all: usage includes webtools mirrors crontab ${TARGETS}
 	rsync -rlt --delete --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
 
+# Install all includes files to the target directory (FIXME: this should not
+# be necessary anymore if SSI is disabled -- we should update ssi-pp to use
+# the source directory instead of the target directory for all includes.)
+#
+# kludge: install includes/news.inc if it does not exist yet in the target dir
 includes:
 	rsync -rlt --delete --exclude-from=install.exclude includes ${DocumentRoot}
+	@if [ -r ${DocumentRoot}/includes/news.inc ]; then :; else cp -p includes/news.inc ${DocumentRoot}/includes/news.inc ; fi
 
 usage:
-	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; exit 1; fi
+	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; echo "You can also set DocumentRoot in your environment."; echo "You should probably use the script install.sh to do everything at once."; exit 1; fi
 
 target:
 	@echo "Choose a target among: clean, all, install or cvsignore"; exit 1

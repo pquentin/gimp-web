@@ -1,0 +1,204 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Creating a Contrast Mask</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Creating a Contrast Mask</div>
+
+<div class="subtitle">Intention</div>
+<p class="images">
+  <img src="before.jpg" alt=""/>
+  <img src="after.jpg" alt=""/>
+</p>
+<p>
+  In this tutorial I'll show you how to do create a contrast mask for your image in The GIMP. A contrast mask allows you to reduce overall contrast, 
+  simultaneously bringing out more detail in highlights and shadows. This may be necessary to obtain a decent print, because prints on paper do not 
+  have as much dynamic range as a monitor; if you don't control the contrast, detail in the highlights may blow out and detail in the shadows can block 
+  up and become muddy or even black. You can of course modify your image directly in The GIMP to decrease contrast, but the advantage of the contrast mask 
+  technique is that it allows you much more precise control, and gives better results.
+</p>
+<p>
+  The basic technique is to create a layer above the image that contains a B&amp;W negative of the image. The images are combined in overlay mode: dark parts with light, 
+  light parts with dark. All the while your original image remains blissfully unchanged on its layer.
+  <br /><br />
+  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a Photoshop tutorial on 
+  the <a href="http://www.luminous-landscape.com/">luminous-landscape.com web site</a> (great photography web site BTW; I recommend it).
+  <br /><br />
+  The contrast mask technique does some similar things for the exposure as the digital split ND filter and the blended exposures techniques. 
+  If you feel your image has exposure problems you might want to consider those techniques as well. Each one has different strengths. 
+  Occasionally this technique gives unacceptable color shifts in certain images. Sometimes it is just the ticket. 
+  Experiment to see if it can work for your particular image.
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="original.jpg" alt=""/>
+</p>
+<p>
+  Here is the original example image, loaded into The GIMP. 
+  The red leaves are a little too dark to make out the detail; if printed, the result would be pretty dark and muddy. 
+  At the same time, the yellow flowers have a couple of specular highlights that would probably blow out the detail if printed.
+  <br /><br />
+  We want to brighten the dark areas a little and darken the light areas a little. In other words, reduce contrast.
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="layers2.jpg" alt=""/>
+</p>
+<p>
+  Open the Layers dialog. Right-click on the Background layer and select Duplicate (there is also a button for this in the bottom button bar of the Layers dialog.
+</p>
+
+<div class="subtitle">Step 3</div>
+<p class="images">
+  <img src="editlayerattr.jpg" alt=""/>
+  <img src="layers3.jpg" alt=""/>
+</p>
+<p>
+  Now double-click on the duplicate layer and rename the new layer "Contrast Mask". (This step is not strictly necessary, 
+  but it is helpful to prevent confusion about what is on each layer, especially if you add some additional layers for other editing purposes).
+</p>
+
+<div class="subtitle">Step 4</div>
+<p class="images">
+  <img src="image2.jpg" alt=""/>
+</p>
+<p>
+  Select the Contrast Mask layer. Go to the image window and right-click, selecting <span class="filter">Image/Colors/Desaturate</span>. The image should look B&amp;W.
+</p>
+
+<div class="subtitle">Step 5</div>
+<p class="images">
+  <img src="image3.jpg" alt=""/>
+</p>
+<p>
+  Right-click and select <span class="filter">Image/Colors/Invert</span>. You now have a B&amp;W negative image of your original. We're going to combine this with the original 
+  (light with dark, dark with light) to reduce the overall contrast.
+</p>
+
+<div class="subtitle">Step 6</div>
+<p class="images">
+  <img src="layers4.jpg" alt=""/>
+  <img src="image4.jpg" alt=""/>
+</p>
+<p>
+  Go back to the Layers dialog and in the "Mode" drop-down box, select "Overlay". The result may look better in terms of contrast, but degraded in terms of overall sharpness. 
+  <br /><br />
+  Don't worry, we're not done yet.
+</p>
+
+<div class="subtitle">Step 7</div>
+<p class="images">
+  <img src="original.jpg" alt=""/>
+  <img src="image5.jpg" alt=""/>
+</p>
+<p>
+  Go back to the image window and right click, selecting <span class="filter">Filters/Blur/Gaussian Blur</span>. You will need to experiment to find the best value, 
+  but typically a value between 10 and 30 will do nicely. After blurring the contrast mask the overall image should now look much sharper.
+  <br /><br />
+  Click on the "eye" next to the Contrast Mask layer in the Layers dialog to rapidly compare the image with and without the mask. 
+  Similarly, turn off the Background layer if you want to view the mask to do further work on it.
+  <br /><br />
+  The image at top left is the original, the top right is with the contrast mask.
+</p>
+
+<div class="subtitle">Step 8</div>
+<p class="images">
+  <img src="contrastdialog.jpg" alt=""/>
+  <img src="imagewtypcontrastreduction.jpg" alt=""/>
+</p>
+<p>
+  It is informative to see how this technique compares to the conventional technique of using the contrast dialog to adjust contrast. 
+  I've tried to adjust the contrast to have the leaves appear about the same. I think the image with the contrast mask has a lot more pop! 
+  This one looks kind of flat by comparison.
+</p>
+
+<div class="subtitle">Step 9</div>
+<p class="images">
+  <img src="histogram-before.jpg" alt="Histogram-Before"/>
+  <img src="histogram-after.jpg" alt="Histogram-After"/>
+  <img src="histogram-typcontrastreduction.jpg" alt="Historgram-Contrast-Reduction"/>
+</p>
+<p>
+  To see why this is so, compare the histograms of the images. The top one is for the original image, the middle is for the image with the contrast mask, 
+  and the bottom one is for the original image with the conventional contrast adjustment.
+  <br /><br />
+  Note how the typical contrast adjustment has lost a lot of values at both ends, but the mask technique basically preserved the entire scale.
+</p>
+
+<div class="subtitle">Step 10</div>
+<p class="images">
+  <img src="layers5.jpg" alt=""/>
+</p>
+<p>
+  You'll have to flatten the image if you are saving it to a typical image format like TIFF or JPEG (but not if you are saving to the GIMP's native XCF format). 
+  To do that, right-click on the image and select <span class="filter">Layers/Flatten Image</span>.
+</p>
+
+<div class="subtitle">Fine Tuning</div>
+<p>
+  Now that your contrast mask is created, it's time to fine tune it. Here are some things you can do:
+</p>
+<ul>
+  <li>Use the "Opacity" slider in the Layers dialog to decrease the effect of the contrast mask overall.</li>
+  <li>Apply Levels or Curves to the contrast mask to open up the shadows or reduce the highlights further.</li>
+  <li>Apply the dodge and burn tools to the contrast mask.</li>
+  <li>Apply a layer mask to the contrast mask and use it to select only parts of the contrast mask; e.g. if you only want 
+  the contrast mask to apply to certain areas of the image (see my example of this below).</li>
+</ul>
+
+<div class="subtitle">Tips</div>
+<ul>
+  <li>See <a href="http://www.vinberg.nu/photography/articles/contrast_masking.htm">this article</a> for some informative tests 
+  on the effects of the Gaussian Blur step on the contrast mask.</li>
+</ul>
+
+<div class="subtitle">Other Examples</div>
+<p class="images">
+  <img src="tree.jpg" alt=""/>
+  <img src="treewcmask.jpg" alt=""/>
+</p>
+<p>
+  With a contrast mask as described above. Notice how the sky has recovered some blue, and the detail visible under the tree!
+</p>
+<p class="images">
+  <img src="nd-original-1.jpg" alt=""/>
+  <img src="utsunset-wcmask.jpg" alt=""/>
+</p>
+<p>
+  Here's an example of how this technique overlaps with the digital split ND filter approach. Which do you prefer?
+</p>
+<p class="images">
+  <img src="nd-filter-1.jpg" alt=""/>
+  <img src="utsunset-whmask.jpg" alt=""/>
+</p>
+<p>
+  With a digital split ND filter. (left image)
+  <br />
+  With a contrast mask as described above, plus a layer mask with a gradient fill, so the contrast mask is mostly applied to the area below the cliffs. (right image)
+</p>
+<p>
+  Note particularly the change in the color of the cliffs and the light part of the sky just above the cliffs, in the image using the full contrast mask (upper right). 
+  This shows how a contrast mask affects all parts of the image, unless you selectively disable part of the mask, as I did in the lower right. 
+  Note also that with the split nd filter (lower left) I was able to brighten the foreground more; I could apply a general levels tweak to the contrast mask to achieve the same thing, 
+  but it seems like more work. This illustrates a general point for me: the digital split ND filter technique is the easier approach when you're already satisfied with half of the image, 
+  whereas the contrast mask is a better starting point if the overall image needs contrast reduction on both the dark and light sides.
+</p>
+
+<p>
+  The original tutorial can be found <a href="http://cs.uhh.hawaii.edu/~jeschke/photography/articles/gimp/ContrastMask/">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:jeschke@mano.uhh.hawaii.edu">Eric Jeschke</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

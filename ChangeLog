@@ -6,6 +6,9 @@
         * tutorials/Photo_Edit/Reducing_CCD_Noise/: First port for the 
         CCD Noise tutorial.
 
+        * tutorials/Photo_Edit/ContrastMask/: First port for the Contrast Mask
+        tutorial.
+
 2002-11-03 scizzo <scizzo@gimp.org>
 
         * tutorials/index.html: Edit the photo edit menu to the index.

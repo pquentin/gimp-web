@@ -6,6 +6,9 @@
         * readme.repository:  added my name (carol) to the people who can
         make style changes.
         
+        * resources/brushes/index.html and mgo-brushes.py:  added a style
+        to the <div>'s and removed the <p>'s in each brush entry.
+        
 2002-10-19 scizzo <scizzo@gimp.org>
 
         * tutorials/Advanced_Animations/: Forgot to add the .xcf.bz2

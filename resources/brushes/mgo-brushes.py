@@ -13,7 +13,6 @@ def write_brush_page(bg_colour, fg_colour, page_location):
     f.write('<div class="heading">Resources</div>\n') 
     f.write('<div class="subtitle">Included With The GIMP</div>\n') 
     f.write('<p>More than just a bunch of tools, The GIMP has stuff too ....</p>\n') 
-    f.write('<div>this is the beginning</div>\n') 
     num_brushes, brushlist = pdb.gimp_brushes_list()
     old_fg = gimp.get_foreground()
     old_bg = gimp.get_background()
@@ -40,7 +39,7 @@ def write_brush_page(bg_colour, fg_colour, page_location):
         pdb.gimp_image_scale(image, new_width, new_height)
         pdb.gimp_file_save(image, drawable, page_location + pname + '.png', pname + '.png')
         pdb.gimp_image_delete(image)
-        f.write('<div><img src="' + pname + '.png" width="32" height="32" alt="brush sample"><p>' + name + '</p></div>\n')
+        f.write('<div><img style="vertical-align: text-middle;" src="' + pname + '.png" width="32" height="32" alt="brush sample">' + name + '</p></div>\n')
         if count == half:
             f.write('<div><p>half way point</p></div>\n') 
     f.write('\n') 

@@ -1,5 +1,10 @@
 2003-09-21 scizzo <scizzo@gimp.org>
 
+	* /unix/index.htrw: Commented out "Help Documentation" and 
+	"File -->Preferences".
+
+2003-09-21 scizzo <scizzo@gimp.org>
+
 	* /unix/index.htrw: Add "/downloads/INSTALL" as file for the
 	"Installation Instructions" link.
 

@@ -1,5 +1,16 @@
 2003-04-13  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * Fixed tutorial/Reducing_CCD_Noise
+        * Fixed tutorial/ContrastMask
+        * Fixed tutorial/Sepia_Toning
+        * Fixed tutorial/Blur_Overlays
+        * Fixed tutorial/Smart_Sharpening
+        * Fixed tutorial/Blown_Out_Highlights
+                so that all of the page footer is at the bottom of the
+                page.  Fixed syntax of end-tag-less elements to have a
+                space before the '/>'.  Use <p> instead of <br /> to make
+                paragraphs.
+
         * Fixed Perlotine tutorial according to scizzo's request to make
         images centered.
 

@@ -9,16 +9,16 @@
 
 <h2>Intention</h2>
 <p class="images">
-  <img src="before-light.jpg" alt=""/>
-  <img src="before-dark.jpg" alt=""/>
-  <img src="after.jpg" alt=""/>
+  <img src="before-light.jpg" alt="" />
+  <img src="before-dark.jpg" alt="" />
+  <img src="after.jpg" alt="" />
 </p>
 <p>
   In this tutorial I'll show you how to do blend two different exposures of 
   the same scene that you would like to combine to get the best parts of both images. 
   This procedure works best if you have:
 </p>
-<ol type="A">
+<ol>
   <li>(obviously) have shot two different exposures that would be pleasing to combine,</li>
   <li>had the camera mounted on a tripod (not strictly necessary, but helps greatly in aligning the images),</li>
   <li>the scenes are not too different at the boundaries of the blend. 
@@ -28,7 +28,8 @@
 <p>
   If you have only one image that needs exposure adjustment, you might look at using the "digital" 
   neutral density filter or the contrast masking technique.
-  <br />
+</p>
+<p>
   Giving credit where credit is due: I did not come up with this method. 
   I adapted it for The GIMP from a Photoshop tutorial on the luminous-landscape.com 
   photography web site (great web site BTW, I recommend it).
@@ -43,8 +44,8 @@
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="image-original-light.jpg" alt=""/>
-  <img src="image-original-dark.jpg" alt=""/>
+  <img src="image-original-light.jpg" alt="" />
+  <img src="image-original-dark.jpg" alt="" />
 </p>
 <p>
   Here are the two exposures, loaded into the GIMP. I am going to sandwich these 
@@ -53,63 +54,67 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="layers1.jpg" alt=""/>
-  <img src="newlayeroptions.jpg" alt=""/>
-  <img src="layers2.jpg" alt=""/>
+  <img src="layers1.jpg" alt="" />
+  <img src="newlayeroptions.jpg" alt="" />
+  <img src="layers2.jpg" alt="" />
 </p>
 <p>
   The first decision is which one goes on top. In this case I have decided to put the lighter image on top and the darker one on the bottom. 
   The reason is because I hand-held the shots, and they are far from aligned. I'm going to have to move the bottom image until the arch is 
   aligned as best I can get it. Also, the top image is the composition I want anyway, and I'll have less painting to do that way.
-  <br /><br />
+</p>
+<p>
   Go the image that is going to be on the bottom. Open the Layers dialog (<kbd>Ctrl+L</kbd>) and 
-  click on the new layer button (<img src="newlayer.jpg" alt=""/>) to create a new layer.
+  click on the new layer button (<img src="newlayer.jpg" alt="" />) to create a new layer.
 </p>
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="layers3.jpg" alt=""/>
-  <img src="layers4.jpg" alt=""/>
+  <img src="layers3.jpg" alt="" />
+  <img src="layers4.jpg" alt="" />
 </p>
 <p>
   Go to the image that is going to be on top. Select all and copy (<kbd>Ctrl+A</kbd> then 
   <kbd>Ctrl+C</kbd>). In the Layers dialog, make sure the new layer is selected, 
   then go to the bottom image window and paste (<kbd>Ctrl+V</kbd>). In the Layers dialog, 
-  click on the anchor button (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
+  click on the anchor button (<img src="anchor.jpg" alt="" />) to anchor the floating image.
 </p>
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="layers5.jpg" alt=""/>
-  <img src="image-composite-paste.jpg" alt=""/>
+  <img src="layers5.jpg" alt="" />
+  <img src="image-composite-paste.jpg" alt="" />
 </p>
 <p>
   Crank down the opacity of the upper layer so that you can see both images.
-  <br />
+</p>
+<p>
   If they are perfectly aligned you can skip the next step. Unless you used a digital capture on a tripod, the images probably need to be aligned. 
   (Even if you had a film camera on a tripod, it is difficult to get two successive scans to feed through in perfect alignment.)
 </p>
 
 <h2>Step 5</h2>
 <p class="images">
-  <img src="layers6.jpg" alt=""/>
+  <img src="layers6.jpg" alt="" />
 </p>
 <p class="images">
-  <img src="image-composite-move.jpg" alt=""/>
-  <img src="image-composite-align.jpg" alt=""/>
+  <img src="image-composite-move.jpg" alt="" />
+  <img src="image-composite-align.jpg" alt="" />
 </p>
 <p>
   In the Layers dialog, select the layer you need to move or rotate. In this case it is the lower layer.
-  <br />
+</p>
+<p>
   Using the arrow keys, nudge the image into alignment. You may need to rotate the image slightly too. 
-  <br />
+</p>
+<p>
   When you get close to alignment, zoom in to get a good close-up view and get the best possible fit.
 </p>
 
 <h2>Step 6</h2>
 <p class="images">
-  <img src="addmaskoptions.jpg" alt=""/>
-  <img src="layers7.jpg" alt=""/>
+  <img src="addmaskoptions.jpg" alt="" />
+  <img src="layers7.jpg" alt="" />
 </p>
 <p>
   In the Layers dialog, right-click on the upper layer and select Add Layer Mask. 
@@ -118,58 +123,62 @@
 
 <h2>Step 7</h2>
 <p class="images">
-  <img src="image-select1.jpg" alt=""/>
-  <img src="image-fill.jpg" alt=""/>
+  <img src="image-select1.jpg" alt="" />
+  <img src="image-fill.jpg" alt="" />
 </p>
 <p>
   Now I want to paint black (transparency) onto the layer mask wherever I want the lower image to show through.
-  <br /> 
-  To minimize painting time, use the hand-select ("lasso"<img src="lasso.jpg" alt=""/> ) tool to select a large, hand-drawn region just 
+</p>
+<p>
+  To minimize painting time, use the hand-select ("lasso"<img src="lasso.jpg" alt="" /> ) tool to select a large, hand-drawn region just 
   inside all the borders of the area you want to paint, as shown at right. 
-  Then using the fill tool (<img src="fill.jpg" alt=""/>) fill the selection with black.
+  Then using the fill tool (<img src="fill.jpg" alt="" />) fill the selection with black.
 </p>
 
 <h2>Step 8</h2>
 <p class="images">
-  <img src="brushes1.jpg" alt=""/>
-  <img src="image-paint1.jpg" alt=""/>
+  <img src="brushes1.jpg" alt="" />
+  <img src="image-paint1.jpg" alt="" />
 </p>
 <p>
   Next, I select a large opaque brush from the Brushes dialog (Dialogs/Brushes), 
-  select the Paint tool (<img src="paint.jpg" alt=""/>) and begin painting into 
+  select the Paint tool (<img src="paint.jpg" alt="" />) and begin painting into 
   the mask close to the boundaries of the blend.
-  <br /><br />
+</p>
+<p>
   Notice that I still have the opacity cranked down on the upper layer so that I can see both layers.
 </p>
 
 <h2>Step 9</h2>
 <p class="images">
-  <img src="brushes2.jpg" alt=""/>
+  <img src="brushes2.jpg" alt="" />
 </p>
 <p class="images">
-  <img src="image-paint2.jpg" alt=""/>
-  <img src="image-donepainting.jpg" alt=""/>
+  <img src="image-paint2.jpg" alt="" />
+  <img src="image-donepainting.jpg" alt="" />
 </p>
 <p>
   For the very edges, I switch to a small, feathered brush and very carefully paint the edges.
-  <br />
+</p>
+<p>
   While I'm painting, I'll zoom in and out frequently ("=" key to zoom in, "-" key to zoom out) to inspect the work. 
   Don't worry too much about the borders, since we'll probably have to touch those up anyway.
 </p>
 
 <h2>Step 10</h2>
 <p class="images">
-  <img src="image-preclone.jpg" alt=""/>
-  <img src="image-postclone.jpg" alt=""/>
+  <img src="image-preclone.jpg" alt="" />
+  <img src="image-postclone.jpg" alt="" />
 </p>
 <p>
   Now the most painstaking part: blending the seams. This is a little tricky due to the different tonalities of the two exposures.
-  <br />
+</p>
+<p>
   For blending work, 
-  the Clone (<img src="clone.jpg" alt=""/>), 
-  Smudge (<img src="smudge.jpg" alt=""/>), 
-  Airbrush (<img src="airbrush.jpg" alt=""/>) 
-  and Blur (<img src="convolve.jpg" alt=""/>) are my tools of choice.
+  the Clone (<img src="clone.jpg" alt="" />), 
+  Smudge (<img src="smudge.jpg" alt="" />), 
+  Airbrush (<img src="airbrush.jpg" alt="" />) 
+  and Blur (<img src="convolve.jpg" alt="" />) are my tools of choice.
 </p>
 <p>
   Since I'm not sure if these tools have the ability to work across layers 
@@ -193,7 +202,7 @@
 
 <h2>Final Step</h2>
 <p class="images">
-  <img src="image-finished.jpg" alt=""/>
+  <img src="image-finished.jpg" alt="" />
 </p>
 <p>
   Finished. The image still has some problems with blown out highlights in the sunlight of the rock face. 

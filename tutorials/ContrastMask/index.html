@@ -9,8 +9,8 @@
 
 <h2>Intention</h2>
 <p class="images">
-  <img src="before.jpg" alt=""/>
-  <img src="after.jpg" alt=""/>
+  <img src="before.jpg" alt="" />
+  <img src="after.jpg" alt="" />
 </p>
 <p>
   In this tutorial I'll show you how to do create a contrast mask for your image in The GIMP. A contrast mask allows you to reduce overall contrast, 
@@ -22,10 +22,12 @@
 <p>
   The basic technique is to create a layer above the image that contains a B&amp;W negative of the image. The images are combined in overlay mode: dark parts with light, 
   light parts with dark. All the while your original image remains blissfully unchanged on its layer.
-  <br /><br />
+</p>
+<p>
   Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a Photoshop tutorial on 
   the <a href="http://www.luminous-landscape.com/">luminous-landscape.com web site</a> (great photography web site BTW; I recommend it).
-  <br /><br />
+</p>
+<p>
   The contrast mask technique does some similar things for the exposure as the digital split ND filter and the blended exposures techniques. 
   If you feel your image has exposure problems you might want to consider those techniques as well. Each one has different strengths. 
   Occasionally this technique gives unacceptable color shifts in certain images. Sometimes it is just the ticket. 
@@ -34,19 +36,20 @@
 
 <h2>The Procedure</h2>
 <p class="images">
-  <img src="original.jpg" alt=""/>
+  <img src="original.jpg" alt="" />
 </p>
 <p>
   Here is the original example image, loaded into The GIMP. 
   The red leaves are a little too dark to make out the detail; if printed, the result would be pretty dark and muddy. 
   At the same time, the yellow flowers have a couple of specular highlights that would probably blow out the detail if printed.
-  <br /><br />
+</p>
+<p>
   We want to brighten the dark areas a little and darken the light areas a little. In other words, reduce contrast.
 </p>
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="layers2.jpg" alt=""/>
+  <img src="layers2.jpg" alt="" />
 </p>
 <p>
   Open the Layers dialog. Right-click on the Background layer and select Duplicate (there is also a button for this in the bottom button bar of the Layers dialog.
@@ -54,8 +57,8 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="editlayerattr.jpg" alt=""/>
-  <img src="layers3.jpg" alt=""/>
+  <img src="editlayerattr.jpg" alt="" />
+  <img src="layers3.jpg" alt="" />
 </p>
 <p>
   Now double-click on the duplicate layer and rename the new layer "Contrast Mask". (This step is not strictly necessary, 
@@ -64,7 +67,7 @@
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="image2.jpg" alt=""/>
+  <img src="image2.jpg" alt="" />
 </p>
 <p>
   Select the Contrast Mask layer. Go to the image window and right-click, 
@@ -74,7 +77,7 @@
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="image3.jpg" alt=""/>
+  <img src="image3.jpg" alt="" />
 </p>
 <p>
   Right-click and select <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span>. 
@@ -84,8 +87,8 @@
 
 <h2>Step 5</h2>
 <p class="images">
-  <img src="layers4.jpg" alt=""/>
-  <img src="image4.jpg" alt=""/>
+  <img src="layers4.jpg" alt="" />
+  <img src="image4.jpg" alt="" />
 </p>
 <p>
   Go back to the Layers dialog and in the "Mode" drop-down box, select "Overlay". The result may look better in terms of contrast, but degraded in terms of overall sharpness. 
@@ -95,8 +98,8 @@
 
 <h2>Step 6</h2>
 <p class="images">
-  <img src="original.jpg" alt=""/>
-  <img src="image5.jpg" alt=""/>
+  <img src="original.jpg" alt="" />
+  <img src="image5.jpg" alt="" />
 </p>
 <p>
   Go back to the image window and right click, selecting <span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Gaussian Blur</span>. 
@@ -111,8 +114,8 @@
 
 <h2>Step 7</h2>
 <p class="images">
-  <img src="contrastdialog.jpg" alt=""/>
-  <img src="imagewtypcontrastreduction.jpg" alt=""/>
+  <img src="contrastdialog.jpg" alt="" />
+  <img src="imagewtypcontrastreduction.jpg" alt="" />
 </p>
 <p>
   It is informative to see how this technique compares to the conventional technique of using the contrast dialog to adjust contrast. 
@@ -122,9 +125,9 @@
 
 <h2>Step 8</h2>
 <p class="images">
-  <img src="histogram-before.jpg" alt="Histogram-Before"/>
-  <img src="histogram-after.jpg" alt="Histogram-After"/>
-  <img src="histogram-typcontrastreduction.jpg" alt="Historgram-Contrast-Reduction"/>
+  <img src="histogram-before.jpg" alt="Histogram-Before" />
+  <img src="histogram-after.jpg" alt="Histogram-After" />
+  <img src="histogram-typcontrastreduction.jpg" alt="Historgram-Contrast-Reduction" />
 </p>
 <p>
   To see why this is so, compare the histograms of the images. The top one is for the original image, the middle is for the image with the contrast mask, 
@@ -135,7 +138,7 @@
 
 <h2>Step 9</h2>
 <p class="images">
-  <img src="layers5.jpg" alt=""/>
+  <img src="layers5.jpg" alt="" />
 </p>
 <p>
   You'll have to flatten the image if you are saving it to a typical image format like TIFF or JPEG (but not if you are saving to the GIMP's native XCF format). 
@@ -162,22 +165,22 @@
 
 <h2>Other Examples</h2>
 <p class="images">
-  <img src="tree.jpg" alt=""/>
-  <img src="treewcmask.jpg" alt=""/>
+  <img src="tree.jpg" alt="" />
+  <img src="treewcmask.jpg" alt="" />
 </p>
 <p>
   With a contrast mask as described above. Notice how the sky has recovered some blue, and the detail visible under the tree!
 </p>
 <p class="images">
-  <img src="nd-original-1.jpg" alt=""/>
-  <img src="utsunset-wcmask.jpg" alt=""/>
+  <img src="nd-original-1.jpg" alt="" />
+  <img src="utsunset-wcmask.jpg" alt="" />
 </p>
 <p>
   Here's an example of how this technique overlaps with the digital split ND filter approach. Which do you prefer?
 </p>
 <p class="images">
-  <img src="nd-filter-1.jpg" alt=""/>
-  <img src="utsunset-whmask.jpg" alt=""/>
+  <img src="nd-filter-1.jpg" alt="" />
+  <img src="utsunset-whmask.jpg" alt="" />
 </p>
 <p>
   With a digital split ND filter. (left image)

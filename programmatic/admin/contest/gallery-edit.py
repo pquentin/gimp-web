@@ -21,8 +21,6 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
-import fcntl
-import email
 import errno
 import getopt
 import os
@@ -72,8 +70,11 @@ def format(name):
   return (xhtml.div(link, {"class" : "splash-thumb"}))
 
 def edit_image(form):
-  wgo_admin.head_boilerplate([wgo_contest.config.contest_dir + "wgo-contest.css"])
-  
+  wgo.http_preamble(["Content-type: text/html"])
+
+  wgo_admin.header('www.gimp.org - Administration - Splash Image',
+                   [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
+
   print xhtml.div("www.gimp.org - Administrate Contest - Edit Entry", {"class" : "heading"})
 
   name = form["name"].value
@@ -105,7 +106,10 @@ def edit_image(form):
   return (0)
 
 def save_image(form):
-  wgo_admin.head_boilerplate([wgo_contest.config.contest_dir + "wgo-contest.css"], ["Location: gallery-edit.cgi"])
+  wgo.http_preamble(["Content-type: text/html"])
+
+  wgo_admin.header('www.gimp.org - Administration - Splash Image',
+                   [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
 
   name = form["name"].value
 
@@ -122,7 +126,10 @@ def save_image(form):
   return (0)
 
 def delete_image(form):
-  wgo_admin.head_boilerplate([wgo_contest.config.contest_dir + "wgo-contest.css"], ["Location: gallery-edit.cgi"])
+  wgo.http_preamble(["Content-type: text/html"])
+
+  wgo_admin.header('www.gimp.org - Administration - Splash Image',
+                   [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
 
   name = form["name"].value
   entry = wgo_contest.gallery_image(name)
@@ -132,12 +139,16 @@ def delete_image(form):
   return (0)
 
 def display_gallery(form):
-  wgo_admin.head_boilerplate([wgo_contest.config.contest_dir + "wgo-contest.css"])
+  wgo.http_preamble(["Content-type: text/html"])
+
+  wgo_admin.header('www.gimp.org - Administration - Splash Image',
+                   [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
 
   names = get_gallery_names()
 
   index = int(form.getfirst("index", "0"))
   tableless = int(form.getfirst("tableless", "0"))
+
   images_per_page = 8
 
 
@@ -189,7 +200,10 @@ def display_gallery(form):
   return
 
 def display_image(form):
-  wgo_admin.head_boilerplate([wgo_contest.config.contest_dir + "wgo-contest.css"])
+  wgo.http_preamble(["Content-type: text/html"])
+
+  wgo_admin.header('www.gimp.org - Administration - Splash Image',
+                   [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
 
   name = os.path.basename(form.getvalue("name", ""))
 
@@ -209,14 +223,12 @@ def main(argv):
 
   mode = form.getvalue("mode", "GALLERY")
 
-  if mode in ["gallery", "GALLERY"]:  display_gallery(form)
-  elif mode in ["edit", "EDIT"]:   edit_image(form)
-  elif mode in ["save", "SAVE"]:   save_image(form)
+  if mode in ["gallery", "GALLERY"]: display_gallery(form)
+  elif mode in ["edit", "EDIT"]:     edit_image(form)
+  elif mode in ["save", "SAVE"]:     save_image(form)
   elif mode in ["delete", "DELETE"]: delete_image(form)
   else:
-    wgo_admin.head_boilerplate([wgo_contest.config.contest_dir + "wgo-contest.css"])
-    print xhtml.para(mode)
-    wgo_admin.footer()
+    display_gallery(form)
     pass
 
   return (0)

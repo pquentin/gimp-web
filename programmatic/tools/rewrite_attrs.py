@@ -72,7 +72,7 @@ def substitute(a, v):
   return ({a: v})
 
 def print_warning(filename):
-  sys.stdout.write("<!-- rewrite-attrs.py automatically generated this file from " + filename + ".  Do not edit.-->\n")
+  sys.stdout.write("<!-- rewrite-attrs.py $Revision$ automatically generated this file from " + filename + ".  Do not edit.-->\n")
   return
     
 
@@ -213,7 +213,7 @@ if __name__ == "__main__":
   xhtml = xhtml_parser(args[0], quiet_flag)
 
   fp = open(args[0], "r")
-  sys.stdout.write('<?xml version="1.0" encodings="iso-8859-1" standalone="yes"?>')
+  #sys.stdout.write('<?xml version="1.0" encodings="iso-8859-1" standalone="yes"?>\n')
   xhtml.feed(fp.read())
   fp.close()
     

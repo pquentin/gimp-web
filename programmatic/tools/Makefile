@@ -1,10 +1,14 @@
 include ../Makefile.defs
 
-all: rewrite_attrs
+all: rewrite_attrs ssi-pp
 
 rewrite_attrs: rewrite_attrs.py
 	sed -e 's|$${SRCDIR}|${SRCDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@
 	chmod 755 $@
 
+ssi-pp: ssi-pp.py
+	sed -e 's|$${SRCDIR}|${SRCDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' $< > $@
+	chmod 755 $@
+
 clean:
-	/bin/rm -f *.pyc *~ rewrite_attrs
+	/bin/rm -f *.pyc *~ rewrite_attrs ssi-pp

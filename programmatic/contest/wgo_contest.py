@@ -19,12 +19,9 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
-import email
-import email.MIMEMessage
 import errno
 import fcntl
 import getopt
-import xhtml
 import mimetypes
 import os
 import re
@@ -37,6 +34,7 @@ import time
 import types
 import base64
 
+import xhtml
 import wgo
 import contest_config as config
 
@@ -158,13 +156,14 @@ def spool_path(name, suffix=""):
 
 
 def folio_init(title=""):
-  print "Content-Type: text/html"
-  print 
-  print wgo.xhtml_init()
-  print xhtml.title(title)
-  print wgo.look_feel()
-  print xhtml.link({"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css", "media" : "screen"})
-  print wgo.page_init()
+  wgo.http_preamble(["Content-Type: text/html"])
+
+  wgo.header("page", title, [{"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css"}])
+  #print wgo.xhtml_init()
+  #print xhtml.title(title)
+  #print wgo.look_feel()
+  #print xhtml.link({"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css"})
+  #print wgo.page_init()
   return
 
 def folio_fini():

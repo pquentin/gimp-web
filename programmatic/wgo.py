@@ -22,9 +22,11 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
+import string
+import os
+
 import xhtml
 import wgo_config as config
-import os
 
 import apache_ssi
 
@@ -40,13 +42,17 @@ def spool_path(name, suffix=""):
 def error(text):
   return (xhtml.div("Eeek! An error!", {"class" : "subtitle"}) + xhtml.para(text))
 
-
+def http_preamble(headers=[]):
+  print string.join(headers, "\n")
+  print
+  return
+  
 #
 # This is highly dependent upon the layout in the include files, which
 # makes this messy. XXX
 #
-def header(title, links):
-  print
+def header(format="page", title="", links=None):
+
   print xhtml_init()
   
   print xhtml.title(title)
@@ -55,18 +61,13 @@ def header(title, links):
   print xhtml.link({"rel" : "stylesheet",
                     "href" : "/style/extended.css",
                     "type" : "text/css",
-                    "media" : "screen",
                     "title" : title})
 
-  for href in links:
-    print xhtml.link({"rel" : "stylesheet",
-                      "href" : href,
-                      "type" : "text/css",
-                      "media" : "screen",
-                      "title" : title})
+  for link in links:
+    print xhtml.link(link)
     pass
   
-  print page_init()
+  print page_init(format)
 
   return (True)
 
@@ -76,7 +77,7 @@ def footer(prefix=None):
     print prefix
     pass
   
-  print page_fini()
+  print page_fini()                     # XXX need to communicate the page format here.
   print xhtml_fini()
   
 
@@ -84,16 +85,6 @@ def footer(prefix=None):
   #                                      "data" : 'data:binary, ' + xhtml.include('/home/asdf/public_html/helvetix/anybrowser.png')})
 
   return (True)
-
-
-def displaycmd(cmd):
-  fp = os.popen(cmd, "r")
-  lines = fp.readlines()
-  for l in lines:
-    print '<pre style="color: grey;">' + l + '</pre>'
-    pass
-  fp.close()
-  return
 
 
 def xhtml_init():

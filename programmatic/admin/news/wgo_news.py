@@ -130,6 +130,7 @@ class news:
         return (self.msg.get_payload())
     
     return self.msg.get(name)
+
     
   def __setitem__(self, name, value):
     if string.lower(name) == "message-id": del self.msg["Message-Id"];       self.msg["Message-Id"] = value
@@ -143,6 +144,7 @@ class news:
       pass
       
     return (self)
+
        
   def as_news_item(self):               # As a line in the blotter
     iso_date = time.strftime(config.datetime_format, rfc822.parsedate(self["date"]))
@@ -162,6 +164,7 @@ class news:
     
     return (s)
 
+
   def as_rdf(self):
     iso_date = time.strftime("%Y-%m-%dT%H:%M:%SZ",  rfc822.parsedate(self["date"]))
 
@@ -171,6 +174,7 @@ class news:
                  + rdf.dc_date(xhtml.quote(iso_date)),
                  about={'rdf:about' : "http://www.w3.org/News/2003#item9"})
     return (s)
+
   
   def to_queue(self, queue):
     filename = wgo_queue.message_path(queue, self["message-id"])
@@ -180,6 +184,7 @@ class news:
     os.chmod(filename, config.news_permission)
     wgo_queue.generate_blotter(queue)
     return (0)
+
 
   def from_queue(self, queue):
     filename = wgo_queue.message_path(queue, self["message-id"])
@@ -193,16 +198,15 @@ class news:
   
 ################################################################################
 
-def header(headers=[]):
-  headers = headers + ["Content-type: text/html"]
-  print string.join(headers, "\n")
+def header():
+  wgo.http_preamble(["Content-type: text/html"])
 
-  return (wgo_admin.header("www.gimp.org - Administration",
-                           [ {"rel" : "stylesheet", "href" : config.news_dir + "/news-admin.css", "type" : "text/css", "media" : "screen"} ]))
+  wgo_admin.header("www.gimp.org - Administration",
+                   [ {"rel" : "stylesheet", "href" : config.news_dir + "/news-admin.css", "type" : "text/css", "media" : "screen"} ])
+  return
 
 def footer(prefix=None):
   return (wgo_admin.footer(prefix))
-
 
 icons = {
   "--none--"          : "",             # must be present

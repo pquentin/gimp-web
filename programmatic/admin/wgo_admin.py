@@ -34,14 +34,8 @@ import types
 import wgo
 import xhtml
 
-def head_boilerplate(css=[], headers=[]):
-  headers = headers + ["Content-type: text/html"]
-  for h in headers: print h
-
-  return (header("www.gimp.org - Administration", css))
-
 def header(title, links):
-  print
+
   print wgo.xhtml_init()
   
   print xhtml.title(title)

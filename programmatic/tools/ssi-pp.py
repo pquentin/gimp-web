@@ -27,6 +27,8 @@ import re
 import string
 import getopt
 
+sys.path = ['${SRCDIR}'] + sys.path
+
 import apache_ssi
 
 def usage(name):

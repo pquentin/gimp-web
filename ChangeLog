@@ -1,3 +1,20 @@
+2003-03-05  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Modified programmatic/contest/gallery.py to use the standard
+          wgo.py preamble and head.
+
+        * Top-level Makefile is now used from install.sh
+
+        * Deleted unix/index.html since it is a generated file.
+
+        * Moved unix/index-in.html to unix/index.htrw, the top-level
+          Makefile knows how to translate a .htrw file into a .html file.
+
+        * Updated the top-level Makefile with rules for building a .html
+          file from a .htrw file
+
+        * Modified programmatic/tools/rewrite_attrs.py for cleaner output.
+
 2003-03-05  Carol Spears  <carol@gimp.org>
 
         * style/default.css: added font-sizes to hn's there

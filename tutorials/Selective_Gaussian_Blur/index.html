@@ -1,0 +1,119 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Noise removal with selective Gaussian blur</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Noise removal with selective Gaussian blur</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  Digital cameras often have quite some noise in their pictures. Some are worse than others, but it's there. Here I'll show you a way 
+  to get rid of that noise using the selective Gaussian blur filter.
+</p>
+<p>
+  The basic idea behind selective Gaussian blur is that areas in the photo with contrast below a certain threshold gets blurred. 
+  You could think of it like the opposite of unsharpen mask (that sharpens everything with contrast above a certain threshold.
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="01.png" alt=""/>
+  <img src="02.png" alt=""/>
+</p>
+<p class="images">
+  <img src="03.png" alt=""/>
+  <img src="04.png" alt=""/>
+</p>
+<p>
+  Since the selective Gaussian blur filter doesn't have a preview and is quite heavy to compute (proportional with blur radius), 
+  it's easier to only work on a cropped version of you picture. Select the crop tool from the tool box, draw a selection and click "crop".
+</p>
+<p>
+  For best results, this should a part where there's some noise you want to remove and some detail you want to preserve.
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="05.png" alt=""/>
+</p>
+<p>
+  The next thing is to experiment with different combinations of the settings ("blur radius" and "maximum delta") in the selective Gaussian blur filter.
+</p>
+<p>
+  Normally I find that both settings should be between 5 and 10, where low numbers has less effect and higher numbers more, 
+  but this is very depending on the camera. In short, maximum delta should be just high enough for the filter to kick in on 
+  the noise and blur radius should be just high enough to remove it (actually blend it with neighboring areas).
+</p>
+<p class="images">
+  <img src="06.png" alt=""/>
+  <img src="07.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="08.png" alt=""/>
+  <img src="09.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="15.png" alt=""/>
+  <img src="00.jpg" alt=""/>
+</p>
+<p>
+  For a more in depth explanation of what the settings do see 
+  <a href="http://www.ftgimp.com/help/C/filters/sel_gauss.html">http://www.ftgimp.com/help/C/filters/sel_gauss.html</a>.
+</p>
+<p>
+  After playing with the settings a bit I liked the clean look of a blur radius of 10 and maximum delta of 10. 
+  Then I checked what those settings looked like on another crop (which is always a good idea to do), I decided that it was on the very edge, 
+  and maybe even too much. There was too much loss of detail in the hair.
+</p>
+<p class="images">
+  <img src="13.jpg" alt=""/>
+  <img src="15.png" alt=""/>
+  <img src="16.jpg" alt=""/>
+</p>
+<p>
+  An option would have been to back off a bit and use settings around blur radius 7 and maximum delta 6, 
+  but then again the only offending area was the hair. I finally decided to go with settings of 8/7.
+</p>
+<p>
+  You'll often find yourself in these arguments with yourself over when it's too much and when it's too little. All I can say is that you develop a feel for it, 
+  and I'm still not finished developing that feel. In any case, it's good to know that the first things that start to look funny are often faces and hair.
+</p>
+
+<div class="subtitle">The result</div>
+<p class="images">
+  <img src="org_sm.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="after_sm.jpg" alt=""/>
+</p>
+<p>
+  After 8 minutes my AMD-K6 300 running Linux finished the process, and I got the following (note they are resized to 640x480 from 1280x960, 
+  you can get the larger files at the bottom of this page):
+</p>
+<p>
+  <b>First image</b>: Before.
+  <b>Last image</b>: After (blur radius:8, maximum delta:7).
+</p>
+
+<div class="subtitle">Files</div>
+<p>
+  <a href="before.jpg">Before, 1280x960, JPEG (120 Kb)</a>
+  <a href="after.jpg">After, 1280x960, JPEG (104 Kb)</a>
+</p>
+
+<p>
+  The original tutorial can be found <a href="http://home.wanadoo.nl/atte/gimp/">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:atte@wanadoo.nl">Atte André Jensen</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

@@ -1,4 +1,16 @@
-2002-09-22  Henrik Brix Andersen  <brix@scienceworld.dk>
+2002-09-23  Henrik Brix Andersen  <brix@gimp.org>
+
+	* includes/links.inc: file added.
+
+	* index.php: added url for "gimp links".
+	added case "links" to switch statement.
+
+2002-09-22  Henrik Brix Andersen  <brix@gimp.org>
+
+	* ChangeLog: hmm. fixed ChangeLog on the loose.
+	removed duplicate entries.
+
+	* ChangeLog: updated changelog
 
 	* includes/team.inc, includes/webteam.inc, index.php:
 	renamed /includes/webteam.inc to /includes/team.inc
@@ -49,7 +61,7 @@
 	2002-09-21  Carol Spears  <carol@gimp.org>
 		* added ChangeLog
 
-2002-09-21  Henrik Brix Andersen  <brix@scienceworld.dk>
+2002-09-21  Henrik Brix Andersen  <brix@gimp.org>
 
 	* includes/tutorials.inc, tutorials/Anti-Aliased_Treshold/curves.jpg, tutorials/Anti-Aliased_Treshold/effect.jpg, tutorials/Anti-Aliased_Treshold/finished.jpg, tutorials/Anti-Aliased_Treshold/index.inc, tutorials/Anti-Aliased_Treshold/original.jpg, tutorials/Anti-Aliased_Treshold/threshold.jpg:
 	moved tutorials to /tutorials
@@ -68,7 +80,7 @@
 	* index.php:
 	added php code to hide #menu and #linkbar when a tutorial is shown
 
-2002-09-20  Henrik Brix Andersen  <brix@scienceworld.dk>
+2002-09-20  Henrik Brix Andersen  <brix@gimp.org>
 
 	* style/default.css: added @media print { ... } rule.
 	try it out using your browsers print-preview :)
@@ -142,7 +154,7 @@
 
 	* style/default.css, index.php: fixed display of several news items
 
-2002-09-20  Carol Spears  <carol@gimp.org>
+2002-09-20  Carol Spears <carol@gimp.org>
 
 	* index.php:
 	removed the rest of the spaces in the top bar <div></div>
@@ -150,7 +162,7 @@
 	* index.php:
 	removed many of the spaces in the  <div><img bla></div> tags for the top bar
 
-2002-09-19  Henrik Brix Andersen  <brix@scienceworld.dk>
+2002-09-19  Henrik Brix Andersen  <brix@gimp.org>
 
 	* index.php: cvs test
 

@@ -1,3 +1,9 @@
+2004-03-26  Dave Neary  <bolsh@gimp.org>
+
+	* downloads/index.htrw: Add links to the various gimp.org downloads 
+	like GAP, freetype, help, gimp-perl. Should perhaps have 
+	gimp-data-extras there too. Fixes bug #138177.
+
 2004-03-26  Sven Neumann  <sven@gimp.org>
 
 	* source/index.htrw: s/unstable/development/

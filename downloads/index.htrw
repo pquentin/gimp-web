@@ -19,6 +19,22 @@ href="install_help.html">install help</a> page.</p>
 <a href="ftp://ftp.gimp.org/pub/gimp/v2.0/">ftp://ftp.gimp.org/pub/gimp/v2.0/</a>.
 </p>
 
+<p>GAP (the GIMP Animation Package) for 2.0 is available at
+<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/gap">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/gap</a>.
+</p>
+
+<p>GIMP Freetype for 2.0 is available at
+<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/freetype">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/freetype</a>.
+</p>
+
+<p>GIMP help files are available at
+<a href="ftp://ftp.gimp.org/pub/gimp/help/">ftp://ftp.gimp.org/pub/gimp/help/</a>.
+</p>
+
+<p>GIMP Perl for 2.0 is now available at
+<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/perl">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/perl/</a>.
+</p>
+
 <p>Please consider using one of the mirrors listed below.</p>
 
 <h2>Source for version 2.1 (Development)</h2>

@@ -1,5 +1,11 @@
 2003-08-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* bugs/index.htrw
+	* bugs/howtos/submit-patch.htrw: added word "Create" to title,
+	fixed minor spelling issues and added my name to the copyright
+
+2003-08-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* bugs/howtos/submit-patch.htrw: corrected paste error in diff
 	arguments
 

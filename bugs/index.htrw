@@ -16,7 +16,7 @@
 <h2>Bug How To's</h2>
 <ul>
   <li><a href="wgo:dev-howtos-bugzilla">How To Bugzilla</a></li>
-  <li><a href="wgo:dev-howtos-subpatch">How To Submit a Patch</a></li>
+  <li><a href="wgo:dev-howtos-subpatch">How To Create and Submit a Patch</a></li>
 </ul>
 
 <h2>Bug Listings</h2>

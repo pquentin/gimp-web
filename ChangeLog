@@ -1,5 +1,17 @@
 2003-09-21 scizzo <scizzo@gimp.org>
 
+	* /docs/index.htrw: Commented out "The GIMP Documentation".
+	* /os2/index.htrw: Add a link to os2files for "OS/2 Software".
+	* /includes/wgo-xhtml-fini.xhtml: Commented out Validation link.
+	
+	* /unix/man-gimp-1.2.html
+	* /unix/man-gimp-remote-1.2.html
+	* /unix/man-gimprc.1.html
+	* /unix/man-gimptool-1.2.html: Removed 2 characters that broke the
+	files a little.
+
+2003-09-21 scizzo <scizzo@gimp.org>
+
 	* /includes/urls_go-utility.inc: Removed two broken links.
 
 2003-09-21 scizzo <scizzo@gimp.org>

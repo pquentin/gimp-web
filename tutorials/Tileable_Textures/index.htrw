@@ -9,9 +9,10 @@
 
 <h2>Intention</h2>
 <p>
-  The 1.1 series and the hopefully soon to arrive 1.2 series have a nice new feature I refer to as gradient brushes. 
-  Essentially, this is just the regular paint tool, but instead of painting with a constant color, it gets its color
-  from a gradient and rotates thought the gradient as you paint.
+  The GIMP 1.2 series have a nice new feature I refer to as gradient brushes. 
+  Essentially, this is just the regular paint tool, but instead of painting
+  with a constant color, it gets its color from a gradient and rotates through
+  the gradient as you paint.
 </p>
 
 <h2>Using Gradient Brushes</h2>

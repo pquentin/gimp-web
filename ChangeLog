@@ -1,7 +1,8 @@
 2003-08-18  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Tileable_Textures/index.htrw: the tutorial was referring
-	to the wrong menu entry.
+	to the wrong menu entry. Fixed some typos and removed reference to
+	GIMP version 1.1.
 
 2003-08-17 scizzo <scizzo@gimp.org>
 

@@ -1,3 +1,11 @@
+2003-09-23  Raphael Quinet  <quinet@gamers.org>
+
+	* unix/index.htrw: Added a link to fonts.html.
+
+	* unix/fonts.htrw: Added this new file describing how to install
+	fonts for the GIMP.  For the most part, this is copying the info
+	that I updated some time ago for the old web site.
+
 2003-09-23 scizzo <scizzo@gimp.org>
 
 	* /resources/index.htrw: Commented out links that has no content.
@@ -14,7 +22,7 @@
 
 	* style/wgo.css: Added #titlebar to the sections that should not
 	be printed.  Clean-up: removed the sections that had been
-	commented out by drc.
+	commented out by drc.  Fixes bug #122984.
 
 2003-09-22  Raphael Quinet  <quinet@gamers.org>
 

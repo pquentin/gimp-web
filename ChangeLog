@@ -1,3 +1,7 @@
+2003-04-13 scizzo <scizzo@gimp.org>
+
+    * admin/gimp-web-urls: Fixed the link to syngins main website.
+
 2003-04-12  Carol Spears  <carol@gimp.org>
 
     * os2/howtos/tile_cache.htrw, shuffled things and <br />.

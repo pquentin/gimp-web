@@ -38,7 +38,7 @@
 ["href", "mail:People-Beppu_John",             { "href": "mailto:beppu@cpan.org"}]
 
 ["href", "mail:People-Boyce_Mel",              { "href": "mailto:syngin-at-gimp-dot-org"}]
-["href", "home:People-Boyce_Mel",              { "href": "http:syngin.gimp.org"}]
+["href", "home:People-Boyce_Mel",              { "href": "http://syngin.gimp.org"}]
 
 ["href", "mail:People-Budig_Simon",            { "href": "mailto:Simon.Budig@unix-ag.org"}]
 ["href", "home:People-Budig_Simon",            { "href": "http://www.home.unix-ag.org/simon/"}]

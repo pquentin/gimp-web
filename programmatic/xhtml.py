@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2002, 2003 Helvetix Victorinox, a pseudonym,
 # Mountain View, California
-# 
+# $Id$
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -72,6 +72,7 @@ def unescape(s):
 
 
 def quote(s):
+  s = str(s)
   s = string.replace(s, "&", "&amp;")
   s = string.replace(s, "<", "&lt;")
   s = string.replace(s, ">", "&gt;")
@@ -574,7 +575,7 @@ def text(content=""):
 
 
 class table(__html__):
-  defaults = {"summary": "table", "cellpadding" : 0, "cellspacing" : 0}
+  defaults = {"summary": "table" }
 
   def __init__(self, content=None, attrs={}):
     a = dict(self.defaults)

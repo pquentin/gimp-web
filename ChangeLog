@@ -1,3 +1,7 @@
+2003-06-18  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Some code cleanup and tightening.
+
 2003-06-15  Carol Spears  <carol@gimp.org>
 
         * /style/default.css left alignment implicitly required for news
@@ -7,7 +11,7 @@
 
 2003-06-15  Manish Singh  <yosh@gimp.org>
 
-	* mail_lists.htrw: fixed os/2 names
+        * mail_lists.htrw: fixed os/2 names
 2003-06-15  Carol Spears  <carol@gimp.org>
 
         * left alignment implicitly required for news
@@ -18,7 +22,7 @@
 
 2003-06-15  Manish Singh  <yosh@gimp.org>
 
-	* team.htrw: s/Contributer/Contributor/
+        * team.htrw: s/Contributer/Contributor/
 
 2003-06-15  Carol Spears  <carol@gimp.org>
 
@@ -29,11 +33,11 @@
 
 2003-06-15  Manish Singh  <yosh@gimp.org>
 
-	* admin/example.html: remove generated file
-	* programmatic/apache_ssi.py
-	* programmatic/tools/rewrite_attrs.py
-	* programmatic/tools/ssi-pp.py
-	* programmatic/tools/subst.py: use #!/usr/bin/env ${PYTHON}
+        * admin/example.html: remove generated file
+        * programmatic/apache_ssi.py
+        * programmatic/tools/rewrite_attrs.py
+        * programmatic/tools/ssi-pp.py
+        * programmatic/tools/subst.py: use #!/usr/bin/env ${PYTHON}
 
 2003-05-01  Helvetix Victorinox  <helvetix@mysterious.org>
 

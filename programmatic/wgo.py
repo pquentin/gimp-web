@@ -51,7 +51,7 @@ def http_preamble(headers=[]):
 # This is highly dependent upon the layout in the include files, which
 # makes this messy. XXX
 #
-def header(format="page", title="", links=None):
+def header(format="page", title="", links=[]):
 
   print xhtml_init()
   

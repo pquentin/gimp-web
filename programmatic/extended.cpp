@@ -21,15 +21,15 @@ input[type="text"] {
   color:         WGO_BUTTON_FG;
   cursor:        pointer;
   font-family:   arial,helvetica,sans-serif;
-  font-size:     x-small;
+  font-size:     medium;
   font-weight:   bold;
-  padding:       .1em .2em .1em .2em;
+  padding:       0.1em 0.5em 0.1em 0.5em;
   margin:        0 0 0 0 ;
   text-decoration: none;
 }
 
 .faux-button:hover, input[type="submit"]:hover {
-  text-decoration: underline;
+  text-decoration: none;
   background:    WGO_BUTTON_BG none;
   color: WGO_BUTTON_FG;
   border-bottom: 1px solid WGO_BUTTON_LOLITE;

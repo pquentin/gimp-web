@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2002, 2003 Helvetix Victorinox, a pseudonym,
 # Mountain View, California
-# 
+# $Id$
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -29,12 +29,16 @@ import os
 
 
 def format_attrs(attrs):
-  k = attrs.keys()
-  k.sort()
-  a = string.join(map(lambda key: '%s="%s"' % (key, attrs[key]), k))
-  if len(a) > 0:
-    a = " " + a
+  if type(attrs) == dict:
+    k = attrs.keys()
+    k.sort()
+    a = string.join(map(lambda key: '%s="%s"' % (key, attrs[key]), k))
+    if len(a) > 0:
+      a = " " + a
+      pass
     pass
+  else:
+    raise TypeError, "attributes must be a dictionary, not a " + str(type(attrs))
   
   return (a)
 
@@ -132,8 +136,7 @@ class Xml:
       pass
 
     if self.fini == None and content != None:
-      print "element", self.tag, "does not take content"
-      raise ValueError
+      raise ValueError, "element " + self.tag + " does not take content."
 
     self.attrs = dict(self.defaults)
     self.attrs.update(attrs)
@@ -160,11 +163,17 @@ class Xml:
   def __coerce__(self, other):
     return (str(self), str(other))
     
+  def __str__(self):
+    if self.fini == None:
+      return ("<" + self.tag + format_attrs(self.attrs) + " />")
+    
+    return ("<" + self.tag + format_attrs(self.attrs) + ">" + str(self.content) + ("</" + self.tag + ">"))
+
   def __repr__(self):
     if self.fini == None:
       return ("<" + self.tag + format_attrs(self.attrs) + " />")
-    else:
-      return ("<" + self.tag + format_attrs(self.attrs) + ">" + str(self.content) + ("</" + self.tag + ">"))
+
+    return ("<" + self.tag + format_attrs(self.attrs) + ">" + str(self.content) + ("</" + self.tag + ">"))
 
   pass
 

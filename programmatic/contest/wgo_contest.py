@@ -76,7 +76,7 @@ class gallery_image:
     for key in self.attrs:
       typ = str(type(self.attrs[key]))
       typ = typ.replace("<type '", "").replace("'>", "")
-      print key + ": " + typ + ": " + str(self.attrs[key])
+      #print key + ": " + typ + ": " + str(self.attrs[key])
       pass
 
   def _ashtml(self, which="image"):
@@ -93,10 +93,17 @@ class gallery_image:
 
   def delete(self):
     try:
-      os.remove(gallery_path(self["name"], ".png"))
-      os.remove(gallery_path(self["name"], "-t.png"))
-      os.remove(gallery_path(self["name"], "-t.jpg"))
-      os.remove(gallery_path(self["name"], ".meta"))
+      try: os.remove(gallery_path(self["name"], ".png"))
+      except: pass
+
+      try: os.remove(gallery_path(self["name"], "-t.png"))
+      except: pass
+
+      try: os.remove(gallery_path(self["name"], "-t.jpg"))
+      except: pass
+
+      try: os.remove(gallery_path(self["name"], ".meta"))
+      except: pass
       return (True)
     except:
       pass
@@ -114,6 +121,7 @@ class gallery_image:
       typ = str(type(self.attrs[key]))
       typ = typ.replace("<type '", "").replace("'>", "")
       print >>fp, key + ": " + typ + ": " + str(self.attrs[key])
+      #print key + ": " + typ + ": " + str(self.attrs[key])
       pass
 
     fp.close()
@@ -152,9 +160,15 @@ def image_generate(title, image_file, author, email):
   
   return (img)
 
+#
+# Return the relative pathname of the named file affixed with the supplied suffix.
+#
 def gallery_file(name, suffix=""):
   return (config.gallery_dir + name + suffix)
 
+#
+# Return the full pathname of the named file affixed with the supplied suffix.
+#
 def gallery_path(name, suffix=""):
   return (config.gallery_path + name + suffix)
 

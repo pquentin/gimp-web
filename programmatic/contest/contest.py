@@ -229,6 +229,7 @@ def preview(form):
                              """After that time, you will need to resubmit your image.""" % (wgo_contest.config.tmp_directory_ttl)))
 
   print guidelines
+  print image_file + "<br />"
   print xhtml.div(img, {"class" : "splash-image", "id" : "preview"})
   print form
 
@@ -261,6 +262,7 @@ def approved(form):
   image_html = wgo_contest.gallery_path(name, ".html")
   thumb_html = wgo_contest.gallery_path(name, "-t.html")
   
+  #print "/bin/cp -f '%s' '%s' '%s'<br />" % (image_path, thumb_path, wgo_contest.config.gallery_path)
   os.system("/bin/cp -f '%s' '%s' '%s'" % (image_path, thumb_path, wgo_contest.config.gallery_path))
 
   entry.save()

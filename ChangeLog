@@ -1,5 +1,17 @@
 2004-12-01  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* programmatic/contest/:
+	Get the contest back up and running.  Changes to update programmes
+	to work around missing info in the top-level configuration.
+
+	DocumentRoot and DataDir are environment variables set at the
+	top-level installation script, but there is nothing to indicate
+	where the DataDir is in relation to DocumentRoot.  As a result
+	hackery has been employed in the scripts and sub-level Makefiles
+	to work around and make assumptions about this missing
+	information.  This hackery has been incomplete and, as a result,
+	the whole mess has been totally busted.
+
 	* index2.html:
 	Alternative home page to display automatically generated news.
 

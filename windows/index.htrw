@@ -1,4 +1,4 @@
-<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+2<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - for Windows</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
@@ -36,19 +36,19 @@ recommended, but several GB do not hurt.</p>
 
 <h2>Configuration</h2>
 
-<dl>
+<ul>
+  <li><a href="wgo:unix-guide_stable_user_install">The first time you
+  run the GIMP</a>.<br />
+  When you run the GIMP for the first time, it will install some files
+  in your home directory and it will show you some dialogs that give
+  you the opportunity to adapt it to your environment.</li>
 
-<dt>The first time you run the GIMP.</dt>
-<dd>When you run the GIMP for the first time, it will install some 
-files in your home directory and it will show you some dialogs that 
-give you the opportunity to adapt it to your environment.</dd>
-
-<dt>How to set the tile cache.</dt>
-<dd>The tile cache tells the GIMP how much memory it can use before 
-swapping some image data to disk. Setting the size of the tile cache 
-can be critical for the performance of your system.</dd>
-
-<dl>
+  <li><a href="wgo:unix-howtos-tile_cache">How to set the tile
+  cache</a>.<br />
+  The tile cache tells the GIMP how much memory it can use before
+  swapping some image data to disk.  Setting the size of the tile
+  cache can be critical for the performance of your system.</li>
+</ul>
 
 <h2>Help and Documentation</h2>
 

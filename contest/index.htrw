@@ -43,11 +43,12 @@
 
   <h3>Submissions</h3>
   <p>
-    Submit your splash image here: <a href="/contest/contest.cgi">Splash Submission Form</a>. The contest will be open until next Sunday the
-    5th of December, at which point the winner will be announced
-    and committed to CVS. The winner will receive a small prize
-    to be announced, and the honour of having their splash screen
-    on millions of desktops worldwide.
+    The contest is now closed. You can look at the entries <a 
+    href="contest/gallery.cgi">here</a>. The winner will be announced as 
+    soon as possible and committed to CVS. The winner will receive a 
+    t-shirt or polo shirt from <a 
+    href="http://www.sourcewear.com">SourceWear</a>, and the honour of 
+    having their splash screen on millions of desktops worldwide.
   </p>
 
   <h3>Good luck!</h3>

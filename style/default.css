@@ -116,6 +116,7 @@ div.newsheading {
   color: #eeeeee;
   padding: 5px;
   font-weight: bold;
+  clear: left;
 }
 
 span.newstitle {

@@ -8,6 +8,10 @@
 
 	* about/splash-cvs.html: fixed a bad image url.
 
+	* tutorials/Color2BW/: name="# to name="
+
+	* style/default.css: clear: left; to div.newsheading
+
 2002-12-06 scizzo <scizzo@gimp.org>
 
         * tutorials/Lite_Quickies/: Add the first port of the GIMPLite

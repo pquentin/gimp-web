@@ -1,3 +1,9 @@
+2003-01-20  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Supporting ChangeLogs
+        * RDF and RSS support
+        
+
 2003-01-13  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Added an example section for httpd.conf

@@ -62,6 +62,36 @@ compile.  That's what 300,000+ lines of code get you.</p>
   <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a></li>
 </ul>
 
+<h2>Development version (2.1.x)</h2>
+
+<ul>
+  <li>
+    A recent version of <b>pkg-config</b> is needed and you can grab
+    them at <a href="http://www.freedesktop.org/software/pkgconfig/">
+    http://www.freedesktop.org/software/pkgconfig/</a>
+  </li>
+  <li>
+    <b>GTK+ 2.4.4</b> or better (Gimp Toolkit). The GIMP toolkit can be found at
+    <a href="ftp://ftp.gtk.org/">ftp://ftp.gtk.org/</a> GTK+ 2.4.4 also needs
+    the following packages. (Either the version listed or newer)
+  <ul>
+    <li><b>GLib 2.4.5</b></li>
+    <li><b>Pango 1.4.0</b></li>
+    <li><b>ATK</b></li>
+  </ul></li>
+  <li>
+    <b>PangoFT2</b> a Pango backend that uses <b>FreeType2</b> 
+    (Make sure you have FreeType2 installed before installing Pango).
+    Downloads can be found at 
+    <a href="http://www.freetype.org/">http://www.freetype.org/</a>
+  </li>
+  <li>
+    <b>libart2</b> Grab the module libart_lgpl out of GNOME CVS or
+    fetch the tarball from <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">
+    ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a>
+  </li>
+</ul>
+
 <a name="comp-inst"><h1>GIMP Compilation and Installation</h1></a>
 
 <p>After grabbing the GIMP distribution, you are ready to compile and

@@ -1,5 +1,11 @@
 2003-09-04  Henrik Brix Andersen  <brix@gimp.org>
 
+	* bugs/howtos/submit-patch.htrw: fixed url to the CVS HOWTO. When
+	chaning a label in gimp-web-urls don't forget to update the files
+	using the label.
+
+2003-09-04  Henrik Brix Andersen  <brix@gimp.org>
+
 	* bugs/howtos/submit-patch.htrw: replaced > by &gt;, suggested
 	doing a make clean before generating patch file and added the -r
 	argument to the diff command. Updated copyright. Made it valid

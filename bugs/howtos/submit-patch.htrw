@@ -30,7 +30,7 @@
 </p>
 <p>
   To generate the patch you need to check out a copy of the source code from CVS. More information on how
-  to do this can be found in the <a href="wgo:unix-howtos-stable_cvs_get">CVS HOWTO</a>. After you have made the
+  to do this can be found in the <a href="wgo:source-howtos-stable_cvs_get">CVS HOWTO</a>. After you have made the
   changes to the source code and made sure it compiles and works as expected, you can create the patch file using
   the command <kbd>cvs diff -up &gt; /path/to/patchfile.patch</kbd>. It is recommended to include the <kbd>diff -up</kbd>
   line in ~/.cvsrc. To summarize the steps:

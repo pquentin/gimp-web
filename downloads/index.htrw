@@ -13,10 +13,10 @@ pre-compiled binaries for various platforms.  For detailed information
 on the install process and requirements, please take a look at the <a
 href="install_help.html">install help</a> page.</p>
 
-<h2>Source for version 2.0 (Stable)</h2>
+<h2>Source for version 2.2 (Stable)</h2>
 
-<p>GIMP 2.0.6 is now available at
-<a href="ftp://ftp.gimp.org/pub/gimp/v2.0/">ftp://ftp.gimp.org/pub/gimp/v2.0/</a>.
+<p>GIMP 2.2.0 is now available at
+<a href="ftp://ftp.gimp.org/pub/gimp/v2.2/">ftp://ftp.gimp.org/pub/gimp/v2.2/</a>.
 <br/>
 To allow you to check the integrity of the tarballs, here are the MD5 sum
 of the latest released tarballs:</p>
@@ -27,12 +27,12 @@ of the latest released tarballs:</p>
   <th style="background-color: #f5f5f5;">MD5 sum</th>
 </tr>
 <tr>
-  <td>gimp-2.0.6.tar.gz</td>
-  <td><kbd><b>c414803f96ab5246ddc0af5e072ac536</b></kbd></td>
+  <td>gimp-2.2.0.tar.gz</td>
+  <td><kbd><b>9d85016ed2b0c110643ed312c3cfc220</b></kbd></td>
 </tr>
 <tr>
-  <td>gimp-2.0.6.tar.bz2</td>
-  <td><kbd><b>632b9ec629ba7c48d292069c37a1a6c1</b></kbd></td>
+  <td>gimp-2.2.0.tar.bz2</td>
+  <td><kbd><b>7fa66cfd3a2a67f95c3c80307e46e4dd</b></kbd></td>
 </tr>
 </table>
 
@@ -45,7 +45,7 @@ of the latest released tarballs:</p>
 </p>
 
 <p>GIMP help files are available at
-<a href="ftp://ftp.gimp.org/pub/gimp/help/">ftp://ftp.gimp.org/pub/gimp/help/</a>.
+<a href="ftp://ftp.gimp.org/pub/gimp/help/">ftp://ftp.gimp.org/pub/gimp/help/testing/</a>.
 </p>
 
 <p>GIMP Perl for 2.0 is now available at
@@ -55,11 +55,9 @@ of the latest released tarballs:</p>
 <p>Please consider using one of the mirrors listed below.</p>
 
 
-<h2>Source for version 2.2</h2>
+<h2>Development version</h2>
 
-<p>GIMP 2.2-pre2, a pre-release for GIMP 2.2, is now available at
-<a href="ftp://ftp.gimp.org/pub/gimp/v2.2/testing/">ftp://ftp.gimp.org/pub/gimp/v2.2/testing/</a>.
-</p>
+<p>There are no releases in the unstable development tree yet.</p>
 
 
 <h2>Binaries for various platforms</h2>

@@ -1,5 +1,9 @@
 2004-12-19  Sven Neumann  <sven@gimp.org>
 
+	* downloads/index.htrw: udpated for GIMP 2.2.0.
+
+2004-12-19  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/wgo_news.py: fixed typo.
 
 	* images/news-icons: removed, these images aren't used.

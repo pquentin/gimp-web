@@ -16,7 +16,7 @@
 </p>
 <p>
    The first step is to download and compile
-   <a href="http:Package-GIMP-stable-tarball">The GIMP tarball</a>. 
+   <a href="http:Package-GIMP-stable">The GIMP tarball</a>. 
    This will help to clean any distribution problems up and give you experience with modern gimp compiling. This will also ensure that all libraries needed for building the plug-ins are correctly installed on your system (e.g., TIFF, PNG, JPEG, MPEG, perl, Gtk-Perl, etc.) 
 </p>
 <p>

@@ -1,6 +1,7 @@
 2002-12-07 scizzo <scizzo@gimp.org>
 
         * tutorials/index.html: Changed Channel Mixer to Color2BW.
+        Removed Selection Overview.
 
         * tutorials/Color2BW/: Add the first port of the new BW tutorial.
         Fixed a broken link.

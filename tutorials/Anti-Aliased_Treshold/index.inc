@@ -2,7 +2,7 @@
   <div class="item">
 
   <div class="subtitle">Intention</div>
-  <p>
+  <p class="tutorial">
   The threshold plug-in works by dividing the image into two parts, dark and light, producing a 2 color image. This is often not
   the desired result, for some images anti-aliasing is needed, but the threshold plug-in
   cannot provide that. With a little utilization of the curves plug-in, we get nice results.
@@ -13,7 +13,7 @@
   <img src="tutorials/Anti-Aliased_Treshold/original.jpg" alt=""/>
   <img src="tutorials/Anti-Aliased_Treshold/threshold.jpg" alt=""/>
   </div>
-  <p>
+  <p class="tutorial">
   On the left you we see the original image that is about to be thresholded, and on the right side we see the result. The default settings
   for the Threshold plug-in were used (Image|Colors|Threshold). The resulting image is very blocky and aliased.
   </p>
@@ -23,7 +23,7 @@
   <img src="tutorials/Anti-Aliased_Treshold/curves.jpg" alt=""/>
   <img src="tutorials/Anti-Aliased_Treshold/finished.jpg" alt=""/>
   </div>
-  <p>
+  <p class="tutorial">
   First duplicate the image layer by going to the layers dialog, making sure the image layer is selected, and clicking the duplicate button
   (fourth from the left). We can use the original layer for some color tricks later. Now the next thing is to desaturate the image 
   (Image|Colors|Desaturate). This way the colors wont interfere with the fake thresholding. When the layer is grayscale, select the curves
@@ -37,7 +37,7 @@
   <div class="images">
   <img src="tutorials/Anti-Aliased_Treshold/effect.jpg" alt=""/>
   </div>
-  <p>
+  <p class="tutorial">
   If you now take the original image layer, move it over the new one (make sure it has an alpha channel), and change its mode to "Color"
   in the layers dialog, you get nice results displayed above.
   </p>

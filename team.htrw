@@ -56,13 +56,19 @@
   <li>Zach Beane</li>
 </ul>
 
-<p>The previous version of www.gimp.org was maintained differently,
-usually with one or two webmasters and a few contributors.  From 1997
-to 2000, the webmaster's hat was worn by Jens T. Lautenbacher (jtl)
-and Adrian Likins (Adrian).  In addition, Zach Beane (Xach) maintained
-the GIMP News site.  From 2001 to 2003, the webmaster's hat was picked
-up by Raphaël Quinet.  Sven Neumann contributed several news items and
-updated some pages.</p>
+<h2>Previous Web Site</h2>
+
+<p>The previous version of www.gimp.org, now available as <a
+href="wgo:old">classic.gimp.org</a> was maintained differently,
+usually with one or two webmasters and a few contributors.</p>
+<ul>
+  <li>From 1997 to 2000, the webmaster's hat was worn by Jens
+  T. Lautenbacher (jtl) and Adrian Likins (Adrian).  In addition, Zach
+  Beane (Xach) maintained the GIMP News site.</li>
+  <li>From 2001 to 2004, the webmaster's hat was picked up by Raphaël
+  Quinet.  Sven Neumann contributed most news items and updated some
+  pages.</li>
+</ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

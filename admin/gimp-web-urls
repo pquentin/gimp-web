@@ -13,7 +13,7 @@
 ["href", "http:Package-GIMP-fonts",            { "href": "ftp://ftp.gimp.org/pub/gimp/fonts/"}]
 ["href", "http:Package-GIMP-fonts-freefonts",  { "href": "ftp://ftp.gimp.org/pub/gimp/fonts/freefonts-0.10.tar.gz"}]
 ["href", "http:Package-GIMP-fonts-sharefonts", { "href": "ftp://ftp.gimp.org/pub/gimp/fonts/sharefonts-0.10.tar.gz"}]
-["href", "http:Package-GIMP-windows",          { "href": "http://www.gimp.org/win32/"}]
+["href", "http:Package-GIMP-windows",          { "href": "http://classic.gimp.org/win32/"}]
 
 ["href", "http:Package-GTK-stable",            { "href": "ftp://ftp.gimp.org/pub/gtk/"}]
 ["href", "http:Package-GTK-unstable",          { "href": "ftp://ftp.gimp.org/pub/gtk/unstable"}]
@@ -116,6 +116,9 @@
 ["href", "mail:People-Pätsi_Ville",            { "href": "mailto:drcNOSPAM@gimp.org"}]
 ["href", "home:People-Pätsi_Ville",            { "href": "http://drc.gnome.org/"}]
 
+["href", "mail:People-Quinet_Raphaël",            { "href": "mailto:quinetNOSPAM@gamers.org"}]
+["href", "home:People-Quinet_Raphaël",            { "href": "http://www.gimp.org/~raphael/"}]
+
 ["href", "mail:People-Romero_Guillermo_S",     { "href": "mailto:famromNOSPAM@infernal-iceberg.com"}]
 ["href", "home:People-Romero_Guillermo_S",     { "href": "http://www.infernal-iceberg.com/gimp/"}]
 
@@ -152,6 +155,7 @@
 ["href", "home:gimp-bugzilla_components",      { "href": "http://bugzilla.gnome.org/describecomponents.cgi?product=GIMP"}]
 ["href", "home:gimp-bugzilla_stable_current",  { "href": "http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;version=1.1.x&amp;version=1.2&amp;version=1.2.1&amp;version=1.2.2&amp;version=1.2.2-pre1&amp;version=1.2.2-pre2&amp;version=1.2.2-pre3&amp;version=1.2.3-pre1&amp;version=unspecified&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;form_name=query"}]
 ["href", "home:gimp-bugzilla-wgo-submit",      { "href": "http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-web&amp;component=www.gimp.org&amp;op_sys=All"}]
+["href", "home:gimp-bugzilla-wgo-ftp-submit",  { "href": "http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-web&amp;component=ftp-mirrors&amp;op_sys=All"}]
 ["href", "home:gimp-ftp",                      { "href": "ftp://ftp.gimp.org/"}]
 ["href", "home:gnu",                           { "href": "http://www.gnu.org/"}]
 ["href", "home:google",                        { "href": "http://www.google.org/"}]
@@ -307,8 +311,8 @@
 
 
 ["href", "tutorial:GIMPLite_Quickies-Carol_Spears",         { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
-["href", "tutorial:The_Basics-Jens_Lautenbacher",           { "href": "http://www.gimp.org/tut-basic.html"}]
-["href", "tutorial:Straight_Line-Seth_Burgess",             { "href": "http://www.gimp.org/~sjburges/straightline/straightline.html"}]
+["href", "tutorial:The_Basics-Jens_Lautenbacher",           { "href": "http://classic.gimp.org/tut-basic.html"}]
+["href", "tutorial:Straight_Line-Seth_Burgess",             { "href": "http://classic.gimp.org/~sjburges/straightline/straightline.html"}]
 ["href", "tutorial:Borders_On_Selections-Francisco_Bustamante_Hempe",    { "href": "http://bitbit.org/cms.php/gimp/tutorials/stroke_selection.html"}]
 ["href", "tutorial:Anti-Aliased_Threshold-Ville_Pätsi",     { "href": "http://drc.gimp.org/"}]
 ["href", "tutorial:Bezier_Selections-Tuomas_Kuosmanen",     { "href": "http://tigert.gimp.org/gimp/tutorials/bezier/"}]
@@ -319,7 +323,7 @@
 
 ["href", "tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/bezier_shapes/"}]
 ["href", "tutorial:Film_Grain-Eric_Kidd",                   { "href": "http://carol.gimp.org/gimp/tutorials/film-grain/"}]
-["href", "tutorial:Changing_Background1-Seth_Burgess",      { "href": "http://www.gimp.org/~sjburges/color_to_alpha/demo/color2alpha.html"}]
+["href", "tutorial:Changing_Background1-Seth_Burgess",      { "href": "http://classic.gimp.org/~sjburges/color_to_alpha/demo/color2alpha.html"}]
 ["href", "tutorial:Changing_Background2-Francisco_Bustamante_Hempe",    { "href": "http://bitbit.org/cms.php/gimp/tutorials/remove_one_color.html"}]
 ["href", "tutorial:Coloring_A_BW_Sketch-Marco_LM_Lamberto", { "href": "http://the.sunnyspot.org/slm/tut_skcol.html"}]
 ["href", "tutorial:3-d_Floating_Logo-Mel_Boyce",            { "href": "http://syngin.gimp.no/tutorials/logo.html"}]
@@ -354,7 +358,7 @@
 
 ["href", "tutorial:Drawables-Kevin_Turner",      { "href": "http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro"}]
 ["href", "tutorial:Basic_Perl-Dov_Grobgeld",                { "href": "http://imagic.weizmann.ac.il/~dov/gimp/perl-tut.html"}]
-["href", "tutorial:Perl_Debugged-Seth_Burgess",             { "href": "http://www.gimp.org/~sjburges/perl_debug/intro.html"}]
+["href", "tutorial:Perl_Debugged-Seth_Burgess",             { "href": "http://classic.gimp.org/~sjburges/perl_debug/intro.html"}]
 ["href", "tutorial:Basic_Scheme-Dov_Grobgeld",              { "href": "http://imagic.weizmann.ac.il/~dov/gimp/scheme-tut.html"}]
 ["href", "tutorial:Basic_Scheme2-John_Beppu",               { "href": "http://www.linux-mag.com/2002-01/power_01.html"}]
 

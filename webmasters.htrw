@@ -31,7 +31,7 @@ these problems and to get a timely response.</p>
 <h2>Download mirrors</h2>
 
 <p>You can also use Bugzilla to <a
-href="home:gimp-bugzilla-wgo-submit">notify us</a> if a mirror of
+href="home:gimp-bugzilla-wgo-ftp-submit">notify us</a> if a mirror of
 ftp.gimp.org is gone or if a new one has recently been added.  If you
 want to set up a new mirror, you will have to request rsync access
 from the ftp-admin.  We can provide more details through Bugzilla.</p>

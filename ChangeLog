@@ -1,3 +1,22 @@
+2004-03-24  Raphaël Quinet  <quinet@gamers.org>
+
+	* macintosh/index.htrw: Mention that Gimp.app is packaged by Aaron
+	Voisine, as suggested by the author.
+
+	* team.htrw: Add a link to classic.gimp.org and use a list instead
+	of a single paragraph for the historical stuff.
+
+	* admin/gimp-web-urls: Updated links to the original versions of
+	some tutorials that are now on classic.gimp.org since the old site
+	has been renamed.  Added new link to submit bug reports related to
+	ftp mirrors instead of submitting them to the www.gimp.org
+	component.  Added links to my e-mail address and web page.
+	Updated link Package-GIMP-windows, although it is not used
+	anywhere.
+
+	* webmasters.htrw: Use the new link for submitting bug reports
+	related to the ftp mirrors.
+
 2004-03-24  Sven Neumann  <sven@gimp.org>
 
 	* about/introduction.htrw: brag with some new features.

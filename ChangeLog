@@ -1,3 +1,8 @@
+2004-11-30  Niklas M <scizzo@gimp.org>
+
+	* about/splash/contest/index.htrw: Changed some styles and moved the
+	paragraphs a little to make the layout better.
+
 2004-11-29  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* Cut over to the new (old) news system.

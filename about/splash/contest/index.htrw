@@ -35,12 +35,10 @@
 
   <h3>Template</h3>
   <p>
-    <div style="float: right;">
-      <a href="template.xcf.bz2"><img alt="#" src="template.jpg"
-				      width="300" height="290" border="0" /></a>
-    </div>
-    The submissions should (or rather could) be based on this
-    template that Jimmac prepared for you:
+    The submissions should (or rather could) be based on this template that Jimmac prepared for you:
+  </p>
+  <p class="images">
+    <a href="template.xcf.bz2"><img alt="#" src="template.jpg" width="300" height="290" border="0" /></a>
   </p>
 
   <h3>Submissions</h3>

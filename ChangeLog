@@ -1,3 +1,8 @@
+2004-03-22  Niklas M <scizzo@gimp.org>
+
+	* about/splash/stable.htrw: Updated to follow the tables being used in
+	the other splash archives.
+
 2004-03-22  Sven Neumann  <sven@gimp.org>
 
 	* about/splash/stable.htrw: added info about 2.0 splash

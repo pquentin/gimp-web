@@ -75,7 +75,7 @@ Options:
   <strong>~/.gimp-2.2/scripts</strong> directory. Then run it like this:
 </p>
 <pre class="code">
-  gimp -i -b "(simple-unsharp-mask \"foo.png\" 5.0 0.5 0)" "(gimp-quit 0)"
+  gimp -i -b '(simple-unsharp-mask "foo.png" 5.0 0.5 0)' '(gimp-quit 0)'
 </pre>
 
 <h2>Processing several files</h2>
@@ -111,7 +111,7 @@ Options:
   current directory, you would run the following command:
 </p>
 <pre class="code">
-  gimp -i -b "(batch-unsharp-mask \"*.png\" 5.0 0.5 0)" "(gimp-quit 0)"
+  gimp -i -b '(batch-unsharp-mask "*.png" 5.0 0.5 0)' '(gimp-quit 0)'
 </pre>
 
 <h2>Further information</h2>

@@ -1,3 +1,8 @@
+2005-01-08  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Basic_Batch/index.htrw: changed syntax of examples so
+	it works with bash as well as with tcsh.
+
 2005-01-05  Sven Neumann  <neumann@jpk.com>
 
 	* admin/gimp-web-urls: removed url for batch mode again.

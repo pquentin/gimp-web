@@ -1,5 +1,10 @@
 2003-09-21 scizzo <scizzo@gimp.org>
 
+	* /unix/index.htrw: Commented out "File -> Preferenses" and 
+	"Help Documentation" again.
+
+2003-09-21 scizzo <scizzo@gimp.org>
+
 	* /includes/wgo-admin-init.xhtml
 	* /includes/wgo-admin-fini.xhtml: Fixed these files because they broke
 	the layout of the site when going to admin pages. Also add a few extra

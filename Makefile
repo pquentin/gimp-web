@@ -21,7 +21,7 @@ export PYTHONPATH=$(shell pwd)/programmatic:
 #	rm -f $<.x
 
 %.html: %.htrw
-	$(TOOLSDIR)/rewrite_attrs -d admin/gimp-web-urls  $< > $@
+	$(TOOLSDIR)/rewrite_attrs -d admin/gimp-web-urls -q $< > $@
 	chmod u+x $@ # XXX interim solution (Helvetix)
 	rm -f $<.x
 

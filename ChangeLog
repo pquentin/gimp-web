@@ -1,3 +1,14 @@
+2004-03-23  Henrik Brix Andersen  <brix@gimp.org>
+
+	* Makefile (%.html): run rewrite_attrs with the -q (quiet) flag to
+	suppress the <!-- This file was automatically generated
+	from... --> comment at the top of every file.  These comments
+	prevent the site from working with MS IE.
+
+	A better solution would be to move the comment below the
+	<!DOCTYPE> declaration, but I'd rather not fiddle with the python
+	code this close to release.
+
 2004-03-23  Sven Neumann  <sven@gimp.org>
 
 	* downloads/INSTALL: updated with current version.

@@ -1,0 +1,7 @@
+kbd { font-style: bold; }
+kbd.userinput { font-family: monospace; }
+
+var { font-family: monospace; }
+var.parameter   { font-style: italic; }
+var.structfield { font-style: italic; }
+

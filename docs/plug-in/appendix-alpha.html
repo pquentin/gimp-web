@@ -1,0 +1,184 @@
+<HTML
+><HEAD
+><TITLE
+>Premultiplied Alpha</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.56"><LINK
+REV="MADE"
+HREF="acapnotic@users.sourceforge.net"><LINK
+REL="HOME"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="PREVIOUS"
+TITLE="User Interface"
+HREF="sect-ui.html"><LINK
+REL="NEXT"
+TITLE="Threading"
+HREF="appendix-threading.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="plug-in.css"><META
+NAME="author"
+CONTENT="Kevin Turner"></HEAD
+><BODY
+CLASS="appendix"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="sect-ui.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="appendix-threading.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="appendix"
+><H1
+><A
+NAME="appendix-alpha"
+>Appendix A. Premultiplied Alpha</A
+></H1
+><P
+>Premultiplied alpha is just a different way of representing
+    alphified pixels. If the separate alpha pixel is (r, g, b, a),
+    then the premultiplied alpha pixel is (ar, ag, ab, a).</P
+><P
+>The reason why it's interesting is that linear combinations
+    of pixels (i.e. a1p1 + a2p2) work better in premultiplied alpha
+    space than in separate alpha space. </P
+><P
+>For example, taking the 50/50 blend of white and transparent
+    works like this: White is (1, 1, 1, 1) and transparent is (0, 0,
+    0, 0) in both spaces.  So the 50/50 blend is (0.5, 0.5, 0.5, 0.5).
+    In separated space, that's half-transparent
+    <em
+>gray</em
+>, but in premultiplied space, that's
+    half-transparent white, which is what you expect.</P
+><P
+>Linear combinations of pixels occur in a lot of contexts,
+    including:
+      <OL
+TYPE="1"
+><LI
+><P
+>layer compositing</P
+></LI
+><LI
+><P
+>blurring and sharpening</P
+></LI
+><LI
+><P
+>interpolation</P
+></LI
+><LI
+><P
+>scaling</P
+></LI
+><LI
+><P
+>rotation, perspective, and other
+	    transformations</P
+></LI
+></OL
+>
+      and probably one or two others.</P
+><P
+>The symptom of getting alpha wrong is gray fringes when you
+    work with transparent layers.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="sect-ui.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="appendix-threading.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>User Interface</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Threading</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

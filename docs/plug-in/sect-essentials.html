@@ -1,0 +1,1135 @@
+<HTML
+><HEAD
+><TITLE
+>Essentials of a Plug-in</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.56"><LINK
+REV="MADE"
+HREF="acapnotic@users.sourceforge.net"><LINK
+REL="HOME"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="PREVIOUS"
+TITLE="Introduction"
+HREF="chapt-intro.html"><LINK
+REL="NEXT"
+TITLE="Working with the Image"
+HREF="sect-image.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="plug-in.css"><META
+NAME="author"
+CONTENT="Kevin Turner"></HEAD
+><BODY
+CLASS="chapter"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="chapt-intro.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="sect-image.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="sect-essentials"
+>Chapter 2. Essentials of a Plug-in</A
+></H1
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="sect-essentials.html#sect-main"
+><SPAN
+CLASS="symbol"
+>MAIN</SPAN
+></A
+></DT
+><DT
+><A
+HREF="sect-essentials.html#sect-query-proc"
+>The Query Procedure</A
+></DT
+><DT
+><A
+HREF="sect-essentials.html#sect-run-proc"
+>The Run Procedure</A
+></DT
+><DT
+><A
+HREF="sect-essentials.html#sect-review-essentials"
+>Review</A
+></DT
+><DT
+><A
+HREF="sect-essentials.html#sect-run-advice"
+>Run: More details</A
+></DT
+></DL
+></DIV
+><P
+>There are some things every plug-in simply
+    <em
+>must</em
+> have if it is to be considered a
+    plug-in, no matter what its purpose.  Mainly, the plug-in has to
+    register itself in the <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>'s procedure database, and it has to
+    have a function to run when <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> calls for that procedure.  Here
+    we'll look at how these functions are called, and just what
+    components they really need.</P
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-main"
+><SPAN
+CLASS="symbol"
+>MAIN</SPAN
+></A
+></H1
+><P
+>Every C program has a <code
+CLASS="function"
+>main()</code
+> function
+      &#8212; the first function that is called when the program is
+      executed.  The typical <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> plug-in's main function is, in its
+      entirety, as follows:</P
+><PRE
+CLASS="programlisting"
+>&#13;	<SPAN
+CLASS="symbol"
+>MAIN</SPAN
+>()
+      </PRE
+><P
+><SPAN
+CLASS="symbol"
+>MAIN</SPAN
+> is a macro, defined in <A
+HREF="http://cvs.gnome.org/lxr/source/gimp/libgimp/gimp.h"
+TARGET="_top"
+>libgimp/gimp.h</A
+>, which calls a
+      <code
+CLASS="function"
+>gimp_main</code
+> function, which in turn does all
+      sorts of neat stuff.  It tries to make sure the plug-in is being
+      called by <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>, sets up some signal handling, sets up
+      communication between the plug-in and <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>, and queries the
+      plug-in if need be.</P
+><P
+><SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> queries plug-ins on start-up, and it expects them
+      to register themselves in the <A
+HREF="gloss.html#gloss-pdb"
+><I
+CLASS="glossterm"
+>procedural database</I
+></A
+> (<acronym
+>PDB</acronym
+>).  But
+      how does <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> know what function to call when it queries?  It
+      checks the value of the global variable
+      <var
+CLASS="varname"
+>PLUG_IN_INFO</var
+>, of type
+      <code
+CLASS="type"
+>GimpPlugInInfo</code
+>.  From <A
+HREF="http://cvs.gnome.org/lxr/source/gimp/libgimp/gimp.h"
+TARGET="_top"
+>gimp.h</A
+>:</P
+><DIV
+CLASS="figure"
+><P
+><B
+>Figure 2-1. The GimpPlugInInfo Structure</B
+></P
+><PRE
+CLASS="programlisting"
+>&#13;typedef void (* GimpInitProc)  (void);
+typedef void (* GimpQuitProc)  (void);
+typedef void (* GimpQueryProc) (void);
+typedef void (* GimpRunProc)   (gchar      *name,
+                                gint        nparams,
+                                GimpParam  *param,
+                                gint       *nreturn_vals,
+                                GimpParam **return_vals);
+
+struct _GimpPlugInInfo
+{
+  /* called when the gimp application initially starts up */
+  GimpInitProc  init_proc;
+
+  /* called when the gimp application exits */
+  GimpQuitProc  quit_proc;
+
+  /* called by the gimp so that the plug-in can inform the
+   *  gimp of what it does. (ie. installing a procedure database
+   *  procedure).
+   */
+  GimpQueryProc query_proc;
+
+  /* called to run a procedure the plug-in installed in the
+   *  procedure database.
+   */
+  GimpRunProc   run_proc;
+};
+</PRE
+></DIV
+><P
+>So <var
+CLASS="varname"
+>PLUG_IN_INFO</var
+> consists of pointers to
+      four functions.  The first two are ran when <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> starts and
+      exits, not commonly used among the plug-ins, and so are usually
+      set to <SPAN
+CLASS="symbol"
+>NULL</SPAN
+>.  The third is the
+      <code
+CLASS="function"
+>query</code
+> function, which many plug-in authors
+      have chosen to name <code
+CLASS="function"
+>query()</code
+>.  The fourth is
+      called when the plug-in's procedure is to be run, and is,
+      surprisingly enough, often called <code
+CLASS="function"
+>run()</code
+>.
+      An example:</P
+><DIV
+CLASS="example"
+><P
+><B
+>Example 2-1. Defining PLUG_IN_INFO</B
+></P
+><PRE
+CLASS="programlisting"
+>&#13;/* Function prototypes */
+static void query (void);
+static void run (gchar      *name,
+		 gint        nparams,
+		 GimpParam  *param,
+		 gint       *nreturn_vals,
+		 GimpParam **return_vals);
+
+/* Setting PLUG_IN_INFO */
+GimpPlugInInfo PLUG_IN_INFO =
+{
+  NULL,    /* init_proc */
+  NULL,    /* quit_proc */
+  query,   /* query_proc */
+  run,     /* run_proc */
+};
+</PRE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-query-proc"
+>The Query Procedure</A
+></H1
+><P
+>As mentioned, <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> expects plug-ins to register
+      themselves in the PDB when they're queried. This is done through
+      <code
+CLASS="function"
+>gimp_install_procedure</code
+> (again, from
+      <A
+HREF="http://cvs.gnome.org/lxr/source/gimp/libgimp/gimp.h"
+TARGET="_top"
+>gimp.h</A
+>):</P
+><DIV
+CLASS="figure"
+><P
+><B
+>Figure 2-2. gimp_install_procedure</B
+></P
+><DIV
+CLASS="funcsynopsis"
+><CODE
+CLASS="FUNCDEF"
+>void <code
+CLASS="function"
+>gimp_install_procedure</code
+></CODE
+>(char* <var
+CLASS="parameter"
+>name</var
+>, char* <var
+CLASS="parameter"
+>blurb</var
+>, char* <var
+CLASS="parameter"
+>help</var
+>, char* <var
+CLASS="parameter"
+>author</var
+>, char* <var
+CLASS="parameter"
+>copyright</var
+>, char* <var
+CLASS="parameter"
+>menu_path</var
+>, char* <var
+CLASS="parameter"
+>image_types</var
+>, GimpPDBProcType <var
+CLASS="parameter"
+>type</var
+>, int <var
+CLASS="parameter"
+>nparams</var
+>, int <var
+CLASS="parameter"
+>nreturn_vals</var
+>, GimpParamDef* <var
+CLASS="parameter"
+>params</var
+>, GimpParamDef* <var
+CLASS="parameter"
+>return_vals</var
+>);</DIV
+></DIV
+><P
+>Parameters <var
+CLASS="parameter"
+>name</var
+> through
+      <var
+CLASS="parameter"
+>date</var
+> should be fairly self-explanatory.
+      On the rest, I'll make some comment:
+	
+      </P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><var
+CLASS="parameter"
+>menu_path</var
+></DT
+><DD
+><P
+>A string describing where in the menu the procedure
+	    should be installed. It begins with one of
+	    &#60;Toolbox&#62;, &#60;Image&#62;, &#60;Load&#62;, or
+	    &#60;Save&#62;, followed by the menu path. For example, the
+	    Maze plug-in's menu_path is <SPAN
+CLASS="QUOTE"
+>"&#60;Image&#62;/Filters/Render/Patterns/Maze..."</SPAN
+>.</P
+><P
+><SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> uses this information not only to place the
+	    menu, but also to decide what type of procedure it
+	    is. This affects its decision on which parameters are
+	    necessary for the procedure. Note also that a
+	    <var
+CLASS="parameter"
+>menu_path</var
+> isn't required if you
+	    wish to install a procedure without one, but that's not
+	    the case for most plug-ins.</P
+><P
+>Source reference: 
+	      	
+	      app/plug_in.c,
+	    plug_in_handle_proc_install</P
+></DD
+><DT
+>image_types</DT
+><DD
+><P
+>A string listing what image types the plug-in will
+	    accept; any of RGB, RGBA, RGB*, GRAY, GRAYA, GRAY*,
+	    INDEXED, INDEXEDA, INDEXED*.  RGB* is simply shorthand for
+	    both RGB and RGBA (same applies for GRAY* and
+	    INDEXED*). The list may be separated by spaces, tabs, or
+	    commas. Example: <SPAN
+CLASS="QUOTE"
+>"RGB*, INDEXED"</SPAN
+> means the
+	    plug-in likes all RGB images (with or without alpha),
+	    indexed-color images (only without alpha), but not
+	    grayscale images of any sort.</P
+><P
+>Source reference: app/plug_in.c,
+	      	
+	    plug_in_image_types_parse</P
+></DD
+><DT
+>nparams, nreturn_vals</DT
+><DD
+><P
+>The number of parameters (or return values)
+	  the procedure uses.</P
+></DD
+><DT
+>nparams, nreturn_vals</DT
+><DD
+><P
+>See below.</P
+></DD
+></DL
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sect-pdb-params"
+>PDB Parameters</A
+></H2
+><P
+><var
+CLASS="parameter"
+>*params</var
+> points to an array of
+	parameter definitions.  <var
+CLASS="parameter"
+>nparams</var
+> is an
+	integer that tells the number of parameters (equal to the
+	length of the array).  A parameter definition is of type
+	<code
+CLASS="type"
+>GimpParamDef</code
+>, which has three parts <A
+HREF="http://cvs.gnome.org/lxr/source/gimp/libgimp/gimp.h"
+TARGET="_top"
+>gimp.h</A
+>:</P
+><DIV
+CLASS="informalfigure"
+><PRE
+CLASS="programlisting"
+>&#13;struct _GimpParamDef
+{
+  GimpPDBArgType  type;
+  gchar          *name;
+  gchar          *description;
+};
+	    </PRE
+></DIV
+><P
+>Values for GimpPDBArgType are listed in <A
+HREF="http://cvs.gnome.org/lxr/source/gimp/libgimp/gimp.h"
+TARGET="_top"
+>gimpenums.h</A
+>.  Setting
+	up parameters can be done like so:</P
+><DIV
+CLASS="example"
+><P
+><B
+>Example 2-2. Establishing an array of parameters.</B
+></P
+><PRE
+CLASS="programlisting"
+>&#13;static GParamDef params[] =
+  {
+    { GIMP_PDB_INT32, "run_mode", "Interactive, non-interactive" },
+    { GIMP_PDB_IMAGE, "image_id", "(unused)" },
+    { GIMP_PDB_DRAWABLE, "drawable_id", "Drawable to draw on" },
+    { GIMP_PDB_COLOR, "fgcolor",  "Color to draw with"}
+  }
+	  </PRE
+></DIV
+><P
+>You may be <em
+>required</em
+> to take certain
+	parameters, depending on where in the menu you registered.
+	You may ignore them once you get them, but they will be passed
+	to you, so you must accept them nonetheless.  (app/plug-in.c,
+	plug_in_handle_proc_install):
+	  	
+	</P
+><DIV
+CLASS="table"
+><P
+><B
+>Table 2-1. Menu locations and required parameters</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><THEAD
+><TR
+><TH
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>Menu Location</TH
+><TH
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>#</TH
+><TH
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>Parameter type</TH
+><TH
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>&#60;Toolbox&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>0</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>INT32</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>run mode</TD
+></TR
+><TR
+><TD
+ROWSPAN="3"
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>&#60;Image&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>0</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>INT32</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>run mode</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>1</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>IMAGE</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>ID of current image</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>2</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>DRAWABLE</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>ID of current drawable</TD
+></TR
+><TR
+><TD
+ROWSPAN="3"
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>&#60;Load&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>0</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>INT32</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>run mode</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>1</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>STRING</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>FIXME
+		  
+		</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>2</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>STRING</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>FIXME
+		  
+		</TD
+></TR
+><TR
+><TD
+ROWSPAN="5"
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>&#60;Save&#62;</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>0</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>INT32</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>run mode</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>1</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>IMAGE</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>ID of current image</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>2</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>DRAWABLE</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>ID of current drawable</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>3</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>STRING</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>FIXME
+		  
+		</TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>4</TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+><code
+CLASS="type"
+>STRING</code
+></TD
+><TD
+ALIGN="LEFT"
+VALIGN="MIDDLE"
+>FIXME
+		  
+		</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><P
+>You may take any parameters you like in addition to the
+	ones required.  The required parameters must come first and in
+	order, however.</P
+><P
+>Declaring return values works much the same way, with
+	one note: Your procedure will have at least one return value
+	(a status code), but that should not be counted in your
+	<var
+CLASS="parameter"
+>nreturn_vals</var
+> or included in your <code
+CLASS="type"
+>GParamDef</code
+> <var
+CLASS="parameter"
+>return_vals</var
+>.</P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-run-proc"
+>The Run Procedure</A
+></H1
+><DIV
+CLASS="informalfigure"
+><PRE
+CLASS="programlisting"
+>&#13;/* called to run a procedure the plug-in installed in the
+ *  procedure database.
+ */
+typedef void (* GimpRunProc)   (gchar      *name,
+                                gint        nparams,
+                                GimpParam  *param,
+                                gint       *nreturn_vals,
+                                GimpParam **return_vals);
+	</PRE
+></DIV
+><P
+>The run procedure is where the action begins.  Its
+      responsibilities include making sure the plug-in was called
+      correctly and setting return values, as well as making sure that
+      your plug-in does whatever it is that it's supposed to
+      do.</P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+><SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> 1.1 Compatibility Note: </B
+>In <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> 1.1, the run parameter is <em
+>always</em
+> called with nparams == 3, when called in
+	  the normal interactive fashion (plug_in_callback,
+	  app/plug_in.c).
+	    
+
+	    This differs from <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> 1.0 behaviour, where nparams was
+	    equal to whatever it was set to upon installation of the
+	    procedure in the query function.</P
+></BLOCKQUOTE
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sect-gparam"
+>GimpParam</A
+></H2
+><DIV
+CLASS="informalfigure"
+><PRE
+CLASS="programlisting"
+>&#13;struct _GimpParam
+{
+  GimpPDBArgType type;
+  GimpParamData  data;
+};
+	  </PRE
+></DIV
+><DIV
+CLASS="informalfigure"
+><PRE
+CLASS="programlisting"
+>&#13;union _GimpParamData
+{
+  gint32            d_int32;
+  gint16            d_int16;
+  gint8             d_int8;
+  gdouble           d_float;
+  gchar            *d_string;
+  gint32           *d_int32array;
+  gint16           *d_int16array;
+  gint8            *d_int8array;
+  gdouble          *d_floatarray;
+  gchar           **d_stringarray;
+  GimpParamColor    d_color;
+  GimpParamRegion   d_region;
+  gint32            d_display;
+  gint32            d_image;
+  gint32            d_layer;
+  gint32            d_layer_mask;
+  gint32            d_channel;
+  gint32            d_drawable;
+  gint32            d_selection;
+  gint32            d_boundary;
+  gint32            d_path;
+  gint32            d_unit;
+  GimpParasite      d_parasite;
+  gint32            d_tattoo;
+  gint32            d_status;
+};
+	  </PRE
+></DIV
+><P
+>Note that GimpParamData is a union, not a structure.  It
+	only holds one value at a time.</P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sect-returnvals"
+>Return values</A
+></H2
+><P
+>It's expected (in app/procedural_db.c 
+	  
+
+	  that you return a status code as the first return value (the
+	  zeroth in C land).  That's a <code
+CLASS="type"
+>GimpPDBArgType</code
+> of
+	  <TT
+CLASS="constant"
+>GIMP_PDB_STATUS</TT
+>, and a value from
+	  <code
+CLASS="type"
+>GimpPDBStatusType</code
+>
+	  (<TT
+CLASS="constant"
+>GIMP_PDB_EXECUTION_ERROR</TT
+>, 
+	  <TT
+CLASS="constant"
+>GIMP_PDB_CALLING_ERROR</TT
+>,
+	  <TT
+CLASS="constant"
+>GIMP_PDB_PASS_THROUGH</TT
+>, 
+	  <TT
+CLASS="constant"
+>GIMP_PDB_SUCCESS</TT
+>), or
+	  <TT
+CLASS="constant"
+>GIMP_PDB_CANCEL</TT
+>).
+	</P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-review-essentials"
+>Review</A
+></H1
+><P
+>What every plug-in needs:</P
+><OL
+TYPE="1"
+><LI
+><P
+>#include &#60;libgimp/gimp.h&#62;</P
+></LI
+><LI
+><P
+>PLUG_IN_INFO</P
+></LI
+><LI
+><P
+>MAIN</P
+></LI
+><LI
+><P
+>A <code
+CLASS="function"
+>query</code
+> function, with a call
+	    to <code
+CLASS="function"
+>gimp_install_procedure</code
+>.</P
+></LI
+><LI
+><P
+>A <code
+CLASS="function"
+>run</code
+> function, setting a status code return value.</P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-run-advice"
+>Run: More details</A
+></H1
+><P
+>We've said what's required.  Now, what's a good idea?
+      This section previously contained some well-intentioned
+      practical advise on how to implement what you just learned, but
+      it was so terribly written that I can't bear to bring it back.
+      So for learning about implementations, I'm afraid you'll be
+      <em
+>much</em
+> better off reading source code until
+      this gets re-written.</P
+><P
+>Move on to the next section to learn more
+      things&#8230;</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="chapt-intro.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="sect-image.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Introduction</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Working with the Image</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

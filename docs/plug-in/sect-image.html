@@ -1,0 +1,653 @@
+<HTML
+><HEAD
+><TITLE
+>Working with the Image</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.56"><LINK
+REV="MADE"
+HREF="acapnotic@users.sourceforge.net"><LINK
+REL="HOME"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="PREVIOUS"
+TITLE="Essentials of a Plug-in"
+HREF="sect-essentials.html"><LINK
+REL="NEXT"
+TITLE="Efficient Image Handling: Tiles"
+HREF="sect-tiles.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="plug-in.css"><META
+NAME="author"
+CONTENT="Kevin Turner"></HEAD
+><BODY
+CLASS="chapter"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="sect-essentials.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="sect-tiles.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="sect-image"
+>Chapter 3. Working with the Image</A
+></H1
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="sect-image.html#sect-image-intro"
+>Intro to Images</A
+></DT
+><DT
+><A
+HREF="sect-image.html#sect-origins"
+>Origins of Coordinates</A
+></DT
+><DT
+><A
+HREF="sect-image.html#sect-pixelrgns"
+>Pixel Regions</A
+></DT
+><DT
+><A
+HREF="sect-image.html#sect-datafmt"
+>Data format</A
+></DT
+><DT
+><A
+HREF="sect-image.html#sect-drawmerge"
+>Drawable mergin' and stuff</A
+></DT
+><DT
+><A
+HREF="sect-image.html#sect-select"
+>More on Selections</A
+></DT
+><DT
+><A
+HREF="sect-image.html#sect-image-misc"
+>Misc</A
+></DT
+></DL
+></DIV
+><P
+>A plug-in is of limited use if it has nothing to do with
+      the image. In this section, we explore the exciting world of the
+      <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> image hierarchy, and learn how to manipulate it.</P
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-image-intro"
+>Intro to Images</A
+></H1
+><A
+NAME="book-of-wilber"
+></A
+><BLOCKQUOTE
+CLASS="BLOCKQUOTE"
+id="book-of-wilber"
+><P
+>In the beginning, there was Wilber, Wilber the
+	  gimp. The graphic was without form and void, and darkness
+	  was upon the face of the desktop, and the Spirit of Wilber
+	  was moving over the face of the bitstream.</P
+><P
+>And Wilber said,
+	  <SPAN
+CLASS="QUOTE"
+>"&#60;Toolbox&#62;/File/New,"</SPAN
+> and there was an
+	  image. And Wilber saw that the image was good, and Wilber
+	  separated the image into drawables. And Wilber looked down
+	  at what he had wrought, and Wilber said, <SPAN
+CLASS="QUOTE"
+>"Oh
+	  golly."</SPAN
+>
+	  For Wilber had made the drawables of the layer according to
+	  their kinds, and the drawables of the channel according to
+	  their kinds, and the drawables of the mask according to
+	  their kinds &#8230;</P
+></BLOCKQUOTE
+><P
+>&#8230; or you could look at it the other way around.  We
+      have all sorts of silly things like masks, channels, and layers,
+      but they're all just a bunch of pixels that can be drawn on, so
+      we treat them much the same and lump them all in to the category
+      of <SPAN
+CLASS="QUOTE"
+>"drawables"</SPAN
+>.  And an image, then, is just what
+      you get when you put some drawables together.</P
+><P
+>Most plug-ins care suprisingly little about these images.
+      After all, it's the bunch of pixels on the drawable most of them
+      are playing with.  In any case, the most complex data structure
+      a plug-in uses for an image is an integer (<code
+CLASS="type"
+>gint32</code
+>),
+      a simple ID by which the <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> knows that image.</P
+><P
+>Drawables make life much more exciting.  You have to stay
+      on your toes about which data type a function uses, a
+      <code
+CLASS="type"
+>gint32</code
+> for the drawable's ID, or a
+      <code
+CLASS="type"
+>GimpDrawable</code
+>, or a pointer to one.  Here's the
+      <code
+CLASS="type"
+>GimpDrawable</code
+> type (from <A
+HREF="http://cvs.gnome.org/lxr/source/gimp/libgimp/gimp.h"
+TARGET="_top"
+>gimp.h</A
+>):</P
+><DIV
+CLASS="figure"
+><P
+><B
+>Figure 3-1. GimpDrawable Definition</B
+></P
+><PRE
+CLASS="programlisting"
+>&#13;struct _GimpDrawable
+{
+  gint32    id;            /* drawable ID */
+  guint     width;         /* width of drawble */
+  guint     height;        /* height of drawble */
+  guint     bpp;           /* bytes per pixel of drawable */
+  guint     ntile_rows;    /* # of tile rows */
+  guint     ntile_cols;    /* # of tile columns */
+  GimpTile *tiles;         /* the normal tiles */
+  GimpTile *shadow_tiles;  /* the shadow tiles */
+};
+	</PRE
+></DIV
+><P
+>(Don't worry about the tile fields, you shouldn't have to
+	deal with those directly.)</P
+><P
+>One may obtain a <code
+CLASS="type"
+>GDrawable</code
+> from a drawable's
+      ID by the call <DIV
+CLASS="funcsynopsis"
+><CODE
+CLASS="FUNCDEF"
+>GimpDrawable* <code
+CLASS="function"
+>gimp_drawable_get</code
+></CODE
+>(gint32
+      <var
+CLASS="parameter"
+>drawable_ID</var
+>);</DIV
+>
+	which allocates and initializes the GimpDrawable for you, and
+	then returns the pointer.</P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Note: </B
+>When you see a <SPAN
+CLASS="QUOTE"
+>"layer ID"</SPAN
+> or
+      somesuch, this is really a drawable ID which happens to belong
+      to a layer.  You may use it anywhere a drawable ID is called
+      for.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-origins"
+>Origins of Coordinates</A
+></H1
+><P
+>If you were looking at a spot on the <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> image, you
+      might choose to describe its location as the distance from the
+      origin of the image, from the origin of the layer, or from the
+      origin of the current selection.</P
+><P
+><SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> chooses to measure coordinates from the upper-left
+      corner of the drawable (the drawable is usually a layer).  If
+      you want to know about the location of the selection or the
+      layer offset, use the following calls (<A
+HREF="http://cvs.gnome.org/lxr/source/gimp/libgimp/gimp.h"
+TARGET="_top"
+>gimp.h</A
+>):</P
+><DIV
+CLASS="figure"
+><P
+><B
+>Figure 3-2. Functions to obtain coordinates.</B
+></P
+><PRE
+CLASS="programlisting"
+>&#13;/* Find the bounding box of the current selection in relation to the
+ * specified drawable.  Returns TRUE if there is a selection. */
+
+gint          gimp_drawable_mask_bounds  (gint32     drawable_ID,
+                                          gint      *x1,
+                                          gint      *y1,
+                                          gint      *x2,
+                                          gint      *y2);
+
+/* Returns the offsets of the drawable. */
+void          gimp_drawable_offsets      (gint32     drawable_ID,
+                                          gint      *offset_x,
+                                          gint      *offset_y);
+	</PRE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-pixelrgns"
+>Pixel Regions</A
+></H1
+><P
+>The method through which a plug-in accesses a drawable is
+      by way of what's known as a <I
+CLASS="firstterm"
+>pixel
+      region</I
+>.</P
+><P
+>Before working with a pixel region, initialize it with the
+	following call:</P
+><DIV
+CLASS="funcsynopsis"
+><P
+><CODE
+><CODE
+CLASS="FUNCDEF"
+>void <code
+CLASS="function"
+>gimp_pixel_rgn_init</code
+>
+	  </CODE
+>(GimpPixelRgn* <var
+CLASS="parameter"
+>pr</var
+>, GimpDrawable* <var
+CLASS="parameter"
+>drawable</var
+>, int <var
+CLASS="parameter"
+>x</var
+>, int <var
+CLASS="parameter"
+>y</var
+>, int <var
+CLASS="parameter"
+>width</var
+>, int <var
+CLASS="parameter"
+>height</var
+>, int <var
+CLASS="parameter"
+>dirty</var
+>, int <var
+CLASS="parameter"
+>shadow</var
+>);</CODE
+></P
+></DIV
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="dirty"
+>dirty</A
+></DT
+><DD
+><P
+>A <SPAN
+CLASS="QUOTE"
+>"dirty"</SPAN
+> tile is one that
+	  has been changed. Tiles that are not dirty won't be written
+	  back to <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>, whereas dirty ones will be. Initializing a
+	  pixel region as <SPAN
+CLASS="QUOTE"
+>"dirty"</SPAN
+> indicates to
+	  <code
+CLASS="function"
+>gimp_pixel_rgns_process</code
+> that it should
+	  treat tiles in that region as if you've dirtied them.
+	  </P
+></DD
+><DT
+><A
+NAME="shadow"
+>shadow</A
+></DT
+><DD
+><P
+>	      
+	      <SPAN
+CLASS="QUOTE"
+>"Shadow tiles are merely an indication of the
+	      desire to use a temporary buffer for writing in
+	      to,"</SPAN
+> says Peter. <SPAN
+CLASS="QUOTE"
+>"The advantage of using
+	      shadow tiles are that A) you won't muck up the original
+	      image, B) undo is handled properly, and C) the
+	      modifications to the image are correctly masked by the
+	      selection."</SPAN
+> </P
+></DD
+></DL
+></DIV
+><P
+>In short, if you're writing to a pixel region, the dirty
+      and shadow flags should be TRUE, TRUE. If you need a clean copy
+      to read from, use FALSE, FALSE. TRUE, FALSE can be used for
+      writing directly to the image (not recommended), and FALSE, TRUE
+      could be used to read from shadow tiles that you've just written
+      to (possibly when using a multi-pass algorithm of some sort, as
+      in gauss_iir.c).</P
+><P
+>There are calls for <code
+CLASS="function"
+>pixel_rgn_get_</code
+>
+      <code
+CLASS="function"
+>pixel</code
+>, <code
+CLASS="function"
+>row</code
+>,
+      <code
+CLASS="function"
+>col</code
+>, and <code
+CLASS="function"
+>rect</code
+>, which
+      grab data from the image and dump it into a buffer that you've
+      pre-allocated. And there are set calls to match. Look for "Pixel
+      Regions" in gimp.h.</P
+><P
+>Note that these calls are relatively slow, they can easily
+      be the slowest thing in your plug-in. Do not get (or set) pixels
+      one at a time using
+      <code
+CLASS="function"
+>pixel_rgn_[get|set]_pixel</code
+> if there is any
+      other way. Tips for improving efficiency are in the  next chapter.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-datafmt"
+>Data format</A
+></H1
+><P
+>The data in your buffer depends on the image
+      type. Grayscale is an array of values. Grayscale-alpha has gray
+      value, alpha value, gray, alpha, etc. RGB and RGBA are just
+      that.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-drawmerge"
+>Drawable mergin' and stuff</A
+></H1
+><P
+>Once your plug-in is through munging the drawable, it has
+      to go through the process of making sure <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> has been brought
+      up to date. That sequence typically goes something like
+      this:</P
+><DIV
+CLASS="example"
+><P
+><B
+>Example 3-1. Tidying up dirty drawables.</B
+></P
+><PRE
+CLASS="programlisting"
+>&#13;GimpDrawable *drawable;
+  /* . . . */
+
+  /* Ensure any dirty tiles are flushed to GIMP. */
+  gimp_drawable_flush (drawable);
+
+  /* Merge in what you've written to the shadow tiles. 
+     If the second arguement is TRUE, the action will be undoable. */
+  /* Without this, anything you've written on the shadow tiles may be lost,
+     and drawable will be filled with uninitialized memory instead. */
+  gimp_drawable_merge_shadow (drawable-&#62;id, TRUE);
+
+  /* Update a portion of a drawable you've modified. 
+     Updates the displays and drawable previews. */
+  gimp_drawable_update (drawable-&#62;id, x1, y1, width, height);
+
+  /* Flush the updates to the on-screen displays. */
+  /* (Not always desirable when called non-interactively.) */
+  gimp_displays_flush();
+
+  /* And if you're all done with the drawable, free the memory
+  allocated by gimp_drawable_get, and any tiles the drawable was using. */
+  gimp_drawable_detach(drawable);
+
+	</PRE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-select"
+>More on Selections</A
+></H1
+><P
+>Selections are drawables too.
+      <code
+CLASS="function"
+>gimp_image_get_selection(image_ID)</code
+>; returns
+      the drawable ID of the selection mask.</P
+><P
+>FIXME: Hmm, selection mask's 0,0 is drawable_mask_bounds'
+      x1,y1, izit? Also find out what feathered/anti-aliased
+      selections mean to us.</P
+><P
+>See also: Appendix A: Premultiplied Alpha</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-image-misc"
+>Misc</A
+></H1
+><P
+>There are many joyous functions for the handling of
+      selections and layers and whatnot, which you may find by reading
+      gimp.h or using the db_browser. One that I should warn you about
+      is adding new layers to images: A layer created with
+      <code
+CLASS="function"
+>gimp_layer_new</code
+> must still be added to the
+      image with <code
+CLASS="function"
+>gimp_image_add_layer</code
+> before it
+      will do any good. Be sure you pass the same image ID to both
+      functions. And don't create layers without an alpha channel that
+      aren't background layers if you're not looking for
+      trouble.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="sect-essentials.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="sect-tiles.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Essentials of a Plug-in</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Efficient Image Handling: Tiles</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

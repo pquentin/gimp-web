@@ -1,0 +1,292 @@
+<HTML
+><HEAD
+><TITLE
+>User Interface</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.56"><LINK
+REV="MADE"
+HREF="acapnotic@users.sourceforge.net"><LINK
+REL="HOME"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="PREVIOUS"
+TITLE="Efficient Image Handling: Tiles"
+HREF="sect-tiles.html"><LINK
+REL="NEXT"
+TITLE="Premultiplied Alpha"
+HREF="appendix-alpha.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="plug-in.css"><META
+NAME="author"
+CONTENT="Kevin Turner"></HEAD
+><BODY
+CLASS="chapter"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="sect-tiles.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="appendix-alpha.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="sect-ui"
+>Chapter 5. User Interface</A
+></H1
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="sect-ui.html#sect-libgimpui"
+>libgimpui</A
+></DT
+><DT
+><A
+HREF="sect-ui.html#sect-dialog"
+>gimp_dialog</A
+></DT
+><DT
+><A
+HREF="sect-ui.html#sect-i18n"
+>Internationalisation</A
+></DT
+><DT
+><A
+HREF="sect-ui.html#sect-help"
+>The Help System</A
+></DT
+><DT
+><A
+HREF="sect-ui.html#sect-ui-standards"
+>Standards</A
+></DT
+></DL
+></DIV
+><P
+>Firstly, see the <A
+HREF="http://www.gtk.org/tutorial/"
+TARGET="_top"
+>GTK Tutorial</A
+>.  This document does not and will not take
+    its place.</P
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-libgimpui"
+>libgimpui</A
+></H1
+><P
+>New Ground Being Broken.  Word is that Mitch will have
+      some docs for us <SPAN
+CLASS="QUOTE"
+>"as soon as the set of widget
+      constructors in libgimp is really consistant"</SPAN
+>
+      (2000-01-30).</P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="AEN610"
+>GimpConstraintFunc</A
+></H2
+><P
+>When you have have a drawable menu created for you,
+	<SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> makes use of a constraint function to ask you if what
+	should be listed in the menu. This way you can filter out
+	drawables that are the wrong size, image, type, etc. From
+	gimpmenu.h:</P
+><PRE
+CLASS="programlisting"
+>&#13;typedef gint (*GimpConstraintFunc) (gint32   image_id,
+                                    gint32   drawable_id,
+                                    gpointer data);
+GtkWidget* gimp_drawable_menu_new (GimpConstraintFunc constraint,
+                                   GimpMenuCallback   callback,
+                                   gpointer           data,
+                                   gint32             active_drawable);
+	</PRE
+><P
+>For every image, <code
+CLASS="function"
+>_menu_new</code
+> calls
+	the constraint function with the corresponding image ID and a
+	drawable ID of -1. If the constraint function likes that image
+	and returns TRUE, it's then called and asked about each
+	drawable in the image, one at a time. If the function returns
+	TRUE again, the drawable is added to the menu.</P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-dialog"
+>gimp_dialog</A
+></H1
+><P
+>New Ground Being Broken</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-i18n"
+>Internationalisation</A
+></H1
+><P
+>Internationalisation (abbreviated <abbr
+>I18N</abbr
+>)
+      is the process of allowing your program to be viewed by users in
+      their native language.  Daniel Egger and Marc Lehmann maintain
+      the <A
+HREF="http://gimp-plug-ins.sourceforge.net/doc/i18n.html"
+TARGET="_top"
+>documentation for I18N of <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> plug-ins</A
+>.
+      </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-help"
+>The Help System</A
+></H1
+><P
+>&#8230;</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-ui-standards"
+>Standards</A
+></H1
+><P
+>&#8230;</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="sect-tiles.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="appendix-alpha.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Efficient Image Handling: Tiles</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Premultiplied Alpha</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,341 @@
+<HTML
+><HEAD
+><TITLE
+>Introduction</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.56"><LINK
+REV="MADE"
+HREF="acapnotic@users.sourceforge.net"><LINK
+REL="HOME"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="PREVIOUS"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="NEXT"
+TITLE="Essentials of a Plug-in"
+HREF="sect-essentials.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="plug-in.css"><META
+NAME="author"
+CONTENT="Kevin Turner"></HEAD
+><BODY
+CLASS="chapter"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="plug-in.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="sect-essentials.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="chapt-intro"
+>Chapter 1. Introduction</A
+></H1
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="chapt-intro.html#sect-status"
+>Status of this Document</A
+></DT
+><DT
+><A
+HREF="chapt-intro.html#sect-styles"
+>Styles in this Document</A
+></DT
+></DL
+></DIV
+><P
+>This document is based on my experiences of writing plug-ins
+    for the 
+      <SPAN
+CLASS="application"
+><acronym
+>GNU</acronym
+> Image Manipulation Program</SPAN
+>
+      in C.  Much of this document is likely relevant to <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>
+      plug-ins in other languages, but I'm too much of a monoglot to
+      know for sure.  A basic working knowledge of C is assumed, but
+      extensive experience isn't necessary.</P
+><DIV
+CLASS="formalpara"
+><P
+><B
+>The Source is Your Friend Too. </B
+>This document contains frequent code snippits, but to get
+      any context, you'll probably want to be working through (reading
+      and/or writing) some plug-in code alongside it. <A
+HREF="mailto:meo@netads.com"
+TARGET="_top"
+>Miles O'Neal</A
+> has <A
+HREF="http://www.rru.com/~meo/gimp/rand-noted.c"
+TARGET="_top"
+>extensively
+      annotated his randomize plug-in</A
+>, making it a good place
+      to start.  You may want to look at several &#8212; each one will
+      have their own peculiar parts that they've done well or poorly
+      on.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-status"
+>Status of this Document</A
+></H1
+><P
+>This document was authored for version 1.0 of <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>.  But
+      now <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> 1.1 is now frozen and on its glacial journey towards
+      the 1.2 release.  There have been a few changes and a
+      considerable number of additions to libgimp which have yet to
+      been documented here.  While that makes this somewhat out of
+      date at current, it is still reasonably accurate, and may serve
+      as an overview for getting started with your plug-in.
+      </P
+><P
+>In addition, two valueable new resources have been
+      created.  One is the libgimp reference documentation, which
+      documents all the functions in the current libgimp.  It is
+      distributed in the <TT
+CLASS="filename"
+>devel-docs</TT
+> directory of the <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> distribution, and
+      is also <A
+HREF="http://gimp-plug-ins.sourceforge.net/doc/libgimp/"
+TARGET="_top"
+>available
+      on-line</A
+>.  The second is the <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> plug-in template,
+      which contains a skeleton of all the files you need to get
+      started on you own plug-in, including support for
+      <SPAN
+CLASS="application"
+>autoconf</SPAN
+>, internationalization using
+      <SPAN
+CLASS="application"
+>gettext</SPAN
+>, and <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>'s on-line help
+      system. It's available as the <TT
+CLASS="filename"
+>gimp-plugin-template</TT
+> module in the <A
+HREF="http://developer.gnome.org/tools/cvs.html"
+TARGET="_top"
+>GNOME CVS
+      repository</A
+> and is mirrored by <A
+HREF="http://sourceforge.net/cvs/?group_id=1850"
+TARGET="_top"
+><SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> plug-ins
+      CVS</A
+>.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-styles"
+>Styles in this Document</A
+></H1
+><P
+>Depending on your output medium's implementation of style
+      sheets, you may notice different parts of this document have
+      different styles.</P
+><DIV
+CLASS="informalfigure"
+><PRE
+CLASS="programlisting"
+>&#13;printf("This code was quoted from the GIMP sources.");
+/* This is a comment in the source code. */
+	</PRE
+></DIV
+><DIV
+CLASS="informalexample"
+><PRE
+CLASS="programlisting"
+>&#13;printf("This is example code to illustrate a point.");
+/* This is a comment in the source code. */
+	</PRE
+></DIV
+><P
+>References to the <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> source code are linked to the
+	<A
+HREF="http://cvs.gnome.org/lxr/"
+TARGET="_top"
+>LXR engine at
+      cvs.gnome.org</A
+>.  Caution: That may be a newer version of
+      the source than is is use by the general public, but I couldn't
+      find anything else to link to.  If you're developing for the
+      stable version of <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>, check your own copy of the source.
+      Also, line numbers may have changed since I established the
+      links &#8230; If you find that to be the case, please <A
+HREF="mailto:acapnotic@users.sourceforge.net"
+TARGET="_top"
+>let me
+      know</A
+>.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="sect-essentials.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Essentials of a Plug-in</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,37 @@
+/* inline elements */
+kbd { font-weight: bold; }
+kbd.userinput { font-family: monospace; }
+
+var { font-family: monospace; }
+var.parameter   { font-style: italic; }
+var.structfield { font-style: italic; }
+
+span.application { font-family: helvetica, arial, sans-serif; }
+
+/* block elements */
+
+body { color: black;
+       background: #CCCCCC; }
+
+div.figure, div.informalfigure, div.example, div.informalexample { 
+	width: 100%; 
+	padding: 1ex 1em; }
+
+div.figure, div.informalfigure { 
+	background: #AACCFF; }
+
+div.example, div.informalexample { 
+	background: #FFCC99; }
+
+div.figure, div.example { 
+	border: thin black solid; }
+
+div.informalfigure, div.informalexample { 
+	border: thin black none; }
+
+#book-of-wilber { font-size: large; 
+	background: #CC9966 url(wilberbook.jpg);
+	font-family:  postantiqua, "zapf chancery", "urw chancery l", fantasy;
+	border: medium groove; 
+	padding: 1em;
+ }

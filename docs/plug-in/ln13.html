@@ -1,0 +1,271 @@
+<HTML
+><HEAD
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.49"><LINK
+REV="MADE"
+HREF="kevin.turner@oberlin.edu"><LINK
+REL="HOME"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="NEXT"
+TITLE="Introduction"
+HREF="chapt-intro.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="plug-in.css"><META
+NAME="author"
+CONTENT="Kevin Turner"></HEAD
+><BODY
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TH
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="legalnotice"
+><A
+NAME="opl"
+></A
+><P
+><B
+>OpenContent License (<acronym
+>OPL</acronym
+>)</B
+></P
+><P
+>This document is <A
+HREF="http://www.opencontent.org/"
+TARGET="_top"
+>Open Content</A
+> and may be distributed under the OpenContent
+  License (<acronym
+>OPL</acronym
+>):</P
+><DIV
+CLASS="formalpara"
+><P
+><H1
+CLASS="title"
+><A
+NAME="AEN19"
+>Terms and Conditions for Copying, Distributing, and
+    Modifying</A
+></H1
+>Items other than copying, distributing, and modifying the
+    Content with which this license was distributed (such as using,
+    etc.) are outside the scope of this license.
+    
+      <OL
+TYPE="1"
+><LI
+><P
+>You may copy and distribute exact replicas of
+	the OpenContent (<acronym
+>OC</acronym
+>) as you receive it, in any medium,
+	provided that you conspicuously and appropriately publish on
+	each copy an appropriate copyright notice and disclaimer of
+	warranty; keep intact all the notices that refer to this
+	License and to the absence of any warranty; and give any other
+	recipients of the <acronym
+>OC</acronym
+> a copy of this License along with the
+	<acronym
+>OC</acronym
+>. You may at your option charge a fee for the media and/or
+	handling involved in creating a unique copy of the <acronym
+>OC</acronym
+> for
+	use offline, you may at your option offer instructional
+	support for the <acronym
+>OC</acronym
+> in exchange for a fee, or you may at your
+	option offer warranty in exchange for a fee. You may not
+	charge a fee for the <acronym
+>OC</acronym
+> itself. You may not charge a fee for
+	the sole service of providing access to and/or use of the <acronym
+>OC</acronym
+>
+	via a network (e.g. the Internet), whether it be via the world
+	wide web, FTP, or any other method.</P
+></LI
+><LI
+><P
+>You may modify your copy or copies of the OpenContent
+	  or any portion of it, thus forming works based on the
+	  Content, and copy and distribute such modifications or work
+	  under the terms of Section 1 above, provided that you also
+	  meet all of these conditions:</P
+><OL
+TYPE="a"
+><LI
+><P
+>You must cause the modified content to
+	    carry prominent notices stating that you changed it, the
+	    exact nature and content of the changes, and the date of
+	    any change.</P
+></LI
+><LI
+><P
+>You must cause any work that you
+	    distribute or publish, that in whole or in part contains
+	    or is derived from the <acronym
+>OC</acronym
+> or any part thereof, to be
+	    licensed as a whole at no charge to all third parties
+	    under the terms of this License, unless otherwise
+	    permitted under applicable Fair Use law.</P
+></LI
+></OL
+><P
+>These requirements apply to the modified work as a
+	  whole. If identifiable sections of that work are not derived
+	  from the <acronym
+>OC</acronym
+>, and can be reasonably considered independent
+	  and separate works in themselves, then this License, and its
+	  terms, do not apply to those sections when you distribute
+	  them as separate works. But when you distribute the same
+	  sections as part of a whole which is a work based on the
+	  <acronym
+>OC</acronym
+>, the distribution of the whole must be on the terms of
+	  this License, whose permissions for other licensees extend
+	  to the entire whole, and thus to each and every part
+	  regardless of who wrote it.  Exceptions are made to this
+	  requirement to release modified works free of charge under
+	  this license only in compliance with Fair Use law where
+	  applicable.</P
+></LI
+><LI
+><P
+>You are not required to accept this License,
+	since you have not signed it. However, nothing else grants you
+	permission to copy, distribute or modify the <acronym
+>OC</acronym
+>. These
+	actions are prohibited by law if you do not accept this
+	License. Therefore, by distributing or translating the <acronym
+>OC</acronym
+>,
+	or by deriving works herefrom, you indicate your acceptance of
+	this License to do so, and all its terms and conditions for
+	copying, distributing or translating the
+	<acronym
+>OC</acronym
+>.</P
+></LI
+></OL
+>      
+    </P
+></DIV
+><DIV
+CLASS="formalpara"
+><P
+><H1
+CLASS="title"
+><A
+NAME="AEN48"
+>NO WARRANTY</A
+></H1
+>
+      <OL
+START="3"
+TYPE="1"
+><LI
+><P
+>Because the OpenContent (<acronym
+>OC</acronym
+>) is licensed
+	free of charge, there is no warranty for the <acronym
+>OC</acronym
+>, to the
+	extent permitted by applicable law.  Except when otherwise
+	stated in writing the copyright holders and/or other parties
+	provide the <acronym
+>OC</acronym
+> "as is" without warranty of any kind, either
+	expressed or implied, including, but not limited to, the
+	implied warranties of merchantability and fitness for a
+	particular purpose.  The entire risk of use of the <acronym
+>OC</acronym
+> is
+	with you.  Should the <acronym
+>OC</acronym
+> prove faulty, inaccurate, or
+	otherwise unacceptable you assume the cost of all necessary
+	repair or correction.</P
+></LI
+><LI
+><P
+>In no event unless required by applicable law
+	or agreed to in writing will any copyright holder, or any
+	other party who may mirror and/or redistribute the <acronym
+>OC</acronym
+> as
+	permitted above, be liable to you for damages, including any
+	general, special, incidental or consequential damages arising
+	out of the use or inability to use the <acronym
+>OC</acronym
+>, even if such
+	holder or other party has been advised of the possibility of
+	such damages.</P
+></LI
+></OL
+>
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>&nbsp;</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

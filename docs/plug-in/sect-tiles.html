@@ -1,0 +1,443 @@
+<HTML
+><HEAD
+><TITLE
+>Efficient Image Handling: Tiles</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.56"><LINK
+REV="MADE"
+HREF="acapnotic@users.sourceforge.net"><LINK
+REL="HOME"
+TITLE="Writing a GIMP Plug-In"
+HREF="plug-in.html"><LINK
+REL="PREVIOUS"
+TITLE="Working with the Image"
+HREF="sect-image.html"><LINK
+REL="NEXT"
+TITLE="User Interface"
+HREF="sect-ui.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="plug-in.css"><META
+NAME="author"
+CONTENT="Kevin Turner"></HEAD
+><BODY
+CLASS="chapter"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Writing a <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> Plug-In</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="sect-image.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="sect-ui.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="sect-tiles"
+>Chapter 4. Efficient Image Handling: Tiles</A
+></H1
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="sect-tiles.html#sect-tile-cache"
+>Tile Cache</A
+></DT
+><DT
+><A
+HREF="sect-tiles.html#sect-iterators"
+>Tile Iterators</A
+></DT
+></DL
+></DIV
+><P
+>Whether you knew it or not, lots of blood, sweat, and tears
+    have gone into making the modern <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> a <I
+CLASS="firstterm"
+>tile-based</I
+> graphics application. And no, that
+    doesn't have anything to do with the <SPAN
+CLASS="QUOTE"
+>"Tile of the
+    Day"</SPAN
+>.  What does it mean?</P
+><P
+>Well, our graphics are two dimensional, but the memory
+    they're stored in is accessed by a one-dimensional index.  The
+    usual approach to storing a graphic is to store the whole thing as
+    one long array, stringing one row on after another. This works
+    fine, until your images get rather large. Say you have a 1000 x
+    1000 RGBA layer, that takes 4 MB. Drawing a vertical line down the
+    image requires loading the entire thing into active memory, every
+    row from top to bottom.</P
+><P
+><SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>'s approach is to break the image up into a series of
+    tiles. Now when you draw that vertical line, only the affected
+    tiles need be in memory.</P
+><P
+>What's that mean to the user? Smoother handling of large
+    images, hopefully. What's that mean to you, the plug-in developer?
+    It's just something to keep in mind if you're at all concerned
+    about the speed with which you communicate with <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>. If you can
+    view the world in a similar fashion, things go much smoother for
+    the two of you. Otherwise you'll be running around picking up
+    pieces from different tiles&#8230; Also, if it's practical for
+    you to work on a single tile at a time instead of the entire
+    image, you'll use less memory yourself.</P
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-tile-cache"
+>Tile Cache</A
+></H1
+><P
+>If you're going through the image a row or column at a
+      time, you're repeatedly accessing the same tiles over and over
+      again. That means <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> keeps sending you the tile, you use
+      1/64th of the information on it, ask for the next tile over,
+      only to want that tile back again when you need the next
+      row. This is rather inefficient, and consequently, slow.</P
+><P
+>One way to solve this problem would be to restructure your
+      plug-in so it's not so troublesome in what it requests&#8212;
+      we'll talk about that in a moment. But there's another way to
+      solve it which is often much easier, from the programmer's
+      prospective. And that's to use a tile cache.</P
+><P
+>This tile cache is separate from <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+>'s tile cache, and
+      is local to the plug-in. The plug-in will store tiles here after
+      receiving them from <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> (if there is room for them). That way,
+      the next time you need data from that tile, it's already handy.</P
+><P
+>Enabling a tile cache is easy. You have a choice of two
+      calls. From gimp.h:</P
+><DIV
+CLASS="funcsynopsis"
+><CODE
+CLASS="FUNCDEF"
+>void <code
+CLASS="function"
+>gimp_tile_cache_size</code
+></CODE
+>(gulong <var
+CLASS="parameter"
+>kilobytes</var
+>);</DIV
+><DIV
+CLASS="funcsynopsis"
+><CODE
+CLASS="FUNCDEF"
+>void <code
+CLASS="function"
+>gimp_tile_cache_ntiles</code
+></CODE
+>(gulong <var
+CLASS="parameter"
+>ntiles</var
+>);</DIV
+><P
+>The first sets the cache size in kilobytes, the second
+      sets the cache size based on number of tiles&#8230; more or
+      less. Here's what gimp_tile_cache_ntiles does
+      (libgimp/gimptile.c, v1.0.0):</P
+><PRE
+CLASS="programlisting"
+>&#13;	gimp_tile_cache_size ((ntiles * _gimp_tile_width * _gimp_tile_height * 4) / 1024);
+      </PRE
+><P
+>A couple things with this&#8230; The integer division by
+      1024 here may cause it to round down, which probably isn't a
+      good thing. Also, the multiplication by four assumes four bytes
+      per pixel, which isn't a good assumption if you're not always
+      dealing with RGBA images. In short, you may want to do these
+      calculations and call gimp_tile_cache_size yourself.</P
+><P
+>How big a tile cache to make? As many tiles as you'll be
+      using at once. If you're going by row, for example, cache
+      however many tiles are in one row. If you're both reading from
+      tiles and writing to shadow tiles, double the size of the
+      cache. You can find out the tile size by calling
+      <code
+CLASS="function"
+>gimp_tile_width()</code
+> and
+      <code
+CLASS="function"
+>gimp_tile_height()</code
+>.</P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Stuff you Don't Need to Know: </B
+>Tile size is defined at compile time in app/tile.h. The
+	size 64x64 is optimal for an Intel x86 because their memory
+	page size is 4096 bytes (64x64x1). You could change the tile
+	size, but there are currently a few things which will break if
+	you do, because they have some assumptions built in.</P
+></BLOCKQUOTE
+></DIV
+><P
+>FIXME: Write about common data access methods, such as the
+      row-buffer technique.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sect-iterators"
+>Tile Iterators</A
+></H1
+><P
+>The first time I looked at plug-in code, I crept bravely
+      in, until I hit a line that looked something like this:
+
+	<PRE
+CLASS="programlisting"
+>&#13;	  for(pr=gimp_pixel_rgns_register(1,&#38;dest_rgn);pr!=NULL;pr=gimp_pixel_rgns_process(pr))
+	</PRE
+>
+
+      at which point I ran away screaming.</P
+><P
+>After a while, I came back, sat down, and found out it's
+      what Quartic refers to as a tile iterator.  Its job is to go
+      through the pixel region one tile at a time. You do not have to
+      use this method, you may use the
+      <code
+CLASS="function"
+>pixel_rgn_[get|set]_</code
+> calls as described
+      above. But the reason it's useful is because a tile at a time is
+      the most efficient way for <SPAN
+CLASS="application"
+><acronym
+>GIMP</acronym
+></SPAN
+> to do things, and these two
+      functions take care of the messy stuff for you.</P
+><P
+><code
+CLASS="function"
+>gimp_pixel_rgns_register</code
+>'s first
+      parameter tells it how many pixel regions you're going to be
+      iterating over, followed by pointers to those pixel
+      regions. After some hocus-pocus, it returns a pointer which is
+      used by <code
+CLASS="function"
+>gimp_pixel_rgns_process</code
+>.</P
+><P
+>Looking back at that plug-in's code:</P
+><DIV
+CLASS="example"
+><P
+><B
+>Example 4-1. Using the tile iterator.</B
+></P
+><PRE
+CLASS="programlisting"
+>&#13;	  
+  GimpPixelRgn region;
+  GimpDrawable *drawable;
+
+  drawable = gimp_drawable_get(drawable_ID);
+
+  gimp_pixel_rgn_init (&#38;region, drawable, 
+                       x1, y1, (x2 - x1), (y2 - y1), 
+                       TRUE, TRUE);
+
+  for (pr = gimp_pixel_rgns_register (1, &#38;region); 
+       pr != NULL; 
+       pr = gimp_pixel_rgns_process (pr)) {
+          /* Fun Goes On Here */
+      }
+	</PRE
+></DIV
+><P
+>The upshot of all that
+      <code
+CLASS="function"
+>gimp_pixel_rgns_</code
+> magic is, if while in the
+      loop, you look back inside your region, you'll find all sorts of
+      goodies. region.data now holds the image data for the area
+      beginning at <var
+CLASS="varname"
+>region.x</var
+>,
+      <var
+CLASS="varname"
+>region.y</var
+>, with a width of
+      <var
+CLASS="varname"
+>region.w</var
+> and height
+      <var
+CLASS="varname"
+>region.h</var
+>. Here, take a look at the data
+      structure (gimp.h):</P
+><PRE
+CLASS="programlisting"
+>&#13;struct _GimpPixelRgn
+{
+  guchar       *data;          /* pointer to region data */
+  GimpDrawable *drawable;      /* pointer to drawable */
+  guint         bpp;           /* bytes per pixel */
+  guint         rowstride;     /* bytes per pixel row */
+  guint         x, y;          /* origin */
+  guint         w, h;          /* width and height of region */
+  guint         dirty : 1;     /* will this region be dirtied? */
+  guint         shadow : 1;    /* will this region use the shadow or normal tiles */
+  guint         process_count; /* used internally */
+};
+      </PRE
+><P
+>To write to the image using this technique, all you have
+      to do is change <var
+CLASS="varname"
+>region.data</var
+>, provided that
+      you flagged your region as "dirty" (and hopefully "shadow" as
+      well) when you initialized it.</P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="sect-image.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="plug-in.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="sect-ui.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Working with the Image</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>User Interface</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,3 +1,9 @@
+2004-05-08  Henrik Brix Andersen  <brix@gimp.org>
+
+	* unix/index.htrw: added link to RPMs provided by xach.com,
+	changed Gentoo link to point to the official packages database
+	entry.
+
 2004-04-22  Raphaël Quinet  <quinet@gamers.org>
 
 	* downloads/index.htrw: An attempt at improving how the MD5 sums

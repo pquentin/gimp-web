@@ -1,3 +1,14 @@
+2004-03-27  Raphaël Quinet  <quinet@gamers.org>
+
+	* source/index.htrw: Corrected link to libwmf.  Fixes bug
+	#138243.
+
+	* about/index.htrw: Added link to selling.html in the "GIMP stuff"
+	section.  This is not a very good place for that link, alas.
+
+	* about/selling.htrw: Added new file explaining if it is legal to
+	sell the GIMP, what are the GPL requirements, etc.
+
 2004-03-26  Dave Neary  <bolsh@gimp.org>
 
 	* downloads/index.htrw: Add links to the various gimp.org downloads 

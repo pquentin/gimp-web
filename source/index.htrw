@@ -230,7 +230,7 @@
 <td>libwmf</td>
 <td>...</td>
 <td>-</td>
-<td><a href="http://wvware.sourceforge.net/libwmf.htm">Download</a></td>
+<td><a href="http://wvware.sourceforge.net/libwmf.html">Download</a></td>
 <td>Library to convert wmf files</td>
 <td>Optional (plugin won't be built)</td>
 </tr>

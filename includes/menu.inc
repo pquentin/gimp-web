@@ -6,7 +6,7 @@
           <a href="/docs/">Documentation</a><br/>
           <a href="/tutorials/">Tutorials</a><br/>
           <a href="/bugs.html">Bugs</a><br/>
-          <a href="/development/">Development</a><br/>
+          <a href="/developer/">Development</a><br/>
           <br/>
           <a href="/unix/">GIMP for Unix</a><br/>
           <a href="/windows/">GIMP for Windows</a><br/>

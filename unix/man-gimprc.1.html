@@ -1,364 +1,605 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML><HEAD><TITLE>Manpage of GIMP</TITLE>
-<STYLE TYPES="text/css">
+<html><head><title>Manpage of GIMPRC</title>
+<style TYPES="text/css">
 DIV.section {margin-left:2cm}
 </STYLE>
-</HEAD><BODY>
-<H1>GIMP</H1>
-Section: GIMP Manual Pages (1)<BR>Updated: 23 June 2000<BR><A HREF="#index">Index</A>
-<HR>
+</head><body>
+<h1>GIMPRC</h1>
+Section: GIMP Manual Pages (5)<br>Updated: 14 Oct 2000<br><a HREF="#index">Index</a>
+<hr>
 
-<A NAME="lbAB">&nbsp;</A>
-<H2>NAME</H2>
+<a NAME="lbAB">&nbsp;</a>
 
-gimp - an image manipulation and paint program.
-<A NAME="lbAC">&nbsp;</A>
-<H2>SYNOPSIS</H2>
+<h2>NAME</h2>
 
-<B>gimp</B>
+gimprc - gimp configuration file
+<a NAME="lbAC">&nbsp;</a>
+<h2>DESCRIPTION</h2>
 
-[-h] [--help] [-v] [--version] [-b] [--batch <I>&lt;commands&gt;</I>]
-[-g] [--gimprc <I>&lt;gimprc&gt;</I>] [-n] [--no-interface] [-r] 
-[--restore-session] [--no-data] [--verbose] [--no-shm]
-[--no-xshm] [--display <I>display</I>] [--no-splash]
-[--no-splash-image] [--debug-handlers] [--console-messages] 
-[--system-gimprc <I>&lt;gimprc&gt;</I>] [<I>filename</I>]...
-<P>
-<A NAME="lbAD">&nbsp;</A>
-<H2>DESCRIPTION</H2>
+The
+<b>gimprc</b>
 
-<P>
+file is a configuation file read by the gimp when it starts up.  There
+are two of these: one system-wide one stored in
+${prefix}/etc/gimp/1.2/gimprc and a per-user <b>$HOME</b>/.gimp-1.2/gimprc
+which may override system settings.
+<p>
+Comments are introduced by a hash sign (#), and continue until the
+end of the line.  Blank lines are ignored.
 
-The <I>GIMP</I> is the GNU Image Manipulation Program. It is used to edit and
-manipulate images. It can load and save a variety of image formats and can
-be used to convert between formats. 
-<P>
+<p>
+The
+<b>gimprc</b>
 
-Gimp can also be used as a paint program. It features a set of drawing and 
-painting tools such as airbrush, clone, pencil, and paint brush. Painting 
-and drawing tools can be applied to an image with a variety of paint modes.
-It also offers an extensive array of selection tools like
-rectangle, ellipse, fuzzy select, bezier select,
-intelligent scissors, and select by color.  
-<P>
+file associates values with properties.  These properties may be set
+by lisp-like assignments of the form:
+<dl COMPACT>
+<dt><dd>
+<b>(</b><i>property-name&nbsp;&nbsp;&nbsp;value</i><b>)</b>
+<dt>where:<dd>
+<dt><i>property-name</i>
 
-Gimp offers a variety of plugins that perform a variety of image manipulations.
-Examples include bumpmap, edge detect, gaussian blur, and many others. 
-<P>
+<dd>
+is one of the property names described below.
+<dt><i>value</i>
 
-In addition, Gimp has several scripting extension which allow for advanced
-non-interactive processing and creation of images. 
-<A NAME="lbAE">&nbsp;</A>
-<H2>OPTIONS</H2>
+<dd>
+is the value the property is to be set to.
+</dl>
+<p>
+
+<p>
+Either spaces or tabs may be used to separate the name from the value.
+<p>
+The values have an associated type, described below:
+<dl COMPACT>
+<dt><i>STRING</i>
+
+<dd>
+A sequence of characters surrounded by double-quotes (&quot;).  A backslash
+(\) may be used to escape either double-quote or itself to generate a
+literal double-quote or a literal backslash.
+<dt><i>PATH</i>
+
+<dd>
+Same as STRING, but path-expansion (see below) is also performed.
+<dt><i>DOUBLE</i>
+
+<dd>
+An optional minus sign (-) followed by zero or more decimal digits,
+and optionally a decimal-point (.) followed by zero or more decimal
+digits.
+<dt><i>FLOAT</i>
+
+<dd>
+Same as DOUBLE.
+<dt><i>INT</i>
+
+<dd>
+Same as DOUBLE, except the value is rounded to the next lowest integer.
+<dt><i>BOOLEAN</i>
+
+<dd>
+One of
+<b>true</b>, <b>on</b>, <b>yes</b>, 
 
 
-The <I>gimp</I> accepts the following options:
-<DL COMPACT>
-<DT><B>-h, --help</B>
+<b>false</b>, <b>off</b>, or <b>no</b>.
 
-<DD>
-Display a list of all commandline options.
-<DT><B>-v, --version</B>
+Alternatively, the empty string is interpreted to mean
+<b>true</b>.
 
-<DD>
-Output the version info.
-<DT><B>-b, --batch </B><I>&lt;commands&gt;</I>
+<dt><i>POSITION</i>
 
-<DD>
-Execute the set of <I>&lt;commands&gt;</I> non-interactively. The set
-of <I>&lt;commands&gt;</I> is typically in the form of a script that
-can be executed by one of the Gimp scripting extensions.
-<DT><B>-g, --gimprc </B><I>&lt;gimprc&gt;</I>
+<dd>
+Same as two INTs separated by whitespace.
+<dt><i>MEMSIZE</i>
 
-<DD>
-Use an alternative gimprc instead of the default one. Useful in
-cases where plugins paths or machine specs may be different.
-<DT><B>-i, --no-interface</B>
+<dd>
 
-<DD>
-Run without a user interface.
-<DT><B>-r, --restore-session</B>
+An INT followed by a size specifier.  A size specifier is one of
+<b>m</b>, <b>M</b>, 
 
-<DD>
-Try to restore saved session.
-<DT><B>-d, --no-data</B>
+<b>k</b>, <b>K</b>, 
 
-<DD>
-Do not load patterns, gradients, palettes, or brushes. Often useful
-in non-interactive situations where startup time is to be minimized.
-<DT><B>--verbose</B>
+<b>b</b>, or <b>B</b>.
 
-<DD>
-Show startup messages.
-<DT><B>--no-shm</B>
+The size specified may be omitted, in which case it defaults to
+<b>k</b>.
 
-<DD>
-Do not use shared memory between GIMP and its plugins. 
-Instead of using shared memory, GIMP will send the data via pipe. This
-will result in slower performance than using shared memory.
-<DT><B>--no-xshm</B>
+<dt><i>IMAGETYPE</i>
 
-<DD>
-Do not use the X Shared Memory extension. If GIMP is being displayed
-on a remote X server, this probably needs to be enabled. Also useful
-for any X server that doesn't properly support the X shared memory extension.
-This will result in slower performance than with X shared memory enabled.
-<DT><B>--display </B><I>display</I>
+<dd>
+One of
+<b>rgb</b>, <b>grey</b>, or <b>gray</b>.
 
-<DD>
-Use the designated X display.
-<DT><B>-s, --no-splash</B>
+<dt><i>COLORCUBE</i>
 
-<DD>
-Do not show the splash screen.
-<DT><B>-S, --no-splash-image</B>
+<dd>
+Four whitespace separated INTs, giving the number of shades of red,
+green, blue and grey (respectively) in the color cube.
+<dt><i>PREVIEWSIZE</i>
 
-<DD>
-Do not show the splash screen image as part of the splash screen.
-<DT><B>--debug-handlers</B>
+<dd>
+One of
+<b>none</b>, tiny<b>, </b>small<b>, </b>medium<b>, large</b> or <b>huge</b>, 
 
-<DD>
-Enable debugging signal handlers.
-<DT><B>-c, --console-messages</B>
+or an INT.  tiny is 24x24, small is 32x32, medium is 48x48, 
+large is 64x64 and huge is 128x128.
+<dt><i>UNIT</i>
 
-<DD>
-Do not popup dialog boxes on errors or warnings. Print the messages on
-the console instead.
-<DT><B>--enable-stack-trace </B><I>{never|query|always}</I>
+<dd>
 
-<DD>
-If a stack-trace should be generated in case of fatal signals.
-<DT><B>--system-gimprc </B><I>&lt;gimprc&gt;</I>
+One of
+<b>inches</b>, <b>millimeters</b>, <b>picas</b>, or <b>points</b>
 
-<DD>
-Use an alternate system gimprc file.
-<P>
-</DL>
-<A NAME="lbAF">&nbsp;</A>
-<H2>ENVIRONMENT</H2>
+or the identifier of one of the units you have defined in your user
+units database.
+</dl>
+<p>
 
-<P>
+<a NAME="lbAD">&nbsp;</a>
+<h2>PROPERTIES</h2>
 
-<DL COMPACT>
-<DT><B>DISPLAY</B>
+Valid properties and their types:
+<dl COMPACT>
+<dt><i>temp-path PATH</i>
 
-<DD>
-to get the default host and display number.
-<DT><B>XENVIRONMENT</B>
+<dd>
+Set the temporary storage directory. Files will appear here
+during the course of running the gimp.  Most files will disappear
+when the gimp exits, but some files are likely to remain,
+such as working palette files, so it is best if this directory
+not be one that is shared by other users or is cleared on machine
+reboot such as /tmp.
+<dt><i>swap-path PATH</i>
 
-<DD>
-to get the name of a resource file that overrides the global resources
-stored in the RESOURCE_MANAGER property.
-</DL>
-<A NAME="lbAG">&nbsp;</A>
-<H2>FILES</H2>
+<dd>
+Set the swap file location. The gimp uses a tile based memory
+allocation scheme. The swap file is used to quickly and easily
+swap tiles out to disk and back in. Be aware that the swap file
+can easily get very large if the gimp is used with large images.
+Also, things can get horribly slow if the swap file is created on 
+a directory that is mounted over NFS.  For these reasons, it may 
+be desirable to put your swap file in &quot;/tmp&quot;.
+<dt><i>brush-path PATH</i>
 
-<P>
-Gimp's data files are stored in ${prefix}/share/gimp/1.2, where ${prefix} 
-is set on install, but is typically /usr/local. Gimp's system-wide
-configuration files are stored in ${prefix}/etc/gimp/1.2.
-Most gimp configuration is read in from the user's init file,
-<B>$HOME</B>/.gimp-1.2/gimprc. The system wide equivalent is in
-${prefix}/etc/gimprc. The system wide file is parsed 
-first and the user gimprc can override the system settings. 
-${prefix}/etc/gimprc_user is the default gimprc
-placed in users' home directories the first time gimp is run.
-<P>
-<B>$HOME</B>/.gimp-1.2/gtkrc - users set of gimp-specific GTK 
-config settings. Options such as widget color and fonts sizes 
-can be set here.
-<P>
-${prefix}/etc/gimp/1.2/gtkrc - sytem wide default set of gimp-specific 
-GTK config settings.
-<P>
-<B>$HOME</B>/.gimp-1.2/ideas - lists all images that have been 
-opened or saved using Gimp.
-<P>
-<B>$HOME</B>/.gimp-1.2/menurc - user's set of keybindings.
-<P>
-${prefix}/etc/gimp/1.2/menurc - system wide set of keybindings.
-<P>
-<B>$HOME</B>/.gimp-1.2/parasiterc - Description of all available 
-gimp parasites. This is file is recreated everytime gimp starts up.
-<P>
-<B>$HOME</B>/.gimp-1.2/sessionrc - This file takes session-specific info 
-(that is info, you want to keep between two gimp-sessions). You are
-not supposed to edit it manually, but of course you
-can do. This file will be entirely rewritten every time
-you quit the gimp. If this file isn't found, defaults are used.
-<P>
-${prefix}/etc/gimp/1.2/unitrc - default user unit database. It
-contains the unit definitions for centimeters, meters, feet, yards,
-typographic points and typographic picas and is placed in users home
-directories the first time the gimp is ran.
-<P>
-<B>$HOME</B>/.gimp-1.2/unitrc - This file contains your user unit 
-database. You can modify this list with the unit editor. You are 
-not supposed to edit it manually, but of course you can do.
-This file will be entirely rewritten every time you
-quit the gimp.
-<P>
-<B>$HOME</B>/.gimp-1.2/plug-ins - location of user installed plugins.
-<P>
-<B>$HOME</B>/.gimp-1.2/pluginrc - plugin initialization values are stored
-here. This file is parsed on startup and regenerated if need be.
-<P>
-<B>$HOME</B>/.gimp-1.2/modules - location of user installed modules.
-<P>
-<B>$HOME</B>/.gimp-1.2/tmp - default location that gimp uses as temporary 
-space.
-<P>
-${prefix}/share/gimp/1.2/brushes - system wide brush files.
-<P>
-<B>$HOME</B>/.gimp-1.2/brushes - user created and installed brush
-files. These files are in the .gbr (gimp brush) format.
-<P>
-<B>$HOME</B>/.gimp-1.2/generated_brushes - Brushes generated and saved
-from the brush dialog. These files are in the .vbr (gimp vector brush) 
-format.
-<P>
-<B>$HOME</B>/.gimp-1.2/curves - Curve profiles and presets as saved from 
-the Curves tool.
-<P>
-<B>$HOME</B>/.gimp-1.2/gimpressionist - Presets and user created brushes 
-and papers are stored here.
-<P>
-<B>$HOME</B>/.gimp-1.2/levels - Level profiles and presets as saved from 
-the Levels tool.
-<P>
-${prefix}/share/gimp/1.2/palettes - the system wide palette files. The 
-files are copied to the user palettes directory when gimp is first ran
-to allow the user to modify the palettes. This directory is not searched 
-for palettes by default.
-<P>
-<B>$HOME</B>/.gimp-1.2/palettes - copies of the system palette files as well as
-user created and modified palette files.
-<P>
-${prefix}/share/gimp/1.2/patterns - basic set of patterns for use in 
-gimp.
-<P>
-<B>$HOME</B>/.gimp-1.2/patterns - user created and installed gimp pattern
-files. This files are in the .pat format.
-<P>
-${prefix}/share/gimp/1.2/gradients - standard system wide set of
-gradient files.
-<P>
-<B>$HOME</B>/.gimp-1.2/gradients - user created and installed gradient
-files.
-<P>
-${prefix}/share/gimp/1.2/scripts - system wide directory of scripts
-used in Script-Fu and other scripting extensions.
-<P>
-<B>$HOME</B>/.gimp-1.2/scripts - user created and installed scripts.
-<P>
-${prefix}/share/gimp/1.2/gflares - system wide directory used by the 
-gflare plug-in.
-<P>
-<B>$HOME</B>/.gimp-1.2/gflares - user created and installed gflare files.
-<P>
-${prefix}/share/gimp/1.2/gfig - system wide directory used by the 
-gfig plug-in.
-<P>
-<B>$HOME</B>/.gimp-1.2/gfig - user created and installed gfig files.
-<P>
-${prefix}/share/gimp/1.2/gimp_splash.ppm - graphic file used for 
-the gimp splash screen.
-<P>
-${prefix}/share/gimp/1.2/gimp_logo.ppm - graphic file used in the 
-Gimp about dialog.
-<P>
-${prefix}/share/gimp/1.2/tips/gimp_tips.txt - list of tips displayed 
-in the &quot;Tip of the Day&quot; dialog box. At the same place you will find files 
-with tips in other languages.
-<P>
-<A NAME="lbAH">&nbsp;</A>
-<H2>COPYRIGHT</H2>
+<dd>
+Set the brush search path. This is a colon-separated list of
+directories to be searched for brushes.
+<dt><i>pattern-path PATH</i>
 
-Copyright &#169;  1995 Spencer Kimball and Peter Mattis
-<P>
-Permission to use, copy, modify, and distribute this software and its
-documentation for any purpose and without fee is hereby granted,
-provided that the above copyright notice appear in all copies and that
-both that copyright notice and this permission notice appear in
-supporting documentation. 
-<P>
-<A NAME="lbAI">&nbsp;</A>
-<H2>SUGGESTIONS AND BUG REPORTS</H2>
+<dd>
+Set the pattern search path.  This is a colon-separated list of
+directories to be searched for patterns.
+<dt><i>plug-in-path PATH</i>
 
-Any bugs found should be reported to the Gimp Developer mailing list
-at <A HREF="mailto:gimp-developer@xcf.berkeley.edu">gimp-developer@xcf.berkeley.edu</A> or you may want to make use
-of the online bug-tracking system available on the web at
-<A HREF="http://bugs.gnome.org/db/pa/lgimp.html">http://bugs.gnome.org/db/pa/lgimp.html</A> or submit a bug report
-to the system via <A HREF="http://www.xach.com/gimp/news/bugreport.html">http://www.xach.com/gimp/news/bugreport.html</A>
-<P>
-Before reporting bugs, please check to see if the bug is mentioned 
-in the FAQ's or the mailing list archive. See the section on Other 
-Info for locations of these.
-<P>
-When reporting Gimp bugs, it is important to include a
-reliable way to reproduce the bug, version number of Gimp (and
-probably GTK), OS name and version, and any relevant hardware
-specs. It is also very important to include as much info as possible 
-about the Xserver the problem was found on including at least server 
-name, the visual, and the bit depth.
-<P>
-If a bug is causing a crash, it is very useful if a stack trace 
-can be provided. And of course, patches to rectify the bug are even
-better.
-<P>
-<A NAME="lbAJ">&nbsp;</A>
-<H2>OTHER INFO</H2>
+<dd>
+Set the plug-in search path. This is a colon-separated list of
+directories which will be scanned at startup to register new plugins.
+<dt><i>palette-path PATH</i>
 
-<P>
-The canonical place to find GIMP info is at <A HREF="http://www.gimp.org/.">http://www.gimp.org/.</A>
-Here you can find links to just about every other gimp site, tutorials, data 
-sets, mailing list archives, and more.
-<P>
-There is also a Gimp User Manual available at 
-<A HREF="http://manual.gimp.org/">http://manual.gimp.org/</A> that goes into much more detail 
-about the interactive use of Gimp.
-<P>
-The latest version of Gimp and the gtk libs is always available at 
-<A HREF="ftp://ftp.gimp.org/.">ftp://ftp.gimp.org/.</A>
-<P>
-<A NAME="lbAK">&nbsp;</A>
-<H2>AUTHORS</H2>
+<dd>
 
-Spencer Kimball and Peter Mattis.
-<P>
-With patches, fixes, plugins, extensions, scripts,
-translations, documentation, and more from lots 
-and lots of people including but not limited to
-Lauri Alanko, Shawn Amundson, Sven Anders, Karl-Johan Andersson, John Beale, Zach Beane, Tom Bech, Marc Bless, Edward Blevins, Reagan Blundell, Xavier Bouchoux, Roberto Boyd, Stanislav Brabec, Robert Brady, Hans Breuer, Simon Budig, Carey Bunks, Seth Burgess, Brent Burton, Francisco Bustamante, Albert Cahalan, Sean Cier, Winston Chang, Kenneth Christiansen, Zbigniew Chyla, Ed Connel, Piers Cornwell, Daniel Cotting, Jay Cox, Brian Degenhardt, Gert Dewit, Andreas Dilger, Austin Donnelly, Scott Draves, Daniel Dunbar, Misha Dynin, Daniel Egger, Morton Eriksen, Larry Ewing, Nick Fetchak, Valek Filippov, David Forsyth, Raphael Francois, Jochen Friedrich, Sami Gerdt, Jim Geuther, Graeme Gill, Scott Goehring, Heiko Goller, Marcelo de Gomensoro Malheiros, Pavel Grinfeld, Michael Hammel, Henrik Hansen, Ville Hautamaki, James Henstridge, Eric Hernes, David Hodson, Christoph Hoegl, Wolfgang Hofer, Jan Hubicka, Andreas Hyden, Ben Jackson, Krzysztof Jakubowski, Simon Janes, Tim Janik, Fellmann Joaquim, Andrew Kieschnick, Peter Kirchgessner, Philipp Klaus, David Koblas, Robert L Krawitz, Tuomas Kuosmanen, Karin Kylander, Olof S Kylander, Karl La Rocca, Chris Lahey, Nick Lamb, Marco Lamberto, Jens Lautenbacher, Laramie Leavitt, Elliot Lee, Marc Lehmann, Ray Lehtiniemi, Raph Levien, Wing Tung Leung, Adrian Likins, Tor Lillqvist, Ingo Luetkebohle, Josh MacDonald, Ed Mackey, Vidar Madsen, Ian Main, Kjartan Maraas, Kelly Martin, Torsten Martinsen, Gordon Matzigkeit, Gregory McLean, Daniele Medri, Federico Mena Quintero, James Mitchell, Hirotsuna Mizuno, David Monniaux, Adam D Moss, Balazs Nagy, Yukihiro Nakai, Sung-Hyun Nam, Shuji Narazaki, Felix Natter, Michael Natterer, Sven Neumann, Stephen Robert Norris, Tim Newsome, Erik Nygren, Tomas Ogren, Miles O'Neal, Thom van Os, Garry R. Osgood, Alan Paeth, Jay Painter, Sergey Panov, Asbjorn Pettersen, Mike Phillips, Artur Polaczynski, Raphael Quinet, Tom Rathborne, Vincent Renardias, Jens Restemeier, Maurits Rijk, Daniel Risacher, James Robinson, Tim Rowley, Pablo Saratxaga, Mike Schaeffer, John Schlag, Norbert Schmitz, Thorsten Schnier, Alexander Schulz, Tracy Scott, Craig Setera, Aaron Sherman, Manish Singh, Daniel Skarda, Nathan Summers, Mike Sweet, Yuri Syrota, Eiichi Takamori, Tristan Tarrant, Michael Taylor, Owen Taylor, Ian Tester, Andy Thomas, Kevin Turner, Martin Weber, James Wang, Kris Wehner, Nigel Wetten, Calvin Williamson, Matthew Wilson, Shirasaki Yasuhiro.
-<P>
-<A NAME="lbAL">&nbsp;</A>
-<H2>SEE ALSO</H2>
+Set the palette search path.  This is a colon-separated list of
+directories to be searched for palettes.
+<dt><i>gradient-path PATH</i>
 
-<B><A HREF="man-gimp.1.html">gimp</A></B>(5),
+<dd>
+Set the gradient search path.  This is a colon-separated list of
+directories to be searched for gradients.
+<dt><i>module-path PATH</i>
 
-<B><A HREF="man-gimptool-1.2.html">gimptool</A></B>(1),
+<dd>
+Set the module search path. This is a colon-separated list of
+directories which will be scanned at startup for modules to be loaded.
+<dt><i>default-brush STRING</i>
 
-<B><A HREF="man-gimp-remote-1.2.html">gimp-remote</A></B>(1)
+<dd>
+Specify a default brush.  This doesn't actually do anything any more,
+since the default brush is set as part of the saved device status.
+<dt><i>default-pattern STRING</i>
 
-<HR>
-<A NAME="index">&nbsp;</A><H2>Index</H2>
-<DL>
-<DT><A HREF="#lbAB">NAME</A><DD>
-<DT><A HREF="#lbAC">SYNOPSIS</A><DD>
-<DT><A HREF="#lbAD">DESCRIPTION</A><DD>
-<DT><A HREF="#lbAE">OPTIONS</A><DD>
-<DT><A HREF="#lbAF">ENVIRONMENT</A><DD>
-<DT><A HREF="#lbAG">FILES</A><DD>
-<DT><A HREF="#lbAH">COPYRIGHT</A><DD>
-<DT><A HREF="#lbAI">SUGGESTIONS AND BUG REPORTS</A><DD>
-<DT><A HREF="#lbAJ">OTHER INFO</A><DD>
-<DT><A HREF="#lbAK">AUTHORS</A><DD>
-<DT><A HREF="#lbAL">SEE ALSO</A><DD>
-</DL>
-<HR>
+<dd>
+Specify a default pattern. The pattern is searched for in the
+specified pattern path.
+<dt><i>default-palette STRING</i>
+
+<dd>
+Specify a default palette.  The palette is searched for in the
+specified palette path.
+<dt><i>default-gradient STRING</i>
+
+<dd>
+Specify a default gradient. The gradient is searched for in the
+specified gradient path.
+<dt><i>gamma-correction DOUBLE</i>
+
+<dd>
+
+Set the gamma correction value for the display.  1.0 corresponds to no
+gamma correction.  For most displays, gamma correction should be set
+to between 2.0 and 2.6 Run the utility &quot;gamma_correct&quot; to determine
+appropriate values for your display.  XXX is this valid info?  One
+important item to keep in mind: Many images that you might get from
+outside sources will in all likelihood already be gamma-corrected.  In
+these cases, the image will look washed-out if the gimp has
+gamma-correction turned on.  If you are going to work with images of
+this sort, turn gamma correction off by setting the value to 1.0.
+<dt><i>color-cube COLORCUBE</i>
+
+<dd>
+Set the displays color cube.  No longer used in gimp-1.2.x since the
+introduction of GdkRgb.
+<dt><i>install-colormap BOOLEAN</i>
+
+<dd>
+Install a private colormap by default - not actually used anymore since
+the introduction of GdkRgb.
+<dt><i>tile-cache-size MEMSIZE</i>
+
+<dd>
+The tile cache is used to make sure the gimp doesn't thrash
+tiles between memory and disk. Setting this value higher will
+cause the gimp to use less swap space, but will also cause
+the gimp to use more memory. Conversely, a smaller cache size
+causes the gimp to use more swap space and less memory.
+Note: the gimp will still run even if `tile-cache-size' is
+set to 0. The actual size can contain a suffix of 'm', 'M',
+
+size as being specified in megabytes, kilobytes and bytes
+respectively. If no suffix is specified the size defaults to
+being specified in kilobytes.
+<dt><i>marching-ants-speed INT</i>
+
+<dd>
+Speed of marching ants in the selection outline.  This value is in
+milliseconds (less time indicates faster marching).
+<dt><i>last-opened-size INT</i>
+
+<dd>
+How many recently opened image filenames to keep on the File menu.
+<dt><i>undo-levels INT</i>
+
+<dd>
+Set the number of operations kept on the undo stack.
+
+<dt><i>transparency-type INT</i>
+
+<dd>
+Set the manner in which transparency is displayed in images.
+Transparency type can be one of 0 - Light Checks, 1 - Mid-Tone Checks,
+2 - Dark Checks, 3 - White Only, 4 - Gray Only, or 5 - Black Only.
+<dt><i>transparency-size INT</i>
+
+<dd>
+Check size can be one of 0 - Small, 1 - Medium, or 2 - Large
+<dt><i>perfect-mouse BOOLEAN</i>
+
+<dd>
+If set to true, the X server is queried for the mouse's current
+position on each motion event, rather than relying on the position
+hint.  This means painting with large brushes should be more accurate,
+but it may be slower.  Perversely, on some X servers turning on this
+option results in faster painting.
+<dt><i>colormap-cycling BOOLEAN</i>
+
+<dd>
+Specify that marching ants for selected regions will be drawn with
+colormap cycling as oposed to redrawing with different stipple masks.
+This color cycling option works only with 8-bit displays.
+<dt><i>default-threshold INT</i>
+
+<dd>
+Tools such as fuzzy-select and bucket fill find regions based on a
+seed-fill algorithm.  The seed fill starts at the intially selected
+pixel and progresses in all directions until the difference of pixel
+intensity from the original is greater than a specified threshold.
+This value represents the default threshold.
+<dt><i>stingy-memory-use BOOLEAN</i>
+
+<dd>
+There is always a tradeoff between memory usage and speed.  In most
+cases, the GIMP opts for speed over memory.  However, if memory is a
+big issue, set stingy-memory-use.
+<dt><i>allow-resize-windows BOOLEAN</i>
+
+<dd>
+
+When zooming into and out of images, this option enables the automatic
+resizing of windows.
+<dt><i>dont-allow-resize-windows BOOLEAN</i>
+
+<dd>
+Negated version of allow-resize-windows.
+<dt><i>cursor-updating BOOLEAN</i>
+
+<dd>
+Context-dependent cursors are cool.  They are enabled by default.
+However, they require overhead that you may want to do without.
+<dt><i>no-cursor-updating BOOLEAN</i>
+
+<dd>
+Negated version of cursor-updating.
+<dt><i>preview-size PREVIEWSIZE</i>
+
+<dd>
+Set the layer preview size.
+<dt><i>show-rulers BOOLEAN</i>
+
+<dd>
+Set the ruler visibility. The default behavior is for rulers to be on.
+This can also be toggled with the View-&gt;Toggle Rulers command or
+shift+control+r.
+<dt><i>dont-show-rulers BOOLEAN</i>
+
+<dd>
+Negated version of show-rulers.
+<dt><i>show-statusbar BOOLEAN</i>
+
+<dd>
+Controlling statusbar visibility. The default behavior is to show the
+statusbar.  This can also be toggled with the View-&gt;Toggle Statusbar
+command or shift+control+s.
+<dt><i>dont-show-statusbar BOOLEAN</i>
+
+<dd>
+Negated version of show-statusbar.
+<dt><i>auto-save BOOLEAN</i>
+
+<dd>
+Auto saving is not yet implemented! Nothing will be auto-saved, no
+matter how you set this.
+<dt><i>dont-auto-save BOOLEAN</i>
+
+<dd>
+
+Negated version of auto-save.
+<dt><i>cubic-interpolation BOOLEAN</i>
+
+<dd>
+Set the level of interpolation.  If set, this option enables cubic
+interpolation when scaling or transforming.  By default, GIMP uses
+linear interpolation, which is faster, but has poorer quality.
+<dt><i>confirm-on-close BOOLEAN</i>
+
+<dd>
+Ask for confirmation before closing an image without saving. This is
+the default.
+<dt><i>dont-confirm-on-close BOOLEAN</i>
+
+<dd>
+Negated version of confirm-on-close.
+<dt><i>save-session-info BOOLEAN</i>
+
+<dd>
+Remember the positions and sizes of the main dialogs and asks your
+window-manager to place them there again the next time you use the
+GIMP.
+<dt><i>dont-save-session-info BOOLEAN</i>
+
+<dd>
+Negated version of save-session-info.
+<dt><i>save-device-status BOOLEAN</i>
+
+<dd>
+Remember the current tool, pattern, color, and brush across GIMP
+sessions.
+<dt><i>dont-save-device-status BOOLEAN</i>
+
+<dd>
+
+Negated version of save-device-status.
+<dt><i>always-restore-session BOOLEAN</i>
+
+<dd>
+Let GIMP try to restore your last saved session.
+<dt><i>show-tips BOOLEAN</i>
+
+<dd>
+Set to display a handy GIMP tip on startup.
+<dt><i>dont-show-tips BOOLEAN</i>
+
+<dd>
+Negated version of show-tips.
+<dt><i>show-tool-tips BOOLEAN</i>
+
+<dd>
+Set to display tooltips in the toolbox.
+<dt><i>dont-show-tool-tips BOOLEAN</i>
+
+<dd>
+Negated version of show-tool-tips.
+<dt><i>default-image-size POSITION</i>
+
+<dd>
+Set the default image size in the File/New dialog.
+<dt><i>default-image-type IMAGETYPE</i>
+
+<dd>
+
+Set the default image type in the File/New dialog.
+<dt><i>default-units UNIT</i>
+
+<dd>
+Set the default units for new images and for the File/New dialog.
+This units will be used for coordinate display when not in dot-for-dot
+mode. The default units can be one of inches , millimeters, points or
+picas or the identifier of one of the units defined in your user units
+database. The default is inches.
+<dt><i>default-xresolution FLOAT</i>
+
+<dd>
+Set the default horizontal resolution for new images and for the
+File/New dialog. This value is always in dpi (dots per inch).
+<dt><i>default-yresolution FLOAT</i>
+
+<dd>
+Set the default vertical resolution for new images and for the
+File/New dialog. This value is always in dpi (dots per inch).
+<dt><i>default-resolution-units UNIT</i>
+
+<dd>
+Set the units for the display of the default resolution in the
+File/New dialog. The default resolution units can be one of inches,
+millimeters, points or picas or the identifier of one of the units
+defined in your user unit database. The default is inches.
+<dt><i>monitor-xresolution FLOAT</i>
+
+<dd>
+Set the monitor's horizontal resolution, in dots per inch.  If set to
+0, forces the X server to be queried for both horizontal and vertical
+resolution information.
+<dt><i>monitor-yresolution FLOAT</i>
+
+<dd>
+Set the monitor's vertical resolution, in dots per inch.  If set to
+0, forces the X server to be queried for both horizontal and vertical
+resolution information.
+<dt><i>num-processors INT</i>
+
+<dd>
+
+On multiprocessor machines, if GIMP has been compiled with --enable-mp
+this sets how many processors GIMP should use simultaneously.
+<dt><i>image-title-format STRING</i>
+
+<dd>
+Set the text to appear in image window titles.  Certain % character
+sequences are recognised and expanded as follows:
+<p>
+%%  literal percent sign
+<br>
+
+%f  bare filename, or &quot;Untitled&quot;
+<br>
+
+%F  full path to file, or &quot;Untitled&quot;
+
+<br>
+
+%p  PDB image id
+<br>
+
+%i  view instance number
+<br>
+
+%t  image type (RGB, indexed, greyscale)
+<br>
+
+%z  zoom factor as a percentage
+<br>
+
+%s  source scale factor
+<br>
+
+%d  destination scale factor
+<br>
+
+%Dx expands to x if the image is dirty, the empty string
+otherwise.  The x can be any character, eg %D*.
+<p>
+The default format string is &quot;%f-%p.%i (%t)&quot;.
+<p>
+</dl>
+<p>
+
+<a NAME="lbAE">&nbsp;</a>
+<h2>PATH EXPANSION</h2>
+
+Strings of type PATH are expanded in a manner similar to
+
+<b><a HREF="/cgi-bin/man2html?bash+1">bash</a></b>(1).
+
+Specifically: tilde (~) is expanded to the user's home directory, and
+${variable} is expanded to the current value of the variable.  Note
+that the bash feature of being able to refer to other user's home
+directories by writing ~userid/ is not valid in this file.
+<p>
+The only variable initially defined is
+<i>gimp_dir</i>
+
+, which is set to either the interned value
+<b>.gimp-1.2</b>
+
+or the environment variable GIMP_DIRECTORY.  If the path in
+GIMP_DIRECTORY is relative, it is considered relative to your home
+directory.  The same variable expansion syntax can be used to refer to
+environment variables.  New variables may be defined so long as their
+name does not shadow one of the property names given in the previous
+section.  Variables are set using the following syntax:
+<dl COMPACT>
+<dt><dd>
+<b>(</b><i>variable-name&nbsp;&nbsp;&nbsp;PATH</i><b>)</b>
+
+</dl>
+<p>
+
+Note that the right hand side of this assignment is itself path
+expanded before setting the value of the variable.
+<p>
+Typically, the system-wide gimprc file will set a few convenience
+variables:
+<dl COMPACT>
+<dt><i>prefix</i>
+
+<dd>
+The installation prefix for this build, /usr/local.
+<dt><i>exec_prefix</i>
+
+<dd>
+The path to architecture-specific executables, ${prefix}.
+
+<dt><i>gimp_data_dir</i>
+
+<dd>
+Path to sharable data, ${prefix}/share/gimp/1.2.
+<dt><i>gimp_plugin_dir</i>
+
+<dd>
+Base for paths to architecture-specific plugins and modules,
+${exec_prefix}/lib/gimp/1.2.
+</dl>
+<p>
+
+<p>
+<a NAME="lbAF">&nbsp;</a>
+<h2>FILES</h2>
+
+<dl COMPACT>
+<dt><i>${prefix}/etc/gimp/1.2/gimprc</i>
+
+<dd>
+System-wide configuration file
+<dt><i>$HOME/.gimp-1.2/gimprc</i>
+
+<dd>
+Per-user configuration file
+</dl>
+<a NAME="lbAG">&nbsp;</a>
+<h2>SEE ALSO</h2>
+
+<b><a HREF="man-gimp-1.2.html">gimp</a></b>(1),
+
+<b><a HREF="man-gimptool-1.2.html">gimptool</a></b>(1),
+
+<b><a HREF="man-gimp-remote-1.2.html">gimp-remote</a></b>(1)
+
+
+<hr>
+<a NAME="index">&nbsp;</a><h2>Index</h2>
+<dl>
+<dt><a HREF="#lbAB">NAME</a><dd>
+<dt><a HREF="#lbAC">DESCRIPTION</a><dd>
+<dt><a HREF="#lbAD">PROPERTIES</a><dd>
+<dt><a HREF="#lbAE">PATH EXPANSION</a><dd>
+
+<dt><a HREF="#lbAF">FILES</a><dd>
+<dt><a HREF="#lbAG">SEE ALSO</a><dd>
+</dl>
+<hr>
 This document was created by
-<A HREF="http://www.w3.org/Tools/man2html.html">man2html</A>,
-using the manual pages.<BR>
-Time: 04:16:33 GMT, September 27, 2002
-</BODY>
-</HTML>
+<a HREF="http://www.w3.org/Tools/man2html.html">man2html</a>,
+using the manual pages.<br>
+</body>
+</html>

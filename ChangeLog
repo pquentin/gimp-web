@@ -1,3 +1,9 @@
+003-04-08  Carol Spears  <carol@gimp.org>
+
+        * unix/man-gimprc-1.html, fixed it.
+        * admin/gimp-web-urls, added some.
+        * unix/man-gimp-1.2.html, minor edits.
+
 2003-04-04  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Remove multiple blank lines from preprocessed CSS output.

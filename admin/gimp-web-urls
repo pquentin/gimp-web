@@ -4,6 +4,7 @@
 ["href", "http:Package-cvs",      { "href": "http://ccvs.cvshome.org/servlets/ProjectDownloadList"}]
 ["href", "http:Package-gettext",  { "href": "ftp://alpha.gnu.org/gnu"}]
 ["href", "http:Package-libtool",  { "href": "http://www.gnu.org/software/libtool/libtool.html"}]
+["href", "http:Package-man2html",  { "href": "http://www.w3.org/Tools/man2html.html"}]
 ["href", "http:Package-Gnome",    { "href": "http://www.gnome.org"}]
 ["href", "http:Package-GIMP-stable-tarball",{ "href": "ftp://ftp.gimp.org/pub/gimp/stable"}]
 
@@ -28,14 +29,16 @@
 ["href", "mail:People-Jensen_Atte_André",		{ "href": "mailto:atte@wanadoo.nl"}]
 ["href", "mail:People-Turner_Kevin",			{ "href": "mailto:http://sourceforge.net/sendmessage.php?touser=9300"}]
 ["href", "mail:People-Grobgeld_Dov",			{ "href": "mailto:dov@imagic.weizmann.ac.il"}]
-["href", "mail:People-Beppu_John",			{ "href": "mailto:beppu@cpan.org"}]
+["href", "mail:People-Beppu_John",			    { "href": "mailto:beppu@cpan.org"}]
 ["href", "mail:People-author",          		{ "href": "mailto:webmaster@gimp.org"}]
 ["href", "mail:People-webmaster",       		{ "href": "mailto:webmaster@gimp.org"}]
 
-["href", "home:gimp",                      { "href": "http://www.gimp.org"}]
-["href", "home:gimp-bugzilla",             { "href": "http://bugzilla.gnome.org"}]
-["href", "home:gimp-bugzilla_components",  { "href": "http://bugzilla.gnome.org/describecomponents.cgi?product=GIMP"}]
+["href", "home:gimp",                          { "href": "http://www.gimp.org"}]
+["href", "home:gimp-bugzilla",                 { "href": "http://bugzilla.gnome.org"}]
+["href", "home:gimp-bugzilla-stable",          { "href": "http://bugs.gimp.org"}]
+["href", "home:gimp-bugzilla_components",      { "href": "http://bugzilla.gnome.org/describecomponents.cgi?product=GIMP"}]
 ["href", "home:gimp-bugzilla_stable_current",  { "href": "http://bugzilla.gnome.org/buglist.cgi?product=GIMP&version=1.1.x&version=1.2&version=1.2.1&version=1.2.2&version=1.2.2-pre1&version=1.2.2-pre2&version=1.2.2-pre3&version=1.2.3-pre1&version=unspecified&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&form_name=query"}]
+["href", "home:gimp-ftp",                      { "href": "ftp://ftp.gimp.org"}]
 
 ["href", "wgo:mail_lists",                      { "href": "/mail_lists.html"}]
 ["href", "wgo:dev-howtos-bugzilla",             { "href": "/unix/howtos/bugzilla.html"}]

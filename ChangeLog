@@ -1,6 +1,11 @@
 2003-04-20 scizzo <scizzo@gimp.org>
 
-	* /unix/gimprc: Removed the html tags in the file they where visible
+	* admin/gimp-web-urls: Added home:People-Jeschke_Eric_R.
+	* tutorials/Blending_Exposures/, tutorials/Blown_Out_Highlights/,
+	tutorials/Blur_Overlays/, tutorials/Color2BW/: Changed tutorial: to
+	home: so that it links to the homepage.
+
+	* unix/gimprc: Removed the html tags in the file they where visible
 	on the site.
 
 2003-04-19 carol <cspears@cablespeed.com>

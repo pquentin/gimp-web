@@ -9,6 +9,7 @@
   <th>GIMP 1.0</th>
   <th>GIMP 1.2</th>
   <th>GIMP 2.0</th>
+  <th>GIMP 2.2</th>
 </tr>
 <tr><td>
   <a href="wgo:image-about-splash-stable-1.0"><img src="wgo:image-about-splash-stable-1.0" width="wgo:image-about-splash-stable-1.0" height="wgo:image-about-splash-stable-1.0" alt="wgo:image-about-splash-stable-1.0" /></a>
@@ -22,6 +23,10 @@
   <a href="wgo:image-about-splash-stable-2.0"><img src="wgo:image-about-splash-stable-2.0" width="wgo:image-about-splash-stable-2.0" height="wgo:image-about-splash-stable-2.0" alt="wgo:image-about-splash-stable-2.0" /></a>
   <p>CVS: 1.19<br />
   artist:  <a href="mail:People-Steiner_Jacub">jimmac</a></p>
+</td><td>
+  <a href="wgo:image-about-splash-unknown"><img src="wgo:image-about-splash-unknown" width="wgo:image-about-splash-unknown" height="wgo:image-about-splash-unknown" alt="wgo:image-about-splash-unknown" /></a>
+  <p>???<br />
+  </p>
 </td></tr>
 </table>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

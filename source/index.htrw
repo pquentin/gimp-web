@@ -66,12 +66,13 @@
 
 <h1><a name="requirements">GIMP Requirements</a></h1>
 <p>
-
   All requirements below must be met to be able compiling GIMP from
   source. This list might change depending on the releases being
   worked on during development of GIMP. Look at the files INSTALL and
   README in the tarballs for details.
 </p>
+
+<h2>Stable version 2.0.x</h2>
 <table width="100%" cellspacing="0" cellpadding="2" style="text-align: left; margin: 1.33em 0px; margin-left: 40px; margin-right: 40px; border-style: solid; border-color: #d0d0d0; border-width: 1px;">
 <tr>
   <th style="background-color: #f5f5f5;">Package</th>
@@ -144,6 +145,77 @@
 <td>Vector rendering
 </td></tr></table>
 
+<h2>Development version 2.1.x</h2>
+<tr>
+  <th style="background-color: #f5f5f5;">Package</th>
+  <th style="background-color: #f5f5f5;">Version</th>
+  <th style="background-color: #f5f5f5;">FTP</th>
+  <th style="background-color: #f5f5f5;">HTTP</th>
+  <th style="background-color: #f5f5f5;">Description</th>
+</tr>
+<tr>
+<td>pkg-config</td>
+<td>0.15.0</td>
+<td>-</td>
+<td><a href="http://www.freedesktop.org/software/pkgconfig/">Download</a></td>
+<td>A system for managing library compile/link flags</td>
+</tr>
+
+<tr>
+<td>GTK+</td>
+<td>2.4.4</td>
+<td><a href="ftp://ftp.gimp.org/pub/gtk/">Download</a></td>
+<td>-</td>
+<td>The GIMP toolkit</td>
+</tr>
+
+<tr>
+<td>GLib</td>
+<td>2.4.5</td>
+<td><a href="ftp://ftp.gtk.org/">Download</a></td>
+<td>-</td>
+<td>Glib Convenience Library</td>
+</tr>
+
+<tr>
+<td>Pango</td>
+<td>1.4.0</td>
+<td><a href="ftp://ftp.gtk.org/">Download</a></td>
+<td>-</td>
+<td>Text layout engine</td>
+</tr>
+
+<tr>
+<td>ATK</td>
+<td>1.6.1</td>
+<td><a href="ftp://ftp.gtk.org/pub/gtk/v2.4/">Download</a></td>
+<td>-</td>
+<td>Accessibility Toolkit</td>
+</tr>
+
+<tr>
+<td>FreeType2</td>
+<td>2.1.7</td>
+<td>-</td>
+<td><a href="http://www.freetype.org/">Download</a></td>
+<td colspan="2">Font rendering</td>
+</tr>
+
+<tr>
+<td>Fontconfig</td>
+<td>2.2.2</td>
+<td>-</td>
+<td><a href="http://x2.freedesktop.org/software/fontconfig">Download</a></td>
+<td>Font Configuration</td>
+</tr>
+
+<tr>
+<td>libart2</td>
+<td>2.x</td>
+<td><a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">Download</a></td>
+<td>-</td>
+<td>Vector rendering
+</td></tr></table>
 
 <h1><a name="gimp_from_cvs">GIMP from CVS</a></h1>
 <p>

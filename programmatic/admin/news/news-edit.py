@@ -49,20 +49,18 @@ import wgo_queue
 def html_news_edit(this_queue, other_queue, msg, editor):
   
   if this_queue == wgo_news.config.pending_queue and other_queue == wgo_news.config.current_queue:
-    approve_disapprove = xhtml.input.submit({"name" : "action", "value" : "approve"})
+    approve_disapprove = xhtml.input.submit({"name" : "action", "value" : "approve", "title" : "move this article to current queue"})
     pass
   elif this_queue == wgo_news.config.current_queue and other_queue == wgo_news.config.pending_queue:
-    approve_disapprove = xhtml.input.submit({"name" : "action", "value" : "disapprove"})
+    approve_disapprove = xhtml.input.submit({"name" : "action", "value" : "disapprove", "title" : "move article to pending queue"})
     pass
   else:
     approve_disapprove = ""
     pass
 
-  image_selector = xhtml.input.select(wgo_news.icon_option_list(msg["image"]),
-                                      { "name" : "image", "class" : "news-edit"})
+  image_selector = xhtml.input.select(wgo_news.icon_option_list(msg["image"]), {"name" : "image", "class" : "news-edit"})
 
-  print xhtml.div("GIMP ORG News Administration :: Edit %s Item" % (string.capitalize(this_queue)),
-                  {"class" : "heading"})
+  print xhtml.h1("GIMP ORG News Administration :: Edit %s Item" % (string.capitalize(this_queue)), {"class" : "heading"})
 
   print xhtml.form.init({"class" : "news-edit", "action" : "news-edit-action.cgi", "method" : "post"})
 
@@ -74,25 +72,20 @@ def html_news_edit(this_queue, other_queue, msg, editor):
 
   print xhtml.table.init({"class" : "news-edit", "cellpadding" : "1"})
 
-  print xhtml.table.row(xhtml.table.cell("From:") + xhtml.table.cell(xhtml.quote(msg["from"]), {"id" : "from"}))
-
+  print xhtml.table.row(xhtml.table.cell("From:")       + xhtml.table.cell(xhtml.quote(msg["from"]), {"id" : "from"}))
   print xhtml.table.row(xhtml.table.cell("Message-Id:") + xhtml.table.cell(xhtml.quote(msg["message-id"]), {"id" : "message-id"}))
-
-  print xhtml.table.row(xhtml.table.cell("Subject:") + xhtml.table.cell(xhtml.input.text({"name" : "subject", "value" : msg["subject"]}), {"id" : "subject"}))
-  
-  print xhtml.table.row(xhtml.table.cell("Date:") + xhtml.table.cell(xhtml.input.text({"name" : "date", "value" : msg["date"] }), {"id" : "date"}))
-
-  print xhtml.table.row(xhtml.table.cell("Image:") + xhtml.table.cell(image_selector, {"id" : "image"}))
-  
-  print xhtml.table.row(xhtml.table.cell("Editor:") + xhtml.table.cell("wilber", {"id" : "editor"}))
+  print xhtml.table.row(xhtml.table.cell("Subject:")    + xhtml.table.cell(xhtml.input.text({"name" : "subject", "value" : msg["subject"]}), {"id" : "subject"}))
+  print xhtml.table.row(xhtml.table.cell("Date:")       + xhtml.table.cell(xhtml.input.text({"name" : "date", "value" : msg["date"] }), {"id" : "date"}))
+  print xhtml.table.row(xhtml.table.cell("Image:")      + xhtml.table.cell(image_selector, {"id" : "image"}))
+  print xhtml.table.row(xhtml.table.cell("Editor:")     + xhtml.table.cell("wilber", {"id" : "editor"}))
   
   print xhtml.table.row(xhtml.table.cell(xhtml.input.textarea(msg["body"], {"name"  : "body", "cols" : 80, "rows"  : 20 }), {"colspan" : "2"}))
   
   print xhtml.table.row(xhtml.table.cell("&nbsp;"))
   
-  print xhtml.table.row(xhtml.table.cell(xhtml.input.submit({"name" : "action", "value" : "save"})
-                                         + approve_disapprove
-                                         + xhtml.input.submit({"name" : "action", "value" : "delete"}),
+  print xhtml.table.row(xhtml.table.cell(xhtml.input.submit({"name" : "action", "value" : "save", "title" : "save changes"}) + "&nbsp;"
+                                         + approve_disapprove + "&nbsp;"
+                                         + xhtml.input.submit({"name" : "action", "value" : "delete", "title" : "delete this article"}),
                                          {"colspan" : "2"}))
   
   print xhtml.table.fini()

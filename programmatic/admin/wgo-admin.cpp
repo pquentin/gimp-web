@@ -13,17 +13,15 @@ a.news-index {
 
 /* distill out a common look to the table for the admin/ stuff */
 table.wgo-admin {
-  font-size: small;
+  font-size: medium;
   border: 1px solid black;
   margin-left: 40px;
   margin-right: 40px;
 }
 
 table.wgo-admin tr {
-  color: black;
-  background: transparent none;
-}
 
+}
 
 table.wgo-admin th {
   background: WGO_NEWS_INDEX_HEADER_BG none;

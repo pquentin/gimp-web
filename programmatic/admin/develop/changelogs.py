@@ -74,7 +74,6 @@ def footer(prefix=None):
   return (True)
 
 def rebuild(script):
-
   good = [ os.path.basename(p[0]) for p in scripts ]
   
   if script in good:
@@ -88,6 +87,7 @@ def rebuild(script):
 
   print xhtml.hyperlink("Continue", {"href" : "changelogs.cgi"})
   return
+
 
 def html_index_page(script, html, text):
 
@@ -105,6 +105,7 @@ def html_index_page(script, html, text):
                         + xhtml.table.cell(html_mtime)
                         + xhtml.table.cell(update))
   return (1)
+
 
 def main():
   print "Content-Type: text/html"

@@ -1,5 +1,22 @@
 2003-04-26  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * programmatic/admin/develop/gimp-unstable.sh:
+        * programmatic/admin/develop/gegl-unstable.sh:
+        * programmatic/admin/develop/gimp-help.sh:
+        * programmatic/admin/develop/gimp-print.sh:
+        * programmatic/admin/develop/film-gimp.sh: changed to reflect new options to ChangeLog.py
+
+        * programmatic/admin/wgo-admin.cpp: font-size: medium instead of small
+
+        * programmatic/admin/news/news-edit.py (html_news_edit): use <h1> instead of old <div>
+          visual cleanup, position tweaking, and "tooltips"
+
+        * programmatic/contest/contest.py (submit): use <h2> instead of old <div>
+
+        * programmatic/wgo.py (error): use <h2> instead of old <div>
+
+        * programmatic/contest/wgo-contest.cpp: passes validation
+
         * Factored and removed some redundant style information that crept in over time.
 
         * Fixed the paths for the XML button.

@@ -105,13 +105,13 @@ def submit(form):
   author = "Wilber Gimp"
   email = "wilber@gimp.org"
 
-  print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
+  print xhtml.h1("GIMP Splash Image Contest", {"class" : "heading"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest.
   From here you may submit images to be considered as candidates
   for a "splash" image.  We appreciate your participation, but there are
   No Promises on what may become of your image here.""")
 
-  print xhtml.div("Submit Your Image", {"class" : "subtitle"})
+  print xhtml.h2("Submit Your Image", {"class" : "subtitle"})
 
   cell = xhtml.table.cell
   row = xhtml.table.row
@@ -178,13 +178,13 @@ def preview(form):
 
   wgo_contest.folio_init("GIMP Splash Image Contest Preview")
 
-  print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
+  print xhtml.h1("GIMP Splash Image Contest", {"class" : "heading"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
                    """From here you may submit images to be considered as candidates
                    for a "splash" image.  We appreciate your participation, but we
                    offer No Promises on what may become of your image here.""")
 
-  print xhtml.div("Approve Your Image", {"class" : "subtitle"})
+  print xhtml.h2("Approve Your Image", {"class" : "subtitle"})
 
   form = xhtml.form(xhtml.input.submit({"name" : "approve", "value" : "APPROVE"})
                     + xhtml.input.hidden({"name" : "mode", "value" : "approve"})
@@ -229,10 +229,10 @@ def preview(form):
 def approved(form):
   wgo_contest.folio_init("GIMP Splash Image Contest Submission Approved")
 
-  print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
+  print xhtml.h1("GIMP Splash Image Contest", {"class" : "heading"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
                    """From here you may submit images to be considered as candidates for a "splash" image.""")
-  print xhtml.div("Thank You!", {"class" : "subtitle"})
+  print xhtml.h2("Thank You!", {"class" : "subtitle"})
   print xhtml.para("Again, we offer No Promises on what may become of your image here.")
   
   name = os.path.basename(form.getvalue("name", ""))

@@ -1,10 +1,11 @@
 /* -*- css -*- */
 #include "wgo-css.cpp"
 
-.splash-image { 
+.splash-image {
+  background: transparent none;
   color: InfoText;
-  margin-left: 0px auto;
-  margin-right: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .splash-image a {
@@ -13,12 +14,14 @@
 
 .splash-image img {
   background: Background none;
+  color: InfoText;
   padding: 1px 1px 1px 1px;
 }
 
 .splash-image#preview img {
- background: black url(images/gimp-bg.png);
- border: 2px solid red;
+  background: black url(images/gimp-bg.png);
+  color: InfoText;
+  border: 2px solid red;
 }
 
 .splash-image .title {
@@ -32,7 +35,6 @@
 }
 
 .splash-image .author {
-/*  float: left;*/
   text-align: left;
   font-family: sans-serif;
   font-size: medium;
@@ -42,7 +44,6 @@
 
 .splash-image .email {
   text-align: right;
-/*  float: right;*/
   font-family: sans-serif;
   font-size: medium;
   font-style: normal;
@@ -50,21 +51,22 @@
 }
 
 
-
 .splash-thumb { 
- font-family: sans-serif;
- border: none;
- width: 150px;
+  font-family: sans-serif;
+  border: none;
+  width: 150px;
 }
 
 .splash-thumb img {
   background: black url(images/gimp-bg.png);
+  color: white;
   border: none;
 }
 
 .splash-thumb#preview img {
- background: black url(images/gimp-bg.png);
- border: 2px solid red;
+  background: black url(images/gimp-bg.png);
+  color: white;
+  border: 2px solid red;
 }
 
 .splash-thumb .title {
@@ -76,7 +78,6 @@
 }
 
 .splash-thumb .author {
-/*  float: left;*/
   text-align: left;
   font-size: x-small;
   font-style: italic;
@@ -84,7 +85,6 @@
 }
 
 .splash-thumb .email {
-/*  float: right;*/
   text-align: right;
   font-size: x-small;
   font-style: normal;
@@ -100,12 +100,13 @@
 
 
 table.gallery {
- color: black;
+  background: transparent none;
+  color: black;
 }
 
 table.gallery td {
  vertical-align: top;
- background-image: url(/contest/images/gimp-bg.png);
+ /*background-image: url(/contest/images/gimp-bg.png);*/
  background-image: none;
  text-align: center;
 }
@@ -115,14 +116,14 @@ table.gallery div {
 }
 
 table.gallery a {
- color: black;
+  background: transparent none;
+  color: black;
 }
-
-
 
 
 select { 
   font-family: sans-serif;
+  background: transparent none;
   color: black;
 }
 

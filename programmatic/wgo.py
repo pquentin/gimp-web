@@ -40,7 +40,7 @@ def spool_path(name, suffix=""):
 
 
 def error(text):
-  return (xhtml.div("Eeek! An error!", {"class" : "subtitle"}) + xhtml.para(text))
+  return (xhtml.h2("Eeek! An error!", {"class" : "subtitle"}) + xhtml.para(text))
 
 def http_preamble(headers=[]):
   print string.join(headers, "\n")

@@ -75,7 +75,7 @@ def edit_image(form):
   wgo_admin.header('www.gimp.org - Administration - Splash Image',
                    [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
 
-  print xhtml.div("www.gimp.org - Administrate Contest - Edit Entry", {"class" : "heading"})
+  print xhtml.h1("www.gimp.org - Administrate Contest - Edit Entry", {"class" : "heading"})
 
   name = form["name"].value
 

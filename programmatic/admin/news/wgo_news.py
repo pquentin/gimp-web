@@ -152,7 +152,6 @@ class news:
     s = str(xhtml.span(xhtml.quote(self["subject"]), {"class" : "newstitle"})
                       + xhtml.span(xhtml.quote(iso_date), {"class" : "newsdate"}))
 
-    #s = xhtml.div(s + "&nbsp;", {"class" : "newsheading"})
     s = xhtml.h1(s + "&nbsp;", {"class" : "newsheading"})
 
     img = ""

@@ -12,7 +12,7 @@ cd ${tmpdir}
 title="Unstable ChangeLog - Last ${nlogs} Entries (snapshot ${date})"
 
 /usr/bin/cvs -d :pserver:anonymous@anoncvs.gimp.org:/cvs/gnome checkout gimp/ChangeLog
-${changelog} -f xhtml -n ${nlogs} -t "${title}" -i ${tmpdir}/gimp/ChangeLog > ${destdir}/unstable.html
-${changelog} -f text  -n ${nlogs} -t "${title}" -i ${tmpdir}/gimp/ChangeLog > ${destdir}/unstable.txt
+${changelog} -f xhtml -n ${nlogs} -t "${title}" ${tmpdir}/gimp/ChangeLog > ${destdir}/unstable.html
+${changelog} -f text  -n ${nlogs} -t "${title}" ${tmpdir}/gimp/ChangeLog > ${destdir}/unstable.txt
 
 /bin/rm -rf ${tmpdir}

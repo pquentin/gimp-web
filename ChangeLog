@@ -1,3 +1,7 @@
+2004-04-10  Sven Neumann  <sven@gimp.org>
+
+	* nopatents.html: declare the html namespace.
+
 2004-04-10  Raphaël Quinet  <quinet@gamers.org>
 
 	* bugs/howtos/bugzilla.htrw: Removed the paragraph suggesting to

@@ -10,12 +10,19 @@
 #   rules should only work in the source directories).
 #
 
+TOOLSDIR?=programmatic/tools
+
 export PYTHONPATH=$(shell pwd)/programmatic:
 
 # how to make an html from a .htrw file
+#%.html: %.htrw
+#	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
+#	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.x > $@
+#	rm -f $<.x
+
 %.html: %.htrw
-	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
-	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.x > $@
+	$(TOOLSDIR)/rewrite_attrs -d admin/gimp-web-urls  $< > $@
+	chmod u+x $@ # XXX interim solution (Helvetix)
 	rm -f $<.x
 
 SOURCES=$(shell find . -name '*.htrw' -print)

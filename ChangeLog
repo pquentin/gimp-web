@@ -1,3 +1,7 @@
+2004-03-11  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* Makefile (all): Rewhacked things to make news work.
+
 2004-03-11  Raphaël Quinet  <quinet@gamers.org>
 
 	* macintosh/index.htrw: Updated the link to the DarwinPorts

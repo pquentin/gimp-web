@@ -9,7 +9,7 @@
 
 <p>This site, www.gimp.org, only distributes the source code to the
 GIMP (the building blocks). You can however download executable
-versions from the following sites:</p>
+versions from the following site:</p>
 
 <ul>
   <li>
@@ -17,20 +17,29 @@ versions from the following sites:</p>
     - choose this if you just want to install The GIMP (provided by
     Jernej Simoncic).
   </li>
+</ul>
+
+<p>If you are a developer interested in creating plug-ins or
+contributing the to GIMP, you may want to download some additional
+packages (these are not needed for normal users):</p>
+
+<ul>
   <li>
     <a href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Individual
-    .zip packages for every component</a> - for developers and
-    advanced users (provided by Tor Lillqvist).
+    .zip packages for GTK+, GLib and other libraries</a> - for
+    developers and advanced users (provided by Tor Lillqvist).
   </li>
 </ul>
 
+
 <h2>Requirements</h2>
 
-<p>The GIMP should run on Windows 95/98/ME/NT4/2000/XP. It is
-recommended to use an NT-based version of Windows (NT4, 2000 or
-XP). The amount of memory can be an important factor, especially if
-you intend to work on large images.  A minimum of 128 MB of RAM is
-recommended, but the more RAM the better.</p>
+<p>The GIMP should run on Windows 98/ME/NT4/2000/XP. It is recommended
+to use an NT-based version of Windows (NT4, 2000 or XP). Starting with
+GIMP 2.2 and GTK+ 2.4, older versions such as Windows 95 are not
+supported anymore.  The amount of memory can be an important factor,
+especially if you intend to work on large images.  A minimum of 128 MB
+of RAM is recommended, but the more RAM the better.</p>
 
 <h2>Configuration</h2>
 

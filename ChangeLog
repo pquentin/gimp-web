@@ -1,3 +1,12 @@
+2005-01-26  Raphaël Quinet  <raphael@gimp.org>
+
+	* windows/index.htrw: Tor does not provide GIMP packages anymore,
+	so his packages are only for developers.  In addition, mention
+	that Windows 95 is not supported by GTK+ 2.4 (and GIMP 2.2).
+	Fixes bug #165225, thanks to Jernej Simoncic.
+
+	* macintosh/index.htrw: X11 from Apple is now out of beta.
+
 2005-01-22  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.2.3 release.

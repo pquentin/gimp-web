@@ -1,3 +1,9 @@
+2004-12-31  Sven Neumann  <sven@gimp.org>
+
+	* source/howtos/stable-cvs-get.htrw: updated name of stable branch.
+
+	* unix/index.htrw: added link to Solaris binaries.
+
 2004-12-28  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* programmatic/contest/gallery.py

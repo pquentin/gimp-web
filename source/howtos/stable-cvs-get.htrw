@@ -67,7 +67,7 @@
       the unstable development version, and a stable branch that gets
       only bug-fixes. Unless otherwise specified, it will get the HEAD
       version. To tell it to get the stable version, enter
-      <kbd>cvs checkout -r gimp-2-0 gimp</kbd>. It will then remember this
+      <kbd>cvs checkout -r gimp-2-2 gimp</kbd>. It will then remember this
       branch for future updates until you tell it another one.
    </li>
 </ul>

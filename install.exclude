@@ -4,5 +4,6 @@ CVS
 /install.exclude
 /README.repository
 /README.tutorials
+/resources/brushes/mgo-brushes.py
 *.*~
 *~

@@ -20,6 +20,9 @@
 	/maillists.html
 
 	* books.html: file added
+
+	* install.exclude: added /resources/brushes/mgo-brushes.py to list
+	of excluded files
 	
 2002-10-18 carol <carol@gimp.org>
 

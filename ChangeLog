@@ -4,6 +4,9 @@
 
 2002-11-14 scizzo <scizzo@gimp.org>
 
+        * tutorials/Script_Image/: Add the first port of the
+        Working With The Image tutorial.
+
         * tutorials/index.html: Removed the Python Docbook (going to
         be moved to documents section).
 

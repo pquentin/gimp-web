@@ -1,0 +1,183 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Working with the Image</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Working with the Image</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  A plug-in is of limited use if it has nothing to do with the image. In this section, we explore the exciting world of the GIMP image hierarchy, and learn how to manipulate it.
+</p>
+<p>
+  <i>In the beginning, there was Wilber, Wilber the gimp. The graphic was without form and void, and darkness was upon the face of the desktop, 
+  and the Spirit of Wilber was moving over the face of the bitstream.</i>
+  <br /><br />
+  <i>And Wilber said, "&lt;Toolbox&gt;File-&gt;New," and there was an image. And Wilber saw that the image was good, and Wilber separated the image into drawables. 
+  And Wilber looked down at what he had wrought, and Wilber said, "Oh golly."  For Wilber had made the drawables of the layer according to their kinds, 
+  and the drawables of the channel according to their kinds, and the drawables of the mask according to their kinds ...</i>
+</p>
+<p>
+  ... or you could look at it the other way around. We have all sorts of silly things like masks, channels, and layers, but they're all just a bunch of pixels 
+  that can be drawn on, so we treat them much the same and lump them all in to the category of "drawables". And an image, then, is just what you get when you 
+  put some drawables together.
+</p>
+<p>
+  Most plug-ins care suprisingly little about these images. After all, it's the bunch of pixels on the drawable most of them are playing with. 
+  In any case, the most complex data structure a plug-in uses for an image is an integer (gint32), a simple ID by which the GIMP knows that image.
+</p>
+<p>
+  Drawables make life much more exciting. You have to stay on your toes about which data type a function uses, a gint32 for the drawable's ID, 
+  or a <small>GimpDrawable</small>, or a pointer to one. Here's the GimpDrawable type (from <b>gimp.h</b>):
+</p>
+<div class="code">
+struct _GimpDrawable
+{
+  gint32    id;            /* drawable ID */
+  guint     width;         /* width of drawble */
+  guint     height;        /* height of drawble */
+  guint     bpp;           /* bytes per pixel of drawable */
+  guint     ntile_rows;    /* # of tile rows */
+  guint     ntile_cols;    /* # of tile columns */
+  GimpTile *tiles;         /* the normal tiles */
+  GimpTile *shadow_tiles;  /* the shadow tiles */
+};
+</div>
+<p>
+  (Don't worry about the tile fields, you shouldn't have to deal with those directly.)
+</p>
+<p>
+  One may obtain a GDrawable from a drawable's ID by the call
+</p>
+<p>
+  <small>GimpDrawable* gimp_drawable_get</small>(gint32 <i>drawable_ID</i>);<br />
+  which allocates and initializes the GimpDrawable for you, and then returns the pointer.
+</p>
+<p>
+  <b>Note:</b> When you see a "layer ID" or somesuch, this is really a drawable ID which happens to belong to a layer. You may use it anywhere a drawable ID is called for.
+</p>
+
+<div class="subtitle">Origins of Coordinates</div>
+<p>
+  If you were looking at a spot on the GIMP image, you might choose to describe its location as the distance from the origin of the image, 
+  from the origin of the layer, or from the origin of the current selection.
+</p>
+<p>
+  GIMP chooses to measure coordinates from the upper-left corner of the drawable (the drawable is usually a layer). 
+  If you want to know about the location of the selection or the layer offset, use the following calls (<b>gimp.h</b>):
+</p>
+<div class="code">
+/* Find the bounding box of the current selection in relation to the
+ * specified drawable.  Returns TRUE if there is a selection. */
+
+gint          gimp_drawable_mask_bounds  (gint32     drawable_ID,
+                                          gint      *x1,
+                                          gint      *y1,
+                                          gint      *x2,
+                                          gint      *y2);
+
+/* Returns the offsets of the drawable. */
+void          gimp_drawable_offsets      (gint32     drawable_ID,
+                                          gint      *offset_x,
+                                          gint      *offset_y);
+</div>
+<br /><br />
+
+<div class="subtitle">Pixel Regions</div>
+<p>
+  The method through which a plug-in accesses a drawable is by way of what's known as a <i>pixel region</i>.
+  Before working with a pixel region, initialize it with the following call:
+</p>
+<div class="code">
+void gimp_pixel_rgn_init (GimpPixelRgn* <i>pr,</i> GimpDrawable* <i>drawable,</i> int <i>x,</i> int <i>y,</i> int <i>width,</i> int <i>height,</i> int <i>dirty,</i> int <i>shadow</i>);
+</div>
+<p>
+  <b>dirty</b> A "dirty" tile is one that has been changed. Tiles that are not dirty won't be written back to GIMP, whereas dirty ones will be. 
+  Initializing a pixel region as "dirty" indicates to <small>gimp_pixel_rgns_process</small> that it should treat tiles in that region as if you've dirtied them.
+</p>
+<p>
+  <b>shadow</b> "Shadow tiles are merely an indication of the desire to use a temporary buffer for writing in to," says Peter. 
+  "The advantage of using shadow tiles are that A) you won't muck up the original image, B) undo is handled properly, and 
+  C) the modifications to the image are correctly masked by the selection."
+</p>
+<p>
+  In short, if you're writing to a pixel region, the dirty and shadow flags should be TRUE, TRUE. If you need a clean copy to read from, use FALSE, FALSE. TRUE, FALSE 
+  can be used for writing directly to the image (not recommended), and FALSE, TRUE could be used to read from shadow tiles that you've just written to 
+  (possibly when using a multi-pass algorithm of some sort, as in gauss_iir.c).
+</p>
+<p>
+  There are calls for <small>pixel_rgn_get_pixel, row, col, </small>and<small> rect,</small> which grab data from the image and dump it into a buffer that you've pre-allocated. 
+  And there are set calls to match. Look for "Pixel Regions" in gimp.h.
+</p>
+<p>
+  Note that these calls are relatively slow, they can easily be the slowest thing in your plug-in. Do not get (or set) pixels one at a time using 
+  <small>pixel_rgn_[get|set]_pixel</small> if there is any other way. Tips for improving efficiency are in the next chapter.
+</p>
+
+<div class="subtitle">Data format</div>
+<p>
+  The data in your buffer depends on the image type. Grayscale is an array of values. Grayscale-alpha has gray value, 
+  alpha value, gray, alpha, etc. RGB and RGBA are just that.
+</p>
+
+<div class="subtitle">Drawable mergin' and stuff</div>
+<p>
+  Once your plug-in is through munging the drawable, it has to go through the process of making sure GIMP has been brought up to date. 
+  That sequence typically goes something like this:
+</p>
+<div class="code">
+GimpDrawable *drawable;
+  /* . . . */
+
+  /* Ensure any dirty tiles are flushed to GIMP. */
+  gimp_drawable_flush (drawable);
+
+  /* Merge in what you've written to the shadow tiles.
+     If the second arguement is TRUE, the action will be undoable. */
+  /* Without this, anything you've written on the shadow tiles may be lost,
+     and drawable will be filled with uninitialized memory instead. */
+  gimp_drawable_merge_shadow (drawable-&gt;id, TRUE);
+
+  /* Update a portion of a drawable you've modified.
+     Updates the displays and drawable previews. */
+  gimp_drawable_update (drawable-&gt;id, x1, y1, width, height);
+
+  /* Flush the updates to the on-screen displays. */
+  /* (Not always desirable when called non-interactively.) */
+  gimp_displays_flush();
+
+  /* And if you're all done with the drawable, free the memory
+  allocated by gimp_drawable_get, and any tiles the drawable was using. */
+  gimp_drawable_detach(drawable);
+</div>
+<br /><br />
+
+<div class="subtitle">More on Selections</div>
+<p>
+  Selections are drawables too. <small>gimp_image_get_selection(image_ID);</small> returns the drawable ID of the selection mask.
+</p>
+
+<div class="subtitle">Misc</div>
+<p>
+  There are many joyous functions for the handling of selections and layers and whatnot, which you may find by reading gimp.h or using the db_browser. 
+  One that I should warn you about is adding new layers to images: A layer created with <small>gimp_layer_new</small> must still be added to the image 
+  with <small>gimp_image_add_layer</small> before it will do any good. Be sure you pass the same image ID to both functions. 
+  And don't create layers without an alpha channel that aren't background layers if you're not looking for trouble.
+</p>
+
+<p>
+  The original document can be found <a href="http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:acapnotic@users.sourceforge.net">Kevin Turner</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

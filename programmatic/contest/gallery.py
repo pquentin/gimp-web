@@ -140,7 +140,7 @@ def display_gallery(form):
 def display_image(form):
   wgo_contest.head_boilerplate()
 
-  name = os.path.basename(form.getvalue("name", ""))
+  name = os.path.basename(form.getvalue("name", "")) # XXX
   entry = wgo_contest.gallery_image(name)
 
   if entry.exists():

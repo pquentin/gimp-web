@@ -35,12 +35,12 @@ contest_config.py: Makefile ../Makefile.defs
 	 echo "spool_path='${DocumentRoot}' + spool_dir # must end in trailing /" ; \
 		echo                                                         ; \
 	 echo "tmp_directory_ttl=60"                                  ; \
-	 echo "gallery_dir='/contest/gallery/'"                       ; \
+	 echo "gallery_dir='/var/spool/wgo-contest-current/'"         ; \
 	 echo "gallery_path='${DocumentRoot}'+gallery_dir"            ; \
 	 echo "permission=0644"                                       ; \
-	 echo "debug = 0"                                             ; \
+	 echo "debug=0"                                               ; \
 	 echo "validator=0"                                           ; \
-	 echo "datetime_format = '%Y-%m-%d'"                          ; \
+	 echo "datetime_format='%Y-%m-%d'"                            ; \
 	) > contest_config.py
 
 contest.cgi: contest.py

@@ -231,7 +231,7 @@ def approved(form):
   print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
                    """From here you may submit images to be considered as candidates for a "splash" image.""")
   print xhtml.div("Thank You!", {"class" : "subtitle"})
-  print xhtml.para("Again, we offer No Promises on what may become of you image here.")
+  print xhtml.para("Again, we offer No Promises on what may become of your image here.")
   
   name = os.path.basename(form.getvalue("name", ""))
   entry = wgo_contest.gallery_image(name)
@@ -252,6 +252,9 @@ def approved(form):
   entry.save()
 
   print xhtml.div(entry.ashtml("image"), {"class" : "splash-image"})
+
+  print xhtml.div("You can " + xhtml.hyperlink("submit another image", {"href" : "/contest/contest.cgi"})
+                  + " or "  + xhtml.hyperlink("view the gallery.", {"href" : "/contest/gallery.cgi?display=gallery"}))
 
   return (wgo_contest.footer())
   

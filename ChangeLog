@@ -1,3 +1,8 @@
+2003-02-10  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Contest images are now stored in /var/spool/wgo-contest/current
+          instead of /contest/gallery
+
 2003-02-09  Manish Singh  <yosh@gimp.org>
 
 	* install.exclude: exclude contest gallery directory

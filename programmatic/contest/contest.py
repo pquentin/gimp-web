@@ -74,11 +74,22 @@ def submit_manually(args):
     entry = wgo_contest.gallery_image(name)
 
     try:
-      os.system("/usr/X11R6/bin/convert '%s' 'png:%s'" % (arg, wgo.config.DocumentRoot_path + entry["image"]))
-      os.system("/usr/X11R6/bin/convert -geometry 150 '%s' 'png:%s'\n" % (wgo.config.DocumentRoot_path + entry["image"],
-                                                                          wgo.config.DocumentRoot_path + entry["thumb"]))
-      os.system("/usr/X11R6/bin/convert -geometry 150 '%s' 'jpg:%s'\n" % (wgo.config.DocumentRoot_path + entry["image"],
-                                                                          wgo.config.DocumentRoot_path + entry["thumb"]))
+      image_path = wgo_contest.gallery_path(name, ".png")
+      thumb_path = wgo_contest.gallery_path(name, "-t.png")
+      thumb_path = wgo_contest.gallery_path(name, "-t.jpg")
+
+      os.system("/usr/bin/convert '%s' 'png:%s'" % (arg, image_path))
+      
+      os.system("/usr/bin/convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
+      
+      os.system("/usr/bin/convert -geometry 150 '%s' 'jpg:%s'\n" % (image_path, thumb_path))
+  
+      #os.system("/usr/bin/convert '%s' 'png:%s'" % (arg, wgo.config.DocumentRoot_path + entry["image"]))
+      #os.system("/usr/bin/convert -geometry 150 '%s' 'png:%s'\n" % (wgo.config.DocumentRoot_path + entry["image"],
+      #                                                                    wgo.config.DocumentRoot_path + entry["thumb"]))
+      #os.system("/usr/bin/convert -geometry 150 '%s' 'jpg:%s'\n" % (wgo.config.DocumentRoot_path + entry["image"],
+      #                                                                    wgo.config.DocumentRoot_path + entry["thumb"]))
+
       #os.chown(wgo.config.DocumentRoot_path + entry["image"], wgo.config.user_uid, wgo.config.user_gid)
       #os.chown(wgo.config.DocumentRoot_path + entry["thumb"], wgo.config.user_uid, wgo.config.user_gid)
     except Exception, e:

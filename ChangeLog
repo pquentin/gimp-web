@@ -1,5 +1,8 @@
 2004-12-01  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* programmatic/contest/contest.py (submit_manually): 
+	Fixed up manual addition by fixing the DataDir problem.
+
 	* programmatic/admin/news/news-edit.py:
 	Try to make editing the date of a news article easier by including
 	some descriptive text about the date format.

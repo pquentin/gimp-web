@@ -1,3 +1,24 @@
+2003-09-09  Raphael Quinet  <quinet@gamers.org>
+
+	* style/wgo.css
+	* style/wgo.js
+	* includes/wgo-admin-fini.xhtml
+	* includes/wgo-admin-init.xhtml
+	* includes/wgo-page-fini.xhtml
+	* includes/wgo-page-init.xhtml: Yet another attempt at improving
+	the cross-browser support.  Now, the margin for the "main" div is
+	specified in em instead of pixels and the menu is re-adjusted in
+	the onLoad event handler for the body element.
+
+	* admin/.cvsignore
+	* programmatic/about/ChangeLogs/.cvsignore
+	* programmatic/admin/contest/.cvsignore
+	* programmatic/admin/news/.cvsignore
+	* programmatic/contest/.cvsignore
+	* programmatic/develop/.cvsignore: Automatically regenerated using
+	"make cvsignore".  No significant changes to the files, except
+	that they are now sorted.
+
 2003-09-07  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* programmatic/admin/news/howto-news.html: Fixed typo New -> News.

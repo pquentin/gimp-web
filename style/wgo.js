@@ -9,6 +9,7 @@ var menu_shown = true;
 function menu_adjust () {
   var padding = 10;
   if (menu_el && main_el) {
+    // adjust the height of the menu to match the height of the contents
     if (main_el.offsetHeight && menu_el.offsetHeight) {
       if (main_el.offsetHeight > menu_el.offsetHeight) {
         menu_el.style.height = (main_el.offsetHeight - 2 * padding) + "px";
@@ -16,8 +17,13 @@ function menu_adjust () {
         main_el.style.height = (menu_el.offsetHeight - 2 * padding) + "px";
       }
     }
+    // adjust the position of the contents to match the width of the menu
     if (menu_el.offsetWidth) {
-      main_el.style.marginLeft = (menu_el.offsetWidth + padding) + "px";
+      if (menu_el.offsetWidth > 100) {
+        main_el.style.marginLeft = (menu_el.offsetWidth + padding) + "px";
+      } else {
+        main_el.style.marginLeft = "11em";
+      }
     }
   }
 }
@@ -57,7 +63,7 @@ function menu_toggle () {
   }
 }
 
-function wgo_init () {
+function wgo_init (show_menu) {
   if (document.getElementById) {
     // W3C DOM
     main_el = document.getElementById("main");
@@ -69,8 +75,11 @@ function wgo_init () {
     menu_el = document.all["menu"];
     button_el = document.all["menubutton"];
   }
-  menu_adjust ();
-  menubutton_raise ();
+  if (show_menu != false) {
+    menu_show ();
+  } else {
+    menu_hide ();
+  }
 }
 
 if (document.getElementById || document.all) {

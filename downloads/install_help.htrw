@@ -1,0 +1,153 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Install Help</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Install help</h1>
+<p>
+  <b>Note for Windows Users:</b> This page is for installation help for the Unix version of GIMP. 
+  If you need help with the installation of Windows GIMP, see the <a href="/windows/">GIMP for Windows</a> page.
+</p>
+<ul>
+  <li><a href="#requirements">Requirements</a></li>
+  <li><a href="#comp-inst">GIMP Compilation and Installation</a></li>
+  <li><a href="#add-pkg">Other Packages</a></li>
+</ul>
+
+<a name="requirements"><h1>Requirements</h1></a>
+<h2>Main Requirements</h2>
+
+<p>Well, it is necessary to have a C compiler and related tools to
+compile and install the source package.  For the most part, GCC is
+recommended, but a lot of effort has gone into making GIMP compile
+with as many compilers as possible.</p>
+
+<p>A fair amount of disk space is needed too.  For a full build with
+debugging, at least 200 megs free is recomended.  Without debugging
+and with static libs turned off, GIMP can be compiled in 20-30 megs of
+space.  This will vary depending on architecture of course.  A full
+GIMP install including all the gimp-data packs can be 20 megs or
+more.</p>
+
+<p>A full compile of the stable version takes 18-20 minutes on a PPro
+200 or K-6 200 with 64 megs of RAM.  A full compile of the development
+version takes about as long on a P4 or Athlon.  In general, expect
+about 4-5 times as long as a Linux kernel 2.2 compile (for Linux
+systems of course).  In other words, its a long compile.  That's what
+300,000+ lines of code get you.</p>
+
+<h2>Stable version (1.2.x)</h2>
+
+<ul>
+  <li><b>GTK+-1.2</b> (Gimp Toolkit). The GIMP toolkit can be found at
+  <a href="ftp://ftp.gimp.org/pub/gtk/">ftp://ftp.gimp.org/pub/gtk/</a>
+  Don't try to use the GTK+-2.2.0 version, it will not work with this
+  release.</li>
+</ul>
+
+<h2>Development version (1.3.x)</h2>
+
+<p>This is the development release and should be used for testing only
+and not for everyday work, you are using the development release on
+your own risk of crashes and maybe even lose work that has been
+done. You have been warned.</p>
+
+<ul>
+  <li>Recent version of <b>pkg-config</b> is needed and you can grab them at 
+  <a href="http://www.freedesktop.org/software/pkgconfig/">http://www.freedesktop.org/software/pkgconfig/</a></li>
+  <li><b>GTK+ 2.2.0</b> or newer (Gimp Toolkit). The GIMP toolkit can be found at
+  <a href="ftp://ftp.gimp.org/pub/gtk/">ftp://ftp.gimp.org/pub/gtk/</a><br />
+  GTK+-2.2 depends also on recent versions of:
+  <ul>
+  <li><b>GLib</b></li> 
+  <li><b>Pango</b></li> 
+  <li><b>ATK</b> and you can download them from <a href="ftp://ftp.gimp.org/">ftp://ftp.gimp.org/</a><br />
+  </li></ul></li>
+  <li><b>PangoFT2</b> a pango backend that uses <b>FreeType2</b> (Make sure you have FreeType2 installed before installing Pango).
+  Downloads can be found at <a href="http://www.freetype.org/">http://www.freetype.org/</a></li>
+  <li><b>libart2</b> grab the module from libart_lgpl on the GNOME CVS or get the tarball at
+  <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a></li>
+</ul>
+
+<a name="comp-inst"><h1>GIMP Compilation and Installation</h1></a>
+
+<p>After grabbing the GIMP distribution, you are ready to compile and
+install.  The main site for the latest offical GIMP distribution is <a
+href="ftp://ftp.gimp.org/pub/gimp/">ftp://ftp.gimp.org/pub/gimp/</a>
+but you should consider using one of the mirrors listed on the <a
+href="./">download page</a>.
+</p>
+
+<p>GIMP makes use of the Gimp Toolkit (GTK+) and other libraries that
+must be installed first. Look in Requirements above to find out
+more.</p>
+
+<p>Compile using: <kbd>./configure &amp;&amp; make &amp;&amp; make install</kbd></p>
+
+<p>If all goes well, a good while later, you will have a brand
+spanking new GIMP to play with.  Unfortunately, it has been rumored
+that it isn't always that easy.  So, here are a few common problems
+and some solutions...</p>
+
+<p>For some more specific info, you may want to read the <a
+href="INSTALL">INSTALL</a> file from the main GIMP distribution.</p>
+
+<a name="add-pkg"><h1>Other Packages</h1></a>
+
+<h2>Print plug-in does not compile</h2>
+
+<p>Starting with version 1.2.4, the print plug-in depends on
+libgimpprint, which is now distributed as a separate package.  The
+previous versions of the GIMP (up to 1.2.3) included all files as part
+of the GIMP distribution, but you should now download and install
+libgimpprint separately from the Gimp-Print site:</p>
+
+<p><a href="http://gimp-print.sourceforge.net/">http://gimp-print.sourceforge.net/</a></p>
+
+<p>Once the lib is compiled and installed, run <kbd>ldconfig</kbd> as root and the print plug-in should compile.</p>
+
+<h2>JPEG plug-in does not compile</h2>
+
+<p>The jpeg plug-in requires the jpeg library.  If you don't have it
+installed or you have a very old version, then you need to get a
+recent jpeg library.  The places to look are:</p>
+
+<p><a href="ftp://ftp.uu.net/graphics/jpeg/">ftp://ftp.uu.net/graphics/jpeg/</a><br />
+<a href="ftp://ftp.gimp.org/pub/gimp/libs/">ftp://ftp.gimp.org/pub/gimp/libs/</a></p>
+
+<p>Once the lib is compiled and installed, run <kbd>ldconfig</kbd> as
+root and the jpeg plug-in should compile.</p>
+
+<h2>TIFF plug-in does not compile</h2>
+
+<p>The tiff plug-in requires the tiff library.  See the jpeg problem
+mentioned above.  Same deal, different lib.  The places to look are
+at:</p>
+
+<p><a href="ftp://ftp.sgi.com/graphics/tiff/">ftp://ftp.sgi.com/graphics/tiff/</a><br />
+<a href="ftp://ftp.gimp.org/pub/gimp/libs/">ftp://ftp.gimp.org/pub/gimp/libs/</a></p>
+
+<p>Once the lib is compiled and installed, run <kbd>ldconfig</kbd> as
+root and the tiff plug-in should compile.</p>
+
+<h2>PNG plug-in does not compile</h2>
+
+<p>The png plug-in requires libpng and libz (zlib).  See the jpeg
+problem mentioned above.  Same deal, different lib.  The places to
+look are at:</p>
+
+<p><a href="ftp://ftp.uu.net/graphics/png/src/">ftp://ftp.uu.net/graphics/png/src/</a><br />
+<a href="ftp://ftp.gimp.org/pub/gimp/libs/">ftp://ftp.gimp.org/pub/gimp/libs/</a></p>
+
+<p>Once the lib is compiled and installed, run <kbd>ldconfig</kbd> as
+root and the png plug-in should compile.</p>
+
+<h2>XPM plug-in does not compile</h2>
+
+<p>The xpm plug-in requires the xpm library.  See the jpeg problem
+above.  Same deal, different lib.  The places to look are at:</p>
+
+<p><a href="ftp://ftp.x.org/contrib/libraries/">ftp://ftp.x.org/contrib/libraries/</a></p>
+  
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

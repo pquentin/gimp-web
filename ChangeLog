@@ -1,5 +1,10 @@
 2003-09-20  Raphael Quinet  <quinet@gamers.org>
 
+	* downloads/install_help.html
+	* downloads/install_help.htrw: Renamed the .html file to .htrw,
+	fixed several typos, updated the requirements (still needs some
+	work), cleaned up the formatting.
+
 	* downloads/index.htrw: Added direct links to the ftp site (with
 	hardcoded version numbers).  In the future, this should be
 	generated automatically, like in the old site.  Added sub-section

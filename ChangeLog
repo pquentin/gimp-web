@@ -1,5 +1,10 @@
 2002-10-18 carol <carol@gimp.org>
 
+    * resources/gradients/*.png and mgo-gradients.py: the gradient is now
+    rendered from right to left instead of corner to corner.
+
+2002-10-18 carol <carol@gimp.org>
+
     * resources/gradients/index.html and mgo-gradients.py: added the
     directory, the images and the index page.
 

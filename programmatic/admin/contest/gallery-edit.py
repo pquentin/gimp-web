@@ -63,14 +63,10 @@ def format(name):
   if not entry.exists():
     link = "Eeek!  This entry is not available in the gallery. ", name
   else:
-    link = (xhtml.div(xhtml.span(xhtml.hyperlink(xhtml.input.submit(edit_button), {"href" : edit})
-                                 + xhtml.hyperlink(xhtml.input.submit(delete_button), {"href" : delete}), {"style" : "text-align: left;"}),
-            {"style" : "border-bottom: 1px dotted black; text-align: left;"})
-            + entry.ashtml("thumb"))
     link =  xhtml.div(entry.ashtml("thumb")
-             + (xhtml.span(xhtml.hyperlink(xhtml.input.submit(edit_button), {"href" : edit})
-                                    + xhtml.hyperlink(xhtml.input.submit(delete_button), {"href" : delete}), {"style" : "text-align: left;"})),
-                      {"style" : "text-align: left;"})
+                      + (xhtml.span(xhtml.hyperlink("edit", {"href" : edit, "class" : "faux-button"})
+                                    + xhtml.hyperlink("delete", {"href" : delete, "class" : "faux-button"}), {"style" : "text-align: left;"})),
+                           {"style" : "text-align: left;"})
     pass
 
   return (xhtml.div(link, {"class" : "splash-thumb"}))
@@ -166,14 +162,21 @@ def display_gallery(form):
   if True:
     if len(names) > 0:
       print xhtml.table.init({"cellspacing" : 6, "cellpadding" : 0, "border" : 0, "class" : "gallery"})
+
       print xhtml.table.row.init()
       map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[index:index+(images_per_page/2)])
       print xhtml.table.row.fini()
-      print xhtml.table.row.init()
-      map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[index+(images_per_page/2 + 1):index+images_per_page + 1])
-      print xhtml.table.row.fini()
+
+      if len(names[index+(images_per_page/2 + 1):index+images_per_page + 1]) > 1:
+        print xhtml.table.row.init()
+        map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))),
+            names[index+(images_per_page/2 + 1):index + images_per_page + 1])
+        print xhtml.table.row.fini()
+        pass
+
       print xhtml.table.fini()
       pass
+    pass
   else:
     print xhtml.div.init({"style" : "vertical-align: bottom;"})
     print xhtml.div("&nbsp;", {"style" : "clear: both;"})

@@ -1,11 +1,15 @@
 2003-02-10  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
+        * Contest gallery no longer requires "whack-a-mole" skills when
+          trying to click a button.  <input> elements are replaced with <a>
+          elements of class "faux-button"
+
         * Contest images are now stored in /var/spool/wgo-contest/current
           instead of /contest/gallery
 
 2003-02-09  Manish Singh  <yosh@gimp.org>
 
-	* install.exclude: exclude contest gallery directory
+        * install.exclude: exclude contest gallery directory
 
 2003-02-10  Carol Spears  <carol@gimp.org>
 

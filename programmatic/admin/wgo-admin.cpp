@@ -194,7 +194,7 @@ form.news-edit textarea[name="body"] {
   width: 100%;
 }
 
-
+/*
 td#menu a { 
   display: block;
-}
+  }*/

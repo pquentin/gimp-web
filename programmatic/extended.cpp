@@ -12,7 +12,7 @@ input[type="text"] {
   width:       100%;
 }
 
-input[type="button"], input[type="submit"], input[type="file"] {
+.faux-button, input[type="button"], input[type="submit"], input[type="file"] {
   background:    WGO_BUTTON_BG none;
   border-bottom: 1px solid WGO_BUTTON_LOLITE;
   border-left:   1px solid WGO_BUTTON_HILITE;
@@ -23,6 +23,8 @@ input[type="button"], input[type="submit"], input[type="file"] {
   font-family:   arial,helvetica,sans-serif;
   font-size:     x-small;
   font-weight:   bold;
+  padding:       1px 2px 1px 2px;
+  margin: 2px 2px 2px 2px;
   text-decoration: none;
 }
 

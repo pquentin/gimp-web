@@ -219,11 +219,12 @@
 
 <h2>Resources</h2>
 <ul>
-  <li><a href="http://www.cs.rice.edu/~dorai/t-y-scheme/t-y-scheme-Z-H-1.html">Teach Yourself Scheme in Fixnum Days</a></li>
-  <li><a href="http://manual.gimp.org/manual/GUM/write_scriptfu3.html">Mike Terry's Black Belt School of Script-Fu</a></li>
-  <li>Richard Stallman: <a href="http://www.linuxcare.com/viewpoints/os-interviews/12-14-99.epl">The Coder</a></li>
+  <li><a href="http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme.html">Teach Yourself Scheme in Fixnum Days</a></li>
+<!--  <li><a href="http://manual.gimp.org/manual/GUM/write_scriptfu3.html">Mike Terry's Black Belt School of Script-Fu</a></li> -->
+  <li><a href="http://www.klaban.torun.pl/help/script-fu-tutorial/">Mike Terry's Black Belt School of Script-Fu</a></li>
+  <li>Richard Stallman: <a href="http://web.archive.org/web/*/http://www.linuxcare.com/viewpoints/os-interviews/12-14-99.epl">The Coder</a> (web archive)</li>
   <li><a href="http://www.cs.chalmers.se/~rjmh/Papers/whyfp.html">Why Functional Programming Matters</a></li>
-  <li><a href="http://people.delphi.com/gjc/siod.html">SIOD Scheme</a></li>
+  <li><a href="http://web.archive.org/web/20011129110930/http://people.delphi.com/gjc/siod.html">SIOD Scheme</a> (web archive)</li>
 </ul>
 
 <p>

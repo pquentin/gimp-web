@@ -1,3 +1,8 @@
+2004-07-25  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/Basic_Scheme2/index.htrw: Updated some broken links
+	reported by Markus Triska.  Fixes bug #145403.
+
 2004-07-20  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.1.2.

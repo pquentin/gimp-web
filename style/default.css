@@ -24,11 +24,11 @@ img {
   border: none;
 }
 
-p {
+p.news {
   margin: 0.75em 0px;
 }
 
-p.tutorial {
+p {
   margin: 1.33em 0px;
   margin-left: 40px; 
   margin-right: 40px;
@@ -79,17 +79,29 @@ p.tutorial {
 }
 
 div.heading {
+  background: #f5f5f5;
+  color: black;
+  border-style: solid; 
+  border-color: #d0d0d0;
+  border-width: 1px;
+  padding: 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.newsheading {
   background: #42638d;
   color: #eeeeee;
   padding: 5px;
   font-weight: bold;
 }
 
-span.title {
+span.newstitle {
   float: left;
 }
 
-span.date {
+span.newsdate {
   float: right;
 }
 
@@ -100,7 +112,7 @@ img.icon {
 
 div.item {
   margin-bottom: 30px;
-  text-align: justify; 
+  text-align: justify;
 }
 
 div.subtitle {

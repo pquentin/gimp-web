@@ -1,7 +1,15 @@
+2002-11-08 scizzo <scizzo@gimp.org>
+
+        * tutorials/Photo_Edit/Blending_Exposures/: First port of the
+        Blending Exposures tutorial.
+
 2002-11-07 scizzo <scizzo@gimp.org>
 
         * tutorials/Photo_Edit/Blur_Overlays/: First port of the Blur
         Overlay tutorial. Small fixes.
+
+        * tutorials/Photo_Edit/Blown_Out_Highlights/: First port of the
+        Blown out highlights tutorial.
 
 2002-11-06 scizzo <scizzo@gimp.org>
 

@@ -1,0 +1,8 @@
+Images:
+	* Use indexed PNGs that have an alpha channel.
+HTML:
+	* Background color should be White to match the rest of the
+	site and also to make other browsers work fine with the page.
+
+Text:
+	* As little as possible but that explains good with strong words.

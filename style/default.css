@@ -54,6 +54,14 @@ li {
   text-align: justify;
 }
 
+.list li {
+  padding-bottom: 1.2em;
+}
+
+.list p {
+  margin: 0 0 0 0;
+}
+
 #titlebar {
   background-image: url("../images/barbg.png");
   background-repeat: repeat-x;

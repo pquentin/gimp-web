@@ -1,3 +1,31 @@
+2003-02-09 scizzo <scizzo@gimp.org>
+
+	* includes/urls_go-developer.inc
+	  includes/urls_go-utility.inc
+	  includes/urls_important.inc: Fixed the includes to be
+	  valid.
+
+	* mail_lists.html: Removed a <div> that made the site look weird and
+	  was not valid. Moved the styles in the html file to the CSS file. Also
+	  add <title></title> to the html file.
+
+	* about/authors.html
+	  about/index.html
+	  about/mediakit.html
+	  about/splash-cvs.html: Changed rocks comment so that it is valid.
+	  Removed an </a> that didn´t have a start tag. Fixed a few & to &amp;
+	  to be valid. Add </a> before the </li>. Add <p> before artist.
+
+	* books/index.html: Changed a few <img src=""> to <img src=""/>
+	
+	* develop/index.html: Fixed a few <A> that should be <a> to be valid.
+	
+	* links/index.html
+	  links/org.html: Fixed all the <a name=""> and <br /> now valid site.
+	  Fixed all <A href=""> to <a href="">.
+
+	* style/default.css: Moved the style in mail_lists.html here.
+
 2003-02-02  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Added programmatic/about/ChangeLogs/{film-gimp,gimp-print} to

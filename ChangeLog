@@ -1,3 +1,7 @@
+2004-12-28  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.2.1 release.
+
 2004-12-19  Michael Schumacher <schumaml@cvs.gnome.org>
 
 	* mail_lists.htrw: added "broken" to all XCF archives links

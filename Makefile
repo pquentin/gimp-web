@@ -14,19 +14,21 @@ export PYTHONPATH=programmatic:
 # how to make an html from a .htrw file
 %.html: %.htrw
 	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $< > $@
-	chmod 755 unix/index.html
+	chmod 755 $@
 
-TARGETS=unix/index.html
+RWSOURCES=$(shell find . -name '*.htrw' -print)
+RWTARGETS=$(RWSOURCES:.htrw=.html)
+
+TARGETS=${RWTARGETS}
 
 all: usage webtools ${TARGETS}
+	echo ${TARGETS}
 
 usage:
 	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; exit 1; fi
 
 webtools:
 	(cd programmatic ; make webtools)
-
-unix/index.html: unix/index.htrw
 
 _install: all
 

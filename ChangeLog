@@ -1,3 +1,14 @@
+2003-03-06  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Fixed an obvious cut-and-paste typo in the build rule for
+          .html->.htrw
+
+        * Updated Makefile to do be a lot some automatic about converting
+          .htrw files to .html
+
+        * Lots of little tweaks to the install.sh script to log the
+          installation output to DocumentRoot/install.out
+
 003-03-06  Carol Spears  <carol@gimp.org>
 
         * style/default.css: moved the font sizes up by 5% for the hn's :)

@@ -1,0 +1,119 @@
+body {
+  background: white;
+  color: black;
+  font-family: arial,helvetica,sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  background: transparent;
+  color: #17457c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover	{
+  background: transparent;
+  color: #991e1e;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+img {
+  border: none;
+}
+
+#titlebar {
+  background-image: url("../images/barbg.png");
+  background-repeat: repeat-x;
+}
+
+#titlebarleft {
+  float: left;
+}
+
+#titlebarright {
+  float: right;
+}
+
+#layout {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+}
+
+#menu {
+  background: #f5f5f5;
+  color: black;
+  border-style: solid; 
+  border-color: #d0d0d0;
+  border-top-width: 0px; 
+  border-bottom-width: 0px; 
+  border-left-width: 0px; 
+  border-right-width: 1px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+#main {
+  margin: 10px;
+}
+
+div.heading {
+  background: #42638d;
+  color: #eeeeee;
+  padding: 5px;
+  margin: 5px;
+}
+
+span.title {
+  float: left;
+  background: #42638d;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+span.date {
+  float: right;
+  background: #42638d;
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+img.icon {
+  float: left;
+  margin: 5px;
+}
+
+#linkbar {
+  clear: both;
+  background: #f5f5f5;
+  color: black;
+  width: 100%;
+  border: solid;
+  border-color: #d0d0d0;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 5px 5px 5px 5px;
+  font-weight: bold;
+}
+
+span.linkitem:after {
+  content: " |";
+}
+
+#footerleft {
+  float: left;
+  padding: 20px;
+}
+
+#footerright {
+  float: right;
+  padding: 20px;
+}
+

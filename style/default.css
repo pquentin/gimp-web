@@ -24,9 +24,18 @@ img {
   border: none;
 }
 
+img.tutorial {
+  text-align: center;
+}
+
+
 p.news {
   margin: 0.75em 0px;
   text-align: justify;
+}
+
+p.images {
+  text-align: center;
 }
 
 p {
@@ -120,10 +129,6 @@ img.icon {
 
 div.subtitle {
   font-weight: bold;
-}
-
-div.images {
-  text-align: center;
 }
 
 #linkbar, #navbar {

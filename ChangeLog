@@ -1,5 +1,11 @@
 2004-04-14  Sven Neumann  <sven@gimp.org>
 
+	* downloads/index.htrw: make the MD5 sums suck less. Could someone
+	with better html/css skills please look at this and find a way to
+	nicely integrate this information?
+ 
+2004-04-14  Sven Neumann  <sven@gimp.org>
+
 	* downloads/index.htrw: updated for 2.0.1 release. Moved the MD5
 	sums here ...
 

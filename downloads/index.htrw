@@ -20,10 +20,10 @@ href="install_help.html">install help</a> page.</p>
  <br/>
  To allow you to check the integrity of the tarballs, here are the MD5 sum
  of the latest released tarballs:
- <dl>
-  <dt>gimp-2.0.1.tar.gz</dt>  <dd>33c26c0a9e95c7c501f7ccfa3b9723de</dd>
-  <dt>gimp-2.0.1.tar.bz2</dt> <dd>fb7f0d3dcde6c77dc7960c0986a6e0f5</dd>
- </dl>
+ <ul>
+  <li>gimp-2.0.1.tar.gz <b>33c26c0a9e95c7c501f7ccfa3b9723de</b></li>
+  <li>gimp-2.0.1.tar.bz2 <b>fb7f0d3dcde6c77dc7960c0986a6e0f5</b></li>
+ </ul>
 </p>
 
 <p>GAP (the GIMP Animation Package) for 2.0 is available at

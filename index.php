@@ -83,6 +83,10 @@
                 $file = "includes/os2.inc";
                 break;
 
+              case "webteam":
+                $file = "includes/webteam.inc";
+                break;
+
               default:
               case "news":
                 $file = "includes/news.inc";
@@ -108,7 +112,7 @@
 
     <div>
       <span id="footerleft">
-        &copy; 2001-2002 <a href="FIXME">The GIMP Team</a>
+        &copy; 2001-2002 <a href="?page=webteam">The GIMP Team</a>
       </span>
       <span id="footerright">
         <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>

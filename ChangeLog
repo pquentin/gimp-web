@@ -1,3 +1,8 @@
+2003-04-13  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Fixed Perlotine tutorial according to scizzo's request to make
+        images centered.
+
 2003-04-13 scizzo <scizzo@gimp.org>
 
     * tutorials/Advanced_Animations/index.html: Removed this file.
@@ -86,9 +91,9 @@
 
 2003-04-10 scizzo <scizzo@gimp.org>
 
-	* todo.xhtml: This file was a duplicate of the todo.xhtml in admin.
-	* styles/default.css: Added 3 warning <em> classes. caution,warn and
-	hellbrokeloose.
+        * todo.xhtml: This file was a duplicate of the todo.xhtml in admin.
+        * styles/default.css: Added 3 warning <em> classes. caution,warn and
+        hellbrokeloose.
 
 2003-04-10  Carol Spears  <carol@gimp.org>
 
@@ -110,9 +115,9 @@
 
 2003-04-09 scizzo <scizzo@gimp.org>
 
-	* tutorials/*: Now uses <image> Filter -> Path instead of
-	  <image>Filter->Path to make it more visible. Fixed a few
-	  broken links. Add the original tutorial link to Custom_Brushes.
+        * tutorials/*: Now uses <image> Filter -> Path instead of
+          <image>Filter->Path to make it more visible. Fixed a few
+          broken links. Add the original tutorial link to Custom_Brushes.
 
 2003-04-09  Carol Spears  <carol@gimp.org>
 

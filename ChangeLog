@@ -1,5 +1,8 @@
 2002-10-07  scizzo <scizzo@gimp.org>
 
+	* tutorials/3d_Logo/: Started the work on the 3D logo
+	tutorial.
+
 	* tutorials/index.html: Removed underscores in the name of
 	Coloring_A_BW_Sketch. Looked weird with the rest of the 
 	layout IMHO.

@@ -1,3 +1,10 @@
+2003-04-27  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * programmatic/admin/develop/.cvsignore: 
+        * programmatic/tools/.cvsignore: 
+        * programmatic/develop/.cvsignore: Tuning up .cvsignore files
+        
+
 2003-04-26  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * install.sh (log): Redirect output from make into install.out text file

@@ -1,0 +1,7 @@
+*.cgi
+changelog-cron
+film-gimp*
+gegl-unstable*
+gimp-help*
+gimp-print*
+gimp-unstable*

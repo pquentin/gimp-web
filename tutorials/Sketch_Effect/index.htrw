@@ -1,0 +1,152 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Sketch Effect</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<h1>Vidar's GIMPy high pass filter sketch effect</h1>
+<p>
+  Text and images Copyright (C) 2004 <a href="mail:People-Madsen_Vidar">Vidar Madsen</a> and may not be used without permission of the author.
+</p>
+
+<h2>Intention</h2>
+<p>
+  Meet Marius, my son. :)
+</p>
+<p class="images">
+<table align="center"><tr><td>
+Before:<br />
+  <img src="01-original.jpg" alt="" />
+</td><td>
+After:<br />
+  <img src="09-retouched.jpg" alt="" />
+</td></tr></table>
+</p>
+
+<h2>1. High pass filtering</h2>
+<p>
+  High pass filtering means that we filter away the low frequencies of something,
+	and let the high frequency bands pass. In image terms, this means that the detail
+	of an image is kept, while the larger scale gradients are removed. Luckily, it's not
+	as complicated as it sounds.
+</p>
+<p>
+  First, duplicate the layer.
+</p>
+<p class="images">
+  <img src="02-dupdialog.png" alt="" />
+</p>
+<p>
+  Then Gaussian Blur the top layer with an appropriate radius.
+</p>
+<p>
+  You need to experiment to find good values, but roughly speaking one can
+	say that the larger the radius, the wider the high pass filter's frequency
+	response, and the "fatter" the lines in the final sketch. In this example
+	I used 7 pixels, giving this result;
+</p>
+
+<p class="images">
+  <img src="02-blurdialog.png" alt="" />
+  <img src="02-blurred.jpg" alt="" />
+</p>
+
+<p>
+  Now we have a low pass filtered version of our image; all gradients
+	and no detail. Exactly the opposite of what we wanted.
+	So, how do we obtain a high pass filtered
+	version? Why, we subtract it from our original, of course. A good
+	way to do that is to simply Invert the image, and blend it 50-50 with
+	the original. First, <span class="filter">Image-&gt;Colors-&gt;Invert</span>;
+</p>
+
+<p class="images">
+  <img src="03-inverted.jpg" alt="" />
+</p>
+
+<p>
+  Then, to blend the two, we adjust the Layer's Opacity
+	slider to 50%, and our high pass filtered image appears;
+</p>
+<p class="images">
+  <img src="04-dialog.png" alt="" />
+  <img src="05-highpass.jpg" alt="" />
+</p>
+
+<p>
+  Now it's time to Merge the two layers, so that we can continue
+	to process them as one. Right-click on the top layer and pick
+	Merge Down.
+</p>
+<p>
+  Now, back to the image. Was the effect a bit too subtle,
+	perhaps? While not necessary, we can apply the
+	Levels tool (<span class="filter">Image-&gt;Colors-&gt;Levels</span>)
+	to increase the contrast a bit, so that it's easier to inspect
+	visually. In this example, I set Input Levels to 100-155;
+</p>
+
+<p class="images">
+  <img src="05-dialog.png" alt="" />
+  <img src="06-highpass-contrast.jpg" alt="" />
+</p>
+
+<h2>2. The sketch part</h2>
+<p>
+  Now it's time to make the image background white.
+	First, <span class="filter">Image-&gt;Colors-&gt;Desaturate</span>
+	the image, and fire up that Levels tool again.
+	Here you need to experiment a bit to find
+	the best values for your image. But you will most likely want to set max
+	Input Level (the right value) to 128 or thereabout. This makes the
+	50%-grey part of the image go white, which is a good start.
+	(If you look at the Levels histogram, you should notice a strong peak
+	in the middle. This is where we want the Max Input Level.)
+</p>
+<p>
+  The primary target of experimentation would be the gamma value field
+	in the middle (the grey triangle just below the histogram). With a bit of
+	tweaking, you could end up with something like this;
+</p>
+
+<p class="images">
+  <img src="06-dialog.png" alt="" />
+  <img src="07-white.jpg" alt="" />
+</p>
+
+<p>
+  That's pretty much it. I tend to want to hand-polish my images to get
+	rid of various imperfections, though. Below is the result of softening the
+	contrast on the lower right region, which is where the bright skin fell
+	against the black background; The higher the contrast, the stronger the
+	lines. I also fine-tuned the overall contrast (with Levels)
+	to get rid of some of the noise in the face;
+</p>
+
+<p class="images">
+  <img src="08-brightened.jpg" alt="" />
+</p>
+
+<p>
+  Finally I wanted to remove the annoying shadow below his chin
+	and some of the specks scattered around his face, so I
+	manually hand-brushed away parts of it, giving the final
+	result;
+</p>
+
+<p class="images">
+  <img src="09-retouched.jpg" alt="" />
+</p>
+
+<p>
+  Voila. That's it. Hope you liked it. :)
+</p>
+
+<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2004 <a href="home:People-Madsen_Vidar">Vidar Madsen</a>
+      </span>
+      <span id="footerright">
+        <a href="mail:People-Madsen_Vidar">vidar@gimp.org</a>
+      </span>
+    </div>
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,13 @@
+2004-05-22  Niklas M <scizzo@gimp.org>
+
+	* admin/gimp-web-urls: Added vidar madsen to the list of people.
+	  Changed address to my website.
+	
+	* tutorials/Sketch_Effect/: Added this tutorial provided by Vidar. Closes
+	bug #142766. Not validated yet.
+
+	* tutorials/index.htrw: Added vidars tutorial to the list of tutorials.
+
 2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
 
 	* donating/index.htrw: fixed typo.

@@ -2,7 +2,7 @@
 <title>GIMP - Mailing Lists</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
-<h2>Mail List URLs</h2>
+<h2>Mail List Links</h2>
 <p>
   <a href="maillist:GIMP-user">GIMP User</a><br />
   The original (mostly unix based) user list. 

@@ -67,9 +67,9 @@
   <i>(The win32 README)</i></li>
 </ul>
 
-<h2>Important GIMP URLs</h2>
+<h2>Important GIMP Links</h2>
 <!--#include virtual="/includes/urls_important.inc" -->
-<h2>Important GIMP Development URLs</h2>
+<h2>Important GIMP Development Links</h2>
 <!--#include virtual="/includes/urls_go-developer.inc" -->
 
 <!-- ***FIXME*** section commented out until we find a better solution

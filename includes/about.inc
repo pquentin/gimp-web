@@ -30,6 +30,7 @@
 <div class="item">
   <p>
     This is only a very quickly thrown together list of GIMP features. This is only the tip of the iceberg.
+  </p>
     <ul>
       <li> Full suite of painting tools including Brush, Pencil, Airbrush, Clone,etc.
       <li> Tile based memory managent so image size is limited only by available disk space.
@@ -51,6 +52,5 @@
       <li> Supports custom brushes and patterns
       <li> Much, much more!
     </ul>
-  </p>
 </div>
 

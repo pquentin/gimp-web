@@ -1,3 +1,9 @@
+2005-02-15  Manish Singh  <yosh@gimp.org>
+
+	* tutorials/Film_Grain/index.htrw: Update for GIMP 2.2.
+
+        * tutorials/Film_Grain/gimp-grey-modes.diff: Remove, it's obsolete.
+
 2005-02-09  Raphaël Quinet  <raphael@gimp.org>
 
 	* style/wgo.css: Added small copyright notice, hoping to

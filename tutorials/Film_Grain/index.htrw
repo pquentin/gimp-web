@@ -9,9 +9,7 @@
 
 <h2>Intention</h2>
 <p>
-  This tutorial assumes a <a href="gimp-grey-modes.diff">patched</a> version of GIMP 1.2.2. 
-  Please don't distribute binaries which include this patch; 
-  it creates non-standard XCF files, which would suprise users terribly. Real-world images have lots of noise: 
+  Real-world images have lots of noise: 
   film grain, scanner lines, CCD noise, paper texture, and just about anything else you can imagine. Computer-generated
   images, on the other hand, tend to be too real. If you need to make computer-generated images look like real-world ones,
   then this tutorial is for you.
@@ -31,8 +29,7 @@
   <li>Take a noisy image.</li>
   <li>Duplicate it into a new layer.</li>
   <li>Blur it to remove the noise.</li>
-  <li>Set the blurred layer to <b>Grey Subtraction</b> mode to extract the noise. 
-  (You need to install the above patch to get this mode.)</li>
+  <li>Set the blurred layer to <b>Grain Extract</b> mode to extract the noise.</li> 
   <li>Flatten the image.</li>
   <li>Choose an interesting area of the noise, and make it into a tileable pattern.</li>
 </ol>
@@ -41,7 +38,7 @@
 </p>
 <p>
   Some good ways of making tileable patterns include <b>Make Seamless</b>, 
-  the <a href="http://www.csse.monash.edu.au/~pfh/resynthesizer/">Resynthesizer and Homogenizer</a>, 
+  the <a href="http://www.logarithmic.net/pfh/resynthesizer/">Resynthesizer and Homogenizer</a>, 
   mirroring, and hand-editing. You'll have to experiment a bit.
   In the following example, we'll use a weird, vertically-striped noise pattern. 
   It looks like some kind of scanner noise, or perhaps an artifact of old newsprint.
@@ -73,8 +70,7 @@
   <img src="sailboat-04-grain-added.jpg" alt=""/>
 </p>
 <p>
-  Position the noise layer above the image layer, and set the mode to <b>Grey Addition</b>. 
-  (Again, this won't work unless the patch has been installed.)
+  Position the noise layer above the image layer, and set the mode to <b>Grain Merge</b>. 
 </p>
 
 <h2>Step 4</h2>
@@ -107,7 +103,7 @@
 <h2>Related Techniques</h2>
 <p>
   You can use various brushes in the mask layer to selectively edit the grain. 
-  You can also use the bucket tool in <b>Pattern Fill</b>, <b>Grey Addition</b> mode to fill a selection with grain directly.
+  You can also use the bucket tool in <b>Pattern Fill</b>, <b>Grain Merge</b> mode to fill a selection with grain directly.
   <br />
   Many kinds of noise can be created using 
   <span class="filter">&lt;Image&gt; Filters -&gt; Noise -&gt; Scatter HSV</span>. You can apply this directly to an image, 

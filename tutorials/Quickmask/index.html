@@ -1,0 +1,114 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Quickmask Tutorial</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Quickmask Tutorial</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  This tutorial shows how you can do vignette effects using a new feature of GIMP called QuickMask.
+  QuickMask is a convenient way to modify selections using pixel-changing tools such as the paintbrush, eraser, or any plug-in filter.
+  It lets you make very precise adjustments to your selections. This tutorial doesn't use QuickMask for complex masking; it's intended
+  to show how you can use it to create quick and easy vignette effects.
+</p>
+<p class="images">
+  <img src="blur-15.jpg" alt=""/>
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="image.1.jpg" alt=""/>
+</p>
+<p>
+  For your first step, load up an image. Any image will do.
+  GIMP 1.1.7, a development version of GIMP, introduced QuickMask. The QuickMask control buttons are located at the lower-left side of the image.
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="image.2.jpg" alt=""/>
+</p>
+<p>
+  First, make a rectangular selection around the edge of the image. Then click on the red-bordered QuickMask icon in the lower-left corner of your image.
+</p>
+
+<div class="subtitle">Step 3</div>
+<p class="images">
+  <img src="image.3.jpg" alt=""/>
+</p>
+<p>
+  After you click the red QuickMask button, a translucent red mask appears around your selection. This red mask represents the outside of your selection. 
+  When you click the dashed QuickMask button to go back into normal selection mode, anything red will not be selected, and anything clear will be. 
+  So, let's start playing with this mask. First, right click on the image and select Filters &gt; Distorts &gt; Waves from the menu. Apply the filter, 
+  and watch what happens to the mask.
+</p>
+
+<div class="subtitle">Step 4</div>
+<p class="images">
+  <img src="image.4.jpg" alt=""/>
+</p>
+<p>
+  The mask gets all wavy. Let's add one more effect: Filters &gt; Blur &gt; Gaussian Blur (RLE).
+</p>
+
+<div class="subtitle">Step 5</div>
+<p class="images">
+  <img src="image.5.jpg" alt=""/>
+</p>
+<p>
+  Now that there is a soft edge on the mask, click the dashed QuickMask button to convert the mask back into a selection. 
+</p>
+
+<div class="subtitle">Step 6</div>
+<p class="images">
+  <img src="image.6.jpg" alt=""/>
+</p>
+<p>
+  See how the selection follows the mask? This is a powerful feature of QuickMask. You can use it to modify any existing selection, and you can even 
+  use it to create new selections. Our last step is to use Select &gt; Invert and Edit &gt; Fill. The result, a soft white fade into the background, 
+  is shown in the final step. 
+</p>
+
+<div class="subtitle">Final</div>
+<p class="images">
+  <img src="image.7.jpg" alt=""/>
+</p>
+<p>
+  And there you have it. Some more examples are listed below. Happy GIMPing!
+</p>
+
+<div class="subtitle">Examples</div>
+<p class="images">
+  <img src="spread-11.png" alt=""/>
+</p>
+<p>
+  The above image used Filters &gt; Noise &gt; Spread, with horizontal and vertical settings at 11, to get the effect.
+</p>
+
+<p class="images">
+  <img src="newsprint.png" alt=""/>
+</p>
+<p>
+  I used some blurring and the Filters &gt; Render &gt; Newsprint plugin to get this effect.
+</p>
+
+<p class="images">
+  <img src="pixelize-10.png" alt=""/>
+</p>
+<p>
+  As in the tutorial, this one used Waves, but instead of blurring, I used Filters &gt; Blur &gt; Pixelize instead. 
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:xach@gimp.org">Zach Beane</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

@@ -1,5 +1,12 @@
 2002-10-07  scizzo <scizzo@gimp.org>
 
+	* tutorials/index.html: Removed underscores in the name of
+	Coloring_A_BW_Sketch. Looked weird with the rest of the 
+	layout IMHO.
+
+	* tutorials/Coloring_A_BW_Sketch/: Added the Coloring Sketch
+	tutorial.
+
 	* tutorials/Changing_Background_Color_2/: Added the second
 	Changing Background Color tutorial.
 

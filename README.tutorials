@@ -25,4 +25,4 @@ Text:
 
         Example: <span class="filter">&lt;Image&gt;/Filters/Blur/Blur</span>
 	
-  * Use the font in gtk: -adobe-helvetica-bold-r-normal-*-12-*-*-*-p-*-iso8859-1 
+  * Use the font in gtk: -adobe-helvetica-medium-r-normal-*-12-*-*-*-p-*-iso8859-1 

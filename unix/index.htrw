@@ -15,16 +15,22 @@ www.gimp.org, you can get binaries for various flavors of Unix.</p>
 At the moment we know about the following binary packages for GIMP 2.0
 on Unix:
 <ul>
- <li>GNU/Linux
-     <a href="ftp://ftp.gimp.org/pub/users/drc">Fedora Core 1 (RPM)</a>
- </li>
- <li>GNU/Linux
-     <a href="http://www.usr-local-bin.org/gimp.php">SuSE 9.0 (RPM)</a>
- </li>
- <li>GNU/Linux
-     <a href="http://mars.iti.pk.edu.pl/~jakub/">Debian testing (deb)</a>
+ <li>GNU/Linux on ix86
+   <ul>
+     <li>
+       <a href="ftp://ftp.gimp.org/pub/users/drc">Fedora Core 1 (RPM)</a>
+     </li>
+     <li>
+       <a href="http://www.usr-local-bin.org/gimp.php">SuSE 9.0 (RPM)</a>
+     </li>
+     <li>
+       <a href="http://mars.iti.pk.edu.pl/~jakub/">Debian testing (deb)</a>
+     </li>
+   </ul>
  </li>
 </ul>
+These binaries are provided by GIMP users. We did not test them; use
+at your own risk.
 </p>
 
 <p>If you cannot find a pre-compiled package of GIMP 2.0 for your

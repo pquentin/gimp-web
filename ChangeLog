@@ -1,3 +1,7 @@
+2004-03-24  Sven Neumann  <sven@gimp.org>
+
+	* unix/index.htrw: added GNU/Linux to the RPM link.
+
 2004-03-24  Raphaël Quinet  <quinet@gamers.org>
 
 	* macintosh/index.htrw: Mention that Gimp.app is packaged by Aaron

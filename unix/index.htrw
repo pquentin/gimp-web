@@ -15,7 +15,8 @@ www.gimp.org, you can get binaries for various flavors of Unix.</p>
 At the moment we know about the following binary packages for GIMP 2.0
 on Unix:
 <ul>
- <li><a href="ftp://ftp.gimp.org/pub/users/drc">Fedora Core 1 (RPM)</a>
+ <li>GNU/Linux
+     <a href="ftp://ftp.gimp.org/pub/users/drc">Fedora Core 1 (RPM)</a>
 </ul>
 </p>
 

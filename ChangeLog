@@ -1,5 +1,9 @@
 2004-12-19  Sven Neumann  <sven@gimp.org>
 
+	* images/news-icons: removed.
+
+2004-12-19  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/Makefile
 	* programmatic/admin/news/wgo_news.py
 	* programmatic/admin/news/wilber_reading.png: allow to use the new

@@ -14,7 +14,7 @@
   <img src="original.jpeg" alt=""/>
 </p>
 <p>
-  Nice picture, baby &amp; dad.
+  Nice picture of a baby &amp; dad. Ah.
 </p>
 
 <div class="subtitle">2. After a Sobel edge detect</div>
@@ -22,7 +22,7 @@
   <img src="sobel.jpeg" alt=""/>
 </p>
 <p>
-  Straightforward Sobel edge detect of original (don't forget to save a copy of the original)
+  Straightforward Sobel edge detect (<span class="filter">&lt;Image&gt;Filters-&gt;Edge-&gt;Detect/Sobel</span>) of original (don't forget to save a copy of the original)
 </p>
 
 <div class="subtitle">3. Equalised &amp; desaturated Sobel</div>
@@ -30,7 +30,8 @@
   <img src="equalised_sobel.jpeg" alt=""/>
 </p>
 <p>
-  Bring out detail of the sobel edge detect, and convert it to greys using desaturate.
+  Bring out detail with an auto-equalise (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Auto/Equalize</span>) of the sobel edge detect, 
+  and convert it to greys using desaturate (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Desaturate</span>).
 </p>
 
 <div class="subtitle">4. Curves window for how to do a highpass filter</div>
@@ -39,8 +40,11 @@
 </p>
 <p>
   We only want the strong edges, otherwise it'll look crap. To get them, we eliminate the edges with small magnitude. 
-  The easiest way to do this is with the levels tool. We set the curve type to free (which allows discontinuities) and then for 
-  the bottom 3/4 of the curve (or thereabouts) to 0. Just drag the mouse/pen along the bottom of the curves tool.
+  The easiest way to do this is with the curves tool (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Curves</span>) like this.
+</p>
+<p>
+  We set the curve type to free (which allows discontinuities), and then for the bottom 3/4 of the curve (or thereabouts) to 0. 
+  Just drag the mouse/pen along the bottom of the curves tool.
 </p>
 
 <div class="subtitle">5. Image after the highpass</div>
@@ -56,8 +60,12 @@
   <img src="edges.jpeg" alt=""/>
 </p>
 <p>
-  Small trick to get to black-on-transparent. Invert the Sobel edge detect (you did keep a copy, right?) and apply our highpass-filtered copy as a mask. 
-  Since we kept the strong edges, this means that we end up with a rather nice black-on-transparent layer.
+  Small trick to get to black-on-transparent. Invert the Sobel edge detect (you did keep a copy, right?) with 
+  <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Invert</span> and apply our highpass-filtered copy as a mask. 
+  To do this, open the Layers &amp; Channels dialog (if it's not open already), and add a layer mask to the layer with the inverted edge detect layer 
+  (<span class="filter">&lt;Image&gt;Edit-&gt;Copy</span> with the highpass layer selected, <span class="filter">&lt;Layer&gt;Add Layer Mask</span> 
+  with the inverted edge layer selected, then select the mask and <span class="filter">&lt;Image&gt;Edit-&gt;Paste</span>) Since we kept the strong edges 
+  in the highpass filtered layer, this means that we end up with a rather nice black-on-transparent layer.
 </p>
 
 <div class="subtitle">7. Save of the image above to show effect</div>
@@ -77,9 +85,9 @@
   images,original image &amp; colouring layer in overlay mode
 </p>
 <p>
-  We put our original image back in the background, and set the white layer to overlay (as we see here) - this means we can see 
-  the coloured areas behind the white layer - this is extremely helpful when we're painting the white layer, 
-  as sometimes the edges are rather fine, or are in the middle of an area that's more or less the same colour.
+  We put our original image back in the background, and set the white layer to overlay (as we see here) - this means we can see the coloured 
+  areas behind the white layer - this is extremely helpful when we're painting the white layer, as sometimes the edges are rather fine, 
+  or are in the middle of an area that's more or less the same colour.
 </p>
 
 <div class="subtitle">9. Colouring looks after doing one area of the image</div>
@@ -87,10 +95,10 @@
   <img src="starting_colouring.jpeg" alt=""/>
 </p>
 <p>
-  Using the colour-picker tool, we select the colour we want to paint from the original image (just activate the "original image" 
-  layer and try to pick a colour representative of an area), and then we re-activate our colouring layer, which is still in overlay mode. 
-  Using a big brush (with the brush tool for more natural edges) we fill in the area of that colour roughly (doesn't have to be perfect). 
-  You should see the colour darkening as we draw with a colour similar to the background colour.
+  Using the colour-picker tool (looks like an eye-dropper), we select the colour we want to paint from the original image 
+  (just activate the "original image" layer and try to pick a colour representative of an area), and then we re-activate our colouring layer, 
+  which is still in overlay mode. Using a big brush (with the brush tool for more natural edges) we fill in the area of that colour roughly 
+  (doesn't have to be perfect). You should see the colour darkening as we draw with a colour similar to the background colour.
 </p>
 
 <div class="subtitle">10. Colouring layer in normal mode</div>
@@ -98,7 +106,7 @@
   <img src="viewing_colouring.jpeg" alt=""/>
 </p>
 <p>
-  This is what we see if we set the drawing layer to normal mode. And we're on our way.
+  This is what we see if we set the colour drawing layer to normal mode. And we're on our way.
 </p>
 
 <div class="subtitle">11. Finished with a completed colour layer</div>
@@ -106,8 +114,8 @@
   <img src="pencil_and_paint_sketch.jpeg" alt=""/>
 </p>
 <p>
-  After some effort, all the regions get filled in. Final touches to make faces and the like look better for shadows and highlights 
-  were accomplished by selecting a representative shadow/highlight colour, and adding the extra bits with the airbrush tool. 
+  After some effort, all the regions get filled in. Final touches to make faces and the like look better for shadows and highlights were accomplished 
+  by selecting a representative shadow/highlight colour, and adding the extra bits with the airbrush tool (looks like an airbrush). 
   After all our work, we end up with this very nice looking painting effect.
 </p>
 

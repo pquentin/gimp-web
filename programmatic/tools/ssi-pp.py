@@ -27,7 +27,7 @@ import re
 import string
 import getopt
 
-Version = """SSI Preprocessor, version $Version:$
+Version = """SSI Preprocessor, version $Revision$
 Copyright (C) 2003 Helvetix Victorinox, a pseudonym.
 This is free software; see the source code for copying conditions.
 There is ABSOLUTELY NO WARRANTY; not even for MERCHANTIBILITY or

@@ -24,6 +24,10 @@ img {
   border: none;
 }
 
+kbd {
+  font-weight: bold;
+}
+
 p.images img {
   border: solid black 2px;
 }

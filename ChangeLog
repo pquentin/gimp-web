@@ -1,3 +1,7 @@
+2002-12-22 carol <carol@gimp.org>
+
+	* style/default.css: added a style for kbd 
+
 2002-12-22 scizzo <scizzo@gimp.org>
 
         * tutorials/Creating_Icons/index.html: Trying out <kbd>

@@ -170,6 +170,7 @@
 ["href", "wgo:bugs",                           { "href": "/bugs/"}]
 ["href", "wgo:dev-howtos-bugzilla",            { "href": "/bugs/howtos/bugzilla.html"}]
 ["href", "wgo:dev-howtos-subpatch",	       { "href": "/bugs/howtos/submit-patch.html"}]
+["href", "wgo:docs",                           { "href": "/docs/"}]
 ["href", "wgo:docs-gimp_help",                 { "href": "/docs/gimp-help/"}]
 
 ["href", "wgo:downloads",                      { "href": "/downloads/"}]

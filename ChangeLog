@@ -1,5 +1,11 @@
 2004-03-30  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls: added wgo:docs.
+
+	* unix/index.htrw: uncommented link to the documentation.
+
+2004-03-30  Sven Neumann  <sven@gimp.org>
+
 	* unix/gimprc.html
 	* unix/gtkrc.html: use SSI to include the plain files.
 

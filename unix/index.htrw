@@ -120,8 +120,8 @@ to build the GIMP.</p>
 <h2>Help and Documentation</h2>
 
 <ul>
+  <li><a href="wgo:docs">GIMP Documentation</a></li>
   <li><a href="fonts.html">How to get and install fonts</a> for GIMP 2.0</li>
-  <li><!-- a href="wgo:docs-gimp_help" -->Help Documentation<!-- /a --></li>
   <li><a href="wgo:unix-manpage-stable_gimp">man gimp</a></li>
   <li><a href="wgo:unix-manpage-stable_gimptool">man gimptool</a></li>
   <li><a href="wgo:unix-manpage-stable_gimprc">man gimprc</a></li>

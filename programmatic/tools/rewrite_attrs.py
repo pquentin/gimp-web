@@ -41,7 +41,7 @@
 #
 # replaces forms like href="httpGoogle" with href="http://www.google.com"
 #
-# Note that attribute names can be rewritten as well.
+# Note that other attribute values can be rewritten as well.
 #
 
 import types
@@ -71,76 +71,95 @@ def substitute(a, v):
 
   return ({a: v})
 
-def print_warning(filename):
-  # Small hack to keep only the original name of the file in the output
-  origname = filename.replace(".htrw.x", ".htrw")
-  sys.stdout.write("<!-- This file was automatically generated from " + origname + " by rewrite-attrs.py $Revision$.  Do not edit. -->\n")
-  return
     
-def sanity_check(filename, attrs):
+def check_attribute_sanity(filename, attrs):
   for (a, v) in attrs:
     if type(v) == type(None):
       sys.stderr.write("Warning: " + filename + ": attribute '" + a + "' has no value.  See http://www.w3.org/TR/xhtml1/#h-4.5 and http://www.w3.org/TR/xhtml1/#C_10\n")
       pass
     pass
   return
+
+# Return True if the supplied <string> looks like it is the content of
+# an Apache SSI directive.
+#
+def is_apache_ssi_p(string):
+  data = string.lstrip()
+  if len(data) > 0 and data[0] == "#":
+    return True
+  return False
   
 class xhtml_parser(HTMLParser.HTMLParser):
-  def __init__(self, filename, quiet_flag=False, strip_comments_flag=False):
+  def __init__(self, filename, quiet_flag=False, strip_comments_flag=False, output=sys.stdout):
     self.filename = filename
     self.quiet = quiet_flag
     self.strip_comments = strip_comments_flag
     self.serial = 0
-    self.comment_already_printed = False
+    self.output = output
+    self.declaration_done = False
+    self.banner_comment_already_printed = False
     return HTMLParser.HTMLParser.__init__(self)
 
   def handle_pi(self, tag):
-    sys.stdout.write("<?" + tag + ">")
+    self.output.write("<?" + tag + ">")
     return
 
   def handle_starttag(self, tag, attrs):
     self.serial += 1
 
-    sanity_check(self.filename, attrs)
+    check_attribute_sanity(self.filename, attrs)
     
-    sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + ">")
+    self.print_banner_comment()
+    self.output.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + ">")
     return
 
   def handle_endtag(self, tag):
-    sys.stdout.write("</" + tag + ">")
+    self.output.write("</" + tag + ">")
     return
 
   def handle_startendtag(self, tag, attrs):
-    sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + " />")
+    self.output.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + " />")
     self.serial += 1
     return
 
   def handle_data(self, data):
-    sys.stdout.write(data)
+    self.output.write(data)
     return
   
   def handle_charref(self, name):
-    sys.stdout.write("&#" + name)
+    self.output.write("&#" + name)
     return
   
   def handle_entityref(self, name):
-    sys.stdout.write("&" + name + ";")
+    self.output.write("&" + name + ";")
     return
   
   def handle_comment(self, data):
-    if not self.comment_already_printed and not self.quiet:
-      print_warning(self.filename)
-      self.comment_already_printed = True
-      pass
-    if not self.strip_comments:
-      sys.stdout.write("<!--" + data + "-->")
+    if is_apache_ssi_p(data):
+      # Be sure any ssi directives appear before our special comment.
+      self.output.write("<!--" + data + "-->")
+      self.print_banner_comment()
+    elif not self.strip_comments:
+      # Be sure any ssi directives appear before our special comment.
+      self.print_banner_comment()
+      self.output.write("<!--" + data + "-->")
       pass
     return
   
   def handle_decl(self, decl):
-    sys.stdout.write("<!" + decl + ">")
+    self.output.write("<!" + decl + ">")
+    self.declaration_done = true
+    self.print_banner_comment()
     return
   
+  def print_banner_comment(self):
+    if not self.banner_comment_already_printed:
+      if not self.quiet:
+        self.output.write("\n<!-- This file was automatically generated from " + self.filename + " by rewrite-attrs.py $Revision$.  Do not edit. -->")
+        pass
+      self.banner_comment_already_printed = True
+    return
+
   pass
 
   
@@ -202,6 +221,7 @@ if __name__ == "__main__":
   
   quiet_flag = False
   strip_comments_flag = False
+  dictionary = False
 
   for o, a in opts:
     if o in ("-h", "--help"):
@@ -227,14 +247,30 @@ if __name__ == "__main__":
       pass
     pass
 
+  if dictionary == False:
+    usage(sys.argv[0])
+    sys.exit()
+    pass
 
-  xhtml = xhtml_parser(args[0], quiet_flag, strip_comments_flag)
+  if len(args) > 1:
+    output = open(args[1], "w")
+  else:
+    output = sys.stdout
+    pass
+  
+  xhtml = xhtml_parser(args[0], quiet_flag, strip_comments_flag, output)
 
   fp = open(args[0], "r")
   #sys.stdout.write('<?xml version="1.0" encodings="iso-8859-1" standalone="yes"?>\n')
   xhtml.feed(fp.read())
+
+  # If there is an output file named on the command line, then
+  # preserve the permissions bits.
+  if len(args) > 1:
+    os.chmod(args[1], os.fstat(fp.fileno())[0])
+    pass
+
   fp.close()
-    
   xhtml.close()
   
   sys.exit(0)

@@ -1,3 +1,10 @@
+2004-05-29  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/tools/rewrite_attrs.py: code and feature improvements.
+
+	* archive.htrw: incipient mechanism to view archived news
+	
+
 2004-05-22  Niklas M <scizzo@gimp.org>
 
 	* admin/gimp-web-urls: Added vidar madsen to the list of people.

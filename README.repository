@@ -22,7 +22,9 @@ when adding an html file that has SSI directives (the <!--#... -->
 lines) in it, the file needs to be 'chmod +x file.html' (yes, the
 *.html file needs to be executeable!). furthermore, it need to be
 executeable at 'cvs add file.html'; it's a pain to change the
-permissions when the file is already checked in.
+permissions when the file is already checked in. Should you need to
+change the permissions of an already checked in file you need to
+contact either carol or brix.
 
 third: as with any cvs repository, well written comments are a must.
 when adding/modifying a file be sure to add a descriptive comment to

@@ -1,3 +1,18 @@
+2002-11-08 brix <brix@gimp.org>
+
+	* books/index.html: added a bunch of books
+
+	* books/essential_gimp_for_web_professionals.png,
+	books/gimp_esential_reference.png, books/gimp_for_linux_bible.png,
+	books/gimp_the_official_handbook.png, books/grokking_the_gimp.png,
+	books/guerrilla_guide_to_great_graphics_with_the_gimp.png,
+	books/teach_yourself_gimp_in_24_hours.png,
+	books/the_artist_guide_to_the_gimp.png,
+	books/the_gimp_for_linux_and_unix:_visual_quickstart_guide.png,
+	books/the_gimp_pocket_reference.png: images added
+
+	* style/default.css: added "clear: both;" to span.subtitle
+
 2002-11-08 scizzo <scizzo@gimp.org>
 
         * tutorials/Photo_Edit/Blending_Exposures/: First port of the

@@ -1,3 +1,7 @@
+2005-01-18  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/stable.htrw: center content of table cells.
+
 2005-01-16  Raphaël Quinet  <raphael@gimp.org>
 
 	* .cvsignore

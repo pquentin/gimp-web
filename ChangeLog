@@ -1,3 +1,9 @@
+2004-09-01  Raphaël Quinet  <quinet@gamers.org>
+
+	* admin/gimp-web-urls,
+	* mail_lists.htrw: Added links to the archives of the gimp-user
+	and gimpwin-users mailing lists provided by spinics.net.
+
 2004-08-29  Sven Neumann  <sven@gimp.org>
 
 	* unix/index.htrw: mention dependencies for compiling GIMP 2.1.

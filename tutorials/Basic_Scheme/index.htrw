@@ -45,7 +45,8 @@
     (foo param1 param2 ...)
 </pre>
 <p>
-  Additional functions may be defined by the user through the define keyword. E.g. a function that calculates the square value of its single argument may be declared like this
+  Additional functions may be defined by the user through the define keyword. E.g. a function that 
+  calculates the square value of its single argument may be declared like this
 </p>
 <pre class="code">
     (define (square x) (* x x))
@@ -77,7 +78,8 @@
 <p>
   The ' sign is necessary in order to tell scheme that this is a literal list. If the ' was omitted scheme would try to look up a function with 
   the name 255 and send it the two parameters 127 and 0, which is obviously not what we wants.
-  <br /><br />
+</p>
+<p>
   To create a variable called orange with the above value and then set the background color to it we may do
 </p>
 <pre class="code">
@@ -91,7 +93,8 @@
   A list in Scheme is always composed of a head and a tail. The head is the first entry in the list, and the tail is the list of the rest of the elements. 
   This means that the list (255 127 63) really means (255 (127 (63 ()))) but Scheme allows the previous form as a shortcut. 
   The car function is used to return the head of the list and the cdr (usually pronounced cudder) is used to get the tail of the list.
-  <br /><br />
+</p>
+<p>
   [The following is a test of the above functions which may interactively be conducted in the Script-Fu console.]
 </p>
 <pre class="code">
@@ -127,7 +130,8 @@
 <p>
   More experienced scheme programmers mostly use local variables instead of the global variables described above. 
   This is considered better programming practice and this construct should be recognized in order to be able to read others ScriptFu scripts.
-  <br /><br />
+</p>
+<p>
   Local variables are declared through the the let keyword as in the following example:
 </p>
 <pre class="code">
@@ -149,10 +153,11 @@
 </pre>
 <p>
   produces a new gimp image of type RGB and size 100x150.
-  <br /><br />
-   All the functions of the PDB may be accessed through the DB browser that is available from the main menu through 
-   <span class="filter"> Xtns -&gt; DB BROWSER</span>.... 
-   E.g. the DB Browser entry for uni-img, which we will define in the example below looks like this:
+</p>
+<p>
+  All the functions of the PDB may be accessed through the DB browser that is available from the main menu through 
+  <span class="filter"> Xtns -&gt; DB BROWSER</span>.... 
+  E.g. the DB Browser entry for uni-img, which we will define in the example below looks like this:
 </p>
 <p class="images">
   <img src="pdb-uni-entry.png" alt=""/>
@@ -175,7 +180,8 @@
 <p>
   The last point above actually means that a script is from Gimp's viewpoint in no way different from a built-in command or a plugin command. 
   As long as a command is registered in the PDB it can be called by any script or plugin.
-  <br /><br />
+</p>
+<p>
   The parameters of script-fu-register may be divided into two groups. The first group of seven parameters must always be given. These are:
 </p>
 <ol>
@@ -278,14 +284,18 @@
 
 <h2>6.1 Hanging a script in the image menu</h2>
 <p>
-  In the <b>uni-img</b> script it was placed under <b>Xtns/...</b> in the main Gimp window. This is done to create a new image that is independant of earlier images. 
+  In the <b>uni-img</b> script it was placed under <b>Xtns/...</b> in the main Gimp window. 
+  This is done to create a new image that is independant of earlier images. 
   It is also possible to create a script which works on an already existing image. If in <b>script-fu-register</b> as the second argument is written:
-  <br /><br />
+</p>
+<p>
   <span class="filter">&lt;Image&gt;/Script-Fu/...</span>
-  <br /><br />
+</p>
+<p>
   then the script will be available through the gimp menu that is launched by the right mouse button over an image. 
   Such script must also have as their first and second argument a SF-IMAGE and a SF-DRAWABLE.
-  <br /><br />
+</p>
+<p>
   Here is an example script which copies the current layer to a new layer, blurs it and inverts it.
 </p>
 <pre class="code">
@@ -528,7 +538,8 @@ The blur is a gaussian blur with the specified feather radius.
 <p>
   To copy a selection, the command gimp-edit-copy is used. It places a copy of the selection contents in the cut-buffer. 
   The contents of the cut-buffer may then be pasted into a layer, the same layer or another one, and it is then pasted as a floating layer.
-  <br /><br />
+</p>
+<p>
   In the following example the selection is copied, pasted into the same layer, offset a fixed distance, finally anchored. 
   Try it by drawing a small blob in the middle of the image, select the blob, and then call this script.
 </p>
@@ -564,15 +575,15 @@ The blur is a gaussian blur with the specified feather radius.
 </pre>
 
 <p>
-  The original tutorial can be found <a href="http://imagic.weizmann.ac.il/~dov/gimp/scheme-tut.html">here</a>.
+  The original tutorial can be found <a href="home:People-Grobgeld_Dov">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:dov@imagic.weizmann.ac.il">Dov Grobgeld</a>
+        Tutorial &copy; 2002 <a href="mail:People-Grobgeld_Dov">Dov Grobgeld</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-webmaster">webmaster@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

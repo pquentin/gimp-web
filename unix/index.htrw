@@ -112,9 +112,7 @@ to build the GIMP.</p>
   <li><!-- a href="wgo:unix-guide_stable_preferences" -->File
   --&gt;Preferences<!-- /a --></li>
 
-  <li><a href="wgo:unix-gimprc">gimprc</a></li>  <!--FIXME: is this needed? -->
-
-  <li><a href="wgo:unix-gtkprc">gtkrc</a></li>  <!--FIXME: is this needed? -->
+  <li><a href="wgo:unix-gimprc">gimprc</a></li>
 </ul>
 
 <h2>Help and Documentation</h2>

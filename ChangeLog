@@ -1,3 +1,8 @@
+2002-12-27 scizzo <scizzo@gimp.org>
+
+        * tutorials/Changing_Background_Color_1/index.html: Moved the icon for
+        the color picker to the line explaining to use the tool.
+
 2002-12-25 scizzo <scizzo@gimp.org>
 
         * tutorials/Color2BW/index.html: Fixed the broken link to the

@@ -1,3 +1,15 @@
+2002-11-23 scizzo <scizzo@gimp.org>
+
+        * tutorials/Photo_Edit/*/: Add the copyright as the author wanted it
+        to be. Also changed e-mail to author. Fixed the tutorial hyperlink.
+
+        * tutorials/index.html: Removed the ND_Filter photo edit tutorial from
+        the list. Changed the synopses for the Photo Edit tutorials from
+        request by the author.
+
+        * team.html: Eric Jeschke to Eric R. Jeschke to make it go
+        with the tutorials.
+
 2002-11-22 scizzo <scizzo@gimp.org>
 
         * tutorials/index.html: Add the Quickies tutorial to the beginners list.

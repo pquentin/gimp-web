@@ -1,0 +1,22 @@
+# style <name> [= <name>]
+# {
+#   <option>
+# }
+#
+# widget <widget_set> style <style_name>
+# widget_class <widget_class_set> style <style_name>
+
+style "ruler"
+{
+  font = "-adobe-helvetica-medium-r-normal--*-80-*-*-*-*-*-*"
+}
+
+style "tooltips"
+{
+  fg[NORMAL] = { 0.0,  0.0,  0.0  }
+  bg[NORMAL] = { 0.94, 0.90, 0.54 }
+}
+
+widget "gtk-tooltips" style "tooltips"
+
+widget_class "*Ruler*" style "ruler"

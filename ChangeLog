@@ -9,8 +9,8 @@
 	filter/plug-in class to make the filter/plug-in paths stand out
 	from the rest of the text (as described in README.tutorials)
 
-	* style/default.css: started working on the image borders for
-	screenshots used in tutorials
+	* style/default.css: added an image borders for screenshots used
+	in tutorials
 	
 2002-10-09  scizzo <scizzo@gimp.org>
 

@@ -24,7 +24,7 @@ img {
   border: none;
 }
 
-img.images {
+p.images img {
   border: solid black 1px;
 }
 

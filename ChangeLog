@@ -1,3 +1,11 @@
+2004-11-05  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/index.htrw
+	* about/splash/splash-images/gimp_splashpng.1.20.png
+	* about/splash/splash-images/splash-2.1.htrw
+	* about/splash/splash-images/gimp-splash-1.*.png
+	* admin/gimp-web-urls: added splash history for 2.1 series.
+
 2004-11-04  Niklas M <scizzo@gimp.org>
 
 	* unix/index.htrw: Updated the requirements information for 2.2.

@@ -9,7 +9,7 @@
     <li><a href="gimp-docs/">The GIMP Documentation</a></li>
     <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
   </ul>
-<div class="subtitle">Other GIMP Documentation</div>
+<h2>Other GIMP Documentation</h2>
   <ul>
     <li><a href="python/pygimp.html">GIMP Python Module Documentation</a></li>
     <li><a href="scheme_plugin/">GIMP Script-fu Documentation</a></li>

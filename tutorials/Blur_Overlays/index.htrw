@@ -97,7 +97,7 @@
   Similarly, turn off the Background layer if you want to view the overlay to do further work on it.
 </p>
 
-<div class="subtitle">Tip: Protecting Highlights with a Layer Mask</div>
+<h2>Tip: Protecting Highlights with a Layer Mask</h2>
 <p>
   Although I like the effect, there is one problem with this technique and that is that it also increases contrast: 
   the shadows get darker and the highlights get lighter.

@@ -1,5 +1,40 @@
 2003-08-31  Raphael Quinet  <quinet@gamers.org>
 
+	* style/wgo.css: New style sheet, containing most of what was in
+	default.css (only the classes that were used somewhere).
+
+	* style/wgo.js: New file containing some bits of JavaScript for
+	adjusting the size of the navigation menu and for toggling the
+	visibility of that menu.
+
+	* images/menubutton.png: New image for the corner of the menu.
+
+	* includes/wgo-xhtml-init.xhtml
+	* includes/wgo-xhtml-fini.xhtml
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-page-fini.xhtml
+	* includes/wgo-styles.xhtml: Updated for new page layout.
+
+	* includes/footer.inc
+	* includes/header_posttitle.inc
+	* includes/header_pretitle.inc
+	* includes/linkbar.inc
+	* includes/menu.inc
+	* includes/tutnavbar.inc
+	* includes/urls_maillist.inc
+	* includes/wgo-menu.xhtml: Deleted these unused files.  Some of
+	them are still used by the old files in about/Changelogs/* but
+	those files should be deleted and replaced by something else so it
+	is not a big problem if they are temporarily broken.
+
+	* docs/index.htrw,
+	* tutorials/Smart_Sharpening/warp-sharp.htrw,
+	* tutorials/Lite_Quickies/index.htrw,
+	* tutorials/Blur_Overlays/index.htrw: <div class="subtitle"> is
+	replaced by <h2>.  The class "subtitle" is now gone.
+
+2003-08-31  Raphael Quinet  <quinet@gamers.org>
+
 	* develop/bugzilla-fixed-list.html
 	* develop/bugzilla-fixed-test.cgi
 	* develop/bugzilla-fixed-test.py

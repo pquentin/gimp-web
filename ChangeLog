@@ -1,3 +1,8 @@
+2004-03-23  Sven Neumann  <sven@gimp.org>
+
+	* images/news-icons/gimp_code.png: replaced with a copy of
+	gimp_construction.png. This icon was broken.
+
 2004-03-23  Michael Natterer  <mitch@gimp.org>
 
 	* about/introduction.htrw: removed accidentially committed "2"

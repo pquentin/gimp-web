@@ -4,7 +4,7 @@
         Also did a change from "Making Selections" to "Selection Overview" so
         I can start porting the tutorials now.
 
-2002-11-21 carol <carol@gimp.org>
+2002-11-22 carol <carol@gimp.org>
 
 	* docs/scheme_plugin, that i stole from simon budig
 
@@ -14,10 +14,17 @@
 
 	* docs/scheme_plugin: got the images for the doc
 
-	* docs/scheme_plugin: got the images for the doc
-
 	* tutorials/index.html: "started" to determine the proper wording for the
     quickies entry into the list of tutorials
+
+	* about/index.html: moved the items around one more time.
+
+	* includes/linkbar.inc: contest/index.html added to linkbar. FAQ's
+    removed.
+
+	* contest/index.html: added this promise.
+
+	* about/splash.html: added this template.
 
 2002-11-21 carol <carol@gimp.org>
 

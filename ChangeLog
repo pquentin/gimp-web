@@ -2,7 +2,8 @@
 
 	* downloads/index.htrw: Added direct links to the ftp site (with
 	hardcoded version numbers).  In the future, this should be
-	generated automatically, like in the old site.
+	generated automatically, like in the old site.  Added sub-section
+	for Linux and UNIX.  Later, we can add some links to binaries.
 
 	* about/index.htrw: Removed the links to the ChangeLogs and splash
 	screen gallery, as proposed on the list.  The e-mail addresses

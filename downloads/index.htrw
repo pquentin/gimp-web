@@ -9,8 +9,7 @@
 the source code and have to be compiled in order to be installed on
 your system.  If you do not want to compile the GIMP yourself, there
 are several sites providing pre-compiled binaries for various
-platforms.  Most Linux distributions include the GIMP in their list of
-packages.  For detailed information on the install process and
+platforms.  For detailed information on the install process and
 requirements, please take a look at the <a
 href="install_help.html">install help</a> page.</p>
 
@@ -44,6 +43,12 @@ href="http://www.macgimp.org">http://www.macgimp.org</a> and also
 contains a lot of information around MacOS X and GIMP all together.
 For more information look at the <a href="/macintosh/">GIMP for MacOS
 X</a> section.</p>
+
+<h2>Linux and UNIX</h2>
+
+<p>Most Linux distributions include the GIMP in their list of
+packages.  For more information look at the <a href="/unix/">GIMP for
+UNIX X</a> section.</p>
 
 <h1>FTP and Web Mirrors</h1>
 <!--#include virtual="/downloads/mirrors.xhtml" -->

@@ -53,28 +53,37 @@
     <li>Full alpha channel support</li>
     <li>Layers and channels</li>
     <li>Multiple Undo/Redo (limited only by diskspace)</li>
+    <li>Editable text layers</li> 
     <li>Transformation tools including rotate, scale, shear and flip</li>
-    <li>Selection tools including rectangle, ellipse, free, fuzzy, Bézier and intelligent</li>
+    <li>Selection tools including rectangle, ellipse, free, fuzzy and intelligent</li>
+    <li>Advanced path tool doing bezier and polygonal selections.</li>
+    <li>Transformable paths, transformable selections.</li>
     <li>Quickmask to paint a selection.</li>
   </ul>
 </li>
 <li>Extensible
   <ul>
     <li>A Procedural Database for calling internal GIMP functions from external programs as in Script-fu</li>
-    <li>Advanced scripting capabilities</li>
-    <li>Plug-ins which allow for the easy addition of new file formats and new effect filters</li>
+    <li>Advanced scripting capabilities (Scheme, Python, Perl)</li>
+    <li>Plug-ins which allow for the easy addition of new file formats
+      and new effect filters</li>
     <li>Over 100 plug-ins already available</li>
   </ul>
 </li>
 <li>Animation
   <ul>
     <li>Load and save animations in a convenient frame-as-layer format</li>
+    <li>MNG support</li>
+    <li>Frame Navigator (in GAP, the GIMP Animation Package)</li>
+    <li>Onion Skin (in GAP, the GIMP Animation Package)</li>
+    <li>Bluebox (in GAP, the GIMP Animation Package)</li>
   </ul>
 </li>
 <li>File Handling
   <ul>
-    <li>File formats supported include bmp, gif, jpeg, mpeg, pcx, pdf, png, ps, tiff, tga, xpm, and many others</li>
+    <li>File formats supported include bmp, gif, jpeg, mng, pcx, pdf, png, ps, psd, svg, tiff, tga, xpm, and many others</li>
     <li>Load, display, convert, save to many file formats</li>
+    <li>SVG path import/export</li>
   </ul>
 </li>
 <li>Much, much more!</li>

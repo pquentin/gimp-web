@@ -1,3 +1,13 @@
+2003-01-07  Manish Singh  <yosh@gimp.org>
+
+	* install.sh
+	* programmatic/Makefile.defs
+	* programmatic/admin/Makefile
+	* programmatic/admin/contest/Makefile
+	* programmatic/admin/news/Makefile
+	* programmatic/contest/Makefile: get the python interpreter to use
+	from the environment.
+
 2003-01-05  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Replaced the news/ directory with a new programmatic/ directory

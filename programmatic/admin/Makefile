@@ -33,15 +33,15 @@ clean mrproper:
 install: install-first install-news install-contest
 
 install-first: all
-	install --mode=755 -d `python -c 'import wgo_config; print wgo_config.admin_path'`
+	install --mode=755 -d `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 	#install --mode=744 dot-htaccess ${DocumentRoot}/admin/.htaccess
-	install --mode=744 dot-password `python -c 'import wgo_config; print wgo_config.admin_path'`/passwords
+	install --mode=744 dot-password `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/passwords
 	install --mode=744 dot-forward   ${DocumentRoot}/.forward
-	install admin-menu.inc          `python -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/includes
-	install wgo-admin.css           `python -c 'import wgo_config; print wgo_config.admin_path'`
+	install admin-menu.inc          `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/includes
+	install wgo-admin.css           `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 	install wgo_admin.py            ${LIBDIR}
-	install index.html              `python -c 'import wgo_config; print wgo_config.admin_path'`
-	install howto.html              `python -c 'import wgo_config; print wgo_config.admin_path'`
+	install index.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
+	install howto.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 
 install-news: news
 	cd news && $(MAKE) install

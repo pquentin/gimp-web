@@ -2,6 +2,7 @@
 export OWNER=apache
 export DocumentRoot=""
 export LIBDIR=${DocumentRoot}/cgi-common
+export PYTHON=python
 export PYTHONPATH=.:${LIBDIR}:${PYTHONPATH}
 
 # a few convenient transforms for making cgi scripts, css files, and

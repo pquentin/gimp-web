@@ -61,7 +61,8 @@ install: all
 	        wgo_contest.py         ${LIBDIR}
 
 	install images/gimp-splash.png \
-	        images/gimp-bg.png     `${PYTHON} -c 'import contest_config; print contest_config.images_path'`
+	        images/gimp-bg.png     \
+		images/gnome-final.png  `${PYTHON} -c 'import contest_config; print contest_config.images_path'`
 
 	install wgo-contest.css \
 	        contest.cgi     \

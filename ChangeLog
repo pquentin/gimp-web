@@ -1,3 +1,9 @@
+2002-12-20 carol <carol@gimp.org>
+
+	* team.html: put jtl's real name there for google to find!! 
+
+	* docs/index.html: reflected the new addition (doh)
+
 2002-12-19 carol <carol@gimp.org>
 
 	* docs/plug-ins/: added 
@@ -20,7 +26,7 @@
 
 	* developer/, development/:  trying once again to remove these.
     
-    * team.html: added Helvetix  and spiderworm
+    * team.html: added Helvetix
 
     * tutorials/Liquid_Metal_Ripple/: removed this directory
 

@@ -19,7 +19,7 @@ test them; use at your own risk.
  <li>GNU/Linux
    <ul>
      <li>
-       <a href="http://mars.iti.pk.edu.pl/~jakub/">Debian testing (deb)</a>
+       <a href="http://packages.debian.org/testing/graphics/gimp">Debian testing (deb)</a>
      </li>
      <li>
        <a href="http://packages.debian.org/unstable/graphics/gimp">Debian unstable (deb)</a>

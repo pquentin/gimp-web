@@ -1,3 +1,7 @@
+2004-08-29  Sven Neumann  <sven@gimp.org>
+
+	* unix/index.htrw: gimp-2.0 is finally available in debian testing.
+
 2004-08-27  Raphaël Quinet  <quinet@gamers.org>
 
 	* docs/index.htrw: Added the language names in their own language

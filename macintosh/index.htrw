@@ -24,18 +24,18 @@ an easier task. These include:</p>
   href="http://fink.sourceforge.net/pdb/package.php/gimp">Fink</a> is
   a package management system hosted by <a
   href="http://www.sourceforge.net/">Sourceforge.net</a> and provides
-  everything necessary for running the GIMP, via the command line
-  interface. The Fink project is based upon the Debian apt-get package
-  management tools, and can resolve dependencies among the various
-  components necessary for a working GIMP installation. A typical
-  install, however, will require that you have a working C compiler,
-  which Apple supplies on a companion CD to Mac OS X.  The current gimp
-  package maintainer for the Fink project is
-  <a href="mailto:astrangeNOSPAM@ithinksw.com">Alexander Strange</a>.
+  everything necessary to build GIMP. The Fink project is based upon
+  the Debian apt-get package management tools, and can resolve
+  dependencies among the various components necessary for a working
+  GIMP installation. A typical install, however, will require that you
+  have a working C compiler, which Apple supplies on a companion CD
+  to Mac OS X.  The current gimp package maintainer for the Fink project
+  is <a href="mailto:astrangeNOSPAM@ithinksw.com">Alexander Strange</a>.
   The default location for GIMP when installed with fink is
   <code>/sw/bin/gimp</code>. </li>
 
-  <li><a href="http://darwinports.opendarwin.org/">DarwinPorts</a>
+  <li>In a similar approach,
+  <a href="http://darwinports.opendarwin.org/">DarwinPorts</a>
   provide an easy way to install various open-source software products
   on Mac OS X. The <a href="http://darwinports.opendarwin.org/darwinports/dports/graphics/gimp2/Portfile">gimp2 portfile</a> is maintained by
   <a href="mailto:tobyNOSPAM@opendarwin.org">Toby Peterson</a>. 

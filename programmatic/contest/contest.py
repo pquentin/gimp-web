@@ -122,8 +122,7 @@ def submit(form):
   #xhtml.div(thumb, {"class": "splash-thumb", "style" : "float: right; margin-left: 1em;"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest.
   From here you may submit images to be considered as candidates
-  for a "splash" image.  We appreciate your participation, but there are
-  No Promises on what may become of your image here.""")
+  for a splash image.""")
 
   print xhtml.h2("Submit Your Image", {"class" : "subtitle"})
 
@@ -145,9 +144,7 @@ def submit(form):
                              "action" : "contest.cgi",
                              "style" : "margin: 1.33em 0px; margin-left: 40px; margin-right: 40px;" })
 
-  guidelines = (xhtml.para("""Past splash images range in approximate pixel widths and heights from 300x300 to 550x400 pixels. """
-                           """Other sizes could be considered, if the artwork merits an unusual size.""")
-                + xhtml.para("Fill in the fields below, and click the "
+  guidelines = (xhtml.para("Fill in the fields below, and click the "
                              + xhtml.input.submit({"value" : "PREVIEW", "disabled" : "disabled"})
                              + " button below."))
 

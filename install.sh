@@ -9,4 +9,4 @@ else
   exit 1
 fi
 
-rsync -rlt --delete --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
+rsync -rlt --delete --delete-excluded --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/

@@ -85,8 +85,8 @@
     
     <div id="linkbar">
       GIMP Links :
-      <span class="linkitem"><a href="1">GIMP User Group</a></span>
-      <span class="linkitem"><a href="1">Grokking With the GIMP</a></span>
+      <span class="linkitem"><a href="http://gug.sunsite.dk">GIMP User Group</a></span>
+      <span class="linkitem"><a href="http://gimp-savvy.com/BOOK/index.html">Grokking the GIMP</a></span>
       <span class="linkitem"><a href="1">Mailing Lists</a></span>
       <span class="linkitem"><a href="1">FAQ's</a></span>
       <span class="linkitem"><a href="1">GIMP Books</a></span>

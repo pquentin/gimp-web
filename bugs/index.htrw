@@ -5,25 +5,81 @@
 
 <h1>Bugs, bugs, bugs!</h1>
 <p>
-  Reporting bugs is important to the development of GIMP and doing it
-  the right way is also the best way to help the developers to easier
-  find the bug and get it closed.
+  Bug reporting is an extremely important aspect of GIMP development.
+  Reporting bugs correctly is the best way to help the developers identify
+  problems. The better the bug report, the faster a developer can
+  reproduce the issue and therefore work on a solution. On this page,
+  you will find the information you need to start writing good bug
+  reports. In addition, if you would like to work on fixing the problem
+  yourself, you will find instructions here on how.
+</p>
+<p>
+  More information about Buzilla, and bug hunting in general, can be found 
+  at <a href="wgo:dev">http://developer.gimp.org/</a>.
 </p>
 <p>
   <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=GIMP">Submit a bug report</a>
 </p>
 
-<h2>Bug How To's</h2>
+<h1>Bug How To's</h1>
+<p>
+  Since correctly submitting a bug report requires you to use tools you
+  may have not used previously, we have created two documents. The first
+  helps you to learn Bugzilla, which is the bug system used by the GIMP
+  developers to track bug reports. If you are fixing a problem yourself, 
+  the second document shows you how to properly create and submit a patch.
+</p>
 <ul>
   <li><a href="wgo:dev-howtos-bugzilla">How To Bugzilla</a></li>
   <li><a href="wgo:dev-howtos-subpatch">How To Create and Submit a Patch</a></li>
 </ul>
 
-<h2>Bug Listings</h2>
+<h1>Bug Lists</h1>
+<p>
+  Below are different links into Bugzilla which show you lists of open
+  and closed bugs. You can also search manually, but these links are
+  often more convienient. With the help of the lists below you should be
+  able to see if the bug you have found has already been reported. If it has
+  been reported, and you have additional information, please add a comment
+  with the additional information!
+</p>
+
+<h2>GIMP bugs</h2>
 <ul>
-  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">List of open bugs</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">List of open bugs (all)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&bug_severity=minor&bug_severity=trivial">List of open bugs (all excluding enhancement requests)</a></li>
+</ul>
+
+<ul>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical">List of open bugs (blocker and critical)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&&bug_status=REOPENED&bug_severity=major">List of open bugs (major)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&&bug_status=REOPENED&bug_severity=normal">List of open bugs (normal)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&&bug_status=REOPENED&bug_severity=minor">List of open bugs (minor)</a></li>
   <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&bug_status=NEEDINFO&bug_severity=enhancement">List of enhancement proposals</a></li>
-  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=RESOLVED&bug_status=CLOSED&changedin=7">List of closed bugs</a>&nbsp;(The past week)</li>
+</ul>
+
+<ul>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=RESOLVED&bug_status=CLOSED&changedin=7">List of closed bugs (The past week)</a></li>
+</ul>
+
+<h2>GIMP Help bugs</h2>
+<ul>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&component=help&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">List of open bugs (all)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&component=help&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&bug_severity=minor&bug_severity=trivial">List of open bugs (all excluding enhancement requests)</a></li>
+</ul>
+
+<ul>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&component=help&bug_status=RESOLVED&bug_status=CLOSED&changedin=7">List of closed bugs (The past week)</a></li>
+</ul>
+
+<h2>GIMP Website bugs</h2>
+<ul>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=gimp-web&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">List of open bugs (all)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=gimp-web&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&&bug_status=REOPENED&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&bug_severity=minor&bug_severity=trivial">List of open bugs (all excluding enhancement requests)</a></li>
+</ul>
+
+<ul>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=gimp-web&bug_status=RESOLVED&bug_status=CLOSED&changedin=7">List of closed bugs (The past week)</a></li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

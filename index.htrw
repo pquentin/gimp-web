@@ -16,6 +16,30 @@ projects as possible.  Hopefully you will find what you need here.
 Grab a properly chilled beverage and enjoy.</p>
 
 <h1 class="newsheading">
+  <span class="newstitle">Splash Screen Contest</span>
+  <span class="newsdate">2004-11-29</span>&nbsp;
+</h1>
+<div class="news">
+  <img alt="[?]" src="/images/news-icons/gimp_code.png"></img>
+  <p>
+    With the imminent release of the GIMP 2.2, the time has come
+    to find the ideal splash screen to go with it. The contest will
+    be open until next Sunday the 5th of December, at which point the
+    winning entry will be chosen and committed to CVS.
+  </p>
+
+  <p>
+    The submissions should be based on <a
+    href="http://primates.ximian.com/~jimmac/blog/GIMP/GimpSplashTemplate/">jimmac's
+    splash screen template</a>. Informations on how to submit your
+    entries will be added here soon. Stay tuned.
+  </p>
+  <p>
+    Good luck, and get splashing!
+  </p>
+</div>
+
+<h1 class="newsheading">
   <span class="newstitle">The GIMP at 21C3</span>
   <span class="newsdate">2004-11-24</span>&nbsp;
 </h1>

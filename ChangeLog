@@ -1,5 +1,10 @@
 2004-11-29  Sven Neumann  <sven@gimp.org>
 
+	* index.htrw: put the splash screen context back up but w/o
+	submission info for now.
+
+2004-11-29  Sven Neumann  <sven@gimp.org>
+
 	* index.htrw: reverted Dave's change until we figured out a
 	reasonable submission process. The change also had the titles all
 	messed up.

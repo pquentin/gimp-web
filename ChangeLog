@@ -1,7 +1,7 @@
 2002-11-09 scizzo <scizzo@gimp.org>
 
         * tutorials/Photo_Edit/Selective_Color/: First port of the
-        Selective Color tutorial.
+        Selective Color tutorial. A few image fixes also.
 
         * tutorials/Photo_Edit/Smart_Sharpening: First port of the 
         Smart Sharpening tutorial. Fixed the Further read links.

@@ -1,40 +1,44 @@
-2003-02-12 scizzo <scizzo@gimp.org>
+2003-02-14  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
-	* /includes/wgo-xhtml-fini.xhtml: Fixed the validation link and add it
-	into a <div>.
-
-	* /tutorials/Photo_To_Sketch/*, /tutorials/Quickmask/*,
-	/tutorials/Red_Eye_Removal/*, /tutorials/Reducing_CCD_Noise/*,
-	/tutorials/Selective_Color/*, /tutorials/Selective_Gaussian_Blur/*,
-	/tutorials/Sepia_Toning/*, /tutorials/Simple_Animations/*,
-	/tutorials/Smart_Sharpening/*, /tutorials/Straight_Line/*,
-	/tutorials/The_Basics/*, /tutorials/Tileable_Textures/*,
-	/tutorials/Using_GAP/*, /tutorials/template/*: Now uses the new
-	include files.
-
-	* /tutorials/index.html: Using the new include files and fixed a
-	validation problem.
+        * Added ssi-pp.py, a SSI-style preprocessor for files.
 
 2003-02-12 scizzo <scizzo@gimp.org>
 
-	* 3d_Logo/*, Advanced_Animations/*, Anti-Aliased_Threshold/*,
-	Basic_Perl/*, Basic_Scheme/*, Basic_Scheme2/*, Bezier_Selections/*, 
-	Blending_Exposures/*, Blown_Out_Highlights/*, Blur_Overlays/*, 
-	Borders_On_Selections/*, Changing_Background_Color_1/*,
-	Changing_Background_Color_2/*, Color2BW/*, Coloring_A_BW_Sketch/*,
-	ContrastMask/*, Creating_Icons/*, Custom_Brushes/*,
-	Draw_A_Paint_Brush/*, Drawables/*, Drawing_Shapes/*, Film_Grain/*,
-	Golden_Text/*, Image_Map/*, Image_Pipes/*, Image_Pipes2/*,
-	Lite_Quickies/*, Perl-Debugged/*: Changing the include files and doing
-	some changes in the html files to try and make most of them valid
-	still some that needs more work. Also fixed so that the Anti-Aliased
-	Threshold tutorial is complete with original link and e-mail to
-	author.
+        * /includes/wgo-xhtml-fini.xhtml: Fixed the validation link and add it
+        into a <div>.
 
-	* /includes/wgo-xhtml-fini.xhtml: Helvetix helped me to add a
-	validation link so that you only need to use this when validating. So
-	the site using this include file can validate it directly from the
-	link.
+        * /tutorials/Photo_To_Sketch/*, /tutorials/Quickmask/*,
+        /tutorials/Red_Eye_Removal/*, /tutorials/Reducing_CCD_Noise/*,
+        /tutorials/Selective_Color/*, /tutorials/Selective_Gaussian_Blur/*,
+        /tutorials/Sepia_Toning/*, /tutorials/Simple_Animations/*,
+        /tutorials/Smart_Sharpening/*, /tutorials/Straight_Line/*,
+        /tutorials/The_Basics/*, /tutorials/Tileable_Textures/*,
+        /tutorials/Using_GAP/*, /tutorials/template/*: Now uses the new
+        include files.
+
+        * /tutorials/index.html: Using the new include files and fixed a
+        validation problem.
+
+2003-02-12 scizzo <scizzo@gimp.org>
+
+        * 3d_Logo/*, Advanced_Animations/*, Anti-Aliased_Threshold/*,
+        Basic_Perl/*, Basic_Scheme/*, Basic_Scheme2/*, Bezier_Selections/*, 
+        Blending_Exposures/*, Blown_Out_Highlights/*, Blur_Overlays/*, 
+        Borders_On_Selections/*, Changing_Background_Color_1/*,
+        Changing_Background_Color_2/*, Color2BW/*, Coloring_A_BW_Sketch/*,
+        ContrastMask/*, Creating_Icons/*, Custom_Brushes/*,
+        Draw_A_Paint_Brush/*, Drawables/*, Drawing_Shapes/*, Film_Grain/*,
+        Golden_Text/*, Image_Map/*, Image_Pipes/*, Image_Pipes2/*,
+        Lite_Quickies/*, Perl-Debugged/*: Changing the include files and doing
+        some changes in the html files to try and make most of them valid
+        still some that needs more work. Also fixed so that the Anti-Aliased
+        Threshold tutorial is complete with original link and e-mail to
+        author.
+
+        * /includes/wgo-xhtml-fini.xhtml: Helvetix helped me to add a
+        validation link so that you only need to use this when validating. So
+        the site using this include file can validate it directly from the
+        link.
 
 2003-02-10  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 

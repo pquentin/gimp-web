@@ -7,6 +7,7 @@ export PYTHONPATH=programmatic:
 %.html: %.ssi
 	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.htrw $<
 	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.htrw > $@
+	rm -f $<.htrw
 
 # how to make an xhtml from a .ssi file
 %.xhtml: %.ssi

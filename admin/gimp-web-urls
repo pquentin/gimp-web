@@ -185,6 +185,7 @@
 ["href", "wgo:docs-gimp_help-cs",              { "href": "http://docs.gimp.org/cs/"}]
 ["href", "wgo:docs-gimp_help-de",              { "href": "http://docs.gimp.org/de/"}]
 ["href", "wgo:docs-gimp_help-fr",              { "href": "http://docs.gimp.org/fr/"}]
+["href", "wgo:docs-gimp_help-it",              { "href": "http://docs.gimp.org/it/"}]
 ["href", "wgo:docs-gimp_help-nl",              { "href": "http://docs.gimp.org/nl/"}]
 ["href", "wgo:docs-gimp_help-sv",              { "href": "http://docs.gimp.org/sv/"}]
 ["href", "wgo:docs-gimp_help-zh_CN",           { "href": "http://docs.gimp.org/zh_CN/"}]

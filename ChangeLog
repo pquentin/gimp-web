@@ -1,6 +1,10 @@
+2002-10-16 scizzo <scizzo@gimp.org>
+
+	* tutorials/Golden_Text/: Add the first version of the Golden_Text tutorial.
+
 2002-10-15 carol <carol@gimp.org>
 
-    * added the wgo screenshot font to the sample gtkrc
+    	* added the wgo screenshot font to the sample gtkrc
     
 2002-10-15 scizzo <scizzo@gimp.org>
 

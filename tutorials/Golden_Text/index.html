@@ -1,0 +1,118 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Golden Text Tutorial</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Golden Text Tutorial</div>
+
+<div class="subtitle">Intention</div>
+<p class="images">
+  <img src="title.gif" alt=""/>
+</p>
+<p>
+   Doesn't the title look really valuable? To reproduce this effect you need the incredible "Lighting"-Plugin, 
+   created by Tom Bech and Federico Mena Quintero. It is not in the standard gimp-1.0 distribution, you have to 
+   install it yourself. It can be found at <span class="filter">&lt;Image&gt;/Filters/Light Effects/Lighting Effects</span>. This Plugin does a very good Bump-Mapping. 
+   Additionally it can map an enviroment-map to the image.
+</p>
+
+<div class="subtitle">Part I</div>
+<p class="images">
+  <img src="envmap_gold.jpg" alt=""/>
+</p>
+<p>
+  The trick is to use a good enviroment-map. I created it with 
+  <span class="filter">&lt;Image&gt;/Filters/Render/Solid Noise</span> 
+  (X/Y-Size: 2.8, Detail: 1, Tileable). It is important for a good effect to get different grays in the top right corner. Then I did a 
+  <span class="filter">&lt;Image&gt;/Image/Colors/Auto-Stretch Contrast</span> and a 
+  <span class="filter">&lt;Image&gt;/Filters/Blur/Gaussian Blur (IIR)</span> with a radius of 5 to get the full range of gray. Then select the "Golden"-Gradient in 
+  <span class="filter">&lt;Image&gt;/Dialogs/Gradient Editor...</span> and 
+  <span class="filter">&lt;Image&gt;/Filters/Colors/Gradient Map</span> it to the image.
+</p>
+
+<p class="images">
+  <img src="bumpmap1.gif" alt=""/>
+</p>
+<p>
+  The next step is to create a bumpmap for the text. Open a new grayscale image in the desired size, fill it black and paint the white text on it. 
+  To get a smooth transition do a Gaussian Blur on it.
+</p>
+
+<p class="images">
+  <img src="lighting_gui.gif" alt=""/>
+</p>
+<p>
+  Then open a new RGB-Image with exactly the same size and start the Lighting-Plugin. Select the "Enviroment-map"- and "Bumpmap"-Toggles 
+  and select the images in the appropriate notebook-pages. I prefer a lower value in the "Maximum height" Bumpmap option. I think 0.02 is good in most cases.
+</p>
+
+<p class="images">
+  <img src="render1.gif" alt=""/>
+</p>
+<p>
+  This is the result after a click on <b>Apply</b>. There is room for Improvements. Since the Lighting-Plugin doesn't support antialiasing yet it is a good 
+  idea to render the image in the double size and scale it down for the final image. Some other neat tricks can be found in the next part.
+</p>
+
+<div class="subtitle">Part II</div>
+<p class="images">
+  <img src="curves1_small.gif" alt=""/>
+  <img src="bumpmap1_small.gif" alt=""/>
+  <img src="render1_small.gif" alt=""/>
+</p>
+<p class="images">
+  <img src="curves2_small.gif" alt=""/>
+  <img src="bumpmap2_small.gif" alt=""/>
+  <img src="render2_small.gif" alt=""/>
+</p>
+<p class="images">
+  <img src="curves3_small.gif" alt=""/>
+  <img src="bumpmap3_small.gif" alt=""/>
+  <img src="render3_small.gif" alt=""/>
+</p>
+<p class="images">
+  <img src="curves4_small.gif" alt=""/>
+  <img src="bumpmap4_small.gif" alt=""/>
+  <img src="render4_small.gif" alt=""/>
+</p>
+<p>
+  At the Bumpmap-Options you can select different between four different Curves for Bumpmapping. 
+  So you can select between a linear, spherical, logarithmic and a sinusoidial Bumpmap.
+  <br /><br />
+  There is a much more flexible way to specify the surface of the Bumpmap. The Key is the 
+  <span class="filter">&lt;Image&gt;/Image/Colors/Curves-Dialog.</span> 
+  Create the text and blur it with a wider radius. Then select the Curves-Dialog and modify the text-profile. A little Blur (Radius 2) 
+  makes the Bumpmap a little bit smoother. See the examples above.
+  <br /><br />
+  Another possibility is the use of a different gradient.
+</p>
+
+<div class="subtitle">Part III</div>
+<p class="images">
+  <img src="curves3_small.gif" alt=""/>
+  <img src="bumpmap3_small.gif" alt=""/>
+  <img src="render3a_small.gif" alt=""/>
+</p>
+<p class="images">
+  <img src="curves4_small.gif" alt=""/>
+  <img src="bumpmap4_small.gif" alt=""/>
+  <img src="render4a_small.gif" alt=""/>
+</p>
+<p>
+  To get Chrome-like effects try to use different enviroment-maps. Look at these examples.
+  <br /><br />
+  That's it :-)
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:Simon.Budig@unix-ag.org">Simon Budig (nomis)</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

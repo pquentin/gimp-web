@@ -39,7 +39,7 @@
    (<a href="maillist:GIMP-perl-archive">archive</a>)
 </p>
 <p>
-  <a href="maillist:GIMP-user-os2">GIMP-perl</a><br />
+  <a href="maillist:GIMP-user-os2">GIMP-OS2</a><br />
    OS2/GIMP.
    (<a href="maillist:GIMP-user-os2-archive">archive</a>)
 </p>
@@ -201,7 +201,7 @@
 <h2>Other Helpful Mail Lists</h2>
 <h2>os2 Lists</h2>
 <ul>
-  <li><a href="maillist:SANE-os2">SANE-os2</a> (<a href="maillist:SANE-os2-archive">archive</a></li>
+  <li><a href="maillist:SANE-os2">SANE-os2</a> (<a href="maillist:SANE-os2-archive">archive</a>)</li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

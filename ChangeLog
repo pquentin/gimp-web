@@ -1,5 +1,9 @@
 2003-06-15  Manish Singh  <yosh@gimp.org>
 
+	* mail_lists.htrw: fixed os/2 names
+
+2003-06-15  Manish Singh  <yosh@gimp.org>
+
 	* team.htrw: s/Contributer/Contributor/
 
 2003-06-15  Carol Spears  <carol@gimp.org>

@@ -1,3 +1,8 @@
+2004-03-23  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: removed link to version 2.1 and put a
+	note instead that there's no such release yet.
+
 2004-03-23  Dave Neary  <bolsh@gimp.org>
 
 	* downloads/install_help.htrw: Update stable version to 2.0.

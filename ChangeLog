@@ -1,5 +1,9 @@
 2005-02-03  Sven Neumann  <sven@gimp.org>
 
+	* windows/index.htrw: fixed typo.
+
+2005-02-03  Sven Neumann  <sven@gimp.org>
+
 	* unix/index.htrw: updated link to Slackware packages.
 
 2005-02-03  Sven Neumann  <sven@gimp.org>

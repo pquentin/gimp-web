@@ -1,0 +1,67 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Development</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Development</h1>
+<h2>People</h2>
+
+<p class="imageslices">
+  <img src="gimpcon2003-heading.png" width="450" height="60" alt="[Pixelpushers @ 
+  GIMPCON 2003]" /><img src="gimpcon2003-portrait.jpeg" width="450" 
+  height="230" alt="[Group portrait of GIMP developers, contributors and 
+  users]" /><img src="gimpcon2003-legend.png" width="450" height="60" 
+  alt="[Top row: Jimmac Sam Hans Maurits Daniel Pippin Marc Nomis Drc Sven Raphael Roman; bottom row: Brix BBC Bolsh Mitch Montana Calvin]" />
+</p>
+
+<p class="images">
+  <img src="people.jpg" width="494" height="394" alt="Group photo from GIMPCON 2000" />
+</p>
+
+<h2>Important GIMP URLs</h2>
+<!--#include virtual="/includes/urls_important.inc" -->
+<h2>Important GIMP Development URLs</h2>
+<!--#include virtual="/includes/urls_go-developer.inc" -->
+
+<!-- ***FIXME*** section commented out until we find a better solution
+<h2>What is going on:</h2>
+<p>
+  <a href="unstable.html">The Unstable GIMP</a><br />
+  The last 10 ChangeLog entries from The Unstable GIMP.
+</p>
+<p>
+  <a href="bugzilla-new.html">The GIMP's New Bugs</a><br />
+  The last 10 new bug reports from The GIMP Bugzilla Database
+</p>
+<p>
+  <a href="bugzilla-fixed.html">The GIMP's New Bugs</a><br />
+  The last 10 FIXED bug reports from The GIMP Bugzilla Database
+</p>
+<p>
+  <a href="plugins.html">The Last 10 Plug-ins</a><br />
+  The last 10 plug-ins, new or updated.
+</p>
+<p>
+  <a href="stable.html">GIMP -r gimp-1-2 </a><br />
+  The last 10 ChangeLog entries from The Stable GIMP
+</p>
+<p>
+  <a href="help.html">GIMP Help</a><br />
+  The last 10 ChangeLog entries from The GIMP Help Project
+</p>
+<p>
+  <a href="print.html">GIMP Print</a><br />
+  The last 10 ChangeLog entries from The GIMP Help Project
+</p>
+<p>
+  <a href="film.html">FilmGIMP</a><br />
+  The last 10 ChangeLog entries from The FilmGIMP
+</p>
+<p>
+  <a href="gegl.html">GEGL</a><br />
+  The last 10 ChangeLog entries from GEGL
+</p>
+***FIXME*** -->
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

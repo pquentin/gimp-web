@@ -1,3 +1,11 @@
+2003-09-16 scizzo <scizzo@gimp.org>
+
+	* /develop/old-index.bak: Add this as a backup for the getting
+	involved content.
+	* /develop/index.htrw: Started to do the first work of the content in
+	getting involved. The people images are not going to be on www.gimp.org but
+	on developer.gimp.org.
+
 2003-09-16  Ville PÃtsi  <drc@gimp.org>
 
 	* style/wgo.js

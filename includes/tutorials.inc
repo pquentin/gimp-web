@@ -19,8 +19,8 @@
           
     if ($dir = opendir ($tutorial_path)) {
     while (($file = readdir ($dir)) !== false) {
-      if ($file !== "." and $file !== "..") {
-        echo '<a href="?page=' . $page . '&amp;tutorial=' . $file . '">' . $file . '</a>';
+      if ($file !== "." and $file !== ".." and $file !== "CVS") {
+        echo '<a href="?page=' . $page . '&amp;tutorial=' . $file . '">' . $file . '</a><br/>';
       }
     }
     closedir ($dir);

@@ -1,3 +1,6 @@
 2002-09-21  Carol Spears  <carol@gimp.org>
 	* added ChangeLog
 	* commented about.inc
+	* index.php:  changed GIMP Links: title to GIMP Links url
+	* index.php:  put a FIXME url around The GIMP Web Team	
+	* webteam.inc:  added this file

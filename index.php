@@ -95,7 +95,7 @@
     </table>
     
     <div id="linkbar">
-      GIMP Links :
+      <span class="linkitem"><a href="FIXME">GIMP Links</a></span>
       <span class="linkitem"><a href="http://gug.sunsite.dk">GIMP User Group</a></span>
       <span class="linkitem"><a href="http://gimp-savvy.com/BOOK/index.html">Grokking the GIMP</a></span>
       <span class="linkitem"><a href="FIXME">Mailing Lists</a></span>
@@ -108,7 +108,7 @@
 
     <div>
       <span id="footerleft">
-        &copy; 2001-2002 The GIMP Team
+        &copy; 2001-2002 <a href="FIXME">The GIMP Team</a>
       </span>
       <span id="footerright">
         <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>

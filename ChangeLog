@@ -1,3 +1,16 @@
+2003-02-16 scizzo <scizzo@gimp.org>
+
+	* /about/*.html, /books/index.html, /bugs/*: Using new include files.
+	
+	* /about/index.html: Add a <br/> to the mediakit so that there is
+	space between that link and the next subtitle. 
+	
+	* index.html, bugs.html, mail_lists.html, registry.html, team.html:
+	Using the new include files.
+
+	* template.html: New includes and fixed a bug where <p> needs to be
+	ended before starting a list.
+
 2003-02-14  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * Added the top-level Makefile and example.ssi as an example of

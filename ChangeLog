@@ -1,4 +1,17 @@
-003-04-08  Carol Spears  <carol@gimp.org>
+2003-04-08  Carol Spears  <carol@gimp.org>
+
+        * os2/index.html, removed this file.
+        * os2/index.htrw, added this file.
+        * admin/gimp-web-urls, added some more.
+        * unix/man-gimptool-1.2.html, fixed some bad urls.
+        * unix/user_install.html, removed this file.
+        * unix/tile_cache.html, removed this file.
+        * unix/user_install.htrw, added this converted file.
+        * unix/howtos/tile_cache.htrw, added this converted file.
+        * unix/index.html, adjusted things here.
+        * admin/gimp-web-urls, added some, alphabetized some also.
+
+2003-04-08  Carol Spears  <carol@gimp.org>
 
         * unix/man-gimprc-1.html, fixed it.
         * admin/gimp-web-urls, added some.

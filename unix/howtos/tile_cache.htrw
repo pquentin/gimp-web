@@ -1,11 +1,11 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - Tile Cache Recommendations</title>
+<title>GIMP - How To Set Your Tile Cache</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
 
-<h1>Tile Cache Recommendations</h1>
+<h1>How To Set Your Tile Cache</h1>
 
-<h2>What is the Tile Cache?</h2>
+<h2>or Tile Cache Recommendations</h2>
 <p>
   Image processing can require a lot of memory. GIMP uses the
   operating system services to handle memory, up to a given point,
@@ -25,7 +25,7 @@
   killed or start to malfunction due lack of RAM.
 </p>
 
-<h2>How to choose a number for Tile Cache?</h2>
+<h3>How to choose a number for Tile Cache?</h3>
 <p>
   There are some ways to decide what value to use as Tile Cache, as
   well as some tricks:
@@ -61,7 +61,7 @@
   </li>
 </ul>
 
-<h2>What number to use for Tile Cache?</h2>
+<h3>What number to use for Tile Cache?</h3>
 <p>
   Let's guess you prefer the last option, and get a nice value to
   start with. First, you need to get some data about your computer.
@@ -71,7 +71,7 @@
   swap. You do not need to do disk tests, nor check the RPM of them,
   the thing is to see which one seems clearly faster or slower or all
   similar. Remember you can change the GIMP's swap directory in
-  &lt;Toolbox&gt; -&lt; File -&lt; Preferences -&lt; Folders -&lt;
+  &lt;Toolbox&gt; -&gt; File -&gt; Preferences -&gt; Folders -&gt;
   Swap Dir.
 </p>
 <p>
@@ -87,7 +87,7 @@
   down also the free swap.
 </p>
 <p>
-  Now time for decissions and simple maths. Basically the concept is
+  Now time for decisions and simple maths. Basically the concept is
   to decide if you want to base all Tile Cache in RAM, or RAM plus
   operating system swap:
 </p>
@@ -121,7 +121,7 @@
   if the OS swap is worth using or will cause more problems than help.
 </p>
 
-<h2>Tuning the value and other helpful changes.</h2>
+<h3>Tuning the value and other helpful changes.</h3>
 <p>
   There are some reason you want to adjust the value. The basic one is
   changing your computer usage pattern, or changing hardware. That
@@ -131,9 +131,9 @@
   completly new value.
 </p>
 <p>
-  Other reason to change the value is cos you detect it goes too slow
-  inside GIMP but changing to other applications is fast, or that you
-  get complains froms applications about now having enough memory.
+  Other reason to change the value is because you detect it goes too slowly
+  inside GIMP but changing to other applications is fast, or maybe you
+  get complaints from other applications about not having enough memory.
 </p>
 <p>
   If you decided to use only RAM and it goes slow, you could try
@@ -150,7 +150,7 @@
   edit a poster in a computer with 16MB and be fast.
 </p>
 
-<h2>Some info about GIMP memory usage.</h2>
+<h3>Some info about GIMP memory usage.</h3>
 <p>
   You can also check what memory requirements your images have. The
   bigger the images and the number of undos, the more resources you
@@ -163,5 +163,13 @@
   Evil formulas go here.
 </p>
 
-<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
+    <div>
+      <span id="footerleft">
+        How To &copy; 2003 <a href="mail:People-Romero_Guillermo_S">Guillermo S. Romero</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

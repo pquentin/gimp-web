@@ -1,0 +1,21 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - GIMP for OS/2</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP for OS/2</h1>
+<h2>Small and Persistant Group</h2>
+<ul>
+   <li><a href="maillist:GIMP-os2-url">OS/2 Mail List</a></li>
+   <li><a href="maillist:GIMP-os2-archive">OS/2 Mail List Archive</a></li>
+   <li><a href="info:OS2_GIMP_PM">Everblue with GIMP</a></li>
+   <li><a href="info:OS2_GIMP_xfree86">About GIMP for OS/2</a></li>
+   <li><a href="info:OS2_GIMP_de">OS/2 GIMP German</a></li>
+</ul>
+<h2>OS/2 How To's</h2>
+<ul>
+   <li><a href="howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian">Installing XFree86/OS2 4.3.0</a></li>
+</ul>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

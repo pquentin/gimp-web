@@ -10,6 +10,7 @@
     <li><a href="wgo:unix-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
     <li><a href="wgo:unix-howtos-stable_cvs_build">Build The Stable GIMP from CVS</a></li>
     <li><a href="wgo:dev-howtos-bugzilla">How To Bugzilla</a></li>
+    <li><a href="wgo:unix-howtos-tile_cache">How To Set The Tile Cache</a></li>
   </ul>
 <h2>The GIMP's Documentation</h2>
   <ul>
@@ -18,6 +19,7 @@
     <li><a href="wgo:unix-manpage-stable_gimptool">man gimptool</a></li>
     <li><a href="wgo:unix-manpage-stable_gimprc">man gimprc</a></li>
     <li><a href="wgo:unix-manpage-stable_gimp_remote">man gimp-remote</a></li>
+    <li><a href="wgo:unix-manpage-stable_gtk_config">man gtk-config</a></li>
   </ul>
 <h2>The GIMP's Preferences</h2>
   <ul>

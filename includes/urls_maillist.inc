@@ -1,5 +1,5 @@
 <!-- -*- xml -*- -->
-<div class="subtitle">Mail List URLs</div>
+<h2>Mail List URLs</h2>
 <p>
   <a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-user">GIMP User</a><br />
   The original (mostly linux based) user list.

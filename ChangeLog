@@ -1,3 +1,9 @@
+2003-03-21 scizzo <scizzo@gimp.org>
+
+	* Site: Now uses <hx> instead of <div class=""> tags.
+	
+	* example.html, example.ssi: Moved them to /admin/.
+
 2003-03-20 scizzo <scizzo@gimp.org>
 
 	* /tutorials/*/index.html: Now uses the <hx> tags for headings instead

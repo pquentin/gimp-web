@@ -9,7 +9,7 @@
 2002-10-16 scizzo <scizzo@gimp.org>
 
 	* tutorials/Simple_Animations: Add the first version of the Simple
-	Animation tutorial.
+	Animation tutorial. Made som changes in the image positions.
 
 	* tutorials/index.html: Split the animations into Simple and Advanced.
 

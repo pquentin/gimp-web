@@ -24,6 +24,21 @@
 
 	* style/default.css: clear: left; to div.newsheading
 
+	* development/index.html, development/people.jpg: made this file, added that 
+    jpeg.
+
+	* includes/menu.inc: changed the url from development.html to /development/ and
+    bugs/ to bugs.html
+
+	* development/stable.html
+	* development/unstable.html
+	* development/print.html
+	* development/film.html
+	* development/bugzilla-new.html
+	* development/bugzilla-fixed.html
+	* development/plugins.html
+	* development/help.html
+
 2002-12-06 scizzo <scizzo@gimp.org>
 
         * tutorials/Lite_Quickies/: Add the first port of the GIMPLite

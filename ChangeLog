@@ -1,3 +1,7 @@
+2005-01-05  Sven Neumann  <neumann@jpk.com>
+
+	* admin/gimp-web-urls: removed url for batch mode again.
+
 2005-01-05  Niklas M <scizzo@gimp.org>
 
 	* tutorials/Basic_Batch/index.htrw: Added this tutorial.

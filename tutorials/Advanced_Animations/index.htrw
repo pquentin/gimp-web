@@ -98,15 +98,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://jimmac.musichall.cz/tutor2.php3">here</a>.
+  The original tutorial can be found <a href="home:People-Steiner_Jacub">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:jimmac@ximian.com">Jakub Steiner (jimmac)</a>
+        Tutorial &copy; 2002 <a href="mail:People-Steiner_Jacub">Jakub Steiner (jimmac)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-webmaster">webmaster@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

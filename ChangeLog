@@ -1,3 +1,8 @@
+2003-04-13 scizzo <scizzo@gimp.org>
+
+    * tutorials/Advanced_Animations/index.html: Removed this file.
+    * tutorials/Advanced_Animations/index.htrw: Add this file.
+
 2003-04-13  Carol Spears  <carol@gimp.org>
 
     * team.html, removed this file.

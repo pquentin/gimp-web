@@ -12,18 +12,16 @@ GIMP (the building blocks). You can however download executable
 versions from the following sites:</p>
 
 <ul>
-  <li><a href="http://gimp-win.sourceforge.net/">Jernej
-  Simoncic</a> provides an installer program that automates the
-  installation process.  This is the most convenient way to install
-  the GIMP for Windows.</li>
-
-  <li><a href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Tor
-  Lillqvist</a> provides several zip archives containing the program,
-  libraries and various resources for users and developers.</li>
-
-  <li>Additionally, <a href="http://www.ftgimp.com">www.ftgimp.com</a> and 
-  <a href="http://www.wingimp.org/">www.wingimp.org</a> are selling versions
-  of the GIMP.</li>
+  <li>
+    <a href="http://gimp-win.sourceforge.net/">Automated installer</a>
+    - choose this if you just want to install The GIMP (provided by
+    Jernej Simoncic).
+  </li>
+  <li>
+    <a href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Individual
+    .zip packages for every component</a> - for developers and
+    advanced users (provided by Tor Lillqvist).
+  </li>
 </ul>
 
 <h2>Requirements</h2>

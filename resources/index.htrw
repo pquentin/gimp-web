@@ -14,15 +14,17 @@
   <li><a href="palettes/index.html">Palettes</a></li>
   <li><a href="patterns/index.html">Patterns</a></li>
 </ul>
+
 <h2>Home Grown</h2>
 <p>
   Resources The GIMP makes space for in your home directory. Someone
   please fix this text.
 </p>
 <ul>
-  <li><a href="curves.html">Curves</a></li>
-  <li><a href="generated_brushes.html">Generated Brushes</a></li>
-</ul>
+  <li><!-- a href="curves.html" -->Curves<!-- /a --></li>
+  <li><!-- a href="generated_brushes.html" -->Generated Brushes<!-- /a --></li>
+</ul 
+-->
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

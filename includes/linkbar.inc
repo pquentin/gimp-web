@@ -8,5 +8,5 @@
       <a href="http://gimp-savvy.com/BOOK/index.html">Grokking the GIMP</a> |
       <a href="FIXME">Mailing Lists</a> |
       <a href="FIXME">FAQ's</a> |
-      <a href="FIXME">GIMP Books</a>
+      <a href="/books.html">GIMP Books</a>
     </div>

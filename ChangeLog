@@ -1,5 +1,12 @@
 2003-09-01  Raphael Quinet  <quinet@gamers.org>
 
+	* includes/wgo-styles.xhtml: Hide the stylesheet from Netscape4.
+	The pages look better that way.
+
+	* style/wgo.js: Fixed a typo.
+
+2003-09-01  Raphael Quinet  <quinet@gamers.org>
+
 	* includes/wgo-page-init.xhtml
 	* includes/wgo-page-fini.xhtml
 	* style/wgo.js: Try to make it work correctly, this time...  This

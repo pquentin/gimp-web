@@ -69,7 +69,7 @@ function wgo_init () {
     menu_el = document.all["menu"];
     button_el = document.all["menubutton"];
   }
-  adjust_menu ();
+  menu_adjust ();
   menubutton_raise ();
 }
 

@@ -41,7 +41,7 @@ an easier task. These include:</p>
 
   <li><a href="http://packages.opendarwin.org/">OpenDarwin Binary
   Packages</a> which have been built with the <a
-  href="http://www.opendarwin.org/projects/darwinports/">DarwinPorts</a>
+  href="http://darwinports.opendarwin.org/">DarwinPorts</a>
   system are available online.  The OpenDarwin system places the GIMP
   in <code>/opt/local/bin</code>.  DarwinPorts project leads are: <a
   href="mailto:landonfNOSPAM@opendarwin.org">Landon Fuller</a>, <a

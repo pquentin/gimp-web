@@ -1,5 +1,8 @@
 2004-03-11  Raphaël Quinet  <quinet@gamers.org>
 
+	* macintosh/index.htrw: Updated the link to the DarwinPorts
+	project.
+
 	* tutorials/index.htrw: Moved the Simple Floating Logo tutorial
 	(a.k.a "The Basics") back to the Beginner section as suggested by
 	Yosh.

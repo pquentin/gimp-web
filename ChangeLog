@@ -1,4 +1,8 @@
 2002-12-11 spiderworm <dimillet@hotmail.com>
+	* develop/bugzilla-fixed-list.html: added this file which will contain the html
+	code generated from a bugzilla query and will be included into the
+	develop/bugzilla-fixed.html page
+
 	* developer/bugzilla-fixed-text.py: added this to test the python web modules on
 	the server, will remove later.
 

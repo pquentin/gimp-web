@@ -43,6 +43,7 @@ contest: wgo_config.py
 
 about: wgo_config.py
 	cd about && $(MAKE) all
+
 extended.css:
 
 rdf-news.css: rdf-news.cpp
@@ -51,6 +52,7 @@ clean mrproper:
 	/bin/rm -f wgo_config.py extended.css *.pyc *~ rdf-news.css
 	cd contest && $(MAKE) clean
 	cd admin && $(MAKE) clean
+	cd about && $(MAKE) clean
 
 install: install-common install-admin install-contest install-about
 

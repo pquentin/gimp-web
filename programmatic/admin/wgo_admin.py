@@ -40,7 +40,31 @@ def head_boilerplate(css=[], headers=[]):
   
   css = css + [wgo.config.admin_dir + "wgo-admin.css"]
   
-  return (wgo.header("www.gimp.org - Administration", css, wgo.config.DocumentRoot_path + '/includes/admin-menu.inc'))
+  return (wgo.header("www.gimp.org - Administration", css))
 
-def footer():
-  return (wgo.footer())
+def header(title, links):
+  print wgo.xhtml_init()
+  
+  print xhtml.title(title)
+  print wgo.look_feel()
+
+  print xhtml.link(None, {"rel" : "stylesheet", "href" : "/style/extended.css", "type" : "text/css", "media" : "screen"})
+  print xhtml.link(None, {"rel" : "stylesheet", "href" : "/style/wgo-admin.css", "type" : "text/css", "media" : "screen"})
+  for href in links:
+    print xhtml.link(None, {"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen"})
+    pass
+
+  print wgo.page_init('admin')
+
+  return (True)
+
+
+def footer(prefix=None):
+  if prefix != None:
+    print prefix
+    pass
+  
+  print wgo.page_fini('admin')
+  print wgo.xhtml_fini()
+  
+  return (True)

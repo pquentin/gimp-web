@@ -45,7 +45,7 @@ def wgo_xhtml(filename):
   
   extended_css = "/style/extended.css"
   
-  print xhtml.include('%s/includes/header_pretitle.inc' % (wgo.config.DocumentRoot_path))
+  print xhtml.include('%s/includes/wgo-xhtml-init.xhtml' % (wgo.config.DocumentRoot_path))
   print xhtml.title("GIMP - ChangeLog")
   print '<base href="/" />'
   
@@ -54,15 +54,13 @@ def wgo_xhtml(filename):
   print xhtml.link(None, {"rel" : "stylesheet", "href" : "/about/ChangeLogs/changelog-xhtml-mono.css", "type" : "text/css", "media" : "screen", "title" : "monospaced"})
 
 
-  print xhtml.include('%s/includes/header_posttitle.inc' % (wgo.config.DocumentRoot_path))
-  print xhtml.include(wgo.config.DocumentRoot_path + "/includes/menu.inc")
+  print xhtml.include('%s/includes/wgo-look-feel.xhtml' % (wgo.config.DocumentRoot_path))
+  print xhtml.include('%s/includes/wgo-page-init.xhtml' % (wgo.config.DocumentRoot_path))
   
-  #wgo.header('GIMP - ChangeLog', ["changelog-xhtml.css"], wgo.config.DocumentRoot_path + "/includes/menu.inc")
-
   print xhtml.div.init({"class" : "changelog"})
   for l in cl.logs:
-    print xhtml.div(xhtml.span(xhtml.quote(l.date),      {"class" : "date"})
-                    + xhtml.span(xhtml.quote(l.who),     {"class" : "author"})
+    print xhtml.div(xhtml.span(xhtml.quote(l.date),     {"class" : "date"})
+                    + xhtml.span(xhtml.quote(l.who),    {"class" : "author"})
                     + xhtml.span(xhtml.mailto(l.email), {"class" : "email"}), {"class" : "changelog-log"})
     
     print xhtml.list.init()
@@ -83,7 +81,8 @@ def wgo_xhtml(filename):
 
   print xhtml.div.fini()
 
-  wgo.footer()
+  print xhtml.include('%s/includes/wgo-page-fini.xhtml' % (wgo.config.DocumentRoot_path))
+  print xhtml.include('%s/includes/wgo-xhtml-fini.xhtml' % (wgo.config.DocumentRoot_path))
   
   return (0)
 

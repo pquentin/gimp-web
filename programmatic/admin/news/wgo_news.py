@@ -42,6 +42,7 @@ import types
 sys.path = ['${LIBDIR}'] + sys.path
 
 import wgo
+import wgo_admin
 import rdf
 import wgo_queue
 import news_config as config
@@ -71,7 +72,7 @@ class news:
         self.msg["Reply-To"] = ""
         self.msg["Subject"] = "(none)"
         self.msg[news.editor_header] = ""
-        self.msg[news.image_header] = ""
+        self.msg[news.image_header] = "--none--"
         self.msg.set_payload("")
         self.msg.epilogue = ""
         self.valid = True
@@ -194,15 +195,15 @@ def header(headers=[]):
   headers = headers + ["Content-type: text/html"]
   for h in headers: print h
   print
-  
-  return (wgo.header("www.gimp.org - Administration", [config.news_dir + "/news-admin.css"], wgo.config.DocumentRoot_path + '/includes/admin-menu.inc'))
+
+  return (wgo_admin.header("www.gimp.org - Administration", [config.news_dir + "/news-admin.css"]))
 
 def footer(prefix=None):
-  return (wgo.footer(prefix))
+  return (wgo_admin.footer(prefix))
 
 
 icons = {
-  "--none--"          : "",         # must be present
+  "--none--"          : "",             # must be present
   "Default"           : "gimp_construction.png", # must be present
   "construction"      : "gimp_construction.png",
   "developer"         : "gimp_code.png",

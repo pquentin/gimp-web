@@ -12,6 +12,7 @@ ChangeLogs:
 	cd ChangeLogs && $(MAKE)
 
 clean mrproper:
+	(cd ChangeLogs ; $(MAKE) clean)
 	/bin/rm -f *.pyc *~
 
 install: install-first install-ChangeLogs

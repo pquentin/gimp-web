@@ -71,7 +71,6 @@ def main(queue):
     names = map(lambda t: dirpath + "/" + t, os.listdir(dirpath))
     names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
 
-    #news = map(wgo_news.news, names)
     news = map(lambda f: wgo_news.news(f, False), names)
     news = filter(lambda n: n.valid, news)
 

@@ -1,6 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.2
 # -*- mode: python py-indent-offset: 2; -*-
-#
 #
 # Copyright (C) 2002, 2003 Helvetix Victorinox, a pseudonym,
 # Mountain View, California
@@ -51,11 +50,15 @@ import sys
 import os
 import re
 import HTMLParser
+import getopt
+
+
 import x_xml
 
-def doattrs(attrs):
+def rewrite_attrs(attrs):
   d = {}
   map(lambda (a, v): d.update(substitute(a, v)), attrs)
+  
   return (d)
   
 def substitute(a, v):
@@ -67,9 +70,9 @@ def substitute(a, v):
 
   return ({a: v})
 
-class xlt(HTMLParser.HTMLParser):
+class xhtml_parser(HTMLParser.HTMLParser):
   def handle_starttag(self, tag, attrs):
-    sys.stdout.write("<" + tag + x_xml.format_attrs(doattrs(attrs)) + ">")
+    sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + ">")
     return
 
   def handle_endtag(self, tag):
@@ -77,7 +80,7 @@ class xlt(HTMLParser.HTMLParser):
     return
 
   def handle_startendtag(self, tag, attrs):
-    sys.stdout.write("<" + tag + x_xml.format_attrs(doattrs(attrs)) + ">")
+    sys.stdout.write("<" + tag + x_xml.format_attrs(rewrite_attrs(attrs)) + ">")
     return
 
   def handle_data(self, data):
@@ -129,15 +132,59 @@ def rewrite_dictionary(filename):
   
   return (dictionary)
 
+Version = """XML Attribute Rewriter, version $Version:$
+Copyright (C) 2003 Helvetix Victorinox, a pseudonym.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTIBILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+
+Report bugs to: <HELVETIX@Mysterious.ORG>"""
+
+def usage(name):
+  print "Usage:", name, "[OPTION] [FILE]"
+  print "Rewrite XML attributes from one value to another."
+  print
+  print "  -h, --help                This message"
+  print "  -d dictionary             Use dictionary as the substitution dictionary."
+  print "  -dictionary dictionary    Use dictionary as the substitution dictionary."
+  print "  -v                        Print version and exit"
+  return
+  
 if __name__ == "__main__":
 
-  dictionary = rewrite_dictionary(sys.argv[1])
+  try:
+    opts, args = getopt.getopt(sys.argv[1:], "hd:v", ["help", "version", "dictionary="])
+  except getopt.GetoptError:
+    usage(sys.argv[0])
+    sys.exit(2)
+    pass
+  
+  for o, a in opts:
+    if o in ("-h", "--help"):
+      usage(sys.argv[0])
+      sys.exit()
+      pass
+    
+    if o in ("-d", "--dictionary"):
+      dictionary = rewrite_dictionary(a)
+      pass
 
-  x = xlt()
+    if o in ("-v", "--version"):
+      print Version
+      sys.exit()
+      pass
+    pass
 
-  fp = open(sys.argv[2], "r")
-  x.feed(fp.read())
+
+  x = xhtml_parser()
+
+  for a in args:
+    fp = open(a, "r")
+    x.feed(fp.read())
+    fp.close()
+    pass
+    
   x.close()
-  fp.close()
+  
   sys.exit(0)
 

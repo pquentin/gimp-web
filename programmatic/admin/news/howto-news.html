@@ -1,53 +1,53 @@
-<!--#include virtual="/includes/header_pretitle.inc" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - The GNU Image Manipulation Program</title>
 <link rel="stylesheet" title="News Administration" href="/admin/wgo-admin.css" type="text/css" media="screen">
-<!--#include virtual="/includes/header_posttitle.inc" -->
-<!--#include virtual="/includes/admin-menu.inc" -->
-<div class="heading">gimp.org News Administration</div>
-<p>
-  Welcome to the www.gimp.org news approval frabitz.  With this, you
-  can delete existing news items, manually add new news items, preview
-  and approve, reject, or delete proposed news items.
-</p>
+  <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+  <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+  <div class="heading">gimp.org News Administration</div>
+  <p>
+    Welcome to the www.gimp.org news approval frabitz.  With this, you
+    can delete existing news items, manually add new news items, preview
+    and approve, reject, or delete proposed news items.
+  </p>
 
-<div style="font-weight: bold; font-size: large; margin-top: 1ex;">Installation</div>
-<p>
-  See the next section on Receiving News.
-</p>
+  <div style="font-weight: bold; font-size: large; margin-top: 1ex;">Installation</div>
+  <p>
+    See the next section on Receiving News.
+  </p>
 
-<p>
-  The functional ideas are broken down into:
-</p>
-<ul>
-  <li>Receiving News</li>
-  <li>Approving News</li>
-  <li>Deleting News</li>
-  <li>Building the News Page</li>
-  <li>Security</li>
-</ul>
-<p>
-  Read on for a brief overview of each.
-</p>
-
-<div style="font-weight: bold; font-size: large;">Receiving News</div>
-<p>
-  New is received via email.  The subject line must conform to
-  "<tt>News: ...</tt>" where ... represents the actual subject to be
-  used for the news item with the substring "News: " removed.
-  Messages received that do not conform to this are immediately
-  ignored.
-</p>
-<p>
-  Below is a minimally conforming email message which will be used as
-  where an example is needed.
-</p>
-<pre style="font-size: small; margin-left: 8em; margin-right: 8em; border: thin solid black; padding: 2px; background-color: #FAFAF8;">
-  Date: Tue, 22 Oct 2002 20:01:03 -0700
-  From: Helvetix Victorinox &lt;helvetix@arcanum.mysterious.org&gt;
-  Message-Id: &lt;200210230301.g9N313p4002291@arcanum.mysterious.org&gt;
-  To: gimp-news@gimp.org
-  Subject: News: some news for gimp
-  Content-Type: text/plain
+  <p>
+    The functional ideas are broken down into:
+  </p>
+  <ul>
+    <li>Receiving News</li>
+    <li>Approving News</li>
+    <li>Deleting News</li>
+    <li>Building the News Page</li>
+    <li>Security</li>
+  </ul>
+  <p>
+    Read on for a brief overview of each.
+  </p>
+  
+  <div style="font-weight: bold; font-size: large;">Receiving News</div>
+  <p>
+    New is received via email.  The subject line must conform to
+    "<tt>News: ...</tt>" where ... represents the actual subject to be
+    used for the news item with the substring "News: " removed.
+    Messages received that do not conform to this are immediately
+    ignored.
+  </p>
+  <p>
+    Below is a minimally conforming email message which will be used as
+    where an example is needed.
+  </p>
+  <pre style="font-size: small; margin-left: 8em; margin-right: 8em; border: thin solid black; padding: 2px; background-color: #FAFAF8;">
+Date: Tue, 22 Oct 2002 20:01:03 -0700
+From: Helvetix Victorinox &lt;helvetix@arcanum.mysterious.org&gt;
+Message-Id: &lt;200210230301.g9N313p4002291@arcanum.mysterious.org&gt;
+To: gimp-news@gimp.org
+Subject: News: some news for gimp
+Content-Type: text/plain
 
   Serenissime dominationi vestrae, quam, tribuente Domino, summo
   principe coniuge Romanum cognovimus rempublicam gubernare et praecipuo
@@ -62,90 +62,90 @@
   regionum. Finit.
 </pre>
 
-<p>
-  Currently <tt>multipart/*</tt> messages are not handled.  So simple
-  <tt>text/plain</tt> ISO-8859-1 character set email only.
-</p>
-<p>
-  Each received message is stored in the directory &lt;news&gt;/pending/
-  with the email <tt>Message-Id:</tt> as the filename.  I experimented
-  with just using a regular mbox-style mail box, but I decided that the
-  locking and unlocking of the mailbox when the approver is approving
-  while new messages are being added was added unnecessary complexity.
-  By storing them in separate files, I delegate all of that to the
-  filesystem, and rely the <tt>Message-Id:</tt> fields to be unique.
-</p>
-<p>
-  There are two ways to set up news reception:
-</p>
-<ol>
-  <li>SMTP Server (MTA) Aliases</li>
-  <li>User Directory <tt>.forward</tt> file</li>
-</ol>
-<p>
-  <b>NB:</b> Both of these require root (administrator) access to the
-  machine which will receive the email news messages.
-</p>
-
-<div style="font-weight: bold; font-size: medium; margin-top: 1ex; margin-left: 1em;">SMTP Server (MTA) Aliases</div>
-<p>
-  As the root user of the machine, follow the instructions below on
-  setting up the aliases used by your Mail Transfer Agent (MTA).
-</p>
-
-<div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 2em;">Sendmail (stock redhat 8.0)</div>
-<p>
-  Redhat's sendmail stores the aliases in the file <tt>/etc/aliases</tt>.
-  To add the alias for "gimp-news" add this line to the file
-  <tt>/etc/aliases</tt> and execute the command <tt>newaliases</tt> when
-  finished.
-</p>
-<pre style="font-size: small; margin-left: 8em; margin-right: 8em; border: thin solid black; padding: 2px; background-color: #FAFAF8;">
-  gimp-news:     "|/home/gimp-news/news/news-receiver -"
-</pre>
-<p>
-  Redhat's sendmail configuration uses <tt>smrsh</tt> to control what
-  file names are permissable as executable command in aliases and
-  .forward files (see below).  Because of profound security
-  implications, changing this list of files should not be done
-  carelessly.
-</p>
-<p>
-  Create a symbolic link from the file <tt>news-receiver</tt> in the
-  installation directory to <tt>/etc/smrsh</tt>
-</p>
-<p>
-  For example:
-</p>
-<pre style="font-size: small; margin-left: 8em; margin-right: 8em; border: thin solid black; padding: 2px; background-color: #FAFAF8;">
-  # ln -s /home/gimp-news/news/news-receiver /etc/smrsh/
-</pre>
-
-<div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 2em;">Exim (<a href="http://www.exim.org">www.exim.org</a>)</div>
-<p>
-  Using <tt>exim</tt> MTA alias mechanism requires setting up a director
-  for the alias.  See <a href="http://www.exim.org">www.exim.org</a> for
-  details.  (I have not had a chance to move to <tt>exim</tt> since my
-  Redhat 8.0 upgrade.)
-</p>
-
-<div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 1em;">User Directory <tt>.forward</tt> File</div>
-<p>
-  The normal build of the news directory will product a file, <tt>dot-forward</tt>
-  which will be copied to the installation directory as the file <tt>.forward</tt>
-</p>
-
-<div style="font-weight: bold; font-size: large; margin-top: 1ex;">Approving News</div>
-
-<div style="font-weight: bold; font-size: large; margin-top: 1ex;">Deleting News</div>
-
-<div style="font-weight: bold; font-size: large; margin-top: 1ex;">Building the News Page</div>
-
-<div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 1em;">HTTP Server Configuration</div>
-<p>
-The web server needs to be configured to permit CGI files to be executed.  Here is the relevant portion of my <tt>/etc/httpd/conf/httpd.conf</tt> file as an example.
-</p>
-
+  <p>
+    Currently <tt>multipart/*</tt> messages are not handled.  So simple
+    <tt>text/plain</tt> ISO-8859-1 character set email only.
+  </p>
+  <p>
+    Each received message is stored in the directory &lt;news&gt;/pending/
+    with the email <tt>Message-Id:</tt> as the filename.  I experimented
+    with just using a regular mbox-style mail box, but I decided that the
+    locking and unlocking of the mailbox when the approver is approving
+    while new messages are being added was added unnecessary complexity.
+    By storing them in separate files, I delegate all of that to the
+    filesystem, and rely the <tt>Message-Id:</tt> fields to be unique.
+  </p>
+  <p>
+    There are two ways to set up news reception:
+  </p>
+  <ol>
+    <li>SMTP Server (MTA) Aliases</li>
+    <li>User Directory <tt>.forward</tt> file</li>
+  </ol>
+  <p>
+    <b>NB:</b> Both of these require root (administrator) access to the
+    machine which will receive the email news messages.
+  </p>
+  
+  <div style="font-weight: bold; font-size: medium; margin-top: 1ex; margin-left: 1em;">SMTP Server (MTA) Aliases</div>
+  <p>
+    As the root user of the machine, follow the instructions below on
+    setting up the aliases used by your Mail Transfer Agent (MTA).
+  </p>
+  
+  <div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 2em;">Sendmail (stock redhat 8.0)</div>
+  <p>
+    Redhat's sendmail stores the aliases in the file <tt>/etc/aliases</tt>.
+    To add the alias for "gimp-news" add this line to the file
+    <tt>/etc/aliases</tt> and execute the command <tt>newaliases</tt> when
+    finished.
+  </p>
+  <pre style="font-size: small; margin-left: 8em; margin-right: 8em; border: thin solid black; padding: 2px; background-color: #FAFAF8;">
+    gimp-news:     "|/home/gimp-news/news/news-receiver -"
+  </pre>
+  <p>
+    Redhat's sendmail configuration uses <tt>smrsh</tt> to control what
+    file names are permissable as executable command in aliases and
+    .forward files (see below).  Because of profound security
+    implications, changing this list of files should not be done
+    carelessly.
+  </p>
+  <p>
+    Create a symbolic link from the file <tt>news-receiver</tt> in the
+    installation directory to <tt>/etc/smrsh</tt>
+  </p>
+  <p>
+    For example:
+  </p>
+  <pre style="font-size: small; margin-left: 8em; margin-right: 8em; border: thin solid black; padding: 2px; background-color: #FAFAF8;">
+    # ln -s /home/gimp-news/news/news-receiver /etc/smrsh/
+  </pre>
+  
+  <div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 2em;">Exim (<a href="http://www.exim.org">www.exim.org</a>)</div>
+  <p>
+    Using <tt>exim</tt> MTA alias mechanism requires setting up a director
+    for the alias.  See <a href="http://www.exim.org">www.exim.org</a> for
+    details.  (I have not had a chance to move to <tt>exim</tt> since my
+    Redhat 8.0 upgrade.)
+  </p>
+  
+  <div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 1em;">User Directory <tt>.forward</tt> File</div>
+  <p>
+    The normal build of the news directory will product a file, <tt>dot-forward</tt>
+    which will be copied to the installation directory as the file <tt>.forward</tt>
+  </p>
+  
+  <div style="font-weight: bold; font-size: large; margin-top: 1ex;">Approving News</div>
+  
+  <div style="font-weight: bold; font-size: large; margin-top: 1ex;">Deleting News</div>
+  
+  <div style="font-weight: bold; font-size: large; margin-top: 1ex;">Building the News Page</div>
+  
+  <div style="font-weight: bold; font-size: small; margin-top: 1ex; margin-left: 1em;">HTTP Server Configuration</div>
+  <p>
+    The web server needs to be configured to permit CGI files to be executed.  Here is the relevant portion of my <tt>/etc/httpd/conf/httpd.conf</tt> file as an example.
+  </p>
+  
 <pre style="font-size: small; margin-left: 8em; margin-right: 8em; border: thin solid black; padding: 2px; background-color: #FAFAF8;">
 &lt;VirtualHost 63.199.184.245:8082&gt;
     ServerAdmin root@localhost
@@ -189,6 +189,5 @@ The web server needs to be configured to permit CGI files to be executed.  Here 
 </p>
 
 <a href="http://validator.w3.org/check?uri=http://63.199.184.245:8082/news/index.html">_</a>
-
-<!--#include virtual="/includes/linkbar.inc" -->
-<!--#include virtual="/includes/footer.inc" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

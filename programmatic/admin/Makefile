@@ -40,7 +40,6 @@ install-first: all
 	install --mode=755 -d `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 	#install --mode=744 dot-htaccess ${DocumentRoot}/admin/.htaccess
 	install --mode=744 dot-password `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/passwords
-	install admin-menu.inc          `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/includes
 
 	install wgo-admin.css           `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 	install index.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`

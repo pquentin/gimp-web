@@ -1,19 +1,21 @@
-<!--#include virtual="/includes/header_pretitle.inc" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - The GNU Image Manipulation Program</title>
 <link rel="stylesheet" title="Administration HOWTO" href="/admin/wgo-admin.css" type="text/css" media="screen">
-<!--#include virtual="/includes/header_posttitle.inc" -->
-<!--#include virtual="/includes/admin-menu.inc" -->
-<div class="heading">gimp.org Administration HOWTO</div>
-<p>
-<div class="subtitle">http.conf</div>
-<p>
-Below, is the relevant portion of my http.conf file.
-You will need to adjust pathnames, email addresses, and <tt>ServerName</tt> to fit your installation.
-</p>
-<p>
-<fieldset>
-<legend><b>http.conf excerpt</b></legend>
-<pre>
+  <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+  <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+  <div class="heading">gimp.org Administration HOWTO</div>
+  <p>
+    <div class="subtitle">http.conf</div>
+    <p>
+      Below, is the relevant portion of my http.conf file.  You will
+      need to adjust pathnames, email addresses, and
+      <tt>ServerName</tt> to fit your installation.
+    </p>
+    <p>
+      <fieldset>
+        <legend><b>http.conf excerpt</b></legend>
+        <pre>
 NameVirtualHost 63.199.184.245:8082
 
 &lt;VirtualHost 63.199.184.245:8082&gt;
@@ -30,5 +32,5 @@ NameVirtualHost 63.199.184.245:8082
 </pre>
 </fieldset>
 </p>
-<!--#include virtual="/includes/linkbar.inc" -->
-<!--#include virtual="/includes/footer.inc" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -26,17 +26,20 @@ img {
 
 p.news {
   margin: 0.75em 0px;
+  text-align: justify;
 }
 
 p {
   margin: 1.33em 0px;
   margin-left: 40px; 
   margin-right: 40px;
+  text-align: justify;
 }
 
 li {
   margin-left: 40px; 
   margin-right: 40px;
+  text-align: justify;
 }
 
 #titlebar {

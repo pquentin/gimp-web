@@ -30,6 +30,8 @@
           Newest Plug-Ins:<br/>
           <a href="1">Gaussian blur * (1.0)</a><br/>
           <a href="1">PSD Import/Export (2.7)</a><br/>
+          <br/>
+          <br/>
         </td>
 
         <td id="main">

@@ -48,14 +48,12 @@
   here is the general framework of a Perl-Fu script.
 </p>
 <pre class="code">
-<br />
   #!/usr/local/bin/perl 
   use Gimp ":auto"; 
   use Gimp::Fu;
   # Register extension to gimp
   register ... ;
   exit main();  # Handle over control to gimp 
-  <br />
 </pre>
 <p>
   The interesting items to note in the script is the use of the two modules Gimp and Gimp::Fu, 
@@ -99,7 +97,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
   E.g. I.e. a call to create a new image of size 100x150 of type RGB looks as follows:
 </p>
 
-<pre class="code"><br />$img = gimp_image_new(100, 150, RGB)<br /></pre>
+<pre class="code">$img = gimp_image_new(100, 150, RGB)</pre>
 
 <p>
   The PDB entry above shows that gimp_image_new is called with three parameters width, height, type. 

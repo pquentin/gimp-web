@@ -39,15 +39,19 @@ function popup(url, textbox)
   <img src="dialog-imagemap-t.png" alt="" />
 </p>
 <p>
-  In my opinion, it is hard to come up with a good application for an image map. For many online applications, it is simply overkill. 
+  In my opinion, it is hard to come up with a good application for an image map. 
+  For many online applications, it is simply overkill. 
   However, to emulate the behavior of a GIMP Dialog seems to be a perfect place for this powerful web tool.
 </p>
 <p>
-  The image to the left comes from a previous tutorial about how to use perlotine. The tutorial slices this image further, 
-  but since The GIMP Image Map Plug-in and image maps in general use coordinates, we can use a less complicated table for this.
+  The image to the left comes from a previous tutorial about how to use 
+  <a href="/tutorials/Perlotine/">perlotine</a>. The tutorial slices this image further, 
+  but since The GIMP Image Map Plug-in and image maps in general use coordinates, 
+  we can use a less complicated table for this.
 </p>
 <p>
-  Above is a screenshot of The GIMP Image Map Plug-in, it has been scaled down for a nicer page. It can be somewhat scary at first. 
+  Above is a screenshot of The GIMP Image Map Plug-in, 
+  it has been scaled down for a nicer page. It can be somewhat scary at first. 
   I tried to arrow and number the few areas I am worried about for this tutorial. So, relax.
 </p>
 
@@ -57,23 +61,31 @@ function popup(url, textbox)
   <img src="imagemap1-zoom.png" alt="" />
 </p>
 <p>
-  This is a screenshot of the Create Guides Dialog (left image). We get to change every single option before we are done. Whee!
+  This is a screenshot of the Create Guides Dialog (left image). 
+  We get to change every single option before we are done. Whee!
 </p>
 <p>
   I came to this tutorial prepared with a perfectly wonderful colorpicker script that I stole from 
   <a href="http://the-light.com/colclick.html">Victor S. Engel</a>. 
-  The only problem with his colorpicker is that it didn't look like The GIMP. :) If you "View Source" of that page, 
-  you can see that there is a similar line to each image map coordinate area. So, into the "Base URL" box, put the stuff that will be the same on each. 
-  I am going to deal with the colors (256 of them, eek!) after I make the image map. 
-  So, put <b>javascript:GetClick()" onmouseover="GetColor('</b>  into the bottom box. The Image Map Plug-in will put the href=" into the html for you.
+  The only problem with his colorpicker is that it didn't look like The GIMP. :) 
+  If you "View Source" of that page, you can see that there is a similar 
+  line to each image map coordinate area. So, into the "Base URL" box, 
+  put the stuff that will be the same on each. I am going to deal with 
+  the colors (256 of them, eek!) after I make the image map. 
+  So, put <b>javascript:GetClick()" onmouseover="GetColor('</b>  into the bottom box. 
+  The Image Map Plug-in will put the href=" into the html for you.
 </p>
 <p>
-  Once I started to write this tutorial, I discovered that the Image Map Plug-in has the ability to do the zooming and such. 
-  Too late, for me, I guess as I used The GIMPs tools for measuring to determine the information for the rest of the Create Guides information. 
-  The original image was still open, so it was hard not to think about using it. Here is a screen shot of <span class="filter">View-&gt;Zoom-&gt;4:1</span>
+  Once I started to write this tutorial, I discovered that the 
+  Image Map Plug-in has the ability to do the zooming and such. 
+  Too late, for me, I guess as I used The GIMPs tools for measuring 
+  to determine the information for the rest of the Create Guides information. 
+  The original image was still open, so it was hard not to think about using it. 
+  Here is a screen shot of <span class="filter">&lt;Image&gt; View -&gt; Zoom -&gt; 4:1</span>
 </p>
 <p>
-  I used The GIMPs nifty measure tool to determine that the rectangles are all 10 pixels tall and 14 pixels wide. 
+  I used The GIMPs nifty measure tool to determine that 
+  the rectangles are all 10 pixels tall and 14 pixels wide. 
   The black lines in between are only one pixel wide also.
 </p>
 <p>

@@ -21,22 +21,22 @@
   Scheme is a lisp variants and all expressions are surrounded by parens. E.g. a list which will calculate the sum of 3 and 4 is written
 </p>
 <pre class="code">
-    (+ 3 4)
+(+ 3 4)
 </pre>
 <p>
   The + sign is the addition function and 3 and 4 are the first and second parameters to this function. 
   Expressions may be nested, so the expression (3+4)*(5/6) would in Scheme be written
 </p>
 <pre class="code">
-    (* (+ 3 4) (/ 5 6))
+(* (+ 3 4) (/ 5 6))
 </pre>
 <p>
   White space has no importance so the above expression may as well be written:
 </p>
 <pre class="code">
-    (*
-      (+ 3 4)
-      (/ 5 6))
+(*
+ (+ 3 4)
+ (/ 5 6))
 </pre>
 <br />
 
@@ -46,20 +46,20 @@
   All of them have the form
 </p>
 <pre class="code">
-    (foo param1 param2 ...)
+(foo param1 param2 ...)
 </pre>
 <p>
   Additional functions may be defined by the user through the define keyword. E.g. a function that 
   calculates the square value of its single argument may be declared like this
 </p>
 <pre class="code">
-    (define (square x) (* x x))
+(define (square x) (* x x))
 </pre>
 <p>
   and this function may be called through
 </p>
 <pre class="code">
-    (square 5)
+(square 5)
 </pre>
 <br />
 
@@ -69,15 +69,15 @@
   Here are a couple of assignments:
 </p>
 <pre class="code">
-    (set! grey_value 85)
-    (set! angle (* (/ 30 180) 3.141)
+(set! grey_value 85)
+(set! angle (* (/ 30 180) 3.141)
 </pre>
 <p>
   Lisp and its variants make heavy use of lists. Script-fu is no exception and it uses e.g. a list of three elements to write a RGB color. 
   E.g. the color orange would be written
 </p>
 <pre class="code">
-    '(255 127 0)
+'(255 127 0)
 </pre>
 <p>
   The ' sign is necessary in order to tell scheme that this is a literal list. If the ' was omitted scheme would try to look up a function with 
@@ -87,8 +87,8 @@
   To create a variable called orange with the above value and then set the background color to it we may do
 </p>
 <pre class="code">
-   (set! orange '(255 127 0))
-   (gimp-set-background-color orange)
+(set! orange '(255 127 0))
+(gimp-set-background-color orange)
 </pre>
 <br />
 
@@ -102,27 +102,27 @@
   [The following is a test of the above functions which may interactively be conducted in the Script-Fu console.]
 </p>
 <pre class="code">
-    =&gt; (set! color '(255 127 63))
-    (255 127 63)
-    =&gt; (car color)
-    255
-    =&gt; (cdr color)
-    (127 63)
+=&gt; (set! color '(255 127 63))
+(255 127 63)
+=&gt; (car color)
+255
+=&gt; (cdr color)
+(127 63)
 </pre>
 <p>
   To get the blue component of a color it is necessary to apply the cdr function twice and then the car function.
 </p>
 <pre class="code">
-    =&gt; (car (cdr (cdr color)))
-    63
+=&gt; (car (cdr (cdr color)))
+63
 </pre>
 <p>
   This is very unconvenient to write. Therefore there have been defined abreviations of the form cadr, cddr, caddr, etc that concatinate the 
   operations described above. The previous expression may therefore much more conveniently be written:
 </p>
 <pre class="code">
-    =&gt; (caddr color)
-    63
+=&gt; (caddr color)
+63
 </pre>
 <p>
   For the Script-Fu writer one of the most important uses of the car function is to access the returned values from the built-in gimp functions. 
@@ -139,9 +139,9 @@
   Local variables are declared through the the let keyword as in the following example:
 </p>
 <pre class="code">
-    (let* ((a 3)
-           (b 4))
-          ((* a b)))
+(let* ((a 3)
+       (b 4))
+      ((* a b)))
 </pre>
 <p>
   Here a and b have a local scope and retain their values only up to the closing paren matching the one before let* .
@@ -153,7 +153,7 @@
   Each procedural database function has a corresponding scheme function mapping. E.g.
 </p>
 <pre class="code">
-   (gimp-image-new 100 150 RGB)
+(gimp-image-new 100 150 RGB)
 </pre>
 <p>
   produces a new gimp image of type RGB and size 100x150.
@@ -282,7 +282,7 @@
   It is also possible to access this script through the Script-Fu console by typing the command
 </p>
 <pre class="code">
-   (uni-img 100 '(0 255 127))
+(uni-img 100 '(0 255 127))
 </pre>
 <br />
 
@@ -449,85 +449,89 @@
   <p>
     A simple use of this function which selects the rectangle (x,y,width,height)=(0,25,100,50), paints this region blue, and releases the selection looks as follows:
   </p>
-  <pre class="code">
-    (gimp-rect-select img 0 25 100 50 REPLACE 0 0)
-    (gimp-palette-set-background '(0 0 255))
-    (gimp-edit-fill layer BG-IMAGE-FILL)
-    (gimp-selection-none img)
-  </pre>
-  <br />
+<pre class="code">
+(gimp-rect-select img 0 25 100 50 REPLACE 0 0)
+(gimp-palette-set-background '(0 0 255))
+(gimp-edit-fill layer BG-IMAGE-FILL)
+(gimp-selection-none img)
+</pre>
+<br />
 
-    <h2>8. Loops</h2>
-    <p>
-      The only looping construct that exists in Script-Fu is <b>while</b>
-    </p>
-    <p>
-      [Note: this constraint is due to the current scheme interpreter SIOD used for Script-Fu. Once the scheme interpreter as planned is changed to Guile, 
-      more looping constructs will probably be added.] The while loop looks as follows:
-    </p>
-    <pre class="code">
-      (while (condition)
-      (statement1)
-      (statement2)
-      :
-      )
-    </pre>
-    <p>
-      Here's an example which draws horizontal lines, 16 pixels high, on an image:
-    </p>
-    <pre class="code">
-      (set! y 0)
-      (while (&lt; y size)
-      (gimp-rect-select img 0 y size 16 REPLACE 0 0)
-      (gimp-edit-fill layer-one BG-IMAGE-FILL)
-      (set! y (+ y 32)))
-    </pre>
-    <br />
+<h2>8. Loops</h2>
+<p>
+  The only looping construct that exists in Script-Fu is <b>while</b>
+</p>
+<p>
+  [Note: this constraint is due to the current scheme interpreter 
+  SIOD used for Script-Fu. Once the scheme interpreter as planned is changed to Guile, 
+  more looping constructs will probably be added.] The while loop looks as follows:
+</p>
+<pre class="code">
+(while (condition)
+(statement1)
+(statement2)
+:
+)
+</pre>
+<p>
+  Here's an example which draws horizontal lines, 16 pixels high, on an image:
+</p>
+<pre class="code">
+(set! y 0)
+(while (&lt; y size)
+(gimp-rect-select img 0 y size 16 REPLACE 0 0)
+(gimp-edit-fill layer-one BG-IMAGE-FILL)
+(set! y (+ y 32)))
+</pre>
+<br />
 
-      <h2>9. Floating selections</h2>
-      <p>
-        When pasting an image from the clipboard, or when creating text in a a drawable, the result is not put directly in the drawable. 
-        Instead it is put into a special temporary layer known as a floating selection. The floating selection may be manipulated in several ways, 
-        and finally it is merged into its associated layer, a process known as anchoring.
-      </p>
+<h2>9. Floating selections</h2>
+<p>
+  When pasting an image from the clipboard, or when creating text 
+  in a a drawable, the result is not put directly in the drawable. 
+  Instead it is put into a special temporary layer known as a floating selection. 
+  The floating selection may be manipulated in several ways, and finally it is 
+  merged into its associated layer, a process known as anchoring.
+</p>
 
-      <h2>9.1 Hello World - writing text in an image</h2>
-      <p>
-        When creating text through the gimp-text command, the text is always put into a temporary layer. This temporary layer then has to be anchored. 
-        Here is an example of creating some text which is pasted into the current drawable:
-      </p>
-      <pre class="code">
-        ; An example script that writes a fixed string in the current
-        ; image.
-        (define (script-fu-hello-world img drawable)
+<h2>9.1 Hello World - writing text in an image</h2>
+<p>
+  When creating text through the gimp-text command, 
+  the text is always put into a temporary layer. This temporary layer then has to be anchored. 
+  Here is an example of creating some text which is pasted into the current drawable:
+</p>
+<pre class="code">
+; An example script that writes a fixed string in the current
+; image.
+(define (script-fu-hello-world img drawable)
 
-        ; Start an undo group. Everything between the start and the end will
-        ; be carried out if an undo command is issued.
-        (gimp-undo-push-group-start img)
+  ; Start an undo group. Everything between the start and the end will
+  ; be carried out if an undo command is issued.
+  (gimp-undo-push-group-start img)
 
-        ; Create the text. See DBbrowser for parameters of gimp-text.
-        (set! text-float (car (gimp-text-fontname
-        img
-        drawable
-        10 10
-        "Hello world"
-        0
-        1
-        50
-        0
-        "-*-utopia-*-r-*-*-*-*-*-*-*-*-*-*")))
+  ; Create the text. See DBbrowser for parameters of gimp-text.
+  (set! text-float (car (gimp-text-fontname
+  img
+  drawable
+  10 10
+  "Hello world"
+  0
+  1
+  50
+  0
+  "-*-utopia-*-r-*-*-*-*-*-*-*-*-*-*")))
 
-        ; Anchor the selection
-        (gimp-floating-sel-anchor text-float)
+  ; Anchor the selection
+  (gimp-floating-sel-anchor text-float)
 
-        ; Complete the undo group
-        (gimp-undo-push-group-end img)
+  ; Complete the undo group
+  (gimp-undo-push-group-end img)
 
-        ; Flush output
-        (gimp-displays-flush))
+  ; Flush output
+  (gimp-displays-flush))
 
-        (script-fu-register "script-fu-hello-world"
-        "&lt;Image&gt;/Script-Fu/Tutorial/Hello World"
+(script-fu-register "script-fu-hello-world"
+              "&lt;Image&gt;/Script-Fu/Tutorial/Hello World"
               "Write Hello World in the current image"
               "Dov Grobgeld &lt;dov@imagic.weizmann.ac.il&gt;"
               "Dov Grobgeld"
@@ -538,7 +542,8 @@
 </pre>
 <p>
   This script shows another feature we haven't mentioned before. The possibility of creating an undo group. 
-  All the commands between the commands gimp-undo-push-group-begin and gimp-undo-push-group-end are undone together if the undo command is issued.
+  All the commands between the commands gimp-undo-push-group-begin and 
+  gimp-undo-push-group-end are undone together if the undo command is issued.
 </p>
 
 <h2>9.2 Copying a selection</h2>
@@ -551,9 +556,9 @@
   Try it by drawing a small blob in the middle of the image, select the blob, and then call this script.
 </p>
 <pre class="code">
-  ; An example of how to create a floating layer and how to ancor it.
-  (define (script-fu-sel-copy img
-  drawable)
+; An example of how to create a floating layer and how to ancor it.
+(define (script-fu-sel-copy img
+                          drawable)
 
   (gimp-undo-push-group-start img)
   (gimp-edit-copy drawable)
@@ -570,15 +575,15 @@
   (gimp-displays-flush))
 
 
-  (script-fu-register "script-fu-sel-copy"
-  "&lt;Image&gt;/Script-Fu/Tutorial/Selection Copy"
-  "Copy the selection into the same layer"
-  "Dov Grobgeld"
-  "Dov Grobgeld"
-  "2002-02-12"
-  "RGB*, GRAY*"
-  SF-IMAGE "Image" 0
-  SF-DRAWABLE "Layer" 0)
+(script-fu-register "script-fu-sel-copy"
+              "&lt;Image&gt;/Script-Fu/Tutorial/Selection Copy"
+              "Copy the selection into the same layer"
+              "Dov Grobgeld"
+              "Dov Grobgeld"
+              "2002-02-12"
+              "RGB*, GRAY*"
+              SF-IMAGE "Image" 0
+              SF-DRAWABLE "Layer" 0)
 </pre>
 
 <p>

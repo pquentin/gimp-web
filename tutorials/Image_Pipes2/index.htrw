@@ -21,19 +21,19 @@
 <p class="images">
   <img src="fig1.jpg" alt="" />
 </p>
-<p>
+<p style="text-align: center;">
   100 percent spacing
 </p>
 <p class="images">
   <img src="fig2.jpg" alt="" />
 </p>
-<p>
+<p style="text-align: center;">
   150 percent spacing
 </p>
 <p class="images">
   <img src="fig3.jpg" alt="" />
 </p>
-<p>
+<p style="text-align: center"> 
   20 percent spacing
 </p>
 <p>

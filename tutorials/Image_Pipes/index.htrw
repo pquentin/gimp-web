@@ -33,7 +33,11 @@
 </p>
 <p>
   There isnt currently a loader for gih (the gimp image pipe, so I include the source xcf images here.
-  To start creating a image pipe, you will need to save the file in the ".gih" extension. To use the brush immediately, 
+  The <a href="example1.xcf.gz">example image</a>.
+</p>
+<p>
+  To start creating a image pipe, you will need to save the file in the ".gih" extension. 
+  To use the brush immediately, 
   you probabaly want to save it in the brushes/ subdir of your gimp directory (probabaly ~/.gimp-1.1).
   To save the image you will be presented with a save dialog for the GIH plugin. (Image above)
 </p>
@@ -41,11 +45,16 @@
   <img src="example_1.jpg" alt=""/>
 </p>
 <p>
-  For a simple image like this, the only values you usually need to change are "Spacing", The "Number of Cells", the number of "Ranks", 
-  and the "selection" for each rank. Spacing is pretty much the same as for regular brushes. It indicate what percentage of a brush width 
-  or height that the cursor moves between each time the shape is pasted. Ranks indicates how many levels of variation to use by the Selection values. 
-  For this image, the value of ranks should be equal to the number of images in the stack. Since it is possible to have multi-dimensional pipes, 
-  there needs to be a way to set more than one rank.
+  For a simple image like this, the only values you usually need to change are "Spacing", 
+  The "Number of Cells", the number of "Ranks", and the "selection" for each rank. 
+  <b>Spacing</b> is pretty much the same as for regular brushes. 
+  It indicate what percentage of a brush width or height that the cursor moves between 
+  each time the shape is pasted. 
+</p>
+<p>
+  <b>Ranks</b> indicates how many levels of variation to use by the <b>Selection</b> values. 
+  For this image, the value of ranks should be equal to the number of images in the stack. 
+  Since it is possible to have multi-dimensional pipes, there needs to be a way to set more than one rank.
 </p>
 <p>
   For this example, we are going to choose to select from the rank using method "incremental". This essential means that the images will be selected 
@@ -77,9 +86,16 @@
   <img src="example2_ss.gif" alt=""/>
 </p>
 <p>
-  Tater Tots! This pipe is a good example of making a image pipe out of a series of images. Each layer has a a bit of an image cut out and placed 
-  on a transparent background. Any areas that are transparent in the image will be transparent in the brush as well. To add a bit more of a "3D" effect, 
-  a slight drop shadow was adding to each layer in the image. Save this image as gih with the parameters as indicated in the following screenshot.
+  Tater Tots!
+</p>
+<p>
+  This <a href="tater_tot.gih.gz">pipe</a> is a good example of making a image pipe out of a series of images. 
+  Each layer has a a bit of an image cut out and placed on a transparent background. 
+  Any areas that are transparent in the image will be transparent in the brush as well.
+</p>
+<p>
+  To add a bit more of a "3D" effect, a slight drop shadow was adding to each layer in the image. 
+  Save this image as gih with the parameters as indicated in the following screenshot.
 </p>
 <p class="images">
   <img src="tater_tot.jpg" alt=""/>
@@ -96,19 +112,24 @@
   An example of a two dimensional pipe
   A interesting use for image pipe would be to simulate a natural media situration. 
   For example, maybe a brush that has ten different versions based that correlate to tablet pressure. 
+</p>
+<p>
   For this example, I'll use a somewhat contrived example for simplicity sake. 
   It will use the "angular" paramater in for per layer dimension, and a "random" paramter to select which 
   of the multiple images to use. I use this in a couple of brushes to "humanize" the output. 
   Instead of having the same image stamped out over and over, it varies a little randomly.
-  The example source image is a 8 layer image, with each layer split in two with a guide. The guide isnt require but it makes it easier to create.
+</p>
+<p>
+  The example <a href="example_arrows.xcf.gz">source image</a> is a 8 layer image, 
+  with each layer split in two with a guide. The guide isnt require but it makes it easier to create.
   <br />
   A screenshot of the layers dialog showing creation of an image of this type.(Image above)
 </p>
-<p class="images">
-  <img src="example3_ss2.gif" alt=""/>
-</p>
 <p>
   You will want to save the image with the values show here:
+</p>
+<p class="images">
+  <img src="example3_ss2.gif" alt=""/>
 </p>
 
 <h2>Example 4</h2>
@@ -117,17 +138,26 @@
 </p>
 <p>
   Using a image pipe as a way to generate textures.
-  Making tileable textures with gradient brushes is a tutorial on how to generate textures with just graident brushes.
-  A lot of the same techniques that are used there can be used Image Pipes as well. The main advantage to using image pipes is that the brush as well as the 
+</p>
+<p>
+  <a href="/tutorials/Tileable_Textures/">Making tileable textures with gradient brushes</a> is a tutorial on 
+  how to generate textures with just graident brushes.
+</p>
+<p>
+  A lot of the same techniques that are used there can be used Image Pipes as well. 
+  The main advantage to using image pipes is that the brush as well as the 
   color can change as you paint, which adds an extra dimension to the textures.
-  For this example, it is just another one brush per layer situation. The example source image is available.
+</p>
+<p>
+  For this example, it is just another one brush per layer situation. 
+  The example <a href="example_patter2.xcf.gz">source image</a> is available.
   The image is saved with the paramaters as in image above.
+</p>
+<p>
+  Example output:
 </p>
 <p class="images">
   <img src="example_pattern.jpg" alt=""/>
-</p>
-<p>
-  Example output.
 </p>
 
 <h2>Example 5</h2>
@@ -136,12 +166,22 @@
 </p>
 <p>
   Converting a PSP image tube to a gimp Image Pipe 
-  There are lots of "Image Tubes" created with and for Paint Shop Pro available on the internet. Gimp can load these files and save them as gimp image pipes. 
-  Unfortunately, unless you really like pictures of teddy bears, puppy dogs, and unicorns, finding good PSP Tubes isnt so easy. 
-  There is a .tub loader plugin in gimp that you can use to load .tub files you find on the net. Then you can turn around and save these files as a .gih file. 
+  There are lots of "Image Tubes" created with and for Paint Shop Pro available on the internet. 
+  Gimp can load these files and save them as gimp image pipes.
+</p>
+<p>
+  Unfortunately, unless you really like pictures of teddy bears, puppy dogs, 
+  and unicorns, finding good PSP Tubes isnt so easy. 
+  There is a .tub loader plugin in gimp that you can use to load .tub files you find on the net. 
+  Then you can turn around and save these files as a .gih file.
+</p>
+<p>
   Were going to start with a .tub file available from Hood's PSP Tubes 
+</p>
+<p>
   I'll use the Fireball example on that page for this example. 
-  The file needs to be loaded as a regular image, then saved as a gih image. Sometimes you may need to make some best guesses as to the save parameters. 
+  The file needs to be loaded as a regular image, then saved as a gih image. 
+  Sometimes you may need to make some best guesses as to the save parameters. 
   An example of what the image window will look like after initially loading the .tub file.
 </p>
 <p class="images">

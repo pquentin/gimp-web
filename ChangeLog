@@ -1,5 +1,8 @@
 2003-04-19  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls: fixed wrong links for images in the books
+	section.
+
 	* books/index.htrw: converted the images for attribute rewriting.
 
 2003-04-18  Helvetix Victorinox  <helvetix@mysterious.org>

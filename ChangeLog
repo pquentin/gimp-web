@@ -1,5 +1,8 @@
 2003-09-11  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* Checkin the Makefile with combined SSI preprocessing and
+	  attribute rewriting for .htrw files.
+
 	* Removed admin/example.ssi
 
 	* Added ssi preprocessing for .htrw files

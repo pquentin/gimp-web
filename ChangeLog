@@ -1,3 +1,9 @@
+2002-10-20 carol <carol@gimp.org>
+        
+        * resources/brushes/index.html, resources/patterns/index.html, 
+        mgo-brushes.py, and mgo-patterns.py removed a very naughty and
+        in error </p>
+
 2002-10-19 gsromero
 	
         * README.repository: Fixed some typos and added validator url. (A

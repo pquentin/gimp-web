@@ -39,7 +39,7 @@ def write_brush_page(bg_colour, fg_colour, page_location):
         pdb.gimp_image_scale(image, new_width, new_height)
         pdb.gimp_file_save(image, drawable, page_location + pname + '.png', pname + '.png')
         pdb.gimp_image_delete(image)
-        f.write('<div><img style="vertical-align: text-middle;" src="' + pname + '.png" width="32" height="32" alt="brush sample">' + name + '</p></div>\n')
+        f.write('<div><img style="vertical-align: text-middle;" src="' + pname + '.png" width="32" height="32" alt="brush sample">' + name + '</div>\n')
         if count == half:
             f.write('<div><p>half way point</p></div>\n') 
     f.write('\n') 

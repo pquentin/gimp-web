@@ -67,6 +67,21 @@ class RDF(x_xml.Xml):
     pass
   pass
 
+class rss(x_xml.Xml):
+  defaults = { "version" : "0.91" }
+  tag = "rss"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, rss, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, rss))
+    pass
+  pass
+
 class content(x_xml.Xml):
   defaults = { }
   tag = "content"
@@ -95,6 +110,23 @@ class link(x_xml.Xml):
   class fini(x_xml.xml_fini):
     def __init__(self):
       return (x_xml.xml_fini.__init__(self, link))
+    pass
+  
+  pass
+
+
+class pubDate(x_xml.Xml):
+  defaults = { }
+  tag = "pubDate"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, pubDate, attrs))
+    pass
+
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, pubDate))
     pass
   
   pass

@@ -34,7 +34,7 @@ import types
 import wgo
 import xhtml
 
-def header(title, links):
+def header(title, links=[]):
 
   print wgo.xhtml_init()
   

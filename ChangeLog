@@ -1,18 +1,33 @@
+2003-04-26  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Factored and removed some redundant style information that crept in over time.
+
+        * Fixed the paths for the XML button.
+
+        * Added an orange XML button to access the rdf files for the
+          various news feeds on the news index pages.
+
+        * Fixed a bug that caused news articles which were received by
+          mail to be bounced because the script was looking for HTTP_HOST in
+          the environment, and that variable didn't exist in the mail
+          receiving environment.
+
+
 2003-02-27  Manish Singh  <yosh@gimp.org>
 
-	* windows/develop.html: New file from bbc
+        * windows/develop.html: New file from bbc
 
 2003-04-22 scizzo <scizzo@gimp.org>
 
-	* /admin/gimp-web-urls: Updated with some more home: and tutorial:
-	links.
-	
-	* /tutorials/*/*.html: Removed all the html files in the tutorials.
-	* /tutorials/*/*.htrw: Add the new htrw files to be used in the
-	tutorials. All of them uses the htrw files now. All files also have a
-	copyright of the text and images in the tutorial in the top of the
-	tutorial now.
-	
+        * /admin/gimp-web-urls: Updated with some more home: and tutorial:
+        links.
+        
+        * /tutorials/*/*.html: Removed all the html files in the tutorials.
+        * /tutorials/*/*.htrw: Add the new htrw files to be used in the
+        tutorials. All of them uses the htrw files now. All files also have a
+        copyright of the text and images in the tutorial in the top of the
+        tutorial now.
+        
 2003-04-21  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * bwerp: left behind a bit of debugging code.

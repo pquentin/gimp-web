@@ -6,11 +6,11 @@ rss, channel, item, title, description, link {
 }
 
 channel, item {
-  background: WGO_NEWS_INDEX_BG;
+  background: WGO_GREY none;
   border:     2px solid black;
   font-size:  small;
-  margin-top: 3px;
-  padding:    5px;
+  margin-top: 1ex;
+  padding:    .5em;
   width:      50em;
   z-index:    1;
 }
@@ -58,6 +58,7 @@ item > title {
 
 date {
   margin-left: 1em;
+  font-family: sans-serif;
 }
 
 link {

@@ -1,8 +1,10 @@
+/* -*- css -*- */
 #include "wgo-css.cpp"
 
 select { 
   font-family: sans-serif;
   color: black;
+  background: transparent none;
 }
 
 a.news-index {
@@ -19,6 +21,7 @@ table.wgo-admin {
 
 table.wgo-admin tr {
   color: black;
+  background: transparent none;
 }
 
 
@@ -48,11 +51,11 @@ table.wgo-admin td input[type="checkbox"] {
 
 /* ---------------- */
 table.news-index {
-  font-size: small;
+  font-size: medium;
 }
 
 table.news-index tr {
-  color: black;
+
 }
 
 table.news-index th {
@@ -69,7 +72,7 @@ table.news-index th#checkbox {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 table.news-index th#subject {
@@ -95,18 +98,28 @@ table.news-index th#date {
   width: 27%;
 }
 
-table.news-index td.news-index {
+table.news-index td {
   background: WGO_NEWS_INDEX_BG none;
   border-bottom: 1px solid black;
   color: black;
   text-indent: 0.25em;
 }
 
-table.news-index td.news-index input[type="checkbox"] {
+table.news-index td:first-child {
+  border-left: 1px solid black;
+}
+
+table.news-index td input[type="checkbox"] {
   background: WGO_NEWS_INDEX_BG none;
   border-bottom: 1px solid black;
   color: black;
   text-indent: 0.25em;
+}
+
+table.news-index td.control { 
+  background: transparent none;
+  color: WGO_NEWS_INDEX_FG;
+  border-width: 0 0 0 0;
 }
 
 
@@ -116,7 +129,7 @@ table.batch {
 }
 
 table.batch tr {
-  background: WGO_INDEX_BG none;
+  background: WGO_NEWS_INDEX_BG none;
   color: black;
 }
 
@@ -196,11 +209,12 @@ form.news-edit {
 
 form.news-edit select {
   background: WGO_NEWS_EDIT_BG none;
+  color: WGO_NEWS_EDIT_FG;
   border: thin solid black;
 }
 
 form.news-edit input[name="subject"] {
-  text-index: 1em;
+  text-indent: 1em;
   background: WGO_NEWS_EDIT_BG none;
   border: thin solid black;
   color: WGO_NEWS_EDIT_FG;

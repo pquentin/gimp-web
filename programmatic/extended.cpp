@@ -31,6 +31,7 @@ input[type="text"] {
 .faux-button:hover, input[type="submit"]:hover {
   text-decoration: underline;
   background:    WGO_BUTTON_BG none;
+  color: WGO_BUTTON_FG;
   border-bottom: 1px solid WGO_BUTTON_LOLITE;
   border-left:   1px solid WGO_BUTTON_HILITE;
   border-right:  1px solid WGO_BUTTON_LOLITE;
@@ -53,39 +54,38 @@ table.ld {
   vertical-align: middle;
   visibility:     visible;
   width:          100%;
-  background: white none;
+  background: transparent none;
   border-spacing: 0;
 }
 
 table.ld tr { 
-  background: white none;
+  background: transparent none !important;
 }
 
 table.ld td {
+  background: transparent none !important;
   border-color:   black;
-  border-width:   0 0 0 0;
   border-style:   solid;
+  border-width:   0 0 0 0;
   margin:         0 0 0 0;
   padding:        0 0 0 0;
   text-align:     center;
   vertical-align: middle;
-  visibility:     visible;
-  background:     white none;
 }
 
-table.ld td.l----- { padding: 1px 1px 1px 1px; border-width: 0px 0px 0px 0px; }
-table.ld td.l----x { padding: 1px 1px 1px 0px; border-width: 0px 0px 0px 1px; }
-table.ld td.l---x- { padding: 1px 1px 0px 1px; border-width: 0px 0px 1px 0px; }
-table.ld td.l---xx { padding: 1px 1px 0px 0px; border-width: 0px 0px 1px 1px; }
-table.ld td.l--x-- { padding: 1px 0px 1px 1px; border-width: 0px 1px 0px 0px; }
-table.ld td.l--x-x { padding: 1px 0px 1px 0px; border-width: 0px 1px 0px 1px; }
-table.ld td.l--xx- { padding: 1px 0px 0px 1px; border-width: 0px 1px 1px 0px; }
-table.ld td.l--xxx { padding: 1px 0px 0px 0px; border-width: 0px 1px 1px 1px; }
-table.ld td.l-x--- { padding: 0px 1px 1px 1px; border-width: 1px 0px 0px 0px; }
-table.ld td.l-x--x { padding: 0px 1px 1px 0px; border-width: 1px 0px 0px 0px; }
-table.ld td.l-x-x- { padding: 0px 1px 0px 1px; border-width: 1px 0px 1px 0px; }
-table.ld td.l-x-xx { padding: 0px 1px 0px 0px; border-width: 1px 0px 1px 1px; }
-table.ld td.l-xx-- { padding: 0px 0px 1px 1px; border-width: 1px 1px 0px 0px; }
-table.ld td.l-xx-x { padding: 0px 0px 1px 0px; border-width: 1px 1px 0px 1px; }
-table.ld td.l-xxx- { padding: 0px 0px 0px 1px; border-width: 1px 1px 1px 0px; }
-table.ld td.l-xxxx { padding: 0px 0px 0px 0px; border-width: 1px 1px 1px p1x; }
+table.ld td.l----- { padding: 1px 1px 1px 1px !important; border-width: 0px 0px 0px 0px !important; }
+table.ld td.l----x { padding: 1px 1px 1px 0px !important; border-width: 0px 0px 0px 1px !important; }
+table.ld td.l---x- { padding: 1px 1px 0px 1px !important; border-width: 0px 0px 1px 0px !important; }
+table.ld td.l---xx { padding: 1px 1px 0px 0px !important; border-width: 0px 0px 1px 1px !important; }
+table.ld td.l--x-- { padding: 1px 0px 1px 1px !important; border-width: 0px 1px 0px 0px !important; }
+table.ld td.l--x-x { padding: 1px 0px 1px 0px !important; border-width: 0px 1px 0px 1px !important; }
+table.ld td.l--xx- { padding: 1px 0px 0px 1px !important; border-width: 0px 1px 1px 0px !important; }
+table.ld td.l--xxx { padding: 1px 0px 0px 0px !important; border-width: 0px 1px 1px 1px !important; }
+table.ld td.l-x--- { padding: 0px 1px 1px 1px !important; border-width: 1px 0px 0px 0px !important; }
+table.ld td.l-x--x { padding: 0px 1px 1px 0px !important; border-width: 1px 0px 0px 0px !important; }
+table.ld td.l-x-x- { padding: 0px 1px 0px 1px !important; border-width: 1px 0px 1px 0px !important; }
+table.ld td.l-x-xx { padding: 0px 1px 0px 0px !important; border-width: 1px 0px 1px 1px !important; }
+table.ld td.l-xx-- { padding: 0px 0px 1px 1px !important; border-width: 1px 1px 0px 0px !important; }
+table.ld td.l-xx-x { padding: 0px 0px 1px 0px !important; border-width: 1px 1px 0px 1px !important; }
+table.ld td.l-xxx- { padding: 0px 0px 0px 1px !important; border-width: 1px 1px 1px 0px !important; }
+table.ld td.l-xxxx { padding: 0px 0px 0px 0px !important; border-width: 1px 1px 1px 1px !important; }

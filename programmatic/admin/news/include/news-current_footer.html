@@ -1,23 +1,18 @@
 <!-- -*- xml -*- -->
 <tr>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td></td>
-  <td style="text-align: right; padding-right: .125em;">
-    <input type="submit" name="action" value="delete" />
-    <input type="submit" name="action" value="pending" />
-    <input type="submit" name="action" value="archive" />
+  <td class="control">
+    <a class="faux-button" style="background: #ff8000 none; color: white; font-weight: bold;" href="/var/spool/news-current/news.rdf">XML</a></td>
+  <td class="control"></td>
+  <td class="control" style="text-align: right; padding-right: .125em;">
+    <input type="submit" name="action" value="delete" title="Click to delete all selected messages" />
+    <input type="submit" name="action" value="pending" title="Click to unapprove all selected messages" />
+    <input type="submit" name="action" value="archive" title="Click to archive all selected messages" />
     <input type="hidden" name="queue" value="current" />
   </td>
-  <td style="margin: 0; padding: 0;">
+  <td class="control">
     <table class="ld"><tbody>
-        <tr><td class="l--xx-">&nbsp;</td><td class="l----x"></td></tr>
-        <tr><td class="l-x---">&nbsp;</td><td class="l-----"></td></tr>
+        <tr><td class="l--xx-">&nbsp;</td><td class="l----x">&nbsp;</td></tr>
+        <tr><td class="l-x---">&nbsp;</td><td class="l-----">&nbsp;</td></tr>
       </tbody></table>
   </td>
 </tr>

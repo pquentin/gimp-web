@@ -37,6 +37,7 @@ import xhtml
 import wgo
 import wgo_news
 import wgo_queue
+
     
 def html_index_page(queue, news):
   if news == None or not news.valid:
@@ -51,19 +52,23 @@ def html_index_page(queue, news):
   checkbox_attrs = { "class" : "news-index", "name" : xhtml.quote(news["message-id"]) }
   title = ""
   if len(news["body"]) < 2:
-    checkbox_attrs.update({"disabled" : "disabled", "title" : "this article has no body"})
     title = "this article has no body"
+    checkbox_attrs.update({"disabled" : "disabled", "title" : title})
     pass
            
   attrs = { "class" : "news-index" }
 
   print xhtml.table.row(
-    xhtml.table.cell(xhtml.quote(news["date"]), attrs)
-    + xhtml.table.cell(xhtml.mailto(news["from"]), attrs)
-    + xhtml.table.cell(xhtml.hyperlink(news["subject"], {"href" : edit_target, "class" : "news-index", "title" : title}), attrs)
-    + xhtml.table.cell(xhtml.input.checkbox(checkbox_attrs), attrs), attrs)
+    xhtml.table.cell(xhtml.quote(news["date"]), {'title' : title})
+    + xhtml.table.cell(xhtml.mailto(news["from"]), {'title' : title})
+    + xhtml.table.cell(xhtml.hyperlink(news["subject"], {"href" : edit_target, "class" : "news-index", "title" : 'edit this article'}), {'title' : title })
+    + xhtml.table.cell(xhtml.input.checkbox(checkbox_attrs), {'title' : title}))
     
   return (1)
+
+def control_panel(queue):
+
+  return
 
 def main(queue):
   wgo_news.header()
@@ -86,11 +91,15 @@ def main(queue):
       pass
 
     map(lambda n: html_index_page(queue, n), news)
+
+    control_panel(queue)
                 
     print xhtml.include('%s/%s_footer.html' % (wgo_news.config.news_path, queue))
-    print xhtml.hyperlink("XML", { "class" : "faux-button",
-                                   "style" : "background: #ff6600 none; color: white; font-weight: bold; padding: 0 .5em 0 .5em; font-size: medium;",
-                                   "href"  : wgo.config.spool_dir + queue + "/news.rdf"})
+    if 0:
+      print xhtml.hyperlink("XML", { "class" : "faux-button",
+                                     "style" : "background: #ff6600 none; color: white; font-weight: bold; padding: 0 .5em 0 .5em; font-size: medium;",
+                                     "href"  : wgo.config.spool_dir + queue + "/news.rdf"})
+      pass
 
     print xhtml.include(wgo_queue.generate_blotter(queue))
   else:

@@ -171,13 +171,11 @@ class news:
       http_host = os.environ["HTTP_HOST"]
       pass
 
-    iso_date = time.strftime("%Y-%m-%dT%H:%M:%SZ",  rfc822.parsedate(self["date"]))
-
-    s = rdf.item(rdf.title(self["subject"])
+    date = rfc822.formatdate(time.mktime(rfc822.parsedate(xhtml.unescape(self["date"]))))
+    s = rdf.item(rdf.title(rdf.quote(self["subject"]))
                  + rdf.description(rdf.quote(self["body"])) + "\n"
                  + rdf.link("http://" + http_host) + "\n"
-                 + rdf.dc_date(rdf.quote(iso_date)),
-                 {'rdf:about' : "http://" + http_host}) + "\n"
+                 + rdf.pubDate(rdf.quote(date)))
     return (s)
 
   
@@ -206,8 +204,10 @@ class news:
 def header():
   wgo.http_preamble(["Content-type: text/html"])
 
-  wgo_admin.header("www.gimp.org - Administration",
-                   [ {"rel" : "stylesheet", "href" : config.news_dir + "/news-admin.css", "type" : "text/css", "media" : "screen"} ])
+  #  wgo_admin.header("www.gimp.org - Administration",
+  #                   [ {"rel" : "stylesheet", "href" : config.news_dir + "/news-admin.css", "type" : "text/css", "media" : "screen"} ])
+  wgo_admin.header("www.gimp.org - Administration")
+
   return
 
 def footer(prefix=None):

@@ -13,7 +13,7 @@ a.news-index {
 
 /* ---------------- */
 table.news-index {
-  font-size: small;
+  font-size: medium;
 }
 
 table.news-index tr {
@@ -34,7 +34,7 @@ table.news-index th#checkbox {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 table.news-index th#subject {
@@ -60,18 +60,18 @@ table.news-index th#date {
   width: 27%;
 }
 
-table.news-index td.news-index {
+table.news-index td {
   background: WGO_NEWS_INDEX_BG none;
   border-bottom: 1px solid black;
   color: black;
   text-indent: 0.25em;
 }
 
-table.news-index td.news-index:first-child {
+table.news-index   td:first-child {
   border-left: 1px solid black;
 }
 
-table.news-index td.news-index input[type="checkbox"] {
+table.news-index td input[type="checkbox"] {
   background: WGO_NEWS_INDEX_BG none;
   border-bottom: 1px solid black;
   color: black;
@@ -84,7 +84,7 @@ table.batch {
 }
 
 table.batch tr {
-  background: WGO_INDEX_BG none;
+  background: WGO_NEWS_INDEX_BG none;
   color: black;
 }
 

@@ -22,9 +22,6 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
 
-import errno
-import fcntl
-import getopt
 import os
 import re
 import stat
@@ -32,6 +29,7 @@ import string
 import sys
 import time
 import types
+import rfc822
 
 import wgo
 import wgo_news
@@ -73,24 +71,23 @@ def generate_rdf(queue):
   news_blotter = file_path(queue, news_config.news_blotter)
 
   fp = open(rdf_file, "w")
-  print >>fp, '<?xml version="1.0"?>'
-  print >>fp, '<?xml-stylesheet href="/style/rdf-news.css" type="text/css"?>'
-  print >>fp, '<!-- this data is automatically generated on %s by wgo_queue.generate_rdf $Revision$ -->' % (time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+  print >>fp, '<?xml version="1.0" ?>'
+  print >>fp, '<?xml-stylesheet href="/style/rdf-news.css" type="text/css" ?>'
   
-  print >>fp, rdf.RDF.init()
+  print >>fp, rdf.rss.init()
   
-  print >>fp, rdf.channel(rdf.title('GIMP Dot Org') + "\n"
-                          + rdf.dc_creator("Wilber Gimp's Publishing Agent: $Revision$") + "\n"
-                          + rdf.dc_date(str(time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))) + "\n"
-                          + rdf.link('http://' + http_host) + "\n"
-                          + rdf.description(rdf.quote('gimp.org news')) + "\n"
-                          + rdf.seq(rdf.items(string.join(map(lambda n: rdf.li({"resource" : "http://" + http_host}) + "\n", news_items)))) + "\n",
-                          { "rdf:about" : "http://" + http_host + "/news.rdf" }
-                          )
+  print >>fp, rdf.channel.init()
+
+  print >>fp, rdf.title('GIMP Dot Org')
+  print >>fp, rdf.link('http://' + http_host)
+  print >>fp, rdf.description(rdf.quote('Recent gimp.org ' + queue))
+  print >>fp, rdf.pubDate(str(rfc822.formatdate(time.mktime(time.gmtime()))))
+  #+ string.join(map(lambda n: rdf.item({"resource" : "http://" + http_host}) + "\n", news_items)) + "\n")
   
   map(lambda n: fp.write(str(n.as_rdf())), news_items)
 
-  print >>fp, rdf.RDF.fini()
+  print >>fp, rdf.channel.fini()
+  print >>fp, rdf.rss.fini()
   fp.close()
   
   os.chmod(news_blotter, 0666)

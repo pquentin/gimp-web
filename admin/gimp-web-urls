@@ -17,7 +17,7 @@
 ["href", "http:Package-GTK-stable",            { "href": "ftp://ftp.gimp.org/pub/gtk/"}]
 ["href", "http:Package-GTK-unstable",          { "href": "ftp://ftp.gimp.org/pub/gtk/unstable"}]
 
-["href", "http:Package-GIMP-os2-stable-xfree86"{ "href": "http://birdy.os2.ru/u_gnome_download.html"}]
+["href", "http:Package-GIMP-os2-stable-xfree86",{ "href": "http://birdy.os2.ru/u_gnome_download.html"}]
 ["href", "http:Package-GIMP-os2-stable-PM",    { "href": "http://everblue.netlabs.org/?show=download"}]
 ["href", "http:Package-GTK-os2-stable",        { "href": "http://os2ports.com/browse/index_html?dir=pub/os2/unix/xfree86/ports/GIMP"}]
 ["href", "http:Package-GTK-os2-stable-themes", { "href": "http://birdy.os2.ru/n_gnome_download.html"}]

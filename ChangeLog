@@ -6,8 +6,8 @@
 
 	* programmatic/admin/news/Makefile
 	* programmatic/admin/news/wgo_news.py
-	* programmatic/admin/news/wilber_reading.png: allow to use the new
-	icon from the news system.
+	* programmatic/admin/news/icons/wilber_reading.png: allow to use
+	the new icon from the news system.
 
 2004-12-19  Sven Neumann  <sven@gimp.org>
 

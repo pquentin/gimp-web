@@ -1,5 +1,9 @@
 2004-03-28  Sven Neumann  <sven@gimp.org>
 
+	* source/index.htrw: added MD5 sums of the 2.0.0 release tarballs.
+	Perhaps this should be moved to a different place, but I wanted to
+	see it online somewhere. Please feel free to improve.
+
 	* unix/index.htrw: added link to SuSE RPMs.
 
 	* source/howtos/stable-cvs-get.htrw: fixed broken link.

@@ -6,14 +6,15 @@
 <h1>GIMP from Source</h1>
 <p>
   The official distribution of the GIMP is the source code,
-  distributed in tar files from the GIMP ftp site and its <a
+  distributed in tar files from the GIMP FTP site and its <a
   href="wgo:downloads-mirrors">mirrors</a>. The same source code can be
   compiled to create binaries for different platforms such as <a
   href="wgo:unix">Linux</a>, <a href="wgo:windows">Windows</a>, <a
-  href="wgo:macintosh">MacOS X</a>, <a href="wgo:unix">Solaris</a>, and
+  href="wgo:macintosh">MacOS X</a>, <a href="wgo:unix">Solaris</a> and
   many others.
 </p>
 <ul>
+  <li><a href="#source">GIMP Source Code</a></li>
   <li><a href="#requirements">GIMP Requirements</a></li>
   <li><a href="#gimp_from_cvs">GIMP from CVS</a></li>
   <li><a href="#optional_packages">Optional packages</a></li>
@@ -50,6 +51,18 @@
   and features are added (or removed) every day, 
   you should have a look at the <a href="wgo:dev">developers' site</a> 
   and subscribe to the gimp-developer mailing list if you compile the code from CVS.
+</p>
+
+<a name="requirements"><h1>GIMP Source Code</h1></a>
+<p>
+  The GIMP source code is distributed as tarballs. It is available
+  from the GIMP FTP site and its <a href="wgo:downloads-mirrors">mirrors</a>.
+  To allow you to check the integrity of the tarballs, here are the MD5 sum
+  of the latest released tarballs:
+  <dl>
+   <dt>gimp-2.0.0.tar.gz</dt>  <dd>2ccddcde30813d4001843273f0a47744</dd>
+   <dt>gimp-2.0.0.tar.bz2</dt> <dd>322cc091da8bbd324b37c60143fa26fa</dd>
+  </dl>
 </p>
 
 <a name="requirements"><h1>GIMP Requirements</h1></a>

@@ -1,5 +1,7 @@
 2003-03-19  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * install.sh (log): Added a timestamp to the install log: make.out
+
         * Buffed up the top-level Makefile to declare .PHONY targets.  The
           _install target is now called install.
 

@@ -1,5 +1,10 @@
 2004-03-22  Niklas M <scizzo@gimp.org>
 
+	* about/splash/stable.htrw: Reverted it back to use the old style. The
+	new one didn't make things better.
+
+2004-03-22  Niklas M <scizzo@gimp.org>
+
 	* about/splash/stable.htrw: Updated to follow the tables being used in
 	the other splash archives.
 

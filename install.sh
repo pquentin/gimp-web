@@ -13,16 +13,20 @@ if test -z "$PYTHON" ; then
   PYTHON=python
 fi
 
-rm -f  ${INSTALLDIR}/install.out
-ls -l unix/  >> ${INSTALLDIR}/install.out
+log=${INSTALLDIR}/install.out
 
-make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all install 2>&1 >> ${INSTALLDIR}/install.out
+/bin/rm -f  ${log}
+echo "contents of unix/"  >> ${log}
+
+/bin/ls -l unix/  >> ${log}
+
+make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all install 2>&1 >> ${log}
 
 rsync -rlt --delete --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
 
-(cd programmatic ; make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} all install ) 2>&1 >> ${INSTALLDIR}/install.out
+(cd programmatic ; make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} all install ) 2>&1 >> ${log}
 
-(cd crontab ; make all install) 2>&1 >> ${INSTALLDIR}/install.out
+(cd crontab ; make all install) 2>&1 >> ${log}
 
-ls -l ${INSTALLDIR}/var/spool/wgo-contest-current  >> ${INSTALLDIR}/install.out
+ls -l ${INSTALLDIR}/var/spool/wgo-contest-current  >> ${log}
 

@@ -5,6 +5,9 @@
         * tutorials/Color2BW/: Add the first port of the new BW tutorial.
         Fixed a broken link.
 
+        * tutorials/Lite_Quickies/index.html: Add the original site to the
+        index file.
+
 2002-12-07 carol <carol@gimp.org>
 
 	* about/splash-cvs.html: fixed a bad image url.

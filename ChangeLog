@@ -1,3 +1,8 @@
+2002-11-14 scizzo <scizzo@gimp.org>
+
+        * tutorials/index.html: Removed the Python Docbook (going to
+        be moved to documents section).
+
 2002-11-13 scizzo <scizzo@gimp.org>
 
         * README.tutorials: Add that we should use -> in the filter

@@ -1,5 +1,10 @@
 2002-11-20 carol <carol@gimp.org>
 
+	* links.html: added some more urls. fixed somethings. reflected these
+    changes in links/index.html as well.
+
+2002-11-20 carol <carol@gimp.org>
+
 	* links.html: moved some of the clusters around, added a few others
 
 	* links/index.html: added the directory and copied links.html into it,

@@ -1,3 +1,9 @@
+2004-12-17  Sven Neumann  <sven@gimp.org>
+
+	* index.htrw: switched the frontpage back to the generated news.
+
+	* index2.htrw: removed.
+
 2004-12-14  Niklas M <scizzo@gimp.org>
 
 	* tutorials/Lite_Quickies/index.htrw: Fixed a typo. Closes bug

@@ -1,19 +1,32 @@
+2003-02-02  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Added programmatic/about/ChangeLogs/{film-gimp,gimp-print} to
+        slurp up the current ChangeLog from their respective cvs
+        repositories.
+
+        * Added programmatic/tools/rewrite_attr.py, a programme to rewrite
+        arbitrary element attributes.  See the source and
+        programmatic/tools/rewrite and/or me for details on how to use it.
+
+        * Added programmatic/tools to contain various programmes for the web developers
+        
+
 2003-01-27 scizzo <scizzo@gimp.org>
 
-	* todo.xhtml: Remove me from the mailinglist.
-	
+        * todo.xhtml: Remove me from the mailinglist.
+        
 2003-01-26 scizzo <scizzo@gimp.org>
 
-	* mailing_list.html: Fixed some typos. Fixed some more typos.
+        * mailing_list.html: Fixed some typos. Fixed some more typos.
 
-	* todo.xhtml: Made some notes. And add my name to the mailinglist
-	thingys.
+        * todo.xhtml: Made some notes. And add my name to the mailinglist
+        thingys.
 
-	* includes/urls_maillist.inc: Removed the GIMPwin list because this
-	list is going to be removed and moved to GIMP Developer list.
+        * includes/urls_maillist.inc: Removed the GIMPwin list because this
+        list is going to be removed and moved to GIMP Developer list.
 
-	* includes/urls_mailinglist.inc: Add a small description for
-	GIMP-Images mailinglist. Stolen from their site about the list.
+        * includes/urls_mailinglist.inc: Add a small description for
+        GIMP-Images mailinglist. Stolen from their site about the list.
 
 2003-01-26  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 

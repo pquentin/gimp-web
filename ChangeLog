@@ -1,5 +1,11 @@
 2004-12-06  Dave Neary <bolsh@gimp.org>
 
+	* index.htrw: Update splash contest news item to reflect
+	the fact that the contest is closed. Fixed invalid xhtml
+	while I was at it.
+
+2004-12-06  Dave Neary <bolsh@gimp.org>
+
 	* index.htrw: Changed news entry to include links to sponsors 
 	sites.
 

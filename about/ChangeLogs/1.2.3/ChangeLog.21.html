@@ -1,0 +1,76 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>ChangeLog</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/menu.inc" --><div class="heading">ChangeLog</div>
+<p>Page 21</p>
+<div class="subtitle">2000-12-31  Sven Neumann  <sven@gimp.org>
+</div><ul>            Simon Budig <simon@gimp.org>
+<li> app/gimpbrush.c
+</li><li> plug-ins/common/gih.c: explicitely cast offset to (off_t) when 
+	seeking back. Should fix the problems reading grayscale BrushPipes 
+	on IRIX.
+</li></ul><div class="subtitle">2000-12-29  Tor Lillqvist  <tml@iki.fi>
+</div><ul><li> config.h.win32: RAND_FUNC must not return negative values. Can't
+	use g_random_int as is, must use g_random_int_range (0, G_MAXINT).
+</li></ul><ul><li> plug-ins/flame/cmap.c: Include glib.h for G_MAXINT.
+</li></ul><div class="subtitle">2000-12-29  Simon Budig   <simon@gimp.org>
+</div><ul><li> modules/colorsel_triangle.c  Argh - converting 16bit colors
+	(from DnD-Source) to 8 bit must not be done by dividing by 0xff (255)!
+	divide by 256 instead...
+</li></ul><div class="subtitle">2000-12-29  Tor Lillqvist  <tml@iki.fi>
+</div><ul><li> app/makefile.mingw.in: Build as a windowing application (-mwindows).
+</li></ul><ul><li> app/gimp.sym: Remove the color display functions that are gone.
+</li></ul><ul><li> plug-ins/makefile.mingw.in: Build two versions of the tiff
+	plug-in: tiff (with TIFF_LZW_LIBS), and tiff_nolzw (with
+	TIFF_NOLZW_LIBS).
+</li></ul><div class="subtitle">2000-12-28  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/channel.c
+</li><li> app/layer.c: use gtk_object_sink() instead of gtk_object_unref()
+	when deleting a layer or channel since only floating objects should
+	be destroyed this way. A layer or channel that has been attached
+	to an image shall never be deleted.
+</li></ul><ul><li> app/layer_cmds.c
+</li><li> libgimp/gimplayer_pdb.c
+</li><li> tools/pdbgen/pdb/layer.pdb: reenabled the gimp_layer_delete() PDB
+	function since it might be useful under rare circumstances.
+</li></ul><div class="subtitle">2000-12-28  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/channel_cmds.c
+</li><li> app/layer_cmds.c
+</li><li> libgimp/gimpchannel_pdb.c
+</li><li> libgimp/gimplayer_pdb.c
+</li><li> plug-ins/common/warp.c
+</li><li> plug-ins/gap/gap_exchange_image.c
+</li><li> plug-ins/gap/gap_range_ops.c
+</li><li> plug-ins/perl/examples/bricks
+</li><li> plug-ins/perl/examples/glowing_steel
+</li><li> tools/pdbgen/pdb/channel.pdb
+</li><li> tools/pdbgen/pdb/layer.pdb
+<p>	Two of the gimp-perl scripts used to call gimp_layer_delete() after
+	gimp_image_remove_layer(). This will fail since the layer is already 
+	scheduled for destruction by removing it from the associated image or
+	by deleting that image. It is thus dangerous and superfluous to export
+	this feature through the PDB. The gimp_layer_delete() is hereby
+	obsolete and does nothing any longer. I have removed the code calling
+	it from all over the place (it was commented out in almost all places).
+</p>
+<p>	The PDB help for gimp_channel_delete() now explicetly tells the user 
+	about the proper usage of the procedure.
+</p>
+</li></ul><div class="subtitle">2000-12-27  Michael Natterer  <mitch@gimp.org>
+</div><ul><li> plug-ins/common/csource.c: the size of the string holding the
+	image data was one byte too short (we forgot the trailing '\0').
+	Reported by <goswin.brederlow@student.uni-tuebingen.de>
+</li></ul><div class="subtitle">2000-12-27  Michael Natterer  <mitch@gimp.org>
+</div><ul><li> app/gimpimage.c: gimp_image_merge_layers(): apply the layer mask
+	only if layer->apply_mask is TRUE.
+</li></ul><div class="subtitle">2000-12-27  Michael Natterer  <mitch@gimp.org>
+</div><ul><li> app/layers_dialog.c: layers_dialog_scroll_index(): don't fiddle
+	around with magic numbers when calculating the layer widget's
+	height but simply ask one of them for it's allocation.  Fixes
+	positioning when the preview is smaller than the layer widget list
+	item.
+</li></ul><div class="subtitle">2000-12-27  Tomas Ogren  <stric@ing.umu.se>
+</div><ul><li> plug-ins/ifscompose/ifscompose_storage.c: Remove the last comma in
+	  an enum, xlc barfs
+</li></ul></li></ul><p><a href="ChangeLog.20.html">Previous Page</a> <a href="ChangeLog.22.html">Next Page</a></p><!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

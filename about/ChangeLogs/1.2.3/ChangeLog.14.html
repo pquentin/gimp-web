@@ -1,0 +1,63 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>ChangeLog</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/menu.inc" --><div class="heading">ChangeLog</div>
+<p>Page 14</p>
+<div class="subtitle">2001-06-26  Sven Neumann  <sven@gimp.org>
+</div><ul><li> gimptool.1.in: fixed gimptool manpage which was still refering to 
+	directories we used to use with GIMP version 1.0.
+</li></ul><ul><li> app/image_cmds.c
+</li><li> tools/pdbgen/pdb/image.pdb: always allocate a full colormap for
+	indexed images, even if someone sets the number of colors to zero.
+	Fixes bug #56561.
+</li></ul><div class="subtitle">2001-06-21  Sven Neumann  <sven@gimp.org>
+</div><ul><li> libgimp/gimpmath.h: do not include math.h conditionally since this
+	change broke a lot of plug-ins that do not include config.h before
+	including gimp.h and it won't work for third-party plug-ins either.
+</li></ul><ul><li> plug-ins/Lighting/lighting_ui.c
+</li><li> plug-ins/MapObject/mapobject_ui.c: use gimp_ui_init() which sets
+	the default colormap and visual in an attempt to fix bug #50715.
+</li></ul><div class="subtitle">2001-06-21  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/gdyntext/ChangeLog
+</li><li> plug-ins/gdyntext/gdyntext.[ch]: merged changes done by plug-in 
+	author into our source, thus upgrading GDynText to version 1.5.4.
+	This should fix bug #55341 (dynamic text layer renames itself).
+</li></ul><div class="subtitle">2001-06-21  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/Lighting/lighting_apply.c
+</li><li> plug-ins/common/colortoalpha.c
+</li><li> plug-ins/common/papertile.c
+</li><li> plug-ins/common/vinvert.c
+</li><li> plug-ins/script-fu/scripts/textured-logo.scm: applied a patch from
+	"Iccii" <iccii@hotmail.com> that marks a bunch of leftover strings 
+	for translation (bug #56490).
+</li></ul><div class="subtitle">2001-06-20  Michael Natterer  <mitch@gimp.org>
+</div><ul><li> app/gdisplay.c: fixed a longstanding display update bug by
+	applying the same fix to gdisplays_update_full() that has been
+	applied to gdisplays_update_area() ages ago.
+</li></ul><ul><li> app/layers_dialog.c: no need to gdisplays_flush_now() when
+	deleting the layer, gdisplays_flush() works fine now.
+</li></ul><div class="subtitle">2001-06-20  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/histogram_tool.c: use GINT_TO_POINTER and GPOINTER_TO_INT 
+	macros for the gimp_option_menu's user_data.
+</li></ul><div class="subtitle">2001-06-20  David Neary  <dneary@eircom.net>
+</div><ul><li> configure.in
+</li><li> libgimp/gimpmath.h: Added a fix which tests for ieee NaN
+	functions and includes them as the correct name if they
+	exist. This closes bug #51822. This fix is courtesy of
+	<bugzilla-gnome@thewrittenword.com>.
+</li></ul><div class="subtitle">2001-06-20  Sven Neumann  <sven@gimp.org>
+</div><ul><li> configure.in: bumped version number to 1.2.2, removed some 
+	unneeded sed hacks and added a new one to fix generation of 
+	plug-ins/perl/po/Makefile.
+</li></ul><ul><li> plug-ins/common/ps.c: applied gimp-kirchgessner-010619-0, a patch
+	from Peter Kirchgessner that should fix bug #51403.
+</li></ul><div class="subtitle">2001-06-19  Michael Natterer  <mitch@gimp.org>
+</div><ul><li> plug-ins/print/escputil.c
+</li><li> plug-ins/print/print-escp2.c: one more gimp-print update.
+	(relocated the tag in the gimp-print CVS).
+</li></ul><div class="subtitle">2001-06-19  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/flame/flame.c: do not use a drawable_ID from the last run
+	since this drawable might have changed or even vanished. The latter
+	case caused a crash (bug #37761).
+</li></ul></li></ul><p><a href="ChangeLog.13.html">Previous Page</a> <a href="ChangeLog.15.html">Next Page</a></p><!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

@@ -1,0 +1,41 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>ChangeLog</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/menu.inc" --><div class="heading">ChangeLog</div>
+<p>Page 13</p>
+<div class="subtitle">2001-07-02  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/helpbrowser/helpbrowser.c: removed special handling of 
+	undocumented filters, added support for anchors in URLs.
+</li></ul><div class="subtitle">2001-07-02  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/*/Makefile.am
+</li><li> plug-ins/common/mkgen.pl: added -I$(top_srcdir)/intl to INCLUDES.
+	This will hopefully fix #51823 without breaking it for other platforms.
+</li></ul><div class="subtitle">2001-07-02  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/perspective_tool.c
+</li><li> app/rotate_tool.c
+</li><li> app/scale_tool.c
+</li><li> app/shear_tool.c: changed location of help files.
+</li></ul><div class="subtitle">2001-07-01  Sven Neumann  <sven@gimp.org>
+</div><ul><li> gimptool.in: take glib_cflags and glib_libs from glib-config instead
+	of using ugly sed hacks to strip it out of gtk_cflags and gtk_libs.
+	This should fix 'gimptool --cflags-noui'.
+</li></ul><div class="subtitle">2001-07-01  Sven Neumann  <sven@gimp.org>
+</div><ul><li> acconfig.h: we forgot to add HAVE_FINITE and HAVE_ISFINITE here
+	(bug #56918).
+</li></ul><div class="subtitle">2001-06-30  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/global_edit.c: attach default comment to image created by
+	"Paste As New" (addresses bug #51164).
+</li></ul><div class="subtitle">2001-06-30  Adam D. Moss <adam@gimp.org>
+</div><ul><li> app/convert.c: More error recovery.  Not perfect.  Adequate.
+</li></ul><div class="subtitle">2001-06-29  Adam D. Moss <adam@gimp.org>
+</div><ul><li> app/convert.c: Make it even harder to trigger those
+	impossible-to-reach assertions, and handle things more gracefully
+	when we do reach them.  :P  Also removed some redundant calculations
+	and crufty structure elements.  Fixes bug #52264.
+</li></ul><div class="subtitle">2001-06-27  Daniel Egger <egger@suse.de>
+</div><ul><li> README.i18n: Corrected some typos and revised a sentence.
+	Thanks to Branko Collin for noticing the glitches.
+</li></ul><div class="subtitle">2001-06-26  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/dbbrowser/dbbrowser_utils.c: subtle dialog layout tweaks.
+</li></ul></li></ul><p><a href="ChangeLog.12.html">Previous Page</a> <a href="ChangeLog.14.html">Next Page</a></p><!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

@@ -1,0 +1,1661 @@
+Mon Feb 11 15:49:55 PST 2002 Manish Singh <yosh@gimp.org>
+
+	* Made 1.2.3 release
+
+2002-02-11  Stanislav Brabec  <utx@penguin.cz>
+
+	* plug-ins/Makefile.am: Install again xjt plugin, at least if not
+	OS_WIN32.
+
+2002-02-11  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/jpeg.c: applied a patch from Raphael Quinet
+	<quinet@gamers.org> that allows to open JPEG images with CMYK
+	colors (bug #69127) doing the conversion in libjepg.
+
+2002-02-09  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/gradmap.c: applied a patch from Raphael Quinet 
+	<quinet@gamers.org> that makes the Gradient Map plug-in preserve
+	the source alpha channel instead of resetting it (bug #70964).
+
+2002-02-06  Sven Neumann  <sven@gimp.org>
+
+	* libgimp/gimpenv.c (gimp_directory): removed compiler warning.
+
+2002-02-03  Sven Neumann  <sven@gimp.org>
+
+	* app/convert.c (custompal_pass1): only use the first 256 colors
+	from the palette to prevent us from crashing if convert_indexed()
+	is called with a custom palette that has more than 256 entries
+	(bug #70344).  The real fix would be to allow to dither to more
+	than 256 colors but that's left for 1.3.
+
+2002-02-03  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/smooth_palette.c: applied a patch from 
+	iccii@hotmail.com that corrects PDB registration of return values
+	(bug #70333).
+
+2002-02-03  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/script-fu/scripts/frosty-logo.scm: don't redefine min.
+	Thanks to Jeff Trefftzs <trefftzs@tcsn.net> for spotting this.
+
+Sat Feb  2 23:55:50 PST 2002 Manish Singh <yosh@gimp.org>
+
+	* Makefile.am
+	* app/Makefile.am
+	* plug-ins/print/Makefile.am
+	* tools/Makefile.am: automake quirk. the -hook and -local targets
+	always need to exist, and must not be in the conditional.
+
+Sat Feb  2 22:50:00 PST 2002 Manish Singh <yosh@gimp.org>
+
+	* Makefile.am: oops, guard the manpage stuff in DEFAULT_BINARY too
+
+Sat Feb  2 22:07:27 PST 2002 Manish Singh <yosh@gimp.org>
+
+	* tools/Makefile.am: gimp-remote is optional, so make the link only
+	conditionally.
+
+Sat Feb  2 19:23:14 PST 2002 Manish Singh <yosh@gimp.org>
+
+	* acinclude.m4: sync with glib CVS (gar)
+
+	* configure.in
+	* Makefile.am
+	* app/Makefile.am
+	* plug-ins/print/Makefile.am
+	* tools/Makefile.am
+	* (the various manpages): versioned the binaries and manpages.
+	Added an --enable-default-binary switch to configure to make
+	symlinks for unversioned things (defaults to yes for 1.2)
+
+2002-01-31  Simon Budig  <simon@gimp.org>
+
+	* plug-ins/rcm/rcm.c: register as "plug_in_rotate_colormap"
+	instead of "plug-in-rotate-colormap". This fixes the usage
+	in gimp-python (despite the fact that there is no PDB
+	interface)
+
+2002-01-24  Nick Lamb  <njl195@zepler.org.uk>
+
+	* plug-ins/common/tiff.c: Fix flipped images for the RGBA
+	fallback case (bug #69129).
+
+2002-01-24  Nick Lamb  <njl195@zepler.org.uk>
+
+	* plug-ins/common/tga.c: variant of Russell Valentine's patch
+	for optionally saving image rows in reverse order (bug #53278).
+
+2002-01-20  Sven Neumann  <sven@gimp.org>
+
+	* acinclude.m4: added macros defined in pkg.m4 and glib-gettext.m4
+	so people don't need to have glib-2.0 and pkg-config installed in
+	order to run aclocal and autoconf.
+
+	* configure.in: moved AC_PROG_CC before AM_PROG_LIBTOOL to avoid a 
+	warning.
+
+Mon Jan 14 11:00:13 PST 2002 Manish Singh <yosh@gimp.org>
+
+	* HACKING: remove note about CVS, there really isn't any reason to
+	track CVS gtk+ 1.2 anymore
+
+2002-01-07  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/xbm.c: corrected logic for saving images without an
+	additional mask file. The plug-in used to return an execution error
+	even though it saved the xbm successfully.
+
+2002-01-01  Tor Lillqvist  <tml@iki.fi>
+
+	* gimptool-win32.c.in (do_build_2): Pass also a flag to build
+	a windowing application (not a console one).
+
+2001-12-31  Tor Lillqvist  <tml@iki.fi>
+
+	* plug-ins/common/gz.c (save_image, load_image): (Win32) Improve
+	error handling in case minigzip.exe is not installed (bug# 67135).
+
+	* gimp-zip.in: Include minizip.exe (for the gz plug-in) (bug# 67135).
+	Put gif plug-in in a separate zipfile.
+
+	* libgimp/gimpenv.c (gimp_directory): (Win32) When no home
+	directory has been found, and we use a user-specific directory in
+	the GIMP installation directory: If the user name contains
+	characters that are illegal in file (or folder) names, replace
+	those characters with underscores (bug# 64491).
+
+	Actually also some legal, but odd, characters get replaced.
+	Hmm. There are problems here related to i18n. In multi-byte
+	locales g_get_user_name() presumably, at least currently, returns
+	a multi-byte string encoded in some Windows multi-byte code page,
+	and the code here will think that some or most characters in it
+	are "odd", and replace them with underscores. This will cause
+	different user names in Japanese, for instance, that happen to
+	have the same length, to be convered to the same string of
+	underscores.)
+
+2001-12-30  Tor Lillqvist  <tml@iki.fi>
+
+	* app/gimphelp.c (gimp_help_netscape): Check help_data
+	being-non-NULL before dereferencing it. (Bug# 65789)
+	(gimp_idle_help): If the internal browser wasn't found, check if
+	idle_help->help_data is NULL, and in that case put
+	"introduction.html" there, before calling gimp_help_netscape.
+
+2001-12-29  Sven Neumann  <sven@gimp.org>
+
+	* data/brushes/vine.gih: fixed rank and increased spacing.
+
+2001-12-28  Sven Neumann  <sven@gimp.org>
+
+	* app/scan_convert.c (scan_converter_to_channel): fixed a stupid bug
+	I've introduced when fixing #66003.
+
+2001-12-27  Simos Xenitellis  <simos@hellug.gr>
+
+	* configure.in: Added Greek (el) to ALL_LINGUAS.
+
+2001-12-21  Sven Neumann  <sven@gimp.org>
+
+	* configure.in (ALL_LINGUAS): removed portuguese (pt) again until
+	all po files are added.
+
+2001-12-20  Duarte Loreto <happyguy_pt@hotmail.com>
+
+        * configure.in: Added portuguese (pt) to ALL_LINGUAS
+
+2001-12-20  Marius Andreiana  <mandreiana@yahoo.com>
+
+	* configure.in: Added ro (Romanian) to ALL_LINGUAS
+	* tips/gimp_tips.ro.txt: added
+
+2001-12-18  Sven Neumann  <sven@gimp.org>
+
+	* gimptool.1.in
+	* gimptool.in: applied patch from Roger Leigh <rl117@york.ac.uk>
+	that makes gimptool respect the DESTDIR environment variable.
+
+2001-12-18  Tor Lillqvist  <tml@iki.fi>
+
+	* gimptool-win32.c.in (find_out_env_flags): Accept empty CFLAGS
+	and LDFLAGS env vars.
+
+2001-12-16  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/gap/gap_decode_xanim.c (p_xanim_dialog): fixed the last 
+	typo fix.
+
+2001-12-11  Tor Lillqvist  <tml@iki.fi>
+
+	* gimptool-win32.c.in: Also look at the CC env var, and the @CC@
+	configuration variable.
+
+	Set the msvc_syntax flag if the compiler appears to be MSVC
+	(cl). Also accept the command line flag --msvc-syntax. If
+	msvc_syntax, pass --msvc-syntax to pkg-config, and change
+	generated command line appropriately (turn -o, -L and -l flags
+	into their MSVC equivalents).
+
+	Accept also C++ source files. 
+
+	Insert a space in the generated COPY command.
+
+	Parse command line in two passes: first scan for flags that affect
+	behaviour of others, like --msvc-syntax or --prefix=, then to
+	actually do stuff. Thus the order of flags doesn't matter.
+
+2001-12-07  Tor Lillqvist  <tml@iki.fi>
+
+	* app/general.c (iso_8601_date_format): Can't use g_snprintf here,
+	we don't know the size of the user-supplied buffer. The
+	sizeof (buf) was bogus, buf is a char pointer.
+
+2001-12-05  Sven Neumann  <sven@gimp.org>
+
+	* app/scan_convert.c (convert_segment): corrected wrong clipping code
+	and plugged a memleak. A more verbose description of the problems and
+	the fix can be found with bug report #66003.
+
+2001-12-02  Abel Cheung  <maddog@linux.org.hk>
+
+	* tips/gimp_tips.zh_CN.txt: Converted to native encoding.
+
+2001-12-01  Abel Cheung  <maddog@linux.org.hk>
+
+	* tips/{Makefile.am,makefile.mingw}: Added gimp_tips.zh_CN.txt
+	  as targets.
+
+2001-12-01  Abel Cheung  <maddog@linux.org.hk>
+
+	* configure.in: Added zh_CN to ALL_LINGUAS (simplified Chinese
+	  translation was taken from HEAD branch).
+	* tips/gimp_tips.zh_CN.txt: Take simplified Chinese tips file
+	  HEAD branch.
+
+Thu Nov 29 14:25:50 PST 2001 Manish Singh <yosh@gimp.org>
+
+	* acinclude.m4: remove libtool and python stuff, stick contents
+	of accompat.m4 here
+
+	* accompat.m4: remove, doesn't seem to work with autoconf 2.13	
+	and automake 1.4
+
+	* configure.in: remove reference to accompat.m4
+
+	* app/Makefile.am
+	* libgimp/Makefile.am
+	* plug-ins/Makefile.am: comment out makefile.mingw references
+
+	* app/errors.c: default to never prompt for stack trace
+
+2001-11-30  Abel Cheung  <maddog@linux.org.hk>
+
+	* plug-ins/common/sinus.c(sinus_dialog): Fix another typo.
+
+2001-11-29  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/imagemap/imap_preferences.c: use G_DIR_SEPARATOR instead
+	of hardcoded UNIX-style slash.
+
+2001-11-29  Abel Cheung  <maddog@linux.org.hk>
+
+	* plug-ins/gap/gap_decode_xanim.c(p_xanim_dialog): fix typo.
+
+2001-11-26  Michael Natterer  <mitch@gimp.org>
+
+	* app/gimpimage.c: gimp_image_construct_layers/channels():
+	actually free the reverse_list after projecting the drawables.
+	(spotted by Kelly Martin).
+
+2001-11-24  Sven Neumann  <sven@gimp.org>
+
+	* tools/pdbgen/pdb/color.pdb
+	* tools/pdbgen/pdb/image.pdb: fixed typos.
+
+	* app/color_cmds.c
+	* app/image_cmds.c
+	* libgimp/gimpcolor_pdb.c
+	* libgimp/gimpimage_pdb.c: regenerated
+
+2001-11-23  Sven Neumann  <sven@gimp.org>
+
+	* app/about_dialog.c: sink the GtkPreview created for the logo.
+
+2001-11-22  Tor Lillqvist  <tml@iki.fi>
+
+	* accompat.m4: New file. Should solve the AM_GLIB_GNU_GETTEXT and
+	PKG_CHECK_MODULES problem when building for Unix on a system
+	without glib-gettext.m4 or pkg.m4. Idea taken from GLib.
+
+	* configure.in: Include accompat.m4.
+
+	* plug-ins/winsnap/winsnap.c (snap_dialog): gtk_window_position()
+	-> gtk_window_set_position().
+
+	* plug-ins/winsnap/Makefile.am: Compile and link resource file.
+
+2001-11-21  Sven Neumann  <sven@gimp.org>
+
+	* app/app_procs.c (splash_logo_load): sink the GtkPreview created for
+	the splash.
+
+2001-11-20  Sven Neumann  <sven@gimp.org>
+
+	* app/app_procs.c
+	* app/tile_swap.[ch]: applied a patch from Raphael Quinet that makes
+	us check on startup if a swapfile can be created and to give a better 
+	error message if we run out of memory and are unable to create a swap 
+	file (bug #64835).
+	
+	* app/user_install.c (user_install_run): fixed i18n of error messages. 
+
+2001-11-20  Tor Lillqvist  <tml@iki.fi>
+
+	* plug-ins/gap/Makefile.am: Don't use if !OS_WIN32.
+
+2001-11-19  Sven Neumann  <sven@gimp.org>
+
+	* app/paint_funcs.c (paint_funcs_setup): applied a patch from Daniel
+	Egger <degger@fhm.edu> that reduces our memory footprint by about
+	1/4 MB.
+
+2001-11-19  Stanislav Brabec  <utx@penguin.cz>
+
+	* tips/gimp_tips.cs.txt: Update and fixes.
+
+2001-11-19  Tor Lillqvist  <tml@iki.fi>
+
+	* plug-ins/common/Makefile.am: Don't use if !OS_WIN32, automake
+	1.4 doesn't like that.
+
+	* plug-ins/common/xpm.c: On Win32, use the Xpm-noX library, and
+	don't call any X functions to be able to parse colors, but use
+	gdk_color_parse().
+
+	* plug-ins/script-fu/script-fu-scripts.c (script_fu_find_scripts):
+	Remove couple of leftover debugging g_print().
+
+2001-11-18  Tor Lillqvist  <tml@iki.fi>
+
+	* libgimp/gimp.def: Added some missing entry points.
+
+	* libgimp/Makefile.am (libgimp_la_DEPENDENCIES,
+	libgimpui_la_DEPENDENCIES): Depend on corresponding .def file (on
+	Win32).
+
+2001-11-16  Tor Lillqvist  <tml@iki.fi>
+
+	* gimptool-win32.c.in: Implement the --prefix and --*dir options.
+	Don't output a space after -L.
+
+2001-11-15  Abel Cheung  <maddog@linux.org.hk>
+
+	* plug-ins/gimpressionist/size.c (create_sizepage): Fixed a tooltip
+	  string.
+
+2001-11-15  Tor Lillqvist  <tml@iki.fi>
+
+	* configure.in: Do build the webbrowser plug-in on Windows. Output
+	gimptool-win32.c
+
+	* Makefile.am: gimptool changes: On Windows, don't install the
+	script, but instead build gimptool-win32.exe, and install that as
+	gimptool.exe.
+
+	* gimptool.1.in: Mention that gimptool is a bit different on
+	Windows.
+
+	* gimp-zip.in: Add gimptool.exe and manual pages.
+
+	* gimprc.win32: Remove, as we use the same gimprc as on Unix now.
+
+	* libgimp/gimpenv.h
+	* libgimp/gimpenv.c (gimp_path_runtime_fix): New function, code
+	spliced out of gimp_path_parse(). Does nothing on Unix.
+
+	* libgimp/gimppatheditor.c (gimp_path_editor_new): Call it here,
+	too, so the user sees the run-time paths in the properties dialog.
+
+	* plug-ins/script-fu/script-fu-scripts.c (script_fu_find_scripts):
+	Use gimp_path_parse() instead of scanning the script-fu-path.
+
+	* plug-ins/webbrowser/Makefile.am: Use -mwindows.
+
+2001-11-14  Tor Lillqvist  <tml@iki.fi>
+
+	* gimptool-win32.c.in: New file. gimptool in C, for Win32, at
+	least here in gimp-1-2.
+
+2001-11-11  Tor Lillqvist  <tml@iki.fi>
+
+	* app/user_install.c: I finally had enough of the ugliness and
+	problems related to running the user_install.bat script, and
+	rewrote user_install_run() to setup the user .gimp-1.2 directory
+	by itself. GIMP already knows what needs to be done, the
+	information is in the tree_items array. Only a few new bits of
+	info per tree item were needed. As of now, this is used only on
+	Win32, but the same code should work on Unix, too (hint).
+	(copy_file, copy_directory): New auxiliary functions.
+	(quote_spaces): Now unused, remove.
+	
+	* user_install.bat: Remove.
+
+	* Makefile.am: Remove here, too.
+
+	* gimp-zip.in: Be afraid of Unisys, don't distribute gif.exe.  Add
+	etc/gimp/1.2.
+
+2001-11-10  Tor Lillqvist  <tml@iki.fi>
+
+	* app/user_install.c (user_install_run): Retract change from
+	yesterday. Don't use popen on Windows, it really doesn't work.
+
+2001-11-09  Tor Lillqvist  <tml@iki.fi>
+
+	* app/gimp.rc
+	* app/gimp.rc.in: Replace gimp.rc with gimp.rc.in, containing also
+	version information.
+	
+	* configure.in: Expand app/gimp.rc.
+
+	* app/Makefile.am: Link with compiled resource file on Windows.
+
+	* plug-ins/makefile.mingw.in: Make it work again.
+
+2001-11-09  Tor Lillqvist  <tml@iki.fi>
+
+	More changes for autoconfiscated build on Win32, and to use same
+	directory structure in the installation directory as on Unix.
+
+	* configure.in: Calculate and substitute LT_CURRENT_MINUS_AGE like
+	in GLib. Set PATHSEP as ':' or ';'. On Win32, use
+	AM_GLIB_GNU_GETTEXT. Some awful hacks so AC_OUTPUT doesn't
+	complain about files we don't have when we don't use "normal"
+	gettextize. Add EXEEXT to TIFF, JPEG, PNG, MPEG and XPM. Check for
+	winsock.h.
+
+	* acconfig.h: Add HAVE_WINSOCK_H.
+
+	* README.win32: Updates.
+
+	* Makefile.am: Install either user_install.bat or user_install.
+	(EXTRA_DIST): Distribute gimp-zip.
+
+	* gimprc.in: Use @PATHSEP@ to separate search path entries.
+
+	* gimprc_user.in: Add comment about the compile-time prefix being
+	replaced at run-time.
+
+	* user_install.bat: Use DOS line terminators, mark as binary.
+
+	* gimp-zip.in: New file, used to build distribution packages on
+	Win32.
+
+	* app/Makefile.am: On Win32, generate an .exp file with exported
+	symbols, and link with it. Copy the libtool-generated import
+	library libgimp.a to libgimpapp.a to avoid clashes with the
+	../libgimp/libgimp library.
+
+	* app/libgimpapp.la: New file. Hand-written libtool wrapper for
+	the gimp.exe import library.
+
+	* app/user_install.c (user_install_run): Use popen on Win32,
+	too. Experimental.
+
+	* libgimp/Makefile.am: Use -no-undefined and -export-symbols on
+	Windows. Install import libraries. Generate also MS import
+	libraries if MS_LIB_AVAILABLE.
+
+	* libgimp/gimp.c: Define LIBGIMP_COMPILATION here.
+
+	* libgimp/gimp.def: Update.
+
+	* libgimp/gimpenv.h
+	* libgimp/gimpenv.c: (gimp_toplevel_directory): New Win32-only
+	function.
+	(gimp_data_directory, gimp_sysconf_directory): Use it.
+	(gimp_path_parse): On Win32, if the path element starts with the
+	compile-time prefix, replace that with the run-time one.
+
+	* libgimp/gimpintl.h: On Win32, use gimp_toplevel_directory to
+	form LOCALEDIR.
+
+	* libgimp/gimpsignal.c: Bypass on Win32.
+
+	* plug-ins/Makefile.am
+	* plug-ins/*/Makefile.am: Use -mwindows on Windows. Don't build
+	nonportable plug-ins on Windows. Don't build Windows-only plug-ins
+	on Unix.
+
+	* plug-ins/common/plugindetails.c: No gtk_paned_set_gutter_size in
+	GTK+ 1.3.
+
+	* plug-ins/script-fu/script-fu-server.c: Bypass on Win32.
+
+	* modules/Makefile.am: Use -no-undefined on Windows. Use the
+	../app/libgimpapp export library.
+
+	* tips/makefile.mingw (DEST): Use Unixish subdirectory.
+
+2001-11-08  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/imagemap/imap_main.c: applied a patch from Raphael Quinet
+	that changes an error message to less confusing one (fixes bug #64075).
+
+2001-11-08  Sven Neumann  <sven@gimp.org>
+
+	* app/general.c
+	* app/levels.c
+	* app/xcf.c: snprintf() is not portable, use g_snprintf() instead.
+
+	* tools/pdbgen/pdb/text_tool.pdb: do the changes here since 
+	app/text_tool_cmds.c is generated.
+
+	* app/text_tool_cmds.c: regenerated.
+
+2001-11-07  Daniel Egger  <degger@fhm.edu>
+
+	* app/general.c
+	* app/levels.c
+	* app/text_tool_cmds.c
+	* app/xcf.c: Use snprintf instead of sprintf to protect the
+	GIMP from buffer overflow problems.
+
+2001-11-07  Abel Cheung  <maddog@linux.org.hk>
+
+	* tips/gimp_tips.zh_TW.txt: New traditional Chinese tips file.
+	* tips/Makefile.am: Modified to reflect the above addition.
+
+2001-11-06  Sven Neumann  <sven@gimp.org>
+
+	* app/fileops.c: use g_dirname() instead of setting the file selectors
+	filename to "" to get the current directory name. Now we don't have to
+	set the filename back later since we didn't touch it, thus we can't 
+	get it wrong. Fixes bug #63880.
+
+2001-11-06  Daniel Egger  <degger@fhm.edu>
+
+	* plug-ins/common/gauss_rle.c: Unconditionally premultiply
+	alpha into source and seperate it from the dest. Similar to
+	the previous fix.
+
+2001-11-05  Daniel Egger  <degger@fhm.edu>
+
+	* plug-ins/common/gauss_iir.c: Unconditionally premultiply
+	alpha into source and seperate it from the dest. Fixes
+	bug #57853.
+
+2001-11-05  Daniel Egger  <degger@fhm.edu>
+
+	* app/gimpimage.c
+	* app/gimpimage.h
+	* app/paint_funcs.c
+	* app/paint_funcs.h: Constified a few parameter arguments to
+	shut up gcc warnings.
+	
+	* libgimp/gimpintl.h
+	* libgimp/libgimp-intl.h
+	* plug-ins/perl/perl-intl.h: When compililing without NLS
+	cast "return" of gettextish calls to char * to avoid
+	warnings.
+	
+	* plug-ins/common/url.c: Check for EOF by using feof instead
+	of comparing against EOF to avoid warning.
+
+	* plug-ins/imagemap/imap_cern.l
+	* plug-ins/imagemap/imap_cern.y
+	* plug-ins/imagemap/imap_cern_lex.c
+	* plug-ins/imagemap/imap_csim.l
+	* plug-ins/imagemap/imap_csim_lex.c
+	* plug-ins/imagemap/imap_ncsa.l
+	* plug-ins/imagemap/imap_ncsa_lex.c: Include string.h for
+	prototype of strcpy.
+	
+	* plug-ins/rcm/rcm_callback.c: Change string from (???) to
+	??? to avoid compiler confusion with possible trigraph.
+
+	* plug-ins/script-fu/interp_sliba.c: Change template parameters
+	of sprintf from long to int to avoid warnings. 
+	
+	* plug-ins/gap/gap_filter_iterators.c: Remove unused functions
+	to... you get the idea. :)
+
+2001-11-05  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/imagemap/*.c: marked strings for translation, include
+	config.h and corrected include order. Added a check for NULL pointers
+	that might fix bug #33802 (I can't reproduce the problem, so I can't 
+	check).
+
+2001-11-04  Sven Neumann  <sven@gimp.org>
+
+	* tools/pdbgen/app.pl: include config.h from all generated files.
+	This is generally a good idea and fixes bug #58842.
+
+	* tools/pdbgen/pdb/fileops.pdb
+	* tools/pdbgen/pdb/image.pdb
+	* tools/pdbgen/pdb/procedural_db.pdb: don't explicitely include 
+	config.h.
+
+	* app/*_cmds.c: regenerated.
+
+2001-11-02  Tor Lillqvist  <tml@iki.fi>
+
+	* README.win32: Updates.
+
+	* configure.in: First preparations for autoconfiscated build on
+	Win32 (with gcc): Call AC_LIBTOOL_WIN32_DLL. Check for Windows
+	platform, and pure Windows. Set Automake macros PLATFORM_WIN32 and
+	OS_WIN32 correspondingly. Check for availability of lib.exe.
+
+	On Win32, don't check for GTK+ 1.2.8, but for
+	gtk+-1.3-win32-production using the PKG_CHECK_MODULES macro. This
+	macro is called only on Win32, so I hope it doesn't matter if
+	autoconf is run on a Unix system without pkg-config?
+
+	Assure -fnative-struct is used. Enclose nested AC_CHECK_HEADER
+	calls in brackets, otherwise Autoconf 2.52 will generate bad shell
+	code.
+
+	* Makefile.am (EXTRA_DIST): Distribute po*/makefile.mingw here.
+
+	* config.h.win32: Define HAVE_DIRENT_H. Mingw has it, and for MSVC
+	it is also available in build/win32/dirent.
+
+	* libgimp/makefile.mingw.in
+	* modules/makefile.mingw.in: Use new build-dll invokation syntax.
+
+	* app/fileops.c (file_ops_post_init): Use G_DIR_SEPARATOR_S.
+
+	* plug-ins/makefile.mingw.in: Don't build separate tiff_nolzw
+	plug-in. Build just one tiff.exe, but distribute alternative
+	libtiff DLLs (with identical entry points). Remove more
+	unnecessarily copied Makefiles when installing gflare,
+	gimpressionist or fractalexplorer stuff.
+
+	* plug-ins/common/animationplay.c: Don't include gdkwin32.h, as
+	the gtk+-1.3.0-win32-production dist doesn't include a good
+	one. Instead copy the two lines necessary.
+
+	* plug-ins/common/png.c (load_image): libpng 1.2.0 doesn't have
+	png_read_destroy() or png_write_destroy() as public functions.
+
+	* plug-ins/script-fu/script-fu.ico
+	* plug-ins/script-fu/script-fu.rc: Were missing from CVS.
+
+	* plug-ins/script-fu/Makefile.am (EXTRA_DIST): Distribute them.
+
+2001-10-31  Gediminas Paulauskas <menesis@delfi.lt>
+
+	* tips/gimp_tips.lt.txt: convert to UNIX newline format.
+
+2001-10-28  Sven Neumann  <sven@gimp.org>
+
+	* README
+	* plug-ins/webbrowser/web-browser.scm: updated some links.
+
+2001-10-26  Sven Neumann  <sven@gimp.org>
+
+	* app/temp_buf.c (temp_buf_to_gray): rewrote so gcc-3.0 doesn't 
+	complain.
+	
+	* tools/pdbgen/lib.pl: add #include <string.h> if the generated code
+	uses memcpy().
+
+	* libgimp/gimpbrushes_pdb.c
+	* libgimp/gimpdrawable_pdb.c
+	* libgimp/gimpgradients_pdb.c
+	* libgimp/gimpgradientselect_pdb.c
+	* libgimp/gimpimage_pdb.c
+	* libgimp/gimppaths_pdb.c
+	* libgimp/gimppatterns_pdb.c
+	* libgimp/gimpproceduraldb_pdb.c: regenerated.
+
+	* libgimp/gimpmatrix.c
+	* libgimp/gimpproceduraldb.c
+	* libgimp/gimpwidgets.c
+	* modules/colorsel_triangle.c
+	* plug-ins/flame/libifs.c
+	* plug-ins/gap/gap_dbbrowser_utils.c
+	* plug-ins/gap/gap_filter_foreach.c: 
+	* plug-ins/ifscompose/ifscompose_storage.c
+	* plug-ins/imagemap/imap_circle.c
+	* plug-ins/imagemap/imap_grid.c
+	* plug-ins/imagemap/imap_rectangle.c
+	* plug-ins/common/mpeg.c
+	* plug-ins/common/plasma.c
+	* tools/gimp-remote.c: added missing includes wanted by gcc-3.0.
+
+2001-08-01  Nick Lamb  <njl195@zepler.org.uk>
+
+	* app/by_color_select.c
+	* app/curves.c 
+	* app/gimpui.c
+	* app/global_edit.c 
+	* app/image_new.c 
+	* app/layers_dialog.c 
+	* app/measure.c 
+	* app/palette_select.c
+	* app/shear_tool.c 
+	* app/user_install.c: Include std C headers to reduce warnings.
+
+2001-10-24  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/perl/examples/glowing_steel: applied a patch from Raphael
+	Quinet that fixes bug #56598 (Highlight Edges crashes if used on a 
+	non-visible layer).
+	
+2001-10-24  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/grid.c: made the preview work for indexed images.
+
+2001-10-24  Sven Neumann  <sven@gimp.org>
+
+	* libgimp/gimpexport.c: 
+	applied a patch from Raphael Quinet <quinet@gamers.org> that fixes
+	bug #51114 (Incorrect data saved in image file) and a whole bunch 
+	of related or duplicated bug reports.
+
+2001-10-23  Sven Neumann  <sven@gimp.org>
+
+	* app/tools_cmds.c
+	* tools/pdbgen/pdb/tools.pdb: forgot to check for layer masks in
+	gimp_perspective() PDB calls.
+
+2001-10-22  Sven Neumann  <sven@gimp.org>
+
+	* tools/pdbgen/tools.pdb
+	* app/tools_cmds.c: don't allow to apply transformations to layers
+	that have a layer mask attached. We do not support this, but didn't
+	check the PDB calls to the transform tool. 
+
+	This fixes bug #62764 (rotate a gdyntext with layer mask applied 
+	freezes gimp), but GDynText should probably reflect the fact that
+	the text can not be rotated if it has a layer mask by graying out 
+	the rotation UI elements.
+
+	* app/tips_dialog.c: make Next and Previous buttons insensitive if
+	no tips could be loaded (as suggested by Branko Collin).
+	
+	* plug-ins/common/mblur.c (mblur_linear): avoid endless looping when
+	length == 1 in linear mode (fixes bug #62640).
+
+	* plug-ins/gap/gap_lib.c: applied patch from Wolfgang Hofer that fixes 
+	bug #61677 (error in duplicate frames GUI).
+
+2001-10-19  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/FractalExplorer/FractalExplorer.c
+	* plug-ins/common/illusion.c: added missing PDB parameters. Thanks
+	to iccii@hotmail.com for spotting these.
+
+2001-10-16  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/colortoalpha.c
+	* plug-ins/common/sel_gauss.c: fixed wrong checks for number of
+	parameters when called non-interactively (bug #62433). Thanks to 
+	iccii@hotmail.com for spotting this and providing a patch.
+
+Mon Oct 15 10:52:22 PDT 2001 Manish Singh <yosh@gimp.org>
+
+	* configure.in: bumped version to 1.2.3, correct library ages (back
+	to 1.2.1 compatibility), added comment regarding these
+
+2001-10-15  Sven Neumann  <sven@gimp.org>
+
+	* app/fileops.c: 
+	applied a patch from Raphael Quinet <quinet@gamers.org> that makes
+	the "File exists!" dialog box transient for the save dialog. Addresses
+	bug #61092.
+
+2001-10-15  Zbigniew Chyla  <cyba@gnome.pl>
+
+	* tips/gimp_tips.pl.txt: Updated Polish translation.
+
+2001-10-10  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/Lighting/lighting_image.c: merged fix for bug #22161
+	from HEAD.
+
+2001-10-10  Sven Neumann  <sven@gimp.org>
+
+	* app/fileops_cmds.c
+	* tools/pdbgen/app.pl
+	* tools/pdbgen/pdb/fileops.pdb: call mkdir() in the PDB function
+	gimp_temp_name() so there's a better chance the temp dir exists 
+	before plug-ins try to place temporary files there. This is a 
+	workaround for bug #61803.
+	
+2001-10-10  Gediminas Paulauskas <menesis@delfi.lt>
+
+	* tips/Makefile.am
+	* tips/makefile.mingw: Added gimp_tips.lt.txt to the targets. 
+
+	* tips/gimp_tips.lt.txt: Added Lithuanian tips file. 
+
+2001-10-10  Sven Neumann  <sven@gimp.org>
+
+	* app/docindex.c: rewrote parser to make it more robust against a 
+	corrupt ideas file (bug #61894).
+
+2001-10-10  Sven Neumann  <sven@gimp.org>
+
+	* app/blend.c
+	* app/by_color_select.c
+	* app/channel_ops.c
+	* app/clone.c
+	* app/color_panel.c
+	* app/color_picker.c
+	* app/edit_selection.c
+	* app/ellipse_select.c
+	* app/free_select.c
+	* app/gdisplay.c
+	* app/magnify.c
+	* app/measure.c
+	* app/move.c
+	* app/paint_core.c
+	* app/path_bezier.c
+	* app/path_tool.c
+	* app/rect_select.c
+	* app/selection.c
+	* app/text_tool.c
+	* app/transform_core.c: small cleanups (use TRUE/FALSE instead of 1/0)
+	I did while trying to fix bug #17904. I will commit the real changes
+	separately.
+
+2001-10-08  Michael Natterer  <mitch@gimp.org>
+
+	* configure.in: some new Makefiles in help/.
+
+2001-10-03  Sven Neumann  <sven@gimp.org>
+
+	* app/drawable_cmds.c
+	* app/image_cmds.c
+	* tools/pdbgen/pdb/drawable.pdb
+	* tools/pdbgen/pdb/image.pdb: always return a thumbnail of at least
+	1 pixel width and height so plug-ins don't have to check the return 
+	value. Seems to fix bug #50867, please test!
+
+2001-10-02  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/sobel.c (sobel_dialog): corrected initial setting
+	of toggle button. Thanks to floemker@TechFak.Uni-Bielefeld.DE for
+	spotting this one (bug #61525).
+
+2001-10-01  Sven Neumann  <sven@gimp.org>
+
+	* app/gimpbrush.c (gimp_brush_load): don't crash on invalid brush
+	files (fixes bug #61418).
+
+2001-10-01  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/script-fu/script-fu-server.c (script_fu_server_run): 
+	fixed wrong error message.
+
+2001-09-05  Abel Cheung  <maddog@linux.org.hk>
+
+	* configure.in: Rename zh_TW.Big5 to zh_TW in ALL_LINGUAS.
+
+2001-08-29  Jay Cox  <jaycox@gimp.org>
+
+	* app/paint_core.c:
+	Fixed bug which would sometimes cause there to be a small gap
+	between lines drawn using the shift click feature of the 
+	painting tools.
+
+2001-08-30  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/script-fu/scripts/trochoid.scm: 
+	fixed parameter description (bug #59760).
+
+2001-08-29  Sven Neumann  <sven@gimp.org>
+
+	* README.i18n: added a section that mentions the GNOME translation
+	project that coordinates translation efforts in the GNOME CVS tree.
+
+2001-08-14  Andras Timar <timar@gnome.hu>
+
+	* tips/gimp_tips.hu.txt: Fixing typos.
+
+2001-08-11  Emese Kovacs <emese@gnome.hu>
+
+	* tips/gimp_tips.hu.txt: Updated Hungarian translation
+
+2001-08-07  Emese Kovacs <emese@gnome.hu>
+
+        * tips/Makefile.am|makefile.mingw: Added gimp_tips.hu.txt to the
+	targets. 
+
+	* tips/gimp_tips.hu.txt: Added Hungarian tips file. 
+
+2001-08-01  Nick Lamb  <njl195@zepler.org.uk>
+
+	* plug-ins/common/tga.c: Fix for small TGA2 files
+
+2001-07-30  Sven Neumann  <sven@gimp.org>
+
+	* HACKING
+	* autogen.sh: we require gettext version 0.38.
+
+2001-07-26  Sven Neumann  <sven@gimp.org>
+
+	* Made 1.2.2 release.
+
+2001-07-26  Sven Neumann  <sven@gimp.org>
+
+	* configure.in: added zh_TW.Big5 to ALL_LINGUAS (traditional chinese).
+
+2001-07-25  Shirasaki Yasuhiro  <yasuhiro@gnome.gr.jp>
+
+	* tips/gimp_tips.ja.txt: file (kanji) encoding adjustment.
+
+2001-07-24  Sven Neumann  <sven@gimp.org>
+
+	* tips/gimp_tips.ja.txt: 
+	updated japanese translation by Iccii <iccii@hotmail.com>.
+
+2001-07-23  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/winclipboard.c
+	* plug-ins/gap/gap_filter_foreach.c
+	* plug-ins/imagemap/imap_cmd_guides.c
+	* plug-ins/sel2path/pxl-outline.c: marked missing strings for 
+	translation (patch from Iccii <iccii@hotmail.com>).
+
+2001-07-22  Stanislav Brabec  <utx@penguin.cz>
+
+	* plugins/common/despeckle.c: Reflect my fix from 2001-03-01
+	(range limits) in script-fu comments.
+
+2001-07-20  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/jpeg.c: removed "Baseline JPEG" toggle button from
+	the GUI because it allowed to trigger a bug in libjpeg that caused a 
+	crash (bug #57727). The non-interactive version still has the baseline
+	option so scripts don't have to change.
+
+2001-07-19  Sven Neumann  <sven@gimp.org>
+
+	* configure.in: added lt (Lithuanian) to ALL_LINGUAS.
+
+2001-07-19  Sven Neumann  <sven@gimp.org>
+
+	* configure.in: removed ro from ALL_LINGUAS because the translation
+	was for the gimp HEAD branch and po files were missing.
+
+2001-07-17  Marius Andreiana  <mandreiana@yahoo.com>
+
+	* configure.in: Added ro (Romanian) to ALL_LINGUAS
+
+2001-07-14  Sven Neumann  <sven@gimp.org>
+
+	* app/display_cmds.c
+	* tools/pdbgen/pdb/display.pdb (display_new_invoker): removed 
+	unnecessary check for gimage->layers. Creating a display for an empty
+	image is a valid operation.
+
+2001-07-14  Fatih Demir <kabalak@gtranslator.org>
+
+        * tips/Makefile.am|makefile.mingw: Added gimp_tips.tr.txt to the
+	targets and re-ordered the tips files listings.
+
+	* tips/gimp_tips.tr.txt: Added Turkish tips file from Alper Ersoy.
+
+2001-07-10  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/bz2.c
+	* plug-ins/common/gz.c: a fix for bug #57217 based on a patch from
+	Raphael Quinet.
+
+2001-07-10  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/gap/gap_lib.c (p_file_copy): open files in binary mode. 
+	A patch from Wolfgang Hofer that possibly fixes bug #52890.
+
+2001-07-03  Sven Neumann  <sven@gimp.org>
+
+	* Makefile.am: added ChangeLog.pre-1-2 to EXTRA_DIST (makes a good 
+	read on long winter evenings).
+
+	* tools/Makefile.am: added gimppath2svg.py to EXTRA_DIST.
+
+2001-07-03  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/xwd.c: applied patch from Peter Kirchgessner 
+	<peter@kirchgessner.net> that fixes bug #56830.
+
+2001-07-02  Nick Lamb  <njl195@zepler.org.uk>
+
+	* plug-ins/common/png.c: Change PNG defaults (no 1.0 gamma chunk)
+
+2001-07-02  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/helpbrowser/helpbrowser.c: removed special handling of 
+	undocumented filters, added support for anchors in URLs.
+
+2001-07-02  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/*/Makefile.am
+	* plug-ins/common/mkgen.pl: added -I$(top_srcdir)/intl to INCLUDES.
+	This will hopefully fix #51823 without breaking it for other platforms.
+
+2001-07-02  Sven Neumann  <sven@gimp.org>
+
+	* app/perspective_tool.c
+	* app/rotate_tool.c
+	* app/scale_tool.c
+	* app/shear_tool.c: changed location of help files.
+
+2001-07-01  Sven Neumann  <sven@gimp.org>
+
+	* gimptool.in: take glib_cflags and glib_libs from glib-config instead
+	of using ugly sed hacks to strip it out of gtk_cflags and gtk_libs.
+	This should fix 'gimptool --cflags-noui'.
+
+2001-07-01  Sven Neumann  <sven@gimp.org>
+
+	* acconfig.h: we forgot to add HAVE_FINITE and HAVE_ISFINITE here
+	(bug #56918).
+
+2001-06-30  Sven Neumann  <sven@gimp.org>
+
+	* app/global_edit.c: attach default comment to image created by
+	"Paste As New" (addresses bug #51164).
+
+2001-06-30  Adam D. Moss <adam@gimp.org>
+
+	* app/convert.c: More error recovery.  Not perfect.  Adequate.
+
+2001-06-29  Adam D. Moss <adam@gimp.org>
+
+	* app/convert.c: Make it even harder to trigger those
+	impossible-to-reach assertions, and handle things more gracefully
+	when we do reach them.  :P  Also removed some redundant calculations
+	and crufty structure elements.  Fixes bug #52264.
+
+2001-06-27  Daniel Egger <egger@suse.de>
+
+	* README.i18n: Corrected some typos and revised a sentence.
+	Thanks to Branko Collin for noticing the glitches.
+
+2001-06-26  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/dbbrowser/dbbrowser_utils.c: subtle dialog layout tweaks.
+
+2001-06-26  Sven Neumann  <sven@gimp.org>
+
+	* gimptool.1.in: fixed gimptool manpage which was still refering to 
+	directories we used to use with GIMP version 1.0.
+	
+	* app/image_cmds.c
+	* tools/pdbgen/pdb/image.pdb: always allocate a full colormap for
+	indexed images, even if someone sets the number of colors to zero.
+	Fixes bug #56561.
+
+2001-06-21  Sven Neumann  <sven@gimp.org>
+
+	* libgimp/gimpmath.h: do not include math.h conditionally since this
+	change broke a lot of plug-ins that do not include config.h before
+	including gimp.h and it won't work for third-party plug-ins either.
+
+	* plug-ins/Lighting/lighting_ui.c
+	* plug-ins/MapObject/mapobject_ui.c: use gimp_ui_init() which sets
+	the default colormap and visual in an attempt to fix bug #50715.
+
+2001-06-21  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/gdyntext/ChangeLog
+	* plug-ins/gdyntext/gdyntext.[ch]: merged changes done by plug-in 
+	author into our source, thus upgrading GDynText to version 1.5.4.
+	This should fix bug #55341 (dynamic text layer renames itself).
+
+2001-06-21  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/Lighting/lighting_apply.c
+	* plug-ins/common/colortoalpha.c
+	* plug-ins/common/papertile.c
+	* plug-ins/common/vinvert.c
+	* plug-ins/script-fu/scripts/textured-logo.scm: applied a patch from
+	"Iccii" <iccii@hotmail.com> that marks a bunch of leftover strings 
+	for translation (bug #56490).
+
+2001-06-20  Michael Natterer  <mitch@gimp.org>
+
+	* app/gdisplay.c: fixed a longstanding display update bug by
+	applying the same fix to gdisplays_update_full() that has been
+	applied to gdisplays_update_area() ages ago.
+
+	* app/layers_dialog.c: no need to gdisplays_flush_now() when
+	deleting the layer, gdisplays_flush() works fine now.
+
+2001-06-20  Sven Neumann  <sven@gimp.org>
+
+	* app/histogram_tool.c: use GINT_TO_POINTER and GPOINTER_TO_INT 
+	macros for the gimp_option_menu's user_data.
+
+2001-06-20  David Neary  <dneary@eircom.net>
+
+	* configure.in
+	* libgimp/gimpmath.h: Added a fix which tests for ieee NaN
+	functions and includes them as the correct name if they
+	exist. This closes bug #51822. This fix is courtesy of
+	<bugzilla-gnome@thewrittenword.com>.
+
+2001-06-20  Sven Neumann  <sven@gimp.org>
+
+	* configure.in: bumped version number to 1.2.2, removed some 
+	unneeded sed hacks and added a new one to fix generation of 
+	plug-ins/perl/po/Makefile.
+	
+	* plug-ins/common/ps.c: applied gimp-kirchgessner-010619-0, a patch
+	from Peter Kirchgessner that should fix bug #51403.
+
+2001-06-19  Michael Natterer  <mitch@gimp.org>
+
+	* plug-ins/print/escputil.c
+	* plug-ins/print/print-escp2.c: one more gimp-print update.
+	(relocated the tag in the gimp-print CVS).
+
+2001-06-19  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/flame/flame.c: do not use a drawable_ID from the last run
+	since this drawable might have changed or even vanished. The latter
+	case caused a crash (bug #37761).
+
+2001-06-19  Sven Neumann  <sven@gimp.org>
+
+	* app/fileops.c (file_open): do not use the global variable 
+	load_procs used by the file open dialog to store the user setting for 
+	the filetype. This setting is now only used if files are opened thru 
+	the file open dialog and not when opened using DND or other methods. 
+	Fixes bug #51722.
+
+2001-06-18  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/script-fu/script-fu-console.c: specify encoding for char
+	cell font and use gdk_fontset_load() instead of gfk_font_load().
+	Fixes bug #50522 for me and hopefully does not break things for you.
+	Please test the Script-Fu console.
+
+2001-06-18  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/newsprint.c: applied patch found in bug-report
+	#52981 that fixes wrong handling of GRAYA drawables in the 
+	Newsprint GUI.
+
+	* app/crop.c: do not update info_window on redraw but only on motion.
+	This is a very lame but simple fix for bug #38737. A correct fix
+	would be to change the Crop tool not to abuse the info_window, but
+	I consider this too much change for 1.2.
+	
+2001-06-18  Michael Natterer  <mitch@gimp.org>
+
+	* app/selection.h: Selection->timer must be a guint, not a gint.
+
+	May address #10498 "Marching Ants die untimely deaths" but I
+	cannot verify that since #10498 never happened here. Chances are
+	however good that this is #10498 related, as it usually occurs
+	after several hours of usage and may well be a signed<->unsigned
+	overflow problem.
+
+2001-06-18  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/gfig/gfig.c: marked missing string for translation.
+	
+	* plug-ins/script-fu/scripts/land.scm: corrected wrong parameter 
+	description. 
+
+	Thanks to "Iccii" <iccii@hotmail.com> for his patch.
+
+2001-06-15  Michael Natterer  <mitch@gimp.org>
+
+	* configure.in
+	* plug-ins/print/README
+	* plug-ins/print/RELNOTES
+	* plug-ins/print/gimp_main_window.c
+	* plug-ins/print/print-dither.c
+	* plug-ins/print/print-escp2.c
+	* plug-ins/print/print-printers.c
+	* plug-ins/print/print-util.c: updated to the latest CVS version
+	of the gimp-print stable branch (4.0.5).
+
+2001-06-15  Austin Donnelly  <austin@gimp.org>
+
+	* app/gdisplay.c: initialise gdisp->cursor_x and gdisp->cursor_y
+	    to 0 in gdisplay_new() so that we don't get floating point
+	    exceptions when attempting to translate to screen co-ords in
+	    gdisplay_update_cursor().  Fixes critical Bug #56237.
+
+2001-06-12  Sven Neumann  <sven@gimp.org>
+
+	* app/gimpimage.c: unref layers and channels instead of sinking them
+	when destroying an image.
+
+2001-06-02  Garry R. Osgood <grosgood@rcn.com>
+	
+	* tips/gimp_tips.txt: English language typo at line 50: it -> is.
+	* app/crop.c Fix for bugs #9350 and #54838 which prevents Gimp
+	crash on floating selections; issue of bad cropping raised by
+	#9350 reporter dyfa@addict.de still extant because a scheme
+	script cannot select to crop on a layer, and a crop with respect
+	to the entire image may be completely disjoint with respect to
+	the layer on which a user is applying an effect. Such
+	condition leads to the reported script-fu error, which is less
+	severe than an application crash.
+
+2001-06-02  Sven Neumann  <sven@gimp.org>
+
+	* tips/gimp_conseils.fr.txt
+	* tips/gimp_tips.de.txt
+	* tips/gimp_tips.txt: fixed an error pointed out by Branko Collin:
+	Bucket Fill tool uses BG color when pressing Ctrl, not Shift. Someone
+	needs to fix the other languages.
+
+2001-05-22  Sven Neumann  <sven@gimp.org>
+
+	* autogen.sh: allow for automake 1.4-p1 and similar version numbers.
+	(fix ported from HEAD branch)
+	
+	* app/module_db.c: applied a patch from Austin Donnelly that fixes 
+	bug #55050 (button without label in Module Browser).
+
+2001-05-06 Garry R. Osgood <grosgood@rcn.com>
+
+	* app/histogram_tool.c:
+	histogram_tool_initialize() now aligns its option menu
+	and internal state to GIMP_HISTOGRAM_VALUE when it is
+	given a channel. Prior, only hid option menu, causing
+	crash reported in #54131 when internals attempted to
+	generate histogram on non-existent drawable component. 
+	Closes #54131.
+
+2001-04-24  Michael Natterer  <mitch@gimp.org>
+
+	Plugged some memleaks:
+
+	* app/gimpbrush.c: don't leak all pixmaps.
+
+	* app/gimpbrushpipe.c: free all the pipe's brushes here.
+
+2001-04-23  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/perl/examples/terral_text: fixed syngin's fix
+
+	* plug-ins/perl/examples/image_tile
+	* plug-ins/perl/examples/yinyang: 
+	applied gimp-kirchgessner-010422-0.patch which fixes problems with 
+	invalid number of parameters passed to some functions.
+
+	* plug-ins/script-fu/interp_sliba.c: fixed problems with strbreakup 
+	reported by Mike Kelly <mike@csuchico.edu> (bugs #52383 and #52385)
+
+2001-04-23  Mel Boyce  <syngin@gimp.org>
+
+	* plug-ins/perl/examples/terral_text: Fixed typo.
+
+Sat Apr 21 17:04:34 PDT 2001 Manish Singh <yosh@gimp.org>
+
+	* acinclude.m4: updated libtool stuff
+
+	* configure.in: more #undefs so jpeglib.h test works
+
+	* plug-ins/common/bumpmap.c: speedup patch from Ernst Lippe
+	<ernstl@planet.nl> (tile cache size optimization)
+
+2001-04-11  Stanislav Brabec  <utx@penguin.cz>
+
+	On request of Martin Weber <martweb@gmx.net>:
+	* plug-ins/bmp/bmpread.c:
+	GIMP couldn't read bmp files with a bad chunk. This kind of files 
+	can be found in OS/2 1.x.
+
+2001-04-10  Sven Neumann  <sven@gimp.org>
+
+	* app/posterize.c
+	* plug-ins/common/fractaltrace.c
+	* plug-ins/common/illusion.c
+	* plug-ins/flame/flame.c
+	* plug-ins/gfig/gfig.c
+	* plug-ins/gimpressionist/general.c
+	* plug-ins/imagemap/imap_cmd_guides.c
+	* plug-ins/mosaic/mosaic.c
+	* plug-ins/winsnap/winsnap.c: applied a patch from Iccii that marks a 
+	few leftover strings for translation. People, update your translations!
+
+2001-04-08  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/bmp/bmp.c
+	* plug-ins/common/jpeg.c
+	* plug-ins/common/mpeg.c
+	* plug-ins/common/png.c
+	* plug-ins/common/tiff.c
+	* plug-ins/common/xpm.c
+	* plug-ins/script-fu/script-fu.c
+	* plug-ins/twain/twain.c
+	* plug-ins/winsnap/winsnap.c: s/INIT_I18N/INIT_I18N_UI/. Should
+	fix problems with font encodings for russian users (and probably
+	others).
+
+2001-04-06  Stanislav Brabec  <utx@penguin.cz>
+
+        On request of Martin Weber <martweb@gmx.net>:
+        * plugins/common/tga.c: Fixed bug #52728 - problem in loading
+	compressed and uncompressed 15 bit tga, compressed 16 bit tga
+	files and removed a false warning for 32 bit tga files.
+
+2001-04-03  Matt Wilson  <msw@redhat.com>
+
+	* libgimp/gimp.c (gimp_main): _always_ set up the other locale
+	categories, otherwise many C libraries will blow away characters
+	outside of the POSIX charset.  Still use the C locale for
+	LC_NUMERIC, though. r: yosh@gimp.org
+
+2001-03-22  Stanislav Brabec  <utx@penguin.cz>
+
+        * app/bucket_fill.c: Bucket fill threshold=0 must be allowed.
+
+2001-03-15  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/screenshot.c: applied patch from 
+	Tom Holroyd <tomh@po.crl.go.jp> which fixes wrong array size.
+
+2001-03-13  Fatih Demir <kabalak@gtranslator.org>
+
+	* configure.in: Added "tr" to ALL_LINGUAS.
+
+2001-03-12  Tor Lillqvist  <tml@iki.fi>
+
+	* libgimp/makefile.msc: Add missing object files. The import
+	library for the intl library is now called just intl.
+
+	* libgimp/makefile.msc (gimpi_OBJECTS): Typo.
+
+	* app/makefile.msc (gimp_OBJECTS): Remove objects corresponding to
+	removed source files. Update name of import library for the intl
+	library. Add missing objects.
+
+	* app/gimpbrush.c
+	* app/gimpbrushpipe.c
+	* app/patterns.c: Include <glib.h> early for G_OS_WIN32.
+
+	* app/dialog_handler.h: Change the #ifdef logic: Declare
+	dialog_register and dialog_unregister always, but mark for export
+	only when compiling dialog_handler.c. That way MSVC won't complain
+	when dialog_handler.c calls dialog_unregister without it
+	being defined, and also the declarations and definitions will
+	have identical attributes (both marked for export). Whew. Gcc
+	is a bit less picky, it accepts a declaration that isn't marked
+	for export even if the definition is.
+
+	* app/dialog_handler.c: Change comment correspondingly.
+
+2001-03-11  Daniel Egger  <egger@suse.de>
+
+	* plug-ins/common/sobel.c: Applied patch from
+	Austin Donnelly to fix rendering of the topmost
+	scanline.
+
+2001-03-11  Tor Lillqvist  <tml@iki.fi>
+
+	* plug-ins/common/winclipboard.c: Enhance to also be able to paste
+	BI_BITFIELDS images, 16- or 32-bit. Global indentation and spacing
+	fix (use cvs diff -bu2 to see the real differences).
+
+2001-03-10  Tor Lillqvist  <tml@iki.fi>
+
+	* plug-ins/makefile.mingw.in: Add some missing standard plug-ins,
+	and some new unofficial ones. Don't define -Drandom=g_random_int,
+	the RAND_FUNC in config.h.win32 takes care of this. Define GIMP
+	for mathmap.
+
+	* user_install.bat: Copy the default palettes to the user's
+	palette directory.
+
+	* app/dialog_handler.c: Define __DIALOG_HANDLER_C_, not
+	__DIALOG_HANDLER_C__, to match the #ifndef in
+	dialog_handler.h. Add comment why __DIALOG_HANDLER_C_ is needed.
+
+2001-03-04  Zbigniew Chyla  <cyba@gnome.pl>
+
+	* app/commands.c (image_scale_callback),
+	libgimp/gimpchainbutton.c (gimp_chain_button_destroy),
+	libgimp/gimpcolorbutton.c (gimp_color_button_destroy):
+	Move variable assignments out of assertions to allow compilation
+	with "G_DISABLE_ASSERT" and/or "G_DISABLE_CHECKS" defined.
+
+2001-03-04  Sven Neumann  <sven@gimp.org>
+
+	* app/preferences_dialog.c (prefs_save_callback): applied a patch
+	from David Odin <David.Odin@bigfoot.com> that fixes a typo in the code.
+
+2001-03-01  Daniel Egger  <egger@suse.de>
+
+	* ChangeLog:
+	* ChangeLog.pre-1-2: Move the pre-1.2 changes out
+	to their own new file.
+
+2001-03-01  Daniel Egger  <egger@suse.de>
+
+	* app/fileops.c: Applied fix from Dave Neary to fix
+	bug #37633 "File->Revert doesn't resize canvas". Not
+	the best fix but quite effective.
+
+2001-03-01  Stanislav Brabec  <utx@penguin.cz>
+
+        * plugins/common/despeckle.c: Fixed black_level range.
+        Valid range should be -1..255, not 0..256, because comaparison
+	is > and <=. Bug became visible after last Martin Weber's fix.
+        There must be for both black and white levels one extra value
+	to cover all numbers 0..255.
+
+2001-02-27  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/header.c: applied patch from Chuck Mason 
+	<chuckjr@unbounded.com> that fixes wrong output of header plug-in.
+
+2001-02-10  Stanislav Brabec  <utx@penguin.cz>
+
+        On request of Martin Weber <martweb@gmx.net>.
+	* plugins/common/despeckle.c: Fixed comparison *sort_ptr > black_level.
+	Only adopting white_level had a visual effect. This fix causes
+	that also adopting blck_level works also.
+
+2001-02-07  Daniel Egger  <egger@suse.de>
+
+        * configure.in: Changed link order in gtkxmhtml check
+	to fix bug #12653.
+		
+2001-02-06  Sven Neumann  <sven@gimp.org>
+
+	* data/brushes/hsparks.gih
+	* data/brushes/vine.gih: seems we had forgotten to convert these
+	to the new format.
+
+2001-02-05  Jay Cox  <jaycox@gimp.org>
+
+	* app/gimphistogram.c: Applied patches by Roel Schroeven
+	<rschroev@yahoo.com> that fix histogram with mask calculation bug and
+	median calculation bug.
+
+2001-02-03  Christophe Merlet  <redfox@eikonex.org>
+
+	* tips/gimp_conseils.fr.txt: Updated with suggestions from
+	Gérard Delafond <g.delafond@medsyn.fr>
+
+2001-01-30  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Added "nn" to ALL_LINGUAS.
+	
+2001-01-28  Asbjorn Pettersen  <asbjornP@dualog.no>
+
+	* modules/gimpmodregister.h: add #include <libgimp/gimptypes.h>
+	* plug-ins/common/bz2.c (load_image): fix bug loading bz2 files (OS/2)
+	* app/module_db.c: OS/2 fix. remove gimp_color_display_register(),,
+
+2001-01-24  Sven Neumann  <sven@gimp.org>
+
+	* libgimp/gimpwidgets.c: fixed wrong for-loop boundary that caused 
+	the gimp_mem_size_entry not to accept values larger than 1023 MB.
+
+Sun Jan 21 21:54:57 PST 2001 Manish Singh <yosh@gimp.org>
+
+	* Made 1.2.1 release
+
+2001-01-22  Michael Natterer  <mitch@gimp.org>
+
+	* app/gimphelp.c: disabled debugging output.
+
+2001-01-20  Michael Natterer  <mitch@gimp.org>
+
+	* app/palette.c: plugged memory leaks.
+
+2001-01-17  Sven Neumann  <sven@gimp.org>
+
+	* INSTALL: updated and changed .gimp to .gimp-1.2
+	
+	* configure.in: changed .gimp to .gimp-1.2
+
+Mon Jan 15 17:17:33 PST 2001 Manish Singh <yosh@gimp.org>
+
+	* app/fileops.c: correct spelling of "lose" in revert dialog
+
+2001-01-15  Sven Neumann  <sven@gimp.org>
+
+	* gimp.spec.in: corrected FTP location of gimp
+
+2001-01-14  Sven Neumann  <sven@gimp.org>
+
+	* HACKING: added note about autogenerated files (merged from HEAD)
+
+2001-01-14  Sven Neumann  <sven@gimp.org>
+
+	* app/menus.c
+	* app/plug-in.c: added some sanity checks for passed string pointers
+	to various public functions in an attempt to fix bug #37622. I'm not
+	sure if this fixes the bug since I can not reproduce it.
+
+2001-01-12  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/sharpen.c: applied a patch from Jerome Zago 
+	<jzago@ifhamy.insa-lyon.fr> that fixes a longstanding bug in the
+	sharpen filter which sometimes got the last line wrong. 
+	Fixes bug #34155
+
+2001-01-11  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/common/aa.c: removed .html from the list of file extensions
+	since it clashes with the GTM plug-in.
+
+2001-01-10  Sven Neumann  <sven@gimp.org>
+
+	* plug-ins/ifscompose/ifscompose.c: blue is (0,0,1), not (0,0,2)
+
+2001-01-10  Szabolcs Ban
+
+	* plug-ins/MapObject/mapobject_ui.c: fixed typo. 
+	s/Treshold/Threshold/
+
+2001-01-09  Sven Neumann  <sven@gimp.org>
+
+	* app/gimpbrushlist.c
+	* app/gradient.c
+	* app/palette.c
+	* app/patterns.c: check for NULL pointers before doing strcmp on
+	default names. The default names for brushes, patterns, ... can 
+	be NULL if they were not set in a readable gimprc file.
+
+	* app/gimprc.c: warn the user if the systemwide gimprc couldn't be
+	read.
+
+2001-01-04  Tor Lillqvist  <tml@iki.fi>
+
+	* plug-ins/script-fu/scripts/title-header.scm (script-fu-title-header):
+	Correct args to gimp-color-picker. Thanks to Piet van Oostrum.
+
+2001-01-03  Michael Natterer  <mitch@gimp.org>
+
+	* app/levels.c: reverted the behaviour of the "Reset" button back
+	to resetting the current channel only. Resetting all channels was
+	broken and IMHO cannot work the way it was implemented.
+
+2001-01-02  Simon Budig  <simon@gimp.org>
+
+	* app/paint_core.c: use floor() before casting to gint when 
+	calculating the current brush coordinates. Fixes the jagged brush 
+	stroke when stroking a path that leaves the image at the top or left
+	edge (bug #6043).
+	
+2001-01-02  Michael Natterer  <mitch@gimp.org>
+
+	* app/gimphelp.c (gimp_idle_help): s/welcome.html/introduction.html/
+	Fixes #36456.
+
+2001-01-01  Michael Natterer  <mitch@gimp.org>
+
+	* plug-ins/gdyntext/gdyntextcompat.h: also check for GIMP's minor
+	version when deciding if to add a missing PDB wrapper.
+
+2000-12-31  Sven Neumann  <sven@gimp.org>
+            Simon Budig <simon@gimp.org>
+
+	* app/gimpbrush.c
+	* plug-ins/common/gih.c: explicitely cast offset to (off_t) when 
+	seeking back. Should fix the problems reading grayscale BrushPipes 
+	on IRIX.
+
+2000-12-29  Tor Lillqvist  <tml@iki.fi>
+
+	* config.h.win32: RAND_FUNC must not return negative values. Can't
+	use g_random_int as is, must use g_random_int_range (0, G_MAXINT).
+
+	* plug-ins/flame/cmap.c: Include glib.h for G_MAXINT.
+
+2000-12-29  Simon Budig   <simon@gimp.org>
+
+	* modules/colorsel_triangle.c  Argh - converting 16bit colors
+	(from DnD-Source) to 8 bit must not be done by dividing by 0xff (255)!
+	divide by 256 instead...
+
+2000-12-29  Tor Lillqvist  <tml@iki.fi>
+
+	* app/makefile.mingw.in: Build as a windowing application (-mwindows).
+
+	* app/gimp.sym: Remove the color display functions that are gone.
+
+	* plug-ins/makefile.mingw.in: Build two versions of the tiff
+	plug-in: tiff (with TIFF_LZW_LIBS), and tiff_nolzw (with
+	TIFF_NOLZW_LIBS).
+
+2000-12-28  Sven Neumann  <sven@gimp.org>
+
+	* app/channel.c
+	* app/layer.c: use gtk_object_sink() instead of gtk_object_unref()
+	when deleting a layer or channel since only floating objects should
+	be destroyed this way. A layer or channel that has been attached
+	to an image shall never be deleted.
+	
+	* app/layer_cmds.c
+	* libgimp/gimplayer_pdb.c
+	* tools/pdbgen/pdb/layer.pdb: reenabled the gimp_layer_delete() PDB
+	function since it might be useful under rare circumstances.
+	
+2000-12-28  Sven Neumann  <sven@gimp.org>
+
+	* app/channel_cmds.c
+	* app/layer_cmds.c
+	* libgimp/gimpchannel_pdb.c
+	* libgimp/gimplayer_pdb.c
+	* plug-ins/common/warp.c
+	* plug-ins/gap/gap_exchange_image.c
+	* plug-ins/gap/gap_range_ops.c
+	* plug-ins/perl/examples/bricks
+	* plug-ins/perl/examples/glowing_steel
+	* tools/pdbgen/pdb/channel.pdb
+	* tools/pdbgen/pdb/layer.pdb
+
+	Two of the gimp-perl scripts used to call gimp_layer_delete() after
+	gimp_image_remove_layer(). This will fail since the layer is already 
+	scheduled for destruction by removing it from the associated image or
+	by deleting that image. It is thus dangerous and superfluous to export
+	this feature through the PDB. The gimp_layer_delete() is hereby
+	obsolete and does nothing any longer. I have removed the code calling
+	it from all over the place (it was commented out in almost all places).
+
+	The PDB help for gimp_channel_delete() now explicetly tells the user 
+	about the proper usage of the procedure.
+	
+2000-12-27  Michael Natterer  <mitch@gimp.org>
+
+	* plug-ins/common/csource.c: the size of the string holding the
+	image data was one byte too short (we forgot the trailing '\0').
+	Reported by <goswin.brederlow@student.uni-tuebingen.de>
+
+2000-12-27  Michael Natterer  <mitch@gimp.org>
+
+	* app/gimpimage.c: gimp_image_merge_layers(): apply the layer mask
+	only if layer->apply_mask is TRUE.
+
+2000-12-27  Michael Natterer  <mitch@gimp.org>
+
+	* app/layers_dialog.c: layers_dialog_scroll_index(): don't fiddle
+	around with magic numbers when calculating the layer widget's
+	height but simply ask one of them for it's allocation.  Fixes
+	positioning when the preview is smaller than the layer widget list
+	item.
+
+2000-12-27  Tomas Ogren  <stric@ing.umu.se>
+
+	* plug-ins/ifscompose/ifscompose_storage.c: Remove the last comma in
+	  an enum, xlc barfs
+
+Tue Dec 26 11:10:23 PST 2000 Manish Singh <yosh@gimp.org>
+
+	* app/patterns.c: fix fd leak on loading
+
+Sun Dec 24 23:18:32 PST 2000 Manish Singh <yosh@gimp.org>
+
+	* Made 1.2.0 release

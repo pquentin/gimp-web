@@ -7,5 +7,6 @@ CVS
 /resources/brushes/mgo-brushes.py
 /about/authorgen.pl
 /about/contributors
+/about/ChangeLogs/ChangeLog.pl
 *.*~
 *~

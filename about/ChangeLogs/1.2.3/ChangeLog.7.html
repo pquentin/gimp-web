@@ -1,0 +1,110 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>ChangeLog</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/menu.inc" --><div class="heading">ChangeLog</div>
+<p>Page 7</p>
+<div class="subtitle">2001-11-08  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/general.c
+</li><li> app/levels.c
+</li><li> app/xcf.c: snprintf() is not portable, use g_snprintf() instead.
+</li></ul><ul><li> tools/pdbgen/pdb/text_tool.pdb: do the changes here since 
+	app/text_tool_cmds.c is generated.
+</li></ul><ul><li> app/text_tool_cmds.c: regenerated.
+</li></ul><div class="subtitle">2001-11-07  Daniel Egger  <degger@fhm.edu>
+</div><ul><li> app/general.c
+</li><li> app/levels.c
+</li><li> app/text_tool_cmds.c
+</li><li> app/xcf.c: Use snprintf instead of sprintf to protect the
+	GIMP from buffer overflow problems.
+</li></ul><div class="subtitle">2001-11-07  Abel Cheung  <maddog@linux.org.hk>
+</div><ul><li> tips/gimp_tips.zh_TW.txt: New traditional Chinese tips file.
+</li><li> tips/Makefile.am: Modified to reflect the above addition.
+</li></ul><div class="subtitle">2001-11-06  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/fileops.c: use g_dirname() instead of setting the file selectors
+	filename to "" to get the current directory name. Now we don't have to
+	set the filename back later since we didn't touch it, thus we can't 
+	get it wrong. Fixes bug #63880.
+</li></ul><div class="subtitle">2001-11-06  Daniel Egger  <degger@fhm.edu>
+</div><ul><li> plug-ins/common/gauss_rle.c: Unconditionally premultiply
+	alpha into source and seperate it from the dest. Similar to
+	the previous fix.
+</li></ul><div class="subtitle">2001-11-05  Daniel Egger  <degger@fhm.edu>
+</div><ul><li> plug-ins/common/gauss_iir.c: Unconditionally premultiply
+	alpha into source and seperate it from the dest. Fixes
+	bug #57853.
+</li></ul><div class="subtitle">2001-11-05  Daniel Egger  <degger@fhm.edu>
+</div><ul><li> app/gimpimage.c
+</li><li> app/gimpimage.h
+</li><li> app/paint_funcs.c
+</li><li> app/paint_funcs.h: Constified a few parameter arguments to
+	shut up gcc warnings.
+</li></ul><ul><li> libgimp/gimpintl.h
+</li><li> libgimp/libgimp-intl.h
+</li><li> plug-ins/perl/perl-intl.h: When compililing without NLS
+	cast "return" of gettextish calls to char * to avoid
+	warnings.
+</li></ul><ul><li> plug-ins/common/url.c: Check for EOF by using feof instead
+	of comparing against EOF to avoid warning.
+</li></ul><ul><li> plug-ins/imagemap/imap_cern.l
+</li><li> plug-ins/imagemap/imap_cern.y
+</li><li> plug-ins/imagemap/imap_cern_lex.c
+</li><li> plug-ins/imagemap/imap_csim.l
+</li><li> plug-ins/imagemap/imap_csim_lex.c
+</li><li> plug-ins/imagemap/imap_ncsa.l
+</li><li> plug-ins/imagemap/imap_ncsa_lex.c: Include string.h for
+	prototype of strcpy.
+</li></ul><ul><li> plug-ins/rcm/rcm_callback.c: Change string from (???) to
+	??? to avoid compiler confusion with possible trigraph.
+</li></ul><ul><li> plug-ins/script-fu/interp_sliba.c: Change template parameters
+	of sprintf from long to int to avoid warnings. 
+</li></ul><ul><li> plug-ins/gap/gap_filter_iterators.c: Remove unused functions
+	to... you get the idea. :)
+</li></ul><div class="subtitle">2001-11-05  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/imagemap/*.c: marked strings for translation, include
+	config.h and corrected include order. Added a check for NULL pointers
+	that might fix bug #33802 (I can't reproduce the problem, so I can't 
+	check).
+</li></ul><div class="subtitle">2001-11-04  Sven Neumann  <sven@gimp.org>
+</div><ul><li> tools/pdbgen/app.pl: include config.h from all generated files.
+	This is generally a good idea and fixes bug #58842.
+</li></ul><ul><li> tools/pdbgen/pdb/fileops.pdb
+</li><li> tools/pdbgen/pdb/image.pdb
+</li><li> tools/pdbgen/pdb/procedural_db.pdb: don't explicitely include 
+	config.h.
+</li></ul><ul><li> app/*_cmds.c: regenerated.
+</li></ul><div class="subtitle">2001-11-02  Tor Lillqvist  <tml@iki.fi>
+</div><ul><li> README.win32: Updates.
+</li></ul><ul><li> configure.in: First preparations for autoconfiscated build on
+	Win32 (with gcc): Call AC_LIBTOOL_WIN32_DLL. Check for Windows
+	platform, and pure Windows. Set Automake macros PLATFORM_WIN32 and
+	OS_WIN32 correspondingly. Check for availability of lib.exe.
+<p>	On Win32, don't check for GTK+ 1.2.8, but for
+	gtk+-1.3-win32-production using the PKG_CHECK_MODULES macro. This
+	macro is called only on Win32, so I hope it doesn't matter if
+	autoconf is run on a Unix system without pkg-config?
+</p>
+<p>	Assure -fnative-struct is used. Enclose nested AC_CHECK_HEADER
+	calls in brackets, otherwise Autoconf 2.52 will generate bad shell
+	code.
+</p>
+</li></ul><ul><li> Makefile.am (EXTRA_DIST): Distribute po*/makefile.mingw here.
+</li></ul><ul><li> config.h.win32: Define HAVE_DIRENT_H. Mingw has it, and for MSVC
+	it is also available in build/win32/dirent.
+</li></ul><ul><li> libgimp/makefile.mingw.in
+</li><li> modules/makefile.mingw.in: Use new build-dll invokation syntax.
+</li></ul><ul><li> app/fileops.c (file_ops_post_init): Use G_DIR_SEPARATOR_S.
+</li></ul><ul><li> plug-ins/makefile.mingw.in: Don't build separate tiff_nolzw
+	plug-in. Build just one tiff.exe, but distribute alternative
+	libtiff DLLs (with identical entry points). Remove more
+	unnecessarily copied Makefiles when installing gflare,
+	gimpressionist or fractalexplorer stuff.
+</li></ul><ul><li> plug-ins/common/animationplay.c: Don't include gdkwin32.h, as
+	the gtk+-1.3.0-win32-production dist doesn't include a good
+	one. Instead copy the two lines necessary.
+</li></ul><ul><li> plug-ins/common/png.c (load_image): libpng 1.2.0 doesn't have
+	png_read_destroy() or png_write_destroy() as public functions.
+</li></ul><ul><li> plug-ins/script-fu/script-fu.ico
+</li><li> plug-ins/script-fu/script-fu.rc: Were missing from CVS.
+</li></ul><ul><li> plug-ins/script-fu/Makefile.am (EXTRA_DIST): Distribute them.
+</li></ul></li></ul><p><a href="ChangeLog.6.html">Previous Page</a> <a href="ChangeLog.8.html">Next Page</a></p><!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

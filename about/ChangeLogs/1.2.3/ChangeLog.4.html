@@ -1,0 +1,59 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>ChangeLog</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/menu.inc" --><div class="heading">ChangeLog</div>
+<p>Page 4</p>
+<div class="subtitle">2001-12-11  Tor Lillqvist  <tml@iki.fi>
+</div><ul><li> gimptool-win32.c.in: Also look at the CC env var, and the @CC@
+	configuration variable.
+<p>	Set the msvc_syntax flag if the compiler appears to be MSVC
+	(cl). Also accept the command line flag --msvc-syntax. If
+	msvc_syntax, pass --msvc-syntax to pkg-config, and change
+	generated command line appropriately (turn -o, -L and -l flags
+	into their MSVC equivalents).
+</p>
+<p>	Accept also C++ source files. 
+</p>
+<p>	Insert a space in the generated COPY command.
+</p>
+<p>	Parse command line in two passes: first scan for flags that affect
+	behaviour of others, like --msvc-syntax or --prefix=, then to
+	actually do stuff. Thus the order of flags doesn't matter.
+</p>
+</li></ul><div class="subtitle">2001-12-07  Tor Lillqvist  <tml@iki.fi>
+</div><ul><li> app/general.c (iso_8601_date_format): Can't use g_snprintf here,
+	we don't know the size of the user-supplied buffer. The
+	sizeof (buf) was bogus, buf is a char pointer.
+</li></ul><div class="subtitle">2001-12-05  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/scan_convert.c (convert_segment): corrected wrong clipping code
+	and plugged a memleak. A more verbose description of the problems and
+	the fix can be found with bug report #66003.
+</li></ul><div class="subtitle">2001-12-02  Abel Cheung  <maddog@linux.org.hk>
+</div><ul><li> tips/gimp_tips.zh_CN.txt: Converted to native encoding.
+</li></ul><div class="subtitle">2001-12-01  Abel Cheung  <maddog@linux.org.hk>
+</div><ul><li> tips/{Makefile.am,makefile.mingw}: Added gimp_tips.zh_CN.txt
+	  as targets.
+</li></ul><div class="subtitle">2001-12-01  Abel Cheung  <maddog@linux.org.hk>
+</div><ul><li> configure.in: Added zh_CN to ALL_LINGUAS (simplified Chinese
+	  translation was taken from HEAD branch).
+</li><li> tips/gimp_tips.zh_CN.txt: Take simplified Chinese tips file
+	  HEAD branch.
+</li></ul><div class="subtitle">Thu Nov 29 14:25:50 PST 2001 Manish Singh <yosh@gimp.org>
+</div><ul><li> acinclude.m4: remove libtool and python stuff, stick contents
+	of accompat.m4 here
+</li></ul><ul><li> accompat.m4: remove, doesn't seem to work with autoconf 2.13	
+	and automake 1.4
+</li></ul><ul><li> configure.in: remove reference to accompat.m4
+</li></ul><ul><li> app/Makefile.am
+</li><li> libgimp/Makefile.am
+</li><li> plug-ins/Makefile.am: comment out makefile.mingw references
+</li></ul><ul><li> app/errors.c: default to never prompt for stack trace
+</li></ul><div class="subtitle">2001-11-30  Abel Cheung  <maddog@linux.org.hk>
+</div><ul><li> plug-ins/common/sinus.c(sinus_dialog): Fix another typo.
+</li></ul><div class="subtitle">2001-11-29  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/imagemap/imap_preferences.c: use G_DIR_SEPARATOR instead
+	of hardcoded UNIX-style slash.
+</li></ul><div class="subtitle">2001-11-29  Abel Cheung  <maddog@linux.org.hk>
+</div><ul><li> plug-ins/gap/gap_decode_xanim.c(p_xanim_dialog): fix typo.
+</li></ul></li></ul><p><a href="ChangeLog.3.html">Previous Page</a> <a href="ChangeLog.5.html">Next Page</a></p><!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

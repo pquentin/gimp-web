@@ -1,0 +1,64 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>ChangeLog</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/menu.inc" --><div class="heading">ChangeLog</div>
+<p>Page 9</p>
+<div class="subtitle">2001-10-16  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/common/colortoalpha.c
+</li><li> plug-ins/common/sel_gauss.c: fixed wrong checks for number of
+	parameters when called non-interactively (bug #62433). Thanks to 
+	iccii@hotmail.com for spotting this and providing a patch.
+</li></ul><div class="subtitle">Mon Oct 15 10:52:22 PDT 2001 Manish Singh <yosh@gimp.org>
+</div><ul><li> configure.in: bumped version to 1.2.3, correct library ages (back
+	to 1.2.1 compatibility), added comment regarding these
+</li></ul><div class="subtitle">2001-10-15  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/fileops.c: 
+	applied a patch from Raphael Quinet <quinet@gamers.org> that makes
+	the "File exists!" dialog box transient for the save dialog. Addresses
+	bug #61092.
+</li></ul><div class="subtitle">2001-10-15  Zbigniew Chyla  <cyba@gnome.pl>
+</div><ul><li> tips/gimp_tips.pl.txt: Updated Polish translation.
+</li></ul><div class="subtitle">2001-10-10  Sven Neumann  <sven@gimp.org>
+</div><ul><li> plug-ins/Lighting/lighting_image.c: merged fix for bug #22161
+	from HEAD.
+</li></ul><div class="subtitle">2001-10-10  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/fileops_cmds.c
+</li><li> tools/pdbgen/app.pl
+</li><li> tools/pdbgen/pdb/fileops.pdb: call mkdir() in the PDB function
+	gimp_temp_name() so there's a better chance the temp dir exists 
+	before plug-ins try to place temporary files there. This is a 
+	workaround for bug #61803.
+</li></ul><div class="subtitle">2001-10-10  Gediminas Paulauskas <menesis@delfi.lt>
+</div><ul><li> tips/Makefile.am
+</li><li> tips/makefile.mingw: Added gimp_tips.lt.txt to the targets. 
+</li></ul><ul><li> tips/gimp_tips.lt.txt: Added Lithuanian tips file. 
+</li></ul><div class="subtitle">2001-10-10  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/docindex.c: rewrote parser to make it more robust against a 
+	corrupt ideas file (bug #61894).
+</li></ul><div class="subtitle">2001-10-10  Sven Neumann  <sven@gimp.org>
+</div><ul><li> app/blend.c
+</li><li> app/by_color_select.c
+</li><li> app/channel_ops.c
+</li><li> app/clone.c
+</li><li> app/color_panel.c
+</li><li> app/color_picker.c
+</li><li> app/edit_selection.c
+</li><li> app/ellipse_select.c
+</li><li> app/free_select.c
+</li><li> app/gdisplay.c
+</li><li> app/magnify.c
+</li><li> app/measure.c
+</li><li> app/move.c
+</li><li> app/paint_core.c
+</li><li> app/path_bezier.c
+</li><li> app/path_tool.c
+</li><li> app/rect_select.c
+</li><li> app/selection.c
+</li><li> app/text_tool.c
+</li><li> app/transform_core.c: small cleanups (use TRUE/FALSE instead of 1/0)
+	I did while trying to fix bug #17904. I will commit the real changes
+	separately.
+</li></ul><div class="subtitle">2001-10-08  Michael Natterer  <mitch@gimp.org>
+</div><ul><li> configure.in: some new Makefiles in help/.
+</li></ul></li></ul><p><a href="ChangeLog.8.html">Previous Page</a> <a href="ChangeLog.10.html">Next Page</a></p><!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

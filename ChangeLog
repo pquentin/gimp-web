@@ -1,3 +1,11 @@
+2004-03-29  Sven Neumann  <sven@gimp.org>
+
+	* macintosh/index.htrw: fixed information about DarwinPorts (there
+	are no binary packages yet), removed names of OpenDarwin project
+	leaders and added the name of the gimp2 portfile maintainer
+	instead. Moved MacGIMP to the end of the list since I think we
+	should list free downloads before commercial GIMP vendors.
+
 2004-03-28  Sven Neumann  <sven@gimp.org>
 
 	* source/index.htrw: fixed anchor.

@@ -26,6 +26,7 @@ webtools:
 	(cd programmatic ; make webtools)
 
 unix/index.html: unix/index.htrw
+	chmod 755 unix/index.html
 
 _install: all
 

@@ -1,3 +1,12 @@
+2002-11-19 scizzo <scizzo@gimp.org>
+
+        * tutorials/Photo_Edit/*/index.html: Fixed the class tags for the filters.
+
+        * tutorials/Image_Pipes2/: Add the first port of the Image Pipes 2
+        tutorial.
+
+        * team.html: Add Sam Jones to the tutorial authors.
+
 2002-11-18 scizzo <scizzo@gimp.org>
 
         * tutorials/The_Basics/, tutorials/Borders_On_Selections/.
@@ -5,7 +14,7 @@
           tutorials/Film_Grain/, tutorials/Changing_Background_Color_1/,
           tutorials/Changing_Background_Color_2/, tutorials/3d_Logo/,
           tutorials/Simple_Animations/, tutorials/Golden_Text/:
-          Fixed the filter class for most of the tutorials.
+         Fixed the filter class for most of the tutorials.
 
 2002-11-15 scizzo <scizzo@gimp.org>
 

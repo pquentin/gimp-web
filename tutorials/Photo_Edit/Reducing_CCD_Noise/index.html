@@ -38,7 +38,7 @@
   <img src="image-despeckled-zoom100.jpg" alt=""/>
 </p>
 <p>
-  Right-click in the image and select <span class="filter">Filters/Enhance/Despeckle</span>.
+  Right-click in the image and select <span class="filter">&lt;Image&gt;Filters-&gt;Enhance-&gt;Despeckle</span>.
   <br />
   You can play around with the settings, but you'll likely want to keep the radius pretty small. If you raise it too high you'll destroy details like the catchlights in the eye. 
   The "Recursive" option seems to cause a more aggressive filter effect. Try it if you have an especially noisy image.
@@ -74,7 +74,8 @@
 <ul>
   <li>It may not be necessary to apply the despeckle filter across all RGB channels; as I mentioned earlier, CCD noise tends to show up predominantly in the blue or red channels. 
   You can open the Layers dialog (Ctrl+L), click on the Channels tab and just select the channel(s) that you want to apply the filter to. 
-  To examine the individual channels for noise, right click in the image and select <span class="filter">Image/Mode/Decompose</span>; choose RGB for the decomposition.
+  To examine the individual channels for noise, right click in the image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>; 
+  choose RGB for the decomposition.
   <br /><br />
   Similarly, you can try decomposing to HSV or LAB, running the despeckle filter on one or more parts (e.g. value channel from HSV) and recomposing.
   <br /><br />

@@ -54,11 +54,11 @@
   <img src="image-lab-decomposed.jpg" alt=""/>
 </p>
 <p>
-  Duplicate the image by pressing Ctrl+D or right-click and select <span class="filter">Image/Duplicate</span>. It might be wise to minimize the original image window now. 
-  You can open it later to compare to the result.
+  Duplicate the image by pressing Ctrl+D or right-click and select <span class="filter">&lt;Image&gt;Image-&gt;Duplicate</span>. 
+  It might be wise to minimize the original image window now. You can open it later to compare to the result.
   <br />
-  Right-click on the duplicate image and select <span class="filter">Image/Mode/Decompose</span>. In the decompose dialog box, select LAB (or HSV; see Note 1). 
-  Check the "As layers" checkbox (see Note 2) and click OK.
+  Right-click on the duplicate image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. In the decompose dialog box, 
+  select LAB (or HSV; see Note 1). Check the "As layers" checkbox (see Note 2) and click OK.
   <br /><br />
   This will create a new window with the image decomposed into the Luminosity ("brightness"), A and B channels as 3 layers. This will allow us to isolate and sharpen 
   the luninosity channel which is a) the most important, and b) should be the cleanest in terms of noise.
@@ -82,11 +82,12 @@
   <img src="image-edgedetect-grayscale.jpg" alt=""/>
 </p>
 <p>
-  Go to the duplicate image. Right-click and select <span class="filter">Filters/Edge Detect/Edge</span>. In the Edge Detect dialog box, 
+  Go to the duplicate image. Right-click and select <span class="filter">&lt;Image&gt;Filters-&gt;Edge Detect-&gt;Edge</span>. In the Edge Detect dialog box, 
   select a parameter value of the appropriate size for the edges in your image. You may need to experiment with this. For the example image I chose 6.
 </p>
 <p>
-  Now convert the edges image to grayscale by right clicking on it and selecting <span class="filter">Image/Mode/Grayscale</span>. This image is going to become our sharpening mask.
+  Now convert the edges image to grayscale by right clicking on it and selecting <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Grayscale</span>. 
+  This image is going to become our sharpening mask.
 </p>
 <p>
   <b>Note:</b> in some tutorials they recommend converting to greyscale and then running the edge detection filter. The premise there (my guess) 
@@ -103,8 +104,9 @@
 <p>
   The next step is to adjust the tonality a little so that areas that need sharpening are really white and anything that doesn't need sharpening at all is really black.
   <br />
-  Open the Levels dialog (<span class="filter">Image/Colors/Levels</span>). Bring the black point up and the white point down to filter out any insignificant edges. 
-  You may need to play around with the exact positions of the sliders. Click OK when the image outlines the significant edges in white and most everything else is black.
+  Open the Levels dialog (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Levels</span>). Bring the black point up and the white point down to filter 
+  out any insignificant edges. You may need to play around with the exact positions of the sliders. Click OK when the image outlines the significant edges 
+  in white and most everything else is black.
 </p>
 <p>
   How much you'll need to tweak this really depends on the image. There wasn't a lot of spurious edges shown here, so a small adjustment was all that was necessary.
@@ -116,7 +118,7 @@
   <img src="image-edgedetect-grayscale-levels-blur.jpg" alt=""/>
 </p>
 <p>
-  Now apply a gaussian blur (<span class="filer">Filters/Blur/Gaussian Blur</span>) to smooth out the edges a little. 
+  Now apply a gaussian blur (<span class="filer">&lt;Image&gt;Filters-&gt;Blur-&gt;Gaussian Blur</span>) to smooth out the edges a little. 
   A radius of between 3 and 10 pixels (horizontal and vertical) should be enough. In the example I used 7.
 </p>
 
@@ -152,10 +154,12 @@
   <img src="image-lab-pastemask.jpg" alt=""/>
 </p>
 <p>
-  Right-click in the blurred/edges image window and <span class="filter">Select/All</span>. Right-click again and select <span class="filter">Edit/Copy</span>. 
+  Right-click in the blurred/edges image window and <span class="filter">&lt;Image&gt;Select-&gt;All</span>. Right-click again and select 
+  <span class="filter">&lt;Image&gt;Edit-&gt;Copy</span>. 
   (Alternatively you can use keyboard shortcuts Ctrl+A and Ctrl+C in succession).
   <br /><br />
-  In the Layers dialog, make sure the Sharpening Mask channel is selected. Go back to the LAB (value) window and paste (<span class="filter">Edit/Paste</span> or Ctrl+V).
+  In the Layers dialog, make sure the Sharpening Mask channel is selected. Go back to the LAB (value) window and paste 
+  (<span class="filter">&lt;Image&gt;Edit-&gt;Paste</span> or Ctrl+V).
   <br /><br />
   Select the Layers tab in the Layers dialog and click on the anchor button (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
 </p>
@@ -186,12 +190,12 @@
   and is the only one selected. We only want to sharpen the luminosity channel.
 </p>
 <p>
-  Apply an unsharp mask (<span class="filter">Filters/Enhance/Unsharp Mask</span>). You may want to experiment with the settings here. 
+  Apply an unsharp mask (<span class="filter">&lt;Image&gt;Filters-&gt;Enhance-&gt;Unsharp Mask</span>). You may want to experiment with the settings here. 
   You will find that you can use much higher amounts of sharpening (than if the entire image were selected) without significantly degrading the image.
   <br /><br />
   In the example here I used Radius=1, Amount=2.0 (200% ?), Threshold=0.
   <br /><br />
-  Now get rid of the selection (right-click and <span class="filter">Select/None</span>) and zoom in (= key) to examine the results. 
+  Now get rid of the selection (right-click and <span class="filter">&lt;Image&gt;Select-&gt;None</span>) and zoom in (= key) to examine the results. 
   If you're not happy with the results, undo and try the sharpen step again with different parameters. 
 </p>
 
@@ -203,7 +207,7 @@
 <p>
   It's time to reconstruct our original image from the LAB (HSV) components.
   <br />
-  Right-click in the luminosity (value) window and select (<span class="filter">Image/Mode/Compose</span>). In the Compose Options dialog, 
+  Right-click in the luminosity (value) window and select (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Compose</span>). In the Compose Options dialog, 
   make sure that you have selected LAB (HSV) on the left and on the right that the Luminosity, A and B (Hue, Saturation and Value) components are matched up with their respective images.
   <br /><br />
   Click OK; this should create a new composite image.
@@ -245,9 +249,10 @@
   <ol>
     <li>Open a new blank image.</li>
     <li>Using the gradient tool, create a gradient from black to white across it.</li>
-    <li>Convert it to RGB (<span class="filter">Image/Mode/RGB</span>).</li>
-    <li>Look at it's histogram (<span class="filter">Image/Colors/Histogram</span>).</li>
-    <li>Convert it to LAB, by decomposing to LAB (<span class="filter">Image/Mode/Decompose</span>), then do a compose on the LAB image back to RGB (<span class="filter">Image/Mode/Compose</span>).</li>
+    <li>Convert it to RGB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;RGB</span>).</li>
+    <li>Look at it's histogram (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Histogram</span>).</li>
+    <li>Convert it to LAB, by decomposing to LAB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>), then do a compose on the LAB image back to RGB 
+    (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Compose</span>).</li>
     <li>Look at the new image's histogram.</li>
   </ol>
   Here is what you'll see if you compare them:

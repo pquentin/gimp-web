@@ -1,3 +1,8 @@
+2003-09-03  Raphael Quinet  <quinet@gamers.org>
+
+	* mail_lists.htrw: Removed the gimpwin-dev mailing list.  It has
+	been closed since several months.  Fixes bug #121323.
+
 2003-09-01  Raphael Quinet  <quinet@gamers.org>
 
 	* includes/wgo-styles.xhtml: Hide the stylesheet from Netscape4.

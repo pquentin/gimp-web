@@ -1,3 +1,13 @@
+2002-12-10 carol <carol@gimp.org>
+
+	* developer/bugzilla*: moved the scripts to develop/
+
+	* developer/, development/:  trying once again to remove these.
+    
+    * team.html: added Helvetix  and spiderworm
+
+    * tutorials/Liquid_Metal_Ripple/: removed this directory
+
 2002-12-11  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added the cgi code to do news handling.  Modified install.sh and

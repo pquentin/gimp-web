@@ -1,6 +1,12 @@
 pgo TODO List:
 (Alphabetically)
 
+          a crontabs directory in CVS is fine, it should 
+          be put in install.exclude, and install.sh modified to put 
+          them in the right place
+
+
+
 about/ChangLogs/:
     Changelog.pl:  the wgo2 wrapper needs to be stripped from this script and 
        replaced with <pre></pre> tags as the only people who read these for real

@@ -1,5 +1,8 @@
 2004-04-22  Raphaël Quinet  <quinet@gamers.org>
 
+	* downloads/index.htrw: An attempt at improving how the MD5 sums
+	are displayed, similar to the table in /source/index.htrw.
+
 	* bugs/.cvsignore: Regenerated with 'make cvsignore'.
 
 	* programmatic/downloads/MIRRORS: added new mirror in Australia

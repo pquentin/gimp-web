@@ -1,5 +1,13 @@
 2004-11-30  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls: added contest page.
+
+	* index.htrw: link to the splash contest.
+
+	* about/splash/contest/index.htrw: tried to fix the layout.
+
+2004-11-30  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/contest/index.htrw
 	* about/splash/contest/template.jpg
 	* about/splash/contest/template.xcf.bz2: added a page for the

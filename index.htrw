@@ -23,17 +23,10 @@ Grab a properly chilled beverage and enjoy.</p>
   <img alt="[?]" src="/images/news-icons/gimp_code.png"></img>
   <p>
     With the imminent release of the GIMP 2.2, the time has come to
-    find the ideal <a href= "http://gimp.org/about/splash/">splash
-    screen</a> to go with it. The contest will be open until next
-    Sunday the 5th of December, at which point the winning entry will
-    be chosen and committed to CVS.
-  </p>
-
-  <p>
-    The submissions should be based on <a
-    href="http://primates.ximian.com/~jimmac/blog/GIMP/GimpSplashTemplate/">jimmac's
-    splash screen template</a>. Informations on how to submit your
-    entries will be added here soon. Stay tuned.
+    find the ideal <a href= "wgo:about-splash">splash screen</a> to go
+    with it. The <a href= "wgo:about-splash-contest">contest</a> will
+    be open until next Sunday the 5th of December, at which point the
+    winning entry will be chosen and committed to CVS.
   </p>
   <p>
     Good luck, and get splashing!

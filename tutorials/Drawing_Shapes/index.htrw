@@ -3,12 +3,17 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Drawing Shapes with Bezier Tool</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Kuosmanen_Tuomas">Tuomas Kuosmanen</a> and may not be used 
+  without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
   Bezier selection can be used in many creative ways. Maybe the best thing in it is the smooth, beautiful curves it produces. 
   But you can also use Bezier to create different polygonal shapes if you don't 'pull out the handles'. 
-  Polygonal shapes are especially useful when painting some geometric objects, as you can draw one side at a time (into different layers if you want).
+  Polygonal shapes are especially useful when painting some geometric objects, 
+  as you can draw one side at a time (into different layers if you want).
 </p>
 
 <h2>Shapes with Bezier!?</h2>
@@ -16,20 +21,23 @@
   <img src="box.gif" alt=""/>
 </p>
 <p>
-  This tutorial is about making simple geometrical shapes with The Gimp. I will concentrate on the Bezier tool since I find it so useful for this purpose. 
+  This tutorial is about making simple geometrical shapes with The Gimp. 
+  I will concentrate on the Bezier tool since I find it so useful for this purpose. 
   I hope you get some help and new stuff to put in your Gimp Tricks Sack :) I personally use this technique for nearly all my work.
 </p>
 <p>
   <b>Notice!</b>
   This is not a 'back to basics' -tutorial. You should be familiar with Gimp's dialogs and menus. 
-  I was thinking about this, and I did not want to make this an 'entry level' thing, basically to avoid bloating this too big and duplicating other people's work. 
+  I was thinking about this, and I did not want to make this an 'entry level' thing, 
+  basically to avoid bloating this too big and duplicating other people's work. 
   Beziers are covered in my other tutorial, and I recommend you to read it before going further if you find the material here confusing. 
   If you are new to Gimp I suggest you to go to the Gimp homepage in www.gimp.org and first read through the Documentation section there. 
 </p>
 
 <h2>Let's get started!</h2>
 <p>
-  First we must create a new image for our creation. Make the size 256x256 pixels and choose RGB for the type. The image background should be white. 
+  First we must create a new image for our creation. Make the size 256x256 pixels and choose RGB for the type. 
+  The image background should be white. 
   Open the Layers &amp; Channels -dialog with the right-button-menu: 
   <span class="filter">&lt;Image&gt; Dialogs -&gt; Layers, Channels &amp; Paths...</span>
 </p>
@@ -41,7 +49,8 @@
 <p>
   Now create a new transparent layer, and name it Left_side so you know what layer I'll talk about later on. 
   Make sure you have the new layer active by checking the layers-dialog. If it is not selected, click the layer's name in the dialog.
-  <br /><br />
+</p>
+<p>
   Imagine the blue cube on the right side into your canvas, we'll be doing side #1 now.
 </p>
 <p class="images">
@@ -50,10 +59,12 @@
 <p>
   <img src="bezier_tool.gif" alt=""/> Choose the Bezier-selection tool and make something like the side #1 on the blue cube, 
   think about the perspective. (If this causes you trouble, don't worry. You will learn by experience).
-  <br /><br />
+</p>
+<p>
   You can adjust the points' places if you can't get them right at the first try, see the  Bezier tutorial  for more information on that. 
   Your bezier should look something like the one on the right. 
-  <br /><br />
+</p>
+<p>
   Once you are satisfied with your 'box' click inside it to make the selection.
 </p>
 <p class="images">
@@ -80,10 +91,12 @@
 <p>
   Now on to the right side, side #2. Create a new transparent layer and name it Right_side. 
   Use the Bezier Tool and try to make the right side of the cube and turn it into a selection.
-  <br /><br />
+</p>
+<p>
   Take the Gradient Tool again and, still with the same colors, make a gradient from farther up-left 
   to near the selection's lower-right corner (see image on right). This way we get a darker gradient suitable for the shadow-side.
-  <br /><br />
+</p>
+<p>
   <b>Hint!</b> Be careful with the edges. You don't want to leave any holes so the background can be seen through... 
   It's better to overlap the lower layer a bit than leave a space between them. 
 </p>
@@ -94,7 +107,8 @@
 </p>
 <p>
   Our final ultimate task is to create the top, side #3. Again, create a new transparent layer and name it (who quessed? :) Top_side.
-  <br /><br />
+</p>
+<p>
   Now you probably know we want to make yet one bezier selection and this time the gradient has to be even lighter than in the first side. 
   So I suggest you lighten the dark blue color a fair amount, it's easier to get a light gradient that way.
   This time you pull the gradient from left to right, according the arrow in the picture. Once you find the shading look good, 
@@ -111,27 +125,31 @@
   so you can save as jpeg or any other format than xcf. Or, better still, from the layers dialog, make the background invisible 
   and choose <span class="filter">&lt;Image&gt; Layers -&gt; Merge Visible Layers</span> so you will have the background on a 
   separate layer and you can work further on it if you like.
-  <br /><br />
-  The next thing is to start using the geometrical shapes as building blocks to make things. And you can twist the beziers to make a bit more fancy stuff...
-  <br /><br />
+</p>
+<p>
+  The next thing is to start using the geometrical shapes as building blocks to make things. 
+  And you can twist the beziers to make a bit more fancy stuff...
+</p>
+<p>
   I have provided <a href="example.xcf.gz">the xcf-file</a> for the image we just created, if you want to experiment with it, 
   although you should be perfectly able to do just as good yourself.
   <br />
   Thanks for your interest.
-  <br /><br />
+</p>
+<p>
   tigert
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://tigert.gimp.org/gimp/tutorials/bezier_shapes/">here</a>.
+  The original tutorial can be found <a href="tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:tigert@gimp.org">Tuomas Kuosmanen (tigert)</a>
+        Tutorial &copy; 2002 <a href="home:People-Kuosmanen_Tuomas">Tuomas Kuosmanen (tigert)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Kuosmanen_Tuomas">tigert@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

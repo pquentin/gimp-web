@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Nested GIMP Perlotine Tables</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
+</p>
 
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
@@ -55,16 +58,16 @@
 </pre>
 
 <p>
-  The original tutorial can be found <a href="http://carol.gimp.org/mygimp/tutorials/">here</a>.
+  The original tutorial can be found <a href="tutorial:Perlotine-Carol_Spears">here</a>.
 </p>
 
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:carol@gimp.org">Carol Spears (carol)</a>
+        Tutorial &copy; 2002 <a href="home:People-Spears_Carol">Carol Spears (carol)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Spears_Carol">carol@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

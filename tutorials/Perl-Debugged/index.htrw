@@ -4,16 +4,21 @@
 <link style type="text/css" rel="alternate stylesheet" type="text/css" title="helvetix fixes" href="http://oak.mysterious.org:8082/style/helvetix-fixes.css" />
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Perl Debugged</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Burgess_Seth">Seth Burgess</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
   The Perl module for Gimp is a nice evolution of the scripting interface of Gimp. It removes the dependence on the relatively rarely encountered 
   scheme language of script-fu and replaces it with one that is familiar to a much larger audience. In doing so, the perl interface to gimp also 
   can take advantage of many of the features that have been added to perl over the years.
-  <br /><br />
+</p>
+<p>
   My aim in creating this tutorial is to make debugging scripts easier. We'll touch on the facilities provided by the Gimp module, 
   and then focus on using the perl debugger to interactively develop scripts.
-  <br /><br />
+</p>
+<p>
   To illustrate the points in this tutorial, this is a simple script that will change as we progress:
 </p>
 <pre class="code">
@@ -222,34 +227,38 @@ Debugged program terminated.  Use q to quit or R to restart,
 <p>
   This example session shows changing a value of a variable at run-time so to load a different file than the one hard-coded into the script. 
   Note that I continue ('c') and it stops immediately after $DB::single is set.
-  <br /><br />
+</p>
+<p>
   Far more complex debugging is possible, but this should give you a good taste of what its all about.
 </p>
 
 <h2>Conclusion</h2>
 <p>
   Thats all there is to it! I hope this has been useful to you.
-  <br /><br />
+</p>
+<p>
   You can <a href="perldebug.tar.gz">download a compressed copy</a> of this tutorial.  You can also get a <a href="Example">copy of the script</a>.
   Feel free to use either/both however you want.
-  <br /><br />
+</p>
+<p>
   This tutorial has gone over the basics of using the Gimp module for tracing, the Perl Server for starting your scripts, 
   and using the perl debugger to interactively execute your scripts. If you have comments, questions, 
   or suggestions about this tutorial, please drop me a line.
-  <br /><br />
+</p>
+<p>
   Happy GIMPing, Seth
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://www.gimp.org/~sjburges/perl_debug/intro.html">here</a>.
+  The original tutorial can be found <a href="tutorial:Perl_Debugged-Seth_Burgess">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:sjburges@gimp.org">Seth Burgess (sjburges)</a>
+        Tutorial &copy; 2002 <a href="home:People-Burgess_Seth">Seth Burgess (sjburges)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Burgess_Seth">sjburges@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -4,13 +4,13 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>"Smart" Sharpening</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
 <p class="images">
-  <img src="before.jpg" alt=""/>
-  <img src="after.jpg" alt=""/>
+  <img src="before.jpg" alt="" />
+  <img src="after.jpg" alt="" />
 </p>
 <p>
   In this tutorial I'll show you how to do smart sharpening of your images. Applying an unsharp mask to an entire image is not always appropriate. 
@@ -44,7 +44,7 @@
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="image-original.jpg" alt=""/>
+  <img src="image-original.jpg" alt="" />
 </p>
 <p>
   Here's the original image loaded into the GIMP. It is noticeably soft, probably due to bad autofocus. It really shows up in prints.
@@ -56,9 +56,9 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="decompose.jpg" alt=""/>
-  <img src="layers1.jpg" alt=""/>
-  <img src="image-lab-decomposed.jpg" alt=""/>
+  <img src="decompose.jpg" alt="" />
+  <img src="layers1.jpg" alt="" />
+  <img src="image-lab-decomposed.jpg" alt="" />
 </p>
 <p>
   Duplicate the image by pressing <kbd>Ctrl+D</kbd> or right-click and select 
@@ -84,7 +84,7 @@
   For any reference to the "LAB" image or "luminosity" channel below, substitute the "HSV" image/"value" window. 
   The LAB option was not in my initial version of the GIMP (ver 1.2.1), 
   but I got the newer version of the plug-in at the 
-  <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself. Don't worry if you don't have it; HSV works great too.
+  <a href="plugin-archive:gimp">GIMP Plug-in Registry</a> and compiled it myself. Don't worry if you don't have it; HSV works great too.
 </p>
 <p>
   <b>Note 2:</b> in the older version of the decompose plug-in there 
@@ -96,8 +96,8 @@
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="edgedetection.jpg" alt=""/>
-  <img src="image-edgedetect-grayscale.jpg" alt=""/>
+  <img src="edgedetection.jpg" alt="" />
+  <img src="image-edgedetect-grayscale.jpg" alt="" />
 </p>
 <p>
   Go to the duplicate image. Right-click and select 
@@ -122,8 +122,8 @@
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="levels1.jpg" alt=""/>
-  <img src="image-edgedetect-grayscale-levels1.jpg" alt=""/>
+  <img src="levels1.jpg" alt="" />
+  <img src="image-edgedetect-grayscale-levels1.jpg" alt="" />
 </p>
 <p>
   The next step is to adjust the tonality a little so that areas that need 
@@ -142,8 +142,8 @@
 
 <h2>Step 5</h2>
 <p class="images">
-  <img src="iirgaussianblur.jpg" alt=""/>
-  <img src="image-edgedetect-grayscale-levels-blur.jpg" alt=""/>
+  <img src="iirgaussianblur.jpg" alt="" />
+  <img src="image-edgedetect-grayscale-levels-blur.jpg" alt="" />
 </p>
 <p>
   Now apply a gaussian blur (<span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Gaussian Blur</span>) 
@@ -153,38 +153,37 @@
 
 <h2>Step 6</h2>
 <p class="images">
-  <img src="levels2.jpg" alt=""/>
-  <img src="image-edgedetect-grayscale-levels2.jpg" alt=""/>
+  <img src="levels2.jpg" alt="" />
+  <img src="image-edgedetect-grayscale-levels2.jpg" alt="" />
 </p>
 <p>
   If you want to you can use Levels again to adjust the white and black points of the mask. 
   I find this is usually a good idea after the blur.
 </p>
 <p>
-
   In this example I pulled the white point slider down a bit.
 </p>
 
 <h2>Step 7</h2>
 <p class="images">
-  <img src="layers2.jpg" alt=""/>
-  <img src="newchanneloptions.jpg" alt=""/>
-  <img src="layers3.jpg" alt=""/>
+  <img src="layers2.jpg" alt="" />
+  <img src="newchanneloptions.jpg" alt="" />
+  <img src="layers3.jpg" alt="" />
 </p>
 <p>
   Open the Layers dialog. Select the LAB image (if HSV, value) in the drop down box at the top and then click on the Channels tab.
 </p>
 <p>
-  Click on the new channel button (<img src="newlayer.jpg" alt=""/>) at the bottom of the dialog to create a new channel. Name it "Sharpening Mask".
+  Click on the new channel button (<img src="newlayer.jpg" alt="" />) at the bottom of the dialog to create a new channel. Name it "Sharpening Mask".
 </p>
 
 <h2>Step 8</h2>
 <p class="images">
-  <img src="layers4.jpg" alt=""/>
+  <img src="layers4.jpg" alt="" />
 </p>
 <p class="images">
-  <img src="layers5.jpg" alt=""/>
-  <img src="image-lab-pastemask.jpg" alt=""/>
+  <img src="layers5.jpg" alt="" />
+  <img src="image-lab-pastemask.jpg" alt="" />
 </p>
 <p>
   Right-click in the blurred/edges image window and 
@@ -198,13 +197,13 @@
 </p>
 <p>
   Select the Layers tab in the Layers dialog and click on the anchor button 
-  (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
+  (<img src="anchor.jpg" alt="" />) to anchor the floating image.
 </p>
 
 <h2>Step 9</h2>
 <p class="images">
-  <img src="layers6.jpg" alt=""/>
-  <img src="image-lab-selection.jpg" alt=""/>
+  <img src="layers6.jpg" alt="" />
+  <img src="image-lab-selection.jpg" alt="" />
 </p>
 <p>
   Click on the Channels tab in the Layers dialog. You should see a tiny version of the sharpening mask in the channel icon, 
@@ -213,7 +212,7 @@
 </p>
 <p>
   Select the Sharpening Mask channel and click the "Channel to Selection" 
-  button (<img src="channeltoselection.jpg" alt=""/>). You should see "marching ants".
+  button (<img src="channeltoselection.jpg" alt="" />). You should see "marching ants".
 </p>
 <p>
   You can experiment with feathering the selection here if you want; I usually don't.
@@ -221,9 +220,9 @@
 
 <h2>Step 10</h2>
 <p class="images">
-  <img src="layers7.jpg" alt=""/>
-  <img src="unsharpmask.jpg" alt=""/>
-  <img src="image-lab-sharpened-zoomed.jpg" alt=""/>
+  <img src="layers7.jpg" alt="" />
+  <img src="unsharpmask.jpg" alt="" />
+  <img src="image-lab-sharpened-zoomed.jpg" alt="" />
 </p>
 <p>
   <b>Important:</b> in the Layers dialog, click on the Layers tab and make sure the luminosity layer 
@@ -248,8 +247,8 @@
 
 <h2>Step 11</h2>
 <p class="images">
-  <img src="compose.jpg" alt=""/>
-  <img src="image-lab-composed.jpg" alt=""/>
+  <img src="compose.jpg" alt="" />
+  <img src="image-lab-composed.jpg" alt="" />
 </p>
 <p>
   It's time to reconstruct our original image from the LAB (HSV) components.
@@ -266,9 +265,9 @@
 
 <h2>Final Step</h2>
 <p class="images">
-  <img src="image-original-zoomed100-crop.jpg" alt=""/>
-  <img src="image-luminosityedgesharpened-zoomed100-crop.jpg" alt=""/>
-  <img src="image-regularsharpened-zoomed100-crop.jpg" alt=""/>
+  <img src="image-original-zoomed100-crop.jpg" alt="" />
+  <img src="image-luminosityedgesharpened-zoomed100-crop.jpg" alt="" />
+  <img src="image-regularsharpened-zoomed100-crop.jpg" alt="" />
 </p>
 <p>
   Examine the resulting image, zooming in to examine edge detail.
@@ -319,8 +318,8 @@
   Here is what you'll see if you compare them:
 </p>
 <p class="images">
-  <img src="gradient.jpg" alt=""/>
-  <img src="gradient-composed.jpg" alt=""/>
+  <img src="gradient.jpg" alt="" />
+  <img src="gradient-composed.jpg" alt="" />
 </p>
 <p>
   Left image: Gradient in RGB
@@ -328,8 +327,8 @@
   Right image: RGB -&gt; LAB -&gt; RGB
 </p>
 <p class="images">
-  <img src="gradient-hist.jpg" alt=""/>
-  <img src="gradient-composed-hist.jpg" alt=""/>
+  <img src="gradient-hist.jpg" alt="" />
+  <img src="gradient-composed-hist.jpg" alt="" />
 </p>
 <p>
   Left image: Histogram of the RGB image.
@@ -337,8 +336,8 @@
   Right image: Histogram of the RGB -&gt; LAB -&gt; RGB image.
 </p>
 <p class="images">
-  <img src="gradient-zoomed400.jpg" alt=""/>
-  <img src="gradient-composed-zoomed400.jpg" alt=""/>
+  <img src="gradient-zoomed400.jpg" alt="" />
+  <img src="gradient-composed-zoomed400.jpg" alt="" />
 </p>
 <p>
   Left image: Zoom 400% of the RGB image.
@@ -357,8 +356,8 @@
   Look at the histograms of the original image and the one smart sharpened on the luminosity channel:
 </p>
 <p class="images">
-  <img src="original-hist.jpg" alt=""/>
-  <img src="smartsharpened-hist.jpg" alt=""/>
+  <img src="original-hist.jpg" alt="" />
+  <img src="smartsharpened-hist.jpg" alt="" />
 </p>
 <p>
   Left image: Histogram, original image
@@ -378,11 +377,11 @@
 
 <h2>Other Examples</h2>
 <p class="images">
-  <img src="example1-original-crop.jpg" alt=""/>
+  <img src="example1-original-crop.jpg" alt="" />
 </p>
 <p class="images">
-  <img src="example1-regularsharpened-crop.jpg" alt=""/>
-  <img src="example1-luminosityedgesharpened-crop.jpg" alt=""/>
+  <img src="example1-regularsharpened-crop.jpg" alt="" />
+  <img src="example1-luminosityedgesharpened-crop.jpg" alt="" />
 </p>
 <p>
   First image: Original (pretty noisy)
@@ -401,8 +400,8 @@
   <a href="/tutorials/Reducing_CCD_Noise/">see this tutorial</a>.
 </p>
 <p class="images">
-  <img src="example2-edgesharpened-384x384.jpg" alt=""/>
-  <img src="example2-regsharpened-384x384.jpg" alt=""/>
+  <img src="example2-edgesharpened-384x384.jpg" alt="" />
+  <img src="example2-regsharpened-384x384.jpg" alt="" />
 </p>
 <p>
   Left image: Edge sharpened (Amt=1.25)
@@ -418,15 +417,15 @@
 </ul>
 
 <p>
-  The original tutorial (possibly with updated information) may be found <a href="http://redskiesatnight.com/">here</a>.
+  The original tutorial (possibly with updated information) may be found <a href="tutorial:Smart_Sharpening-Eric_R_Jeschke">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a>
+        Tutorial &copy; 2002 <a href="home:People-Jeschke_Eric_R">Eric R. Jeschke</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Jeschke_Eric_R">eric@redskiesatnight.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

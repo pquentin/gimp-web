@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Sepia Toning</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
@@ -16,9 +16,9 @@
   In this tutorial I'll show you how to sepia tone a color or black and white image. This technique is modeled on the traditional darkroom method of 
   sepia toning in that the sepia color is applied "unevenly" to areas of different tonality. It works much better than most of the simple methods 
   I've seen for image editors and provides great control!
-  <br  />
+  <br />
   The basic technique is to create a "Sepia Mask" that will apply a sepia color layer according to a layer mask that is based on the tonality of the image.
-  <br  />
+  <br />
   Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from 
   <a href="http://www.retouchpro.com/tutorials/lum-mask-sepia.html">a Photoshop tutorial on the RetouchPRO web site</a>.
 </p>
@@ -39,7 +39,7 @@
 <p>
   You can compare the result we will get below to the GIMP's built-in script-fu for sepia toning 
   (<span class="filter">&lt;Image&gt; Script-Fu -&gt; Decor -&gt; Old Photo</span>) as shown at right.
-  <br  />
+  <br />
   Come back and compare to this when you get to the end of the tutorial.
 </p>
 
@@ -60,7 +60,7 @@
 <p>
   Whatever technique you use, convert the B&amp;W image back into RGB mode when you're done 
   (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; RGB</span>).
-  <br  />
+  <br />
   In this case I simply did a mode change to grayscale, then back to RGB mode.
 </p>
 
@@ -81,8 +81,9 @@
   <img src="layers2.jpg" alt="" />
 </p>
 <p>
-  Bring up the Layers dialog (<kbd>Ctrl+L</kbd>) and click on the button for a new layer. Give it the name "Sepia Mask" and choose the option to fill it with the foreground color. Click OK.
-  <br  />
+  Bring up the Layers dialog (<kbd>Ctrl+L</kbd>) and click on the button for a new layer. 
+  Give it the name "Sepia Mask" and choose the option to fill it with the foreground color. Click OK.
+  <br />
   You should see nothing but the color now in the image window, since it obscures the image in the layer below. We are going to selectively apply this color to the image.
 </p>
 
@@ -101,7 +102,8 @@
   <img src="image3.jpg" alt="" />
 </p>
 <p>
-  In the Layers dialog, click on (select) the Background layer. Go up to the image window, select all and copy (<kbd>Ctrl+A</kbd> then <kbd>Ctrl+C</kbd>). In the Layers dialog, 
+  In the Layers dialog, click on (select) the Background layer. Go up to the image window, 
+  select all and copy (<kbd>Ctrl+A</kbd> then <kbd>Ctrl+C</kbd>). In the Layers dialog, 
   click on the layer mask icon in the Sepia Mask layer (the little white square). Then go back up to the image window and paste (<kbd>Ctrl+V</kbd>)
 </p>
 
@@ -112,7 +114,7 @@
 </p>
 <p>
   In the Layers dialog, click the Anchor button to anchor the pasted image into the layer mask.
-  <br  />
+  <br />
   In the image window, invert the color (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span>). 
   This layer mask insures that the shadow parts of the image receive most of the color, 
   the mid-tones a little less, and the highlights little to none, much the way a print sepia-toned the traditional way would be.
@@ -124,8 +126,9 @@
   <img src="image5.jpg" alt="" />
 </p>
 <p>
-  In the Layers dialog, change the Mode (blending mode) of the layer to "Color". This applies the color from the Sepia Mask layer according to the layer mask to the image.
-  <br  />
+  In the Layers dialog, change the Mode (blending mode) of the layer to "Color". 
+  This applies the color from the Sepia Mask layer according to the layer mask to the image.
+  <br />
   You now have your base result. It might be a good idea to save this under a new name at this point.
 </p>
 
@@ -169,8 +172,10 @@
 <ul>
   <li>You can reduce the effect of the sepia toning by adjusting the opacity of the Sepia Mask layer.</li>
   <li>Try adding some grain or noise to the image (probably before you desaturate).</li>
-  <li>We used a single, flat color for the sepia color. Experiment with different colors, multiple colors or a color gradient for the Sepia Mask layer.</li>
-  <li>You can apply levels, curves or other adjustments to the contrast mask to increase or decrease "absorbency" of the sepia color into different areas of the image.</li>
+  <li>We used a single, flat color for the sepia color. 
+  Experiment with different colors, multiple colors or a color gradient for the Sepia Mask layer.</li>
+  <li>You can apply levels, curves or other adjustments to the contrast mask to increase or decrease 
+  "absorbency" of the sepia color into different areas of the image.</li>
   <li>The method by which you get a black and white image makes a big difference in how the sepia toning comes out.</li>
 </ul>
 <p class="images">
@@ -195,15 +200,15 @@
 </ul>
 
 <p>
-  The original tutorial (possibly with updated information) may be found <a href="http://redskiesatnight.com/">here</a>.
+  The original tutorial (possibly with updated information) may be found <a href="tutorial:Sepia_Toning-Eric_R_Jeschke">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a>
+        Tutorial &copy; 2002 <a href="home:People-Jeschke_Eric_R">Eric R. Jeschke</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Jeschke_Eric_R">eric@redskiesatnight.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Image Pipes</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Likins_Adrian">Adrian Likins</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
@@ -91,9 +94,12 @@
 </p>
 <p>
   An example of a two dimensional pipe
-  A interesting use for image pipe would be to simulate a natural media situration. For example, maybe a brush that has ten different versions based that correlate to tablet pressure. 
-  For this example, I'll use a somewhat contrived example for simplicity sake. It will use the "angular" paramater in for per layer dimension, and a "random" paramter to select which 
-  of the multiple images to use. I use this in a couple of brushes to "humanize" the output. Instead of having the same image stamped out over and over, it varies a little randomly.
+  A interesting use for image pipe would be to simulate a natural media situration. 
+  For example, maybe a brush that has ten different versions based that correlate to tablet pressure. 
+  For this example, I'll use a somewhat contrived example for simplicity sake. 
+  It will use the "angular" paramater in for per layer dimension, and a "random" paramter to select which 
+  of the multiple images to use. I use this in a couple of brushes to "humanize" the output. 
+  Instead of having the same image stamped out over and over, it varies a little randomly.
   The example source image is a 8 layer image, with each layer split in two with a guide. The guide isnt require but it makes it easier to create.
   <br />
   A screenshot of the layers dialog showing creation of an image of this type.(Image above)
@@ -146,15 +152,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://adrian.gimp.org/gimppipe/">here</a>.
+  The original tutorial can be found <a href="tutorial:Image_Pipes-Adrian_Likins">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:adrian@gimp.org">Adrian Likins (adrian)</a>
+        Tutorial &copy; 2002 <a href="home:People-Likins_Adrian">Adrian Likins (adrian)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Likins_Adrian">adrian@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

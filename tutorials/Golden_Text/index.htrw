@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Golden Text Tutorial</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Budig_Simon">Simon Budig</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p class="images">
@@ -109,15 +112,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://www.home.unix-ag.org/simon/gimp/golden.html">here</a>.
+  The original tutorial can be found <a href="tutorial:Golden_Text-Simon_Budig">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:Simon.Budig@unix-ag.org">Simon Budig (nomis)</a>
+        Tutorial &copy; 2002 <a href="home:People-Budig_Simon">Simon Budig (nomis)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Budig_Simon">Simon.Budig@unix-ag.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

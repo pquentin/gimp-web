@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Working with the Image</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Turner_Kevin">Kevin Turner</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
@@ -31,15 +34,15 @@
   Drawables make life much more exciting. &lt;snip&gt;
 </p>
 <p>
-  The original document can be found <a href="http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro">here</a>.
+  The original document can be found <a href="tutorial:Drawables-Kevin_Turner">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="http://sourceforge.net/sendmessage.php?touser=9300">Kevin Turner</a>
+        Tutorial &copy; 2002 <a href="home:People-Turner_Kevin">Kevin Turner</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Turner_Kevin">acapnotic@users.sourceforge.net</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

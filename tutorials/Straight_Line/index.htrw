@@ -3,10 +3,13 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Straight Line Tutorial</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Burgess_Seth">Seth Burgess</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p class="images">
-  <img src="straight_line_example.png" alt=""/>
+  <img src="straight_line_example.png" alt="" />
 </p>
 <p>
   This tutorial shows you how you can do straight lines with the gimp, using a feature called the Shift Key.
@@ -17,8 +20,8 @@
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="shiftkey.png" alt=""/>
-  <img src="mouse.png" alt=""/>
+  <img src="shiftkey.png" alt="" />
+  <img src="mouse.png" alt="" />
 </p>
 <p>
   The invention called the typewriter introduced the Shift Key. You generally have 2 of them on your keyboard. 
@@ -30,7 +33,7 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="blankimage.png" alt=""/>
+  <img src="blankimage.png" alt="" />
 </p>
 <p>
   First, create a new image. Any size will do.
@@ -38,7 +41,7 @@
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="toolbox.png" alt=""/>
+  <img src="toolbox.png" alt="" />
 </p>
 <p>
   Then click on the paintbrush. Any of the red-highlighted tools on the above toolbox can do lines.
@@ -46,7 +49,7 @@
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="startdot.png" alt=""/>
+  <img src="startdot.png" alt="" />
 </p>
 <p>
   After you click the paintbrush tool, you can click the image. A single dot will appear on the screen. The size of this 
@@ -57,7 +60,7 @@
 
 <h2>Step 5</h2>
 <p class="images">
-  <img src="draggedline.png" alt=""/>
+  <img src="draggedline.png" alt="" />
 </p>
 <p>
   After you have a starting point, and have held down the Shift Key, you'll see a line like above if you're running 
@@ -69,7 +72,7 @@
 
 <h2>Final</h2>
 <p class="images">
-  <img src="drawnline.png" alt=""/>
+  <img src="drawnline.png" alt="" />
 </p>
 <p>
   See how the line is drawn on top of the preview? This is a powerful feature of the Paint Brush. You can use it with 
@@ -85,50 +88,50 @@
 
 <h2>Examples</h2>
 <p class="images">
-  <img src="exp1.png" alt=""/>
+  <img src="exp1.png" alt="" />
 </p>
 <p>
   This one I turned on gradient in the Paint Brush Tool.
 </p>
 
 <p class="images">
-  <img src="exp2.png" alt=""/>
+  <img src="exp2.png" alt="" />
 </p>
 <p>
   This one I rendered a grid, and then used the Smudge Tool with a low spacing and a slightly larger brush.
 </p>
 
 <p class="images">
-  <img src="exp3.png" alt=""/>
+  <img src="exp3.png" alt="" />
 </p>
 <p>
   This one I used the Clone tool, and set the source to "Maple Leaves" pattern.
 </p>
 
 <p class="images">
-  <img src="exp4.png" alt=""/>
+  <img src="exp4.png" alt="" />
 </p>
 <p>
   This one I rendered a plasma cloud, and used the Erase Tool with a square brush.
 </p>
 
 <p class="images">
-  <img src="exp5.png" alt=""/>
+  <img src="exp5.png" alt="" />
 </p>
 <p>
   This one I used the Dodge tool on the top and left of a blue box, then used the burn tool on the right and bottom.
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://www.gimp.org/~sjburges/straightline/straightline.html">here</a>.
+  The original tutorial can be found <a href="tutorial:Straight_Line-Seth_Burgess">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:sjburges@gimp.org">Seth Burgess (sjburges)</a>
+        Tutorial &copy; 2002 <a href="home:People-Burgess_Seth">Seth Burgess (sjburges)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Burgess_Seth">sjburges@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Image Pipes 2</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Jones_Sam">Sam Jones</a> and may not be used without permission of the author.
+</p>
 
 <h2>What are image pipe and pixmap brushes?</h2>
 <p>
@@ -125,13 +128,17 @@
 <p>
   So, what we have is feet which alternate left-right-left and follow the direction of the mouse. It looks a little like above.
 </p>
+<p>
+  The original tutorial can be found <a href="tutorial:Image_Pipes2-Sam_Jones">here</a>.
+</p>
+
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:samjones@io.com">Sam Jones</a>
+        Tutorial &copy; 2002 <a href="home:People-Jones_Sam">Sam Jones</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Jones_Sam">samjones@io.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

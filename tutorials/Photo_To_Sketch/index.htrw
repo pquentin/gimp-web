@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Photo to sketch</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Neary_Dave">Dave Neary</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
@@ -122,13 +125,17 @@
   by selecting a representative shadow/highlight colour, and adding the extra bits with the airbrush tool (looks like an airbrush). 
   After all our work, we end up with this very nice looking painting effect.
 </p>
+<p>
+  The original tutorial can be found <a href="tutorial:Photo_To_Sketch-Dave_Neary">here</a>.
+</p>
+
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:bolsh@gimp.org">Dave Neary (bolsh)</a>
+        Tutorial &copy; 2002 <a href="home:People-Neary_Dave">Dave Neary (bolsh)</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Neary_Dave">bolsh@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

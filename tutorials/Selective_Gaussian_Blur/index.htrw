@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Noise removal with selective Gaussian blur</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Jensen_Atte_André">Atte André Jensen</a> and may not be used without permission of the author.
+</p>
 
 <h2>Intention</h2>
 <p>
@@ -101,15 +104,15 @@
 </p>
 
 <p>
-  The original tutorial can be found <a href="http://home.wanadoo.nl/atte/gimp/">here</a>.
+  The original tutorial can be found <a href="tutorial:CCD_Noise_removal-Atte_André_Jensen">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:atte@wanadoo.nl">Atte André Jensen</a>
+        Tutorial &copy; 2002 <a href="home:People-Jensen_Atte_André">Atte André Jensen</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Jensen_Atte_André">atte@wanadoo.nl</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -4,23 +4,28 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>"Smart" Sharpening Shortcuts</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
 <p>
-  Maybe you think the smart sharpening method is too complicated, or too lengthy, or just not worth it for the benefit. There are many variations on this technique, 
+  Maybe you think the smart sharpening method is too complicated, or too lengthy, 
+  or just not worth it for the benefit. There are many variations on this technique, 
   some of which are not as lengthy as the "full" technique, but may still produce better results than a straightforward unsharp mask operation.
 </p>
 
 <h2>Possible combinations</h2>
 <ol>
-  <li>Decompose into LAB, and prepare a sharpening mask. Only the edges in the luminosity channel are sharpened. This is the full procedure described in the tutorial.</li>
-  <li>Decompose into HSV, and prepare a sharpening mask. Only the edges in the value channel are sharpened. A variation on the full procedure described in the tutorial.</li>
-  <li>Don't decompose into LAB, but do prepare a sharpening mask. Only the edges in all RGB channels are sharpened. A good method if losing information due to mode changes is a concern.</li>
+  <li>Decompose into LAB, and prepare a sharpening mask. Only the edges in the luminosity channel are sharpened. 
+  This is the full procedure described in the tutorial.</li>
+  <li>Decompose into HSV, and prepare a sharpening mask. Only the edges in the value channel are sharpened. 
+  A variation on the full procedure described in the tutorial.</li>
+  <li>Don't decompose into LAB, but do prepare a sharpening mask. Only the edges in all RGB channels are sharpened. 
+  A good method if losing information due to mode changes is a concern.</li>
   <li>Don't decompose into LAB, but do prepare a sharpening mask. Only the edges in the red channel are sharpened.
   <br /><br />
-  The red channel is used since it usually contains most of the luminosity information for the image. Once you have the sharpening mask created as described earlier 
+  The red channel is used since it usually contains most of the luminosity information for the image. 
+  Once you have the sharpening mask created as described earlier 
   and have converted it into a selection, go to the Layers dialog, click on the Channels tab and unselect the Green and Blue channels. Now apply the filter.</li>
   <li>Don't decompose into LAB, and don't prepare a sharpening mask. The entire image is sharpened, but only in the red channel. 
   We can't use as large an amount of sharpening, or it will exacerbate the noise.</li>
@@ -35,11 +40,12 @@
 <p>
   Compare for yourself!
   <br />
-  Here are the results for the combinations listed above. Look for the sharpness in the eye lines, and CCD noise in the shadows of the face and in the door frame of the car.
+  Here are the results for the combinations listed above. Look for the sharpness in the eye lines, 
+  and CCD noise in the shadows of the face and in the door frame of the car.
 </p>
 
 <p class="images">
-  <img src="image-luminosityedgesharpened-zoomed100.jpg" alt=""/>
+  <img src="image-luminosityedgesharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   1. Sharpening mask (edges only), luminosity channel only (LAB decompose/compose).
@@ -48,7 +54,7 @@
 </p>
 
 <p class="images">
-  <img src="image-valueedgesharpened-zoomed100.jpg" alt=""/>
+  <img src="image-valueedgesharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   2. Sharpening mask (edges only), value channel only (HSV decompose/compose).
@@ -57,7 +63,7 @@
 </p>
 
 <p class="images">
-  <img src="image-edgesharpened-zoomed100.jpg" alt=""/>
+  <img src="image-edgesharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   3. Sharpening mask (edges only), all RGB channels (no decompose/compose). First of the "shortcuts".
@@ -68,7 +74,7 @@
 </p>
 
 <p class="images">
-  <img src="image-rededgesharpened-zoomed100.jpg" alt=""/>
+  <img src="image-rededgesharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   4. Sharpening mask (edges only), red channel only (no decompose/compose).
@@ -79,7 +85,7 @@
 </p>
 
 <p class="images">
-  <img src="image-redsharpened-zoomed100.jpg" alt=""/>
+  <img src="image-redsharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   5. No sharpening mask (entire image), red channel only (no decompose/compose).
@@ -90,7 +96,7 @@
 </p>
 
 <p class="images">
-  <img src="image-luminositysharpened-zoomed100.jpg" alt=""/>
+  <img src="image-luminositysharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   6. No sharpening mask (entire image), luminosity channel only (LAB decompose/compose).
@@ -101,7 +107,7 @@
 </p>
 
 <p class="images">
-  <img src="image-valuesharpened-zoomed100.jpg" alt=""/>
+  <img src="image-valuesharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   7. No sharpening mask (entire image), value channel only (HSV decompose/compose).
@@ -112,7 +118,7 @@
 </p>
 
 <p class="images">
-  <img src="image-regularsharpened-zoomed100.jpg" alt=""/>
+  <img src="image-regularsharpened-zoomed100.jpg" alt="" />
 </p>
 <p>
   8. No sharpening mask (entire image), all RGB channels (no decompose/compose).
@@ -123,7 +129,7 @@
 </p>
 
 <p class="images">
-  <img src="image-original-zoomed100.jpg" alt=""/>
+  <img src="image-original-zoomed100.jpg" alt="" />
 </p>
 <p>
   9. Unsharpened original.
@@ -134,15 +140,15 @@
 </p>
 
 <p>
-  The original tutorial (possibly with updated information) may be found <a href="http://redskiesatnight.com/">here</a>.
+  The original tutorial (possibly with updated information) may be found <a href="tutorial:Smart_Sharpening-Eric_R_Jeschke">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a>
+        Tutorial &copy; 2002 <a href="home:People-Jeschke_Eric_R">Eric R. Jeschke</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Jeschke_Eric_R">eric@redskiesatnight.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

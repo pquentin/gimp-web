@@ -3,22 +3,29 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Title goes here</h1>
+<p>
+  Text and images Copyright (C) 2002 <a href="mail:People-Author_Name">Author name</a> and may not be used without permission of the author.
+</p>
 
 <h2>Subtitle goes here</h2>
 <p class="images">
-  <img src="someimage.jpg" alt=""/>
-  <img src="someotherimage.jpg" alt=""/>
+  <img src="someimage.jpg" alt="" />
+  <img src="someotherimage.jpg" alt="" />
 </p>
 <p>
   Text goes here
 </p>
+
+<p>
+  The original tutorial can be found <a href="tutorial:Nameoftutorial-Author_Name">here</a>.
+</p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:user@host.org">Author Name</a>
+        Tutorial &copy; 2002 <a href="home:Author_Name">Author Name</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Author_Name">webmaster@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

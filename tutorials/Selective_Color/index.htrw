@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Selective Colorization</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
@@ -16,11 +16,13 @@
   In this tutorial I will explain how to convert a color photograph to a B&amp;W one with color restored to selective areas. 
   With the right subject this can give really striking results, as you can see for yourself. 
   This technique is elsewhere referred to sometimes as "hand coloring" :-)
-  <br /><br />
+</p>
+<p>
   The basic technique is to duplicate the color photograph, 
   convert the duplicate to B&amp;W, and paste it as a new layer on top of the color image. Add an opaque layer 
   mask and then selectively paint transparency into the upper mask, exposing the color photograph underneath.
-  <br /><br />
+</p>
+<p>
   Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a reader comment I saw in 
   <a href="http://www.photo.net/digital/editing/hand-coloring">a "hand-coloring" tutorial on photo.net</a> (great web site by the way, I recommend it).
 </p>
@@ -42,7 +44,8 @@
   <br />
   By whatever method suits you best, convert the duplicate image to B&amp;W. Once you have gotten the B&amp;W version that you like, 
   change it back to RGB mode (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; RGB</span>).
-  <br /><br />
+</p>
+<p>
   In this example, I tried the <a href="/tutorials/Color2BW/#channelmixer">channel mixer</a>, but ended up in this case preferring 
   a simple conversion to grayscale (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Grayscale</span>), then back to RGB.
 </p>
@@ -116,7 +119,8 @@
 </p>
 <p>
   At the very boundaries of the colored image I typically zoom in to 300% or so. Switch to a small, feathered brush and very carefully paint the edges.
-  <br /><br />
+</p>
+<p>
   If you only paint a little at a time it makes it much easier to use the GIMP's excellent undo feature if you accidentally stray outside the boundary. 
   If for some reason you can't undo, don't worry: just switch to white paint and paint opacity back over your mistake to repair the mask.
 </p>
@@ -156,15 +160,15 @@
 </ul>
 
 <p>
-  The original tutorial (possibly with updated information) may be found <a href="http://redskiesatnight.com/">here</a>.
+  The original tutorial (possibly with updated information) may be found <a href="tutorial:Selective_Color-Eric_R_Jeschke">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a>
+        Tutorial &copy; 2002 <a href="home:People-Jeschke_Eric_R">Eric R. Jeschke</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Jeschke_Eric_R">eric@redskiesatnight.com</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

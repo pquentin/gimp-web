@@ -1,5 +1,9 @@
 2004-05-15  Henrik Brix Andersen  <brix@gimp.org>
 
+	* links/index.htrw: added links to gimp.ru, linuxartist.org
+
+2004-05-15  Henrik Brix Andersen  <brix@gimp.org>
+
 	* includes/wgo-tutorial-init.xhtml
 	* includes/wgo-page-init.xhtml
 	* includes/wgo-howto-unix-init.xhtml

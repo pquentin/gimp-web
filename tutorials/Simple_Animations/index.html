@@ -19,17 +19,18 @@
 <p>
   We'll create a very simple web banner. Let's start with a new image 468x60 px. Use white as the background color. 
   Create new transparent layer. Select the whole image with Ctrl+A and fill it with black (Ctrl+,). 
-  Shrink the selection by 1 px ( <span class="filter">&lt;image&gt;/selection/shrink</span>) and delete the selection with Ctrl+K. 
+  Shrink the selection by 1 px ( <span class="filter">&lt;image&gt;Selection-&gt;shrink</span>) and delete the selection with Ctrl+K. 
   We created a 1 px frame around out banner.
 </p>
 <p>
   Now it's time to put our logo or the main theme picture into the banner. I have prepared a masked-out flower you see on the picture on the left. 
   I just pasted the flower below the border frame, used alpha to selection, created an empty layer below it and filled the selection with black using Ctrl+,. 
   After that I blurred the shadow using Gaussian blur RLE and ofset it by 2px to bottom right. I couldn't resist adding the interlace effect using 
-  <span class="filter">&lt;image&gt;/filters/render/grid</span> and a layer mask. In that layer mask i applied a b/w gradient, so that the left of the flower is not interlaced.
+  <span class="filter">&lt;image&gt;Filters-&gt;Render-&gt;Grid</span> and a layer mask. In that layer mask i applied a b/w gradient, 
+  so that the left of the flower is not interlaced.
   <br /><br />
   This part of the tutorial is not the key element, so feel free to experiment. Once you're ready flatten the image using the 
-  <span class="filter">&lt;image&gt;/layers/flatten image.</span> 
+  <span class="filter">&lt;image&gt;Layers-&gt;Flatten Image</span>. 
 </p>
 
 <div class="subtitle">Step 2</div>
@@ -57,7 +58,7 @@
   because the delay does not have to be constant. In GIMP you specify the delay as a layer comment. Just double-click the layer comment in the layers' 
   window and a delay in ms enclosed in brackets ().
   <br /><br />
-  To check if the timing is good, you can preview the animation using the <span class="filter">&lt;image&gt;/filters/ animation/animation playback</span>. 
+  To check if the timing is good, you can preview the animation using the <span class="filter">&lt;image&gt;Filters-&gt;Animation-&gt;Animation Playback</span>. 
   You can even drag the preview around your desktop.
 </p>
 
@@ -71,7 +72,7 @@
   In the last step, we'll use a very handy function for applying a filter to multiple layers. Before we do that, we need to create a new image out of the third frame. 
   In GIMP 1.1+ it's as simple as dragging the layer preview from the layers window to the toolbar. Now duplicate the image four times. With a rectangular select tool, 
   draw a selction around the text. Now we're ready to apply a gaussian blur filter on every layer using varying parameters. Use the 
-  <span class="filter">&lt;image&gt;/filters/filter all layers</span> function and select plug-in-gauss-rle2 from the list and press the apply varying button. 
+  <span class="filter">&lt;image&gt;Filters-&gt;Filter All Layers</span> function and select plug-in-gauss-rle2 from the list and press the apply varying button. 
   The blur dialog pops up. Now we need to specify parameters for the lowest layer in the stack, ie. our first frame.
   <br /><br />
   We want to blur the text away in time, so for the first frame, let's specify a lower value. We'll blur in horizontal direction only, 
@@ -85,12 +86,13 @@
   <img src="saveas.png" alt=""/>
 </p>
 <p>
-  Now we only need to save our animation as GIF. Before we do that, let's optimize the animation using the <span class="filter">&lt;image&gt;/filters/animation/animation optimize</span> function. 
+  Now we only need to save our animation as GIF. Before we do that, let's optimize the animation using the 
+  <span class="filter">&lt;image&gt;Filters-&gt;Animation-&gt;Animation Optimize</span> function. 
   This will create a new image using a different mode than what we have now. You can use two different modes for every frame of your animation. 
   You can either use the replace mode (default), which will replace the old frame with the new one. It's like taking the frame out before adding a new one. 
   The other is the combine method, in which the new frame is added to the previous frame. That way only changes need to be updated. 
   That's what animation optimize basically does. The file size gets tremendously smaller. Now we need to index the image using 
-  <span class="filter">&lt;image&gt;/image/mode/indexed</span> function (Alt+I).
+  <span class="filter">&lt;image&gt;Image-&gt;Mode-&gt;Indexed</span> function (Alt+I).
   <br /><br />
   Try to use as little colors as possible and avoid dithering. Both number of colors and dithering tend to enlarge the filesize dramaticaly. 
   I used no color dithering and generated 32 color pallette. The file size of the banner is about 7kB. If you now save the image as GIF, 

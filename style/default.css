@@ -124,6 +124,10 @@ p.images img {
   border: solid black 2px;
 }
 
+p.images {
+  text-align: center;
+}
+
 span.newstitle {
   float: left;
 }

@@ -1,5 +1,16 @@
 2004-03-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* source/index.htrw
+	* downloads/index.htrw
+	* about/introduction.htrw
+	* includes/wgo-tutorial-init.xhtml
+	* includes/wgo-howto-unix-init.xhtml
+	* includes/wgo-howto-source-init.xhtml
+	* includes/wgo-howto-bugs-init.xhtml: remove references to OS/2
+	from here as well.
+
+2004-03-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* mail_lists.htrw: use h1 for the main title, commented out
 	references to the OS/2 mailing list
 

@@ -82,14 +82,17 @@ class gallery_image:
   def _ashtml(self, which="image"):
     return (xhtml.span(self["title"], {"class" : "title"})
             + (xhtml.image({"src" : self[which]}))
-            + (xhtml.span(self["author"] + "&nbsp;", {"class": "author"}) + xhtml.span("&nbsp;")
-               + xhtml.span("&nbsp;" + xhtml.character_reference(self["email"]), {"class" : "email"})))
+            + (xhtml.span(self["author"] + "&nbsp;", {"class": "author"})
+	    #+ xhtml.span("&nbsp;")
+            #   + xhtml.span("&nbsp;" + xhtml.character_reference(self["email"]), {"class" : "email"})
+	    ))
 
   def ashtml(self, which="image"):
     return (xhtml.table(xhtml.table.row(xhtml.table.cell(xhtml.div(self["title"], {"class" : "title"}), {"colspan": 2}))
                         + xhtml.table.row(xhtml.table.cell(xhtml.image({"src" : self[which]}), {"colspan" : 2}))
                         + xhtml.table.row(xhtml.table.cell(xhtml.span(self["author"], {"class" : "author"}), {"class" : "author"}))
-                        + xhtml.table.row(xhtml.table.cell(xhtml.span(self["email"], {"class" : "email"}), {"class" : "email"})), {"class" : "splash-thumb"}))
+                        # + xhtml.table.row(xhtml.table.cell(xhtml.span(self["email"], {"class" : "email"}), {"class" : "email"}))
+                        , {"class" : "splash-thumb"}))
 
   def delete(self):
     try:
@@ -151,12 +154,15 @@ class gallery_image:
 def image_generate(title, image_file, author, email):
   img = (xhtml.div(title, {"class" : "title"})
          + xhtml.image({"src" : image_file})
-         + xhtml.div(xhtml.span(author, {"class": "author"}) + xhtml.span(xhtml.mailto(email), {"class" : "email"})))
+         + xhtml.div(xhtml.span(author, {"class": "author"}) 
+         # + xhtml.span(xhtml.mailto(email), {"class" : "email"})
+         ))
 
   img = (xhtml.table(xhtml.table.row(xhtml.table.cell(xhtml.div(title, {"class" : "title"}), {"colspan": 2}))
                      + xhtml.table.row(xhtml.table.cell(xhtml.image({"src" : image_file}), {"colspan" : 2}))
                      + xhtml.table.row(xhtml.table.cell(xhtml.span(author, {"class" : "author"}), {"class" : "author"}))
-                     + xhtml.table.row(xhtml.table.cell(xhtml.span(email, {"class" : "email"}), {"class" : "email"})), {"class" : "splash-thumb"}))
+                     # + xhtml.table.row(xhtml.table.cell(xhtml.span(email, {"class" : "email"}), {"class" : "email"}))
+                     , {"class" : "splash-thumb"}))
   
   return (img)
 

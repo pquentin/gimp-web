@@ -1,3 +1,10 @@
+2004-03-12  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/3d_Logo/logo-*.png: Use the 29 new screenshots
+	contributed by Harish Narayanan <harish@gamebox.net> for 2.0.
+	Minor modifications to logo-06.png and logo-25.png to restore the
+	transparent background.
+
 2004-03-11  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* Makefile (all): Rewhacked things to make news work.

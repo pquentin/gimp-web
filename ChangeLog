@@ -1,6 +1,10 @@
+2003-09-18  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* Wrapped each news article in a <p> ... </p>
+
 2003-09-16  Helvetix Victorinox  <helvetix@gimp.org>
 
-  * Makefile: changed chown to chmod
+	* Makefile: changed chown to chmod
 
 	* install.exclude: Readded /includes/news.inc
 	

@@ -159,7 +159,7 @@ class news:
       img = xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]), "alt" : icon_by_name(self["image"])})
       pass
 
-    s += str(xhtml.div(img + self["body"], {"class" : "news"}))
+    s += str(xhtml.div(img + xhtml.para(self["body"]), {"class" : "news"}))
     
     return (s)
 

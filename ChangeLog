@@ -1,6 +1,12 @@
 
 2004-03-20  Shawn T. Amundson <amundson@gimp.org>
 
+	* downloads/index.htrw
+	  links/index.htrw: remove start4all reference at end of Links
+	page; Reorder download links so Unix is at top.
+
+2004-03-20  Shawn T. Amundson <amundson@gimp.org>
+
 	* includes/wgo-page-fini.xhtml
 	  tutorials/Lite_Quickies/jpegrace.htrw: fixed typos in Lite_Quickies
 	which prevented site from building; Remove "Grokking the GIMP" link

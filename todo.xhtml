@@ -1,65 +1,67 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Development GIMP Splash Contest</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<style ref="stylesheet" type="text/css">
-body {
-  font-size: small;
-  font-weight: normal;
-}
-
-p {
+<style type="text/css">
+table.todo p {
   margin: .5em 0 0 0;
   padding: 0 0 0 0;
 }
 
-table {
+table.todo {
+  font-size: small;
+  font-weight: normal;
   text-align: justify;
   vertical-align: top;
 }
 
-table th {
+table.todo th {
   border-bottom: medium double black;
 }
 
-table > tbody > tr {
+table.todo > tbody > tr {
   border: 1px solid red;
 }
 
-table > tbody > tr > td {
+table.todo > tbody > tr > td {
   border-bottom: 1px solid black;
   vertical-align: top;
+  font-weight: bold;
+  padding: 0 0 0.5em 0.5em;
 }
 
-table > tbody > tr > td + td{
+table.todo > tbody > tr > td + td{
   border-bottom: 1px solid black;
-
+  font-weight: normal;
 }
 
-table > tbody > tr > td + td + td{
+table.todo > tbody > tr > td + td + td{
   border-bottom: 1px solid black;
-  padding-bottom: .5em;
+  font-weight: normal;
 }
 </style>
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<table cellpadding="0" cellspacing="0"><tbody>
-    <tr><th>Status</th><th>What</th><th>Description/Discussion</th></tr>
-    <tr><td></td><td></td><td>
+<table class="todo" cellpadding="0" cellspacing="0"><tbody>
+    <tr><th>Status</th><th>Who</th><th>What</th><th>Description/Discussion</th></tr>
+    <tr><td></td><td></td><td></td><td>
         a crontabs directory in CVS is fine, it should be put in
         install.exclude, and install.sh modified to put them in the
         right place
       </td></tr>
-    <tr><td></td><td></td><td>
-
+    <tr>
+      <td>Future</td>
+      <td>Brix, Helvetix</td>
+      <td>Table-less layout</td>
+      <td>
         getting rid of the tables in the design would be good, I
         think.  Helvetix has made an example of how this could be
         done. Take a look at: contest/indexhtml Helvetix also wrote a
         <a href="http://oak.mysterious.org/~helvetix/Notes/wgo-layout.xhtml">document</a>
         on how this new layout could be used:
-
       </td></tr>
     <tr>
-      <td>DONE 1/20/2003  Helvetix</td>
+      <td>done</td>
+      <td>Helvetix</td>
       <td>about/ChangLogs/:</td>
       <td>
         Changelog.pl: the wgo2 wrapper needs to be stripped from this
@@ -75,6 +77,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>about/authors.html</td>
       <td>
         this page is perfect.  however it was generated from a script
@@ -84,16 +87,22 @@ table > tbody > tr > td + td + td{
         it will automatically be gernerated from a gimp source tree on
         command.
       </td></tr>
-    <tr><td></td><td>about/awards.html:</td><td>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/awards.html:</td>
+      <td>
         this page needs to be compiled.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>about/history.html:</td>
       <td>
         this page needs to be compiled.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>about/index.html:</td>
       <td>
@@ -104,11 +113,13 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>about/introduction.html:</td>
       <td>
         complete rewrite would suit me fine.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>about/mediakit.html:</td>
       <td>
@@ -116,6 +127,7 @@ table > tbody > tr > td + td + td{
         media would need to have here.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>about/screenshots.html</td>
       <td>
@@ -125,13 +137,15 @@ table > tbody > tr > td + td + td{
         talk to the gimp-doc people.
       </td></tr>
     <tr>
-      <td>DONE</td>
+      <td>done</td>
+      <td>Carol</td>
       <td>about/splash-1.1.html:</td>
       <td>
         done.
       </td></tr>
     <tr>
       <td>done</td>
+      <td>Carol</td>
       <td>about/splash-1.3.html:</td>
       <td>
         done this far in time.  a script can be written that takes the
@@ -140,6 +154,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td>done</td>
+      <td>Carol</td>
       <td>about/splash-1.3.html</td>
       <td>
         done this far in time.  a script can be written that takes the latest splash out
@@ -148,6 +163,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td>done</td>
+      <td>Carol</td>
       <td>about/splash-stable.html</td>
       <td>
         done this far in time.  can prolly just be hand entered there
@@ -155,12 +171,14 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td>done</td>
+      <td>Carol</td>
       <td>books/index.html:</td>
       <td>
         done this far in time.  i don't yet know of a good way for the
         gimp authors to communicate with the web team.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>bugs/index.html</td>
       <td>
@@ -170,7 +188,8 @@ table > tbody > tr > td + td + td{
         nice.
       </td></tr>
     <tr>
-      <td>DONE 1/5/2003 Helvetix</td>
+      <td>done</td>
+      <td>Helvetix</td>
       <td>contest/index.html<br />
         contest/archives/index.html
       </td>
@@ -180,6 +199,7 @@ table > tbody > tr > td + td + td{
         one begins.  the whole thing needs to be made.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>development/index.html</td>
       <td>
@@ -195,6 +215,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>docs/cookbook/</td>
       <td>
         some outline and a place to upload nice little gimp script
@@ -202,6 +223,7 @@ table > tbody > tr > td + td + td{
         implemented.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>docs/developer_docs/</td>
       <td>
@@ -211,12 +233,14 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>docs/gimp-help/</td>
       <td>
         needs to be put into place.  would be nice to figure out a way
         to update it every time there is a new gimp tarball.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>docs/gimp-print/</td>
       <td>
@@ -225,6 +249,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td>done</td>
+      <td>Carol</td>
       <td>docs/gimp-python/</td>
       <td>
         put into place.  i am assuming this will be included with the
@@ -232,11 +257,13 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td>done</td>
+      <td>Carol</td>
       <td>docs/scheme_plugin/</td>
       <td>
         put into place.  a one time document. we are lucky to have it. finished.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>links/index.html<br />
         includes/url-*.inc:
@@ -250,6 +277,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>macintosh/index.html</td>
       <td>
         maybe jyon, akk or patti could throw a little something on
@@ -257,6 +285,7 @@ table > tbody > tr > td + td + td{
         called for.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>
         mail_lists.html<br />
@@ -268,12 +297,14 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>os2/index.html</td>
       <td>
         i will go through the archives, find some urls and reiterate
         info about the maillist.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>resources/</td>
       <td>
@@ -288,6 +319,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>resources/brushes/index.html</td>
       <td>
         after i get the page to render properly (two at a time, not
@@ -297,6 +329,7 @@ table > tbody > tr > td + td + td{
         to be able to read the gimprc for that.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>resources/gradients/index.html</td>
       <td>
@@ -308,6 +341,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>resources/patterns/index.html</td>
       <td>
         after i get the page to render properly (two at a time, not
@@ -317,6 +351,7 @@ table > tbody > tr > td + td + td{
         to be able to read the gimprc for that.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>resources/palettes/index.html</td>
       <td>
@@ -328,6 +363,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td>Scizzo</td>
       <td>tutorials/</td>
       <td>
         scizzo has a schedule for this and is following it.
@@ -353,11 +389,13 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>unix/</td>
       <td>
         this section needs some love.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>unix/INSTALL</td>
       <td>
@@ -369,11 +407,13 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>unix/gimprc*, gtkrc*:</td>
       <td>
         extra tips and explanation can and should be added to this.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>unix/howtos/</td>
       <td>
@@ -383,6 +423,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>unix/howtos/cvs-stable.html:</td>
       <td>
         this document should be split into getting gimp* from cvs and
@@ -390,12 +431,14 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>unix/howtos/cvsrc</td>
       <td>
         this needs to be fixed so that it doesn't cause redhat users
         problems.
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>unix/howtos/gimpenv</td>
       <td>
@@ -405,6 +448,7 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>unix/man*-1.2.html</td>
       <td>
         this will probably not be changing. but it would still be nice
@@ -413,11 +457,13 @@ table > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
+      <td></td>
       <td>unix/tile-cache.html/</td>
       <td>
         perfect.  needs some evil formulas to be complete.  
       </td></tr>
     <tr>
+      <td></td>
       <td></td>
       <td>windows/</td>
       <td>

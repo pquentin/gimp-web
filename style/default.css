@@ -140,6 +140,12 @@ span.filter {
   font-weight: bold;
 }
 
+span.different {
+  font-weight: bold;
+  background-color:   transparent;
+  color:              blue;
+}
+
 li {
   margin-left: 40px;
   margin-right: 40px;

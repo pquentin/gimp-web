@@ -1,5 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - How To Install Fonts In OS2/xfree86</title>
+<meta name="author" content="Christian Hennecke">
+<meta name="description" content="Installing fonts on XFree86/OS2 for The GIMP">
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
 
@@ -7,24 +9,40 @@
 <p><cite>Thanks to Khairil Yusof and others on the XFree86/OS2 mailing list.</cite>
 <p>
   The <a href="http:Package-xfree86-os2">XFree86/OS2</a> distribution contains several font packages. To be able to 
-  additionally use the Type1 and TrueType fonts (e.g. in The GIMP) installed 
+  additionally use the 
+  <a href="http:Package-GIMP-fonts">Type1</a> and TrueType fonts (e.g. in The GIMP) installed 
   on &quot;normal&quot; OS/2 some things have to be done.
 </p>
 <h2>1. Type1 fonts</h2>
 <p>
-  To install Type1 fonts open your XF86Config file and go to the section 
+  To install Type1 fonts open your XF86Config file and go to the 
+  '<a href="wgo:os2-howtos-XF86Config3_Files_original">Section&nbsp;&quot;Files&quot;</a>'
   containing several FontPath statements. Now add a new FontPath path statement 
-  for every directory containing Type1 fonts you want to install. Each must end 
-  with a slash &quot;/&quot;.  Unfortunately there is more to do. All these 
+  for every directory containing Type1 fonts you want to install. Each <u>must</u> end 
+  with a slash &quot;/&quot;.  If you are using XFree86/OS2 3.3.x and the desired font 
+  directory is <u>not</u> located on the same drive as XFree86/OS2, you <u>must</u> specifiy the 
+  drive letter. If you are using version 4.3.x, you <u>must always</u> specifiy the drive 
+  letter.
+</p>
+<p>
+  If your bootdrive was C: and you wanted to add your OS/2 system font directory 
+  PSFONTS to the existing font paths, for instance, the respective part of 
+  XF86Config would look like <a href="wgo:os2-howtos-XF86Config3_Files_type1">this sample</a> 
+  if you are using XFree86/OS2 3.3.x.  If you are using XFree86/OS2 4.3.x 
+  with an automatically created configuration file, there will probably be no 
+  comments and all font paths will be specified with a drive letter.
+</p>
+<p>
+  Unfortunately there is more to do. All these 
   directories have to contain the files fonts.dir and fonts.scale which carry 
-  information about the fonts. Your X-server will crash, if those files are missing 
+  information about the fonts. Your X-server will <u>crash</u>, if those files are missing 
   or contain incorrect information. Creating those files by hand is very unconvenient. The 
   <a href="http:Package-fonts-os2-typ1inst">Perl script type1inst</a> 
   does it automatically. (You must have installed <a href="http:Package-perl-os2">Perl</a> 
   to be able to run it!)
 </p>
 <p>
-  The archive contains the three files rencase.exe, type1inst and t1embed. Copy 
+  The archive contains the three files: rencase.exe, type1inst and t1embed. Copy 
   rencase.exe into your path and the other two files into the same directory 
   (e.g. \Perl\lib). The tool rencase.exe can be used to convert filenames to 
   upper- or lowercase. This is important since the type1inst script isn't case 
@@ -64,12 +82,14 @@
       <pre class="code">
 FontPath &quot;inet/127.0.0.1:7100&quot; 
       </pre>
-      to the Fontpath section in your XF86Config file. 7100 is the port which the font server is using.</li>
-  <li>Add a line 
+      to the <a href="wgo:os2-howtos-XF86Config3_Files_truetype">Fontpath&nbsp;section</a> in your XF86Config file. 
+      7100 is the port which the font server is using.</li>
+  <li>insert the lines 
       <pre class="code">
-ffst 7100/tcp # X truetype server 
+font-service 7100/tcp #X Font Service
+font-service 7100/udp #X Font Service
       </pre>
-      to the %ETC%\services file (%ETC% is the value of the ETC environment 
+      into the <a href="wgo:os2-howtos-services">%ETC%\services file</a> (%ETC% is the value of the ETC environment 
       variable, on Warp 4 bootdrive:\MPTN\ETC). Again 7100 is the font server's 
       port.</li>
 </ul>
@@ -88,7 +108,7 @@ ffst 7100/tcp # X truetype server
    configuration files accordingly!
 </p>
 <p>
-   <em class="warn">WARNING!</em> If you select a corrupt font in an X program for 
+   <em class="hellbrokeloose">WARNING!</em> If you select a corrupt font in an X program for 
    display the fontserver may crash. Unfortunately, this leads to the X server 
    also crashing. If you see your X programs not responding correctly after 
    selecting a font, change to the WPS immediately and terminate the fontserver 

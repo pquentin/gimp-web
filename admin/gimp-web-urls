@@ -9,6 +9,10 @@
 
 ["href", "http:Package-GIMP-stable",        { "href": "ftp://ftp.gimp.org/pub/gimp/stable"}]
 ["href", "http:Package-GIMP-unstable",      { "href": "ftp://ftp.gimp.org/pub/gimp/unstable"}]
+["href", "http:Package-GIMP-fonts",         { "href": "ftp://ftp.gimp.org/pub/gimp/fonts/"}]
+["href", "http:Package-GIMP-fonts-freefonts",       { "href": "ftp://ftp.gimp.org/pub/gimp/fonts/freefonts-0.10.tar.gz"}]
+["href", "http:Package-GIMP-fonts-sharefonts",      { "href": "ftp://ftp.gimp.org/pub/gimp/fonts/sharefonts-0.10.tar.gz"}]
+
 ["href", "http:Package-GTK-stable",         { "href": "ftp://ftp.gimp.org/pub/gtk/"}]
 ["href", "http:Package-GTK-unstable",       { "href": "ftp://ftp.gimp.org/pub/gtk/unstable"}]
 
@@ -102,6 +106,9 @@
 ["href", "home:gtk",                           { "href": "http://www.gtk.org"}]
 
 ["href", "wgo:mail_lists",                      { "href": "/mail_lists.html"}]
+["href", "wgo:stable",                          { "href": "http://www.gimp.org"}]
+["href", "wgo:testing",                         { "href": "http://mmmaybe.gimp.org"}]
+["href", "wgo:dev",                             { "href": "http://developer.gimp.org"}]
 ["href", "wgo:dev-howtos-bugzilla",             { "href": "/unix/howtos/bugzilla.html"}]
 ["href", "wgo:docs-gimp_help",                  { "href": "/docs/gimp-help/"}]
 ["href", "wgo:gimp-os2",                        { "href": "/os2/"}]
@@ -122,8 +129,13 @@
 ["href", "wgo:unix-manpage-stable_gtk_config",  { "href": "/unix/man-gtk-config.html"}]
 ["href", "wgo:unix-user_install",               { "href": "/unix/user_install.html"}]
 
-["href", "wgo:os2-howtos_install_fonts_xfree86",{ "href": "/os2/howtos/install_font_xfree86.html"}]
-["href", "wgo:os2-howtos_install_gimp_xfree86", { "href": "/os2/howtos/install_gimp_xfree86.html"}]
+["href", "wgo:os2-howtos_xfree86_install_fonts",       { "href": "/os2/howtos/install_font_xfree86.html"}]
+["href", "wgo:os2-howtos-gimp_xfree86_install",        { "href": "/os2/howtos/install_gimp_xfree86.html"}]
+["href", "wgo:os2-howtos-services",                    { "href": "/os2/howtos/services.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files",           { "href": "/os2/howtos/XF86Config3_Files.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_original",  { "href": "/os2/howtos/XF86Config3_Files.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_truetype",  { "href": "/os2/howtos/XF86Config3_Files_truetype.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_type1",     { "href": "/os2/howtos/XF86Config3_Files_type1.html"}]
 
 ["href", "plugin-home:gimpfreetype-stable",	            { "href": "http://freetype.gimp.org"}]
 ["href", "plugin-home:gimpfreetype-os2-stable",	        { "href": "http://groups.yahoo.com/group/gimp-os2/files/"}]

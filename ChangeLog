@@ -1,6 +1,20 @@
+2003-04-11  Carol Spears  <carol@gimp.org>
+
+    * os2/howtos/install_font__xfree86.htrw, added recent changes.
+    * os2/howtos/install_gimp__xfree86.htrw, urls and style changes.
+    * os2/howtos/XF86Config_Files_type1.html, sample config section added.
+    * os2/howtos/XF86Config_Files_truetype.html, sample config section added.
+    * os2/howtos/XF86Config_Files_original.html, sample config section added.
+    * os2/howtos/XF86Config_Files.html, sample config section added.
+    * os2/howtos/services.html, sample config section added.
+    * admin/gimp-web-urls, added some, changed some (eek!).
+    * style/default.css, added span style (different) for changed text in 
+                         configuration sample html.
+    * index.html, put a BLURB on the front.
+
 2003-04-10  Carol Spears  <carol@gimp.org>
 
-    * os2/howtos/install_gimp_xfree86.html, missing </a>.
+    * os2/howtos/install_gimp_xfree86.htrw, missing </a>.
 
 2003-04-10  Carol Spears  <carol@gimp.org>
 

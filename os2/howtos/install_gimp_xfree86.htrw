@@ -19,7 +19,7 @@
   depths is highly recommened. Note that the XSVGA server does contain excellent 
   acceleration support for some cards, e.g. Matrox ones. If you want to make use 
   of True Type fonts XFree86/OS2 3.3.x, you will need to run a 
-  <a href="wgo:os2-howtos_install_fonts_xfree86">special font server</a> 
+  <a href="wgo:os2-howtos_xfree86_install_fonts">special font server</a> 
   or use the <a href="plugin-home:gimpfreetype-stable">GIMP Freetype plug-in</a>.
 </p>
 <p>
@@ -96,7 +96,7 @@
       <pre class="code">
 SET EMXOPT=-h1024 
       </pre>
-      Note that the parameter is case-sensitive!</li>
+      <em class="caution">Note:</em> the parameter is case-sensitive!</li>
   <li>If you have used a version of GIMP that is older than 1.2.0, delete the 
       \XFree86\lib\X11\.gimp-1.1 tree or the corresponding one for the 1.0.2 
       version first.</li>
@@ -175,7 +175,7 @@ SYS1804: File GIMP1130 not found.
   missing dot?). Now fire up GIMP and see what has changed.
 </p>
 <p>
-  <em class="warn">WARNING:</em> Themes are very demanding of your hardware. Be sure to have at least 
+  <em class="hellbrokeloose">WARNING:</em> Themes are very demanding of your hardware. Be sure to have at least 
   128MB RAM if you want to use them and still be able to edit some larger images. 
   Moreover, due to the client-server architecture of XFree86, themes create a lot 
   of additional network traffic. This will result in extremely prolonged startup 

@@ -1,3 +1,8 @@
+2005-02-09  Raphaël Quinet  <raphael@gimp.org>
+
+	* style/wgo.css: Added small copyright notice, hoping to
+	reduce the number of blatant copies of the wgo design.
+
 2005-02-03  Sven Neumann  <sven@gimp.org>
 
 	* windows/index.htrw: fixed typo.

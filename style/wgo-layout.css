@@ -11,8 +11,7 @@ body {
 }
 
 #banner {
-  background-image: url("../images/barbg.png");
-  background-repeat: repeat-x;
+  background: transparent url("../images/barbg.png") repeat-x scroll 0% 0%;
   height: 100px;
 }
       
@@ -25,16 +24,16 @@ body {
 }
       
 #sidebar {
-  color:           black;
-  font-weight:     bold;
-  padding:         1em 1em 3em 1em;
-  border-right:    1px solid #d0d0d0;
-  border-collapse: collapse;
   background: #f5f5f5 none repeat scroll 0% 0%;
+  border-right:    1px solid #d0d0d0;
+  color:           black;
+  float:           left;
+  font-weight:     bold;
+  height:          100%;
+  padding:         1em 1em 3em 1em;
   vertical-align:  top;
   white-space:     nowrap;
   width:           12em;
-  float:           left;
 }
 
 #sidebar a {
@@ -46,9 +45,9 @@ body {
   background: white none repeat scroll 0% 0%;
   color: black;
   border-left: 1px solid #d0d0d0;
-  border-collapse: collapse;
   margin-left: 14em;
   padding: 1em 1em 2em 1em;
+  height: 100%;
 }
       
 #page-footer {

@@ -43,10 +43,10 @@ table.todo > tbody > tr > td + td + td{
 
 <table class="todo" cellpadding="0" cellspacing="0"><tbody>
     <tr><th>Status</th><th>Who</th><th>What</th><th>Description/Discussion</th></tr>
-    <tr><td></td><td></td><td></td><td>
-        a crontabs directory in CVS is fine, it should be put in
+    <tr><td>Done<br/>no install</td><td>Helvetix</td><td></td><td>
+        A crontabs directory in CVS is fine, it should be put in
         install.exclude, and install.sh modified to put them in the
-        right place
+        right place.
       </td></tr>
     <tr>
       <td>Future</td>
@@ -60,7 +60,7 @@ table.todo > tbody > tr > td + td + td{
         on how this new layout could be used:
       </td></tr>
     <tr>
-      <td>done</td>
+      <td>Done</td>
       <td>Helvetix</td>
       <td>about/ChangLogs/:</td>
       <td>
@@ -70,7 +70,7 @@ table.todo > tbody > tr > td + td + td{
         with the nice html.  this is the ChangeLog from the current
         stable tarball.
         <br />
-        the rest  of the script needs to be written (for the remaining ChangeLogs
+        the rest  of the script needs to be written for the remaining ChangeLogs
         <br />
         it would be nice if this could be rewritten in python so it can
         easily be added to the rest of the web-making stuff.
@@ -80,50 +80,57 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>about/authors.html</td>
       <td>
-        this page is perfect.  however it was generated from a script
-        that apparently wasn't committed.  i might have the script,
+        This page is perfect.  However it was generated from a script
+        that apparently wasn't committed.  I might have the script,
         someone else might have the script but until the script is
         located and commited, this page will need to be made so that
         it will automatically be gernerated from a gimp source tree on
         command.
+        <p style="font-style: italic;">
+          What's the status on this?  A build of the gimp produces the
+          file <tt>authors/contributors</tt> and this file can be used
+          as input to wgo/about/authorsgen.pl to produce
+          <tt>authors.html</tt> -- Helvetix
+        </p>
       </td></tr>
     <tr>
       <td></td>
       <td></td>
-      <td>about/awards.html:</td>
+      <td>about/awards.html</td>
       <td>
-        this page needs to be compiled.
+        This page needs to be compiled.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
-      <td>about/history.html:</td>
+      <td>about/history.html</td>
       <td>
-        this page needs to be compiled.
+        This page needs to be compiled.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
-      <td>about/index.html:</td>
+      <td>about/index.html</td>
       <td>
-        the rest of the html in the about directory needs to be completed. 
-   
-        the mail list archives need to be searched for news worthy items to fill in
-        the GIMP in sections.  i know that much of this is there. 
+        The rest of the html in the about directory needs to be completed. 
+        <p>
+        The mail list archives need to be searched for news worthy items to fill in
+        the GIMP in sections.  I know that much of this is there.
+        </p>
       </td></tr>
     <tr>
       <td></td>
       <td></td>
-      <td>about/introduction.html:</td>
+      <td>about/introduction.html</td>
       <td>
-        complete rewrite would suit me fine.
+        Complete rewrite would suit me fine.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
-      <td>about/mediakit.html:</td>
+      <td>about/mediakit.html</td>
       <td>
-        needs to be rendered useful by someone who knows what the
+        Needs to be rendered useful by someone who knows what the
         media would need to have here.
       </td></tr>
     <tr>
@@ -131,24 +138,24 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>about/screenshots.html</td>
       <td>
-        i stole a gif from simon of all of the menu tree.  other
-        screenshots can prolly be extracted from the docs.  someone
+        I stole a gif from simon of all of the menu tree.  Other
+        screenshots can prolly be extracted from the docs.  Someone
         who understands docbook might look into this or someone can
         talk to the gimp-doc people.
       </td></tr>
     <tr>
       <td>done</td>
       <td>Carol</td>
-      <td>about/splash-1.1.html:</td>
+      <td>about/splash-1.1.html</td>
       <td>
         done.
       </td></tr>
     <tr>
       <td>done</td>
       <td>Carol</td>
-      <td>about/splash-1.3.html:</td>
+      <td>about/splash-1.3.html</td>
       <td>
-        done this far in time.  a script can be written that takes the
+        Done this far in time.  A script can be written that takes the
         latest splash out of the tarball and rewrites the page, saving
         the question mark one as the next tarball image ...
       </td></tr>
@@ -157,7 +164,7 @@ table.todo > tbody > tr > td + td + td{
       <td>Carol</td>
       <td>about/splash-1.3.html</td>
       <td>
-        done this far in time.  a script can be written that takes the latest splash out
+        Done this far in time.  A script can be written that takes the latest splash out
         of cvs and rewrites the page, saving the question mark one as the next 
         CVS version ...
       </td></tr>
@@ -166,15 +173,15 @@ table.todo > tbody > tr > td + td + td{
       <td>Carol</td>
       <td>about/splash-stable.html</td>
       <td>
-        done this far in time.  can prolly just be hand entered there
+        Done this far in time.  Can prolly just be hand entered there
         when the time is right.
       </td></tr>
     <tr>
       <td>done</td>
       <td>Carol</td>
-      <td>books/index.html:</td>
+      <td>books/index.html</td>
       <td>
-        done this far in time.  i don't yet know of a good way for the
+        Done this far in time.  I don't yet know of a good way for the
         gimp authors to communicate with the web team.
       </td></tr>
     <tr>
@@ -182,21 +189,21 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>bugs/index.html</td>
       <td>
-        i have no idea what should be done for this document.  perhaps
-        raphael could handle some content.  maybe bex's howto could be
-        altered.  some of those insta-bugzilla page links might be
+        I have no idea what should be done for this document.  Perhaps
+        raphael could handle some content.  Maybe bex's howto could be
+        altered.  Some of those insta-bugzilla page links might be
         nice.
       </td></tr>
     <tr>
-      <td>done</td>
+      <td>done<br />archiving not done</td>
       <td>Helvetix</td>
       <td>contest/index.html<br />
         contest/archives/index.html
       </td>
       <td>
-        contest. people upload their potential splash images. when a
+        Contest. People upload their potential splash images. when a
         new tarball is released, the collection is archived and a new
-        one begins.  the whole thing needs to be made.
+        one begins.  The whole thing needs to be made.
       </td></tr>
     <tr>
       <td></td>
@@ -205,12 +212,12 @@ table.todo > tbody > tr > td + td + td{
       <td>
         I suggest letting the developers determine what goes here.
         urls, suggestions on how to contribute, links to bug lists.
-        what have you.  non-dynamic information then let the
+        what have you.  Non-dynamic information then let the
         interested developers play on developer.gimp.org where all is
-        forgiven if it goes alittle stale.  this page should start out
-        stale.  easy to maintain that way.
+        forgiven if it goes alittle stale.  This page should start out
+        stale.  Easy to maintain that way.
    
-        the last 10 ChangeLog entries from any gimp project that has
+        The last 10 ChangeLog entries from any gimp project that has
         annon cvs access.
       </td></tr>
     <tr>
@@ -218,8 +225,8 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>docs/cookbook/</td>
       <td>
-        some outline and a place to upload nice little gimp script
-        pieces.  this was nomis and akks very good idea, and should be
+        Some outline and a place to upload nice little gimp script
+        pieces.  This was nomis and akks very good idea, and should be
         implemented.
       </td></tr>
     <tr>
@@ -227,8 +234,8 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>docs/developer_docs/</td>
       <td>
-        i need to figure out how to get these to build on my computer
-        and then i will know how to get them to the web page.  they do
+        I need to figure out how to get these to build on my computer
+        and then i will know how to get them to the web page.  They do
         build for people?
       </td></tr>
     <tr>
@@ -236,15 +243,15 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>docs/gimp-help/</td>
       <td>
-        needs to be put into place.  would be nice to figure out a way
+        Needs to be put into place.  Would be nice to figure out a way
         to update it every time there is a new gimp tarball.
       </td></tr>
     <tr>
-      <td></td>
+      <td>done</td>
       <td></td>
       <td>docs/gimp-print/</td>
       <td>
-        put into place.  would be nice to figure out a way to update
+        Put into place.  Would be nice to figure out a way to update
         it every time there is a new gimp-print tarball.
       </td></tr>
     <tr>
@@ -252,47 +259,47 @@ table.todo > tbody > tr > td + td + td{
       <td>Carol</td>
       <td>docs/gimp-python/</td>
       <td>
-        put into place.  i am assuming this will be included with the
-        future gimp documentation. so this is done.
+        Put into place.  I am assuming this will be included with the
+        future gimp documentation. So this is done.
       </td></tr>
     <tr>
       <td>done</td>
       <td>Carol</td>
       <td>docs/scheme_plugin/</td>
       <td>
-        put into place.  a one time document. we are lucky to have it. finished.
+        Put into place.  A one time document. We are lucky to have it. Finished.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
       <td>links/index.html<br />
-        includes/url-*.inc:
+        includes/url-*.inc
       </td>
       <td>
-        this has a good start.  more little packets of urls need to be
-        created and then used on all of the web pages.  like a little
+        This has a good start.  More little packets of urls need to be
+        created and then used on all of the web pages.  Like a little
         packet describing brush tutorials can go here and on the brush
-        resource page. etc.  these are free easily maintainable urls.
-        wow!  it just needs to be loaded up.
+        resource page. etc.  These are free easily maintainable urls.
+        wow!  It just needs to be loaded up.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
       <td>macintosh/index.html</td>
       <td>
-        maybe jyon, akk or patti could throw a little something on
-        here.  we can add to it and improve it via bugzilla as is
+        Maybe jyon, akk or patti could throw a little something on
+        here.  We can add to it and improve it via bugzilla as is
         called for.
       </td></tr>
     <tr>
-      <td></td>
+      <td>done</td>
       <td></td>
       <td>
         mail_lists.html<br />
         url-gimp-maillists.inc
       </td>
       <td>
-        better list descriptions and more lists, but otherwise 'tis
+        Better list descriptions and more lists, but otherwise 'tis
         beautiful
       </td></tr>
     <tr>
@@ -300,7 +307,7 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>os2/index.html</td>
       <td>
-        i will go through the archives, find some urls and reiterate
+        I will go through the archives, find some urls and reiterate
         info about the maillist.
       </td></tr>
     <tr>
@@ -308,13 +315,13 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>resources/</td>
       <td>
-        these pages need to be autogenerated from the gimp itself.  i
-        am using python. i am having some problems reading them two at
-        a time.  i want to write these.  leave them be. unless you
+        These pages need to be autogenerated from the gimp itself.  I
+        am using python. I am having some problems reading them two at
+        a time.  I want to write these.  Leave them be.  Unless you
         have a quick clue about how to use the damn range(bleh)
         function.
         <br />
-        perhaps the page could suggest that other who want to share
+        Perhaps the page could suggest that other who want to share
         resources go to bugzilla.
       </td></tr>
     <tr>
@@ -322,10 +329,10 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>resources/brushes/index.html</td>
       <td>
-        after i get the page to render properly (two at a time, not
-        half and then the other half) i would like to add a page of
+        After i get the page to render properly (two at a time, not
+        half and then the other half)  I would like to add a page of
         additional brushes, as i always liked to download a little
-        something or other when visiting a software site.  i will need
+        something or other when visiting a software site.  I will need
         to be able to read the gimprc for that.
       </td></tr>
     <tr>
@@ -333,10 +340,10 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>resources/gradients/index.html</td>
       <td>
-        after i get the page to render properly (two at a time, not
+        After i get the page to render properly (two at a time, not
         half and then the other half) i would like to add a page of
         additional gradients, as i always liked to download a little
-        something or other when visiting a software site.  i will need
+        something or other when visiting a software site.  I will need
         to be able to read the gimprc for that.
       </td></tr>
     <tr>
@@ -355,9 +362,9 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>resources/palettes/index.html</td>
       <td>
-        this one needs to be written.  will be tricky.  i need to know
+        This one needs to be written.  Will be tricky.  I need to know
         the size of the darn dialog window for the croping of the
-        screenshot.  same thing about using the gimprc to find the
+        screenshot.  Same thing about using the gimprc to find the
         palettes located only in ~.gimp-1.2/palettes.  And, this will
         be complicated with the gradients.
       </td></tr>
@@ -366,24 +373,24 @@ table.todo > tbody > tr > td + td + td{
       <td>Scizzo</td>
       <td>tutorials/</td>
       <td>
-        scizzo has a schedule for this and is following it.
+        Scizzo has a schedule for this and is following it.
         <p>
-        i feel that the screenshots should only be resized when
-        necessary. i think the original screenshots should be
+        I feel that the screenshots should only be resized when
+        necessary.  I think the original screenshots should be
         maintained as often as possible, due to the nature of the
-        tutorials.  to make the screenshots follow the doc rules means
+        tutorials.  To make the screenshots follow the doc rules means
         to make at least one part of one of the tutorials not apply,
-        for instance.  my window manager sends information to the
-        window decoration.  i think this is significant as i never
+        for instance.  My window manager sends information to the
+        window decoration.  I think this is significant as i never
         told it to (percentage of view and mode) but have always
         appreciated the info occuring there.
         </p>
         <p>
-        a style needs to be determined for the weird tables in the
+        A style needs to be determined for the weird tables in the
         perlotine tutorial.
         </p>
         <p>
-        the rest of the authors need to be contacted and a collection
+        The rest of the authors need to be contacted and a collection
         of "permission granted" emails should be compiled.
         </p>
       </td></tr>
@@ -392,41 +399,41 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>unix/</td>
       <td>
-        this section needs some love.
+        This section needs some love.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
       <td>unix/INSTALL</td>
       <td>
-        perhaps this should be broken down into "Installation
+        Perhaps this should be broken down into "Installation
         Instructions" and then offer INSTALL (as copied from the
         current tarball) and HACKING (copied daily from CVS).  README,
-        README.i118, README.perl also.  these scripts need to be
+        README.i118, README.perl also.  These scripts need to be
         written.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
-      <td>unix/gimprc*, gtkrc*:</td>
+      <td>unix/gimprc*, gtkrc*</td>
       <td>
-        extra tips and explanation can and should be added to this.
+        Extra tips and explanation can and should be added to this.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
       <td>unix/howtos/</td>
       <td>
-        fonts would be good.  window managers would also be good,
+        Fonts would be good.  Window managers would also be good,
         especially since future gimps rely on good window manager
         management.
       </td></tr>
     <tr>
       <td></td>
       <td></td>
-      <td>unix/howtos/cvs-stable.html:</td>
+      <td>unix/howtos/cvs-stable.html</td>
       <td>
-        this document should be split into getting gimp* from cvs and
+        This document should be split into getting gimp* from cvs and
         compiling gimp*
       </td></tr>
     <tr>
@@ -434,7 +441,7 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>unix/howtos/cvsrc</td>
       <td>
-        this needs to be fixed so that it doesn't cause redhat users
+        This needs to be fixed so that it doesn't cause redhat users
         problems.
       </td></tr>
     <tr>
@@ -448,10 +455,10 @@ table.todo > tbody > tr > td + td + td{
       </td></tr>
     <tr>
       <td></td>
-      <td></td>
+      <td>Helvetix</td>
       <td>unix/man*-1.2.html</td>
       <td>
-        this will probably not be changing. but it would still be nice
+        This will probably not be changing. But it would still be nice
         to build a script that will auto-generate this with each new
         tarball to be ready for the 1.4 site.
       </td></tr>
@@ -460,20 +467,20 @@ table.todo > tbody > tr > td + td + td{
       <td></td>
       <td>unix/tile-cache.html/</td>
       <td>
-        perfect.  needs some evil formulas to be complete.  
+        Perfect. Needs some evil formulas to be complete.  
+        <p style="font-style: italic;">
+          What formulas are needed? -- Helvetix
+        </p>
       </td></tr>
     <tr>
       <td></td>
       <td></td>
       <td>windows/</td>
       <td>
-        i dunno. i don't want to even look at this now.  maybe i can
+        I dunno. I don't want to even look at this now.  Maybe i can
         get becky to use this page to download and use WINGimp and see
         how that goes.
       </td></tr>
-    
-   
   </tbody></table>
-
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

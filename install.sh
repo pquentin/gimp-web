@@ -15,3 +15,5 @@ fi
 
 rsync -rlt --delete --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
 (cd programmatic ; make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} all install )
+
+(cd crontab ; make all install)

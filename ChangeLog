@@ -1,3 +1,9 @@
+2004-11-29  Sven Neumann  <sven@gimp.org>
+
+	* index.htrw: reverted Dave's change until we figured out a
+	reasonable submission process. The change also had the titles all
+	messed up.
+ 
 2004-11-29  Dave Neary  <bolsh@gimp.org>
 
 	* index.htrw: Announce the splash screen contest.

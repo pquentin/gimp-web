@@ -1,3 +1,8 @@
+2004-11-25  Dave Neary  <bolsh@gimp.org>
+
+	* donating/index.htrw: Remove c/o Novell from GNOME
+	Foundation address as it's unnecessary for the postman.
+
 2004-11-24  Sven Neumann  <sven@gimp.org>
 
 	* index.htrw: added news about GIMP at 21C3.

@@ -75,7 +75,7 @@ little.</p>
   <li><b>README</b><br />
   <i>(The main README file for the GIMP and should be read by everyone)</i></li>
   <li><b>README.i18n</b><br />
-  <i>(This is the localisation of the GIMP README)</i></li>
+  <i>(The internationalization README which should be read by translators)</i></li>
   <li><b>README.win32</b><br />
   <i>(The win32 README)</i></li>
 </ul>

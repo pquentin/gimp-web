@@ -75,8 +75,12 @@ def generate_blotter(queue):
 
     try:
       os.chmod(news_blotter, 0666)
-      #os.chown(news_blotter, wgo.config.user_uid)
     except:
+      pass
+
+    # this is not the best way to handle this XXX
+    if queue == news_config.current_queue:
+      os.system("/bin/cp %s %s" % (news_blotter, wgo.config.DocumentRoot_path + "/includes/news.inc"))
       pass
     pass
   

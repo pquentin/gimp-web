@@ -1,5 +1,14 @@
 2004-05-15  Henrik Brix Andersen  <brix@gimp.org>
 
+	* includes/wgo-tutorial-init.xhtml
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-howto-unix-init.xhtml
+	* includes/wgo-howto-source-init.xhtml
+	* includes/wgo-howto-bugs-init.xhtml: forgot to add the
+	class="sub" stuff to the new link
+
+2004-05-15  Henrik Brix Andersen  <brix@gimp.org>
+
 	* donating/.cvsignore
 	* donating/index.htrw: added page with instructions for donating
 	to the GIMP

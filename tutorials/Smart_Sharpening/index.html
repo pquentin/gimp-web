@@ -249,17 +249,19 @@
   <li>If this seems like too long and complicated of a process, you might be interested in looking at some shortcuts and variations that are still better than a simple sharpening step.</li>
   <li>Some very well-respected experts on image manipulation (e.g. Real World Photoshop, Blatner and Fraser--great book) suggest that mode changes in and out of RGB are not to be taken lightly. 
   You can lose a suprising amount of information. For example, try the following experiment:</li>
-  <ol>
-    <li>Open a new blank image.</li>
-    <li>Using the gradient tool, create a gradient from black to white across it.</li>
-    <li>Convert it to RGB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;RGB</span>).</li>
-    <li>Look at it's histogram (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Histogram</span>).</li>
-    <li>Convert it to LAB, by decomposing to LAB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>), then do a compose on the LAB image back to RGB 
-    (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Compose</span>).</li>
-    <li>Look at the new image's histogram.</li>
-  </ol>
-  Here is what you'll see if you compare them:
 </ul>
+<ol>
+  <li>Open a new blank image.</li>
+  <li>Using the gradient tool, create a gradient from black to white across it.</li>
+  <li>Convert it to RGB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;RGB</span>).</li>
+  <li>Look at it's histogram (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Histogram</span>).</li>
+  <li>Convert it to LAB, by decomposing to LAB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>), then do a compose on the LAB image back to RGB 
+  (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Compose</span>).</li>
+  <li>Look at the new image's histogram.</li>
+</ol>
+<p>
+  Here is what you'll see if you compare them:
+</p>
 <p class="images">
   <img src="gradient.jpg" alt=""/>
   <img src="gradient-composed.jpg" alt=""/>

@@ -1,5 +1,5 @@
 <!--#include virtual="/includes/header_pretitle.inc" -->
-<title>GIMP - Converting Color Images to B&W</title>
+<title>GIMP - Converting Color Images to B&amp;W</title>
 <!--#include virtual="/includes/header_posttitle.inc" -->
 <div id="main">
 <div class="heading">Converting Color Images to B&amp;W</div>
@@ -35,9 +35,7 @@
   Here is an example image, loaded into The GIMP. I thought it might look nice as a black and white image.
 </p>
 
-<a name="grayscale">
-<div class="subtitle">Via Grayscale</div>
-</a>
+<div class="subtitle"><a name="grayscale">Via Grayscale</a></div>
 <p class="images">
   <img src="image-grayscale-481x397.jpg" alt=""/>
   <img src="image-grayscale-zoom100-481x397.jpg" alt=""/>
@@ -55,9 +53,7 @@
   I suspect the GIMP uses a similar formula. My experiments with the Channel Mixer (more on this below) support this.
 </p>
 
-<a name="desaturate">
-<div class="subtitle">Via Desaturate</div>
-</a>
+<div class="subtitle"><a name="desaturate">Via Desaturate</a></div>
 <p class="images">
   <img src="image-desaturate-481x397.jpg" alt=""/>
   <img src="image-desaturate-zoom100-481x397.jpg" alt=""/>
@@ -74,9 +70,7 @@
   the algorithm is giving us a remix of 60% of the clean, detailed green channel.
 </p>
 
-<a name="decomposeRGB">
-<div class="subtitle">Via Decompose RGB</div>
-</a>
+<div class="subtitle"><a name="decomposeRGB">Via Decompose RGB</a></div>
 <p class="images">
   <img src="decompose-rgb-186x265.jpg" alt=""/>
 </p>
@@ -106,9 +100,7 @@
   RGB decomposition is important to give you an idea of where the important information is in your image, and where the noise is.
 </p>
 
-<a name="decomposeHSV">
-<div class="subtitle">Via Decompose HSV</div>
-</a>
+<div class="subtitle"><a name="decomposeHSV">Via Decompose HSV</a></div>
 <p class="images">
   <img src="decompose-hsv-186x265.jpg" alt=""/>
   <img src="image-value-481x397.jpg" alt=""/>
@@ -118,9 +110,7 @@
   Right-click on the original image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. Select the HSV option and click OK.
 </p>
 
-<a name="decomposeLAB">
-<div class="subtitle">Via Decompose LAB</div>
-</a>
+<div class="subtitle"><a name="decomposeLAB">Via Decompose LAB</a></div>
 <p class="images">
   <img src="decompose-lab-186x265.jpg" alt=""/>
   <img src="image-lightness-481x397.jpg" alt=""/>
@@ -138,12 +128,11 @@
 </p>
 <p>
   <b>Note:</b> the LAB decompose option was not distributed with the version of the GIMP I got (ver 1.2.3). 
-  I don't know whether it comes bundled with newer versions. I downloaded it from the <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself.
+  I don't know whether it comes bundled with newer versions. 
+  I downloaded it from the <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself.
 </p>
 
-<a name="decomposeCMYK">
-<div class="subtitle">Via Decompose CMYK</div>
-</a>
+<div class="subtitle"><a name="decomposeCMYK">Via Decompose CMYK</a></div>
 <p class="images">
   <img src="decompose-cmyk-186x265.jpg" alt=""/>
   <img src="image-black-481x397.jpg" alt=""/>
@@ -152,9 +141,7 @@
   Just for fun I tried decomposing into CMYK. The Black channel is interesting: it resembles a negative.
 </p>
 
-<a name="channelmixer">
-<div class="subtitle">Via Channel Mixer</div>
-</a>
+<div class="subtitle"><a name="channelmixer">Via Channel Mixer</a></div>
 <p class="images">
   <img src="channelmixer-481x307.jpg" alt=""/>
 </p>
@@ -163,7 +150,8 @@
   <img src="image-channelmixer-zoom100-481x397.jpg" alt=""/>
 </p>
 <p>
-  The final technique is the Channel Mixer filter. Right-click on the original image and select <span class="filter">&lt;Image&gt;Filters-&gt;Color-&gt;Channel Mixer</span>.
+  The final technique is the Channel Mixer filter. Right-click on the original image and select 
+  <span class="filter">&lt;Image&gt;Filters-&gt;Color-&gt;Channel Mixer</span>.
 </p>
 <p>
   You'll get a dialog box like the one at right. Click the checkbox that says Monochrome. Make sure the preview checkbox is also checked.
@@ -233,7 +221,7 @@
   <li><a href="http://www.microweb.com/idig/content/seybold/imgchanl.htm">A discussion of what's in the red, green and blue channels of a digital image</a>.</li>
   <li>A <a href="http://www.luminous-landscape.com/tutorials/b&w_better.shtml">Photoshop channel mixer tutorial</a> 
   on the <a href="http://www.luminous-landscape.com">luminous landscape</a> web site.</li>
-  <li><a href="http://www.carlvolk.com/photoshop21.htm">Carl Volk's Photoshop tips for converting color images to B&W</a>.</li>
+  <li><a href="http://www.carlvolk.com/photoshop21.htm">Carl Volk's Photoshop tips for converting color images to B&amp;W</a>.</li>
   <li>zuga.net: <a href="http://www.zuga.net/printer_55.shtml">Digital RGB to Greyscale Conversions</a></li>
   <li>Ian Lyons Computer Darkroom: <a href="http://computer-darkroom.com/tutorials/tutorial_2_1.htm">Monochrome from Colour</a></li>
 </ul>

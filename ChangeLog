@@ -1,3 +1,23 @@
+2002-12-24 scizzo <scizzo@gimp.org>
+
+        * tutorials/Lite_Quickies/: Removed alt="" on line 42. Validator
+        check.
+
+        * tutorials/Image_Pipes/: Removed <ul> and </ul> in the index file.
+        They where not valid. Needed <li></li> to be valid.
+
+        * tutorials/Using_GAP/: Fixed so that the links worked. Fixed the
+        original tutorial link so that it is using &amp;
+
+        * tutorials/Color2BW/: Changed all & to &amp; so that it would be
+        valid. Moved the <a name=""></a> inside of <div></div> so that they
+        can be valid.
+
+        * tutorials/Sepia_Toning/: Add a missing </li> tag.
+
+        * tutorials/Smart_Sharpening/: Changed the </ul> so that it quits
+        before starting <ol> tag to make this valid.
+
 2002-12-22 scizzo <scizzo@gimp.org>
 
         * tutorials/*/index.html: Add the <kbd> tags for the keystrokes

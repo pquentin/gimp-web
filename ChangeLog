@@ -1,3 +1,10 @@
+2003-08-18 scizzo <scizzo@gimp.org>
+
+	* /includes/wgo-admin-init.xhtml, wgo-develop-init.xhtml,
+	* wgo-howto-bugs-init.xhtml, wgo-howto-unix-init.xhtml,
+	* wgo-tutorial-init.xhtml: Forgot to change these to use the new
+	wilberright.jpeg image.
+
 2003-08-18  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Tileable_Textures/index.htrw: the tutorial was referring

@@ -1,5 +1,12 @@
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
+	* ChangeLogs/1.2.3/*
+	* ChangeLogs/*: Removed all these files.  They will have to be
+	based on a copy of the ChangeLog(s) that is fetched automatically
+	from gimp CVS.  In addition, the e-mail addresses will have to be
+	stripped out or obfuscated and the structure of the pages should
+	be a bit different.
+
 	* about/authors.html
 	* about/authors.htrw
 	* about/history.html

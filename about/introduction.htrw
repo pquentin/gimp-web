@@ -1,4 +1,4 @@
-<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+2<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Introduction</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
@@ -23,11 +23,10 @@
   the most complex image manipulation procedures to be easily scripted. 
 </p>  
 <p>
-  GIMP is written and developed under X11 on UNIX platforms.
-  There is also a native <a href="http:Package-GIMP-windows">MS Windows build</a>.
-  And some people have reported success in getting GIMP to run in
-  <a href="http://www.macgimp.org/">Mac OS X</a>.
-</p>
+  GIMP is written and developed under X11 on <a href="wgo:unix">UNIX</a>
+  platforms.  But basically the same code also runs on
+  <a href="wgo:windows">MS Windows</a> and
+  <a href="wgo:macintosh">Mac OS X</a>. </p>
 
 <h2>Features and Capabilities</h2>
 <p>

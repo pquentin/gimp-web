@@ -1,5 +1,8 @@
 2004-03-23  Sven Neumann  <sven@gimp.org>
 
+	* about/introduction.htrw: link to the windows and macintosh pages
+	on www.gimp.org instead of to external resources.
+
 	* source/howtos/stable-cvs-get.htrw: small update for 2.0.
 
 	* unix/fonts.htrw: completely rewritten. Please review and fix

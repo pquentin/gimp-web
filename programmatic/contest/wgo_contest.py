@@ -55,8 +55,15 @@ class gallery_image:
 
   def __getitem__(self, key):
     if key == "image": return (gallery_file(self["name"], ".png"))
-    if key == "thumb": return (gallery_file(self["name"], "-t.jpg"))
-    if key == "thumb": return (gallery_file(self["name"], "-t.png"))
+
+    if key == "thumb":
+      if os.path.isfile(gallery_path(self["name"], "-t.jpg")):
+        return (gallery_file(self["name"], "-t.jpg"))
+      if os.path.isfile(gallery_path(self["name"], "-t.png")):
+        return (gallery_file(self["name"], "-t.png"))
+      return ("")
+      pass
+    
     return (self.attrs[key])
   
   def __setitem__(self, key, value):

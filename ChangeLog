@@ -1,5 +1,10 @@
 2003-09-07  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* programmatic/contest/wgo_contest.py:
+	  Be smart about thumbnails, generating jpg instead of png.  Yet
+	  there are still png thumbnails in the spool, so choose the png
+	  if it exists, the jpg otherwise.
+
 	* programmatic/contest/contest.py
 	* programmatic/contest/gallery.py
 	* programmatic/contest/wgo-contest.cpp

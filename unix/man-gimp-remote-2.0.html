@@ -1,0 +1,50 @@
+<!-- Creator     : groff version 1.18.1 -->
+<!-- CreationDate: Tue Mar 23 14:18:07 2004 -->
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta name="Content-Style" content="text/css">
+<title></title>
+</head>
+<body>
+
+<hr>
+
+<p>gimp-remote - tells a running GIMP to open a (local or
+remote) image file. [&minus;h] [&minus;&minus;help] [-v]
+[&minus;&minus;version] [&minus;&minus;display
+<i>display</i>] [&minus;e] [&minus;&minus;existing] [-q]
+[&minus;&minus;query] <i>filename</i> ...</p>
+
+<p><i>gimp-remote</i> is a small utility that tells a
+running GIMP to open one or more (local or remote) image
+files. It does so by searching for a GIMP toolbox on the
+active display. If it can find a GIMP toolbox, a synthetic
+drop event is created which makes GIMP think the files would
+have been dropped onto the toolbox. More than one filename
+or URL can be specified on the commandline.</p>
+
+<p>If no GIMP window is found, <i>gimp-remote</i> will
+start a new GIMP instance and ask it to load the specified
+images. If no filename or URL is given, <i>gimp-remote</i>
+will start a new GIMP. This behaviour can be altered using
+the command-line options described below.</p>
+
+<p><i>gimp-remote</i> accepts the following options:
+Display a list of all commandline options. Output the
+version info. Use the designated X display. If no running
+GIMP instance is found, don&rsquo;t start a new one but
+exit. Check if GIMP is running and exit. A status code of 0
+indicates that a GIMP toolbox window has been found on this
+display.</p>
+
+<p>Loads the image from the GIMP website into a running
+GIMP or starts a new one. Loads the local files wilber.xcf
+and wilma.xcf into a running GIMP or starts a new one.</p>
+
+<p>to get the default host and display number.</p>
+
+<p>Sven Neumann and Simon Budig.</p>
+<hr>
+</body>
+</html>

@@ -1,3 +1,19 @@
+2004-03-23  Sven Neumann  <sven@gimp.org>
+
+	* unix/man-gimp-1.2.html
+	* unix/man-gimp-remote-1.2.html
+	* unix/man-gimprc.1.html
+	* unix/man-gimptool-1.2.html
+	* unix/man-gtk-config.html: removed outdated man-pages.
+
+	* unix/man-gimp-2.0.html
+	* unix/man-gimp-remote-2.0.html
+	* unix/man-gimprc-2.0.html
+	* unix/man-gimptool-2.0.html: added new ones.
+
+	* admin/gimp-web-urls
+	* unix/index.htrw: updated.
+
 2004-03-23  Michael Natterer  <mitch@gimp.org>
 
 	* develop/index.htrw: fixed description of README.i18n

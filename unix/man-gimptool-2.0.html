@@ -1,0 +1,152 @@
+<!-- Creator     : groff version 1.18.1 -->
+<!-- CreationDate: Tue Mar 23 14:17:43 2004 -->
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta name="Content-Style" content="text/css">
+<title></title>
+</head>
+<body>
+
+<hr>
+
+<p>gimptool-2.0 - script to perform various GIMPy functions
+[&minus;&minus;prefix<i>[=DIR]</i>]
+[&minus;&minus;exec&minus;prefix<i>[=DIR]</i>]
+[&minus;&minus;version] [&minus;&minus;help]
+[&minus;&minus;quiet] [&minus;&minus;silent] [&minus;n]
+[&minus;&minus;just-print] [&minus;&minus;dry-run]
+[&minus;&minus;recon] [&minus;&minus;bindir]
+[&minus;&minus;sbindir] [&minus;&minus;libexecdir]
+[&minus;&minus;datadir] [&minus;&minus;sysconfdir]
+[&minus;&minus;sharedstatedir] [&minus;&minus;localstatedir]
+[-&minus;libdir] [&minus;&minus;infodir]
+[&minus;&minus;mandir] [&minus;&minus;includedir]
+[&minus;&minus;gimpplugindir] [&minus;&minus;gimpdatadir]
+[&minus;&minus;libs] [&minus;&minus;libs-noui]
+[&minus;&minus;cflags] [&minus;&minus;cflags-noi]
+[&minus;&minus;build <i>plug&minus;in.c</i>]
+[&minus;&minus;build&minus;strip <i>plug&minus;in.c</i>]
+[&minus;&minus;install <i>plug&minus;in.c</i>]
+[&minus;&minus;install-strip <i>plug&minus;in.c</i>]
+[&minus;&minus;install-admin <i>plug-in.c</i>]
+[&minus;&minus;install&minus;bin <i>plug&minus;in</i>]
+[&minus;&minus;install&minus;admin&minus;strip
+<i>plug-in.c</i>]
+[&minus;&minus;install&minus;bin&minus;strip
+<i>plug&minus;in</i>]
+[&minus;&minus;install&minus;admin&minus;bin
+<i>plug&minus;in</i>] [&minus;&minus;install&minus;script
+<i>script.scm</i>]
+[&minus;&minus;install&minus;admin&minus;script
+<i>script.scm</i>] [&minus;&minus;uninstall&minus;bin
+<i>plug&minus;in</i>]
+[&minus;&minus;uninstall&minus;admin&minus;bin
+<i>plug&minus;in</i>] [&minus;&minus;uninstall&minus;script
+<i>script.scm</i>]
+[&minus;&minus;uninstall&minus;admin&minus;script
+<i>script.scm</i>]</p>
+
+<p><i>gimptool-2.0</i> is a tool that can, among other
+things, build plug-ins or scripts and install them if they
+are distributed in one source file. <i>gimptool-2.0</i> can
+also be used by programs that need to know what libraries
+and include-paths <i>GIMP</i> was compiled with. This is
+especially useful in Makefiles.</p>
+
+<p><i>gimptool-2.0</i> accepts the following options: Print
+the currently installed version of <i>GIMP</i> on the
+standard output. Print out the help blurb, showing commonly
+used commandline options. Run quietly without echoing any of
+the build commands. Run silently without echoing any of the
+build commands. Same as &minus;&minus;quiet. Test mode.
+Print the commands but dont actually execute them. Useful
+for making dry runs for testing. Test mode. Print the
+commands but dont actually execute them. Same as &minus;n.
+Test mode. Print the commands but dont actually execute
+them. Same as &minus;n. Test mode. Print the commands but
+dont actually execute them. Same as &minus;n. Outputs the
+bindir used to install the <i>GIMP</i>. Outputs the sbindir
+used to install the <i>GIMP</i>. Outputs the libexecdir used
+to install the <i>GIMP</i>. Outputs the datadir used to
+install the <i>GIMP</i>. Outputs the sysconfdir used to
+install the <i>GIMP</i>. Outputs the sharedstatedir used to
+install the <i>GIMP</i>. Outputs the localstatedir used to
+install the <i>GIMP</i>. Outputs the libdir used to install
+the <i>GIMP</i>. Outputs the infodir used to install the
+<i>GIMP</i>. Outputs the mandir used to install the
+<i>GIMP</i>. Outputs the includedir used to install the
+<i>GIMP</i>. Outputs the actual directory where the
+<i>GIMP</i> data files were installed. Outputs the actual
+directory where the <i>GIMP</i> plugins were installed.
+Compile and link <i>plug-in.c</i> into a <i>GIMP</i>
+plug-in. Compile,link, and strip <i>plug-in.c</i> into a
+<i>GIMP</i> plug-in. Compile, link, and install
+<i>plug-in.c</i> into the user&rsquo;s personal <i>GIMP</i>
+plug-in directory (<b>$HOME</b>/.gimp-2.0/plug-ins) Compile,
+link,strip, and install <i>plug-in.c</i> into the
+user&rsquo;s personal <i>GIMP</i> plug-in directory
+(<b>$HOME</b>/.gimp-2.0/plug-ins) Compile, link, and install
+<i>plug-in.c</i> into the system-wide <i>GIMP</i> plug-in
+directory (${exec_prefix}/lib/gimp/2.0/plug-ins) Install
+<i>plug-in</i> into the user&rsquo;s personal <i>GIMP</i>
+plug-in directory (<b>$HOME</b>/.gimp-2.0/plug-ins) Install
+<i>plug-in</i> into the system-wide <i>GIMP</i> plug-in
+directory (${exec_prefix}/lib/gimp/2.0/plug-ins) Install
+stripped <i>plug-in</i> into the user&rsquo;s personal
+<i>GIMP</i> plug-in directory
+(<b>$HOME</b>/.gimp-2.0/plug-ins) Install stripped
+<i>plug-in</i> into the system-wide <i>GIMP</i> plug-in
+directory (${exec_prefix}/lib/gimp/2.0/plug-ins) Install
+<i>script.scm</i> into the user&rsquo;s personal <i>GIMP</i>
+script directory (<b>$HOME</b>/.gimp-2.0/scripts) Install
+<i>script.scm</i> into the system-wide <i>GIMP</i> script
+directory (${prefix}/share/gimp/2.0/scripts) Uninstall
+<i>plug-in</i> from the user&rsquo;s personal <i>GIMP</i>
+plug-in directory (<b>$HOME</b>/.gimp-2.0/plug-ins)
+Uninstall <i>plug-in</i> from the system-wide <i>GIMP</i>
+plug-in directory (${exec_prefix}/lib/gimp/2.0/plug-ins)
+Uninstall <i>script.scm</i> from the user&rsquo;s personal
+<i>GIMP</i> script directory
+(<b>$HOME</b>/.gimp-2.0/scripts) Uninstall <i>script.scm</i>
+from the system-wide <i>GIMP</i> script directory
+(${prefix}/share/gimp/2.0/scripts) Print the linker flags
+that are necessary to link a <i>GIMP</i> plug-in. Print the
+linker flags that are necessary to link a <i>GIMP</i>
+plug-in, for plugins that do not require the GTK libs. Print
+the compiler flags that are necessary to compile a
+<i>GIMP</i> plug-in. Print the compiler flags that are
+necessary to compile a <i>GIMP</i> plug-in for plugins that
+do not require the GTK libs. If specified, use PREFIX
+instead of the installation prefix that <i>GIMP</i> was
+built with when computing the output for the
+&minus;&minus;cflags and &minus;&minus;libs options. This
+option is also used for the exec prefix if
+&minus;&minus;exec&minus;prefix was not specified. This
+option must be specified before any &minus;&minus;libs or
+&minus;&minus;cflags options. If specified, use PREFIX
+instead of the installation exec prefix that <i>GIMP</i> was
+built with when computing the output for the
+&minus;&minus;cflags and &minus;&minus;libs options. This
+option must be specified before any &minus;&minus;libs or
+&minus;&minus;cflags options.</p>
+
+<p>to get the name of the desired C compiler. to get the
+preferred flags to pass to the C compiler for plug-in
+building. to add a prefix to the install/uninstall path. to
+get the prefered flags for passing to the linker. for
+passing extra libs that may be needed in the build process.
+For example, LIBS=-lintl . to get the location of the
+pkg-config program used to determine details about your
+glib, pango and gtk+ installation.</p>
+
+<p>gimptool was written by Manish Singh (yosh@gimp.org) and
+is based on gtk-config by Owen Taylor (owen@gtk.org).</p>
+
+<p>This man page was written by Ben Gertzfield
+(che@debian.org), and tweaked by Manish Singh
+(yosh@gimp.org), Adrian Likins (adrian@gimp.org) and Marc
+Lehmann (pcg@goof.com&gt;).</p>
+<hr>
+</body>
+</html>

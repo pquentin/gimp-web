@@ -2,17 +2,22 @@
  * $Id$
  */
 body {
-  /*background: white none repeat scroll 0% 0%;*/
-  background: #f5f5f5 none repeat scroll 0% 0%;
+  background: white none repeat scroll 0% 0%;
+  /*background: #f5f5f5 none repeat scroll 0% 0%;*/
   color: black;
   font-family: arial,helvetica,sans-serif;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 #banner {
-  background: transparent url("../images/barbg.png") repeat-x scroll 0% 0%;
-  height: 100px;
+  background: #32537d none repeat-x scroll 0% 0%;
+  height: 98px;
+  border-bottom: 2px solid black;
+  /*
+     background: #32537d url("../images/barbg.png") repeat-x scroll 0% 0%;
+     height: 100px
+   */
 }
       
 #titlebarleft {
@@ -24,6 +29,7 @@ body {
 }
       
 #sidebar {
+  display: table-cell;
   background: #f5f5f5 none repeat scroll 0% 0%;
   border-right:    1px solid #d0d0d0;
   color:           black;
@@ -42,17 +48,18 @@ body {
 }
       
 #flow {
+  display: table-cell;
   background: white none repeat scroll 0% 0%;
-  color: black;
   border-left: 1px solid #d0d0d0;
+  color: black;
+  height: 100%;
   margin-left: 14em;
   padding: 1em 1em 2em 1em;
-  height: 100%;
 }
       
 #page-footer {
-  clear: both;
   background: white none repeat scroll 0% 0%;
+  clear: both;
   color: black;
 }
 

@@ -56,6 +56,7 @@ def footer():
   #"data" : 'data:base64, ' + xhtml.encodefile('/home/asdf/public_html/helvetix/anybrowser.png')})
   #                                      "data" : 'data:binary, ' + xhtml.rawfile('/home/asdf/public_html/helvetix/anybrowser.png')})
   if config.validate: print xhtml.validate()
+  else: print config.validate
   print xhtml.div("version 1.0", {"class" : "watermark"})
   print xhtml.include('%s/includes/footer.inc' % (config.DocumentRoot_path))
   return (True)

@@ -1,5 +1,9 @@
 2003-09-20  Raphael Quinet  <quinet@gamers.org>
 
+	* downloads/index.htrw: Added direct links to the ftp site (with
+	hardcoded version numbers).  In the future, this should be
+	generated automatically, like in the old site.
+
 	* about/index.htrw: Removed the links to the ChangeLogs and splash
 	screen gallery, as proposed on the list.  The e-mail addresses
 	must be stripped out of the ChangeLogs (or obfuscated) and the

@@ -188,44 +188,19 @@ SYS1804: File GIMP1130 not found.
   want to say thankyou to the people who ported the package there is a mailing 
   list for GIMP on OS/2 at Yahoogroups: <a href="maillist:GIMP-os2-url">http://groups.yahoo.com/group/gimp-os2</a>.
 </p>
-
-
-
-
-
-<ol>
-  <li>A list of something</li>
-  <li>More in the list.</li>
-</ol>
-<h3>an even more subtitle</h3>
+<h2>The Original How To</h2>
 <p>
-  This is a key stroke <kbd>Ctrl+C</kbd>.
-</p>
-<pre class="code">
-/* Comment in code and a code example */
-
-main()
-{
- printf("Something something\n");
-}
-</pre>
-<p>
-  More information about the code or something.
-</p>
-
-<h1>Another header (if needed)</h1>
-<h2>Another subtitle</h2>
-<p>
-  More information.
+   The <a href="os2-howto:GIMP_Installation_xfree86/os2-Hennecke_Christian">original how to</a> and several others can be found on Christian's site, 
+   <a href="home:People-Hennecke_Christian">www.os2world.com</a>.
 </p>
 
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        How To &copy; 2002 <a href="mailto:webmaster@gimp.org">Author name</a>
+        How To &copy; 2002 <a href="home:People-Hennecke_Christian">Christian Hennecke</a>
       </span>
       <span id="footerright">
-        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+        <a href="mail:People-Hennecke_Christian">christian.hennecke@ruhr-uni-bochum.de</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

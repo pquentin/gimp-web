@@ -1,5 +1,11 @@
 2003-04-10  Carol Spears  <carol@gimp.org>
 
+        * admin/gimp-web-urls, typos.
+        * os2/howtos/install_font_xfree86.html, typos.
+        * os2/howtos/install_gimp_xfree86.html, typos.
+
+2003-04-10  Carol Spears  <carol@gimp.org>
+
         * admin/gimp-web-urls, added some, fixed others.
         * os2/index.html, udated and edited.
         * os2/howtos/, added this directory.

@@ -33,10 +33,10 @@
 </p>
 <p>
   Go to each font directory which you want to add and convert all filenames to 
-  lowercase using: <kbd>rencase -l *</kbd>.
+  lowercase using: <kbd>rencase&nbsp;-l&nbsp;*</kbd>.
 </p>
 <p>
-  Then issue the command : <kbd>perl path_to_type1inst\type1inst</kbd>.
+  Then issue the command : <kbd>perl&nbsp;path_to_type1inst\type1inst</kbd>.
 </p>
 <p>
   Now the script should generate the description files. Whenever you add new fonts
@@ -58,8 +58,8 @@
   <li>Get the TrueType fontserver <a href="http:Package-fonts-os2-xfsttos2">xfsttos2</a> 
       and unzip the archive into the root of your XFree86/OS2 drive.</li>
   <li>Copy the TrueType fonts you want to install to /XFree86/lib/X11/fonts/Truetype.</li>
-  <li>Convert the fonts' filenames to lowercase using <kbd>rencase -l *</kbd> in the fonts' directory.</li>
-  <li>Start <kbd>xfstt -once</kbd> without starting XFree86/OS2.</li>
+  <li>Convert the fonts' filenames to lowercase using <kbd>rencase&nbsp;-l&nbsp;*</kbd> in the fonts' directory.</li>
+  <li>Start <kbd>xfstt&nbsp;-once</kbd> without starting XFree86/OS2.</li>
   <li>Add the line
       <pre class="code">
 FontPath &quot;inet/127.0.0.1:7100&quot; 
@@ -104,7 +104,7 @@ ffst 7100/tcp # X truetype server
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        How To &copy; 2002 <a href="mail:People-Hennecke_Christian">Christian Hennecke</a>
+        How To &copy; 2002 <a href="home:People-Hennecke_Christian">Christian Hennecke</a>
       </span>
       <span id="footerright">
         <a href="mail:People-Hennecke_Christian">christian.hennecke@ruhr-uni-bochum.de</a>

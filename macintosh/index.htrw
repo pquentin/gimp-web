@@ -39,12 +39,7 @@ an easier task. These include:</p>
   provide an easy way to install various open-source software products
   on Mac OS X. The <a href="http://darwinports.opendarwin.org/darwinports/dports/graphics/gimp2/Portfile">gimp2 portfile</a> is maintained by
   <a href="mailto:tobyNOSPAM@opendarwin.org">Toby Peterson</a>. 
-  DarwinPorts places the GIMP binary into <code>/opt/local/bin</code>. </li>
-
-  <li><a
-  href="http://www.osxgnu.org/software/Xwin/Applications/gimp/">OSXGNU
-  packages</a> have been built by Chris Roberts and make use of a
-  perl-based automated packaging scripts.</li>
+  DarwinPorts places the GIMP binary into <code>/opt/local/bin</code>.</li>
 
   <li>In the future, it is hoped that the <a
   href="http://www.metapkg.org/">MetaPkg</a> project will unify
@@ -52,11 +47,16 @@ an easier task. These include:</p>
   is not yet usable.</li>
 
   <li>The <a href="http://www.macgimp.org/">MacGIMP project</a>
-  provides the latest GIMP for Mac OS X in a packaged CD format.  A
-  part of the sales of MacGIMP is used to defray expenses for
-  developers at the yearly GIMP conference.  The MacGIMP project
-  installs the GIMP in <code>/opt/local/bin</code>.  MacGIMP efforts
-  are led by <a href="mail:People-Caughron-Mat">Mat Caughron</a>.</li>
+  provides the latest GIMP for Mac OS X in a packaged CD format.
+  The MacGIMP project installs the GIMP in <code>/opt/local/bin</code>.
+  MacGIMP efforts are led by
+  <a href="mail:People-Caughron-Mat">Mat Caughron</a>. Last year he helped
+  the GIMP developers with a donation for their developers conference.
+  </li>
+
+  <li><a href="http://www.openosx.com/gimp2/">OpenOSX</a> also offers
+  GIMP for Mac OS X on a CD.</li>
+
 </ul>
 
 <h2>Requirements</h2>

@@ -53,7 +53,7 @@
   and subscribe to the gimp-developer mailing list if you compile the code from CVS.
 </p>
 
-<a name="requirements"><h1>GIMP Source Code</h1></a>
+<a name="source"><h1>GIMP Source Code</h1></a>
 <p>
   The GIMP source code is distributed as tarballs. It is available
   from the GIMP FTP site and its <a href="wgo:downloads-mirrors">mirrors</a>.

@@ -1,5 +1,5 @@
 <?php
-  $tutorial_path = "includes/tutorials/";
+  $tutorial_path = "tutorials/";
 
   if (isset ($tutorial)) {
     /* user requested a tutorial */

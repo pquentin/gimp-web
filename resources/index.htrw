@@ -5,9 +5,9 @@
 
 <h1>Resources</h1>
 <h2>Included With The GIMP</h2>
-<p>
-  More than just a bunch of tools, The GIMP has stuff too ....
-</p>
+
+<p>More than just a bunch of tools, The GIMP has stuff too ....</p>
+
 <ul>
   <li><a href="brushes/index.html">Brushes</a></li>
   <li><a href="gradients/index.html">Gradients</a></li>
@@ -16,15 +16,14 @@
 </ul>
 
 <h2>Home Grown</h2>
-<p>
-  Resources The GIMP makes space for in your home directory. Someone
-  please fix this text.
-</p>
+
+<p>Resources The GIMP makes space for in your home directory.
+<em>FIXME: Someone please fix this text.</em></p>
+
 <ul>
   <li><!-- a href="curves.html" -->Curves<!-- /a --></li>
   <li><!-- a href="generated_brushes.html" -->Generated Brushes<!-- /a --></li>
-</ul 
--->
+</ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

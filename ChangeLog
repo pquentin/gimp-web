@@ -1,3 +1,10 @@
+2003-09-24  Raphael Quinet  <quinet@gamers.org>
+
+	* resources/index.htrw: Removed a stray --> (end of comment) that
+	was breaking the build.
+
+	* team.htrw: Be fair.  And be accented.
+
 2003-09-23  Raphael Quinet  <quinet@gamers.org>
 
 	* team.htrw: Removed all e-mail addresses from the page until we

@@ -11,6 +11,6 @@ if test -z "$PYTHON" ; then
   PYTHON=python
 fi
 
-make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all programmatic install
+make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all programmatic install 2>&1 | tee make.out
 ls -l ${INSTALLDIR}/var/spool/wgo-contest-current
 

@@ -1,3 +1,8 @@
+2003-09-19  Ville Pätsi <drc@gimp.org>
+
+	* includes/wgo-page-init.xhtml: Added height="100%" to the content
+	table to make the menu reach the bottom.
+
 2003-09-19  Raphael Quinet  <quinet@gamers.org>
 
 	* includes/wgo-tutorial-init.xhtml
@@ -50,7 +55,7 @@
 	getting involved. The people images are not going to be on www.gimp.org but
 	on developer.gimp.org.
 
-2003-09-16  Ville P�tsi  <drc@gimp.org>
+2003-09-16  Ville Pätsi  <drc@gimp.org>
 
 	* style/wgo.js
 	* style/wgo.css: Fixed menu resizing with large font sizes.

@@ -16,6 +16,11 @@
 	* includes/tutnavbar.inc, includes/menu.inc: added trailing
 	slashes to directory links (thanks to UnNamed for spotting this)
 
+	* includes/linkbar.inc: added links to /books.html and
+	/mailinglists.html
+
+	* books.html: file added
+	
 2002-10-18 carol <carol@gimp.org>
 
     * resources/gradients/index.html and mgo-gradients.py: added the

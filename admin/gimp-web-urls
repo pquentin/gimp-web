@@ -235,8 +235,8 @@
 ["height", "wgo:image-about-splash-stable-1.0",  { "height": "94px"}]
 ["alt",    "wgo:image-about-splash-stable-1.0",  { "alt":    "splash-1.0"}]
 
-["href",   "wgo:image-about-splash-stable-1.2",  { "href":   "/about/splash/splash-images/gimp_splash.1.11-t.png"}]
-["src",    "wgo:image-about-splash-stable-1.2",  { "src":    "/about/splash/splash-images/gimp_splash.1.11.png"}]
+["href",   "wgo:image-about-splash-stable-1.2",  { "href":   "/about/splash/splash-images/gimp_splash.1.11.png"}]
+["src",    "wgo:image-about-splash-stable-1.2",  { "src":    "/about/splash/splash-images/gimp_splash.1.11-t.png"}]
 ["width",  "wgo:image-about-splash-stable-1.2",  { "width":  "138px"}]
 ["height", "wgo:image-about-splash-stable-1.2",  { "height": "150px"}]
 ["alt",    "wgo:image-about-splash-stable-1.2",  { "alt":    "splash-1.2"}]

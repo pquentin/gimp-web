@@ -1,3 +1,8 @@
+2004-03-22  Sven Neumann  <sven@gimp.org>
+
+	* admin/gimp-web-urls: fixed wgo:image-about-splash-stable-1.2, it
+	had src and href mixed.
+
 2004-03-22  Niklas M <scizzo@gimp.org>
 
 	* screenshots/solaris_screenshot1.png, solaris_screenhot1_thumb.jpg:

@@ -4,6 +4,8 @@
     
 	* tutorials/index.html:  shuffled the index page around a bit
     
+	* unix/index.html:  clean up of some bad tags
+    
 2002-11-03 rockwlrs <rock@gimp.org>
 
 	* about/ChangeLogs/ChangeLog.pl: a script that autogenerates web pages

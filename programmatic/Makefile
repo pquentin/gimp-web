@@ -2,6 +2,8 @@
 #
 include Makefile.defs
 
+.PHONY: all usage clean install
+
 all: webtools usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest about develop
 
 usage:

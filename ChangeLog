@@ -1,7 +1,16 @@
+2003-03-19  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Buffed up the top-level Makefile to declare .PHONY targets.  The
+          _install target is now called install.
+
+        * Fixed a bug in rewrite_attrs.py which caused URLs containing an
+          octothorpe to be truncated and breaking rewrite_attrs.
+        
+
 2003-03-19 scizzo <scizzo@gimp.org>
 
-	* /admin/gimp-web-urls: Add the mails and original websites to the url
-	file from the tutorials.
+        * /admin/gimp-web-urls: Add the mails and original websites to the url
+        file from the tutorials.
 
 2003-03-07  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 

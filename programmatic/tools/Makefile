@@ -1,5 +1,7 @@
 include ../Makefile.defs
 
+.PHONY: all clean
+
 all: rewrite_attrs ssi-pp gimpwebtool
 
 rewrite_attrs: rewrite_attrs.py

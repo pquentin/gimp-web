@@ -132,6 +132,7 @@ class xhtml_parser(HTMLParser.HTMLParser):
   
   pass
 
+  
 def load_rewrite_dictionary(filename):
   dictionary = {}
   
@@ -140,7 +141,7 @@ def load_rewrite_dictionary(filename):
   fp.close()
   
   for line in lines:
-    line = re.sub("#.*", "", line)
+    #line = re.sub("#.*", "", line)
     line = re.sub("^[ \t]+", "", line)
     
     if len(line) > 1:

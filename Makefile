@@ -21,6 +21,8 @@ RWTARGETS=$(RWSOURCES:.htrw=.html)
 
 TARGETS=${RWTARGETS}
 
+.PHONY: all usage webtools install clean
+
 all: usage webtools ${TARGETS}
 	echo ${TARGETS}
 
@@ -30,7 +32,7 @@ usage:
 webtools:
 	(cd programmatic ; make webtools)
 
-_install: all
+install: all
 
 clean:
-	/bin/rm -f ${TARGETS}
+	/bin/rm -f ${TARGETS} ${RWTARGETS}

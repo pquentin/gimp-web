@@ -13,7 +13,10 @@ if test -z "$PYTHON" ; then
   PYTHON=python
 fi
 
-make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all install 2>&1 > ${INSTALLDIR}/install.out
+rm -f  ${INSTALLDIR}/install.out
+ls -l unix/  >> ${INSTALLDIR}/install.out
+
+make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all install 2>&1 >> ${INSTALLDIR}/install.out
 
 rsync -rlt --delete --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
 

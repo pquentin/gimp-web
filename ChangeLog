@@ -1,3 +1,12 @@
+2004-03-11  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/index.htrw: Moved the Simple Floating Logo tutorial
+	(a.k.a "The Basics") back to the Beginner section as suggested by
+	Yosh.
+
+	* programmatic/downloads/MIRRORS: Updated the list of mirrors
+	according to the latest updates that I made on the ftp site.
+
 2004-03-11  Dave Neary  <bolsh@gimp.org>
 
 	* tutorials/Photo_To_Sketch/index.htrw: Updated the photo to 

@@ -40,6 +40,7 @@
 ["href", "home:People-Beane_Zach",             { "href": "http://www.xach.com"}]
 
 ["href", "mail:People-Beppu_John",             { "href": "mailto:beppu@cpan.org"}]
+["href", "home:People-Beppu_John",	       { "href": "http://beppu.lbox.org/"}]
 
 ["href", "mail:People-Boyce_Mel",              { "href": "mailto:syngin-at-gimp-dot-org"}]
 ["href", "home:People-Boyce_Mel",              { "href": "http://syngin.gimp.org"}]

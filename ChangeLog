@@ -1,5 +1,11 @@
 2003-04-14 scizzo <scizzo@gimp.org>
 
+	* /admin/gimp-web-urls: Add John Beppu homepage link.
+	* /tutorials/Basic_Scheme2/index.html: Removed this file.
+	* /tutorials/Basic_Scheme2/index.htrw: Add this file.
+	* /tutorials/Bezier_Selections/index.html: Removed this file.
+	* /tutorials/Bezier_Selections/index.htrw: Add this file.
+
 	* /tutorials/Advanced_Animations/index.htrw,
 	* /tutorials/Basic_Perl/index.htrw,
 	* /tutorials/Basic_Scheme/index.htrw: Changed the links using the new

@@ -93,7 +93,7 @@ def display_gallery(form):
     prev = xhtml.hyperlink("PREV", {"class" : "faux-button", "href" : "gallery.cgi?display=GALLERY&amp;index=%d" % (prev_page_images)})
     pass
 
-  #print xhtml.div(xhtml.span(prev, {"style" : "float: left;"}) + xhtml.span(next, {"style" : "float: right;"}) + "&nbsp;", {"style" : "height 10ex;"})
+  print xhtml.div(xhtml.span(prev, {"style" : "float: left;"}) + xhtml.span(next, {"style" : "float: right;"}) + "&nbsp;", {"style" : "height 10ex;"})
 
   if tableless == 0:
     if len(names) > 0:

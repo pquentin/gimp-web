@@ -164,7 +164,7 @@
 ["href", "wgo:docs-gimp_help",                 { "href": "/docs/gimp-help/"}]
 
 ["href", "wgo:about",                          { "href": "/about/index.html"}]
-["href", "wgo:about-ancient_history",          { "href": "/about/ancient-history.html"}]
+["href", "wgo:about-ancient_history",          { "href": "/about/ancient_history.html"}]
 ["href", "wgo:about-authors",                  { "href": "/about/authors.html"}]
 ["href", "wgo:about-history",                  { "href": "/about/history.html"}]
 ["href", "wgo:about-introduction",             { "href": "/about/introduction.html"}]

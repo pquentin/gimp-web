@@ -1,3 +1,12 @@
+2003-08-03 scizzo <scizzo@gimp.org>
+
+	* /about/splash-1.1.html: Fixed broken link reported in bug #118755.
+	* /admin/gimp-web-urls: Fixed broken link to ancient history reported
+	in bug #118755 and from mails.
+	* /docs/index.html: Removed this file.
+	* /docs/index.htrw: Created this file and linked the dev-docs to
+	http://developer.gimp.org/
+
 2003-08-01 scizzo <scizzo@gimp.org>
 
 	* /includes/wgo-page-init.xhtml, wgo-menu.xhtml: Changed the "GIMP for Macintosh" to

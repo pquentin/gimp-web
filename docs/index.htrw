@@ -7,7 +7,7 @@
 <h2>The GIMP Documentation</h2>
   <ul>
     <li><a href="gimp-docs/">The GIMP Documentation</a></li>
-    <li><a href="dev-docs/">The GIMP Developer Documentation</a></li>
+    <li><a href="wgo:dev">The GIMP Developer Documentation</a></li>
   </ul>
 <div class="subtitle">Other GIMP Documentation</div>
   <ul>

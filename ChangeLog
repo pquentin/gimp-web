@@ -1,5 +1,32 @@
 2002-09-26  Henrik Brix Andersen  <brix@gimp.org>
 
+	* tutorials.html: oops. renamed the link
+
+	* tutorials/The_Basics/tut-basic-3.gif, tutorials/The_Basics/tut-basic-4.gif, tutorials/The_Basics/tut-basic-5.gif, tutorials/The_Basics/tut-basic-6.gif, tutorials/The_Basics/tut-basic-7.gif, tutorials/The_Basics/tut-basic-dia-1.gif, tutorials/The_Basics/tut-basic-dia-2.gif, tutorials/The_Basics/tut-basic-dia-3.gif, tutorials/The_Basics/tut-basic-dia-4.gif, tutorials/The_Basics/tut-basic-dia-5.gif, tutorials/The_Basics/tut-basic-dia-6.gif, tutorials/The_Basics/tut-basic-dia-7.gif, tutorials/The_Basics/tut-basic-dia-8.gif, tutorials/The_Basics/tut-basic-dia-9.gif, tutorials.html, tutorials/The_Basics/index.html, tutorials/The_Basics/tut-basic-1.gif, tutorials/The_Basics/tut-basic-2.gif:
+	ported the basics tutorial from current wgo to new layout
+
+	* tutorials/template/index.html: added a tutorial template
+
+	* tutorials/Anti-Aliased_Treshold/index.html:
+	fixed the placement of the authors copyright msg
+
+	* tutorials/Anti-Aliased_Treshold/index.html, style/default.css:
+	changed to use a p.images instead of div.images to inherit the margins from p
+
+	* ChangeLog: changelog updated
+
+	* template.html: updated the template to use the new header files
+
+	* includes/header.inc: removed old header file
+
+	* tutorials/Anti-Aliased_Treshold/index.html, includes/header_pretitle.inc, includes/header_posttitle.inc, about/screenshots.html, about/mediakit.html, about/introduction.html, about/history.html, about/awards.html, windows.html, unix.html, tutorials.html, team.html, resources.html, registry.html, os2.html, macintosh.html, links.html, index.html, documentation.html, development.html, authoring.html, about.html:
+	files modified to use the new headers.
+	this allows the title to be set from subpages, as requested by carol
+
+	* ChangeLog: changelog updated
+
+2002-09-26  Henrik Brix Andersen  <brix@gimp.org>
+
 	* template.html: updated the template to use the new header files
 
 	* includes/header.inc: removed old header file

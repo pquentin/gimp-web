@@ -214,8 +214,8 @@
 ["href", "wgo:source-howtos-stable_cvs_get",   { "href": "/source/howtos/stable-cvs-get.html"}]
 
 ["href", "wgo:unix",                           { "href": "/unix/"}]
-["href", "wgo:unix-gimprc",                    { "href": "/unix/gimprc"}]
-["href", "wgo:unix-gtkprc",                    { "href": "/unix/gtkrc"}]
+["href", "wgo:unix-gimprc",                    { "href": "/unix/gimprc.html"}]
+["href", "wgo:unix-gtkprc",                    { "href": "/unix/gtkrc.html"}]
 ["href", "wgo:unix-guide_stable_tile_cache",   { "href": "/unix/tile-cache.html"}]
 ["href", "wgo:unix-guide_stable_user_install", { "href": "/unix/user_install.html"}]
 ["href", "wgo:unix-guide_stable_preferences",  { "href": "/unix/preferences.html"}]

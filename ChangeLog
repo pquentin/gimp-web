@@ -1,5 +1,15 @@
 2004-03-30  Sven Neumann  <sven@gimp.org>
 
+	* unix/gimprc.html
+	* unix/gtkrc.html: use SSI to include the plain files.
+
+	* unix/gimprc: updated
+
+	* admin/gimp-web-urls: link to the .html versions of gimprc and
+	gtkrc.
+	
+2004-03-30  Sven Neumann  <sven@gimp.org>
+
 	* unix/index.htrw: added link to RedHat 9 RPMs.
 
 2004-03-29  Carol Spears  <carol@gimp.org>
@@ -15,7 +25,8 @@
 	* unix/man-gimptool-2.0.html: used man2html to
 	remake these pages (tried to fix the man2html html some also).
 
-	* gimprc.html, gtkrc.html: updated these pages
+	* unix/gimprc.html
+	* unix/gtkrc.html: updated these pages
 	
 2004-03-29  Sven Neumann  <sven@gimp.org>
 

@@ -1,0 +1,132 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Basic Perl</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Basic Perl</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  One of the wonderful features of GIMP is that it all its functionality may be accessed through scripting. 
+  So far most of the script programming for Gimp has been done through Scheme through Script-Fu. 
+  Unfortunately the Scheme environment Gimp provides is very primitive, e.g. without any reasonable error handling. 
+  Furthermore, must users are not familiar with scheme as a language. Some users may therefore prefer to write scripts for the Gimp in Perl.
+  <br /><br />
+  Perl as a language is probably more familiar to the web-literate users, as it is the major language for writing CGI scripts. 
+  Now, Gimp scripts may also be written with Perl. This tutorial will describe how to write such plug-ins and scripts for Gimp.
+  <br />
+  As there are several excellent tutorial texts describing the perl language, this tutorial will assume at working knowledge of Perl, 
+  and will instead concentrate on the use GIMP together with the of the perl modules Gimp and Gimp::Fu, written by Marc Lehmann, <a href="mailto:pcg@goof.com">pcg@goof.com</a>
+</p>
+
+<div class="subtitle">1. What You Need</div>
+<p>
+  The Perl::Gimp tutorial scripts have been tested with the following versions:
+</p>
+<ol>
+  <li>Gimp version 1.2 or later, with all its prerequisites.</li>
+  <li>Perl version 5.005 or later.</li>
+  <li>The perl module Gtk, version 0.7003</li>
+  <li>The Gimp module, version 1.201 or later</li>
+</ol>
+<p>
+  Perl and all its associated modules are available in source form from the Perl Comprehensive Archive network, CPAN. 
+  It is also possible to download them in RPM format from the ftp.gimp.org website.
+</p>
+
+<div class="subtitle">2. The Gimp module</div>
+<p>
+  Most scripts make use of the simplified interface Gimp::Fu provided with the Gimp module. 
+  Gimp::Fu provides a framework for entering parameters to the script in a frame like interface, 
+  just like Script-Fu, but also allows running of the script in batch mode from the command line. 
+  This tutorial will go into detail descriptions of the construction of a Gimp::Fu script, but before we do this, 
+  here is the general framework of a Perl-Fu script.
+</p>
+<div class="code">
+  #!/usr/local/bin/perl 
+  <br /><br />  
+  use Gimp ":auto";
+  <br />
+  use Gimp::Fu;
+  <br /><br />
+  # Register extension to gimp
+  <br />
+  register ... ;
+  <br /><br />
+  exit main();  # Handle over control to gimp 
+</div>
+<p>
+  The interesting items to note in the script is the use of the two modules Gimp and Gimp::Fu, 
+  the register function, which will be described in detail below, and the way the control is handed over to Gimp module on line 9. 
+  The use of the ":auto" statement makes perl automatically include all of the gimp PDB functions and constants into the perl name space.
+</p>
+
+<div class="subtitle">3. The GIMP PDB</div>
+<p>
+  Before going into the details of the Perl-Fu script, we will describe how to access the various the functionality of GIMP. 
+  All functions known to GIMP are available through the procedural database (PDB). All the PDB functions may be called from perl, as will be seen below. 
+  These PDB functions are either internal to gimp, or have been made available through a plug-in or a script extension, but as far as the caller is concerned there is no difference. 
+  As we will see below, when a perl function is registered through the register function, it will appear in the PDB as well.
+</p>
+<p>
+  Gimp/perl comes with a PDB browser available in <span class="filter">Xtns -&gt; PDB Explorer</span>. 
+  (There is another PDB browser available in <span class="filter">Xtns -&gt; DB Browser</span> but the PDB Explorer is more suited for Perl users.) 
+  This browser provides a way of seeing all the functions in the PDB, as well as their input and output parameters. 
+  E.g. the PDB Explorer entry for gimp_image_new, which will be used in the example below looks like this:
+</p>
+<p><table><tr><td bgcolor=#e0e0e0>
+<table>
+<tr><th valign=top align=right>Name:</th><td bgcolor=#e0e0ff colspan=3>gimp_image_new</td></tr>
+<tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Creates a new Image with the specified with, height, and type</td></tr>
+<tr>
+<th valign=top align=right valign=top>In:</th><td valign=top>INT32</td><td valign=top>width</td><td valign=top>The width of the image</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>INT32</td><td valign=top>height</td><td valign=top>The height of the image</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>INT32</td><td valign=top>type</td><td valign=top>The type of image { RGB (0), GRAY (1), INDEXED (2)</td>
+</tr>
+<tr><th valign=top align=right>Out:</th></tr><tr><td></td><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The ID of the newly created image</td>
+</tr>
+<tr><th valign=top valign=top>Help:</th><td colspan=3>Creates a new image, undisplayed with the specified extents and type. A layer should be created and added before this image is displayed, 
+or subsequent calls to 'gimp_display_new' with this image as an argument will fail. Layers can be created using the 'gimp_layer_new' commands. 
+They can be added to an image using the 'gimp_image_add_layer' command</td></tr></table>
+</table></p>
+<p>
+  All the the constants mentioned in the PDB Explorer have been defined within Gimp::Fu and may be used within perl. 
+  E.g. I.e. a call to create a new image of size 100x150 of type RGB looks as follows:
+</p>
+
+<div class="code">$img = gimp_image_new(100, 150, RGB)</div>
+
+<p>
+  The PDB entry above shows that gimp_image_new is called with three parameters width, height, type. These are all of type INT32. This type and other types will be explained below.
+  <br /><br />
+  Script-Fu scripts are called just like any other script according to the PDB signature in the PDB browser. E.g. to run the Script Fu basic one logo just do:
+</p>
+
+<pre>script_fu_basic1_logo("Hello", 72,
+                           "-*-utopia-*-r-*-*-72-*-*-*-*-*-*-*",
+                           [0,0,0],[1,1,1]);</pre>
+<p>
+  Unfortunately, as of the writing, calling Script Fu from perl has proved a to make both ScriptFu and gimp very unstable and caused both of them to crash. 
+  If any of the readers is able to describe what is needed to get it to run successfully, I will happily include this in a future version of this tutorial.
+</p>
+<p>
+  <b>NOTE:</b> When calling a PDB function from Perl::Gimp that has an image and a drawable as the two first arguments, 
+  only the drawable should be given as argument in the calling sequence.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:user@host.org">Author Name</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

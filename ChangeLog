@@ -1,3 +1,8 @@
+2002-10-28 scizzo <scizzo@gimp.org>
+
+        * tutorials/Basic_Perl/: added the first test version of the basic
+        Perl tutorial.
+
 2002-10-27 brix <brix@gimp.org>
 
 	* style/default.css, README.tutorials: added "code" class to make

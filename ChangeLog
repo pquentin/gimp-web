@@ -6,6 +6,8 @@
 
 	* includes/urls_important.inc, added google to important urls.
 
+	* about/splash-1.3.html, about/splash-cvs.html: mistakes and cosmetics fixed.
+
 2002-11-26 scizzo <scizzo@gimp.org>
 
         * tutorials/Image_Map/: First port of the Image_Map tutorial.

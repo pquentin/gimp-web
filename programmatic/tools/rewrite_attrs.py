@@ -72,7 +72,9 @@ def substitute(a, v):
   return ({a: v})
 
 def print_warning(filename):
-  sys.stdout.write("<!-- rewrite-attrs.py $Revision$ automatically generated this file from " + filename + ".  Do not edit.-->\n")
+  # Small hack to keep only the original name of the file in the output
+  origname = filename.replace(".htrw.x", ".htrw")
+  sys.stdout.write("<!-- This file was automatically generated from " + origname + " by rewrite-attrs.py $Revision$.  Do not edit. -->\n")
   return
     
 def sanity_check(filename, attrs):
@@ -84,11 +86,11 @@ def sanity_check(filename, attrs):
   return
   
 class xhtml_parser(HTMLParser.HTMLParser):
-  def __init__(self, filename, quiet_flag=False):
+  def __init__(self, filename, quiet_flag=False, strip_comments_flag=False):
     self.filename = filename
     self.quiet = quiet_flag
+    self.strip_comments = strip_comments_flag
     self.serial = 0
-    self.ok_to_print_comment = False
     self.comment_already_printed = False
     return HTMLParser.HTMLParser.__init__(self)
 
@@ -98,15 +100,6 @@ class xhtml_parser(HTMLParser.HTMLParser):
 
   def handle_starttag(self, tag, attrs):
     self.serial += 1
-
-    if self.serial == 1:
-      self.ok_to_print_comment = True
-      pass
-
-    if self.ok_to_print_comment and not self.comment_already_printed and not self.quiet:
-      print_warning(self.filename)
-      self.comment_already_printed = True
-      pass
 
     sanity_check(self.filename, attrs)
     
@@ -135,8 +128,13 @@ class xhtml_parser(HTMLParser.HTMLParser):
     return
   
   def handle_comment(self, data):
-    sys.stdout.write("<!--" + data + "-->")
-    self.ok_to_print_comment = True
+    if not self.comment_already_printed and not self.quiet:
+      print_warning(self.filename)
+      self.comment_already_printed = True
+      pass
+    if not self.strip_comments:
+      sys.stdout.write("<!--" + data + "-->")
+      pass
     return
   
   def handle_decl(self, decl):
@@ -189,19 +187,21 @@ def usage(name):
   print "  -h, --help                This message"
   print "  -d file, -dictionary file Use file as the substitution dictionary."
   print "  -q, --quiet               No 'automatically generated' comment."
-  print "  -v                        Print version and exit"
+  print "  -s, --strip               Strip all HTML comments from the output."
+  print "  -v, --version             Print version and exit"
   return
   
 if __name__ == "__main__":
 
   try:
-    opts, args = getopt.getopt(sys.argv[1:], "hd:vq", ["help", "version", "dictionary=", "quiet"])
+    opts, args = getopt.getopt(sys.argv[1:], "hd:vqs", ["help", "version", "dictionary=", "quiet"])
   except getopt.GetoptError:
     usage(sys.argv[0])
     sys.exit(2)
     pass
   
   quiet_flag = False
+  strip_comments_flag = False
 
   for o, a in opts:
     if o in ("-h", "--help"):
@@ -217,6 +217,10 @@ if __name__ == "__main__":
       quiet_flag = True
       pass
 
+    if o in ("-s", "--strip"):
+      strip_comments_flag = True
+      pass
+
     if o in ("-v", "--version"):
       print Version
       sys.exit()
@@ -224,7 +228,7 @@ if __name__ == "__main__":
     pass
 
 
-  xhtml = xhtml_parser(args[0], quiet_flag)
+  xhtml = xhtml_parser(args[0], quiet_flag, strip_comments_flag)
 
   fp = open(args[0], "r")
   #sys.stdout.write('<?xml version="1.0" encodings="iso-8859-1" standalone="yes"?>\n')

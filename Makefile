@@ -1,7 +1,7 @@
 #
 #
 
-export PYTHONPATH=programmatic:
+export PYTHONPATH=$(shell pwd)/programmatic:
 
 # how to make an html from a .htrw file
 %.html: %.htrw

@@ -11,4 +11,5 @@ clean:
 	/bin/rm -f mirrors.xhtml
 
 install: mirrors.xhtml
+	-mkdir `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/downloads
 	install --mode=644 mirrors.xhtml `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/downloads/mirrors.xhtml

@@ -1,5 +1,24 @@
 2003-09-22  Raphael Quinet  <quinet@gamers.org>
 
+	* includes/wgo-xhtml-init.xhtml: Move the comment with the CVS Id
+	below the <html> tag.  This fixes bug #122932.
+
+	* Makefile: Add current working directory as prefix because using
+	only programmatic: was causing problems with some older versions
+	of GNU make.
+
+	* programmatic/downloads/Makefile (install): create the downloads
+	directory in the DocumentRoot in order to avoid problems during
+	the first-time installation.
+
+	* programmatic/tools/rewrite_attrs.py (xhtml_parser): Modify the
+	code so that it waits until the first HTML comment in the input
+	before inserting its own comment.  This fixes one part of bug
+	#122932.  Also added the option "-s" to strip out the HTML
+	comments from the output.
+
+2003-09-22  Raphael Quinet  <quinet@gamers.org>
+
 	* downloads/install_help.htrw: Added a mention about the build
 	time for current CVS using a relatively old machine (P3).  This
 	will be moved to the source section later.

@@ -55,6 +55,7 @@ class gallery_image:
 
   def __getitem__(self, key):
     if key == "image": return (gallery_file(self["name"], ".png"))
+    if key == "thumb": return (gallery_file(self["name"], "-t.jpg"))
     if key == "thumb": return (gallery_file(self["name"], "-t.png"))
     return (self.attrs[key])
   
@@ -86,6 +87,7 @@ class gallery_image:
     try:
       os.remove(gallery_path(self["name"], ".png"))
       os.remove(gallery_path(self["name"], "-t.png"))
+      os.remove(gallery_path(self["name"], "-t.jpg"))
       os.remove(gallery_path(self["name"], ".meta"))
       return (True)
     except:
@@ -95,7 +97,7 @@ class gallery_image:
   def exists(self):
     if not os.path.isfile(gallery_path(self["name"], ".meta")): return (False)
     if not os.path.isfile(gallery_path(self["name"], ".png")): return (False)
-    if not os.path.isfile(gallery_path(self["name"], "-t.png")): return (False)
+    if not os.path.isfile(gallery_path(self["name"], "-t.png")) and not os.path.isfile(gallery_path(self["name"], "-t.jpg")): return (False)
     return (True)
     
   def save(self):

@@ -1,5 +1,12 @@
 2003-09-07  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* programmatic/contest/contest.py
+	* programmatic/contest/gallery.py
+	* programmatic/contest/wgo-contest.cpp
+	* programmatic/contest/wgo_contest.py: Changes to use the new
+	layout.
+
+
 	* wgo_queue.py (generate_blotter): print wgo_queue.py revision
 	  number into chart source.
 

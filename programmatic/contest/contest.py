@@ -77,6 +77,8 @@ def submit_manually(args):
       os.system("/usr/X11R6/bin/convert '%s' 'png:%s'" % (arg, wgo.config.DocumentRoot_path + entry["image"]))
       os.system("/usr/X11R6/bin/convert -geometry 150 '%s' 'png:%s'\n" % (wgo.config.DocumentRoot_path + entry["image"],
                                                                           wgo.config.DocumentRoot_path + entry["thumb"]))
+      os.system("/usr/X11R6/bin/convert -geometry 150 '%s' 'jpg:%s'\n" % (wgo.config.DocumentRoot_path + entry["image"],
+                                                                          wgo.config.DocumentRoot_path + entry["thumb"]))
       #os.chown(wgo.config.DocumentRoot_path + entry["image"], wgo.config.user_uid, wgo.config.user_gid)
       #os.chown(wgo.config.DocumentRoot_path + entry["thumb"], wgo.config.user_uid, wgo.config.user_gid)
     except Exception, e:
@@ -106,6 +108,7 @@ def submit(form):
   email = "wilber@gimp.org"
 
   print xhtml.h1("GIMP Splash Image Contest", {"class" : "heading"})
+  #xhtml.div(thumb, {"class": "splash-thumb", "style" : "float: right; margin-left: 1em;"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest.
   From here you may submit images to be considered as candidates
   for a "splash" image.  We appreciate your participation, but there are
@@ -118,7 +121,7 @@ def submit(form):
 
   thumb = wgo_contest.image_generate("Your Image Here", image, "Wilber", "wilber@gimp.org")
 
-  fields = (xhtml.table.init({"cellspacing" : 6})
+  fields = (xhtml.table.init({"cellspacing" : 0})
             + row(cell("File name:",     {"style" : "font-weight: bold"}) + cell(xhtml.input.file({"name" : "image"})))
             + row(cell("Title:",         {"style" : "font-weight: bold"}) + cell(xhtml.input.text({"name" : "title"})))
             + row(cell("Artist's Name:", {"style" : "font-weight: bold"}) + cell(xhtml.input.text({"name" : "author"})))
@@ -126,10 +129,12 @@ def submit(form):
             + row(cell(xhtml.input.hidden({"name" : "mode","value" : "preview"})) + cell(xhtml.input.submit({"name" : "preview", "value" : "PREVIEW"})))
             + xhtml.table.fini())
   
-  form = xhtml.div(xhtml.form(fields, {"enctype" : "multipart/form-data", "method" : "post", "action" : "contest.cgi"}))
+  form = xhtml.form(fields, {"enctype" : "multipart/form-data",
+                             "method" : "post",
+                             "action" : "contest.cgi",
+                             "style" : "margin: 1.33em 0px; margin-left: 40px; margin-right: 40px;" })
 
-  guidelines = (xhtml.div(thumb, {"class": "splash-thumb", "style" : "float: right; margin-left: 1em;"})
-                + xhtml.para("""Past splash images range in approximate pixel widths and heights from 300x300 to 550x400 pixels. """
+  guidelines = (xhtml.para("""Past splash images range in approximate pixel widths and heights from 300x300 to 550x400 pixels. """
                            """Other sizes could be considered, if the artwork merits an unusual size.""")
                 + xhtml.para("Fill in the fields below, and click the "
                              + xhtml.input.submit({"value" : "PREVIEW", "disabled" : "disabled"})
@@ -147,8 +152,11 @@ def preview(form):
 
   image_path = wgo_contest.spool_path(name, ".png")
   thumb_path = wgo_contest.spool_path(name, "-t.png")
+  thumb_path = wgo_contest.spool_path(name, "-t.jpg")
+  
   image_file = wgo_contest.spool_file(name, ".png")
   thumb_file = wgo_contest.spool_file(name, "-t.png")
+  thumb_file = wgo_contest.spool_file(name, "-t.jpg")
   
   author = form.getvalue("author", "unknown")
   email = form.getvalue("email", "")
@@ -165,6 +173,7 @@ def preview(form):
     fp.write(form["image"].value)
     fp.close()
     os.system("convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
+    os.system("convert -geometry 150 '%s' 'jpg:%s'\n" % (image_path, thumb_path))
   except Exception, e:
     try: os.remove(image_path)
     except: pass
@@ -220,7 +229,7 @@ def preview(form):
 
   print guidelines
   print xhtml.div(img, {"class" : "splash-image", "id" : "preview"})
-  print xhtml.div(form)
+  print form
 
   wgo_contest.folio_fini()
   return
@@ -243,9 +252,11 @@ def approved(form):
 
   image_path = wgo_contest.spool_path(name, ".png")
   thumb_path = wgo_contest.spool_path(name, "-t.png")
+  thumb_path = wgo_contest.spool_path(name, "-t.jpg")
   
   image_file = wgo_contest.gallery_file(name, ".png")
   thumb_file = wgo_contest.gallery_file(name, "-t.png")
+  thumb_file = wgo_contest.gallery_file(name, "-t.jpg")
   image_html = wgo_contest.gallery_path(name, ".html")
   thumb_html = wgo_contest.gallery_path(name, "-t.html")
   
@@ -253,9 +264,10 @@ def approved(form):
 
   entry.save()
 
-  print xhtml.div(entry.ashtml("image"), {"class" : "splash-image"})
+  #print xhtml.div(entry.ashtml("image"), {"class" : "splash-image"})
+  print entry.ashtml("image")
 
-  print xhtml.div("You can " + xhtml.hyperlink("submit another image", {"href" : "/contest/contest.cgi"})
+  print xhtml.para("You can " + xhtml.hyperlink("submit another image", {"href" : "/contest/contest.cgi"})
                   + " or "  + xhtml.hyperlink("view the gallery.", {"href" : "/contest/gallery.cgi?display=gallery"}))
 
   wgo_contest.folio_fini()

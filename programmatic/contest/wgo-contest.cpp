@@ -102,6 +102,7 @@
 table.gallery {
   background: transparent none;
   color: black;
+		border-width: 0px;
 }
 
 table.gallery td {

@@ -46,10 +46,10 @@
 ["href", "mail:People-Budig_Simon",            { "href": "mailto:Simon.Budig@unix-ag.org"}]
 ["href", "home:People-Budig_Simon",            { "href": "http://www.home.unix-ag.org/simon/"}]
 
-["href", "mail:People-Collin_Branko",         { "href": "mailto:collin@xs4all.nl"}]
-
 ["href", "mail:People-Burgess_Seth",           { "href": "mailto:sjburges@gimp.org"}]
 ["href", "home:People-Burgess_Seth",           { "href": "http://www.gimp.org/~sjburges/"}]
+
+["href", "mail:People-Collin_Branko",         { "href": "mailto:collin@xs4all.nl"}]
 
 ["href", "mail:People-Grobgeld_Dov",           { "href": "mailto:dov@imagic.weizmann.ac.il"}]
 ["href", "home:People-Grobgeld_Dov",           { "href": "http://imagic.weizmann.ac.il/~dov/"}]
@@ -139,9 +139,34 @@
 ["href", "wgo:dev",                            { "href": "http://developer.gimp.org"}]
 ["href", "wgo:dev-howtos-bugzilla",            { "href": "/unix/howtos/bugzilla.html"}]
 ["href", "wgo:docs-gimp_help",                 { "href": "/docs/gimp-help/"}]
-["href", "wgo:gimp-os2",                       { "href": "/os2/"}]
-["href", "wgo:gimp-unix",                      { "href": "/unix/"}]
-["href", "wgo:gimp-windows",                   { "href": "/windows/"}]
+
+["href", "wgo:about",                          { "href": "/about/index.html"}]
+["href", "wgo:about-ancient_history",          { "href": "/about/ancient.html"}]
+["href", "wgo:about-authors",                  { "href": "/about/authors.html"}]
+["href", "wgo:about-history",                  { "href": "/about/history.html"}]
+["href", "wgo:about-maintainers",              { "href": "/about/maintainers.html"}]
+["href", "wgo:about-maintainers-plugins",      { "href": "/about/maintainers-plugins.html"}]
+["href", "wgo:about-mediakit",                 { "href": "/about/mediakit.html"}]
+["href", "wgo:about-screenshots",              { "href": "/about/screenshots.html"}]
+["href", "wgo:about-splash-stable",            { "href": "/about/splash-stable.html"}]
+["href", "wgo:about-splash-1-1",               { "href": "/about/splash-1.1.html"}]
+["href", "wgo:about-splash-1-3",               { "href": "/about/splash-1.3.html"}]
+["href", "wgo:about-splash-cvs",               { "href": "/about/splash-cvs.html"}]
+["href", "wgo:about-changelogs-gimp-1.2",      { "href": "/about/ChangeLogs/1.2.3/ChangeLog.1.html"}]
+["href", "wgo:about-changelogs-gimp-pre-1.0",  { "href": "/about/ChangeLogs/ChangeLog.pre-1-0"}]
+["href", "wgo:about-changelogs-gimp-pre-1.2",  { "href": "/about/ChangeLogs/ChangeLog.pre-1-2"}]
+
+["href", "wgo:os2",                                    { "href": "/os2/"}]
+["href", "wgo:os2-howtos_xfree86_install_fonts",       { "href": "/os2/howtos/install_font_xfree86.html"}]
+["href", "wgo:os2-howtos-gimp_xfree86_install",        { "href": "/os2/howtos/install_gimp_xfree86.html"}]
+["href", "wgo:os2-howtos-tile_cache",                  { "href": "/os2/howtos/tile_cache.html"}]
+["href", "wgo:os2-howtos-services",                    { "href": "/os2/howtos/services.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files",           { "href": "/os2/howtos/XF86Config3_Files.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_original",  { "href": "/os2/howtos/XF86Config3_Files_original.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_truetype",  { "href": "/os2/howtos/XF86Config3_Files_truetype.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_type1",     { "href": "/os2/howtos/XF86Config3_Files_type1.html"}]
+
+["href", "wgo:unix",                           { "href": "/unix/"}]
 ["href", "wgo:unix-gimprc",                    { "href": "/unix/gimprc"}]
 ["href", "wgo:unix-gtkprc",                    { "href": "/unix/gtkrc"}]
 ["href", "wgo:unix-guide_stable_tile_cache",   { "href": "/unix/tile-cache.html"}]
@@ -157,14 +182,7 @@
 ["href", "wgo:unix-manpage-stable_gtk_config", { "href": "/unix/man-gtk-config.html"}]
 ["href", "wgo:unix-user_install",              { "href": "/unix/user_install.html"}]
 
-["href", "wgo:os2-howtos_xfree86_install_fonts",       { "href": "/os2/howtos/install_font_xfree86.html"}]
-["href", "wgo:os2-howtos-gimp_xfree86_install",        { "href": "/os2/howtos/install_gimp_xfree86.html"}]
-["href", "wgo:os2-howtos-tile_cache",                  { "href": "/os2/howtos/tile_cache.html"}]
-["href", "wgo:os2-howtos-services",                    { "href": "/os2/howtos/services.html"}]
-["href", "wgo:os2-howtos-XF86Config3_Files",           { "href": "/os2/howtos/XF86Config3_Files.html"}]
-["href", "wgo:os2-howtos-XF86Config3_Files_original",  { "href": "/os2/howtos/XF86Config3_Files_original.html"}]
-["href", "wgo:os2-howtos-XF86Config3_Files_truetype",  { "href": "/os2/howtos/XF86Config3_Files_truetype.html"}]
-["href", "wgo:os2-howtos-XF86Config3_Files_type1",     { "href": "/os2/howtos/XF86Config3_Files_type1.html"}]
+["href", "wgo:windows",                   { "href": "/windows/"}]
 
 ["href", "plugin-home:pygimp-stable",                      { "href": "http://www.daa.com.au/~james/software/pygimp/"}]
 ["href", "plugin-author:pygimp-Henstridge_James",          { "href": "mailto:james@daa.com.au"}]
@@ -235,3 +253,11 @@
 ["href", "info:OS2_GIMP_PM",        { "href": "http://everblue.netlabs.org/"}]
 ["href", "info:OS2_GIMP_de",        { "href": "http://www.teamos2.ipcon.de/gimp.phtml"}]
 ["href", "info:OS2_GIMP_en",        { "href": "http://www.teamos2.ipcon.de/en-gimp.phtml"}]
+
+["href", "online:cooltext",        { "href": "http://www.cooltext.com"}]
+["href", "online:flamingtext",     { "href": "http://www.flamingtext.com"}]
+
+["href", "document:news-original",     { "href": "http://groups.google.com/groups?selm=petm-2907952329370001%40charnley.hip.berkeley.edu&amp;output=gplain"}]
+["href", "document:news-follow_up",    { "href": "http://groups.google.com/groups?selm=3ua2hd%24bbv%40agate.berkeley.edu&amp;output=gplain"}]
+["href", "document:news-announce-0",   { "href": "http://groups.google.com/groups?selm=48s543%24r7b%40agate.berkeley.edu&oe=UTF-8&output=gplain"}]
+["href", "document:news-announce-0.54",{ "href": "http://groups.google.com/groups?selm=cola-liw-824385260-28937-1%40oravannahka.helsinki.fi&output=gplain"}]

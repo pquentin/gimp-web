@@ -1,3 +1,14 @@
+2003-04-14  Carol Spears  <carol@gimp.org>
+
+    * admin/gimp-web-urls, edited, added and such.
+    * about/index.html, removed this file
+    * about/index.htrw, added this file
+    * about/ancient_history.htrw stole this from sjburgesilicious and added it.
+    * about/ChangeLogs/ChangeLog.pre-1-0, added this
+    * about/ChangeLogs/ChangeLog.pre-1-2, added this
+    * about/screenshots.html, removed this file
+    * about/screenshots.htrw, added this file
+
 2003-04-13  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Modified rewrite_attr.py to print a warning message on finding

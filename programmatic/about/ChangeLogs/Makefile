@@ -28,13 +28,12 @@ clean mrproper:
 install: install-first
 
 install-first: all
-	#install --mode=755 -d                  `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
 	install --mode=755 ChangeLog-xhtml.cgi `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=755 gimp-unstable       `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=755 gegl-unstable       `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=755 gimp-help           `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=755 gimp-print          `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=755 film-gimp           `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
-	install --mode=755 changelog-cron      `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
+	install --mode=755 gimp-unstable   \
+	                   gegl-unstable   \
+	                   gimp-help       \
+	                   gimp-print      \
+	                   film-gimp       \
+	                   changelog-cron             `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
 	install --mode=644 changelog-xhtml.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
 	install --mode=644 changelog-xhtml-mono.css `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs

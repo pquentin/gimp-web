@@ -24,5 +24,9 @@ Text:
         path stand out from the rest of the text.
 
         Example: <span class="filter">&lt;Image&gt;/Filters/Blur/Blur</span>
+
+  * When adding code examples use the "code" class.
+
+        Example: <div class="code">Code example goes here</div>
 	
   * Use the font in gtk: -adobe-helvetica-medium-r-normal-*-12-*-*-*-p-*-iso8859-1 

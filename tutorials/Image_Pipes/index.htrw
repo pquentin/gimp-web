@@ -9,36 +9,36 @@
 
 <h2>Intention</h2>
 <p>
-  Gimp 1.1 and the soon to come 1.2 introduce alot of new features, including the ability to use full color "pixmap brushes". 
+  Gimp 1.2 introduced a lot of new features that have been further improved in version 2.0, including the ability to use full color "pixmap brushes". 
   In addition, you can also combine single frame pixmap brushes into a "image pipe". A Gimp Image Pipe allows you to spray out 
-  series of full color pixmaps. To make it more flexible, the order the images are painted onto the campus can depend on direction, angle, speed, or other factors.
+  series of full color pixmaps. To make it more flexible, the order the images are painted onto the canvas can depend on direction, angle, speed, or other factors.
 </p>
 <p>
   This effect can be used in many ways, from a simple way to paint repeated images, or as sophisticated texture generation.
-  The flexibilty in the way images are sequenced and composited to the canvas on the image can make creating a imae pipe to do what you want 
+  The flexibilty in the way images are sequenced and composited to the canvas on the image can make creating a image pipe to do what you want 
   seem difficult. However, for almost all common image pipes it is easy to set them up.
 </p>
 
 <h2>Example 1</h2>
 <p class="images">
-  <img src="example1_ss.gif" alt=""/>
+  <img src="example1_ss.png" alt=""/>
 </p>
 <p>
   Taking a set of images and making a image pipe out of them is a common configuration.
   The easiest way to do this is to create each indivual image as a separate layer in an image, much like you would if you were going to save 
   an animated image. And in fact this is often a convient way to think of image pipe creation. As designing an animation of which snapshots 
   are going to be composited to the canvas.
-  Lets start with a simple example image, an 8 layer image. In this case, with the numbers 1-8 on each layer. This will help to make it more 
+  Let's start with a simple example image, an 8 layer image. In this case, with the numbers 1-8 on each layer. This will help to make it more 
   obvious what the various "ranks" do. 
 </p>
 <p>
-  There isnt currently a loader for gih (the gimp image pipe, so I include the source xcf images here.
+  Gimp versions older than 2.0 could not reload gih files (the gimp image pipe), so I include the source xcf images here.
   The <a href="example1.xcf.gz">example image</a>.
 </p>
 <p>
   To start creating a image pipe, you will need to save the file in the ".gih" extension. 
   To use the brush immediately, 
-  you probabaly want to save it in the brushes/ subdir of your gimp directory (probabaly ~/.gimp-1.1).
+  you probabaly want to save it in the brushes/ subdir of your gimp directory (probabaly ~/.gimp-2.0).
   To save the image you will be presented with a save dialog for the GIH plugin. (Image above)
 </p>
 <p class="images">
@@ -48,7 +48,7 @@
   For a simple image like this, the only values you usually need to change are "Spacing", 
   The "Number of Cells", the number of "Ranks", and the "selection" for each rank. 
   <b>Spacing</b> is pretty much the same as for regular brushes. 
-  It indicate what percentage of a brush width or height that the cursor moves between 
+  It indicates what percentage of a brush width or height that the cursor moves between 
   each time the shape is pasted. 
 </p>
 <p>
@@ -57,7 +57,7 @@
   Since it is possible to have multi-dimensional pipes, there needs to be a way to set more than one rank.
 </p>
 <p>
-  For this example, we are going to choose to select from the rank using method "incremental". This essential means that the images will be selected 
+  For this example, we are going to choose to select from the rank using method "incremental". This essentially means that the images will be selected 
   in the order they are in the layer stack.
   <br /><br />
   Other options include:
@@ -82,9 +82,6 @@
 </p>
 
 <h2>Example 2</h2>
-<p class="images">
-  <img src="example2_ss.gif" alt=""/>
-</p>
 <p>
   Tater Tots!
 </p>
@@ -94,30 +91,35 @@
   Any areas that are transparent in the image will be transparent in the brush as well.
 </p>
 <p>
-  To add a bit more of a "3D" effect, a slight drop shadow was adding to each layer in the image. 
+  To add a bit more of a "3D" effect, a slight drop shadow was added to each layer in the image. 
   Save this image as gih with the parameters as indicated in the following screenshot.
 </p>
 <p class="images">
-  <img src="tater_tot.jpg" alt=""/>
+  <img src="example2_ss.png" alt=""/>
 </p>
 <p>
   An example of the use of this image:
 </p>
+<p class="images">
+  <img src="tater_tot.jpg" alt=""/>
+</p>
 
 <h2>Example 3</h2>
-<p class="images">
-  <img src="example3_ss.gif" alt=""/>
-</p>
 <p>
   An example of a two dimensional pipe
-  A interesting use for image pipe would be to simulate a natural media situration. 
-  For example, maybe a brush that has ten different versions based that correlate to tablet pressure. 
+</p>
+<p>
+  A interesting use for image pipes would be to simulate a natural media saturation. 
+  For example, maybe a brush that has ten different versions that correlate to tablet pressure. 
 </p>
 <p>
   For this example, I'll use a somewhat contrived example for simplicity sake. 
-  It will use the "angular" paramater in for per layer dimension, and a "random" paramter to select which 
+  It will use the "angular" parameter in for per layer dimension, and a "random" parameter to select which 
   of the multiple images to use. I use this in a couple of brushes to "humanize" the output. 
   Instead of having the same image stamped out over and over, it varies a little randomly.
+</p>
+<p class="images">
+  <img src="example3_ss.png" alt=""/>
 </p>
 <p>
   The example <a href="example_arrows.xcf.gz">source image</a> is a 8 layer image, 
@@ -129,13 +131,10 @@
   You will want to save the image with the values show here:
 </p>
 <p class="images">
-  <img src="example3_ss2.gif" alt=""/>
+  <img src="example3_ss2.png" alt=""/>
 </p>
 
 <h2>Example 4</h2>
-<p class="images">
-  <img src="example4_ss.gif" alt=""/>
-</p>
 <p>
   Using a image pipe as a way to generate textures.
 </p>
@@ -147,6 +146,9 @@
   A lot of the same techniques that are used there can be used Image Pipes as well. 
   The main advantage to using image pipes is that the brush as well as the 
   color can change as you paint, which adds an extra dimension to the textures.
+</p>
+<p class="images">
+  <img src="example4_ss.png" alt=""/>
 </p>
 <p>
   For this example, it is just another one brush per layer situation. 
@@ -161,11 +163,13 @@
 </p>
 
 <h2>Example 5</h2>
-<p class="images">
-  <img src="example_ss5.gif" alt=""/>
-</p>
 <p>
   Converting a PSP image tube to a gimp Image Pipe 
+</p>
+<p class="images">
+  <img src="example5_ss.png" alt=""/>
+</p>
+<p>
   There are lots of "Image Tubes" created with and for Paint Shop Pro available on the internet. 
   Gimp can load these files and save them as gimp image pipes.
 </p>
@@ -176,19 +180,22 @@
   Then you can turn around and save these files as a .gih file.
 </p>
 <p>
-  Were going to start with a .tub file available from Hood's PSP Tubes 
+  We are going to start with a .tub file available from Hood's PSP Tubes,
+  in this case the Fireball example.
+  Hood's site is not available anymore but you may be able to find
+  "HFireball.zip" or "H Fireball.tub" on several sites distributing
+  PSP Tubes.
 </p>
 <p>
-  I'll use the Fireball example on that page for this example. 
   The file needs to be loaded as a regular image, then saved as a gih image. 
   Sometimes you may need to make some best guesses as to the save parameters. 
-  An example of what the image window will look like after initially loading the .tub file.
-</p>
-<p class="images">
-  <img src="example_5_2.gif" alt=""/>
+  An example of what the image window will look like after initially loading the .tub file is shown above.
 </p>
 <p>
-  Saving this file as a .gih file, and using the paramaters as shown above.
+  Saving this file as a .gih file, and using the paramaters as shown in:
+</p>
+<p class="images">
+  <img src="example5_ss2.png" alt=""/>
 </p>
 
 <p>

@@ -155,7 +155,7 @@
 ["href", "home:gimp-bugzilla_components",      { "href": "http://bugzilla.gnome.org/describecomponents.cgi?product=GIMP"}]
 ["href", "home:gimp-bugzilla_stable_current",  { "href": "http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;version=1.1.x&amp;version=1.2&amp;version=1.2.1&amp;version=1.2.2&amp;version=1.2.2-pre1&amp;version=1.2.2-pre2&amp;version=1.2.2-pre3&amp;version=1.2.3-pre1&amp;version=unspecified&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;form_name=query"}]
 ["href", "home:gimp-bugzilla-wgo-submit",      { "href": "http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-web&amp;component=www.gimp.org&amp;op_sys=All"}]
-["href", "home:gimp-bugzilla-wgo-ftp-submit",  { "href": "http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-web&amp;component=ftp-mirrors&amp;op_sys=All"}]
+["href", "home:gimp-bugzilla-wgo-ftp-submit",  { "href": "http://bugzilla.gnome.org/enter_bug.cgi?product=gimp-web&amp;component=ftp+mirrors&amp;op_sys=All"}]
 ["href", "home:gimp-ftp",                      { "href": "ftp://ftp.gimp.org/"}]
 ["href", "home:gnu",                           { "href": "http://www.gnu.org/"}]
 ["href", "home:google",                        { "href": "http://www.google.org/"}]

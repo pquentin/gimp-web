@@ -1,3 +1,17 @@
+2004-03-25  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/Image_Pipes/example*.png; Updated 7 screenshots for
+	2.0.
+
+	* tutorials/Image_Pipes/example*.gif: Removed.
+	
+	* tutorials/Image_Pipes/index.htrw: Updated for 2.0, replaced
+	links to *.gif by *.png, fixed a few typos.  Mention that Hood's
+	site for PSP Tubes is closed.
+
+	* admin/gimp-web-urls: Fixed typo ('+' instead of '-') in the link
+	for reporting bugs about ftp mirrors.
+
 2004-03-24  Sven Neumann  <sven@gimp.org>
 
 	* unix/index.htrw: added GNU/Linux to the RPM link.

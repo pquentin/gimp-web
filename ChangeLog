@@ -1,9 +1,16 @@
 2004-03-14  Raphaël Quinet  <quinet@gamers.org>
 
+	* tutorials/Changing_Background_Color_2/index.htrw: Adapted the
+	text to GIMP 2.0, which uses Select By Color differently.
+
+	* tutorials/Changing_Background_Color_2/img*.png: Use the new
+	screenshots contributed by Harish Narayanan <harish@gamebox.net>
+	after conversion to indexed mode and other minor fixes.
+
 	* tutorials/Borders_On_Selections/index.htrw: Adapted the text to
 	GIMP 2.0, including new stroke options dialog.
 
-	* tutorials/Borders_On_Selections/img*: New screenshots of 2.0.
+	* tutorials/Borders_On_Selections/img*.png: New screenshots of 2.0.
 
 2004-03-13  Niklas M <scizzo@gimp.org>
 

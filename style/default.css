@@ -1,5 +1,5 @@
 /* Default style sheet for www.gimp.org -- be careful if you edit it. */
-/* $Id$ */
+/* $Id: default.css,v 1.52 2003/08/25 16:48:16 raphael Exp $ */
 
 body {
   background: white;
@@ -124,6 +124,26 @@ p.images img {
 }
 
 p.images {
+  text-align: center;
+}
+
+/* Imageslices: work-around to keep the renderer from reserving 
+space for the descenders of images by making the images blocks 
+instead of inline elements. See 
+http://devedge.netscape.com/viewsource/2002/img-table/ for a 
+description of the problem. Other than that, 'imageslices' should 
+act like 'images'. */
+
+p.imageslices img {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.images, p.imageslices {
   text-align: center;
 }
 

@@ -8,6 +8,12 @@
 
 	* team.html: added martijn (yay!)
 
+	* docs/python/*.html: added the directory and the documentation from the
+    pygimp module
+
+	* links.html, includes/linkbar.inc: removed links.html and reflected the
+    change in linkbar.inc
+
 2002-11-20 carol <carol@gimp.org>
 
 	* links.html: moved some of the clusters around, added a few others

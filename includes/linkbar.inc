@@ -3,7 +3,7 @@
     </table>
 
     <div id="linkbar">
-      <a href="/links.html">GIMP Links</a> |
+      <a href="/links/index.html">GIMP Links</a> |
       <a href="http://gug.sunsite.dk">GIMP User Group</a> | 
       <a href="http://gimp-savvy.com/BOOK/index.html">Grokking the GIMP</a> |
       <a href="/maillists.html">Mailing Lists</a> |

@@ -1,0 +1,189 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Sepia Toning</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Sepia Toning</div>
+
+<div class="subtitle">Intention</div>
+<p class="images">
+  <img src="before.jpg" alt=""/>
+  <img src="after.jpg" alt=""/>
+</p>
+<p>
+  In this tutorial I'll show you how to sepia tone a color or black and white image. This technique is modeled on the traditional darkroom method of 
+  sepia toning in that the sepia color is applied "unevenly" to areas of different tonality. It works much better than most of the simple methods 
+  I've seen for image editors and provides great control!
+  <br />
+  The basic technique is to create a "Sepia Mask" that will apply a sepia color layer according to a layer mask that is based on the tonality of the image.
+  <br />
+  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from 
+  <a href="http://www.retouchpro.com/tutorials/lum-mask-sepia.html">a Photoshop tutorial on the RetouchPRO web site</a>.
+</p>
+
+<div class="subtitle">The Procedure</div>
+<p class="images">
+  <img src="original.jpg" alt=""/>
+</p>
+<p>
+  Here is the original image, loaded into the GIMP. It has a bit of an old-time look, so I thought it might work well as a sepia-toned image.
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="decor.jpg" alt=""/>
+  <img src="image-wdecorfu.jpg" alt=""/>
+</p>
+<p>
+  You can compare the result we will get below to the GIMP's built-in script-fu for sepia toning (<span class="filter">Script-Fu/Decor/Old Photo</span>) as shown at right.
+  <br />
+  Come back and compare to this when you get to the end of the tutorial.
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="image2.jpg" alt=""/>
+</p>
+<p>
+  Duplicate the original image (<span class="filter">Image/Duplicate</span> or Ctrl+D). You may want to minimize the original now (or close it) so you don't choose it by mistake.
+  <br /><br />
+  Using whatever technique you like best, convert the duplicate to B&amp;W. I recommend the channel mixer for best results, but you can also convert to grayscale 
+  (<span class="filter">Image/Mode/Grayscale</span>) or desaturate (<span class="filter">Image/Colors/Desaturate</span>).
+  <br /><br />
+  Whatever technique you use, convert the B&amp;W image back into RGB mode when you're done (<span class="filter">Image/Mode/RGB</span>).
+  <br />
+  In this case I simply did a mode change to grayscale, then back to RGB mode.
+</p>
+
+<div class="subtitle">Step 3</div>
+<p class="images">
+  <img src="colorselection.jpg" alt=""/>
+  <img src="toolbox2.jpg" alt=""/>
+</p>
+<p>
+  Double-click on the foreground color swatch to bring up the Color Selection dialog. Dial in the color RED=162, GREEN=138 and BLUE=101 
+  (you can experiment with this color too; this is a good starting point though.)
+</p>
+
+<div class="subtitle">Step 4</div>
+<p class="images">
+  <img src="layers1.jpg" alt=""/>
+  <img src="newlayeroptions.jpg" alt=""/>
+  <img src="layers2.jpg" alt=""/>
+</p>
+<p>
+  Bring up the Layers dialog (Ctrl+L) and click on the button for a new layer. Give it the name "Sepia Mask" and choose the option to fill it with the foreground color. Click OK.
+  <br />
+  You should see nothing but the color now in the image window, since it obscures the image in the layer below. We are going to selectively apply this color to the image.
+</p>
+
+<div class="subtitle">Step 5</div>
+<p class="images">
+  <img src="addmaskoptions.jpg" alt=""/>
+  <img src="layers3.jpg" alt=""/>
+</p>
+<p>
+  Right-click on the Sepia Mask layer and select Add Layer Mask. In the Add Mask Options dialog, choose White (Full Opacity).
+</p>
+
+<div class="subtitle">Step 6</div>
+<p class="images">
+  <img src="layers4.jpg" alt=""/>
+  <img src="image3.jpg" alt=""/>
+</p>
+<p>
+  In the Layers dialog, click on (select) the Background layer. Go up to the image window, select all and copy (Ctrl+A then Ctrl+C). In the Layers dialog, 
+  click on the layer mask icon in the Sepia Mask layer (the little white square). Then go back up to the image window and paste (Ctrl+V)
+</p>
+
+<div class="subtitle">Step 7</div>
+<p class="images">
+  <img src="layers5.jpg" alt=""/>
+  <img src="image4.jpg" alt=""/>
+</p>
+<p>
+  In the Layers dialog, click the Anchor button to anchor the pasted image into the layer mask.
+  <br />
+  In the image window, invert the color (<span class="filter">Image/Colors/Invert</span>). This layer mask insures that the shadow parts of the image receive most of the color, 
+  the mid-tones a little less, and the highlights little to none, much the way a print sepia-toned the traditional way would be.
+</p>
+
+<div class="subtitle">Step 8</div>
+<p class="images">
+  <img src="layers6.jpg" alt=""/>
+  <img src="image5.jpg" alt=""/>
+</p>
+<p>
+  In the Layers dialog, change the Mode (blending mode) of the layer to "Color". This applies the color from the Sepia Mask layer according to the layer mask to the image.
+  <br />
+  You now have your base result. It might be a good idea to save this under a new name at this point.
+</p>
+
+<div class="subtitle">Step 9</div>
+<p class="images">
+  <img src="curves.jpg" alt=""/>
+  <img src="image-curves.jpg" alt=""/>
+</p>
+<p>
+  Once you've got the base image, you can duplicate it (Ctrl+D), flatten the duplicate (<span class="filter">Layers/Flatten Image</span>) and then experiment with:
+</p>
+<ul>
+  <li>Hue and Saturation (<span class="filter">Image/Colors/Hue..Saturation</span>)</li>
+  <li>Color Balance (<span class="filter">Image/Colors/Color Balance</span>)</li>
+  <li>Levels or Curves (<span class="filter">Image/Colors/Levels|Curves</span>)</li>
+  <li>etc. etc!</li>
+</ul>
+<p>
+  You can always compare the result to the base image. If you want to start over, just duplicate the base image again and off you go.
+  <br /><br />
+  <b>Hint:</b> if the GIMP had adjustment layers, like Photoshop, we'd just create one of those to experiment with further adjustments. 
+  Since the GIMP does not have those, we have to flatten the image to apply some of the standard controls and filters. Ergo, 
+  work on a duplicate or save the base image..
+  <br /><br />
+  Here I decided that the image was a little flat and so I punched up the contrast using curves.
+</p>
+
+<div class="subtitle">Step 10</div>
+<p class="images">
+  <img src="decor2.jpg" alt=""/>
+  <img src="final.jpg" alt=""/>
+</p>
+<p>
+  As a final touch, I ran the "Old Photo" Script-Fu without the "sepia" and "mottle" options. Here is the final image.
+</p>
+
+<div class="subtitle">Tips and Tweaks</div>
+<ul>
+  <li>You can reduce the effect of the sepia toning by adjusting the opacity of the Sepia Mask layer.</li>
+  <li>Try adding some grain or noise to the image (probably before you desaturate).</li>
+  <li>We used a single, flat color for the sepia color. Experiment with different colors, multiple colors or a color gradient for the Sepia Mask layer.</li>
+  <li>You can apply levels, curves or other adjustments to the contrast mask to increase or decrease "absorbency" of the sepia color into different areas of the image.</li>
+  <li>The method by which you get a black and white image makes a big difference in how the sepia toning comes out.
+</ul>
+<p class="images">
+  <img src="grayscale-final-446x512.jpg" alt=""/>
+  <img src="desaturate-final-446x512.jpg" alt=""/>
+</p>
+<p>
+  The one on the left was from a grayscale conversion (<span class="filter">Image/Mode/Grayscale</span>); the one on the right started as a desaturate 
+  (<span class="filter">Image/Colors/Desaturate</span>). Notice that there is a lot more blue-channel noise in the right-hand one. 
+  This can add a nice "grain" effect (see tip above also) if that is what you are looking for. 
+  For this particular image, I prefer the smoother tonality and darker contrast of the left-hand image.
+</p>
+
+<p>
+  The original tutorial can be found <a href="http://cs.uhh.hawaii.edu/~jeschke/photography/articles/gimp/SepiaToning/">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:jeschke@mano.uhh.hawaii.edu">Eric Jeschke</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

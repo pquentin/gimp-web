@@ -64,7 +64,7 @@
 </p>
 <p>
   After you have a starting point, and have held down the Shift Key, you'll see a line like above if you're running 
-  Gimp version 1.1.x. This feature was not present in Gimp version 1.0.4. However, the next step works the same way.
+  Gimp version 1.2.x or later. This feature was not present in Gimp version 1.0.4. However, the next step works the same way.
   <br />
   Press the first button on the Mouse (the leftmost one usually) and then let it go. During that whole "click" of the 
   Mouse button, you need to keep the Shift Key held down.
@@ -76,9 +76,9 @@
 </p>
 <p>
   See how the line is drawn on top of the preview? This is a powerful feature of the Paint Brush. You can use it with 
-  any of the tools shown in step 4, or even draw more line at the end of this one.
+  any of the tools shown in step 4, or even draw more lines at the end of this one.
   <br />
-  Our last step is to let go of the shift key. And there you have it. Some more examples are shown below.
+  Our last step is to let go of the Shift key. And there you have it. Some more examples are shown below.
   Questions? Comments? Let me know.
   <br />
   Happy GIMPing!

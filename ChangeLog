@@ -1,3 +1,9 @@
+2004-03-14  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/Straight_Line/*.png: Updated the screenshots for 2.0.
+
+	* tutorials/Straight_Line/index.htrw: Minor updates (typos).
+
 2004-03-14  Niklas M <scizzo@gimp.org>
 
 	* windows/quickmask-selection-detail.png

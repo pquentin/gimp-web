@@ -1,5 +1,8 @@
 2002-10-18 scizzo <scizzo@gimp.org>
 
+        * tutorial/Using_Gap: Add the tutorial, first version
+        and it is to rude right now.
+
         * tutorials/index.html: Add the GAP tutorial to the
         list. My English is so good forgot an "a" in animation.
 

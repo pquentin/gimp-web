@@ -1,0 +1,108 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Draw A Paint Brush</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Draw A Paint Brush</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  So, we want to create a nice paintbrush image with the Gimp. This tutorial can be a bit complex and I think it is better for a bit more advanced gimper. 
+  If you want to learn the basics, a good way to do so is to get one of the many Gimp books written. If I must pick one to recommend, I think it would be Grokking The Gimp, 
+  it is pretty good. But I am sure many of the others are great too, check a few out at your bookstore! 
+</p>
+
+<div class="subtitle">Step 1</div>
+<p class="images">
+  <img src="1.png" alt=""/>
+</p>
+<p>
+  Anyway, we start off with a plain gray image. 
+</p>
+
+<div class="subtitle">Step 2</div>
+<p class="images">
+  <img src="2.png" alt=""/>
+</p>
+<p>
+  We first create a new transparent layer, and name it "tip" since we start drawing the brush from the brush tip. 
+</p>
+
+<div class="subtitle">Step 3</div>
+<p class="images">
+  <img src="3.png" alt=""/>
+</p>
+<p>
+  Use the Bezier (Paths) tool to make a brush-shaped selection, like on the above image. This could be tricky if you are not used to the tool, 
+  so it might be helpful to check out my Bezier tool tutorials if you have trouble. 
+</p>
+
+<div class="subtitle">Step 4</div>
+<p class="images">
+  <img src="4.png" alt=""/>
+</p>
+<p>
+  Just fill the selection with black color. 
+</p>
+
+<div class="subtitle">Step 5</div>
+<p class="images">
+  <img src="5.png" alt=""/>
+</p>
+<p>
+  Make another bezier selection, now inside the black brush tip. Since a wet brush tip is rather shiny, we want to add a hilight too make it look realistic. 
+  Try to think where the light comes from, and make the selection accordingly.
+</p>
+
+<div class="subtitle">Step 6</div>
+<p class="images">
+  <img src="6.png" alt=""/>
+</p>
+<p>
+  We are going to use the Blend tool (gradient fill) to make the hilight. You might want to make a new layer for the hilight so you can edit it later if you are not happy with the result.
+  <br /><br />
+  The important thing here is to set the blend mode to "FG to Transparent", we only want to add white, not the black. 
+</p>
+
+<div class="subtitle">Step 7</div>
+<p class="images">
+  <img src="7.png" alt=""/>
+</p>
+<p>
+  Make a blend from top to bottom, so that the white fades out towards the brush tip. 
+</p>
+
+<div class="subtitle">Step 8</div>
+<p class="images">
+  <img src="8.png" alt=""/>
+</p>
+<p>
+  Then make another bezier selection that will form the brush metal handle, this is a bit more tricky, try to think where the brush handle will point, 
+  and add small "roundings" to the ends. Then fill the selection with a rather mid gray gradient. It does not look very real yet, but we want to bring this to life next...
+</p>
+
+<div class="subtitle">Step 9</div>
+<p class="images">
+  <img src="9.png" alt=""/>
+</p>
+<p>
+  Keep the selection active still, and start adding black shadows with the airbrush tool so the shape gets some depth and looks more three-dimensional.
+  <br /><br />
+  This takes a bit of work, start first with large fuzzy brush, and work towards finer detail by using a smaller fuzzy brush. As far as I know, 
+  real airbrush artists use the same method to paint, they just use masking film and tape in place of the bezier selection. 
+  <br /><br />
+  Again, think how the light would reflect and how the shadows would be on a real object. And dont worry if it does not look right at first, it needs some practice and patience. 
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:user@host.org">Author Name</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

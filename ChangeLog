@@ -2,6 +2,9 @@
 
 	* tutorials/Golden_Text/: Add the first version of the Golden_Text tutorial.
 
+	* tutorials/Draw_A_Paint_Brush/: Did the first 9 steps in the
+	tutorial.
+
 2002-10-15 carol <carol@gimp.org>
 
     	* added the wgo screenshot font to the sample gtkrc

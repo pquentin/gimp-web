@@ -202,6 +202,303 @@ They can be added to an image using the 'gimp_image_add_layer' command</td></tr>
  </li>
 </ol>
 
+<div class="subtitle">4.2 A commented script</div>
+<p>
+  The following Gimp::Fu script example shows the steps described in the previous section. 
+  It registeres a script that takes two values, the size of the image and a color, and then produces an image of the requested size with the requested color. 
+  Quite useless, but is shows the importent steps of how to register a script, how to create a new image, and how to access some PDB functions.
+</p>
+<div class="code">
+  #!/usr/local/bin/perl -w
+  use Gimp ":auto";
+  use Gimp::Fu;
+  sub img_uni {
+      my ($size, $color) = @_;
+      # Create a new image
+      $img = gimp_image_new($size, $size, RGB);
+      # Create a new layer
+      $layer = gimp_layer_new($img, $size, $size, RGB,
+                        "Layer 1", 100, NORMAL_MODE);
+      # add the layer to the image
+      gimp_image_add_layer($img, $layer, -1);
+      # Set the background to the required color
+      gimp_palette_set_background($color);
+      # Paint the layer
+      gimp_edit_fill($layer, BG_IMAGE_FILL);
+      # Return the image
+      return $img;
+  }
+  register
+        "img_uni",                 # fill in name
+        "Create a uniform image",  # a small description
+        "A tutorial script",       # a help text
+        "Dov Grobgeld",            # Your name
+        "Dov Grobgeld (c)",        # Your copyright
+        "1999-05-14",              # Date
+        "&lt;Toolbox&gt;/Xtns/Perl-Fu/Tutorial/Img Uni",   # menu path
+        "*",
+        [ 
+         [PF_INT,   "size", "Img size", 100],
+         [PF_COLOR, "color", "Img color", [255,127,0]] 
+        ],
+        \&amp;img_uni;
+  exit main();
+</div>
+<p>
+  Most of these commands are directly copied out the PDB.
+  <br /><br />
+  This script shows the essential steps of producing a stand-alone script:
+</p>
+<table>
+  <tr><th>line(s)</th><th>Description</th>
+  <tr><td>10</td><td> Creating a new image.</td></tr>
+  <tr><td>13-14</td><td> Creating one or more layers.</td></tr>
+  <tr><td>17</td><td> Attaching the layer to the image. </td></tr>
+  <tr><td>19-23</td><td> Do some painting operations in the layers. </td></tr>
+  <tr><td>26</td><td> Return the image to the caller</td></tr>
+  <tr><td> 29-42</td><td> Registration of the extension</td></tr>
+</table>
+<p>
+  To test the script, save it in the directory <b>$HOME/.gimp-1.2/plug-ins</b>. It must then be made executable through the command:
+  <br /><br />
+  <b>chmod +x $HOME/.gimp-1.2/plug-ins/uni</b>
+  <br /><br />
+  Then start gimp. It is generally a good idea to test the syntax of the script with perl -c before starting gimp. 
+  (A more official way to add scripts is to use the gimptool --install-bin command).
+</p>
+<p>
+  <b>Note:</b> Due to a bug in gimp (verified for version 1.2) it is not possible to add scripts once gimp is running. 
+  On the other hand, it is possible to change a script which has already been registered, as long as the parameters don't change.
+</p>
+<p class="images">
+  <img src="uni-menu.png" alt=""/>
+</p>
+<p>
+  The script is now accessible through the menu system through the <b>Xtns</b> top menu.
+</p>
+<p class="images">
+  <img src="uni-entry.png" alt=""/>
+</p>
+<p>
+  When choosing this menu entry the following screen is popped up.
+</p>
+<p class="images">
+  <img src="uni-result.png" alt=""/>
+</p>
+<p>
+  Choosing the default values creates result like image above.
+</p>
+
+<div class="subtitle">5. Object oriented syntax</div>
+<p>
+  Gimp::Fu provides an alternative object-oriented syntax for the image and the drawable commands. 
+  Here is a table showing the procedural vs the object oriented syntax for a few commands:
+</p>
+<table>
+    <tr><th bgcolor=#E0E0E0>procedural syntax
+    <th bgcolor=#E0E0E0>object oriented syntax
+    <tr><td bgcolor=#FFE0E0>gimp_image_add_layer($drw,-1);
+    <td bgcolor=#FFE0E0>$img-&gt;add_layer($drw, -1);
+    <tr><td bgcolor=#FFE0E0>gimp_drawable_width($drw);
+    <td bgcolor=#FFE0E0>$drw-&gt;width();
+</table>
+<p>
+  The substitution rule for converting a PDB turning into a method is as simple as erasing ``gimp_image_'' from the beginning of the function call 
+  and calling this method through the image object. Similarly for the gimp_drawable_... functions.
+  <br /><br />
+  Note that the object oriented syntax is only syntactic sugar that makes the calling syntax cleaner in some cases. The error messages are still given in the procedural format.
+</p>
+
+<div class="subtitle">6. Painting areas with selections</div>
+<p>
+  In the uni script the function gimp_edit_fill was called to fill the whole image. Looking at the info for gimp_edit_fill in the DB browser we find the following:
+</p>
+
+<p>
+<table><tr><td bgcolor=#e0e0e0>
+<table>
+<tr><th valign=top align=right>Name:</th><td bgcolor=#e0e0ff colspan=3>gimp_edit_fill</td></tr>
+<tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Fill selected area of drawable</td></tr>
+<tr>
+<th valign=top align=right valign=top>In:</th><td valign=top>DRAWABLE</td><td valign=top>drawable</td><td valign=top>The drawable to fill from</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>INT32</td><td valign=top>fill_type</td>
+<td valign=top>The type of fill: FG_IMAGE_FILL (0), BG_IMAGE_FILL (1), WHITE_IMAGE_FILL (2), TRANS_IMAGE_FILL (3), NO_IMAGE_FILL (4)</td>
+</tr>
+<tr><th valign=top valign=top>Help:</th><td colspan=3>This procedure fills the specified drawable with the fill mode. If the fill mode is foreground, 
+the current foreground color is used. If the fill mode is background, the current background color is used. Other fill modes should not be used. 
+This procedure only affects regions within a selection if there is a selection active.</td></tr></table>
+</table>
+</p>
+
+<p>
+  Thus, if a selection is active when gimp_edit_fill is called only the selection is painted. 
+  There are lots of ways of choosing a selection as can be seen when searching for a ``select'' in the PDB. 
+  The example below uses gimp_rect_select, whose entry in the PDB looks as follows:
+</p>
+
+<p>
+<table>
+<tr><td bgcolor=#e0e0e0>
+<table>
+<tr><th valign=top align=right>Name:</th><td bgcolor=#e0e0ff colspan=3>gimp_rect_select</td></tr>
+
+<tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Create a rectangular selection over the specified image</td></tr>
+<tr>
+<th valign=top align=right valign=top>In:</th><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The image</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>FLOAT</td><td valign=top>x</td><td valign=top>x coordinate of upper-left corner of rectangle</td>
+</tr>
+<tr>
+
+<th valign=top></th><td valign=top>FLOAT</td><td valign=top>y</td><td valign=top>y coordinate of upper-left corner of rectangle</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>FLOAT</td><td valign=top>width</td><td valign=top>the width of the rectangle: width > 0</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>FLOAT</td><td valign=top>height</td><td valign=top>the height of the rectangle: width > 0</td>
+</tr>
+
+<tr>
+<th valign=top></th><td valign=top>INT32</td><td valign=top>operation</td><td valign=top>the selection operation: {ADD (0), SUB(1), REPLACE (2), INTERSECT (3) }</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>INT32</td><td valign=top>feather</td><td valign=top>feather option for selections</td>
+</tr>
+<tr>
+<th valign=top></th><td valign=top>FLOAT</td><td valign=top>feather_radius</td><td valign=top>radius for feather operation</td>
+</tr>
+
+<tr><th valign=top valign=top>Help:</th><td colspan=3>This tool creates a rectangular selection over the specified image. 
+The rectangular region can be either added to, subtracted from, or replace the contents of the previous selection mask. 
+If the feather option is enabled, the resulting selection is blurred before combining. The blur is a gaussian blur with the specified feather radius.
+</td></tr></table>
+</table>
+</p>
+
+<p>
+  A simple use of this function which selects a rectangle in the middle of an image and paints that rectangle with a user defined color. 
+  This example also introduces a couple of new features we haven't seen before:
+</p>
+<ul>
+  <li>The script is associated with an image since its menu path starts with "&lt;Image&gt;/...". 
+  Note that as a result of this the callback sub in line 13 receives two additional parameters, the active image and the seleced drawable.</li>
+  <li>The use of a subroutine without a name as a parameter to register</li>
+  <li>The use of the PDB functions gimp_undo_push_group_start  and gimp_undo_push_group_end. These functions declare an undo group. 
+  When an undo is done on the image, instead of having the individual operators undo, all the actions between the undo start and the 
+  undo group calls will be undone at once.</li>
+  <li>The return type of the register function defines what new images should be displayed by gimp. 
+  In this case we don't want to display any new images and therefore return an empty array.</li>
+</ul>
+
+<div class="code">
+#!/usr/local/bin/perl -w
+use Gimp ":auto";
+use Gimp::Fu;
+register
+    "img_paint_select",
+    "Paints the selection", "Paints the selection",
+    "Dov Grobgeld", "Dov Grobgeld", "1999-05-14",
+    "&lt;Image&gt;/Perl-Fu/Tutorial/Paint Select",
+    "*",
+    [
+     [PF_COLOR, "color", "Rectangle color", [0,0,255]] ],
+    sub {
+        my($img, $layer, $color) = @_;
+        my($width, $height) = (gimp_image_width($img),
+                               gimp_image_height($img));
+        # Select a rectangle inside the image and paint it with color
+        gimp_undo_push_group_start($img);
+        gimp_rect_select($img,
+                         $width/4, $height/4, $width/2, $height/2,
+                         REPLACE, 0,0);
+        gimp_palette_set_background($color);
+        gimp_edit_fill($layer, BG_IMAGE_FILL);
+        gimp_selection_none($img);
+        gimp_displays_flush();
+        gimp_undo_push_group_end($img);
+   # Tell gimp not to display a new image
+   return ();
+     };
+exit main();
+</div>
+<p class="images">
+  <img src="paint-select.png" alt=""/>
+</p>
+<p>
+  The result when run on our previous image.
+</p>
+
+<div class="subtitle">6.1 Complex selections</div>
+<p>
+  Besides rectangular selections elliptical selections may also be created through the PDB functions 
+  gimp_ellipse_select() and gimp_free_select() which allows the selection of ellipses and polygons.
+  <br /><br />
+  More complex selections may be created through the channel mechanism. The PDB gimp_channel_new() creates a new channel. 
+  The channel is a drawable that may be painted into, just like any other drawable, but with the difference that it is always a grey level image. 
+  Once the channel is finished, the channel may be loaded into the selection through the PDB function gimp_selection_load().
+  <br /><br />
+  Search for ``select'' in the DB Browser to see a list of all the selection related functions.
+</p>
+
+<div class="subtitle">6.2 Loops</div>
+<p>
+  In perl it is trivial to write loops that together with the various selecton tools gives powerful creative possibilities. 
+  Here is an example that mixes colors in circles. There is nothing really new here, but it shows the power of the what we have described above.
+</p>
+<div class="code">
+#!/usr/local/bin/perl
+use Gimp ":auto";
+use Gimp::Fu;
+sub circles {
+    my ($size, $bgcolor, $radius) = @_;
+    # Create the background
+    $img = gimp_image_new($size, $size, RGB);
+    $layer = gimp_layer_new($img, $size, $size, RGB,
+                            "Layer 1", 100, NORMAL_MODE);
+    gimp_image_add_layer($layer, -1);
+    gimp_palette_set_background($bgcolor);
+    gimp_edit_fill($layer, BG_IMAGE_FILL);
+    my $ncircles = int($size/$radius/2);
+    for ($i=0; $i&lt;$ncircles; $i++) {
+        for ($j=0; $j&lt;$ncircles; $j++) {
+            # Be creative and mix colors
+            $color = [$i*30, ($ncircles-$j)*25, ($i+$j)*15];
+            # Select a circle
+            gimp_ellipse_select($img,
+                                $i*$radius*2, $j*$radius*2,
+                                $radius*2, $radius*2,
+                                REPLACE, 1, 0, 0);
+            # Paint the color in the circle
+            gimp_palette_set_background($color);
+            gimp_edit_fill($layer, BG_IMAGE_FILL);
+            gimp_selection_none($img);
+        }
+    }
+    return $img;
+}
+# register the script
+register "circles", "a loop", "a loop", "Dov", "Dov", "1999-05-14",
+    "&lt;Toolbox&gt;/Xtns/Perl-Fu/Tutorial/Circles",
+    "*",
+    [
+     [PF_INT32, "size", "Img size", 100],
+     [PF_COLOR, "bg", "Background color", [40,180,60]],
+     [PF_INT32, "radius", "Circle radius", 10]
+    ],
+    \&amp;circles;
+exit main();
+</div>
+<p class="images">
+  <img src="circles.png" alt=""/>
+</p>
+<p>
+  The result.
+</p>
+
 </div>
 <!--#include virtual="/includes/tutnavbar.inc" -->
     <div>

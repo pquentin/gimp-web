@@ -1,3 +1,9 @@
+2004-12-18  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/splash-images/gimp-splash-1.6-t.png
+	* about/splash/splash-images/gimp-splash-1.6.png
+	* admin/gimp-web-urls: added gimp-2.2 splash image.
+
 2004-12-17  Sven Neumann  <sven@gimp.org>
 
 	* index.htrw: switched the frontpage back to the generated news.

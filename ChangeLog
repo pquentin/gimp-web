@@ -1,5 +1,11 @@
 2004-03-22  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/splash-images/gimp_splashpng.*-t.png
+	* about/splash/splash-images/splash-1.3.htrw
+	* admin/gimp-web-urls: added splash thumbnails, flattened PNGs.
+
+2004-03-22  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/index.htrw: commented out some stuff. Let's
 	concentrate on the important galleries first and don't show the
 	broken ones.

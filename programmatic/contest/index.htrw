@@ -1,50 +1,32 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - Splash Contest</title>
+<title>GNOME - Splash Contest</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>GIMP Splash Contest</h1>
-<table>
-<tr>
-  <th>GIMP 1.0</th>
-  <th>GIMP 1.2</th>
-  <th>GIMP 2.0</th>
-  <th>GIMP 2.2</th>
-</tr>
-<tr><td>
-  <a href="wgo:image-about-splash-stable-1.0"><img src="wgo:image-about-splash-stable-1.0" width="wgo:image-about-splash-stable-1.0" height="wgo:image-about-splash-stable-1.0" alt="wgo:image-about-splash-stable-1.0" /></a>
-  <p>artist: jtl</p>
-</td><td>
-  <a href="wgo:image-about-splash-stable-1.2"><img src="wgo:image-about-splash-stable-1.2" width="wgo:image-about-splash-stable-1.2" height="wgo:image-about-splash-stable-1.2" alt="wgo:image-about-splash-stable-1.2" /></a>
-  <p>artist: tigert</p>
-</td><td>
-  <a href="wgo:image-about-splash-stable-2.0"><img src="wgo:image-about-splash-stable-2.0" width="wgo:image-about-splash-stable-2.0" height="wgo:image-about-splash-stable-2.0" alt="wgo:image-about-splash-stable-2.0" /></a>
-  <p>artist: jimmac</p>
-</td><td>
-  <a href="wgo:image-about-splash-unknown"><img src="wgo:image-about-splash-unknown" width="wgo:image-about-splash-unknown" height="wgo:image-about-splash-unknown" alt="wgo:image-about-splash-unknown" /></a>
-  <p></p>
-</td></tr>
-</table>
+<h1>GNOME Splash Contest</h1>
 
   <p>
-    With the imminent release of the GIMP 2.2, the time has come
+    With the imminent release of the GNOME 2.2, the time has come
     to find the ideal splash screen to go with it. Now is your
     chance to join the ranks of the precious few who have had their 
-    artwork associated with a major release of the GIMP! 
-  </p>
-
-  <h3>Template</h3>
-  <p>
-    The submissions should (or rather could) be based on this template that Jimmac prepared for you:
-  </p>
-  <p class="images">
-    <a href="template.xcf.bz2"><img alt="#" src="template.jpg" width="300" height="290" border="0" /></a>
+    artwork associated with a major release of the GNOME! 
   </p>
 
   <h3>Submissions</h3>
   <p>
-    The contest is now closed. Thank you for all of your submissions, we 
-    will announce the winner as soon as possible.
+Contest rules are as follows:
+  </p>
+
+<ul>
+<li> The closing date for entries is March 3, 2005.
+<li> All entries must be released under Creative Commons "share and share alike" license.
+<li> No plagiarism - You must have permission if you create any derivative works.
+<li> Size should be 450x300 pixels.
+</ul>
+
+  <p>
+    Please use the <a href="/contest/contest.cgi">submission form</a> to submit
+    your entries.
   </p>
   <p>
     You can view the submissions in the <a href="/contest/gallery.cgi">contest 

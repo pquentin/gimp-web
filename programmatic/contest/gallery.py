@@ -72,7 +72,7 @@ def format(name):
 
 
 def display_gallery(form):
-  wgo_contest.folio_init("GIMP Splash Image Gallery")
+  wgo_contest.folio_init("GNOME Splash Image Gallery")
 
   names = get_gallery_names()
 
@@ -141,7 +141,7 @@ def display_gallery(form):
 
 
 def display_image(form):
-  wgo_contest.folio_init("GIMP Splash Image Contender")
+  wgo_contest.folio_init("GNOME Splash Image Contender")
 
   name = os.path.basename(form.getvalue("name", "")) # XXX
   entry = wgo_contest.gallery_image(name)
@@ -223,7 +223,7 @@ def display_slideshow(form):
   else:
     url = "gallery.cgi?display=slideshow&image=%s&refresh=%d" % (next_name, refresh)
     wgo.http_preamble(["Content-Type: text/html", "Refresh: %s;url=%s" % (refresh, url)])
-    wgo.header("page", "GIMP Splash Image Slideshow", [{"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "wgo-contest.css", "type" : "text/css"}])
+    wgo.header("page", "GNOME Splash Image Slideshow", [{"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "wgo-contest.css", "type" : "text/css"}])
 
     print xhtml.span({"style" : "font-size: small; margin-bottom: 5ex;"},
                      xhtml.hyperlink({"href" : "gallery.cgi?display=slideshow&image=%s&refresh=%s" % (next_name, 5)}, "[5s]") +  " " + 

@@ -4,7 +4,7 @@ include ../Makefile.defs
 
 CSSFLAGS=-I../
 
-all: usage contest
+all: usage contest index.html
 
 contest: wgo-contest.css contest_config.py contest.cgi gallery.cgi
 
@@ -12,6 +12,11 @@ wgo-contest.css: wgo-contest.cpp
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot> install"; exit 1; fi
+
+%.html: %.htrw
+	$(TOOLSDIR)/rewrite_attrs -d admin/gimp-web-urls -q $< > $@
+	chmod u+x $@ # XXX interim solution (Helvetix)
+	rm -f $<.x
 
 contest_config.py: Makefile ../Makefile.defs
 	(echo "#!/usr/bin/env ${PYTHON}"               ; \

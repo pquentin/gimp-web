@@ -1,5 +1,16 @@
 2003-08-31  Raphael Quinet  <quinet@gamers.org>
 
+	* source/index.htrw: New page.  Most of it still has to be
+	written.
+
+	* source/howtos/.cvsignore: Stop complaining about the html files!
+
+	* unix/howtos/.cvsignore
+	* unix/index.htrw: Removed the links to the HOWTOs that have been
+	moved to the /source directory.
+
+2003-08-31  Raphael Quinet  <quinet@gamers.org>
+
 	* style/wgo.css: New style sheet, containing most of what was in
 	default.css (only the classes that were used somewhere).
 

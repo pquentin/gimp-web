@@ -1,0 +1,18 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - GIMP from Source</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP from Source</h1>
+
+<p><em class="warn">FIXME</em>: we still have to write this page.  In
+the meantime, you can have a look at the following HOWTOs:</p>
+
+<ul>
+  <li><a href="wgo:unix-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
+  <li><a href="wgo:unix-howtos-stable_cvs_build">Build The Stable GIMP from CVS</a></li>
+  <li><a href="wgo:unix-howtos-tile_cache">How To Set The Tile Cache</a></li>
+</ul>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

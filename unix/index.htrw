@@ -8,8 +8,6 @@
 
 <h2>GNU/Linux How To's</h2>
   <ul>
-    <li><a href="wgo:unix-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
-    <li><a href="wgo:unix-howtos-stable_cvs_build">Build The Stable GIMP from CVS</a></li>
     <li><a href="wgo:unix-howtos-tile_cache">How To Set The Tile Cache</a></li>
   </ul>
 

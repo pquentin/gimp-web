@@ -1,3 +1,8 @@
+2003-07-23 scizzo <scizzo@gimp.org>
+
+	* images/wilber16.png: Add this image to the link rel="" stuff.
+	* includes/wgo-styles.xhtml: Add the <link> tag with the image.
+
 2003-07-21  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* downloads/.cvsignore: added

@@ -1,11 +1,15 @@
 pgo TODO List:
 (Alphabetically)
 
-          a crontabs directory in CVS is fine, it should 
+        * a crontabs directory in CVS is fine, it should 
           be put in install.exclude, and install.sh modified to put 
           them in the right place
 
-
+        * getting rid of the tables in the design would be good, I think.
+          Helvetix has made an example of how this could be done. Take a look 
+          at: http://oak.mysterious.org:8081/example3.xhtml
+          Helvetix also wrote a document on how this new layout could be used:
+          http://oak.mysterious.org/~helvetix/Notes/wgo-layout.xhtml
 
 about/ChangLogs/:
     Changelog.pl:  the wgo2 wrapper needs to be stripped from this script and 

@@ -1,3 +1,26 @@
+2003-09-19 scizzo <scizzo@gimp.org>
+
+	* /includes/wgo-howto-unix-init.xhtml 
+	* wgo-howto-unix-fini.xhtml
+	* wgo-howto-bugs-init.xhtml
+	* wgo-howto-bugs-fini.xhtml: Added the menus to the files to make them work like the others.
+	
+	* /includes/urls_go-developer.inc: 
+	Add developer.gimp.org to the list of important developer links.
+	
+	* /includes/urls_important.inc: 
+	Changed the header a little so it uses Links instead of URLs.
+	
+	* /includes/wgo-howto-source-init.xhtml, wgo-howto-source-fini.xhtml:
+	Added files wich are going to be used for the source howtos for now.
+	
+	* /source/howtos/stable-cvs-build.htrw, stable-cvs-get.htrw: 
+	Now using the new include files.
+
+	* /downloads/install_help.html: Fixed a typo.
+	* /develop/index.htrw: Removed the headers for the links in the bottom
+	of the page and add them to the includes instead.
+
 2003-09-19  Ville Pätsi  <drc@gimp.org>
 
 	* style/wgo.css: Fixed some styles left from the div layout.

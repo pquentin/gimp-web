@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - How To Get the Stable GIMP from CVS</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-source-init.xhtml" -->
 <h1>CVS Is Not That Scary</h1>
 
 <h2>or Get Your Stable GIMP from CVS</h2>
@@ -78,7 +78,7 @@
    see the <a href="wgo:unix-howtos-stable_cvs_build">Build Your Stable GIMP from CVS</a> how to. 
 </p>
 
-<!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-source-fini.xhtml" -->
     <div>
       <span id="footerleft">
         How To Get Your Stable GIMP from CVS &copy; 2002 <a href="mail:People-Walter_Rebecca_J">Rebecca J. Walter</a>

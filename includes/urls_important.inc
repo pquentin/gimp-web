@@ -1,4 +1,4 @@
-<h2>Important URLs</h2>
+<h2>Important GIMP Links</h2>
   <ul>
     <li><a href="http://www.gimp.org">The GNU Image Manipulation Program</a></li>
     <li><a href="http://www.gnu.org/">GNU Project</a></li>

@@ -1,5 +1,19 @@
 2003-09-22  Raphael Quinet  <quinet@gamers.org>
 
+	* about/.cvsignore
+	* programmatic/admin/.cvsignore
+	* programmatic/admin/news/.cvsignore
+	* programmatic/contest/.cvsignore: Regenerated.
+
+	* contest/.cvsignore
+	* resources/.cvsignore
+	* resources/brushes/.cvsignore
+	* resources/gradients/.cvsignore
+	* resources/palettes/.cvsignore
+	* resources/patterns/.cvsignore: Added, as a consequence of the
+	previous renaming of some .html files to .htrw in a previous
+	commit.  Files generated with "make cvsignore".
+
 	* includes/wgo-xhtml-init.xhtml: Move the comment with the CVS Id
 	below the <html> tag.  This fixes bug #122932.
 

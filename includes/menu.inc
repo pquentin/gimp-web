@@ -2,6 +2,7 @@
           <a href="/index.html">News</a><br/>
           <a href="/about/">About GIMP</a><br/>
           <a href="/resources/">Resources</a><br/>
+	  <a href="/downloads/">Downloads</a><br/>
           <a href="/registry.html">Plug-In Registry</a><br/>
           <a href="/docs/">Documentation</a><br/>
           <a href="/tutorials/">Tutorials</a><br/>

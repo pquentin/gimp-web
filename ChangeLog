@@ -1,3 +1,18 @@
+2003-06-21 scizzo <scizzo@gimp.org>
+
+	* /downloads/: Add this section for the downloads of GIMP.
+	* /includes/: Fixed the files that needs downloads in the menu.
+
+2003-06-21 Branko Collin <collin@xs4all.nl>
+
+	* /admin/todo.xhtml: Add "done" to the todo list for the Windows stuff.
+
+	* /windows/index.htrw: Add this file that finishes the windows
+	section.
+	
+	* /windows/index.html, develop.html, download.html, get_started.html:
+	Removed these files.
+
 2003-06-20 scizzo <scizzo@gimp.org>
 
 	* /admin/todo.xhtml: Add that the tutorials are done.

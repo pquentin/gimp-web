@@ -1,5 +1,10 @@
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
+	* man/gimp-remote.html
+	* man/gimp.html: fine-tuning.
+
+2004-12-18  Sven Neumann  <sven@gimp.org>
+
 	* man/gimprc.html: fixed broken roffit output.
 
 	* admin/gimp-web-urls: fixed URL of new splash screen.

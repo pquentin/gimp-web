@@ -1,0 +1,223 @@
+/*
+ * gimp blue: #17457c;
+ * gimp grey: #f5f5f5;
+ */
+
+input.submit-button {
+  background: #f5f5f5 none;
+  border-bottom: 1px solid #17457c;
+  border-left: 1px solid #b9c7d8;
+  border-right: 1px solid #17457c;
+  border-top: 1px solid #b9c7d8;
+  color: #17457c;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+input.submit-button:hover {
+  text-decoration: underline;
+}
+
+input.checkbox {
+  padding: 0px 0px 0px 0px;
+}
+
+a.news-index {
+  text-decoration: underline;
+}
+
+
+table.news-index {
+  font-size: small;
+}
+
+table.news-index tr.news-index {
+  background: #fff0e0 none;
+  color: black;
+}
+
+table.news-index th {
+  color: white;
+  border-right: 1px solid white;
+  padding-top: 1px;
+  padding-left: 0px;
+  text-align: left;
+  background: #17457c none;
+}
+
+th.news-index#checkbox {
+  border: 0px none black;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  vertical-align: center;
+}
+
+table.news-index th#subject {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-indent: 0.25em;
+  width: 50%;
+}
+
+table.news-index th#from {
+  border-right: 1px solid white;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-indent: 0.25em;
+  width: 25%;
+}
+
+table.news-index th#date {
+  border-right: 1px solid white;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-indent: 0.25em;
+  width: 27%;
+}
+
+table.news-index td.news-index {
+  background: #dad5c2 none;
+  border-bottom: 1px solid black;
+  color: black;
+  text-indent: 0.25em;
+}
+
+table.news {
+  font-size: small;
+}
+
+tr.news {
+  background: #fff0e0 none;
+  color: black;
+}
+
+th.news {
+  background: #17457c none;
+  border-bottom: 1px solid black;
+  border-right: 1px solid white;
+  color: white;
+  padding-left: 2px;
+  padding-top: 1px;
+  text-align: left;
+}
+
+td.news {
+  border-bottom: 1px solid black;
+  background: #dad5c2 none;
+  padding-left: 2px;
+  color: black;
+}
+
+td.news-edit {
+  font-weight: bold;
+}
+
+td.news-edit#from {
+  font-weight: bold;
+  padding-left: 0.5em;
+  text-indent: 0.1em;
+}
+
+td.news-edit#message-id {
+  font-weight: bold;
+  padding-left: 0.5em;
+  text-indent: 0.1em;
+}
+
+td.news-edit#subject {
+  font-weight: bold;
+  padding-left: 0.5em;
+  text-indent: 0.1em;
+}
+
+td.news-edit#date {
+  font-weight: bold;
+  padding-left: 0.5em;
+  text-indent: 0.1em;
+}
+
+td.news-edit#image {
+  font-weight: bold;
+  padding-left: 0.5em;
+  text-indent: 0.1em;
+}
+
+form.news-edit {
+  margin-left: 0px;
+  display: inline;
+}
+
+select.news-edit {
+  background: #dad5c2 none;
+  border: thin solid black;
+}
+
+form.news-edit input.subject {
+  text-index: 1em;
+  background: #dad5c2 none;
+  border: thin solid black;
+  color: black;
+  display: inline;
+  font-family: arial,helvetica,sans-serif;
+  font-weight: bold;
+  width: 40em;
+}
+
+form.news-edit input.date {
+  background: #dad5c2 none;
+  border: thin solid black;
+  color: black;
+  display: inline;
+  font-family: arial,helvetica,sans-serif;
+  font-weight: bold;
+  text-align: left;
+  width: 20em;
+}
+
+form.news-edit textarea.body {
+  background: #dad5c2 none;
+  border: thin solid black;
+  color: black;
+  font-family: arial,helvetica,sans-serif;
+  height: 20em;
+  width: 100%;
+}
+
+table.ld {
+/*  background: #808080;*/
+  empty-cells: show;
+  font-size: 1px;
+  font-size: 1px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  visibility: visible;}
+}
+
+table.ld td { text-align: center; vertical-align: middle; font-size: 2px; margin: 0; padding: 0; visibility: visible;}
+
+table.ld td.l----- { padding: 1px 1px 1px 1px;                                                                                                                           }
+table.ld td.l----x { padding: 1px 1px 1px 0px;                                                                                             border-left: 1px solid black; }
+table.ld td.l---x- { padding: 1px 1px 0px 1px;                                                             border-bottom: 1px solid black;                               }
+table.ld td.l---xx { padding: 1px 1px 0px 0px;                                                             border-bottom: 1px solid black; border-left: 1px solid black; }
+table.ld td.l--x-- { padding: 1px 0px 1px 1px;                              border-right: 1px solid black;                                                               }
+table.ld td.l--x-x { padding: 1px 0px 1px 0px;                              border-right: 1px solid black;                                 border-left: 1px solid black; }
+table.ld td.l--xx- { padding: 1px 0px 0px 1px;                              border-right: 1px solid black; border-bottom: 1px solid black;                               }
+table.ld td.l--xxx { padding: 1px 0px 0px 0px;                              border-right: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black; }
+table.ld td.l-x--- { padding: 0px 1px 1px 1px; border-top: 1px solid black;                                                                                              }
+table.ld td.l-x--x { padding: 0px 1px 1px 0px; border-top: 1px solid black;                                                                border-left: 1px solid black; }
+table.ld td.l-x-x- { padding: 0px 1px 0px 1px; border-top: 1px solid black;                                border-bottom: 1px solid black;                               }
+table.ld td.l-x-xx { padding: 0px 1px 0px 0px; border-top: 1px solid black;                                border-bottom: 1px solid black; border-left: 1px solid black; }
+table.ld td.l-xx-- { padding: 0px 0px 1px 1px; border-top: 1px solid black; border-right: 1px solid black;                                                               }
+table.ld td.l-xx-x { padding: 0px 0px 1px 0px; border-top: 1px solid black; border-right: 1px solid black;                                 border-left: 1px solid black; }
+table.ld td.l-xxx- { padding: 0px 0px 0px 1px; border-top: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black;                               }
+table.ld td.l-xxxx { padding: 0px 0px 0px 0px; border-top: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black; border-left: 1px solid black; }

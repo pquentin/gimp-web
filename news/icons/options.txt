@@ -1,0 +1,3 @@
+construction   gimp_construction.png
+news           gimp_code.png
+announcement   gimp_code.png

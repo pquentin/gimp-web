@@ -96,4 +96,5 @@ install: all
 	install --owner=${OWNER} news-edit-action.cgi ${NEWSDIR}
 	install --owner=${OWNER} news-edit.cgi ${NEWSDIR}
 	install --owner=${OWNER} news-index.cgi ${NEWSDIR}
+	@echo login as "guest" with password "guest" for testing.
 

@@ -10,3 +10,4 @@ else
 fi
 
 rsync -rlt --delete --delete-excluded --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
+(cd news ; make INSTALLDIR=${INSTALLDIR} install )

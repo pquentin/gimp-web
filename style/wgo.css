@@ -49,6 +49,7 @@ h1 {
   font-weight: bold;
   font-size: 110%;
   text-align: center;
+  clear: left;
 }
 
 /* Subtitle header. */

@@ -1,36 +1,46 @@
 <html>
 <body>
 <pre>
-# style <name> [= <name>]
+# pixmap_path &quot;&lt;dir 1&gt;:&lt;dir 2&gt;:&lt;dir 3&gt;:...&quot;
+#
+# include &quot;rc-file&quot;
+#
+# style &lt;name&gt; [= &lt;name&gt;]
 # {
-#   <option>
+#   &lt;option&gt;
 # }
 #
-# widget <widget_set> style <style_name>
-# widget_class <widget_class_set> style <style_name>
+# widget &lt;widget_set&gt;       style &lt;style_name&gt;
+# class  &lt;widget_class_set&gt; style &lt;style_name&gt;
+#
+# You can add your own GIMP-specific GTK styles here.
 
-# this sets the font on the windows, ie. Files Xtns Help at the top
-# of the tool bar. this is the font that wgo uses for its screenshots also
-style "user-font"
-{
-font="-adobe-helvetica-medium-r-normal-*-12-*-*-*-p-*-iso8859-1"
-}
-widget_class "*" style "user-font"
 
-style "ruler"
+#
+# Example keybinding to remap Help to F2
+#
+binding &quot;gimp-help-binding&quot;
 {
-  font = "-adobe-helvetica-medium-r-normal--*-80-*-*-*-*-*-*"
-}
-
-style "tooltips"
-{
-  fg[NORMAL] = { 0.0,  0.0,  0.0  }
-  bg[NORMAL] = { 0.94, 0.90, 0.54 }
+  bind &quot;F2&quot;           { &quot;show-help&quot; (255)        }
+  bind &quot;KP_F2&quot;        { &quot;show-help&quot; (255)        }
+  bind &quot;&lt;shift&gt;F2&quot;    { &quot;show-help&quot; (whats-this) }
+  bind &quot;&lt;shift&gt;KP_F2&quot; { &quot;show-help&quot; (whats-this) }
+  bind &quot;&lt;ctrl&gt;F2&quot;     { &quot;show-help&quot; (tooltip)    }
+  bind &quot;&lt;ctrl&gt;KP_F2&quot;  { &quot;show-help&quot; (tooltip)    }
 }
 
-widget "gtk-tooltips" style "tooltips"
+# class &quot;GtkWidget&quot; binding &quot;gimp-help-binding&quot;
 
-widget_class "*Ruler*" style "ruler"
+
+#
+# The dock separator DND highlight color is configurable.
+#
+style &quot;gimp-red-separator-style&quot;
+{
+  bg[SELECTED] = &quot;#aa2448&quot;
+}
+
+# widget &quot;*gimp-dock-separator*&quot; style &quot;gimp-red-separator-style&quot;
 </pre>
 </body>
 </html>

@@ -1,50 +1,130 @@
-<!-- Creator     : groff version 1.18.1 -->
-<!-- CreationDate: Tue Mar 23 14:18:07 2004 -->
-<html>
-<head>
-<meta name="generator" content="groff -Thtml, see www.gnu.org">
-<meta name="Content-Style" content="text/css">
-<title></title>
-</head>
-<body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Man page of GIMP-REMOTE</TITLE>
+</HEAD><BODY>
+<p>
+<H1>GIMP-REMOTE</H1>
+Section: GIMP Manual Pages (1)<BR>Updated: March 23 2004<BR><A HREF="#index">Index</A>
 
-<hr>
+<A NAME="lbAB">&nbsp;</A>
+<H2>NAME</H2>
 
-<p>gimp-remote - tells a running GIMP to open a (local or
-remote) image file. [&minus;h] [&minus;&minus;help] [-v]
-[&minus;&minus;version] [&minus;&minus;display
-<i>display</i>] [&minus;e] [&minus;&minus;existing] [-q]
-[&minus;&minus;query] <i>filename</i> ...</p>
+gimp-remote - tells a running GIMP to open a (local or remote) image file.
+<A NAME="lbAC">&nbsp;</A>
+<H2>SYNOPSIS</H2>
 
-<p><i>gimp-remote</i> is a small utility that tells a
-running GIMP to open one or more (local or remote) image
-files. It does so by searching for a GIMP toolbox on the
-active display. If it can find a GIMP toolbox, a synthetic
-drop event is created which makes GIMP think the files would
-have been dropped onto the toolbox. More than one filename
-or URL can be specified on the commandline.</p>
+<B>gimp-remote</B>
 
-<p>If no GIMP window is found, <i>gimp-remote</i> will
-start a new GIMP instance and ask it to load the specified
-images. If no filename or URL is given, <i>gimp-remote</i>
-will start a new GIMP. This behaviour can be altered using
-the command-line options described below.</p>
+[-h] [--help] [-v] [--version] [--display <I>display</I>]
+[-e] [--existing] [-q] [--query] <I>filename</I> ...
+</p><p>
+<A NAME="lbAD">&nbsp;</A>
+<H2>DESCRIPTION</H2>
 
-<p><i>gimp-remote</i> accepts the following options:
-Display a list of all commandline options. Output the
-version info. Use the designated X display. If no running
-GIMP instance is found, don&rsquo;t start a new one but
-exit. Check if GIMP is running and exit. A status code of 0
-indicates that a GIMP toolbox window has been found on this
-display.</p>
+</p><p>
 
-<p>Loads the image from the GIMP website into a running
-GIMP or starts a new one. Loads the local files wilber.xcf
-and wilma.xcf into a running GIMP or starts a new one.</p>
+<I>gimp-remote</I> is a small utility that tells a running GIMP to open
+one or more (local or remote) image files.  It does so by searching
+for a GIMP toolbox on the active display.  If it can find a GIMP
+toolbox, a synthetic drop event is created which makes GIMP think the
+files would have been dropped onto the toolbox. More than one filename
+or URL can be specified on the commandline. 
+</p><p>
 
-<p>to get the default host and display number.</p>
+If no GIMP window is found, <I>gimp-remote</I> will start a new GIMP
+instance and ask it to load the specified images. If no filename or
+URL is given, <I>gimp-remote</I> will start a new GIMP. This behaviour
+can be altered using the command-line options described below.
+</p><p>
+<A NAME="lbAE">&nbsp;</A>
+<H2>OPTIONS</H2>
 
-<p>Sven Neumann and Simon Budig.</p>
-<hr>
-</body>
-</html>
+
+<I>gimp-remote</I> accepts the following options:
+<DL COMPACT>
+<DT><B>-h, --help</B>
+
+<DD>
+Display a list of all commandline options.
+<DT><B>-v, --version</B>
+
+<DD>
+Output the version info.
+<DT><B>--display  </B><I>display</I>
+
+<DD>
+Use the designated X display.
+<DT><B>-e, --existing</B>
+
+<DD>
+If no running GIMP instance is found, don't start a new one but exit.
+<DT><B>-q, --query</B>
+
+<DD>
+Check if GIMP is running and exit. A status code of 0 indicates that
+a GIMP toolbox window has been found on this display.
+</DL>
+</p><p>
+<A NAME="lbAF">&nbsp;</A>
+<H2>EXAMPLES</H2>
+
+<DL COMPACT>
+<DT><B>gimp-remote&nbsp;<A HREF="http://classic.gimp.org/icons/frontpage-small.gif">http://www.gimp.org/icons/frontpage-small.gif</A></B>
+
+<DD>
+Loads the image from the GIMP website into a running GIMP or starts
+a new one.
+<DT><B>gimp-remote&nbsp;wilber.xcf&nbsp;wilma.xcf</B>
+
+<DD>
+Loads the local files wilber.xcf and wilma.xcf into a running GIMP
+or starts a new one. 
+</DL>
+</p><p>
+<A NAME="lbAG">&nbsp;</A>
+<H2>ENVIRONMENT</H2>
+
+</p><p>
+
+<DL COMPACT>
+<DT><B>DISPLAY</B>
+
+<DD>
+to get the default host and display number.
+</p><p>
+</DL>
+<A NAME="lbAH">&nbsp;</A>
+<H2>AUTHORS</H2>
+
+Sven Neumann and Simon Budig.
+</p><p>
+<A NAME="lbAI">&nbsp;</A>
+<H2>SEE ALSO</H2>
+
+<B><A HREF="man-gimp-2.0.html">gimp</A></B>(1),
+
+<B><A HREF="man-gimp-2.0.html">gimprc</A></B>(5),
+
+<B><A HREF="man-gimptool-2.0.html">gimptool</A></B>(1)
+
+</p><p>
+
+<HR>
+<A NAME="index">&nbsp;</A><H2>Index</H2>
+<DL>
+<DT><A HREF="#lbAB">NAME</A><DD>
+<DT><A HREF="#lbAC">SYNOPSIS</A><DD>
+<DT><A HREF="#lbAD">DESCRIPTION</A><DD>
+<DT><A HREF="#lbAE">OPTIONS</A><DD>
+<DT><A HREF="#lbAF">EXAMPLES</A><DD>
+<DT><A HREF="#lbAG">ENVIRONMENT</A><DD>
+<DT><A HREF="#lbAH">AUTHORS</A><DD>
+<DT><A HREF="#lbAI">SEE ALSO</A><DD>
+</DL>
+<HR>
+This document was created by
+<A HREF="http://www.w3.org/Tools/man2html.html">man2html</A>,
+using the manual pages.<BR>
+Time: 20:45:50 GMT, March 29, 2004
+</p>
+</BODY>
+</HTML>

@@ -1,3 +1,10 @@
+2004-03-29  Carol Spears  <carol@gimp.org>
+	* unix/man-gimp-2.0.html, man-gimprc-2.0.html, man-gimp-remote-2.0.html, 
+    man-gimptool-2.0.html: used man2html to remake these pages (tried to fix
+    the man2html html some also).
+
+	* gimprc.html, gtkrc.html: updated these pages
+	
 2004-03-29  Sven Neumann  <sven@gimp.org>
 
 	* unix/index.htrw: fiddled with the layout a bit.

@@ -1,249 +1,408 @@
-<!-- Creator     : groff version 1.18.1 -->
-<!-- CreationDate: Tue Mar 23 14:17:01 2004 -->
-<html>
-<head>
-<meta name="generator" content="groff -Thtml, see www.gnu.org">
-<meta name="Content-Style" content="text/css">
-<title></title>
-</head>
-<body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Man page of GIMP</TITLE>
+<STYLE TYPE="text/css">
+DIV.section {margin-left:2cm}
+</STYLE>
+</HEAD><BODY>
+<H1>GIMP</H1>
+Section: GIMP Manual Pages (1)<BR>Updated: March 23 2004<BR><A HREF="#index">Index</A>
+<HR>
 
-<hr>
+<A NAME="lbAB">&nbsp;</A>
+<H2>NAME</H2>
 
-<p>gimp - an image manipulation and paint program.
-[&minus;h] [&minus;&minus;help] [-v] [&minus;&minus;version]
-[&minus;&minus;verbose] [&minus;&minus;no&minus;shm]
-[&minus;&minus;no&minus;cpu&minus;accel]
-[&minus;&minus;display <i>display</i>] [&minus;d]
-[&minus;&minus;no&minus;data] [&minus;f]
-[&minus;&minus;no&minus;fonts] [&minus;i]
-[&minus;&minus;no&minus;interface] [&minus;s]
-[&minus;&minus;no&minus;splash] [&minus;&minus;session
-<i>&lt;name&gt;</i>] [&minus;g] [&minus;&minus;gimprc
-<i>&lt;gimprc&gt;</i>] [&minus;&minus;system&minus;gimprc
-<i>&lt;gimprc&gt;</i>] [&minus;&minus;dump&minus;gimprc<i>]
-[&minus;&minus;console&minus;messages]
-[&minus;&minus;debug&minus;handlers] [&minus;b]
-[&minus;&minus;batch &lt;commands&gt;] [filename]
-...</i></p>
+gimp - an image manipulation and paint program.
+<A NAME="lbAC">&nbsp;</A>
+<H2>SYNOPSIS</H2>
 
-<p><i>The GIMP is the GNU Image Manipulation Program. It is
-used to edit and manipulate images. It can load and save a
-variety of image formats and can be used to convert between
-formats. GIMP can also be used as a paint program. It
-features a set of drawing and painting tools such as
-airbrush, clone, pencil, and paint brush. Painting and
-drawing tools can be applied to an image with a variety of
-paint modes. It also offers an extensive array of selection
-tools like rectangle, ellipse, fuzzy select, bezier select,
-intelligent scissors, and select by color. GIMP offers a
-variety of plugins that perform a variety of image
-manipulations. Examples include bumpmap, edge detect,
-gaussian blur, and many others. In addition, GIMP has
-several scripting extension which allow for advanced
-non-interactive processing and creation of images.</i></p>
+<B>gimp</B>
 
-<p><i>The gimp accepts the following options: Display a
-list of all commandline options. Output the version info.
-Show startup messages. Do not use shared memory between GIMP
-and its plugins. Instead of using shared memory, GIMP will
-send the data via pipe. This will result in slower
-performance than using shared memory. Do not use CPU
-accelerations such as MMX or SSE even if GIMP detects that
-your CPU provides this functionality. Do not load patterns,
-gradients, palettes, or brushes. Often useful in
-non-interactive situations where startup time is to be
-minimized. Do not load any fonts. No text functionality will
-be available if this option is used. Run without a user
-interface. Use the designated X display. Do not show the
-splash screen. Use a different sessionrc for this GIMP
-session. The given session name is appended to the default
-sessionrc filename. Use an alternative gimprc instead of the
-default one. Useful in cases where plugins paths or machine
-specs may be different. Use an alternate system gimprc file.
-Output a gimprc file with default settings. Enable debugging
-signal handlers. Do not popup dialog boxes on errors or
-warnings. Print the messages on the console instead. If a
-stack-trace should be generated in case of fatal signals. If
-the PDB should provide aliases for deprecated functions.
-Execute the set of &lt;commands&gt; non-interactively. The
-set of &lt;commands&gt; is typically in the form of a script
-that can be executed by one of the GIMP scripting
-extensions. When &lt;commands&gt; is</i> <b>-</b> <i>the
-commands are read from standard input.</i></p>
+[-h] [--help] [-v] [--version] [--verbose] [--no-shm]
+[--no-cpu-accel] [--display <I>display</I>] [-d] [--no-data]
+[-f] [--no-fonts] [-i] [--no-interface] [-s] [--no-splash]
+[--session <I>&lt;name&gt;</I>] [-g] [--gimprc <I>&lt;gimprc&gt;</I>]
+[--system-gimprc <I>&lt;gimprc&gt;</I>] [--dump-gimprc]
+[--console-messages] [--debug-handlers]
+[-b] [--batch <I>&lt;commands&gt;</I>]
+[<I>filename</I>] ...
+<P>
+<A NAME="lbAD">&nbsp;</A>
+<H2>DESCRIPTION</H2>
 
-<p><i>to get the default host and display number. to get
-the name of a resource file that overrides the global
-resources stored in the RESOURCE_MANAGER property.</i></p>
+<P>
 
-<p><i>GIMP&rsquo;s data files are stored in
-${prefix}/share/gimp/2.0, where ${prefix} is set on install,
-but is typically /usr/local. GIMP&rsquo;s system-wide
+The <I>GIMP</I> is the GNU Image Manipulation Program. It is used to
+edit and manipulate images. It can load and save a variety of image
+formats and can be used to convert between formats.
+</P>
+<P>
+
+GIMP can also be used as a paint program. It features a set of drawing
+and painting tools such as airbrush, clone, pencil, and paint
+brush. Painting and drawing tools can be applied to an image with a
+variety of paint modes.  It also offers an extensive array of
+selection tools like rectangle, ellipse, fuzzy select, bezier select,
+intelligent scissors, and select by color.
+</P>
+<P>
+
+GIMP offers a variety of plugins that perform a variety of image
+manipulations.  Examples include bumpmap, edge detect, gaussian blur,
+and many others.
+</P>
+<P>
+
+In addition, GIMP has several scripting extension which allow for
+advanced non-interactive processing and creation of images.
+</P><P>
+<A NAME="lbAE">&nbsp;</A>
+<H2>OPTIONS</H2>
+
+
+The <I>gimp</I> accepts the following options:
+<DL COMPACT>
+<DT><B>-h, --help</B>
+
+<DD>
+Display a list of all commandline options.
+<DT><B>-v, --version</B>
+
+<DD>
+Output the version info.
+<DT><B>--verbose</B>
+
+<DD>
+Show startup messages.
+<DT><B>--no-shm</B>
+
+<DD>
+Do not use shared memory between GIMP and its plugins. 
+Instead of using shared memory, GIMP will send the data via pipe. This
+will result in slower performance than using shared memory.
+<DT><B>--no-cpu-accel</B>
+
+<DD>
+Do not use CPU accelerations such as MMX or SSE even if GIMP detects
+that your CPU provides this functionality.
+<DT><B>-d, --no-data</B>
+
+<DD>
+Do not load patterns, gradients, palettes, or brushes. Often useful
+in non-interactive situations where startup time is to be minimized.
+<DT><B>-f, --no-fonts</B>
+
+<DD>
+Do not load any fonts. No text functionality will be available if this
+option is used.
+<DT><B>-i, --no-interface</B>
+
+<DD>
+Run without a user interface.
+<DT><B>--display </B><I>display</I>
+
+<DD>
+Use the designated X display.
+<DT><B>-s, --no-splash</B>
+
+<DD>
+Do not show the splash screen.
+<DT><B>--session </B><I>&lt;name&gt;</I>
+
+<DD>
+Use a different sessionrc for this GIMP session. The given session
+name is appended to the default sessionrc filename.
+<DT><B>-g, --gimprc </B><I>&lt;gimprc&gt;</I>
+
+<DD>
+Use an alternative gimprc instead of the default one. Useful in
+cases where plugins paths or machine specs may be different.
+<DT><B>--system-gimprc </B><I>&lt;gimprc&gt;</I>
+
+<DD>
+Use an alternate system gimprc file.
+<DT><B>--dump-gimprc</B>
+
+<DD>
+Output a gimprc file with default settings.
+<DT><B>--debug-handlers</B>
+
+<DD>
+Enable debugging signal handlers.
+<DT><B>-c, --console-messages</B>
+
+<DD>
+Do not popup dialog boxes on errors or warnings. Print the messages on
+the console instead.
+<DT><B>--stack-trace-mode </B><I>{never|query|always}</I>
+
+<DD>
+If a stack-trace should be generated in case of fatal signals.
+<DT><B>--pdb-compat-mode </B><I>{off|on|warn}</I>
+
+<DD>
+If the PDB should provide aliases for deprecated functions.
+<DT><B>-b, --batch </B><I>&lt;commands&gt;</I>
+
+<DD>
+Execute the set of <I>&lt;commands&gt;</I> non-interactively. The set
+of <I>&lt;commands&gt;</I> is typically in the form of a script that
+can be executed by one of the GIMP scripting extensions. When
+<I>&lt;commands&gt;</I> is <B>-</B> the commands are read from standard
+input.
+<DT><DD>
+</DL>
+</P><P>
+
+<A NAME="lbAF">&nbsp;</A>
+<H2>ENVIRONMENT</H2>
+
+</P><P>
+
+<DL COMPACT>
+<DT><B>DISPLAY</B>
+
+<DD>
+to get the default host and display number.
+<DT><B>XENVIRONMENT</B>
+
+<DD>
+to get the name of a resource file that overrides the global resources
+stored in the RESOURCE_MANAGER property.
+</DL>
+</P><P>
+<A NAME="lbAG">&nbsp;</A>
+<H2>FILES</H2>
+
+GIMP's data files are stored in ${prefix}/share/gimp/2.0, where ${prefix} 
+is set on install, but is typically /usr/local. GIMP's system-wide
 configuration files are stored in ${prefix}/etc/gimp/2.0.
-Most GIMP configuration is read in from the user&rsquo;s
-init file,</i> <b>$HOME</b><i>/.gimp-2.0/gimprc. The system
-wide equivalent is in ${prefix}/etc/gimprc. The system wide
-file is parsed first and the user gimprc can override the
-system settings. ${prefix}/etc/gimprc_user is the default
-gimprc placed in users&rsquo; home directories the first
-time GIMP is run.</i></p>
+Most GIMP configuration is read in from the user's init file,
+<B>$HOME</B>/.gimp-2.0/gimprc. The system wide equivalent is in
+${prefix}/etc/gimprc. The system wide file is parsed 
+first and the user gimprc can override the system settings. 
+${prefix}/etc/gimprc_user is the default gimprc
+placed in users' home directories the first time GIMP is run.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/devicerc - holds settings for input devices
+together with the tool, colors, brush, pattern and gradient 
+associated to that device.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/documents - lists all images that have been 
+opened or saved using GIMP.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/gtkrc - users set of gimp-specific GTK config
+settings. Options such as widget color and fonts sizes can be set
+here.
+</P>
+<P>
+${prefix}/etc/gimp/2.0/gtkrc - sytem wide default set of gimp-specific GTK+
+config settings.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/menurc - user's set of keybindings.
+</P>
+<P>
+${prefix}/etc/gimp/2.0/menurc - system wide set of keybindings.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/parasiterc - Description of all available GIMP
+parasites. This is file is recreated everytime GIMP starts up.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/sessionrc - This file takes session-specific
+info (that is info, you want to keep between two gimp-sessions). You
+are not supposed to edit it manually, but of course you can do. This
+file will be entirely rewritten every time you quit the GIMP. If this
+file isn't found, defaults are used.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/templaterc - Image templates are kept in this
+file. New images can conveniently created from these templates. If
+this file isn't found, defaults are used.
+</P>
+<P>
+${prefix}/etc/gimp/2.0/unitrc - default user unit database. It contains the
+unit definitions for centimeters, meters, feet, yards, typographic
+points and typographic picas and is placed in users home directories
+the first time the GIMP is ran. If this file isn't found, defaults are
+used.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/unitrc - This file contains your user unit
+database. You can modify this list with the unit editor. You are not
+supposed to edit it manually, but of course you can do.  This file
+will be entirely rewritten every time you quit the GIMP.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/plug-ins - location of user installed plugins.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/pluginrc - plugin initialization values are
+stored here. This file is parsed on startup and regenerated if need
+be.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/modules - location of user installed modules.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/tmp - default location that GIMP uses as
+temporary space.
+</P>
+<P>
+${prefix}/share/gimp/2.0/brushes - system wide brush files.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/brushes - user created and installed brush
+files. These files are in the .gbr, .gih or .vbr file formats.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/curves - Curve profiles and presets as saved from 
+the Curves tool.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/gimpressionist - Presets and user created brushes 
+and papers are stored here.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/levels - Level profiles and presets as saved from 
+the Levels tool.
+</P>
+<P>
+${prefix}/share/gimp/2.0/palettes - the system wide palette files.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/palettes - user created and modified palette
+files. This files are in the .gpl format.
+</P>
+<P>
+${prefix}/share/gimp/2.0/patterns - basic set of patterns for use in GIMP.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/patterns - user created and installed gimp
+pattern files. This files are in the .pat format.
+</P>
+<P>
+${prefix}/share/gimp/2.0/gradients - standard system wide set of gradient files.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/gradients - user created and installed gradient
+files.
+</P>
+<P>
+${prefix}/share/gimp/2.0/scripts - system wide directory of scripts
+used in Script-Fu and other scripting extensions.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/scripts - user created and installed scripts.
+</P>
+<P>
+${prefix}/share/gimp/2.0/gflares - system wide directory used by the gflare
+plug-in.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/gflares - user created and installed gflare
+files.
+</P>
+<P>
+${prefix}/share/gimp/2.0/gfig - system wide directory used by the gfig plug-in.
+</P>
+<P>
+<B>$HOME</B>/.gimp-2.0/gfig - user created and installed gfig files.
+</P>
+<P>
+${prefix}/share/gimp/2.0/images/gimp_splash.png - image used for the GIMP splash
+screen.
+</P>
+<P>
+${prefix}/share/gimp/2.0/images/gimp_logo.png - image used in the GIMP about
+dialog.
+</P>
+<P>
+${prefix}/share/gimp/2.0/tips/gimp-tips.xml - tips as displayed in the &quot;Tip of
+the Day&quot; dialog box.
+</P>
+<P>
+<A NAME="lbAH">&nbsp;</A>
+<H2>SUGGESTIONS AND BUG REPORTS</H2>
 
-<p><b>$HOME</b><i>/.gimp-2.0/devicerc - holds settings for
-input devices together with the tool, colors, brush, pattern
-and gradient associated to that device.</i></p>
+Any bugs found should be reported to the online bug-tracking system
+available on the web at <A HREF="http://bugzilla.gnome.org/.">http://bugzilla.gnome.org/.</A> Before reporting
+bugs, please check to see if the bug has already been reported.
+</P>
+<P>
+When reporting GIMP bugs, it is important to include a reliable way to
+reproduce the bug, version number of GIMP (and probably GTK), OS name
+and version, and any relevant hardware specs. If a bug is causing a
+crash, it is very useful if a stack trace can be provided. And of
+course, patches to rectify the bug are even better.
+</P>
+<P>
+<A NAME="lbAI">&nbsp;</A>
+<H2>OTHER INFO</H2>
 
-<p><b>$HOME</b><i>/.gimp-2.0/documents - lists all images
-that have been opened or saved using GIMP.</i></p>
+</P>
+<P>
+The canonical place to find GIMP info is at <A HREF="http://www.gimp.org/.">http://www.gimp.org/.</A>
+Here you can find links to just about many other GIMP sites,
+tutorials, data sets, mailing list archives, and more.
+</P>
+<P>
+There is also a GIMP User Manual available at 
+<A HREF="http://manual.gimp.org/">http://manual.gimp.org/</A> that goes into much more detail 
+about the interactive use of GIMP.
+</P>
+<P>
+The latest version of GIMP and the GTK+ libs is always available at 
+<A HREF="ftp://ftp.gimp.org/">ftp://ftp.gimp.org/.</A>
+</P>
+<P>
+<A NAME="lbAJ">&nbsp;</A>
+<H2>AUTHORS</H2>
 
-<p><b>$HOME</b><i>/.gimp-2.0/gtkrc - users set of
-gimp-specific GTK config settings. Options such as widget
-color and fonts sizes can be set here.</i></p>
+Spencer Kimball and Peter Mattis.
+</P>
+<P>
+With patches, fixes, plugins, extensions, scripts,
+translations, documentation, and more from lots 
+and lots of people all over the world.
+</P>
+<P>
+<A NAME="lbAK">&nbsp;</A>
+<H2>SEE ALSO</H2>
 
-<p><i>${prefix}/etc/gimp/2.0/gtkrc - sytem wide default set
-of gimp-specific GTK+ config settings.</i></p>
+<B><A HREF="man-gimprc-2.0.html">gimprc</A></B>(5),
 
-<p><b>$HOME</b><i>/.gimp-2.0/menurc - user&rsquo;s set of
-keybindings.</i></p>
+<B><A HREF="man-gimptool-2.0.html">gimptool</A></B>(1),
 
-<p><i>${prefix}/etc/gimp/2.0/menurc - system wide set of
-keybindings.</i></p>
+<B><A HREF="man-gimp-remote-2.0.html">gimp-remote</A></B>(1)
 
-<p><b>$HOME</b><i>/.gimp-2.0/parasiterc - Description of
-all available GIMP parasites. This is file is recreated
-everytime GIMP starts up.</i></p>
+</P>
+<P>
 
-<p><b>$HOME</b><i>/.gimp-2.0/sessionrc - This file takes
-session-specific info (that is info, you want to keep
-between two gimp-sessions). You are not supposed to edit it
-manually, but of course you can do. This file will be
-entirely rewritten every time you quit the GIMP. If this
-file isn&rsquo;t found, defaults are used.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/templaterc - Image templates
-are kept in this file. New images can conveniently created
-from these templates. If this file isn&rsquo;t found,
-defaults are used.</i></p>
-
-<p><i>${prefix}/etc/gimp/2.0/unitrc - default user unit
-database. It contains the unit definitions for centimeters,
-meters, feet, yards, typographic points and typographic
-picas and is placed in users home directories the first time
-the GIMP is ran. If this file isn&rsquo;t found, defaults
-are used.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/unitrc - This file contains
-your user unit database. You can modify this list with the
-unit editor. You are not supposed to edit it manually, but
-of course you can do. This file will be entirely rewritten
-every time you quit the GIMP.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/plug-ins - location of user
-installed plugins.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/pluginrc - plugin
-initialization values are stored here. This file is parsed
-on startup and regenerated if need be.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/modules - location of user
-installed modules.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/tmp - default location that
-GIMP uses as temporary space.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/brushes - system wide brush
-files.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/brushes - user created and
-installed brush files. These files are in the .gbr, .gih or
-.vbr file formats.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/curves - Curve profiles and
-presets as saved from the Curves tool.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/gimpressionist - Presets and
-user created brushes and papers are stored here.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/levels - Level profiles and
-presets as saved from the Levels tool.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/palettes - the system wide
-palette files.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/palettes - user created and
-modified palette files. This files are in the .gpl
-format.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/patterns - basic set of
-patterns for use in GIMP.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/patterns - user created and
-installed gimp pattern files. This files are in the .pat
-format.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/gradients - standard system
-wide set of gradient files.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/gradients - user created and
-installed gradient files.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/scripts - system wide
-directory of scripts used in Script-Fu and other scripting
-extensions.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/scripts - user created and
-installed scripts.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/gflares - system wide
-directory used by the gflare plug-in.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/gflares - user created and
-installed gflare files.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/gfig - system wide directory
-used by the gfig plug-in.</i></p>
-
-<p><b>$HOME</b><i>/.gimp-2.0/gfig - user created and
-installed gfig files.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/images/gimp_splash.png -
-image used for the GIMP splash screen.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/images/gimp_logo.png - image
-used in the GIMP about dialog.</i></p>
-
-<p><i>${prefix}/share/gimp/2.0/tips/gimp-tips.xml - tips as
-displayed in the &quot;Tip of the Day&quot; dialog
-box.</i></p>
-
-<p><i>Any bugs found should be reported to the online
-bug-tracking system available on the web at
-http://bugzilla.gnome.org/. Before reporting bugs, please
-check to see if the bug has already been reported.</i></p>
-
-<p><i>When reporting GIMP bugs, it is important to include
-a reliable way to reproduce the bug, version number of GIMP
-(and probably GTK), OS name and version, and any relevant
-hardware specs. If a bug is causing a crash, it is very
-useful if a stack trace can be provided. And of course,
-patches to rectify the bug are even better.</i></p>
-
-<p><i>The canonical place to find GIMP info is at
-http://www.gimp.org/. Here you can find links to just about
-many other GIMP sites, tutorials, data sets, mailing list
-archives, and more.</i></p>
-
-<p><i>There is also a GIMP User Manual available at
-http://manual.gimp.org/ that goes into much more detail
-about the interactive use of GIMP.</i></p>
-
-<p><i>The latest version of GIMP and the GTK+ libs is
-always available at ftp://ftp.gimp.org/.</i></p>
-
-<p><i>Spencer Kimball and Peter Mattis.</i></p>
-
-<p><i>With patches, fixes, plugins, extensions, scripts,
-translations, documentation, and more from lots and lots of
-people all over the world.</i></p>
-<hr>
-</body>
-</html>
+<HR>
+<A NAME="index">&nbsp;</A><H2>Index</H2>
+<DL>
+<DT><A HREF="#lbAB">NAME</A><DD>
+<DT><A HREF="#lbAC">SYNOPSIS</A><DD>
+<DT><A HREF="#lbAD">DESCRIPTION</A><DD>
+<DT><A HREF="#lbAE">OPTIONS</A><DD>
+<DT><A HREF="#lbAF">ENVIRONMENT</A><DD>
+<DT><A HREF="#lbAG">FILES</A><DD>
+<DT><A HREF="#lbAH">SUGGESTIONS AND BUG REPORTS</A><DD>
+<DT><A HREF="#lbAI">OTHER INFO</A><DD>
+<DT><A HREF="#lbAJ">AUTHORS</A><DD>
+<DT><A HREF="#lbAK">SEE ALSO</A><DD>
+</DL>
+<HR>
+</P>
+<P>
+This document was created by
+<A HREF="http://www.w3.org/Tools/man2html.html">man2html</A>,
+using the manual pages.<BR>
+Time: 19:32:44 GMT, March 29, 2004
+</P>
+</BODY>
+</HTML>

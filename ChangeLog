@@ -1,5 +1,9 @@
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/index.htrw: link to the man-page for more info.
+
+2004-12-18  Sven Neumann  <sven@gimp.org>
+
 	* docs/index.htrw: converted back to ISO-8859-1, should really be
 	UTF-8.
 

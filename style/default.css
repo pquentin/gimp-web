@@ -201,15 +201,18 @@ pre.text {
 }
 
 em.caution {
-  color: yellow;
+  color: #981e49;
+  font-weight: bold;
 }
 
 em.warn {
-  color: orange;
+  color: #d5a82f;
+  font-weight: bold;
 }
 
 em.hellbrokeloose {
-  color: red;
+  color: #c74646;
+  font-weight: bold;
 }
 
 kbd {

@@ -1,3 +1,13 @@
+2003-08-16 scizzo <scizzo@gimp.org>
+
+	* /style/default.css: Changed color values for em.caution, em.warn and
+	em.hellbrokeloose to make them more clear on website. Also add bold to
+	make them even more clear. This closes bug: #119479
+
+	* /about/ancient_history.htrw: Looked through this file and formated
+	the text a bit. Change <A HREF=""></A> to <a href=""></a> that is used
+	for XHTML.
+
 2003-08-16  Henrik Brix Andersen  <brix@gimp.org>
 
 	* team.htrw: changed my describtion from Web Technician to

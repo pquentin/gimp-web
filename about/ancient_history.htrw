@@ -6,9 +6,9 @@
 <h1>A Brief History of GIMP </h1>
 <p>
   <blockquote>
-<em class="caution">NOTE:</em>This history has actually become a historical document
-all on its own.  Some of the dates are not accurate (due to internet technology
-limitation (google hadn't indexed usenet yet).  Yet still a good document with
+<em class="caution">NOTE:</em> This history has actually become a historical document
+all on its own. Some of the dates are not accurate (due to internet technology
+limitation (google hadn't indexed usenet yet). Yet still a good document with
 many of the details perfectly intact. (editor comment) 
   </blockquote>
 </p>
@@ -19,11 +19,11 @@ I've tried to keep it as accurate as possible, and hope my experiences
 working on this team can benefit other projects as well.  
 </p>
 <p>
-Like current GIMP development, this was not done alone.  This is a compilation
+Like current GIMP development, this was not done alone. This is a compilation
 of knowledge from a lot of people on #gimp, some of it predating my own
-experience.  This history would not have been possible without, specifically,
+experience. This history would not have been possible without, specifically,
 the help of josh, Raph, Adrian, Xach, yosh, and more generally all of the
-guys on #gimp.  This is NOT inclusive - there are many sites and people that 
+guys on #gimp. This is NOT inclusive - there are many sites and people that 
 continue to contribute to the success of GIMP that are not listed here.
 I suggest visiting <A HREF="http://www.gimp.org">http://www.gimp.org</A> for a more complete listing of gimp links.
 </p>
@@ -37,38 +37,35 @@ A couple of students at Berkeley, Spencer Kimball and Peter Mattis,
 decided they wanted to write an image manipulation program rather
 than write a compiler in scheme/lisp for professor Fateman (CS164).  
 Neither one had graphic arts experience, but it seemed like a
-neat project.  They got encouragement from professor Forsythe to
+neat project. They got encouragement from professor Forsythe to
 implement some new features too - rumor has it intelligent scissors was
-Spencer's CS280 project.  Thus Spencer and Peter begat the General Image
-Manipulation Program, or GIMP for short.  They worked on it for a quite
+Spencer's CS280 project. Thus Spencer and Peter begat the General Image
+Manipulation Program, or GIMP for short. They worked on it for a quite
 awhile before letting it anyone else have a crack at it - probably about
-9-10 months by current estimates.  By their first public release, they
+9-10 months by current estimates. By their first public release, they
 had a functional product.
 </p>
 <p>
-
 The GIMP had a lot of neat stuff attached to its first public release, 
-version 0.54, (January 1996).  It had a plug-in system, so developers 
+version 0.54, (January 1996). It had a plug-in system, so developers 
 could make separate programs to add to GIMP without breaking anything
-in the main distribution.  It had some basic tools to do drawing,
-and channel operations.  It had an undo feature the likes of which was
+in the main distribution. It had some basic tools to do drawing,
+and channel operations. It had an undo feature the likes of which was
 not found in any known image manipulation program.  It had loyal users
-swearing by it.  It was protected by the GPL.  And it had a cool name.
-
+swearing by it. It was protected by the GPL. And it had a cool name.
 </p>
 <p>
-But all was not well with the GIMP.  It had rather frequent crashes, that
-could be caused by plug-ins or problems in the main code.  It had a 
+But all was not well with the GIMP. It had rather frequent crashes, that
+could be caused by plug-ins or problems in the main code. It had a 
 dependency on Motif for its GUI toolkit, which made efficient distribution
-to a lot of users impossible.  This restriction also alienated a lot of 
-would-be plug-in development.  And GIMP had people making absurd claims that 
+to a lot of users impossible. This restriction also alienated a lot of 
+would-be plug-in development. And GIMP had people making absurd claims that 
 it was already more stable than Photoshop.
-
 </p>
 <p>
 So like a lot of projects, there was a rather humble beginning to a project
 that gathered a lot of support from the user community.  Its beginnings
-were almost entirely self-contained.  They didn't announce grandiose plans
+were almost entirely self-contained. They didn't announce grandiose plans
 for vaporware - Spencer and Peter delivered a product that did something.
 It was not perfect, but it was an amazing feat for two college programmers
 without any outside influence.
@@ -78,93 +75,84 @@ without any outside influence.
 
 <p>
 One of the first steps after the 0.54 release was to create a mailing
-list for developers.  This probably sprung out of the fact that Peter 
+list for developers. This probably sprung out of the fact that Peter 
 and Spencer wanted feedback on their new program, and a mailing list 
-was a convenient way for people to do this.  It was also a method of 
+was a convenient way for people to do this. It was also a method of 
 letting people know about what was still going on with development easily 
-and efficiently.  Whatever the reasons behind the first mailing list,
+and efficiently. Whatever the reasons behind the first mailing list,
 it enabled people with similar interests to communicate on the project.
-
 </p>
 <p>
 Mail was rather heavy on the list, but not all of the questions seemed
-really appropriate to ask the developers.  Their experience was not in 
+really appropriate to ask the developers. Their experience was not in 
 how to use image multiplication effectively, but rather to manipulate
-pointers and data structures.  On July 5th, 1996, gimp-list split
+pointers and data structures. On July 5th, 1996, gimp-list split
 into gimp-user and gimp-developer.
-
 </p>
 <p>
-Also shortly after its introduction, web sites started appearing.  There
+Also shortly after its introduction, web sites started appearing. There
 was of course the main gimp site located at Berkeley, but what differentiated
 this program from many others is that a lot of sites sprung up on how to
-use the program.  
-
+use the program.
 </p>
 <p>
-GIMP users, such as Zach Beane(Xach), started making tutorials for GIMP.  Zach's
-page, for awhile, featured a new date created with gimp per day.  Others 
-followed suite, showing off artwork done and sharing techniques.  It was
+GIMP users, such as Zach Beane(Xach), started making tutorials for GIMP. Zach's
+page, for awhile, featured a new date created with gimp per day. Others 
+followed suite, showing off artwork done and sharing techniques. It was
 clear that if you wanted to make something with GIMP, there were sites
-to help you get a jump start.  
-
+to help you get a jump start.
 </p>
 <p>
 Federico Mena Quintero, also known as Quartic, authored a page pointing to 
-all known GIMP resources.  His page because a focal point for new plug-in 
-announcements and featured some pretty snazzy artwork too.  He also 
-showcased his own plug-ins. 
-
+all known GIMP resources. His page because a focal point for new plug-in 
+announcements and featured some pretty snazzy artwork too. He also 
+showcased his own plug-ins.
 </p>
 <p>
 Larry Ewing got GIMP some early publicity by creating his now famous
-Linux Penguin, (some call him Tux), in GIMP 0.54.  He put a 
-<A HREF="http://www.isc.tamu.edu/~lewing/gimp">web page</A> up showing some of
-the steps he took to do it.  This was probably the first huge exposure 
+Linux Penguin, (some call him Tux), in GIMP 0.54. He put a 
+<a href="http://www.isc.tamu.edu/~lewing/gimp">web page</a> up showing some of
+the steps he took to do it. This was probably the first huge exposure 
 the GIMP received. 
 </p>
 
 <h3>A New Toolkit - The 0.60 Series:</h3>
 
 <p>
-Peter got really fed up with Motif.  So he decided to write his own.
+Peter got really fed up with Motif. So he decided to write his own.
 He called them gtk and gdk, for the Gimp Tool Kit, and the Gimp Drawing 
-Kit.  Peter tells us now that they never intended for it to become a 
+Kit. Peter tells us now that they never intended for it to become a 
 general purpose toolkit - they just wanted something to use with GIMP, and
-it "seemed like a good idea at the time".  A name change also occurred; 
+it "seemed like a good idea at the time". A name change also occurred; 
 The General Image Manipulation Program became the GNU Image Manipulation 
-Program.  
-
+Program.
 </p>
 <p>
-Development was experimental and incomplete in the 0.6x series.  The 
+Development was experimental and incomplete in the 0.6x series. The 
 plug-ins were not compatible with the large base of plug-ins developed
-for the 0.54 series.  Authors were slow to update their plug-ins to use
-the new protocols.  People did not want to write documentation for 0.60,
+for the 0.54 series. Authors were slow to update their plug-ins to use
+the new protocols. People did not want to write documentation for 0.60,
 because the features were in such a state of flux.
 </p>
 <p>
-
 Generally speaking, the 0.6x series was less usable than the previous 0.54
-series.  The crashes were more random, and more frequent.  Only people
+series. The crashes were more random, and more frequent. Only people
 interested in moving the project forward even downloaded the 0.6x series
-- so little user input added to the mix.  Grand plans for using layers,
+- so little user input added to the mix. Grand plans for using layers,
 tiled memory, a built in scripting ability, and a really neat transform
 tool were shown as teasers on the Berkeley web page, but people most people 
 rather have used a program that worked to get things done (and to write
-plug-ins for). 
-
+plug-ins for).
 </p>
 <p>
 The 0.60 series of snapshots was a developers chance to add features.  If
-it was coded, and it worked, it could make it in.  A underlying push for
+it was coded, and it worked, it could make it in. A underlying push for
 stability began near the end of it, but getting cool stuff into it was the
 first objective.  This could be summed up by Andreas Dilger best: 
-
 </p>
 <p>
-<em>"It's good to see that the next version of GIMP is here.<BR>
-Let the enhancing begin!"  </EM>
+<em>"It's good to see that the next version of GIMP is here.<br />
+Let the enhancing begin!"</em>
 </p>
 
 <h3>The 0.99 Series - The Long Road to 1.0:</h3>
@@ -172,28 +160,28 @@ Let the enhancing begin!"  </EM>
 <p>
 On Feb 26, 1997, Spencer and Peter(S&amp;P) released version 0.99.  The main goals
 were to port plug-ins to the tile based memory scheme and new API, which 
-wasn't done on a large scale for the 0.60 snapshots.   There was a new
-version of gtk/gdk, called GTK+.  It incorporated massive changes to the
+wasn't done on a large scale for the 0.60 snapshots. There was a new
+version of gtk/gdk, called GTK+. It incorporated massive changes to the
 previous model of gtk.
-
 </p>
 <p>
-Sequential releases occurred up until 0.99.9, at a brisk rate.  At 0.99.9, 
+Sequential releases occurred up until 0.99.9, at a brisk rate. At 0.99.9, 
 there was a long gap between releases - this was filled by Trent Jarvi
 offering a diff of all the current small diffs floating around for 0.99.9
-updated fairly frequently.   S&amp;P managed to release a new GTK+ and a
-GIMP 0.99.10 eventually on June 9th, 1997.  It would be their last release.
+updated fairly frequently.  S&amp;P managed to release a new GTK+ and a
+GIMP 0.99.10 eventually on June 9th, 1997. It would be their last release.
 </p>
 <p>
 S&amp;P graduated, got real jobs, and didn't have the time to put into
-the project anymore.  There was no defined successor to S&amp;P, and they
+the project anymore. There was no defined successor to S&amp;P, and they
 neglected to tell anyone they were leaving.  
 </p>
+
 <h3>The Pre-11 Releases:</h3> 
 <p>
 Spencer and Peter had now left, without saying goodbye, but this did 
 little to stop the now-rabid users; several unofficial pre-releases were
-made while not a sound was heard from Spencer or Peter.   It became such
+made while not a sound was heard from Spencer or Peter. It became such
 a problem to keep track of patches, that the pre-11 releases were made.
 These were handled by Matt Hawkins, and helped us mere mortals
 cope until someone took the center stage again.
@@ -201,51 +189,52 @@ cope until someone took the center stage again.
 <p>
 Federico Mena Quintero (Quartic) picked up the releases for awhile,
 Under his guidance, a movement towards stability and a usable product became
-the primary objective.  On release 0.99.14, Quartic announced a feature
-freeze - no new features until 1.0.  Some interesting features, some of
+the primary objective. On release 0.99.14, Quartic announced a feature
+freeze - no new features until 1.0. Some interesting features, some of
 which are already largely coded, have been kept out to move towards a 
 stable release.
 </p>
 <p>
 Quartic kept the GIMP going, until he was pulled away on other (related) 
-projects.  However, no serious gap happened between Quartic's tenure and what came to replace it.
+projects. However, no serious gap happened between Quartic's tenure and what came to replace it.
 </p>
+
 <h3>A New Communication:</h3>
 <p>
-Mailing lists are nice, when they work.  Web pages are great for giving 
-tips and presenting data.  But nothing can compare with real-time
-conferencing for open discussion and brainstorming.  It also works
-really well for bug hunting.  To achieve this, GIMP used its own irc
-channel, #gimp.  #gimp was born sometime near February 1997.
+Mailing lists are nice, when they work. Web pages are great for giving 
+tips and presenting data. But nothing can compare with real-time
+conferencing for open discussion and brainstorming. It also works
+really well for bug hunting. To achieve this, GIMP used its own irc
+channel, #gimp. #gimp was born sometime near February 1997.
 </p>
 <p>
 To be fair, #gimp is not always about squashing bugs or future GIMP
-plans.  But overall its become a very competent technical support for 
+plans. But overall its become a very competent technical support for 
 gimp users and a spot for developers to get encouragement and help from 
-one another.  When I asked a couple weeks ago if GIMP would be where it 
+one another. When I asked a couple weeks ago if GIMP would be where it 
 is without #gimp, I got responses ranging from 'probably not' to 'no'.  
 It has allowed people to talk about what is really needed, and what 
 activities they could be involved in that would really help the project.
-<h3>A New Development Model:</h3>
-
 </p>
+
+<h3>A New Development Model:</h3>
 <p>
 With project leaders Spencer and Peter, and now Quartic, gone, and GIMP 
 now split into the development of the toolkit and the development of the
-program, it was time for new leaders to come to the foreground.  Right?
-Thats what the bazaar model would indicate.  However, as with any model,
+program, it was time for new leaders to come to the foreground. Right?
+Thats what the bazaar model would indicate. However, as with any model,
 there are situations that just aren't covered...
 </p>
 <p>
 In the new system, there are designated team members; Mainsh Singh (yosh), 
-for example, was in charge of making releases.  Adrian Likins,
-maintaining data.  Larry Ewing (lewing), Matthew Wilson (msw), and a host
-of others made bug fixes, and did other messier stuff.  There's also
+for example, was in charge of making releases. Adrian Likins,
+maintaining data. Larry Ewing (lewing), Matthew Wilson (msw), and a host
+of others made bug fixes, and did other messier stuff. There's also
 a lot of overlap between the developer community of GIMP and other related
-projects.  But they work as a team - nobody was, or is, the project
-leader.  Each person makes their own contributions, and we all know
+projects. But they work as a team - nobody was, or is, the project
+leader. Each person makes their own contributions, and we all know
 who to refer to when we don't know how to do something, or want advice
-or options.  Decisions that control the fate of GIMP are made primarily
+or options. Decisions that control the fate of GIMP are made primarily
 on #gimp, through this team effort.
 </p>
 
@@ -256,121 +245,113 @@ that are meant to cater to a particular crowd of the gimp user and
 developer base.  
 </p>
 <p>
-
 On April 13th, 1997, &lt;http://xach.dorknet.com/gimp/news/&gt;GIMP 
-News was born.  Zach headed this effort.  This site aimed to become
+News was born. Zach headed this effort. This site aimed to become
 a site to check daily if you wanted to stay on the bleeding edge of
-GIMP development.  If you made a plug-in, Zach found out and told the
-world about it.  If a new release was made, it often beat the mailing
+GIMP development. If you made a plug-in, Zach found out and told the
+world about it. If a new release was made, it often beat the mailing
 list in getting the news to you.  His tutorials and a bug report form
 (added later) were linked off of the news page.
 </p>
 <p>
-
 At about the same time, a huge help in keeping track of the large
 quantity of plug-ins and planned plug-ins appeared on the horizon.  
-The <A HREF="http://registry.gimp.org/">GIMP Plug-In Registry</A> allows 
+The <a href="http://registry.gimp.org/">GIMP Plug-In Registry</a> allows 
 authors to update their plug-ins, and people to register their plans for
-future plug-ins.  If you are a plug-in author, you register it here; it
+future plug-ins. If you are a plug-in author, you register it here; it
 stays up-to-date this way, and as a user you can download and compile the
 newest plug-ins that are not included in the distribution selectively.
 There's even a 'shopping list' that will tar up the ones you want and
 send them all at once.
 </p>
 <p>
-In Late May 1997, I started GIMP Bugs.  This took many of the bugs
+In Late May 1997, I started GIMP Bugs. This took many of the bugs
 from developers list which tended to get in the way of discussion, and
 organized them into an easy-to-read chart for perusal by the developers.
 I maintained the list "by hand", but with only a bug report or two a
 day, it was not a big challenge to handle with a couple perl scripts.
 I assigned priorities to bugs, so that different levels or specialties
-of developers could concentrate on different bugs.  I also checked each
-bug against my own GIMP, and tried to clarify the report.  This became
+of developers could concentrate on different bugs. I also checked each
+bug against my own GIMP, and tried to clarify the report. This became
 an electronic checklist of things that had to be done, that was updated
 by yours truly on a frequent basis.
 </p>
 <p>
 An often overlooked and under-valued aspect of an major project is that of
-documentation.  We have made do with small tutorials here and there until
+documentation. We have made do with small tutorials here and there until
 we got something much better, quite by surprise.  On October 7th, 1997,
 two users, Karin Kylander and Olof S., announced the 
 &lt;http://www.dtek.chalmers.se/~d95olofs/manual/gimpmana.html&gt;
 Gimp Users Manual.
-
 </p>
 <p>
 It is now a comprehensive listing of each bit of functionality in Gimp.
 This 200+ page monster represents a huge amount of work, and is an
 invaluable asset to anyone trying to figure out a particular tool.
 These users became true experts with the tools, possibly better than any
-single developer.  They gathered knowledge from anyone they could.  They 
-then chose to share that knowledge with the world.  It should be noted
+single developer. They gathered knowledge from anyone they could.  They 
+then chose to share that knowledge with the world. It should be noted
 that a huge majority of this work was done on their own, well before  
-any outside help or organization even knew of its existence.  <b>update</b>
+any outside help or organization even knew of its existence. <b>update</b>
 Recent reports have the GUM coming in at 600+ pages!
 </p>
 
 <h3>A Different Release Model:</h3>
 <p>
-
 Because developers are impatient types, they don't want to wait around
-until the next release to tinker with changing source code.  CVS is 
-the solution that GIMP uses.  This versioning system allows users and
+until the next release to tinker with changing source code. CVS is 
+the solution that GIMP uses. This versioning system allows users and
 developers alike to download the bleeding edge GIMP, and developers to
-commit changes.  Further, it allows for easy removal of changes - every
-change is logged, and can be reversed.  While there have been some server
+commit changes. Further, it allows for easy removal of changes - every
+change is logged, and can be reversed. While there have been some server
 difficulties with CVS, it has caught several bugs prior to another beta
-release.  Its certainly better than trying to deal with the numerous
+release. Its certainly better than trying to deal with the numerous
 received patches by hand.
 </p>
 
 <h3>Commercial Involvement:</h3>
 <p>
 Contrary to most free software projects, there is a distinct commercial
-involvement in GIMP.  Some GIMP developers (and possibly others) saw a
+involvement in GIMP. Some GIMP developers (and possibly others) saw a
 chance for a profit in customizing the code or writing custom plug-ins
-for commercial sale.  They also want to sell CD-ROMs of the 1.0 release
+for commercial sale. They also want to sell CD-ROMs of the 1.0 release
 of GIMP, loaded with related artwork and programs.  
 </p>
 <p>
-
 To this end, &lt;http://www.wilberworks.com&gt;WilberWorks is was 
-formed.  Several GIMP developers and "support staff" now have a small
+formed. Several GIMP developers and "support staff" now have a small
 amount of supplemental income for their work on the project, working
 as contractors - enough for a beer every now and then, but not enough to 
 call it a living.
 </p>
 <p>
 Contrary to popular belief, this has not hurt GIMP development at all.  All 
-work done on GIMP is still GPL.  The money is not the main motivator for
-the work.  It is simply a little something that WilberWorks can say
+work done on GIMP is still GPL. The money is not the main motivator for
+the work. It is simply a little something that WilberWorks can say
 'Thank You' with.
 </p>
 <p>
-
 WilberWorks has put me out of the bug page business - they have set up a 
-superior bug tracking system on their server.  WilberWorks 'staff' can log 
-onto the web site, and respond to bugs.  Multiple reports can be modified in
-the database simultaneously.  Bugs are not forgotten on this system - after 
-they are closed, they stay around.  Users can (though rarely do it seems) 
+superior bug tracking system on their server. WilberWorks 'staff' can log 
+onto the web site, and respond to bugs. Multiple reports can be modified in
+the database simultaneously. Bugs are not forgotten on this system - after 
+they are closed, they stay around. Users can (though rarely do it seems) 
 log on as a guest and browse through the previous reports and replies.
 </p>
 <p>
-
 It is currently WilberWorks policy to reply to all bug reports that aren't
-obviously junk mail or invalid email addresses.  This extra little effort 
+obviously junk mail or invalid email addresses. This extra little effort 
 can often uncover a detail that may prove critical to resolving the issue.
 WilberWorks has transformed my little bugs page into a support page.
 </p>
 <p>
-
-Obviously, WilberWorks exists to make money.  So why a bug tracking system?
-The answer is simple - it will make money and costs it nothing.  In 
+Obviously, WilberWorks exists to make money. So why a bug tracking system?
+The answer is simple - it will make money and costs it nothing. In 
 addition to making a better end product for 
 &lt;http://www.wilberworks.comproducts.html&gt;pressing onto CD-ROMs, they 
-offer to fix any bug in 10 days if you have a support contract.  Because they 
+offer to fix any bug in 10 days if you have a support contract. Because they 
 have developers with intimate knowledge of the system and a great deal of 
-skill, WilberWorks feels that it can make this offer.  You will be
+skill, WilberWorks feels that it can make this offer. You will be
 hard-pressed to find a major commercial application that can offer
 anything similar.
 </p>
@@ -379,8 +360,8 @@ anything similar.
 <p>
 In response to a need for a central repository for all these 
 aspects of the program, Shawn Amundson (Snorfle) secured the domain 
-"gimp.org".  The main server of this is <A HREF="http://www.gimp.org">
-www.gimp.org</A>, which just about anyone should be able to guess and
+"gimp.org". The main server of this is <a href="http://www.gimp.org">
+www.gimp.org</a>, which just about anyone should be able to guess and
 remember.  Started on October 7th, 1997, it contains a broad overview of
 things to get you going with gimp, from the source to to tips and tricks.
 </p>
@@ -388,35 +369,35 @@ things to get you going with gimp, from the source to to tips and tricks.
 <h3>Publicity:</h3>
 <p>
 Michael J. Hammel wrote a four part series on the GIMP for inclusion in
-<A HREF="http://www.linuxjournal.com/">Linux Journal</A> (October 1997 -
-January 1998).  It went through some basics, but in reality barely
-skimmed the surface.  But still, this well written and accurate set
+<a href="http://www.linuxjournal.com/">Linux Journal</a> (October 1997 -
+January 1998). It went through some basics, but in reality barely
+skimmed the surface. But still, this well written and accurate set
 of articles exposed the Linux community (and anyone who reads linux
-community literature) to GIMP.  GIMP also receives publicity on a 
-regular basis from his <A HREF="http://www.graphics-muse.org">Graphics
-Muse</A> article appearing in the <A HREF="http://www.ssc.com/lg/">Linux
-Gazette</A>.
+community literature) to GIMP. GIMP also receives publicity on a 
+regular basis from his <a href="http://www.graphics-muse.org">Graphics
+Muse</a> article appearing in the <a href="http://www.ssc.com/lg/">Linux
+Gazette</a>.
 </p>
 <p>
-<A HREF="http://www.redhat.com">Red Hat Linux</A> has bundled GIMP in its
-distribution since version 5.0.  This has turned out to be something of
+<a href="http://www.redhat.com">Red Hat Linux</a> has bundled GIMP in its
+distribution since version 5.0. This has turned out to be something of
 a double edged sword - while it exposes the world to GIMP, it uses a 
-now ancient version.  If you are using version 0.99.12 that comes with 
+now ancient version. If you are using version 0.99.12 that comes with 
 RedHat 5.0, please 
-<A HREF="ftp://s9412a.steinan.ntnu.no/pub/gimp/">upgrade!</A> 
+<a href="ftp://s9412a.steinan.ntnu.no/pub/gimp/">upgrade!</a> 
 Many improvements to the libraries, program, and plug-ins have taken place
 since 0.99.12.
 </p>
 <p>
-<A HREF="http://www.gimp.org/">www.gimp.org</A> also uses the GIMP mascot,
-Wilber.  Wilber is cool. Wilber's eyes move, and thats kinda disturbing
-to some people, but I like him.  Wilber is a GIMP.  Created on Sept. 25,
+<a href="http://www.gimp.org/">www.gimp.org</a> also uses the GIMP mascot,
+Wilber. Wilber is cool. Wilber's eyes move, and thats kinda disturbing
+to some people, but I like him. Wilber is a GIMP. Created on Sept. 25,
 1997 by Tuomas Kuosmanen, Wilber has taken on a life of its own. For example,
 Wilber is pictured doing all sorts of stuff at the top left hand corner of
-the page at www.gimp.org.  Wilber has become a recognized icon associated
-with GIMP, and may be seen at <A HREF="http://slashdot.org">slashdot</A>
-whenever GIMP is mentioned.  He appears on the help screen when starting
-GIMP for the first time, offering useful advice.  Now that GIMP is
+the page at www.gimp.org. Wilber has become a recognized icon associated
+with GIMP, and may be seen at <a href="http://slashdot.org">slashdot</a>
+whenever GIMP is mentioned. He appears on the help screen when starting
+GIMP for the first time, offering useful advice. Now that GIMP is
 becoming more ready to be seen by the general public, Wilber is helping
 get GIMP out to the masses much like (the penguin some call) Tux is for 
 Linux.
@@ -425,11 +406,11 @@ Linux.
 <h3>And It Goes On:</h3>
 <p>
 Remember GTK+?  Some developers got the crazy idea that it was a great 
-toolkit and should be used in everything.  And we can create a desktop based
-on the toolkit.  Like many crazy ideas, this is becoming a reality.  The 
-GNOME project is well underway, in the alpha stages.  The GNOME project
-is being aggressively supported by <A HREF="http://www.labs.redhat.com">
-Red Hat Labs</A>.  All of this may be seen as a byproduct of GIMP.
+toolkit and should be used in everything. And we can create a desktop based
+on the toolkit. Like many crazy ideas, this is becoming a reality. The 
+GNOME project is well underway, in the alpha stages. The GNOME project
+is being aggressively supported by <a href="http://www.labs.redhat.com">
+Red Hat Labs</a>. All of this may be seen as a byproduct of GIMP.
 The success of this one project has spawned many.
 </p>
 <p>

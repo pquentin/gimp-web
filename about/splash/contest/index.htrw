@@ -35,15 +35,12 @@
 
   <h3>Template</h3>
   <p>
+    <div style="float: right;">
+      <a href="template.xcf.bz2"><img alt="#" src="template.jpg"
+				      width="300" height="290" border="0" /></a>
+    </div>
     The submissions should (or rather could) be based on this
     template that Jimmac prepared for you:
-  </p>
-
-  <p>
-  <div style="align: center;">
-     <a href="template.xcf.bz2"><img alt="#" src="template.jpg"
-				     width="300" height="290" border="0" /></a>
-    </div>
   </p>
 
   <h3>Submissions</h3>
@@ -52,7 +49,7 @@
     should also be a gallery with submissions then. Stay tuned.
   </p>
 
-  <h3>Good luck</h3>
+  <h3>Good luck!</h3>
 
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

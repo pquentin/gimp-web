@@ -16,7 +16,7 @@
 
 <p>
   GIMP can be started with a number of command-line options. Let's
-  have a closer look at the output of <strong>gimp --help</strong>.
+  have a closer look at the output of <strong>gimp --help</strong>:
 </p>
 
 <pre class="code">
@@ -38,7 +38,7 @@ Options:
 </pre>
 <p>
   In order to do image processing from the command-line, you usually use
-  the Script-Fu batch interpreter. This is the default which makes things
+  the Script-Fu batch interpreter. This is the default, which makes things
   simple. To give you an impression of what can be done, try the interactive
   console mode:
 </p>
@@ -53,7 +53,7 @@ Options:
   you how to run that:
 </p>
  
-<h2>A batch example</h2>
+<h2>A simple example</h2>
 <pre class="code">
  (define (simple-unsharp-mask filename
                               radius

@@ -144,14 +144,23 @@ class news:
                       + xhtml.span(xhtml.quote(iso_date), {"class" : "newsdate"})
                       + "&nbsp;", {"class" : "newsheading"}))
 
-    s += str(xhtml.para(xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]), "alt" : self["image"]}) + self["body"],
-                        {"class" : "news"}))
+    if icon_by_name(self["image"]) == "":
+      s += str(xhtml.para(self["body"], {"class" : "news"}))
+      pass
+    else:
+      s += str(xhtml.para(xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]),
+                                       "alt" : icon_by_name(self["image"])}) + self["body"],
+                          {"class" : "news"}))
+      pass
+    
     return (s)
 
   def to_queue(self, queue):
-    fp = open(wgo_queue.message_path(queue, self["message-id"]), "w")
+    filename = wgo_queue.message_path(queue, self["message-id"])
+    fp = open(filename, "w")
     print >>fp, self.msg
     fp.close()
+    os.chmod(filename, config.news_permission)
     return (0)
 
   pass

@@ -55,6 +55,11 @@ def main(argv):
     mbox = [ email.message_from_file(fpin) ]
     pass
 
+  directory = wgo_queue.canonical_path(wgo_news.config.pending_queue)
+  if not os.path.exists(directory):
+    os.makedirs(directory, 0777)
+    pass
+        
   for m in mbox:
     n = wgo_news.news(m)
 
@@ -63,18 +68,7 @@ def main(argv):
       if s != None:
         n["subject"] = cgi.escape(s)
         n["body"] = cgi.escape(n["body"])
-
-        directory = wgo_queue.canonical_path(wgo_news.config.pending_queue)
-        os.system('mkdir -p ' + directory)
-        
-        filename = wgo_queue.message_path(wgo_news.config.pending_queue, n["message-id"])
-
         n.to_queue(wgo_news.config.pending_queue)
-        
-        try:
-          os.chmod(filename, wgo_news.config.news_permission)
-        except:
-          pass
         pass
       pass
     pass

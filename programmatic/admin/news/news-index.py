@@ -51,9 +51,9 @@ def html_index_page(queue, news):
 
   filename = wgo_queue.message_path(queue, message_id)
   
-  target = "news-edit.cgi?message-id=" + xhtml.escape(message_id) + "&amp;queue=" + xhtml.escape(queue)
+  target = "news-edit.cgi?message-id=" + xhtml.quote(message_id) + "&amp;queue=" + xhtml.quote(queue)
 
-  checkbox_attrs = { "class" : "news-index", "name" : news["message-id"] }
+  checkbox_attrs = { "class" : "news-index", "name" : xhtml.quote(news["message-id"]) }
   if len(news["body"]) < 2:
     checkbox_attrs.update({"disabled" : "disabled"})
     pass

@@ -77,28 +77,38 @@ def main():
     news.to_queue(queue)
     link = xhtml.hyperlink("Continue", { "href" : "news-edit.cgi?message-id=%s&queue=%s" % (xhtml.escape(news["message-id"]), queue)})
     status = "success"
-    #status = "failed"
+    goto = ["Location: news-edit.cgi?message-id=%s&queue=%s" % (xhtml.escape(news["message-id"]), queue)]
   elif action == "approve":
     news.to_queue(wgo_news.config.current_queue)
-    os.remove(wgo_queue.message_path(queue, news["message-id"]))
+    if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
+      os.remove(wgo_queue.message_path(queue, news["message-id"]))
+      pass
     link = xhtml.hyperlink("Continue", { "href" : "news-index.cgi?%s" % (queue)})
     status = "success"
+    goto = ["Location: news-index.cgi?%s" % (queue)]
   elif action == "disapprove":
     news.to_queue(wgo_news.config.pending_queue)
-    os.remove(wgo_queue.message_path(queue, news["message-id"]))
-    link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
-    status = "success"
-  elif action == "archive":
-    news.to_queue(wgo_news.config.archive_queue)
-    os.remove(wgo_queue.message_path(queue, news["message-id"]))
-    link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
-    status = "success"
-  elif action == "delete":
-    try: os.remove(wgo_queue.message_path(queue, news["message-id"]))
-    except:
+    if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
+      os.remove(wgo_queue.message_path(queue, news["message-id"]))
       pass
     link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
     status = "success"
+    goto = ["Location: news-index.cgi?%s" % (queue)]
+  elif action == "archive":
+    news.to_queue(wgo_news.config.archive_queue)
+    if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
+      os.remove(wgo_queue.message_path(queue, news["message-id"]))
+      pass
+    link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
+    status = "success"
+    goto = ["Location: news-index.cgi?%s" % (queue)]
+  elif action == "delete":
+    if os.path.exists(wgo_queue.message_path(queue, news["message-id"])):
+      os.remove(wgo_queue.message_path(queue, news["message-id"]))
+      pass
+    link = xhtml.hyperlink("Continue", {"href" : "news-index.cgi?%s" % (queue)})
+    status = "success"
+    goto = ["Location: news-index.cgi?%s" % (queue)]
   else:
     link = xhtml.hyperlink("Restart", {"href" : "index.html"})
     queue = ""
@@ -106,12 +116,7 @@ def main():
     pass
 
   if status == "success":
-    wgo_news.header(["Location: news-edit.cgi?message-id=%s&queue=%s" % (xhtml.escape(news["message-id"]), queue)])
-
-    #print xhtml.div(string.capitalize(action) + " " + string.capitalize(status), {"class" : "subtitle"})
-    #if link != "": print xhtml.para(link)
-    #if queue != "": wgo_queue.generate_blotter(queue)
-    #wgo_news.footer()
+    wgo_news.header(goto)
   else:
     wgo_news.header()
     print wgo.error(string.capitalize(action) + " " + string.capitalize(status))

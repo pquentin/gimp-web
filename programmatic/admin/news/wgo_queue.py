@@ -89,11 +89,7 @@ def generate_blotter(queue):
 
     # this is not the best way to handle this XXX
     if queue == news_config.current_queue:
-      mysystem("/bin/cp %s %s" % (news_blotter, wgo.config.DocumentRoot_path + "/includes/news.inc"))
-      print xhtml.pre.init({"style" : "color: grey; font-size: 9px;"})
-      print "/bin/cp %s %s" % (news_blotter, wgo.config.DocumentRoot_path + "/includes/news.inc")
-      mysystem("/bin/ls -l %s" % (wgo.config.DocumentRoot_path + "/includes/news.inc"))
-      print xhtml.pre.fini()
+      os.system("/bin/cp %s %s" % (news_blotter, wgo.config.DocumentRoot_path + "/includes/news.inc"))
       pass
     pass
   

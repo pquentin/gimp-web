@@ -1,7 +1,56 @@
+2003-05-01  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Added .cvsignore files for the tutorials:
+                3d_Logo/.cvsignore
+                Advanced_Animations/.cvsignore
+                Anti-Aliased_Threshold/.cvsignore
+                Basic_Perl/.cvsignore
+                Basic_Scheme2/.cvsignore
+                Basic_Scheme/.cvsignore
+                Bezier_Selections/.cvsignore
+                Blending_Exposures/.cvsignore
+                Blown_Out_Highlights/.cvsignore
+                Blur_Overlays/.cvsignore
+                Borders_On_Selections/.cvsignore
+                Changing_Background_Color_1/.cvsignore
+                Changing_Background_Color_2/.cvsignore
+                Color2BW/.cvsignore
+                Coloring_A_BW_Sketch/.cvsignore
+                ContrastMask/.cvsignore
+                Creating_Icons/.cvsignore
+                Custom_Brushes/.cvsignore
+                Drawables/.cvsignore
+                Draw_A_Paint_Brush/.cvsignore
+                Drawing_Shapes/.cvsignore
+                Film_Grain/.cvsignore
+                Golden_Text/.cvsignore
+                Image_Map/.cvsignore
+                Image_Pipes2/.cvsignore
+                Image_Pipes/.cvsignore
+                Lite_Quickies/.cvsignore
+                Perl-Debugged/.cvsignore
+                Perlotine/.cvsignore
+                Photo_To_Sketch/.cvsignore
+                Quickmask/.cvsignore
+                Red_Eye_Removal/.cvsignore
+                Reducing_CCD_Noise/.cvsignore
+                Selective_Color/.cvsignore
+                Selective_Gaussian_Blur/.cvsignore
+                Sepia_Toning/.cvsignore
+                Simple_Animations/.cvsignore
+                Smart_Sharpening/.cvsignore
+                Straight_Line/.cvsignore
+                template/.cvsignore
+                The_Basics/.cvsignore
+                Tileable_Textures/.cvsignore
+                Using_GAP/.cvsignore
+
+        * admin/gimp-web-urls: fixed the mailto link for myself
+
 2003-04-28  Henrik Brix Andersen  <brix@gimp.org>
 
         * links/org.html: corrected the link to cinnamon.gimp.org,
-	changed the describtion
+        changed the describtion
 
         * team.htrw:
         * admin/gimp-web-urls: changed dictionary entry to match my name

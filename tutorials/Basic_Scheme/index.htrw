@@ -199,7 +199,7 @@
 </p>
 <ol>
   <li> The type of the parameter. Valid types are
-    <dl compact>
+    <dl>
      <dt><b>SF-COLOR</b>
      <dd> An RGB color.
      <dt><b>SF-TOGGLE</b>

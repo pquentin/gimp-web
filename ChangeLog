@@ -1,3 +1,9 @@
+
+2003-08-23  Branko Collin <collin@xs4all.nl>
+
+	* resources/gradients/*.png: compressed all image files better,
+	obliterating bug #119214
+
 2003-08-23  Raphael Quinet  <quinet@gamers.org>
 
 	* tutorials/index.htrw: Re-ordered the links to some tutorials and

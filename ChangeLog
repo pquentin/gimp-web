@@ -9,6 +9,7 @@
 	* /tutorials/Basic_Scheme/index.html: Removed this file.
 	* /tutorials/Basic_Scheme/index.htrw: Add this file. Fixed a few tag
 	problems. Another tag problem with <dl compact>, changed to only <dl>.
+	A few more tag fixes to get the site valid.
 
 	* /admin/gimp-web-urls: Add People-Lehmann_Marc to the links.
 

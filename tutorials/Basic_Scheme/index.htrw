@@ -200,17 +200,17 @@
 <ol>
   <li> The type of the parameter. Valid types are
     <dl>
-     <dt><b>SF-COLOR</b>
-     <dd> An RGB color.
-     <dt><b>SF-TOGGLE</b>
-     <dd> A true or false value.
-     <dt><b>SF-IMAGE</b>
-     <dd> 
-     <dt><b>SF-DRAWABLE</b>
-     <dd>
-     <dt><b>SF-VALUE</b>
-     <dd> Any scalar value, string, integer, or floating point.</li>
-     </dl>
+     <dt><b>SF-COLOR</b></dt>
+     <dd> An RGB color.</dd>
+     <dt><b>SF-TOGGLE</b></dt>
+     <dd> A true or false value.</dd>
+     <dt><b>SF-IMAGE</b></dt>
+     <dd></dd>
+     <dt><b>SF-DRAWABLE</b></dt>
+     <dd></dd>
+     <dt><b>SF-VALUE</b></dt>
+     <dd> Any scalar value, string, integer, or floating point.</dd>
+     </dl></li>
   <li> A label for script-fu to display when querying for the parameter.</li>
   <li> A default value.</li>
 </ol>

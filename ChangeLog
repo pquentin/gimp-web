@@ -1,5 +1,8 @@
 2003-09-22  Raphael Quinet  <quinet@gamers.org>
 
+	* windows/index.htrw: Added a note about the CDs available for
+	purchase from www.wingimp.org.
+
 	* macintosh/index.htrw: Added direct link to the XDarwin project,
 	as suggested by Mat Caughron.
 

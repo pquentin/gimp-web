@@ -52,11 +52,20 @@ def header(title, links):
   print xhtml.title(title)
   print look_feel()
 
-  print xhtml.link({"rel" : "stylesheet", "href" : "/style/extended.css", "type" : "text/css", "media" : "screen", "title" : title})
+  print xhtml.link({"rel" : "stylesheet",
+                    "href" : "/style/extended.css",
+                    "type" : "text/css",
+                    "media" : "screen",
+                    "title" : title})
 
   for href in links:
-    print xhtml.link({"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen", "title" : title})
+    print xhtml.link({"rel" : "stylesheet",
+                      "href" : href,
+                      "type" : "text/css",
+                      "media" : "screen",
+                      "title" : title})
     pass
+  
   print page_init()
 
   return (True)

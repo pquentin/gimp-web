@@ -1,4 +1,3 @@
-#!/usr/bin/env python2.2
 #!/usr/bin/env ${PYTHON}
 # -*- mode: python py-indent-offset: 2; -*-
 #
@@ -32,7 +31,6 @@
 # ChangeLogs produced and understood by Lord Emacs, Keeper of the True
 # Faith and Harbinger of all things Gnu.
 
-
 import rfc822
 import types
 import string
@@ -44,6 +42,11 @@ import pprint
 pp = pprint.PrettyPrinter(indent=2)
 
 #
+#
+# The start of a log entry varies but conforms abstractly to:
+#
+#        timestamp name email
+# 
 # A log has a list of paragraphs for which each paragraph may have sub-paragraphs
 #
 #        * gimp-zip.in: Include minizip.exe (for the gz plug-in) (bug# 67135).     <- Paragraph

@@ -7,7 +7,7 @@ all: usage ChangeLog changelog-xhtml.css changelog-xhtml-mono.css
 usage:
 
 
-ChangeLog: ChangeLog-xhtml.cgi changelog-cron gimp-unstable gegl-unstable gimp-help gimp-print film-gimp
+ChangeLog: changelog-cron gimp-unstable gegl-unstable gimp-help gimp-print film-gimp
 
 gimp-unstable: gimp-unstable.sh
 gegl-unstable: gegl-unstable.sh
@@ -16,19 +16,17 @@ gimp-print: gimp-print.sh
 film-gimp: film-gimp.sh
 changelog-chron: changelog-cron.sh
 
-ChangeLog-xhtml.cgi: ChangeLog-xhtml.py
-
 changelog-xhtml.css: changelog-xhtml.cPP
 
 changelog-xhtml-mono.css: changelog-xhtml-mono.cPP
 
 clean mrproper:
-	/bin/rm -f *.cgi *~ changelog-xhtml.css changelog-xhtml-mono.css ChangeLog-xhtml.cgi changelog-cron gimp-unstable gegl-unstable gimp-help gimp-print film-gimp
+	/bin/rm -f *.cgi *~ changelog-xhtml.css changelog-xhtml-mono.css changelog-cron gimp-unstable gegl-unstable gimp-help gimp-print film-gimp
 
 install: install-first
 
 install-first: all
-	install --mode=755 ChangeLog-xhtml.cgi `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/about/ChangeLogs
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' ChangeLog.py        > ${LIBDIR}/ChangeLog.py && chmod 755 ${LIBDIR}/ChangeLog.py
 	install --mode=755 gimp-unstable   \
 	                   gegl-unstable   \
 	                   gimp-help       \

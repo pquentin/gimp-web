@@ -63,6 +63,7 @@ install: install-common install-admin install-contest install-about
 install-common: all
 	install --mode=755 -d ${LIBDIR}
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py        > ${LIBDIR}/wgo.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo_develop.py        > ${LIBDIR}/wgo_develop.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' apache_ssi.py > ${LIBDIR}/apache_ssi.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xhtml.py      > ${LIBDIR}/xhtml.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' rdf.py        > ${LIBDIR}/rdf.py

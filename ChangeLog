@@ -1,11 +1,26 @@
+2003-02-22  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Added programmatic/wgo_develop.py as the "develop" style for
+          scripts.
+
+        * Changed about/ChangeLogs/index.html to include references to
+          both text and html log file formats.
+
+        * Changes to fetch ChangeLogs and generate both text and html
+          representations of the ChangeLogs
+
+        * Added programmatic/about/ChangeLogs/ChangeLog.py
+        
+        * Deleted programmatic/about/ChangeLogs/ChangeLog-xhtml.py
+
 2003-02-22 scizzo <scizzo@gimp.org>
 
-	* /includes/wgo-develop-init.xhtml, wgo-develop-fini.xhtml: Add the
-	includes for the changelogs to use. Maybe they should have a different
-	name?
+        * /includes/wgo-develop-init.xhtml, wgo-develop-fini.xhtml: Add the
+        includes for the changelogs to use. Maybe they should have a different
+        name?
 
-	* /develop/example-changelog.html: Add a example for the changelogs to
-	use. Any thing in question about this file?
+        * /develop/example-changelog.html: Add a example for the changelogs to
+        use. Any thing in question about this file?
 
 2003-02-20  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 

@@ -41,7 +41,41 @@ def usage(name):
   print "  -DocumentRoot=<directory> Directory pathname for include files"
   print "  -v                        Print version and exit"
   return
-  
+
+def makefile_format(files, init=True):
+
+  if init:
+    s = files[0] + ": "
+  else:
+    s = ""
+    pass
+
+  for f in files:
+    if type(f) == list:
+      s += makefile_format(f, False)
+    else:
+      s += f + " "
+      pass
+    pass
+  return (s)
+
+def html_format(files, indentation=0):
+  s = ""
+
+  indent = ""
+  for i in range(0, indentation):
+    indent += "&nbsp;&nbsp;&nbsp;&nbsp;"
+    pass
+
+  for f in files:
+    if type(f) == list:
+      s += html_format(f, indentation+1)
+    else:
+      s += indent + f + "<br />\n"
+      pass
+    pass
+
+  return (s)
     
 if __name__ == "__main__":
 
@@ -50,7 +84,7 @@ if __name__ == "__main__":
   fpout = sys.stdout
   
   try:
-    opts, args = getopt.getopt(sys.argv[1:], "ho:D:vr:M", ["help", "output=", "version", "DocumentRoot=", "M"])
+    opts, args = getopt.getopt(sys.argv[1:], "ho:D:vr:mx", ["help", "output=", "version", "DocumentRoot=", "xhtml", "make"])
   except getopt.GetoptError:
     usage(sys.argv[0])
     sys.exit(2)
@@ -72,10 +106,14 @@ if __name__ == "__main__":
       ssi.document_root = a + "/"
       pass
 
-    if o in ("-M", "--M"):
-      dependency_list = True
+    if o in ("-x", "--xhtml"):
+      dependency_list = "xhtml"
       pass
-    
+
+    if o in ("-m", "--make"):
+      dependency_list = "makefile"
+      pass
+
     if o in ("-v", "--version"):
       print ssi.Version
       sys.exit()
@@ -87,8 +125,18 @@ if __name__ == "__main__":
       pass
     pass
 
-  if dependency_list:
-    print >>fpout, map(lambda a: ssi.depend(a), args)
+  if dependency_list != False:
+    depends = map(lambda a: ssi.depend(a), args)[0]
+    if dependency_list == "xhtml":
+      print >>fpout, html_format(depends)
+      pass
+    elif dependency_list == "makefile":
+      print >>fpout, makefile_format(depends)
+      pass
+    else:
+      print >>fpout, depends
+      pass
+      
   else:
     print >>fpout, string.join(map(lambda a: ssi.parse(a), args))
     pass

@@ -91,7 +91,7 @@ Report bugs to: <HELVETIX@Mysterious.ORG>"""
       attrs = self.__parse_attribute(ssi.expand("\\2"))
 
       if element == "include":
-        output += self.parse(self.document_root + attrs["virtual"])
+        output += self.parse(os.path.normpath(self.document_root + attrs["virtual"]))
       elif element == "set":
         value = self.__interpolate_variable(attrs["value"])
         self.variables.update({attrs["var"]: value})
@@ -124,7 +124,7 @@ Report bugs to: <HELVETIX@Mysterious.ORG>"""
       attrs = self.__parse_attribute(ssi.expand("\\2"))
 
       if element == "include":
-        l = self.depend(self.document_root + attrs["virtual"])
+        l = self.depend(os.path.normpath(self.document_root + attrs["virtual"]))
         files.append(l)
       elif element == "set":
         value = self.__interpolate_variable(attrs["value"])

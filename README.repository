@@ -10,30 +10,31 @@ brix or carol.
 Second: when adding a new page be sure to use the template.html file.
 There are classes for the heading and the subtitles. Use them. Do not
 use <h?>...</h?> or other stuff like that as this is not consistent
-with the rest of the layout. also avoid putting hrefs (links) in the
-subtitles. the same goes for the tutorials. notice there is a special
+with the rest of the layout. Also avoid putting hrefs (links) in the
+subtitles. The same goes for the tutorials. Notice there is a special
 tutorial template in tutorials/template/
 
-the pages needs to be written in xhtml 1.0 strict and you should
-validate your page using w3cs validator. the styles used are written
-in css2, but the style/ directory is off limits. if you find that you
-need a new style/rule added you should contact brix.
+The pages needs to be written in xhtml 1.0 strict and you should
+validate your page using w3cs validator (http://validator.w3.org/).
+The styles used are written in css2, but the style/ directory is off
+limits. If you find that you need a new style/rule added you should
+contact brix.
 
-when adding an html file that has SSI directives (the <!--#... -->
+When adding an html file that has SSI directives (the <!--#... -->
 lines) in it, the file needs to be 'chmod +x file.html' (yes, the
-*.html file needs to be executeable!). furthermore, it need to be
+*.html file needs to be executeable!). Furthermore, it need to be
 executeable at 'cvs add file.html'; it's a pain to change the
 permissions when the file is already checked in. Should you need to
 change the permissions of an already checked in file you need to
 contact either carol or brix.
 
-third: as with any cvs repository, well written comments are a must.
-when adding/modifying a file be sure to add a descriptive comment to
+Third: as with any cvs repository, well written comments are a must.
+When adding/modifying a file be sure to add a descriptive comment to
 the cvs log. you should also add a (human readable!) entry to the
 ChangeLog file.  Add your entry to the ChangeLog and then paste that
 into the cvs log for consistency.
 
-more to follow...
+More to follow...
 
 Questions? Contact me on irc or through mail...
 ./Henrik Brix Andersen <brix@gimp.org>

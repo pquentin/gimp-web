@@ -1,3 +1,13 @@
+2004-04-10  Raphaël Quinet  <quinet@gamers.org>
+
+	* nopatents.html
+	* images/wilber_patented.png: Added image and html page to protest
+	against software patents in Europe.  The file nopatents.html
+	should temporarily replace the index page by altering the
+	DirectoryIndex directive in the config file of the web server.
+
+	* about/selling.htrw: Added expansion of the FSF acronym.
+
 2004-04-09  Henrik Brix Andersen  <brix@gimp.org>
 
 	* windows/index.htrw: removed spurious '2' char. Fixes bug

@@ -1,6 +1,3 @@
-<html>
-<body>
-<pre>
 # This is the system-wide gimprc file.  Any change made in this file
 # will affect all users of this system, provided that they are not
 # overriding the default values in their personal gimprc file.
@@ -339,6 +336,3 @@
 (gimpressionist-path "${gimp_dir}/gimpressionist:${gimp_data_dir}/gimpressionist")
 
 # [end of file]
-</pre>
-</body>
-</html>

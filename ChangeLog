@@ -1,3 +1,8 @@
+2003-04-20 scizzo <scizzo@gimp.org>
+
+	* /unix/gimprc: Removed the html tags in the file they where visible
+	on the site.
+
 2003-04-19 carol <cspears@cablespeed.com>
 
     * /about/splash-stable.htrw, converted from the html

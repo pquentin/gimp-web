@@ -1,3 +1,8 @@
+2004-12-19  Michael Schumacher <schumaml@cvs.gnome.org>
+
+	* mail_lists.htrw: added "broken" to all XCF archives links
+	changed wrongly labeled archives links of gimp-perl and os2
+	
 2004-12-19  Sven Neumann  <sven@gimp.org>
 
 	* admin/gimp-web-urls: added URL for NEWS on dgo.
@@ -43,6 +48,7 @@
 
 	* images/wilber_reading.png: a PNG version of an icon we used on
 	the old wgo page. I would like to be able to use this as news icon.
+
 
 2004-12-18  Sven Neumann  <sven@gimp.org>
 

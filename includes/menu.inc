@@ -5,7 +5,7 @@
           <a href="/registry.html">Plug-In Registry</a><br/>
           <a href="/documentation.html">Documentation</a><br/>
           <a href="/tutorials">Tutorials</a><br/>
-          <a href="/authoring.html">Script Authoring</a><br/>
+          <a href="/bugs">Bugs</a><br/>
           <a href="/development.html">Development</a><br/>
           <br/>
           <a href="/unix">GIMP for Unix</a><br/>

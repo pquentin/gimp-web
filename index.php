@@ -25,6 +25,7 @@
           <a href="?page=unix">GIMP for Unix</a><br/>
           <a href="?page=win32">GIMP for Windows</a><br/>
           <a href="?page=mac">GIMP for Macintosh</a><br/>
+          <a href="?page=os2">GIMP for OS/2</a><br/>
           <br/>
           Newest Plug-Ins:<br/>
           <a href="1">Gaussian blur * (1.0)</a><br/>

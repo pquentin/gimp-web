@@ -1,5 +1,16 @@
 2004-04-10  Raphaël Quinet  <quinet@gamers.org>
 
+	* bugs/howtos/bugzilla.htrw: Removed the paragraph suggesting to
+	use the URL field in Bugzilla, because this field has been removed
+	in the new version.  Added link to /bugs/why_bugzilla.html.
+
+	* webmasters.htrw: Added link to /bugs/why_bugzilla.html.
+
+	* bugs/why_bugzilla.htrw: New page explaining why we are using
+	Bugzilla.
+
+2004-04-10  Raphaël Quinet  <quinet@gamers.org>
+
 	* nopatents.html
 	* images/wilber_patented.png: Added image and html page to protest
 	against software patents in Europe.  The file nopatents.html

@@ -20,8 +20,10 @@
 </p>
 <p>
   Next: Go away and yell and scream and do whatever you need to do to relax 
-  again. Your next step will be to brave bugzilla, the GNOME bug tracker. It is 
-  used to track bug reports and requests for enhancements for GIMP and GTK+).
+  again. Your next step will be to brave Bugzilla, the GNOME bug tracker. It is 
+  used to track bug reports and requests for enhancements for GIMP and <span
+  class="help" title="the GIMP ToolKit">GTK+</span> (see also <a
+  href="/bugs/why_bugzilla.htrw">why we are using Bugzilla</a>).
 </p>
 <p>
   Third: Check to see if your bug has been reported yet. Go to the 
@@ -98,8 +100,6 @@
        A crappy bug report is better than no report at all, but if you write 
        down everything you can clearly, you will create a decent bug report.
     </p>
-  </li>
-  <li>
   <ol>
      <li>
         <p>
@@ -147,13 +147,6 @@
         <p>
            Leave &quot;Assigned to:&quot; blank. Bugzilla will do that automatically. Only worry 
            about CC: if you want to send a copy of your bug report to someone else.
-        </p>
-     </li>
-     <li>
-        <p>
-           Use the &quot;URL&quot; (URL, Uniform Resource Locator) field to link to an 
-           online screenshot or file that can help clarify the bug. This field is not 
-           required.
         </p>
      </li>
      <li>

@@ -26,7 +26,8 @@ link or some incorrect information, please use Bugzilla to <a
 href="home:gimp-bugzilla-wgo-submit">submit a bug report for this web
 site</a>.  Several GIMP contributors are keeping an eye on the bug
 database regularly so this is probably the best way to tell us about
-these problems and to get a timely response.</p>
+these problems and to get a timely response.  See also <a
+href="/bugs/why_bugzilla.html">why we are using Bugzilla</a>.</p>
 
 <h2>Download mirrors</h2>
 
@@ -39,9 +40,10 @@ from the ftp-admin.  We can provide more details through Bugzilla.</p>
 <h2>Last resort</h2>
 
 <p>If you really want to send us some mail, then you can send it to
-webmasters@gimp.org.  We'll try and help you out as much as possible,
-but this e-mail alias is not read frequently.  Using Bugzilla will
-usually provide a much faster response (hours instead of months).</p>
+webmasters<!--nospam-->@<!--nospam-->gimp.<!--nospam-->org.  We'll try
+and help you out as much as possible, but this e-mail alias is not
+read frequently.  Using Bugzilla will usually provide a much faster
+response (hours instead of months).</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -4,7 +4,7 @@
           <a href="/resources.html">Resources</a><br/>
           <a href="/registry.html">Plug-In Registry</a><br/>
           <a href="/documentation.html">Documentation</a><br/>
-          <a href="/tutorials.html">Tutorials</a><br/>
+          <a href="/tutorials/">Tutorials</a><br/>
           <a href="/authoring.html">Script Authoring</a><br/>
           <a href="/development.html">Development</a><br/>
           <br/>

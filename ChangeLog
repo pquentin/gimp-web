@@ -1,5 +1,7 @@
 2003-04-21  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * bwerp: left behind a bit of debugging code.
+
         * Thanks to Sven's eagle-eyed review, I've quoted the description
           content according to the RDF spec.  Added a few more nice-to-have
           elements, and some reasonable content for <link> and <dc:creator>.

@@ -66,8 +66,6 @@ def generate_rdf(queue):
              
   news_blotter = file_path(queue, news_config.news_blotter)
 
-  xhtml.environ()
-  
   fp = open(rdf_file, "w")
   print >>fp, '<?xml version="1.0"?>'
   print >>fp, '<?xml-stylesheet href="/style/rdf-news.css" type="text/css"?>'

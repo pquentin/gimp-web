@@ -97,7 +97,7 @@ div.item {
   text-align: justify; 
 }
 
-#linkbar {
+#linkbar, #navbar {
   clear: both;
   background: #f5f5f5;
   color: black;

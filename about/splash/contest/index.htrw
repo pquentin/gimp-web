@@ -43,7 +43,7 @@
 
   <h3>Submissions</h3>
   <p>
-    Submit your splash image here: <a href="/contest/contest.cgi">Splash Submission Form</a>. The contest will be open until next Sunday the
+    Submit your splash image here: <a href="/contest/contest.cgi">Splash Submission Form</a>. You can view the current submissions in the <a href="/contest/gallery.cgi">gallery</a>. The contest will be open until next Sunday the
     5th of December, at which point the winner will be announced
     and committed to CVS. The winner will receive a small prize
     to be announced, and the honour of having their splash screen

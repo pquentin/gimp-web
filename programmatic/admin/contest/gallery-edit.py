@@ -154,57 +154,56 @@ def display_gallery(form):
     return
     
   this_page_index = int(form.getfirst("index", "0"))
-  tableless = int(form.getfirst("tableless", "0"))
 
-  images_per_page = 8
+  images_per_page = 12
 
   next_page_index = this_page_index + images_per_page
   prev_page_index = this_page_index - images_per_page
 
   next = "&gt;"
   if this_page_index < len(names) and len(names) >= next_page_index:
-    next = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (next_page_index)}, "&gt;")
+    next = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (next_page_index)}, next)
     pass
 
   prev = "&lt;"
   if this_page_index >= images_per_page:
-    prev = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_index)}, "&lt;")
+    prev = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_index)}, prev)
     pass
 
-  print xhtml.table.init({"style" : "width: 100%; font-size: large; padding: 0; border-spacing: 0; border-collapse: collapse; border: 1px solid black;"})
+  print xhtml.table.init({"class" : "contest-edit-progress-bar"})
   print xhtml.table.row.init()
-  print xhtml.table.cell({"style" : "border: 1px solid black; font-size: normal; font-weight: bold;" }, prev)
+  print xhtml.table.cell({"id" : "prev"}, prev)
 
   position = this_page_index * 100 / len(names)
 
   for i in range(0, 100):
     index = len(names) * i / 100
-    link = xhtml.hyperlink({"style" : "display: block;", "href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (index)}, "&nbsp;")
     link = "&nbsp;"
     if i == position:
-      print xhtml.table.cell({"style" : "width: 1%; border: 1px solid gray; background: none #32537d;", "title" : "image %d, i=%d" % (index, i)}, link)
+      print xhtml.table.cell({"id" : "current-position", "title" : "image %d (%d%%)" % (this_page_index, i)}, link)
     else:
-      print xhtml.table.cell({"style" : "width: 1%; border: none;", "title" : "image %d, i=%d" % (index, i)}, link)
+      print xhtml.table.cell(link)
       pass
     pass
-  print xhtml.table.cell({"style" : "border: 1px solid black; font-size: large; font-weight: bold;" }, next)
+  print xhtml.table.cell({"id" : "next" }, next)
 
   print xhtml.table.row.fini()
   print xhtml.table.fini()
   
-  print xhtml.table.init({"style" : "border-spacing: 6; padding: 0; border: none;", "class" : "gallery"})
+  print xhtml.table.init({"class" : "contest-image-gallery"})
 
-  print xhtml.table.row.init()
-  map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[this_page_index : this_page_index + (images_per_page / 2)])
-  print xhtml.table.row.fini()
+  row_start = this_page_index
+  row = names[row_start : row_start + 4]
+  print xhtml.table.row("".join(map(lambda k: str(xhtml.table.cell(format(k))), row)))
 
-  if len(names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page + 1]) > 0:
-    print xhtml.table.row.init()
-    map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))),
-        names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page])
-    print xhtml.table.row.fini()
-    pass
-    
+  row_start = this_page_index + 4
+  row = names[row_start : row_start + 4]
+  print xhtml.table.row("".join(map(lambda k: str(xhtml.table.cell(format(k))), row)))
+
+  row_start = this_page_index + 8
+  row = names[row_start : row_start + 4]
+  print xhtml.table.row("".join(map(lambda k: str(xhtml.table.cell(format(k))), row)))
+
   print xhtml.table.fini()
 
   wgo_admin.footer()

@@ -56,32 +56,32 @@ clean mrproper:
 install: install-news
 
 install-news: all
-	install --owner=${OWNER} --mode=755 -d `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} include/news-archive_footer.html `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} include/news-archive_header.html `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} include/news-current_footer.html `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} include/news-current_header.html `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} include/news-pending_footer.html `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} include/news-pending_header.html `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} news-admin.css                   `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} howto-news.html                  `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} news-batch.cgi                   `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} news-edit-action.cgi             `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} news-edit.cgi                    `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} news-index.cgi                   `python -c 'import news_config; print news_config.news_path'`
-	install --owner=${OWNER} news-receiver                    `python -c 'import news_config; print news_config.news_path'`
+	install --mode=755 -d `python -c 'import news_config; print news_config.news_path'`
+	install include/news-archive_footer.html `python -c 'import news_config; print news_config.news_path'`
+	install include/news-archive_header.html `python -c 'import news_config; print news_config.news_path'`
+	install include/news-current_footer.html `python -c 'import news_config; print news_config.news_path'`
+	install include/news-current_header.html `python -c 'import news_config; print news_config.news_path'`
+	install include/news-pending_footer.html `python -c 'import news_config; print news_config.news_path'`
+	install include/news-pending_header.html `python -c 'import news_config; print news_config.news_path'`
+	install news-admin.css                   `python -c 'import news_config; print news_config.news_path'`
+	install howto-news.html                  `python -c 'import news_config; print news_config.news_path'`
+	install news-batch.cgi                   `python -c 'import news_config; print news_config.news_path'`
+	install news-edit-action.cgi             `python -c 'import news_config; print news_config.news_path'`
+	install news-edit.cgi                    `python -c 'import news_config; print news_config.news_path'`
+	install news-index.cgi                   `python -c 'import news_config; print news_config.news_path'`
+	install news-receiver                    `python -c 'import news_config; print news_config.news_path'`
 
-	install --owner=${OWNER} --mode=755 -d `python -c 'import news_config; print news_config.icon_path'`
-	install --owner=${OWNER} icons/gimp_code.png              `python -c 'import news_config; print news_config.icon_path'`
-	install --owner=${OWNER} icons/gimp_construction.png      `python -c 'import news_config; print news_config.icon_path'`
-	install --owner=${OWNER} icons/release-0.1.png            `python -c 'import news_config; print news_config.icon_path'`
-	install --owner=${OWNER} icons/release-dev.png            `python -c 'import news_config; print news_config.icon_path'`
+	install --mode=755 -d `python -c 'import news_config; print news_config.icon_path'`
+	install icons/gimp_code.png              `python -c 'import news_config; print news_config.icon_path'`
+	install icons/gimp_construction.png      `python -c 'import news_config; print news_config.icon_path'`
+	install icons/release-0.1.png            `python -c 'import news_config; print news_config.icon_path'`
+	install icons/release-dev.png            `python -c 'import news_config; print news_config.icon_path'`
 
-	install --owner=${OWNER} news_config.py ${LIBDIR}
-	install --owner=${OWNER} wgo_news.py        ${LIBDIR}
-	install --owner=${OWNER} wgo_queue.py       ${LIBDIR}
+	install news_config.py ${LIBDIR}
+	install wgo_news.py        ${LIBDIR}
+	install wgo_queue.py       ${LIBDIR}
 
-	install --owner=${OWNER} --mode=755 -d `python -c 'import wgo_queue; print wgo_queue.canonical_path("")'`
-	install --owner=${OWNER} --mode=755 -d `python -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.pending_queue)'`
-	install --owner=${OWNER} --mode=755 -d `python -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.current_queue)'`
-	install --owner=${OWNER} --mode=755 -d `python -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.archive_queue)'`
+	install --mode=755 -d `python -c 'import wgo_queue; print wgo_queue.canonical_path("")'`
+	install --mode=755 -d `python -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.pending_queue)'`
+	install --mode=755 -d `python -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.current_queue)'`
+	install --mode=755 -d `python -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.archive_queue)'`

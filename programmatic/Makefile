@@ -50,11 +50,11 @@ clean mrproper:
 install: install-common install-admin install-contest
 
 install-common: all
-	install --owner=${OWNER} --mode=755 -d ${LIBDIR}
-	install --owner=${OWNER}            wgo_config.py ${LIBDIR}
-	install --owner=${OWNER}            wgo.py        ${LIBDIR}
-	install --owner=${OWNER}            xhtml.py      ${LIBDIR}
-	install --owner=${OWNER} --mode=644 extended.css  ${DocumentRoot}/style/
+	install --mode=755 -d ${LIBDIR}
+	install             wgo_config.py ${LIBDIR}
+	install             wgo.py        ${LIBDIR}
+	install             xhtml.py      ${LIBDIR}
+	install --mode=644 extended.css  ${DocumentRoot}/style/
 
 install-admin: admin
 	cd admin && $(MAKE) install

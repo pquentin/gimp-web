@@ -53,20 +53,20 @@ clean mrproper:
 	/bin/rm -f *.pyc *.cgi wgo-contest.css contest_config.py
 
 install: all
-	install --owner=${OWNER} --mode=755 -d ${LIBDIR}
-	install --owner=${OWNER} --mode=755 -d `python -c 'import contest_config; print contest_config.contest_path'`/include
-	install --owner=${OWNER} --mode=755 -d `python -c 'import contest_config; print contest_config.contest_path'`/icons
-	install --owner=${OWNER} --mode=755 -d `python -c 'import contest_config; print contest_config.contest_path'`/images
-	install --owner=${OWNER} --mode=755 -d `python -c 'import contest_config; print contest_config.icon_path'`
-	install --owner=${OWNER} --mode=755 -d `python -c 'import contest_config; print contest_config.spool_path'`
-	install --owner=${OWNER} --mode=755 -d `python -c 'import contest_config; print contest_config.gallery_path'`
+	install --mode=755 -d ${LIBDIR}
+	install --mode=755 -d `python -c 'import contest_config; print contest_config.contest_path'`/include
+	install --mode=755 -d `python -c 'import contest_config; print contest_config.contest_path'`/icons
+	install --mode=755 -d `python -c 'import contest_config; print contest_config.contest_path'`/images
+	install --mode=755 -d `python -c 'import contest_config; print contest_config.icon_path'`
+	install --mode=755 -d `python -c 'import contest_config; print contest_config.spool_path'`
+	install --mode=755 -d `python -c 'import contest_config; print contest_config.gallery_path'`
 
-	install --owner=${OWNER} images/gimp-splash.png `python -c 'import contest_config; print contest_config.images_path'`
-	install --owner=${OWNER} images/gimp-bg.png     `python -c 'import contest_config; print contest_config.images_path'`
-	install --owner=${OWNER} contest_config.py      ${LIBDIR}
-	install --owner=${OWNER} wgo-contest.css        `python -c 'import contest_config; print contest_config.contest_path'`
-	install --owner=${OWNER} wgo_contest.py         ${LIBDIR}
-	install --owner=${OWNER} contest.cgi            `python -c 'import contest_config; print contest_config.contest_path'`
-	install --owner=${OWNER} gallery.cgi            `python -c 'import contest_config; print contest_config.contest_path'`
-	install --owner=${OWNER} gimp-batch             `python -c 'import contest_config; print contest_config.contest_path'`
-	install --owner=${OWNER} index.html             `python -c 'import contest_config; print contest_config.contest_path'`
+	install images/gimp-splash.png `python -c 'import contest_config; print contest_config.images_path'`
+	install images/gimp-bg.png     `python -c 'import contest_config; print contest_config.images_path'`
+	install contest_config.py      ${LIBDIR}
+	install wgo-contest.css        `python -c 'import contest_config; print contest_config.contest_path'`
+	install wgo_contest.py         ${LIBDIR}
+	install contest.cgi            `python -c 'import contest_config; print contest_config.contest_path'`
+	install gallery.cgi            `python -c 'import contest_config; print contest_config.contest_path'`
+	install gimp-batch             `python -c 'import contest_config; print contest_config.contest_path'`
+	install index.html             `python -c 'import contest_config; print contest_config.contest_path'`

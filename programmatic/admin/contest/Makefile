@@ -17,5 +17,5 @@ clean mrproper:
 install: install-first
 
 install-first: all
-	install --owner=${OWNER} --mode=755 -d `python -c 'import wgo_config; print wgo_config.admin_path'`/contest
-	install --owner=${OWNER} --mode=755 gallery-edit.cgi   `python -c 'import wgo_config; print wgo_config.admin_path'`/contest
+	install --mode=755 -d `python -c 'import wgo_config; print wgo_config.admin_path'`/contest
+	install --mode=755 gallery-edit.cgi   `python -c 'import wgo_config; print wgo_config.admin_path'`/contest

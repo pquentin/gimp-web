@@ -1,3 +1,13 @@
+2003-09-12  Raphael Quinet  <quinet@gamers.org>
+
+	* includes/wgo-tutorial-init.xhtml
+	* includes/wgo-tutorial-fini.xhtml: Added a menu to the tutorial
+	pages.  The menu is hidden by default, but it may be better to
+	show it.  This is open for discussion.  The footer of all tutorial
+	pages will have to be updated so that we can use the standard link
+	bar and copyright notice instead of having different ones
+	hardcoded in every tutorial.
+
 2003-09-11  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* Checkin the Makefile with combined SSI preprocessing and
@@ -16,7 +26,7 @@
 	* includes/wgo-admin-init.xhtml: The correct spelling of the
 	onLoad event handler in XHTML is onload, not onLoad.
 
-2003-09-09  Raphael Quinet  <quinet@gamers.org>
+2003-09-08  Raphael Quinet  <quinet@gamers.org>
 
 	* style/wgo.css
 	* style/wgo.js

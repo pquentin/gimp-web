@@ -172,7 +172,6 @@
 ["href", "wgo:about-maintainers",              { "href": "/about/maintainers.html"}]
 ["href", "wgo:about-maintainers-plugins",      { "href": "/about/maintainers-plugins.html"}]
 ["href", "wgo:about-mediakit",                 { "href": "/about/mediakit.html"}]
-["href", "wgo:about-screenshots",              { "href": "/about/screenshots.html"}]
 ["href", "wgo:about-splash",                   { "href": "/about/splash/index.html"}]
 ["href", "wgo:about-splash-archive-1.1",       { "href": "/about/splash/index.html"}]
 ["href", "wgo:about-splash-1-1",               { "href": "/about/splash-1.1.html"}]

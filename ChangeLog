@@ -1,3 +1,37 @@
+2003-08-13 scizzo <scizzo@gimp.org>
+
+	* /includes/wgo-page-init.xhtml: Add screenshots to the menu. Change
+	the logo so both images links to http://www.gimp.org/ reported in bug:
+	#119480
+	Moved things around a bit to start working with my menu proposals this
+	needs more work though this might close bug #119563
+
+	* /includes/wgo-page-fini.xhtml: Moved things around to make it a
+	linkbar with links only and no local links that the main menu should
+	have.
+
+	* /screenshots/: Add this for the menu to use.
+	
+	* /about/index.htrw: Removed the link to the screenshots. Moved things
+	around a little this change should be enough to close bug #119478. 
+	Removed a few headlines and changed so that the headlines 
+	would be h2 and not both h2 and h3. Add text to warn about big file
+	reported in bug #119561
+	* /about/history.htrw: Removed this file. Content included in
+	index.htrw now.
+	* /about/screenshots.html: Removed this file.
+	* /about/mediakit.html: Removed this file. Content included in
+	index.htrw now.
+	
+	* /downloads/index.htrw: Moved things around a little and add a link
+	to install_help.html.
+	* /downloads/install_help.html: Add this file with some content. This
+	one is done after reading bug #118481 but don't know if it closes the bug.
+
+	* /docs/index.htrw: Removed link to "GIMP Script Cookbook".
+
+	* /admin/gimp-web-urls: Removed wgo:about-screenshots.
+
 2003-08-12  Henrik Brix Andersen  <brix@gimp.org>
 
 	* bugs/.cvsignore

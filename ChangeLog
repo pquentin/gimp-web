@@ -1,3 +1,8 @@
+2004-03-12  Dave Neary  <bolsh@gimp.org>
+
+	* tutorials/Photo_To_Sketch/index.htrw: Removed dead link.
+	* admin/gimp-web-urls: ditto
+
 2004-03-12  Raphaël Quinet  <quinet@gamers.org>
 
 	* tutorials/3d_Logo/logo-*.png: Use the 29 new screenshots

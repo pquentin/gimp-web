@@ -253,9 +253,9 @@ class body(__html__):
 
   class init(xyz_init):
     def __init__(self, attrs={}):
-      a = dict(self.defaults)
+      a = dict(body.defaults)
       a.update(attrs)
-      return (xyz_init.__init__(self, attrs, "<body%s>"))
+      return (xyz_init.__init__(self, a, "<body%s>"))
     pass
 
   class fini(xyz_fini):
@@ -338,7 +338,7 @@ class div(__html__):
     def __init__(self, attrs={}):
       a = dict(div.defaults)
       a.update(attrs)
-      return (xyz_init.__init__(self, attrs, "<div%s>"))
+      return (xyz_init.__init__(self, a, "<div%s>"))
     pass
   
   class fini(xyz_fini):
@@ -430,7 +430,7 @@ class para(__html__):
     def __init__(self, attrs={}):
       a = dict(para.defaults)
       a.update(attrs)
-      return (xyz_init.__init__(self, attrs, "<p%s>"))
+      return (xyz_init.__init__(self, a, "<p%s>"))
     pass
 
   class fini(xyz_fini):
@@ -557,7 +557,7 @@ class object(__html__):
     def __init__(self, attrs={}):
       a = dict(div.defaults)
       a.update(attrs)
-      return (xyz_init.__init__(self, attrs, "<object%s>"))
+      return (xyz_init.__init__(self, a, "<object%s>"))
     pass
   
   class fini(xyz_fini):
@@ -703,14 +703,14 @@ class form(__html__):
   def __init__(self, content=None, attrs=defaults):
     a = dict(self.defaults)
     a.update(attrs)
-    __html__.__init__(self, content, attrs, "<form%s>", "</form>")
+    __html__.__init__(self, content, a, "<form%s>", "</form>")
     return None
 
   class init(xyz_init):
     def __init__(self, attrs={}):
       a = dict(form.defaults)
       a.update(attrs)
-      return (xyz_init.__init__(self, attrs, "<form%s>"))
+      return (xyz_init.__init__(self, a, "<form%s>"))
     pass
 
   class fini(xyz_fini):

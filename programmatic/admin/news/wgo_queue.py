@@ -37,6 +37,7 @@ import wgo
 import wgo_news
 import news_config
 import xhtml
+import rdf
 
 def safe_filename(path):
   path = str(path)
@@ -63,11 +64,14 @@ def generate_rdf(queue):
   news_items = filter(lambda n: n.valid, news_items)
              
   news_blotter = file_path(queue, news_config.news_blotter)
-    
+
   fp = open(rdf_file, "w")
   print >>fp, '<?xml version="1.0"?>'
   print >>fp, '<?xml-stylesheet href="style/rdf-news.css" type="text/css"?>'
-  print >>fp, '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://my.netscape.com/rdf/simple/0.9/">'
+  print >>fp, rdf.rdf.init()
+  
+  #print >>fp, '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://my.netscape.com/rdf/simple/0.9/">'
+  
   print >>fp, '<link>http://mmmaybe.gimp.org/</link>'
   print >>fp, '<dc:date>'+ time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()) + '</dc:date>'
   print >>fp, '<channel rdf:about="http://www.w3.org/2000/08/w3c-synd/home.rss">'
@@ -76,7 +80,10 @@ def generate_rdf(queue):
   print >>fp, '  <link>http://mmmaybe.gimp.org</link>'
   print >>fp, '</channel>'
   map(lambda n: fp.write(n.as_rdf()), news_items)
-  print >>fp, '\n</rdf:RDF>'
+
+  #print >>fp, '\n</rdf:RDF>'
+  
+  print >>fp, rdf.rdf.fini()
   fp.close()
   
   os.chmod(news_blotter, 0666)
@@ -114,3 +121,7 @@ def generate_blotter(queue):
 
   generate_rdf(queue)
   return (news_blotter)
+
+
+if __name__ == '__main__':
+  generate_rdf("news-pending")

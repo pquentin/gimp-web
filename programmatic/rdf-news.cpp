@@ -37,14 +37,22 @@ channel > description {
   margin-top:  1em;
 }
 
+item > description{
+  margin: 0.75em 0px;
+  text-align: justify;
+}
+
 item > title {
   background:    WGO_BLUE none;
+  clear:         left;
   color:         white;
+  color:         #eeeeee;
   font-family:   sans-serif;
   font-size:     medium;
-  margin-bottom: .5em;
-  margin-top:    .5em;
-  padding-left:  1em;
+  font-weight:   bold;
+  margin-bottom: 0.5em;
+  margin-top:    0.5em;
+  padding:       5px;
   text-align:    left;
 }
 

@@ -2,7 +2,7 @@
 #define WGO_BLUE                 #42638d
 #define WGO_GREY                 #f5f5f5
 #define WGO_LINK_FG              #17457c
-#define WGO_BUTTON_BG            #dad5c2
+#define _WGO_BUTTON_BG            #dad5c2
 #define WGO_BUTTON_BG            WGO_GREY
 #define WGO_BUTTON_FG            WGO_LINK_FG
 #define WGO_BUTTON_HILITE        #b9c7d8

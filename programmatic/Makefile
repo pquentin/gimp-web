@@ -57,6 +57,7 @@ install-common: all
 	install             wgo_config.py ${LIBDIR}
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo.py > ${LIBDIR}/wgo.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' xhtml.py > ${LIBDIR}/xhtml.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' rdf.py > ${LIBDIR}/rdf.py
 	install --mode=644 extended.css  ${DocumentRoot}/style/
 	install --mode=644 rdf-news.css  ${DocumentRoot}/style/
 

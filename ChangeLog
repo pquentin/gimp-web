@@ -1,3 +1,7 @@
+2004-03-31  Sven Neumann  <sven@gimp.org>
+
+	* unix/index.htrw: fixed typo spotted by Kevin Cozens.
+
 2004-03-30  Henrik Brix Andersen  <brix@gimp.org>
 
 	* about/.cvsignore

@@ -48,8 +48,8 @@ can also run the GIMP.  It runs even on relatively old PCs (Pentium
 200) or on old workstations (Ultra1).  The amount of memory can be an
 important factor, especially if you intend to work on large images.  A
 minimum of 128 MB of RAM is recommended, but actually you should have
-256 MB or more, and several GB do not hurt when you want to edit
-<i>really</i> large images.  In addition the the basic X11 libraries,
+256 MB or more, and several GB does not hurt when you want to edit
+<i>really</i> large images.  In addition to the basic X11 libraries,
 the following is a list of what you will need to run the GIMP on your
 system:</p>
 

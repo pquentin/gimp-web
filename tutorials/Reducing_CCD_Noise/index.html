@@ -9,14 +9,15 @@
 
 <h2>Intention</h2>
 <p class="images">
-  <img src="before.jpg" alt=""/>
-  <img src="after.jpg" alt=""/>
+  <img src="before.jpg" alt="" />
+  <img src="after.jpg" alt="" />
 </p>
 <p>
   Images captured by a CCD or CMOS imaging chip will often have some noise present. This noise typically can be seen as RGB "flecks", 
   especially noticable in the in the shadow areas of an image. The red and blue channels are especially susceptible. 
   Higher ISO settings and higher ambient temperatures increase the likelihood of acquiring this noise along with your image.
-  <br /><br />
+</p>
+<p>
   If you find it necessary to shoot with a higher ISO and you find that you have an unpleasant amount of noise in your image, this tutorial will help you improve the image.
 </p>
 
@@ -28,8 +29,8 @@
 
 <h2>Step 1</h2>
 <p class="images">
-  <img src="image-original.jpg" alt=""/>
-  <img src="image-original-zoom100.jpg" alt=""/>
+  <img src="image-original.jpg" alt="" />
+  <img src="image-original-zoom100.jpg" alt="" />
 </p>
 <p>
   Here is the original image. Notice how bad the noise is, especially in the shadows of the face and in the white wall (back right).
@@ -37,25 +38,27 @@
 
 <h2>Step 2</h2>
 <p class="images">
-  <img src="despeckle.jpg" alt=""/>
-  <img src="image-despeckled-zoom100.jpg" alt=""/>
+  <img src="despeckle.jpg" alt="" />
+  <img src="image-despeckled-zoom100.jpg" alt="" />
 </p>
 <p>
   Right-click in the image and select <span class="filter">&lt;Image&gt; Filters -&gt; Enhance -&gt; Despeckle</span>.
   <br />
   You can play around with the settings, but you'll likely want to keep the radius pretty small. If you raise it too high you'll destroy details like the catchlights in the eye. 
   The "Recursive" option seems to cause a more aggressive filter effect. Try it if you have an especially noisy image.
-  <br /><br />
+</p>
+<p>
   Examine the resulting image, zooming in to examine shadow areas. You'll notice that the noise is appreciably less objectionable. 
   You cannot really eliminate it, but it is "smoothed out".
-  <br /><br />
+</p>
+<p>
   Unfortunately, you may also notice that the image is softer; the despeckle filter actually blurs the image. 
   Fortunately we can offset this to some degree by sharpening.
 </p>
 
 <h2>Step 3</h2>
 <p class="images">
-  <img src="image-final-zoom100.jpg" alt=""/>
+  <img src="image-final-zoom100.jpg" alt="" />
 </p>
 <p>
   For best results, especially with a noisy image, you'll want to use smart sharpening, explained elsewhere on this site.
@@ -66,8 +69,8 @@
 
 <h2>Step 4</h2>
 <p class="images">
-  <img src="image-final.jpg" alt=""/>
-  <img src="image-original.jpg" alt=""/>
+  <img src="image-final.jpg" alt="" />
+  <img src="image-original.jpg" alt="" />
 </p>
 <p>
   Zoomed out (upper left). Compare to the original (upper right) Look at the arm and the white wall in back right. Much better.
@@ -80,9 +83,11 @@
   To examine the individual channels for noise, right click in the image and select 
   <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Decompose</span>; 
   choose RGB for the decomposition.
-  <br /><br />
+</p>
+<p>
   Similarly, you can try decomposing to HSV or LAB, running the despeckle filter on one or more parts (e.g. value channel from HSV) and recomposing.
-  <br /><br />
+</p>
+<p>
   <b>Note:</b> along these lines I have seen it suggested from several sources that decomposing to LAB, applying a slight gaussian blur to the A+B channels 
   and then sharpening the L channel is a good approach to reducing CCD artifacts. I have to say that so far in my experiments this approach has not worked for me; 
   I find the despeckle method far superior.
@@ -91,8 +96,8 @@
 
 <h2>Other Examples</h2>
 <p class="images">
-  <img src="example2-before.jpg" alt=""/>
-  <img src="example2-after.jpg" alt=""/>
+  <img src="example2-before.jpg" alt="" />
+  <img src="example2-after.jpg" alt="" />
 </p>
 
 <h2>Further Reading on Reducing CCD Noise</h2>

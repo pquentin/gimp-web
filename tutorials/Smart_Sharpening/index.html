@@ -48,7 +48,8 @@
 </p>
 <p>
   Here's the original image loaded into the GIMP. It is noticeably soft, probably due to bad autofocus. It really shows up in prints.
-  <br /><br />
+</p>
+<p>
   <b>Note:</b> be sure to do any other editing that you want to on the image first, especially downsampling or upsampling (resizing). 
   Sharpening should always be the last step that you do.
 </p>
@@ -63,15 +64,18 @@
   Duplicate the image by pressing <kbd>Ctrl+D</kbd> or right-click and select 
   <span class="filter">&lt;Image&gt; Image -&gt; Duplicate</span>. 
   It might be wise to minimize the original image window now. You can open it later to compare to the result.
-  <br />
+</p>
+<p>
   Right-click on the duplicate image and select 
   <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Decompose</span>. In the decompose dialog box, 
   select LAB (or HSV; see Note 1). Check the "As layers" checkbox (see Note 2) and click OK.
-  <br /><br />
+</p>
+<p>
   This will create a new window with the image decomposed into the Luminosity ("brightness"), 
   A and B channels as 3 layers. This will allow us to isolate and sharpen 
   the luninosity channel which is a) the most important, and b) should be the cleanest in terms of noise.
-  <br /><br />
+</p>
+<p>
   At this point I usually turn off visibility of the A and B layers in the Layers dialog by clicking on the "eyes".
 </p>
 <p>
@@ -124,7 +128,8 @@
 <p>
   The next step is to adjust the tonality a little so that areas that need 
   sharpening are really white and anything that doesn't need sharpening at all is really black.
-  <br />
+</p>
+<p>
   Open the Levels dialog (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Levels</span>). 
   Bring the black point up and the white point down to filter 
   out any insignificant edges. You may need to play around with the exact positions of the sliders. 
@@ -154,7 +159,9 @@
 <p>
   If you want to you can use Levels again to adjust the white and black points of the mask. 
   I find this is usually a good idea after the blur.
-  <br />
+</p>
+<p>
+
   In this example I pulled the white point slider down a bit.
 </p>
 
@@ -166,7 +173,8 @@
 </p>
 <p>
   Open the Layers dialog. Select the LAB image (if HSV, value) in the drop down box at the top and then click on the Channels tab.
-  <br />
+</p>
+<p>
   Click on the new channel button (<img src="newlayer.jpg" alt=""/>) at the bottom of the dialog to create a new channel. Name it "Sharpening Mask".
 </p>
 
@@ -183,10 +191,12 @@
   <span class="filter">&lt;Image&gt; Select -&gt; All</span>. Right-click again and select 
   <span class="filter">&lt;Image&gt; Edit -&gt; Copy</span>. 
   (Alternatively you can use keyboard shortcuts <kbd>Ctrl+A</kbd> and <kbd>Ctrl+C</kbd> in succession).
-  <br /><br />
+</p>
+<p>
   In the Layers dialog, make sure the Sharpening Mask channel is selected. Go back to the LAB (value) window and paste 
   (<span class="filter">&lt;Image&gt; Edit -&gt; Paste</span> or <kbd>Ctrl+V</kbd>).
-  <br /><br />
+</p>
+<p>
   Select the Layers tab in the Layers dialog and click on the anchor button 
   (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
 </p>
@@ -204,7 +214,8 @@
 <p>
   Select the Sharpening Mask channel and click the "Channel to Selection" 
   button (<img src="channeltoselection.jpg" alt=""/>). You should see "marching ants".
-  <br />
+</p>
+<p>
   You can experiment with feathering the selection here if you want; I usually don't.
 </p>
 
@@ -224,9 +235,11 @@
   You may want to experiment with the settings here. 
   You will find that you can use much higher amounts of sharpening (than if the entire image were selected) 
   without significantly degrading the image.
-  <br /><br />
+</p>
+<p>
   In the example here I used Radius=1, Amount=2.0 (200% ?), Threshold=0.
-  <br /><br />
+</p>
+<p>
   Now get rid of the selection 
   (right-click and <span class="filter">&lt;Image&gt; Select -&gt; None</span>) 
   and zoom in (<kbd>=</kbd> key) to examine the results. 
@@ -240,12 +253,14 @@
 </p>
 <p>
   It's time to reconstruct our original image from the LAB (HSV) components.
-  <br />
+</p>
+<p>
   Right-click in the luminosity (value) window and select 
   (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Compose</span>). In the Compose Options dialog, 
   make sure that you have selected LAB (HSV) on the left and on the right that the Luminosity, 
   A and B (Hue, Saturation and Value) components are matched up with their respective images.
-  <br /><br />
+</p>
+<p>
   Click OK; this should create a new composite image.
 </p>
 
@@ -261,9 +276,11 @@
 <p>
   It may help to unminimize the original image for comparison. If you feel your image needs more/less sharpening, 
   then go back to the LAB window, undo twice and redo the unsharp mask step above.
-  <br /><br />
+</p>
+<p>
   When you are satisfied with the result you can close all the extraneous windows.
-  <br />
+</p>
+<p>
   The images on the right are zoomed to 100% and cropped:
 </p>
 <ul>
@@ -275,7 +292,8 @@
   The smart sharpened image hardly shows any additional noise over the original image. 
   Notice how the "regular" unsharp masked version at half the sharpening 
   amount has much more visible noise, especially in the shadows on the side of the face and in the door frame of the car.
-  <br /><br />
+</p>
+<p>
   Check out the shadow noise in the larger images on the <a href="shortcuts.html">smart sharpening shortcuts and variations page</a>.
 </p>
 
@@ -330,10 +348,12 @@
 <p>
   Look at all the information that has been lost in the converted image! 
   There is obvious posterization in the zoomed close up.
-  <br />
+</p>
+<p>
   You are now thinking to yourself, "Good grief! Why on earth would he 
   suggest changing modes to sharpen the luminosity channel if it has this kind of effect?" 
-  <br /><br />
+</p>
+<p>
   Look at the histograms of the original image and the one smart sharpened on the luminosity channel:
 </p>
 <p class="images">
@@ -347,7 +367,8 @@
 </p>
 <p>
   You can see that in practice, changing modes does not always have this drastic of an effect.
-  <br /><br />
+</p>
+<p>
   What should you do? I suggest trying it and look at the histogram! 
   This is the beauty of the digital darkroom. If your image is not that noisy anyway, 
   then no need to change modes, as suggested in the <a href="shortcuts.html">shortcuts</a>. 

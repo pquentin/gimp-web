@@ -80,11 +80,11 @@ Options:
 
 <h2>Processing several files</h2>
 <p>
-  You might want to apply an effect to a number of files. Typically to
-  to a set of files in the same directory. GIMP 2.2 added a very
-  useful function for this purpose, the <strong>file-glob</strong>
-  plug-in. This turns GIMP into a versatile batch processor. We will
-  need to do some modifications to our script:
+  You might want to apply an effect to a number of files, typically to
+  a set of files in the same directory. GIMP 2.2 added a very useful
+  function for this purpose, the <strong>file-glob</strong> plug-in.
+  This turns GIMP into a versatile batch processor. In order to use it,
+  we will need to do some modifications to our script:
 </p>
 <pre class="code">
   (define (batch-unsharp-mask pattern
@@ -111,14 +111,15 @@ Options:
   current directory, you would run the following command:
 </p>
 <pre class="code">
-  gimp -b -gimp -i -b "(batch-unsharp-mask \"*.png\" 5.0 0.5 0)" "(gimp-quit 0)"
+  gimp -i -b "(batch-unsharp-mask \"*.png\" 5.0 0.5 0)" "(gimp-quit 0)"
 </pre>
 
 <h2>Further information</h2>
 <p>
   If you want to write your own scripts for batch processing, we
-  suggest you use the PDB Browser as found in the Xtns menu in the
-  GIMP toolbox. It gives you a detailed list of all commands.
+  suggest you use the PDB Browser as found in the
+  <strong>Xtns</strong> menu in the GIMP toolbox. It gives you a
+  detailed list of all commands.
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

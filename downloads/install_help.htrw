@@ -4,10 +4,18 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Install help</h1>
-<p>
-  <b>Note for Windows Users:</b> This page is for installation help for the Unix version of GIMP. 
-  If you need help with the installation of Windows GIMP, see the <a href="/windows/">GIMP for Windows</a> page.
-</p>
+
+<p><em class="hellbrokeloose">FIXME</em>: <em>this page will be
+removed soon.  The requirements will go to the platform-specific
+sections and in the source section, and the description of the
+compilation, installation and additional packages will go to the
+source section.</em></p>
+
+<p><b>Note for Windows Users:</b> This page is for installation help
+for the Unix version of GIMP.  If you need help with the installation
+of Windows GIMP, see the <a href="/windows/">GIMP for Windows</a>
+page.</p>
+
 <ul>
   <li><a href="#requirements">Requirements</a></li>
   <li><a href="#comp-inst">GIMP Compilation and Installation</a></li>

@@ -1,5 +1,22 @@
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
+	* index.htrw: Changed the text according to the suggestions from
+	Dave Neary in bug #119210, with slight modifications due to the
+	fact that we do not distribute patches and plug-ins directly from
+	here.
+
+	* windows/index.htrw: Added a link to www.wingimp.org.
+
+	* downloads/index.htrw: Removed the direct links to some binaries
+	because they were duplicating the information from the platform-
+	specific sections and they were not complete anyway.  This should
+	fix bug	#119562.
+
+	* downloads/install_help.htrw: Mention that the page should be
+	removed soon.
+
+2003-09-21  Raphael Quinet  <quinet@gamers.org>
+
 	* about/.cvsignore
 	* programmatic/admin/develop/.cvsignore: Regenerated.
 

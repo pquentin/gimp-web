@@ -25,30 +25,20 @@ href="install_help.html">install help</a> page.</p>
 
 <p>Please consider using one of the mirrors listed below.</p>
 
-<h1>Binaries</h1>
 
-<h2>Windows</h2>
+<h2>Binaries for various platforms</h2>
 
-<p>The Windows version of the GIMP follows a slightly different
-release schedule.  You can find it on the <a
-href="http:Package-GIMP-windows">GIMP for Windows</a> page.  Also
-check out <a href="http://www.wingimp.org/">http://www.wingimp.org</a>
-for downloads and binaries.  For more information look at the <a
-href="/windows/">GIMP for Windows</a> section.</p>
+<p>Several sites are providing pre-compiled binaries of the GIMP for
+various platforms.  Some of them include an automatic installer that
+should help you to install the GIMP on your machine.  For more
+information, see our platform-specific sections:</p>
 
-<h2>MacOS X</h2>
-
-<p>The binary version of GIMP for MacOS X is provided by <a
-href="http://www.macgimp.org">http://www.macgimp.org</a> and also
-contains a lot of information around MacOS X and GIMP all together.
-For more information look at the <a href="/macintosh/">GIMP for MacOS
-X</a> section.</p>
-
-<h2>Linux and UNIX</h2>
-
-<p>Most Linux distributions include the GIMP in their list of
-packages.  For more information look at the <a href="/unix/">GIMP for
-UNIX</a> section.</p>
+<ul>
+  <li><a href="/windows/">GIMP for Windows</a>.</li>
+  <li><a href="/macintosh/">GIMP for MacOS X</a>.</li>
+  <li><a href="/os2/">GIMP for OS/2</a>.</li>
+  <li><a href="/unix/">GIMP for UNIX</a> (including Linux).</li>
+</ul>
 
 <h1>FTP and Web Mirrors</h1>
 <!--#include virtual="/downloads/mirrors.xhtml" -->

@@ -32,6 +32,9 @@
 ["href", "http:Package-fonts-os2-typ1inst",    { "href": "http://www.os2world.com/os2files/files/type1inst.zip"}]
 ["href", "http:Package-fonts-os2-xfsttos2",    { "href": "ftp://hobbes.nmsu.edu/pub/os2/system/x11/xfsttos2.zip"}]
 
+["href", "mail:People-Anderson_Henrik_Brix",   { "href": "mailto:brix@gimp.org"}]
+["href", "home:People-Anderson_Henrik_Brix",   { "href": "http://brix.gimp.org"}]
+
 ["href", "mail:People-Beane_Zach",             { "href": "mailto:xach@gimp.org"}]
 ["href", "home:People-Beane_Zach",             { "href": "http://www.xach.com"}]
 
@@ -42,6 +45,8 @@
 
 ["href", "mail:People-Budig_Simon",            { "href": "mailto:Simon.Budig@unix-ag.org"}]
 ["href", "home:People-Budig_Simon",            { "href": "http://www.home.unix-ag.org/simon/"}]
+
+["href", "mail:People-Collin_Branko",         { "href": "mailto:collin@xs4all.nl"}]
 
 ["href", "mail:People-Burgess_Seth",           { "href": "mailto:sjburges@gimp.org"}]
 ["href", "home:People-Burgess_Seth",           { "href": "http://www.gimp.org/~sjburges/"}]
@@ -57,6 +62,9 @@
 
 ["href", "mail:People-Hennecke_Christian",     { "href": "mailto:christian.hennecke@ruhr-uni-bochum.de"}]
 ["href", "home:People-Hennecke_Christian",     { "href": "http://www.os2world.com/os2files/"}]
+
+["href", "mail:People-Henstridge_James",       { "href": "mailto:james@daa.com.au"}]
+["href", "home:People-Henstridge_James",       { "href": "http://www.daa.com.au/~james/"}]
 
 ["href", "mail:People-Jensen_Atte_André",      { "href": "mailto:atte@wanadoo.nl"}]
 ["href", "home:People-Jensen_Atte_André",      { "href": "http://home.wanadoo.nl/atte/"}]
@@ -79,6 +87,9 @@
 ["href", "mail:People-Likins_Adrian",          { "href": "mailto:adrian@gimp.org"}]
 ["href", "home:People-Likins_Adrian",          { "href": "http://adrian.gimp.org"}]
 
+["href", "mail:People-Mattisson_Niklas",       { "href": "mailto:scizzo@gimp.org"}]
+["href", "home:People-Mattisson_Niklas",       { "href": "http://scizzo.lnx.nu"}]
+
 ["href", "home:People-Mena-Quintero_Federico", { "href": "http://primates.helixcode.com/~federico/"}]
 ["href", "mail:People-Neary_Dave",             { "href": "mailto:bolsh@gimp.org"}]
 
@@ -90,14 +101,25 @@
 
 ["href", "mail:People-Romero_Guillermo_S",     { "href": "mailto:famrom@infernal-iceberg.com"}]
 
+["href", "mail:People-Singh_Manish",           { "href": "mailto:yosh@gimp.org"}]
+["href", "home:People-Singh_Manish",           { "href": "http://www.yosh.com"}]
+
 ["href", "mail:People-Spears_Carol",           { "href": "mailto:carol@gimp.org"}]
 ["href", "home:People-Spears_Carol",           { "href": "http://carol.gimp.org"}]
 
 ["href", "mail:People-Steiner_Jacub",          { "href": "mailto:jimmac@ximian.com"}]
 ["href", "home:People-Steiner_Jacub",          { "href": "http://jimmac.musichall.cz/"}]
 
-["href", "mail:People-Turner_Kevin",           { "href": "mailto:http://sourceforge.net/sendmessage.php?touser=9300"}]
+["href", "mail:People-Summers_Nathan_C",       { "href": "mailto:rock@gimp.org"}]
+
+["href", "mail:People-Turner_Kevin",           { "href": "http://sourceforge.net/sendmessage.php?touser=9300"}]
+
+["href", "mail:People-Victorinox_Helvetix",    { "href": "helvetix@mysterious.org"}]
+["href", "home:People-Victorinox_Helvetix",    { "href": "http://www.mysterious.org"}]
+
 ["href", "mail:People-Walter_Rebecca_J",       { "href": "mailto:bex@gimp.org"}]
+
+["href", "mail:People-Weisbeek_Martijn",       { "href": "mailto:m.weisbeek@home.nl"}]
 
 ["href", "mail:People-author",                 { "href": "mailto:webmaster@gimp.org"}]
 ["href", "mail:People-webmaster",              { "href": "mailto:webmaster@gimp.org"}]
@@ -143,6 +165,8 @@
 ["href", "wgo:os2-howtos-XF86Config3_Files_truetype",  { "href": "/os2/howtos/XF86Config3_Files_truetype.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files_type1",     { "href": "/os2/howtos/XF86Config3_Files_type1.html"}]
 
+["href", "plugin-home:pygimp-stable",                      { "href": "http://www.daa.com.au/~james/software/pygimp/"}]
+["href", "plugin-author:pygimp-Henstridge_James",          { "href": "mailto:james@daa.com.au"}]
 ["href", "plugin-home:gimpfreetype-stable",                { "href": "http://freetype.gimp.org"}]
 ["href", "plugin-home:gimpfreetype-os2-stable",            { "href": "http://groups.yahoo.com/group/gimp-os2/files/"}]
 ["href", "plugin-author:gimpfreetype-Neumann_Sven",        { "href": "mailto:sven@gimp.org"}]

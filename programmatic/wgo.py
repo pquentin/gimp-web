@@ -50,7 +50,6 @@ def header(title, css_list, left_menu):
   return (True)
 
 def footer(prefix=None):
-
   if prefix != None:
     print prefix
     pass
@@ -62,7 +61,7 @@ def footer(prefix=None):
   #                                      "data" : 'data:binary, ' + xhtml.rawfile('/home/asdf/public_html/helvetix/anybrowser.png')})
   if config.validate: print xhtml.validate()
 
-  print xhtml.div("version 1.0", {"class" : "watermark"})
+  print xhtml.div("version 0.9", {"class" : "watermark"})
   print xhtml.include('%s/includes/footer.inc' % (config.DocumentRoot_path))
   return (True)
 

@@ -62,7 +62,13 @@
       Next, you have to log in to cvs with the command <kbd>cvs login</kbd>. There is no password for the anonymous login, so just press return. You should only need to log in this first time. The password will be stored in a file in your home directory (~/.cvspass). 
    </li>
    <li>
-      CVS is like a tree. Different versions of a program are in different branches. GIMP is currently in two main brances: HEAD, the unstable development version, and gimp-1-2, the stable version. Unless otherwise specified, it will get the HEAD version. To tell it to get the stable version, enter <kbd>cvs checkout -r gimp-1-2 gimp</kbd>. It will then remember this branch for future updates until you tell it another one.
+      CVS is like a tree. Different versions of a program are in
+      different branches. GIMP is usually in two main branches: HEAD,
+      the unstable development version, and a stable branch that gets
+      only bug-fixes. Unless otherwise specified, it will get the HEAD
+      version. To tell it to get the stable version, enter
+      <kbd>cvs checkout -r gimp-2-0 gimp</kbd>. It will then remember this
+      branch for future updates until you tell it another one.
    </li>
 </ul>
 <p>

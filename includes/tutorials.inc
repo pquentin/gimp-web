@@ -20,7 +20,7 @@
     if ($dir = opendir ($tutorial_path)) {
     while (($file = readdir ($dir)) !== false) {
       if ($file !== "." and $file !== ".." and $file !== "CVS") {
-        echo '<a href="?page=' . $page . '&amp;tutorial=' . $file . '">' . $file . '</a><br/>';
+        echo '<a href="?page=' . $page . '&amp;tutorial=' . $file . '">' . str_replace ("_", " ", $file) . '</a><br/>';
       }
     }
     closedir ($dir);

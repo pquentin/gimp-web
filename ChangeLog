@@ -1,3 +1,8 @@
+2003-08-18  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Tileable_Textures/index.htrw: the tutorial was referring
+	to the wrong menu entry.
+
 2003-08-17 scizzo <scizzo@gimp.org>
 
 	* /includes/wgo-page-init.xhtml: Moved things around a little more to

@@ -1,5 +1,10 @@
 2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* unix/index.htrw: added link to Slackware 9.1 binary. Fixes bug
+	#138327.
+
+2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* books/index.htrw
 	* admin/gimp-web-urls: corrected the URL for Essential GIMP for
 	Web Professionals. Fixes bug #142937.

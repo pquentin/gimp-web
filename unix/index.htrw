@@ -33,6 +33,9 @@ test them; use at your own risk.
      <li>
        <a href="http://packages.gentoo.org/packages/?category=media-gfx;name=gimp">Gentoo Portage</a>
      </li>
+     <li>
+       <a href="http://www.linuxpackages.net/search_view.php?by=name&name=gimp&ver=9.1">Slackware 9.1</a>
+     </li>
    </ul>
  </li>
  <li>BSD

@@ -1,3 +1,7 @@
+2002-10-15 carol <carol@gimp.org>
+
+    * added the wgo screenshot font to the sample gtkrc
+    
 2002-10-15 scizzo <scizzo@gimp.org>
 
 	* tutorials/Image_Pipes/: Did the last porting to the tutorial.

@@ -12,7 +12,7 @@
 
     * resources/gradients/index.html and mgo-gradients.py: added the
     directory, the images and the index page.
-
+ 
     * resources/index.html i removed everything there isn't a directory
     for.  :)
 

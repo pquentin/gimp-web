@@ -9,7 +9,7 @@
   Contributers: Branko Collins, Rodney Dawes, Will Lashell, Roger Leigh, Mitch Natterer, Sven Neumann, Rapha&euml;l Quinet, Manish Singh, Nathan C. Summers, Jeff Trefftz, Lourens Veen, Rebecca J. Walter, Chris Want, (and Kirstens grandparents). 
 </p>
 <p>
-   This document assumes you are working with a fresh gimp-1.2 cvs checkout as described in the 
+   This document assumes you are working with a fresh gimp-2.2 cvs checkout as described in the 
    <a href="wgo:unix-howtos-stable_cvs_get">CVS Is Not That Scary or Get Your Stable GIMP from CVS</a> how to. 
 </p>
 
@@ -17,33 +17,33 @@
 <p>
   First of all, it is best that you have some experience building The GIMP from a
   tarball, but of course is not required. A list of the tools you need to build
-  your gimp-1.2 cvs tree can always be found in <a href="HACKING">HACKING</a>
-  in the root directory of your cvs tree.  Here is the current list, (probably
+  your gimp-2.2 cvs tree can always be found in <a href="wgo:dev-hacking">HACKING</a>
+  in the root directory of your cvs tree.  Here is the current list (probably
   they will not change for this gimp):
 </p>
 <ul>
-  <li><a href="http:Package-autoconf">GNU autoconf 2.13</a></li>
-  <li><a href="http:Package-automake">GNU automake 1.4</a></li>
-  <li><a href="http:Package-libtool">GNU libtool 1.2d</a></li>
-  <li><a href="http:Package-gettext">GNU gettext 10.38</a></li>
+  <li><a href="http:Package-autoconf">GNU autoconf 2.54</a></li>
+  <li><a href="http:Package-automake">GNU automake 1.7</a></li>
+  <li><a href="http:Package-libtool">GNU libtool 1.4</a></li>
+  <li><a href="http:Package-gettext">GNU gettext 0.13</a></li>
 </ul>
 <p>
   To check to see which versions you have (if any), type into a term:
   <kbd>autoconf --version</kbd>.  This should tell if you have the package and if it
   is the default. typing <kbd>auto&lt;tab&gt;</kbd> into a term can reveal other
-  versions.  For instance, GNU automake-1.4 is my default automake, but using
-  the tab as described (in many shells) revealed that i also have an automake-1.6
+  versions.  For instance, GNU automake-1.7 is my default automake, but using
+  the tab as described (in many shells) revealed that i also have an automake-1.4
   installed as well.  Make certain that you have these tools before you go on.  
 </p>
 <h2>Define your GIMP Build Environment</h2>
 <p>
   Building The GIMP requires more knowledge of the paths to your software than the
   typical *nix shell knows about.  The following instructions and scripts assume
-  a shell that accepts &quot;export&quot; (as <a href="http:Package-bash">bash</a> does. 
+  a shell that accepts &quot;export&quot; (as <a href="http:Package-bash">bash</a> does).  Users of other shells can try &quot;setenv&quot; instead.
 </p>
 <p>
   Just two additional paths need to be added to the environment to make the build
-  tools happy to build The GIMP.  $ACLOCAL_FLAGS and $PKG_CONFIG_PATH.  There are
+  tools happy to build The GIMP: $ACLOCAL_FLAGS and $PKG_CONFIG_PATH.  There are
   two ways to do this presented in this document.  The second one is the nicest.
 </p>
 <p>

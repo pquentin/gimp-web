@@ -38,7 +38,7 @@
    <dl>
       <dt>cvs -z3</dt>
       <dd>
-         z tells cvs to compress the communication between you and the server. The compression level is 1 to 9 with 9 being the highest. The the maintainers of tThe GIMP CVS server ask not to use above 3, because the compression gain is minimal but it dramatically increases the processor load on the server. the communication beteween the server and you is compressed. The files are not compressed on your machine unless you are one of those people who consider patching a form of compression.
+         z tells cvs to compress the communication between you and the server. The compression level is 1 to 9 with 9 being the highest. The the maintainers of the GIMP CVS server ask not to use above 3, because the compression gain is minimal but it dramatically increases the processor load on the server. The communication beteween the server and you is compressed. The files are not compressed on your machine unless you are one of those people who consider patching a form of compression.
       </dd>
       <dt>update -Pd</dt>
       <dd>

@@ -148,9 +148,9 @@
 <h1><a name="gimp_from_cvs">GIMP from CVS</a></h1>
 <p>
 
-  If you want to work with GIMP from CVS. Then the following howtos
+  If you want to work with GIMP from CVS, then the following howtos
   are written to give you a fast introduction. To find out more about
-  GIMP and CVS related topics;
+  GIMP and CVS related topics,
   <a href="wgo:dev">http://developer.gimp.org/</a> should answer the
   questions you have.
 </p>

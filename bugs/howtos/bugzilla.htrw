@@ -23,7 +23,7 @@
   again. Your next step will be to brave Bugzilla, the GNOME bug tracker. It is 
   used to track bug reports and requests for enhancements for GIMP and <span
   class="help" title="the GIMP ToolKit">GTK+</span> (see also <a
-  href="/bugs/why_bugzilla.htrw">why we are using Bugzilla</a>).
+  href="/bugs/why_bugzilla.html">why we are using Bugzilla</a>).
 </p>
 <p>
   Third: Check to see if your bug has been reported yet. Go to the 
@@ -136,7 +136,7 @@
            Select your &quot;operating system&quot;. <a href="wgo:windows">WinGIMP</a> and 
            <a href="wgo:unix">GNU/Linux GIMP</a> bugs are not always identical. It would be 
            annoying to get a Linux GIMP developer trying to reproduce a WinGIMP-specific 
-           bug. &quot;Under OS Details&quot; (OS, operating system), provide specifics 
+           bug. Under &quot;OS Details&quot; (OS, operating system), provide specifics 
            about the version of your operating system. For Linux, provide the distro and 
            version. It is also useful to list the desktop or window manager you are using. 
            Sometimes a problem is caused by an interaction between the two. It won't always 
@@ -172,7 +172,7 @@
  </li>
 </ol>
 
-<h2><a name="enhance">Enhancing Bug Reports</a></h2>
+<h2><a name="enhance"></a>Enhancing Bug Reports</h2>
 <p>
   If someone has already reported a bug like yours, read the bug report 
   carefully. Read through all the additional comments. Make sure every bit of 

@@ -64,17 +64,16 @@ how hacking is being done in the GIMP.</p>
 
 <p>The site you should keep updated with and the site that is updated
 all the time with new development help guides is located at <a
-href="http://developer.gimp.org/">http://developer.gimp.org/</a>.  If
-you have the GIMP installed at the moment then there are some files
-you should look at in the source code that might help you a
-little.</p>
+href="wgo:dev">http://developer.gimp.org/</a>.  If you have the GIMP
+installed at the moment then there are some files you should look at
+in the source code that might help you a little.</p>
 
 <ul>
-  <li><b>HACKING</b><br />
+  <li><a href="wgo:dev-hacking">HACKING</a><br />
   <i>(Contains a lot of information that you need to know if you want to start coding)</i></li>
-  <li><b>README</b><br />
+  <li><a href="wgo:dev-readme">README</a><br />
   <i>(The main README file for the GIMP and should be read by everyone)</i></li>
-  <li><b>README.i18n</b><br />
+  <li><a href="wgo:dev-readme-i18n">README.i18n</a><br />
   <i>(The internationalization README which should be read by translators)</i></li>
   <li><b>README.win32</b><br />
   <i>(The win32 README)</i></li>

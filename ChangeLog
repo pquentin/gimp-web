@@ -1,3 +1,20 @@
+2005-02-17  Raphaël Quinet  <raphael@gimp.org>
+
+	* source/howtos/stable-cvs-get.htrw,
+	* source/index.htrw: Fixed minor typos and formatting issues.
+
+	* admin/gimp-web-urls: added links to HACKING, README and
+	README.i18n on http://developer.gimp.org/.
+
+	* develop/index.htrw: use the appropriate links.  Still missing a
+	link to README.win32.
+
+	* source/howtos/stable-cvs-build.htrw: Udate for GIMP 2.2.  Fixed
+	broken link to HACKING file, updated version numbers of required
+	packages.
+
+	* bugs/howtos/bugzilla.htrw: Fixed broken links.
+
 2005-02-15  Manish Singh  <yosh@gimp.org>
 
 	* tutorials/Film_Grain/index.htrw: Update for GIMP 2.2.

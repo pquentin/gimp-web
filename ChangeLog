@@ -1,5 +1,8 @@
 2003-09-22  Raphael Quinet  <quinet@gamers.org>
 
+	* programmatic/about/Makefile: Disabled building and installation
+	of ChangeLogs.
+
 	* about/.cvsignore
 	* programmatic/admin/.cvsignore
 	* programmatic/admin/news/.cvsignore

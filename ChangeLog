@@ -1,4 +1,6 @@
 2002-12-11 spiderworm <dimillet@hotmail.com>
+	* developer/bugzilla-fixed-text.py: added this to test the python web modules on
+	the server, will remove later.
 
 	* developer/bugzilla-fixed-test.cgi: added this to test the python web modules on
 	the server, will remove later.

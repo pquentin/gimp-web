@@ -1,5 +1,7 @@
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
+	* os2/index.htrw: I forgot to add the "Configuration" section.
+
 	* links/index.htrw: Change the anchors to be empty instead of
 	enclosing the text of the h2 elements, because this caused all
 	headings to be highlighted as if they were links.  Removed the

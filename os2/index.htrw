@@ -17,7 +17,17 @@
 
 <h2>Requirements</h2>
 
-<p><em class="hellbrokeloose">FIXME:</em> <em>add something here.</em></p>
+<p><em class="hellbrokeloose">FIXME:</em> <em>add something here,
+probably based on the requirements listed on the page "<a
+href="wgo:os2-howtos-gimp_xfree86_install">How To Install GIMP For
+OS2/xfree86</a>".</em></p>
+
+<h2>Configuration</h2>
+
+<ul>
+   <li><a href="wgo:os2-howtos-tile_cache">How To Set Your OS2/GIMP Tile Cache</a></li>
+</ul>
+
 
 <h2>Help and Documentation</h2>
 
@@ -25,7 +35,6 @@
    <li><a href="os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian">Installing XFree86/OS2 4.3.0</a></li>
    <li><a href="wgo:os2-howtos_xfree86_install_fonts">How To Install Fonts In OS2/xfree86</a></li>
    <li><a href="wgo:os2-howtos-gimp_xfree86_install">How To Install GIMP For OS2/xfree86</a></li>
-   <li><a href="wgo:os2-howtos-tile_cache">How To Set Your OS2/GIMP Tile Cache</a></li>
 </ul>
 
 <p>OS/2 mailing lists:</p>

@@ -1,3 +1,10 @@
+2003-03-04  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Modified programmatic/tools/rewrite_attrs.py to insert a warning
+          into the output that the output was automatically generated.
+
+        * Switched over the headings for the news blotter to a <h1>
+
 2003-03-04  Carol Spears  <carol@gimp.org>
 
         * Fiddled some in unix/:

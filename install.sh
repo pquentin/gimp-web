@@ -13,5 +13,5 @@ if test -z "$PYTHON" ; then
   PYTHON=python
 fi
 
-rsync -rlt --delete --delete-excluded --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
+rsync -rlt --delete --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
 (cd programmatic ; make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} all install )

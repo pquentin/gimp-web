@@ -10,5 +10,8 @@ CVS
 /about/ChangeLogs/ChangeLog.pl
 *.*~
 *~
+.#*
 /news
+/includes/news.inc
 /programmatic
+/var

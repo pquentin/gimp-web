@@ -1,3 +1,9 @@
+2003-09-23  Raphael Quinet  <quinet@gamers.org>
+
+	* style/wgo.css: Added #titlebar to the sections that should not
+	be printed.  Clean-up: removed the sections that had been
+	commented out by drc.
+
 2003-09-22  Raphael Quinet  <quinet@gamers.org>
 
 	* programmatic/about/Makefile: Disabled building and installation

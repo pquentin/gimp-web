@@ -66,17 +66,6 @@ h3 {
   font-size: 100%;
 }
 
-/* FIXME: should this be changed to h1.newsheading, or simply .newsheading? */
-/*--------------------------------------------------
-* div.newsheading {
-*   background: #42638d;
-*   color: #eeeeee;
-*   padding: 5px;
-*   font-weight: bold;
-*   clear: left;
-* }
-*--------------------------------------------------*/
-
 div.book-of-wilber { 
   font-size: large;
   background: #CC9966 url(../images/wilberbook.jpg);
@@ -257,9 +246,6 @@ td.map {
   font-weight: bold;
   vertical-align: top;
   white-space: nowrap;
-/*--------------------------------------------------
-*   position: absolute;
-*--------------------------------------------------*/
   top: 100px;
   left: 0px;
   height: 100%;
@@ -294,9 +280,6 @@ td.map {
 
 #main {
   padding: 10px;
-/*--------------------------------------------------
-*   margin-left: 11em;
-*--------------------------------------------------*/
   vertical-align: top;
 }
 
@@ -336,7 +319,7 @@ td.map {
 }
 
 @media print {
-#navbar, #linkbar, #menu {
+#titlebar, #navbar, #linkbar, #menu {
   display: none
 }
 

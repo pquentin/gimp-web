@@ -36,7 +36,7 @@ height="36" /></a></p>
 <pre class="code">
 &lt;a href="http://www.gimp.org/"&gt;&lt;img alt="Graphics by GIMP"
 src="http://www.gimp.org/images/gfx_by_gimp.png" border="0"
-width="90" height="36"&gt;&lt;/a&gt;
+width="90" height="36" /&gt;&lt;/a&gt;
 </pre>
 
 <p class="images"><a href="http://www.gimp.org/"><img alt="GIMP - Free"
@@ -45,7 +45,7 @@ src="/images/gimp_free_button.png" width="88" height="31" /></a></p>
 <pre class="code">
 &lt;a href="http://www.gimp.org/"&gt;&lt;img alt="GIMP - Free"
 src="http://www.gimp.org/images/gimp_free_button.png" border="0"
-width="88" height="31"&gt;&lt;/a&gt;
+width="88" height="31" /&gt;&lt;/a&gt;
 </pre>
 
 <p>The HTML code shown above links directly to the images provided by

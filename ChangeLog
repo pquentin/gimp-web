@@ -1,4 +1,47 @@
+2003-09-21  Raphael Quinet  <quinet@gamers.org>
+
+	* about/authors.html
+	* about/authors.htrw
+	* about/history.html
+	* about/history.htrw
+	* about/screenshots.html
+	* about/screenshots.htrw
+	* about/splash-1.1.html
+	* about/splash-1.1.htrw
+	* about/splash-1.3.html
+	* about/splash-1.3.htrw
+	* about/splash-cvs.html
+	* about/splash-cvs.htrw
+	* contest/index.html
+	* contest/index.htrw
+	* programmatic/admin/howto.html
+	* programmatic/admin/howto.htrw
+	* programmatic/admin/news/howto-news.html
+	* programmatic/admin/news/howto-news.htrw
+	* programmatic/contest/index.html
+	* programmatic/contest/index.htrw
+	* resources/brushes/index.html
+	* resources/brushes/index.htrw
+	* resources/gradients/index.html
+	* resources/gradients/index.htrw
+	* resources/index.html
+	* resources/index.htrw
+	* resources/palettes/index.html
+	* resources/palettes/index.htrw
+	* resources/patterns/index.html
+	* resources/patterns/index.htrw
+	* unix/howtos/bugzilla.html
+	* unix/howtos/bugzilla.htrw: Renamed all remaining .html files
+	that were containing SSI code to .htrw, to ensure that no SSI
+	statements are used in the whole site.  Now it is possible to test
+	everything on a web server that has no SSI support.
+
+	* unix/howtos/template-in.html: Removed.
+
+	* about/linking.htrw: Small XHTML correction in the example code.
+
 2003-09-21  Branko Collin  <collin@xs4all.nl>
+
 	* webmasters.htrw
 	* about/ancient_history.htrw
 	* about/linking.htrw

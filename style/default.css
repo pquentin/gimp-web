@@ -88,10 +88,15 @@ li {
   white-space: nowrap;
 }
 
-#main {
+td#main {
   padding: 10px;
   vertical-align: top;
   width: 100%;
+}
+
+div#main {
+  padding: 10px;
+  vertical-align: top;
 }
 
 div.heading {

@@ -1,34 +1,44 @@
-2003-04-20 scizzo <scizzo@gimp.org>
+2003-04-20  Helvetix Victorinox  <helvetix@mysterious.org>
 
-	* admin/gimp-web-urls: Fixed the tutorial links. Moved them around so
-	I can find them faster. Removed the comments.
+        * News RSS is available via http at
+                /var/spool/news-pending/news.rdf
+                /var/spool/news-current/news.rdf
+                /var/spool/news-archive/news.rdf
 
-	* tutorials/Blending_Exposures/
-	* tutorials/Blown_Out_Highlights/
-	* tutorials/Blur_Overlays/
-	* tutorials/Color2BW/: Updated with the new gimp-web-urls.
-	
-	* tutorials/Anti-Aliased_Threshold/index.html
-	* tutorials/Coloring_A_BW_Sketch/index.html
-	* tutorials/ContrastMask/index.html
-	* tutorials/Creating_Icons/index.html
-	* tutorials/Custom_Brushes/index.html: Removed these files.
-	
-	* tutorials/Anti-Aliased_Threshold/index.htrw
-	* tutorials/Coloring_A_BW_Sketch/index.htrw
-	* tutorials/ContrastMask/index.htrw
-	* tutorials/Creating_Icons/index.htrw
-	* tutorials/Custom_Brushes/index.htrw: Added these files.
+        * Fixed the news rdf/rss to validate.  Also gave me the
+          opportunity to fix some code rot in rdf.py
 
 2003-04-20 scizzo <scizzo@gimp.org>
-	 
-	* admin/gimp-web-urls: Added home:People-Jeschke_Eric_R.
-	* tutorials/Blending_Exposures/, tutorials/Blown_Out_Highlights/,
-	tutorials/Blur_Overlays/, tutorials/Color2BW/: Changed tutorial: to
-	home: so that it links to the homepage.
 
-	* unix/gimprc: Removed the html tags in the file they where visible
-	on the site.
+        * admin/gimp-web-urls: Fixed the tutorial links. Moved them around so
+        I can find them faster. Removed the comments.
+
+        * tutorials/Blending_Exposures/
+        * tutorials/Blown_Out_Highlights/
+        * tutorials/Blur_Overlays/
+        * tutorials/Color2BW/: Updated with the new gimp-web-urls.
+        
+        * tutorials/Anti-Aliased_Threshold/index.html
+        * tutorials/Coloring_A_BW_Sketch/index.html
+        * tutorials/ContrastMask/index.html
+        * tutorials/Creating_Icons/index.html
+        * tutorials/Custom_Brushes/index.html: Removed these files.
+        
+        * tutorials/Anti-Aliased_Threshold/index.htrw
+        * tutorials/Coloring_A_BW_Sketch/index.htrw
+        * tutorials/ContrastMask/index.htrw
+        * tutorials/Creating_Icons/index.htrw
+        * tutorials/Custom_Brushes/index.htrw: Added these files.
+
+2003-04-20 scizzo <scizzo@gimp.org>
+         
+        * admin/gimp-web-urls: Added home:People-Jeschke_Eric_R.
+        * tutorials/Blending_Exposures/, tutorials/Blown_Out_Highlights/,
+        tutorials/Blur_Overlays/, tutorials/Color2BW/: Changed tutorial: to
+        home: so that it links to the homepage.
+
+        * unix/gimprc: Removed the html tags in the file they where visible
+        on the site.
 
 2003-04-19 carol <cspears@cablespeed.com>
 
@@ -38,10 +48,10 @@
 
 2003-04-19  Sven Neumann  <sven@gimp.org>
 
-	* admin/gimp-web-urls: fixed wrong links for images in the books
-	section.
+        * admin/gimp-web-urls: fixed wrong links for images in the books
+        section.
 
-	* books/index.htrw: converted the images for attribute rewriting.
+        * books/index.htrw: converted the images for attribute rewriting.
 
 2003-04-18  Helvetix Victorinox  <helvetix@mysterious.org>
 

@@ -34,12 +34,19 @@ sys.path = ['${LIBDIR}'] + sys.path
 
 import x_xml
 
-class RDF(x_xml.xml):
+# Namespaces should appear to be imported into Python as well.
+# Otherwise, I have to write all these silly wrappers.
+
+class RDF(x_xml.Xml):
   defaults = {
-      "xmlns:rdf"  : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "xmlns:dc"   : "http://purl.org/dc/elements/1.1/",
-      "xmlns:gimp" : "http://www.gimp.org/RDF/v0.1"
-      }
+    "xmlns" : "http://purl.org/rss/1.0/",
+    "xmlns:admin" : "http://webns.net/mvcb/",
+    "xmlns:dc" : "http://purl.org/dc/elements/1.1/",
+    "xmlns:rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xmlns:syn" : "http://purl.org/rss/1.0/modules/syndication/",
+    "xmlns:taxo" : "http://purl.org/rss/1.0/modules/taxonomy/",
+    "xmlns:gimp" : "http://www.gimp.org/RDF/v0.1"
+    }
   tag = "rdf:RDF"
 
   class init(x_xml.xml_init):
@@ -53,7 +60,7 @@ class RDF(x_xml.xml):
     pass
   pass
 
-class content(x_xml.xml):
+class content(x_xml.Xml):
   defaults = { }
   tag = "content"
 
@@ -69,7 +76,7 @@ class content(x_xml.xml):
   pass
 
 
-class link(x_xml.xml):
+class link(x_xml.Xml):
   defaults = { }
   tag = "link"
 
@@ -86,9 +93,9 @@ class link(x_xml.xml):
   pass
 
 
-class channel(x_xml.xml):
-  defaults = { }
+class channel(x_xml.Xml):
   tag = "channel"
+  defaults = { }
 
   class init(x_xml.xml_init):
     def __init__(self, attrs={}):
@@ -102,7 +109,7 @@ class channel(x_xml.xml):
   
   pass
 
-class title(x_xml.xml):
+class title(x_xml.Xml):
   defaults = { }
   tag = "title"
 
@@ -118,7 +125,7 @@ class title(x_xml.xml):
   
   pass
 
-class description(x_xml.xml):
+class description(x_xml.Xml):
   defaults = { }
   tag = "description"
 
@@ -134,7 +141,7 @@ class description(x_xml.xml):
   
   pass
 
-class item(x_xml.xml):
+class item(x_xml.Xml):
   defaults = { }
   tag = "item"
 
@@ -153,7 +160,7 @@ class item(x_xml.xml):
 # Dublin Core Metadata Element Set
 # http://web.resource.org/rss/1.0/modules/dc/
 
-class dc_title(x_xml.xml):
+class dc_title(x_xml.Xml):
   defaults = { }
   tag = "dc:title"
 
@@ -169,7 +176,7 @@ class dc_title(x_xml.xml):
   
   pass
 
-class dc_creator(x_xml.xml):
+class dc_creator(x_xml.Xml):
   defaults = { }
   tag = "dc:creator"
 
@@ -185,7 +192,7 @@ class dc_creator(x_xml.xml):
   
   pass
 
-class dc_subject(x_xml.xml):
+class dc_subject(x_xml.Xml):
   defaults = { }
   tag = "dc:subject"
 
@@ -201,7 +208,7 @@ class dc_subject(x_xml.xml):
   
   pass
 
-class dc_description(x_xml.xml):
+class dc_description(x_xml.Xml):
   defaults = { }
   tag = "dc:description"
 
@@ -218,7 +225,7 @@ class dc_description(x_xml.xml):
   pass
 
 
-class dc_publisher(x_xml.xml):
+class dc_publisher(x_xml.Xml):
   defaults = { }
   tag = "dc:publisher"
 
@@ -234,7 +241,7 @@ class dc_publisher(x_xml.xml):
   
   pass
 
-class dc_contributor(x_xml.xml):
+class dc_contributor(x_xml.Xml):
   defaults = { }
   tag = "dc:contributor"
 
@@ -250,7 +257,7 @@ class dc_contributor(x_xml.xml):
   
   pass
 
-class dc_date(x_xml.xml):
+class dc_date(x_xml.Xml):
   defaults = { }
   tag = "dc:date"
 
@@ -266,7 +273,7 @@ class dc_date(x_xml.xml):
   
   pass
 
-class dc_type(x_xml.xml):
+class dc_type(x_xml.Xml):
   defaults = { }
   tag = "dc:type"
 
@@ -282,7 +289,7 @@ class dc_type(x_xml.xml):
   
   pass
 
-class dc_format(x_xml.xml):
+class dc_format(x_xml.Xml):
   defaults = { }
   tag = "dc:format"
 
@@ -298,7 +305,7 @@ class dc_format(x_xml.xml):
   
   pass
 
-class dc_identifier(x_xml.xml):
+class dc_identifier(x_xml.Xml):
   defaults = { }
   tag = "dc:identifier"
 
@@ -314,7 +321,7 @@ class dc_identifier(x_xml.xml):
   
   pass
 
-class dc_source(x_xml.xml):
+class dc_source(x_xml.Xml):
   defaults = { }
   tag = "dc:source"
 
@@ -330,7 +337,7 @@ class dc_source(x_xml.xml):
   
   pass
 
-class dc_language(x_xml.xml):
+class dc_language(x_xml.Xml):
   defaults = { }
   tag = "dc:language"
 
@@ -346,7 +353,7 @@ class dc_language(x_xml.xml):
   
   pass
 
-class dc_relation(x_xml.xml):
+class dc_relation(x_xml.Xml):
   defaults = { }
   tag = "dc:relation"
 
@@ -362,7 +369,7 @@ class dc_relation(x_xml.xml):
   
   pass
 
-class dc_coverage(x_xml.xml):
+class dc_coverage(x_xml.Xml):
   defaults = { }
   tag = "dc:coverage"
 
@@ -378,7 +385,7 @@ class dc_coverage(x_xml.xml):
   
   pass
 
-class dc_rights(x_xml.xml):
+class dc_rights(x_xml.Xml):
   defaults = { }
   tag = "dc:rights"
 

@@ -1,5 +1,9 @@
 2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* donating/index.htrw: put donate.png in an image class paragraph.
+
+2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* donating/donate.png
 	* donating/index.htrw: added paypal information, rephrased the
 	introduction.

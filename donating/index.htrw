@@ -59,7 +59,7 @@
   Please indicate whether you would like your donation to remain anonymous, as
   otherwise you will be listed as a sponsor of the GIMP on the gimp.org web-pages.
 </p>
-<p>
+<p class="images">
   <form method="post" action="https://www.paypal.com/cgi-bin/webscr">
     <input value="_xclick" name="cmd" type="hidden">
     <input value="gimp@gnome.org" name="business" type="hidden">

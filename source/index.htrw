@@ -26,14 +26,14 @@
   so you do not even have to compile the code yourself.
 </p>
 
-<h2>Unstable version</h2>
+<h2>Development version</h2>
 <p>
   For those who want to check the progress towards the next stable release, 
   and who want to help the developers by testing the code and reporting bugs. 
-  The unstable version contains more features than the stable version but 
+  The development version contains more features than the stable version but 
   it may crash from time to time so be sure to save your work often. 
-  If you are using this version, it could be a good idea to subscribe to 
-  some of the GIMP <a href="wgo:mail_lists">mailing lists</a> 
+  If you are using this version, it is a good idea to subscribe to
+  some of the GIMP <a href="wgo:mail_lists">mailing lists</a>
   (gimp-user or gimp-developer) so that you can follow the 
   discussions about new features and known bugs.
 </p>

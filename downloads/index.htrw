@@ -15,8 +15,15 @@ href="install_help.html">install help</a> page.</p>
 
 <h2>Source for version 2.0 (Stable)</h2>
 
-<p>GIMP 2.0.0 is now available at
+<p>GIMP 2.0.1 is now available at
 <a href="ftp://ftp.gimp.org/pub/gimp/v2.0/">ftp://ftp.gimp.org/pub/gimp/v2.0/</a>.
+ <br/>
+ To allow you to check the integrity of the tarballs, here are the MD5 sum
+ of the latest released tarballs:
+ <dl>
+  <dt>gimp-2.0.1.tar.gz</dt>  <dd>33c26c0a9e95c7c501f7ccfa3b9723de</dd>
+  <dt>gimp-2.0.1.tar.bz2</dt> <dd>fb7f0d3dcde6c77dc7960c0986a6e0f5</dd>
+ </dl>
 </p>
 
 <p>GAP (the GIMP Animation Package) for 2.0 is available at

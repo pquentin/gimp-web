@@ -109,8 +109,8 @@ class gallery_image:
       pass
 
     fp.close()
-    try: os.chown(gallery_path(self["name"], ".meta"), wgo.config.user_uid, wgo.config.user_gid)
-    except: pass
+    #try: os.chown(gallery_path(self["name"], ".meta"), wgo.config.user_uid, wgo.config.user_gid)
+    #except: pass
     
     return (True)
 

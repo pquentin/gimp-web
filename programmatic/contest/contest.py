@@ -79,8 +79,8 @@ def submit_manually(args):
       os.system("/usr/X11R6/bin/convert '%s' 'png:%s'" % (arg, wgo.config.DocumentRoot_path + entry["image"]))
       os.system("/usr/X11R6/bin/convert -geometry 150 '%s' 'png:%s'\n" % (wgo.config.DocumentRoot_path + entry["image"],
                                                                           wgo.config.DocumentRoot_path + entry["thumb"]))
-      os.chown(wgo.config.DocumentRoot_path + entry["image"], wgo.config.user_uid, wgo.config.user_gid)
-      os.chown(wgo.config.DocumentRoot_path + entry["thumb"], wgo.config.user_uid, wgo.config.user_gid)
+      #os.chown(wgo.config.DocumentRoot_path + entry["image"], wgo.config.user_uid, wgo.config.user_gid)
+      #os.chown(wgo.config.DocumentRoot_path + entry["thumb"], wgo.config.user_uid, wgo.config.user_gid)
     except Exception, e:
       print arg, name, e
       return (False)

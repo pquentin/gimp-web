@@ -75,7 +75,7 @@ def generate_blotter(queue):
 
     try:
       os.chmod(news_blotter, 0666)
-      os.chown(news_blotter, wgo.config.user_uid)
+      #os.chown(news_blotter, wgo.config.user_uid)
     except:
       pass
     pass

@@ -72,7 +72,7 @@ def main(argv):
         
         try:
           os.chmod(filename, wgo_news.config.news_permission)
-          os.chown(filename, wgo_news.config.news_user_uid)
+          #os.chown(filename, wgo_news.config.news_user_uid)
         except:
           pass
         pass

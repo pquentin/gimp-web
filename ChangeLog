@@ -1,3 +1,41 @@
+2002-09-22  Henrik Brix Andersen  <brix@scienceworld.dk>
+
+	* index.php: replaced <?xml ... ?> with <?php echo '<?xml ... ?>' ?>.
+	thanks to CyBeR
+
+	* includes/about.inc: added "" to comment
+
+	* includes/about.inc: changed html comment to php comment.
+	that way the comment is not shown in the browsers src code view.
+
+	* includes/tutorials.inc:
+	added str_replace () to filter out underscores ("_") and replace them with spaces (" ").
+
+	* includes/webteam.inc: corrected spelling of Ville Pätsi
+
+	* includes/webteam.inc: removed the optional date line
+
+	* index.php: added "webteam" case to switch statement
+
+2002-09-21  Henrik Brix Andersen  <brix@scienceworld.dk>
+
+	* includes/tutorials.inc, tutorials/Anti-Aliased_Treshold/curves.jpg, tutorials/Anti-Aliased_Treshold/effect.jpg, tutorials/Anti-Aliased_Treshold/finished.jpg, tutorials/Anti-Aliased_Treshold/index.inc, tutorials/Anti-Aliased_Treshold/original.jpg, tutorials/Anti-Aliased_Treshold/threshold.jpg:
+	moved tutorials to /tutorials
+
+	* includes/tutorials.inc:
+	do not list the CVS directory as a tutorial ;)
+
+	* includes/tutorials.inc, index.php, style/default.css:
+	added a tutorial; still working on the interface.
+
+	* style/default.css:
+	added #navbar (same as #linkbar) for use in tutorials
+
+	* index.php: added "FIXME" labels where needed
+
+	* index.php:
+	added php code to hide #menu and #linkbar when a tutorial is shown
+
 2002-09-21  Carol Spears  <carol@gimp.org>
 	* added ChangeLog
 	* commented about.inc

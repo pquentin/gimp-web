@@ -54,9 +54,12 @@ of the latest released tarballs:</p>
 
 <p>Please consider using one of the mirrors listed below.</p>
 
+
 <h2>Source for version 2.1 (Development)</h2>
 
-There is no release in the GIMP 2.1 development series yet.
+<p>GIMP 2.1.0, an unstable developmen snapshot, is now available at
+<a href="ftp://ftp.gimp.org/pub/gimp/v2.1/">ftp://ftp.gimp.org/pub/gimp/v2.1/</a>.
+</p>
 
 
 <h2>Binaries for various platforms</h2>

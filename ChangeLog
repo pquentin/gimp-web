@@ -1,3 +1,8 @@
+2003-01-05 scizzo <scizzo@gimp.org>
+
+	* tutorials/Perl-Debugged/index.html: Trying to fix the line-wrap
+	problem for IE.
+
 2003-01-05 brix <brix@gimp.org>
 
 	* style/default.css: div.code and div.debug: added a padding of

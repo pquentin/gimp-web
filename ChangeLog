@@ -1,3 +1,9 @@
+2004-11-30  Manish Singh  <yosh@gimp.org>
+
+	* about/splash/contest/index.htrw
+	* index.htrw: Remove references to live.gnome.org. There needs to
+	be a better submission page.
+
 2004-11-30  Dave Neary  <bolsh@gimp.org>
 
 	* about/splash/contest/index.htrw: Changed a couple of

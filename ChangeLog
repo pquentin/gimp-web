@@ -1,3 +1,15 @@
+2003-09-01  Raphael Quinet  <quinet@gamers.org>
+
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-page-fini.xhtml
+	* includes/wgo-xhtml-fini.xhtml
+	* style/wgo.js: Include the menu button only if the browser
+	supports JavaScript and W3C DOM or IE4 DOM.  The corresponding div
+	and image are now inserted by JavaScript.  Re-organized the code a
+	bit in order to make it easier to read and to allow pages in which
+	the menu is hidden by default.  This could be useful for tutorials
+	and howtos.
+
 2003-08-31  Raphael Quinet  <quinet@gamers.org>
 
 	* style/wgo.js (adjust_menu): Improve the layout if the menu is

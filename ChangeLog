@@ -1,3 +1,7 @@
+2004-03-25  Sven Neumann  <sven@gimp.org>
+
+	* unix/fonts.htrw: removed "for UNIX" from the title.
+
 2004-03-25  Raphaël Quinet  <quinet@gamers.org>
 
 	* mail_lists.htrw: Re-organized the list of list archives in order

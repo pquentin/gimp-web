@@ -47,7 +47,6 @@ input[type="text"] {
 
 /* my line drawing hacks and experiments */
 table.ld {
-  font-size: 50%;
   margin:         0 0 0 0;
   padding:        0 0 0 0;
   text-align:     center;
@@ -55,6 +54,7 @@ table.ld {
   visibility:     visible;
   width:          100%;
   background: white none;
+  border-spacing: 0;
 }
 
 table.ld tr { 

@@ -1,3 +1,4 @@
+/* -*- css -*- */
 #include "wgo-css.cpp"
 
 select { 
@@ -30,31 +31,31 @@ table.news-index th {
 
 table.news-index th#checkbox {
   border: 0px none black;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   text-align: center;
   vertical-align: center;
 }
 
 table.news-index th#subject {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   text-indent: 0.25em;
   width: 40%;
 }
 
 table.news-index th#from {
   border-right: 1px solid white;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   text-indent: 0.25em;
   width: 35%;
 }
 
 table.news-index th#date {
   border-right: 1px solid white;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   text-indent: 0.25em;
   width: 27%;
 }
@@ -66,6 +67,10 @@ table.news-index td.news-index {
   text-indent: 0.25em;
 }
 
+table.news-index td.news-index:first-child {
+  border-left: 1px solid black;
+}
+
 table.news-index td.news-index input[type="checkbox"] {
   background: WGO_NEWS_INDEX_BG none;
   border-bottom: 1px solid black;
@@ -73,10 +78,9 @@ table.news-index td.news-index input[type="checkbox"] {
   text-indent: 0.25em;
 }
 
-
 table.batch {
   font-size: small;
- width: 100%;
+  width: 100%;
 }
 
 table.batch tr {
@@ -153,9 +157,8 @@ table.news-edit td#image {
   text-indent: 0.1em;
 }
 
-
 form.news-edit {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 form.news-edit select {
@@ -193,7 +196,3 @@ form.news-edit textarea[name="body"] {
   height: 20em;
   width: 100%;
 }
-
-/*td#menu a { 
-  display: block;
-  }*/

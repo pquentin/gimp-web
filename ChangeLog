@@ -1,3 +1,9 @@
+2003-04-04  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Little css tweaks on the news administration pages.
+        * Reversed the order in which the news blotter was displayed.  New news is at the top.
+                
+
 2003-03-31  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Fixed a redirection bug in

@@ -1,0 +1,22 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Splash History</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Stable Version Splash History</h1>
+<table>
+<tr>
+  <th>1.0.0-4</th><th>1.2.0-4</th>
+</tr>
+<tr><td>
+  <a href="wgo:image-about-splash-stable-1.0"><img src="wgo:image-about-splash-stable-1.0" width="wgo:image-about-splash-stable-1.0" height="wgo:image-about-splash-stable-1.0" alt="wgo:image-about-splash-stable-1.0"/></a>
+  <p>CVS: 1.1<br />
+  artist:  jtl</p>
+</td><td>
+  <a href="wgo:image-about-splash-stable-1.2"><img src="wgo:image-about-splash-stable-1.2" width="wgo:image-about-splash-stable-1.2" height="wgo:image-about-splash-stable-1.2" alt="wgo:image-about-splash-stable-1.2"/></a>
+  <p>CVS: 1.5 <br />
+  artist: Tigert</p>
+</td></tr>
+</table>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

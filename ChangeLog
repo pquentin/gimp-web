@@ -1,5 +1,20 @@
 2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
 
+	* includes/menu.inc: updated hrefs to match new file locations
+
+	* macintosh.html, macintosh/index.html:
+	renamed macintosh.html to macintosh/index.html
+
+	* os2.html, os2/index.html: renamed os2.html to os2/index.html
+
+2002-09-30  carol  <carol@fungus>
+
+	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html, macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html, macintosh/man-gtk-config.html, os2/man-gimp-1.2.html, os2/man-gimp-remote-1.2.html, os2/man-gimprc.1.html, os2/man-gimptool-1.2.html, os2/man-gtk-config.html, unix/man-gimp-1.2.html, unix/man-gimp-remote-1.2.html, unix/man-gimprc.1.html, unix/man-gimptool-1.2.html, unix/man-gtk-config.html, windows/man-gimp-1.2.html, windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html, windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
+	manpages everywhere.  i edited the urls to not use my cgi-bin. also added
+	the directory for the other two os
+
+2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
+
 	* tutorials/index.html, about/index.html, unix/index.html:
 	updated hrefs to reflect new file location
 

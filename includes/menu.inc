@@ -9,7 +9,7 @@
           <a href="/development.html">Development</a><br/>
           <br/>
           <a href="/unix.html">GIMP for Unix</a><br/>
-          <a href="/windows.html">GIMP for Windows</a><br/>
+          <a href="windows/index.html">GIMP for Windows</a><br/>
           <a href="/macintosh.html">GIMP for Macintosh</a><br/>
           <a href="/os2.html">GIMP for OS/2</a><br/>
           <br/>

@@ -15,7 +15,7 @@ export PYTHONPATH=programmatic:
 %.html: %.htrw
 	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $< > $@
 
-TARGETS=example.xhtml unix/index.html
+TARGETS=unix/index.html
 
 all: usage webtools ${TARGETS}
 
@@ -27,8 +27,7 @@ webtools:
 
 unix/index.html: unix/index.htrw
 
-
-install: all
+_install: all
 
 clean:
 	/bin/rm -f ${TARGETS}

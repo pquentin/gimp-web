@@ -24,6 +24,10 @@ img {
   border: none;
 }
 
+p {
+  margin: 0.75em 0px;
+}
+
 #titlebar {
   background-image: url("../images/barbg.png");
   background-repeat: repeat-x;
@@ -71,7 +75,6 @@ div.heading {
   background: #42638d;
   color: #eeeeee;
   padding: 5px;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 

@@ -1,5 +1,15 @@
 2004-03-14  Niklas M <scizzo@gimp.org>
 
+	* windows/quickmask-selection-detail.png
+	  windows/threshold-hue-channel.png: Removed old screenshots.
+	* macintosh/2002edition.jpg, macintosh/2002edition.jpg: Removed old
+	screenshots.
+
+	* downloads/index.htrw: Added download information. This should
+	reflect the press pack information.
+
+2004-03-14  Niklas M <scizzo@gimp.org>
+
 	* screenshots/*.png: Added new screenshots from various people.
 	* screenshots/index.htrw: Changed layout and made previews in size
 	300x225.

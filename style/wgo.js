@@ -22,6 +22,14 @@ function menu_adjust () {
   }
 }
 
+function menubutton_raise () {
+  if (button_el) {
+    // Small hack because zIndex does not work in all cases
+    button_el.style.display = "none";
+    button_el.style.display = "block";
+  }
+}
+
 function menu_hide () {
   if (menu_el) {
     menu_el.style.display = "none";
@@ -38,11 +46,7 @@ function menu_show () {
   }
   menu_shown = true;
   menu_adjust ();
-  if (button_el) {
-    // Small hack because zIndex does not work in all cases
-    button_el.style.display = "none";
-    button_el.style.display = "block";
-  }
+  menubutton_raise ();
 }
 
 function menu_toggle () {
@@ -53,19 +57,22 @@ function menu_toggle () {
   }
 }
 
-// Initialize the variables and add the button for toggling the menu
-if (document.getElementById) {
-  // W3C DOM
-  main_el = document.getElementById("main");
-  menu_el = document.getElementById("menu");
-  button_el = document.getElementById("menubutton");
-} else if (document.all) {
-  // IE4 DOM
-  main_el = document.all["main"];
-  menu_el = document.all["menu"];
-  button_el = document.all["menubutton"];
+function wgo_init () {
+  if (document.getElementById) {
+    // W3C DOM
+    main_el = document.getElementById("main");
+    menu_el = document.getElementById("menu");
+    button_el = document.getElementById("menubutton");
+  } else if (document.all) {
+    // IE4 DOM
+    main_el = document.all["main"];
+    menu_el = document.all["menu"];
+    button_el = document.all["menubutton"];
+  }
+  adjust_menu ();
+  menubutton_raise ();
 }
-adjust_menu ();
-if (menu_el) {
+
+if (document.getElementById || document.all) {
   document.write('<div id="menubutton"><img src="/images/menubutton.png" alt="" border="0" onclick="menu_toggle();" /></div>');
 }

@@ -2,6 +2,14 @@
 
 	* includes/wgo-page-init.xhtml
 	* includes/wgo-page-fini.xhtml
+	* style/wgo.js: Try to make it work correctly, this time...  This
+	requires the JavaScript code to be split in two parts: one before
+	the contents, and the second part at the end of the page.
+
+2003-09-01  Raphael Quinet  <quinet@gamers.org>
+
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-page-fini.xhtml
 	* includes/wgo-xhtml-fini.xhtml
 	* style/wgo.js: Include the menu button only if the browser
 	supports JavaScript and W3C DOM or IE4 DOM.  The corresponding div

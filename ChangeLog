@@ -1,3 +1,9 @@
+2002-10-21 carol <carol@gimp.org>
+        
+        * resources/gradients/index.html, resources/gradients/mgo-gradients.py
+        and team.html: put some padding around the little thumbnails and added
+        gsromero and rockwlrs to the team (finally, yay!) 
+        
 2002-10-21 scizzo <scizzo@gimp.org>
 
         * tutorials/Straight_Line/: Add the webpage for original tutorial.

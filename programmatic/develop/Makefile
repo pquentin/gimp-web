@@ -2,13 +2,12 @@
 
 include ../Makefile.defs
 
-all: usage ChangeLog changelog-xhtml.css changelog-xhtml-mono.css index.html
+all: usage ChangeLog changelog-xhtml.css changelog-xhtml-mono.css
 
 usage:
 
 ChangeLog: changelog-cron gimp-unstable gegl-unstable gimp-help gimp-print film-gimp
 
-index.html: index.htrw
 gimp-unstable: gimp-unstable.sh
 gegl-unstable: gegl-unstable.sh
 gimp-help: gimp-help.sh

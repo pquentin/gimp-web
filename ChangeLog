@@ -1,3 +1,7 @@
+2004-10-11  Niklas M <scizzo@gimp.org>
+
+	* windows/index.htrw: Fixed the download link for win installers.
+
 2004-10-06  Niklas M <scizzo@gimp.org>
 
 	* donating/index.htrw: Updated information.

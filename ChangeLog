@@ -1,7 +1,7 @@
 2004-08-06  Niklas M <scizzo@gimp.org>
 
 	* docs/index.htrw: Changed the name of "The GIMP Documentation" to "The GIMP
-	User Manual".
+	User Manual". Closes bug #149343
 
 2004-08-06  Sven Neumann  <sven@gimp.org>
 

@@ -3,6 +3,9 @@
         * team.html: Add Eric Jeschke to the team of tutorial authors
         and I also tried to change the list to be more human readable.
 
+        * tutorials/Basic_Scheme/index.html: Made a few fixes in the html
+        tags.
+
 2002-11-10 brix <brix@gimp.org>
 
 	* books/index.html: added more descriptions and website links

@@ -1,3 +1,9 @@
+2004-11-30  Dave Neary  <bolsh@gimp.org>
+
+	* about/splash/contest/index.htrw
+	* index.htrw: Update news item and contest page to point
+	to the live.gnome.org page for the splash screen entries.
+
 2004-11-30  Sven Neumann  <sven@gimp.org>
 
 	* about/splash/index.htrw: mention the name of the personal gimp

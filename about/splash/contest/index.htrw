@@ -43,8 +43,13 @@
 
   <h3>Submissions</h3>
   <p>
-    We will soon announce how you can submit your entries. There
-    should also be a gallery with submissions then. Stay tuned.
+    Submissions should be added to 
+    <a 
+    href="http://live.gnome.org/GnomeArt_2fGimpSplashContest">the 
+    wiki page</a> we have set up for the competition over at 
+    live.gnome.org. The contest will be open until next Sunday the 
+    5th of December, at which point the winner will be announced 
+    and committed to CVS.
   </p>
 
   <h3>Good luck!</h3>

@@ -19,13 +19,16 @@ test them; use at your own risk.
  <li>GNU/Linux on ix86
    <ul>
      <li>
+       <a href="http://mars.iti.pk.edu.pl/~jakub/">Debian testing (deb)</a>
+     </li>
+     <li>
        <a href="ftp://ftp.gimp.org/pub/users/drc">Fedora Core 1 (RPM)</a>
      </li>
      <li>
-       <a href="http://www.usr-local-bin.org/gimp.php">SuSE 9.0 (RPM)</a>
+       <a href="http://www.xach.com/gimp/rpms/">RedHat 9 (RPM)</a>
      </li>
      <li>
-       <a href="http://mars.iti.pk.edu.pl/~jakub/">Debian testing (deb)</a>
+       <a href="http://www.usr-local-bin.org/gimp.php">SuSE 9.0 (RPM)</a>
      </li>
    </ul>
  </li>

@@ -1,3 +1,9 @@
+2002-12-11  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Added the cgi code to do news handling.  Modified install.sh and
+        install.exclude to permit the news stuff to be installed via
+        news/Makefile
+
 2002-12-11 spiderworm <dimillet@hotmail.com>
 	* develop/bugzilla-fixed-list.html: added this file which will contain the html
 	code generated from a bugzilla query and will be included into the

@@ -136,7 +136,7 @@
 ["href", "wgo:os2-howtos-gimp_xfree86_install",        { "href": "/os2/howtos/install_gimp_xfree86.html"}]
 ["href", "wgo:os2-howtos-services",                    { "href": "/os2/howtos/services.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files",           { "href": "/os2/howtos/XF86Config3_Files.html"}]
-["href", "wgo:os2-howtos-XF86Config3_Files_original",  { "href": "/os2/howtos/XF86Config3_Files-original.html"}]
+["href", "wgo:os2-howtos-XF86Config3_Files_original",  { "href": "/os2/howtos/XF86Config3_Files_original.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files_truetype",  { "href": "/os2/howtos/XF86Config3_Files_truetype.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files_type1",     { "href": "/os2/howtos/XF86Config3_Files_type1.html"}]
 

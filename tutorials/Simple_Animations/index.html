@@ -18,13 +18,13 @@
 </p>
 <p>
   We'll create a very simple web banner. Let's start with a new image 468x60 px. Use white as the background color. 
-  Create new transparent layer. Select the whole image with Ctrl+A and fill it with black (Ctrl+,). 
-  Shrink the selection by 1 px ( <span class="filter">&lt;image&gt;Selection-&gt;shrink</span>) and delete the selection with Ctrl+K. 
+  Create new transparent layer. Select the whole image with <kbd>Ctrl+A</kbd> and fill it with black (<kbd>Ctrl+,</kbd>). 
+  Shrink the selection by 1 px ( <span class="filter">&lt;image&gt;Selection-&gt;shrink</span>) and delete the selection with <kbd>Ctrl+K</kbd>. 
   We created a 1 px frame around out banner.
 </p>
 <p>
   Now it's time to put our logo or the main theme picture into the banner. I have prepared a masked-out flower you see on the picture on the left. 
-  I just pasted the flower below the border frame, used alpha to selection, created an empty layer below it and filled the selection with black using Ctrl+,. 
+  I just pasted the flower below the border frame, used alpha to selection, created an empty layer below it and filled the selection with black using <kbd>Ctrl+,</kbd>. 
   After that I blurred the shadow using Gaussian blur RLE and ofset it by 2px to bottom right. I couldn't resist adding the interlace effect using 
   <span class="filter">&lt;image&gt;Filters-&gt;Render-&gt;Grid</span> and a layer mask. In that layer mask i applied a b/w gradient, 
   so that the left of the flower is not interlaced.
@@ -44,7 +44,7 @@
 </p>
 <p>
   Then we'll use the standard text tool to put a small text note on every frame. After typing the text onto the frame, GIMP will create a floating selection, 
-  that you need to position right using the move tool and anchor using Ctrl+H. The positioning might be crucial for the final animation, so you can use the 
+  that you need to position right using the move tool and anchor using <kbd>Ctrl+H</kbd>. The positioning might be crucial for the final animation, so you can use the 
   following trick to make the positioning a piece of cake. Before using the text tool, set the layer (frame) transparency to a lower value, so you could see the layer below it. 
   That way you can position the newly created text acording to the text below (on the previous frame).
 </p>
@@ -92,7 +92,7 @@
   You can either use the replace mode (default), which will replace the old frame with the new one. It's like taking the frame out before adding a new one. 
   The other is the combine method, in which the new frame is added to the previous frame. That way only changes need to be updated. 
   That's what animation optimize basically does. The file size gets tremendously smaller. Now we need to index the image using 
-  <span class="filter">&lt;image&gt;Image-&gt;Mode-&gt;Indexed</span> function (Alt+I).
+  <span class="filter">&lt;image&gt;Image-&gt;Mode-&gt;Indexed</span> function (<kbd>Alt+I</kbd>).
   <br /><br />
   Try to use as little colors as possible and avoid dithering. Both number of colors and dithering tend to enlarge the filesize dramaticaly. 
   I used no color dithering and generated 32 color pallette. The file size of the banner is about 7kB. If you now save the image as GIF, 

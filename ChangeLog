@@ -1,3 +1,8 @@
+2002-12-22 scizzo <scizzo@gimp.org>
+
+        * tutorials/*/index.html: Add the <kbd> tags for the keystrokes
+        in the tutorials.
+
 2002-12-22 carol <carol@gimp.org>
 
 	* style/default.css: added a style for kbd 

@@ -1,5 +1,7 @@
 2004-04-22  Raphaël Quinet  <quinet@gamers.org>
 
+	* bugs/.cvsignore: Regenerated with 'make cvsignore'.
+
 	* programmatic/downloads/MIRRORS: added new mirror in Australia
 	(synced this file with my latest updates on the ftp site).  Fixes
 	bug #139328.

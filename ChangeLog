@@ -16,6 +16,9 @@
 
 	* docs/scheme_plugin: got the images for the doc
 
+	* tutorials/index.html: "started" to determine the proper wording for the
+    quickies entry into the list of tutorials
+
 2002-11-21 carol <carol@gimp.org>
 
 	* links.html: added some more urls. fixed somethings. reflected these

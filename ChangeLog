@@ -1,3 +1,27 @@
+2003-09-21  Branko Collin  <collin@xs4all.nl>
+	* webmasters.htrw
+	* about/ancient_history.htrw
+	* about/linking.htrw
+	* admin/gimp-web-urls
+	* bugs/howtos/bugzilla.htrw
+	* develop/index.htrw
+	* docs/python/pygimp.html
+	* docs/scheme_plugin/index.html
+	* downloads/install_help.htrw
+	* includes/wgo-admin-init.xhtml
+	* includes/wgo-page-init.xhtml
+	* os2/howtos/install_font_xfree86.htrw
+	* os2/howtos/install_gimp_xfree86.htrw
+	* resources/palettes/index.html
+	* tutorials/Reducing_CCD_Noise/index.htrw
+	* unix/man-gimp-1.2.html
+	* unix/man-gimp-remote-1.2.html
+	* unix/man-gimprc.1.html
+	* unix/man-gimptool-1.2.html
+	* unix/man-gtk-config.html
+	* windows/index.htrw: Fixes in the hope to produce valid 
+	(X)HTML.
+	
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
 	* index.htrw: Changed the text according to the suggestions from

@@ -1,3 +1,8 @@
+2004-03-22  Raphaël Quinet  <quinet@gamers.org>
+
+	* programmatic/downloads/MIRRORS: Added new mirror in the
+	Netherlands (synced this file with master list on ftp site).
+
 2004-03-22  Sven Neumann  <sven@gimp.org>
 
 	* about/splash/splash-images/gimp_splashgif.1.1-t.png

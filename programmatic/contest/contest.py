@@ -168,19 +168,25 @@ def preview(form):
     wgo_contest.folio_fini()
     return (1)
 
+  execute_string = "convert - 'png:%s'" % (image_path)
   try:
-    fp = os.popen("convert - 'png:%s'" % (image_path), "w")
+    print execute_string + "\n"
+    fp = os.popen("/usr/bin/convert - 'png:%s'" % (image_path), "w")
     fp.write(form["image"].value)
     fp.close()
+    print "done\n"
+    print "convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path)
     os.system("convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
+    print "convert -geometry 150 '%s' 'jpg:%s'\n" % (image_path, thumb_path)
     os.system("convert -geometry 150 '%s' 'jpg:%s'\n" % (image_path, thumb_path))
   except Exception, e:
-    try: os.remove(image_path)
-    except: pass
+    wgo_contest.folio_init("GIMP Splash Image Contest Preview Failed")
+    print "exception happened", e, "\n"
+    #try: os.remove(image_path)
+    #except: pass
     try: os.remove(thumb_path)
     except: pass
 
-    wgo_contest.folio_init("GIMP Splash Image Contest Preview Failed")
     print wgo.error(str(e))
     wgo_contest.folio_fini()
     return (1)

@@ -1,3 +1,9 @@
+2004-04-22  Raphaël Quinet  <quinet@gamers.org>
+
+	* programmatic/downloads/MIRRORS: added new mirror in Australia
+	(synced this file with my latest updates on the ftp site).  Fixes
+	bug #139328.
+
 2004-04-21  Dave Neary  <bolsh@gimp.org>
 
 	* screenshots: Removed screenshot of my son following a comment 

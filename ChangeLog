@@ -1,5 +1,7 @@
 2003-04-26  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * programmatic/admin/develop (wgo_develop.py): delete unused file wgo_develop.py
+
         * programmatic/admin/develop/gimp-unstable.sh:
         * programmatic/admin/develop/gegl-unstable.sh:
         * programmatic/admin/develop/gimp-help.sh:

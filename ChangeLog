@@ -1,3 +1,26 @@
+2003-08-31  Raphael Quinet  <quinet@gamers.org>
+
+	* develop/bugzilla-fixed-list.html
+	* develop/bugzilla-fixed-test.cgi
+	* develop/bugzilla-fixed-test.py
+	* develop/bugzilla-fixed.html
+	* develop/bugzilla-new.html
+	* develop/example-changelog.html
+	* develop/film.html
+	* develop/gegl.html
+	* develop/help.html
+	* develop/plugins.html
+	* develop/print.html
+	* develop/stable.html
+	* develop/unstable.html: Deleted these files that were created
+	from a template but were never filled with real contents.  They
+	will probably be replaced by a script (cron job) that fetches the
+	ChangeLogs from CVS and creates the pages automatically.
+
+	* develop/index.html,
+	* develop/index.htrw: Renamed and commented out the links to the
+	deleted files.
+
 2003-08-29  Raphael Quinet  <quinet@gamers.org>
 
 	* includes/wgo-admin-fini.xhtml,

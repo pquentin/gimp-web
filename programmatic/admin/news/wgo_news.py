@@ -149,7 +149,7 @@ class news:
   def as_news_item(self):               # As a line in the blotter
     iso_date = time.strftime(config.datetime_format, rfc822.parsedate(self["date"]))
 
-    s = str(xhtml.span(xhtml.quote(self["subject"]), {"class" : "newstitle"})
+    s = str(xhtml.comment("$Id$")) + str(xhtml.span(xhtml.quote(self["subject"]), {"class" : "newstitle"})
                       + xhtml.span(xhtml.quote(iso_date), {"class" : "newsdate"}))
 
     s = xhtml.h1(s + "&nbsp;", {"class" : "newsheading"})

@@ -1,3 +1,8 @@
+2003-09-19  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* Added version id to news articles in the main (current news)
+	  blotter.
+
 2003-09-19 scizzo <scizzo@gimp.org>
 
 	* /includes/wgo-howto-unix-init.xhtml 
@@ -535,7 +540,7 @@
 2003-08-06 scizzo <scizzo@gimp.org>
 
 	* /downloads/index.htrw: Add 2 links to the sections for Windows and
-	MacOS X as Raphaël suggested.
+	MacOS X as Raphaë¬ suggested.
 
 2003-08-05 scizzo <scizzo@gimp.org>
 
@@ -1469,7 +1474,7 @@
 
         * /includes/wgo-howto-unix-init{fini}.xhtml: Add the include files for the unix HOWTOs.
         
-        * /about/authors.html: I changed the include files but haven´t changed
+        * /about/authors.html: I changed the include files but haven? changed
         anything in the .pl file this is the authors job IMHO. Or should I do that?
 
         * /develop/index.html, /docs/index.html, /links/index.html,
@@ -1674,7 +1679,7 @@
           about/index.html
           about/mediakit.html
           about/splash-cvs.html: Changed rocks comment so that it is valid.
-          Removed an </a> that didn´t have a start tag. Fixed a few & to &amp;
+          Removed an </a> that didn? have a start tag. Fixed a few & to &amp;
           to be valid. Add </a> before the </li>. Add <p> before artist.
 
         * books/index.html: Changed a few <img src=""> to <img src=""/>
@@ -1997,7 +2002,7 @@
 
 2002-12-07 scizzo <scizzo@gimp.org>
 
-        * team.html: Add Atte André Jensen to the tutorial authors list.
+        * team.html: Add Atte André Šensen to the tutorial authors list.
 
         * tutorials/Selective_Gaussian_Blur/: Add the first port of the
         Selective Gaussian Blur tutorial. Minor HTML and Image fixes.
@@ -3390,7 +3395,7 @@
         * includes/tutorials.inc: added str_replace () to filter out
         underscores ("_") and replace them with spaces (" ").
 
-        * includes/webteam.inc: corrected spelling of Ville Pätsi
+        * includes/webteam.inc: corrected spelling of Ville Pä´³i
 
         * includes/webteam.inc: removed the optional date line
 

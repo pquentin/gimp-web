@@ -1,5 +1,21 @@
 2004-03-21  Niklas M <scizzo@gimp.org>
 
+	* about/screenshot.htrw: Removed this file.
+	* about/splash-images/*.png, *.htrw: Files moved here.
+	* about/gimp*.png: Moved all files to splash/splash-images/
+	* about/splash*.htrw: Moved the files to splash/splash-images/, now
+	all splashes are in one place. about/splash/.
+	* about/splash/index.htrw: Updated with a little more information.
+	
+	* includes/wgo-page-init.xhtml, wgo-howto-unix-init.xhtml,
+	wgo-howto-bugs-init.xhtml, wgo-howto-source-init.xhtml,
+	wgo-tutorial-init.xhtml: Added "Splash archive" to the main menu.
+
+	* admin/gimp-web-urls: Changed the links to the splash images
+	archives.
+
+2004-03-21  Niklas M <scizzo@gimp.org>
+
 	* bugs/index.htrw: Made updates and rewrote the page a little to be
 	more flexible and to contain more information.
 

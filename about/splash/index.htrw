@@ -4,15 +4,38 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>GIMP Splash Archive</h1>
-<h2>Splash Screens</h2>
-  <ul>
-    <li><a href="wgo:about-splash-stable">Stable Splash Screens</a></li>
-    <li><a href="wgo:about-splash-1-1">1.1 Tarball Splash Screens</a></li>
-    <li><a href="wgo:about-splash-1-3">1.3 Tarball Splash Screens</a></li>
-    <li><a href="wgo:about-splash-cvs">The Whole Repository of Splash Screens</a></li>
-    <li><a href="wgo:about-splash-archive-gimp">Access to Raw gimp Archives</a></li>
-    <li><a href="wgo:about-splash-archive-1.1">Access to Raw gimp-1.1 Archives</a></li>
-    <li><a href="wgo:about-splash-archive-1.3">Access to Raw gimp-1.3 Archives</a></li>
-  </ul>
+<p>
+  The splash screens archives shows us some of the history behind GIMP and how it
+  has developed through the years. As a gratitude to all people doing splash screens for
+  GIMP, this page has been setup to show everyone the good art from people contributing.
+</p>
+<h2>Splash Screen galleries (Image archives)</h2>
+<ul>
+  <li><a href="wgo:about-splash-stable">Stable Splash Screens</a></li>
+  <li><a href="wgo:about-splash-1-1">1.1 Tarball Splash Screens</a></li>
+  <li><a href="wgo:about-splash-1-3">1.3 Tarball Splash Screens</a></li>
+  <li><a href="wgo:about-splash-cvs">The Whole Repository of Splash Screens</a></li>
+</ul>
+
+<h2>Splash Screens (Raw archives)</h2>
+<ul>
+  <li><a href="wgo:about-splash-archive-gimp">Access to Raw gimp Archives</a></li>
+  <li><a href="wgo:about-splash-archive-1.1">Access to Raw gimp-1.1 Archives</a></li>
+  <li><a href="wgo:about-splash-archive-1.3">Access to Raw gimp-1.3 Archives</a></li>
+</ul>
+
+<h1>Create your own splash screen</h1>
+<p>
+  The GIMP allows you to make your own splash screen and have that as startup splash instead of
+  the one that comes with the archive. To do this you can simply follow the guidelines below.
+</p>
+<ul>
+  <li>Make the splash <b>300x200</b> or more. (Smaller splashs will make text being cut off)</li>
+  <li>Then save the splash in <b>$PREFIX/gimp/2.0/images/gimp_splash.png</b></li>
+</ul>
+<p>
+  Restart GIMP and your splash screen should be the one being used by GIMP instead of the one
+  from the archive.
+</p>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

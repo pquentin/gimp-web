@@ -173,6 +173,7 @@
 ["href", "wgo:dev-news",                       { "href": "http://developer.gimp.org/NEWS"}]
 ["href", "wgo:dev-readme",                     { "href": "http://developer.gimp.org/README"}]
 ["href", "wgo:dev-readme-i18n",                { "href": "http://developer.gimp.org/README.i18n"}]
+["href", "wgo:dev-readme-win32",               { "href": "http://developer.gimp.org/README.win32"}]
 ["href", "wgo:develop",                        { "href": "/develop/"}]
 ["href", "wgo:bugs",                           { "href": "/bugs/"}]
 ["href", "wgo:dev-howtos-bugzilla",            { "href": "/bugs/howtos/bugzilla.html"}]

@@ -1,3 +1,8 @@
+2005-02-18  Raphaël Quinet  <raphael@gimp.org>
+
+	* develop/index.htrw,
+	* admin/gimp-web-urls: Added link to README.win32.
+
 2005-02-17  Raphaël Quinet  <raphael@gimp.org>
 
 	* source/howtos/stable-cvs-get.htrw,

@@ -75,7 +75,7 @@ in the source code that might help you a little.</p>
   <i>(The main README file for the GIMP and should be read by everyone)</i></li>
   <li><a href="wgo:dev-readme-i18n">README.i18n</a><br />
   <i>(The internationalization README which should be read by translators)</i></li>
-  <li><b>README.win32</b><br />
+  <li><a href="wgo:dev-readme-win32">README.win32</a><br />
   <i>(The win32 README)</i></li>
 </ul>
 

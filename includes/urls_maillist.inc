@@ -1,4 +1,3 @@
-<a name="maillists">
 <div class="subtitle">Mail List URLs</div>
 <p>
   <A href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-user">GIMP User</a><br>

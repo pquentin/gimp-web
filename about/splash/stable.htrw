@@ -6,9 +6,9 @@
 <h1>Stable Version Splash History</h1>
 <table>
 <tr>
-  <th>1.0.0-4</th>
-  <th>1.2.0-4</th>
-  <th>2.0.0-n</th>
+  <th>1.0</th>
+  <th>1.2</th>
+  <th>2.0</th>
 </tr>
 <tr>
   <td>
@@ -17,12 +17,12 @@
   artist:  <a href="mail:People-Lautenbacher_Jens">jtl</a></p>
 </td><td>
   <a href="wgo:image-about-splash-stable-1.2"><img src="wgo:image-about-splash-stable-1.2" width="wgo:image-about-splash-stable-1.2" height="wgo:image-about-splash-stable-1.2" alt="wgo:image-about-splash-stable-1.2"/></a>
-  <p>CVS: 1.11 <br />
+  <p>CVS: 1.11<br />
   artist:  <a href="mail:People-Kuosmanen_Tuomas">tigert</a></p>
 </td><td>
   <a href="wgo:image-about-splash-stable-2.0"><img src="wgo:image-about-splash-stable-2.0" width="wgo:image-about-splash-stable-2.0" height="wgo:image-about-splash-stable-2.0" alt="wgo:image-about-splash-stable-2.0"/></a>
-  <p>CVS: ??<br />
-  artist:  ??</p>
+  <p>CVS: 1.19<br />
+  artist:  <a href="mail:People-Steiner_Jacub">jimmac</a></p>
 </td></tr>
 </table>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -13,4 +13,4 @@ Text:
   * Use the template.  Use standard xhtml.
   	(For more info about xhtml and such see README.repository.)
   * Use small explanations. If using plugin/script then write the full 
-  	path to the plugin/script.
+  	path to the plugin/script. Example: <Image>->Filters->Blur->Blur

@@ -1,3 +1,9 @@
+2004-12-07  Simon Budig <simon@gimp.org>
+
+	* about/splash/contest/index.htrw: Add a link to Mukund's voting
+	site together with a disclaimer that the result there not
+	necessary will reflect the final result.
+
 2004-12-06  Dave Neary <bolsh@gimp.org>
 
 	* index.htrw: Update splash contest news item to reflect

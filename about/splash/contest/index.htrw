@@ -47,6 +47,12 @@
     <a href="/contest/gallery.cgi">gallery</a>. 
   </p>
   <p>
+    If you want to judge on the submitted splashes please head for
+    <a href="http://www.mukund.org/temp/gimp/judge/">Mukunds voting system</a>
+    and cast your vote. The result there will help in making the final
+    decision.
+  </p>
+  <p>
     The winner will be announced and committed to CVS as soon as possible. 
     The winner will receive a GIMP t-shirt or polo shirt from 
     <a href="http://sourcewear.com">SourceWear</a>, and the honour of having 

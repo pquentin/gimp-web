@@ -1,0 +1,78 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Batch Mode</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP Batch Mode</h1>
+
+<h2>Introduction</h2>
+<p>
+  The GIMP comes with a so called batch mode that will let you run pdb command to 
+  be started and ran from a command line. We have got a lot of mails on the mailinglists 
+  about troubles how to use the batch mode and this small page should show some of the 
+  basic explanations about batch usage.
+</p>
+<p>
+  The options that can be used for the gimp command is easily accessed by running
+  gimp --help in a terminal.
+</p>
+<pre class="code">
+GIMP version 2.2.0
+
+Usage: gimp [option ... ] [file ... ]
+
+Options:
+  -h, --help               Output this help.
+  -v, --version            Output version information.
+  --verbose                Show startup messages.
+  --no-shm                 Do not use shared memory between GIMP and plugins.
+  --no-cpu-accel           Do not use special CPU accelerations.
+  -d, --no-data            Do not load brushes, gradients, palettes, patterns.
+  -f, --no-fonts           Do not load any fonts.
+
+  etc......
+</pre>
+<p>
+  When you run the script that is being written in Script-Fu, then you use the options
+  listed when running --help. As a example running:
+</p>
+<pre class="code">
+user@machine$ gimp -i -b file.scm
+</pre>
+<p>
+  This will tell GIMP to not start with a interface (-i) and using a batch script (-b).
+  As mentioned before this is just a breif introduction to how batch works. So don't think it
+  will be very detailed.
+</p>
+ 
+<h2>A batch example</h2>
+<p>
+  What this script do?
+</p>
+<pre class="code">
+ (define (simple-unsharp-mask filename
+                              radius
+			      amount
+			      threshold)
+   (let* ((image (car (gimp-file-load RUN-NONINTERACTIVE filename filename)))
+          (drawable (car (gimp-image-get-active-layer image))))
+	  (plug-in-unsharp-mask RUN-NONINTERACTIVE
+	                        image drawable radius amount threshold)
+	  (gimp-file-save RUN-NONINTERACTIVE image drawable filename filename)
+	  (gimp-image-delete image)))
+</pre>
+<p>
+  Something else about the script?
+</p>
+<p>
+  If you want to look at the list of pdb commands there is a browser in GIMP that can
+  give you all the commands. Go Xtns -&gt; Procedure Browser. This will give you the whole
+  list of options.
+</p>
+
+<h2>Known Issues</h2>
+
+<h2>Other good information</h2>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,7 @@
+2005-01-03  Niklas M <scizzo@gimp.org>
+
+	* docs/batch_mode.htrw: Added new file for batch mode usage.
+
 2004-12-31  Sven Neumann  <sven@gimp.org>
 
 	* source/howtos/stable-cvs-get.htrw: updated name of stable branch.

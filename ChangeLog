@@ -1,3 +1,8 @@
+2002-10-26 gsromero
+
+	* unix/tile-cache.html: new file, first guesses about how to set a
+	decent tile cache value.
+	
 2002-10-22 brix <brix@gimp.org>
 	
 	* books.html, books/index.html: renamed /books.html to /books/index.html

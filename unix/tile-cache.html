@@ -1,0 +1,168 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Tile Cache Recommendations</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/menu.inc" -->
+
+<div class="heading">Tile Cache Recommendations</div>
+
+<div class="subtitle">What is the Tile Cache?</div>
+<p>
+  Image processing can require a lot of memory. GIMP uses the
+  operating system services to handle memory, up to a given point,
+  past which it uses its own system so it does not eat all system
+  memory resources. This system consists in sending old data to files
+  in the disk. The decision point is what Tile Cache determines, the
+  limit of operating system resources to use, and is measured in Bytes
+  (or multiples, like MegaBytes). It does not include GIMP own memory,
+  just the space required for the image data.
+</p>
+<p>
+  A low value means that GIMP sends data really quickly to disk, not
+  making real use of the avaliable RAM and making the disks work
+  without real reason. A too high value, and the other applications
+  start to have less system resources forcing them to swap space,
+  which is making the disks work too, or maybe some will even get
+  killed or start to malfunction due lack of RAM.
+</p>
+
+<div class="subtitle">How to choose a number for Tile Cache?</div>
+<p>
+  There are some ways to decide what value to use as Tile Cache, as
+  well as some tricks:
+</p>
+<ul>
+  <li>
+    Forget about this and hope the default works. It worked when
+    computers had few RAM and people just tried to make small images
+    with GIMP while running one or two applications each time. If you
+    want something easy and only use GIMP to make screenshoots and
+    some logos, probably the best solution.
+  </li>
+  <li>
+    Ask someone to do it for you, which in the case of a computer
+    serving multiple users at the same time can be a good idea, that
+    way the administrator and other users do not get mad at you for
+    abusing the machine, nor you get a badly underperfoming GIMP. If
+    it is your machine and a single user at a given time, it could
+    mean money, or drinks, as price for the service. ;]
+  </li>
+  <li>
+    Start changing the value a bit each time and check that it goes
+    faster and faster with each increase, but the systems does not
+    complain about lack of memory. Be forewarned that sometimes lack
+    of memory ends with some applications being killed to make space
+    for the others.
+  </li>
+  <li>
+    Do some simple maths and calculate a viable value. Maybe you will
+    have to tune it later, but maybe you have to tune it anyway with
+    the other previous methods. At least you know what is happening
+    and can get the best from your computer.
+  </li>
+</ul>
+
+<div class="subtitle">What number to use for Tile Cache?</div>
+<p>
+  Let's guess you prefer the last option, and get a nice value to
+  start with. First, you need to get some data about your computer.
+  This data is the RAM installed, the operating system's swap space
+  avaliable and a general idea about the speed of the disks that store
+  the operating system's swap and the directory used for GIMP's
+  swap. You do not need to do disk tests, nor check the RPM of them,
+  the thing is to see which one seems clearly faster or slower or all
+  similar. Remember you can change the GIMP's swap directory in
+  &lt;Toolbox&gt; -&lt; File -&lt; Preferences -&lt; Folders -&lt;
+  Swap Dir.
+</p>
+<p>
+  Next thing to do is to see how much resources you require for other
+  apps you want to run at the same time than GIMP. So start all your
+  tools and do some work with them, except GIMP of course, and check
+  the usage. You can use applications like free or top, depends in
+  what OS and what environment you use. The numbers you want is the
+  memory left, including file cache. Modern UNIX keep a really small
+  area free, to be able to keep big file and buffer caches. Linux's
+  free does the maths for you, check the column that says
+  &quot;free&quot;, and the line &quot;-/+ buffers/cache&quot;. Note
+  down also the free swap.
+</p>
+<p>
+  Now time for decissions and simple maths. Basically the concept is
+  to decide if you want to base all Tile Cache in RAM, or RAM plus
+  operating system swap:
+</p>
+<ol>
+  <li>
+    Do you change applications a lot? Or keep working in GIMP for a
+    long time? If you stay long times in GIMP, you can consider free
+    RAM plus free swap as avaliable, or not, you have to check
+    following points. If unsure about that times being long or not,
+    check next steps too. If you are sure you switch all the apps
+    every few time, only count free RAM and just go to final decision,
+    no more things to check.
+  </li>
+  <li>
+    Does operating system swap live in the same physical disk than
+    GIMP swap? If so, add RAM and swap. Otherwise check next.
+  </li>
+  <li>
+    The disk that holds the swap is faster or same speed than the disk
+    that holds the GIMP swap? If slower, take only free RAM, if faster
+    or similar, add free RAM and swap.
+  </li>
+  <li>
+    You got a number, be it just the free RAM or the free RAM plus the
+    free OS swap. Reduce it a bit, to be on the safe side, and that is
+    the Tile Cache you could use as a good start.
+  </li>
+</ol>
+<p>
+  As you can see, all is about checking the free resources, and decide
+  if the OS swap is worth using or will cause more problems than help.
+</p>
+
+<div class="subtitle">Tuning the value and other helpful
+changes.</div>
+<p>
+  There are some reason you want to adjust the value. The basic one is
+  changing your computer usage pattern, or changing hardware. That
+  could mean you assumptions about how you use your computer, or the
+  speed of it, are not longer valid. That would require a reevaluation
+  of the previous steps, which can drive you to a similar value or a
+  completly new value.
+</p>
+<p>
+  Other reason to change the value is cos you detect it goes too slow
+  inside GIMP but changing to other applications is fast, or that you
+  get complains froms applications about now having enough memory.
+</p>
+<p>
+  If you decided to use only RAM and it goes slow, you could try
+  increasing the value a bit, but never to use also all the free swap.
+  If the case is the contrary, using both RAM and swap, and you have
+  problems about lack of resources, decrease it.
+</p>
+<p>
+  More tricks are to put the Swap Dir in a very fast disk, or in a
+  different disk than the rest of things. Spreading the operating
+  system swap over multiple disks is also a good way to speed up
+  things, in general. And of course, maybe you have to buy more RAM or
+  stop using lots of programs at the same time, you can not expect to
+  edit a poster in a computer with 16MB and be fast.
+</p>
+
+<div class="subtitle">Some info about GIMP memory usage.</div>
+<p>
+  You can also check what memory requirements your images have. The
+  bigger the images and the number of undos, the more resources you
+  need. This is another way to choose a number, but it is only good if
+  you always work in the same kind of images, and thus the real
+  requirements do not vary. It is also good to know if you will
+  require more RAM and/or disk space.
+</p>
+<p>
+  Evil formulas go here.
+</p>
+
+<!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

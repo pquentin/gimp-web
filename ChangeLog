@@ -7,6 +7,9 @@
         * resources/gradients.html and mgo-gradients.py: changed the style
         tag. 
 
+        * resources/gradients.html and mgo-gradients.py: put the style tag
+        back into the img tags
+
 2002-10-19 gsromero
 	
         * README.repository: Fixed some typos and added validator url. (A

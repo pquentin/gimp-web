@@ -6,7 +6,7 @@ from gimpfu import *
 def write_gradients_page(bg_colour, fg_colour, page_location):
     f = open(page_location + 'index.html', 'w')
     f.write('<!--#include virtual="/includes/header_pretitle.inc" -->\n')
-    f.write('<title>GIMP - Resources - Patterns</title>\n')
+    f.write('<title>GIMP - Resources - Gradients</title>\n')
     f.write('<!--#include virtual="/includes/header_posttitle.inc" -->\n')
     f.write('<!--#include virtual="/includes/menu.inc" -->')
     f.write('<!--This page rendered with mgo-gradients -->\n')
@@ -41,7 +41,7 @@ def write_gradients_page(bg_colour, fg_colour, page_location):
         layer = pdb.gimp_image_merge_visible_layers(image, CLIP_TO_IMAGE)
         pdb.gimp_file_save(image, drawable, page_location + pname + '.png', pname + '.png')
         pdb.gimp_image_delete(image)
-        f.write('<div style="vertical-align: middle;"><img src="' + pname + '.png" width="64" height="32" alt="gradient sample">' + name + '</div>\n')
+        f.write('<div style="vertical-align: middle;"><img style="vertical-align: middle;" src="' + pname + '.png" width="64" height="32" alt="gradient sample">' + name + '</div>\n')
         if count == half:
             f.write('<div><p>half way point</p></div>\n') 
     f.write('\n') 

@@ -10,8 +10,8 @@
           <br/>
           <a href="/unix">GIMP for Unix</a><br/>
           <a href="/windows">GIMP for Windows</a><br/>
-          <a href="/macintosh.html">GIMP for Macintosh</a><br/>
-          <a href="/os2.html">GIMP for OS/2</a><br/>
+          <a href="/macintosh">GIMP for Macintosh</a><br/>
+          <a href="/os2">GIMP for OS/2</a><br/>
           <br/>
           Newest Plug-Ins:<br/>
           <a href="FIXME">Gaussian blur * (1.0)</a><br/>

@@ -7,21 +7,70 @@
 
 <h2>Introduction</h2>
 <p>
+  A patch is exactly what the word says: a small piece of code used to repair a breach.
+  It is normally a text file containing only the differences between the current version of the
+  code and the fixed version.
+</p>
+<p>
   Many people have been submiting patches to the mailinglists and this is a small problem,
   the patch might be big and sending the patch via mail is not a very good idea.
-  This howto is suppose to be here to remind you not to send the patch via the mailinglist
-  but using the tools outside of the mailinglists.
+  This howto here to remind you not to send the patch via the mailinglist but using the tools outside
+  of the mailinglists.
 </p>
 <p>
   I hope that people will start to give mailinglists a bit more respect and maybe will stop sending
   patches to the list after reading this.
 </p>
 
+<h1>Generating a Patch</h1>
+<h2>Against Current CVS</h2>
+<p>
+  The prefered way of creating a patch is to create it against current CVS. The ensures that the patch works
+  with the latest edition of the source code and makes it easier for the developers to apply the patch.
+</p>
+<p>
+  To generate the patch you need to check out a copy of the source code from CVS. More information on how
+  to do this can be found in the <a href="wgo:unix-howtos-stable_cvs_get">CVS HOWTO</a>. After you have made the
+  changes to the source code and made sure it compiles and works as expected, you can create the patch file using
+  the command <kbd>cvs diff -up > /path/to/patchfile.patch</kbd>. It is recommended to include the <kbd>diff -up</kbd>
+  line in ~/.cvsrc. To summarize the steps:
+</p>
+<ul>
+  <li>Check out a copy of the source code from CVS</li>
+  <li>Apply your changes to the source</li>
+  <li>Re-compile and make sure it works as expected</li>
+  <li>Generate the patch file using <kbd>cvs diff -up > /path/to/patchfile.patch</li>
+  <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
+  <li>Submit the patch using Bugzilla, see below</li>
+</ul>
+
+<h2>Against the Latest Release</h2>
+<p>
+  If you do not have access to CVS you can generate the patch against the latest release.
+</p>
+<p>
+  To generate the patch you will need two copies of the souce code: one that is unmodified and one containing
+  your changes to the source. Start by downloading the source code of the latest release, extract it and make a copy
+  of the entire source directory. After you have made your changes to one of the source directories and made sure it
+  compiles and works as expected, you can create the patch file using the command
+  <kbd>diff -upN /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd>. To summarize the steps:
+</p>
+<ul>
+  <li>Download the source code of the latest release</li>
+  <li>Extract the source code</li>
+  <li>Make a copy of the source code directory</li>
+  <li>Apply your changes to the copy of the source code</li>
+  <li>Re-compile and make sure it works as expected</li>
+  <li>Generate the patch file using <kbd>diff -upN /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd></li>
+  <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
+  <li>Submit the patch using Bugzilla, see below</li>
+</ul>
+
 <h1>Using Bugzilla</h1>
 <h2>Closing a bug patch</h2>
 <p>
   The best way to submit a patch to the GIMP development is to send it to bugzilla and inform
-  the rest of the team what the patch is doing.
+  the rest of the team what the patch is doing:
 </p>
 <ul>
   <li>Is it closing bugs?</li>

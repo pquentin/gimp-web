@@ -1,3 +1,9 @@
+2003-08-22  Henrik Brix Andersen  <brix@gimp.org>
+
+	* bugs/howtos/submit-patch.htrw: added a description of what a
+	patch file is, added instructions for how to create a patch
+	file. This closes bug #119565.
+
 2003-08-18 scizzo <scizzo@gimp.org>
 
 	* /includes/wgo-admin-init.xhtml, wgo-develop-init.xhtml,

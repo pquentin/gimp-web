@@ -1,5 +1,15 @@
 2004-03-25  Raphaël Quinet  <quinet@gamers.org>
 
+	* mail_lists.htrw: Re-organized the list of list archives in order
+	to be able to link to more than one archive site per list.  Added
+	slightly longer descriptions of the lists based on what was
+	mentioned on the old site.
+
+	* admin/gimp-web-urls: Added links to the list archives at
+	www.mail-archive.com and AIMS (marc.theaimsgroup.com).
+
+2004-03-25  Raphaël Quinet  <quinet@gamers.org>
+
 	* tutorials/Image_Pipes/example*.png; Updated 7 screenshots for
 	2.0.
 

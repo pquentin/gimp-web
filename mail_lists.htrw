@@ -3,46 +3,52 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Mail List Links</h1>
-<p>
-  <a href="maillist:GIMP-user">GIMP User</a><br />
-  The original (mostly unix based) user list. 
-  (<a href="maillist:GIMP-user-archive">archive</a>)
-</p>
-<p>
-  <a href="maillist:GIMP-announce">GIMP Announce</a><br />
-  Learn of the new tarballs, without all of the help and development. 
-  (<a href="maillist:GIMP-announce-archive">archive</a>)
-</p>
-<p>
-  <a href="maillist:GIMP-user-windows">GIMPwin-users</a><br />
-  especially for users of the Windows-version of GIMP. 
-  (<a href="maillist:GIMP-user-windows-archive">archive</a>)
-</p>
-<p>
-  <a href="maillist:GIMP-developer">GIMP Developer</a><br />
-  The GIMP developer mail list.
-  (<a href="maillist:GIMP-developer-archive">archive</a>)
-</p>
-<p>
-  <a href="maillist:GIMP-web">GIMP web</a><br />
-  The GIMP web mail list.
-  (<a href="maillist:GIMP-web-archive">archive</a>)
-</p>
-<p>
-  <a href="maillist:GIMP-user-images">GIMPImages</a><br />
-   GIMPI is a group dedicated to exchange of images created or manipulated with GIMP.
-   (<a href="maillist:GIMP-user-images-archive">archive</a>)
-</p>
-<p>
-  <a href="maillist:GIMP-perl">GIMP-perl</a><br />
-   GIMP and Perl.
-   (<a href="maillist:GIMP-perl-archive">archive</a>)
-</p>
-<p>
-  <a href="maillist:GIMP-user-os2">GIMP-OS2</a><br />
-   OS2/GIMP.
-   (<a href="maillist:GIMP-user-os2-archive">archive</a>)
-</p>
+
+<dl>
+  <dt><a href="maillist:GIMP-user">GIMP User</a></dt>
+  <dd>The original (mostly unix based) user list. For the everyday user.
+  Here you will find tips for doing cool effects, user questions, etc.<br />
+  Archives: <a href="maillist:GIMP-user-archive">XCF</a>,
+  <a href="maillist:GIMP-user-m-a-archive">mail-archive</a>,
+  <a href="maillist:GIMP-user-aims-archive">AIMS</a></dd>
+
+  <dt><a href="maillist:GIMP-announce">GIMP Announce</a></dt>
+  <dd>Learn of the new tarballs, without all of the help and development.
+  This is a very low-traffic list.<br />
+  Archives: <a href="maillist:GIMP-announce-archive">XCF</a>,
+  <a href="maillist:GIMP-announce-aims-archive">AIMS</a></dd>
+
+  <dt><a href="maillist:GIMP-user-windows">GIMPwin-users</a></dt>
+  <dd>Especially for users of the Windows version of GIMP.<br />
+  Archives: <a href="maillist:GIMP-user-windows-archive">Yahoo</a></dd>
+
+  <dt><a href="maillist:GIMP-developer">GIMP Developer</a></dt>
+  <dd>The GIMP developer mail list. For plug-in developers and core program
+  developers; discussion about the source code.<br />
+  Archives: <a href="maillist:GIMP-developer-archive">XCF</a>,
+  <a href="maillist:GIMP-developer-m-a-archive">mail-archive</a>,
+  <a href="maillist:GIMP-developer-aims-archive">AIMS</a></dd>
+
+  <dt><a href="maillist:GIMP-web">GIMP web</a></dt>
+  <dd>The GIMP web mail list. For discussion about the contents and
+  structure of this web site.<br />
+  Archives: <a href="maillist:GIMP-web-archive">XCF</a></dd>
+
+  <dt><a href="maillist:GIMP-user-images">GIMPImages</a></dt>
+  <dd>GIMPI is a group dedicated to exchange of images created or manipulated with GIMP.<br />
+  Archives: <a href="maillist:GIMP-user-images-archive">Yahoo</a></dd>
+
+  <dt><a href="maillist:GIMP-perl">GIMP-perl</a></dt>
+  <dd>GIMP and Perl.<br />
+  Archives: <a href="maillist:GIMP-perl-archive">XCF</a>,
+  <a href="maillist:GIMP-perl-aims-archive">AIMS</a></dd>
+
+  <dt><a href="maillist:GIMP-user-os2">GIMP-OS2</a></dt>
+  <dd>OS2/GIMP.<br />
+  Archives: <a href="maillist:GIMP-user-os2-archive">XCF</a></dd>
+
+</dl>
+
 <h2>List Etiquette</h2>
   <p>
   When sending mails to the lists there are some recommendations you should

@@ -1,3 +1,10 @@
+2005-01-16  Raphaël Quinet  <raphael@gimp.org>
+
+	* about/splash/stable.htrw: Added e-mail address of Bill Luhtala
+	<bluhtala@telus.net> as per his request in bug #164081.  (I don't
+	expect it to be used often, so I haven't added it to
+	gimp-web-urls)
+
 2005-01-14  Sven Neumann  <sven@gimp.org>
 
 	* docs/index.htrw

@@ -200,14 +200,16 @@
 ["href", "wgo:os2-howtos-XF86Config3_Files_truetype",  { "href": "/os2/howtos/XF86Config3_Files_truetype.html"}]
 ["href", "wgo:os2-howtos-XF86Config3_Files_type1",     { "href": "/os2/howtos/XF86Config3_Files_type1.html"}]
 
+["href", "wgo:source",                         { "href": "/source/"}]
+["href", "wgo:source-howtos-stable_cvs_build", { "href": "/source/howtos/stable-cvs-build.html"}]
+["href", "wgo:source-howtos-stable_cvs_get",   { "href": "/source/howtos/stable-cvs-get.html"}]
+
 ["href", "wgo:unix",                           { "href": "/unix/"}]
 ["href", "wgo:unix-gimprc",                    { "href": "/unix/gimprc"}]
 ["href", "wgo:unix-gtkprc",                    { "href": "/unix/gtkrc"}]
 ["href", "wgo:unix-guide_stable_tile_cache",   { "href": "/unix/tile-cache.html"}]
 ["href", "wgo:unix-guide_stable_user_install", { "href": "/unix/user_install.html"}]
 ["href", "wgo:unix-guide_stable_preferences",  { "href": "/unix/preferences.html"}]
-["href", "wgo:unix-howtos-stable_cvs_build",   { "href": "/unix/howtos/stable-cvs-build.html"}]
-["href", "wgo:unix-howtos-stable_cvs_get",     { "href": "/unix/howtos/stable-cvs-get.html"}]
 ["href", "wgo:unix-howtos-tile_cache",         { "href": "/unix/howtos/tile_cache.html"}]
 ["href", "wgo:unix-manpage-stable_gimp",       { "href": "/unix/man-gimp-1.2.html"}]
 ["href", "wgo:unix-manpage-stable_gimp_remote",{ "href": "/unix/man-gimp-remote-1.2.html"}]

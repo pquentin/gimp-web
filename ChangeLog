@@ -1,5 +1,18 @@
 2003-08-31  Raphael Quinet  <quinet@gamers.org>
 
+	* style/wgo.js (adjust_menu): Improve the layout if the menu is
+	taller than the body of the page.
+
+	* source/index.htrw
+	* admin/gimp-web-urls: Replaced unix-howtos-* by source-howtos-*
+
+	* develop/.cvsignore
+	* source/.cvsignore: New files.  Ignore index.html.
+
+	* .cvsignore: Added webmasters.html, removed registry.html.
+
+2003-08-31  Raphael Quinet  <quinet@gamers.org>
+
 	* source/index.htrw: New page.  Most of it still has to be
 	written.
 

@@ -21,8 +21,12 @@ if (document.getElementById) {
 function adjust_menu () {
   var padding = 10;
   if (menu_el && main_el) {
-    if (main_el.offsetHeight) {
-      menu_el.style.height = (main_el.offsetHeight - 2 * padding) + "px";
+    if (main_el.offsetHeight && menu_el.offsetHeight) {
+      if (main_el.offsetHeight > menu_el.offsetHeight) {
+        menu_el.style.height = (main_el.offsetHeight - 2 * padding) + "px";
+      } else {
+        main_el.style.height = (menu_el.offsetHeight - 2 * padding) + "px";
+      }
     }
     if (menu_el.offsetWidth) {
       main_el.style.marginLeft = (menu_el.offsetWidth + padding) + "px";

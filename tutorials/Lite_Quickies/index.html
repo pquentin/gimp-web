@@ -1,0 +1,256 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - GIMPLite Quickies</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">GIMPLite Quickies</div>
+
+<div class="subtitle">Intention</div>
+<p>
+  So, you have The GIMP installed on your computer, you need to make a quick change to an image for some project, but don't want to learn about 
+  computer graphics right now in order to get the image changed. Totally understandable. The GIMP is a powerful image manipulator with many options and tools. 
+  However, it is quick and somewhat intuitive (after a time) for the small jobs as well. Hopefully, these quickies will help you with your quick problem and help 
+  you to stay friends with The GIMP and ready for its more complex tools and methods later, when you have the time and inspiration.
+</p>
+<p>
+  A couple of words about the images used here. The came from <a href="http://antwrp.gsfc.nasa.gov/apod/astropix.html">APOD</a>, 
+  Astronomy Picture Ofthe Day. The screenshots were taken on my desktop which is sporting this <a href="http://antwrp.gsfc.nasa.gov/apod/ap020328.html">APOD</a> image.
+</p>
+<p>
+  All you should need to know to start here is how to find your image and open it. <span class="filter">File-&gt;Open</span>.
+</p>
+
+<div class="subtitle">Change the Size of an Image (Scale)</div>
+<p class="images">
+  <a href="scale-menu.png"><img src="scale-menu-t.png" alt=""/></a>
+  <a href="scale-dialog.png"><img src="scale-dialog-t.png" alt=""/></a>
+</p>
+<p>
+  Problem: you have a huge image and you want to put it nicely for viewing on a web page. The GIMP is a quick solution. 
+  Our example image is this beauty <a href="m51_hallas_big.jpg" alt=""/>m51_hallas_big.jpg</a> from <a href="http://antwrp.gsfc.nasa.gov/apod/ap020710.html">APOD</a>.
+</p>
+<p>
+  The first thing that you might notice is that The GIMP opens the image at a logical size for viewing. 
+  So, if your image is really big (like the sample image) it will display it zoomed out until it fits nicely. 
+  You can tell if The GIMP has done this by the percentage number in the title bar. 
+  (you can click on the little screenshot to see the full view of the screenshot) Just because it looks right in this "View" doesn't mean anything.
+</p>
+<p>
+  The other thing to look at in the titlebar is the mode. If it says RGB in the title bar, you are fine. 
+  If it says Indexed or grayscale there, you should read the Change the Mode Quickie.
+</p>
+<p>
+  Image entry in the menu and the sub menu from the screenshot should revel itself. Click on "Scale Image...". 
+  When ever you click an option from the menu that has ... behind it, expect another dialog. This time, you should get the "Scale Image Dialog".
+</p>
+<p>
+  If you have a desired width, put it in the dialog at the top where it says "New Width". If you don't have such a number in mind, 
+  you can steal the width of The GIMP's default image size, which is 256 pixels. This is demonstrated in this <a href="scale-dialog1.png">screenshot</a>. 
+  You can see the image that this scale dialog produced <a href="m51_hallas_256.jpg">here</a>.
+</p>
+<p>
+  Perhaps you want your image to look more like a 4x6 inch photo on most image rendering web browsers. 
+  Simply switch the units to "inches" and put 4 inches in the height box (opting for smaller than 4x6 rather than bigger). 
+  You can see this dialog <a href="scale-dialog2.png">here</a>. The image this dialog produced <a href="m51_hallas_6x4.jpg">here</a>.
+</p>
+<p>
+  Let The GIMP choose the other dimension length for you. Meaning, it will take more image knowledge to change both width 
+  and height and have it look correct. So only change one and let The GIMP change the rest. To change the other length see the crop quickie.
+</p>
+
+<div class="subtitle">Make jpegs Smaller</div>
+<p class="images">
+  <a href="jpegsave-menu.png"><img src="jpegsave-menu-t.png" alt=""/></a>
+  <a href="jpegsave-dialog-de-t.png"><img src="jpegsave-dialog-de.png" alt=""/></a>
+</p>
+<p>
+  You can make your jpegs smaller without changing the pixel width of the image. Actually you can change the weight of the image a lot. 
+  I used an(other) image from <a href="http://antwrp.gsfc.nasa.gov/apod/ap020215.html">APOD</a>. 
+  The <a href="lordofrings_hst_big.jpg">original image</a> is huge (3000 pixels wide) so I also made a 
+  <a href="lordofrings_hst_med.jpg">smaller (pixel width)</a> image available. 
+  To prepare this image for the web, you should first reduce the image to a better width and height for web viewing as described in the scale quickie. 
+  Right click on the properly scaled image and follow the menus <span class="filter">&lt;Image&gt;File-&gt;Save As....</span> 
+  The <a href="save-dialog.png">Save Dialog</a> will pop up.
+</p>
+<p>
+  I generally type the filename I want into the text box, but the Extension drop menu can tell you the available file formats 
+  (depending on the libraries you have installed and the conditions of the image you are trying to save). If The GIMP complains right now, 
+  or if "JPEG" is grayed out in the Extensions menu you should just cancel out of everything and step through the Change the Mode  Quickie.
+</p>
+<p>
+  In the JPEG Save Dialog, you can opt for The GIMP defaults which reduce the size quite a bit, without hurting the visual quality in a way that I can detect. 
+  This would be the safest and quickest thing to do.
+</p>
+<p>
+  If you would like to make it smaller still, make sure that the "Preview" toggle is on and then watch the image area and change the 
+  compression level by moving the "Quality" slider down. You can see the quality of the image changing, especially towards the leftmost end of the slider. 
+  <a href="jpegsave-sample.png">Here</a> is a screenshot of me doing this very thing. As you can see, very small is also very bad. 
+  I have a screenshot of me setting the Quality slider to a more acceptable level <a href="jpegsave-sample1.png">here</a>.
+</p>
+<p>
+  I have not been showing the actual jpegs I created so that we could end this quickie with a race. Clicking <a href="jpegrace.html">this page</a> 
+  should "race" these jpegs to a web page (the first time you see an image in most browsers, you are also waiting for it to write to the cache, 
+  so the first time is the worst). With my cable modem, I was unable to see a difference in the load time, 
+  but the difference in what you actually see is fairly interesting.
+</p>
+
+<div class="subtitle">Crop An Image</div>
+<p class="images">
+  <img src="crop-button.png" alt=""/>
+  <a href="crop-menu.png"><img src="crop-menu-t.png" alt=""/></a>
+  <a href="crop-dialog.png"><img src="crop-dialog-t.png" alt=""/></a>
+</p>
+<p>
+  Many reasons to need to crop an image. Making rectangles square, or making squares into rectangles. Cutting alot of useless background 
+  to bring out the subject better. etc. To get to the crop tool, you can either push the button on the toolbox or right click on the image 
+  and follow the menu <span class="filter">&lt;Image&gt;Tools-&gt;Transform Tools-&gt;Crop &amp; Resize</span>. 
+  This will change the cursor and allow you to click and drag a rectangular shape. Once again, 
+  I have chosen one of the huge and beautiful <a href="http://antwrp.gsfc.nasa.gov/apod/ap021108.html">APOD</a> images, 
+  <a href="ngc6369_heritage_big.jpg">ngc6369 heritage</a>.
+</p>
+<p>
+  I always click on the approximate upper left corner and drag to the lower <a href="crop-drag.png">right corner</a>. You don't need to worry about being accurate 
+  on this first swipe with the crop tool, since a little dialog will pop up and you can make a better choice for your new borders there..
+</p>
+<p>
+  Here is the little "Crop &amp; Resize Information Dialog". This screenshot is showing the information about the borders we defined in our click and drag. 
+  We will have to change all of the numbers. If you would like to make this rectangular image square, you should find the width and height 
+  from the Get Image Information Quickie. Use the smallest of the two lengths to determine the size of the square. In my 300 x 226 pixel image, 
+  the best I can get is a 226 x 226 pixel square, and I will need to make sure the Y origin is 0. At that point, I use the image and the squares 
+  to get the best part of the image for the area. The upper right and lower left crop squares will move the border preview box. 
+  The other two will change the dimensions, so be careful. I have a <a href="crop-dialog1.png">screenshot</a> of this, 
+  right after I fixed the width and height and the Y origin, but before the final positoning. The arrows show the move points.
+</p>
+<p>
+  I decided that the image looked the best with the <a href="crop-dialog2.png">X Origin at 39</a>. The final image appears <a href="ngc6369_heritage_sq.jpg">here</a>.
+</p>
+
+<div class="subtitle">Find Info About Your Image</div>
+<p class="images">
+  <a href="info-menu.png"><img src="info-menu-t.png" alt=""/></a>
+  <a href="info-dialog.png"><img src="info-dialog-t.png" alt=""/></a>
+</p>
+<p>
+  This window will tell you the pixel lengths. Right click on the image and follow <span class="filter">&lt;Image&gt;View-&gt;Info Window...</span> Here is a screenshot of a 
+  <a href="info-calculator.png">calculator</a> which also gives lots of good information. I got another image from 
+  <a href="http://antwrp.gsfc.nasa.gov/apod/ap001113.html">APOD</a> It is pretty big. You can see in the dialog above, it is 2241 x 1548 pixels.
+</p>
+<p>
+  If you are just making a square out of a rectangle, like in the Crop An Image  Quickie, you need only to open the dialog and find 
+  the lesser length and use that as described. Since this is very little information, and definately not enough to fill the space 
+  between the menu thumbnail and the dialog screenshot in my layout, I thought I would run through some calculator exercises 
+  that might help you to meet your image needs.
+</p>
+<p>
+  It is nice to have images appear on a browser window as a photo would. Photos online appear to be 4x6 inches when scaled to 
+  288x432 pixels (72 dpi for many monitors). There is a <a href="info-scale.png">problem</a>, however, if you try to scale this image. 
+  The ratio of width to length of the original does not match the ratio of the photo. So, to make the scaled image 
+  the correct size crop 10 pixels from the height. For the sample image, it was best to <a href="info-crop-4x6.png">crop</a> 10 pixels off from the top. 
+  The final <a href="quintet_hst_6x4.jpg">image</a> should "appear" as a 6x4 inch photo on most monitors.
+</p>
+<p>
+  You can change the Resolution of your image as well, using the same methods as we used in the Scale, although, in my somewhat limited use, 
+  the issue is more about how many pixels. Let's say you want to get this image printed at the photo lab. 300 pixels for every inch is necessary. 
+  This original image will print easily as a 7 x 5 photo. 2241px/300ppi = 7.47in. Get out your calculator for the short side. 1548/300 = _.
+</p>
+<p>
+  There is another brutal fact you should come to terms with if you are new to graphics and computers. Just because it looks good on the screen 
+  (the <a href="quintet_hst_6x4.jpg">image</a> from before) doesn't mean that it will print that nicely. 
+  I tried to emulate how this image would appear printed at 300dpi <a href="quintet_hst_emul.jpg">here</a>. Sorry. There are some options, 
+  for instance my friend printed images and then scanned them back in. Terrible business!
+</p>
+
+<div class="subtitle">Change the Mode</div>
+<p class="images">
+  <a href="mode-menu.png"><img src="mode-menu-t.png" alt=""/></a>
+  <img src="mode-dialog.png" alt=""/>
+</p>
+<p>
+  When you are using The GIMP and some of your options are "<a href="mode-sample.png">grayed</a>" or it complained when you tried to save it and you didn't like 
+  the results of agreeing to "<a href="mode-export.png">Export</a>" it, quite often it is an image that is the wrong Mode. I can see the image mode in my window decoration. 
+  Change the mode via right click on the image and then follow the menus through <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;</span>List of Available Modes. 
+  Using another <a href="http://antwrp.gsfc.nasa.gov/apod/ap950622.html">APOD</a> image, lets check out modes ...
+</p>
+<p>
+  Usually, when your options are grayed out in the menu, you need for the image to be <a href="mode-menu2.png">RGB, not Indexed</a>. It is the difference in how the 
+  color information is understood. Indexed is 256 or less colors, is small but lacks information and is difficult to manipulate. 
+  RGB is millions of colors, easier to manipulate yet quite big to remember all these millions of colors. 
+  Check this first when determining why you cannot select something from a menu or get that "<a href="mode-export.png">Export</a>"
+</p>
+<p>
+  The next most common issue you might be having with grayed out plug-ins and other options is <a href="mode-alpha.png">Alpha</a>. 
+  Don't worry about Alpha beyond these two facts. 1) you cannot have transparent areas on your image without it. 
+  2) you cannot save as a jpeg with it. Right click on the image and follow the menus <span class="filter">&lt;Image&gt;Layers-&gt;Add Alpha Channel</span>. 
+  If it is <a href="mode-alphano.png">grayed out</a>, you have this alpha channel already and your image is ready to have transparency. 
+  The way to remove the alpha channel is not so obvious. Right click on the image, <span class="filter">Layers-&gt;Flatten Image</span> 
+  <a href="mode-flatten-menu.png">removes the alpha channel</a>, makes the menu entry gray. 
+  Some plug-ins want the Alpha Channel, some don't, so be prepared to try it both ways.
+</p>
+<p>
+  <b>Case of grayed out JPEG option:</b><br />
+  <a href="mode-jpegno.png"><span class="filter">&lt;Image&gt;File-&gt;Save As...</span>[Extension: JPEG]</a> is not an option. 
+  First, <a href="mode-flatten-menu.png"><span class="filter">&lt;Image&gt;Layers-&gt;Flatten Image</span></a>. 
+  Then <a href="mode-menu.png"><span class="filter">Image-&gt;Mode-&gt;RGB</span></a>
+</p>
+<p>
+  <b>Case of not being able to erase:</b><br />
+  <a href="mode-alpha.png"><span class="filter">&lt;Image&gt;Layers-&gt;Add Alpha Channel</span></a>, should do the trick. 
+  A Sample of both types on one image can be seen <a href="mode-sample2.png">here</a>.
+</p>
+<p>
+  <b>Case of grayed out GIF option:</b><br />
+  <a href="mode-gifno.png"><span class="filter">&lt;Image&gt;File-&gt;Save As...</span>[Extension: GIF]</a> is not an option. 
+  <a href="mode-menu.png"><span class="filter">&lt;Image&lt;Image-&gt;Mode-&gt;Indexed....</span></a> 
+  Best to just hit "Okay" in the <a href="mode-index.png">dialog</a> that pops up.
+</p>
+
+<div class="subtitle">Flip An Image</div>
+<p class="images">
+  <img src="flip-button.png" alt=""/>
+  <a href="flip-menu.png"><img src="flip-menu-t.png" alt=""/></a>
+  <img src="flip-dialog.png" alt=""/>
+</p>
+<p>
+  When you need the person in the photo looking in the other direction, or you need to top of the image to be the bottom. 
+  Mirroring the image (sort of). Right click on the image and follow the menus <span class="filter">&lt;Image&gt;Tools-&gt;Transform Tools-&gt;Flip</span>, 
+  or use the button on the toolbox.
+</p>
+<p>
+  Using another <a href="http://antwrp.gsfc.nasa.gov/apod/ap021114.html">APOD</a> image I demonstrated all 
+  of the flips on <a href="sunspot_swedish_label2.jpg">this</a> image. You might get bored before it is over ....
+</p>
+<p>
+  The tool used as is (the default) will do <a href="flip-sample-h.png">this</a> to an image.
+</p>
+<p>
+  If you double click on the button, up will pop the means to flip images vertically as well. I did just that on <a href="flip-sample-v.png">this</a> image.
+</p>
+<p>
+  For a really big finish, I flipped <a href="flip-sample-b.png">this</a> image both ways. At least it is such a cool image for all of this silliness.
+</p>
+<p>
+  The flips are all displayed on one page for you, <a href="flips.html">here</a>. One might ask themselves, useful? or filler for a pre-established format?
+</p>
+
+<div class="subtitle">Rotate An Image</div>
+<p class="images">
+  <a href="rotate-menu.png"><img src="rotate-menu-t.png" alt=""/></a>
+</p>
+<p>
+  Let's say you turned your brand new digital camera to get a vertical shot, now some of your images are on their sides. 
+  Right click on the image, and follow the menus <span class="filter">&lt;Image&gt;Image-&gt;Transforms-&gt;Rotate-&gt;90 degrees</span> (or 270 depending on the orientation). 
+  Using an <a href="http://antwrp.gsfc.nasa.gov/apod/ap000228.html">APOD</a> image. I rotated it once to demonstrate. <a href="sombrero_vlt-270.jpg">270 degrees</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:carol@gimp.org">Carol Spears (carol)</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

@@ -1,5 +1,9 @@
 2003-02-14  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
+        * Added the top-level Makefile and example.ssi as an example of
+          how to translate an (x)html input file to an output file, using
+          ssi-pp.py
+
         * Added ssi-pp.py, a SSI-style preprocessor for files.
 
 2003-02-12 scizzo <scizzo@gimp.org>

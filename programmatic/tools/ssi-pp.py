@@ -60,6 +60,7 @@ def attr_parse(s):
   map(lambda x: avlist.update({x[0]: x[1]}), re.findall("(\w+)=\"([^\"]*)\"\s*", s))
   return (avlist)
 
+
 def process(filename, fpout):
   _last = 0
 
@@ -96,6 +97,7 @@ def process(filename, fpout):
   
   fpout.write(body[_last:])
   return
+
 
 def usage(name):
   print "Usage:", name, "[OPTION] [FILE]..."

@@ -10,7 +10,7 @@
     The GIMP comes with extensive help files. Once you have started
     the program, press <kbd>F1</kbd>. Should you get an error message
     at that time, you may need to set your help browser to 'Web
-    Browser' in the Preferences: this will tell the GIMP to use your
+    Browser' in the Preferences. This will tell the GIMP to use your
     default web browser for viewing the help pages.  You may also have
     to install the help pages from a separate package (gimp-help),
     depending on how your version of the GIMP was packaged.
@@ -40,6 +40,7 @@
       it can use before swapping some image data to disk.  Setting the
       size of the tile cache can be critical for the performance of
       your system.</li>
+    <li><a href="wgo:unix-fonts">How to install fonts</a> for GIMP 2.0</li>
   </ul>
 
 <h2>GIMP Manual Pages</h2>
@@ -52,7 +53,6 @@
 
 <h2>Other GIMP Documentation</h2>
   <ul>
-    <li><a href="wgo:unix-fonts">How to install fonts</a> for GIMP 2.0</li>
     <li><a href="python/pygimp.html">GIMP Python Module Documentation</a></li>
     <li><a href="scheme_plugin/">GIMP Script-fu Documentation</a></li>
     <li><a href="gimp-print/print.html">GIMP Print Documentation</a></li>

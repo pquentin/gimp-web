@@ -1,5 +1,8 @@
 2003-09-20  Raphael Quinet  <quinet@gamers.org>
 
+	* programmatic/downloads/.cvsignore: Ignore generated file
+	mirrors.xhtml.
+
 	* programmatic/downloads/MIRRORS: Updated the list of mirrors
 	according to the latest updates that I made on the ftp site.
 

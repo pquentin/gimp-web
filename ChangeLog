@@ -1,5 +1,9 @@
 2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* donating/index.htrw: fixed typo.
+
+2004-05-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* donating/index.htrw: fixed the xhtml so that it validates,
 	spotted by schumaml in #gimp.
 

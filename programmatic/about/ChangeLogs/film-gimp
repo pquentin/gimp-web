@@ -1,0 +1,8 @@
+#!/bin/sh -x
+
+cd /home/wgo/var/spool
+
+/usr/bin/cvs -d :pserver:anonymous@cvs.sourceforge.net:/cvsroot/filmgimp checkout filmgimp/ChangeLog filmgimp/data/ChangeLog
+/usr/bin/head -100 filmgimp/ChangeLog > /home/wgo/about/ChangeLogs/ChangeLog-film-gimp.txt
+/usr/bin/head -100 filmgimp/data/ChangeLog > /home/wgo/about/ChangeLogs/ChangeLog-film-gimp-data.txt
+/bin/rm -rf /home/wgo/var/spool/filmgimp

@@ -1,5 +1,8 @@
 2003-09-07  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* wgo_queue.py (generate_blotter): print wgo_queue.py revision
+	  number into chart source.
+
 	* includes/wgo-admin-init.xhtml
 	* includes/wgo-admin-fini.xhtml: Updated for new layout
 

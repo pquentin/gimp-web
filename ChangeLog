@@ -1,6 +1,20 @@
+2003-06-15  Carol Spears  <carol@gimp.org>
+
+        * /style/default.css left alignment implicitly required for news
+        * /includes/wgo-page-init.xhtml removed bogus plug-ins in menu
+        * /includes/wgo-page-init.xhtml pointed macintosh at unix
+        * deemed it good to go.
+
 2003-06-15  Manish Singh  <yosh@gimp.org>
 
 	* mail_lists.htrw: fixed os/2 names
+2003-06-15  Carol Spears  <carol@gimp.org>
+
+        * left alignment implicitly required for news
+        * repointed bugs.html to bugzilla.htrw
+        * /includes/wgo-howto-unix-init.xhtml removed bogus plug-ins in menu
+        * /includes/wgo-howto-unix-init.xhtml pointed macintosh at unix
+        * deemed it good to go.
 
 2003-06-15  Manish Singh  <yosh@gimp.org>
 
@@ -8,11 +22,10 @@
 
 2003-06-15  Carol Spears  <carol@gimp.org>
 
-        * turned off the justification on the news ;)
+        * /style/default.css turned off the justification on the news ;)
         * repointed bugs.html to bugzilla.htrw
-        * removed bogus plug-ins in menu
-        * pointed macintosh at unix
-        * deemed it good to go.
+        * /includes/menu.inc removed bogus plug-ins in menu
+        * /includes/menu.inc pointed macintosh at unix
 
 2003-06-15  Manish Singh  <yosh@gimp.org>
 

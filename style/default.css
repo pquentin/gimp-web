@@ -117,6 +117,7 @@ p {
 
 p.news {
   margin: 0.75em 0px;
+  text-align: left;
 }
 
 p.images img {

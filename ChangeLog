@@ -1,5 +1,10 @@
 2004-11-03  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/index.htrw: some smaller cleanups and a note about
+	splash screens and GIMP 2.2.
+
+2004-11-03  Sven Neumann  <sven@gimp.org>
+
 	* unix/index.htrw: updated link to SuSE RPMs.
 
 2004-11-02  Sven Neumann  <sven@gimp.org>

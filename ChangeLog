@@ -1,3 +1,8 @@
+2002-11-09 scizzo <scizzo@gimp.org>
+
+	* tutorials/Photo_Edit/Smart_Sharpening: First port of the
+	Smart Sharpening tutorial.
+
 2002-11-08 brix <brix@gimp.org>
 
 	* books/index.html: added a bunch of books

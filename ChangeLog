@@ -1,5 +1,11 @@
 2004-11-20  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/splash-images/gimp-splash-1.5-t.png
+	* about/splash/splash-images/gimp-splash-1.5.png
+	* about/splash/splash-images/splash-2.1.htrw: added 2.2-pre2 splash.
+
+2004-11-20  Sven Neumann  <sven@gimp.org>
+
 	* downloads/index.htrw: updated for 2.2-pre2.
 
 2004-11-18  Dave Neary  <bolsh@gimp.org>

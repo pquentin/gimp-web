@@ -69,7 +69,7 @@ def main():
     news = wgo_news.news(form)
   except:
     wgo_news.header()
-    wgo_news.footer(wgo.error("The news article is malformed.  Perhaps it is missing a subject line, or it has no body."))
+    wgo_news.footer(wgo.error("The news article is malformed.  Check the date, it should be <i>day month year hour:minute:seconds</i> GMT  Perhaps it is missing a subject line, or it has no body.  "))
     return (-1)
     
 

@@ -75,7 +75,10 @@ def html_news_edit(this_queue, other_queue, msg, editor):
   print xhtml.table.row(xhtml.table.cell("From:")       + xhtml.table.cell(xhtml.quote(msg["from"]), {"id" : "from"}))
   print xhtml.table.row(xhtml.table.cell("Message-Id:") + xhtml.table.cell(xhtml.quote(msg["message-id"]), {"id" : "message-id"}))
   print xhtml.table.row(xhtml.table.cell("Subject:")    + xhtml.table.cell(xhtml.input.text({"name" : "subject", "value" : msg["subject"]}), {"id" : "subject"}))
-  print xhtml.table.row(xhtml.table.cell("Date:")       + xhtml.table.cell(xhtml.input.text({"name" : "date", "value" : msg["date"] }), {"id" : "date"}))
+  print xhtml.table.row(xhtml.table.cell("Date:")       + xhtml.table.cell(xhtml.input.text({"name" : "date", "value" : msg["date"] })
+                                                                           + "&nbsp;<i title='1-31 as appropriate for the month'>day</i>"
+                                                                           + " <i title='Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'>month-name</i>"
+                                                                           + " <i>year hour:minute:second TZ</i>", {"id" : "date"}))
   print xhtml.table.row(xhtml.table.cell("Image:")      + xhtml.table.cell(image_selector, {"id" : "image"}))
   print xhtml.table.row(xhtml.table.cell("Editor:")     + xhtml.table.cell("wilber", {"id" : "editor"}))
 

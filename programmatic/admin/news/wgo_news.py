@@ -218,7 +218,7 @@ icons = {
   "Developer"                 : "gimp_code.png",
   "Developer Release"         : "release-dev.png",
   "Release"                   : "release-0.1.png",
-  "Wilber the Builder"        : "wilber_painter.png",
+  "Wilber the Painter"        : "wilber_painter.png",
   "Wilber the Wizard"         : "wilber_wizard.png",
   "Wilber the Painter Builder" : "wilber_work.png" }
 

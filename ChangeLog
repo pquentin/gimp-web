@@ -1,5 +1,14 @@
 2004-12-01  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* programmatic/admin/news/news-edit.py:
+	Try to make editing the date of a news article easier by including
+	some descriptive text about the date format.
+
+	* programmatic/admin/news/:
+	Updated list of icons to allow for news entries.  Fixed the XML
+	rdf/rss preview button on the news admin pages to work around the
+	DocumentRoot versus DataDir problem mentioned below
+
 	* programmatic/contest/:
 	Get the contest back up and running.  Changes to update programmes
 	to work around missing info in the top-level configuration.

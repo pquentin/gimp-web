@@ -1,5 +1,12 @@
 2004-03-22  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/splash-images/gimp_splashgif.1.1-t.png
+	* about/splash/splash-images/gimp_splashgif.1.1.gif
+	* about/splash/splash-images/splash-1.3.htrw: added the animated
+	splash we used in 1.3.2 and 1.3.2.
+
+2004-03-22  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/stable.htrw: 
 	* about/splash/splash-images/splash-1.1.htrw
 	* about/splash/splash-images/splash-1.3.htrw: slightly more verbose.

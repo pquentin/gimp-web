@@ -1,3 +1,38 @@
+2002-10-02  scizzo  <scizzo@fungus>
+
+	* README.tutorials:
+	Changes in the README.tutorials with screenshot size and theme.
+
+2002-10-02  carol  <carol@fungus>
+
+	* README.tutorials: i moved the information around a bit
+
+2002-10-02  scizzo  <scizzo@fungus>
+
+	* README.tutorials:
+	Started to work on the README.tutorials to make some sort of standard to be used for the tutorials.
+
+2002-10-02  Henrik Brix Andersen  <brix@gimp.org>
+
+	* ChangeLog: changelog updated
+
+2002-10-02  carol  <carol@fungus>
+
+	* os2/man-gimprc.1.html, tutorials/index.html:
+	one manpage that got forgotten is removed now
+
+	some minor edits to the tutorials list
+
+	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html, macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html, macintosh/man-gtk-config.html, os2/man-gimp-1.2.html, os2/man-gimp-remote-1.2.html, os2/man-gimptool-1.2.html, os2/man-gtk-config.html, windows/man-gimp-1.2.html, windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html, windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
+	i remove the man pages from the poor os's that don't get manpages. i had
+	*no* idea.  aren't they mad?
+
+	* resources/devel-docs/index.html, tutorials/index.html:
+	i fixed the tags, this time on a different file.
+
+	the titles have been put on the tutorials index page.  descriptions prolly
+	need major help, especially towards the end.
+
 2002-10-02  carol  <carol@fungus>
 
 	* os2/man-gimprc.1.html, tutorials/index.html:

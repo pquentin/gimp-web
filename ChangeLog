@@ -1,3 +1,8 @@
+2004-11-18  Dave Neary  <bolsh@gimp.org>
+
+	* about/selling.htrw
+	* admin/gimp-web-urls: Fixed broken "Selling Free Software" link.
+
 2004-11-11  Niklas M <scizzo@gimp.org>
 
 	* source/index.htrw: Added more optional packages.

@@ -190,6 +190,7 @@
 ["href", "wgo:about-history",                  { "href": "/about/history.html"}]
 ["href", "wgo:about-introduction",             { "href": "/about/introduction.html"}]
 ["href", "wgo:license",                        { "href": "/about/COPYING"}]
+["href", "wgo:selling",                        { "href": "http://www.gnu.org/philosophy/selling.html"}]
 ["href", "wgo:about-maintainers",              { "href": "/about/maintainers.html"}]
 ["href", "wgo:about-maintainers-plugins",      { "href": "/about/maintainers-plugins.html"}]
 ["href", "wgo:about-mediakit",                 { "href": "/about/mediakit.html"}]

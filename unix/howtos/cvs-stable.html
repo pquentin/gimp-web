@@ -12,7 +12,7 @@
    This document is intended for people who don't know very much about CVS served software. It assumes experience compiling The GIMP from a tarball (how to in 2 weeks!). The author was afraid of CVS when first starting but now loves it and is even going to proofread GIMP source and make her own commits! 
 </p>
 <p>
-   CVS may seem like a dreadfully frightening way to get GIMP, but it is really a lot easier than it seems. In fact, if you want to stay up to date with The GIMP, CVS is the fastest and easiest way to do it. The following describes the basic procedure for setting up GIMP from CVS  on your Linux machine. 
+   CVS may seem like a dreadfully frightening way to get GIMP, but it is really a lot easier than it seems. In fact, if you want to stay up to date with The GIMP, CVS is the fastest and easiest way to do it. The following describes the basic procedure for setting up GIMP from CVS  on your GNU/Linux machine. 
 </p>
 <p>
    The first step is to download and compile
@@ -46,7 +46,7 @@
       </dd>
       <dt>diff -pu</dt>
       <dd>
-         p adds the name of the changed function to the generated diff. This is a matter of taste, as it helps mostly when reading diffs. u makes the patches in unified diff format, which is widely considered both the most readable and the most robust patch format. However, the options -p  and u are non-standard extensions of the GNU diff command that are not supported by all versions of diff, especially on systems other than Linux (Solaris, HP-UX, IRIX, etc.) If your system does not understand -u, you should use diff -c instead.
+         p adds the name of the changed function to the generated diff. This is a matter of taste, as it helps mostly when reading diffs. u makes the patches in unified diff format, which is widely considered both the most readable and the most robust patch format. However, the options -p  and u are non-standard extensions of the GNU diff command that are not supported by all versions of diff, especially on systems other than GNU/Linux (Solaris, HP-UX, IRIX, etc.) If your system does not understand -u, you should use diff -c instead.
       </dd>
       <dt>rdiff -pu</dt>
       <dd>

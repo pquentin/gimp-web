@@ -1,3 +1,9 @@
+2005-01-05  Niklas M <scizzo@gimp.org>
+
+	* tutorials/Basic_Batch/index.htrw: Added this tutorial.
+	* docs/batch_mode.htrw: Has moved to the tutorials section.
+	* tutorials/index.htrw: Added the link to the new batch mode tutorial.
+
 2005-01-04  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* tutorials/Perl-Debugged/index.htrw

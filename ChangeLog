@@ -1,4 +1,8 @@
 2004-03-29  Carol Spears  <carol@gimp.org>
+	* unix/man-gimprc-2.0.html updated the update with manpages from cvs
+    that should appear in gimp-2.0.1.
+
+2004-03-29  Carol Spears  <carol@gimp.org>
 	* unix/man-gimp-2.0.html, man-gimprc-2.0.html, man-gimp-remote-2.0.html, 
     man-gimptool-2.0.html: used man2html to remake these pages (tried to fix
     the man2html html some also).

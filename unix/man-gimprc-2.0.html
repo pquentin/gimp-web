@@ -1,665 +1,803 @@
-<!-- Creator     : groff version 1.18.1 -->
-<!-- CreationDate: Tue Mar 23 14:17:13 2004 -->
-<html>
-<head>
-<meta name="generator" content="groff -Thtml, see www.gnu.org">
-<meta name="Content-Style" content="text/css">
-<title></title>
-</head>
-<body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Man page of GIMPRC</TITLE>
+</HEAD><BODY>
+<p>
+<H1>GIMPRC</H1>
+Section: File Formats (5)<BR>Updated: Version 2.0.0<BR><A HREF="#index">Index</A>
 
-<hr>
+<A NAME="lbAB">&nbsp;</A>
+<H2>NAME</H2>
 
-<p>gimprc &minus; gimp configuration file The file is a
-configuation file read by the GIMP when it starts up. There
+gimprc - gimp configuration file
+<A NAME="lbAC">&nbsp;</A>
+<H2>DESCRIPTION</H2>
+
+The
+<B>gimprc</B>
+
+file is a configuation file read by the GIMP when it starts up.  There
 are two of these: one system-wide one stored in
-${prefix}/etc/gimp/2.0/gimprc and a per-user
-<b>$HOME</b>/.gimp-2.0/gimprc which may override system
-settings.</p>
+${prefix}/etc/gimp/2.0/gimprc and a per-user <B>$HOME</B>/.gimp-2.0/gimprc
+which may override system settings.
+</p><p>
+Comments are introduced by a hash sign (#), and continue until the end
+of the line.  Blank lines are ignored.
+</p><p>
+The
+<B>gimprc</B>
 
-<p>Comments are introduced by a hash sign (#), and continue
-until the end of the line. Blank lines are ignored.</p>
+file associates values with properties.  These properties may be set
+by lisp-like assignments of the form:
+</p><p>
+<DL COMPACT>
+<DT><DD>
+<B>(</B><I>property-name&nbsp;value</I><B>)</B>
+<DT>where:<DD>
+<DT><I>property-name</I>
 
-<p>The file associates values with properties. These
-properties may be set by lisp-like assignments of the form:
-<b>(</b><i>property-name value</i><b>)</b> where: is one of
-the property names described below. is the value the
-property is to be set to.</p>
+<DD>
+is one of the property names described below.
+<DT><I>value</I>
 
-<p>Either spaces or tabs may be used to separate the name
-from the value. Valid properties and their default values
-are:</p>
+<DD>
+is the value the property is to be set to.
+</DL>
 
-<p>(temp-path &quot;${gimp_dir}/tmp&quot;)</p>
+</p><p>
+Either spaces or tabs may be used to separate the name from the value.
+</p><p>
 
-<p>Sets the temporary storage directory. Files will appear
-here during the course of running the GIMP. Most files will
-disappear when the GIMP exits, but some files are likely to
-remain, so it is best if this directory not be one that is
-shared by other users. This is a single folder.</p>
+<A NAME="lbAD">&nbsp;</A>
+<H2>PROPERTIES</H2>
 
-<p>(swap-path &quot;${gimp_dir}&quot;)</p>
+Valid properties and their default values are:
+</p><p>
+<DL COMPACT>
+<DT>(temp-path &quot;${gimp_dir}/tmp&quot;)<DD>
 
-<p>Sets the swap file location. The gimp uses a tile based
-memory allocation scheme. The swap file is used to quickly
-and easily swap tiles out to disk and back in. Be aware that
-the swap file can easily get very large if the GIMP is used
-with large images. Also, things can get horribly slow if the
-swap file is created on a directory that is mounted over
-NFS. For these reasons, it may be desirable to put your swap
-file in &quot;/tmp&quot;. This is a single folder.</p>
+Sets the temporary storage directory. Files will appear here during the course
+of running the GIMP.  Most files will disappear when the GIMP exits, but some
+files are likely to remain, so it is best if this directory not be one that is
+shared by other users.  This is a single folder.
 
-<p>(stingy-memory-use no)</p>
+<DT>(swap-path &quot;${gimp_dir}&quot;)<DD>
 
-<p>There is always a tradeoff between memory usage and
-speed. In most cases, the GIMP opts for speed over memory.
-However, if memory is a big issue, try to enable this
-setting. Possible values are yes and no.</p>
+Sets the swap file location. The gimp uses a tile based memory allocation
+scheme. The swap file is used to quickly and easily swap tiles out to disk and
+back in. Be aware that the swap file can easily get very large if the GIMP is
+used with large images. Also, things can get horribly slow if the swap file is
+created on a directory that is mounted over NFS.  For these reasons, it may be
+desirable to put your swap file in &quot;/tmp&quot;.  This is a single folder.
 
-<p>(num-processors 1)</p>
+<DT>(stingy-memory-use no)<DD>
 
-<p>On multiprocessor machines, if GIMP has been compiled
-with --enable-mp this sets how many processors GIMP should
-use simultaneously. This is an integer value.</p>
+There is always a tradeoff between memory usage and speed.  In most cases, the
+GIMP opts for speed over memory.  However, if memory is a big issue, try to
+enable this setting.  Possible values are yes and no.
 
-<p>(tile-cache-size 64M)</p>
+<DT>(num-processors 1)<DD>
 
-<p>The tile cache is used to make sure the GIMP
-doesn&rsquo;t thrash tiles between memory and disk. Setting
-this value higher will cause the GIMP to use less swap
-space, but will also cause the GIMP to use more memory.
-Conversely, a smaller cache size causes the GIMP to use more
-swap space and less memory. The integer size can contain a
-suffix of &rsquo;B&rsquo;, &rsquo;K&rsquo;, &rsquo;M&rsquo;
-or &rsquo;G&rsquo; which makes GIMP interpret the size as
-being specified in bytes, kilobytes, megabytes or gigabytes.
-If no suffix is specified the size defaults to being
-specified in kilobytes.</p>
+On multiprocessor machines, if GIMP has been compiled with --enable-mp this
+sets how many processors GIMP should use simultaneously.  This is an integer
+value.
 
-<p>(interpolation-type linear)</p>
+<DT>(tile-cache-size 64M)<DD>
 
-<p>Sets the level of interpolation used for scaling and
-other transformations. Possible values are none, linear and
-cubic.</p>
+The tile cache is used to make sure the GIMP doesn't thrash tiles between
+memory and disk. Setting this value higher will cause the GIMP to use less
+swap space, but will also cause the GIMP to use more memory. Conversely, a
+smaller cache size causes the GIMP to use more swap space and less memory. 
+The integer size can contain a suffix of 'B', 'K', 'M' or 'G' which makes GIMP
+interpret the size as being specified in bytes, kilobytes, megabytes or
+gigabytes. If no suffix is specified the size defaults to being specified in
+kilobytes.
 
-<p>(plug-in-path
-&quot;${gimp_dir}/plug-ins:${gimp_plug_in_dir}/plug-ins&quot;)</p>
+<DT>(interpolation-type linear)<DD>
 
-<p>Sets the plug-in search path. This is a colon-separated
-list of folders to search.</p>
+Sets the level of interpolation used for scaling and other transformations. 
+Possible values are none, linear and cubic.
 
-<p>(module-path
-&quot;${gimp_dir}/modules:${gimp_plug_in_dir}/modules&quot;)</p>
+<DT>(plug-in-path &quot;${gimp_dir}/plug-ins:${gimp_plug_in_dir}/plug-ins&quot;)<DD>
 
-<p>Sets the module search path. This is a colon-separated
-list of folders to search.</p>
+Sets the plug-in search path.  This is a colon-separated list of folders to
+search.
 
-<p>(environ-path
-&quot;${gimp_dir}/environ:${gimp_plug_in_dir}/environ&quot;)</p>
+<DT>(module-path &quot;${gimp_dir}/modules:${gimp_plug_in_dir}/modules&quot;)<DD>
 
-<p>Sets the environ search path. This is a colon-separated
-list of folders to search.</p>
+Sets the module search path.  This is a colon-separated list of folders to
+search.
 
-<p>(brush-path
-&quot;${gimp_dir}/brushes:${gimp_data_dir}/brushes&quot;)</p>
+<DT>(environ-path &quot;${gimp_dir}/environ:${gimp_plug_in_dir}/environ&quot;)<DD>
 
-<p>Sets the brush search path. This is a colon-separated
-list of folders to search.</p>
+Sets the environ search path.  This is a colon-separated list of folders to
+search.
 
-<p>(brush-path-writable
-&quot;${gimp_dir}/brushes&quot;)</p>
+<DT>(brush-path &quot;${gimp_dir}/brushes:${gimp_data_dir}/brushes&quot;)<DD>
 
-<p>This is a colon-separated list of folders to search.</p>
+Sets the brush search path.  This is a colon-separated list of folders to
+search.
 
-<p>(pattern-path
-&quot;${gimp_dir}/patterns:${gimp_data_dir}/patterns&quot;)</p>
+<DT>(brush-path-writable &quot;${gimp_dir}/brushes&quot;)<DD>
 
-<p>Sets the pattern search path. This is a colon-separated
-list of folders to search.</p>
+<BR>&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;colon-separated&nbsp;list&nbsp;of&nbsp;folders&nbsp;to&nbsp;search.
 
-<p>(pattern-path-writable
-&quot;${gimp_dir}/patterns&quot;)</p>
+<DT>(pattern-path &quot;${gimp_dir}/patterns:${gimp_data_dir}/patterns&quot;)<DD>
 
-<p>This is a colon-separated list of folders to search.</p>
+Sets the pattern search path.  This is a colon-separated list of folders to
+search.
 
-<p>(palette-path
-&quot;${gimp_dir}/palettes:${gimp_data_dir}/palettes&quot;)</p>
+<DT>(pattern-path-writable &quot;${gimp_dir}/patterns&quot;)<DD>
 
-<p>Sets the palette search path. This is a colon-separated
-list of folders to search.</p>
+<BR>&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;colon-separated&nbsp;list&nbsp;of&nbsp;folders&nbsp;to&nbsp;search.
 
-<p>(palette-path-writable
-&quot;${gimp_dir}/palettes&quot;)</p>
+<DT>(palette-path &quot;${gimp_dir}/palettes:${gimp_data_dir}/palettes&quot;)<DD>
 
-<p>This is a colon-separated list of folders to search.</p>
+Sets the palette search path.  This is a colon-separated list of folders to
+search.
 
-<p>(gradient-path
-&quot;${gimp_dir}/gradients:${gimp_data_dir}/gradients&quot;)</p>
+<DT>(palette-path-writable &quot;${gimp_dir}/palettes&quot;)<DD>
 
-<p>Sets the gradient search path. This is a colon-separated
-list of folders to search.</p>
+<BR>&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;colon-separated&nbsp;list&nbsp;of&nbsp;folders&nbsp;to&nbsp;search.
 
-<p>(gradient-path-writable
-&quot;${gimp_dir}/gradients&quot;)</p>
+<DT>(gradient-path &quot;${gimp_dir}/gradients:${gimp_data_dir}/gradients&quot;)<DD>
 
-<p>This is a colon-separated list of folders to search.</p>
+Sets the gradient search path.  This is a colon-separated list of folders to
+search.
 
-<p>(font-path
-&quot;${gimp_dir}/fonts:${gimp_data_dir}/fonts&quot;)</p>
+<DT>(gradient-path-writable &quot;${gimp_dir}/gradients&quot;)<DD>
 
-<p>Where to look for fonts. This is a colon-separated list
-of folders to search.</p>
+<BR>&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;colon-separated&nbsp;list&nbsp;of&nbsp;folders&nbsp;to&nbsp;search.
 
-<p>(font-path-writable &quot;${gimp_dir}/fonts&quot;)</p>
+<DT>(font-path &quot;${gimp_dir}/fonts:${gimp_data_dir}/fonts&quot;)<DD>
 
-<p>This is a colon-separated list of folders to search.</p>
+Where to look for fonts.  This is a colon-separated list of folders to search.
 
-<p>(default-brush &quot;Circle (11)&quot;)</p>
+<DT>(font-path-writable &quot;${gimp_dir}/fonts&quot;)<DD>
 
-<p>Specify a default brush. The brush is searched for in
-the specified brush path. This is a string value.</p>
+<BR>&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;colon-separated&nbsp;list&nbsp;of&nbsp;folders&nbsp;to&nbsp;search.
 
-<p>(default-pattern &quot;Pine&quot;)</p>
+<DT>(default-brush &quot;Circle (11)&quot;)<DD>
 
-<p>Specify a default pattern. The pattern is searched for
-in the specified pattern path. This is a string value.</p>
+Specify a default brush.  The brush is searched for in the specified brush
+path.  This is a string value.
 
-<p>(default-palette &quot;Default&quot;)</p>
+<DT>(default-pattern &quot;Pine&quot;)<DD>
 
-<p>Specify a default palette. The palette is searched for
-in the specified palette path. This is a string value.</p>
+Specify a default pattern. The pattern is searched for in the specified
+pattern path.  This is a string value.
 
-<p>(default-gradient &quot;FG to BG (RGB)&quot;)</p>
+<DT>(default-palette &quot;Default&quot;)<DD>
 
-<p>Specify a default gradient. The gradient is searched for
-in the specified gradient path. This is a string value.</p>
+Specify a default palette.  The palette is searched for in the specified
+palette path.  This is a string value.
 
-<p>(default-font &quot;Sans&quot;)</p>
+<DT>(default-gradient &quot;FG to BG (RGB)&quot;)<DD>
 
-<p>Specify a default font. The font is searched for in the
-fontconfig font path. This is a string value.</p>
+Specify a default gradient.  The gradient is searched for in the specified
+gradient path.  This is a string value.
 
-<p>(global-brush yes)</p>
+<DT>(default-font &quot;Sans&quot;)<DD>
 
-<p>When enabled, the selected brush will be used for all
-tools. Possible values are yes and no.</p>
+Specify a default font.  The font is searched for in the fontconfig font path.
+<BR>&nbsp;This&nbsp;is&nbsp;a&nbsp;string&nbsp;value.
 
-<p>(global-pattern yes)</p>
+<DT>(global-brush yes)<DD>
 
-<p>When enabled, the selected pattern will be used for all
-tools. Possible values are yes and no.</p>
+When enabled, the selected brush will be used for all tools.  Possible values
+are yes and no.
 
-<p>(global-palette yes)</p>
+<DT>(global-pattern yes)<DD>
 
-<p>When enabled, the selected palette will be used for all
-tools. Possible values are yes and no.</p>
+When enabled, the selected pattern will be used for all tools.  Possible
+values are yes and no.
 
-<p>(global-gradient yes)</p>
+<DT>(global-palette yes)<DD>
 
-<p>When enabled, the selected gradient will be used for all
-tools. Possible values are yes and no.</p>
+When enabled, the selected palette will be used for all tools.  Possible
+values are yes and no.
 
-<p>(global-font yes)</p>
+<DT>(global-gradient yes)<DD>
 
-<p>When enabled, the selected font will be used for all
-tools. Possible values are yes and no.</p>
+When enabled, the selected gradient will be used for all tools.  Possible
+values are yes and no.
 
-<p>(default-image (width 256) (height 256) (unit inches)
-(xresolution 72.000000) (yresolution 72.000000)
-(resolution-unit inches) (image-type rgb) (fill-type
-background-fill) (comment &quot;Created with The
-GIMP&quot;))</p>
+<DT>(global-font yes)<DD>
 
-<p>Sets the default image in the &quot;File/New&quot;
-dialog. This is a parameter list.</p>
+When enabled, the selected font will be used for all tools.  Possible values
+are yes and no.
 
-<p>(default-grid (style intersections) (fgcolor (color-rgba
-0.000000 0.000000 0.000000 1.000000)) (bgcolor (color-rgba
-1.000000 1.000000 1.000000 1.000000)) (xspacing 10.000000)
-(yspacing 10.000000) (spacing-unit inches) (xoffset
-0.000000) (yoffset 0.000000) (offset-unit inches))</p>
+<DT>(default-image<DD>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(width&nbsp;256)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(height&nbsp;256)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(unit&nbsp;inches)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(xresolution&nbsp;72.000000)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(yresolution&nbsp;72.000000)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(resolution-unit&nbsp;inches)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(image-type&nbsp;rgb)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(fill-type&nbsp;background-fill)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(comment&nbsp;&quot;Created&nbsp;with&nbsp;The&nbsp;GIMP&quot;))
 
-<p>Specify a default image grid. This is a parameter
-list.</p>
+Sets the default image in the &quot;File/New&quot; dialog.  This is a parameter list.
 
-<p>(undo-levels 5)</p>
+<DT>(default-grid<DD>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(style&nbsp;intersections)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(fgcolor&nbsp;(color-rgba&nbsp;0.000000&nbsp;0.000000&nbsp;0.000000&nbsp;1.000000))
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(bgcolor&nbsp;(color-rgba&nbsp;1.000000&nbsp;1.000000&nbsp;1.000000&nbsp;1.000000))
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(xspacing&nbsp;10.000000)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(yspacing&nbsp;10.000000)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(spacing-unit&nbsp;inches)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(xoffset&nbsp;0.000000)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(yoffset&nbsp;0.000000)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(offset-unit&nbsp;inches))
 
-<p>Sets the minimal number of operations that can be
-undone. More undo levels are kept available until the
-undo-size limit is reached. This is an integer value.</p>
+Specify a default image grid.  This is a parameter list.
 
-<p>(undo-size 4M)</p>
+<DT>(undo-levels 5)<DD>
 
-<p>Sets an upper limit to the memory that is used per image
-to keep operations on the undo stack. Regardless of this
-setting, at least as many undo-levels as configured can be
-undone. The integer size can contain a suffix of
-&rsquo;B&rsquo;, &rsquo;K&rsquo;, kilobytes, megabytes or
-gigabytes. If no suffix is specified the size defaults to
-being specified in kilobytes.</p>
+Sets the minimal number of operations that can be undone. More undo levels are
+kept available until the undo-size limit is reached.  This is an integer
+value.
 
-<p>(undo-preview-size large)</p>
+<DT>(undo-size 4M)<DD>
 
-<p>Sets the size of the previews in the Undo History.
-Possible values are tiny, extra-small, small, medium, large,
-extra-large, huge, enormous and gigantic.</p>
+Sets an upper limit to the memory that is used per image to keep operations on
+the undo stack. Regardless of this setting, at least as many undo-levels as
+configured can be undone.  The integer size can contain a suffix of 'B', 'K',
 
-<p>(pluginrc-path &quot;${gimp_dir}/pluginrc&quot;)</p>
+kilobytes, megabytes or gigabytes. If no suffix is specified the size defaults
+to being specified in kilobytes.
 
-<p>Sets the pluginrc search path. This is a single
-filename.</p>
+<DT>(undo-preview-size large)<DD>
 
-<p>(layer-previews yes)</p>
+Sets the size of the previews in the Undo History.  Possible values are tiny,
+extra-small, small, medium, large, extra-large, huge, enormous and gigantic.
 
-<p>Sets whether GIMP should create previews of layers and
-channels. Previews in the layers and channels dialog are
-nice to have but they can slow things down when working with
-large images. Possible values are yes and no.</p>
+<DT>(pluginrc-path &quot;${gimp_dir}/pluginrc&quot;)<DD>
 
-<p>(layer-preview-size medium)</p>
+Sets the pluginrc search path.  This is a single filename.
 
-<p>Sets the default preview size for layers and channels.
-Possible values are tiny, extra-small, small, medium, large,
-extra-large, huge, enormous and gigantic.</p>
+<DT>(layer-previews yes)<DD>
 
-<p>(thumbnail-size normal)</p>
+Sets whether GIMP should create previews of layers and channels. Previews in
+the layers and channels dialog are nice to have but they can slow things down
+when working with large images.  Possible values are yes and no.
 
-<p>Sets the size of the thumbnail saved with each image.
-Note that GIMP can not save thumbnails if layer previews are
-disabled. Possible values are none, normal and large.</p>
+<DT>(layer-preview-size medium)<DD>
 
-<p>(install-colormap no)</p>
+Sets the default preview size for layers and channels.  Possible values are
+tiny, extra-small, small, medium, large, extra-large, huge, enormous and
+gigantic.
 
-<p>Install a private colormap; might be useful on
-pseudocolor visuals. Possible values are yes and no.</p>
+<DT>(thumbnail-size normal)<DD>
 
-<p>(min-colors 144)</p>
+Sets the size of the thumbnail saved with each image. Note that GIMP can not
+save thumbnails if layer previews are disabled.  Possible values are none,
+normal and large.
 
-<p>Generally only a concern for 8-bit displays, this sets
-the minimum number of system colors allocated for the GIMP.
-This is an integer value.</p>
+<DT>(install-colormap no)<DD>
 
-<p>(marching-ants-speed 300)</p>
+Install a private colormap; might be useful on pseudocolor visuals.  Possible
+values are yes and no.
 
-<p>Speed of marching ants in the selection outline. This
-value is in milliseconds (less time indicates faster
-marching). This is an integer value.</p>
+<DT>(min-colors 144)<DD>
 
-<p>(resize-windows-on-zoom no)</p>
+Generally only a concern for 8-bit displays, this sets the minimum number of
+system colors allocated for the GIMP.  This is an integer value.
 
-<p>When enabled, the image window will automatically resize
-itself, when zooming into and out of images. Possible values
-are yes and no.</p>
+<DT>(marching-ants-speed 300)<DD>
 
-<p>(resize-windows-on-resize no)</p>
+Speed of marching ants in the selection outline.  This value is in
+milliseconds (less time indicates faster marching).  This is an integer value.
 
-<p>When enabled, the image window will automatically resize
-itself, whenever the physical image size changes. Possible
-values are yes and no.</p>
+<DT>(resize-windows-on-zoom no)<DD>
 
-<p>(default-dot-for-dot yes)</p>
+When enabled, the image window will automatically resize itself, when zooming
+into and out of images.  Possible values are yes and no.
 
-<p>When enabled, this will ensure that each pixel of an
-image gets mapped to a pixel on the screen. Possible values
-are yes and no.</p>
+<DT>(resize-windows-on-resize no)<DD>
 
-<p>(initial-zoom-to-fit yes)</p>
+When enabled, the image window will automatically resize itself, whenever the
+physical image size changes.  Possible values are yes and no.
 
-<p>When enabled, this will ensure that the full image is
-visible after a file is opened, otherwise it will be
-displayed with a scale of 1:1. Possible values are yes and
-no.</p>
+<DT>(default-dot-for-dot yes)<DD>
 
-<p>(perfect-mouse yes)</p>
+When enabled, this will ensure that each pixel of an image gets mapped to a
+pixel on the screen.  Possible values are yes and no.
 
-<p>When enabled, the X server is queried for the
-mouse&rsquo;s current position on each motion event, rather
-than relying on the position hint. This means painting with
-large brushes should be more accurate, but it may be slower.
-Perversely, on some X servers enabling this option results
-in faster painting. Possible values are yes and no.</p>
+<DT>(initial-zoom-to-fit yes)<DD>
 
-<p>(cursor-mode tool-icon)</p>
+When enabled, this will ensure that the full image is visible after a file is
+opened, otherwise it will be displayed with a scale of 1:1.  Possible values
+are yes and no.
 
-<p>Sets the mode of cursor the GIMP will use. Possible
-values are tool-icon, tool-crosshair and crosshair.</p>
+<DT>(perfect-mouse yes)<DD>
 
-<p>(cursor-updating yes)</p>
+When enabled, the X server is queried for the mouse's current position on each
+motion event, rather than relying on the position hint.  This means painting
+with large brushes should be more accurate, but it may be slower.  Perversely,
+on some X servers enabling this option results in faster painting.  Possible
+values are yes and no.
 
-<p>Context-dependent cursors are cool. They are enabled by
-default. However, they require overhead that you may want to
-do without. Possible values are yes and no.</p>
+<DT>(cursor-mode tool-icon)<DD>
 
-<p>(show-brush-outline yes)</p>
+Sets the mode of cursor the GIMP will use.  Possible values are tool-icon,
+tool-crosshair and crosshair.
 
-<p>When enabled, all paint tools will show a preview of the
-current brush&rsquo;s outline. Possible values are yes and
-no.</p>
+<DT>(cursor-updating yes)<DD>
 
-<p>(image-title-format &quot;%D*%f-%p.%i (%t, %L)
-%z%%&quot;)</p>
+Context-dependent cursors are cool.  They are enabled by default. However,
+they require overhead that you may want to do without.  Possible values are
+yes and no.
 
-<p>Sets the text to appear in image window titles. This is
-a format string; certain % character sequences are
-recognised and expanded as follows:</p>
+<DT>(show-brush-outline yes)<DD>
 
-<p>%% literal percent sign<br>
-%f bare filename, or &quot;Untitled&quot;<br>
-%F full path to file, or &quot;Untitled&quot;<br>
-%p PDB image id<br>
-%i view instance number<br>
-%t image type (RGB, grayscale, indexed)<br>
-%z zoom factor as a percentage<br>
-%s source scale factor<br>
-%d destination scale factor<br>
-%Dx expands to x if the image is dirty, the empty string
-otherwise<br>
-%Cx expands to x if the image is clean, the empty string
-otherwise<br>
-%l the number of layers<br>
-%L the number of layers (long form)<br>
-%m memory used by the image<br>
-%n the name of the active layer/channel<br>
-%P the PDB id of the active layer/channel<br>
-%w image width in pixels<br>
-%W image width in real-world units<br>
-%h image height in pixels<br>
-%H image height in real-world units<br>
-%u unit symbol<br>
-%U unit abbreviation</p>
+When enabled, all paint tools will show a preview of the current brush's
+outline.  Possible values are yes and no.
 
-<p>(image-status-format &quot;%n (%m)&quot;)</p>
+<DT>(image-title-format &quot;%D*%f-%p.%i (%t, %L) %z%%&quot;)<DD>
 
-<p>Sets the text to appear in image window status bars.
-This is a format string; certain % character sequences are
-recognised and expanded as follows:</p>
+Sets the text to appear in image window titles.  This is a format string;
+certain % character sequences are recognised and expanded as follows:
+<BR>
 
-<p>%% literal percent sign<br>
-%f bare filename, or &quot;Untitled&quot;<br>
-%F full path to file, or &quot;Untitled&quot;<br>
-%p PDB image id<br>
-%i view instance number<br>
-%t image type (RGB, grayscale, indexed)<br>
-%z zoom factor as a percentage<br>
-%s source scale factor<br>
-%d destination scale factor<br>
-%Dx expands to x if the image is dirty, the empty string
-otherwise<br>
-%Cx expands to x if the image is clean, the empty string
-otherwise<br>
-%l the number of layers<br>
-%L the number of layers (long form)<br>
-%m memory used by the image<br>
-%n the name of the active layer/channel<br>
-%P the PDB id of the active layer/channel<br>
-%w image width in pixels<br>
-%W image width in real-world units<br>
-%h image height in pixels<br>
-%H image height in real-world units<br>
-%u unit symbol<br>
-%U unit abbreviation</p>
 
-<p>(confirm-on-close yes)</p>
+<BR>
 
-<p>Ask for confirmation before closing an image without
-saving. Possible values are yes and no.</p>
+%%  literal percent sign
+<BR>
 
-<p>(monitor-xresolution 72.000000)</p>
+%f  bare filename, or &quot;Untitled&quot;
+<BR>
 
-<p>Sets the monitor&rsquo;s horizontal resolution, in dots
-per inch. If set to 0, forces the X server to be queried for
-both horizontal and vertical resolution information. This is
-a float value.</p>
+%F  full path to file, or &quot;Untitled&quot;
+<BR>
 
-<p>(monitor-yresolution 72.000000)</p>
+%p  PDB image id
+<BR>
 
-<p>Sets the monitor&rsquo;s vertical resolution, in dots
-per inch. If set to 0, forces the X server to be queried for
-both horizontal and vertical resolution information. This is
-a float value.</p>
+%i  view instance number
+<BR>
 
-<p>(monitor-resolution-from-windowing-system yes)</p>
+%t  image type (RGB, grayscale, indexed)
+<BR>
 
-<p>When enabled, the GIMP will use the monitor resolution
-from the windowing system. Possible values are yes and
-no.</p>
+%z  zoom factor as a percentage
+<BR>
 
-<p>(navigation-preview-size medium)</p>
+%s  source scale factor
+<BR>
 
-<p>Sets the size of the navigation preview available in the
-lower right corner of the image window. Possible values are
-tiny, extra-small, small, medium, large, extra-large, huge,
-enormous and gigantic.</p>
+%d  destination scale factor
+<BR>
 
-<p>(default-view (show-menubar yes) (show-rulers yes)
-(show-scrollbars yes) (show-statusbar yes) (show-selection
-yes) (show-layer-boundary yes) (show-guides yes) (show-grid
-no) (padding-mode default) (padding-color (color-rgba
-1.000000 1.000000 1.000000 1.000000)))</p>
+%Dx expands to x if the image is dirty, the empty string otherwise
+<BR>
 
-<p>Sets the default settings for the image view. This is a
-parameter list.</p>
+%Cx expands to x if the image is clean, the empty string otherwise
+<BR>
 
-<p>(default-fullscreen-view (show-menubar no) (show-rulers
-no) (show-scrollbars no) (show-statusbar no) (show-selection
-no) (show-layer-boundary no) (show-guides no) (show-grid no)
-(padding-mode custom) (padding-color (color-rgba 0.000000
-0.000000 0.000000 1.000000)))</p>
+%l  the number of layers
+<BR>
 
-<p>Sets the default settings used when an image is viewed
-in fullscreen mode. This is a parameter list.</p>
+%L  the number of layers (long form)
+<BR>
 
-<p>(activate-on-focus yes)</p>
+%m  memory used by the image
+<BR>
 
-<p>When enabled, an image will become the active image when
-its image window receives the focus. This is useful for
-window managers using &quot;click to focus&quot;. Possible
-values are yes and no.</p>
+%n  the name of the active layer/channel
+<BR>
 
-<p>(transparency-size medium-checks)</p>
+%P  the PDB id of the active layer/channel
+<BR>
 
-<p>Sets the size of the checkerboard used to display
-transparency. Possible values are small-checks,
-medium-checks and large-checks.</p>
+%w  image width in pixels
+<BR>
 
-<p>(transparency-type gray-checks)</p>
+%W  image width in real-world units
+<BR>
 
-<p>Sets the manner in which transparency is displayed in
-images. Possible values are light-checks, gray-checks,
-dark-checks, white-only, gray-only and black-only.</p>
+%h  image height in pixels
+<BR>
 
-<p>(snap-distance 8)</p>
+%H  image height in real-world units
+<BR>
 
-<p>This is the distance in pixels where Guide and Grid
-snapping activates. This is an integer value.</p>
+%u  unit symbol
+<BR>
 
-<p>(default-threshold 15)</p>
+%U  unit abbreviation
+<BR>
 
-<p>Tools such as fuzzy-select and bucket fill find regions
-based on a seed-fill algorithm. The seed fill starts at the
-intially selected pixel and progresses in all directions
-until the difference of pixel intensity from the original is
-greater than a specified threshold. This value represents
-the default threshold. This is an integer value.</p>
 
-<p>(info-window-per-display no)</p>
+<BR>
 
-<p>When enabled, the GIMP will use a different info window
-per image view. Possible values are yes and no.</p>
 
-<p>(trust-dirty-flag no)</p>
+<DT>(image-status-format &quot;%n (%m)&quot;)<DD>
 
-<p>When enabled, the GIMP will not save if the image is
-unchanged since opening it. Possible values are yes and
-no.</p>
+Sets the text to appear in image window status bars.  This is a format string;
+certain % character sequences are recognised and expanded as follows:
+<BR>
 
-<p>(save-device-status no)</p>
 
-<p>Remember the current tool, pattern, color, and brush
-across GIMP sessions. Possible values are yes and no.</p>
+<BR>
 
-<p>(save-session-info yes)</p>
+%%  literal percent sign
+<BR>
 
-<p>Save the positions and sizes of the main dialogs when
-the GIMP exits. Possible values are yes and no.</p>
+%f  bare filename, or &quot;Untitled&quot;
+<BR>
 
-<p>(restore-session yes)</p>
+%F  full path to file, or &quot;Untitled&quot;
+<BR>
 
-<p>Let GIMP try to restore your last saved session on each
-startup. Possible values are yes and no.</p>
+%p  PDB image id
+<BR>
 
-<p>(show-tips yes)</p>
+%i  view instance number
+<BR>
 
-<p>Enable to display a handy GIMP tip on startup. Possible
-values are yes and no.</p>
+%t  image type (RGB, grayscale, indexed)
+<BR>
 
-<p>(show-tool-tips yes)</p>
+%z  zoom factor as a percentage
+<BR>
 
-<p>Enable to display tooltips. Possible values are yes and
-no.</p>
+%s  source scale factor
+<BR>
 
-<p>(tearoff-menus yes)</p>
+%d  destination scale factor
+<BR>
 
-<p>When enabled, menus can be torn off. Possible values are
-yes and no.</p>
+%Dx expands to x if the image is dirty, the empty string otherwise
+<BR>
 
-<p>(can-change-accels no)</p>
+%Cx expands to x if the image is clean, the empty string otherwise
+<BR>
 
-<p>When enabled, you can change keyboard shortcuts for menu
-items by hitting a key combination while the menu item is
-highlighted. Possible values are yes and no.</p>
+%l  the number of layers
+<BR>
 
-<p>(save-accels yes)</p>
+%L  the number of layers (long form)
+<BR>
 
-<p>Save changed keyboard shortcuts when the GIMP exits.
-Possible values are yes and no.</p>
+%m  memory used by the image
+<BR>
 
-<p>(restore-accels yes)</p>
+%n  the name of the active layer/channel
+<BR>
 
-<p>Restore saved keyboard shortcuts on each GIMP startup.
-Possible values are yes and no.</p>
+%P  the PDB id of the active layer/channel
+<BR>
 
-<p>(last-opened-size 10)</p>
+%w  image width in pixels
+<BR>
 
-<p>How many recently opened image filenames to keep on the
-File menu. This is an integer value.</p>
+%W  image width in real-world units
+<BR>
 
-<p>(max-new-image-size 64M)</p>
+%h  image height in pixels
+<BR>
 
-<p>GIMP will warn the user if an attempt is made to create
-an image that would take more memory than the size specified
-here. The integer size can contain a suffix of
-&rsquo;B&rsquo;, &rsquo;K&rsquo;, &rsquo;M&rsquo; or
-&rsquo;G&rsquo; which makes GIMP interpret the size as being
-specified in bytes, kilobytes, megabytes or gigabytes. If no
-suffix is specified the size defaults to being specified in
-kilobytes.</p>
+%H  image height in real-world units
+<BR>
 
-<p>(theme-path
-&quot;${gimp_dir}/themes:${gimp_data_dir}/themes&quot;)</p>
+%u  unit symbol
+<BR>
 
-<p>Sets the theme search path. This is a colon-separated
-list of folders to search.</p>
+%U  unit abbreviation
+<BR>
 
-<p>(theme &quot;Default&quot;)</p>
 
-<p>The name of the theme to use. This is a string
-value.</p>
+<BR>
 
-<p>(use-help yes)</p>
 
-<p>When enabled, pressing F1 will open the help browser.
-Possible values are yes and no.</p>
+<DT>(confirm-on-close yes)<DD>
 
-<p>Specifies the language preferences used by the help
-system. This is acolon-separated list of language
-identifiers with decreasing priority. If empty, the language
-is taken from the user&rsquo;s locale setting. This is a
-string value.</p>
+Ask for confirmation before closing an image without saving.  Possible values
+are yes and no.
 
-<p>(help-browser gimp)</p>
+<DT>(monitor-xresolution 72.000000)<DD>
 
-<p>Sets the browser used by the help system. Possible
-values are gimp and web-browser.</p>
+Sets the monitor's horizontal resolution, in dots per inch.  If set to 0,
+forces the X server to be queried for both horizontal and vertical resolution
+information.  This is a float value.
 
-<p>(web-browser &quot;mozilla %s&quot;)</p>
+<DT>(monitor-yresolution 72.000000)<DD>
 
-<p>Sets the external web browser to be used. This can be an
-absolute path or the name of an executable to search for in
-the user&rsquo;s PATH. If the command contains
-&rsquo;%s&rsquo; it will be replaced with the URL, else the
-URL will be appended to the command with a space separating
-the two. This is a single filename.</p>
+Sets the monitor's vertical resolution, in dots per inch.  If set to 0, forces
+the X server to be queried for both horizontal and vertical resolution
+information.  This is a float value.
 
-<p>(toolbox-window-hint normal)</p>
+<DT>(monitor-resolution-from-windowing-system yes)<DD>
 
-<p>The window type hint that is set on the toolbox. This
-may affect how your window manager decorates and handles the
-toolbox window. Possible values are normal and utility.</p>
+When enabled, the GIMP will use the monitor resolution from the windowing
+system.  Possible values are yes and no.
 
-<p>(dock-window-hint normal)</p>
+<DT>(navigation-preview-size medium)<DD>
 
-<p>The window type hint that is set on dock windows. This
-may affect the way your window manager decorates and handles
-dock windows. Possible values are normal and utility.</p>
+Sets the size of the navigation preview available in the lower right corner of
+the image window.  Possible values are tiny, extra-small, small, medium,
+large, extra-large, huge, enormous and gigantic.
 
-<p>(fractalexplorer-path
-&quot;${gimp_dir}/fractalexplorer:${gimp_data_dir}/fractalexplorer&quot;)</p>
+<DT>(default-view<DD>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-menubar&nbsp;yes)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-rulers&nbsp;yes)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-scrollbars&nbsp;yes)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-statusbar&nbsp;yes)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-selection&nbsp;yes)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-layer-boundary&nbsp;yes)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-guides&nbsp;yes)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-grid&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(padding-mode&nbsp;default)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(padding-color&nbsp;(color-rgba&nbsp;1.000000&nbsp;1.000000&nbsp;1.000000&nbsp;1.000000)))
 
-<p>Where to search for fractals used by the Fractal
-Explorer plug-in. This is a colon-separated list of folders
-to search.</p>
+Sets the default settings for the image view.  This is a parameter list.
 
-<p>(gfig-path
-&quot;${gimp_dir}/gfig:${gimp_data_dir}/gfig&quot;)</p>
+<DT>(default-fullscreen-view<DD>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-menubar&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-rulers&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-scrollbars&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-statusbar&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-selection&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-layer-boundary&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-guides&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(show-grid&nbsp;no)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(padding-mode&nbsp;custom)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;(padding-color&nbsp;(color-rgba&nbsp;0.000000&nbsp;0.000000&nbsp;0.000000&nbsp;1.000000)))
 
-<p>Where to search for Gfig figures used by the Gfig
-plug-in. This is a colon-separated list of folders to
-search.</p>
+Sets the default settings used when an image is viewed in fullscreen mode. 
+This is a parameter list.
 
-<p>(gflare-path
-&quot;${gimp_dir}/gflare:${gimp_data_dir}/gflare&quot;)</p>
+<DT>(activate-on-focus yes)<DD>
 
-<p>Where to search for gflares used by the GFlare plug-in.
-This is a colon-separated list of folders to search.</p>
+When enabled, an image will become the active image when its image window
+receives the focus. This is useful for window managers using &quot;click to focus&quot;.
+<BR>&nbsp;Possible&nbsp;values&nbsp;are&nbsp;yes&nbsp;and&nbsp;no.
 
-<p>(gimpressionist-path
-&quot;${gimp_dir}/gimpressionist:${gimp_data_dir}/gimpressionist&quot;)</p>
+<DT>(transparency-size medium-checks)<DD>
 
-<p>Where to search for data used by the Gimpressionist
-plug-in. This is a colon-separated list of folders to
-search.</p>
+Sets the size of the checkerboard used to display transparency.  Possible
+values are small-checks, medium-checks and large-checks.
 
-<p>(script-fu-path
-&quot;${gimp_dir}/scripts:${gimp_data_dir}/scripts&quot;)</p>
+<DT>(transparency-type gray-checks)<DD>
 
-<p>This path will be searched for scripts when the
-Script-Fu plug-in is run. This is a colon-separated list of
-folders to search.</p>
+Sets the manner in which transparency is displayed in images.  Possible values
+are light-checks, gray-checks, dark-checks, white-only, gray-only and
+black-only.
 
-<p>Strings of type PATH are expanded in a manner similar to
-Specifically: tilde (~) is expanded to the user&rsquo;s home
-directory. Note that the bash feature of being able to refer
-to other user&rsquo;s home directories by writing ~userid/
-is not valid in this file.</p>
+<DT>(snap-distance 8)<DD>
 
-<p>${variable} is expanded to the current value of an
-environment variable. There are a few variables that are
-pre-defined: The personal gimp directory which is set to the
-value of the environment variable GIMP2_DIRECTORY or to
-~/.gimp-2.0. Nase for paths to shareable data, which is set
-to the value of the environment variable GIMP2_DATADIR or to
-the compiled-in default value ${prefix}/share/gimp/2.0. Base
-to paths for architecture-specific plugins and modules,
-which is set to the value of the environment variable
-GIMP2_PLUGINDIR or to the compiled-in default value
-${exec_prefix}/lib/gimp/2.0. Path to configuration files,
-which is set to the value of the environment variable
-GIMP2_SYSCONFDIR or to the compiled-in default value
-${prefix}/etc/gimp/2.0.</p>
+This is the distance in pixels where Guide and Grid snapping activates.  This
+is an integer value.
 
-<p>System-wide configuration file Per-user configuration
-file</p>
-<hr>
-</body>
-</html>
+<DT>(default-threshold 15)<DD>
+
+Tools such as fuzzy-select and bucket fill find regions based on a seed-fill
+algorithm.  The seed fill starts at the intially selected pixel and progresses
+in all directions until the difference of pixel intensity from the original is
+greater than a specified threshold. This value represents the default
+threshold.  This is an integer value.
+
+<DT>(info-window-per-display no)<DD>
+
+When enabled, the GIMP will use a different info window per image view. 
+Possible values are yes and no.
+
+<DT>(trust-dirty-flag no)<DD>
+
+When enabled, the GIMP will not save if the image is unchanged since opening
+it.  Possible values are yes and no.
+
+<DT>(save-device-status no)<DD>
+
+Remember the current tool, pattern, color, and brush across GIMP sessions. 
+Possible values are yes and no.
+
+<DT>(save-session-info yes)<DD>
+
+Save the positions and sizes of the main dialogs when the GIMP exits. 
+Possible values are yes and no.
+
+<DT>(restore-session yes)<DD>
+
+Let GIMP try to restore your last saved session on each startup.  Possible
+values are yes and no.
+
+<DT>(show-tips yes)<DD>
+
+Enable to display a handy GIMP tip on startup.  Possible values are yes and
+no.
+
+<DT>(show-tool-tips yes)<DD>
+
+Enable to display tooltips.  Possible values are yes and no.
+
+<DT>(tearoff-menus yes)<DD>
+
+When enabled, menus can be torn off.  Possible values are yes and no.
+
+<DT>(can-change-accels no)<DD>
+
+When enabled, you can change keyboard shortcuts for menu items by hitting a
+key combination while the menu item is highlighted.  Possible values are yes
+and no.
+
+<DT>(save-accels yes)<DD>
+
+Save changed keyboard shortcuts when the GIMP exits.  Possible values are yes
+and no.
+
+<DT>(restore-accels yes)<DD>
+
+Restore saved keyboard shortcuts on each GIMP startup.  Possible values are
+yes and no.
+
+<DT>(last-opened-size 10)<DD>
+
+How many recently opened image filenames to keep on the File menu.  This is an
+integer value.
+
+<DT>(max-new-image-size 64M)<DD>
+
+GIMP will warn the user if an attempt is made to create an image that would
+take more memory than the size specified here.  The integer size can contain a
+suffix of 'B', 'K', 'M' or 'G' which makes GIMP interpret the size as being
+specified in bytes, kilobytes, megabytes or gigabytes. If no suffix is
+specified the size defaults to being specified in kilobytes.
+
+<DT>(theme-path &quot;${gimp_dir}/themes:${gimp_data_dir}/themes&quot;)<DD>
+
+Sets the theme search path.  This is a colon-separated list of folders to
+search.
+
+<DT>(theme &quot;Default&quot;)<DD>
+
+The name of the theme to use.  This is a string value.
+
+<DT>(use-help yes)<DD>
+
+When enabled, pressing F1 will open the help browser.  Possible values are yes
+and no.
+
+<DT>(help-locales &quot;&quot;)<DD>
+
+Specifies the language preferences used by the help system. This is a
+colon-separated list of language identifiers with decreasing priority. If
+empty, the language is taken from the user's locale setting.  This is a string
+value.
+
+<DT>(help-browser gimp)<DD>
+
+Sets the browser used by the help system.  Possible values are gimp and
+web-browser.
+
+<DT>(web-browser &quot;mozilla %s&quot;)<DD>
+
+Sets the external web browser to be used.  This can be an absolute path or the
+name of an executable to search for in the user's PATH. If the command
+contains '%s' it will be replaced with the URL, else the URL will be appended
+to the command with a space separating the two.  This is a single filename.
+
+<DT>(toolbox-window-hint normal)<DD>
+
+The window type hint that is set on the toolbox. This may affect how your
+window manager decorates and handles the toolbox window.  Possible values are
+normal and utility.
+
+<DT>(dock-window-hint normal)<DD>
+
+The window type hint that is set on dock windows. This may affect the way your
+window manager decorates and handles dock windows.  Possible values are normal
+and utility.
+
+<DT>(fractalexplorer-path &quot;${gimp_dir}/fractalexplorer:${gimp_data_dir}/fractalexplorer&quot;)<DD>
+
+Where to search for fractals used by the Fractal Explorer plug-in.  This is a
+colon-separated list of folders to search.
+
+<DT>(gfig-path &quot;${gimp_dir}/gfig:${gimp_data_dir}/gfig&quot;)<DD>
+
+Where to search for Gfig figures used by the Gfig plug-in.  This is a
+colon-separated list of folders to search.
+
+<DT>(gflare-path &quot;${gimp_dir}/gflare:${gimp_data_dir}/gflare&quot;)<DD>
+
+Where to search for gflares used by the GFlare plug-in.  This is a
+colon-separated list of folders to search.
+
+<DT>(gimpressionist-path &quot;${gimp_dir}/gimpressionist:${gimp_data_dir}/gimpressionist&quot;)<DD>
+
+Where to search for data used by the Gimpressionist plug-in.  This is a
+colon-separated list of folders to search.
+
+<DT>(script-fu-path &quot;${gimp_dir}/scripts:${gimp_data_dir}/scripts&quot;)<DD>
+
+This path will be searched for scripts when the Script-Fu plug-in is run. 
+This is a colon-separated list of folders to search.
+</DL>
+</p><p>
+
+<A NAME="lbAE">&nbsp;</A>
+<H2>PATH EXPANSION</H2>
+
+Strings of type PATH are expanded in a manner similar to
+<B><A HREF="http://www.gnu.org/software/bash/bash.html">bash</A></B>(1).
+
+Specifically: tilde (~) is expanded to the user's home directory. Note that
+the bash feature of being able to refer to other user's home directories
+by writing ~userid/ is not valid in this file.
+</p><p>
+
+${variable} is expanded to the current value of an environment variable.
+There are a few variables that are pre-defined:
+</p><p>
+<DL COMPACT>
+<DT><I>gimp_dir</I>
+
+<DD>
+The personal gimp directory which is set to the value of the environment
+variable GIMP2_DIRECTORY or to ~/.gimp-2.0.
+<DT><I>gimp_data_dir</I>
+
+<DD>
+Nase for paths to shareable data, which is set to the value of the
+environment variable GIMP2_DATADIR or to the compiled-in default value
+${prefix}/share/gimp/2.0.
+<DT><I>gimp_plug_in_dir</I>
+
+<DD>
+Base to paths for architecture-specific plugins and modules, which is set
+to the value of the environment variable GIMP2_PLUGINDIR or to the
+compiled-in default value ${exec_prefix}/lib/gimp/2.0.
+<DT><I>gimp_sysconf_dir</I>
+
+<DD>
+Path to configuration files, which is set to the value of the environment
+variable GIMP2_SYSCONFDIR or to the compiled-in default value 
+${prefix}/etc/gimp/2.0.
+</DL>
+</p><p>
+<A NAME="lbAF">&nbsp;</A>
+<H2>FILES</H2>
+
+<DL COMPACT>
+<DT><I>${prefix}/etc/gimp/2.0/gimprc</I>
+
+<DD>
+System-wide configuration file
+<DT><I></I><B>$HOME</B>/.gimp-2.0/gimprc
+
+<DD>
+Per-user configuration file
+</DL>
+</p><p>
+<A NAME="lbAG">&nbsp;</A>
+<H2>SEE ALSO</H2>
+
+<B><A HREF="man-gimp-2.0.html">gimp</A></B>(1),
+
+<B><A HREF="man-gimptool-2.0.html">gimptool</A></B>(1),
+
+<B><A HREF="man-gimp-remote-2.0.html">gimp-remote</A></B>(1)
+
+</p><p>
+
+<HR>
+<A NAME="index">&nbsp;</A><H2>Index</H2>
+<DL>
+<DT><A HREF="#lbAB">NAME</A><DD>
+<DT><A HREF="#lbAC">DESCRIPTION</A><DD>
+<DT><A HREF="#lbAD">PROPERTIES</A><DD>
+<DT><A HREF="#lbAE">PATH EXPANSION</A><DD>
+<DT><A HREF="#lbAF">FILES</A><DD>
+<DT><A HREF="#lbAG">SEE ALSO</A><DD>
+</DL>
+<HR>
+This document was created by
+<A HREF="http://www.w3.org/Tools/man2html.html">man2html</A>,
+using the manual pages.<BR>
+Time: 00:01:13 GMT, March 30, 2004
+</p>
+</BODY>
+</HTML>

@@ -30,7 +30,8 @@ contact either carol or brix.
 third: as with any cvs repository, well written comments are a must.
 when adding/modifying a file be sure to add a descriptive comment to
 the cvs log. you should also add a (human readable!) entry to the
-ChangeLog file.
+ChangeLog file.  Add your entry to the ChangeLog and then paste that
+into the cvs log for consistency.
 
 more to follow...
 

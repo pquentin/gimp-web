@@ -17,6 +17,8 @@ def write_brush_page(bg_colour, fg_colour, page_location):
     num_brushes, brushlist = pdb.gimp_brushes_list()
     old_fg = gimp.get_foreground()
     old_bg = gimp.get_background()
+    half = int(round(num_patterns / 2.0))
+    count = 0
     for a in brushlist:
         pdb.gimp_brushes_set_brush(a)
         name, width, height, spacing = pdb.gimp_brushes_get_brush()

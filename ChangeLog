@@ -1,3 +1,11 @@
+2002-10-16 carol <carol@gimp.org>
+
+    * resources/brushes/index.html and mgo-brushes.py: divided the brush
+    listing in the middle
+        
+    * resources/brushes/ and mgo-brushes.py:  added the directory,
+    images, and the index page.  
+    
 2002-10-16 scizzo <scizzo@gimp.org>
 
 	* tutorials/index.html: Split the animations into Simple and Advanced.

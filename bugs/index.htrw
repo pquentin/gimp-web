@@ -1,0 +1,30 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Bugs</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Bugs, bugs, bugs!</h1>
+<p>
+  Reporting bugs is important to the development of GIMP and doing it
+  the right way is also the best way to help the developers to easier
+  find the bug and get it closed.
+</p>
+<p>
+  <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=GIMP">Submit a bug report</a>
+</p>
+
+<h2>Bug How To's</h2>
+<ul>
+  <li><a href="wgo:dev-howtos-bugzilla">How To Bugzilla</a></li>
+  <li><a href="wgo:dev-howtos-subpatch">How To Submit a Patch</a></li>
+</ul>
+
+<h2>Bug Listings</h2>
+<ul>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">List of open bugs</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=UNCONFIRMED&bug_status=NEEDINFO&bug_severity=enhancement">List of enhancement proposals</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=RESOLVED&bug_status=CLOSED&changedin=7">List of closed bugs</a>&nbsp;(The past week)</li>
+</ul>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

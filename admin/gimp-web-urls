@@ -51,6 +51,9 @@
 ["href", "mail:People-Burgess_Seth",           { "href": "mailto:sjburges@gimp.org"}]
 ["href", "home:People-Burgess_Seth",           { "href": "http://www.gimp.org/~sjburges/"}]
 
+["href", "mail:People-Caughron-Mat",	       { "href": "mailto:mat@macgimp.org"}]
+["href", "home:People-Caughron-Mat",	       { "href": "http://www.phpconsulting.com/"}]
+
 ["href", "mail:People-Collin_Branko",          { "href": "mailto:collin@xs4all.nl"}]
 ["href", "home:People-Collin_Branko",          { "href": "http://www.xs4all.nl/~collin/"}]
 
@@ -156,7 +159,8 @@
 ["href", "wgo:stable",                         { "href": "http://www.gimp.org"}]
 ["href", "wgo:testing",                        { "href": "http://mmmaybe.gimp.org"}]
 ["href", "wgo:dev",                            { "href": "http://developer.gimp.org"}]
-["href", "wgo:dev-howtos-bugzilla",            { "href": "/unix/howtos/bugzilla.html"}]
+["href", "wgo:dev-howtos-bugzilla",            { "href": "/bugs/howtos/bugzilla.html"}]
+["href", "wgo:dev-howtos-subpatch",	       { "href": "/bugs/howtos/submit-patch.html"}]
 ["href", "wgo:docs-gimp_help",                 { "href": "/docs/gimp-help/"}]
 
 ["href", "wgo:about",                          { "href": "/about/index.html"}]

@@ -4,6 +4,13 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Everyone Loves Screenshots!</h1>
+<h2>Macintosh Screenshots</h2>
+<h3>Contributed by Mat Caughron</h3>
+<ul>
+  <li><a href="/macintosh/2002edition.jpg">gimp-1.2</a></li>
+  <li><a href="/macintosh/MacGIMPfamily.jpg">gimp-1.2 again</a></li>
+</ul>
+
 <h2>OS/2 Screenshots</h2>
 <h3>Unknowingly contributed by Platon Fomichev, Khairil Yusof, Pierre Lucas, and Christoph Vogelbusch</h3>
 <ul>
@@ -11,10 +18,10 @@
    <li><a href="/os2/gimp118-2.jpg">gimp-1.1.8 <span class="path">File -&gt;Open</span></a></li>
    <li><a href="/os2/gimp118-3.jpg">gimp-1.1.8 <span class="path">File -&gt;New</span></a></li>
    <li><a href="/os2/gimp118-4.jpg">gimp-1.1.8 <span class="path">File -&gt;Preferences -&gt;Directories</span></a></li>
-   <li><a href="/os2/mydesk.jpg">a GNOME/2 desktop with The GIMP</a></li>
-   <li><a href="/os2/mEgEdtop.jpg">a GNOME/2 desktop with The GIMP</a></li>
-   <li><a href="/os2/mydesk2.jpg">a GNOME/2 desktop with The GIMP</a></li>
-   <li><a href="/os2/epplets.jpg">a GNOME/2 desktop with The GIMP</a></li>
+   <li><a href="/os2/mydesk.jpg">Enlightenment/GNOME desktop with The GIMP</a></li>
+   <li><a href="/os2/mydesk2.jpg">Enlightenment/GNOME desktop with The GIMP</a></li>
+   <li><a href="/os2/mEgEdtop.jpg">Enlightenment desktop with The GIMP</a></li>
+   <li><a href="/os2/epplets.jpg">Enlightenment desktop with The GIMP</a></li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

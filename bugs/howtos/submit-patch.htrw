@@ -1,0 +1,90 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - How To Submit a Patch</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-bugs-init.xhtml" -->
+
+<h1>How To Submit a Patch</h1>
+
+<h2>Introduction</h2>
+<p>
+  Many people have been submiting patches to the mailinglists and this is a small problem,
+  the patch might be big and sending the patch via mail is not a very good idea.
+  This howto is suppose to be here to remind you not to send the patch via the mailinglist
+  but using the tools outside of the mailinglists.
+</p>
+<p>
+  I hope that people will start to give mailinglists a bit more respect and maybe will stop sending
+  patches to the list after reading this.
+</p>
+
+<h1>Using Bugzilla</h1>
+<h2>Closing a bug patch</h2>
+<p>
+  The best way to submit a patch to the GIMP development is to send it to bugzilla and inform
+  the rest of the team what the patch is doing.
+</p>
+<ul>
+  <li>Is it closing bugs?</li>
+  <li>Is it a enhancement?</li>
+  <li>What are the changes in the code?</li>
+  <li>Are there any know problems with the patch?</li>
+</ul>
+<p>
+  If you have a patch that is closing bugs then you can attach the patch to the bug/bugs explaining
+  what the patch is doing. You can also inform the gimp-devel mailinglist about the closed bug but don't
+  attach the patch to the mail sent to the list, instead put the bug links in the mail where the attached
+  patch is located.
+</p>
+<ol>
+  <li>Test the patch locally on your own machine and look if it closes the bug there.</li>
+  <li>Find the bug it is closing in the <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">Open bugs</a> list.</li>
+  <li>Attach the patch to the bug report.</li>
+  <li>Explain what the patch is doing and if there might be any problems with the patch.</li>
+  <li>If you want to send a mail to the gimp-devel list and explain it there also. 
+  Remember to have the bug number or even better the link to the bug in the mail. 
+  Don't attach the patch to the mail.</li>
+</ol>
+<p>
+  Now you just have to wait for the developers and maintainers to look at the patch and see if this
+  is really closing the bug and if it might open new bugs. With a bit of luck it will be implemented
+  in a release done soon either stable or development version.
+</p>
+
+<h3>How about enhancements?</h3>
+<p>
+  Start a new bug report, mark it as enhancement and put the patch in that report on bugzilla. 
+  This will give developers a good explanation of why you did the patch and how the patch 
+  changes GIMP source or adds new things to it. The only thing you need to add to the 
+  report is that it is an enhancement and explain the patch a little bit. A simple way to this is to:
+</p>
+<ol>
+  <li>Go to <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=GIMP">Submit a new bug report</a>.</li>
+  <li>Fire up a new report and select enhancement instead of the others used by normal bug reporting.</li>
+  <li>Attach the patch and explain what you wanted to get going with the help of this patch.</li>
+  <li>Remember to explain the porpus of the patch and who might want to use this enhancement.</li>
+</ol>
+<p>
+  Thats it! You have done a patch reporting enhancement all that is left is for the developers to look at the report
+  and the patch. They might get even better ideas of how to implement this with the help of the patch you sent.
+</p>
+
+<h2>Remember to</h2>
+<ul>
+  <li>use the same coding style, see file HACKING</li>
+  <li>never send the patch as a attachment to the mailinglists.</li>
+  <li>explain what the patch is doing to GIMP.</li>
+  <li>report the bugs that the patch is closing.</li>
+  <li>always test the patch before submiting it.</li>
+  <li>write what version it is tested on. stable? development?</li>
+</ul>
+
+<!--#include virtual="/includes/wgo-howto-bugs-fini.xhtml" -->
+    <div>
+      <span id="footerleft">
+        How To &copy; 2002 <a href="mailto:scizzo@gimp.org">Niklas Mattisson</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

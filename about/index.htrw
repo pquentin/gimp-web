@@ -35,11 +35,6 @@
     <li><a href="wgo:about-changelogs-gimp-pre-1.0">ChangeLog.pre-1-0</a></li>
     <li><a href="wgo:about-changelogs-gimp-pre-1.2">ChangeLog.pre-1-2</a></li>
   </ul>
-<h2>Awards won by The GIMP</h2>
-<p>
-  The GIMP has won several awards through time. Perhaps one day they should be gathered
-  and put on a page here.  ;)
-</p>
 <h2>The GIMP Authors, Contributors, &amp; Maintainers</h2>
   <ul>
     <li><a href="wgo:about-authors">Authors and Contributors</a></li>
@@ -62,7 +57,6 @@
 <h3>The GIMP In Medicine &amp; Science</h3>
   <ul>
     <li><a href="http://lists.xcf.berkeley.edu/lists/gimp-developer/2001-August/005513.html">Particle Size Analysis</a></li>
-    <li><a href="FIXME"></a>The GIMP edge detect for X-Rays</li>
   </ul>
 <h3>The GIMP In the Computer World</h3>
   <ul>
@@ -71,18 +65,6 @@
 <h3>The GIMP In Commercial Art</h3>
   <ul>
     <li><a href="http://lists.xcf.berkeley.edu/lists/gimp-user/2002-June/004709.html">The GIMP makes book covers</a></li>
-  </ul>
-<h3>The GIMP In Education</h3>
-  <ul>
-    <li>pending research</li>
-  </ul>
-<h3>The GIMP In Electronics</h3>
-  <ul>
-    <li>pending research</li>
-  </ul>
-<h3>The GIMP In the Corporate World</h3>
-  <ul>
-    <li>pending research</li>
   </ul>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

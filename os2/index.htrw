@@ -35,10 +35,10 @@
    <li><a href="gimp118-2.jpg">gimp-1.1.8 <span class="path">File -&gt;Open</span></a></li>
    <li><a href="gimp118-3.jpg">gimp-1.1.8 <span class="path">File -&gt;New</span></a></li>
    <li><a href="gimp118-4.jpg">gimp-1.1.8 <span class="path">File -&gt;Preferences -&gt;Directories</span></a></li>
-   <li><a href="mydesk.jpg">a GNOME/2 desktop with The GIMP</a></li>
-   <li><a href="mEgEdtop.jpg">a GNOME/2 desktop with The GIMP</a></li>
-   <li><a href="mydesk2.jpg">a GNOME/2 desktop with The GIMP</a></li>
-   <li><a href="epplets.jpg">a GNOME/2 desktop with The GIMP</a></li>
+   <li><a href="mydesk.jpg">Enlightenment/GNOME desktop with The GIMP</a></li>
+   <li><a href="mydesk2.jpg">Enlightenment/GNOME desktop with The GIMP</a></li>
+   <li><a href="mEgEdtop.jpg">Enlightenment desktop with The GIMP</a></li>
+   <li><a href="epplets.jpg">Enlightenment desktop with The GIMP</a></li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -1,3 +1,32 @@
+2003-07-27 scizzo <scizzo@gimp.org>
+
+	* /bugs.htrw, bugzilla.htrw, registry.htrw, /bugs/index.html,
+	* /about/awards.html: Removed the files.
+	
+	* /admin/gimp-web-urls: Changed the bugzilla link to be
+	/bugs/howtos/bugzilla.htrw. Add Mat Caughron to the list of people.
+	* /team.htrw: Add Mat as the macintosh info maintainer.
+	* /includes/wgo-menu.xhtml: "Bugs" now using /bugs/
+	* /includes/wgo-page-init.xhtml: "Bugs" now using /bugs/. Changed
+	"GIMP for Macintosh" to be linked to /macintosh/.
+	* /includes/wgo-howto-bugs-init.xhtml, wgo-howto-bugs-fini.xhtml: Add
+	theese for the bugzilla howtos.
+	* /about/histrory.htrw: Fixed broken link to The GIMP v0.54
+	* /about/index.htrw: Removed things that did not have content.
+	* /about/screenshots.htrw: Changed the descriptions of the OS2 screenshots.
+	Add two screenshots from the MacOS stuff.
+	* /bugs/howtos/: Created this directory.
+	* /bugzilla.htrw: Moved to /bugs/howtos/ to be for the bugs howtos.
+	* /bugs/index.htrw: Is now a section with links and other useful
+	things. This also contains the howtos for bug reporting etc.
+	* /bugs/howtos/submit-patch.htrw: Wrote this as a quick guide.
+	* /unix/index.htrw: Removed the link to Bugzilla. It is not Unix
+	specific and is at the moment included in /bugs/.
+	* /unix/howtos/bugzilla.htrw: Removed this.
+	* /os2/index.htrw: Changed the screenshots description.
+	* /macintosh/*.jpg: With the help from Mat we got 2 screenshots that we can
+	use.
+
 2003-07-23 scizzo <scizzo@gimp.org>
 
 	* images/wilber16.png: Add this image to the link rel="" stuff.

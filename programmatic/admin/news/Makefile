@@ -81,7 +81,6 @@ install-news: all
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo_news.py > ${LIBDIR}/wgo_news.py
 	sed -e 's|$${LIBDIR}|${LIBDIR}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo_queue.py > ${LIBDIR}/wgo_queue.py
 
-	install --mode=755 -d `${PYTHON} -c 'import wgo_queue; print wgo_queue.canonical_path("")'`
 	install --mode=755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.pending_queue)'`
 	install --mode=755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.current_queue)'`
 	install --mode=755 -d `${PYTHON} -c 'import news_config; import wgo_queue; print wgo_queue.canonical_path(news_config.archive_queue)'`

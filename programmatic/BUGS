@@ -3,3 +3,6 @@ You can't create a new news article and click approve.  You must save it first.
 
 When you approve an article, you get dropped back into the edit screen with a empty article.
 
+The file includes/news.inc needs to be owned by the web server user.
+
+

@@ -15,7 +15,7 @@ href="install_help.html">install help</a> page.</p>
 
 <h2>Source for version 2.0 (Stable)</h2>
 
-<p>GIMP 2.0.2 is now available at
+<p>GIMP 2.0.3 is now available at
 <a href="ftp://ftp.gimp.org/pub/gimp/v2.0/">ftp://ftp.gimp.org/pub/gimp/v2.0/</a>.
 <br/>
 To allow you to check the integrity of the tarballs, here are the MD5 sum
@@ -27,12 +27,12 @@ of the latest released tarballs:</p>
   <th style="background-color: #f5f5f5;">MD5 sum</th>
 </tr>
 <tr>
-  <td>gimp-2.0.2.tar.gz</td>
-  <td><kbd><b>6c7eccfdcefa2dfd790001b6ea7e6ccd</b></kbd></td>
+  <td>gimp-2.0.3.tar.gz</td>
+  <td><kbd><b>43dda1a9d8f63a181e211f5c18fdbf18</b></kbd></td>
 </tr>
 <tr>
-  <td>gimp-2.0.2.tar.bz2</td>
-  <td><kbd><b>b0dfdf4720e09ffa44fdc4d1bb48f82b</b></kbd></td>
+  <td>gimp-2.0.3.tar.bz2</td>
+  <td><kbd><b>393a0dc12919edc78a9c3eba15f9d56b</b></kbd></td>
 </tr>
 </table>
 
@@ -57,7 +57,7 @@ of the latest released tarballs:</p>
 
 <h2>Source for version 2.1 (Development)</h2>
 
-<p>GIMP 2.1.1, an unstable developmen snapshot, is now available at
+<p>GIMP 2.1.2, an unstable developmen snapshot, is now available at
 <a href="ftp://ftp.gimp.org/pub/gimp/v2.1/">ftp://ftp.gimp.org/pub/gimp/v2.1/</a>.
 </p>
 

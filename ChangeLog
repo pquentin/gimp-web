@@ -4,10 +4,13 @@
 	authors
 	
 2002-10-06  scizzo <scizzo@se.debian.net>
+
+	* tutorials/Red_Eye_Removal: Added the Red Eye tutorial.
 	
 	* tutorials/Quickmask/: Added the Quickmask tutorial.
 
 	* tutorials/index.html: Changed the Bezier_Curves to Bezier_Selections.
+	Changed the Red Eye Tutorial to Red Eye Removal.
 
 	* tutorials/Borders_On_Selection/: Added the Stroke tutorial.
 	Also changed the text for the images to tell "Image above"

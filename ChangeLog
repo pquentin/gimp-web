@@ -1,5 +1,7 @@
 2003-09-24  Raphael Quinet  <quinet@gamers.org>
 
+	* unix/.cvsignore: Regenerated.
+
 	* resources/index.htrw: Removed a stray --> (end of comment) that
 	was breaking the build.
 

@@ -15,12 +15,24 @@ contest/archives/index.html
    a python mechanism needs to be in place to upload images and write them to a
    web page.       
    
-development/index.html:
-   a few moments can be spent with the developers to fill this document in
-   before the move.
+development/:  (daily grabbing of the last 10)
+   from gnome annoncvs trees:
+     ChangeLog gimp HEAD  unstable.html
+     ChangeLog gimp 1.2  stable.html
+     ChangeLog gimp-help  help.html
+     ChangeLog gegl  gegl.html
+   from sourceforge
+     ChangeLog gimp-print  print.html
+     ChangeLog filmgimp  film.html
+   from an online query:
+     bugzilla new bugs  bugzilla-new.html
+     bugzilla fixed bugs  bugzilla-fixed.html
+     plug-ins  plugins.html
+
 
 docs/cookbook/:
    a working cvs module containing a docbook before we move.
+   i can probably give in on this. but it *kills* me.
 
 docs/developer_docs/:
    these should be in place.
@@ -30,6 +42,8 @@ docs/gimp-help/:
     
 links/index.html and includes/url-*.inc:
    needs much more and needs to be utilized throughout the site more.
+   
+   some sort of url writing mechanism needs to be dreamed up and then implemented.
 
 news/index.html and includes/news.inc:
    something that works here

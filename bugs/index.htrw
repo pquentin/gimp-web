@@ -15,7 +15,9 @@
 </p>
 <p>
   More information about Bugzilla, and bug hunting in general, can be found 
-  at <a href="wgo:dev">http://developer.gimp.org/</a>.
+  at <a href="wgo:dev">http://developer.gimp.org/</a>.  See also <a
+  href="why_bugzilla.html">why we are using Bugzilla</a> to handle bug
+  reports.
 </p>
 <p>
   <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=GIMP">Submit a bug report</a>

@@ -78,5 +78,8 @@ information, see our platform-specific sections:</p>
 <h1><a name="mirrors"></a>FTP and Web Mirrors</h1>
 <!--#include virtual="/downloads/mirrors.xhtml" -->
 
+<p>If you want to add a new mirror, please <a
+href="wgo:webmasters">contact us</a>.</p>
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

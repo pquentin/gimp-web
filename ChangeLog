@@ -1,5 +1,11 @@
 2004-08-23  Raphaël Quinet  <quinet@gamers.org>
 
+	* downloads/index.htrw: Added a link to the contact page at the
+	bottom of the list of mirrors.  This is a bit redundant with the
+	page footer, but it may encourage new mirrors to join.
+
+	* bugs/index.htrw: Added a link to why_bugzilla.html.
+
 	* programmatic/downloads/MIRRORS: Synced with /etc/mirrors on the
 	ftp site: added new US mirror offered in bug #150784.
 

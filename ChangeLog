@@ -1,5 +1,12 @@
 2005-01-16  Raphaël Quinet  <raphael@gimp.org>
 
+	* .cvsignore
+	* about/splash/contest/.cvsignore
+	* about/splash/splash-images/.cvsignore
+	* donating/.cvsignore
+	* tutorials/Sketch_Effect/.cvsignore
+	* unix/howtos/.cvsignore: Regenerated with "make cvsignore".
+
 	* about/splash/stable.htrw: Added e-mail address of Bill Luhtala
 	<bluhtala@telus.net> as per his request in bug #164081.  (I don't
 	expect it to be used often, so I haven't added it to

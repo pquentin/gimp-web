@@ -1,5 +1,10 @@
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls
+	* docs/index.htrw: updated available languages for the help.
+
+2004-12-18  Sven Neumann  <sven@gimp.org>
+
 	* docs/index.htrw
 	* unix/index.htrw: moved more links to helpful docs from the UNIX
 	section to Documentation.

@@ -20,10 +20,11 @@
     The user manual is available in several languages:
     <ul>
       <li><a href="wgo:docs-gimp_help-en">English</a></li>
+      <li><a href="wgo:docs-gimp_help-zh_CN">Chinese (中文)</a></li>
+      <li><a href="wgo:docs-gimp_help-cs">Czech (Čeština)</a></li>
+      <li><a href="wgo:docs-gimp_help-fr">French</a> (Français)</li>
       <li><a href="wgo:docs-gimp_help-de">German</a> (Deutsch)</li>
-      <li><a href="wgo:docs-gimp_help-fr">French</a> (Fran�ais)</li>
       <li><a href="wgo:docs-gimp_help-sv">Swedish</a> (Svenska)</li>
-      <li><a href="wgo:docs-gimp_help-zh_CN">Chinese</a></li>
     </ul>
   </p>
 
@@ -51,7 +52,7 @@
 
 <h2>Other GIMP Documentation</h2>
   <ul>
-    <li><a href="unix/fonts.html">How to install fonts</a> for GIMP 2.0</li>
+    <li><a href="wgo:unix-fonts">How to install fonts</a> for GIMP 2.0</li>
     <li><a href="python/pygimp.html">GIMP Python Module Documentation</a></li>
     <li><a href="scheme_plugin/">GIMP Script-fu Documentation</a></li>
     <li><a href="gimp-print/print.html">GIMP Print Documentation</a></li>

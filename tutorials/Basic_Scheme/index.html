@@ -16,24 +16,24 @@
 <p>
   Scheme is a lisp variants and all expressions are surrounded by parens. E.g. a list which will calculate the sum of 3 and 4 is written
 </p>
-<div class="code">
+<pre class="code">
     (+ 3 4)
-</div>
+</pre>
 <p>
   The + sign is the addition function and 3 and 4 are the first and second parameters to this function. 
   Expressions may be nested, so the expression (3+4)*(5/6) would in Scheme be written
 </p>
-<div class="code">
+<pre class="code">
     (* (+ 3 4) (/ 5 6))
-</div>
+</pre>
 <p>
   White space has no importance so the above expression may as well be written:
 </p>
-<div class="code">
+<pre class="code">
     (*
       (+ 3 4)
       (/ 5 6))
-</div>
+</pre>
 <br />
 
 <div class="subtitle">2. Functions</div>
@@ -41,21 +41,21 @@
   Aside from the four arithmetic functions that are represented through the symbols + - * / there are lots of other functions built into the language. 
   All of them have the form
 </p>
-<div class="code">
+<pre class="code">
     (foo param1 param2 ...)
-</div>
+</pre>
 <p>
   Additional functions may be defined by the user through the define keyword. E.g. a function that calculates the square value of its single argument may be declared like this
 </p>
-<div class="code">
+<pre class="code">
     (define (square x) (* x x))
-</div>
+</pre>
 <p>
   and this function may be called through
 </p>
-<div class="code">
+<pre class="code">
     (square 5)
-</div>
+</pre>
 <br />
 
 <div class="subtitle">3. Variables and lists</div>
@@ -63,27 +63,27 @@
   Variables may be declared and set through the set! command. (These variables will be global but this should not bother the casual gimp programmer). 
   Here are a couple of assignments:
 </p>
-<div class="code">
+<pre class="code">
     (set! grey_value 85)
     (set! angle (* (/ 30 180) 3.141)
-</div>
+</pre>
 <p>
   Lisp and its variants make heavy use of lists. Script-fu is no exception and it uses e.g. a list of three elements to write a RGB color. 
   E.g. the color orange would be written
 </p>
-<div class="code">
+<pre class="code">
     '(255 127 0)
-</div>
+</pre>
 <p>
   The ' sign is necessary in order to tell scheme that this is a literal list. If the ' was omitted scheme would try to look up a function with 
   the name 255 and send it the two parameters 127 and 0, which is obviously not what we wants.
   <br /><br />
   To create a variable called orange with the above value and then set the background color to it we may do
 </p>
-<div class="code">
+<pre class="code">
    (set! orange '(255 127 0))
    (gimp-set-background-color orange)
-</div>
+</pre>
 <br />
 
 <div class="subtitle">3.1 car, cdr and friends (*)</div>
@@ -94,29 +94,29 @@
   <br /><br />
   [The following is a test of the above functions which may interactively be conducted in the Script-Fu console.]
 </p>
-<div class="code">
+<pre class="code">
     =&gt; (set! color '(255 127 63))
     (255 127 63)
     =&gt; (car color)
     255
     =&gt; (cdr color)
     (127 63)
-</div>
+</pre>
 <p>
   To get the blue component of a color it is necessary to apply the cdr function twice and then the car function.
 </p>
-<div class="code">
+<pre class="code">
     =&gt; (car (cdr (cdr color)))
     63
-</div>
+</pre>
 <p>
   This is very unconvenient to write. Therefore there have been defined abreviations of the form cadr, cddr, caddr, etc that concatinate the 
   operations described above. The previous expression may therefore much more conveniently be written:
 </p>
-<div class="code">
+<pre class="code">
     =&gt; (caddr color)
     63
-</div>
+</pre>
 <p>
   For the Script-Fu writer one of the most important uses of the car function is to access the returned values from the built-in gimp functions. 
   All gimp-functions return a list, and even if the list contains only one element it must be accessed by car. 
@@ -130,11 +130,11 @@
   <br /><br />
   Local variables are declared through the the let keyword as in the following example:
 </p>
-<div class="code">
+<pre class="code">
     (let* ((a 3)
            (b 4))
           ((* a b)))
-</div>
+</pre>
 <p>
   Here a and b have a local scope and retain their values only up to the closing paren matching the one before let* .
 </p>
@@ -144,9 +144,9 @@
   All functionality of GIMP is available through the procedural database (PDB). 
   Each procedural database function has a corresponding scheme function mapping. E.g.
 </p>
-<div class="code">
+<pre class="code">
    (gimp-image-new 100 150 RGB)
-</div>
+</pre>
 <p>
   produces a new gimp image of type RGB and size 100x150.
   <br /><br />
@@ -213,7 +213,7 @@
   The following script <b>uni.scm</b> receives two parameter from the user, the size of the image, and a color and goes on to 
   produce a uniform image of the requested size and the requested color. Not very useful, but it shows the essential steps in producing a script-fu script.
 </p>
-<div class="code">
+<pre class="code">
 ; Define the function of the script and list its parameters
 ; The parameters will be matched with the parameters listed
 ; below in script-fu-register.
@@ -246,7 +246,7 @@
               ""
               SF-VALUE "size" "100"
               SF-COLOR "color" '(255 127 0))
-</div>
+</pre>
 <p>
   To test the script save it in $HOME/.gimp-1.2/scripts/uni.scm and then select Xtns/Script-Fu/Refresh:
 </p>
@@ -269,9 +269,9 @@
 <p>
   It is also possible to access this script through the Script-Fu console by typing the command
 </p>
-<div class="code">
+<pre class="code">
    (uni-img 100 '(0 255 127))
-</div>
+</pre>
 <br />
 
 <div class="subtitle">6.1 Hanging a script in the image menu</div>
@@ -286,7 +286,7 @@
   <br /><br />
   Here is an example script which copies the current layer to a new layer, blurs it and inverts it.
 </p>
-<div class="code">
+<pre class="code">
 ; An example script that blurs an image according to a blur radius.
 ; It illustrates how to hang a script in the image menu, and
 ; how a plug-in may be called.
@@ -322,7 +322,7 @@
               SF-IMAGE "Image" 0
               SF-DRAWABLE "Layer to blur" 0
               SF-VALUE "Blur strength" "5")
-</div>
+</pre>
 <br />
 
 <div class="subtitle">7. Painting areas with selections</div>
@@ -430,12 +430,12 @@ The blur is a gaussian blur with the specified feather radius.
 <p>
   A simple use of this function which selects the rectangle (x,y,width,height)=(0,25,100,50), paints this region blue, and releases the selection looks as follows:
 </p>
-<div class="code">
+<pre class="code">
     (gimp-rect-select img 0 25 100 50 REPLACE 0 0)
     (gimp-palette-set-background '(0 0 255))
     (gimp-edit-fill layer BG-IMAGE-FILL)
     (gimp-selection-none img)
-</div>
+</pre>
 <br />
 
 <div class="subtitle">8. Loops</div>
@@ -446,23 +446,23 @@ The blur is a gaussian blur with the specified feather radius.
   [Note: this constraint is due to the current scheme interpreter SIOD used for Script-Fu. Once the scheme interpreter as planned is changed to Guile, 
   more looping constructs will probably be added.] The while loop looks as follows:
 </p>
-<div class="code">
+<pre class="code">
     (while (condition)
            (statement1)
            (statement2)
            :
            )
-</div>
+</pre>
 <p>
   Here's an example which draws horizontal lines, 16 pixels high, on an image:
 </p>
-<div class="code">
+<pre class="code">
     (set! y 0)
     (while (&lt; y size)
            (gimp-rect-select img 0 y size 16 REPLACE 0 0)
            (gimp-edit-fill layer-one BG-IMAGE-FILL)
            (set! y (+ y 32)))
-</div>
+</pre>
 <br />
 
 <div class="subtitle">9. Floating selections</div>
@@ -477,7 +477,7 @@ The blur is a gaussian blur with the specified feather radius.
   When creating text through the gimp-text command, the text is always put into a temporary layer. This temporary layer then has to be anchored. 
   Here is an example of creating some text which is pasted into the current drawable:
 </p>
-<div class="code">
+<pre class="code">
 ; An example script that writes a fixed string in the current
 ; image.
 (define (script-fu-hello-world img drawable)
@@ -516,7 +516,7 @@ The blur is a gaussian blur with the specified feather radius.
               "RGB*, GRAY*"
               SF-IMAGE "Input Image" 0
               SF-DRAWABLE "Input Drawable" 0)
-</div>
+</pre>
 <p>
   This script shows another feature we haven't mentioned before. The possibility of creating an undo group. 
   All the commands between the commands gimp-undo-push-group-begin and gimp-undo-push-group-end are undone together if the undo command is issued.
@@ -530,7 +530,7 @@ The blur is a gaussian blur with the specified feather radius.
   In the following example the selection is copied, pasted into the same layer, offset a fixed distance, finally anchored. 
   Try it by drawing a small blob in the middle of the image, select the blob, and then call this script.
 </p>
-<div class="code">
+<pre class="code">
 ; An example of how to create a floating layer and how to ancor it.
 (define (script-fu-sel-copy img
                         drawable)
@@ -559,7 +559,7 @@ The blur is a gaussian blur with the specified feather radius.
               "RGB*, GRAY*"
               SF-IMAGE "Image" 0
               SF-DRAWABLE "Layer" 0)
-</div>
+</pre>
 
 <p>
   The original tutorial can be found <a href="http://imagic.weizmann.ac.il/~dov/gimp/scheme-tut.html">here</a>.

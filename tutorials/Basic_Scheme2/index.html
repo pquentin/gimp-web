@@ -47,15 +47,15 @@
   The first thing people notice when they look at Scheme is all the nested parentheses. Whatever you do, don't panic. There's a very simple concept behind this, 
   and chances are good that you already understand it. Semantically, it's not that different from HTML. For example, the following:
 </p>
-<div class="code">
+<pre class="code">
 &lt;ul&gt;&lt;li&gt;&lt;b&gt;bold&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;italic&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;
-</div>
+</pre>
 <p>
   would look like this in Scheme:
 </p>
-<div class="code">
+<pre class="code">
 (ul (li (b "bold"))(li (i "italic")))
-</div>
+</pre>
 <p>
   Each matching pair of parentheses forms what is called an s-expression. The "s" stands for "symbolic," because s-expressions usually contain symbolic information 
   (like function and variable names) inside them. Literal information (like strings or numbers) is represented in the usual way -- numbers are written in decimal notation, 
@@ -67,15 +67,15 @@
   and everything after it is considered a parameter of the function. What surprises many people is that in Scheme, 
   nearly <i>everything</i> is done with a function. Even for basic math, what would be:
 </p>
-<div class="code">
+<pre class="code">
 5 + 9 / 3
-</div>
+</pre>
 <p>
   in most other languages is expressed in Scheme as:
 </p>
-<div class="code">
+<pre class="code">
 (+ 5 (/ 9 3))
-</div>
+</pre>
 <p>
   This may take a little getting used to. First, the order of things may look strange. If you're used to "infix notation" (i.e., 
   the way the first equation is written -- with the operands being separated by the operators), then training yourself to use "prefix notation" 
@@ -90,10 +90,10 @@
   Its purpose is simply to assign a given value to a particular variable. 
   For example, the following assigns 5 to the variable a and the list of numbers (1 2 3) to b.
 </p>
-<div class="code">
+<pre class="code">
 (set! a 5)&lt;
 (set! b '(1 2 3))
-</div>
+</pre>
 <p>
   Note that the single-quote before the (1 2 3) is very important. It tells Scheme that the following s-expression is actually data and not code. 
   Without the single-quote, the Scheme interpreter would have tried to treat the 1 as a function and failed miserably.
@@ -141,7 +141,7 @@
   Let's get started by instantiating some of these objects. Be sure to get a Script-Fu console from (<span class="filter">Xtns-&gt;Script-Fu-&gt;Console...) 
   so that there is a place for you to type in Scheme code. Now, let's start by following along with <i>Listing One</i>.
 </p>
-<div class="code">
+<pre class="code">
   ; create an image
   (set! image (car (gimp-image-new 320 240 RGB)))
 
@@ -164,7 +164,7 @@
 (aset points 3 240)
 (gimp-palette-set-foreground '(255 0 0))
 (gimp-paintbrush-default layer 4 points)
-</div>
+</pre>
 <p>
   <b>Image:</b> The most important object in the GIMP is the <i>Image</i> object, without which there would be no "I" in "GIMP." 
   On line 2, a 320x240 pixel, RGB image is instantiated and assigned to <small>image</small>.

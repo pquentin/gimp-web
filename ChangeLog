@@ -1,3 +1,13 @@
+2003-01-05 scizzo <scizzo@gimp.org>
+
+	* tutorials/Basic_Perl/index.html
+	* tutorials/Perl-Debugged/index.html
+	* tutorials/Basic_Scheme/index.html
+	* tutorials/Basic_Scheme2/index.html
+	* tutorials/Perlotine/*.html: Changed all the <div class="code"> and
+	<div class="debug"> tags to <pre class=""> tags to fix the IE
+	problems.
+
 2003-01-05 brix <brix@gimp.org>
 
 	* style/default.css: Changed div.code and div.debug to pre.code

@@ -15,7 +15,7 @@
   <br /><br />
   To illustrate the points in this tutorial, this is a simple script that will change as we progress:
 </p>
-<div class="code"><pre>
+<pre class="code">
 #!/usr/bin/perl
 
 use Gimp qw(:auto);
@@ -34,14 +34,14 @@ register "example", "Example", "Dumb example for debugging",
    };
 
 exit main;
-</pre></div>
+</pre>
 
 <div class="subtitle">Gimp::set_trace</div>
 <p>
   The gimp module provides tracing ability, which is a form of debugging. 
   To activate this, start gimp from an XTerm, and place the following at the top of the script:
 </p>
-<div class="code">
+<pre class="code">
 #!/usr/bin/perl
 
 use Gimp qw(:auto);
@@ -62,7 +62,7 @@ register "example", "Example", "Dumb example for debugging",
    };
 
 exit main;
-</div>
+</pre>
 <p>
   This will give the maximum amount of tracing information, displayed on the console window you start gimp from. 
   You can cut back on what all gets displayed by using an "or'ed" combination of the following other options in place of TRACE_ALL:
@@ -84,7 +84,7 @@ exit main;
   Perl comes with a debugger built in, which we can effectively utilize for interactive execution of our scripts. 
   To invoke this, put a -d on the invocation line for the script as follows:
 </p>
-<div class="code">
+<pre class="code">
 #!/usr/bin/perl <b>-d</b>
 
 use Gimp qw(:auto);
@@ -104,12 +104,12 @@ register "example", "Example", "Dumb example for debugging",
 };
 
 exit main;
-</div>
+</pre>
 <p>
   If you change a Gimp-Perl script to utilize this, you'll notice gimp halting on startup. This is because gimp is querying the plug-in, 
   and it is halting due to having debugging enabled. Just type 'c' in the window, and then 'q' to let gimp continue loading:
 </p>
-<div class="debug">
+<pre class="debug">
 Enter h or `h h' for help, or `man perldebug' for more help.
 
 main::(/home/seth/.gimp-1.3/plug-ins/demo:21):
@@ -119,7 +119,7 @@ Debugged program terminated.  Use q to quit or R to restart,
   use O inhibit_exit to avoid stopping after program termination,
   h q, h R or h O to get additional info.  
   DB&lt;1&gt; q
-</div>
+</pre>
 <p>
   This is not a part of the script we're really intrested in - its the registration of the plug-in with gimp. It turns out to be a really annoying behaviour, 
   since every time we modify the script we'll need to do this on startup. Luckily we have another way of attacking this provided by the Gimp module - that is the Perl Server.
@@ -127,19 +127,19 @@ Debugged program terminated.  Use q to quit or R to restart,
   First, move your script out of your plug-ins directory to somewhere else. Then startup gimp. Start the Perl Server by going to <span class="filter">Xtns -&gt; Perl Server</span>. 
   You'll see something like the following in the XTerm window of gimp:
 </p>
-<div class="debug">
+<pre class="debug">
 989020828: server version 1.201 started
 989020828: accepting connections on /tmp/gimp-perl-serv-uid-1000/gimp-perl-serv
-</div>
+</pre>
 <p>
   Now from another XTerm, execute the script (just type its name). This will immediately start debugging the new script. 
   You can set a breakpoint on a line of your choice and execute 'c' to let it execute until that line.
 </p>
-<div class="debug">
+<pre class="debug">
   DB&lt;1&gt; b 13
   DB&lt;2&gt; c
     13:        $fname = "/home/seth/dumb.jpg";
-</div>
+</pre>
 <p>
   You can now examine variables with perl functions (print $fname) and modify them during runtime. 
   You can change the point of execution, and do most everything you'd expect from a debugger.
@@ -150,7 +150,7 @@ Debugged program terminated.  Use q to quit or R to restart,
   Instead of having to remember what line the intresting part of your script starts on and set a breakpoint there, 
   perl provides a way to programmatically jump into single-step mode. Add the following to the top of your sub:
 </p>
-<div class="code">
+<pre class="code">
 #!/usr/bin/perl -d
 
 use Gimp qw(:auto);
@@ -172,7 +172,7 @@ register "example", "Example", "Dumb example for debugging",
 };
 
 exit main;
-</div>
+</pre>
 <p>
   Now when you run your script, hit 'c' and it will break on the entry of the sub {} call. Using $DB::single will only have any effect when using -d - its ignored otherwise, 
   so you can leave it in scripts without any side effects.
@@ -182,7 +182,7 @@ exit main;
 <p>
   After invoking the perl server, I run 'Example' from a commandline shell:
 </p>
-<div class="debug">
+<pre class="debug">
 Default die handler restored.
 
 Loading DB routines from perl5db.pl version 1.07
@@ -214,7 +214,7 @@ Debugged program terminated.  Use q to quit or R to restart,
   use O inhibit_exit to avoid stopping after program termination,
   h q, h R or h O to get additional info.
   DB&lt;4&gt; q
-</div>
+</pre>
 <p>
   This example session shows changing a value of a variable at run-time so to load a different file than the one hard-coded into the script. 
   Note that I continue ('c') and it stops immediately after $DB::single is set.

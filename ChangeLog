@@ -1,3 +1,7 @@
+2003-10-06  Ville Pätsi  <drc@gimp.org>
+
+	* style/wgo.css: Removed "div.news p".
+
 2003-09-26  Raphael Quinet  <quinet@gamers.org>
 
 	* style/wgo.css (div.news): replaced "clear: top", which is not

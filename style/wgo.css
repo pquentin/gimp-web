@@ -89,10 +89,6 @@ div.news {
     clear: both;
 }
 
-div.news p {
-    clear: both;
-}
-
 div.news img {
     float: left;
     padding: 0em 1em 0em 0em;

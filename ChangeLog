@@ -1,5 +1,7 @@
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
+	* man/gimprc.html: fixed broken roffit output.
+
 	* admin/gimp-web-urls: fixed URL of new splash screen.
 
 	* about/splash/stable.htrw: show the new splash for 2.2.

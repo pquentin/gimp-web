@@ -10,6 +10,12 @@
     about/splash/gimp-1.3/*: the original images from cvs and instructions on
     how to get them.
 
+	* tutorials/Photo_Edit/*: removed these files 
+
+	* tutorials/*: added the Photo_Edit files to the tutorial directory
+
+	* tutorials/index.html: changed the index to reflect the directory change
+
 2002-11-25 carol <carol@gimp.org>
 
 	* about/splash.html,about/splash/*.png  and about/splash/*.txt:  added

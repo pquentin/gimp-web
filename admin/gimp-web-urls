@@ -236,6 +236,7 @@
 ["href", "wgo:unix-guide_stable_user_install", { "href": "/unix/user_install.html"}]
 ["href", "wgo:unix-guide_stable_preferences",  { "href": "/unix/preferences.html"}]
 ["href", "wgo:unix-howtos-tile_cache",         { "href": "/unix/howtos/tile_cache.html"}]
+["href", "wgo:unix-howtos-gimp-midi",          { "href": "/unix/howtos/gimp-midi.html"}]
 ["href", "wgo:unix-user_install",              { "href": "/unix/user_install.html"}]
 
 ["href", "wgo:windows",                        { "href": "/windows/"}]

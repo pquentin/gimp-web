@@ -1,5 +1,12 @@
 2005-01-14  Simon Budig  <simon@gimp.org>
 
+	* unix/howtos/gimp-midi.htrw: minor tweaks.
+
+	* docs/index.htrw
+	* admin/gimp-web-urls: link it from the docs index page.
+
+2005-01-14  Simon Budig  <simon@gimp.org>
+
 	* unix/howtos/gimp-midi.htrw: added to describe the GIMPs Midi
 	controller.
 

@@ -43,11 +43,11 @@
 <h3>ALSA:</h3>
 <p>
    Enter "alsa" in the "Device" entry in the configuration. Gimp then
-   sets up an Alsa-Output-Port (check with "aconnect -lo"). You can then
-   use your preferred tool to configure Alsa to connect a MIDI source to
-   the GIMP. When your MIDI device e.g. provides an Input-Port 72:0 and
-   Gimp provides the Output-Port 128:0 you can connect the two Ports
-   with "aconnect 72:0 128:0".
+   sets up an Alsa-Output-Port (check with "<tt>aconnect -lo</tt>"). You
+   can then use your preferred tool to configure Alsa to connect a MIDI
+   source to the GIMP. When your MIDI device e.g. provides an Input-Port
+   72:0 and Gimp provides the Output-Port 128:0 you can connect the two
+   Ports with "<tt>aconnect 72:0 128:0</tt>".
 </p>
 
 <h3>OSS:</h3>
@@ -97,7 +97,7 @@
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
     <div>
       <span id="footerleft">
-	How To &copy; 2005 <a href="mail:People-Simon_Budig">Simon Budig</a>
+	How To &copy; 2005 <a href="mail:People-Budig_Simon">Simon Budig</a>
       </span>
       <span id="footerright">
         <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>

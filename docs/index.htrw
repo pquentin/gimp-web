@@ -41,6 +41,7 @@
       size of the tile cache can be critical for the performance of
       your system.</li>
     <li><a href="wgo:unix-fonts">How to install fonts</a> for GIMP 2.0</li>
+    <li><a href="wgo:unix-howtos-gimp-midi">How to use Midi devices with the GIMP</a> for GIMP 2.2</li>
   </ul>
 
 <h2>GIMP Manual Pages</h2>

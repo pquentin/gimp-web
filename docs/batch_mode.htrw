@@ -7,48 +7,53 @@
 
 <h2>Introduction</h2>
 <p>
-  The GIMP comes with a so called batch mode that will let you run pdb command to 
-  be started and ran from a command line. We have got a lot of mails on the mailinglists 
-  about troubles how to use the batch mode and this small page should show some of the 
-  basic explanations about batch usage.
+  The GIMP comes with a so called batch mode that allows you to do
+  image processing from the command line. It also makes it easy to
+  apply the same set of operations to a number of images. We have got
+  a lot of questions on the mailing-lists on how to use the batch mode
+  and this small page tries to explain the basics to you.
 </p>
+
 <p>
-  The options that can be used for the gimp command is easily accessed by running
-  gimp --help in a terminal.
+  GIMP can be started with a number of command-line options. Let's
+  have a closer look at the output of <strong>gimp --help</strong>.
 </p>
+
 <pre class="code">
-GIMP version 2.2.0
+GIMP version 2.2.1
 
 Usage: gimp [option ... ] [file ... ]
 
 Options:
-  -h, --help               Output this help.
-  -v, --version            Output version information.
-  --verbose                Show startup messages.
-  --no-shm                 Do not use shared memory between GIMP and plugins.
-  --no-cpu-accel           Do not use special CPU accelerations.
-  -d, --no-data            Do not load brushes, gradients, palettes, patterns.
-  -f, --no-fonts           Do not load any fonts.
-
-  etc......
+  -h, --help              Output this help.
+  -v, --version           Output version information.
+  --verbose               Show startup messages.
+  -d, --no-data           Do not load brushes, gradients, palettes, patterns.
+  -f, --no-fonts          Do not load any fonts.
+  -i, --no-interface      Run without a user interface.
+  --batch-interpreter &lt;procedure&gt;
+                          The procedure to process batch commands with.
+  -b, --batch &lt;commands&gt;  Process commands in batch mode.
+  ...
 </pre>
 <p>
-  When you run the script that is being written in Script-Fu, then you use the options
-  listed when running --help. As a example running:
+  In order to do image processing from the command-line, you usually use
+  the Script-Fu batch interpreter. This is the default which makes things
+  simple. To give you an impression of what can be done, try the interactive
+  console mode:
 </p>
 <pre class="code">
-user@machine$ gimp -i -b file.scm
+  gimp -b -
 </pre>
 <p>
-  This will tell GIMP to not start with a interface (-i) and using a batch script (-b).
-  As mentioned before this is just a breif introduction to how batch works. So don't think it
-  will be very detailed.
+  This will tell GIMP to start in batch mode and accept commands on
+  the command-line. This is essentially the same as using the
+  Script-Fu console.  It would however be tedious to enter the
+  commands here, so instead we will create a simple script and show
+  you how to run that:
 </p>
  
 <h2>A batch example</h2>
-<p>
-  What this script do?
-</p>
 <pre class="code">
  (define (simple-unsharp-mask filename
                               radius
@@ -62,17 +67,59 @@ user@machine$ gimp -i -b file.scm
 	  (gimp-image-delete image)))
 </pre>
 <p>
-  Something else about the script?
+  This simple script takes a filename and some numeric parameters. It
+  opens the respective file, applies the Unsharp Mask filter and saves
+  the image again. It does all this w/o any user interaction, so we
+  can run it without any user interface. In order to do that, save the
+  script with the .scm extension in the
+  <strong>~/.gimp-2.2/scripts</strong> directory. Then run it like this:
 </p>
+<pre class="code">
+  gimp -i -b "(simple-unsharp-mask \"foo.png\" 5.0 0.5 0)" "(gimp-quit 0)"
+</pre>
+
+<h2>Processing several files</h2>
 <p>
-  If you want to look at the list of pdb commands there is a browser in GIMP that can
-  give you all the commands. Go Xtns -&gt; Procedure Browser. This will give you the whole
-  list of options.
+  You might want to apply an effect to a number of files. Typically to
+  to a set of files in the same directory. GIMP 2.2 added a very
+  useful function for this purpose, the <strong>file-glob</strong>
+  plug-in. This turns GIMP into a versatile batch processor. We will
+  need to do some modifications to our script:
 </p>
+<pre class="code">
+  (define (batch-unsharp-mask pattern
+                              radius
+                              amount
+                              threshold)
+  (let* ((filelist (cadr (file-glob pattern 1))))
+    (while filelist
+           (let* ((filename (car filelist))
+                  (image (car (gimp-file-load RUN-NONINTERACTIVE
+                                              filename filename)))
+                  (drawable (car (gimp-image-get-active-layer image))))
+             (plug-in-unsharp-mask RUN-NONINTERACTIVE
+                                   image drawable radius amount threshold)
+             (gimp-file-save RUN-NONINTERACTIVE
+                             image drawable filename filename)
+             (gimp-image-delete image))
+           (set! filelist (cdr filelist)))))
+</pre>
+<p>
+  This version of the script takes a glob pattern instead of a
+  filename and will apply the Unsharp Mask filter to all files
+  matching this pattern. In order to sharpen all PNG images in the
+  current directory, you would run the following command:
+</p>
+<pre class="code">
+  gimp -b -gimp -i -b "(batch-unsharp-mask \"*.png\" 5.0 0.5 0)" "(gimp-quit 0)"
+</pre>
 
-<h2>Known Issues</h2>
-
-<h2>Other good information</h2>
+<h2>Further information</h2>
+<p>
+  If you want to write your own scripts for batch processing, we
+  suggest you use the PDB Browser as found in the Xtns menu in the
+  GIMP toolbox. It gives you a detailed list of all commands.
+</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

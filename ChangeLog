@@ -1,5 +1,9 @@
 2005-01-04  Sven Neumann  <sven@gimp.org>
 
+	* docs/batch_mode.htrw: largely rewritten.
+
+2005-01-04  Sven Neumann  <sven@gimp.org>
+
 	* windows/index.htrw: rephrased download links for Windows
 	binaries, based on suggestions from Tigert. Removed links to
 	commercial packages; they should promote their products

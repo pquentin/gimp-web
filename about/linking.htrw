@@ -31,7 +31,7 @@ you can use, followed by the corresponding HTML code:</p>
 
 <p class="images"><a href="http://www.gimp.org/"><img
 alt="Graphics by GIMP" src="/images/gfx_by_gimp.png" width="90"
-height="36"></a></p>
+height="36" /></a></p>
 
 <pre class="code">
 &lt;a href="http://www.gimp.org/"&gt;&lt;img alt="Graphics by GIMP"
@@ -40,7 +40,7 @@ width="90" height="36"&gt;&lt;/a&gt;
 </pre>
 
 <p class="images"><a href="http://www.gimp.org/"><img alt="GIMP - Free"
-src="/images/gimp_free_button.png" width="88" height="31"></a></p>
+src="/images/gimp_free_button.png" width="88" height="31" /></a></p>
 
 <pre class="code">
 &lt;a href="http://www.gimp.org/"&gt;&lt;img alt="GIMP - Free"
@@ -94,15 +94,15 @@ each image separately.</p>
 
 <p class="images">
 <a href="/images/wilber_the_gimp.png"><img alt="Wilber, the GIMP
-mascot" src="/images/wilber_the_gimp.png" width="80" height="60"></a>
+mascot" src="/images/wilber_the_gimp.png" width="80" height="60" /></a>
 <a href="/images/wilber_the_gimp2.png"><img alt="Wilber, the GIMP
-mascot" src="/images/wilber_the_gimp2.png" width="80" height="60"></a>
+mascot" src="/images/wilber_the_gimp2.png" width="80" height="60" /></a>
 <a href="/images/wilber_painter.png"><img alt="Wilber painter"
-src="/images/wilber_painter.png" width="80" height="60"></a>
+src="/images/wilber_painter.png" width="80" height="60" /></a>
 <a href="/images/wilber_work.png"><img alt="Wilber worker"
-src="/images/wilber_work.png" width="80" height="60"></a>
+src="/images/wilber_work.png" width="80" height="60" /></a>
 <a href="/images/wilber_wizard.png"><img alt="Wilber wizard"
-src="/images/wilber_wizard.png" width="80" height="70"></a>
+src="/images/wilber_wizard.png" width="80" height="70" /></a>
 </p>
 
 <p>The images are in PNG format and support "real" transparency,
@@ -111,15 +111,15 @@ same images should look good over any background:</p>
 
 <p class="images" style="background: #CC9966 url(../images/wilberbook.jpg);">
 <a href="/images/wilber_the_gimp.png"><img alt="Wilber, the GIMP
-mascot" src="/images/wilber_the_gimp.png" width="80" height="60"></a>
+mascot" src="/images/wilber_the_gimp.png" width="80" height="60" /></a>
 <a href="/images/wilber_the_gimp2.png"><img alt="Wilber, the GIMP
-mascot" src="/images/wilber_the_gimp2.png" width="80" height="60"></a>
+mascot" src="/images/wilber_the_gimp2.png" width="80" height="60" /></a>
 <a href="/images/wilber_painter.png"><img alt="Wilber painter"
-src="/images/wilber_painter.png" width="80" height="60"></a>
+src="/images/wilber_painter.png" width="80" height="60" /></a>
 <a href="/images/wilber_work.png"><img alt="Wilber worker"
-src="/images/wilber_work.png" width="80" height="60"></a>
+src="/images/wilber_work.png" width="80" height="60" /></a>
 <a href="/images/wilber_wizard.png"><img alt="Wilber wizard"
-src="/images/wilber_wizard.png" width="80" height="70"></a>
+src="/images/wilber_wizard.png" width="80" height="70" /></a>
 </p>
 
 <p>Unfortunately, some browsers do not support the PNG transparency
@@ -130,16 +130,16 @@ white background:</p>
 
 <p class="images">
 <a href="/images/wilber_the_gimp_idx.png"><img alt="Wilber, the GIMP
-mascot" src="/images/wilber_the_gimp_idx.png" width="80" height="60"></a>
+mascot" src="/images/wilber_the_gimp_idx.png" width="80" height="60" /></a>
 <a href="/images/wilber_painter_idx.png"><img alt="Wilber painter"
-src="/images/wilber_painter_idx.png" width="80" height="60"></a>
+src="/images/wilber_painter_idx.png" width="80" height="60" /></a>
 </p>
 
 <p class="images" style="background: #CC9966 url(../images/wilberbook.jpg);">
 <a href="/images/wilber_the_gimp_idx.png"><img alt="Wilber, the GIMP
-mascot" src="/images/wilber_the_gimp_idx.png" width="80" height="60"></a>
+mascot" src="/images/wilber_the_gimp_idx.png" width="80" height="60" /></a>
 <a href="/images/wilber_painter_idx.png"><img alt="Wilber painter"
-src="/images/wilber_painter_idx.png" width="80" height="60"></a>
+src="/images/wilber_painter_idx.png" width="80" height="60" /></a>
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -1,3 +1,7 @@
+2003-04-10 scizzo <scizzo@gimp.org>
+
+	* todo.xhtml: This file was a duplicate of the todo.xhtml in admin.
+
 2003-04-10  Carol Spears  <carol@gimp.org>
 
         * os2/howtos/install_gimp_xfree86.html, missing </a>.

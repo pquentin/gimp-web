@@ -15,12 +15,12 @@
   <h3>Contest Results</h3>
   <p>
     The contest is now closed. Thanks to everyone who submitted entries. In
-    just a few days, we gathered more than 220 entries - a tribute to the
+    just a few days, we gathered 262 entries - a tribute to the
     popularity and success of GNOME. There were many high quality entries
     which made choosing a final splash screen very difficult. However, a
     decision had to be made, so, the splash screen chosen is:
   </p>
-  <img src="/var/wgo-contest-current/2005030317223820222.png" alt="contest winner image" width="450" height="300">
+  <img src="/contest/images/gnome-final.png" alt="contest winner image" width="450" height="300">
   <p>
     Thanks to Sami &quot;alump&quot; Viitanen for this wonderful splash screen.
   </p>
@@ -35,15 +35,12 @@
     </ul>
   </p>
 
-  <h3>Who ran the contest?</h3>
-  <p>
-    thos &amp; toady: Please don't complain to us if your tastes differs from ours - we can't please everyone!
-  </p>
-
   <h3>Submissions</h3>
   <p>
     You can view all the submissions in the
-    <a href="/contest/gallery.cgi">contest gallery page</a>.
+    <a href="/contest/gallery.cgi">contest gallery page</a>. If you personally
+    like some of the other entries better, you can always choose whichever
+    you like and set the appropriate GConf key to customize your splash.
   </p>
 
   <!-- <h3>Good luck!</h3> -->

@@ -7,8 +7,6 @@
 
 <h2>Small and Persistant Group</h2>
 <ul>
-   <li><a href="maillist:GIMP-os2-url">OS/2 Mail List</a></li>
-   <li><a href="maillist:GIMP-os2-archive">OS/2 Mail List Archive</a></li>
    <li><a href="http:Package-os2-software">OS/2 Software -- including The GIMP</a></li>
    <li><a href="info:OS2_GIMP_PM">Everblue with GIMP</a></li>
    <li><a href="info:OS2_GIMP_xfree86">About GIMP for OS/2</a></li>
@@ -21,7 +19,7 @@
    <li><a href="os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian">Installing XFree86/OS2 4.3.0</a></li>
    <li><a href="wgo:os2-howtos_xfree86_install_fonts">How To Install Fonts In OS2/xfree86</a></li>
    <li><a href="wgo:os2-howtos-gimp_xfree86_install">How To Install GIMP For OS2/xfree86</a></li>
-   <li><a href="wgo:os2-howtos_tile_cache">How To Set Your OS2/GIMP Tile Cache</a></li>
+   <li><a href="wgo:os2-howtos-tile_cache">How To Set Your OS2/GIMP Tile Cache</a></li>
 </ul>
 
 <h2>OS/2 Mail Lists That Might Help</h2>
@@ -31,7 +29,7 @@
 </ul>
 
 <h2>OS/2 Screenshots</h2>
-<h3>unknowingly contributed by Platon Fomichev, Khairil Yusof, Pierre Lucas, and Christoph Vogelbusch</h3>
+<h3>Unknowingly contributed by Platon Fomichev, Khairil Yusof, Pierre Lucas, and Christoph Vogelbusch</h3>
 <ul>
    <li><a href="gimp118-1.jpg">gimp-1.1.8 (Eek!)</a></li>
    <li><a href="gimp118-2.jpg">gimp-1.1.8 <span class="path">File -&gt;Open</span></a></li>

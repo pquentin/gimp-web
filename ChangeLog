@@ -1,23 +1,35 @@
+2003-03-22  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Created admin/gimp-web-urls-subst which is gimp-web-urls
+        modified for the new syntax.
+
+        * Added new substitution programme, programmatic/tools/subst.py
+        which handles arbitrary text files.  Two potentially significant
+        effects of using the new substitution mechanism is the loss of the
+        ability to insert a comment declaring the output is automatically
+        generated, and run-time is increased due to context free
+        substitutions and the flat substitution dictionary.
+
 2003-03-22 scizzo <scizzo@gimp.org>
 
-	* style/old-default.css: This is the old default.css file.
-	
-	* style/default.css: Add a new updated and cleaned up css file. Hope
-	  this looks better then the old one. Bug fix. Images where not
-	  centered with the <p class="images"></p>.
+        * style/old-default.css: This is the old default.css file.
+        
+        * style/default.css: Add a new updated and cleaned up css file. Hope
+          this looks better then the old one. Bug fix. Images where not
+          centered with the <p class="images"></p>.
 
 2003-03-21 scizzo <scizzo@gimp.org>
 
-	* Site: Now uses <hx> instead of <div class=""> tags.
-	
-	* example.html, example.ssi: Moved them to /admin/.
+        * Site: Now uses <hx> instead of <div class=""> tags.
+        
+        * example.html, example.ssi: Moved them to /admin/.
 
 2003-03-20 scizzo <scizzo@gimp.org>
 
-	* /tutorials/*/index.html: Now uses the <hx> tags for headings instead
-	of <div class="">.
+        * /tutorials/*/index.html: Now uses the <hx> tags for headings instead
+        of <div class="">.
 
-	* /tutorials/Perlotine/*.html: Looked at the validation more.
+        * /tutorials/Perlotine/*.html: Looked at the validation more.
 
 2003-03-19  Helvetix Victorinox  <helvetix@mysterious.org>
 

@@ -1,5 +1,14 @@
 2003-02-27  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
+        * Added programmatic/admin/develop/changelogs.py
+        * Added programmatic/admin/develop/film-gimp.sh
+        * Added programmatic/admin/develop/gegl-unstable.sh
+        * Added programmatic/admin/develop/gimp-help.sh
+        * Added programmatic/admin/develop/gimp-print.sh
+        * Added programmatic/admin/develop/gimp-unstable.sh
+        * Added programmatic/admin/develop/Makefile
+        * Added programmatic/admin/develop/wgo_develop.py
+
         * Deleted programmatic/about/changelog-xhtml.css
         * Deleted programmatic/about/changelog-xhtml-mono.css
         * Deleted programmatic/about/film-gimp

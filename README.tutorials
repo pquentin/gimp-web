@@ -23,7 +23,7 @@ Text:
   	path to the plug-in/script. Use the "filter" class to make the
         path stand out from the rest of the text.
 
-        Example: <span class="filter">&lt;Image&gt;/Filters/Blur/Blur</span>
+        Example: <span class="filter">&lt;Image&gt;Filters-&gt;Blur-&gt;Blur</span>
 
   * When adding code examples use the "code" class.
 

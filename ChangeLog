@@ -1,5 +1,10 @@
 2003-04-12  Carol Spears  <carol@gimp.org>
 
+    * os2/howtos/tile_cache.htrw, shuffled things and <br />.
+    * os2/index.htrw, typos and redundancies fixed.
+
+2003-04-12  Carol Spears  <carol@gimp.org>
+
     * os2/howtos/tile_cache.htrw, combined some authors and made a new howto.
     * os2/index.htrw, added useful mail list urls.
     * os2/howtos/install_font_xfree86.htrw, edited content some.

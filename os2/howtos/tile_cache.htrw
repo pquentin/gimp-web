@@ -4,12 +4,12 @@
 <!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
 
 <h1>How To Set Your Tile Cache (for GIMP/OS2)</h1>
+<h2>or Tile Cache Recommendations</h2>
 <p><cite>This how to was originally written by 
 <a href="mail:People-Romero_Guillermo_S">Guillermo S. Romero</a> and was
-altered some by <a href="mail:People-Hennecke_Christian">Christian Hennecke</a>.</cite>
-<p>
+   altered some by <a href="mail:People-Hennecke_Christian">Christian Hennecke</a>.</cite>
+</p>
 
-<h2>or Tile Cache Recommendations</h2>
 <p>
   Image processing can require a lot of memory. GIMP uses the
   operating system services to handle memory, up to a given point,
@@ -168,7 +168,7 @@ can not expect to edit a poster in a computer with 16MB and be fast.
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        How To &copy; 2003 <a href="mail:People-Romero_Guillermo_S">Guillermo S. Romero</a> and
+        How To &copy; 2003 <a href="mail:People-Romero_Guillermo_S">Guillermo S. Romero</a> and<br />
         <a href="home:People-Hennecke_Christian">Christian Hennecke</a>
       </span>
       <span id="footerright">

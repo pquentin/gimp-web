@@ -1,3 +1,8 @@
+2002-10-19 gsromero
+	
+        * README.repository: Fixed some typos and added validator url. (A
+	test with CVS)
+	
 2002-10-19 carol <carol@gimp.org>
         
         * style/default.css: centered the bottom navigation by adding

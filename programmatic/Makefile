@@ -2,7 +2,7 @@
 #
 include Makefile.defs
 
-all: usage wgo_config.py tools extended.css rdf-news.css wgo-css.cpp admin contest about
+all: usage wgo_config.py tools extended.css rdf-news.css wgo-css.cpp admin contest about develop
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>target"; exit 1; fi
@@ -44,6 +44,9 @@ contest: wgo_config.py
 about: wgo_config.py
 	cd about && $(MAKE) all
 
+develop: wgo_config.py
+	cd develop && $(MAKE) all
+
 tools:
 	cd tools && $(MAKE) all
 
@@ -56,9 +59,10 @@ clean mrproper:
 	cd contest && $(MAKE) clean
 	cd admin && $(MAKE) clean
 	cd about && $(MAKE) clean
+	cd develop && $(MAKE) clean
 	cd tools && $(MAKE) clean
 
-install: install-common install-admin install-contest install-about
+install: install-common install-admin install-contest install-about install-develop
 
 install-common: all
 	install --mode=755 -d ${LIBDIR}
@@ -81,6 +85,9 @@ install-contest: contest
 
 install-about: about
 	cd about && $(MAKE) install
+
+install-develop: develop
+	cd develop && $(MAKE) install
 
 dirs: wgo_config.py
 	cd admin && $(MAKE) dirs

@@ -1,3 +1,11 @@
+2003-02-24  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * Changed the ChangeLog formatting to include a heading for all
+          and a timestamp for only the GIMP untable ChangeLog.
+
+        * Moved the ChangeLog fetching and formating from
+          /about/ChangeLogs to /develop
+
 2003-02-23  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * More usage of Python 2.2 features.

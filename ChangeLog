@@ -1,5 +1,13 @@
 2003-09-23  Raphael Quinet  <quinet@gamers.org>
 
+	* team.htrw: Removed all e-mail addresses from the page until we
+	can decide what to do about them (it is easy to add them back if
+	we decide to do that).  Put myself as coordinator.  This has been
+	effective since after GimpCon, but the page had not been updated.
+	Moved Carol to the Contributors section.  I would like to use
+	something nicer than Contributor, but I do not know what to put
+	there.
+
 	* unix/index.htrw: Added a link to fonts.html.
 
 	* unix/fonts.htrw: Added this new file describing how to install

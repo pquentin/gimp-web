@@ -53,7 +53,7 @@
   your changes to the source. Start by downloading the source code of the latest release, extract it and make a copy
   of the entire source directory. After you have made your changes to one of the source directories and made sure it
   compiles and works as expected, you can create the patch file using the command
-  <kbd>diff -upN /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd>. To summarize the steps:
+  <kbd>diff -up /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd>. To summarize the steps:
 </p>
 <ul>
   <li>Download the source code of the latest release</li>
@@ -61,7 +61,7 @@
   <li>Make a copy of the source code directory</li>
   <li>Apply your changes to the copy of the source code</li>
   <li>Re-compile and make sure it works as expected</li>
-  <li>Generate the patch file using <kbd>diff -upN /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd></li>
+  <li>Generate the patch file using <kbd>diff -up /path/to/unmodified/source /path/to/modified/source > /path/to/patchfile.patch</kbd></li>
   <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
   <li>Submit the patch using Bugzilla, see below</li>
 </ul>

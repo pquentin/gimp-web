@@ -1,5 +1,12 @@
 2003-08-22  Henrik Brix Andersen  <brix@gimp.org>
 
+	* bugs/howtos/submit-patch.htrw: corrected paste error in diff
+	arguments
+
+	* screenshots/.cvsignore: file added
+
+2003-08-22  Henrik Brix Andersen  <brix@gimp.org>
+
 	* bugs/howtos/submit-patch.htrw: added a description of what a
 	patch file is, added instructions for how to create a patch
 	file. This closes bug #119565.

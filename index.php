@@ -8,8 +8,7 @@
  
   <body>
 
-    <div id="titlebar"><span id="titlebarleft"><img src="images/thegimp.png" alt=""/></span>
-      <span id="titlebarright"><img src="images/wilberright.png" alt=""/></span><img src="images/barbg.png" alt=""/></div>
+    <div id="titlebar"><span id="titlebarleft"><img src="images/thegimp.png" alt=""/></span><span id="titlebarright"><img src="images/wilberright.png" alt=""/></span><img src="images/barbg.png" alt=""/></div>
 
     <table id="layout">
       <tr>

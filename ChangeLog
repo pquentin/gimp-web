@@ -1,3 +1,12 @@
+2003-08-01 scizzo <scizzo@gimp.org>
+
+	* /includes/wgo-page-init.xhtml, wgo-menu.xhtml: Changed the "GIMP for Macintosh" to
+	"GIMP for MacOSX" as Mat suggested.
+	* /macintosh/index.html: Removed this file.
+	* /macintosh/index.htrw: Add this file with the information provided
+	by Mat Caughron <mat@macgimp.org> that is the maintainer of the Mac information.
+	* /macintosh/TiBookMacGIMP.jpg: Add this image for index.htrw.
+
 2003-07-27 scizzo <scizzo@gimp.org>
 
 	* /bugs.htrw, bugzilla.htrw, registry.htrw, /bugs/index.html,

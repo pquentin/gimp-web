@@ -1,0 +1,160 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP for MacOSX</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP for MacOSX</h1>
+<p class="images">
+  <img alt="The GIMP" src="TiBookMacGIMP.jpg" />
+</p>
+
+<h2>Downloads and Installation</h2>
+
+<p>
+  There are various ways to obtain and install GIMP for your 
+  Macintosh. In addition to the source code distribution here on 
+  www.gimp.org, there are various alternative sources for packaged and 
+  commercially distributed CDs, which aim to make installation and setup 
+  an easier task. These include: 
+</p>
+<ul>
+  <li>
+  <a href="http://www.macgimp.org/">MacGIMP project</a> provides 
+  the latest GIMP for Mac OS X in a packaged CD format. A part of the 
+  sales of MacGIMP is used to defray expenses for developers at the 
+  yearly GIMP conference. 
+  The MacGIMP project installs the GIMP in: <a href="file:///opt/local/bin">/opt/local/bin</a>. 
+  MacGIMP efforts are led by 
+  <a href="wgo:People-Caughron-Mat">Mat Caughron</a>.
+  </li>
+  <li>
+  <a href="http://fink.sourceforge.net/pdb/package.php/gimp">Fink</a> 
+  is a package management system hosted by 
+  <a href="http://www.sourceforge.net/">Sourceforge.net</a> 
+  and provides everything necessary for running the GIMP, via the command 
+  line interface. The Fink project is based upon the Debian apt-get 
+  package management tools, and can resolve dependencies among the 
+  various components necessary for a working GIMP installation. 
+  <a href="mailto://astrange@ithinksw.com">Alexander Strange</a> 
+  is the current gimp package maintainer for the Fink project.  A typical 
+  install, however, will require that you have a working C compiler, 
+  which Apple supplies on a companion CD to Mac OS X.  The default 
+  location for GIMP when installed with fink is <a href="file:///sw/bin/gimp">/sw/bin/gimp</a>. 
+  </li>
+  <li>
+  <a href="http://packages.opendarwin.org/">OpenDarwin Binary Packages</a> 
+  which have been built with the 
+  <a href="http://www.opendarwin.org/projects/darwinports/">DarwinPorts</a> 
+  system are available online. The OpenDarwin system places 
+  the GIMP in: <b>/opt/local/bin</b>. DarwinPorts project leads are: 
+  <a href="mailto:landonf@opendarwin.org">Landon Fuller</a>, 
+  <a href="mailto:jkh@opendarwin.org">Jordan Hubbard</a>, 
+  and <a href="mailto:kevin@opendarwin.org">Kevin Van Vechten</a>.
+  </li>
+  <li>
+  <a href="http://www.osxgnu.org/software/Xwin/Applications/gimp/">OSXGNU packages</a> 
+  have been built by Chris Roberts and make use of a perl-based automated packaging scripts.
+  </li>
+  <li>
+  In the future, it is hoped that the <a href="http://www.metapkg.org/">MetaPkg</a> 
+  project will unify several of these installation methods, 
+  but the meta packaging system is not yet usable.
+  </li>
+</ul>
+
+<h2>Requirements</h2>
+<p>
+  The GIMP will only run on Mac OS X, not on version 
+  9 or earlier of the Macintosh operating system.  There are a number of 
+  reasons why it is unlikely that the GIMP will ever run on older 
+  versions of Mac OS. In addition to Mac OS X, the following is a list of 
+  what you will need to run the GIMP on your Macintosh:
+</p>
+<ul>
+  <li>
+  X Windowing Layer <br /> 
+  The GIMP uses a separate windowing layer, the 
+  X11 windowing protocol, on Mac OS X, which must be installed first. 
+  There are various ways to install an X11 protocol window server.  The 
+  XDarwin project provides this functionality.  Apple has recently 
+  started buildingtheir own version of this windowing layer, based on 
+  XFree86, which is called X11.app.  It is available as a beta release 
+  from <a href="http://www.apple.com/macosx/x11">www.apple.com/macosx/x11/</a>.  
+  </li>
+  <li>
+  dlcompat <br /> 
+  In general, building the GIMP on Mac OS X is 
+  complicated by the fact that dynamic libraries from GNU projects 
+  require a GNU-specific dynamic loading library. dlcompat provides the 
+  dlopen() interface for dynamic loading of modules for applications that 
+  need it.  dlcompat is provided by 
+  <a href="http://fink.sourceforge.net/doc/porting/index.php">Fink</a> and in an  
+  <a href="http://www.opendarwin.org/cgi-bin/cvsweb.cgi/proj/dlcompat/">OpenDarwin dlcompat package</a>
+  </li>
+  <li>
+  Graphics libraries and toolkits <br /> 
+  Unlike most Linux distributions, Mac OS X does not come with the open source libraries 
+  upon which the GIMP is built.  These are typically installed along with 
+  the GIMP, but can be installed separately.  GTK can be built and 
+  installed via the various package management systems mentioned above: 
+  Fink, DarwinPorts, OSXGNU and others.  A complete list of the libraries 
+  necessary for a build of the GIMP is given in the main source 
+  distribution. 
+  </li>
+</ul>
+
+<h2>Where to Find Assistance</h2>
+<p>
+  The GIMP itself comes with a built-in help system. Once you have started the program, press F1.
+</p>
+
+<p>
+  The <a href="http://www.xdarwin.org/forum">XDarwin forums</a> are one place 
+  to discuss compatibility and installation questions.  
+  <br />
+  In addition, there are forums at the <a href="http://gug.sunsite.dk/">GIMP User Group</a>.
+</p>
+
+<p>
+  The GIMP's user interface is designed to let you work as efficiently 
+  as possible. Since the primary menu in the GIMP is accessed by a 
+  right-click in the image window, it is advisable for Mac users (who all 
+  have a single mouse button by default) to obtain a multi-button USB 
+  mouse. Another workaround for this problem is to configure your window 
+  manager, say for example under XDarwin, to map the control-click to be 
+  right-click. 
+</p>
+
+<h2>Your Support</h2>
+<p>
+  GIMP is so-called 
+  <span title="software that may be modified and distributed freely, 
+  as long as you do not deny other users these freedoms">free software</span> 
+  and a part of the <a href="http://www.gnu.org/">GNU Project</a>. 
+  In the free software world, there is generally no distinction between 
+  users and developers. As in a friendly neighbourhood, everybody pitches 
+  in to help their neighbors.  Please consider the time you give in 
+  assistance to others as payment.
+</p>
+
+<p>Ways in which you can help:</p>
+<ul>
+  <li><a href="http://www.macgimp.org/develop/">program new features</a>,</li>
+  <li><a href="http://www.macgimp.org/develop/">debug existing features</a>,</li>
+  <li><a href="http://bugs.gimp.org/">report bugs</a>--errors in the program (read the 
+  <a href="http://www.macgimp.org/unix/howtos/bugzilla.html">instructions</a> first),</li>
+  <li><a href="http://www.macgimp.org/docs/">add documentation</a>,</li>
+  <li>translate the GIMP to your own language,</li>
+  <li>translate the documentation,</li>
+  <li><a href="http://www.macgimp.org/tutorials/">write tutorials</a>,</li>
+  <li>make artwork for the GIMP used in or with the GIMP,</li>
+  <li>let people know you used the GIMP for your artwork,</li>
+  <li>sell or give away copies of the GIMP, or</li>
+  <li>help others to learn to use the GIMP.</li>
+</ul>
+
+<p>
+  As you can see, everyone can help.
+</p>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

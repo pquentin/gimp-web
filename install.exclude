@@ -1,4 +1,5 @@
 /includes/news.inc
+/admin/.htaccess
 CVS
 .cvsignore
 /ChangeLog

@@ -19,3 +19,4 @@ CVS
 /var
 *.ssi
 *.htrw
+*.pyc

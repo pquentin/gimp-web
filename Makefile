@@ -21,18 +21,28 @@ RWTARGETS=$(RWSOURCES:.htrw=.html)
 
 TARGETS=${RWTARGETS}
 
-.PHONY: all usage webtools install clean
+.PHONY: all usage webtools install clean cvsignore programmatic
 
 all: usage webtools ${TARGETS}
+	rsync -rlt --delete --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
 
 usage:
 	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; exit 1; fi
 
 webtools:
-	(cd programmatic ; make webtools)
+	make -C programmatic webtools
+
+programmatic:
+	make -C programmatic all
 
 install: all
+	make -C programmatic install
 
 clean:
+	make -C programmatic clean
 	/bin/rm -f ${TARGETS} ${RWTARGETS}
+
+cvsignore:
+	@for i in ${RWTARGETS} ; do basename $${i} >> `dirname $${i}`/.cvsignore ; done
+	@for i in `find -name '.cvsignore' -print` ; do echo sort -u $${i} -o $${i}  ;	done

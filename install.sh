@@ -1,7 +1,5 @@
 #!/bin/sh -x
 
-CVSDIR=`pwd`
-
 if test "x$1" != x ; then
   INSTALLDIR=$1
 else
@@ -19,13 +17,9 @@ log=${INSTALLDIR}/install.out
 
 date >> ${log}
 
-make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean webtools all 2>&1 >> ${log}
+make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean webtools all programmatic install
 
-rsync -rlt --delete --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
-
-(cd programmatic ; make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} all install ) 2>&1 >> ${log}
-
-(cd crontab ; make all install) 2>&1 >> ${log}
+make -C crontab all install 2>&1 >> ${log}
 
 ls -l ${INSTALLDIR}/var/spool/wgo-contest-current  >> ${log}
 

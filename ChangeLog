@@ -1,5 +1,14 @@
 2003-04-26  Helvetix Victorinox  <helvetix@mysterious.org>
 
+        * install.exclude: Don't install *.pyc files.  Let them be
+          generated on the fly.
+
+        * install.sh: cleaned up the various calls to make to one call to
+          make for the website and one call to make for the crontab/
+          directory
+
+        * Makefile (cvsignore): New target for automatically creating .cvsignore files
+
         * programmatic/admin/develop (wgo_develop.py): delete unused file wgo_develop.py
 
         * programmatic/admin/develop/gimp-unstable.sh:

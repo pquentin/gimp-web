@@ -1,9 +1,15 @@
+2002-10-07  scizzo <scizzo@gimp.org>
+
+	* tutorials/Film_Grain: Added the Film Grain tutorial.
+	
+	* Changelog: Added the scizzo@gimp.org address instead.
+	
 2002-10-06  carol <carol@gimp.org>
 
 	* team.html: added scizzo to the team and made a section for tutorial 
 	authors
 	
-2002-10-06  scizzo <scizzo@se.debian.net>
+2002-10-06  scizzo <scizzo@gimp.org>
 
 	* tutorials/Custom_Brushes: Added the Custom Brushes tutorial.
 
@@ -27,7 +33,7 @@
 
 	* tutorials/index.html: corrected the link to the Straight Line Tutorial
 	
-2002-10-05  scizzo <scizzo@se.debian.net>
+2002-10-05  scizzo <scizzo@gimp.org>
 
 	* tutorials/Straight_Line/: Added the Straight_Line tutorial.
 	

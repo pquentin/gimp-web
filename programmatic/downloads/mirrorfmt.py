@@ -25,7 +25,8 @@ def do_file(filename):
         pass
 
     print xhtml.dl.fini()
-
+    fp.close()
+    
     return
 
 def main(argv):

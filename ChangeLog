@@ -1,6 +1,8 @@
-2003-06-26  Sven Neumann  <sven@gimp.org>
+2003-07-20  Helvetix Victorinox  <helvetix@gimp.org>
 
-	* includes/wgo-page-init.xhtml: fixed typo (bug #116010).
+	* about/index.htrw: Fixed bad url rewrite line. (fixes bug #117194)
+
+	* programmatic/downloads/mirrorfmt.py: be tidy and close the open file before exiting.
 
 2003-06-21  Helvetix Victorinox  <helvetix@mysterious.org>
 

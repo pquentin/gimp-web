@@ -17,14 +17,14 @@
           <a href="?page=about">About GIMP</a><br/>
           <a href="?page=resources">Resources</a><br/>
           <a href="?page=registry">Plug-In Registry</a><br/>
-          <a href="?page=doc">Documentation</a><br/>
+          <a href="?page=documentation">Documentation</a><br/>
           <a href="?page=tutorials">Tutorials</a><br/>
-          <a href="?page=script">Script Authoring</a><br/>
-          <a href="?page=devel">Development</a><br/>
+          <a href="?page=authoring">Script Authoring</a><br/>
+          <a href="?page=development">Development</a><br/>
           <br/>
           <a href="?page=unix">GIMP for Unix</a><br/>
-          <a href="?page=win32">GIMP for Windows</a><br/>
-          <a href="?page=mac">GIMP for Macintosh</a><br/>
+          <a href="?page=windows">GIMP for Windows</a><br/>
+          <a href="?page=macintosh">GIMP for Macintosh</a><br/>
           <a href="?page=os2">GIMP for OS/2</a><br/>
           <br/>
           Newest Plug-Ins:<br/>

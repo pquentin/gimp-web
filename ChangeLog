@@ -1,3 +1,10 @@
+2003-09-26  Raphael Quinet  <quinet@gamers.org>
+
+	* programmatic/admin/news/wgo_news.py (icon_descs): Added
+	descriptions for the icons so that we get better alt tags.  This
+	is not a perfect solution, but this should fix bug #117380 once
+	the news are rebuilt.
+
 2003-09-24  Raphael Quinet  <quinet@gamers.org>
 
 	* links/index.htrw: Added a link to /about/linking.html.

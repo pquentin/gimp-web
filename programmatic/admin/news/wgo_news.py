@@ -156,7 +156,7 @@ class news:
 
     img = ""
     if icon_by_name(self["image"]) != "":
-      img = xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]), "alt" : icon_by_name(self["image"])})
+      img = xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]), "alt" : icon_desc_by_name(self["image"])})
       pass
 
     s += str(xhtml.div(img + xhtml.para(self["body"]), {"class" : "news"}))
@@ -240,3 +240,18 @@ def icon_by_name(name):
   if icons.has_key(name):
     return (icons[name])
   return (icons["Default"])
+
+# Must match the names in "icons" above
+icon_descs = {
+  "--none--"          : "",
+  "Default"           : "[?]",
+  "construction"      : "[Under Construction]",
+  "developer"         : "[Developers]",
+  "developer-release" : "[Release for developers]",
+  "release"           : "[Release]"
+}
+
+def icon_desc_by_name(name):
+  if icon_descs.has_key(name):
+    return (icon_descs[name])
+  return (icon_descs["Default"])

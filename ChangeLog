@@ -1,5 +1,30 @@
 2003-02-24 scizzo <scizzo@gimp.org>
 
+	* /includes/wgo-howto-unix-init{fini}.xhtml: Add the include files for the unix HOWTOs.
+	
+	* /about/authors.html: I changed the include files but haven´t changed
+	anything in the .pl file this is the authors job IMHO. Or should I do that?
+
+	* /develop/index.html, /docs/index.html, /links/index.html,
+	* /links/org.html, /macintosh/index.html, /os2/index.html,
+	* /windows/*.html, /unix/*.html, /unix/*/*.html, /resources/*.html,
+	* /resources/*/*.html: Ported them to use the new include files.
+	
+	* /unix/user_install.html: New includes and Removed the <p></p> tags
+	before and after the list of <ol> to make the site valid. Fixed the
+	link to tile-cache.html and changed it to be tile-cache on the page.
+
+	* /unix/howtos/template.html: Add a template.html file for the HOWTO
+	writes that should be used.
+
+	* /resources/brushes/index.html, /resources/gradients/index.html,
+	* /resources/patterns/index.html: Changed so that they are using <img
+	src=""/> instead of <img src="">. Now valid sites.
+
+	* /*: Removed the READMEs and TODO because they are now in /admin/.
+
+2003-02-24 scizzo <scizzo@gimp.org>
+
 	* /admin/: Copied the READMEs and TODOs to /admin/
 
 2003-02-22  Helvetix Victorinox  <helvetix@oak.mysterious.org>

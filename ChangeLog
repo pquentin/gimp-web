@@ -1,3 +1,11 @@
+2004-08-20  Raphaël Quinet  <quinet@gamers.org>
+
+	* programmatic/downloads/MIRRORS: Synced with my latest changes to
+	/etc/mirrors on the ftp site: removed several dead mirrors spotted
+	by Michael Schumacher (fixes bug #143616), updated the URLs of the
+	UK mirror service (fixes bug #149088) and added rsync access for
+	some mirrors.
+
 2004-08-06  Niklas M <scizzo@gimp.org>
 
 	* docs/index.htrw: Changed the name of "The GIMP Documentation" to "The GIMP

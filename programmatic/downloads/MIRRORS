@@ -7,8 +7,6 @@ Africa
 Australia
      ftp://ftp.planetmirror.com/pub/gimp/
      http://ftp.planetmirror.com/pub/gimp/ (web access)
-     ftp://mirror.aarnet.edu.au/pub/gimp/
-     http://mirror.aarnet.edu.au/pub/gimp/ (web access)
      ftp://gimp.zeta.org.au/
      ftp://mirrors.wamug.org.au/gimp/ (WAIX only)
      http://mirrors.wamug.org.au/gimp/ (web access, WAIX only)
@@ -30,21 +28,18 @@ Germany
      ftp://ftp.fh-heilbronn.de/pub/mirrors/ftp.gimp.org/
      ftp://ftp.gwdg.de/pub/misc/grafik/gimp/
      http://ftp.gwdg.de/pub/misc/grafik/gimp/ (web access)
-
-Greece
-     ftp://sunsite.ics.forth.gr/sunsite/pub/gimp/
+     rsync://ftp.gwdg.de/pub/misc/grafik/gimp/ (rsync access)
 
 Ireland
      ftp://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/
      http://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/ (web access)
+     rsync://ftp.esat.net/mirrors/ftp.gimp.org/pub (rsync access)
 
 Japan
      ftp://SunSITE.sut.ac.jp/pub/archives/packages/gimp/
      ftp://ftp.u-aizu.ac.jp/pub/graphics/tools/gimp/
      ftp://ftp.ring.gr.jp/pub/graphics/gimp/
      http://www.ring.gr.jp/pub/graphics/gimp/ (web access)
-     http://mirror.nucba.ac.jp/mirror/gimp/ (web access)
-     ftp://mirror.nucba.ac.jp/mirror/gimp/
 
 Korea
      ftp://ftp.kreonet.re.kr/pub/tools/X11/ftp.gimp.org/
@@ -80,12 +75,11 @@ Sweden
      ftp://ftp.sunet.se/pub/gnu/gimp/
      http://ftp.sunet.se/pub/gnu/gimp/ (web access)
 
-Turkey
-     ftp://ftp.hun.edu.tr/pub/linux/gimp/
-
 United Kingdom
      ftp://ftp.flirble.org/pub/X/gimp/gimp/
-     ftp://unix.hensa.ac.uk/mirrors/ftp.gimp.org/pub/gimp/
+     ftp://ftp.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/
+     http://www.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/ (web access)
+     rsync://rsync.mirrorservice.org/ftp.gimp.org/pub/gimp/ (rsync access)
 
 United States
      ftp://ftp.cs.umn.edu/pub/gimp/

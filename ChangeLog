@@ -1,8 +1,27 @@
-2003-02-16  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-02-20  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * All programmatic uses of the include files properly handle
+          recursive #include directives.
+
+        * Fixed programmatic/contest/gallery-edit.cgi to use the admin
+          page content instead of the regular site content.
+
+        * Rewrote large chunks of xhtml.py and x_xml.py to the new,
+          somewhat shorter, way of defining xml elements.
+
+        * Rewrote and refactored programmatic/tools/ssi-pp.py to
+          programmatic/apache_ssi.py and programmatic/tools/ssi-pp.py
+
+        * Created admin/ directory
+          Moved programmatic/admin/index.html to admin/index.html
+          Moved todo.xhtml to admin/todo.xhtml
+        
+
+2003-02-16  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Incipient changes in the linkbar for the admin pages.
 
-2003-02-15  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-02-15  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added wgo-admin-{init,fini}.xhtml for the administration pages.
 
@@ -24,7 +43,7 @@
         * template.html: New includes and fixed a bug where <p> needs to be
         ended before starting a list.
 
-2003-02-14  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-02-14  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added the top-level Makefile and example.ssi as an example of
           how to translate an (x)html input file to an output file, using
@@ -70,7 +89,7 @@
         the site using this include file can validate it directly from the
         link.
 
-2003-02-10  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-02-10  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Code refactoring in contest/gallery.py and ancillary xhtml.py
           and x_xml.py.  Found and fixed more instances of input buttons
@@ -105,7 +124,7 @@
                 unix/index.html
                 unix/howtos/index.html
 
-2003-02-09  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-02-09  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added new include files:
                 includes/wgo-layout.xhtml
@@ -148,7 +167,7 @@
 
         * style/default.css: Moved the style in mail_lists.html here.
 
-2003-02-02  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-02-02  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added programmatic/about/ChangeLogs/{film-gimp,gimp-print} to
         slurp up the current ChangeLog from their respective cvs
@@ -178,14 +197,14 @@
         * includes/urls_mailinglist.inc: Add a small description for
         GIMP-Images mailinglist. Stolen from their site about the list.
 
-2003-01-26  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-01-26  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * todo.xhtml: Prettification
 
         * Added crontab/ directory, modified install.excludes and
         install.sh to accomodate the new directory.
 
-2003-01-25  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-01-25  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * The new styles in style/wgo-decor.css and style/wgo-layout.css
         validate with no warnings.
@@ -200,13 +219,13 @@
         * TODO: added a section about table-less design with links to
         Helvetix' example implementation
 
-2003-01-20  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-01-20  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Supporting ChangeLogs
         * RDF and RSS support
         
 
-2003-01-13  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-01-13  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added an example section for httpd.conf
 
@@ -220,7 +239,7 @@
         * programmatic/contest/Makefile: get the python interpreter to use
         from the environment.
 
-2003-01-05  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+2003-01-05  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Replaced the news/ directory with a new programmatic/ directory
         which contains scripts for the Contest, and site administration.

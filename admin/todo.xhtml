@@ -1,0 +1,503 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Development TODO List</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<style type="text/css">
+table.todo p {
+  margin: .5em 0 .5em 0;
+  padding: 0 0 0 0;
+}
+
+table.todo {
+  font-size: small;
+  font-weight: normal;
+  text-align: justify;
+  vertical-align: top;
+}
+
+table.todo th {
+  border-bottom: medium double black;
+}
+
+table.todo > tbody > tr {
+  border: 1px solid red;
+}
+
+table.todo > tbody > tr > td {
+  border-bottom: 1px solid black;
+  vertical-align: top;
+  font-weight: bold;
+  padding: 0 0 0.5em 0.5em;
+}
+
+table.todo > tbody > tr > td + td{
+  border-bottom: 1px solid black;
+  font-weight: normal;
+}
+
+table.todo > tbody > tr > td + td + td{
+  border-bottom: 1px solid black;
+  font-weight: normal;
+}
+</style>
+<!--#include virtual="/includes/wgo-admin-init.xhtml" -->
+
+Guidelines:
+<ul>
+<li>Status is where we try and describe the current status relevant to the other developers.  It's not a weblog.</li>
+<li>Who is whomever has the "baton" and is running with it.  Dropping
+    the "baton" (eg. no progress) or handing it off (eg. another
+    developer) means the name is deleted or replaced.</li>
+<li>What is a one-line name for the task</li>
+<li>Description/Discussion is a place for the requirements for the task are listed and/or the current status of the debate is summarised.</li>
+</ul>
+
+<table class="todo" cellpadding="0" cellspacing="0"><tbody>
+    <tr><th>Status</th><th>Who</th><th>What</th><th>Description/Discussion</th></tr>
+    <tr><td>Done<br/>no install yet</td><td>Helvetix</td><td></td><td>
+        A crontabs directory in CVS is fine, it should be put in
+        install.exclude, and install.sh modified to put them in the
+        right place.
+      </td></tr>
+    <tr>
+      <td>Maybe</td>
+      <td>Brix</td>
+      <td>Table-less layout</td>
+      <td>
+        getting rid of the tables in the design would be good, I
+        think.  Helvetix has made an example of how this could be
+        done. Take a look at: contest/indexhtml Helvetix also wrote a
+        <a href="http://oak.mysterious.org/~helvetix/Notes/wgo-layout.xhtml">document</a>
+        on how this new layout could be used:
+      </td></tr>
+    <tr>
+      <td>Done</td>
+      <td>Helvetix</td>
+      <td>about/ChangLogs/:</td>
+      <td>
+        Changelog.pl: the wgo2 wrapper needs to be stripped from this
+        script and replaced with &lt;pre&gt;&lt;/pre&gt; tags as the
+        only people who read these for real will probably get pissy
+        with the nice html.  this is the ChangeLog from the current
+        stable tarball.
+        <br />
+        the rest  of the script needs to be written for the remaining ChangeLogs
+        <br />
+        it would be nice if this could be rewritten in python so it can
+        easily be added to the rest of the web-making stuff.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/authors.html</td>
+      <td>
+        This page is perfect.  However it was generated from a script
+        that apparently wasn't committed.  I might have the script,
+        someone else might have the script but until the script is
+        located and commited, this page will need to be made so that
+        it will automatically be gernerated from a gimp source tree on
+        command.
+        <p style="font-style: italic;">
+          What's the status on this?  A build of the gimp produces the
+          file <tt>authors/contributors</tt> and this file can be used
+          as input to wgo/about/authorsgen.pl to produce
+          <tt>authors.html</tt> -- Helvetix
+        </p>
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/awards.html</td>
+      <td>
+        This page needs to be compiled.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/history.html</td>
+      <td>
+        This page needs to be compiled.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/index.html</td>
+      <td>
+        The rest of the html in the about directory needs to be completed. 
+        <p>
+        The mail list archives need to be searched for news worthy items to fill in
+        the GIMP in sections.  I know that much of this is there.
+        </p>
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/introduction.html</td>
+      <td>
+        Complete rewrite would suit me fine.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/mediakit.html</td>
+      <td>
+        Needs to be rendered useful by someone who knows what the
+        media would need to have here.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>about/screenshots.html</td>
+      <td>
+        I stole a gif from simon of all of the menu tree.  Other
+        screenshots can prolly be extracted from the docs.  Someone
+        who understands docbook might look into this or someone can
+        talk to the gimp-doc people.
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td>Carol</td>
+      <td>about/splash-1.1.html</td>
+      <td>
+        done.
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td>Carol</td>
+      <td>about/splash-1.3.html</td>
+      <td>
+        Done this far in time.  A script can be written that takes the
+        latest splash out of the tarball and rewrites the page, saving
+        the question mark one as the next tarball image ...
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td>Carol</td>
+      <td>about/splash-1.3.html</td>
+      <td>
+        Done this far in time.  A script can be written that takes the latest splash out
+        of cvs and rewrites the page, saving the question mark one as the next 
+        CVS version ...
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td>Carol</td>
+      <td>about/splash-stable.html</td>
+      <td>
+        Done this far in time.  Can prolly just be hand entered there
+        when the time is right.
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td>Carol</td>
+      <td>books/index.html</td>
+      <td>
+        Done this far in time.  I don't yet know of a good way for the
+        gimp authors to communicate with the web team.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>bugs/index.html</td>
+      <td>
+        I have no idea what should be done for this document.  Perhaps
+        raphael could handle some content.  Maybe bex's howto could be
+        altered.  Some of those insta-bugzilla page links might be
+        nice.
+      </td></tr>
+    <tr>
+      <td>done<br />archiving not done</td>
+      <td>Helvetix</td>
+      <td>contest/index.html<br />
+        contest/archives/index.html
+      </td>
+      <td>
+        Contest. People upload their potential splash images. when a
+        new tarball is released, the collection is archived and a new
+        one begins.  The whole thing needs to be made.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>development/index.html</td>
+      <td>
+        I suggest letting the developers determine what goes here.
+        urls, suggestions on how to contribute, links to bug lists.
+        what have you.  Non-dynamic information then let the
+        interested developers play on developer.gimp.org where all is
+        forgiven if it goes alittle stale.  This page should start out
+        stale.  Easy to maintain that way.
+   
+        The last 10 ChangeLog entries from any gimp project that has
+        annon cvs access.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>docs/cookbook/</td>
+      <td>
+        Some outline and a place to upload nice little gimp script
+        pieces.  This was nomis and akks very good idea, and should be
+        implemented.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>docs/developer_docs/</td>
+      <td>
+        I need to figure out how to get these to build on my computer
+        and then i will know how to get them to the web page.  They do
+        build for people?
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>docs/gimp-help/</td>
+      <td>
+        Needs to be put into place.  Would be nice to figure out a way
+        to update it every time there is a new gimp tarball.
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td></td>
+      <td>docs/gimp-print/</td>
+      <td>
+        Put into place.  Would be nice to figure out a way to update
+        it every time there is a new gimp-print tarball.
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td>Carol</td>
+      <td>docs/gimp-python/</td>
+      <td>
+        Put into place.  I am assuming this will be included with the
+        future gimp documentation. So this is done.
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td>Carol</td>
+      <td>docs/scheme_plugin/</td>
+      <td>
+        Put into place.  A one time document. We are lucky to have it. Finished.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>links/index.html<br />
+        includes/url-*.inc
+      </td>
+      <td>
+        This has a good start.  More little packets of urls need to be
+        created and then used on all of the web pages.  Like a little
+        packet describing brush tutorials can go here and on the brush
+        resource page. etc.  These are free easily maintainable urls.
+        wow!  It just needs to be loaded up.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>macintosh/index.html</td>
+      <td>
+        Maybe jyon, akk or patti could throw a little something on
+        here.  We can add to it and improve it via bugzilla as is
+        called for.
+      </td></tr>
+    <tr>
+      <td>done</td>
+      <td></td>
+      <td>
+        mail_lists.html<br />
+        url-gimp-maillists.inc
+      </td>
+      <td>
+        Better list descriptions and more lists, but otherwise 'tis
+        beautiful
+        <p style="font-style: italic;">
+          Is there more mailinglists that could be put here? -- scizzo
+        </p>
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>os2/index.html</td>
+      <td>
+        I will go through the archives, find some urls and reiterate
+        info about the maillist.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>resources/</td>
+      <td>
+        These pages need to be autogenerated from the gimp itself.  I
+        am using python. I am having some problems reading them two at
+        a time.  I want to write these.  Leave them be.  Unless you
+        have a quick clue about how to use the damn range(bleh)
+        function.
+        <br />
+        Perhaps the page could suggest that other who want to share
+        resources go to bugzilla.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>resources/brushes/index.html</td>
+      <td>
+        After i get the page to render properly (two at a time, not
+        half and then the other half)  I would like to add a page of
+        additional brushes, as i always liked to download a little
+        something or other when visiting a software site.  I will need
+        to be able to read the gimprc for that.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>resources/gradients/index.html</td>
+      <td>
+        After i get the page to render properly (two at a time, not
+        half and then the other half) i would like to add a page of
+        additional gradients, as i always liked to download a little
+        something or other when visiting a software site.  I will need
+        to be able to read the gimprc for that.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>resources/patterns/index.html</td>
+      <td>
+        after i get the page to render properly (two at a time, not
+        half and then the other half) i would like to add a page of
+        additional patterns, as i always liked to download a little
+        something or other when visiting a software site.  i will need
+        to be able to read the gimprc for that.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>resources/palettes/index.html</td>
+      <td>
+        This one needs to be written.  Will be tricky.  I need to know
+        the size of the darn dialog window for the croping of the
+        screenshot.  Same thing about using the gimprc to find the
+        palettes located only in ~.gimp-1.2/palettes.  And, this will
+        be complicated with the gradients.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td>scizzo</td>
+      <td>tutorials/</td>
+      <td>
+        Scizzo has a schedule for this and is following it.
+        <p>
+        I feel that the screenshots should only be resized when
+        necessary.  I think the original screenshots should be
+        maintained as often as possible, due to the nature of the
+        tutorials.  To make the screenshots follow the doc rules means
+        to make at least one part of one of the tutorials not apply,
+        for instance.  My window manager sends information to the
+        window decoration.  I think this is significant as i never
+        told it to (percentage of view and mode) but have always
+        appreciated the info occuring there.
+        </p>
+        <p>
+        A style needs to be determined for the weird tables in the
+        perlotine tutorial.
+        </p>
+        <p>
+        The rest of the authors need to be contacted and a collection
+        of "permission granted" emails should be compiled.
+        </p>
+ <p style="font-style: italic;">
+ No new screenshots, tables, authors permission and image fixes. 
+ Otherwise I feel that this is done. -- scizzo
+ </p>
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/</td>
+      <td>
+        This section needs some love.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/INSTALL</td>
+      <td>
+        Perhaps this should be broken down into "Installation
+        Instructions" and then offer INSTALL (as copied from the
+        current tarball) and HACKING (copied daily from CVS).  README,
+        README.i118, README.perl also.  These scripts need to be
+        written.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/gimprc*, gtkrc*</td>
+      <td>
+        Extra tips and explanation can and should be added to this.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/howtos/</td>
+      <td>
+        Fonts would be good.  Window managers would also be good,
+        especially since future gimps rely on good window manager
+        management.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/howtos/cvs-stable.html</td>
+      <td>
+        This document should be split into getting gimp* from cvs and
+        compiling gimp*
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/howtos/cvsrc</td>
+      <td>
+        This needs to be fixed so that it doesn't cause redhat users
+        problems.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/howtos/gimpenv</td>
+      <td>
+        this script needs to be finished and documented here (prolly
+        in the compiling) a similar script might be written to set the
+        cvs flags properly.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td>Helvetix</td>
+      <td>unix/man*-1.2.html</td>
+      <td>
+        This will probably not be changing. But it would still be nice
+        to build a script that will auto-generate this with each new
+        tarball to be ready for the 1.4 site.
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>unix/tile-cache.html/</td>
+      <td>
+        Perfect. Needs some evil formulas to be complete.  
+        <p style="font-style: italic;">
+          What formulas are needed? -- Helvetix
+        </p>
+      </td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>windows/</td>
+      <td>
+        I dunno. I don't want to even look at this now.  Maybe i can
+        get becky to use this page to download and use WINGimp and see
+        how that goes.
+      </td></tr>
+  </tbody></table>
+<!--#include virtual="/includes/wgo-admin-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

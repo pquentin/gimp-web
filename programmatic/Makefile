@@ -62,11 +62,12 @@ install: install-common install-admin install-contest install-about
 
 install-common: all
 	install --mode=755 -d ${LIBDIR}
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py       > ${LIBDIR}/wgo.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xhtml.py     > ${LIBDIR}/xhtml.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' rdf.py       > ${LIBDIR}/rdf.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' x_xml.py     > ${LIBDIR}/x_xml.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' changelog.py > ${LIBDIR}/changelog.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py        > ${LIBDIR}/wgo.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' apache_ssi.py > ${LIBDIR}/apache_ssi.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xhtml.py      > ${LIBDIR}/xhtml.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' rdf.py        > ${LIBDIR}/rdf.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' x_xml.py      > ${LIBDIR}/x_xml.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' changelog.py  > ${LIBDIR}/changelog.py
 	install            wgo_config.py ${LIBDIR}
 	install --mode=644 extended.css  ${DocumentRoot}/style/
 	install --mode=644 rdf-news.css  ${DocumentRoot}/style/

@@ -37,21 +37,20 @@ import xhtml
 def head_boilerplate(css=[], headers=[]):
   headers = headers + ["Content-type: text/html"]
   for h in headers: print h
-  
-  css = css + [wgo.config.admin_dir + "wgo-admin.css"]
-  
-  return (wgo.header("www.gimp.org - Administration", css))
+
+  return (header("www.gimp.org - Administration", css))
 
 def header(title, links):
+  print
   print wgo.xhtml_init()
   
   print xhtml.title(title)
   print wgo.look_feel()
 
-  print xhtml.link(None, {"rel" : "stylesheet", "href" : "/style/extended.css", "type" : "text/css", "media" : "screen"})
-  print xhtml.link(None, {"rel" : "stylesheet", "href" : "/style/wgo-admin.css", "type" : "text/css", "media" : "screen"})
+  print xhtml.link({"rel" : "stylesheet", "href" : "/style/extended.css", "type" : "text/css", "media" : "screen"})
+  print xhtml.link({"rel" : "stylesheet", "href" : "/style/wgo-admin.css", "type" : "text/css", "media" : "screen"})
   for href in links:
-    print xhtml.link(None, {"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen"})
+    print xhtml.link({"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen"})
     pass
 
   print wgo.page_init('admin')

@@ -27,77 +27,7 @@ import re
 import string
 import getopt
 
-Version = """SSI Preprocessor, version $Revision$
-Copyright (C) 2003 Helvetix Victorinox, a pseudonym.
-This is free software; see the source code for copying conditions.
-There is ABSOLUTELY NO WARRANTY; not even for MERCHANTIBILITY or
-FITNESS FOR A PARTICULAR PURPOSE.
-
-Report bugs to: <HELVETIX@Mysterious.ORG>"""
-
-DocumentRoot="./"
-
-Variables = { }
-
-def var_rvalue(name):
-  s = ""
-
-  _last = 0
-  for l in re.finditer("\${(\w+)}|\$(\w+)", name):
-    s += name[_last:l.start()]
-    v = filter(lambda x: x != None, l.groups())
-    v = v[0]
-    s += Variables[v]
-    _last = l.end()
-    pass
-
-  s += name[_last:]
-  return (s)
-
-
-def attr_parse(s):
-  avlist = { }
-  map(lambda x: avlist.update({x[0]: x[1]}), re.findall("(\w+)=\"([^\"]*)\"\s*", s))
-  return (avlist)
-
-
-def process(filename, fpout):
-  _last = 0
-
-  if filename != '-':
-    fp = open(filename, "r")
-    body = fp.read()
-    fp.close()
-  else:
-    body = sys.stdin.read()
-    pass
-
-
-  for ssi in re.finditer("<!--#(\w+)\s+(.*)\s*-->", body):
-    fpout.write(body[_last:ssi.start()])
-
-    element = ssi.expand("\\1")
-    attrs = attr_parse(ssi.expand("\\2"))
-
-    if element == "include":
-      process(DocumentRoot + attrs["virtual"], fpout)
-    elif element == "set":
-      value = var_rvalue(attrs["value"])
-      Variables.update({attrs["var"]: value})
-    elif element == "echo":
-      fpout.write(var_rvalue(attrs["var"]))
-      pass
-    else:
-      print >>sys.stderr, "Unsupported SSI element", element, "in", body[ssi.start():ssi.end()]
-      sys.exit(1)
-      return
-
-    _last = ssi.end()
-    pass
-  
-  fpout.write(body[_last:])
-  return
-
+import apache_ssi
 
 def usage(name):
   print "Usage:", name, "[OPTION] [FILE]..."
@@ -114,19 +44,20 @@ def usage(name):
   
     
 if __name__ == "__main__":
-  
-  Variables.update(os.environ)
+
+  ssi = apache_ssi.processor()
 
   fpout = sys.stdout
   
   try:
-    opts, args = getopt.getopt(sys.argv[1:], "ho:D:vr:", ["help", "output=", "version", "DocumentRoot="])
+    opts, args = getopt.getopt(sys.argv[1:], "ho:D:vr:M", ["help", "output=", "version", "DocumentRoot=", "M"])
   except getopt.GetoptError:
     usage(sys.argv[0])
     sys.exit(2)
     pass
   
-  output = None
+  dependency_list = False
+  
   for o, a in opts:
     if o in ("-h", "--help"):
       usage(sys.argv[0])
@@ -138,21 +69,28 @@ if __name__ == "__main__":
       pass
 
     if o in ("-r", "--DocumentRoot"):
-      DocumentRoot = a + "/"
+      ssi.document_root = a + "/"
       pass
 
+    if o in ("-M", "--M"):
+      dependency_list = True
+      pass
+    
     if o in ("-v", "--version"):
-      print Version
+      print ssi.Version
       sys.exit()
       pass
 
     if o in ("-D", "--define"):
-      Variables.update(dict(map(lambda b: filter(lambda a: a != '', b),
-                                re.findall("(\w+)=\"([^\"]*)\"\s*|(\w+)=([^\s]*)\s*", a))))
+      ssi.variables.update(dict(map(lambda b: filter(lambda a: a != '', b),
+                                    re.findall("(\w+)=\"([^\"]*)\"\s*|(\w+)=([^\s]*)\s*", a))))
       pass
     pass
 
-  for a in args:
-    process(a, fpout)
+  if dependency_list:
+    print >>fpout, map(lambda a: ssi.depend(a), args)
+  else:
+    print >>fpout, string.join(map(lambda a: ssi.parse(a), args))
     pass
-  
+
+  pass

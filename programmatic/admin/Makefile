@@ -42,7 +42,6 @@ install-first: all
 	install --mode=744 dot-password `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`/passwords
 
 	install wgo-admin.css           `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
-	install index.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 	install howto.html              `${PYTHON} -c 'import wgo_config; print wgo_config.admin_path'`
 
 install-news: news

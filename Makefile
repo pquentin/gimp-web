@@ -1,9 +1,14 @@
+#
+#
+
+export PYTHONPATH=programmatic:
 
 %.html: %.ssi
 	programmatic/tools/ssi-pp.py --DocumentRoot=${DocumentRoot} --output=$@ $<
 
 %.xhtml: %.ssi
 	programmatic/tools/ssi-pp.py --DocumentRoot=${DocumentRoot} --output=$@ $<
+
 
 TARGETS=example.xhtml
 

@@ -107,9 +107,9 @@ def submit(form):
 
   print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest.
-                   From here you may submit images to be considered as candidates
-                   for a "splash" image.  We appreciate your participation, but we
-                   offer No Promises on what may become of your image here.""")
+  From here you may submit images to be considered as candidates
+  for a "splash" image.  We appreciate your participation, but there are
+  No Promises on what may become of your image here.""")
 
   print xhtml.div("Submit Your Image", {"class" : "subtitle"})
 
@@ -270,7 +270,10 @@ def main(argv):
   else:
     mode = "manual"
     pass
-  
+
+  submit(form)
+  return (0)
+
   if mode == "manual":          sys.exit(submit_manually(argv[1:]))
   elif mode == "form":          submit(form)
   elif mode == "preview":       preview(form)

@@ -49,9 +49,9 @@ def wgo_xhtml(filename):
   print xhtml.title("GIMP - ChangeLog")
   print '<base href="/" />'
   
-  print xhtml.link(None, {"rel" : "stylesheet", "href" : extended_css, "type" : "text/css", "media" : "screen"})
-  print xhtml.link(None, {"rel" : "alternate stylesheet", "href" : "/about/ChangeLogs/changelog-xhtml.css", "type" : "text/css", "media" : "screen"})
-  print xhtml.link(None, {"rel" : "stylesheet", "href" : "/about/ChangeLogs/changelog-xhtml-mono.css", "type" : "text/css", "media" : "screen", "title" : "monospaced"})
+  print xhtml.link({"rel" : "stylesheet", "href" : extended_css, "type" : "text/css", "media" : "screen"})
+  print xhtml.link({"rel" : "alternate stylesheet", "href" : "/about/ChangeLogs/changelog-xhtml.css", "type" : "text/css", "media" : "screen"})
+  print xhtml.link({"rel" : "stylesheet", "href" : "/about/ChangeLogs/changelog-xhtml-mono.css", "type" : "text/css", "media" : "screen", "title" : "monospaced"})
 
 
   print xhtml.include('%s/includes/wgo-look-feel.xhtml' % (wgo.config.DocumentRoot_path))

@@ -163,7 +163,7 @@ def folio_init(title=""):
   print wgo.xhtml_init()
   print xhtml.title(title)
   print wgo.look_feel()
-  print xhtml.link(None, {"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css", "media" : "screen"})
+  print xhtml.link({"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css", "media" : "screen"})
   print wgo.page_init()
   return
 

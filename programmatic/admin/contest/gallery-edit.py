@@ -133,6 +133,7 @@ def delete_image(form):
 
   name = form["name"].value
   entry = wgo_contest.gallery_image(name)
+
   entry.delete()
 
   wgo_admin.footer()

@@ -79,6 +79,9 @@ install-news: all
 	install icons/gimp_construction.png      `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/release-0.1.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/release-dev.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
+	install icons/wilber_painter.png         `${PYTHON} -c 'import news_config; print news_config.icon_path'`
+	install icons/wilber_wizard.png          `${PYTHON} -c 'import news_config; print news_config.icon_path'`
+	install icons/wilber_work.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 
 	install news_config.py ${LIBDIR}
 	install news-receiver  ${LIBDIR}

@@ -213,13 +213,14 @@ def footer(prefix=None):
   return (wgo_admin.footer(prefix))
 
 icons = {
-  "--none--"          : "",             # must be present
-  "Default"           : "gimp_construction.png", # must be present
-  "construction"      : "gimp_construction.png",
-  "developer"         : "gimp_code.png",
-  "developer-release" : "release-dev.png",
-  "release"           : "release-0.1.png"
-}
+  "--none--"                  : "",             # must be present
+  "Default"                   : "gimp_construction.png", # must be present
+  "Developer"                 : "gimp_code.png",
+  "Developer Release"         : "release-dev.png",
+  "Release"                   : "release-0.1.png",
+  "Wilber the Builder"        : "wilber_painter.png",
+  "Wilber the Wizard"         : "wilber_wizard.png",
+  "Wilber the Painter Builder" : "wilber_work.png" }
 
 def icon_option_list(selected):
   options = ""
@@ -245,10 +246,13 @@ def icon_by_name(name):
 icon_descs = {
   "--none--"          : "",
   "Default"           : "[?]",
-  "construction"      : "[Under Construction]",
+  "construction"      : "[Wilber the Builder]",
   "developer"         : "[Developers]",
-  "developer-release" : "[Release for developers]",
-  "release"           : "[Release]"
+  "developer-release" : "[Developer Release]",
+  "release"           : "[Release]",
+  "wilber_painter"    : "[Wilber the Painter]",
+  "wilber_wizard"     : "[Wilber the Wizard]",
+  "wilber_work"       : "[Wilber the Painting Builder]"
 }
 
 def icon_desc_by_name(name):

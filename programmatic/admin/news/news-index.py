@@ -98,7 +98,7 @@ def main(queue):
     if 0:
       print xhtml.hyperlink("XML", { "class" : "faux-button",
                                      "style" : "background: #ff6600 none; color: white; font-weight: bold; padding: 0 .5em 0 .5em; font-size: medium;",
-                                     "href"  : wgo.config.spool_dir + queue + "/news.rdf"})
+                                     "href"  : wgo_news.config.news_dir + queue + "/news.rdf"})
       pass
 
     print xhtml.include(wgo_queue.generate_blotter(queue))

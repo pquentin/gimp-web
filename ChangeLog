@@ -1,3 +1,9 @@
+2002-11-25 carol <carol@gimp.org>
+
+	* about/splash.html,about/splash/*.png  and about/splash/*.txt:  added
+    the splash images from cvs (yosh co'ed them) resized them and put them
+    in the table in splash.html.
+
 2002-11-24 carol <carol@gimp.org>
 
 	* about/splash.html: added this file.

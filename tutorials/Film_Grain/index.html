@@ -45,7 +45,8 @@
   <img src="sailboat-08-grain-masked-rebalanced.jpg" alt=""/>
 </p>
 <p>
-  First, desaturate the image. You can do this using <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Desaturate</span> or the <b>Desaturate</b> filter 
+  First, desaturate the image. You can do this using 
+  <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Desaturate</span> or the <b>Desaturate</b> filter 
   provided with the MathMap plugin.(The latter actually returns the luminosity of an image, not a desaturated version. 
   Technically, it's better, but it's unnecessary for most images.)
 </p>
@@ -75,7 +76,7 @@
   So far, so good. But the noise is too strong in the shadows and highlights of the image. To demphasize it, we can use a layer mask.
   <br />
   First, add a layer mask to the noise layer. Then, make a copy of the image, gaussian blur it with a radius of 15 pixels, and paste 
-  the blurred image into the layer mask. Use <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Invert</span> to swap bright for dark. 
+  the blurred image into the layer mask. Use <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span> to swap bright for dark. 
   This will cause the grain to show through strongly in the shadows and midtones, but not in the highlights.
 </p>
 
@@ -84,7 +85,7 @@
   <img src="sailboat-08-grain-masked-rebalanced.jpg" alt=""/>
 </p>
 <p>
-  Next, use <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Curves</span> to adjust the value of the layer mask. 
+  Next, use <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Curves</span> to adjust the value of the layer mask. 
   We want to make the midtones bright, and the shadows and hightlights dark.
   You can adjust the curves to taste. Curves Dialog This increases the grain in the midtones, and reduces it elsewhere.
   <br />
@@ -96,10 +97,11 @@
   You can use various brushes in the mask layer to selectively edit the grain. You can also use the bucket tool in Pattern Fill, Grey Addition 
   mode to fill a selection with grain directly.
   <br />
-  Many kinds of noise can be created using <span class="filter">&lt;Image&gt;Filters-&gt;Noise-&gt;Scatter HSV</span>. You can apply this directly to an image, 
+  Many kinds of noise can be created using 
+  <span class="filter">&lt;Image&gt; Filters -&gt; Noise -&gt; Scatter HSV</span>. You can apply this directly to an image, 
   or to a film grain pattern.
   <br />
-  To denoise an image, try <span class="filter">&lt;Image&gt;Filters-&gt;Blur-&gt;Selective Guassian Blur</span>. It's slow, but very nifty.
+  To denoise an image, try <span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Selective Guassian Blur</span>. It's slow, but very nifty.
 </p>
 
 <p>

@@ -23,10 +23,12 @@
 </p>
 <ol>
   <li>sharpen only the luminosity channel, and</li>
-  <li>create a channel mask that contains only the edges in the image. Then you can load the channel mask as a selection and apply the unsharp mask to just the edges.</li>
+  <li>create a channel mask that contains only the edges in the image. 
+  Then you can load the channel mask as a selection and apply the unsharp mask to just the edges.</li>
 </ol>
 <p>
-  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a Photoshop tutorial on the luminous-landscape.com 
+  Giving credit where credit is due: I did not come up with this method. 
+  I adapted it for The GIMP from a Photoshop tutorial on the luminous-landscape.com 
   photography web site (great web site BTW, I recommend it).
 </p>
 <p>
@@ -35,7 +37,8 @@
 
 <h2>The Procedure</h2>
 <p>
-  You may want to maximize your browser window to properly see this tutorial. I didn't want to shrink the image windows down like I usually do for the other tutorials 
+  You may want to maximize your browser window to properly see this tutorial. 
+  I didn't want to shrink the image windows down like I usually do for the other tutorials 
   since sharpening and noise are subtle and really show up better at these larger sizes.
 </p>
 
@@ -57,26 +60,34 @@
   <img src="image-lab-decomposed.jpg" alt=""/>
 </p>
 <p>
-  Duplicate the image by pressing <kbd>Ctrl+D</kbd> or right-click and select <span class="filter">&lt;Image&gt;Image-&gt;Duplicate</span>. 
+  Duplicate the image by pressing <kbd>Ctrl+D</kbd> or right-click and select 
+  <span class="filter">&lt;Image&gt; Image -&gt; Duplicate</span>. 
   It might be wise to minimize the original image window now. You can open it later to compare to the result.
   <br />
-  Right-click on the duplicate image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. In the decompose dialog box, 
+  Right-click on the duplicate image and select 
+  <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Decompose</span>. In the decompose dialog box, 
   select LAB (or HSV; see Note 1). Check the "As layers" checkbox (see Note 2) and click OK.
   <br /><br />
-  This will create a new window with the image decomposed into the Luminosity ("brightness"), A and B channels as 3 layers. This will allow us to isolate and sharpen 
+  This will create a new window with the image decomposed into the Luminosity ("brightness"), 
+  A and B channels as 3 layers. This will allow us to isolate and sharpen 
   the luninosity channel which is a) the most important, and b) should be the cleanest in terms of noise.
   <br /><br />
   At this point I usually turn off visibility of the A and B layers in the Layers dialog by clicking on the "eyes".
 </p>
 <p>
-  <b>Note 1:</b> if you happen to have an older version of the compose/decompose plug-in it may not have the LAB option. In that case use HSV (hue/saturation/value) instead. 
-  For any reference to the "LAB" image or "luminosity" channel below, substitute the "HSV" image/"value" window. The LAB option was not in my initial version of the GIMP (ver 1.2.1), 
-  but I got the newer version of the plug-in at the <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself. Don't worry if you don't have it; HSV works great too.
+  <b>Note 1:</b> if you happen to have an older 
+  version of the compose/decompose plug-in it may not have the LAB option. In that case use HSV (hue/saturation/value) instead. 
+  For any reference to the "LAB" image or "luminosity" channel below, substitute the "HSV" image/"value" window. 
+  The LAB option was not in my initial version of the GIMP (ver 1.2.1), 
+  but I got the newer version of the plug-in at the 
+  <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself. Don't worry if you don't have it; HSV works great too.
 </p>
 <p>
-  <b>Note 2:</b> in the older version of the decompose plug-in there is no "As layers" checkbox; instead it will create the three channels as separate windows rather than three layers in one window. 
+  <b>Note 2:</b> in the older version of the decompose plug-in there 
+  is no "As layers" checkbox; instead it will create the three channels as separate windows rather than three layers in one window. 
   It really doesn't matter if you do it this way; the layers way just reduces the clutter on your screen. If you don't have the "As layers" option, 
-  I suggest you minimize (but not close) the hue and saturation (or A and B) windows. We'll need them later, but you don't want to accidentally pick one of them in the next few steps.
+  I suggest you minimize (but not close) the hue and saturation 
+  (or A and B) windows. We'll need them later, but you don't want to accidentally pick one of them in the next few steps.
 </p>
 
 <h2>Step 3</h2>
@@ -85,17 +96,23 @@
   <img src="image-edgedetect-grayscale.jpg" alt=""/>
 </p>
 <p>
-  Go to the duplicate image. Right-click and select <span class="filter">&lt;Image&gt;Filters-&gt;Edge Detect-&gt;Edge</span>. In the Edge Detect dialog box, 
-  select a parameter value of the appropriate size for the edges in your image. You may need to experiment with this. For the example image I chose 6.
+  Go to the duplicate image. Right-click and select 
+  <span class="filter">&lt;Image&gt; Filters -&gt; Edge Detect -&gt; Edge</span>. In the Edge Detect dialog box, 
+  select a parameter value of the appropriate size for the edges in your image. 
+  You may need to experiment with this. For the example image I chose 6.
 </p>
 <p>
-  Now convert the edges image to grayscale by right clicking on it and selecting <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Grayscale</span>. 
+  Now convert the edges image to grayscale by right clicking on it and selecting 
+  <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Grayscale</span>. 
   This image is going to become our sharpening mask.
 </p>
 <p>
-  <b>Note:</b> in some tutorials they recommend converting to greyscale and then running the edge detection filter. The premise there (my guess) 
-  is that perhaps you don't want to find noise as edges. My thinking is that there may be an edge in color, but not tonality (e.g. transition between two light colors). 
-  Once you have converted to greyscale you may not be able to detect that edge any more. Besides, with a high enough edge detection parameter (here 6) you will avoid 
+  <b>Note:</b> in some tutorials they recommend converting to greyscale 
+  and then running the edge detection filter. The premise there (my guess) 
+  is that perhaps you don't want to find noise as edges. My thinking is that 
+  there may be an edge in color, but not tonality (e.g. transition between two light colors). 
+  Once you have converted to greyscale you may not be able to detect that edge any more. 
+  Besides, with a high enough edge detection parameter (here 6) you will avoid 
   detecting random CCD noise as edges.
 </p>
 
@@ -105,14 +122,17 @@
   <img src="image-edgedetect-grayscale-levels1.jpg" alt=""/>
 </p>
 <p>
-  The next step is to adjust the tonality a little so that areas that need sharpening are really white and anything that doesn't need sharpening at all is really black.
+  The next step is to adjust the tonality a little so that areas that need 
+  sharpening are really white and anything that doesn't need sharpening at all is really black.
   <br />
-  Open the Levels dialog (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Levels</span>). Bring the black point up and the white point down to filter 
-  out any insignificant edges. You may need to play around with the exact positions of the sliders. Click OK when the image outlines the significant edges 
-  in white and most everything else is black.
+  Open the Levels dialog (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Levels</span>). 
+  Bring the black point up and the white point down to filter 
+  out any insignificant edges. You may need to play around with the exact positions of the sliders. 
+  Click OK when the image outlines the significant edges in white and most everything else is black.
 </p>
 <p>
-  How much you'll need to tweak this really depends on the image. There wasn't a lot of spurious edges shown here, so a small adjustment was all that was necessary.
+  How much you'll need to tweak this really depends on the image. 
+  There wasn't a lot of spurious edges shown here, so a small adjustment was all that was necessary.
 </p>
 
 <h2>Step 5</h2>
@@ -121,8 +141,9 @@
   <img src="image-edgedetect-grayscale-levels-blur.jpg" alt=""/>
 </p>
 <p>
-  Now apply a gaussian blur (<span class="filter">&lt;Image&gt;Filters-&gt;Blur-&gt;Gaussian Blur</span>) to smooth out the edges a little. 
-  A radius of between 3 and 10 pixels (horizontal and vertical) should be enough. In the example I used 7.
+  Now apply a gaussian blur (<span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Gaussian Blur</span>) 
+  to smooth out the edges a little. A radius of between 3 and 10 pixels (horizontal and vertical) should be enough. 
+  In the example I used 7.
 </p>
 
 <h2>Step 6</h2>
@@ -131,7 +152,8 @@
   <img src="image-edgedetect-grayscale-levels2.jpg" alt=""/>
 </p>
 <p>
-  If you want to you can use Levels again to adjust the white and black points of the mask. I find this is usually a good idea after the blur.
+  If you want to you can use Levels again to adjust the white and black points of the mask. 
+  I find this is usually a good idea after the blur.
   <br />
   In this example I pulled the white point slider down a bit.
 </p>
@@ -157,14 +179,16 @@
   <img src="image-lab-pastemask.jpg" alt=""/>
 </p>
 <p>
-  Right-click in the blurred/edges image window and <span class="filter">&lt;Image&gt;Select-&gt;All</span>. Right-click again and select 
-  <span class="filter">&lt;Image&gt;Edit-&gt;Copy</span>. 
+  Right-click in the blurred/edges image window and 
+  <span class="filter">&lt;Image&gt; Select -&gt; All</span>. Right-click again and select 
+  <span class="filter">&lt;Image&gt; Edit -&gt; Copy</span>. 
   (Alternatively you can use keyboard shortcuts <kbd>Ctrl+A</kbd> and <kbd>Ctrl+C</kbd> in succession).
   <br /><br />
   In the Layers dialog, make sure the Sharpening Mask channel is selected. Go back to the LAB (value) window and paste 
-  (<span class="filter">&lt;Image&gt;Edit-&gt;Paste</span> or <kbd>Ctrl+V</kbd>).
+  (<span class="filter">&lt;Image&gt; Edit -&gt; Paste</span> or <kbd>Ctrl+V</kbd>).
   <br /><br />
-  Select the Layers tab in the Layers dialog and click on the anchor button (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
+  Select the Layers tab in the Layers dialog and click on the anchor button 
+  (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
 </p>
 
 <h2>Step 9</h2>
@@ -174,10 +198,12 @@
 </p>
 <p>
   Click on the Channels tab in the Layers dialog. You should see a tiny version of the sharpening mask in the channel icon, 
-  indicating that you properly pasted the sharpening mask into the new channel. At this point you may wish to click on the eye icon to make the sharpening mask invisible.
+  indicating that you properly pasted the sharpening mask into the new channel. 
+  At this point you may wish to click on the eye icon to make the sharpening mask invisible.
 </p>
 <p>
-  Select the Sharpening Mask channel and click the "Channel to Selection" button (<img src="channeltoselection.jpg" alt=""/>). You should see "marching ants".
+  Select the Sharpening Mask channel and click the "Channel to Selection" 
+  button (<img src="channeltoselection.jpg" alt=""/>). You should see "marching ants".
   <br />
   You can experiment with feathering the selection here if you want; I usually don't.
 </p>
@@ -189,16 +215,21 @@
   <img src="image-lab-sharpened-zoomed.jpg" alt=""/>
 </p>
 <p>
-  <b>Important:</b> in the Layers dialog, click on the Layers tab and make sure the luminosity layer (if HSV, Background layer of Value window) is selected, 
+  <b>Important:</b> in the Layers dialog, click on the Layers tab and make sure the luminosity layer 
+  (if HSV, Background layer of Value window) is selected, 
   and is the only one selected. We only want to sharpen the luminosity channel.
 </p>
 <p>
-  Apply an unsharp mask (<span class="filter">&lt;Image&gt;Filters-&gt;Enhance-&gt;Unsharp Mask</span>). You may want to experiment with the settings here. 
-  You will find that you can use much higher amounts of sharpening (than if the entire image were selected) without significantly degrading the image.
+  Apply an unsharp mask (<span class="filter">&lt;Image&gt; Filters -&gt; Enhance -&gt; Unsharp Mask</span>). 
+  You may want to experiment with the settings here. 
+  You will find that you can use much higher amounts of sharpening (than if the entire image were selected) 
+  without significantly degrading the image.
   <br /><br />
   In the example here I used Radius=1, Amount=2.0 (200% ?), Threshold=0.
   <br /><br />
-  Now get rid of the selection (right-click and <span class="filter">&lt;Image&gt;Select-&gt;None</span>) and zoom in (<kbd>=</kbd> key) to examine the results. 
+  Now get rid of the selection 
+  (right-click and <span class="filter">&lt;Image&gt; Select -&gt; None</span>) 
+  and zoom in (<kbd>=</kbd> key) to examine the results. 
   If you're not happy with the results, undo and try the sharpen step again with different parameters. 
 </p>
 
@@ -210,8 +241,10 @@
 <p>
   It's time to reconstruct our original image from the LAB (HSV) components.
   <br />
-  Right-click in the luminosity (value) window and select (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Compose</span>). In the Compose Options dialog, 
-  make sure that you have selected LAB (HSV) on the left and on the right that the Luminosity, A and B (Hue, Saturation and Value) components are matched up with their respective images.
+  Right-click in the luminosity (value) window and select 
+  (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Compose</span>). In the Compose Options dialog, 
+  make sure that you have selected LAB (HSV) on the left and on the right that the Luminosity, 
+  A and B (Hue, Saturation and Value) components are matched up with their respective images.
   <br /><br />
   Click OK; this should create a new composite image.
 </p>
@@ -226,7 +259,8 @@
   Examine the resulting image, zooming in to examine edge detail.
 </p>
 <p>
-  It may help to unminimize the original image for comparison. If you feel your image needs more/less sharpening, then go back to the LAB window, undo twice and redo the unsharp mask step above.
+  It may help to unminimize the original image for comparison. If you feel your image needs more/less sharpening, 
+  then go back to the LAB window, undo twice and redo the unsharp mask step above.
   <br /><br />
   When you are satisfied with the result you can close all the extraneous windows.
   <br />
@@ -238,7 +272,8 @@
   <li>Right image: sharpened with a typical unsharp mask filter (Radius=1, Amount=1.0 (100% ?), Threshold=0)</li>
 </ul>
 <p>
-  The smart sharpened image hardly shows any additional noise over the original image. Notice how the "regular" unsharp masked version at half the sharpening 
+  The smart sharpened image hardly shows any additional noise over the original image. 
+  Notice how the "regular" unsharp masked version at half the sharpening 
   amount has much more visible noise, especially in the shadows on the side of the face and in the door frame of the car.
   <br /><br />
   Check out the shadow noise in the larger images on the <a href="shortcuts.html">smart sharpening shortcuts and variations page</a>.
@@ -246,17 +281,20 @@
 
 <h2>Tips</h2>
 <ul>
-  <li>If this seems like too long and complicated of a process, you might be interested in looking at some shortcuts and variations that are still better than a simple sharpening step.</li>
-  <li>Some very well-respected experts on image manipulation (e.g. Real World Photoshop, Blatner and Fraser--great book) suggest that mode changes in and out of RGB are not to be taken lightly. 
+  <li>If this seems like too long and complicated of a process, you might be interested 
+  in looking at some shortcuts and variations that are still better than a simple sharpening step.</li>
+  <li>Some very well-respected experts on image manipulation (e.g. Real World Photoshop, 
+  Blatner and Fraser--great book) suggest that mode changes in and out of RGB are not to be taken lightly. 
   You can lose a suprising amount of information. For example, try the following experiment:</li>
 </ul>
 <ol>
   <li>Open a new blank image.</li>
   <li>Using the gradient tool, create a gradient from black to white across it.</li>
-  <li>Convert it to RGB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;RGB</span>).</li>
-  <li>Look at it's histogram (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Histogram</span>).</li>
-  <li>Convert it to LAB, by decomposing to LAB (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>), then do a compose on the LAB image back to RGB 
-  (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Compose</span>).</li>
+  <li>Convert it to RGB (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; RGB</span>).</li>
+  <li>Look at it's histogram (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Histogram</span>).</li>
+  <li>Convert it to LAB, by decomposing to LAB (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Decompose</span>), 
+  then do a compose on the LAB image back to RGB 
+  (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Compose</span>).</li>
   <li>Look at the new image's histogram.</li>
 </ol>
 <p>
@@ -269,7 +307,7 @@
 <p>
   Left image: Gradient in RGB
   <br />
-  Right image: RGB-&gt;LAB-&gt;RGB
+  Right image: RGB -&gt; LAB -&gt; RGB
 </p>
 <p class="images">
   <img src="gradient-hist.jpg" alt=""/>
@@ -278,7 +316,7 @@
 <p>
   Left image: Histogram of the RGB image.
   <br />
-  Right image: Histogram of the RGB-&gt;LAB-&gt;RGB image.
+  Right image: Histogram of the RGB -&gt; LAB -&gt; RGB image.
 </p>
 <p class="images">
   <img src="gradient-zoomed400.jpg" alt=""/>
@@ -287,12 +325,14 @@
 <p>
   Left image: Zoom 400% of the RGB image.
   <br />
-  Right image: Zoom 400% of the RGB-&gt;LAB-&gt;RGB image.
+  Right image: Zoom 400% of the RGB -&gt; LAB -&gt; RGB image.
 </p>
 <p>
-  Look at all the information that has been lost in the converted image! There is obvious posterization in the zoomed close up.
+  Look at all the information that has been lost in the converted image! 
+  There is obvious posterization in the zoomed close up.
   <br />
-  You are now thinking to yourself, "Good grief! Why on earth would he suggest changing modes to sharpen the luminosity channel if it has this kind of effect?" 
+  You are now thinking to yourself, "Good grief! Why on earth would he 
+  suggest changing modes to sharpen the luminosity channel if it has this kind of effect?" 
   <br /><br />
   Look at the histograms of the original image and the one smart sharpened on the luminosity channel:
 </p>
@@ -308,7 +348,8 @@
 <p>
   You can see that in practice, changing modes does not always have this drastic of an effect.
   <br /><br />
-  What should you do? I suggest trying it and look at the histogram! This is the beauty of the digital darkroom. If your image is not that noisy anyway, 
+  What should you do? I suggest trying it and look at the histogram! 
+  This is the beauty of the digital darkroom. If your image is not that noisy anyway, 
   then no need to change modes, as suggested in the <a href="shortcuts.html">shortcuts</a>. 
   However, this does point out a general piece of advice, which is to use the histogram regularly. 
   It is a great tool to monitor what is happening to your image "numerically" as you edit it.
@@ -330,9 +371,13 @@
   Right image: Smart sharpened
 </p>
 <p>
-  This example is kind of contrived. It doesn't really need much sharpening in the first place, and the smart-sharpened version looks over-sharpened. 
-  I include it here mainly because it is pretty noisy, so it really shows what happens when you sharpen noise, and how the smart sharpening technique doesn't affect the noise. 
-  For details on reducing CCD noise (using this image as an example), <a href="/tutorials/Reducing_CCD_Noise/">see this tutorial</a>.
+  This example is kind of contrived. It doesn't really need much sharpening in the first place, 
+  and the smart-sharpened version looks over-sharpened. 
+  I include it here mainly because it is pretty noisy, 
+  so it really shows what happens when you sharpen noise, 
+  and how the smart sharpening technique doesn't affect the noise. 
+  For details on reducing CCD noise (using this image as an example), 
+  <a href="/tutorials/Reducing_CCD_Noise/">see this tutorial</a>.
 </p>
 <p class="images">
   <img src="example2-edgesharpened-384x384.jpg" alt=""/>

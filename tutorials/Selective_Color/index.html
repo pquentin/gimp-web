@@ -14,9 +14,11 @@
 </p>
 <p>
   In this tutorial I will explain how to convert a color photograph to a B&amp;W one with color restored to selective areas. 
-  With the right subject this can give really striking results, as you can see for yourself. This technique is elsewhere referred to sometimes as "hand coloring" :-)
+  With the right subject this can give really striking results, as you can see for yourself. 
+  This technique is elsewhere referred to sometimes as "hand coloring" :-)
   <br /><br />
-  The basic technique is to duplicate the color photograph, convert the duplicate to B&amp;W, and paste it as a new layer on top of the color image. Add an opaque layer 
+  The basic technique is to duplicate the color photograph, 
+  convert the duplicate to B&amp;W, and paste it as a new layer on top of the color image. Add an opaque layer 
   mask and then selectively paint transparency into the upper mask, exposing the color photograph underneath.
   <br /><br />
   Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a reader comment I saw in 
@@ -39,10 +41,10 @@
   Duplicate the image (<kbd>Ctrl+D</kbd>).
   <br />
   By whatever method suits you best, convert the duplicate image to B&amp;W. Once you have gotten the B&amp;W version that you like, 
-  change it back to RGB mode (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;RGB</span>).
+  change it back to RGB mode (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; RGB</span>).
   <br /><br />
   In this example, I tried the <a href="/tutorials/Color2BW/#channelmixer">channel mixer</a>, but ended up in this case preferring 
-  a simple conversion to grayscale (<span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Grayscale</span>), then back to RGB.
+  a simple conversion to grayscale (<span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Grayscale</span>), then back to RGB.
 </p>
 
 <h2>Step 2</h2>
@@ -52,7 +54,8 @@
   <img src="layers2.jpg" alt=""/>
 </p>
 <p>
-  Open the Layers dialog (<kbd>Ctrl+L</kbd>). Make sure that the original color image is selected in the Image drop down box. Click on the new layer button at the bottom of the dialog.
+  Open the Layers dialog (<kbd>Ctrl+L</kbd>). Make sure that the original color image 
+  is selected in the Image drop down box. Click on the new layer button at the bottom of the dialog.
   <br />
   Here I've named the new layer "B&amp;W"
   <br />
@@ -65,7 +68,8 @@
   <img src="layers4.jpg" alt=""/>
 </p>
 <p>
-  Go to the B&amp;W image and select all, then copy (<kbd>Ctrl+A</kbd> then <kbd>Ctrl+C</kbd>). Then go to the color image window and paste (<kbd>Ctrl+V</kbd>). 
+  Go to the B&amp;W image and select all, then copy (<kbd>Ctrl+A</kbd> then <kbd>Ctrl+C</kbd>). 
+  Then go to the color image window and paste (<kbd>Ctrl+V</kbd>). 
   The B&amp;W image should be pasted into that layer, obscuring the color image.
   <br />
   Click the anchor button in the Layers dialog to anchor the pasted image.
@@ -79,7 +83,8 @@
   <img src="layers5.jpg" alt=""/>
 </p>
 <p>
-  In the Layers dialog, right-click on the B&amp;W layer and select "Add Layer Mask". In the Add Mask Options dialog, select White (Full Opacity).
+  In the Layers dialog, right-click on the B&amp;W layer and select "Add Layer Mask". 
+  In the Add Mask Options dialog, select White (Full Opacity).
 </p>
 
 <h2>Step 5</h2>
@@ -89,9 +94,10 @@
   <img src="image3.jpg" alt=""/>
 </p>
 <p>
-  Make sure that Black is selected as the foreground color in the toolbox. We're going to paint transparency into the layer mask to reveal the color image below.
+  Make sure that Black is selected as the foreground color in the toolbox. 
+  We're going to paint transparency into the layer mask to reveal the color image below.
   <br />
-  Bring up the Brushes dialog (<span class="filter">&lt;Image&gt;Dialogs-&gt;Brushes</span>) and select a big brush. 
+  Bring up the Brushes dialog (<span class="filter">&lt;Image&gt; Dialogs -&gt; Brushes</span>) and select a big brush. 
   In the toolbox, select the paint tool (<img src="paint.jpg" alt=""/>). Begin painting the interior of the parts you want to be in color.
 </p>
 
@@ -128,8 +134,10 @@
   <img src="tablet.jpg" alt=""/>
 </p>
 <ul>
-  <li>For this kind of fine paint work, a pen tablet like this Wacom one is very useful. For photo retouching you don't need any bigger than a 4x5 model.</li>
-  <li>In this example I restored the original color from the color image, but there is no reason that you couldn't paint other colors onto the second layer. 
+  <li>For this kind of fine paint work, a pen tablet like this Wacom one is very useful. 
+  For photo retouching you don't need any bigger than a 4x5 model.</li>
+  <li>In this example I restored the original color from the color image, 
+  but there is no reason that you couldn't paint other colors onto the second layer. 
   Just make sure that the image is selected and not the layer mask in the upper layer of the Layers dialog 
   (click on either the image icon or the mask icon to select the one you want to work on).</li>
   <li>Try blurring the lower color layer, or running one of the interesting "artistic" filters on it (pastels, oil painting, etc). 

@@ -22,7 +22,8 @@
   <img src="sobel.jpeg" alt=""/>
 </p>
 <p>
-  Straightforward Sobel edge detect (<span class="filter">&lt;Image&gt;Filters-&gt;Edge-&gt;Detect/Sobel</span>) of original (don't forget to save a copy of the original)
+  Straightforward Sobel edge detect (<span class="filter">&lt;Image&gt; Filters -&gt; Edge -&gt; Detect/Sobel</span>) 
+  of original (don't forget to save a copy of the original)
 </p>
 
 <h2>3. Equalised &amp; desaturated Sobel</h2>
@@ -30,8 +31,9 @@
   <img src="equalised_sobel.jpeg" alt=""/>
 </p>
 <p>
-  Bring out detail with an auto-equalise (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Auto/Equalize</span>) of the sobel edge detect, 
-  and convert it to greys using desaturate (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Desaturate</span>).
+  Bring out detail with an auto-equalise (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Auto/Equalize</span>) 
+  of the sobel edge detect, 
+  and convert it to greys using desaturate (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Desaturate</span>).
 </p>
 
 <h2>4. Curves window for how to do a highpass filter</h2>
@@ -40,7 +42,7 @@
 </p>
 <p>
   We only want the strong edges, otherwise it'll look crap. To get them, we eliminate the edges with small magnitude. 
-  The easiest way to do this is with the curves tool (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Curves</span>) like this.
+  The easiest way to do this is with the curves tool (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Curves</span>) like this.
 </p>
 <p>
   We set the curve type to free (which allows discontinuities), and then for the bottom 3/4 of the curve (or thereabouts) to 0. 
@@ -61,10 +63,12 @@
 </p>
 <p>
   Small trick to get to black-on-transparent. Invert the Sobel edge detect (you did keep a copy, right?) with 
-  <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Invert</span> and apply our highpass-filtered copy as a mask. 
+  <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span> and apply our highpass-filtered copy as a mask. 
   To do this, open the Layers &amp; Channels dialog (if it's not open already), and add a layer mask to the layer with the inverted edge detect layer 
-  (<span class="filter">&lt;Image&gt;Edit-&gt;Copy</span> with the highpass layer selected, <span class="filter">&lt;Layer&gt;Add Layer Mask</span> 
-  with the inverted edge layer selected, then select the mask and <span class="filter">&lt;Image&gt;Edit-&gt;Paste</span>) Since we kept the strong edges 
+  (<span class="filter">&lt;Image&gt; Edit -&gt; Copy</span> with the highpass layer selected, 
+  <span class="filter">&lt;Layer&gt; Add Layer Mask</span> 
+  with the inverted edge layer selected, then select the mask and 
+  <span class="filter">&lt;Image&gt; Edit -&gt; Paste</span>) Since we kept the strong edges 
   in the highpass filtered layer, this means that we end up with a rather nice black-on-transparent layer.
 </p>
 

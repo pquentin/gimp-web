@@ -44,10 +44,12 @@
   Here is what I get if I use the standard mode change to grayscale from RGB.
 </p>
 <p>
-  Duplicate the original image (<kbd>Ctrl+D</kbd>) and right-click on the copy. Select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Grayscale</span>. 
+  Duplicate the original image (<kbd>Ctrl+D</kbd>) and right-click on the copy. 
+  Select <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Grayscale</span>. 
   I don't know how this conversion works in the GIMP, but I have read that Photoshop uses a standard mix of the RGB channels for 
   their grayscale conversion: RED=30%, GREEN=59% and BLUE=11%. Supposedly this mix accounts for the eye's sensitivity to different colors. 
-  This formula does a pretty nice job in the general case, but some images do not work as well with it, particularly if the green channel component is not strong.
+  This formula does a pretty nice job in the general case, but some images do not work as well with it, 
+  particularly if the green channel component is not strong.
 </p>
 <p>
   I suspect the GIMP uses a similar formula. My experiments with the Channel Mixer (more on this below) support this.
@@ -60,11 +62,12 @@
 </p>
 <p>
   Here is what I get if I use desaturate instead. Duplicate the original image (<kbd>Ctrl+D</kbd>) and right-click on the copy. 
-  Select <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Desaturate</span>. Unlike the grayscale mode change above, 
+  Select <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Desaturate</span>. Unlike the grayscale mode change above, 
   the channels are not remixed in different percentages, so we should expect different results.
 </p>
 <p>
-  The result is visually different; note the increased contrast in the scales. Also, compare the 100% zoom views at right and in the previous grayscale example. 
+  The result is visually different; note the increased contrast in the scales. 
+  Also, compare the 100% zoom views at right and in the previous grayscale example. 
   You can see a lot  more noise in the desaturated zoomed view (examine the blurred area below the spikes). 
   The reason is that we are getting more blue and red channel noise, whereas in the grayscale mode change operation 
   the algorithm is giving us a remix of 60% of the clean, detailed green channel.
@@ -88,7 +91,8 @@
 </p>
 <p>
   A third method is to consider the red/green/blue channels of the image. Each one can be represented as an independent grayscale image. 
-  Right-click on the original image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. Select the RGB option and click OK.
+  Right-click on the original image and select <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Decompose</span>. 
+  Select the RGB option and click OK.
 </p>
 <p>
   Here you can see the three channels: red (top), green (middle) and blue (bottom). You can see that the red channel contains most 
@@ -106,8 +110,10 @@
   <img src="image-value-481x397.jpg" alt=""/>
 </p>
 <p>
-  Another possibility is to decompose to Hue/Saturation/Value components and consider the Value image (the other two are not usually useful for this purpose). 
-  Right-click on the original image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. Select the HSV option and click OK.
+  Another possibility is to decompose to Hue/Saturation/Value components and consider the Value image 
+  (the other two are not usually useful for this purpose). 
+  Right-click on the original image and select <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Decompose</span>. 
+  Select the HSV option and click OK.
 </p>
 
 <h2><a name="decomposeLAB">Via Decompose LAB</a></h2>
@@ -151,7 +157,7 @@
 </p>
 <p>
   The final technique is the Channel Mixer filter. Right-click on the original image and select 
-  <span class="filter">&lt;Image&gt;Filters-&gt;Color-&gt;Channel Mixer</span>.
+  <span class="filter">&lt;Image&gt; Filters -&gt; Color -&gt; Channel Mixer</span>.
 </p>
 <p>
   You'll get a dialog box like the one at right. Click the checkbox that says Monochrome. Make sure the preview checkbox is also checked.

@@ -14,25 +14,30 @@
   <img src="after.jpg" alt=""/>
 </p>
 <p>
-  In this tutorial I'll show you how to do blend two different exposures of the same scene that you would like to combine to get the best parts of both images. 
+  In this tutorial I'll show you how to do blend two different exposures of 
+  the same scene that you would like to combine to get the best parts of both images. 
   This procedure works best if you have:
 </p>
 <ol type="A">
   <li>(obviously) have shot two different exposures that would be pleasing to combine,</li>
   <li>had the camera mounted on a tripod (not strictly necessary, but helps greatly in aligning the images),</li>
-  <li>the scenes are not too different at the boundaries of the blend. If the scene has changed too much (trees blowing, waves, people or cars moving, etc. 
+  <li>the scenes are not too different at the boundaries of the blend. 
+  If the scene has changed too much (trees blowing, waves, people or cars moving, etc. 
   between the images), especially at or near the "seams" of the blend, it will make the blend more difficult.</li>
 </ol>
 <p>
-  If you have only one image that needs exposure adjustment, you might look at using the "digital" neutral density filter or the contrast masking technique.
+  If you have only one image that needs exposure adjustment, you might look at using the "digital" 
+  neutral density filter or the contrast masking technique.
   <br />
-  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a Photoshop tutorial on the luminous-landscape.com 
+  Giving credit where credit is due: I did not come up with this method. 
+  I adapted it for The GIMP from a Photoshop tutorial on the luminous-landscape.com 
   photography web site (great web site BTW, I recommend it).
 </p>
 
 <h2>The Procedure</h2>
 <p>
-  The basic technique is to create a layer above the image that contains the other exposure of the same scene. Finally, we apply a layer mask to the this 
+  The basic technique is to create a layer above the image that contains 
+  the other exposure of the same scene. Finally, we apply a layer mask to the this 
   layer which makes parts of the image transparent that we want to show through from below.
 </p>
 
@@ -42,7 +47,8 @@
   <img src="image-original-dark.jpg" alt=""/>
 </p>
 <p>
-  Here are the two exposures, loaded into the GIMP. I am going to sandwich these on different layers and then combine them with a layer mask.
+  Here are the two exposures, loaded into the GIMP. I am going to sandwich these 
+  on different layers and then combine them with a layer mask.
 </p>
 
 <h2>Step 2</h2>
@@ -56,7 +62,8 @@
   The reason is because I hand-held the shots, and they are far from aligned. I'm going to have to move the bottom image until the arch is 
   aligned as best I can get it. Also, the top image is the composition I want anyway, and I'll have less painting to do that way.
   <br /><br />
-  Go the image that is going to be on the bottom. Open the Layers dialog (<kbd>Ctrl+L</kbd>) and click on the new layer button (<img src="newlayer.jpg" alt=""/>) to create a new layer.
+  Go the image that is going to be on the bottom. Open the Layers dialog (<kbd>Ctrl+L</kbd>) and 
+  click on the new layer button (<img src="newlayer.jpg" alt=""/>) to create a new layer.
 </p>
 
 <h2>Step 3</h2>
@@ -65,8 +72,10 @@
   <img src="layers4.jpg" alt=""/>
 </p>
 <p>
-  Go to the image that is going to be on top. Select all and copy (<kbd>Ctrl+A</kbd> then <kbd>Ctrl+C</kbd>). In the Layers dialog, make sure the new layer is selected, 
-  then go to the bottom image window and paste (<kbd>Ctrl+V</kbd>). In the Layers dialog, click on the anchor button (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
+  Go to the image that is going to be on top. Select all and copy (<kbd>Ctrl+A</kbd> then 
+  <kbd>Ctrl+C</kbd>). In the Layers dialog, make sure the new layer is selected, 
+  then go to the bottom image window and paste (<kbd>Ctrl+V</kbd>). In the Layers dialog, 
+  click on the anchor button (<img src="anchor.jpg" alt=""/>) to anchor the floating image.
 </p>
 
 <h2>Step 4</h2>
@@ -103,7 +112,8 @@
   <img src="layers7.jpg" alt=""/>
 </p>
 <p>
-  In the Layers dialog, right-click on the upper layer and select Add Layer Mask. In the Add Mask Options dialog, select White (Full Opacity) and click OK.
+  In the Layers dialog, right-click on the upper layer and select Add Layer Mask. 
+  In the Add Mask Options dialog, select White (Full Opacity) and click OK.
 </p>
 
 <h2>Step 7</h2>
@@ -115,7 +125,8 @@
   Now I want to paint black (transparency) onto the layer mask wherever I want the lower image to show through.
   <br /> 
   To minimize painting time, use the hand-select ("lasso"<img src="lasso.jpg" alt=""/> ) tool to select a large, hand-drawn region just 
-  inside all the borders of the area you want to paint, as shown at right. Then using the fill tool (<img src="fill.jpg" alt=""/>) fill the selection with black.
+  inside all the borders of the area you want to paint, as shown at right. 
+  Then using the fill tool (<img src="fill.jpg" alt=""/>) fill the selection with black.
 </p>
 
 <h2>Step 8</h2>
@@ -124,8 +135,9 @@
   <img src="image-paint1.jpg" alt=""/>
 </p>
 <p>
-  Next, I select a large opaque brush from the Brushes dialog (Dialogs/Brushes), select the Paint tool (<img src="paint.jpg" alt=""/>) 
-  and begin painting into the mask close to the boundaries of the blend.
+  Next, I select a large opaque brush from the Brushes dialog (Dialogs/Brushes), 
+  select the Paint tool (<img src="paint.jpg" alt=""/>) and begin painting into 
+  the mask close to the boundaries of the blend.
   <br /><br />
   Notice that I still have the opacity cranked down on the upper layer so that I can see both layers.
 </p>
@@ -153,17 +165,22 @@
 <p>
   Now the most painstaking part: blending the seams. This is a little tricky due to the different tonalities of the two exposures.
   <br />
-  For blending work, the Clone (<img src="clone.jpg" alt=""/>), Smudge (<img src="smudge.jpg" alt=""/>), Airbrush (<img src="airbrush.jpg" alt=""/>) 
+  For blending work, 
+  the Clone (<img src="clone.jpg" alt=""/>), 
+  Smudge (<img src="smudge.jpg" alt=""/>), 
+  Airbrush (<img src="airbrush.jpg" alt=""/>) 
   and Blur (<img src="convolve.jpg" alt=""/>) are my tools of choice.
 </p>
 <p>
-  Since I'm not sure if these tools have the ability to work across layers (as they do in Photoshop), I duplicate the image (<kbd>Ctrl+D</kbd>) and flatten the duplicate 
-  (<span class="filter">&lt;Image&gt;Layers-&gt;Flatten Image</span>) and work on it. This has the additional benefit that if I ever mess up the blending job too badly I can 
+  Since I'm not sure if these tools have the ability to work across layers 
+  (as they do in Photoshop), I duplicate the image (<kbd>Ctrl+D</kbd>) and flatten the duplicate 
+  (<span class="filter">&lt;Image&gt; Layers -&gt; Flatten Image</span>) and work on it. 
+  This has the additional benefit that if I ever mess up the blending job too badly I can 
   always easily start over at this step.
 </p>
 <p>
-  <b>Note:</b> see <a href="/tutorials/Photo_Edit/Blown_Out_Highlights/">this tutorial on correcting blown out highlights</a> for another example of using these tools 
-  for blending and some useful tips on their use.
+  <b>Note:</b> see <a href="/tutorials/Photo_Edit/Blown_Out_Highlights/">this tutorial on correcting blown out highlights</a> for 
+  another example of using these tools for blending and some useful tips on their use.
 </p>
 <p>
   Here I've used primarily clone and a touch of smudge to blend the seams of the two exposures. I didn't do a very thorough job with this image, 
@@ -179,7 +196,8 @@
   <img src="image-finished.jpg" alt=""/>
 </p>
 <p>
-  Finished. The image still has some problems with blown out highlights in the sunlight of the rock face. It is also a little too dark in the foreground shadow.
+  Finished. The image still has some problems with blown out highlights in the sunlight of the rock face. 
+  It is also a little too dark in the foreground shadow.
 </p>
 
 <h2>Further Reading on Blending Exposures</h2>

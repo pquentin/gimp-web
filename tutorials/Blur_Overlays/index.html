@@ -62,9 +62,11 @@
 <p>
   In the Layers dialog, select the Blur Overlay layer. In the "Mode" drop-down box, select "Overlay".
   <br />
-  Now go back to the image window and apply a Levels (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Levels</span>) or Curves 
-  (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Curves</span>) 
-  and adjust it until the overall image has the proper brightness. You'll usually find it necessary to adjust the gamma slider (middle slider in Levels) down. 
+  Now go back to the image window and apply a Levels 
+  (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Levels</span>) or Curves 
+  (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Curves</span>) 
+  and adjust it until the overall image has the proper brightness. 
+  You'll usually find it necessary to adjust the gamma slider (middle slider in Levels) down. 
   You are only adjusting the upper layer, but you are viewing the cumulative effect of the layer blend.
   <br /><br />
   <b>Tip:</b> If you don't get a good effect with Overlay mode, try Multiply mode (you can even change this while the Levels dialog is active).
@@ -79,7 +81,8 @@
   <img src="image-overlay-blur.jpg" alt=""/>
 </p>
 <p>
-  Go back to the image window and right click, selecting <span class="filter">&lt;Image&gt;Filters-&gt;Blur-&gt;Gaussian Blur</span>. 
+  Go back to the image window and right click, 
+  selecting <span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Gaussian Blur</span>. 
   You will need to experiment to find the best value, but typically a value between 10 and 30 will do nicely.
   <br /><br />
   Voila! If you don't like the effect, you can undo the blur (<kbd>Ctrl+Z</kbd>) and redo it (<kbd>Shift+Alt+F</kbd>) with a different value.
@@ -90,9 +93,11 @@
 
 <div class="subtitle">Tip: Protecting Highlights with a Layer Mask</div>
 <p>
-  Although I like the effect, there is one problem with this technique and that is that it also increases contrast: the shadows get darker and the highlights get lighter.
+  Although I like the effect, there is one problem with this technique and that is that it also increases contrast: 
+  the shadows get darker and the highlights get lighter.
   <br />
-  You might be able to apply a contrast mask to counteract this effect, but in most cases it is the highlights that are the most troublesome in that they have lost detail. 
+  You might be able to apply a contrast mask to counteract this effect, 
+  but in most cases it is the highlights that are the most troublesome in that they have lost detail. 
   Fortunately we can apply a simple extension to the above technique to protect the highlights.
 </p>
 
@@ -103,7 +108,7 @@
 <p>
   Duplicate the image (<kbd>Ctrl+D</kbd>).
   <br />
-  Flatten the duplicate (<span class="filter">&lt;Image&gt;Layers-&gt;Flatten Image</span>).
+  Flatten the duplicate (<span class="filter">&lt;Image&gt; Layers -&gt; Flatten Image</span>).
 </p>
 
 <h2>Step 6</h2>
@@ -112,10 +117,11 @@
   <img src="image-threshold.jpg" alt=""/>
 </p>
 <p>
-  In the duplicate, run a threshold filter (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Threshold</span>).
+  In the duplicate, run a threshold filter (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Threshold</span>).
   <br />
   In the threshold histogram, click and drag to the right to select all the pixels at the upper end of the scale. 
-  Retry or adjust the selection using the number controls in the dialog box until the display shows most of the pixels you want to preserve as white and all the rest black.
+  Retry or adjust the selection using the number controls in the dialog box until the display shows 
+  most of the pixels you want to preserve as white and all the rest black.
   <br />
   You only need to approximate this, since we're going to clean up the mask anyway.
 </p>
@@ -129,12 +135,15 @@
   <img src="image-threshold-blur.jpg" alt=""/>
 </p>
 <p>
-  To clean up the mask, I switched to the paintbrush (<img src="paint.jpg" alt=""/>), hit "x" in the mask image to switch the foreground and background colors (Black/White to White/Black), 
-  selected a nice opaque brush in the Brushes dialog and painted the few pixels of the sky white that hadn't been turned white (the darkest parts of the clouds).
+  To clean up the mask, I switched to the paintbrush (<img src="paint.jpg" alt=""/>), 
+  hit "x" in the mask image to switch the foreground and background colors (Black/White to White/Black), 
+  selected a nice opaque brush in the Brushes dialog and painted the few pixels of the sky white that hadn't 
+  been turned white (the darkest parts of the clouds).
   <br /><br />
-  Now the black parts. I switched the fg/bg colors back to (Black/White). I could have painted black all over the lake, but I had a faster idea in mind. I used the marquee 
-  selection tool (<img src="selectrect.jpg" alt=""/>) to select the whole area and then using the fill tool (<img src="fill.jpg" alt=""/>) I just clicked in the selection 
-  to fill it black in one fell swoop. 
+  Now the black parts. I switched the fg/bg colors back to (Black/White). 
+  I could have painted black all over the lake, but I had a faster idea in mind. I used the marquee 
+  selection tool (<img src="selectrect.jpg" alt=""/>) to select the whole area and then using the 
+  fill tool (<img src="fill.jpg" alt=""/>) I just clicked in the selection to fill it black in one fell swoop. 
   <br /><br />
   I then "feathered" the mask so that it will blend the layers without a harsh transition by applying a 6 pixel gaussian blur to the mask.
 </p>
@@ -144,8 +153,9 @@
   <img src="image-threshold-blur-invert.jpg" alt=""/>
 </p>
 <p>
-  Invert the mask (<span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Invert</span>), so that the white parts correspond to the parts of 
-  the combined layers that you want to keep and the black parts correspond to the parts that should only reflect the original image (the highlights).
+  Invert the mask (<span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Invert</span>), 
+  so that the white parts correspond to the parts of the combined layers that you want to keep 
+  and the black parts correspond to the parts that should only reflect the original image (the highlights).
 </p>
 
 <h2>Step 9</h2>
@@ -162,10 +172,12 @@
   <br />
   Right-click on the Blur Overlay layer and select Add Layer Mask. In the Add Mask Options dialog, select White (Full Opacity) and click OK.
   <br />
-  Now go back to the blurred threshold image, select all and copy (<kbd>Ctrl+A</kbd> then <kbd>Ctrl+C</kbd>). Go back to the overlay blur image and paste (<kbd>Ctrl+V</kbd>). 
+  Now go back to the blurred threshold image, select all and copy 
+  (<kbd>Ctrl+A</kbd> then <kbd>Ctrl+C</kbd>). Go back to the overlay blur image and paste (<kbd>Ctrl+V</kbd>). 
   Go to the Layers dialog and click the anchor button (<img src="anchor.jpg" alt=""/>) to anchor the mask.
   <br /><br />
-  <b>Tip:</b> <kbd>Ctrl-click</kbd> on the layer mask icon in the Layers dialog to toggle the effect of the layer mask to compare the image with and without the highlight mask.
+  <b>Tip:</b> <kbd>Ctrl-click</kbd> on the layer mask icon in the Layers dialog to toggle the effect of 
+  the layer mask to compare the image with and without the highlight mask.
 </p>
 
 <h2>Step 10</h2>

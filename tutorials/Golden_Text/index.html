@@ -11,7 +11,8 @@
 <p>
    Doesn't the title look really valuable? To reproduce this effect you need the incredible "Lighting"-Plugin, 
    created by Tom Bech and Federico Mena Quintero. It is not in the standard gimp-1.0 distribution, you have to 
-   install it yourself. It can be found at <span class="filter">&lt;Image&gt;Filters-&gt;Light Effects-&gt;Lighting Effects</span>. This Plugin does a very good Bump-Mapping. 
+   install it yourself. It can be found at <span class="filter">&lt;Image&gt; Filters -&gt; Light Effects -&gt; Lighting Effects</span>. 
+   This Plugin does a very good Bump-Mapping. 
    Additionally it can map an enviroment-map to the image.
 </p>
 
@@ -21,12 +22,13 @@
 </p>
 <p>
   The trick is to use a good enviroment-map. I created it with 
-  <span class="filter">&lt;Image&gt;Filters-&gt;Render-&gt;Solid Noise</span> 
+  <span class="filter">&lt;Image&gt; Filters -&gt; Render -&gt; Solid Noise</span> 
   (X/Y-Size: 2.8, Detail: 1, Tileable). It is important for a good effect to get different grays in the top right corner. Then I did a 
-  <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Auto-Stretch Contrast</span> and a 
-  <span class="filter">&lt;Image&gt;Filters-&gt;Blur-&gt;Gaussian Blur (IIR)</span> with a radius of 5 to get the full range of gray. Then select the "Golden"-Gradient in 
-  <span class="filter">&lt;Image&gt;Dialogs-&gt;Gradient Editor...</span> and 
-  <span class="filter">&lt;Image&gt;Filters-&gt;Colors-&gt;Gradient Map</span> it to the image.
+  <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Auto-Stretch Contrast</span> and a 
+  <span class="filter">&lt;Image&gt; Filters -&gt; Blur -&gt; Gaussian Blur (IIR)</span> with a radius of 5 to get the full range of gray. 
+  Then select the "Golden"-Gradient in 
+  <span class="filter">&lt;Image&gt; Dialogs -&gt; Gradient Editor...</span> and 
+  <span class="filter">&lt;Image&gt; Filters -&gt; Colors -&gt; Gradient Map</span> it to the image.
 </p>
 
 <p class="images">
@@ -79,7 +81,7 @@
   So you can select between a linear, spherical, logarithmic and a sinusoidial Bumpmap.
   <br /><br />
   There is a much more flexible way to specify the surface of the Bumpmap. The Key is the 
-  <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Curves-Dialog.</span> 
+  <span class="filter">&lt;Image&gt; Image -&gt; Colors -&gt; Curves-Dialog.</span> 
   Create the text and blur it with a wider radius. Then select the Curves-Dialog and modify the text-profile. A little Blur (Radius 2) 
   makes the Bumpmap a little bit smoother. See the examples above.
   <br /><br />

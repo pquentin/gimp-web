@@ -145,52 +145,74 @@ def display_gallery(form):
   wgo_admin.header('www.gimp.org - Administration - Splash Image',
                    [ {"rel" : "stylesheet", "href" : wgo_contest.config.contest_dir + "/wgo-contest.css", "type" : "text/css", "media" : "screen"} ])
 
+  # XXX The algorithms in this function are a mess.
+  # The variable images_per_page is supposed to work out a nice layout, but for now the layout is hardcoded as two rows of four images.
   names = get_gallery_names()
 
-  index = int(form.getfirst("index", "0"))
+  if len(names) == 0:                   # If there's nothing to do, return
+    wgo_admin.footer()
+    return
+    
+  this_page_index = int(form.getfirst("index", "0"))
   tableless = int(form.getfirst("tableless", "0"))
 
   images_per_page = 8
 
 
-  next = ""
-  next_page_images = index + images_per_page + 1
-  
-  if index < len(names) and len(names) >= next_page_images:
-    next = xhtml.hyperlink("NEXT", {"class" : "faux-button", "href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (next_page_images)})
+  next_page_index = this_page_index + images_per_page
+  prev_page_index = this_page_index - images_per_page
+
+  next = "&gt;"
+  if this_page_index < len(names) and len(names) >= next_page_index:
+    next = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (next_page_index)}, "&gt;")
     pass
 
-  prev = ""
-  prev_page_images = index - images_per_page - 1
-  if index >= images_per_page:
-    prev = xhtml.hyperlink("PREV", {"class" : "faux-button", "href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_images)})
+  prev = "&lt;"
+  if this_page_index >= images_per_page:
+    prev = xhtml.hyperlink({"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_index)}, "&lt;")
     pass
 
-  print xhtml.para(xhtml.span(prev, {"style" : "float: left;"})
-                   + xhtml.span(next, {"style" : "float: right;"}) + "&nbsp;", {"style" : "height 10ex;"})
+  print xhtml.table.init({"style" : "width: 100%; font-size: large; padding: 0; border-spacing: 0; border-collapse: collapse;"})
+  print xhtml.table.row.init()
+  print xhtml.table.cell({"style" : "border: 1px solid black; font-size: normal; font-weight: bold;" }, prev)
 
-  if tableless == 0:
-    if len(names) > 0:
-      print xhtml.table.init({"cellspacing" : 6, "cellpadding" : 0, "border" : 0, "class" : "gallery"})
+  position = this_page_index * 100 / len(names)
 
-      print xhtml.table.row.init()
-      map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[index:index+(images_per_page/2)])
-      print xhtml.table.row.fini()
-
-      if len(names[index+(images_per_page/2):index+images_per_page + 1]) > 0:
-        print xhtml.table.row.init()
-        map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))),
-            names[index+(images_per_page/2):index+images_per_page + 1])
-        print xhtml.table.row.fini()
-        pass
-
-      print xhtml.table.fini()
+  for i in range(0, 100):
+    index = len(names) * i / 100
+    link = xhtml.hyperlink({"style" : "display: block;", "href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (index)}, "&nbsp;")
+    link = "&nbsp;"
+    if i == position:
+      print xhtml.table.cell({"style" : "width: 1%; border: 1px solid gray; background: none #32537d;", "title" : "image %d, i=%d" % (index, i)}, link)
+    else:
+      print xhtml.table.cell({"style" : "width: 1%; border: 1px solid gray;", "title" : "image %d, i=%d" % (index, i)}, link)
       pass
+    pass
+  print xhtml.table.cell({"style" : "border: 1px solid black; font-size: large; font-weight: bold;" }, next)
+
+  print xhtml.table.row.fini()
+  print xhtml.table.fini()
+  
+  if tableless == 0:
+    print xhtml.table.init({"cellspacing" : 6, "cellpadding" : 0, "border" : 0, "class" : "gallery"})
+
+    print xhtml.table.row.init()
+    map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[this_page_index:this_page_index+(images_per_page/2)])
+    print xhtml.table.row.fini()
+
+    if len(names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page + 1]) > 0:
+      print xhtml.table.row.init()
+      map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))),
+          names[this_page_index + (images_per_page / 2) : this_page_index + images_per_page])
+      print xhtml.table.row.fini()
+      pass
+    
+    print xhtml.table.fini()
     pass
   else:
     print xhtml.div.init({"style" : "vertical-align: bottom;"})
     print xhtml.div("&nbsp;", {"style" : "clear: both;"})
-    for k in names[index:next_page_images]:
+    for k in names[this_page_index:next_page_index]:
       print xhtml.div(format(k), {"style" : "float: left; margin: 1em;"})
       pass
     print xhtml.div("&nbsp;", {"style" : "clear: both;"})

@@ -1,3 +1,10 @@
+2004-12-03  Helvetix Victorinox  <helvetix@gimp.org>
+
+	* programmatic/admin/contest/gallery-edit.py (display_gallery): 
+	Fixed a fencepost error in computing the number of images per
+	page.  Added a visual indicator of where the currently displayed
+	page is versus the total of all gallery images.
+
 2004-12-01  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* programmatic/contest/contest.py (submit_manually): 

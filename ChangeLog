@@ -1,3 +1,8 @@
+2003-05-02 scizzo <scizzo@gimp.org>
+
+	* /tutorials/index.html: Removed this file.
+	* /tutorials/index.htrw: Add this file.
+
 2003-05-01  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Added .cvsignore files for:

@@ -1,5 +1,11 @@
 2003-09-26  Raphael Quinet  <quinet@gamers.org>
 
+	* style/wgo.css (div.news): replaced "clear: top", which is not
+	valid CSS, by "clear: both".  The result does not look much better
+	and I do not know why this style was created.  See the discussion
+	in bug #123123.  See also:
+	http://jigsaw.w3.org/css-validator/validator-uri.html
+
 	* programmatic/admin/news/wgo_news.py (icon_descs): Added
 	descriptions for the icons so that we get better alt tags.  This
 	is not a perfect solution, but this should fix bug #117380 once

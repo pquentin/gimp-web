@@ -86,11 +86,11 @@ p.news {
 }
 
 div.news {
-    clear: top;
+    clear: both;
 }
 
 div.news p {
-    clear: top;
+    clear: both;
 }
 
 div.news img {

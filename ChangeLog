@@ -1,7 +1,17 @@
+2003-01-25  Helvetix Victorinox  <helvetix@oak.mysterious.org>
+
+        * The new styles in style/wgo-decor.css and style/wgo-layout.css
+        validate with no warnings.
+
+        * contest/index.html is now an example of using the new layout and
+        include file implementation.
+
+        * ChangeLogs are fetched and made available through about/Changelogs/index.html
+
 2003-01-24 brix <brix@gimp.org>
 
-	* TODO: added a section about table-less design with links to
-	Helvetix' example implementation
+        * TODO: added a section about table-less design with links to
+        Helvetix' example implementation
 
 2003-01-20  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 

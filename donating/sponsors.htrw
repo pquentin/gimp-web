@@ -1,0 +1,25 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Donating</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Sponsors</h1>
+<p>
+  The GIMP team would like to thank all the sponsors for all
+  the help with contributions they have given GIMP. Thank you!
+</p>
+
+<h2>Gold Sponsors</h2>
+<p class="images">
+  <a href="http://www.fsf.org/"><img src="gnu-head-sm.jpg" alt="Free Software Foundation" /></a>
+  <a href="http://www.oreilly.com/"><img src="oreilly.jpg" alt="O'Reilly" /></a>
+</p>
+
+<h2>Bronze Sponsors</h2>
+<p class="images">
+  <a href="http://www.macgimp.org/"><img src="wilber-macgimp.png" alt="MacGIMP" /></a>
+  <a href="http://distrowatch.com/"><img src="dw.png" alt="Distrowatch" /></a>
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,14 @@
+2004-10-06  Niklas M <scizzo@gimp.org>
+
+	* donating/index.htrw: Updated information.
+	
+	* donating/oreilly.jpg, 
+	  donating/dw.png, 
+	  donating/wilber-macgimp.org, 
+	  donating/gnu-head-sm.jpg: Added new images of sponsors.
+	  
+	* donating/sponsors.htrw: Added the sponsors.
+
 2004-10-05  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.1.6 release.

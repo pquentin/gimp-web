@@ -4,27 +4,45 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Donating to the GIMP</h1>
+<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
+  <input value="_xclick" name="cmd" type="hidden" />
+  <input value="gimp@gnome.org" name="business" type="hidden" />
+  <input value="Donation to GIMP Project" name="item_name" type="hidden" />
+  <input value="106" name="item_number" type="hidden" />
+  <!-- <input value="http://www.gimp.org/donating/thanks.html"
+         name="return" type="hidden" /> -->
+  <input value="1" name="no_shipping" type="hidden" />
+  <input alt="Support the GIMP" name="submit"
+         src="donate.png" type="image" />
+</form>
 <p>
-  Donating money to the GIMP is easy!  The guys at the <a
-  href="http:Package-Gnome">GNOME Foundation</a> have graciously
-  agreed to act as fiscal agents for us. The contribution is being
-  made to GNOME Foundation, on behalf of the GIMP Project.  The GNOME
-  Foundation is a tax-exempt, non-profit 501(c)(3) organization and
-  all donations are tax-deductible in the USA.
-</p>
+  Donating money to the GIMP is easy! The 
+  <a href="http:Package-Gnome">GNOME Foundation</a> 
+  has graciously agreed to act as fiscal agents for us.
+  Contributions to the GIMP project can be made by donating to the GNOME
+  Foundation and specifying The GIMP project as the recipient. The GNOME
+  Foundation is a tax-exempt, non-profit 501(c)(3) organization and all
+  donations are tax-deductible in the USA.  </p>
+<p> 
+  There are 3 ways to support the GIMP financially. Financial help is needed
+  for many different reasons. GIMPCon is one thing that the money will go to,
+  it helps us to get as many <a href="wgo:dev">GIMP Developers</a> to the
+  conference as possible. Financial help will also be needed to cover the
+  expenses associated with the establishment of the GIMP Foundation.  
+</p> 
 <p>
-  There are 3 ways to support the GIMP financially.  Financial help is
-  needed to get as many of the <a href="wgo:dev">GIMP Developers</a>
-  as possible to the GIMP Developers Conference taking place in Norway
-  as a sub-event of <a href="http:guadec">GUADEC</a> at the end of
-  June.  Financial help will also be needed to cover the expenses
-  associated with the establishment of the GIMP Foundation.
+  Remember that if you want to be anonymous on the list of contributers
+  you need to tell this when donating. You can do this as a message in
+  paypal, then we will see that you do not want to be mentioned on the
+  site.
+<p>
+  Many thanks to all our <a href="sponsors.html">sponsors</a>!
 </p>
 
 <h2>Cheque</h2>
 <p>
-  Cheque, made payable to the <a href="http:Package-Gnome">GNOME
-  Foundation</a>, and sent to:
+  Cheque, made payable to the 
+  <a href="http:Package-Gnome">GNOME Foundation</a>, and sent to:
 </p>
 <p>
   GNOME Foundation<br />

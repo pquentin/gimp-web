@@ -36,7 +36,7 @@ import types
 import cgi
 import cgitb; cgitb.enable()
 
-sys.path.append('${LIBDIR}')
+sys.path = ['${LIBDIR}'] + sys.path
 
 import xhtml
 import wgo
@@ -144,16 +144,6 @@ def submit(form):
 
 
 def preview(form):
-  wgo_contest.head_boilerplate()
-
-  print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
-  print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
-                   """From here you may submit images to be considered as candidates
-                   for a "splash" image.  We appreciate your participation, but we
-                   offer No Promises on what may become of your image here.""")
-
-  print xhtml.div("Approve Your Image", {"class" : "subtitle"})
-
   name = tempfile("")
 
   image_path = wgo_contest.spool_path(name, ".png")
@@ -165,6 +155,11 @@ def preview(form):
   email = form.getvalue("email", "")
   title = form.getvalue("title", "")
 
+  if len(form["image"].value) == 0:
+    wgo_contest.head_boilerplate()
+    wgo_contest.footer(wgo.error("You didn't submit an image."))
+    return (1)
+
   try:
     fp = os.popen("convert - 'png:%s'" % (image_path), "w")
     fp.write(form["image"].value)
@@ -175,9 +170,20 @@ def preview(form):
     except: pass
     try: os.remove(thumb_path)
     except: pass
-    
+
+    wgo_contest.head_boilerplate()
     wgo_contest.footer(wgo.error(str(e)))
     return (1)
+
+  wgo_contest.head_boilerplate()
+
+  print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
+  print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
+                   """From here you may submit images to be considered as candidates
+                   for a "splash" image.  We appreciate your participation, but we
+                   offer No Promises on what may become of your image here.""")
+
+  print xhtml.div("Approve Your Image", {"class" : "subtitle"})
 
   form = xhtml.form(xhtml.input.submit({"name" : "approve", "value" : "APPROVE"})
                     + xhtml.input.hidden({"name" : "mode", "value" : "approve"})

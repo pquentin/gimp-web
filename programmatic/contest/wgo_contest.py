@@ -159,7 +159,7 @@ def spool_path(name, suffix=""):
 def head_boilerplate(headers=""):
   headers = headers + "Content-type: text/html"
   print headers
-  print
+
   return (wgo.header('GIMP - Splash Image Contest', [config.contest_dir + "wgo-contest.css"], wgo.config.DocumentRoot_path + "/includes/menu.inc"))
 
 def header(headers=[]):

@@ -25,14 +25,10 @@
 import cgi
 import errno
 import fcntl
-import getopt
-import mimetypes
 import os
-import re
 import stat
 import string
 import sys
-import time
 import types
 
 import wgo

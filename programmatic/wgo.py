@@ -35,16 +35,26 @@ def spool_path(name, suffix=""):
 def error(text):
   return (xhtml.div("Eeek! An error!", {"class" : "subtitle"}) + xhtml.para(text))
 
+#
+# This is highly dependent upon the layout in the include files, which
+# makes this messy. XXX
+#
 def header(title, css_list, left_menu):
   extended_css = "/style/extended.css"
   
   print
   print xhtml.include('%s/includes/header_pretitle.inc' % (config.DocumentRoot_path))
   print xhtml.title(title)
+
   print xhtml.link(None, {"rel" : "stylesheet", "href" : extended_css, "type" : "text/css", "media" : "screen", "title" : title})
   for href in css_list:
     print xhtml.link(None, {"rel" : "stylesheet", "href" : href, "type" : "text/css", "media" : "screen", "title" : title})
     pass
+
+
+  print xhtml.include('%s/admin/wgo-admin-head.xhtml' % (config.DocumentRoot_path))
+
+  
   print xhtml.include('%s/includes/header_posttitle.inc' % (config.DocumentRoot_path))
   print xhtml.include(left_menu)
   return (True)
@@ -59,9 +69,12 @@ def footer(prefix=None):
   #print xhtml.object("doesn't work", {"standby": "loading", "type" : "image/png",
   #"data" : 'data:base64, ' + xhtml.encodefile('/home/asdf/public_html/helvetix/anybrowser.png')})
   #                                      "data" : 'data:binary, ' + xhtml.rawfile('/home/asdf/public_html/helvetix/anybrowser.png')})
-  if config.validate: print xhtml.validate("validate", {"style" : "color: grey; float left;"})
 
-  print xhtml.div("version 0.91", {"class" : "watermark"})
+  if config.validate:
+    print xhtml.div(xhtml.validate("version 0.92", {"class" : "watermark"}),
+                    {"class" : "watermark",
+                     "style" : "color: #f0f0f0; float left;"})
+
   print xhtml.include('%s/includes/footer.inc' % (config.DocumentRoot_path))
   return (True)
 

@@ -61,12 +61,14 @@ install: all
 	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.spool_path'`
 	install --mode=755 -d `${PYTHON} -c 'import contest_config; print contest_config.gallery_path'`
 
-	install images/gimp-splash.png `${PYTHON} -c 'import contest_config; print contest_config.images_path'`
-	install images/gimp-bg.png     `${PYTHON} -c 'import contest_config; print contest_config.images_path'`
-	install contest_config.py      ${LIBDIR}
-	install wgo-contest.css        `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`
-	install wgo_contest.py         ${LIBDIR}
-	install contest.cgi            `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`
-	install gallery.cgi            `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`
-	install gimp-batch             `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`
-	install index.html             `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`
+	install contest_config.py \
+	        wgo_contest.py         ${LIBDIR}
+
+	install images/gimp-splash.png \
+	        images/gimp-bg.png     `${PYTHON} -c 'import contest_config; print contest_config.images_path'`
+
+	install wgo-contest.css \
+	        contest.cgi     \
+	        gallery.cgi     \
+	        gimp-batch      \
+	        index.html             `${PYTHON} -c 'import contest_config; print contest_config.contest_path'`

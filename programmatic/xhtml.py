@@ -30,6 +30,8 @@ import cgi
 import base64
 from UserDict import *
 
+import xml
+
 color = {}
 
 # rfc2396_reserved = [";", "/", "?", ":", "@", "&", "=", "+", "$", ","]
@@ -96,8 +98,7 @@ def environ():
 
 def validate(text="validate", attrs={}):
   attrs.update({"href" : "http://validator.w3.org/check/referer"})
-  return div(hyperlink(text, attrs))
-
+  return hyperlink(text, attrs)
 
 def print_form(form, label="Form Contents"):
   """PrintdDump the contents of a form as xhtml."""
@@ -235,6 +236,7 @@ class xml(__html__):
     __html__.__init__(self, None, attrs, '<?xml%s?>', "")
     return
   pass
+    
     
 class doctype(__html__):
   def __init__(self):

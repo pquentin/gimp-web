@@ -46,7 +46,7 @@ extended.css:
 rdf-news.css: rdf-news.cpp
 
 clean mrproper:
-	/bin/rm -f wgo_config.py extended.css *.pyc *~
+	/bin/rm -f wgo_config.py extended.css *.pyc *~ rdf-news.css
 	cd contest && $(MAKE) clean
 	cd admin && $(MAKE) clean
 
@@ -55,9 +55,10 @@ install: install-common install-admin install-contest
 install-common: all
 	install --mode=755 -d ${LIBDIR}
 	install             wgo_config.py ${LIBDIR}
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' wgo.py > ${LIBDIR}/wgo.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' xhtml.py > ${LIBDIR}/xhtml.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${PYTHON}|${PYTHON}|g' rdf.py > ${LIBDIR}/rdf.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py   > ${LIBDIR}/wgo.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xhtml.py > ${LIBDIR}/xhtml.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' rdf.py   > ${LIBDIR}/rdf.py
+	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xml.py   > ${LIBDIR}/xml.py
 	install --mode=644 extended.css  ${DocumentRoot}/style/
 	install --mode=644 rdf-news.css  ${DocumentRoot}/style/
 

@@ -1,3 +1,9 @@
+2002-11-22 scizzo <scizzo@gimp.org>
+
+        * tutorials/index.html: Add the Quickies tutorial to the beginners list.
+        Also did a change from "Making Selections" to "Selection Overview" so
+        I can start porting the tutorials now.
+
 2002-11-21 carol <carol@gimp.org>
 
 	* docs/scheme_plugin, that i stole from simon budig

@@ -1,5 +1,7 @@
 2003-09-24  Raphael Quinet  <quinet@gamers.org>
 
+	* links/index.htrw: Added a link to /about/linking.html.
+
 	* unix/fonts.htrw: Added correct links to urw-fonts.tar.gz and
 	fonts.dir after copying these files on the FTP server.
 

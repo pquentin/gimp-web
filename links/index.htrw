@@ -4,7 +4,11 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>GIMP Links</h1>
-This page contains the best links to interesting GIMP-sites:
+
+<p>This page contains the best links to interesting GIMP-related
+sites.  If you want to link to us instead, please have a look at <a
+href="/about/linking.html">this other page</a>.</p>
+
 <!--#include virtual="/includes/urls_important.inc" -->
 
 <h2>Other Useful Links</h2>

@@ -1,3 +1,13 @@
+2004-03-14  Raphaël Quinet  <quinet@gamers.org>
+
+	* tutorials/Tileable_Textures/index.htrw: Updated to reflect the
+	new layout of the paintbrush options dialog.
+
+	* tutorials/Tileable_Textures/grad_brush_dialog.png: Added
+	dialog from 2.0.
+
+	* tutorials/Tileable_Textures/grad_brush_dialog.gif: Removed.
+
 2004-03-14  Niklas M <scizzo@gimp.org>
 
 	* screenshots/*_thumb.png: Removed the png previews.

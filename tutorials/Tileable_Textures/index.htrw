@@ -17,11 +17,11 @@
 
 <h2>Using Gradient Brushes</h2>
 <p class="images">
-  <img src="grad_brush_dialog.gif" alt="" />
+  <img src="grad_brush_dialog.png" alt="" />
 </p>
 <p>
-  Gradient brushes can be accessed from the standard paintbrush dialog. Just press the lovely "gradient" button, and start painting. 
-  The colors will be drawn from the current active gradient (it defaults to "german flag smooth" for most installs...)
+  Gradient brushes can be accessed from the standard paintbrush dialog.  Just check the option "Use Color from Gradient" and start painting. 
+  You can also press the Gradient button to change the current gradient.  Try "Grerman flag smooth", for instance.
 </p>
 <p class="images">
   <img src="grad1.jpg" alt="" />

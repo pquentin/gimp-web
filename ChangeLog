@@ -1,3 +1,8 @@
+2003-01-26 scizzo <scizzo@gimp.org>
+
+	* includes/urls_maillist.inc: Removed the GIMPwin list because this
+	list is going to be removed and moved to GIMP Developer list.
+
 2003-01-26  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
         * todo.xhtml: Prettification

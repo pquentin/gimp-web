@@ -12,10 +12,6 @@
   The GIMP developer mail list.
 </p>
 <p>
-  <A href="http://groups.yahoo.com/group/gimpwin-dev/">GIMPwin-dev</a><br />
-  for anyone who is interested in developing for the Windows-version of GIMP
-</p>
-<p>
   <A href="http://groups.yahoo.com/group/gimpi/">GIMPImages</a><br />
   need to get something from their FAQ for here.
 </p>

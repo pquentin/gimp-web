@@ -1,10 +1,12 @@
 2003-09-16  Helvetix Victorinox  <helvetix@gimp.org>
 
+  * Makefile: changed chown to chmod
+
 	* install.exclude: Readded /includes/news.inc
 	
 	* Makefile: backed-out combined SSI preprocessing and attribute
 	  rewriting for .htrw files.  Need to redo the installation order so
-	  include files are available at build time.
+	  include files are available at build time.  
 
 2003-09-16 scizzo <scizzo@gimp.org>
 

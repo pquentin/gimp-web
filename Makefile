@@ -18,7 +18,7 @@ export PYTHONPATH=programmatic:
 	#programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
 	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $< > $@
 	rm -f $<.x
-	chown 755 $@
+	chmod 755 $@
 
 RWSOURCES=$(shell find . -name '*.htrw' -print)
 RWTARGETS=$(RWSOURCES:.htrw=.html)

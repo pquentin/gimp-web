@@ -1,3 +1,11 @@
+2003-04-10  Carol Spears  <carol@gimp.org>
+
+        * admin/gimp-web-urls, added some, fixed others.
+        * os2/index.html, udated and edited.
+        * os2/howtos/, added this directory.
+        * os2/howtos/install_font_xfree86.html, added this file.
+        * os2/howtos/install_gimp_xfree86.html, added this file.
+
 2003-04-09 scizzo <scizzo@gimp.org>
 
 	* tutorials/*: Now uses <image> Filter -> Path instead of

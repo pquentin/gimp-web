@@ -9,14 +9,18 @@
 <ul>
    <li><a href="maillist:GIMP-os2-url">OS/2 Mail List</a></li>
    <li><a href="maillist:GIMP-os2-archive">OS/2 Mail List Archive</a></li>
+   <li><a href="http:Package-os2-software">OS/2 Software -- including The GIMP</a></li>
    <li><a href="info:OS2_GIMP_PM">Everblue with GIMP</a></li>
    <li><a href="info:OS2_GIMP_xfree86">About GIMP for OS/2</a></li>
-   <li><a href="info:OS2_GIMP_de">OS/2 GIMP German</a></li>
+   <li><a href="info:OS2_GIMP_de">Team OS/2 GIMP German</a></li>
+   <li><a href="info:OS2_GIMP_en">Team OS/2 GIMP English</a></li>
 </ul>
 
 <h2>OS/2 How To's</h2>
 <ul>
-   <li><a href="howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian">Installing XFree86/OS2 4.3.0</a></li>
+   <li><a href="os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian">Installing XFree86/OS2 4.3.0</a></li>
+   <li><a href="wgo:os2-howtos_install_fonts_xfree86">How To Install Fonts In OS2/xfree86</a></li>
+   <li><a href="wgo:os2-howtos_install_gimp_xfree86">How To Install GIMP For OS2/xfree86</a></li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

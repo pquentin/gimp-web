@@ -1,0 +1,68 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - How To Title</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
+<!--                                                                      -->
+<!--                 How To Use This Template                             -->
+<!-- Any file with the extension .htrw will be sent through the attribute -->
+<!-- rewriter (/programmatic/tools/rewrite_attrs.py) when the site is     -->
+<!-- installed.  The url dictionary for the rewriter is maintained in     -->
+<!-- /admin/gimp-web-urls -b>                                             -->
+<!--                                                                      -->
+<!-- You can test the page you're writing (without having to install the  -->
+<!-- whole site) by building a little local rewrite_attrs programme which -->
+<!-- you can run by hand:                                                 -->
+<!--                                                                      -->
+<!-- cd into /programmatic and type "make clean webtools".  This produces -->
+<!-- the file /programmatic/tools/rewrite-attrs that will test your files -->
+<!-- before you commit them.                                              -->
+<!--                                                                      -->
+<!-- Typing "./rewrite-attrs --help"  will give you a very brief help     -->
+<!--                                                                      -->
+<!-- Please remove this comment block before commiting your page source.  -->
+<!--                                                                      -->
+<!-- thank you -->
+<!-- carol     -->
+
+<h1>How To Title</h1>
+
+<h2>A subtitle</h2>
+<p>
+  Information.
+</p>
+<ol>
+  <li>A list of something</li>
+  <li>More in the list.</li>
+</ol>
+<h3>an even more subtitle</h3>
+<p>
+  This is a key stroke <kbd>Ctrl+C</kbd>.
+</p>
+<pre class="code">
+/* Comment in code and a code example */
+
+main()
+{
+ printf("Something something\n");
+}
+</pre>
+<p>
+  More information about the code or something.
+</p>
+
+<h1>Another header (if needed)</h1>
+<h2>Another subtitle</h2>
+<p>
+  More information.
+</p>
+
+<!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
+    <div>
+      <span id="footerleft">
+        How To &copy; 2002 <a href="mailto:webmaster@gimp.org">Author name</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

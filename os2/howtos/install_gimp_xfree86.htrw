@@ -1,0 +1,231 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - How To Install GIMP For OS2/xfree86</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
+
+<h1>How To Install GIMP For OS2/xfree86</h1>
+
+<h2>1. Requirements</h2>
+<p>
+  <a href="home:gimp">The GIMP</a> is a software package that has been ported from Un*x. 
+  It also uses the <a href="home:gtk">GIMP toolkit (GTK)</a> for its graphical user 
+  interface. As a result, it requires <a href="http:Package-emx-os2">emx 0.9d fix 3</a> 
+  or later and <a href="http:Package-xfree86-os2">XFree86/OS2</a> (or another X server 
+  like Exceed or HOBLink X11) to run. The <a href="home:People-Hennecke_Christian">author's site</a> also 
+  contains a extensive installation guides for <a href="os2-howto:Installing_XFree86/OS2_3.3.x-Hennecke_Christian">XFree86/OS2 3.3.x</a> 
+  and <a href="os2-howto:Installing_XFree86/OS2_4.3.0-Hennecke_Christian">XFree86/OS2 4.x</a>, 
+  as for EMX please refer to the included, well-written installation manual. For 
+  XFree86/OS2 an accelerated X server that is capable of 16 bit to 32 bit color 
+  depths is highly recommened. Note that the XSVGA server does contain excellent 
+  acceleration support for some cards, e.g. Matrox ones. If you want to make use 
+  of True Type fonts XFree86/OS2 3.3.x, you will need to run a 
+  <a href="wgo:os2-howtos_install_fonts_xfree86">special font server</a> 
+  or use the <a href="plugin-home:gimpfreetype-stable">GIMP Freetype plug-in</a>.
+</p>
+<p>
+  GIMP runs on Warp 3 with Fixpak 17 or later, Warp 4 with Fixpak 5 or later and 
+  WSeB. You will also need quite a lot of RAM, as always if you want to do serious 
+  image processing. Try 64MB for a start.
+</p>
+<p>
+  The GIMP distribution comes in several archives that can be obtained from 
+  <a href="http:Package-GIMP-os2-stable-xfree86">www.os2ports.com</a>. You will 
+  also need several basic libraries for GIMP to work, which you can also download 
+  from there. (In case you wonder why: These are libraries that are installed by 
+  default on most Linux systems, so it's only natural to use them.) The GIMP 
+  Freetype plug-in is available from the <a href="plugin-home:gimpfreetype-os2-stable">files section of the GIMP/OS2 
+  mailing list at <a href="maillist:GIMP-os2-url">Yahoogroups: http://groups.yahoo.com/group/gimp-os2</a>.
+</p>
+<p>
+  The version number mentioned below were the latest available at the point of the release of The GIMP 1.2.1. Don't 
+  hesitate to download archives with higher numbering.
+</p>
+<h2>1.1 The GIMP distribution</h2>
+<h3>Mandatory files</h3>
+<ul>
+  <li>gimpb121.zip - Binaries</li>
+  <li>gimpd121.zip - Data files</li>
+</ul>
+<h3>Optional files</h3>
+<ul>
+  <li>gimpdextra121.zip - Additional data files (brushes, patterns...)</li>
+  <li>gimpe121.zip - Additonal plug-ins like xscanimage (frontend for SANE)</li>
+  <li>gimp-freetype.exe - Plug-in for using Type-1 and True Type fonts with anti-aliasing, no special font server for TTFs required</li>
+  <li>gimpp121.zip - Include files and libraries for programmers</li>
+</ul>
+<h2>1.2 Libraries and helpers</h2>
+<p>
+  Note: Depending on where you download the archives, names can be different.
+</p>
+<h3>Mandatory files</h3>
+<ul>
+  <li>gettext.zip - GNU gettext internationalization library</li>
+  <li>glib128.zip - GLib (required by the GIMP toolit)</li>
+  <li>gtk128.zip - The GIMP toolkit (GUI library)</li>
+  <li>shmdll.zip - Shared memory DLL, required for XFree86/OS2 older than 3.3.6</li>
+  <li>zlib113.zip - compression library</li>
+</ul>
+<h3>Optional, but highly recommened files</h3>
+<ul>
+  <li>gnomelibs1053.zip - GNOME libraries, required for the GIMP online help!</li>
+  <li>jpeg6b.zip - library for the JPEG image format</li>
+  <li>libpng102.zip - library for the PNG image format</li>
+  <li>tiff34.zip - library for the TIFF image format</li>
+</ul>
+<h3>Optional files</h3>
+<ul>
+  <li>bzip2.exe - bzip2 file compressor, required to load and save images with *.bz2
+      extension (better compression rates than gzip)</li>
+  <li>gifdll.zip - library for GIF image format (Note: GIMP won't save GIF files 
+      due to the licence policy by Unisys.)</li>
+  <li>gimpm118.zip - The GIMP manual in HTML format (18MB!)</li>
+  <li>gzip124.zip - gzip file compressor, required to load and save images with *.gz 
+      extension</li>
+  <li>mpeg121.zip - library for the MPEG format</li>
+  <li>sane101b1.zip or later - required for the xscanimage plug-in to work 
+      (using it you can directly scan images into GIMP)</li>
+</ul>
+<h2>2. Installation</h2>
+<p>
+  In the following it is assumed that you have emx and XFree86/OS2 correctly 
+  set up. Installation is pretty straightforward.
+</p>
+<ol>
+  <li>Check your CONFIG.SYS file for a SET EMXOPT statement. Make sure there is one 
+      that says at least:
+      <pre class="code">
+SET EMXOPT=-h1024 
+      </pre>
+      Note that the parameter is case-sensitive!</li>
+  <li>If you have used a version of GIMP that is older than 1.2.0, delete the 
+      \XFree86\lib\X11\.gimp-1.1 tree or the corresponding one for the 1.0.2 
+      version first.</li>
+  <li>Create a temporary directory and place all GIMP packages and libraries you want to install therein.</li>
+  <li>Open an OS/2 command line window and change to the above mentioned temporary directory.</li>
+  <li>Unpack all archives to your X11ROOT path. That's the directory in which the 
+      XFree86 directory resides, usually the root of the drive. If XFree86 is 
+      installed in e.g. E:\XFree86, enter:
+      <pre class="code">
+unzip *zip -d e:\ 
+      </pre>
+      <em class="warn">WARNING:</em> If you don't use the DLL-only library archives 
+      from birdy.os2.ru, chances are that those archives' directories start below 
+      the \XFree86 directory. In this case place those files in another temporary 
+      directory and enter the following to unpack them:
+      <pre class="code">
+unzip *zip -d e:\XFree86 
+      </pre></li>
+  <li>Unpack the compression software bzip2 or gzip to a temporary directory and place 
+      the executables in your PATH.</li>
+  <li>To enable the Freetype plug-in, decrompress it with
+      <pre class="code">
+bzip2 -d gimp-freetype.exe.bz 
+      </pre>
+      and copy the resulting executable to the 
+      \XFree86\lib\X11\.gimp-1.2\plug-ins directory.</li>
+  <li>To install SANE, follow the README in that package. Well, in fact installing 
+      SANE is a !%&amp;*# mess and worth a lengthy HowTo itself. You need to add an 
+      entry to your CONFIG.SYS that points to a directory .sane in your HOME 
+      directory, e.g.
+      <pre class="code">
+SET SANE_CONFIG_DIR=e:\home\os2user\.sane 
+      </pre>
+      The library LIBSANE.DLL needs to be in your PATH for xscanimage to find it and 
+      it needs a configuration file DLL.CONF in the configuration directory mentioned 
+      above that depending on your scanner must (or doesn't need to) explicitely point 
+      to its address, i.e. b1t6l0 if the scanner is on bus 1, has SCSI-ID 6 and LUN 0.
+      If you need further help, try the mailing list at Yahoogroups: 
+      <a href="maillist:SANE-os2-url">http://groups.yahoo.com/group/sane-os2</a>.</li>
+  <li><em class="warn">CAUTION:</em> Unfortunately, the plug-in archives are not 
+      updated with every new release of The GIMP. The problem is that they require the 
+      presence of certain GIMP DLLs whose names change with every new GIMP release! 
+      So if you install The GIMP 1.2.1, but you (have to) use the plug-in package gimpe120,
+      the plug-ins included won't work unless you had installed the corresponding 
+      previous version of GIMP and you haven't deleted its DLLs yet. If this is not 
+      the case, you will have to get the old DLLs from somewhere, e.g. an old gimpd 
+      archive, which is very large unfortunately. Visit Team OS/2 Region Trier's GIMP 
+      archive at <a href="plugin-archive:os2">http://cip.uni-trier.de/thielen/teamos2/gimp_a/.</a><br />
+      To find out which DLL is missing, change to the E:\XFree86\lib\X11\.gimp-1.2\plug-ins 
+      directory and start the offending plug-in from the command-line. You should see 
+      a message of the following kind:
+      <pre class="code">
+SYS1804: File GIMP1130 not found. 
+      </pre>
+      So the missing file is GIMP1130.DLL. If the plug-in should require additional 
+      missing DLLs, you will have to repeat this step after having made available the 
+      previously missed DLL. You can save a lot of time by using the tool "ldd" that 
+      is capable of finding out all DLLs a program requires and of detecting if they 
+      can be loaded correctly.</li>
+</ol>
+<p>
+  Congratulations, you have finished your part of the GIMP installation. Now 
+  start XFree86/OS2, open a shell terminal and type: <kbd>gimp121</kbd> 
+  Now GIMP should start up and initialize. It's a good idea to copy or rename 
+  gimp121.exe to gimp.exe, so other programs can find it. Just make sure you 
+  don't forget to repeat this for the next version you install!
+</p>
+<h2>3. Using GTK themes</h2>
+<p>
+  Like other GTK applications GIMP is capable of using GTK themes. However, there 
+  are some differences. By default, GIMP only uses some of the elements of themes. 
+  Certain images, for instance, are usually ignored. This can be quite useful, 
+  since some themes can make GIMP's icons unreadable. To make GIMP use GTK themes 
+  like any other GTK app, shut it down, copy your .gtkrc file from your HOME 
+  directory to \XFree86\lib\X11\.gimp-1.2 and rename it as gtkrc (note the 
+  missing dot?). Now fire up GIMP and see what has changed.
+</p>
+<p>
+  <em class="warn">WARNING:</em> Themes are very demanding of your hardware. Be sure to have at least 
+  128MB RAM if you want to use them and still be able to edit some larger images. 
+  Moreover, due to the client-server architecture of XFree86, themes create a lot 
+  of additional network traffic. This will result in extremely prolonged startup 
+  times and slow operation through the bank if you use HOBLink X11 or Exceed as X 
+  server on your local machine, or you run GIMP on a remote machine.
+</p>
+<h2>4. Getting help</h2>
+<p>
+  If it still doesn't work, you think that you've discovered a bug, or you just 
+  want to say thankyou to the people who ported the package there is a mailing 
+  list for GIMP on OS/2 at Yahoogroups: <a href="maillist:GIMP-os2-url">http://groups.yahoo.com/group/gimp-os2</a>.
+</p>
+
+
+
+
+
+<ol>
+  <li>A list of something</li>
+  <li>More in the list.</li>
+</ol>
+<h3>an even more subtitle</h3>
+<p>
+  This is a key stroke <kbd>Ctrl+C</kbd>.
+</p>
+<pre class="code">
+/* Comment in code and a code example */
+
+main()
+{
+ printf("Something something\n");
+}
+</pre>
+<p>
+  More information about the code or something.
+</p>
+
+<h1>Another header (if needed)</h1>
+<h2>Another subtitle</h2>
+<p>
+  More information.
+</p>
+
+<!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
+    <div>
+      <span id="footerleft">
+        How To &copy; 2002 <a href="mailto:webmaster@gimp.org">Author name</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

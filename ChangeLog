@@ -1,5 +1,9 @@
 2005-02-03  Sven Neumann  <sven@gimp.org>
 
+	* unix/index.htrw: updated link to Slackware packages.
+
+2005-02-03  Sven Neumann  <sven@gimp.org>
+
 	* unix/index.htrw: updated links to binaries for Fedora and SuSE.
 
 2005-01-26  Dave Neary  <bolsh@gimp.org>

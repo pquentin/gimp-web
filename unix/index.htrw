@@ -12,7 +12,7 @@ systems.  In addition to the source code distribution here on
 www.gimp.org, you can get binaries for various flavors of Unix.</p>
 
 <p> At the moment we know about the following binary packages for GIMP
-2.0 on Unix. These binaries are provided by GIMP users. We did not
+2.2 on Unix. These binaries are provided by GIMP users. We did not
 test them; use at your own risk.
 
 <ul>
@@ -34,7 +34,7 @@ test them; use at your own risk.
        <a href="http://packages.gentoo.org/packages/?category=media-gfx;name=gimp">Gentoo Portage</a>
      </li>
      <li>
-       <a href="http://www.linuxpackages.net/search_view.php?by=name&name=gimp&ver=9.1">Slackware 9.1</a>
+       <a href="http://www.linuxpackages.net/search_view.php?by=name&name=gimp">Slackware</a>
      </li>
    </ul>
  </li>
@@ -55,7 +55,7 @@ test them; use at your own risk.
 </ul>
 </p>
 
-<p>If you cannot find a pre-compiled package of GIMP 2.0 for your
+<p>If you cannot find a pre-compiled package of GIMP 2.2 for your
 system, you can <a href="/source/">build and install the GIMP from the
 source code</a>.  This is not that hard, so don't be afraid and give
 it a try.</p>

@@ -27,6 +27,7 @@ img {
 #titlebar {
   background-image: url("../images/barbg.png");
   background-repeat: repeat-x;
+  width: 100%;
 }
 
 #titlebarleft {
@@ -38,6 +39,7 @@ img {
 }
 
 #layout {
+  clear: both;
   margin: 0px;
   border: none;
   padding: 0px;

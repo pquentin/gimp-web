@@ -122,3 +122,15 @@ span.linkitem:after {
   padding: 20px;
 }
 
+@media print {
+
+#linkbar, #menu {
+  display: none
+}
+
+#main {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+}

@@ -1,7 +1,5 @@
 <p>
   <a href="http://www.gimp.org">www.gimp.org</a><br />
-  <a href="http:// i.just.love.the.gimp.org"> i.just.love.the.gimp.org</a><br />
-  <a href="http:// bring.out.the.gimp.org"> bring.out.the.gimp.org</a><br />
   The GIMP web site.
 </p>
 <p>

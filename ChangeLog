@@ -1,5 +1,9 @@
 2003-09-21 scizzo <scizzo@gimp.org>
 
+	* /includes/urls_go-utility.inc: Removed two broken links.
+
+2003-09-21 scizzo <scizzo@gimp.org>
+
 	* /links/org.html, index.html: Removed files.
 	* /links/index.htrw: Fixed broken link to mailinglists. Removed include
 	link to a file that Raphaël hve removed. Removed the (dis) in the

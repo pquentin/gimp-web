@@ -40,6 +40,38 @@
               case "about":
                 $file = "includes/about.inc";
                 break;
+              case "resources":
+                $file = "includes/resources.inc";
+                break;
+              case "registry":
+                $file = "includes/registry.inc";
+                break;
+              case "documentation":
+                $file = "includes/documentation.inc";
+                break;
+              case "tutorials":
+                $file = "includes/tutorials.inc";
+                break;
+              case "authoring":
+                $file = "includes/authoring.inc";
+                break;
+              case "development":
+                $file = "includes/development.inc";
+                break;
+
+              case "unix":
+                $file = "includes/unix.inc";
+                break;
+              case "windows":
+                $file = "includes/windows.inc";
+                break;
+              case "macintosh":
+                $file = "includes/macintosh.inc";
+                break;
+              case "os2":
+                $file = "includes/os2.inc";
+                break;
+
               default:
               case "news":
                 $file = "includes/news.inc";

@@ -1,5 +1,16 @@
 2004-03-15  Raphaël Quinet  <quinet@gamers.org>
 
+	* tutorials/Changing_Background_Color_1/picker_button.png: 2.0
+	version.
+
+	* tutorials/Quickmask/image.*.jpg: Re-did the 7 screenshots after
+	having re-constructed the original image.
+
+	* tutorials/Quickmask/index.htrw: Minor update for 2.0: Fill with
+	BG Color.
+
+2004-03-15  Raphaël Quinet  <quinet@gamers.org>
+
 	* tutorials/Changing_Background_Color_1/dnd.png
 	* tutorials/Changing_Background_Color_1/layer_create.png
 	* tutorials/Changing_Background_Color_1/layer_move.png

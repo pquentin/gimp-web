@@ -70,7 +70,7 @@
 <p>
   See how the selection follows the mask? This is a powerful feature of QuickMask. You can use it to modify any existing selection, and you can even 
   use it to create new selections. Our last step is to use <span class="filter">&lt;Image&gt; Select -&gt; Invert</span> and 
-  <span class="filter">&lt;Image&gt; Edit -&gt; Fill</span>. The result, a soft white fade into the background, is shown in the final step.
+  <span class="filter">&lt;Image&gt; Edit -&gt; Fill with BG Color</span>. The result, a soft white fade into the background, is shown in the final step.
 </p>
 
 <h2>Final</h2>

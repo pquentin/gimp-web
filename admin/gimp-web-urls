@@ -33,8 +33,8 @@
 ["href", "http:Package-fonts-os2-typ1inst",    { "href": "http://www.os2world.com/os2files/files/type1inst.zip"}]
 ["href", "http:Package-fonts-os2-xfsttos2",    { "href": "ftp://hobbes.nmsu.edu/pub/os2/system/x11/xfsttos2.zip"}]
 
-["href", "mail:People-Anderson_Henrik_Brix",   { "href": "mailto:brix@gimp.org"}]
-["href", "home:People-Anderson_Henrik_Brix",   { "href": "http://brix.gimp.org"}]
+["href", "mail:People-Andersen_Henrik_Brix",   { "href": "mailto:brix@gimp.org"}]
+["href", "home:People-Andersen_Henrik_Brix",   { "href": "http://brix.gimp.org"}]
 
 ["href", "mail:People-Beane_Zach",             { "href": "mailto:xach@gimp.org"}]
 ["href", "home:People-Beane_Zach",             { "href": "http://www.xach.com"}]

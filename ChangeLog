@@ -4,6 +4,11 @@
         
         * resources/gradients/mgo-gradients.py the script is added
         
+        
+        * resources/patterns/index.html: changed the <li>'s to <div>'s
+        
+        * resources/patterns/mgo-patterns.py the script is added
+        
 2002-10-18 scizzo <scizzo@gimp.org>
 
         * tutorials/Advanced_Animations/: Add the Advanced Animation

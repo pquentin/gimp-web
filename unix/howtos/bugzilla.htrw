@@ -11,6 +11,7 @@
   fix it. So there you are at your computer trying to do something with GIMP 
   and it freaks out at you. It can be a frightening experience at times. 
 </p>
+
 <h3>First, Next, Third</h3>
 <p>
   First: Get out a piece of paper or open a text file and scribble down 
@@ -30,11 +31,13 @@
   If you can't find something that sounds like your bug there, you will need to 
   report it.
 </p>
+
 <h2>Getting Ready to Report and Reporting a Bug</h2>
 <p>
   The goal of the following is to give the developers as much information about 
   what goes wrong as possible. This helps them find out what needs to be fixed.
 </p>
+
 <h3>The Steps</h3>
 <ol>
   <li>
@@ -173,6 +176,7 @@
      </li>
  </ol>
 </ol>
+
 <h2><a name="enhance">Enhancing Bug Reports</a></h2>
 <p>
   If someone has already reported a bug like yours, read the bug report 
@@ -193,6 +197,7 @@
   describing what you updated from what version to what version that resolved 
   the bug. 
 </p>
+
 <h2>The Wait Patiently Part</h2>
 <p>
   <cite>Whee!!</cite> You survived! If you managed to get through all this and submit your 
@@ -205,6 +210,7 @@
   or &quot;RESOLVED&quot;. Then you will know that some developer out there found 
   your bug, reproduced it, and fixed it. 
 </p>
+
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
     <div>
       <span id="footerleft">

@@ -1,5 +1,13 @@
 2003-04-12  Carol Spears  <carol@gimp.org>
 
+    * mail_lists.htrw, added this file, freed it from the .inc file.
+    * mail_lists.html, removed this file.
+    * os2/index.htrw, added useful mail list urls.
+    * os2/howtos/install_gimp__xfree86.htrw, name changes.
+                                             
+
+2003-04-12  Carol Spears  <carol@gimp.org>
+
     * os2/howtos/install_font__xfree86.htrw, added a paragraph and a link to the final
                                              XF86Config file.
 

@@ -36,7 +36,7 @@
   from there. (In case you wonder why: These are libraries that are installed by 
   default on most Linux systems, so it's only natural to use them.) The GIMP 
   Freetype plug-in is available from the <a href="plugin-home:gimpfreetype-os2-stable">files section</a> of the GIMP/OS2 
-  mailing list at <a href="maillist:GIMP-os2-url">Yahoogroups: http://groups.yahoo.com/group/gimp-os2</a>.
+  mailing list at <a href="maillist:GIMP-user-os2">Yahoogroups: http://groups.yahoo.com/group/gimp-os2</a>.
 </p>
 <p>
   The version number mentioned below were the latest available at the point of the release of The GIMP 1.2.1. Don't 
@@ -139,7 +139,7 @@ SET SANE_CONFIG_DIR=e:\home\os2user\.sane
       above that depending on your scanner must (or doesn't need to) explicitely point 
       to its address, i.e. b1t6l0 if the scanner is on bus 1, has SCSI-ID 6 and LUN 0.
       If you need further help, try the mailing list at Yahoogroups: 
-      <a href="maillist:SANE-os2-url">http://groups.yahoo.com/group/sane-os2</a>.</li>
+      <a href="maillist:SANE-os2">http://groups.yahoo.com/group/sane-os2</a>.</li>
   <li><em class="warn">CAUTION:</em> Unfortunately, the plug-in archives are not 
       updated with every new release of The GIMP. The problem is that they require the 
       presence of certain GIMP DLLs whose names change with every new GIMP release! 
@@ -190,7 +190,7 @@ SYS1804: File GIMP1130 not found.
 <p>
   If it still doesn't work, you think that you've discovered a bug, or you just 
   want to say thank you to the people who ported the package there is a mailing 
-  list for GIMP on OS/2 at Yahoogroups: <a href="maillist:GIMP-os2-url">http://groups.yahoo.com/group/gimp-os2</a>.
+  list for GIMP on OS/2 at Yahoogroups: <a href="maillist:GIMP-user-os2">http://groups.yahoo.com/group/gimp-os2</a>.
 </p>
 <h2>The Original How To</h2>
 <p>

@@ -29,8 +29,9 @@
   <li>Make the splash <b>300x200</b> or more. (Smaller splashs will make
       text being cut off)</li>
   <li>Then save the splash in <b>$PREFIX/gimp/2.0/images/gimp_splash.png</b></li>
-  <li>Starting with GIMP 2.2, the splash image is called <b>gimp-splash.png</b>
-      and will also be searched in your personal GIMP directory.</li>
+  <li>Starting with GIMP 2.2, the splash image is
+      called <b>gimp-splash.png</b> and will also be searched in your
+      personal GIMP directory (<b>~/.gimp-2.2/</b>).</li>
 </ul>
 <p>
   Restart GIMP and your splash screen should be the one being used by GIMP

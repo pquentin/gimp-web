@@ -1,5 +1,12 @@
 2004-11-30  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/index.htrw: mention the name of the personal gimp
+	directory.
+
+2004-11-30  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/index.htrw: mention the name of the personal gimp
+	directory.
 	* index.htrw: reverted Helvetix' change to the front-page. Better
 	to have manually edited news with links and the correct icons than
 	to have a news system with broken content that noone has access to.

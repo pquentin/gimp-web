@@ -1,3 +1,11 @@
+2004-03-23  Henrik Brix Andersen  <brix@gimp.org>
+
+	* images/news-icons/gimp_code.png
+	* images/news-icons/gimp_construction.png
+	* images/news-icons/release-0.1.png
+	* images/news-icons/release-dev.png: set the background to white
+	to make MS IE display the icons correctly
+
 2004-03-23  Sven Neumann  <sven@gimp.org>
 
 	* unix/ui-*.png: updated screenshots for 2.0.

@@ -1,3 +1,4 @@
+/includes/news.inc
 CVS
 .cvsignore
 /ChangeLog
@@ -14,7 +15,6 @@ CVS
 .#*
 /news
 /contest/gallery
-/includes/news.inc
 /programmatic
 /crontab
 /var

@@ -15,9 +15,10 @@ export PYTHONPATH=programmatic:
 
 # how to make an html from a .htrw file
 %.html: %.htrw
-	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
-	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.x > $@
+	#programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
+	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $< > $@
 	rm -f $<.x
+	chown 755 $@
 
 RWSOURCES=$(shell find . -name '*.htrw' -print)
 RWTARGETS=$(RWSOURCES:.htrw=.html)

@@ -79,9 +79,9 @@ def footer(prefix=None):
   print page_fini()
   print xhtml_fini()
   
-  #print xhtml.object("doesn't work", {"standby": "loading", "type" : "image/png",
+
   #"data" : 'data:base64, ' + xhtml.encodefile('/home/asdf/public_html/helvetix/anybrowser.png')})
-  #                                      "data" : 'data:binary, ' + xhtml.rawfile('/home/asdf/public_html/helvetix/anybrowser.png')})
+  #                                      "data" : 'data:binary, ' + xhtml.include('/home/asdf/public_html/helvetix/anybrowser.png')})
 
   return (True)
 

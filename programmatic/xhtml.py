@@ -34,20 +34,14 @@ import sys
 import os
 import cgi
 import base64
-from UserDict import *
+#from UserDict import *
 
 import x_xml
 
 # rfc2396_reserved = [";", "/", "?", ":", "@", "&", "=", "+", "$", ","]
 #html_coreattrs = {"id", "class", "style", "title"}
 
-def rawfile(filename):
-  fp = open(filename, "r")
-  data = fp.read()
-  fp.close()
-  return (data)
 
-  
 def encodefile(filename):
   fp = open(filename, "r")
   data = fp.read()

@@ -59,7 +59,8 @@ def generate_rdf(queue):
   
   dirpath = canonical_path(queue)
   names = map(lambda t: dirpath + t, os.listdir(dirpath))
-  names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
+  #names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
+  names.sort(lambda a, b: cmp(os.stat(a).st_mtime, os.stat(b).st_mtime))
   news_items = map(lambda f: wgo_news.news(f, False), names)
   news_items = filter(lambda n: n.valid, news_items)
              
@@ -99,7 +100,8 @@ def generate_blotter(queue):
 
   if dirpath != None:
     names = map(lambda t: dirpath + t, os.listdir(dirpath))
-    names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
+    #names.sort(lambda a, b: cmp(os.stat(a)[stat.ST_MTIME], os.stat(b)[stat.ST_MTIME]))
+    names.sort(lambda a, b: cmp(os.stat(a).st_mtime, os.stat(b).st_mtime))
     news_items = map(lambda f: wgo_news.news(f, False), names)
     news_items = filter(lambda n: n.valid, news_items)
              

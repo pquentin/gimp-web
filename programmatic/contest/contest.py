@@ -271,9 +271,6 @@ def main(argv):
     mode = "manual"
     pass
 
-  submit(form)
-  return (0)
-
   if mode == "manual":          sys.exit(submit_manually(argv[1:]))
   elif mode == "form":          submit(form)
   elif mode == "preview":       preview(form)

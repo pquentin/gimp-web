@@ -58,9 +58,11 @@ def html_news_edit(this_queue, other_queue, msg, editor):
     approve_disapprove = ""
     pass
 
-  image_selector = xhtml.input.select(wgo_news.icon_option_list(msg["image"]), { "name" : "image", "class" : "news-edit"})
+  image_selector = xhtml.input.select(wgo_news.icon_option_list(msg["image"]),
+                                      { "name" : "image", "class" : "news-edit"})
 
-  print xhtml.div("GIMP ORG News Administration :: Edit %s Item" % (string.capitalize(this_queue)), {"class" : "heading"})
+  print xhtml.div("GIMP ORG News Administration :: Edit %s Item" % (string.capitalize(this_queue)),
+                  {"class" : "heading"})
 
   print xhtml.form.init({"class" : "news-edit", "action" : "news-edit-action.cgi", "method" : "post"})
 

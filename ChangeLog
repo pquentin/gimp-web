@@ -1,6 +1,11 @@
+2002-11-02 scizzo <scizzo@gimp.org>
+
+        * tutorials/Basic_Scheme/: Add the first port for the Basic Scheme
+        tutorial.
+
 2002-10-31 scizzo <scizzo@gimp.org>
 
-        * tutorials/Basic_Perl: Made the last port, needs a lot of love
+        * tutorials/Basic_Perl/: Made the last port, needs a lot of love
         though.
 
 2002-10-30 carol <carol@gimp.org>

@@ -1,3 +1,8 @@
+2004-12-14  Niklas M <scizzo@gimp.org>
+
+	* tutorials/Lite_Quickies/index.htrw: Fixed a typo. Closes bug
+	#155608.
+
 2004-12-10  Michael Schumacher <schumaml@cvs.gnome.org>
 
 	* about/selling.htrw: fixed minor spelling error. Fixes bug

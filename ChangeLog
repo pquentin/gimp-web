@@ -1,5 +1,8 @@
 2003-07-21  Helvetix Victorinox  <helvetix@gimp.org>
 
+	* downloads/.cvsignore: added
+	* */.cvsignore: updated all .cvsignore files
+
 	* install.sh
 	* Makefile: tune up, code reduction.
 

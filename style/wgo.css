@@ -66,13 +66,15 @@ h3 {
 }
 
 /* FIXME: should this be changed to h1.newsheading, or simply .newsheading? */
-div.newsheading {
-  background: #42638d;
-  color: #eeeeee;
-  padding: 5px;
-  font-weight: bold;
-  clear: left;
-}
+/*--------------------------------------------------
+* div.newsheading {
+*   background: #42638d;
+*   color: #eeeeee;
+*   padding: 5px;
+*   font-weight: bold;
+*   clear: left;
+* }
+*--------------------------------------------------*/
 
 div.book-of-wilber { 
   font-size: large;
@@ -86,12 +88,24 @@ p {
   margin: 1.33em 0px;
   margin-left: 40px;
   margin-right: 40px;
-  text-align: justify;
 }
 
 p.news {
   margin: 0.75em 0px;
   text-align: left;
+}
+
+div.news {
+    clear: top;
+}
+
+div.news p {
+    clear: top;
+}
+
+div.news img {
+    float: left;
+    padding: 0em 1em 0em 0em;
 }
 
 p.images img {
@@ -152,7 +166,6 @@ span.different {
 li {
   margin-left: 40px;
   margin-right: 40px;
-  text-align: justify;
 }
 
 .list li {

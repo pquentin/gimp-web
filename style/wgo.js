@@ -17,14 +17,14 @@ function menu_adjust () {
         main_el.style.height = (menu_el.offsetHeight - 2 * padding) + "px";
       }
     }
-    // adjust the position of the contents to match the width of the menu
-    if (menu_el.offsetWidth) {
-      if (menu_el.offsetWidth > 100) {
-        main_el.style.marginLeft = (menu_el.offsetWidth + padding) + "px";
-      } else {
+//    // adjust the position of the contents to match the width of the menu
+//    if (menu_el.offsetWidth) {
+//      if (menu_el.offsetWidth > 100) {
+//        main_el.style.marginLeft = (menu_el.offsetWidth + padding) + "px";
+//      } else {
         main_el.style.marginLeft = "11em";
-      }
-    }
+//      }
+//    }
   }
 }
 
@@ -41,7 +41,7 @@ function menu_hide () {
     menu_el.style.display = "none";
   }
   if (main_el) {
-    main_el.style.marginLeft = "0px";
+    main_el.style.marginLeft = "1em";
   }
   menu_shown = false;
 }

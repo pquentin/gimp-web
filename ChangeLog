@@ -1,3 +1,48 @@
+2003-09-21  Raphael Quinet  <quinet@gamers.org>
+
+	* about/.cvsignore
+	* programmatic/admin/develop/.cvsignore: Regenerated.
+
+	* about/index.htrw: Added a link to linking.html.
+
+	* about/linking.htrw: New page describing how other sites can link
+	to us, and providing some buttons and images that can be freely
+	copied (see bug #116523 for details).
+
+	* images/wilber_the_gimp.png
+	* images/wilber_the_gimp2.png
+	* images/wilber_the_gimp_idx.png
+	* images/wilber_painter.png
+	* images/wilber_painter_idx.png
+	* images/wilber_work.png
+	* images/wilber_wizard.png: Several PNG images of Wilber (based on
+	the Wilber Construction Kit) that can be freely copied and used by
+	other sites.
+
+	* images/gfx_by_gimp.png
+	* images/gimp_free_button.png: PNG versions of old GIF images,
+	suitable for usage by other sites linking to us.
+
+	* images/old/wilber_the_gimp.gif
+	* images/old/wilber_painter.gif
+	* images/old/frontpage.gif
+	* images/old/frontpage.png
+	* images/old/frontpage_idx.png
+	* images/old/gfx_by_gimp.gif
+	* images/old/gimp_free_button.gif: Old GIF images that were
+	directly linked by a large number of other sites (bug #116523).
+
+	* images/old/README: Some explanations for those who get there.
+
+	* images/external_404.png: New image to which old images should be
+	redirected so that other sites linking to us see immediately that
+	some things have changed.
+
+	* Makefile: removed the old .ssi rules.  Added a rule "target" for
+	those who read the usage message literally.
+
+	* .cvsignore: Added make.out.
+
 2003-09-21  Helvetix Victorinox  <helvetix@gimp.org>
 
 	* ./install.sh: Save make output into make.out

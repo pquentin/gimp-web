@@ -1,9 +1,9 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - About GIMP</title>
+<title>GIMP - About the GIMP</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>About GIMP</h1>
+<h1>About the GIMP</h1>
 <h2>Introduction to The GIMP</h2>
 <p>
   GIMP is an acronym for GNU Image Manipulation Program. It
@@ -35,6 +35,7 @@
   </ul>
 <h2>GIMP Stuff</h2>
   <ul>
+    <li><a href="linking.html">Linking to us, including images of Wilber</a></li>
     <li><a href="wilber-huge-alpha.png">The original Wilber (1080x902, 200KB)</a></li>
     <li><a href="Wilber_Construction_Kit_XP.xcf.gz">The latest Construction Kit</a></li>
   </ul>

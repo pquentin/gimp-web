@@ -3,33 +3,18 @@
 
 export PYTHONPATH=programmatic:
 
-# how to make an html from a .ssi file
-%.html: %.ssi
-	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.htrw $<
-	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.htrw > $@
-	rm -f $<.htrw
-
-# how to make an xhtml from a .ssi file
-%.xhtml: %.ssi
-	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$@ $<
-
 # how to make an html from a .htrw file
 %.html: %.htrw
 	programmatic/tools/ssi-pp --DocumentRoot=${DocumentRoot} --output=$<.x $<
 	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $<.x > $@
 	rm -f $<.x
 
-RWSOURCES=$(shell find . -name '*.htrw' -print)
-RWTARGETS=$(RWSOURCES:.htrw=.html)
+SOURCES=$(shell find . -name '*.htrw' -print)
+TARGETS=$(SOURCES:.htrw=.html)
 
-SSISOURCES=$(shell find . -name '*.ssi' -print)
-SSITARGETS=$(SSISOURCES:.ssi=.html)
+.PHONY: all usage webtools mirrors install clean cvsignore programmatic includes crontab target
 
-TARGETS=${RWTARGETS} ${SSITARGETS}
-
-.PHONY: all usage webtools mirrors install clean cvsignore programmatic rsync includes crontab 
-
-all: usage includes rsync webtools mirrors crontab ${TARGETS}
+all: usage includes webtools mirrors crontab ${TARGETS}
 	rsync -rlt --delete --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
 
@@ -38,6 +23,9 @@ includes:
 
 usage:
 	@if [ ${DocumentRoot}x = "x" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>  target"; exit 1; fi
+
+target:
+	@echo "Choose a target among: clean, all, install or cvsignore"; exit 1
 
 mirrors:
 	make -C programmatic downloads

@@ -1,0 +1,146 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Linking to us</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Linking to us</h1>
+
+<p>One of the <a href="/develop/">many ways</a> to promote the usage
+of the GIMP is to link to this web site from other sites.  If you are
+a webmaster, you are encouraged to link to us.  But you and your
+visitors will probably want to ensure that the links will not be
+broken a few days after you publish them, so here are a few simple
+guidelines that should help you to get the best out of your links.</p>
+
+<h2>Linking to our pages</h2>
+
+<p>If you want to add a link to the official GIMP web site, we
+recommend that you link to our home page:
+<kbd>http://www.gimp.org/</kbd>.  You can link to other pages such as
+the download page, the tutorials or the documentation, but be aware
+that the <span class="help" title="deep link: a link to a page that is
+several clicks away from the home page">deeper you link</span>, the
+higher the risks that the page could be moved or removed in the
+future.  We will try to avoid breaking links, but it would be
+difficult to guarantee this for the whole site.  So your best bet for
+a stable link is the home page, or some of the main pages featured in
+the navigation menu.</p>
+
+<p>If you want to link to our home page, here are some buttons that
+you can use, followed by the corresponding HTML code:</p>
+
+<p class="images"><a href="http://www.gimp.org/"><img
+alt="Graphics by GIMP" src="/images/gfx_by_gimp.png" width="90"
+height="36"></a></p>
+
+<pre class="code">
+&lt;a href="http://www.gimp.org/"&gt;&lt;img alt="Graphics by GIMP"
+src="http://www.gimp.org/images/gfx_by_gimp.png" border="0"
+width="90" height="36"&gt;&lt;/a&gt;
+</pre>
+
+<p class="images"><a href="http://www.gimp.org/"><img alt="GIMP - Free"
+src="/images/gimp_free_button.png" width="88" height="31"></a></p>
+
+<pre class="code">
+&lt;a href="http://www.gimp.org/"&gt;&lt;img alt="GIMP - Free"
+src="http://www.gimp.org/images/gimp_free_button.png" border="0"
+width="88" height="31"&gt;&lt;/a&gt;
+</pre>
+
+<p>The HTML code shown above links directly to the images provided by
+this site.  This will work for a while, until we change the name or
+the location of these images.  If you want to be sure that you will
+not have broken images in a few days or weeks, we recommend that you
+copy the button(s) to your own web site, as explained below.</p>
+
+<h2>Linking to or copying our images</h2>
+
+<p>Some images from this web site can be copied freely and used in
+other pages.  This includes the buttons shown above and the images of
+Wilber shown below.</p>
+
+<p>If you want to use them, we recommend that you copy these images to
+your own server instead of linking directly to the files available
+from this site.  This will have several advantages:</p>
+
+<ul>
+  <li>Your images will not be broken if we rename or remove some
+  files.</li>
+  <li>Your images will not be broken if this site has some temporary
+  network problems.</li>
+  <li>Your pages will load slightly faster.  Including images from
+  different sites tends to increase the time needed to load a page,
+  because your browser has to contact several servers (additional DNS
+  requests and HTTP connections).</li>
+</ul>
+
+<p>Feel free to copy the images shown on this page.  You can copy them
+and use them on your pages, but please do not modify them without our
+permission.  Most of the other images, such as the ones featured in
+the tutorials, are copyrighted by their respective authors and cannot
+be copied without permission.</p>
+
+<h2>Wilber, the GIMP mascot</h2>
+
+<p>Here are some images of Wilber, the GIMP mascot.  Wilber was
+created by Tuomas Kuosmanen (tigert) and some accessories were added
+by others: hard hat by Simon Budig, wizard hat by Raphaël Quinet, and
+many others that you can find in the Wilber Construction Kit (included
+in the source code in
+<code>/docs/Wilber_Construction_Kit.xcf.gz</code>).  The following
+images of Wilber can be copied freely.  You can click on them to load
+each image separately.</p>
+
+<p class="images">
+<a href="/images/wilber_the_gimp.png"><img alt="Wilber, the GIMP
+mascot" src="/images/wilber_the_gimp.png" width="80" height="60"></a>
+<a href="/images/wilber_the_gimp2.png"><img alt="Wilber, the GIMP
+mascot" src="/images/wilber_the_gimp2.png" width="80" height="60"></a>
+<a href="/images/wilber_painter.png"><img alt="Wilber painter"
+src="/images/wilber_painter.png" width="80" height="60"></a>
+<a href="/images/wilber_work.png"><img alt="Wilber worker"
+src="/images/wilber_work.png" width="80" height="60"></a>
+<a href="/images/wilber_wizard.png"><img alt="Wilber wizard"
+src="/images/wilber_wizard.png" width="80" height="70"></a>
+</p>
+
+<p>The images are in PNG format and support "real" transparency,
+unlike GIF images.  So if your browser supports PNG correctly, the
+same images should look good over any background:</p>
+
+<p class="images" style="background: #CC9966 url(../images/wilberbook.jpg);">
+<a href="/images/wilber_the_gimp.png"><img alt="Wilber, the GIMP
+mascot" src="/images/wilber_the_gimp.png" width="80" height="60"></a>
+<a href="/images/wilber_the_gimp2.png"><img alt="Wilber, the GIMP
+mascot" src="/images/wilber_the_gimp2.png" width="80" height="60"></a>
+<a href="/images/wilber_painter.png"><img alt="Wilber painter"
+src="/images/wilber_painter.png" width="80" height="60"></a>
+<a href="/images/wilber_work.png"><img alt="Wilber worker"
+src="/images/wilber_work.png" width="80" height="60"></a>
+<a href="/images/wilber_wizard.png"><img alt="Wilber wizard"
+src="/images/wilber_wizard.png" width="80" height="70"></a>
+</p>
+
+<p>Unfortunately, some browsers do not support the PNG transparency
+correctly.  For example, Internet Explorer supports only a very
+limited 1-bit transparency (similar to the GIF format).  The following
+images are suitable for these browsers, but they only look good over a
+white background:</p>
+
+<p class="images">
+<a href="/images/wilber_the_gimp_idx.png"><img alt="Wilber, the GIMP
+mascot" src="/images/wilber_the_gimp_idx.png" width="80" height="60"></a>
+<a href="/images/wilber_painter_idx.png"><img alt="Wilber painter"
+src="/images/wilber_painter_idx.png" width="80" height="60"></a>
+</p>
+
+<p class="images" style="background: #CC9966 url(../images/wilberbook.jpg);">
+<a href="/images/wilber_the_gimp_idx.png"><img alt="Wilber, the GIMP
+mascot" src="/images/wilber_the_gimp_idx.png" width="80" height="60"></a>
+<a href="/images/wilber_painter_idx.png"><img alt="Wilber painter"
+src="/images/wilber_painter_idx.png" width="80" height="60"></a>
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

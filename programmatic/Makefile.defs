@@ -1,0 +1,19 @@
+# -*- Makefile -*-
+export OWNER=apache
+export DocumentRoot=""
+export LIBDIR=${DocumentRoot}/cgi-common
+export PYTHONPATH=.:${LIBDIR}:%{PYTHONPATH}
+
+# a few convenient transforms for making cgi scripts, css files, and
+# shell scripts with variable substitution and macros
+%.css: %.cpp
+	cpp -P -pedantic -Wall -nostdinc ${CSSFLAGS} $< $@
+
+%.cgi: %.py
+	sed -e 's|__LIBDIR__|${LIBDIR}|g' $< > $@
+	chmod a+rx $@
+
+%: %.sh
+	sed -e 's|__LIBDIR__|${LIBDIR}|g' $< > $@
+	chmod a+rx $@
+

@@ -1,0 +1,34 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - The GNU Image Manipulation Program</title>
+<link rel="stylesheet" title="Administration HOWTO" href="/admin/wgo-admin.css" type="text/css" media="screen">
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<!--#include virtual="/includes/admin-menu.inc" -->
+<div class="heading">gimp.org Administration HOWTO</div>
+<p>
+<div class="subtitle">http.conf</div>
+<p>
+Below, is the relevant portion of my http.conf file.
+You will need to adjust pathnames, email addresses, and <tt>ServerName</tt> to fit your installation.
+</p>
+<p>
+<fieldset>
+<legend><b>http.conf excerpt</b></legend>
+<pre>
+NameVirtualHost 63.199.184.245:8082
+
+&lt;VirtualHost 63.199.184.245:8082&gt;
+    ServerAdmin root@localhost
+    DocumentRoot "/home/wgo"
+    &lt;Directory "/home/wgo"&gt;
+        AllowOverride Options FileInfo AuthConfig Limit
+        Options Indexes ExecCGI MultiViews SymLinksIfOwnerMatch IncludesNoExec
+        Options +Includes
+    &lt;/Directory&gt;
+    XBitHack on
+    ServerName wgo.mysterious.org
+&lt;/VirtualHost&gt;
+</pre>
+</fieldset>
+</p>
+<!--#include virtual="/includes/linkbar.inc" -->
+<!--#include virtual="/includes/footer.inc" -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+      <link rel="stylesheet" href="contest.css">
+      </link>
+    </head>
+
+    <body>
+      <form name="doattach" enctype="multipart/form-data" method="post" action="doattach"></form>
+
+      <form name="attach" method="post" action="attach">
+        <input type="hidden" name="current-contest" value="F000000001"></input>
+        <input type="submit" name="Remove.x" value="Remove" class="sbttn" tabindex="3" onclick="return DoRemove()"></input>
+      </form>
+
+      <form name="doneattach" enctype="multipart/form-data" method="post" action="http://pv1fd.pav1.hotmail.msn.com/cgi-bin/doattach"></form>
+
+      <form name="upsellAtt" method="post" action="http://pv1fd.pav1.hotmail.msn.com/cgi-bin/premail" style="visibility: hidden;">
+        <input type="hidden" name="curmbox" value="F000000001">
+          
+          <input type="hidden" name="smsg" value="helvetix.saved">
+            <input type="hidden" name="attfile" value="">
+              <input type="hidden" name="_HMaction" value="UpSell">
+      </form>
+
+    </body>
+  </html>

@@ -1,0 +1,17 @@
+(let* (
+       (input  $1)
+       (output $2)
+       (img    (car (gimp-file-load 1 input input)))
+       (drw    (car (gimp-image-active-drawable img)))
+       (width  (car (gimp-image-width img)))
+       (height (car (gimp-image-height img)))
+       (h      (* height (/ 150 width)))
+       )
+
+  (gimp-image-undo-disable img)
+  (gimp-selection-none img)
+  (gimp-image-scale img 150 h)
+  (file-png-save 1 img (car (gimp-image-active-drawable img)) output output 0 6 0 0 0 0 0)
+  (gimp-message "success")
+  (gimp-quit 0)
+  )

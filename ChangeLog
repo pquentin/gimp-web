@@ -1,40 +1,46 @@
-2003-01-05 scizzo <scizzo@gimp.org>
+2003-01-05  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
-	* tutorials/Basic_Perl/index.html
-	* tutorials/Perl-Debugged/index.html
-	* tutorials/Basic_Scheme/index.html
-	* tutorials/Basic_Scheme2/index.html
-	* tutorials/Perlotine/*.html: Changed all the <div class="code"> and
-	<div class="debug"> tags to <pre class=""> tags to fix the IE
-	problems.
-
-2003-01-05 brix <brix@gimp.org>
-
-	* style/default.css: Changed div.code and div.debug to pre.code
-	and pre.debug to solve the IE line-wrap	problem. 
-	tutorials/*/index.html should be changed accordingly.
-	
-2003-01-05 scizzo <scizzo@gimp.org>
-
-	* tutorials/Perl-Debugged/index.html: Trying to fix the line-wrap
-	problem for IE.
-
-2003-01-05 brix <brix@gimp.org>
-
-	* style/default.css: div.code and div.debug: added a padding of
-	1.33em
+        * Replaced the news/ directory with a new programmatic/ directory
+        which contains scripts for the Contest, and site administration.
+        Site news is now part of the site administration.
 
 2003-01-05 scizzo <scizzo@gimp.org>
 
-	* tutorials/Perl-Debugged/index.html: Add the div.debug to the right
-	places in the tutorial. Fixed a typo. Changed a few things in the
-	tables for the tutorial.
+        * tutorials/Basic_Perl/index.html
+        * tutorials/Perl-Debugged/index.html
+        * tutorials/Basic_Scheme/index.html
+        * tutorials/Basic_Scheme2/index.html
+        * tutorials/Perlotine/*.html: Changed all the <div class="code"> and
+        <div class="debug"> tags to <pre class=""> tags to fix the IE
+        problems.
 
 2003-01-05 brix <brix@gimp.org>
 
-	* style/default.css: added a div.debug class. maybe the background
-	color needs to change?
-	
+        * style/default.css: Changed div.code and div.debug to pre.code
+        and pre.debug to solve the IE line-wrap problem. 
+        tutorials/*/index.html should be changed accordingly.
+        
+2003-01-05 scizzo <scizzo@gimp.org>
+
+        * tutorials/Perl-Debugged/index.html: Trying to fix the line-wrap
+        problem for IE.
+
+2003-01-05 brix <brix@gimp.org>
+
+        * style/default.css: div.code and div.debug: added a padding of
+        1.33em
+
+2003-01-05 scizzo <scizzo@gimp.org>
+
+        * tutorials/Perl-Debugged/index.html: Add the div.debug to the right
+        places in the tutorial. Fixed a typo. Changed a few things in the
+        tables for the tutorial.
+
+2003-01-05 brix <brix@gimp.org>
+
+        * style/default.css: added a div.debug class. maybe the background
+        color needs to change?
+        
 2002-12-27 scizzo <scizzo@gimp.org>
 
         * tutorials/Changing_Background_Color_1/index.html: Moved the icon for
@@ -84,7 +90,7 @@
 
 2002-12-22 carol <carol@gimp.org>
 
-	* style/default.css: added a style for kbd 
+        * style/default.css: added a style for kbd 
 
 2002-12-22 scizzo <scizzo@gimp.org>
 
@@ -92,39 +98,39 @@
 
 2002-12-20 carol <carol@gimp.org>
 
-	* tutorials/Drawables/index.html: fixed author email addy. 
+        * tutorials/Drawables/index.html: fixed author email addy. 
 
 2002-12-20 carol <carol@gimp.org>
 
-	* team.html: added a thank you to the previous web masters 
+        * team.html: added a thank you to the previous web masters 
 
 2002-12-20 carol <carol@gimp.org>
 
-	* team.html: put jtl's real name there for google to find!! 
+        * team.html: put jtl's real name there for google to find!! 
 
-	* docs/index.html: reflected the new addition (doh)
+        * docs/index.html: reflected the new addition (doh)
 
 2002-12-19 carol <carol@gimp.org>
 
-	* docs/plug-ins/: added 
+        * docs/plug-ins/: added 
 
-	* style/default.css: added div.book-of-wilber :)
+        * style/default.css: added div.book-of-wilber :)
 
-	* images/wilberbook.jpg: added 
+        * images/wilberbook.jpg: added 
 
 2002-12-18 carol <carol@gimp.org>
 
-	* tutorials/Script_Image/: removed 
+        * tutorials/Script_Image/: removed 
 
-	* tutorials/Drawables/index.html: added and edited down to drawables only.
+        * tutorials/Drawables/index.html: added and edited down to drawables only.
 
-	* tutorials/index.html: reflected the change
+        * tutorials/index.html: reflected the change
 
 2002-12-16 carol <carol@gimp.org>
 
-	* developer/bugzilla*: moved the scripts to develop/
+        * developer/bugzilla*: moved the scripts to develop/
 
-	* developer/, development/:  trying once again to remove these.
+        * developer/, development/:  trying once again to remove these.
     
     * team.html: added Helvetix
 
@@ -137,25 +143,25 @@
         news/Makefile
 
 2002-12-11 spiderworm <dimillet@hotmail.com>
-	* develop/bugzilla-fixed-list.html: added this file which will contain the html
-	code generated from a bugzilla query and will be included into the
-	develop/bugzilla-fixed.html page
+        * develop/bugzilla-fixed-list.html: added this file which will contain the html
+        code generated from a bugzilla query and will be included into the
+        develop/bugzilla-fixed.html page
 
-	* developer/bugzilla-fixed-text.py: added this to test the python web modules on
-	the server, will remove later.
+        * developer/bugzilla-fixed-text.py: added this to test the python web modules on
+        the server, will remove later.
 
-	* developer/bugzilla-fixed-test.cgi: added this to test the python web modules on
-	the server, will remove later.
+        * developer/bugzilla-fixed-test.cgi: added this to test the python web modules on
+        the server, will remove later.
 
 2002-12-10 carol <carol@gimp.org>
 
-	* develop/, includes/menu.inc:  i got a CVS directory into the wrong develop___/  
+        * develop/, includes/menu.inc:  i got a CVS directory into the wrong develop___/  
     things were messed up bad.  i completely changed the name and was careful 
     with CVS/ this time. made the change in the menu.inc file
 
 2002-12-09 carol <carol@gimp.org>
 
-	* TODO.gnomecvs:  updated.
+        * TODO.gnomecvs:  updated.
 
 2002-12-08 scizzo <scizzo@gimp.org>
 
@@ -197,36 +203,36 @@
 
 2002-12-08 carol <carol@gimp.org>
 
-	* bugs.html:  added.
-	* bugs/index.html:  removed.
-	* developer/index.html:  minor edit 
+        * bugs.html:  added.
+        * bugs/index.html:  removed.
+        * developer/index.html:  minor edit 
 
   Me and CVS had issues with these so i removed them:
-	* development/index.html, 
+        * development/index.html, 
     * development/people.jpg
-	* development/stable.html
-	* development/unstable.html
-	* development/print.html
-	* development/film.html
-	* development/bugzilla-new.html
-	* development/bugzilla-fixed.html
-	* development/plugins.html
-	* development/help.html
+        * development/stable.html
+        * development/unstable.html
+        * development/print.html
+        * development/film.html
+        * development/bugzilla-new.html
+        * development/bugzilla-fixed.html
+        * development/plugins.html
+        * development/help.html
 
   Added these:
-	* developer/index.html, 
+        * developer/index.html, 
     * developer/people.jpg
-	* developer/stable.html
-	* developer/unstable.html
-	* developer/print.html
-	* developer/film.html
-	* developer/bugzilla-new.html
-	* developer/bugzilla-fixed.html
-	* developer/plugins.html
-	* developer/help.html
+        * developer/stable.html
+        * developer/unstable.html
+        * developer/print.html
+        * developer/film.html
+        * developer/bugzilla-new.html
+        * developer/bugzilla-fixed.html
+        * developer/plugins.html
+        * developer/help.html
 
   Fixed it in this:
-	* includes/menu.inc: changed the url from development/ to developer/
+        * includes/menu.inc: changed the url from development/ to developer/
 
 2002-12-07 scizzo <scizzo@gimp.org>
 
@@ -248,26 +254,26 @@
 
 2002-12-07 carol <carol@gimp.org>
 
-	* about/splash-cvs.html: fixed a bad image url.
+        * about/splash-cvs.html: fixed a bad image url.
 
-	* tutorials/Color2BW/: name="# to name="
+        * tutorials/Color2BW/: name="# to name="
 
-	* style/default.css: clear: left; to div.newsheading
+        * style/default.css: clear: left; to div.newsheading
 
-	* development/index.html, development/people.jpg: made this file, added that 
+        * development/index.html, development/people.jpg: made this file, added that 
     jpeg.
 
-	* includes/menu.inc: changed the url from development.html to /development/ and
+        * includes/menu.inc: changed the url from development.html to /development/ and
     bugs/ to bugs.html
 
-	* development/stable.html
-	* development/unstable.html
-	* development/print.html
-	* development/film.html
-	* development/bugzilla-new.html
-	* development/bugzilla-fixed.html
-	* development/plugins.html
-	* development/help.html
+        * development/stable.html
+        * development/unstable.html
+        * development/print.html
+        * development/film.html
+        * development/bugzilla-new.html
+        * development/bugzilla-fixed.html
+        * development/plugins.html
+        * development/help.html
 
 2002-12-06 scizzo <scizzo@gimp.org>
 
@@ -276,47 +282,47 @@
 
 2002-12-06 carol <carol@gimp.org>
 
-	* tutorials/Anti-Alias_Treshhold/, tutorials/Anti-Alias_Threshhold:
+        * tutorials/Anti-Alias_Treshhold/, tutorials/Anti-Alias_Threshhold:
     removed the mispelled directory and added the (i hope) properly spelled one.
 
-	* tutorials/Channel_Mixer:  removed this directory.
+        * tutorials/Channel_Mixer:  removed this directory.
     
 2002-11-30 carol <carol@gimp.org>
 
-	* TODO:  a big list of everything that needs to be done.
+        * TODO:  a big list of everything that needs to be done.
 
-	* TODO.gnomecvs:  a smaller list of everything that needs to be done
+        * TODO.gnomecvs:  a smaller list of everything that needs to be done
     before the module can be moved to gnomecvs.
 
-	* TODO.auto:  a smaller list of the scripts that need to be written.
+        * TODO.auto:  a smaller list of the scripts that need to be written.
 
-	* unix/index.html:  removed FAQ url, fixed the gimp-help url.  added the url
+        * unix/index.html:  removed FAQ url, fixed the gimp-help url.  added the url
     to tile_cache.html.
 
-	* unix/user_install.html:  added the url to tile_cache.html.
+        * unix/user_install.html:  added the url to tile_cache.html.
 
-	* docs/index.html, docs/gimp-help, docs/devlop-docs:  added the directories and
+        * docs/index.html, docs/gimp-help, docs/devlop-docs:  added the directories and
     reflected the additions in the index page.
 
-	* maillists.html, mail_lists.html, includes/linkbar.inc, links/index:  changed 
+        * maillists.html, mail_lists.html, includes/linkbar.inc, links/index:  changed 
     the file name from maillists.html to mail_lists.html as i saw this one printed
     in a book as a wgo document.  the change was reflected everywhere that i can 
     think of.
 
 2002-11-27 carol <carol@gimp.org>
 
-	* includes/news.inc: pave the way to stop the web project with some fun
+        * includes/news.inc: pave the way to stop the web project with some fun
     news items.  :)
 
 2002-11-27 carol <carol@gimp.org>
 
-	* about/index.html, about/*.png: cleaned up the splash images.
+        * about/index.html, about/*.png: cleaned up the splash images.
 
-	* about/splash-cvs.html, added the 1.3 versions of the splash.
+        * about/splash-cvs.html, added the 1.3 versions of the splash.
 
-	* includes/urls_important.inc, added google to important urls.
+        * includes/urls_important.inc, added google to important urls.
 
-	* about/splash-1.3.html, about/splash-cvs.html: mistakes and cosmetics fixed.
+        * about/splash-1.3.html, about/splash-cvs.html: mistakes and cosmetics fixed.
 
 2002-11-26 scizzo <scizzo@gimp.org>
 
@@ -324,58 +330,58 @@
 
 2002-11-26 carol <carol@gimp.org>
 
-	* about/splash.html, about/splash/*.png: i removed these
+        * about/splash.html, about/splash/*.png: i removed these
 
-	* about/splash-1.1.html, about/splash-1.3.html,*.png, about/splash-cvs.html,
+        * about/splash-1.1.html, about/splash-1.3.html,*.png, about/splash-cvs.html,
     about/splash-stable, about/index.html and about/*.png:  split the splashes
     up and made pngs and thumbnails.
 
-	* about/splash/README.splash, about/splash/gimp/*, about/splash/gimp-1.1/*,
+        * about/splash/README.splash, about/splash/gimp/*, about/splash/gimp-1.1/*,
     about/splash/gimp-1.3/*: the original images from cvs and instructions on
     how to get them.
 
-	* tutorials/Photo_Edit/*: removed these files 
+        * tutorials/Photo_Edit/*: removed these files 
 
-	* tutorials/*: added the Photo_Edit files to the tutorial directory
+        * tutorials/*: added the Photo_Edit files to the tutorial directory
 
-	* tutorials/index.html: changed the index to reflect the directory change
+        * tutorials/index.html: changed the index to reflect the directory change
 
-	* style/default.css, tutorials/Perlotine/index.html: added a tag that will 
+        * style/default.css, tutorials/Perlotine/index.html: added a tag that will 
     hopefully help the tables in the perlotine tutorial. img.map
 
-	* tutorials/Image_Map/index.html: added the javascript into the "invisible"
+        * tutorials/Image_Map/index.html: added the javascript into the "invisible"
     head so the pop-up window will work.
     
-	* tutorials/Image_Map/bexcolorpicker-tutpop.html: fixed the image paths.
+        * tutorials/Image_Map/bexcolorpicker-tutpop.html: fixed the image paths.
     
-	* style/default.css, tutorials/Perlotine/index.html: added a tag that will 
+        * style/default.css, tutorials/Perlotine/index.html: added a tag that will 
     hopefully help the tables in the perlotine tutorial. td.map
     
     * about/splash-cvs.html: added the missing two splashes.
 
 2002-11-25 carol <carol@gimp.org>
 
-	* about/splash.html,about/splash/*.png  and about/splash/*.txt:  added
+        * about/splash.html,about/splash/*.png  and about/splash/*.txt:  added
     the splash images from cvs (yosh co'ed them) resized them and put them
     in the table in splash.html.
 
-	* about/splash.html: brix helped me to see the error in the image names.
+        * about/splash.html: brix helped me to see the error in the image names.
 
-	* about/splash.html: more image name fixing and some cosmetics.
+        * about/splash.html: more image name fixing and some cosmetics.
 
-	* about/splash/gimp/*, about/splash/gimp-1.1/* and about/splash/gimp-1.3/*: 
+        * about/splash/gimp/*, about/splash/gimp-1.1/* and about/splash/gimp-1.3/*: 
     added the complete cvs archives of the splashscreens (as gathered by yosh)
 
-	* about/splash.html: some cosmetics.
+        * about/splash.html: some cosmetics.
 
 2002-11-24 carol <carol@gimp.org>
 
-	* about/splash.html: added this file.
+        * about/splash.html: added this file.
 
-	* about/splash.html and about/splash/*.png  added some gallery images and 
+        * about/splash.html and about/splash/*.png  added some gallery images and 
     started on a gallery layout.
 
-	* about/splash.html and about/splash/*.png  removed all the images (starting
+        * about/splash.html and about/splash/*.png  removed all the images (starting
     over) 
 
 2002-11-24 scizzo <scizzo@gimp.org>
@@ -385,9 +391,9 @@
 
 2002-11-23 carol <carol@gimp.org>
 
-	* tutorials/Photo_Edit/ND_Filter: removed at the request of the author.
+        * tutorials/Photo_Edit/ND_Filter: removed at the request of the author.
 
-	* tutorials/Basic_Scheme2/index.html: made the Linux Magazine origins more
+        * tutorials/Basic_Scheme2/index.html: made the Linux Magazine origins more
     prominent before i contact them ;)
 
 2002-11-23 scizzo <scizzo@gimp.org>
@@ -413,77 +419,77 @@
 
 2002-11-22 carol <carol@gimp.org>
 
-	* docs/scheme_plugin, that i stole from simon budig
+        * docs/scheme_plugin, that i stole from simon budig
 
-	* docs/index.html changed the url to the scheme documentation
+        * docs/index.html changed the url to the scheme documentation
 
-	* about/index.html: moved the items around.
+        * about/index.html: moved the items around.
 
-	* docs/scheme_plugin: got the images for the doc
+        * docs/scheme_plugin: got the images for the doc
 
-	* tutorials/index.html: "started" to determine the proper wording for the
+        * tutorials/index.html: "started" to determine the proper wording for the
     quickies entry into the list of tutorials
 
-	* about/index.html: moved the items around one more time.
+        * about/index.html: moved the items around one more time.
 
-	* includes/linkbar.inc: contest/index.html added to linkbar. FAQ's
+        * includes/linkbar.inc: contest/index.html added to linkbar. FAQ's
     removed.
 
-	* contest/index.html: added this promise.
+        * contest/index.html: added this promise.
 
-	* about/splash.html: added this template.
+        * about/splash.html: added this template.
 
-	* about/index.html: added Splash History to History Section.
+        * about/index.html: added Splash History to History Section.
 
 2002-11-21 carol <carol@gimp.org>
 
-	* links.html: added some more urls. fixed somethings. reflected these
+        * links.html: added some more urls. fixed somethings. reflected these
     changes in links/index.html as well.
 
-	* links/index.html, links/org.html: branched many of the gimp.org sites
+        * links/index.html, links/org.html: branched many of the gimp.org sites
     onto their own page.
 
-	* team.html: added martijn (yay!)
+        * team.html: added martijn (yay!)
 
-	* docs/python/*.html: added the directory and the documentation from the
+        * docs/python/*.html: added the directory and the documentation from the
     pygimp module
 
-	* links.html, includes/linkbar.inc: removed links.html and reflected the
+        * links.html, includes/linkbar.inc: removed links.html and reflected the
     change in linkbar.inc
 
-	* links.html, includes/urls_important.inc, about/index.html:  moved the
+        * links.html, includes/urls_important.inc, about/index.html:  moved the
     important GIMP urls into an includes file.  
 
-	* links.html, includes/urls_maillists.inc, maillists.html:  separated the
+        * links.html, includes/urls_maillists.inc, maillists.html:  separated the
     maillists urls into an includes file and added that to maillists.html
 
-	* links.html, includes/urls_go-utiltity.inc, includes/urls_go-developer.inc:  
+        * links.html, includes/urls_go-utiltity.inc, includes/urls_go-developer.inc:  
     separated more of the links into includes files.
 
-	* docs/gimp-print/ and files therein:  grabbed the gimp-print docs
+        * docs/gimp-print/ and files therein:  grabbed the gimp-print docs
     and put them here.
 
 2002-11-20 carol <carol@gimp.org>
 
-	* links.html: moved some of the clusters around, added a few others
+        * links.html: moved some of the clusters around, added a few others
 
-	* links/index.html: added the directory and copied links.html into it,
+        * links/index.html: added the directory and copied links.html into it,
     getting it ready for that magical "more ..." stuff brix did to 
     about/index.html
 
 2002-11-20 brix <brix@gimp.org>
 
-	* includes/menu.inc: changed documentation link to point to /docs
+        * includes/menu.inc: changed documentation link to point to /docs
 
-	* documentation.html: file removed
+        * documentation.html: file removed
 
-	* ChangeLog: extracted martijns entry from cvs log and added to
-	ChangeLog file
-	
+        * ChangeLog: extracted martijns entry from cvs log and added to
+        ChangeLog file
+        
 2002-11-20 martijn <m.weisbeek@home.nl>
 
-	* links.html: Links-page now contains the best GIMP-links
-	available (IMHO)
+        * links.html: Links-page now contains the best GIMP-links
+        available (IMHO)
 
 2002-11-20 scizzo <scizzo@gimp.org>
 
@@ -520,7 +526,7 @@
 
 2002-11-14 brix <brix@gimp.org>
 
-	* books/index.html: added missing descriptions
+        * books/index.html: added missing descriptions
 
 2002-11-14 scizzo <scizzo@gimp.org>
 
@@ -569,1204 +575,1204 @@
 
 2002-11-10 brix <brix@gimp.org>
 
-	* books/index.html: added more descriptions and website links
+        * books/index.html: added more descriptions and website links
 
-	* style/default.css: added margins to div.code
-	
+        * style/default.css: added margins to div.code
+        
 2002-11-09 scizzo <scizzo@gimp.org>
 
-	* tutorials/Photo_Edit/Selective_Color/: First port of the
+        * tutorials/Photo_Edit/Selective_Color/: First port of the
         Selective Color tutorial. A few image fixes also.
 
-	* tutorials/Photo_Edit/Smart_Sharpening: First port of the 
+        * tutorials/Photo_Edit/Smart_Sharpening: First port of the 
         Smart Sharpening tutorial. Fixed the Further read links.
 
-	* tutorials/Photo_Edit/Reducing_CCD_Noise/index.html: Add
+        * tutorials/Photo_Edit/Reducing_CCD_Noise/index.html: Add
         the Further read links.
 
-	* tutorials/Photo_Edit/ND_Filter/index.html: Add the Further read
+        * tutorials/Photo_Edit/ND_Filter/index.html: Add the Further read
         link to the site to make it complete.
 
-	* tutorials/Photo_Edit/Sepia_Toning/index.html: Fixed the Further
+        * tutorials/Photo_Edit/Sepia_Toning/index.html: Fixed the Further
         read links.
 
 2002-11-08 brix <brix@gimp.org>
 
-	* books/index.html: added a bunch of books
+        * books/index.html: added a bunch of books
 
-	* books/essential_gimp_for_web_professionals.png,
-	books/gimp_esential_reference.png, books/gimp_for_linux_bible.png,
-	books/gimp_the_official_handbook.png, books/grokking_the_gimp.png,
-	books/guerrilla_guide_to_great_graphics_with_the_gimp.png,
-	books/teach_yourself_gimp_in_24_hours.png,
-	books/the_artist_guide_to_the_gimp.png,
-	books/the_gimp_for_linux_and_unix:_visual_quickstart_guide.png,
-	books/the_gimp_pocket_reference.png: images added
+        * books/essential_gimp_for_web_professionals.png,
+        books/gimp_esential_reference.png, books/gimp_for_linux_bible.png,
+        books/gimp_the_official_handbook.png, books/grokking_the_gimp.png,
+        books/guerrilla_guide_to_great_graphics_with_the_gimp.png,
+        books/teach_yourself_gimp_in_24_hours.png,
+        books/the_artist_guide_to_the_gimp.png,
+        books/the_gimp_for_linux_and_unix:_visual_quickstart_guide.png,
+        books/the_gimp_pocket_reference.png: images added
 
-	* style/default.css: added "clear: both;" to span.subtitle
+        * style/default.css: added "clear: both;" to span.subtitle
 
-	* books/gimp_for_linux_bible.png,
-	books/guerrilla_guide_to_great_graphics_with_the_gimp.png,
-	books/teach_yourself_gimp_in_24_hours.png,
-	books/the_gimp_for_linux_and_unix:_visual_quickstart_guide.png:
-	unused images removed
-	
+        * books/gimp_for_linux_bible.png,
+        books/guerrilla_guide_to_great_graphics_with_the_gimp.png,
+        books/teach_yourself_gimp_in_24_hours.png,
+        books/the_gimp_for_linux_and_unix:_visual_quickstart_guide.png:
+        unused images removed
+        
 2002-11-08 scizzo <scizzo@gimp.org>
 
-	* tutorials/Photo_Edit/Blending_Exposures/: First port of the
+        * tutorials/Photo_Edit/Blending_Exposures/: First port of the
         Blending Exposures tutorial.
 
 2002-11-07 scizzo <scizzo@gimp.org>
 
-	* tutorials/Photo_Edit/Blur_Overlays/: First port of the Blur
+        * tutorials/Photo_Edit/Blur_Overlays/: First port of the Blur
         Overlay tutorial. Small fixes.
 
-	* tutorials/Photo_Edit/Blown_Out_Highlights/: First port of the
+        * tutorials/Photo_Edit/Blown_Out_Highlights/: First port of the
         Blown out highlights tutorial.
 
 2002-11-06 scizzo <scizzo@gimp.org>
 
-	* tutorials/Photo_Edit/Sepia_Toning/: First port of the Sepia
+        * tutorials/Photo_Edit/Sepia_Toning/: First port of the Sepia
         Toning tutorial.
 
 2002-11-05 scizzo <scizzo@gimp.org>
 
-	* tutorials/Photo_Edit/Channel_Mixer/: First port for the Channel
+        * tutorials/Photo_Edit/Channel_Mixer/: First port for the Channel
         Mixer tutorial.
 
-	* tutorials/Photo_Edit/Reducing_CCD_Noise/: First port for the 
+        * tutorials/Photo_Edit/Reducing_CCD_Noise/: First port for the 
         CCD Noise tutorial.
 
-	* tutorials/Photo_Edit/ContrastMask/: First port for the Contrast Mask
+        * tutorials/Photo_Edit/ContrastMask/: First port for the Contrast Mask
         tutorial.
 
-	* tutorials/Photo_Edit/ND_Filter/: First port for the ND Filter
+        * tutorials/Photo_Edit/ND_Filter/: First port for the ND Filter
         tutorial.
 
 2002-11-03 scizzo <scizzo@gimp.org>
 
-	* tutorials/index.html: Edit the photo edit menu to the index.
+        * tutorials/index.html: Edit the photo edit menu to the index.
 
 2002-11-03 carol <carol@gimp.org>
 
-	* about/index.html:  added some historical urls to the history list
+        * about/index.html:  added some historical urls to the history list
     
-	* tutorials/index.html:  shuffled the index page around a bit
+        * tutorials/index.html:  shuffled the index page around a bit
     
-	* unix/index.html:  clean up of some bad tags
+        * unix/index.html:  clean up of some bad tags
     
 2002-11-03 rockwlrs <rock@gimp.org>
 
-	* about/ChangeLogs/ChangeLog.pl: a script that autogenerates web pages
-	from ChangeLogs.
+        * about/ChangeLogs/ChangeLog.pl: a script that autogenerates web pages
+        from ChangeLogs.
 
-	* about/ChangeLogs/1.2.3/ChangeLog: the ChangeLog from the 1.2.3
-	tarball.
+        * about/ChangeLogs/1.2.3/ChangeLog: the ChangeLog from the 1.2.3
+        tarball.
 
-	* about/ChangeLogs/1.2.3/*.html: the ChangeLog in HTML form.
+        * about/ChangeLogs/1.2.3/*.html: the ChangeLog in HTML form.
 
-	* about/index.html: added a link to the new ChangeLog
+        * about/index.html: added a link to the new ChangeLog
 
-	* install.exclude: added about/ChangeLogs/ChangeLog.pl
+        * install.exclude: added about/ChangeLogs/ChangeLog.pl
 
-	I would like to improve the navigation links a bit before I spam the
-	cvs server with more ChangeLog entry pages (1.3 and the pre-pages.)
+        I would like to improve the navigation links a bit before I spam the
+        cvs server with more ChangeLog entry pages (1.3 and the pre-pages.)
 
 2002-11-03 scizzo <scizzo@gimp.org>
 
-	* tutorials/Perl_Debbuged: Add the first version of the Perl Debbuged
+        * tutorials/Perl_Debbuged: Add the first version of the Perl Debbuged
         tutorial.
 
-	* tutorials/Basic_Perl: Add the original site link.
+        * tutorials/Basic_Perl: Add the original site link.
 
-	* tutorials/Basic_Scheme: Add the original site link.
+        * tutorials/Basic_Scheme: Add the original site link.
 
 2002-11-02 scizzo <scizzo@gimp.org>
 
-	* tutorials/Basic_Scheme/: Add the first port for the Basic Scheme
+        * tutorials/Basic_Scheme/: Add the first port for the Basic Scheme
         tutorial. Try to make it better.
 
 2002-10-31 scizzo <scizzo@gimp.org>
 
-	* tutorials/Basic_Perl/: Made the last port, needs a lot of love
+        * tutorials/Basic_Perl/: Made the last port, needs a lot of love
         though.
 
 2002-10-30 carol <carol@gimp.org>
 
-	* development.html: after quite a bit of thought i removed
-	rockwlrs url on this document.  mitch gave me a list of things he
-	wanted on the developer section, they need to be dug up before we
-	start adding new things here.
+        * development.html: after quite a bit of thought i removed
+        rockwlrs url on this document.  mitch gave me a list of things he
+        wanted on the developer section, they need to be dug up before we
+        start adding new things here.
     
-	* docs/index.html: added the things that should be quick to grab
-	and put into place and one wishlist item.  added the directory
-	docs/ , docs/gimp-docs docs/scriptfu, docs/print, docs/python,
-	docs/cookbook.  i also removed documentation.html.
+        * docs/index.html: added the things that should be quick to grab
+        and put into place and one wishlist item.  added the directory
+        docs/ , docs/gimp-docs docs/scriptfu, docs/print, docs/python,
+        docs/cookbook.  i also removed documentation.html.
     
-	* unix/user_install.html: added this file.  set up an outline and
-	generated screenshots (ui-calibrate.png, ui-log.png, ui-moniter,
-	ui-performance.png, ui-personal.png, ui-performance.png,
-	ui-welcome.png.  someone needs to change the text. it is scary.
+        * unix/user_install.html: added this file.  set up an outline and
+        generated screenshots (ui-calibrate.png, ui-log.png, ui-moniter,
+        ui-performance.png, ui-personal.png, ui-performance.png,
+        ui-welcome.png.  someone needs to change the text. it is scary.
 
 2002-10-30 rockwlrs <rock@gimp.org>
 
-	* development.html: added a "link" to the Developers' Cookbook so that
-	we don't forget about it.
+        * development.html: added a "link" to the Developers' Cookbook so that
+        we don't forget about it.
 
 2002-10-29 scizzo <scizzo@gimp.org>
 
-	* tutorials/Basic_Perl/: Trying to make the tutorial better
+        * tutorials/Basic_Perl/: Trying to make the tutorial better
         with the layout. Updating the tutorial for Basic_Perl.
 
 2002-10-28 rockwlrs <rock@gimp.org>
 
-	* about/authors.html: ran recode to turn the utf to latin-1.  This
-	has to be done manually for now.
+        * about/authors.html: ran recode to turn the utf to latin-1.  This
+        has to be done manually for now.
 
 2002-10-28 scizzo <scizzo@gimp.org>
 
-	* tutorials/Basic_Perl/: added the first test version of the basic
+        * tutorials/Basic_Perl/: added the first test version of the basic
         Perl tutorial.
 
 2002-10-27 brix <brix@gimp.org>
 
-	* style/default.css, README.tutorials: added "code" class to make
-	example code stand out in tutorials
-	
+        * style/default.css, README.tutorials: added "code" class to make
+        example code stand out in tutorials
+        
 2002-10-26 gsromero
 
-	* unix/tile-cache.html: new file, first guesses about how to set a
-	decent tile cache value.
-	
+        * unix/tile-cache.html: new file, first guesses about how to set a
+        decent tile cache value.
+        
 2002-10-22 brix <brix@gimp.org>
-	
-	* books.html, books/index.html: renamed /books.html to /books/index.html
+        
+        * books.html, books/index.html: renamed /books.html to /books/index.html
 
-	* includes/linkbar.inc: changed link from /books.html to /books/
-	
+        * includes/linkbar.inc: changed link from /books.html to /books/
+        
 2002-10-21 carol <carol@gimp.org>
         
-	* resources/gradients/index.html, resources/gradients/mgo-gradients.py
+        * resources/gradients/index.html, resources/gradients/mgo-gradients.py
         and team.html: put some padding around the little thumbnails and added
         gsromero and rockwlrs to the team (finally, yay!) 
 
-	* about/mediakit.html, Wilber_Construction_Kit_XP.xcf.gz and 
+        * about/mediakit.html, Wilber_Construction_Kit_XP.xcf.gz and 
         wilber-huge-alpha.png. best descibed as humble beginnings.
         
 2002-10-21 scizzo <scizzo@gimp.org>
 
-	* tutorials/Straight_Line/: Add the webpage for original tutorial.
+        * tutorials/Straight_Line/: Add the webpage for original tutorial.
         I want the author to see the tutorial before I make changes so the
         old images are back also. Small fixes in the language and link.
 
-	* tutorials/*/index.html: Add the sites to the original tutorials
+        * tutorials/*/index.html: Add the sites to the original tutorials
         on the tutorials that had a real site that is.
 
-	* tutorials/Drawing_Shapes/: Fixed the bug about the .xcf.gz file.
+        * tutorials/Drawing_Shapes/: Fixed the bug about the .xcf.gz file.
 
 2002-10-21 rockwlrs <rock@gimp.org>
 
-	* about/authors.html: list of authors and contributors
-	
-	* about/authorsgen.pl: tools/authorsgen/authorsgen.pl from the GIMP
-	source distribution, modified to create a webpage instead
+        * about/authors.html: list of authors and contributors
+        
+        * about/authorsgen.pl: tools/authorsgen/authorsgen.pl from the GIMP
+        source distribution, modified to create a webpage instead
 
-	* about/contributors: tools/authorsgen/contributors from the GIMP
-	source distribution.
+        * about/contributors: tools/authorsgen/contributors from the GIMP
+        source distribution.
 
-	* about/index.html: changed authors link to point to the right file
+        * about/index.html: changed authors link to point to the right file
 
-	* install.exclude: added authorsgen.pl and contributors
+        * install.exclude: added authorsgen.pl and contributors
 
 
 2002-10-21 gsromero
 
-	* maillists.html: fixed a missing LI.
-	
+        * maillists.html: fixed a missing LI.
+        
 2002-10-21 brix <brix@gimp.org>
 
-	* template.html: added more code examples.
+        * template.html: added more code examples.
 
-	* windows/index.html, windows/download.html,
-	windows/get_started.html: replaced <h?>...</h?> with the
-	appropiate divs and removed references to winmenu.inc
+        * windows/index.html, windows/download.html,
+        windows/get_started.html: replaced <h?>...</h?> with the
+        appropiate divs and removed references to winmenu.inc
 
-	* windows/winmenu.inc: file removed
+        * windows/winmenu.inc: file removed
 
 2002-10-21 gsromero
-	
-	* maillists.html: added first try with list etiquette, using ul
-	for the items.
+        
+        * maillists.html: added first try with list etiquette, using ul
+        for the items.
 
 2002-10-20 carol <carol@gimp.org>
         
-	* resources/brushes/index.html, resources/patterns/index.html, 
+        * resources/brushes/index.html, resources/patterns/index.html, 
         mgo-brushes.py, and mgo-patterns.py removed a very naughty and
         in error </p>
         
-	* resources/gradients.html and mgo-gradients.py: changed the style
+        * resources/gradients.html and mgo-gradients.py: changed the style
         tag. 
 
-	* resources/gradients.html and mgo-gradients.py: put the style tag
+        * resources/gradients.html and mgo-gradients.py: put the style tag
         back into the img tags
 
 2002-10-19 gsromero
 
-	* README.repository: Fixed some typos and added validator url. (A
-	test with CVS)
-	
+        * README.repository: Fixed some typos and added validator url. (A
+        test with CVS)
+        
 2002-10-19 carol <carol@gimp.org>
         
-	* style/default.css: centered the bottom navigation by adding
+        * style/default.css: centered the bottom navigation by adding
         "text-align: center;" to the linkbar.
 
-	* readme.repository:  added my name (carol) to the people who can
+        * readme.repository:  added my name (carol) to the people who can
         make style changes.
         
-	* resources/brushes/index.html and mgo-brushes.py:  added a style
+        * resources/brushes/index.html and mgo-brushes.py:  added a style
         to the <div>'s and removed the <p>'s in each brush entry.
         
-	* resources/gradients/index.html and mgo-gradients.py:  added a style
+        * resources/gradients/index.html and mgo-gradients.py:  added a style
         to the <div>'s and removed the <p>'s in each brush entry.
         
-	* resources/patterns/index.html and mgo-patterns.py:  added a style
+        * resources/patterns/index.html and mgo-patterns.py:  added a style
         to the <div>'s and removed the <p>'s in each brush entry.
         
 2002-10-19 scizzo <scizzo@gimp.org>
 
-	* tutorials/Advanced_Animations/: Forgot to add the .xcf.bz2
+        * tutorials/Advanced_Animations/: Forgot to add the .xcf.bz2
         file to make the tutorial complete.
 
 2002-10-18 carol <carol@gimp.org>
         
-	* resources/gradients/index.html: changed the <li>'s to <div>'s
+        * resources/gradients/index.html: changed the <li>'s to <div>'s
         
-	* resources/gradients/mgo-gradients.py the script is added
+        * resources/gradients/mgo-gradients.py the script is added
         
-	* resources/patterns/index.html: changed the <li>'s to <div>'s
+        * resources/patterns/index.html: changed the <li>'s to <div>'s
         
-	* resources/patterns/mgo-patterns.py the script is added
+        * resources/patterns/mgo-patterns.py the script is added
         
-	* resources/patterns/index.html: manually removed some patterns
+        * resources/patterns/index.html: manually removed some patterns
         i have in my home directory that were added to the list 
         incorrectly
        
-	* resources/brushes/index.html: changed the <li>'s to <div>'s
+        * resources/brushes/index.html: changed the <li>'s to <div>'s
         
-	* resources/brushes/mgo-brushes.py: the script is added
+        * resources/brushes/mgo-brushes.py: the script is added
         
         
 2002-10-18 scizzo <scizzo@gimp.org>
 
-	* tutorials/Advanced_Animations/: Add the Advanced Animation
+        * tutorials/Advanced_Animations/: Add the Advanced Animation
         tutorial, a little rude though.
 
-	* tutorials/Using_Gap: Add the tutorial, first version
+        * tutorials/Using_Gap: Add the tutorial, first version
         and it is to rude right now.
 
-	* tutorials/index.html: Add the GAP tutorial to the
+        * tutorials/index.html: Add the GAP tutorial to the
         list. My English is so good forgot an "a" in animation.
 
-	* tutorials/Custom_Brushes/: Add the e-mail to the
+        * tutorials/Custom_Brushes/: Add the e-mail to the
         author just hope it is right.
 
-	* tutorials/The_Basics: Changed the author. It was
+        * tutorials/The_Basics: Changed the author. It was
         GIMP-team before and now jtl. Edit mailto: for author.
 
-	* team.html: Put the rest of the tutorial authors on
+        * team.html: Put the rest of the tutorial authors on
         the page so the list might be done.
 
-	* tutorials/Drawing_Shapes/: Add the Shapes tutorial.
+        * tutorials/Drawing_Shapes/: Add the Shapes tutorial.
         Forgot one image.
 
-	* tutorials/Bezier_Selections/: Fixed the author name.
+        * tutorials/Bezier_Selections/: Fixed the author name.
 
-	* tutorials/Tileable_Textures/: Fixed the author name.
-
-2002-10-18 carol <carol@gimp.org>
-
-	* maillists.html: put the best information there that i have right now
+        * tutorials/Tileable_Textures/: Fixed the author name.
 
 2002-10-18 carol <carol@gimp.org>
 
-	* resources/gradients/*.png and mgo-gradients.py: one more
-	redrawing of the gradients.
+        * maillists.html: put the best information there that i have right now
 
 2002-10-18 carol <carol@gimp.org>
 
-	* resources/gradients/*.png and mgo-gradients.py: the gradient is
-	now rendered from right to left instead of corner to corner.
+        * resources/gradients/*.png and mgo-gradients.py: one more
+        redrawing of the gradients.
+
+2002-10-18 carol <carol@gimp.org>
+
+        * resources/gradients/*.png and mgo-gradients.py: the gradient is
+        now rendered from right to left instead of corner to corner.
 
 2002-10-18 brix <brix@gimp.org>
-	* includes/tutnavbar.inc, includes/menu.inc: added trailing
-	slashes to directory links (thanks to UnNamed for spotting this)
+        * includes/tutnavbar.inc, includes/menu.inc: added trailing
+        slashes to directory links (thanks to UnNamed for spotting this)
 
-	* includes/linkbar.inc: added links to /books.html and
-	/maillists.html
+        * includes/linkbar.inc: added links to /books.html and
+        /maillists.html
 
-	* books.html: file added
+        * books.html: file added
 
-	* install.exclude: added /resources/brushes/mgo-brushes.py to list
-	of excluded files
-	
+        * install.exclude: added /resources/brushes/mgo-brushes.py to list
+        of excluded files
+        
 2002-10-18 carol <carol@gimp.org>
 
-	* resources/gradients/index.html and mgo-gradients.py: added the
-	directory, the images and the index page.
+        * resources/gradients/index.html and mgo-gradients.py: added the
+        directory, the images and the index page.
 
-	* resources/index.html i removed everything there isn't a
-	directory for.  :)
+        * resources/index.html i removed everything there isn't a
+        directory for.  :)
 
 2002-10-17 scizzo <scizzo@gimp.org>
 
-	* tutorials/index.html: Gnome Icons now added to the list.
-	Name change.
+        * tutorials/index.html: Gnome Icons now added to the list.
+        Name change.
 
 2002-10-16 carol <carol@gimp.org>
 
-	* resources/brushes/index.html and mgo-brushes.py: divided the
-	brush listing in the middle
+        * resources/brushes/index.html and mgo-brushes.py: divided the
+        brush listing in the middle
         
-	* resources/brushes/ and mgo-brushes.py: added the directory,
-	images, and the index page.
+        * resources/brushes/ and mgo-brushes.py: added the directory,
+        images, and the index page.
     
 2002-10-16 scizzo <scizzo@gimp.org>
 
-	* tutorials/Simple_Animations: Add the first version of the Simple
-	Animation tutorial. Made som changes in the image positions.
+        * tutorials/Simple_Animations: Add the first version of the Simple
+        Animation tutorial. Made som changes in the image positions.
 
-	* tutorials/index.html: Split the animations into Simple and Advanced.
+        * tutorials/index.html: Split the animations into Simple and Advanced.
 
-	* tutorials/Golden_Text/: Add the first version of the Golden_Text tutorial.
+        * tutorials/Golden_Text/: Add the first version of the Golden_Text tutorial.
 
-	* tutorials/Draw_A_Paint_Brush/: Did the first 9 steps in the
-	tutorial. (later) Done with the tutorial porting.
+        * tutorials/Draw_A_Paint_Brush/: Did the first 9 steps in the
+        tutorial. (later) Done with the tutorial porting.
 
 2002-10-15 carol <carol@gimp.org>
 
-    	* added the wgo screenshot font to the sample gtkrc
+        * added the wgo screenshot font to the sample gtkrc
     
 2002-10-15 scizzo <scizzo@gimp.org>
 
-	* tutorials/Image_Pipes/: Did the last porting to the tutorial.
-	Forgot to add the jpg images.
+        * tutorials/Image_Pipes/: Did the last porting to the tutorial.
+        Forgot to add the jpg images.
 
-	* tutorials/Straight_Line/: Trying to make the tutorial better.
+        * tutorials/Straight_Line/: Trying to make the tutorial better.
 
-	* tutorials/: Changed the image position of a few tutorials to
-	make them look better with the layout.
+        * tutorials/: Changed the image position of a few tutorials to
+        make them look better with the layout.
 
-	* README.tutorials: Add a standard font to use in the screenshots.
-	
+        * README.tutorials: Add a standard font to use in the screenshots.
+        
 2002-10-13 scizzo <scizzo@gimp.org>
 
-	* tutorials/3d_Logo/index.html: Changed the steps in the tutorial.
+        * tutorials/3d_Logo/index.html: Changed the steps in the tutorial.
 
 2002-10-13 carol <carol@gimp.org>
 
-	* added line breaks in the html in resouces/brushes/index.html
+        * added line breaks in the html in resouces/brushes/index.html
 
 2002-10-13 carol <carol@gimp.org>
 
-	* added brush images to resources/brushes/index.html and put them 
+        * added brush images to resources/brushes/index.html and put them 
     into a list.  included the script that was used to generate them.
 
 2002-10-11 scizzo <scizzo@gimp.org>
 
-	* tutorials/Straight_Line: Test of new class and screenshots.
-	More fixes to test the screenshots.
+        * tutorials/Straight_Line: Test of new class and screenshots.
+        More fixes to test the screenshots.
 
 2002-10-11 brix <brix@gimp.org>
 
-	* style/default.css: separated #main rule into td#main and
-	div#main rules, removing the width from div#main. this fixed the
-	tutorial width problem in mozilla.
+        * style/default.css: separated #main rule into td#main and
+        div#main rules, removing the width from div#main. this fixed the
+        tutorial width problem in mozilla.
 
 2002-10-10 brix <brix@gimp.org>
-	
-	* includes/tutnavbar.inc: changed the href to work with the (new)
-	tutorials/index.html
+        
+        * includes/tutnavbar.inc: changed the href to work with the (new)
+        tutorials/index.html
 
-	* README.tutorials: added a note about how to write plug-in paths
+        * README.tutorials: added a note about how to write plug-in paths
 
-	* tutorials/Anti-Aliases_Treshold/index.html: applied the new
-	filter/plug-in class to make the filter/plug-in paths stand out
-	from the rest of the text (as described in README.tutorials)
+        * tutorials/Anti-Aliases_Treshold/index.html: applied the new
+        filter/plug-in class to make the filter/plug-in paths stand out
+        from the rest of the text (as described in README.tutorials)
 
-	* style/default.css: added an image borders for screenshots used
-	in tutorials
-	
+        * style/default.css: added an image borders for screenshots used
+        in tutorials
+        
 2002-10-09  scizzo <scizzo@gimp.org>
 
-	* tutorials/Image_Pipes/: Started to work on the tutorial Image Pipes.
+        * tutorials/Image_Pipes/: Started to work on the tutorial Image Pipes.
 
 2002-10-08  scizzo <scizzo@gimp.org>
 
-	* tutorials/Tileable_Textures/: Added the Tileable_Textures
-	tutorial.
+        * tutorials/Tileable_Textures/: Added the Tileable_Textures
+        tutorial.
 
-	* tutorials/3d_Logo/: Did the last of the tutorial.
-	It is however pretty rude.
+        * tutorials/3d_Logo/: Did the last of the tutorial.
+        It is however pretty rude.
 
 2002-10-07  scizzo <scizzo@gimp.org>
 
-	* tutorials/3d_Logo/: Started the work on the 3D logo
-	tutorial.
+        * tutorials/3d_Logo/: Started the work on the 3D logo
+        tutorial.
 
-	* tutorials/index.html: Removed underscores in the name of
-	Coloring_A_BW_Sketch. Looked weird with the rest of the 
-	layout IMHO.
+        * tutorials/index.html: Removed underscores in the name of
+        Coloring_A_BW_Sketch. Looked weird with the rest of the 
+        layout IMHO.
 
-	* tutorials/Coloring_A_BW_Sketch/: Added the Coloring Sketch
-	tutorial.
+        * tutorials/Coloring_A_BW_Sketch/: Added the Coloring Sketch
+        tutorial.
 
-	* tutorials/Changing_Background_Color_2/: Added the second
-	Changing Background Color tutorial.
+        * tutorials/Changing_Background_Color_2/: Added the second
+        Changing Background Color tutorial.
 
-	* tutorials/Changing_Background_Color_1/: Added the first
-	Changing Background Color tutorial. "A little rude though".
+        * tutorials/Changing_Background_Color_1/: Added the first
+        Changing Background Color tutorial. "A little rude though".
 
-	* tutorials/Film_Grain: Added the Film Grain tutorial.
-	Fixed the index a bit more.
-	
-	* Changelog: Added the scizzo@gimp.org address instead of
-	scizzo@se.debian.net
-	
+        * tutorials/Film_Grain: Added the Film Grain tutorial.
+        Fixed the index a bit more.
+        
+        * Changelog: Added the scizzo@gimp.org address instead of
+        scizzo@se.debian.net
+        
 2002-10-06  carol <carol@gimp.org>
 
-	* team.html: added scizzo to the team and made a section for tutorial 
-	authors
-	
+        * team.html: added scizzo to the team and made a section for tutorial 
+        authors
+        
 2002-10-06  scizzo <scizzo@gimp.org>
 
-	* tutorials/Custom_Brushes: Added the Custom Brushes tutorial.
+        * tutorials/Custom_Brushes: Added the Custom Brushes tutorial.
 
-	* tutorials/Red_Eye_Removal: Added the Red Eye tutorial.
-	
-	* tutorials/Quickmask/: Added the Quickmask tutorial.
+        * tutorials/Red_Eye_Removal: Added the Red Eye tutorial.
+        
+        * tutorials/Quickmask/: Added the Quickmask tutorial.
 
-	* tutorials/index.html: Changed the Bezier_Curves to Bezier_Selections.
-	Changed the Red Eye Tutorial to Red Eye Removal.
+        * tutorials/index.html: Changed the Bezier_Curves to Bezier_Selections.
+        Changed the Red Eye Tutorial to Red Eye Removal.
 
-	* tutorials/Borders_On_Selection/: Added the Stroke tutorial.
-	Also changed the text for the images to tell "Image above"
-	because of the layout.
+        * tutorials/Borders_On_Selection/: Added the Stroke tutorial.
+        Also changed the text for the images to tell "Image above"
+        because of the layout.
 
-	* tutorials/Bezier_Curves/: Added the tutorial for beginner Bezier.
-	Also in this changed to "Image above" because of the layout.
-	
-	* tutorials/Straight_Line/index.html: Main title was not set.
-	
+        * tutorials/Bezier_Curves/: Added the tutorial for beginner Bezier.
+        Also in this changed to "Image above" because of the layout.
+        
+        * tutorials/Straight_Line/index.html: Main title was not set.
+        
 2002-10-05  carol <carol@gimp.org>
 
-	* tutorials/index.html: corrected the link to the Straight Line Tutorial
-	
+        * tutorials/index.html: corrected the link to the Straight Line Tutorial
+        
 2002-10-05  scizzo <scizzo@gimp.org>
 
-	* tutorials/Straight_Line/: Added the Straight_Line tutorial.
-	
+        * tutorials/Straight_Line/: Added the Straight_Line tutorial.
+        
 2002-10-02  scizzo  <scizzo@fungus>
 
-	* README.tutorials:
-	Changes in the README.tutorials with screenshot size and theme.
+        * README.tutorials:
+        Changes in the README.tutorials with screenshot size and theme.
 
 2002-10-02  carol  <carol@fungus>
 
-	* README.tutorials: i moved the information around a bit
+        * README.tutorials: i moved the information around a bit
 
 2002-10-02  scizzo  <scizzo@fungus>
 
-	* README.tutorials:
-	Started to work on the README.tutorials to make some sort of standard to be used for the tutorials.
+        * README.tutorials:
+        Started to work on the README.tutorials to make some sort of standard to be used for the tutorials.
 
 2002-10-02  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
 2002-10-02  carol  <carol@fungus>
 
-	* os2/man-gimprc.1.html, tutorials/index.html:
-	one manpage that got forgotten is removed now
+        * os2/man-gimprc.1.html, tutorials/index.html:
+        one manpage that got forgotten is removed now
 
-	some minor edits to the tutorials list
+        some minor edits to the tutorials list
 
-	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
-	macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
-	macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
-	os2/man-gimp-remote-1.2.html, os2/man-gimptool-1.2.html,
-	os2/man-gtk-config.html, windows/man-gimp-1.2.html,
-	windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
-	windows/man-gimptool-1.2.html, windows/man-gtk-config.html: i
-	remove the man pages from the poor os's that don't get manpages. i
-	had *no* idea.  aren't they mad?
+        * macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
+        macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
+        macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
+        os2/man-gimp-remote-1.2.html, os2/man-gimptool-1.2.html,
+        os2/man-gtk-config.html, windows/man-gimp-1.2.html,
+        windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
+        windows/man-gimptool-1.2.html, windows/man-gtk-config.html: i
+        remove the man pages from the poor os's that don't get manpages. i
+        had *no* idea.  aren't they mad?
 
-	* resources/devel-docs/index.html, tutorials/index.html:
-	i fixed the tags, this time on a different file.
+        * resources/devel-docs/index.html, tutorials/index.html:
+        i fixed the tags, this time on a different file.
 
-	the titles have been put on the tutorials index page.  descriptions prolly
-	need major help, especially towards the end.
+        the titles have been put on the tutorials index page.  descriptions prolly
+        need major help, especially towards the end.
 
 2002-10-02  carol  <carol@fungus>
 
-	* os2/man-gimprc.1.html, tutorials/index.html:
-	one manpage that got forgotten is removed now
+        * os2/man-gimprc.1.html, tutorials/index.html:
+        one manpage that got forgotten is removed now
 
-	some minor edits to the tutorials list
+        some minor edits to the tutorials list
 
-	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
-	macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
-	macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
-	os2/man-gimp-remote-1.2.html, os2/man-gimptool-1.2.html,
-	os2/man-gtk-config.html, windows/man-gimp-1.2.html,
-	windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
-	windows/man-gimptool-1.2.html, windows/man-gtk-config.html: i
-	remove the man pages from the poor os's that don't get manpages. i
-	had *no* idea.  aren't they mad?
+        * macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
+        macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
+        macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
+        os2/man-gimp-remote-1.2.html, os2/man-gimptool-1.2.html,
+        os2/man-gtk-config.html, windows/man-gimp-1.2.html,
+        windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
+        windows/man-gimptool-1.2.html, windows/man-gtk-config.html: i
+        remove the man pages from the poor os's that don't get manpages. i
+        had *no* idea.  aren't they mad?
 
-	* resources/devel-docs/index.html, tutorials/index.html:
-	i fixed the tags, this time on a different file.
+        * resources/devel-docs/index.html, tutorials/index.html:
+        i fixed the tags, this time on a different file.
 
-	the titles have been put on the tutorials index page.  descriptions prolly
-	need major help, especially towards the end.
+        the titles have been put on the tutorials index page.  descriptions prolly
+        need major help, especially towards the end.
 
 2002-10-01  carol  <carol@fungus>
 
-	* resources/brushes/index.html:
-	i need to work on this online so i can check before i commit. two stupid
-	</a> tags added
+        * resources/brushes/index.html:
+        i need to work on this online so i can check before i commit. two stupid
+        </a> tags added
 
-	* resources/brushes/index.html:
-	added some additional instructions, or wishes to the needs to be edited
-	text on this page.
+        * resources/brushes/index.html:
+        added some additional instructions, or wishes to the needs to be edited
+        text on this page.
 
-	* resources/brushes/index.html:
-	removed some formating that didn't belong there
+        * resources/brushes/index.html:
+        removed some formating that didn't belong there
 
-	* resources/brushes/index.html:
-	edited the list of gbr to contain just gbr.
+        * resources/brushes/index.html:
+        edited the list of gbr to contain just gbr.
 
-	* resources/brushes/index.html:
-	added a list of the brushes that come with the initial gimp installation.
-	separated into classic brushes (gbr) and animated brushes (gih)
+        * resources/brushes/index.html:
+        added a list of the brushes that come with the initial gimp installation.
+        separated into classic brushes (gbr) and animated brushes (gih)
 
 2002-10-01  Henrik Brix Andersen  <brix@gimp.org>
 
-	* authoring.html, bugs/index.html, includes/menu.inc:
-	deleted the script authoring menu entry.
-	replaced it with "Bugs".
+        * authoring.html, bugs/index.html, includes/menu.inc:
+        deleted the script authoring menu entry.
+        replaced it with "Bugs".
 
-	* includes/menu.inc, resources.html:
-	updated the menu to reflect the new file locations.
-	deleted unused file.
+        * includes/menu.inc, resources.html:
+        updated the menu to reflect the new file locations.
+        deleted unused file.
 
 2002-10-01  carol  <carol@fungus>
 
-	* resources/index.html: fixed a url
+        * resources/index.html: fixed a url
 
-	* resources/index.html:
-	lost some </a> tags somewhere. they are back now.
+        * resources/index.html:
+        lost some </a> tags somewhere. they are back now.
 
-	* resources/index.html:
-	the rest of the commit. i moved resources.html to resources/index.html.
+        * resources/index.html:
+        the rest of the commit. i moved resources.html to resources/index.html.
 
-	* resources/brushes/index.html, resources/devel-docs/index.html:
-	i moved resources.html to resources/index.html.  i added the brushes and
-	devel-docs directory and an outline of the index pages to each.
+        * resources/brushes/index.html, resources/devel-docs/index.html:
+        i moved resources.html to resources/index.html.  i added the brushes and
+        devel-docs directory and an outline of the index pages to each.
 
 2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
 
-	* install.exclude: added *.*~ and *~ to excluded files
+        * install.exclude: added *.*~ and *~ to excluded files
 
-	* install.sh: added --delete-excluded to rsync command
+        * install.sh: added --delete-excluded to rsync command
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* includes/menu.inc: updated hrefs to match new file locations
+        * includes/menu.inc: updated hrefs to match new file locations
 
-	* macintosh.html, macintosh/index.html:
-	renamed macintosh.html to macintosh/index.html
+        * macintosh.html, macintosh/index.html:
+        renamed macintosh.html to macintosh/index.html
 
-	* os2.html, os2/index.html: renamed os2.html to os2/index.html
+        * os2.html, os2/index.html: renamed os2.html to os2/index.html
 
 2002-09-30  carol  <carol@fungus>
 
-	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
-	macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
-	macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
-	os2/man-gimp-remote-1.2.html, os2/man-gimprc.1.html,
-	os2/man-gimptool-1.2.html, os2/man-gtk-config.html,
-	unix/man-gimp-1.2.html, unix/man-gimp-remote-1.2.html,
-	unix/man-gimprc.1.html, unix/man-gimptool-1.2.html,
-	unix/man-gtk-config.html, windows/man-gimp-1.2.html,
-	windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
-	windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
-	manpages everywhere.  i edited the urls to not use my
-	cgi-bin. also added the directory for the other two os
+        * macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
+        macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
+        macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
+        os2/man-gimp-remote-1.2.html, os2/man-gimprc.1.html,
+        os2/man-gimptool-1.2.html, os2/man-gtk-config.html,
+        unix/man-gimp-1.2.html, unix/man-gimp-remote-1.2.html,
+        unix/man-gimprc.1.html, unix/man-gimptool-1.2.html,
+        unix/man-gtk-config.html, windows/man-gimp-1.2.html,
+        windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
+        windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
+        manpages everywhere.  i edited the urls to not use my
+        cgi-bin. also added the directory for the other two os
 
 2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* tutorials/index.html, about/index.html, unix/index.html:
-	updated hrefs to reflect new file location
+        * tutorials/index.html, about/index.html, unix/index.html:
+        updated hrefs to reflect new file location
 
-	* includes/menu.inc, unix.html, unix/index.html:
-	moved unix.html to unix/index.html
+        * includes/menu.inc, unix.html, unix/index.html:
+        moved unix.html to unix/index.html
 
-	* includes/menu.inc, tutorials.html, tutorials/index.html:
-	moved tutorials.html to tutorials/index.html
+        * includes/menu.inc, tutorials.html, tutorials/index.html:
+        moved tutorials.html to tutorials/index.html
 
-	* about/index.html: moved about.html to about/index.html
+        * about/index.html: moved about.html to about/index.html
 
-	* about.html, includes/menu.inc: moved
+        * about.html, includes/menu.inc: moved
 
-	* windows.html: deleted unused file
+        * windows.html: deleted unused file
 
 2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
 
-	* includes/menu.inc: updated hrefs to match new file locations
+        * includes/menu.inc: updated hrefs to match new file locations
 
-	* macintosh.html, macintosh/index.html:
-	renamed macintosh.html to macintosh/index.html
+        * macintosh.html, macintosh/index.html:
+        renamed macintosh.html to macintosh/index.html
 
-	* os2.html, os2/index.html: renamed os2.html to os2/index.html
+        * os2.html, os2/index.html: renamed os2.html to os2/index.html
 
 2002-09-30  carol  <carol@fungus>
 
-	* macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
-	macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
-	macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
-	os2/man-gimp-remote-1.2.html, os2/man-gimprc.1.html,
-	os2/man-gimptool-1.2.html, os2/man-gtk-config.html,
-	unix/man-gimp-1.2.html, unix/man-gimp-remote-1.2.html,
-	unix/man-gimprc.1.html, unix/man-gimptool-1.2.html,
-	unix/man-gtk-config.html, windows/man-gimp-1.2.html,
-	windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
-	windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
-	manpages everywhere.  i edited the urls to not use my
-	cgi-bin. also added the directory for the other two os
+        * macintosh/man-gimp-1.2.html, macintosh/man-gimp-remote-1.2.html,
+        macintosh/man-gimprc.1.html, macintosh/man-gimptool-1.2.html,
+        macintosh/man-gtk-config.html, os2/man-gimp-1.2.html,
+        os2/man-gimp-remote-1.2.html, os2/man-gimprc.1.html,
+        os2/man-gimptool-1.2.html, os2/man-gtk-config.html,
+        unix/man-gimp-1.2.html, unix/man-gimp-remote-1.2.html,
+        unix/man-gimprc.1.html, unix/man-gimptool-1.2.html,
+        unix/man-gtk-config.html, windows/man-gimp-1.2.html,
+        windows/man-gimp-remote-1.2.html, windows/man-gimprc.1.html,
+        windows/man-gimptool-1.2.html, windows/man-gtk-config.html:
+        manpages everywhere.  i edited the urls to not use my
+        cgi-bin. also added the directory for the other two os
 
 2002-09-30  Henrik Brix Andersen  <brix@gimp.org>
 
-	* tutorials/index.html, about/index.html, unix/index.html:
-	updated hrefs to reflect new file location
+        * tutorials/index.html, about/index.html, unix/index.html:
+        updated hrefs to reflect new file location
 
-	* includes/menu.inc, unix.html, unix/index.html:
-	moved unix.html to unix/index.html
+        * includes/menu.inc, unix.html, unix/index.html:
+        moved unix.html to unix/index.html
 
-	* includes/menu.inc, tutorials.html, tutorials/index.html:
-	moved tutorials.html to tutorials/index.html
+        * includes/menu.inc, tutorials.html, tutorials/index.html:
+        moved tutorials.html to tutorials/index.html
 
-	* about/index.html: moved about.html to about/index.html
+        * about/index.html: moved about.html to about/index.html
 
-	* about.html, includes/menu.inc: moved
+        * about.html, includes/menu.inc: moved
 
-	* windows.html: deleted unused file
+        * windows.html: deleted unused file
 
 2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
 
-	* README.repository:
-	added a note about the tutorials template directory
+        * README.repository:
+        added a note about the tutorials template directory
 
-	* README.repository:
-	added a note on who can change the file permissions
+        * README.repository:
+        added a note on who can change the file permissions
 
-	* README.repository: added a third note about cvs log entries
+        * README.repository: added a third note about cvs log entries
 
-	* ChangeLog: changelog updated from cvs log entries
+        * ChangeLog: changelog updated from cvs log entries
 
-	* README.repository: added a note about file permissions
+        * README.repository: added a note about file permissions
 
-	* README.repository: fixed typo
+        * README.repository: fixed typo
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* README.repository: file added. READ IT! Please... ;)
+        * README.repository: file added. READ IT! Please... ;)
 
-	* install.exclude: added README.repository to list of excluded
-	files
+        * install.exclude: added README.repository to list of excluded
+        files
 
 2002-09-29  carol  <carol@fungus>
 
-	* unix/man-gimp-1.2.html:
-	changed the urls from cgi/man2html to web locations
+        * unix/man-gimp-1.2.html:
+        changed the urls from cgi/man2html to web locations
 
 2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* includes/header_posttitle.inc: reverted brankos changes. the
-	image is not supposed to have an alt text. alt texts are
-	primarily used in text-only browsers, and they need not see our
-	logo. take a look in either lynx or links; you'll see.
+        * includes/header_posttitle.inc: reverted brankos changes. the
+        image is not supposed to have an alt text. alt texts are
+        primarily used in text-only browsers, and they need not see our
+        logo. take a look in either lynx or links; you'll see.
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
 2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
 
-	* README.repository: added a note about file permissions
+        * README.repository: added a note about file permissions
 
-	* README.repository: fixed typo
+        * README.repository: fixed typo
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* README.repository: file added. READ IT! Please... ;)
+        * README.repository: file added. READ IT! Please... ;)
 
-	* install.exclude: added README.repository to list of excluded
-	files
+        * install.exclude: added README.repository to list of excluded
+        files
 
 2002-09-29  carol  <carol@fungus>
 
-	* unix/man-gimp-1.2.html:
-	changed the urls from cgi/man2html to web locations
+        * unix/man-gimp-1.2.html:
+        changed the urls from cgi/man2html to web locations
 
 2002-09-29  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* includes/header_posttitle.inc: reverted brankos changes.  the
-	image is not supposed to have an alt text.  alt texts are
-	primarily used in text-only browsers, and they need not see our
-	logo.  take a look in either lynx or links; you'll see.
+        * includes/header_posttitle.inc: reverted brankos changes.  the
+        image is not supposed to have an alt text.  alt texts are
+        primarily used in text-only browsers, and they need not see our
+        logo.  take a look in either lynx or links; you'll see.
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
 2002-09-28  branko  <branko@fungus>
 
-	* windows/download.html: typo
+        * windows/download.html: typo
 
 2002-09-27  branko  <branko@fungus>
 
-	* windows/download.html, windows/get_started.html:
-	download and 'getting started' pages for GIMP for Windows
+        * windows/download.html, windows/get_started.html:
+        download and 'getting started' pages for GIMP for Windows
 
-	* windows/winmenu.inc: sub menu for Windows pages
+        * windows/winmenu.inc: sub menu for Windows pages
 
-	* windows/index.html: sketchy Windows page moved here
+        * windows/index.html: sketchy Windows page moved here
 
-	* includes/menu.inc: New folder for Windows pages
+        * includes/menu.inc: New folder for Windows pages
 
-	* includes/header_posttitle.inc: ALT text for "The GIMP"
+        * includes/header_posttitle.inc: ALT text for "The GIMP"
 
 2002-09-27  carol  <carol@fungus>
 
-	* about.html, team.html:
-	added name attributes to the url lists in about.html so that hopefully they
-	can be maintained along with the main url list.
+        * about.html, team.html:
+        added name attributes to the url lists in about.html so that hopefully they
+        can be maintained along with the main url list.
 
-	added branko to the webteam! yay! i love a first commit!!
+        added branko to the webteam! yay! i love a first commit!!
 
 2002-09-27  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
 2002-09-27  carol  <carol@fungus>
 
-	* unix/howtos/cvs-stable.html: put bex name on it
+        * unix/howtos/cvs-stable.html: put bex name on it
 
-	* unix.html:
-	hopefully i fixed the extra bullet in "The GIMP's Documentation" section
+        * unix.html:
+        hopefully i fixed the extra bullet in "The GIMP's Documentation" section
 
-	* unix.html:
-	put url in the proper place this time. i will sleep before i do more.
+        * unix.html:
+        put url in the proper place this time. i will sleep before i do more.
 
-	* unix.html: put the navigation back on
+        * unix.html: put the navigation back on
 
-	* unix.html: added a url to the recently upload gimp-help directory
+        * unix.html: added a url to the recently upload gimp-help directory
 
-	* unix.html: i fixed the stuff at the top that i missed the first time.
+        * unix.html: i fixed the stuff at the top that i missed the first time.
 
-	* team.html: spelled yosh's real name wrong :)
+        * team.html: spelled yosh's real name wrong :)
 
-	* unix/howtos/cvs-stable.html, unix/howtos/cvsrc:
-	the cvs portion of bex's howto.  need to edit the second half and put it on
-	the page.
+        * unix/howtos/cvs-stable.html, unix/howtos/cvsrc:
+        the cvs portion of bex's howto.  need to edit the second half and put it on
+        the page.
 
 2002-09-27  yosh  <yosh@fungus>
 
-	* install.exclude, install.sh: installation scripts
+        * install.exclude, install.sh: installation scripts
 
 2002-09-27  carol  <carol@fungus>
 
-	* team.html:
-	added Guest Lecturer to the team.  awaiting new names in the ChangeLog to make
-	the team list bigger and more wuvvy.  :)
+        * team.html:
+        added Guest Lecturer to the team.  awaiting new names in the ChangeLog to make
+        the team list bigger and more wuvvy.  :)
 
-	* unix.html, unix/gimprc, unix/gimprc.html, unix/gtkrc,
-	unix/gtkrc.html, unix/man-gimp-1.2.html,
-	unix/man-gimp-remote-1.2.html, unix/man-gimprc.1.html,
-	unix/man-gimptool-1.2.html: i added the unix directory.  i copied
-	the gimprc and the gtkrc from my /usr/local/etc/gimp/1.2/.  i made
-	some unformatted html for them.  i don't know if this will fly or
-	not. might be nice to have an rc style for these things.  i
-	decided to have different rc files for the different oses so that
-	we have the option to add extra comments to each if necessary.
+        * unix.html, unix/gimprc, unix/gimprc.html, unix/gtkrc,
+        unix/gtkrc.html, unix/man-gimp-1.2.html,
+        unix/man-gimp-remote-1.2.html, unix/man-gimprc.1.html,
+        unix/man-gimptool-1.2.html: i added the unix directory.  i copied
+        the gimprc and the gtkrc from my /usr/local/etc/gimp/1.2/.  i made
+        some unformatted html for them.  i don't know if this will fly or
+        not. might be nice to have an rc style for these things.  i
+        decided to have different rc files for the different oses so that
+        we have the option to add extra comments to each if necessary.
 
-	i used man2html to convert the various gimp manpages to html.
+        i used man2html to convert the various gimp manpages to html.
 
-	i modified unix.html to see these.
+        i modified unix.html to see these.
 
 2002-09-26  branko  <branko@fungus>
 
-	* windows.html: first sketch
+        * windows.html: first sketch
 
 2002-09-26  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* tutorials.html: oops. renamed the link
+        * tutorials.html: oops. renamed the link
 
-	* tutorials/The_Basics/tut-basic-3.gif,
-	tutorials/The_Basics/tut-basic-4.gif,
-	tutorials/The_Basics/tut-basic-5.gif,
-	tutorials/The_Basics/tut-basic-6.gif,
-	tutorials/The_Basics/tut-basic-7.gif,
-	tutorials/The_Basics/tut-basic-dia-1.gif,
-	tutorials/The_Basics/tut-basic-dia-2.gif,
-	tutorials/The_Basics/tut-basic-dia-3.gif,
-	tutorials/The_Basics/tut-basic-dia-4.gif,
-	tutorials/The_Basics/tut-basic-dia-5.gif,
-	tutorials/The_Basics/tut-basic-dia-6.gif,
-	tutorials/The_Basics/tut-basic-dia-7.gif,
-	tutorials/The_Basics/tut-basic-dia-8.gif,
-	tutorials/The_Basics/tut-basic-dia-9.gif, tutorials.html,
-	tutorials/The_Basics/index.html,
-	tutorials/The_Basics/tut-basic-1.gif,
-	tutorials/The_Basics/tut-basic-2.gif: ported the basics tutorial
-	from current wgo to new layout
+        * tutorials/The_Basics/tut-basic-3.gif,
+        tutorials/The_Basics/tut-basic-4.gif,
+        tutorials/The_Basics/tut-basic-5.gif,
+        tutorials/The_Basics/tut-basic-6.gif,
+        tutorials/The_Basics/tut-basic-7.gif,
+        tutorials/The_Basics/tut-basic-dia-1.gif,
+        tutorials/The_Basics/tut-basic-dia-2.gif,
+        tutorials/The_Basics/tut-basic-dia-3.gif,
+        tutorials/The_Basics/tut-basic-dia-4.gif,
+        tutorials/The_Basics/tut-basic-dia-5.gif,
+        tutorials/The_Basics/tut-basic-dia-6.gif,
+        tutorials/The_Basics/tut-basic-dia-7.gif,
+        tutorials/The_Basics/tut-basic-dia-8.gif,
+        tutorials/The_Basics/tut-basic-dia-9.gif, tutorials.html,
+        tutorials/The_Basics/index.html,
+        tutorials/The_Basics/tut-basic-1.gif,
+        tutorials/The_Basics/tut-basic-2.gif: ported the basics tutorial
+        from current wgo to new layout
 
-	* tutorials/template/index.html: added a tutorial template
+        * tutorials/template/index.html: added a tutorial template
 
-	* tutorials/Anti-Aliased_Treshold/index.html:
-	fixed the placement of the authors copyright msg
+        * tutorials/Anti-Aliased_Treshold/index.html:
+        fixed the placement of the authors copyright msg
 
-	* tutorials/Anti-Aliased_Treshold/index.html, style/default.css:
-	changed to use a p.images instead of div.images to inherit the margins from p
+        * tutorials/Anti-Aliased_Treshold/index.html, style/default.css:
+        changed to use a p.images instead of div.images to inherit the margins from p
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* template.html: updated the template to use the new header files
+        * template.html: updated the template to use the new header files
 
-	* includes/header.inc: removed old header file
+        * includes/header.inc: removed old header file
 
-	* tutorials/Anti-Aliased_Treshold/index.html,
-	includes/header_pretitle.inc, includes/header_posttitle.inc,
-	about/screenshots.html, about/mediakit.html,
-	about/introduction.html, about/history.html, about/awards.html,
-	windows.html, unix.html, tutorials.html, team.html,
-	resources.html, registry.html, os2.html, macintosh.html,
-	links.html, index.html, documentation.html, development.html,
-	authoring.html, about.html: files modified to use the new headers.
-	this allows the title to be set from subpages, as requested by
-	carol
+        * tutorials/Anti-Aliased_Treshold/index.html,
+        includes/header_pretitle.inc, includes/header_posttitle.inc,
+        about/screenshots.html, about/mediakit.html,
+        about/introduction.html, about/history.html, about/awards.html,
+        windows.html, unix.html, tutorials.html, team.html,
+        resources.html, registry.html, os2.html, macintosh.html,
+        links.html, index.html, documentation.html, development.html,
+        authoring.html, about.html: files modified to use the new headers.
+        this allows the title to be set from subpages, as requested by
+        carol
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
 2002-09-25  carol  <carol@fungus>
 
-	* about.html: some missing </li>'s
+        * about.html: some missing </li>'s
 
-	* about.html: took the <p></p> off from the <ul></ul>'s
+        * about.html: took the <p></p> off from the <ul></ul>'s
 
 2002-09-25  Henrik Brix Andersen  <brix@gimp.org>
 
-	* tutorials.html: added "Maybe we should add an icon/image?"
+        * tutorials.html: added "Maybe we should add an icon/image?"
 
-	* tutorials.html: added a bogus description
+        * tutorials.html: added a bogus description
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
 2002-09-25  carol  <carol@fungus>
 
-	* about.html:
-	added a more to the end of the introduction blurb to indicate that there is more
-	elsewhere.
+        * about.html:
+        added a more to the end of the introduction blurb to indicate that there is more
+        elsewhere.
 
-	* about/awards.html, about/history.html, about/introduction.html,
-	about/mediakit.html, about/screenshots.html: put these templates
-	in place :)
+        * about/awards.html, about/history.html, about/introduction.html,
+        about/mediakit.html, about/screenshots.html: put these templates
+        in place :)
 
-	* about.html: ported about.html to the layout plans
+        * about.html: ported about.html to the layout plans
 
 2002-09-24  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: changelog updated
+        * ChangeLog: changelog updated
 
-	* tutorials/Anti-Aliased_Treshold/index.html:
-	hack: now the x-bit should be set
+        * tutorials/Anti-Aliased_Treshold/index.html:
+        hack: now the x-bit should be set
 
-	* tutorials/Anti-Aliased_Treshold/index.html: hack: I forgot to
-	set the execution bit at file check in
+        * tutorials/Anti-Aliased_Treshold/index.html: hack: I forgot to
+        set the execution bit at file check in
 
-	* includes/tutnavbar.inc,
-	tutorials/Anti-Aliased_Treshold/index.html: minor bug fix to new
-	tutorial layout
+        * includes/tutnavbar.inc,
+        tutorials/Anti-Aliased_Treshold/index.html: minor bug fix to new
+        tutorial layout
 
-	* tutorials/Anti-Aliased_Treshold/index.html: made file
-	executeable
+        * tutorials/Anti-Aliased_Treshold/index.html: made file
+        executeable
 
-	* includes/footer.inc, includes/linkbar.inc, includes/menu.inc:
-	changed from relative to absolute urls where appropiate
+        * includes/footer.inc, includes/linkbar.inc, includes/menu.inc:
+        changed from relative to absolute urls where appropiate
 
-	* includes/header.inc, tutorials.html,
-	tutorials/Anti-Aliased_Treshold/index.html: added the first
-	tutorial
+        * includes/header.inc, tutorials.html,
+        tutorials/Anti-Aliased_Treshold/index.html: added the first
+        tutorial
 
-	* tutorials/Anti-Aliased_Treshold/index.html,
-	tutorials/Anti-Aliased_Treshold/index.inc: renamed index.inc to
-	index.html
+        * tutorials/Anti-Aliased_Treshold/index.html,
+        tutorials/Anti-Aliased_Treshold/index.inc: renamed index.inc to
+        index.html
 
-	* links.html: added fake content to provide a template for Martijn
+        * links.html: added fake content to provide a template for Martijn
 
-	* os2.html: update files to use the new subpage layout
+        * os2.html: update files to use the new subpage layout
 
-	* includes/linkbar.inc:
-	replaced css content (|) with static html embedded content (|)
+        * includes/linkbar.inc:
+        replaced css content (|) with static html embedded content (|)
 
-	* authoring.html, development.html, documentation.html,
-	includes/news.inc, links.html, macintosh.html, registry.html,
-	style/default.css, team.html, template.html, tutorials.html,
-	unix.html, windows.html: files modified to use the new subpage
-	layout
+        * authoring.html, development.html, documentation.html,
+        includes/news.inc, links.html, macintosh.html, registry.html,
+        style/default.css, team.html, template.html, tutorials.html,
+        unix.html, windows.html: files modified to use the new subpage
+        layout
 
-	* about.html: changed about.html to use the new subpage layout
+        * about.html: changed about.html to use the new subpage layout
 
-	* style/default.css: made paragraphs double justified
+        * style/default.css: made paragraphs double justified
 
-	* resources.html: added a link-in-text test
+        * resources.html: added a link-in-text test
 
-	* resources.html, style/default.css:
-	testing the new subpage layout on resources.html
+        * resources.html, style/default.css:
+        testing the new subpage layout on resources.html
 
-	* includes/header.inc:
-	added a link to www.gimp.org from the top left logo
+        * includes/header.inc:
+        added a link to www.gimp.org from the top left logo
 
-	* about.html, includes/news.inc, style/default.css:
-	changed layout of subpages
+        * about.html, includes/news.inc, style/default.css:
+        changed layout of subpages
 
 2002-09-24  carol  <carol@fungus>
 
-	* about.html: made the changes suggested by bbc on this bug report:
-	http://bugzilla.gnome.org/show_bug.cgi?id=94028
+        * about.html: made the changes suggested by bbc on this bug report:
+        http://bugzilla.gnome.org/show_bug.cgi?id=94028
 
 2002-09-23  Henrik Brix Andersen  <brix@gimp.org>
 
-	* about.html: made comments xhtml1.0 compliant
+        * about.html: made comments xhtml1.0 compliant
 
-	* ChangeLog: updated the changelog from cvs log entries
+        * ChangeLog: updated the changelog from cvs log entries
 
-	* includes/documentation.inc:
-	forgot to remove includes/documentation.inc
+        * includes/documentation.inc:
+        forgot to remove includes/documentation.inc
 
-	* about.html, authoring.html, development.html,
-	documentation.html, includes/about.inc, includes/authoring.inc,
-	includes/blank.inc, includes/development.inc, includes/footer.inc,
-	includes/header.inc, includes/linkbar.inc, includes/links.inc,
-	includes/macintosh.inc, includes/menu.inc, includes/news.inc,
-	includes/os2.inc, includes/registry.inc, includes/resources.inc,
-	includes/team.inc, includes/tutorials.inc, includes/unix.inc,
-	includes/windows.inc, index.html, index.php, links.html,
-	macintosh.html, os2.html, registry.html, resources.html,
-	team.html, template.html, tutorials.html, unix.html, windows.html:
-	moved from using php to using ssi (yosh insisted ;)
+        * about.html, authoring.html, development.html,
+        documentation.html, includes/about.inc, includes/authoring.inc,
+        includes/blank.inc, includes/development.inc, includes/footer.inc,
+        includes/header.inc, includes/linkbar.inc, includes/links.inc,
+        includes/macintosh.inc, includes/menu.inc, includes/news.inc,
+        includes/os2.inc, includes/registry.inc, includes/resources.inc,
+        includes/team.inc, includes/tutorials.inc, includes/unix.inc,
+        includes/windows.inc, index.html, index.php, links.html,
+        macintosh.html, os2.html, registry.html, resources.html,
+        team.html, template.html, tutorials.html, unix.html, windows.html:
+        moved from using php to using ssi (yosh insisted ;)
 
-	* style/default.css: added #navbar to the @media print rule
+        * style/default.css: added #navbar to the @media print rule
 
-	* tutorials/Anti-Aliased_Treshold/index.inc:
-	updated paragraphs to use the new p.tutorial rule
+        * tutorials/Anti-Aliased_Treshold/index.inc:
+        updated paragraphs to use the new p.tutorial rule
 
-	* style/default.css:
-	added a special (p.tutorial) paragraph to be used in tutorials
+        * style/default.css:
+        added a special (p.tutorial) paragraph to be used in tutorials
 
-	* ChangeLog: updated changelog
+        * ChangeLog: updated changelog
 
-	* style/default.css: removed "width: 100%;" from #navbar and #linkbar.
-	this caused the horizontal slider always being shown in opera/mozilla.
+        * style/default.css: removed "width: 100%;" from #navbar and #linkbar.
+        this caused the horizontal slider always being shown in opera/mozilla.
 
-	* ChangeLog: updated changelog.
-	changed my e-mail addy.
+        * ChangeLog: updated changelog.
+        changed my e-mail addy.
 
-	* includes/links.inc: file added.
+        * includes/links.inc: file added.
 
-	* index.php: added url for "gimp links".
-	added case "links" to switch statement.
+        * index.php: added url for "gimp links".
+        added case "links" to switch statement.
 
 2002-09-22  Henrik Brix Andersen  <brix@gimp.org>
 
-	* ChangeLog: hmm. fixed ChangeLog on the loose.
-	removed duplicate entries.
+        * ChangeLog: hmm. fixed ChangeLog on the loose.
+        removed duplicate entries.
 
-	* ChangeLog: updated changelog
+        * ChangeLog: updated changelog
 
-	* includes/team.inc, includes/webteam.inc, index.php:
-	renamed /includes/webteam.inc to /includes/team.inc
+        * includes/team.inc, includes/webteam.inc, index.php:
+        renamed /includes/webteam.inc to /includes/team.inc
 
-	* ChangeLog: updated changelog
+        * ChangeLog: updated changelog
 
-	* includes/about.inc:
-	oops. my mistake. reverted to version 1.6 (thanks carol)
+        * includes/about.inc:
+        oops. my mistake. reverted to version 1.6 (thanks carol)
 
-	* ChangeLog: regenerated the changelog from cvs log entries
+        * ChangeLog: regenerated the changelog from cvs log entries
 
-	* includes/webteam.inc: added "GIMP Core Team" list
+        * includes/webteam.inc: added "GIMP Core Team" list
 
-	* ChangeLog: started using the changlog
+        * ChangeLog: started using the changlog
 
-	* index.php: replaced <?xml ... ?> with <?php echo '<?xml ... ?>' ?>.
-	thanks to CyBeR
+        * index.php: replaced <?xml ... ?> with <?php echo '<?xml ... ?>' ?>.
+        thanks to CyBeR
 
-	* includes/about.inc: added "" to comment
+        * includes/about.inc: added "" to comment
 
-	* includes/about.inc: changed html comment to php comment.
-	that way the comment is not shown in the browsers src code view.
+        * includes/about.inc: changed html comment to php comment.
+        that way the comment is not shown in the browsers src code view.
 
-	* includes/tutorials.inc: added str_replace () to filter out
-	underscores ("_") and replace them with spaces (" ").
+        * includes/tutorials.inc: added str_replace () to filter out
+        underscores ("_") and replace them with spaces (" ").
 
-	* includes/webteam.inc: corrected spelling of Ville Pätsi
+        * includes/webteam.inc: corrected spelling of Ville Pätsi
 
-	* includes/webteam.inc: removed the optional date line
+        * includes/webteam.inc: removed the optional date line
 
-	* index.php: added "webteam" case to switch statement
+        * index.php: added "webteam" case to switch statement
 
 2002-09-22  carol  <carol@fungus>
 
-	* ChangeLog, includes/webteam.inc, index.php:
-	2002-09-21  Carol Spears  <carol@gimp.org>
-		* index.php:  changed GIMP Links: title to GIMP Links url
-		* index.php:  put a FIXME url around The GIMP Web Team
-		* webteam.inc:  added this file
+        * ChangeLog, includes/webteam.inc, index.php:
+        2002-09-21  Carol Spears  <carol@gimp.org>
+                * index.php:  changed GIMP Links: title to GIMP Links url
+                * index.php:  put a FIXME url around The GIMP Web Team
+                * webteam.inc:  added this file
 
-	* ChangeLog: 2002-09-21  Carol Spears  <carol@gimp.org>
-		* remembered ChangeLog too late ...
+        * ChangeLog: 2002-09-21  Carol Spears  <carol@gimp.org>
+                * remembered ChangeLog too late ...
 
-	* includes/about.inc: 2002-09-21  Carol Spears  <carol@gimp.org>
-		* commented about.inc
+        * includes/about.inc: 2002-09-21  Carol Spears  <carol@gimp.org>
+                * commented about.inc
 
-	* ChangeLog:
-	2002-09-21  Carol Spears  <carol@gimp.org>
-		* added ChangeLog
+        * ChangeLog:
+        2002-09-21  Carol Spears  <carol@gimp.org>
+                * added ChangeLog
 
 2002-09-21  Henrik Brix Andersen  <brix@gimp.org>
 
-	* includes/tutorials.inc,
-	tutorials/Anti-Aliased_Treshold/curves.jpg,
-	tutorials/Anti-Aliased_Treshold/effect.jpg,
-	tutorials/Anti-Aliased_Treshold/finished.jpg,
-	tutorials/Anti-Aliased_Treshold/index.inc,
-	tutorials/Anti-Aliased_Treshold/original.jpg,
-	tutorials/Anti-Aliased_Treshold/threshold.jpg: moved tutorials to
-	/tutorials
+        * includes/tutorials.inc,
+        tutorials/Anti-Aliased_Treshold/curves.jpg,
+        tutorials/Anti-Aliased_Treshold/effect.jpg,
+        tutorials/Anti-Aliased_Treshold/finished.jpg,
+        tutorials/Anti-Aliased_Treshold/index.inc,
+        tutorials/Anti-Aliased_Treshold/original.jpg,
+        tutorials/Anti-Aliased_Treshold/threshold.jpg: moved tutorials to
+        /tutorials
 
-	* includes/tutorials.inc:
-	do not list the CVS directory as a tutorial ;)
+        * includes/tutorials.inc:
+        do not list the CVS directory as a tutorial ;)
 
-	* includes/tutorials.inc, index.php, style/default.css:
-	added a tutorial; still working on the interface.
+        * includes/tutorials.inc, index.php, style/default.css:
+        added a tutorial; still working on the interface.
 
-	* style/default.css:
-	added #navbar (same as #linkbar) for use in tutorials
+        * style/default.css:
+        added #navbar (same as #linkbar) for use in tutorials
 
-	* index.php: added "FIXME" labels where needed
+        * index.php: added "FIXME" labels where needed
 
-	* index.php: added php code to hide #menu and #linkbar when a
-	tutorial is shown
+        * index.php: added php code to hide #menu and #linkbar when a
+        tutorial is shown
 
 2002-09-20  Henrik Brix Andersen  <brix@gimp.org>
 
-	* style/default.css: added @media print { ... } rule.
-	try it out using your browsers print-preview :)
+        * style/default.css: added @media print { ... } rule.
+        try it out using your browsers print-preview :)
 
-	* includes/about.inc: added closing tag to list items
-	(should work this time)
+        * includes/about.inc: added closing tag to list items
+        (should work this time)
 
-	* includes/about.inc: added closing tag to list items
+        * includes/about.inc: added closing tag to list items
 
-	* includes/about.inc: fixed </p> tag position
+        * includes/about.inc: fixed </p> tag position
 
-	* includes/news.inc: added missing </p>
+        * includes/news.inc: added missing </p>
 
-	* index.php: added two line breaks after the menu
+        * index.php: added two line breaks after the menu
 
-	* index.php: updated the hrefs in the linkbar
+        * index.php: updated the hrefs in the linkbar
 
-	* includes/os2.inc, includes/macintosh.inc, includes/windows.inc,
-	includes/unix.inc, includes/development.inc,
-	includes/authoring.inc, includes/tutorials.inc,
-	includes/documentation.inc, includes/registry.inc,
-	includes/resources.inc: empty page added
+        * includes/os2.inc, includes/macintosh.inc, includes/windows.inc,
+        includes/unix.inc, includes/development.inc,
+        includes/authoring.inc, includes/tutorials.inc,
+        includes/documentation.inc, includes/registry.inc,
+        includes/resources.inc: empty page added
 
-	* style/default.css: added "width: 100%" to #main.
-	this fixed the display of an empty (main) page
+        * style/default.css: added "width: 100%" to #main.
+        this fixed the display of an empty (main) page
 
-	* index.php: synced hrefs with new cases (in menu)
+        * index.php: synced hrefs with new cases (in menu)
 
-	* index.php: added remaining cases to switch ($page)
+        * index.php: added remaining cases to switch ($page)
 
-	* index.php: added "GIMP for OS/2" menu item
+        * index.php: added "GIMP for OS/2" menu item
 
-	* includes/about.inc: added missing close tag </div>
+        * includes/about.inc: added missing close tag </div>
 
-	* includes/news.inc:
-	fixed order of news item: newest on top (just for the looks)
+        * includes/news.inc:
+        fixed order of news item: newest on top (just for the looks)
 
-	* includes/about.inc: page added. content taken unmodified from
-	http://www.gimp.org/the_gimp_about.html
+        * includes/about.inc: page added. content taken unmodified from
+        http://www.gimp.org/the_gimp_about.html
 
-	* style/default.css: added custom style for <p>...</p> paragraphs.
-	removed margin-bottom from div.heading (will be handled by
-	paragraphs)
+        * style/default.css: added custom style for <p>...</p> paragraphs.
+        removed margin-bottom from div.heading (will be handled by
+        paragraphs)
 
-	* includes/news.inc: added <p>...</p> paragraphs
+        * includes/news.inc: added <p>...</p> paragraphs
 
-	* style/default.css: added "width: 100%;" to #layout
+        * style/default.css: added "width: 100%;" to #layout
 
-	* includes/blank.inc, includes/news.inc:
-	separated (test) news out from /index.php.
-	also created blank.inc (template)
+        * includes/blank.inc, includes/news.inc:
+        separated (test) news out from /index.php.
+        also created blank.inc (template)
 
-	* index.php:
-	added a switch statement to determine what page the user requested.
-	seperated the (test) news items out into includes/news.inc.
+        * index.php:
+        added a switch statement to determine what page the user requested.
+        seperated the (test) news items out into includes/news.inc.
 
-	* style/default.css: code clean up.
-	minor fixes to the layout.
+        * style/default.css: code clean up.
+        minor fixes to the layout.
 
-	* index.php: fixed missing </div> in titlebar.
-	removed spaces from headings.
-	minor fixes to the layout
+        * index.php: fixed missing </div> in titlebar.
+        removed spaces from headings.
+        minor fixes to the layout
 
-	* index.php, style/default.css:
-	finally fixed the "extra space" bug in mozilla.
-	needed to re-designed the entire titlebar.
+        * index.php, style/default.css:
+        finally fixed the "extra space" bug in mozilla.
+        needed to re-designed the entire titlebar.
 
-	* style/default.css: added "margin: 0px" and "border-collapse:
-	collapse" to #layout.  this removes the exstra space between the
-	titlebar, the table and the link bar.
-	(at least in opera, mozilla still has problems with exstra space
-	between the titlebar and the table)
+        * style/default.css: added "margin: 0px" and "border-collapse:
+        collapse" to #layout.  this removes the exstra space between the
+        titlebar, the table and the link bar.
+        (at least in opera, mozilla still has problems with exstra space
+        between the titlebar and the table)
 
-	* style/default.css: made news item text double justified
+        * style/default.css: made news item text double justified
 
-	* style/default.css, index.php: fixed display of several news
-	items
+        * style/default.css, index.php: fixed display of several news
+        items
 
 2002-09-20  carol  <carol@fungus>
 
-	* index.php: removed the rest of the spaces in the top bar
-	<div></div>
+        * index.php: removed the rest of the spaces in the top bar
+        <div></div>
 
-	* index.php: removed many of the spaces in the <div><img
-	bla></div> tags for the top bar
+        * index.php: removed many of the spaces in the <div><img
+        bla></div> tags for the top bar
 
 2002-09-19  Henrik Brix Andersen  <brix@gimp.org>
 
-	* index.php: cvs test
+        * index.php: cvs test
 
-	* images/barbg.png, images/nicefolder.png, images/thegimp.png,
-	images/wilberright.png, index.php, style/default.css: Initial
-	check in
+        * images/barbg.png, images/nicefolder.png, images/thegimp.png,
+        images/wilberright.png, index.php, style/default.css: Initial
+        check in
 
-	* images/barbg.png, images/nicefolder.png, images/thegimp.png,
-	images/wilberright.png, index.php, style/default.css: New file.
+        * images/barbg.png, images/nicefolder.png, images/thegimp.png,
+        images/wilberright.png, index.php, style/default.css: New file.
 

@@ -1,0 +1,257 @@
+<!--#include virtual="/includes/header_pretitle.inc" -->
+<title>GIMP - Converting Color Images to B&W</title>
+<!--#include virtual="/includes/header_posttitle.inc" -->
+<div id="main">
+<div class="heading">Converting Color Images to B&amp;W</div>
+<p>
+  Text and images Copyright (C) 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a> and may not be used without permission of the author.
+</p>
+
+<div class="subtitle">Intention</div>
+<p class="images">
+  <img src="before-384x288.jpg" alt=""/>
+  <img src="after-384x288.jpg" alt=""/>
+</p>
+<p>
+  In this tutorial I'll show you some different ways to convert color RGB images to B&amp;W:
+</p>
+<ul>
+  <li><a href="#grayscale">the "standard" grayscale conversion operation</a>.</li>
+  <li><a href="#desaturate">the desaturate operation</a>.</li>
+  <li><a href="#decomposeRGB">decomposing to RGB and using any one of the channels</a>.</li>
+  <li><a href="#decomposeHSV">decomposing to HSV and using the Value (V) channel</a>.</li>
+  <li><a href="#decomposeLAB">decomposing to LAB and using the Lightness (L) channel</a>.</li>
+  <li><a href="#channelmixer">using the Channel Mixer filter</a>.</li>
+</ul>
+<p>
+  We'll examine each of these in turn.
+</p>
+
+<div class="subtitle">The Procedure</div>
+<p class="images">
+  <img src="image-original-481x397.jpg" alt=""/>
+</p>
+<p>
+  Here is an example image, loaded into The GIMP. I thought it might look nice as a black and white image.
+</p>
+
+<a name="#grayscale">
+<div class="subtitle">Via Grayscale</div>
+</a>
+<p class="images">
+  <img src="image-grayscale-481x397.jpg" alt=""/>
+  <img src="image-grayscale-zoom100-481x397.jpg" alt=""/>
+</p>
+<p>
+  Here is what I get if I use the standard mode change to grayscale from RGB.
+</p>
+<p>
+  Duplicate the original image (Ctrl+D) and right-click on the copy. Select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Grayscale</span>. 
+  I don't know how this conversion works in the GIMP, but I have read that Photoshop uses a standard mix of the RGB channels for 
+  their grayscale conversion: RED=30%, GREEN=59% and BLUE=11%. Supposedly this mix accounts for the eye's sensitivity to different colors. 
+  This formula does a pretty nice job in the general case, but some images do not work as well with it, particularly if the green channel component is not strong.
+</p>
+<p>
+  I suspect the GIMP uses a similar formula. My experiments with the Channel Mixer (more on this below) support this.
+</p>
+
+<a name="#desaturate">
+<div class="subtitle">Via Desaturate</div>
+</a>
+<p class="images">
+  <img src="image-desaturate-481x397.jpg" alt=""/>
+  <img src="image-desaturate-zoom100-481x397.jpg" alt=""/>
+</p>
+<p>
+  Here is what I get if I use desaturate instead. Duplicate the original image (Ctrl+D) and right-click on the copy. 
+  Select <span class="filter">&lt;Image&gt;Image-&gt;Colors-&gt;Desaturate</span>. Unlike the grayscale mode change above, 
+  the channels are not remixed in different percentages, so we should expect different results.
+</p>
+<p>
+  The result is visually different; note the increased contrast in the scales. Also, compare the 100% zoom views at right and in the previous grayscale example. 
+  You can see a lot  more noise in the desaturated zoomed view (examine the blurred area below the spikes). 
+  The reason is that we are getting more blue and red channel noise, whereas in the grayscale mode change operation 
+  the algorithm is giving us a remix of 60% of the clean, detailed green channel.
+</p>
+
+<a name="#decomposeRGB">
+<div class="subtitle">Via Decompose RGB</div>
+</a>
+<p class="images">
+  <img src="decompose-rgb-186x265.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="image-red-481x397.jpg" alt=""/>
+  <img src="image-red-zoom100-481x397.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="image-green-481x397.jpg" alt=""/>
+  <img src="image-green-zoom100-481x397.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="image-blue-481x397.jpg" alt=""/>
+  <img src="image-blue-zoom100-481x397.jpg" alt=""/>
+</p>
+<p>
+  A third method is to consider the red/green/blue channels of the image. Each one can be represented as an independent grayscale image. 
+  Right-click on the original image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. Select the RGB option and click OK.
+</p>
+<p>
+  Here you can see the three channels: red (top), green (middle) and blue (bottom). You can see that the red channel contains most 
+  of the luminance information as well as a lot of noise, the green channel has the least noise, and the blue channel has shadows and noise. 
+  Often the blue channel has the most noise, but not in this case.
+</p>
+<p>
+  Very often the green channel contains an excellent B&amp;W version of the image. If nothing else, taking a look at the 
+  RGB decomposition is important to give you an idea of where the important information is in your image, and where the noise is.
+</p>
+
+<a name="#decomposeHSV">
+<div class="subtitle">Via Decompose HSV</div>
+</a>
+<p class="images">
+  <img src="decompose-hsv-186x265.jpg" alt=""/>
+  <img src="image-value-481x397.jpg" alt=""/>
+</p>
+<p>
+  Another possibility is to decompose to Hue/Saturation/Value components and consider the Value image (the other two are not usually useful for this purpose). 
+  Right-click on the original image and select <span class="filter">&lt;Image&gt;Image-&gt;Mode-&gt;Decompose</span>. Select the HSV option and click OK.
+</p>
+
+<a name="#decomposeLAB">
+<div class="subtitle">Via Decompose LAB</div>
+</a>
+<p class="images">
+  <img src="decompose-lab-186x265.jpg" alt=""/>
+  <img src="image-lightness-481x397.jpg" alt=""/>
+</p>
+<p>
+  Yet another decompose option: LAB mode. Right-click on the original image and select Image/Mode/Decompose. Select the LAB option and click OK.
+</p>
+<p>
+  The Lightness component is a very interesting one because it contains all of the luninance information 
+  (whereas in RGB and HSV some of that information is spread into other components). 
+  You can very often see an expanded tonal range and discover hidden detail in the shadows by examining this component.
+</p>
+<p>
+  Not often useful by itself, but it can be combined with other layers for interesting results (see Tips at end of article).
+</p>
+<p>
+  <b>Note:</b> the LAB decompose option was not distributed with the version of the GIMP I got (ver 1.2.3). 
+  I don't know whether it comes bundled with newer versions. I downloaded it from the <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself.
+</p>
+
+<a name="#decomposeCMYK">
+<div class="subtitle">Via Decompose CMYK</div>
+</a>
+<p class="images">
+  <img src="decompose-cmyk-186x265.jpg" alt=""/>
+  <img src="image-black-481x397.jpg" alt=""/>
+</p>
+<p>
+  Just for fun I tried decomposing into CMYK. The Black channel is interesting: it resembles a negative.
+</p>
+
+<a name="#channelmixer">
+<div class="subtitle">Via Channel Mixer</div>
+</a>
+<p class="images">
+  <img src="channelmixer-481x307.jpg" alt=""/>
+</p>
+<p class="images">
+  <img src="image-channelmixer-481x397.jpg" alt=""/>
+  <img src="image-channelmixer-zoom100-481x397.jpg" alt=""/>
+</p>
+<p>
+  The final technique is the Channel Mixer filter. Right-click on the original image and select <span class="filter">&lt;Image&gt;Filters-&gt;Color-&gt;Channel Mixer</span>.
+</p>
+<p>
+  You'll get a dialog box like the one at right. Click the checkbox that says Monochrome. Make sure the preview checkbox is also checked.
+</p>
+<p>
+  Now play around with the levels of the three channels, seeing the results in the preview window. 
+  If you don't want to change the overall brightness of the image then the three values should add up to 100%, 
+  but feel free to experiment (checking the "Preserve Luminosity" box will also preserve the overall brightness 
+  of the image--see the Tips section below for more explanation of this option). Dialing in Red=30%, Green=59%, Blue=11% 
+  ought to give you something that looks nearly identical to what you would get with a mode change to grayscale.
+</p>
+<p>
+  When you have something that looks decent in the preview, click OK. If you don't like the look of the result, 
+  Undo (Ctrl+Z) and reapply the filter with different settings (Shift+Alt+F).
+</p>
+<p>
+  The advantage of the channel mixer is (obviously) flexibility. I like to decompose and examine the individual RGB channels, as we did earlier. 
+  That way I can see what is good and bad about each, and then use the channel mixer to combine them accordingly. In this example, 
+  I could see that the green channel did not really have much to offer, and had the least contrast in the iguana's scales; still, 
+  I mixed in 30% to help with the noise. I liked the blue channel for the great contrast it adds to the scales. Red's got a lot of noise, 
+  but I mixed in just enough to use some of the contrast and luminance information. You can see from the close up that it isn't quite as 
+  good the grayscale version in terms of noise, but the noise isn't too bad, and the trade-off is a lot more contrast and interest in the overall tonalities of the image.
+</p>
+<p>
+  <b>Note:</b> the channel mixer plug-in was not distributed with the version of the GIMP I got (ver 1.2.3). 
+  I don't know whether it comes bundled with newer versions. 
+  I downloaded it from <a href="http://registry.gimp.org/plugin?id=1918">the GIMP Plug-in Registry</a> and compiled it myself.
+</p>
+
+<div class="subtitle">Tips</div>
+<ul>
+  <li>Once you have a good B&amp;W version of your image you may be interested in adding some simulated film grain.</li>
+  <li>If you are wondering what the "Preserve Luminosity" option does in the Channel Mixer, I have the answer. 
+  I was curious myself, and asked the author of the Channel Mixer, Martin Guldahl, about it. This was his reply:
+  <br /><br />
+  Hi Eric:
+  <br /><br />
+  The 'Preserve Luminosity' option just maintains the luminosity at the same level regardless of the slider values.
+  <br /><br />
+  For example, suppose the sliders were are Red:75%, Green:75%, Blue:0%. With 'Monochrome' on and the 'Preserve Luminosity' option off, 
+  the resulting picture would be at 75%+75%+0% =150%, very bright indeed. A pixel with a value of, say, R,G,B=127,100,80 would map 
+  to 127*0.75+100*0.75+80*8=170 for each channel. With the 'Preserve Luminosity' option on, the sliders will be scaled so they always add up to 100%. 
+  In this example, that scale value is 1/(75%+75%+0%) or 0.667. So the pixel values would be about 113. The 'Preserve Luminosity' option just assures 
+  that the scale values from the sliders always adds up to 100%. Of course, strange things happen when any of the sliders have large negative values.</li>
+</ul>
+
+<div class="subtitle">Other Examples</div>
+<p class="images">
+  <img src="middlesister-384x259.jpg" alt=""/>
+  <img src="middlesister-bw-384x259.jpg" alt=""/>
+</p>
+<p>
+  <b>Left image</b>: The original image. <br />
+  <b>Right image</b>: Converted using channel mixer (80% green, 20% red).
+</p>
+<p class="images">
+  <img src="example2-before-384x288.jpg" alt=""/>
+  <img src="example2-after-384x288.jpg" alt=""/>
+</p>
+<p>
+  <b>Left image</b>: The original image. <br />
+  <b>Right image</b>: Converted using channel mixer.
+</p>
+
+<div class="subtitle">Further Reading</div>
+<ul>
+  <li><a href="http://www.microweb.com/idig/content/seybold/imgchanl.htm">A discussion of what's in the red, green and blue channels of a digital image</a>.</li>
+  <li>A <a href="http://luminous-landscape.com/b&w_better.htm">Photoshop channel mixer tutorial</a> 
+  on the <a href="http://www.luminous-landscape.com">luminous landscape</a> web site.</li>
+  <li><a href="http://www.carlvolk.com/photoshop21.htm">Carl Volk's Photoshop tips for converting color images to B&W</a>.</li>
+  <li>zuga.net: <a href="http://www.zuga.net/printer_55.shtml">Digital RGB to Greyscale Conversions</a></li>
+  <li>Ian Lyons Computer Darkroom: <a href="http://computer-darkroom.com/tutorials/tutorial_2_1.htm">Monochrome from Colour</a></li>
+</ul>
+
+<p>
+  The original tutorial (possibly with updated information) may be found <a href="http://redskiesatnight.com/">here</a>.
+</p>
+
+</div>
+<!--#include virtual="/includes/tutnavbar.inc" -->
+    <div>
+      <span id="footerleft">
+        Tutorial &copy; 2002 <a href="mailto:eric@redskiesatnight.com">Eric R. Jeschke</a>
+      </span>
+      <span id="footerright">
+        <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>
+      </span>
+    </div>
+
+  </body>
+</html>

@@ -1,3 +1,9 @@
+2002-12-07 scizzo <scizzo@gimp.org>
+
+        * tutorials/index.html: Changed Channel Mixer to Color2BW.
+
+        * tutorials/Color2BW/: Add the first port of the new BW tutorial.
+
 2002-12-07 carol <carol@gimp.org>
 
 	* about/splash-cvs.html: fixed a bad image url.

@@ -120,7 +120,8 @@ def main():
     pass
 
   if status == "success":
-    wgo_news.header(goto)
+     print goto[0]
+     print
   else:
     wgo_news.header()
     wgo_news.footer(wgo.error(string.capitalize(action) + " " + string.capitalize(status)))

@@ -1,3 +1,10 @@
+2003-03-31  Helvetix Victorinox  <helvetix@mysterious.org>
+
+        * Fixed a redirection bug in
+          programmatic/admin/news/news-edit-action.py
+          which cause the script to fail because of an argument to
+          wgo_news.header()
+
 2003-03-22  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * Created admin/gimp-web-urls-subst which is gimp-web-urls

@@ -393,4 +393,3 @@ class dc_rights(x_xml.xml):
     pass
   
   pass
-

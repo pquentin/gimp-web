@@ -24,11 +24,9 @@
 # USA
 
 import fcntl
-import email
 import errno
 import getopt
 import os
-import rfc822
 import stat
 import sys
 import time
@@ -101,7 +99,7 @@ def submit_manually(args):
 
 
 def submit(form):
-  wgo_contest.head_boilerplate()
+  wgo_contest.folio_init("GIMP Splash Image Contest Submission")
   
   image = 'images/gimp-splash.png'
   author = "Wilber Gimp"
@@ -140,7 +138,8 @@ def submit(form):
   print guidelines
   print form
 
-  return (wgo_contest.footer())
+  wgo_contest.folio_fini()
+  return
 
 
 def preview(form):
@@ -156,8 +155,9 @@ def preview(form):
   title = form.getvalue("title", "")
 
   if len(form["image"].value) == 0:
-    wgo_contest.head_boilerplate()
-    wgo_contest.footer(wgo.error("You didn't submit an image."))
+    wgo_contest.folio_init("GIMP Splash Image Contest Preview Failed")
+    print wgo.error("You didn't submit an image.")
+    wgo_contest.folio_fini()
     return (1)
 
   try:
@@ -171,11 +171,12 @@ def preview(form):
     try: os.remove(thumb_path)
     except: pass
 
-    wgo_contest.head_boilerplate()
-    wgo_contest.footer(wgo.error(str(e)))
+    wgo_contest.folio_init("GIMP Splash Image Contest Preview Failed")
+    print wgo.error(str(e))
+    wgo_contest.folio_fini()
     return (1)
 
-  wgo_contest.head_boilerplate()
+  wgo_contest.folio_init("GIMP Splash Image Contest Preview")
 
   print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
@@ -221,11 +222,12 @@ def preview(form):
   print xhtml.div(img, {"class" : "splash-image", "id" : "preview"})
   print xhtml.div(form)
 
-  return (wgo_contest.footer())
+  wgo_contest.folio_fini()
+  return
 
 
 def approved(form):
-  wgo_contest.head_boilerplate()
+  wgo_contest.folio_init("GIMP Splash Image Contest Submission Approved")
 
   print xhtml.div("GIMP Splash Image Contest", {"class" : "heading"})
   print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
@@ -256,7 +258,8 @@ def approved(form):
   print xhtml.div("You can " + xhtml.hyperlink("submit another image", {"href" : "/contest/contest.cgi"})
                   + " or "  + xhtml.hyperlink("view the gallery.", {"href" : "/contest/gallery.cgi?display=gallery"}))
 
-  return (wgo_contest.footer())
+  wgo_contest.folio_fini()
+  return
   
 
 def main(argv):

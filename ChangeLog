@@ -1,5 +1,10 @@
 2003-02-10  Helvetix Victorinox  <helvetix@oak.mysterious.org>
 
+        * Code refactoring in contest/gallery.py and ancillary xhtml.py
+          and x_xml.py.  Found and fixed more instances of input buttons
+          used outside of forms (which apparently tickles a gecko bug)
+          which makes them bounce around.
+
         * Added tutorials/Perlotine/index2.html as an example of using the
           new include files for tutorials, and includes my old tweaks to
           make the page purty despite a lack of understanding basic

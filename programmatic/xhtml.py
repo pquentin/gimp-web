@@ -101,12 +101,14 @@ def environ():
   print div.fini()
   return (None)
 
+
 def validate(text="validate", attrs={}):
   attrs.update({"href" : "http://validator.w3.org/check/referer"})
   return hyperlink(text, attrs)
 
+
 def print_form(form, label="Form Contents"):
-  """PrintdDump the contents of a form as xhtml."""
+  """Print the contents of a form as xhtml."""
   keys = form.keys()
   keys.sort()
 
@@ -132,26 +134,17 @@ def print_form(form, label="Form Contents"):
 
 ##################################################################
 
-class html_attrs(UserDict):
+class html_attrs:
   def __init__(self, attrs):
-    UserDict.__init__(self, attrs)
+    self.data = attrs
     return None
 
   def __repr__(self):
-    str = ""
     k = self.data.keys()
     k.sort()
-    
-    for a in k:
-      if self.data[a] == "" or self.data[a] == None:
-        str += ' %s' % (a)
-      else:
-        str += ' %s="%s"' % (a, self.data[a])
-        pass
-      pass
-                    
-    return str
+    return (string.join(map(lambda key: ' %s="%s"' % (key, self.data[key]), k)))
   pass
+
 
 class xyz_init:
   def __init__(self, attrs, begin="<??%s>"):
@@ -167,6 +160,7 @@ class xyz_init:
 
   pass
     
+
 class xyz_fini:
   def __init__(self, tag="</??>"):
     self.tag = tag
@@ -229,7 +223,14 @@ class debug(__html__):
     return None
   pass
 
-class include(__html__):
+
+def include(filename):
+  fp = open(filename, "r")
+  content =  fp.read()
+  fp.close()
+  return (content)
+  
+class xinclude(__html__):
   def __init__(self, filename):
     fp = open(filename, "r")
     content =  fp.read()
@@ -237,6 +238,7 @@ class include(__html__):
     __html__.__init__(self, content, {}, "", "")
     return
   pass
+
 
 class xml(__html__):
   def __init__(self, attrs={"version" : "1.0", "encoding" : "iso-8859-1"}):
@@ -251,6 +253,7 @@ class doctype(__html__):
     return
   pass
     
+
 class body(__html__):
   defaults = {}
 
@@ -273,26 +276,37 @@ class body(__html__):
     pass
   pass
 
-class title(__html__):
-  def __init__(self, content=None, attrs={}):
-    __html__.__init__(self, content, attrs, "<title%s>", "</title>")
-    return None
-  pass
 
-class html(__html__):
-  def __init__(self, content=None, attrs={}):
-    return (__html__.__init__(self, content, attrs, "<html%s>", "</html>"))
+class title(x_xml.Xml):
+  defaults = { }
+  tag = "title"
 
-  class init(xyz_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      return (xyz_init.__init__(self, attrs, "<html%s>"))
+      return (x_xml.xml_init.__init__(self, title, attrs))
     pass
-
-  class fini(xyz_fini):
-    def __init__(self, attrs={}):
-      return (xyz_fini.__init__(self, "</html>"))
+  
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, title))
     pass
   pass
+
+class html(x_xml.Xml):
+  defaults = { }
+  tag = "html"
+
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, html, attrs))
+    pass
+  
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, html))
+    pass
+  pass
+
     
 class link(__html__):
   defaults = { "rel": "stylesheet", "href": "#", "type": "text/css" }
@@ -392,37 +406,37 @@ class list(x_xml.xml):
     pass
   pass
 
-class div(__html__):
+
+class div(x_xml.Xml):
   defaults = { }
+  tag = "div"
 
-  def __init__(self, content=None, attrs={}):
-    a = dict(self.defaults)
-    a.update(attrs)
-    __html__.__init__(self, content, a, "<div%s>", "</div>")
-    return None
-
-  class init(xyz_init):
+  class init(x_xml.xml_init):
     def __init__(self, attrs={}):
-      a = dict(div.defaults)
-      a.update(attrs)
-      return (xyz_init.__init__(self, a, "<div%s>"))
+      return (x_xml.xml_init.__init__(self, div, attrs))
     pass
   
-  class fini(xyz_fini):
-    def __init__(self, attrs={}):
-      return (xyz_fini.__init__(self, "</div>"))
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, div))
     pass
   pass
 
-class span(__html__):
+class span(x_xml.Xml):
   defaults = { }
+  tag = "span"
 
-  def __init__(self, content=None, attrs={}):
-    a = dict(self.defaults)
-    a.update(attrs)
-    __html__.__init__(self, content, a, "<span%s>", "</span>")
-    return None
+  class init(x_xml.xml_init):
+    def __init__(self, attrs={}):
+      return (x_xml.xml_init.__init__(self, span, attrs))
+    pass
+  
+  class fini(x_xml.xml_fini):
+    def __init__(self):
+      return (x_xml.xml_fini.__init__(self, span))
+    pass
   pass
+
 
 class h1(__html__):
   defaults = { }
@@ -555,14 +569,6 @@ class text(x_xml.xml):
     pass
   pass
 
-class xtext(__html__):
-  def __init__(self, content=None, attrs={}):
-    __html__.__init__(self, content, attrs, "", "")
-    return None
-
-  def __repr__(self):
-    return self.content
-  pass
 
 class table(__html__):
   defaults = {"summary": "table", "cellpadding" : 0, "cellspacing" : 0}

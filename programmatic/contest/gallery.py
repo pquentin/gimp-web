@@ -22,7 +22,6 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
 # USA
-
 import fcntl
 import email
 import errno
@@ -67,65 +66,54 @@ def format(name):
   if not entry.exists():
     link = "Eeek!  This entry is not available in the gallery. ", name
   else:
-    link = entry.ashtml("thumb") + xhtml.hyperlink(xhtml.input.submit(view_button), {"href" : view})
+    link = entry.ashtml("thumb") + xhtml.hyperlink("view", {"href" : view, "class" : "faux-button"})
     pass
 
-  return (xhtml.div(link, {"class" : "splash-thumb"}))
-
-
-def _format(name):
-  entry = wgo_contest.gallery_image(name)
-  if not entry.exists():
-    link = "Eeek!  This entry is not available in the gallery. ", name
-  else:
-    link = xhtml.hyperlink(entry.ashtml("thumb"),
-                           {"href" : wgo.config.admin_dir + "contest/gallery.cgi?display=EDIT&amp;name=%s" % (name)})
-    pass
-  
   return (xhtml.div(link, {"class" : "splash-thumb"}))
 
 
 def display_gallery(form):
-  wgo_contest.head_boilerplate()
+  wgo_contest.folio_init("GIMP Splash Image Gallery")
 
   names = get_gallery_names()
 
   index = int(form.getfirst("index", "0"))
-
-  next_button = xhtml.input.submit({"value" : "NEXT"})
-  prev_button = xhtml.input.submit({"value" : "PREV"})
-
+  tableless = int(form.getfirst("tableless", "0"))
   images_per_page = 8
 
   next = ""
   next_page_images = index + images_per_page + 1
-  
   if index < len(names) and len(names) >= next_page_images:
-    next = xhtml.hyperlink(next_button, {"href" : "gallery.cgi?display=GALLERY&amp;index=%d" % (next_page_images)})
+    next = xhtml.hyperlink("NEXT", {"class" : "faux-button", "href" : "gallery.cgi?display=GALLERY&amp;index=%d" % (next_page_images)})
     pass
 
   prev = ""
   prev_page_images = index - images_per_page - 1
   if index >= images_per_page:
-    prev = xhtml.hyperlink(prev_button, { "href" : "gallery.cgi?display=GALLERY&amp;index=%d" % (prev_page_images)})
+    prev = xhtml.hyperlink("PREV", {"class" : "faux-button", "href" : "gallery.cgi?display=GALLERY&amp;index=%d" % (prev_page_images)})
     pass
 
   print xhtml.div(xhtml.span(prev, {"style" : "float: left;"})
                    + xhtml.span(next, {"style" : "float: right;"}) + "&nbsp;", {"style" : "height 10ex;"})
 
-  if True:
+  if tableless == 0:
     if len(names) > 0:
       print xhtml.table.init({"cellspacing" : 6, "cellpadding" : 0, "border" : 0, "class" : "gallery"})
       print xhtml.table.row.init()
       map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))), names[index:index+(images_per_page/2)])
       print xhtml.table.row.fini()
-      print xhtml.table.row.init()
-      map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))), names[index+(images_per_page/2 + 1):index+images_per_page + 1])
-      print xhtml.table.row.fini()
+
+      if len(names[index+(images_per_page/2):index+images_per_page + 1]) > 0:
+        print xhtml.table.row.init()
+        map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))), names[index+(images_per_page/2):index+images_per_page + 1])
+        print xhtml.table.row.fini()
+        pass
+      
       print xhtml.table.fini()
       pass
-  else:
-    print xhtml.div.init({"style" : "vertical-align: bottom; border: 1px solid red;"})
+    pass
+  else:                                 # table-less layout
+    print xhtml.div.init({"style" : "vertical-align: bottom;"})
     print xhtml.div("&nbsp;", {"style" : "clear: both;"})
     for k in names[index:next_page_images]:
       print xhtml.div(format(k), {"style" : "float: left; margin: 1em;"})
@@ -134,11 +122,14 @@ def display_gallery(form):
     print xhtml.div.fini()
     pass
 
-  return (wgo_contest.footer())
+  print xhtml.div(xhtml.hyperlink("Submit an image", {"href" : "/contest/contest.cgi"}))
+
+  wgo_contest.folio_fini()
+  return
 
 
 def display_image(form):
-  wgo_contest.head_boilerplate()
+  wgo_contest.folio_init("GIMP Splash Image Contender")
 
   name = os.path.basename(form.getvalue("name", "")) # XXX
   entry = wgo_contest.gallery_image(name)
@@ -149,7 +140,9 @@ def display_image(form):
     print wgo.error("That image is not available in the gallery.")
     pass
 
-  return (wgo_contest.footer())
+  wgo_contest.folio_fini()
+
+  return
   
 
 def main(argv):

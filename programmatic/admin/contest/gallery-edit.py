@@ -137,29 +137,27 @@ def display_gallery(form):
   names = get_gallery_names()
 
   index = int(form.getfirst("index", "0"))
-
-  next_button = xhtml.input.submit({"value" : "NEXT"})
-  prev_button = xhtml.input.submit({"value" : "PREV"})
-
+  tableless = int(form.getfirst("tableless", "0"))
   images_per_page = 8
+
 
   next = ""
   next_page_images = index + images_per_page + 1
   
   if index < len(names) and len(names) >= next_page_images:
-    next = xhtml.hyperlink(next_button, {"href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (next_page_images)})
+    next = xhtml.hyperlink("NEXT", {"class" : "faux-button", "href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (next_page_images)})
     pass
 
   prev = ""
   prev_page_images = index - images_per_page - 1
   if index >= images_per_page:
-    prev = xhtml.hyperlink(prev_button, { "href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_images)})
+    prev = xhtml.hyperlink("PREV", {"class" : "faux-button", "href" : "gallery-edit.cgi?mode=GALLERY&amp;index=%d" % (prev_page_images)})
     pass
 
   print xhtml.para(xhtml.span(prev, {"style" : "float: left;"})
                    + xhtml.span(next, {"style" : "float: right;"}) + "&nbsp;", {"style" : "height 10ex;"})
 
-  if True:
+  if tableless == 0:
     if len(names) > 0:
       print xhtml.table.init({"cellspacing" : 6, "cellpadding" : 0, "border" : 0, "class" : "gallery"})
 
@@ -167,10 +165,10 @@ def display_gallery(form):
       map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))), names[index:index+(images_per_page/2)])
       print xhtml.table.row.fini()
 
-      if len(names[index+(images_per_page/2 + 1):index+images_per_page + 1]) > 1:
+      if len(names[index+(images_per_page/2):index+images_per_page + 1]) > 0:
         print xhtml.table.row.init()
-        map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k)))),
-            names[index+(images_per_page/2 + 1):index + images_per_page + 1])
+        map(lambda k: sys.stdout.write(str(xhtml.table.cell(format(k), {"style" : "text-align: left;"}))),
+            names[index+(images_per_page/2):index+images_per_page + 1])
         print xhtml.table.row.fini()
         pass
 

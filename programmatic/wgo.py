@@ -83,3 +83,30 @@ def displaycmd(cmd):
     pass
   fp.close()
   return
+
+
+def xhtml_init():
+  return xhtml.include('%s/includes/wgo-xhtml-init.xhtml' % (config.DocumentRoot_path))
+
+def xhtml_fini():
+  return xhtml.include('%s/includes/wgo-xhtml-fini.xhtml' % (config.DocumentRoot_path))
+
+def look_feel():
+  # This is shared information with /includes/wgo-look-feel.xhtml XXX
+  s = xhtml.include('%s/includes/wgo-layout.xhtml' % (config.DocumentRoot_path))
+  s += xhtml.include('%s/includes/wgo-styles.xhtml' % (config.DocumentRoot_path))
+  s += xhtml.include('%s/includes/wgo-navigation.xhtml' % (config.DocumentRoot_path))
+  s += str(xhtml.link(None, {"rel" : "stylesheet", "href" : "/style/extended.css", "type" : "text/css", "media" : "screen"}))
+  return (s)
+
+def page_init():
+  return xhtml.include('%s/includes/wgo-page-init.xhtml' % (config.DocumentRoot_path))
+
+def page_fini():
+  s = ""
+  if config.validate:
+    s = xhtml.div(xhtml.validate("version 0211", {"class" : "watermark"}), {"class" : "watermark", "style" : "color: #f0f0f0; float left;"})
+    pass
+
+  return (s + xhtml.include('%s/includes/wgo-page-fini.xhtml' % (config.DocumentRoot_path)))
+

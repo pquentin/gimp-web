@@ -27,47 +27,11 @@ import string
 import sys
 import os
 
-class xml_attrs:
-  def __init__(self, attrs):
-    self.data = attrs
-    return None
-
-  def __repr__(self):
-    str = ""
-    k = self.data.keys()
-    k.sort()
-
-    for a in k:
-      if self.data[a] == "":
-        str += ' %s' % (a)
-      elif self.data[a] == None:
-        pass
-      else:
-        str += ' %s="%s"' % (a, self.data[a])
-        pass
-      pass
-
-    return (str)
-  pass
 
 def format_attrs(attrs):
-  str = ""
   k = attrs.keys()
   k.sort()
-
-  for a in k:
-    if attrs[a] == "":
-      str += ' %s' % (a)
-    elif attrs[a] == None:
-      pass
-    elif type(attrs[a]) == type({}):
-      str += format_attrs(attrs[a])
-    else:
-      str += ' %s="%s"' % (a, attrs[a])
-      pass
-    pass
-  
-  return (str)
+  return (string.join(map(lambda key: ' %s="%s"' % (key, attrs[key]), k)))
 
 
 class xml_init:
@@ -85,7 +49,7 @@ class xml_init:
       return ("<" + self.tag + format_attrs(self.attrs) + ">")
     else:
       return ("")
-
+    pass
   pass
 
     
@@ -133,6 +97,35 @@ class xml:
     return (str(self.init(self.attrs)) + self.content + str(self.fini()))
 
   pass
+
+class Xml:
+  def __init__(self, content="", attrs={}):
+    self.attrs = dict(self.defaults)
+    self.attrs.update(attrs)
+
+    if type(content) == types.FileType:
+      self.content = string.join(content.readlines())
+    else:
+      self.content = content
+      pass
+    
+    return None
+
+  def __getitem__(self, name):
+    return (self.attrs[name])
+
+  def __setitem__(self, name, value):
+    self.attrs[name] = value
+    return (None)
+
+  def __coerce__(self, other):
+    return (str(self), str(other))
+    
+  def __repr__(self):
+    return (str(self.init(self.attrs)) + self.content + str(self.fini()))
+
+  pass
+
 
 def header():
   return ('<?xml version="1.0" encoding="iso-8859-1"?>')

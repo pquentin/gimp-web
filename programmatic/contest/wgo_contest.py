@@ -156,19 +156,18 @@ def spool_file(name, suffix=""):
 def spool_path(name, suffix=""):
   return (config.spool_path + name + suffix)
 
-def head_boilerplate(headers=""):
-  headers = headers + "Content-type: text/html"
-  print headers
 
-  return (wgo.header('GIMP - Splash Image Contest', [config.contest_dir + "wgo-contest.css"], wgo.config.DocumentRoot_path + "/includes/menu.inc"))
+def folio_init(title=""):
+  print "Content-Type: text/html"
+  print 
+  print wgo.xhtml_init()
+  print xhtml.title(title)
+  print wgo.look_feel()
+  print xhtml.link(None, {"rel" : "stylesheet", "href" : config.contest_dir + "wgo-contest.css", "type" : "text/css", "media" : "screen"})
+  print wgo.page_init()
+  return
 
-def header(headers=[]):
-  headers = headers + ["Content-type: text/html"]
-  for h in headers: print h
-  print
-  
-  return (wgo.header('GIMP - Splash Image Contest', [config.contest_dir + "wgo-contest.css"], wgo.config.DocumentRoot_path + "/includes/menu.inc"))
-
-
-def footer(prefix=None):
-  return (wgo.footer(prefix))
+def folio_fini():
+  print wgo.page_fini()
+  print wgo.xhtml_fini()
+  return

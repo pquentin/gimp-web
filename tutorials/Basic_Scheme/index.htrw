@@ -1,6 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Basic Scheme</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<link style type="text/css" rel="alternate stylesheet" type="text/css" title="helvetix fixes" href="/style/helvetix-fixes.css" />
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Basic Scheme</h1>
 
@@ -342,185 +343,188 @@
   In uni-img we called the procedure gimp-edit-fill to fill the whole image. Looking at the info for gimp-edit-fill in the DB browser we find the following:
 </p>
 
-<p>
-<table>
-<tr><td bgcolor=#e0e0e0>
-<table>
-<tr><th valign=top align=right>Name:</th><td bgcolor=#e0e0ff colspan=3>gimp-edit-fill</td></tr>
-<tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Fill selected area of drawable</td></tr>
-<tr>
-<th valign=top align=right valign=top>In:</th>
-<td valign=top>DRAWABLE</td>
-<td valign=top>drawable</td>
-<td valign=top>The drawable to fill from</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>INT32</td>
-<td valign=top>fill_type</td>
-<td valign=top>The type of fill: FG_IMAGE_FILL (0), BG_IMAGE_FILL (1), WHITE_IMAGE_FILL (2), TRANS_IMAGE_FILL (3), NO_IMAGE_FILL (4)</td>
-</tr>
-<tr>
-<th valign=top valign=top>Help:</th>
-<td colspan=3>This procedure fills the specified drawable with the fill mode. If the fill mode is foreground, the current foreground color is used. 
-If the fill mode is background, the current background color is used. Other fill modes should not be used. 
-This procedure only affects regions within a selection if there is a selection active.
-</td></tr></table>
-</table>
-</p>
+    <table><tbody>
+      <tr><td style="background: #e0e0e0 none;">
+          <table><tbody>
+              <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp-edit-fill</td></tr>
+              <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Fill selected area of drawable</td></tr>
+              <tr>
+                <th valign=top align=right valign=top>In:</th>
+                <td valign=top>DRAWABLE</td>
+                <td valign=top>drawable</td>
+                <td valign=top>The drawable to fill from</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>INT32</td>
+                <td valign=top>fill_type</td>
+                <td valign=top>The type of fill: FG_IMAGE_FILL (0), BG_IMAGE_FILL (1), WHITE_IMAGE_FILL (2), TRANS_IMAGE_FILL (3), NO_IMAGE_FILL (4)</td>
+              </tr>
+              <tr>
+                <th valign=top valign=top>Help:</th>
+                <td colspan=3>
+                  This procedure fills the specified drawable with the fill mode. If the fill mode is foreground, the current foreground color is used. 
+                  If the fill mode is background, the current background color is used. Other fill modes should not be used. 
+                  This procedure only affects regions within a selection if there is a selection active.
+                </td>
+              </tr>
+            </tbody></table>
+        </td></tr>
+    </tbody></table>
 
-<p>
-  Thus, if we have a selection active when the gimp-edit-fill is called only the selection is painted. 
-  There are lots of ways of choosing a selection as can be seen when searching for a ``select'' in the PDB. 
-  We will use gimp-rect-select, whose entry in the PDB looks as follows:
-</p>
+  <p>
+    Thus, if we have a selection active when the gimp-edit-fill is called only the selection is painted. 
+    There are lots of ways of choosing a selection as can be seen when searching for a ``select'' in the PDB. 
+    We will use gimp-rect-select, whose entry in the PDB looks as follows:
+  </p>
 
-<p>
-<table>
-<tr><td bgcolor=#e0e0e0>
-<table>
-<tr><th valign=top align=right>Name:</th>
-<td bgcolor=#e0e0ff colspan=3>gimp-rect-select</td></tr>
-<tr><th valign=top align=right>Blurb:</th>
-<td valign=top colspan=3>Create a rectangular selection over the specified image</td></tr>
-<tr>
-<th valign=top align=right valign=top>In:</th>
-<td valign=top>IMAGE</td>
-<td valign=top>image</td>
-<td valign=top>The image</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>FLOAT</td>
-<td valign=top>x</td>
-<td valign=top>x coordinate of upper-left corner of rectangle</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>FLOAT</td>
-<td valign=top>y</td>
-<td valign=top>y coordinate of upper-left corner of rectangle</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>FLOAT</td>
-<td valign=top>width</td>
-<td valign=top>the width of the rectangle: width &gt; 0</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>FLOAT</td>
-<td valign=top>height</td>
-<td valign=top>the height of the rectangle: width &gt; 0</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>INT32</td>
-<td valign=top>operation</td>
-<td valign=top>the selection operation: {ADD (0), SUB(1), REPLACE (2), INTERSECT (3) }</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>INT32</td>
-<td valign=top>feather</td>
-<td valign=top>feather option for selections</td>
-</tr>
-<tr>
-<th valign=top></th>
-<td valign=top>FLOAT</td>
-<td valign=top>feather_radius</td>
-<td valign=top>radius for feather operation</td>
-</tr>
-<tr><th valign=top valign=top>Help:</th>
-<td colspan=3>This tool creates a rectangular selection over the specified image. The rectangular region can be either added to, 
-subtracted from, or replace the contents of the previous selection mask. If the feather option is enabled, the resulting selection is blurred before combining. 
-The blur is a gaussian blur with the specified feather radius.
-</td></tr></table>
-</table>
-</p>
+  <table><tbody>
+      <tr><td style="background: #e0e0e0 none;">
+          <table><tbody>
+              <tr><th valign=top align=right>Name:</th>
+                <td style="background: #e0e0ff none;" colspan=3>gimp-rect-select</td></tr>
+              <tr><th valign=top align=right>Blurb:</th>
+                <td valign=top colspan=3>Create a rectangular selection over the specified image</td></tr>
+              <tr>
+                <th valign=top align=right valign=top>In:</th>
+                <td valign=top>IMAGE</td>
+                <td valign=top>image</td>
+                <td valign=top>The image</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>FLOAT</td>
+                <td valign=top>x</td>
+                <td valign=top>x coordinate of upper-left corner of rectangle</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>FLOAT</td>
+                <td valign=top>y</td>
+                <td valign=top>y coordinate of upper-left corner of rectangle</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>FLOAT</td>
+                <td valign=top>width</td>
+                <td valign=top>the width of the rectangle: width &gt; 0</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>FLOAT</td>
+                <td valign=top>height</td>
+                <td valign=top>the height of the rectangle: width &gt; 0</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>INT32</td>
+                <td valign=top>operation</td>
+                <td valign=top>the selection operation: {ADD (0), SUB(1), REPLACE (2), INTERSECT (3) }</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>INT32</td>
+                <td valign=top>feather</td>
+                <td valign=top>feather option for selections</td>
+              </tr>
+              <tr>
+                <th valign=top></th>
+                <td valign=top>FLOAT</td>
+                <td valign=top>feather_radius</td>
+                <td valign=top>radius for feather operation</td>
+              </tr>
+              <tr><th valign=top valign=top>Help:</th>
+                <td colspan=3>This tool creates a rectangular selection over the specified image. The rectangular region can be either added to, 
+                  subtracted from, or replace the contents of the previous selection mask. If the feather option is enabled, the resulting selection is blurred before combining. 
+                  The blur is a gaussian blur with the specified feather radius.
+                </td>
+              </tr>
+            </tbody></table>
+          </td></tr>
+    </tbody></table>
 
-<p>
-  A simple use of this function which selects the rectangle (x,y,width,height)=(0,25,100,50), paints this region blue, and releases the selection looks as follows:
-</p>
-<pre class="code">
+  <p>
+    A simple use of this function which selects the rectangle (x,y,width,height)=(0,25,100,50), paints this region blue, and releases the selection looks as follows:
+  </p>
+  <pre class="code">
     (gimp-rect-select img 0 25 100 50 REPLACE 0 0)
     (gimp-palette-set-background '(0 0 255))
     (gimp-edit-fill layer BG-IMAGE-FILL)
     (gimp-selection-none img)
-</pre>
-<br />
+  </pre>
+  <br />
 
-<h2>8. Loops</h2>
-<p>
-  The only looping construct that exists in Script-Fu is <b>while</b>
-</p>
-<p>
-  [Note: this constraint is due to the current scheme interpreter SIOD used for Script-Fu. Once the scheme interpreter as planned is changed to Guile, 
-  more looping constructs will probably be added.] The while loop looks as follows:
-</p>
-<pre class="code">
-    (while (condition)
-           (statement1)
-           (statement2)
-           :
-           )
-</pre>
-<p>
-  Here's an example which draws horizontal lines, 16 pixels high, on an image:
-</p>
-<pre class="code">
-    (set! y 0)
-    (while (&lt; y size)
-           (gimp-rect-select img 0 y size 16 REPLACE 0 0)
-           (gimp-edit-fill layer-one BG-IMAGE-FILL)
-           (set! y (+ y 32)))
-</pre>
-<br />
+    <h2>8. Loops</h2>
+    <p>
+      The only looping construct that exists in Script-Fu is <b>while</b>
+    </p>
+    <p>
+      [Note: this constraint is due to the current scheme interpreter SIOD used for Script-Fu. Once the scheme interpreter as planned is changed to Guile, 
+      more looping constructs will probably be added.] The while loop looks as follows:
+    </p>
+    <pre class="code">
+      (while (condition)
+      (statement1)
+      (statement2)
+      :
+      )
+    </pre>
+    <p>
+      Here's an example which draws horizontal lines, 16 pixels high, on an image:
+    </p>
+    <pre class="code">
+      (set! y 0)
+      (while (&lt; y size)
+      (gimp-rect-select img 0 y size 16 REPLACE 0 0)
+      (gimp-edit-fill layer-one BG-IMAGE-FILL)
+      (set! y (+ y 32)))
+    </pre>
+    <br />
 
-<h2>9. Floating selections</h2>
-<p>
-  When pasting an image from the clipboard, or when creating text in a a drawable, the result is not put directly in the drawable. 
-  Instead it is put into a special temporary layer known as a floating selection. The floating selection may be manipulated in several ways, 
-  and finally it is merged into its associated layer, a process known as anchoring.
-</p>
+      <h2>9. Floating selections</h2>
+      <p>
+        When pasting an image from the clipboard, or when creating text in a a drawable, the result is not put directly in the drawable. 
+        Instead it is put into a special temporary layer known as a floating selection. The floating selection may be manipulated in several ways, 
+        and finally it is merged into its associated layer, a process known as anchoring.
+      </p>
 
-<h2>9.1 Hello World - writing text in an image</h2>
-<p>
-  When creating text through the gimp-text command, the text is always put into a temporary layer. This temporary layer then has to be anchored. 
-  Here is an example of creating some text which is pasted into the current drawable:
-</p>
-<pre class="code">
-; An example script that writes a fixed string in the current
-; image.
-(define (script-fu-hello-world img drawable)
+      <h2>9.1 Hello World - writing text in an image</h2>
+      <p>
+        When creating text through the gimp-text command, the text is always put into a temporary layer. This temporary layer then has to be anchored. 
+        Here is an example of creating some text which is pasted into the current drawable:
+      </p>
+      <pre class="code">
+        ; An example script that writes a fixed string in the current
+        ; image.
+        (define (script-fu-hello-world img drawable)
 
-  ; Start an undo group. Everything between the start and the end will
-  ; be carried out if an undo command is issued.
-  (gimp-undo-push-group-start img)
+        ; Start an undo group. Everything between the start and the end will
+        ; be carried out if an undo command is issued.
+        (gimp-undo-push-group-start img)
 
-  ; Create the text. See DBbrowser for parameters of gimp-text.
-  (set! text-float (car (gimp-text-fontname
-                   img
-                   drawable
-                   10 10
-                   "Hello world"
-                   0
-                   1
-                   50
-                   0
-                   "-*-utopia-*-r-*-*-*-*-*-*-*-*-*-*")))
+        ; Create the text. See DBbrowser for parameters of gimp-text.
+        (set! text-float (car (gimp-text-fontname
+        img
+        drawable
+        10 10
+        "Hello world"
+        0
+        1
+        50
+        0
+        "-*-utopia-*-r-*-*-*-*-*-*-*-*-*-*")))
 
-  ; Anchor the selection
-  (gimp-floating-sel-anchor text-float)
+        ; Anchor the selection
+        (gimp-floating-sel-anchor text-float)
 
-  ; Complete the undo group
-  (gimp-undo-push-group-end img)
+        ; Complete the undo group
+        (gimp-undo-push-group-end img)
 
-  ; Flush output
-  (gimp-displays-flush))
+        ; Flush output
+        (gimp-displays-flush))
 
-(script-fu-register "script-fu-hello-world"
-              "&lt;Image&gt;/Script-Fu/Tutorial/Hello World"
+        (script-fu-register "script-fu-hello-world"
+        "&lt;Image&gt;/Script-Fu/Tutorial/Hello World"
               "Write Hello World in the current image"
               "Dov Grobgeld &lt;dov@imagic.weizmann.ac.il&gt;"
               "Dov Grobgeld"
@@ -544,9 +548,9 @@ The blur is a gaussian blur with the specified feather radius.
   Try it by drawing a small blob in the middle of the image, select the blob, and then call this script.
 </p>
 <pre class="code">
-; An example of how to create a floating layer and how to ancor it.
-(define (script-fu-sel-copy img
-                        drawable)
+  ; An example of how to create a floating layer and how to ancor it.
+  (define (script-fu-sel-copy img
+  drawable)
 
   (gimp-undo-push-group-start img)
   (gimp-edit-copy drawable)
@@ -563,15 +567,15 @@ The blur is a gaussian blur with the specified feather radius.
   (gimp-displays-flush))
 
 
-(script-fu-register "script-fu-sel-copy"
-              "&lt;Image&gt;/Script-Fu/Tutorial/Selection Copy"
-              "Copy the selection into the same layer"
-              "Dov Grobgeld"
-              "Dov Grobgeld"
-              "2002-02-12"
-              "RGB*, GRAY*"
-              SF-IMAGE "Image" 0
-              SF-DRAWABLE "Layer" 0)
+  (script-fu-register "script-fu-sel-copy"
+  "&lt;Image&gt;/Script-Fu/Tutorial/Selection Copy"
+  "Copy the selection into the same layer"
+  "Dov Grobgeld"
+  "Dov Grobgeld"
+  "2002-02-12"
+  "RGB*, GRAY*"
+  SF-IMAGE "Image" 0
+  SF-DRAWABLE "Layer" 0)
 </pre>
 
 <p>
@@ -579,11 +583,11 @@ The blur is a gaussian blur with the specified feather radius.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
-      <span id="footerleft">
-        Tutorial &copy; 2002 <a href="home:People-Grobgeld_Dov">Dov Grobgeld</a>
-      </span>
-      <span id="footerright">
-        <a href="mail:People-Grobgeld_Dov">dov@imagic.weizmann.ac.il</a>
-      </span>
+  <span id="footerleft">
+    Tutorial &copy; 2002 <a href="home:People-Grobgeld_Dov">Dov Grobgeld</a>
+  </span>
+  <span id="footerright">
+    <a href="mail:People-Grobgeld_Dov">dov@imagic.weizmann.ac.il</a>
+  </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

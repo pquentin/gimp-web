@@ -1,6 +1,6 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Image Map Tutorial</title>
-		<script language="JavaScript">
+  <script type="text/javascript" >
 
 <!-- Begin
 var newwindow = ''
@@ -8,23 +8,23 @@ var newwindow = ''
 function popup(url, textbox)
 {
     if (newwindow.location) {
-	newwindow.location.href = url
+ newwindow.location.href = url
     } else {
         newwindow = window.open(url, 'colorpicker',
-				     'toolbar=0,scrollbars=1,location=1,' +
-				     'statusbar=0,menubar=0,resizable=1,' +
-				     'width=500,height=450,' +
-				     'left = 262,top = 184');
+         'toolbar=0,scrollbars=1,location=1,' +
+         'statusbar=0,menubar=0,resizable=1,' +
+         'width=500,height=450,' +
+         'left = 262,top = 184');
     }
 
     if (window.focus) {
-	newwindow.focus()
+ newwindow.focus()
     }
 
     self.textbox = textbox
 }
 // End -->
-		</script>
+  </script>
 
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
@@ -32,8 +32,8 @@ function popup(url, textbox)
 
 <h2>Intention</h2>
 <p class="images">
-  <img src="imap-table1-1-0.png" alt=""/>
-  <img src="dialog-imagemap-t.png" alt=""/>
+  <img src="imap-table1-1-0.png" alt="" />
+  <img src="dialog-imagemap-t.png" alt="" />
 </p>
 <p>
   In my opinion, it is hard to come up with a good application for an image map. For many online applications, it is simply overkill. 
@@ -50,8 +50,8 @@ function popup(url, textbox)
 
 <h2>1. Goodies-&gt;Create Guides</h2>
 <p class="images">
-  <img src="dialog-createguides.png" alt=""/>
-  <img src="imagemap1-zoom.png" alt=""/>
+  <img src="dialog-createguides.png" alt="" />
+  <img src="imagemap1-zoom.png" alt="" />
 </p>
 <p>
   This is a screenshot of the Create Guides Dialog (left image). We get to change every single option before we are done. Whee!
@@ -81,7 +81,7 @@ function popup(url, textbox)
 
 <h2>2. Map Image</h2>
 <p class="images">
-  <img src="dialog-guides-image.png" alt=""/>
+  <img src="dialog-guides-image.png" alt="" />
 </p>
 <p>
   Once you hit "Apply" the guides will draw themselves on the image map preview window. You can see if you hit the right places on your image. 
@@ -93,7 +93,7 @@ function popup(url, textbox)
 
 <h2>3. Table Editor</h2>
 <p class="images">
-  <img src="dialog-guides-urlset.png" alt=""/>
+  <img src="dialog-guides-urlset.png" alt="" />
 </p>
 <p>
   Since 256 elements is way to much to edit by hand, so I ended up using a different way to finish the information at each point. 
@@ -121,13 +121,13 @@ function popup(url, textbox)
   My "working chunk of html" is called <a href="bexcolored.html">bexcolored.html</a>. 
   The script should be easy to edit to use any palette. That is why I brought up the missing".
 </p>
-<p>
- <form>
-  If all goes well, clicking on <a href="javascript:popup('bexcolorpicker-tutpop.html', document.forms[0].bg)">this little pop-up</a>
-  containing this <a href="bexcolorpicker-tuthtml.html">htmlized html of an online colorpicker</a> should put your color choice
-  into this box here&nbsp;--&gt;<input TYPE="text" name="bg" value="#" size="8">.
+ <form action="get">
+    <p>
+      If all goes well, clicking on <a href="javascript:popup('bexcolorpicker-tutpop.html', document.forms[0].bg)">this little pop-up</a>
+      containing this <a href="bexcolorpicker-tuthtml.html">htmlized html of an online colorpicker</a> should put your color choice
+      into this box here&nbsp;--&gt;<input type="text" name="bg" value="#" size="8" />.
+    </p>
  </form>
-</p>
 
 <p>
   The original tutorial can be found <a href="http://carol.gimp.org/mygimp/tutorials/">here</a>.

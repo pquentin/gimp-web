@@ -1,6 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Perl Debugged</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<link style type="text/css" rel="alternate stylesheet" type="text/css" title="helvetix fixes" href="/style/helvetix-fixes.css" />
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Perl Debugged</h1>
 
@@ -67,8 +68,8 @@ exit main;
   This will give the maximum amount of tracing information, displayed on the console window you start gimp from. 
   You can cut back on what all gets displayed by using an "or'ed" combination of the following other options in place of TRACE_ALL:
 </p>
-<table bgcolor="#CCFFCC">
-<tr><td width="20%">TRACE_NONE</td><td width="40%">         turn off tracing</td></tr>
+<table style="background: #CCFFCC none;">
+<tr><td style="width: 20%;">TRACE_NONE</td><td style="width: 40%">         turn off tracing</td></tr>
 <tr><td>TRACE_CALL</td><td>     trace only Gimp Procedural Database (PDB) calls (including arguments and return values)</td></tr>
 <tr><td>TRACE_TYPE</td><td>      also print the parameter types</td></tr>
 <tr><td>TRACE_NAME</td><td>     print the parameter names</td></tr>

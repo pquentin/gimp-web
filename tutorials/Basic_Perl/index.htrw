@@ -1,6 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Basic Perl</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<link style type="text/css" rel="alternate stylesheet" type="text/css" title="helvetix fixes" href="/style/helvetix-fixes.css" />
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Basic Perl</h1>
 
@@ -72,29 +73,24 @@
   This browser provides a way of seeing all the functions in the PDB, as well as their input and output parameters. 
   E.g. the PDB Explorer entry for gimp_image_new, which will be used in the example below looks like this:
 </p>
-<p>
-<table><tr><td bgcolor=#e0e0e0>
-<table>
-<tr><th valign=top align=right>Name:</th><td bgcolor=#e0e0ff colspan=3>gimp_image_new</td></tr>
-<tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Creates a new Image with the specified with, height, and type</td></tr>
-<tr>
-<th valign=top align=right valign=top>In:</th><td valign=top>INT32</td><td valign=top>width</td><td valign=top>The width of the image</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>INT32</td><td valign=top>height</td><td valign=top>The height of the image</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>INT32</td><td valign=top>type</td><td valign=top>The type of image { RGB (0), GRAY (1), INDEXED (2)</td>
-</tr>
-<tr><th valign=top align=right>Out:</th></tr><tr><td></td><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The ID of the newly created image</td>
-</tr>
-<tr><th valign=top valign=top>Help:</th>
-<td colspan=3>Creates a new image, undisplayed with the specified extents and type. A layer should be created and added before this image is displayed, 
+
+<table><tbody>
+    <tr><td style="background: #e0e0e0 none;">
+        <table><tbody>
+            <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp_image_new</td></tr>
+            <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Creates a new Image with the specified with, height, and type</td></tr>
+            <tr><th valign=top align=right valign=top>In:</th><td valign=top>INT32</td><td valign=top>width</td><td valign=top>The width of the image</td></tr>
+            <tr><th valign=top></th><td valign=top>INT32</td><td valign=top>height</td><td valign=top>The height of the image</td></tr>
+            <tr><th valign=top></th><td valign=top>INT32</td><td valign=top>type</td><td valign=top>The type of image { RGB (0), GRAY (1), INDEXED (2)</td></tr>
+            <tr><th valign=top align=right>Out:</th></tr><tr><td></td><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The ID of the newly created image</td></tr>
+            <tr><th valign=top valign=top>Help:</th><td colspan=3>Creates a new image, undisplayed with the specified extents and type. A layer should be created and added before this image is displayed, 
 or subsequent calls to 'gimp_display_new' with this image as an argument will fail. Layers can be created using the 'gimp_layer_new' commands. 
 They can be added to an image using the 'gimp_image_add_layer' command
-</td></tr></table>
-</table>
-</p>
+              </td></tr>
+          </tbody></table>
+        </td></tr>
+</tbody></table>
+
 <p>
   All the the constants mentioned in the PDB Explorer have been defined within Gimp::Fu and may be used within perl. 
   E.g. I.e. a call to create a new image of size 100x150 of type RGB looks as follows:
@@ -145,69 +141,162 @@ They can be added to an image using the 'gimp_image_add_layer' command
      If form 1. is given, then the script is a standalone script that appears in the menu hierarchy under Xtns/Perl-Fu and takes 
      all its inputs through the Gimp::Fu interface frame. If form 2. is given on the other hand, then the script is tied to the 
      image menu popped up through the right hand button over any image. In this case Gimp::Fu will add as the first two parameters 
-     to the script the image and the drawable active when the script was invoked.</li>
-  <li>The acceptable image types - a string. This list contains a list of image types acceptable. 
-  This field is only used for scripts that are in the "&lt;Image&gt;" hieararchy. Possible values are listed in the table below:
-  <table>
-  <tr><th bgcolor=#dfdfdf>value</th><th bgcolor=#dfdfdf>meaning</th></tr>
-  <tr><td bgcolor=#dfdfee valign=top>*<td bgcolor=#dfdfee valign=top>Any images are accepted</tr>
-  <tr><td bgcolor=#dfdfee valign=top>RGB <td bgcolor=#dfdfee valign=top>RGB images</tr>
-  <tr><td bgcolor=#dfdfee valign=top>RGBA <td bgcolor=#dfdfee valign=top>RGB images with alpha channels</tr>
-  <tr><td bgcolor=#dfdfee valign=top>GREY <td bgcolor=#dfdfee valign=top>Grey level images</tr>
-  </table></li>
+     to the script the image and the drawable active when the script was invoked.
+  </li>
+  <li>
+    The acceptable image types - a string. This list contains a list
+    of image types acceptable. This field is only used for scripts
+    that are in the "&lt;Image&gt;" hieararchy. Possible values are
+    listed in the table below:
+    <table><tbody>
+        <tr><th style="background: #dfdfdf none;">value</th><th style="background: #dfdfdf none;">meaning</th></tr>
+        <tr><td style="background: #dfdfee none;" valign=top>*   </td><td style="background: #dfdfee none;" valign=top>Any images are accepted</td></tr>
+        <tr><td style="background: #dfdfee none;" valign=top>RGB </td><td style="background: #dfdfee none;" valign=top>RGB images</td></tr>
+        <tr><td style="background: #dfdfee none;" valign=top>RGBA</td><td style="background: #dfdfee none;" valign=top>RGB images with alpha channels</td></tr>
+        <tr><td style="background: #dfdfee none;" valign=top>GREY</td><td style="background: #dfdfee none;" valign=top>Grey level images</td></tr>
+      </tbody></table>
+  </li>
   
-  <li>Parameters - A reference to an array of parameters. (A reference to an array in perl is simply an array written within square brackets). 
-  Each parameter in turn is a reference to an array containg the following four or five values:
-  <ol>
-<li> The type of the parameter. The types recognized by Gimp::Fu and their perl are given in the following table:
-  <table>
-   <tr><th bgcolor=#dfdfdf>Type</th><th bgcolor=#dfdfdf width=30%>Possible forms</th>
-   <th bgcolor=#dfdfdf width=50%>Comment</tr>
-   <tr><td bgcolor=#dfdfee valign=top>PF_INT<br>
-  PF_INT32<br>
-  PF_INT16<br>
-  PF_INT8<br><td bgcolor=#dfdfee valign=top>42<td bgcolor=#dfdfee valign=top>A number. PF_INT is a synonym to PF_INT32.</tr>
-  <tr><td bgcolor=#dfdfee valign=top>PF_VALUE<br>
-  PF_FLOAT<br><td bgcolor=#dfdfee valign=top>3.141<td bgcolor=#dfdfee valign=top>A floating point number.
-  <tr><td bgcolor=#dfdfee valign=top>PF_TOGGLE<br>
-  PF_BOOLEAN<td bgcolor=#dfdfee valign=top>0<br>1<td bgcolor=#dfdfee valign=top>A boolean value.
-  <tr><td bgcolor=#dfdfee valign=top>PF_SLIDER<br>
-  PF_SPINNER
-  <td bgcolor=#dfdfee valign=top>An integer value through a slider and a spinner interface. The range parameter should be specified and is interpreted as minimum, maximum, and step, e.g. [0,100,1].
-  <td bgcolor=#dfdfee valign=top><img src="tpix.gif" width=0>
-  <tr><td bgcolor=#dfdfee valign=top>PF_FONT<td bgcolor=#dfdfee valign=top>-*-blippo-*-*-*-*-24-*-*-*-*-*-*-*<td bgcolor=#dfdfee valign=top>A font in X11 font format. This interface launches a font browser.
-  <tr><td bgcolor=#dfdfee valign=top>PF_STRING<td bgcolor=#dfdfee valign=top>"A string"<td bgcolor=#dfdfee valign=top>A string</tr>
-  <tr><td bgcolor=#dfdfee valign=top>PF_COLOR<br>
-  PF_COLOUR<td bgcolor=#dfdfee valign=top>[255,127,0]<br>
-  <tt>#ff7f00</tt>
-  <td bgcolor=#dfdfee valign=top>A color may either be expressed as a reference to an array of three components, or as a hexadecimal triple, proceeded by the hash sign.</tr>
-  <tr><td bgcolor=#dfdfee valign=top>PF_TOGGLE<td bgcolor=#dfdfee valign=top>0<br>1<td bgcolor=#dfdfee valign=top>A boolean toggle
-  <tr><td bgcolor=#dfdfee valign=top>PF_IMAGE<td bgcolor=#dfdfee valign=top>-<td bgcolor=#dfdfee valign=top>An image
-  <tr><td bgcolor=#dfdfee valign=top>PF_DRAWABLE<td bgcolor=#dfdfee valign=top>-<td bgcolor=#dfdfee valign=top>A drawable.
-  <tr><td bgcolor=#dfdfee valign=top>PF_BRUSH<td bgcolor=#dfdfee valign=top><img src="tpix.gif" width=0><td bgcolor=#dfdfee valign=top>A brush
-  <tr><td bgcolor=#dfdfee valign=top>PF_GRADIENT<td bgcolor=#dfdfee valign=top><img src="tpix.gif" width=0><td bgcolor=#dfdfee valign=top>A gradient
-  <tr><td bgcolor=#dfdfee valign=top>PF_PATTERN<td bgcolor=#dfdfee valign=top><img src="tpix.gif" width=0><td bgcolor=#dfdfee valign=top>A pattern
-  </table>
-</li>
- <li>The name of the parameter - a string</li>
- <li>A help text for the parameter</li>
- <li>Default value for the parameter. This should be given in the form listed in the table above.</li>
- <li>An array defining allowed range for the value. This is only possible for PF_SLIDER and PF_SPINNER.</li>
- </ol>
- <li>A reference to an array of return types of the sub in the 11th parameter.</li>
- <li>The sub to be called - a reference to a sub . This subroutine will be called when the associated menu entry declared through the Menu path described above. 
-  When the sub is called it is passed as arguments the list of parameters declared in field 9, declared above, and in the case of a "&lt;Image&gt;..." script, 
-  the active image and layer as first and second parameters.
-  <br />
-  A reference to a sub in perl may be declared in two ways. Either by declaring a subroutine at a different place in the source file, 
-  e.g. sub run and reference it by writing \&amp;run. An alternative way is to write it inline by simply writing:
-  <br />
-  <pre>sub { ($text, $color) = @_ ; ... }</pre>
-  <br />
-  The sub is expected not need to display a new image after it has created it. Instead it is expected to return the new image or images that were created in 
-  accordance with the return types declared in parameter 10 of the register call described above. 
-  This behaviour has been added in order to be able to call the sub noninteractively. More about that behaviour below.
- </li>
+  <li>
+    Parameters - A reference to an array of parameters. (A reference
+    to an array in perl is simply an array written within square
+    brackets). Each parameter in turn is a reference to an array
+    containg the following four or five values:
+    <ol>
+      <li>
+        The type of the parameter. The types recognized by Gimp::Fu
+        and their perl are given in the following table:
+        <table><tbody>
+            <tr>
+              <th style="background: #dfdfdf none;">Type</th>
+              <th style="background: #dfdfdf none; width: 30%;">Possible forms</th>
+              <th style="background: #dfdfdf none; width: 50%;">Comment</th>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>
+                PF_INT<br />
+                PF_INT32<br />
+                PF_INT16<br />
+                PF_INT8<br />
+              </td>
+              <td style="background: #dfdfee none;" valign=top>42</td>
+              <td style="background: #dfdfee none;" valign=top>A number. PF_INT is a synonym to PF_INT32.</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>
+                PF_VALUE<br />
+                PF_FLOAT<br />
+              </td>
+              <td style="background: #dfdfee none;" valign=top>3.141</td>
+              <td style="background: #dfdfee none;" valign=top>A floating point number.</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>
+                PF_TOGGLE<br />
+                PF_BOOLEAN
+              </td>
+              <td style="background: #dfdfee none;" valign=top>
+                0<br />
+                1
+              </td>
+              <td style="background: #dfdfee none;" valign=top>
+                A boolean value.
+              </td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>
+                PF_SLIDER<br />
+                PF_SPINNER
+              </td>
+              <td style="background: #dfdfee none;" valign=top>
+                An integer value through a slider and a spinner
+                interface. The range parameter should be specified and
+                is interpreted as minimum, maximum, and step,
+                e.g. [0,100,1].
+              </td>
+              <td style="background: #dfdfee none;" valign=top>
+                <img src="tpix.gif" width=0 alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_FONT</td>
+              <td style="background: #dfdfee none;" valign=top>-*-blippo-*-*-*-*-24-*-*-*-*-*-*-*</td>
+              <td style="background: #dfdfee none;" valign=top>A font in X11 font format. This interface launches a font browser.</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_STRING</td>
+              <td style="background: #dfdfee none;" valign=top>"A string"</td>
+              <td style="background: #dfdfee none;" valign=top>A string</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>
+                PF_COLOR<br />
+                PF_COLOUR
+              </td>
+              <td style="background: #dfdfee none;" valign=top>
+                [255,127,0]<br />
+                <tt>#ff7f00</tt>
+              </td>
+              <td style="background: #dfdfee none;" valign=top>
+                A color may either be expressed as a reference to an
+                array of three components, or as a hexadecimal
+                triple, proceeded by the hash sign.
+              </td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_TOGGLE</td>
+              <td style="background: #dfdfee none;" valign=top>0<br />1</td>
+              <td style="background: #dfdfee none;" valign=top>A boolean toggle</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_IMAGE</td>
+              <td style="background: #dfdfee none;" valign=top>-</td>
+              <td style="background: #dfdfee none;" valign=top>An image</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_DRAWABLE</td>
+              <td style="background: #dfdfee none;" valign=top>-</td>
+              <td style="background: #dfdfee none;" valign=top>A drawable.</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_BRUSH</td>
+              <td style="background: #dfdfee none;" valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td style="background: #dfdfee none;" valign=top>A brush</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_GRADIENT</td>
+              <td style="background: #dfdfee none;" valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td style="background: #dfdfee none;" valign=top>A gradient</td>
+            </tr>
+            <tr>
+              <td style="background: #dfdfee none;" valign=top>PF_PATTERN</td>
+              <td style="background: #dfdfee none;" valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td style="background: #dfdfee none;" valign=top>A pattern</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>The name of the parameter - a string</li>
+      <li>A help text for the parameter</li>
+      <li>Default value for the parameter. This should be given in the form listed in the table above.</li>
+      <li>An array defining allowed range for the value. This is only possible for PF_SLIDER and PF_SPINNER.</li>
+    </ol>
+  </li>
+  <li>A reference to an array of return types of the sub in the 11th parameter.</li>
+  <li>
+    The sub to be called - a reference to a sub . This subroutine will be called when the associated menu entry declared through the Menu path described above. 
+    When the sub is called it is passed as arguments the list of parameters declared in field 9, declared above, and in the case of a "&lt;Image&gt;..." script, 
+    the active image and layer as first and second parameters.
+    <br />
+    A reference to a sub in perl may be declared in two ways. Either by declaring a subroutine at a different place in the source file, 
+    e.g. sub run and reference it by writing \&amp;run. An alternative way is to write it inline by simply writing:
+    <br />
+    <pre>sub { ($text, $color) = @_ ; ... }</pre>
+    <br />
+    The sub is expected not need to display a new image after it has created it.
+    Instead it is expected to return the new image or images that were created in accordance with the return types declared in parameter 10 of the register call described above.
+    This behaviour has been added in order to be able to call the sub noninteractively. More about that behaviour below.
+  </li>
 </ol>
 
 <h2>4.2 A commented script</h2>
@@ -254,23 +343,26 @@ They can be added to an image using the 'gimp_image_add_layer' command
 </pre>
 <p>
   Most of these commands are directly copied out the PDB.
-  <br /><br />
+  <br />
+  <br />
   This script shows the essential steps of producing a stand-alone script:
 </p>
-<table>
-  <tr><th>line(s)</th><th>Description</th>
-  <tr><td>10</td><td> Creating a new image.</td></tr>
-  <tr><td>13-14</td><td> Creating one or more layers.</td></tr>
-  <tr><td>17</td><td> Attaching the layer to the image. </td></tr>
-  <tr><td>19-23</td><td> Do some painting operations in the layers. </td></tr>
-  <tr><td>26</td><td> Return the image to the caller</td></tr>
-  <tr><td> 29-42</td><td> Registration of the extension</td></tr>
-</table>
+<table><tbody>
+    <tr><th>line(s)</th><th>Description</th></tr>
+    <tr><td>10     </td><td>Creating a new image.</td></tr>
+    <tr><td>13-14  </td><td>Creating one or more layers.</td></tr>
+    <tr><td>17     </td><td>Attaching the layer to the image. </td></tr>
+    <tr><td>19-23  </td><td>Do some painting operations in the layers. </td></tr>
+    <tr><td>26     </td><td>Return the image to the caller</td></tr>
+    <tr><td> 29-42 </td><td>Registration of the extension</td></tr>
+</tbody></table>
 <p>
   To test the script, save it in the directory <b>$HOME/.gimp-1.2/plug-ins</b>. It must then be made executable through the command:
-  <br /><br />
+  <br />
+  <br />
   <b>chmod +x $HOME/.gimp-1.2/plug-ins/uni</b>
-  <br /><br />
+  <br />
+  <br />
   Then start gimp. It is generally a good idea to test the syntax of the script with perl -c before starting gimp. 
   (A more official way to add scripts is to use the gimptool --install-bin command).
 </p>
@@ -302,14 +394,19 @@ They can be added to an image using the 'gimp_image_add_layer' command
   Gimp::Fu provides an alternative object-oriented syntax for the image and the drawable commands. 
   Here is a table showing the procedural vs the object oriented syntax for a few commands:
 </p>
-<table>
-    <tr><th bgcolor=#E0E0E0>procedural syntax
-    <th bgcolor=#E0E0E0>object oriented syntax
-    <tr><td bgcolor=#FFE0E0>gimp_image_add_layer($drw,-1);
-    <td bgcolor=#FFE0E0>$img-&gt;add_layer($drw, -1);
-    <tr><td bgcolor=#FFE0E0>gimp_drawable_width($drw);
-    <td bgcolor=#FFE0E0>$drw-&gt;width();
-</table>
+<table><tbody>
+    <tr><th style="background: #E0E0E0 none;">procedural syntax</th>
+      <th style="background: #E0E0E0 none;">object oriented syntax</th>
+    </tr>
+    <tr>
+      <td style="background: #FFE0E0 none;">gimp_image_add_layer($drw,-1);</td>
+      <td style="background: #FFE0E0 none;">$img-&gt;add_layer($drw, -1);</td>
+    </tr>
+    <tr>
+      <td style="background: #FFE0E0 none;">gimp_drawable_width($drw);</td>
+      <td style="background: #FFE0E0 none;">$drw-&gt;width();</td>
+      </tr>
+  </tbody></table>
 <p>
   The substitution rule for converting a PDB turning into a method is as simple as erasing ``gimp_image_'' from the beginning of the function call 
   and calling this method through the image object. Similarly for the gimp_drawable_... functions.
@@ -324,23 +421,32 @@ They can be added to an image using the 'gimp_image_add_layer' command
   In the uni script the function gimp_edit_fill was called to fill the whole image. Looking at the info for gimp_edit_fill in the DB browser we find the following:
 </p>
 
-<p>
-<table><tr><td bgcolor=#e0e0e0>
-<table>
-<tr><th valign=top align=right>Name:</th><td bgcolor=#e0e0ff colspan=3>gimp_edit_fill</td></tr>
-<tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Fill selected area of drawable</td></tr>
-<tr>
-<th valign=top align=right valign=top>In:</th><td valign=top>DRAWABLE</td><td valign=top>drawable</td><td valign=top>The drawable to fill from</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>INT32</td><td valign=top>fill_type</td>
-<td valign=top>The type of fill: FG_IMAGE_FILL (0), BG_IMAGE_FILL (1), WHITE_IMAGE_FILL (2), TRANS_IMAGE_FILL (3), NO_IMAGE_FILL (4)</td>
-</tr>
-<tr><th valign=top valign=top>Help:</th><td colspan=3>This procedure fills the specified drawable with the fill mode. If the fill mode is foreground, 
-the current foreground color is used. If the fill mode is background, the current background color is used. Other fill modes should not be used. 
-This procedure only affects regions within a selection if there is a selection active.</td></tr></table>
-</table>
-</p>
+  <table><tbody>
+    <tr><td style="background: #e0e0e0 none;">
+        <table><tbody>
+            <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp_edit_fill</td></tr>
+            <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Fill selected area of drawable</td></tr>
+            <tr>
+              <th valign=top align=right valign=top>In:</th>
+              <td valign=top>DRAWABLE</td>
+              <td valign=top>drawable</td>
+              <td valign=top>The drawable to fill from</td>
+            </tr>
+            <tr>
+              <th valign=top></th><td valign=top>INT32</td><td valign=top>fill_type</td>
+              <td valign=top>The type of fill: FG_IMAGE_FILL (0), BG_IMAGE_FILL (1), WHITE_IMAGE_FILL (2), TRANS_IMAGE_FILL (3), NO_IMAGE_FILL (4)</td>
+            </tr>
+            <tr><th valign=top valign=top>Help:</th><td colspan=3>
+                This procedure fills the specified drawable with the fill mode. If the
+                fill mode is foreground, the current foreground color is used. If the
+                fill mode is background, the current background color is used. Other
+                fill modes should not be used. This procedure only affects regions
+                within a selection if there is a selection active.
+              </td>
+            </tr>
+          </tbody></table>
+      </td></tr>
+  </tbody></table>
 
 <p>
   Thus, if a selection is active when gimp_edit_fill is called only the selection is painted. 
@@ -348,46 +454,34 @@ This procedure only affects regions within a selection if there is a selection a
   The example below uses gimp_rect_select, whose entry in the PDB looks as follows:
 </p>
 
-<p>
-<table>
-<tr><td bgcolor=#e0e0e0>
-<table>
-<tr><th valign=top align=right>Name:</th><td bgcolor=#e0e0ff colspan=3>gimp_rect_select</td></tr>
-
-<tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Create a rectangular selection over the specified image</td></tr>
-<tr>
-<th valign=top align=right valign=top>In:</th><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The image</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>FLOAT</td><td valign=top>x</td><td valign=top>x coordinate of upper-left corner of rectangle</td>
-</tr>
-<tr>
-
-<th valign=top></th><td valign=top>FLOAT</td><td valign=top>y</td><td valign=top>y coordinate of upper-left corner of rectangle</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>FLOAT</td><td valign=top>width</td><td valign=top>the width of the rectangle: width &gt; 0</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>FLOAT</td><td valign=top>height</td><td valign=top>the height of the rectangle: width &gt; 0</td>
-</tr>
-
-<tr>
-<th valign=top></th><td valign=top>INT32</td><td valign=top>operation</td><td valign=top>the selection operation: {ADD (0), SUB(1), REPLACE (2), INTERSECT (3) }</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>INT32</td><td valign=top>feather</td><td valign=top>feather option for selections</td>
-</tr>
-<tr>
-<th valign=top></th><td valign=top>FLOAT</td><td valign=top>feather_radius</td><td valign=top>radius for feather operation</td>
-</tr>
-
-<tr><th valign=top valign=top>Help:</th><td colspan=3>This tool creates a rectangular selection over the specified image. 
-The rectangular region can be either added to, subtracted from, or replace the contents of the previous selection mask. 
-If the feather option is enabled, the resulting selection is blurred before combining. The blur is a gaussian blur with the specified feather radius.
-</td></tr></table>
-</table>
-</p>
+<table><tbody>
+    <tr><td style="background: #e0e0e0 none;">
+        <table><tbody>
+            <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp_rect_select</td></tr>
+            <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Create a rectangular selection over the specified image</td></tr>
+            <tr><th valign=top align=right valign=top>In:</th><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The image</td></tr>
+            <tr><th valign=top></th><td valign=top>FLOAT</td><td valign=top>x</td><td valign=top>x coordinate of upper-left corner of rectangle</td></tr>
+            <tr><th valign=top></th><td valign=top>FLOAT</td><td valign=top>y</td><td valign=top>y coordinate of upper-left corner of rectangle</td></tr>
+            <tr><th valign=top></th><td valign=top>FLOAT</td><td valign=top>width</td><td valign=top>the width of the rectangle: width &gt; 0</td></tr>
+            <tr><th valign=top></th><td valign=top>FLOAT</td><td valign=top>height</td><td valign=top>the height of the rectangle: width &gt; 0</td></tr>
+            <tr><th valign=top></th><td valign=top>INT32</td><td valign=top>operation</td><td valign=top>the selection operation: {ADD (0), SUB(1), REPLACE (2), INTERSECT (3) }</td></tr>
+            <tr><th valign=top></th><td valign=top>INT32</td><td valign=top>feather</td><td valign=top>feather option for selections</td></tr>
+            <tr><th valign=top></th><td valign=top>FLOAT</td><td valign=top>feather_radius</td><td valign=top>radius for feather operation</td></tr>
+            <tr><th valign=top valign=top>Help:</th>
+              <td colspan=3>
+                This tool creates a rectangular selection over the
+                specified image. The rectangular region can be either
+                added to, subtracted from, or replace the contents of
+                the previous selection mask. If the feather option is
+                enabled, the resulting selection is blurred before
+                combining. The blur is a gaussian blur with the
+                specified feather radius.
+              </td>
+            </tr>
+          </tbody></table>
+      </td>
+    </tr>
+</tbody></table>
 
 <p>
   A simple use of this function which selects a rectangle in the middle of an image and paints that rectangle with a user defined color. 
@@ -699,7 +793,7 @@ sub horiz_cat {
 register "horiz_cat", "Horizontal concat", "Horizontal Concat",
     "Dov Grobgeld", "Dov Grobgeld",
     "1999-05-4",
-    "<Image>/Perl-Fu/Tutorial/Horizontal Concat",
+    "&lt;Image&gt;/Perl-Fu/Tutorial/Horizontal Concat",
     "*",
     [
      [PF_DRAWABLE,   "drawable",     "Drawable to concatinate",   undef],

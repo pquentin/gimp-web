@@ -68,22 +68,19 @@ def generate_rdf(queue):
   fp = open(rdf_file, "w")
   print >>fp, '<?xml version="1.0"?>'
   print >>fp, '<?xml-stylesheet href="style/rdf-news.css" type="text/css"?>'
-  print >>fp, rdf.rdf.init()
+  print >>fp, rdf.RDF.init()
   
-  #print >>fp, '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://my.netscape.com/rdf/simple/0.9/">'
+  print >>fp, rdf.link("http://mmmaybe.gimp.org")
+  print >>fp, rdf.date(time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+  print >>fp, rdf.channel(rdf.title('GIMP Dot Org')
+                          + rdf.description('gimp.org news')
+                          + rdf.link('http://mmmaybe.gimp.org'),
+                          about={"rdf:about":"http://www.w3.org/2000/08/w3c-synd/home.rss"}
+                          )
   
-  print >>fp, '<link>http://mmmaybe.gimp.org/</link>'
-  print >>fp, '<dc:date>'+ time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()) + '</dc:date>'
-  print >>fp, '<channel rdf:about="http://www.w3.org/2000/08/w3c-synd/home.rss">'
-  print >>fp, '  <title>GIMP Dot Org</title>'
-  print >>fp, '  <description>gimp.org news</description>'
-  print >>fp, '  <link>http://mmmaybe.gimp.org</link>'
-  print >>fp, '</channel>'
-  map(lambda n: fp.write(n.as_rdf()), news_items)
+  map(lambda n: fp.write(str(n.as_rdf())), news_items)
 
-  #print >>fp, '\n</rdf:RDF>'
-  
-  print >>fp, rdf.rdf.fini()
+  print >>fp, rdf.RDF.fini()
   fp.close()
   
   os.chmod(news_blotter, 0666)

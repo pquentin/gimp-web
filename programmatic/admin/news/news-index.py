@@ -31,7 +31,7 @@ import types
 import cgi
 import cgitb; cgitb.enable()
 
-sys.path.append('${LIBDIR}')
+sys.path = ['${LIBDIR}'] + sys.path
 
 import xhtml
 import wgo

@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Script-Fu and The GIMP</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.74b"><LINK
+REL="HOME"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Scheme &#8211; An Overview"
+HREF="scheme-overview.html"><LINK
+REL="NEXT"
+TITLE="A sample script"
+HREF="scheme-sample.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+></TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="scheme-overview.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="scheme-sample.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="SCRIPT-FU-GIMP"
+>3. Script-Fu and <B
+CLASS="command"
+>The GIMP</B
+></A
+></H1
+><P
+>&#13;	You can call the <SPAN
+CLASS="acronym"
+>PDB</SPAN
+>-functions
+	straightforwardly, but you have to keep in mind that they
+	<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>always</I
+></SPAN
+> return a list, even when this list
+	contains just one element. Colors are represented by a list
+	<TT
+CLASS="literal"
+>'(red green blue)</TT
+>.
+     </P
+><P
+>&#13;        <PRE
+CLASS="programlisting"
+>(set! new-layer (car (plug-in-pagecurl 1 img drw 1 1 0 1)))
+(gimp-palette-set-foreground '(255 0 0))
+(gimp-image-add-layer img (car (gimp-layer-copy drw 1)) -1)
+        </PRE
+>
+     </P
+><P
+>&#13;	These commands are <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>not always equivalent</I
+></SPAN
+> to
+	their <SPAN
+CLASS="acronym"
+>GUI</SPAN
+> counterpart. For example: When
+	creating a new layer, this layer is neither clean, nor
+	automatically added to the image. In a script you have to do
+	this:
+     </P
+><P
+>&#13;        <PRE
+CLASS="programlisting"
+>(set! new-layer (car (gimp-layer-new img 100 100 RGBA_IMAGE "New Layer" 50.7 0)))
+(gimp-edit-clear new-layer)
+(gimp-image-add-layer img new-layer -1)
+        </PRE
+>
+     </P
+><P
+>&#13;	The scripts in <TT
+CLASS="literal"
+>/usr/share/gimp/1.2/scripts/</TT
+>
+	are a valuable resource when you are trying to write your own
+	scripts. Generally it is a good idea to look and learn from them.
+	If your script does not behave as expected you might want to
+	search for a script that solves a similiar task. Maybe you can
+	find a better solution there.
+     </P
+><P
+>&#13;	To make a script callable via the menu it must be registered
+	with the <SPAN
+CLASS="acronym"
+>PDB</SPAN
+>. This looks like this:
+     </P
+><P
+>&#13;        <PRE
+CLASS="programlisting"
+>(script-fu-register "script-fu-simple-drop-shadow"
+                    _"&#60;Image&#62;/Script-Fu/Shadow/Drop-Shadow (simple)..."
+                    "Add a simple drop-shadow of the alpha-channel"
+                    "Simon Budig &#60;simon@gimp.org&#62;"  ; author
+                    "Simon Budig"                ; copyright holder
+                    "2002/2/3"                   ; date
+                    "RGBA GRAYA"                 ; image types
+                    SF-IMAGE "Image" 0
+                    SF-DRAWABLE "Drawable" 0
+                    SF-ADJUSTMENT _"Offset X" '(8 -4096 4096 1 10 0 1)
+                    SF-ADJUSTMENT _"Offset Y" '(8 -4096 4096 1 10 0 1)
+                    SF-COLOR      _"Color" '(0 0 0)
+                    SF-ADJUSTMENT _"Opacity" '(75 0 100 1 10 0 0))
+	</PRE
+>
+     </P
+><P
+>&#13;	This enters the script in the <SPAN
+CLASS="acronym"
+>PDB</SPAN
+>. The first
+	argument is the name in the <SPAN
+CLASS="acronym"
+>PDB</SPAN
+>, the second
+	is the Menu-Path (the underscore indicates that it should be
+	translated). The next arguments are a short description, name of
+	the author and copyright notice, date of creation and a
+	specification of the valid image types (<TT
+CLASS="literal"
+>RGB*</TT
+>
+	is a shortcut for <SPAN
+CLASS="QUOTE"
+>"RGB and RGBA"</SPAN
+>).
+     </P
+><P
+>&#13;	The subsequent entries specify the parameters, with additional
+	information for the generated <SPAN
+CLASS="acronym"
+>GUI</SPAN
+>.  If the
+	script registers in the <SPAN
+CLASS="guimenu"
+>&#60;Image&#62;</SPAN
+>
+	hierarchy of the menu it has to accept an
+	<TT
+CLASS="literal"
+>IMAGE</TT
+> and a <TT
+CLASS="literal"
+>DRAWABLE</TT
+> as
+	its first two arguments. They get filled by
+	<B
+CLASS="command"
+>The GIMP</B
+>'s framework.
+     </P
+><P
+>&#13;	Further parameters are optional. You can specify
+	<TT
+CLASS="literal"
+>SF-COLOR</TT
+> for colors,
+	<TT
+CLASS="literal"
+>SF-TEXT</TT
+> for text and some other stuff. A
+	complete list of all available parameter types is in the
+	<TT
+CLASS="filename"
+>test-sphere.scm</TT
+> script, delivered with
+	<B
+CLASS="command"
+>The GIMP</B
+> source code.
+     </P
+><P
+>&#13;	These specifications get translated in a nice
+	<SPAN
+CLASS="acronym"
+>GUI</SPAN
+> when the user invokes the Script via the
+	Menu. <TT
+CLASS="literal"
+>SF-COLOR</TT
+> gets connected to a color
+	selector, <TT
+CLASS="literal"
+>SF-FONT</TT
+> to a font selector. The
+	<TT
+CLASS="literal"
+>ADJUSTMENT</TT
+> Parameters accept a list that
+	defines the behaviour of the <SPAN
+CLASS="acronym"
+>GUI</SPAN
+>:
+	<TT
+CLASS="literal"
+>'(default_value, lower_bound, upper_bound,
+	small_increment, big_increment, prescision,
+	slider_or_entry)</TT
+>.
+     </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="scheme-overview.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="scheme-sample.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Scheme &#8211; An Overview</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>A sample script</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

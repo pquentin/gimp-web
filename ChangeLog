@@ -1,5 +1,9 @@
 2002-11-21 carol <carol@gimp.org>
 
+	* docs/scheme_plugin, that i stole from simon budig
+
+2002-11-21 carol <carol@gimp.org>
+
 	* links.html: added some more urls. fixed somethings. reflected these
     changes in links/index.html as well.
 
@@ -22,6 +26,9 @@
 
 	* links.html, includes/urls_go-utiltity.inc, includes/urls_go-developer.inc:  
     separated more of the links into includes files.
+
+	* docs/gimp-print/ and files therein:  grabbed the gimp-print docs
+    and put them here.
 
 2002-11-20 carol <carol@gimp.org>
 

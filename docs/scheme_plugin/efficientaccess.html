@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Efficient access to pixel data</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.74b"><LINK
+REL="HOME"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Organization of image data"
+HREF="imagedata.html"><LINK
+REL="NEXT"
+TITLE="A sample plug-in"
+HREF="sample_plugin.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+></TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="imagedata.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="sample_plugin.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="EFFICIENTACCESS"
+>6. Efficient access to pixel data</A
+></H1
+><P
+>&#13;	To be able to access the image data efficiently you should align
+	your plug-in to the internal data structure of the <B
+CLASS="command"
+>The
+	GIMP</B
+>, i.e., work directly on the tiles. Then the
+	performance impact by copying the data around does not matter.
+	<B
+CLASS="command"
+>The GIMP</B
+> offers the concept of
+	tile-iterators. You need two function calls:
+
+	<PRE
+CLASS="programlisting"
+>gpointer  gimp_pixel_rgns_register  (gint           nrgns,
+                                     ...);
+gpointer  gimp_pixel_rgns_process   (gpointer pri_ptr);
+	</PRE
+>
+     </P
+><P
+>&#13;        The first function prepares pixel regions for the actual
+	iteration (the remaining arguments have to have the type
+	<TT
+CLASS="literal"
+>GimpPixelRgn *</TT
+>). You can give multiple
+	pixel regions when you want to copy image data between different
+	drawables.
+     </P
+><P
+>&#13;        Here is a typical excerpt from a plug-in that iterates over a
+	certain area and slightly modifies the original image data:
+
+	<PRE
+CLASS="programlisting"
+>/* substitute pixel vales */
+gimp_pixel_rgn_init (&#38;src_rgn, drawable,
+                     x1, y1, (x2 - x1), (y2 - y1), FALSE, FALSE);
+gimp_pixel_rgn_init (&#38;dest_rgn, drawable,
+                     x1, y1, (x2 - x1), (y2 - y1), TRUE, TRUE);
+
+for (pr = gimp_pixel_rgns_register (2, &#38;src_rgn, &#38;dest_rgn);
+     pr != NULL;
+     pr = gimp_pixel_rgns_process (pr))
+  {
+    src = src_rgn.data;
+    dest = dest_rgn.data;
+
+    for (y = 0; y &#60; src_rgn.h; y++)
+      {
+        s = src;
+        d = dest;
+
+        for (x = 0; x &#60; src_rgn.w; x++)
+          {
+            d[0] = (src_rgn.x + x + src_rgn.y + y) % 256;
+            d[1] = s[1];
+            d[2] = (- src_rgn.x - x + src_rgn.y + y) % 256;
+            if (has_alpha)
+              d[alpha] = s[alpha];
+
+            s += src_rgn.bpp;
+            d += dest_rgn.bpp;
+          }
+
+        src += src_rgn.rowstride;
+        dest += dest_rgn.rowstride;
+      }
+
+    /* Update progress */
+    progress += src_rgn.w * src_rgn.h;
+
+    gimp_progress_update ((double) progress / (double) max_progress);
+  }
+	</PRE
+>
+     </P
+><P
+>&#13;        It is very important that you add
+	<TT
+CLASS="varname"
+>src_rgn.rowstride</TT
+> to the current pointer to
+	reach the next row. This is important:
+	<TT
+CLASS="varname"
+>src_rgn.data</TT
+> points to the correct start of the
+	image data, but the array may also contain image data from
+	outside the pixel region.
+
+        <DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="pixel_region.png"></P
+></DIV
+>
+     </P
+><P
+>&#13;	This approach avoids exessive copying and reordering of
+	image data and is much faster than the naive
+	<TT
+CLASS="literal"
+>gimp_pixel_rgn_get_*</TT
+> approach.
+     </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="imagedata.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="sample_plugin.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Organization of image data</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>A sample plug-in</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

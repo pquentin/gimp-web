@@ -1,10 +1,6 @@
 <a name="maillists">
 <div class="subtitle">Mail List URLs</div>
 <p>
-  <A href="maillists.html">Mail List Descriptions</a><br />
-  A more thorough overview of The GIMP related mail lists.
-</p>
-<p>
   <A href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-user">GIMP User</a><br>
   The original (mostly linux based) user list.
 </p>

@@ -1,0 +1,336 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Scheme &#8211; An Overview</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.74b"><LINK
+REL="HOME"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+HREF="index.html"><LINK
+REL="NEXT"
+TITLE="Script-Fu and The GIMP"
+HREF="script-fu-gimp.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+></TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="index.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="script-fu-gimp.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="SCHEME-OVERVIEW"
+>2. Scheme &#8211; An Overview</A
+></H1
+><P
+>&#13;       Scheme is a functional language, similiar to LISP. Some people
+       are discouraged by its heavy use of parentheses. It is helpful
+       when your favourite editor helps counting them. <B
+CLASS="command"
+>The
+       GIMP</B
+>
+       uses the <A
+HREF="http://people.delphi.com/gjc/siod.html"
+TARGET="_top"
+><SPAN
+CLASS="acronym"
+>SIOD</SPAN
+>
+       (Scheme In One Defun)</A
+> interpreter as the basis for
+       Script-Fu. Here is a short introduction in Scheme that ignores
+       the functional approach and some minor details.
+    </P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="SCHEME-FUNCTIONCALLS"
+>2.1. Function calls</A
+></H2
+><P
+>&#13;          Function calls can look this way:
+	  <PRE
+CLASS="programlisting"
+>(function arg1 arg2 arg3 ... argN)
+(function1 arg1 (funktion2 arg2 arg3) arg4)
+(+ 2 3 (/ 12 4))
+	  </PRE
+>
+       </P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="SCHEME-FUNCTIONDEF"
+>2.2. Function definition (typical)</A
+></H2
+><P
+>&#13;          The following code defines a function with three input arguments.
+	  The result of the function is the result of the last command.
+	  the <TT
+CLASS="literal"
+>let*</TT
+> opens a new scope for variables.
+       </P
+><P
+>&#13;	  <PRE
+CLASS="programlisting"
+>(define (newfunc arg1 arg2 arg3)
+   (let* ((foo (+ arg1 5))
+          (bar 0)
+          (baz (+ arg1 arg2 arg3))
+         )
+      (set! bar (* arg2 arg3))
+      (- foo bar baz)
+   )
+)
+	  </PRE
+>
+       </P
+><P
+>&#13;          It is common practice to define the variables used in a function
+	  in a <TT
+CLASS="literal"
+>let*</TT
+>-Block. You can assign a value to a
+	  variable with <TT
+CLASS="literal"
+>set!</TT
+>.
+       </P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="SCHEME-CONTROL"
+>2.3. Control structures</A
+></H2
+><P
+>&#13;	  <PRE
+CLASS="programlisting"
+>(begin
+   (func1 arg1 arg2)
+   (func2 arg4 arg5)
+)
+
+(if (&#60; a b)
+   (then-stuff arg1 a b)
+   (else-stuff arg2 b a foo)
+)
+
+(while (&#62; foo bar)
+   (func1 arg foo)
+   (func2 bar baz)
+)
+
+(set! i 0)
+(while (&#60; i 10)
+   (func foo i bar)
+   (set! i (+ i 1))
+)
+	  </PRE
+>
+       </P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="SCHEME-LISTS"
+>2.4. Lists</A
+></H2
+><P
+>&#13;	  You can create lists with the <TT
+CLASS="literal"
+>list</TT
+> command
+	  or use <TT
+CLASS="literal"
+>'( ... )</TT
+> as a shortcut. Usually you
+	  use <TT
+CLASS="literal"
+>car</TT
+> to access the first element and
+	  <TT
+CLASS="literal"
+>cdr</TT
+> to access the list without the first
+	  element:
+       </P
+><P
+>&#13;	  <PRE
+CLASS="programlisting"
+>-&#62; (car (list 1 2 3))
+  1
+-&#62; (cdr (list 1 2 3))
+  (2 3)
+-&#62; (cdr '(1 2 3))
+  (2 3)
+-&#62; (car (cdr (list 1 2 3)))
+  2
+-&#62; (cadr '(1 2 3))
+  2
+-&#62; (nth 2 '(1 2 3))
+  3
+-&#62; (length '(1 2 3))
+  3
+	  </PRE
+>
+       </P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="SCHEME-ARRAYS"
+>2.5. Arrays</A
+></H2
+><P
+>&#13;	  Although scheme depends heavily on lists as its primary data
+	  structuring mechanism, arrays are also used for the purposes
+	  of <B
+CLASS="command"
+>The GIMP</B
+>.  You can access them this way:
+       </P
+><P
+>&#13;	  <PRE
+CLASS="programlisting"
+>-&#62; (set! a (cons-array 4 'byte))
+  #4"00000000"
+-&#62; (aset a 2 42)
+  42
+-&#62; (aset a 3 23)
+  23
+-&#62; (aref a 1)
+  0
+-&#62; (aref a 3)
+  23
+	  </PRE
+>
+       </P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="script-fu-gimp.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Script-Fu and <B
+CLASS="command"
+>The GIMP</B
+></TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

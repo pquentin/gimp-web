@@ -1,0 +1,385 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Organization of image data</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.74b"><LINK
+REL="HOME"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="A sample script"
+HREF="scheme-sample.html"><LINK
+REL="NEXT"
+TITLE="Efficient access to pixel data"
+HREF="efficientaccess.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+></TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="scheme-sample.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="efficientaccess.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="IMAGEDATA"
+>5. Organization of image data</A
+></H1
+><TABLE
+BORDER="0"
+WIDTH="100%"
+CELLSPACING="0"
+CELLPADDING="0"
+CLASS="EPIGRAPH"
+><TR
+><TD
+WIDTH="45%"
+>&nbsp;</TD
+><TD
+WIDTH="45%"
+ALIGN="LEFT"
+VALIGN="TOP"
+><I
+><P
+><I
+>In the beginning, there was Wilber, Wilber the gimp. The
+	   graphic was without form and void, and darkness was upon the
+	   face of the desktop, and the Spirit of Wilber was moving over
+	   the face of the bitstream.</I
+></P
+><P
+><I
+>And Wilber said,
+	   <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+><SPAN
+CLASS="QUOTE"
+>"&#60;Toolbox&#62;/File/New"</SPAN
+></I
+></SPAN
+>
+	   and there was an image.  And Wilber saw that the image was
+	   good, and Wilber separated the image into drawables. And
+	   Wilber looked down at what he had wrought, and Wilber said,
+	   <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+><SPAN
+CLASS="QUOTE"
+>"Oh golly."</SPAN
+></I
+></SPAN
+> For Wilber had
+	   made the drawables of the layer according to their kinds, and
+	   the drawables of the channel according to their kinds, and
+	   the drawables of the mask according to their kinds...</I
+></P
+></I
+></TD
+></TR
+><TR
+><TD
+WIDTH="45%"
+>&nbsp;</TD
+><TD
+WIDTH="45%"
+ALIGN="RIGHT"
+VALIGN="TOP"
+><I
+><SPAN
+CLASS="attribution"
+>Book of Wilber, Kt 1:1-12</SPAN
+></I
+></TD
+></TR
+></TABLE
+><P
+>&#13;	<B
+CLASS="command"
+>The GIMP</B
+> stores the image data simply as an
+	array of unsigned chars (guchar): One byte each for red, green,
+	blue, and, if necessary, one for alpha. But the image data is
+	fragmented in small parts to make the access more efficient -
+	when you work on a fragment of the image it would be very
+	inefficient to copy entire rows into the memory, while you may
+	just need the first half.
+     </P
+><P
+>&#13;        Images are a collection of drawables that are either layers or
+	channels. Channels contain only grayscale information.
+	Drawables are subdivided into tiles that are typically
+	64x64 pixels, but may be arbitrary sizes in future. The access
+	to raw pixel data (in C Plugins) is managed via PixelRegions.
+	To be able to use them you have to access the drawable:
+
+        <PRE
+CLASS="programlisting"
+>GimpDrawable* gimp_drawable_get (gint32 drawable_ID);
+	</PRE
+>
+
+	(the drawable_ID is what you typically get per
+	<SPAN
+CLASS="acronym"
+>GUI</SPAN
+> or <SPAN
+CLASS="acronym"
+>PDB</SPAN
+>-Call). You can
+	then initialize the PixelRegion:
+
+	<PRE
+CLASS="programlisting"
+>void
+gimp_pixel_rgn_init (GimpPixelRgn *pr,
+                     GimpDrawable *drawable,
+                     int x, int y, int width, int height,
+                     int dirty, int shadow);
+	</PRE
+>
+     </P
+><P
+>&#13;	whereby you announce that you want to access the drawable
+	<TT
+CLASS="varname"
+>drawable</TT
+> in the area specified by
+	<TT
+CLASS="varname"
+>x</TT
+>, <TT
+CLASS="varname"
+>y</TT
+>,
+	<TT
+CLASS="varname"
+>width</TT
+> and <TT
+CLASS="varname"
+>height</TT
+>.
+	The <TT
+CLASS="varname"
+>dirty</TT
+> flag specifies that you want to
+	write to the area and the image data has to be written back to
+	<B
+CLASS="command"
+>The GIMP</B
+>. If <TT
+CLASS="varname"
+>shadow</TT
+> is
+	specified, <B
+CLASS="command"
+>The GIMP</B
+> provides you with a set
+	of freshly allocated tiles, where you can write your modified
+	data into. When you are done <B
+CLASS="command"
+>The GIMP</B
+> cares
+	about merging the new image data into the image (respecting the
+	current selection and handling undo stuff &#8211; basically it
+	does all the hard stuff for you...).  So usually these flags are
+	either <TT
+CLASS="literal"
+>FALSE, FALSE</TT
+> when you just need
+	read-access or <TT
+CLASS="literal"
+>TRUE, TRUE</TT
+> when you want to
+	modify the image data.
+     </P
+><P
+>&#13;	C-plug-ins can use the following
+	<SPAN
+CLASS="acronym"
+>PDB</SPAN
+> functions to get or set rectangular
+	areas, rows or columns of an image:
+
+	<P
+></P
+><UL
+><LI
+><P
+><PRE
+CLASS="programlisting"
+>void
+gimp_pixel_rgn_get_[pixel | row | col | rect] (GimpPixelRgn  *pr,
+                                               guchar        *buf,
+                                               gint           x,
+                                               gint           y,
+                                               gint           width,
+                                               gint           height);
+	  </PRE
+>
+          </P
+></LI
+><LI
+><P
+><PRE
+CLASS="programlisting"
+>void
+gimp_pixel_rgn_set_[pixel | row | col | rect] (GimpPixelRgn  *pr,
+                                               guchar        *buf,
+                                               gint           x,
+                                               gint           y,
+                                               gint           width,
+                                               gint           height);
+	  </PRE
+>
+          </P
+></LI
+></UL
+>
+	The <TT
+CLASS="varname"
+>width</TT
+> and <TT
+CLASS="varname"
+>height</TT
+>
+	parameters are given only when appropriate.
+     </P
+><P
+>&#13;	You have to keep in mind that these functions are relatively
+	slow, because <B
+CLASS="command"
+>The GIMP</B
+> has to copy image data
+	around. But sometimes the advantage of having an easy
+	<SPAN
+CLASS="acronym"
+>API</SPAN
+> outweights the performance impact.
+     </P
+><P
+>&#13;        When you are done with manipulating the image you have to clean
+	up:
+
+	<PRE
+CLASS="programlisting"
+>gimp_drawable_flush (drawable);
+gimp_drawable_merge_shadow (drawable-&#62;id, TRUE);
+gimp_drawable_update (drawable-&#62;id, x1, y1, width, height);
+gimp_displays_flush();
+gimp_drawable_detach(drawable);
+	</PRE
+>
+     </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="scheme-sample.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="efficientaccess.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>A sample script</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Efficient access to pixel data</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

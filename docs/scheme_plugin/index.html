@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML
+><HEAD
+><TITLE
+>Script-Fu and plug-ins for The GIMP</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.74b"><LINK
+REL="NEXT"
+TITLE="Scheme &#8211; An Overview"
+HREF="scheme-overview.html"></HEAD
+><BODY
+CLASS="article"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="ARTICLE"
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+><A
+NAME="AEN2"
+>Script-Fu and plug-ins for <B
+CLASS="command"
+>The GIMP</B
+></A
+></H1
+><H3
+CLASS="author"
+><A
+NAME="AEN5"
+>Simon Budig</A
+></H3
+><DIV
+CLASS="affiliation"
+><DIV
+CLASS="address"
+><P
+CLASS="address"
+>&#60;simon@gimp.org&#62;</P
+></DIV
+></DIV
+><DIV
+><DIV
+CLASS="abstract"
+><A
+NAME="AEN13"
+></A
+><P
+></P
+><P
+>&#13;	 One of the big advantages of <B
+CLASS="command"
+>The GIMP</B
+> is the
+	 fact that it can be easily extended with new functionality.
+	 However, it is not easy to find documentation about this. I
+	 will cover the default scripting extension Script-Fu and some
+	 details for programming plug-ins in C. Although there are
+	 additional extensions for other languages (Gimp-Perl,
+	 Gimp-Python) I will not cover them here.
+      </P
+><P
+></P
+></DIV
+></DIV
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+>1. <A
+HREF="index.html#GIMP-PDB"
+><B
+CLASS="command"
+>The GIMP</B
+>'s <SPAN
+CLASS="acronym"
+>PDB</SPAN
+></A
+></DT
+><DT
+>2. <A
+HREF="scheme-overview.html"
+>Scheme &#8211; An Overview</A
+></DT
+><DD
+><DL
+><DT
+>2.1. <A
+HREF="scheme-overview.html#SCHEME-FUNCTIONCALLS"
+>Function calls</A
+></DT
+><DT
+>2.2. <A
+HREF="scheme-overview.html#SCHEME-FUNCTIONDEF"
+>Function definition (typical)</A
+></DT
+><DT
+>2.3. <A
+HREF="scheme-overview.html#SCHEME-CONTROL"
+>Control structures</A
+></DT
+><DT
+>2.4. <A
+HREF="scheme-overview.html#SCHEME-LISTS"
+>Lists</A
+></DT
+><DT
+>2.5. <A
+HREF="scheme-overview.html#SCHEME-ARRAYS"
+>Arrays</A
+></DT
+></DL
+></DD
+><DT
+>3. <A
+HREF="script-fu-gimp.html"
+>Script-Fu and <B
+CLASS="command"
+>The GIMP</B
+></A
+></DT
+><DT
+>4. <A
+HREF="scheme-sample.html"
+>A sample script</A
+></DT
+><DT
+>5. <A
+HREF="imagedata.html"
+>Organization of image data</A
+></DT
+><DT
+>6. <A
+HREF="efficientaccess.html"
+>Efficient access to pixel data</A
+></DT
+><DT
+>7. <A
+HREF="sample_plugin.html"
+>A sample plug-in</A
+></DT
+><DT
+>8. <A
+HREF="links.html"
+>Online resources</A
+></DT
+></DL
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="GIMP-PDB"
+>1. <B
+CLASS="command"
+>The GIMP</B
+>'s <SPAN
+CLASS="acronym"
+>PDB</SPAN
+></A
+></H1
+><P
+>&#13;       The <SPAN
+CLASS="acronym"
+>PDB</SPAN
+> (Procedural DataBase) is the most
+       important interface to access the image manipulation functions of
+       <B
+CLASS="command"
+>The GIMP</B
+>. The libgimp library provides some
+       functions to call functions from the <SPAN
+CLASS="acronym"
+>PDB</SPAN
+> or
+       enter new functions into the <SPAN
+CLASS="acronym"
+>PDB</SPAN
+>.
+    </P
+><P
+>&#13;       Each plug-in enters its functionality into the
+       <SPAN
+CLASS="acronym"
+>PDB</SPAN
+>, which enables it to be used by other
+       plug-ins or scripts. The <SPAN
+CLASS="acronym"
+>PDB</SPAN
+> also has
+       information on the various parameters for each function.
+    </P
+><P
+>&#13;       Writing a binding for a programming language &#8211; for example
+       Scheme or Perl &#8211; just requires mapping the
+       <SPAN
+CLASS="acronym"
+>PDB</SPAN
+> onto the syntax of the target language and
+       providing access to the various parameter types. This is not a
+       trivial task, but since libgimp is written in C and every
+       reasonable target language provides a mechanism to access
+       C-libraries it is not impossible.  Some details (for example
+       pixel-level manipulation of image data as in Gimp-Perl) need more
+       attention.
+    </P
+><P
+>&#13;       A typical <SPAN
+CLASS="acronym"
+>PDB</SPAN
+> entry contains this
+       information (this is a screenshot of
+       <SPAN
+CLASS="guimenuitem"
+>&#60;Toolbox&#62;/Xtns/DB
+       Browser</SPAN
+>):
+       <DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="pdb-entry.png"></P
+></DIV
+> You can see that a
+       function can have different types of input and output parameters.
+       In addition to types like <TT
+CLASS="literal"
+>INT</TT
+>,
+       <TT
+CLASS="literal"
+>FLOAT</TT
+> and <TT
+CLASS="literal"
+>STRING</TT
+> and
+       arrays of these, <TT
+CLASS="literal"
+>COLOR</TT
+>,
+       <TT
+CLASS="literal"
+>IMAGE</TT
+>, <TT
+CLASS="literal"
+>DRAWABLE</TT
+>,
+       <TT
+CLASS="literal"
+>LAYER</TT
+> and <TT
+CLASS="literal"
+>CHANNEL</TT
+> get used
+       frequently. Layers and channels are both drawable types.
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="scheme-overview.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Scheme &#8211; An Overview</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -164,6 +164,7 @@ div.code {
   margin: 1.33em 0px;
   margin-left: 40px; 
   margin-right: 40px;
+  padding: 1.33em;
 }
 
 div.debug {
@@ -175,6 +176,7 @@ div.debug {
   margin: 1.33em 0px;
   margin-left: 40px; 
   margin-right: 40px;
+  padding: 1.33em;
 }
 
 div.book-of-wilber { font-size: large; 

@@ -159,12 +159,17 @@
 
 ["href", "wgo:mail_lists",                     { "href": "/mail_lists.html"}]
 ["href", "wgo:stable",                         { "href": "http://www.gimp.org/"}]
+["href", "wgo:old",                            { "href": "http://classic.gimp.org/"}]
 ["href", "wgo:testing",                        { "href": "http://mmmaybe.gimp.org/"}]
 ["href", "wgo:dev",                            { "href": "http://developer.gimp.org/"}]
+["href", "wgo:develop",                        { "href": "/develop/"}]
 ["href", "wgo:bugs",                           { "href": "/bugs/"}]
 ["href", "wgo:dev-howtos-bugzilla",            { "href": "/bugs/howtos/bugzilla.html"}]
 ["href", "wgo:dev-howtos-subpatch",	       { "href": "/bugs/howtos/submit-patch.html"}]
 ["href", "wgo:docs-gimp_help",                 { "href": "/docs/gimp-help/"}]
+
+["href", "wgo:downloads",                      { "href": "/downloads/"}]
+["href", "wgo:downloads-mirrors",              { "href": "/downloads/#mirrors"}]
 
 ["href", "wgo:about",                          { "href": "/about/index.html"}]
 ["href", "wgo:about-ancient_history",          { "href": "/about/ancient_history.html"}]
@@ -218,7 +223,8 @@
 ["href", "wgo:unix-manpage-stable_gtk_config", { "href": "/unix/man-gtk-config.html"}]
 ["href", "wgo:unix-user_install",              { "href": "/unix/user_install.html"}]
 
-["href", "wgo:windows",                   { "href": "/windows/"}]
+["href", "wgo:windows",                        { "href": "/windows/"}]
+["href", "wgo:macintosh",                      { "href": "/macintosh/"}]
 
 ["href",   "wgo:image-about-splash-current",     { "href":   "/about/gimp_splash-unknown.png"}]
 ["href",   "wgo:image-about-splash-current-t",   { "href":   "/about/gimp_splash-unknown-t.png"}]

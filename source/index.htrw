@@ -5,14 +5,69 @@
 
 <h1>GIMP from Source</h1>
 
-<p><em class="hellbrokeloose">FIXME</em>: we still have to write this
-page.  In the meantime, you can have a look at the following
-HOWTOs:</p>
+<!-- FIXME: the contents of this page should be improved.  Some parts
+of the install_help page (currenly under /downloads/) should be moved
+here (or in a separate page under /source/) and that page should be
+deleted from the /downloads/ directory. -->
+
+<p>The official distribution of the GIMP is the source code,
+distributed in tar files from the GIMP ftp site and its <a
+href="wgo:downloads-mirrors">mirrors</a>.  The same source code can be
+compiled to create binaries for different platforms such as <a
+href="wgo:unix">Linux</a>, <a href="wgo:windows">Windows</a>, <a
+href="wgo:macintosh">MacOS X</a>, <a href="wgo:unix">Solaris</a>, <a
+href="wgo:os2">OS/2</a> and many others.  Depending on your needs, you
+may want to get one of these versions:</p>
+
+<ul>
+
+<li>The <strong>stable version</strong> is recommended for most users.
+Pre-compiled binaries of the stable GIMP are usually available for
+many platforms (see the platform-specific pages for more details), so
+you do not even have to compile the code yourself.</li>
+
+<li>The <strong>unstable version</strong> is for those who want to
+check the progress towards the next stable release, and who want to
+help the developers by testing the code and reporting bugs.  The
+unstable version contains more features than the stable version but it
+may crash from time to time so be sure to save your work often.  If
+you are using this version, it could be a good idea to subscribe to
+some of the GIMP <a href="wgo:mail_lists">mailing lists</a> (gimp-user
+or gimp-developer) so that you can follow the discussions about new
+features and known bugs.</li>
+
+<li>The versions from <strong>CVS</strong>.  This is for those who
+want to live on the bleeding edge.  This will give you the latest
+version of the source code with the latest features, but also with the
+latest bugs (eeek!).  CVS maintains several versions of the code
+called "branches" so you can fetch the latest version ("HEAD") or a
+stable version from a maintenance branch.  If you intend to <a
+href="wgo:develop">contribute</a> to the development of the GIMP, then
+you should try CVS.  As the code is constantly evolving and features
+are added (or removed) every day, you should have a look at the <a
+href="wgo:dev">developers' site</a> and subscribe to the
+gimp-developer mailing list if you compile the code from CVS.</li>
+
+</ul>
+
+<p>In order to compile the GIMP from a tarball or from CVS, you will
+need several tools such as a compiler and some libraries.  The
+requirements may vary depending on the version that you are trying to
+compile (stable, unstable or CVS).  A basic list of requirements and
+some guidelines for compiling and installing the GIMP are provided <a
+href="/downloads/install_help.html">on a separate
+page</a><!-- FIXME: move the contents of that page here -->.</p>
+
+<p>If you want to get and build the GIMP from CVS, the following pages
+will help you:</p>
 
 <ul>
   <li><a href="wgo:source-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
   <li><a href="wgo:source-howtos-stable_cvs_build">Build The Stable GIMP from CVS</a></li>
 </ul>
+
+<p>See the platform-specific pages for additional requirements and
+instructions for each operating system.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -40,7 +40,7 @@ information, see our platform-specific sections:</p>
   <li><a href="/unix/">GIMP for UNIX</a> (including Linux).</li>
 </ul>
 
-<h1>FTP and Web Mirrors</h1>
+<h1><a name="mirrors"></a>FTP and Web Mirrors</h1>
 <!--#include virtual="/downloads/mirrors.xhtml" -->
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

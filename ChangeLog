@@ -1,3 +1,20 @@
+2004-01-03  Raphaël Quinet  <quinet@gamers.org>
+
+	* source/index.htrw: Removed the visible FIXME, explained what are
+	the different versions of the source code, added some links.
+
+	* downloads/install_help.htrw: Removed the visible FIXME.  This
+	page should be removed soon and its contents should be transfered
+	to the source section or to the platform-specific pages.
+
+	* macintosh/index.htrw: Removed the visible FIXME, added a
+	reference to the unix page for the configuration details.
+
+	* downloads/index.htrw: Added an anchor for the mirrors.
+
+	* admin/gimp-web-urls: Added several urls: download page, list of
+	mirrors, classic.gimp.org, etc.
+
 2003-11-24  Raphael Quinet  <quinet@gamers.org>
 
 	* includes/includes/wgo-admin-init.xhtml

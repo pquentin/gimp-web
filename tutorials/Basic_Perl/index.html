@@ -43,15 +43,10 @@
 </p>
 <div class="code">
   #!/usr/local/bin/perl 
-  <br /><br />  
-  use Gimp ":auto";
-  <br />
+  use Gimp ":auto"; 
   use Gimp::Fu;
-  <br /><br />
   # Register extension to gimp
-  <br />
   register ... ;
-  <br /><br />
   exit main();  # Handle over control to gimp 
 </div>
 <p>
@@ -106,8 +101,8 @@ They can be added to an image using the 'gimp_image_add_layer' command</td></tr>
 </p>
 
 <pre>script_fu_basic1_logo("Hello", 72,
-                           "-*-utopia-*-r-*-*-72-*-*-*-*-*-*-*",
-                           [0,0,0],[1,1,1]);</pre>
+        "-*-utopia-*-r-*-*-72-*-*-*-*-*-*-*",
+        [0,0,0],[1,1,1]);</pre>
 <p>
   Unfortunately, as of the writing, calling Script Fu from perl has proved a to make both ScriptFu and gimp very unstable and caused both of them to crash. 
   If any of the readers is able to describe what is needed to get it to run successfully, I will happily include this in a future version of this tutorial.

@@ -1,3 +1,8 @@
+2002-10-29 scizzo <scizzo@gimp.org>
+
+        * tutorials/Basic_Perl/: Trying to make the tutorial better
+        with the layout.
+
 2002-10-28 rockwlrs <rock@gimp.org>
 
 	* about/authors.html: ran recode to turn the utf to latin-1.  This

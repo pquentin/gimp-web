@@ -25,67 +25,62 @@
 <p>
   GIMP is written and developed under X11 on UNIX platforms.
   There is an <a href="http:Package-GIMP-os2-stable-xfree86">OS/2 port</a> in development. 
-  There is also a native <a href="http:Package-GIMP-windows">win32 port</a>.
+  There is also a native <a href="http:Package-GIMP-windows">MS Windows build</a>.
   And some people have reported success in getting GIMP to run in
-  <a href="http://www.macgimp.org/">MacOS X</a>.
+  <a href="http://www.macgimp.org/">Mac OS X</a>.
 </p>
 
 <h2>Features and Capabilities</h2>
 <p>
   This is only a very quickly thrown together list of GIMP features.
 </p>
-<p>
-Painting
-</p>
+
 <ul>
-  <li>Full suite of painting tools including Brush, Pencil, Airbrush, Clone, etc.</li>
-  <li>Sub-pixel sampling for all paint tools for high quality anti-aliasing</li>
-  <li>Extremely powerful gradient editor and blend tool</li>
-  <li>Supports custom brushes and patterns</li>
+<li>Painting
+  <ul>
+    <li>Full suite of painting tools including Brush, Pencil, Airbrush, Clone, etc.</li>
+    <li>Sub-pixel sampling for all paint tools for high quality anti-aliasing</li>
+    <li>Extremely powerful gradient editor and blend tool</li>
+    <li>Supports custom brushes and patterns</li>
+  </ul>
+</li>
+<li>System
+  <ul>
+    <li>Tile based memory management so image size is limited only by available disk space</li>
+    <li>Virtually unlimited number of images open at one time</li>
+  </ul>
+</li>
+<li>Advanced Manipulation
+  <ul>
+    <li>Full alpha channel support</li>
+    <li>Layers and channels</li>
+    <li>Multiple Undo/Redo (limited only by diskspace)</li>
+    <li>Transformation tools including rotate, scale, shear and flip</li>
+    <li>Selection tools including rectangle, ellipse, free, fuzzy, Bézier and intelligent</li>
+    <li>Quickmask to paint a selection.</li>
+  </ul>
+</li>
+<li>Extensible
+  <ul>
+    <li>A Procedural Database for calling internal GIMP functions from external programs as in Script-fu</li>
+    <li>Advanced scripting capabilities</li>
+    <li>Plug-ins which allow for the easy addition of new file formats and new effect filters</li>
+    <li>Over 100 plug-ins already available</li>
+  </ul>
+</li>
+<li>Animation
+  <ul>
+    <li>Load and save animations in a convenient frame-as-layer format</li>
+  </ul>
+</li>
+<li>File Handling
+  <ul>
+    <li>File formats supported include bmp, gif, jpeg, mpeg, pcx, pdf, png, ps, tiff, tga, xpm, and many others</li>
+    <li>Load, display, convert, save to many file formats</li>
+  </ul>
+</li>
+<li>Much, much more!</li>
 </ul>
-<p>
-System
-</p>
-<ul>
-  <li>Tile based memory managent so image size is limited only by available disk space</li>
-  <li>Virtually unlimited number of images open at one time</li>
-</ul>
-<p>
-Advanced Manipulation
-</p>
-<ul>
-  <li>Full alpha channel support</li>
-  <li>Layers and channels</li>
-  <li>Multiple Undo/Redo (limited only by diskspace)</li>
-  <li>Transformation tools including rotate, scale, shear and flip</li>
-  <li>Selection tools including rectangle, ellipse, free, fuzzy, bezier and intelligent</li>
-  <li>Quickmask to paint a selection.</li>
-</ul>
-<p>
-Extensible
-</p>
-<ul>
-  <li>A Procedural Database for calling internal GIMP functions from external programs as in Script-fu</li>
-  <li>Advanced scripting capabilities</li>
-  <li>Plug-ins which allow for the easy addition of new file formats and new effect filters</li>
-  <li>Over 100 plugins already available</li>
-</ul>
-<p>
-Animation
-</p>
-<ul>
-  <li>Load and save animations in a convenient frame-as-layer format</li>
-</ul>
-<p>
-File Handling
-</p>
-<ul>
-  <li>File formats supported include gif, jpg, png, xpm, tiff, tga, mpeg, ps, pdf, pcx, bmp, and many others</li>
-  <li>Load, display, convert, save to many file formats</li>
-</ul>
-<p>
-  Much, much more!
-</p>
 
 <!-- How About The GIMP gets updated.  first you paste it from the current site -->
 <!-- Next you send it to the developer list                                     -->

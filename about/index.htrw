@@ -10,13 +10,14 @@
   is a freely distributed program for such tasks
   as photo retouching, image composition and image authoring.
   The terms of usage and rules about copying are clearly listed in the
-  <a href="wgo:license">GNU GENERAL PUBLIC LICENSE</a>.
+  <a href="wgo:license">GNU General Public License</a>.</p>
+
+<p>
   (<a href="wgo:about-introduction">more ...</a>)
 </p>
-<h2>Important URLs</h2>
+<h2>Important Links</h2>
   <ul>
-    <li><a href="home:gimp">The GNU Image Manipulation Program</a></li>
-    <li><a href="wgo:license">GNU GENERAL PUBLIC LICENSE</a></li>
+    <li><a href="wgo:license">GNU General Public License</a></li>
     <li><a href="home:gnu">GNU Project</a></li>
     <li><a href="home:gimp-bugzilla-stable">GIMP Bugzilla</a></li>
     <li><a href="home:gtk">The GIMP Tool Kit</a></li>
@@ -45,18 +46,18 @@
 <h2>The GIMP Authors, Contributors, &amp; Maintainers</h2>
   <ul>
     <li><a href="wgo:about-authors">Authors and Contributors</a></li>
-    <li><a href="wgo:about-maintainers">Maintainers</a></li>
-    <li><a href="wgo:about-maintainers-plugins">Plug-in Maintainers</a></li>
+    <li><!-- a href="wgo:about-maintainers" -->Maintainers<!-- /a --></li>
+    <li><!-- a href="wgo:about-maintainers-plugins" -->Plug-in Maintainers<!-- /a --></li>
   </ul>
 <h2>The GIMP On the Web</h2>
   <ul>
     <li><a href="online:flamingtext">Flaming Text Logo Generator</a></li>
     <li><a href="online:cooltext">Cooltext Logo Generator</a></li>
-    <li><a href="online:fu_gen">Fu_GEN</a></li>
+    <li><!-- a href="online:fu_gen" -->Fu_GEN<!-- /a --></li>
   </ul>
 <h2>The GIMP In Film</h2>
   <ul>
-    <li><a href="http://www.linuxjournal.com/article.php?sid=6148">Linux and <i>Scoopy-Doo</i></a></li>
+    <li><a href="http://www.linuxjournal.com/article.php?sid=6148">Linux and <i>Scooby-Doo</i></a></li>
   </ul>
 <h2>The GIMP In Medicine &amp; Science</h2>
   <ul>

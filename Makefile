@@ -14,6 +14,7 @@ export PYTHONPATH=programmatic:
 # how to make an html from a .htrw file
 %.html: %.htrw
 	programmatic/tools/rewrite_attrs -d admin/gimp-web-urls  $< > $@
+	chmod 755 unix/index.html
 
 TARGETS=unix/index.html
 
@@ -26,7 +27,6 @@ webtools:
 	(cd programmatic ; make webtools)
 
 unix/index.html: unix/index.htrw
-	chmod 755 unix/index.html
 
 _install: all
 

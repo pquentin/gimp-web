@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 CVSDIR=`pwd`
 
@@ -18,9 +18,9 @@ log=${INSTALLDIR}/install.out
 /bin/rm -f  ${log}
 echo "contents of unix/"  >> ${log}
 
-/bin/ls -l unix/  >> ${log}
+/bin/ls -l ${INSTALLDIR}/unix/  >> ${log}
 
-make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all install 2>&1 >> ${log}
+make PYTHON=${PYTHON} DocumentRoot=${INSTALLDIR} clean all 2>&1 >> ${log}
 
 rsync -rlt --delete --exclude-from=$CVSDIR/install.exclude $CVSDIR/ $INSTALLDIR/
 

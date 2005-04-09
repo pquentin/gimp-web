@@ -1,3 +1,7 @@
+2005-04-10  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.2.5 release.
+
 2005-04-01  Simon Budig  <simon@gimp.org>
 
 	* unix/howtos/gimp-midi.htrw: clarified licensing terms.

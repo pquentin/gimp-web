@@ -255,7 +255,8 @@ icon_descs = {
   "wilber_painter"    : "[Wilber the Painter]",
   "wilber_wizard"     : "[Wilber the Wizard]",
   "wilber_work"       : "[Wilber the Painting Builder]",
-  "wilber_reading"    : "[Wilber Reading]"
+  "wilber_reading"    : "[Wilber Reading]",
+  "wilber_eeek"       : "[Wilber Shocked]"
 }
 
 def icon_desc_by_name(name):

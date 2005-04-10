@@ -1,5 +1,12 @@
 2005-04-10  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/Makefile
+	* programmatic/admin/news/wgo_news.py
+	* programmatic/admin/news/icons/wilber_eeek.png: added eeeky Wilber
+	icon to the News icons.
+
+2005-04-10  Sven Neumann  <sven@gimp.org>
+
 	* downloads/index.htrw: updated for 2.2.6 release.
 
 2005-04-10  Sven Neumann  <sven@gimp.org>

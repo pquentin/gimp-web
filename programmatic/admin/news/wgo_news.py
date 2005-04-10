@@ -223,7 +223,7 @@ icons = {
   "Wilber the Wizard"          : "wilber_wizard.png",
   "Wilber the Painter Builder" : "wilber_work.png",
   "Wilber Reading"             : "wilber_reading.png",
-  "Wilber Shocked"             : "wilber_eeek"
+  "Wilber Shocked"             : "wilber_eeek.png"
 }
 
 def icon_option_list(selected):

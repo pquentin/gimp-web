@@ -24,11 +24,12 @@
 </p>
 <p>
   To make things easier, we'll start with a ready-to-go static image. 
-  To load it into GIMP, just copy the link to the image above by selecting 
-  <b>copy target</b> or <b>copy shortut</b> from the image context menu accessible 
-  by pressing right mouse on the image. In GIMP, just press <kbd>Ctrl+O</kbd> and paste the 
-  URL to the open dialog. Gimp will download the compressed image and 
-  open it transparently so you don't have to bother.
+  To load it into GIMP, just drag the image above to the GIMP toolbox.
+  In case this doesn't work for you, copy the link by selecting 
+  <b>Copy Target</b> or <b>Copy Link Location</b> from the image context
+  menu accessible by right-clicking on the image. In GIMP, choose
+  <b>Open Location</b> from the toolbox <b>File</b> menu and paste the
+  URL there. Gimp will download the compressed image and open it for you.
 </p>
 
 <h2>Step 2</h2>

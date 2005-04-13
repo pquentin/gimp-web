@@ -1,3 +1,8 @@
+2005-04-13  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Advanced_Animations/index.htrw: updated description on
+	how to download the example image into GIMP 2.2.
+
 2005-04-10  Sven Neumann  <sven@gimp.org>
 
 	* programmatic/admin/news/Makefile

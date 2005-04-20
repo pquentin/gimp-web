@@ -4,18 +4,23 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Advanced Animations Tutorial</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mail:People-Steiner_Jacub">Jacub Steiner</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2002
+  <a href="mail:People-Steiner_Jacub">Jacub Steiner</a> and may not be
+  used without permission of the author.
 </p>
 
 <h2>Intention</h2>
 <p>
-  Welcome to the advanced GIMP animation tutorial. Here you'll learn how to use the GAP, GIMP animation package. 
-  It is very advanced, but the user interface might be confusing for some at first. 
-  That's why we'll start with a little theory before we move over to the practical part.
+  Welcome to the advanced GIMP animation tutorial. Here you'll learn
+  how to use the GAP, GIMP animation package.  It is very advanced,
+  but the user interface might be confusing for some at first.  That's
+  why we'll start with a little theory before we move over to the
+  practical part.
 </p>
 <p>
-  The key function of the GAP is the <b>move path</b> dialog. 
-  Please go to the "<a href="/tutorials/Using_GAP/">Using GAP</a>" tutorial to learn more about the tool.
+  The key function of the GAP is the <b>move path</b> dialog.  Please
+  go to the "<a href="/tutorials/Using_GAP/">Using GAP</a>" tutorial
+  to learn more about the tool.
 </p>
 
 <h2>Step 1</h2>
@@ -37,22 +42,24 @@
   <img src="gap-duplicate.png" alt="" />
 </p>
 <p>
-  Now drag the background layer from the static image to the GIMP toolbar. 
-  This will create a new white image we'll use as a base for our animation. 
-  To be able to work with GAP you need to save it in GIMP's native format, 
-  <b>.xcf</b>. Create a separate directory for the file, 
-  it will fill with many frame files soon. The file needs to be named like this:
+  Now drag the background layer from the static image to the GIMP
+  toolbar.  This will create a new white image we'll use as a base for
+  our animation.  To be able to work with GAP you need to save it in
+  GIMP's native format,
+  <b>.xcf</b>. Create a separate directory for the file, it will fill
+  with many frame files soon. The file needs to be named like this:
 </p>
 <p>
   <b>name-0001.xcf</b>
 </p>
 <p>
-  You can only change the <b>name</b> part. The rest needs to be exactly the way shown. 
-  GAP works on series of .xcf images, so that you can work with layers 
-  the same way as you do in static images. You don't have to copy the 
-  file yourself to add a frame. GAP has series of functions to help you manage frames. 
-  We'll create a 20 frame animation, so the first thing will be to copy 
-  the first frame 19 times using the <b>video/duplicate frames</b> function.
+  You can only change the <b>name</b> part. The rest needs to be
+  exactly the way shown.  GAP works on series of .xcf images, so that
+  you can work with layers the same way as you do in static
+  images. You don't have to copy the file yourself to add a frame. GAP
+  has series of functions to help you manage frames.  We'll create a
+  20 frame animation, so the first thing will be to copy the first
+  frame 19 times using the <b>video/duplicate frames</b> function.
 </p>
 
 <h2>Step 3</h2>
@@ -61,30 +68,36 @@
   <img src="gap-move.png" alt="" />
 </p>
 <p>
-  Now it's time to use the <b>move path</b> function. Make sure you have the static 
-  image open but use the function on the white background image. 
-  In the dialog, select the logo image as source and make sure you 
-  set the stepmode to <b>none</b>! Keep the mode as <b>normal</b> and choose some handle mode. 
-  I have used <b>center</b>, so use that if you're going to stick with the parameters provided here.
+  Now it's time to use the <b>move path</b> function. Make sure you
+  have the static image open but use the function on the white
+  background image.  In the dialog, select the logo image as source
+  and make sure you set the stepmode to <b>none</b>! Keep the mode
+  as <b>normal</b> and choose some handle mode.  I have
+  used <b>center</b>, so use that if you're going to stick with the
+  parameters provided here.
 </p>
 <p>
-  For the logo we'll animate two parameters. First, we'll zoom out the logo 
-  so it appears to fly away from the observer and combine that with opacity increase. 
-  For the first animation point use the following parameters: 
-  <b>x:157, y:74, width:800, height:800, opacity:20</b>. Keep the rest default. 
-  Now add a new animation point by clicking on the <b>add point</b> button. 
-  Notice how the status above the button changed to <b>current key: [ 2 of 2 ]</b>. 
-  Now change the <b>width, height</b> and <b>opacity</b> back to 100%. 
-  You can check the result on any animation point by navigating 
-  to it (using next and previous or other buttons) and clicking on the <b>update preview</b> button. 
-  You can also preview the whole animation using the <b>Anim preview</b> button. 
-  This will create a new layered image, so don't be impatient, it takes a while.
+  For the logo we'll animate two parameters. First, we'll zoom out the
+  logo so it appears to fly away from the observer and combine that
+  with opacity increase.  For the first animation point use the
+  following parameters:
+  <b>x:157, y:74, width:800, height:800, opacity:20</b>. Keep the rest
+  default.  Now add a new animation point by clicking on the <b>add
+  point</b> button.  Notice how the status above the button changed
+  to <b>current key: [ 2 of 2 ]</b>.  Now change the <b>width,
+  height</b> and <b>opacity</b> back to 100%.  You can check the
+  result on any animation point by navigating to it (using next and
+  previous or other buttons) and clicking on the <b>update preview</b>
+  button.  You can also preview the whole animation using the <b>Anim
+  preview</b> button.  This will create a new layered image, so don't
+  be impatient, it takes a while.
 </p>
 <p>
-  Adding points to your animation creates linear time segments between those. 
-  If you want to create non-linear animation, just set a specific frame to 
-  the active point using the <b>keyframe</b> slider. 
-  We won't need it for the logo animation, so let's just press ok for now.
+  Adding points to your animation creates linear time segments between
+  those.  If you want to create non-linear animation, just set a
+  specific frame to the active point using the <b>keyframe</b> slider.
+  We won't need it for the logo animation, so let's just press ok for
+  now.
 </p>
 
 <h2>Step 4</h2>
@@ -93,65 +106,72 @@
   <img src="gap-final.gif" alt="" />
 </p>
 <p>
-  Now we have a rendered sequence of images. You can navigate them 
-  easily using the <b>video/VCR navigator</b>. Pressing play on the navigator will call two functions, 
-  <b>frames to image</b> and <b>animation playback</b>, so it's fast and convenient 
-  to use it to check the looks of your animation.
+  Now we have a rendered sequence of images. You can navigate them
+  easily using the <b>video/VCR navigator</b>. Pressing play on the
+  navigator will call two functions,
+  <b>frames to image</b> and <b>animation playback</b>, so it's fast
+  and convenient to use it to check the looks of your animation.
 </p>
 <p>
-  You can also specify the default delay between frames by setting 
-  the <b>framerate</b> in FPS (frames per second). 
-  The higher the value, the smoother the animation will be, 
-  but more frames will be needed. You can also render only 
-  segments of the whole animation by selecting particular 
-  frame thumbnails in the navigator before pressing the play button. 
-  Use <kbd>shift</kbd>, <kbd>ctrl</kbd> or drag your mouse to select multiple frames. 
-  If you press <kbd>Shift</kbd> while pressing the play button, the resulting 
-  animation-image will be optimised (as discussed in the simple animation tutorial).
+  You can also specify the default delay between frames by setting
+  the <b>framerate</b> in FPS (frames per second).  The higher the
+  value, the smoother the animation will be, but more frames will be
+  needed. You can also render only segments of the whole animation by
+  selecting particular frame thumbnails in the navigator before
+  pressing the play button.  Use <kbd>shift</kbd>, <kbd>ctrl</kbd> or
+  drag your mouse to select multiple frames.  If you
+  press <kbd>Shift</kbd> while pressing the play button, the resulting
+  animation-image will be optimised (as discussed in the simple
+  animation tutorial).
 </p>
 <p>
-  As you can see on the image above, I have added some more movement effects 
-  for every source layer of the static image using only the <b>move path</b> dialog. 
-  You can now try to recreate the animation yourself, you know tool to be able to. 
+  As you can see on the image above, I have added some more movement
+  effects for every source layer of the static image using only
+  the <b>move path</b> dialog.  You can now try to recreate the
+  animation yourself, you know tool to be able to.
 </p>
 
 <h2>Step 5</h2>
 <p>
-  All we need to do now is to save the animation. 
-  You can choose to go for the GIF format as I did with the image above, 
-  but the filesize is too huge to be widely accepted on the web anyway, 
-  so you can consider using a regular animation format 
-  like <b>avi</b> (needs special version of the xanim player from <a href="http://www.lokigames.com">Loki</a>) 
-  or <b>mpeg1 / 2</b>.
+  All we need to do now is to save the animation.  You can choose to
+  go for the GIF format as I did with the image above, but the
+  filesize is too huge to be widely accepted on the web anyway, so you
+  can consider using a regular animation format like <b>avi</b> (needs
+  special version of the xanim player
+  from <a href="http://www.lokigames.com">Loki</a>) or <b>mpeg1 / 2</b>.
 </p>
 <p>
-  To save the animation as gif, first apply the <b>video/frames to image</b> function. 
-  This will create a single multi-layered image with the specified delay. 
-  Now apply the <b>animation optimize</b> filter (not that useful in this case) and 
-  finaly index the image to 16 color without using any color dithering. 
-  The file will still be about 170kB, so it's huge. 
-  You can consider trying some specialised optimisation software like GIFsicle. 
-  Maybe <a href="http://www.libmng.com/">MNG</a> with its sprite based 
-  animation will make it more suitable for the web. 
-  Rendering will happen on the browser side and I'm very excited about the idea. 
+  To save the animation as gif, first apply the <b>video/frames to
+  image</b> function.  This will create a single multi-layered image
+  with the specified delay.  Now apply the <b>animation optimize</b>
+  filter (not that useful in this case) and finaly index the image to
+  16 color without using any color dithering.  The file will still be
+  about 170kB, so it's huge.  You can consider trying some specialised
+  optimisation software like GIFsicle.
+  Maybe <a href="http://www.libmng.com/">MNG</a> with its sprite based
+  animation will make it more suitable for the web.  Rendering will
+  happen on the browser side and I'm very excited about the idea.
 </p>
 <p>
-  Last thing I can't help myslef not to mention is to thank 
-  Wolfgang Hofer for making such a great plugin that takes GIMP functionality to a new level. 
-  With GIMP 2 rendering engine we'll probably see more "applications" like 
-  that using GIMP's features to provide us with another area of application. 
-  I'd also like to thank the GIMP developer community to work hard 
-  every day to give us the best web gfx tool there is. If you just started to experience the Gimp, 
-  don't hesitate and drop by up at <b>#gimp</b> on <b>irc.gimp.org:6669</b>.
+  Last thing I can't help myslef not to mention is to thank Wolfgang
+  Hofer for making such a great plugin that takes GIMP functionality
+  to a new level.  With GIMP 2 rendering engine we'll probably see
+  more "applications" like that using GIMP's features to provide us
+  with another area of application.  I'd also like to thank the GIMP
+  developer community to work hard every day to give us the best web
+  gfx tool there is. If you just started to experience the Gimp, don't
+  hesitate and drop by up at <b>#gimp</b> on <b>irc.gimp.org:6669</b>.
 </p>
 
 <p>
-  The original tutorial can be found <a href="tutorial:Advanced_Animations-Jakub_Steiner">here</a>.
+  The original tutorial can be
+  found <a href="tutorial:Advanced_Animations-Jakub_Steiner">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="home:People-Steiner_Jacub">Jakub Steiner (jimmac)</a>
+        Tutorial &copy; 2002 <a href="home:People-Steiner_Jacub">Jakub
+        Steiner (jimmac)</a>
       </span>
       <span id="footerright">
         <a href="mail:People-Steiner_Jacub">jimmac@ximian.com</a>

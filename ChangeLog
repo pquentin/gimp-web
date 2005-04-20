@@ -1,3 +1,12 @@
+2005-04-20  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Simple_Animations/index.htrw: mention that "Filter All
+	Layers" is provided by GAP. Perhaps the simple animation tutorial
+	should be rewritten to be simple and not use GAP ?!
+
+	* tutorials/Advanced_Animations/index.htrw: redo line breaks to
+	make the source more readable.
+
 2005-04-13  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Advanced_Animations/index.htrw: updated description on

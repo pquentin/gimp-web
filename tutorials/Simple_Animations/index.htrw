@@ -4,9 +4,9 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Simple Animations</h1>
 <p>
-  Text and images Copyright (C)
-  2002 <a href="mail:People-Steiner_Jacub">Jacub Steiner</a> and may
-  not be used without permission of the author.
+  Text and images Copyright (C) 2002
+  <a href="mail:People-Steiner_Jacub">Jacub Steiner</a> and may not be
+  used without permission of the author.
 </p>
 
 <h2>Intention</h2>
@@ -105,12 +105,19 @@
 </p>
 <p>
   In the last step, we'll use a very handy function for <i>applying a
-  filter to multiple layers</i>.  Before we do that, we need to create
-  a new image out of the third frame. This is as simple as dragging
-  the layer preview from the layers window to the toolbar.  Now
-  duplicate the image <i>four times</i>. With a rectangular select
-  tool, draw a selction around the text. Now we're ready to apply a
-  <b>gaussian blur</b> filter on every layer using varying parameters. Use the 
+  filter to multiple layers</i>.  This function is provided by GAP,
+  the GIMP animation package. Please go to the
+  "<a href="/tutorials/Using_GAP/">Using GAP</a>" tutorial to learn
+  more about the tool.
+</p>
+<p>
+  Before we can apply this effect, we need to create a new image out
+  of the third frame. This is as simple as dragging the layer preview
+  from the layers window to the toolbar.  Now duplicate the
+  image <i>four times</i>. With a rectangular select tool, draw a
+  selction around the text. Now we're ready to apply a
+  <b>gaussian blur</b> filter on every layer using varying
+  parameters. Use the
   <span class="filter">&lt;Image&gt; Filters -&gt; Filter All
   Layers</span> function and select <b>plug-in-gauss-rle2</b> from the
   list and press the <b>apply varying</b> button.  The blur dialog

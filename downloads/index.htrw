@@ -15,7 +15,7 @@ href="install_help.html">install help</a> page.</p>
 
 <h2>Source for version 2.2 (Stable)</h2>
 
-<p>GIMP 2.2.6 is now available at
+<p>GIMP 2.2.7 is now available at
 <a href="ftp://ftp.gimp.org/pub/gimp/v2.2/">ftp://ftp.gimp.org/pub/gimp/v2.2/</a>.
 <br/>
 To allow you to check the integrity of the tarballs, here are the MD5 sum
@@ -27,12 +27,12 @@ of the latest released tarballs:</p>
   <th style="background-color: #f5f5f5;">MD5 sum</th>
 </tr>
 <tr>
-  <td>gimp-2.2.6.tar.gz</td>
-  <td><kbd><b>fcaec3792ee07415677ddb6c197d8ec5</b></kbd></td>
+  <td>gimp-2.2.7.tar.gz</td>
+  <td><kbd><b>2292993a5ebcd74593347bbd9750cb8e</b></kbd></td>
 </tr>
 <tr>
-  <td>gimp-2.2.6.tar.bz2</td>
-  <td><kbd><b>cf7de255739bf5abc2e90d7882eda6c9</b></kbd></td>
+  <td>gimp-2.2.7.tar.bz2</td>
+  <td><kbd><b>fb2871717998e5958a84f4c26d143d95</b></kbd></td>
 </tr>
 </table>
 

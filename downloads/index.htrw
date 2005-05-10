@@ -21,10 +21,9 @@ href="ftp://ftp.gimp.org/pub/gimp/v2.2/">ftp://ftp.gimp.org/pub/gimp/v2.2/</a>.
 You may want to read the <a href="wgo:release-notes-stable">Release
 Notes for GIMP 2.2</a>.
 </p>
+
 <p> To allow you to check the integrity of the tarballs, here are the
 MD5 sum of the latest released tarballs:
-</p>
-
 <table width="100%" cellspacing="0" cellpadding="2" style="text-align: left; margin: 1.33em 0px; margin-left: 40px; margin-right: 40px; border-style: solid; border-color: #d0d0d0; border-width: 1px;">
 <tr>
   <th style="background-color: #f5f5f5;">File</th>
@@ -39,6 +38,7 @@ MD5 sum of the latest released tarballs:
   <td><kbd><b>fb2871717998e5958a84f4c26d143d95</b></kbd></td>
 </tr>
 </table>
+</p>
 
 <p>GAP (the GIMP Animation Package) for 2.0 is available at
 <a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/gap">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/gap</a>.

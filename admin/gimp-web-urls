@@ -193,6 +193,9 @@
 ["href", "wgo:downloads",                      { "href": "/downloads/"}]
 ["href", "wgo:downloads-mirrors",              { "href": "/downloads/#mirrors"}]
 
+["href", "wgo:release-notes-stable",           { "href": "/release-notes/gimp-2.2.html"}]
+["href", "wgo:release-notes-development",      { "href": "/release-notes/gimp-2.3.html"}]
+
 ["href", "wgo:about",                          { "href": "/about/index.html"}]
 ["href", "wgo:about-ancient_history",          { "href": "/about/ancient_history.html"}]
 ["href", "wgo:about-authors",                  { "href": "/about/authors.html"}]

@@ -18,8 +18,11 @@ href="install_help.html">install help</a> page.</p>
 <p>GIMP 2.2.7 is now available at
 <a href="ftp://ftp.gimp.org/pub/gimp/v2.2/">ftp://ftp.gimp.org/pub/gimp/v2.2/</a>.
 <br/>
-To allow you to check the integrity of the tarballs, here are the MD5 sum
-of the latest released tarballs:</p>
+You may want to look at the <a href="wgo:release-notes-stable">Release Notes for GIMP 2.2</a>.
+<p>
+To allow you to check the integrity of the tarballs, here are the MD5
+sum of the latest released tarballs:
+</p>
 
 <table width="100%" cellspacing="0" cellpadding="2" style="text-align: left; margin: 1.33em 0px; margin-left: 40px; margin-right: 40px; border-style: solid; border-color: #d0d0d0; border-width: 1px;">
 <tr>

@@ -1,3 +1,9 @@
+2005-05-11  Sven Neumann  <sven@gimp.org>
+
+	* admin/gimp-web-urls: added  wgo:release-notes to the url map.
+
+	* downloads/index.htrw: link to the release notes.
+
 2005-05-10  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/The_Basics/index.htrw: ask the user to merge down the

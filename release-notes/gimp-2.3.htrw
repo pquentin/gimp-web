@@ -1,0 +1,66 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Release Notes for the development snapshots</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>The GIMP 2.3 Release Notes</h1>
+<p>
+This is an unstable development version of the <b>GNU Image
+Manipulation Program</b>. Please realize that this is just a snapshot
+of the development tree. We are about halfway up the hill to GIMP 2.4,
+the next stable release. GIMP 2.3 is in no way a final product. A lot
+of new features are incomplete and some things may even be completely
+broken. If you need to get work done, please use the stable version,
+GIMP 2.2.
+</p>
+
+<h2>Download</h2>
+<p>
+  The development snapshots of GIMP can be downloaded as source code
+  from ftp.gimp.org or from one of the mirrors listed in
+  the <a href="wgo:downloads">Downloads</a> section.
+</p>
+<p>
+  Distribution of binary packages of the development version is
+  discouraged unless it is made clear that it's an early development
+  snapshot. Users should be referred to these release notes or similar
+  information.
+</p>
+
+<h2>Installation</h2>
+<p>
+If you want to install the development snapshot, you should know what
+you are doing. You should have compiled GIMP or similar software
+before. If you have not yet heard of <tt>LD_LIBRARY_PATH</tt>, you
+might want to take a look at <tt>ld.so(8)</tt>.
+</p>
+<p>
+GIMP 2.3 replaces earlier GIMP 2.x versions. It is advised that you
+uninstall them before installing GIMP 2.3. If you want to keep your
+GIMP 2.2 installation in parallel to GIMP 2.3, you have to choose a
+separate prefix which is not in your default library search path.
+Otherwise your GIMP 2.2 or GIMP 2.0 installation will start to use the
+new libraries. You have been warned.
+</p>
+
+<h2>Bugs</h2>
+<p>
+If you think you found a bug in a development version, please make
+sure that it hasn't been reported earlier and that it is not just new
+stuff that is still being worked on and obviously not quite finished
+yet.
+</p>
+
+<h2>What's New in GIMP 2.3</h2>
+<p>
+  Please see the <a href="wgo:dev-news">NEWS</a> file.
+</p>
+
+<p>
+  <i>
+    The GIMP developers
+  </i>
+</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,5 +1,10 @@
 2005-05-11  Sven Neumann  <sven@gimp.org>
 
+	* release-notes/gimp-2.3.htrw: added a first draft of release
+	notes for gimp 2.3.
+
+2005-05-11  Sven Neumann  <sven@gimp.org>
+
 	* admin/gimp-web-urls: added  wgo:release-notes to the url map.
 
 	* downloads/index.htrw: link to the release notes.

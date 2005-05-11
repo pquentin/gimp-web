@@ -1,3 +1,8 @@
+2005-05-11  Sven Neumann  <sven@gimp.org>
+
+	* release-notes/gimp-2.3.htrw: link to a bugzilla query for
+	milestone 2.4.
+
 2005-05-11  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/gimp-2.3.htrw: Be more explicit about the

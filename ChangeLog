@@ -1,5 +1,7 @@
 2005-05-11  Sven Neumann  <sven@gimp.org>
 
+	* admin/gimp-web-urls: added wgo:release-notes.
+
 	* release-notes/index.htrw: removed the part that used to state
 	that our unreleased code has no release notes.
 

@@ -1,3 +1,9 @@
+2005-05-11  Raphaël Quinet  <raphael@gimp.org>
+
+	* release-notes/gimp-2.3.htrw: Be more explicit about the
+	conflicts when installing 2.3 and other 2.x versions in the same
+	prefix.
+
 2005-05-11  Sven Neumann  <sven@gimp.org>
 
 	* admin/gimp-web-urls: added wgo:release-notes.

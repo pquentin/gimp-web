@@ -34,12 +34,14 @@ GIMP 2.2.
 
 <h2>Installation</h2>
 <p>
-GIMP 2.3, if installed into the same prefix, clashes with other GIMP
-2.x versions. If you want to keep your GIMP 2.2 installation in
-parallel to GIMP 2.3, you have to choose a separate installation
-prefix at compile-time. Make sure that this prefix is not in your
-default library search path. Otherwise your GIMP 2.2 or GIMP 2.0
-installation will start to use the new libraries.
+GIMP 2.3 must <strong>not</strong> be installed in the same prefix as
+other GIMP 2.x versions. If you want to keep your GIMP 2.2 or GIMP 2.0
+installation in parallel to GIMP 2.3, you have to choose a separate
+installation prefix at compile-time and ensure that you use different
+library search paths for each version. If you do not set up your
+environment differently for each version, you will experience
+conflicts with the libraries and at least one version is likely to
+fail.
 </p>
 
 <h2>Bugs</h2>

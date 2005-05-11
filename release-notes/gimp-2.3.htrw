@@ -34,28 +34,20 @@ GIMP 2.2.
 
 <h2>Installation</h2>
 <p>
-If you want to compile and install the development snapshot, you
-should know what you are doing. You should have compiled GIMP or
-similar software before. If you have not yet heard
-of <tt>LD_LIBRARY_PATH</tt>, you might want to take a look
-at <tt>ld.so(8)</tt>.
-</p>
-<p>
-GIMP 2.3 replaces earlier GIMP 2.x versions. It is advised that you
-uninstall them before installing GIMP 2.3. If you want to keep your
-GIMP 2.2 installation in parallel to GIMP 2.3, you have to choose a
-separate prefix which is not in your default library search path.
-Otherwise your GIMP 2.2 or GIMP 2.0 installation will start to use the
-new libraries. You have been warned.
+GIMP 2.3, if installed into the same prefix, clashes with other GIMP
+2.x versions. If you want to keep your GIMP 2.2 installation in
+parallel to GIMP 2.3, you have to choose a separate installation
+prefix at compile-time. Make sure that this prefix is not in your
+default library search path. Otherwise your GIMP 2.2 or GIMP 2.0
+installation will start to use the new libraries.
 </p>
 
 <h2>Bugs</h2>
 <p>
-If you think you found a bug in a development version, before you
-report it, please make sure that it hasn't been reported earlier and
-that it is not just new stuff that is still being worked on and
-obviously not quite finished yet. If in doubt, report it, but please
-search <a href="home:gimp-bugzilla">Bugzilla</a> beforehand.
+If you think you found a bug in a development version, please make
+sure that it hasn't been reported
+earlier. Search <a href="home:gimp-bugzilla">Bugzilla</a> before
+filing a new bug-report.
 </p>
 
 <h2>Contributing</h2>

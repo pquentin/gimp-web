@@ -14,6 +14,11 @@ broken. If you need to get work done, please use the stable version,
 GIMP 2.2.
 </p>
 
+<h2>What's New in GIMP 2.3</h2>
+<p>
+  Please see the <a href="wgo:dev-news">NEWS</a> file for a list of changes.
+</p>
+
 <h2>Download</h2>
 <p>
   The development snapshots of GIMP can be downloaded as source code
@@ -61,11 +66,6 @@ introduce yourself on the gimp-developer mailing-list. We are also
 looking for people to look after the web-site and update the
 tutorials. Or you might want to join the
 <a href="wgo:docs-gimp_help"documentation team</a>.
-</p>
-
-<h2>What's New in GIMP 2.3</h2>
-<p>
-  Please see the <a href="wgo:dev-news">NEWS</a> file for a list of changes.
 </p>
 
 

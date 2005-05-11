@@ -22,17 +22,18 @@ GIMP 2.2.
 </p>
 <p>
   Distribution of binary packages of the development version is
-  discouraged unless it is made clear that it's an early development
+  discouraged unless it is made clear that this is an early development
   snapshot. Users should be referred to these release notes or similar
   information.
 </p>
 
 <h2>Installation</h2>
 <p>
-If you want to install the development snapshot, you should know what
-you are doing. You should have compiled GIMP or similar software
-before. If you have not yet heard of <tt>LD_LIBRARY_PATH</tt>, you
-might want to take a look at <tt>ld.so(8)</tt>.
+If you want to compile and install the development snapshot, you
+should know what you are doing. You should have compiled GIMP or
+similar software before. If you have not yet heard
+of <tt>LD_LIBRARY_PATH</tt>, you might want to take a look
+at <tt>ld.so(8)</tt>.
 </p>
 <p>
 GIMP 2.3 replaces earlier GIMP 2.x versions. It is advised that you
@@ -45,22 +46,28 @@ new libraries. You have been warned.
 
 <h2>Bugs</h2>
 <p>
-If you think you found a bug in a development version, please make
-sure that it hasn't been reported earlier and that it is not just new
-stuff that is still being worked on and obviously not quite finished
-yet.
+If you think you found a bug in a development version, before you
+report it, please make sure that it hasn't been reported earlier and
+that it is not just new stuff that is still being worked on and
+obviously not quite finished yet. If in doubt, report it, but please
+search <a href="home:gimp-bugzilla">Bugzilla</a> beforehand.
+</p>
+
+<h2>Contributing</h2>
+<p>
+We need your help to make GIMP 2.4 a success. There's still a lot to
+do in all areas. If you want to join us hacking, show up in #gimp or
+introduce yourself on the gimp-developer mailing-list. We are also
+looking for people to look after the web-site and update the
+tutorials. Or you might want to join the
+<a href="wgo:docs-gimp_help"documentation team</a>.
 </p>
 
 <h2>What's New in GIMP 2.3</h2>
 <p>
-  Please see the <a href="wgo:dev-news">NEWS</a> file.
+  Please see the <a href="wgo:dev-news">NEWS</a> file for a list of changes.
 </p>
 
-<p>
-  <i>
-    The GIMP developers
-  </i>
-</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

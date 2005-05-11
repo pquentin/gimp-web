@@ -1,3 +1,8 @@
+2005-05-11  Sven Neumann  <sven@gimp.org>
+
+	* release-notes/index.htrw: removed the part that used to state
+	that our unreleased code has no release notes.
+
 2005-05-11  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/.cvsignore: regenerated.

@@ -5,23 +5,24 @@
 
 <h1>The GIMP Release Notes</h1>
 
-<p>Here are the release notes for the versions of the GIMP that can be found on our <a href="wgo:downloads">downloads page</a>.</p>
+<p>
+Here are the release notes for the versions of GIMP that can be
+found on our <a href="wgo:downloads">downloads page</a>.
+</p>
 
 <ul>
 
   <li><a href="wgo:release-notes-stable">Release notes for the stable
   version</a>.  This is the version that most users should be
-  running.</li>
+  running.
+  </li>
 
   <li><a href="wgo:release-notes-development">Release notes for the
-  development snapshots</a>.  These snapshots of the development tree
-  may be unstable and many features may be incomplete.  They are
-  provided for developers and testers who want to help us improve the
-  GIMP.</li>
-
-  <li>There are no release notes for the code in CVS but you may be
-  able to see some of the ongoing developments in the <a
-  href="wgo:dev-news">NEWS</a> file.</li>
+  development snapshots</a>.  Snapshots of the development tree may be
+  unstable and contain incomplete features.  They are provided for
+  developers and interested users who want to help us to improve the
+  GIMP.
+  </li>
 
 </ul>
 

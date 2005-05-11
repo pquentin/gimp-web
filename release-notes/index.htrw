@@ -1,0 +1,29 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Release Notes</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>The GIMP Release Notes</h1>
+
+<p>Here are the release notes for the versions of the GIMP that can be found on our <a href="wgo:downloads">downloads page</a>.</p>
+
+<ul>
+
+  <li><a href="wgo:release-notes-stable">Release notes for the stable
+  version</a>.  This is the version that most users should be
+  running.</li>
+
+  <li><a href="wgo:release-notes-development">Release notes for the
+  development snapshots</a>.  These snapshots of the development tree
+  may be unstable and many features may be incomplete.  They are
+  provided for developers and testers who want to help us improve the
+  GIMP.</li>
+
+  <li>There are no release notes for the code in CVS but you may be
+  able to see some of the ongoing developments in the <a
+  href="wgo:dev-news">NEWS</a> file.</li>
+
+</ul>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

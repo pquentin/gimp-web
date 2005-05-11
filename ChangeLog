@@ -1,5 +1,10 @@
 2005-05-11  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/.cvsignore: regenerated.
+
+	* release-notes/index.htrw: new file including links to the
+	release notes for the stable and unstable versions.
+
 	* admin/gimp-web-urls: renamed wgo:selling to http:gnu-selling,
 	added new links wgo:donating, wgo:about-selling and
 	wgo:about-linking, removed trailing index.html in some links.

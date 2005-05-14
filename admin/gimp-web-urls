@@ -171,6 +171,7 @@
 ["href", "wgo:dev",                            { "href": "http://developer.gimp.org/"}]
 ["href", "wgo:dev-hacking",                    { "href": "http://developer.gimp.org/HACKING"}]
 ["href", "wgo:dev-news",                       { "href": "http://developer.gimp.org/NEWS"}]
+["href", "wgo:dev-screenshots",                { "href": "http://developer.gimp.org/screenshots.html"}]
 ["href", "wgo:dev-readme",                     { "href": "http://developer.gimp.org/README"}]
 ["href", "wgo:dev-readme-i18n",                { "href": "http://developer.gimp.org/README.i18n"}]
 ["href", "wgo:dev-readme-win32",               { "href": "http://developer.gimp.org/README.win32"}]

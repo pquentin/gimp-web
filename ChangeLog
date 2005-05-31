@@ -1,3 +1,8 @@
+2005-05-31  Raphaël Quinet  <raphael@gimp.org>
+
+	* about/merchandise.htrw: First draft for a merchandizing
+	page.  Not linked yet.  Likely to change depending on feedback.
+
 2005-05-20  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Basic_Batch/index.htrw: updated version number.

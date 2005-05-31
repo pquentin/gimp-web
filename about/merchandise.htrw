@@ -1,0 +1,46 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Merchandise</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP Merchandise</h1>
+
+<p>The vendors listed here are selling GIMP-related products and
+donate a part of their benefits to the GIMP developers, so buying
+these products allows you to support the GIMP indirectly (direct <a
+href="wgo:donating">donations</a> to the GIMP are also possible).  The
+GIMP developers are glad to receive these contributions but are not
+directly associated with these companies, so please check the web
+sites of these vendors to see the extent of their contributions.</p>
+
+<h2>SourceWear</h2>
+
+<p>SourceWear is selling tee-shirts and polos, including <a
+href="http://www.sourcewear.com/">GIMP tee-shirts and polos</a>.</p>
+
+<h2>Kernel concepts</h2>
+
+<p>Kernel concepts sells products related to free software, including
+<a href="http://kernelconcepts.de/products/fun/pins.shtml">pins
+featuring Wilber</a>, the GIMP mascot.</p>
+
+<h2>Other vendors</h2>
+
+<p>If you intend to sell copies of the GIMP software on CDs or other
+media, please have a look at our page about <a
+href="wgo:about-selling">selling the GIMP</a>.</p>
+
+<p>If you intend to produce and sell GIMP-related merchandise such as
+tee-shirts, pins or other gadets, we would appreciate being contacted
+before you create any modified version of Wilber, the GIMP mascot.
+See also our page about <a href-"wgo:about-linking">using images of
+Wilber</a>.</p>
+
+<p>If you sell GIMP merchandise and return a part of your benefits to
+the GIMP developers, you can ask us to be listed on this page.  Please
+post a message to the <a href="wgo:mail_lists">gimp-developer mailing
+list</a> and some developers will try to sort out the details with
+you.</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

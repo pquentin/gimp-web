@@ -205,6 +205,7 @@
 ["href", "wgo:about-introduction",             { "href": "/about/introduction.html"}]
 ["href", "wgo:license",                        { "href": "/about/COPYING"}]
 ["href", "wgo:donating",                       { "href": "/donating/"}]
+["href", "wgo:about-merchandise",              { "href": "/about/merchandise.html"}]
 ["href", "wgo:about-selling",                  { "href": "/about/selling.html"}]
 ["href", "wgo:about-linking",                  { "href": "/about/linking.html"}]
 ["href", "wgo:about-maintainers",              { "href": "/about/maintainers.html"}]

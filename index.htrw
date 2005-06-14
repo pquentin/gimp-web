@@ -1,4 +1,5 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<link rel="alternate" type="application/rss+xml" title="GIMP News feed" href="http://gimp.org/news.rdf">
 <title>GIMP - The GNU Image Manipulation Program</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->

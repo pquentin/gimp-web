@@ -1,3 +1,9 @@
+2005-06-14  Sven Neumann  <sven@gimp.org>
+
+	* index.htrw: link to news.rdf as an alternate source.
+
+	* admin/gimp-web-urls: added alias for the new merchandise page.
+
 2005-06-09  Sven Neumann  <sven@gimp.org>
 
 	* about/merchandise.htrw: fixed a typo.

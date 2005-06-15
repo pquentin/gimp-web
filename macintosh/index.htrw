@@ -1,9 +1,9 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - for MacOSX</title>
+<title>GIMP - for Mac OS X</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>GIMP for MacOSX</h1>
+<h1>GIMP for Mac OS X</h1>
 
 <p class="images"><img alt="The GIMP" src="TiBookMacGIMP.jpg" /></p>
 

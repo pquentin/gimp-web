@@ -1,3 +1,7 @@
+2005-06-15  Sven Neumann  <sven@gimp.org>
+
+	* macintosh/index.htrw: s/MacOSX/Mac OS X/g
+
 2005-06-14  Sven Neumann  <sven@gimp.org>
 
 	* index.htrw: link to news.rdf as an alternate source.

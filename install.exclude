@@ -24,3 +24,4 @@ CVS
 *.pyc
 /install.config
 /install.config.sample
+/news.rdf

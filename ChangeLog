@@ -1,3 +1,8 @@
+2005-06-18  Raphaël Quinet  <raphael@gimp.org>
+
+	* macintosh/index.htrw: updated link to X11 for Max OS X, as
+	reported by aprilelise13@yahoo.com (fixes bug #305711)
+
 2005-06-17  Raphaël Quinet  <raphael@gimp.org>
 
 	* about/merchandise.htrw: Updated the page to list some vendors of

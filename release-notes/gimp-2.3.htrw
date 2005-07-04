@@ -47,6 +47,33 @@ conflicts with the libraries and at least one version is likely to
 fail.
 </p>
 
+<p>
+You install the new version into a separate prefix, say /opt/gimp-2.3
+by passing <kbd>--prefix=/opt/gimp-2.3</kbd> to the configure
+script. Then, in order to run the binary installed there, you change
+your environment to look for executables in /opt/gimp-2.3/bin by
+setting <kbd>PATH=/opt/gimp-2.3/bin</kbd> and you tell your linker to
+pick up libraries from /opt/gimp-2.3/lib by setting
+<kbd>LD_LIBRARY_PATH=/opt/gimp-2.3/lib</kbd>.  Do not forget to
+<kbd>export</kbd> both variables.
+</p>
+
+<p>
+You can use a tiny wrapper script called gimp-2.3 and place it into
+/usr/local/bin or elsewhere in your PATH. The script would look
+something like this:
+</p>
+
+<pre class="code">
+#!/bin/sh
+PATH=/opt/gimp-2.3/bin:$PATH
+export PATH
+LD_LIBRARY_PATH=/opt/gimp-2.3/lib
+export LD_LIBRARY_PATH
+
+/opt/gimp-2.3/bin/gimp-2.3 "$@"
+</pre>
+
 <h2>Bugs</h2>
 <p>
 If you think you found a bug in a development version, please make

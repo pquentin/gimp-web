@@ -1,5 +1,9 @@
 2005-07-04  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/gimp-2.3.htrw: Added suggestion about how to set
+	up a different prefix for the GIMP, borrowed from the comment in:
+	http://gnomedesktop.org/node/2308/37686
+
 	* nopatents.html: Re-added this file, attempting to stop bad
 	software patents in Europe.
 

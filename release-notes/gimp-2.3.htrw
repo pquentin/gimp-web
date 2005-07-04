@@ -66,6 +66,7 @@ something like this:
 
 <pre class="code">
 #!/bin/sh
+
 PATH=/opt/gimp-2.3/bin:$PATH
 export PATH
 LD_LIBRARY_PATH=/opt/gimp-2.3/lib

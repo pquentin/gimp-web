@@ -60,7 +60,7 @@
 <p>
   The hard part is making the image tilable. The easiest way to do this is to
   offset your image by half its height, and half its width.  Select
-  <span class="filter">&lt;Image&gt; Image -&gt; Transforms -&gt; Offset</span>.
+  <span class="filter">&lt;Image&gt; Layer -&gt; Transform -&gt; Offset</span>.
   Then choose the convient "x/2, y/2" option, and hit OK.  Your image will now
   show what used to be at its edges at the center of the image. The secret to
   making tileable images is to make this transition smooth. 

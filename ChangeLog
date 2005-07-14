@@ -1,7 +1,7 @@
 2005-07-14  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Tileable_Textures/index.htrw: updated menu location of
-	"Offset".
+	"Offset". Removed claim that the example images were clickable.
 
 2005-07-06  Raphaël Quinet  <raphael@gimp.org>
 

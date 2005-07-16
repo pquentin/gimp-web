@@ -1,6 +1,12 @@
 2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
 
-	* admin/gimp-web-urls: wgo:book-gimp_the_official_handbook is no
+	* tutorials/Image_Map/index.htrw: Visibine2 ->
+	Visibone2. Addresses a part of bug 168606.
+
+2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* admin/gimp-web-urls: 
+	* books/index.htrw: wgo:book-gimp_the_official_handbook is no
 	longer http://manual.gimp.org, but we have a copy on the ftp
 	ftp://ftp.gimp.org/pub/gimp/docs/
 

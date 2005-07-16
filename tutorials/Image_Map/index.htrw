@@ -128,7 +128,7 @@ function popup(url, textbox)
   When I awoke, she had solved my dilemma by writing the <a href="bextruder.sh.txt">bextruder shell script</a>.
 </p>
 <p>
-  This puppy takes each line from <a href="Visibone2.txt">Visibone2.txt</a>, gets a color from the <a href="Visibine2">Visibone2</a> 
+  This puppy takes each line from <a href="Visibone2.txt">Visibone2.txt</a>, gets a color from the <a href="Visibone2">Visibone2</a> 
   in your home directory and puts it on the end of the line. Then plops a ')&gt; on the end of that, 
   producing a file called <a href="visibone.html">visibone.html</a>. 
   This didn't work. bex did exactly what I told her to do and I had forgotten a ". The plop at the end should have been a ')"&gt;. 

@@ -1,3 +1,9 @@
+2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* admin/gimp-web-urls: wgo:book-gimp_the_official_handbook is no
+	longer http://manual.gimp.org, but we have a copy on the ftp
+	ftp://ftp.gimp.org/pub/gimp/docs/
+
 2005-07-14  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Tileable_Textures/index.htrw: updated menu location of

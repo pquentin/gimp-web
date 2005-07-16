@@ -308,7 +308,7 @@
 ["height", "wgo:image-book-gimp_esential_reference",  { "height": "151px"}]
 ["alt",    "wgo:image-book-gimp_esential_reference",  { "alt":    "Harford_Alex"}]
 
-["href",   "wgo:book-gimp_the_official_handbook",    { "href":   "http://manual.gimp.org/"}]
+["href",   "wgo:book-gimp_the_official_handbook",    { "href":   "ftp://ftp.gimp.org/pub/gimp/docs/"}]
 ["src",    "wgo:image-book-gimp_the_official_handbook",  { "src":    "/books/gimp_the_official_handbook.png"}]
 ["width",  "wgo:image-book-gimp_the_official_handbook",  { "width":  "100px"}]
 ["height", "wgo:image-book-gimp_the_official_handbook",  { "height": "125px"}]

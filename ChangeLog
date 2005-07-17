@@ -1,5 +1,11 @@
 2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
 
+	* programmatic/downloads/MIRRORS: ftp://gimp.zeta.org.au/ doesn't
+	mirror gimp anymore 
+	ftp://ftp.snt.utwente.nl/ doesn't mirror gimp anymore 
+
+2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
+
 	* tutorials/Image_Map/index.htrw: Visibine2 ->
 	Visibone2. Addresses a part of bug 168606.
 

@@ -28,18 +28,13 @@
   <img src="tut-basic-1.gif" alt="" />
 </p>
 <p>
-  Use the text tool to add some text. You will get a floating layer
+  Use the text tool to add some text. You will get a new text layer
   which you can also see if you look at the layers dialog.  You can
-  use the move tool to move the selection where you want to have
-  it. You can anchor it at the white layer under it by clicking
-  outside of the selection with the move tool still active. You will
-  notice that the pointer changes into a down-arrow when you're
-  outside of the floating selection and into a 4-arrow when inside
-  it. This is to give visual feedback which of the two actions (moving
-  or anchoring) a click will trigger.  You should have one layer with
-  black text on white
-  background. Using <span class="filter">&lt;Image&gt; Layer -&gt;
-  Colors -&gt; Invert</span> you will achieve something like the
+  use the move tool to move the text where you like to have it. Then
+  merge it with the white layer below by choosing <i>Merge Down</i>
+  from the Layer menu. You should now have one layer with black text
+  on white background. Using <span class="filter">&lt;Image&gt; Layer
+  -&gt; Colors -&gt; Invert</span> you will achieve something like the
   picture above.
 </p>
 

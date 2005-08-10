@@ -13,14 +13,16 @@ einer Maske die Auswahl selbst malen musste, erlaubt es SIOX ("Simple
 Interactive Object Extraction"), Vordergrundobjekte wie Portraits von
 Menschen, Tieren oder Pflanzen, mit wenigen Mausklicks halbautomatisch
 pixelgenau zu selektieren. Der Nutzer muss das Objekt seiner Wahl nur
-noch grob mit Hilfe einer Freihandselektion markieren, woraufhin das
-Tool versucht eine genauere Selektion des Objekts vorzunehmen, in dem
-es entscheidet, welche Pixel innerhalb der Auswahl noch zum
-Hintergrund gehören und welche nicht. Durch Hinzufügen von einfachen
-Vordergrund- bzw.  Hintergrund-Pinselstrichen lässt sich das Resultat
-der automatischen Auswahl verfeinern. SIOX wird am Institut für
-Informatik der Freien Universität Berlin entwickelt und war
-ursprünglich für Videoanwendungen konzipiert worden.
+noch grob mit Hilfe einer Freihandselektion markieren und mit einem >
+Vordergrundpinsel kurz über das Objekt streichen. Das Tool versucht
+nun eine genauere Selektion des Objekts vorzunehmen, in dem es
+entscheidet, welche Pixel innerhalb der Auswahl noch zum Hintergrund
+gehören und welche nicht. Durch Hinzufügen von weiteren Vordergrund-
+bzw.  Hintergrund-Pinselstrichen lässt sich das Resultat der
+automatischen Auswahl verfeinern. SIOX wird am Zentrum für Digitale
+Medien (ZDM) am Institut für Informatik der Freien Universität Berlin
+entwickelt und war ursprünglich für Videoanwendungen konzipiert
+worden.
 </p>
 <p>
 Die Version 2.3.3 von GIMP gibt den aktuellen Stand der

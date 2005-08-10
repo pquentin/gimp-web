@@ -29,7 +29,7 @@ release. Some work has already been done on the color management that
 had been announced for the 2.4 release. Using the preferences dialog a
 color profile for the screen can already be specified that GIMP 2.3
 uses to correct the display. In the final release of GIMP 2.4,
-pictures containing color profiles will also be handled.
+pictures containing embedded color profiles will also be handled.
 </p>
 <p>
 Work is also being done on the user interface: The script-fu menu does

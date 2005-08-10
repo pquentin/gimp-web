@@ -1,0 +1,87 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP 2.3.3</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP 2.3.3 macht Extrahieren von Vordergrundobjekten leicht</h1>
+<p>
+Die neue Entwicklerversion 2.3.3 des freien Bildbearbeitungsprogramm
+GIMP enthält nun unter anderem die Vorversion eines neuen
+Selektionstools namens SIOX. Während man sich mit den vorhandenen
+Auswahlwerkzeugen eher langsam an eine Form herantasten oder mittels
+einer Maske die Auswahl selbst malen musste, erlaubt es SIOX ("Simple
+Interactive Object Extraction"), Vordergrundobjekte wie Portraits von
+Menschen, Tieren oder Pflanzen, mit wenigen Mausklicks halbautomatisch
+pixelgenau zu selektieren. Der Nutzer muss das Objekt seiner Wahl nur
+noch grob mit Hilfe einer Freihandselektion markieren, woraufhin das
+Tool versucht eine genauere Selektion des Objekts vorzunehmen, in dem
+es entscheidet, welche Pixel innerhalb der Auswahl noch zum
+Hintergrund gehören und welche nicht. Durch Hinzufügen von einfachen
+Vordergrund- bzw.  Hintergrund-Pinselstrichen lässt sich das Resultat
+der automatischen Auswahl verfeinern. SIOX wird am Institut für
+Informatik der Freien Universität Berlin entwickelt und war
+ursprünglich für Videoanwendungen konzipiert worden.
+</p>
+<p>
+Die Version 2.3.3 von GIMP gibt den aktuellen Stand der
+Entwicklung wieder. Noch sind nicht alle für das nächste
+stabile Release geplanten Features implementiert. Bereits in
+Arbeit ist das für 2.4 angekündigte Farbmanagement.  Wird im
+Einstellungsdialog ein Farbprofil für den Monitor angegeben, so
+nimmt GIMP 2.3 die entsprechende Korrektur bereits vor. Bis zur
+Fertigstellung von GIMP 2.4 sollen dann auch Bilder mit
+Farbprofilen korrekt gehandhabt werden.
+</p>
+<p>
+Gearbeitet wird auch an der Benutzeroberfläche: Das Script-Fu
+Menü ist verschwunden, die Skripte wurden grösstensteils ins
+Filter Menü integriert. Hier wird es noch zu weiteren
+Änderungen kommen, einige werden bereits im Bugtracker
+diskutiert. Ausserdem fallen einige neue Werkzeuge nebem dem
+bereits erwähnten SIOX-Tool auf. Ein neues Rechteck
+Selektionstool ermöglicht es endlich, die Grösse eines einmal
+erstellten Rechtecks zu ändern. Beim Ausrichten von Ebenen hilft
+ein weiteres neues Werkzeug.
+</p>
+<p>
+Auch unter der Oberfläche hat sich einiges getan. Benutzer von
+G4 Prozessoren werden sich über die Beschleunigung durch die
+Verwendung von Altivec Instruktionen freuen. Auch auf den Trend
+zu Hyperthreading und Dualcore CPUs wurde reagiert: Um besser von
+mehreren Prozessoren Gebrauch zu machen wurden einige interne
+Funktionen parallelisiert.
+</p>
+<p>
+Eine detaillierte Liste aller Änderungen seit GIMP 2.2 ist unter
+http://developer.gimp.org/NEWS verfügbar. Ein wenig wird es wohl
+noch dauern, bis die GIMP Entwickler das nächste stabile Release
+präsentieren. Wer nicht so lange warten möchte, kann ja
+schonmal GIMP 2.3.3 ausprobieren. Und wenn es noch schneller
+gehen soll: Hilfe ist immer willkommen! Das muss nicht unbedingt
+programmieren sein, auch für die Pflege der Webseiten, für
+Dokumentation und Übersetzung werden dringend noch Helfer
+gesucht.
+</p>
+
+<p>
+<table>
+<tr>
+<td>GIMP Homepage:</td>
+<td><a href="http://www.gimp.org/">http://www.gimp.org/</a></td>
+</tr>
+
+<tr>
+<td>GIMP User Manual:</td>
+<td><a href="http://docs.gimp.org/">http://docs.gimp.org/</a></td>
+</tr>
+
+<tr>
+<td>SIOX Algorithmus:</td>
+<td><a href="http://www.siox.org/">http://www.siox.org/</a></td>
+</tr>
+</table>
+</p>
+
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

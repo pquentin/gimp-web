@@ -13,22 +13,22 @@ einer Maske die Auswahl selbst malen musste, erlaubt es SIOX ("Simple
 Interactive Object Extraction"), Vordergrundobjekte wie Portraits von
 Menschen, Tieren oder Pflanzen, mit wenigen Mausklicks halbautomatisch
 pixelgenau zu selektieren. Der Nutzer muss das Objekt seiner Wahl nur
-noch grob mit Hilfe einer Freihandselektion markieren und mit einem >
+noch grob mit Hilfe einer Freihandselektion markieren und mit einem
 Vordergrundpinsel kurz über das Objekt streichen. Das Tool versucht
 nun eine genauere Selektion des Objekts vorzunehmen, in dem es
 entscheidet, welche Pixel innerhalb der Auswahl noch zum Hintergrund
 gehören und welche nicht. Durch Hinzufügen von weiteren Vordergrund-
-bzw.  Hintergrund-Pinselstrichen lässt sich das Resultat der
+bzw. Hintergrund-Pinselstrichen lässt sich das Resultat der
 automatischen Auswahl verfeinern. SIOX wird am Zentrum für Digitale
 Medien (ZDM) am Institut für Informatik der Freien Universität Berlin
 entwickelt und war ursprünglich für Videoanwendungen konzipiert
 worden.
 </p>
 <p>
-Die Version 2.3.3 von GIMP gibt den aktuellen Stand der
+Die Version 2.3.3 von GIMP spiegelt den aktuellen Stand der
 Entwicklung wieder. Noch sind nicht alle für das nächste
 stabile Release geplanten Features implementiert. Bereits in
-Arbeit ist das für 2.4 angekündigte Farbmanagement.  Wird im
+Arbeit ist das für 2.4 angekündigte Farbmanagement. Wird im
 Einstellungsdialog ein Farbprofil für den Monitor angegeben, so
 nimmt GIMP 2.3 die entsprechende Korrektur bereits vor. Bis zur
 Fertigstellung von GIMP 2.4 sollen dann auch Bilder mit
@@ -36,20 +36,20 @@ Farbprofilen korrekt gehandhabt werden.
 </p>
 <p>
 Gearbeitet wird auch an der Benutzeroberfläche: Das Script-Fu
-Menü ist verschwunden, die Skripte wurden grösstensteils ins
-Filter Menü integriert. Hier wird es noch zu weiteren
+Menü ist verschwunden, die Skripte wurden größtenteils ins
+Filter-Menü integriert. Hier wird es noch zu weiteren
 Änderungen kommen, einige werden bereits im Bugtracker
 diskutiert. Ausserdem fallen einige neue Werkzeuge nebem dem
-bereits erwähnten SIOX-Tool auf. Ein neues Rechteck
-Selektionstool ermöglicht es endlich, die Grösse eines einmal
+bereits erwähnten SIOX-Tool auf. Ein neues Rechteck-Selektionstool
+ermöglicht es endlich, die Grösse eines einmal
 erstellten Rechtecks zu ändern. Beim Ausrichten von Ebenen hilft
 ein weiteres neues Werkzeug.
 </p>
 <p>
 Auch unter der Oberfläche hat sich einiges getan. Benutzer von
 G4 Prozessoren werden sich über die Beschleunigung durch die
-Verwendung von Altivec Instruktionen freuen. Auch auf den Trend
-zu Hyperthreading und Dualcore CPUs wurde reagiert: Um besser von
+Verwendung von Altivec-Instruktionen freuen. Auch auf den Trend
+zu Hyperthreading- und Dualcore-CPUs wurde reagiert: Um besser von
 mehreren Prozessoren Gebrauch zu machen wurden einige interne
 Funktionen parallelisiert.
 </p>

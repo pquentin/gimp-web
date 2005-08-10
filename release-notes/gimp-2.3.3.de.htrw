@@ -6,8 +6,8 @@
 <h1>GIMP 2.3.3 macht Extrahieren von Vordergrundobjekten leicht</h1>
 <p>
 Die neue Entwicklerversion 2.3.3 des freien Bildbearbeitungsprogramm
-GIMP enthÃ¤lt nun unter anderem die Vorversion eines neuen
-Selektionstools namens SIOX. WÃ¤hrend man sich mit den vorhandenen
+GIMP enthält nun unter anderem die Vorversion eines neuen
+Selektionstools namens SIOX. Während man sich mit den vorhandenen
 Auswahlwerkzeugen eher langsam an eine Form herantasten oder mittels
 einer Maske die Auswahl selbst malen musste, erlaubt es SIOX ("Simple
 Interactive Object Extraction"), Vordergrundobjekte wie Portraits von
@@ -16,50 +16,51 @@ pixelgenau zu selektieren. Der Nutzer muss das Objekt seiner Wahl nur
 noch grob mit Hilfe einer Freihandselektion markieren, woraufhin das
 Tool versucht eine genauere Selektion des Objekts vorzunehmen, in dem
 es entscheidet, welche Pixel innerhalb der Auswahl noch zum
-Hintergrund gehÃ¶ren und welche nicht. Durch HinzufÃ¼gen von einfachen
-Vordergrund- bzw.  Hintergrund-Pinselstrichen lÃ¤sst sich das Resultat
-der automatischen Auswahl verfeinern. SIOX wird am Institut fÃ¼r
-Informatik der Freien UniversitÃ¤t Berlin entwickelt und war
-ursprÃ¼nglich fÃ¼r Videoanwendungen konzipiert worden.
+Hintergrund gehören und welche nicht. Durch Hinzufügen von einfachen
+Vordergrund- bzw.  Hintergrund-Pinselstrichen lässt sich das Resultat
+der automatischen Auswahl verfeinern. SIOX wird am Institut für
+Informatik der Freien Universität Berlin entwickelt und war
+ursprünglich für Videoanwendungen konzipiert worden.
 </p>
 <p>
 Die Version 2.3.3 von GIMP gibt den aktuellen Stand der
-Entwicklung wieder. Noch sind nicht alle fÃ¼r das nÃ¤chste
+Entwicklung wieder. Noch sind nicht alle für das nächste
 stabile Release geplanten Features implementiert. Bereits in
-Arbeit ist das fÃ¼r 2.4 angekÃ¼ndigte Farbmanagement.  Wird im
-Einstellungsdialog ein Farbprofil fÃ¼r den Monitor angegeben, so
+Arbeit ist das für 2.4 angekündigte Farbmanagement.  Wird im
+Einstellungsdialog ein Farbprofil für den Monitor angegeben, so
 nimmt GIMP 2.3 die entsprechende Korrektur bereits vor. Bis zur
 Fertigstellung von GIMP 2.4 sollen dann auch Bilder mit
 Farbprofilen korrekt gehandhabt werden.
 </p>
 <p>
-Gearbeitet wird auch an der BenutzeroberflÃ¤che: Das Script-Fu
-MenÃ¼ ist verschwunden, die Skripte wurden grÃ¶sstensteils ins
-Filter MenÃ¼ integriert. Hier wird es noch zu weiteren
-Ã„nderungen kommen, einige werden bereits im Bugtracker
+Gearbeitet wird auch an der Benutzeroberfläche: Das Script-Fu
+Menü ist verschwunden, die Skripte wurden grösstensteils ins
+Filter Menü integriert. Hier wird es noch zu weiteren
+Änderungen kommen, einige werden bereits im Bugtracker
 diskutiert. Ausserdem fallen einige neue Werkzeuge nebem dem
-bereits erwÃ¤hnten SIOX-Tool auf. Ein neues Rechteck
-Selektionstool ermÃ¶glicht es endlich, die GrÃ¶sse eines einmal
-erstellten Rechtecks zu Ã¤ndern. Beim Ausrichten von Ebenen hilft
+bereits erwähnten SIOX-Tool auf. Ein neues Rechteck
+Selektionstool ermöglicht es endlich, die Grösse eines einmal
+erstellten Rechtecks zu ändern. Beim Ausrichten von Ebenen hilft
 ein weiteres neues Werkzeug.
 </p>
 <p>
-Auch unter der OberflÃ¤che hat sich einiges getan. Benutzer von
-G4 Prozessoren werden sich Ã¼ber die Beschleunigung durch die
+Auch unter der Oberfläche hat sich einiges getan. Benutzer von
+G4 Prozessoren werden sich über die Beschleunigung durch die
 Verwendung von Altivec Instruktionen freuen. Auch auf den Trend
 zu Hyperthreading und Dualcore CPUs wurde reagiert: Um besser von
 mehreren Prozessoren Gebrauch zu machen wurden einige interne
 Funktionen parallelisiert.
 </p>
 <p>
-Eine detaillierte Liste aller Ã„nderungen seit GIMP 2.2 ist unter
-http://developer.gimp.org/NEWS verfÃ¼gbar. Ein wenig wird es wohl
-noch dauern, bis die GIMP Entwickler das nÃ¤chste stabile Release
-prÃ¤sentieren. Wer nicht so lange warten mÃ¶chte, kann ja
+Eine detaillierte Liste aller Änderungen seit GIMP 2.2 ist unter
+<a href="http://developer.gimp.org/NEWS">http://developer.gimp.org/NEWS</a>
+verfügbar. Ein wenig wird es wohl
+noch dauern, bis die GIMP Entwickler das nächste stabile Release
+präsentieren. Wer nicht so lange warten möchte, kann ja
 schonmal GIMP 2.3.3 ausprobieren. Und wenn es noch schneller
 gehen soll: Hilfe ist immer willkommen! Das muss nicht unbedingt
-programmieren sein, auch fÃ¼r die Pflege der Webseiten, fÃ¼r
-Dokumentation und Ãœbersetzung werden dringend noch Helfer
+programmieren sein, auch für die Pflege der Webseiten, für
+Dokumentation und Übersetzung werden dringend noch Helfer
 gesucht.
 </p>
 

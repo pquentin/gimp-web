@@ -90,10 +90,13 @@ class news:
         self.msg.epilogue = ""
         self.valid = True
       elif str(source.__class__) == "<type 'str'>":
-        fd = open(source, "r")
-        self.msg = email.message_from_file(fd)
-        fd.close()
-        self.valid = True
+        if source.endswith('news-blotter') or source.endswith('news.rdf'):
+          self.valid = False
+        else:
+          fd = open(source, "r")
+          self.msg = email.message_from_file(fd)
+          fd.close()
+          self.valid = True
       elif str(source.__class__) == 'email.Message.Message':
         self.msg = source
         self.valid = True

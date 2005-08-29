@@ -72,8 +72,8 @@
 ["href", "mail:People-Henstridge_James",       { "href": "mailto:jamesNOSPAM@daa.com.au"}]
 ["href", "home:People-Henstridge_James",       { "href": "http://www.daa.com.au/~james/"}]
 
-["href", "mail:People-Jensen_Atte_André",      { "href": "mailto:atteNOSPAM@wanadoo.nl"}]
-["href", "home:People-Jensen_Atte_André",      { "href": "http://home.wanadoo.nl/atte/"}]
+["href", "mail:People-Jensen_Atte_AndrÃ©",      { "href": "mailto:atteNOSPAM@wanadoo.nl"}]
+["href", "home:People-Jensen_Atte_AndrÃ©",      { "href": "http://home.wanadoo.nl/atte/"}]
 
 ["href", "mail:People-Jeschke_Eric_R",         { "href": "mailto:ericNOSPAM@redskiesatnight.com"}]
 ["href", "home:People-Jeschke_Eric_R",        { "href": "http://redskiesatnight.com/"}]
@@ -116,11 +116,11 @@
 ["href", "mail:People-Neumann_Sven",           { "href": "mailto:svenNOSPAM@gimp.org"}]
 ["href", "home:People-Neumann_Sven",           { "href": "http://sven.gimp.org/"}]
 
-["href", "mail:People-Pätsi_Ville",            { "href": "mailto:drcNOSPAM@gimp.org"}]
-["href", "home:People-Pätsi_Ville",            { "href": "http://drc.gnome.org/"}]
+["href", "mail:People-PÃ¤tsi_Ville",            { "href": "mailto:drcNOSPAM@gimp.org"}]
+["href", "home:People-PÃ¤tsi_Ville",            { "href": "http://drc.gnome.org/"}]
 
-["href", "mail:People-Quinet_Raphaël",            { "href": "mailto:quinetNOSPAM@gamers.org"}]
-["href", "home:People-Quinet_Raphaël",            { "href": "http://www.gimp.org/~raphael/"}]
+["href", "mail:People-Quinet_RaphaÃ«l",            { "href": "mailto:quinetNOSPAM@gamers.org"}]
+["href", "home:People-Quinet_RaphaÃ«l",            { "href": "http://www.gimp.org/~raphael/"}]
 
 ["href", "mail:People-Romero_Guillermo_S",     { "href": "mailto:famromNOSPAM@infernal-iceberg.com"}]
 ["href", "home:People-Romero_Guillermo_S",     { "href": "http://www.infernal-iceberg.com/gimp/"}]
@@ -362,7 +362,7 @@
 ["href", "tutorial:The_Basics-Jens_Lautenbacher",           { "href": "http://classic.gimp.org/tut-basic.html"}]
 ["href", "tutorial:Straight_Line-Seth_Burgess",             { "href": "http://classic.gimp.org/~sjburges/straightline/straightline.html"}]
 ["href", "tutorial:Borders_On_Selections-Francisco_Bustamante_Hempe",    { "href": "http://bitbit.org/cms.php/gimp/tutorials/stroke_selection.html"}]
-["href", "tutorial:Anti-Aliased_Threshold-Ville_Pätsi",     { "href": "http://drc.gimp.org/"}]
+["href", "tutorial:Anti-Aliased_Threshold-Ville_PÃ¤tsi",     { "href": "http://drc.gimp.org/"}]
 ["href", "tutorial:Bezier_Selections-Tuomas_Kuosmanen",     { "href": "http://tigert.gimp.org/gimp/tutorials/bezier/"}]
 ["href", "tutorial:Quickmask-Zach_Beane",                   { "href": "http://www.xach.com/gimp/tutorials/quickmask/"}]
 ["href", "tutorial:Red_Eye_Removal-Carol_Spears",           { "href": "http://carol.gimp.org/other/sloth/diary/redeye.html"}]
@@ -390,7 +390,7 @@
 
 ["href", "tutorial:Color2BW-Eric_R_Jeschke",                { "href": "http://www.gimpguru.org/"}]
 ["href", "tutorial:Reducing_CCD_Noise-Eric_R_Jeschke",      { "href": "http://www.gimpguru.org/"}]
-["href", "tutorial:CCD_Noise_removal-Atte_André_Jensen",    { "href": "http://home.wanadoo.nl/atte/gimp/"}]
+["href", "tutorial:CCD_Noise_removal-Atte_AndrÃ©_Jensen",    { "href": "http://home.wanadoo.nl/atte/gimp/"}]
 ["href", "tutorial:ContrastMask-Eric_R_Jeschke",            { "href": "http://www.gimpguru.org/"}]
 ["href", "tutorial:Sepia_Toning-Eric_R_Jeschke",            { "href": "http://www.gimpguru.org/"}]
 ["href", "tutorial:Blur_Overlays-Eric_R_Jeschke",           { "href": "http://www.gimpguru.org/"}]

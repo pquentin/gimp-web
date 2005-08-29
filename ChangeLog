@@ -1,3 +1,24 @@
+2005-08-30  Sven Neumann  <sven@gimp.org>
+
+	* nopatents.html
+	* team.htrw
+	* about/authors.htrw
+	* about/linking.htrw
+	* admin/gimp-web-urls
+	* admin/gimp-web-urls-subst
+	* docs/index.htrw
+	* includes/wgo-xhtml-init.xhtml
+	* programmatic/x_xml.py
+	* programmatic/xhtml.py
+	* programmatic/admin/news/howto-news.htrw
+	* programmatic/tools/rewrite_attrs.py
+	* release-notes/gimp-2.3.3.de.htrw
+	* style/wgo.css
+	* tutorials/Anti-Aliased_Threshold/index.htrw
+	* tutorials/Bezier_Selections/index.htrw
+	* tutorials/Drawing_Shapes/index.htrw
+	* tutorials/Selective_Gaussian_Blur/index.htrw: converted to UTF-8.
+
 2005-08-25  Sven Neumann  <sven@gimp.org>
 
 	* links/index.htrw: added gimps.de.

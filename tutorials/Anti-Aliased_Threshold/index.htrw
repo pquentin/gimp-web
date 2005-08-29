@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Anti-Aliased Threshold Tutorial</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mail:People-Pätsi_Ville">Ville Pätsi</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 2002 <a href="mail:People-PÃ¤tsi_Ville">Ville PÃ¤tsi</a> and may not be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
@@ -55,15 +55,15 @@
   in the layers dialog, you get nice results displayed above.
 </p>
 <p>
- The original tutorial can be found <a href="tutorial:Anti-Aliased_Threshold-Ville_Pätsi">here</a>.
+ The original tutorial can be found <a href="tutorial:Anti-Aliased_Threshold-Ville_PÃ¤tsi">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>
       <span id="footerleft">
-       Tutorial &copy; 2002 <a href="home:People-Pätsi_Ville">Ville Pätsi (drc)</a>
+       Tutorial &copy; 2002 <a href="home:People-PÃ¤tsi_Ville">Ville PÃ¤tsi (drc)</a>
       </span>
       <span id="footerright">
-        <a href="mail:People-Pätsi_Ville">drc@gimp.org</a>
+        <a href="mail:People-PÃ¤tsi_Ville">drc@gimp.org</a>
       </span>
     </div>
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

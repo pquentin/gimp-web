@@ -64,7 +64,7 @@ Content-Type: text/plain
 
   <p>
     Currently <tt>multipart/*</tt> messages are not handled.  So simple
-    <tt>text/plain</tt> ISO-8859-1 character set email only.
+    <tt>text/plain</tt> UTF-8 character set email only.
   </p>
   <p>
     Each received message is stored in the directory &lt;news&gt;/pending/

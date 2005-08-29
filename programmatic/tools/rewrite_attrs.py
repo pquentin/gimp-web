@@ -261,7 +261,7 @@ if __name__ == "__main__":
   xhtml = xhtml_parser(args[0], quiet_flag, strip_comments_flag, output)
 
   fp = open(args[0], "r")
-  #sys.stdout.write('<?xml version="1.0" encodings="iso-8859-1" standalone="yes"?>\n')
+  #sys.stdout.write('<?xml version="1.0" encodings="utf-8" standalone="yes"?>\n')
   xhtml.feed(fp.read())
 
   # If there is an output file named on the command line, then

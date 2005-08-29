@@ -222,7 +222,7 @@ def include(filename):
   return (content)
   
 
-def xml(attrs={"version" : "1.0", "encoding" : "iso-8859-1"}):
+def xml(attrs={"version" : "1.0", "encoding" : "utf-8"}):
   return ("<?xml" + x_xml.format_attrs(attrs) + "?>")
     
     

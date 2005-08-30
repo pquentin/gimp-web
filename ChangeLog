@@ -1,5 +1,9 @@
 2005-08-30  Raphaël Quinet  <raphael@gimp.org>
 
+	* index.htrw
+	* mail_lists.htrw: Closed all <link> elements.  This was breaking
+	the validation of the pages.
+
 	* includes/wgo-xhtml-init.xhtml: Removed XML declaration in order
 	to work around a bug in IE: if an XML declaration is present, IE
 	renders the page in quirks mode (old-style HTML) instead of strict

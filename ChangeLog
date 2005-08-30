@@ -1,5 +1,7 @@
 2005-08-30  Raphaël Quinet  <raphael@gimp.org>
 
+	* admin/gimp-web-urls: Replaced lone &'s by &amp;'s.
+
 	* index.htrw
 	* mail_lists.htrw: Closed all <link> elements.  This was breaking
 	the validation of the pages.

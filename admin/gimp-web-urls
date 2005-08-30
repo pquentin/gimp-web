@@ -456,7 +456,7 @@
 ["href", "maillist:GIMP-perl",                      { "href": "http://groups.yahoo.com/group/gimp-perl/"}]
 ["href", "maillist:GIMP-perl-archive",              { "href": "http://groups.yahoo.com/group/gimp-perl/messages"}]
 ["href", "maillist:GIMP-perl-rss",                  { "href": "http://rss.groups.yahoo.com/group/gimp-perl/rss"}]
-["href", "maillist:GIMP-perl-aims-archive",         { "href": "http://marc.theaimsgroup.com/?l=gimp-perl&r=1&w=2"}]
+["href", "maillist:GIMP-perl-aims-archive",         { "href": "http://marc.theaimsgroup.com/?l=gimp-perl&amp;r=1&amp;w=2"}]
 
 ["href", "maillist:SANE-os2",                       { "href": "http://groups.yahoo.com/group/sane-os2/"}]
 ["href", "maillist:SANE-os2-archive",               { "href": "http://groups.yahoo.com/group/sane-os2/messages"}]

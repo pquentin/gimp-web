@@ -1,3 +1,13 @@
+2005-08-30  Raphaël Quinet  <raphael@gimp.org>
+
+	* includes/wgo-xhtml-init.xhtml: Removed XML declaration in order
+	to work around a bug in IE: if an XML declaration is present, IE
+	renders the page in quirks mode (old-style HTML) instead of strict
+	mode (newer XHTML).  This is an incorrect interpretation of the
+	XHTML specs (appendix C) and is exactly the opposite of what one
+	would expect.  Rendering in strict mode improves the IE box model
+	and will allow us to use CSS in a better way.
+
 2005-08-30  Sven Neumann  <sven@gimp.org>
 
 	* nopatents.html

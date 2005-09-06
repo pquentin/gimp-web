@@ -1,5 +1,7 @@
 2005-09-07  Sven Neumann  <sven@gimp.org>
 
+	* index.htrw: added a header link, mainly to force an update.
+
 	* images/rss-gimp-news.png
 	* includes/wgo-page-init.xhtml: added RSS icon for GIMP News feed.
 

@@ -1,3 +1,8 @@
+2005-09-07  Sven Neumann  <sven@gimp.org>
+
+	* images/rss-gimp-news.png
+	* includes/wgo-page-init.xhtml: added RSS icon for GIMP News feed.
+
 2005-08-30  Raphaël Quinet  <raphael@gimp.org>
 
 	* donating/index.htrw: Added missing </p>.

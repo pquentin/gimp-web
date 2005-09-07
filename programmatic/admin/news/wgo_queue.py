@@ -81,7 +81,7 @@ def generate_rdf(queue):
   print >>fp, rdf.title('GIMP News')
   print >>fp, rdf.link('http://' + http_host)
   print >>fp, rdf.description(rdf.quote('Recent gimp.org ' + queue))
-  print >>fp, rdf.pubDate(str(rfc822.formatdate(time())))
+  print >>fp, rdf.pubDate(str(rfc822.formatdate(time.time())))
   #+ string.join(map(lambda n: rdf.item({"resource" : "http://" + http_host}) + "\n", news_items)) + "\n")
   
   map(lambda n: fp.write(str(n.as_rdf())), news_items)

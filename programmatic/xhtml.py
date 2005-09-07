@@ -82,11 +82,10 @@ def quote(s):
 
 def absolutize(s, base):
   """Convert all relative links to absolute links"""
-  if string.count(base, "://"):
-    base_path = re.sub('(.*/).*', '\\1', base)    # extract path portion
-    s = re.sub(
-      "(?im)(<a href=[\"']?)(?!\w+://)(.*?>)", '\\1' + base_path + '\\2', s
-      )
+  base = re.sub('(.*?)/$', '\\1', base)
+  s = re.sub(
+    '(?im)(<a href=["\'])(?!\w+://)(.*?>)', '\\1' + base + '/\\2', s
+    )
   return s
     
 

@@ -1,5 +1,10 @@
 2005-09-07  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/wgo_queue.py (generate_rdf): also use
+	UTC here. Changed the feed title to "GIMP News".
+
+2005-09-07  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/wgo_news.py (news.as_rdf): use
 	calendar.timegm() instead of mktime. The input is in UTC already.
 

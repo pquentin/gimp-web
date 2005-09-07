@@ -163,8 +163,8 @@ class news:
       img = xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]), "alt" : icon_desc_by_name(self["image"])})
       pass
 
-    s += str(xhtml.div(img + xhtml.para(self["body"]), {"class" : "news"}))
-    
+    s += str(xhtml.div(img + as_para(self["body"]), {"class" : "news"}))
+
     return (s)
 
 
@@ -268,3 +268,9 @@ def icon_desc_by_name(name):
   if icon_descs.has_key(name):
     return (icon_descs[name])
   return (icon_descs["Default"])
+
+# Embeds body in para element, but only if needed (FIXME: should be smarter)
+def as_para(body):
+  if body[:3] != '<p>':
+    return xhtml.para(body)
+  return body

@@ -176,8 +176,11 @@ class news:
 
     date = rfc822.formatdate(time.mktime(rfc822.parsedate(xhtml.unescape(self["date"]))))
     s = rdf.item(rdf.title(rdf.quote(self["subject"]))
-                 + rdf.description(rdf.quote(self["body"])) + "\n"
-                 + rdf.link("http://" + http_host) + "\n"
+                 + rdf.description(rdf.quote(xhtml.absolutize(self["body"],
+                                                              "http://" + http_host)))
+                 + "\n"
+                 + rdf.link("http://" + http_host)
+                 + "\n"
                  + rdf.pubDate(rdf.quote(date)))
     return (s)
 

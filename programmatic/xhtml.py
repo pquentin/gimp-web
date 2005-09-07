@@ -32,6 +32,7 @@ import types
 import string
 import sys
 import os
+import re
 import cgi
 import base64
 #from UserDict import *
@@ -78,6 +79,16 @@ def quote(s):
   s = string.replace(s, ">", "&gt;")
   return (s)
 
+
+def absolutize(s, base):
+  """Convert all relative links to absolute links"""
+  if string.count(base, "://"):
+    base_path = re.sub('(.*/).*', '\\1', base)    # extract path portion
+    s = re.sub(
+      """(?im)(<a href=["']?)(?!\w+://)(.*?>)""", '\\1' + base_path + '\\2', s
+      )
+  return s
+    
 
 def character_reference(s):
   s = str(s)

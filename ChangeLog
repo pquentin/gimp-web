@@ -1,5 +1,13 @@
 2005-09-07  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/xhtml.py (absolutize): added this function which is
+	supposed to turn relative links into absolute ones.
+	
+	* programmatic/admin/news/wgo_news.py: use the new function on links
+	in the RSS feed.
+
+2005-09-07  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/wgo_news.py: do not embed body of news
 	entries in <p> element if the entry does already start with <p>.
 	This can be done a lot smarter, feel free to improve...

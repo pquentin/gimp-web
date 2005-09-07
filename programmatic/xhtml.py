@@ -85,7 +85,7 @@ def absolutize(s, base):
   if string.count(base, "://"):
     base_path = re.sub('(.*/).*', '\\1', base)    # extract path portion
     s = re.sub(
-      """(?im)(<a href=["']?)(?!\w+://)(.*?>)""", '\\1' + base_path + '\\2', s
+      "(?im)(<a href=[\"']?)(?!\w+://)(.*?>)", '\\1' + base_path + '\\2', s
       )
   return s
     

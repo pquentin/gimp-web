@@ -174,7 +174,7 @@ class news:
       http_host = os.environ["HTTP_HOST"]
       pass
 
-    date = rfc822.formatdate(time.mktime(rfc822.parsedate(xhtml.unescape(self["date"]))))
+    date = rfc822.formatdate(calendar.timegm(rfc822.parsedate(xhtml.unescape(self["date"]))))
     s = rdf.item(rdf.title(rdf.quote(self["subject"]))
                  + rdf.description(rdf.quote(xhtml.absolutize(self["body"],
                                                               "http://" + http_host)))

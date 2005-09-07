@@ -1,5 +1,10 @@
 2005-09-07  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/wgo_news.py (news.as_rdf): use
+	calendar.timegm() instead of mktime. The input is in UTC already.
+
+2005-09-07  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/xhtml.py (absolutize): added this function which is
 	supposed to turn relative links into absolute ones.
 	

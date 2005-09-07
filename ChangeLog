@@ -1,5 +1,7 @@
 2005-09-07  Sven Neumann  <sven@gimp.org>
 
+	* includes/wgo-page-init.xhtml: specify image size.
+
 	* index.htrw: added a header link, mainly to force an update.
 
 	* images/rss-gimp-news.png

@@ -1,3 +1,8 @@
+2005-09-08  Sven Neumann  <sven@gimp.org>
+
+	* programmatic/admin/news/wgo_news.py (as_para): use a regular
+	expression to handle leading whitespace and uppercase names.
+
 2005-09-07  Sven Neumann  <sven@gimp.org>
 
 	* programmatic/xhtml.py (absolutize): fixed implementation.

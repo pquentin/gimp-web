@@ -274,6 +274,6 @@ def icon_desc_by_name(name):
 
 # Embeds body in para element, but only if needed (FIXME: should be smarter)
 def as_para(body):
-  if body[:3] != '<p>':
-    return xhtml.para(body)
-  return body
+  if re.match('(?i)^\s*<p>', body):
+    return body
+  return xhtml.para(body)

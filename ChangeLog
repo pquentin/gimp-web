@@ -1,3 +1,7 @@
+2005-09-09  Sven Neumann  <sven@gimp.org>
+
+	* includes/wgo-page-init.xhtml: close the <img> element.
+
 2005-09-08  Sven Neumann  <sven@gimp.org>
 
 	* programmatic/admin/news/wgo_news.py (as_para): use a regular

@@ -142,19 +142,32 @@ has lots of GIMP tutorials; most of the texts are in German and English.
 <h2><a name="other"></a>Other Graphics Applications</h2>
 <p>
   <a href="http://www.imagemagick.org/">ImageMagick</a><br />
-  A robust collection of tools and libraries that work at the command line as well.
-</p>
-<p>
-  <a href="http://sketch.sourceforge.net/">Sketch</a><br />
-  A vector drawing program for Unix.
+  A collection of tools and libraries that work at the command line as well.
 </p>
 <p>
   <a href="http://www.newbreedsoftware.com/tuxpaint/">Tux Paint</a><br />
   A drawing program for young children.
 </p>
 <p>
+  <a href="http://www.koffice.org/krita/">Krita</a><br />
+  A painting and image editing application for the KOffice project.
+</p>
+<p>
+  <a href="http://cinepaint.movieeditor.com/">CinePaint</a><br />
+  A image manipulation program with support for higher bit depths than 8 bit
+  per channel. Started from the GIMP 1.0 codebase.
+</p>
+<p>
   <a href="http://www.trilon.com/xv/">XV</a><br />
   One of the original unix graphics applications.
+</p>
+<p>
+  <a href="http://www.skencil.org/">Skencil</a> (formerly known as Sketch)<br />
+  A vector drawing program for Unix.
+</p>
+<p>
+  <a href="http://www.inkscape.org/">Inkscape</a><br />
+  Another vector drawing program for Unix.
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

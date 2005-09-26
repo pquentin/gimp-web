@@ -1,2 +1,2 @@
-export HTDOCS_DIR=/www/gimp.gui.org/htdocs
-export DATA_DIR=/www/gimp.gui.org/data
+export HTDOCS_DIR=/home/wgo/htdocs
+export DATA_DIR=/home/wgo/data

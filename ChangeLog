@@ -1,5 +1,7 @@
 2005-09-26  Sven Neumann  <sven@gimp.org>
 
+	* downloads/index.htrw: fixed typo.
+
 	* admin/gimp-web-urls
 	* books/guia_do_usuario.png
 	* books/index.htrw: added book by André Milani.

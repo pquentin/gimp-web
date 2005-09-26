@@ -61,11 +61,9 @@ MD5 sum of the latest released tarballs:
 
 <h2>Development version</h2>
 
-<p>GIMP 2.3.4, is a snapshot of current development towards GIMP
-2.4. The source code is available from
-<a href="ftp://ftp.gimp.org/pub/gimp/v2.3/">ftp://ftp.gimp.org/pub/gimp/v2.3/</a>.
-Please make sure you read the
-<a href="wgo:release-notes-development">Release Notes for GIMP 2.3</a>.
+<p>GIMP 2.3.4 is a snapshot of current development towards GIMP 2.4. The
+source code is available from <a href="ftp://ftp.gimp.org/pub/gimp/v2.3/">ftp://ftp.gimp.org/pub/gimp/v2.3/</a>. Please make sure you read the <a
+href="wgo:release-notes-development">Release Notes for GIMP 2.3</a>.
 </p>
 
 <p>A detailed list of changes in the development branch is available

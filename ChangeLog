@@ -1,3 +1,7 @@
+2005-09-26  Manish Singh  <yosh@gimp.org>
+
+	* books/index.htrw: close img tag.
+
 2005-09-26  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: fixed typo.

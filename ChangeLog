@@ -1,3 +1,9 @@
+2005-09-27  Sven Neumann  <sven@gimp.org>
+
+	* admin/gimp-web-urls
+	* books/guia_do_usuario.png: scaled to the same size as the other
+	book covers.
+
 2005-09-26  Sven Neumann  <sven@gimp.org>
 
 	* install.config.sample: applied patch from Joachim Noreiko.

@@ -292,8 +292,8 @@
 
 ["href",   "wgo:book-guia_do_usuario",    { "href":     "http://www.novatec.com.br/livros/gimp"}]
 ["src",    "wgo:image-book-guia_do_usuario",  { "src":    "/books/guia_do_usuario.png"}]
-["width",  "wgo:image-book-guia_do_usuario",  { "width":  "145px"}]
-["height", "wgo:image-book-guia_do_usuario",  { "height": "204px"}]
+["width",  "wgo:image-book-guia_do_usuario",  { "width":  "100px"}]
+["height", "wgo:image-book-guia_do_usuario",  { "height": "141px"}]
 ["alt",    "wgo:image-book-guia_do_usuario",  { "alt": "Andre Milani"}]
 
 ["href",   "wgo:book-a_la_sos_gimp",    { "href":       "http://www.le-radar.com"}]

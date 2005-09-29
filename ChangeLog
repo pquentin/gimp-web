@@ -165,7 +165,6 @@
 	* admin/gimp-web-urls: added RSS feeds for some mailing lists.
 	Addresses parts of bug 306160.
 
->>>>>>> 1.855
 2005-07-19  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/The_Basics/index.htrw: the text tool doesn't create

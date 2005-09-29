@@ -88,8 +88,8 @@
 </p>
 <p>
   Now time for decisions and simple maths. Basically the concept is
-  to decide if you want to base all Tile Cache in RAM, or RAM plus
-  operating system swap:
+  to decide if you want to base all Tile Cache in free RAM, or free RAM
+  plus operating system free swap:
 </p>
 <ol>
   <li>
@@ -103,12 +103,15 @@
   </li>
   <li>
     Does operating system swap live in the same physical disk than
-    GIMP swap? If so, add RAM and swap. Otherwise check next.
+    GIMP swap? If so, use RAM and swap, as this way you will try to keep
+    disk access over a fixed, compact, area for more time. Otherwise
+    check next.
   </li>
   <li>
     The disk that holds the swap is faster or same speed than the disk
     that holds the GIMP swap? If slower, take only free RAM, if faster
-    or similar, add free RAM and swap.
+    or similar, use free RAM and swap. This way we avoid a slow disk when
+    there is a fast one doing nothing.
   </li>
   <li>
     You got a number, be it just the free RAM or the free RAM plus the
@@ -132,8 +135,10 @@
 </p>
 <p>
   Other reason to change the value is because you detect it goes too slowly
-  inside GIMP but changing to other applications is fast, or maybe you
-  get complaints from other applications about not having enough memory.
+  inside GIMP but changing to other applications is fast, which probably
+  means tile size is too low. Or maybe you get complaints from other
+  applications about not having enough memory, so probably better lower
+  tile size if it is not already really small.
 </p>
 <p>
   If you decided to use only RAM and it goes slow, you could try
@@ -149,18 +154,43 @@
   stop using lots of programs at the same time, you can not expect to
   edit a poster in a computer with 16MB and be fast.
 </p>
+<p>
+  On a side note: you can make your title or status bar show the memory
+  usage (if not already doing so). That is the simplest way to keep an eye
+  on how much memory you are using per image, and thus see what is the typical
+  usage you get or if a image is just an exception and not worth the hassle
+  of changing values.
+</p>
+
 
 <h3>Some info about GIMP memory usage.</h3>
 <p>
-  You can also check what memory requirements your images have. The
-  bigger the images and the number of undos, the more resources you
+  You can check what memory requirements your images have in advance.
+  The bigger the images and the number of undos, the more resources you
   need. This is another way to choose a number, but it is only good if
   you always work in the same kind of images, and thus the real
-  requirements do not vary. It is also good to know if you will
-  require more RAM and/or disk space.
+  requirements do not vary. It is also good to know if you will require
+  more RAM and/or disk space so you can go shopping for hardware with
+  a better idea of what you need (lots of RAM vs not so much RAM and better
+  get a faster CPU, for example).
 </p>
 <p>
-  Evil formulas go here.
+  First is the memory for the pixel data. Each layer requires layer width
+  * layer height * 3 bytes for RGB background without alpha or * 4 for RGB
+  layers with alpha. In general and to simplify, take the * 4, as for some
+  filters you will require to add alpha to the background, and in any case
+  math are simple if you do not have to remember to treat a layer specially.
+</p>
+<p>
+  Then GIMP needs to know the selection, which is a width * height of
+  the total image. Next, the composed image, which is what you see in
+  your work windows, requires image width * height * 4. You can
+  combine these two values as image width * height * 5.
+</p>
+<p>
+  Last, there is some overhead GIMP needs to know where pixels are stored,
+  so round the number up or add a 5-10% to be in safe side. For medium
+  and big images, what really counts is the pixel related memory.
 </p>
 
 <!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->

@@ -3,22 +3,74 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>Sponsors</h1>
+<h1>Donors</h1>
 <p>
   The GIMP team would like to thank all the sponsors for all
   the help with contributions they have given GIMP. Thank you!
 </p>
 
-<h2>Gold Sponsors</h2>
+<h2>Philanthropist</h2>
 <p class="images">
-  <a href="http://www.fsf.org/"><img src="gnu-head-sm.jpg" alt="Free Software Foundation" /></a>
+  <img src="LarsMathiassen.png" alt="Lars Mathiassen" /><br/>
+  <img src="HiroyukiIkezoe.png" alt="Hiroyuki Ikezoe" />
+</p>
+
+<h2>Patron</h2>
+<p class="images">
+  <a href="http://www.backupassist.com/"><img src="ba.png" alt="BackupAssist" /></a><br/>
+  <img src="ShawnCollier.png" alt="Shawn Collier" /><br/>
+  <a href="http://www.fsf.org/"><img src="gnu-head-sm.jpg" alt="Free Software Foundation" /></a><br/>
   <a href="http://www.oreilly.com/"><img src="oreilly.jpg" alt="O'Reilly" /></a>
 </p>
 
-<h2>Bronze Sponsors</h2>
+<h2>Sponsor</h2>
 <p class="images">
+  <img src="AdrianLikins.png" alt="Adrian Likins" /><br/>
+  <a href="http://distrowatch.com/"><img src="dw.png" alt="Distrowatch" /></a><br/>
   <a href="http://www.macgimp.org/"><img src="wilber-macgimp.png" alt="MacGIMP" /></a>
-  <a href="http://distrowatch.com/"><img src="dw.png" alt="Distrowatch" /></a>
+</p>
+
+<h2>Associate</h2>
+<p>
+  Peter Jensen,
+  James Yenne,
+  Roger Mattson,
+  Jonathan Grant,
+  Peter Kupec,
+  Lex Biesenbeek,
+  Soeren Fanoe,
+  Thomas Zehetner-Schatzl,
+  Eric Pierce,
+  Ken Colette,
+  Cedric Gemy,
+  Jaral Kijkanjanapaiboon,
+  Margaret Wong,
+  Barton Woolery,
+  Gordon Rios,
+  Nathaniel Friedman,
+  Tord Lindner,
+  Marco Candrian,
+  Mark Slagell,
+  Manuel Schuhmacher,
+  Jared Stookey,
+  Darren Dale,
+  James Eadon,
+  Yasuhisa Minagawa,
+  Wayne Harris,
+  Jay Patel,
+  Curdegn Bandli,
+  Reinhard Moser,
+  Adrian Ulrich,
+  Reinhard Lehar,
+  David Kuntz,
+  Cristopher Eisley,
+  John Woltman,
+  Nigel Ecclesfield.
+</p>
+
+<h2>Friend</h2>
+<p>
+  Thanks to people who made small donations - you are numerous!
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

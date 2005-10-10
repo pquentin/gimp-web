@@ -1,3 +1,10 @@
+2005-10-10  Karine Delvare  <kdelvare@nerim.net>
+
+	* admin/gimp-web-urls
+	* books/index.htrw
+	* the_gimp_2_2_pour_pc_mac_et_linux.png: applied patch from Joachim Noreiko
+	to add book by Julien Pons.
+
 2005-10-09  Karine Delvare  <kdelvare@nerim.net>
 
 	* donating/AdrianLikins.png

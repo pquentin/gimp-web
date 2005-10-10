@@ -290,6 +290,12 @@
 ["alt",    "wgo:image-about-splash-unknown",  { "alt":    "unknown"}]
 
 
+["href",   "wgo:book-the_gimp_2_2_pour_pc_mac_et_linux",    { "href":       "http://www.p-n.fr/julienpons/"}]
+["src",    "wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux",  { "src":    "/books/the_gimp_2_2_pour_pc_mac_et_linux.png"}]
+["width",  "wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux",  { "width":  "100px"}]
+["height", "wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux",  { "height": "117px"}]
+["alt",    "wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux",  { "alt": "Pons_Julien"}]
+
 ["href",   "wgo:book-guia_do_usuario",    { "href":     "http://www.novatec.com.br/livros/gimp"}]
 ["src",    "wgo:image-book-guia_do_usuario",  { "src":    "/books/guia_do_usuario.png"}]
 ["width",  "wgo:image-book-guia_do_usuario",  { "width":  "100px"}]

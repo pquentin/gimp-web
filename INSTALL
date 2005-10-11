@@ -4,16 +4,18 @@ Installation instructions for gimp-web module
 Below you will find the options and steps needed to build and test the gimp-web
 module for work in HEAD branch.
 
+Should you need more detailed instructions, have a look at Wilber's Wiki:
+http://wiki.gimp.org/gimp/GettingStartedWithGimpWeb
+
 To be able to build the site you will need a few things installed and running
 in a correct way to test the site, the list below tells you the dependencies
 needed to test the site.
 
   1. Apache with SSI support. The site uses SSI to use include files in the
-  html files. For SSI instructions go to this website:
-  http://scizzo.gimp.org/gnu-linux/howto/apache_ssi.html
+  html files. 
 
   To get a real life example of a httpd.conf file with SSI support you can also
-  look at: http://www.gimp.org/admin/howto.html
+  look at: http://wiki.gimp.org/gimp/GettingStartedWithGimpWeb/HttpdConfExample
 
   2. Python 2.2 or better. The build system uses Python for the main build.
 
@@ -29,6 +31,12 @@ Username below means the username you will use on the machine.
 
   % chown -R apache . ; PYTHON=python2.2 ./install.sh /home/wgo ; chown -R
     username .
+
+Note that you don't need to be root, the chown is simply to enable the
+news and the contest stuff to work. If you don't care about these, you
+can just run:
+
+  % PYTHON=python2.2 ./install.sh /home/wgo
 
 The site will now be installed and should be available with html files in
 /home/wgo directory. To be able to test the things being changed in the

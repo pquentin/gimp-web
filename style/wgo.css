@@ -108,11 +108,15 @@ div.news img {
     padding: 0em 1em 0em 0em;
 }
 
-p.images img {
+p.images img, p.logos img {
   border: none;
 }
 
-p.images {
+p.logos img {
+  margin: 5px 15px;
+}
+
+p.images, p.logos {
   text-align: center;
 }
 

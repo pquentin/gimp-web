@@ -10,23 +10,23 @@
 </p>
 
 <h2>Philanthropist</h2>
-<p class="images">
-  <img src="LarsMathiassen.png" alt="Lars Mathiassen" /><br/>
+<p class="logos">
+  <img src="LarsMathiassen.png" alt="Lars Mathiassen" />
   <img src="HiroyukiIkezoe.png" alt="Hiroyuki Ikezoe" />
 </p>
 
 <h2>Patron</h2>
-<p class="images">
-  <a href="http://www.backupassist.com/"><img src="ba.png" alt="BackupAssist" /></a><br/>
-  <img src="ShawnCollier.png" alt="Shawn Collier" /><br/>
-  <a href="http://www.fsf.org/"><img src="gnu-head-sm.jpg" alt="Free Software Foundation" /></a><br/>
+<p class="logos">
+  <a href="http://www.fsf.org/"><img src="gnu-head-sm.jpg" alt="Free Software Foundation" /></a>
   <a href="http://www.oreilly.com/"><img src="oreilly.jpg" alt="O'Reilly" /></a>
+  <a href="http://www.backupassist.com/"><img src="ba.png" alt="BackupAssist" /></a>
+  <img src="ShawnCollier.png" alt="Shawn Collier" />
 </p>
 
 <h2>Sponsor</h2>
-<p class="images">
-  <img src="AdrianLikins.png" alt="Adrian Likins" /><br/>
-  <a href="http://distrowatch.com/"><img src="dw.png" alt="Distrowatch" /></a><br/>
+<p class="logos">
+  <img src="AdrianLikins.png" alt="Adrian Likins" />
+  <a href="http://distrowatch.com/"><img src="dw.png" alt="Distrowatch" /></a>
   <a href="http://www.macgimp.org/"><img src="wilber-macgimp.png" alt="MacGIMP" /></a>
 </p>
 

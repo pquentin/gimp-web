@@ -1,3 +1,8 @@
+2005-10-13  Karine Delvare  <kdelvare@nerim.net>
+
+	* donating/sponsors.htrw
+	* style/wgo.css: reordered sponsors and improved logos layout.
+
 2005-10-11  Carol Spears  <carol@gimp.org>
 
 	* applied patch from Karine Delvare that fixes the INSTALL file from

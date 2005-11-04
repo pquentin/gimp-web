@@ -1,5 +1,9 @@
 2005-11-04  Sven Neumann  <sven@gimp.org>
 
+	* downloads/index.htrw: updated for 2.3.5 release.
+
+2005-11-04  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/Makefile
 	* programmatic/admin/news/icons/lgm-banner-small.png: added news
 	icon for the Libre Graphics Meeting.

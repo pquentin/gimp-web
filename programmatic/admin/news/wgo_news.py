@@ -224,6 +224,7 @@ icons = {
   "Default"                    : "gimp_construction.png", # must be present
   "Developer"                  : "gimp_code.png",
   "Developer Release"          : "release-dev.png",
+  "Libre Graphics Meeting"     : "lgm-banner-small.png",
   "Release"                    : "release-0.1.png",
   "Wilber the Painter"         : "wilber_painter.png",
   "Wilber the Wizard"          : "wilber_wizard.png",
@@ -259,6 +260,7 @@ icon_descs = {
   "construction"      : "[Wilber the Builder]",
   "developer"         : "[Developers]",
   "developer-release" : "[Developer Release]",
+  "lgm-banner-small"  : "[Libre Graphics Meeting]",
   "release"           : "[Release]",
   "wilber_painter"    : "[Wilber the Painter]",
   "wilber_wizard"     : "[Wilber the Wizard]",

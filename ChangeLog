@@ -1,3 +1,11 @@
+2005-11-04  Sven Neumann  <sven@gimp.org>
+
+	* programmatic/admin/news/Makefile
+	* programmatic/admin/news/icons/lgm-banner-small.png: added news
+	icon for the Libre Graphics Meeting.
+	
+	* programmatic/admin/news/wgo_news.py: register it.
+
 2005-10-28  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for gimp-gap 2.2.0 release.

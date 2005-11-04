@@ -77,6 +77,7 @@ install-news: all
 	if [ ! -d "`${PYTHON} -c 'import news_config; print news_config.icon_path'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; print news_config.icon_path'`; fi
 	install icons/gimp_code.png              `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/gimp_construction.png      `${PYTHON} -c 'import news_config; print news_config.icon_path'`
+	install icons/lgm-banner-small.png       `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/release-0.1.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/release-dev.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/wilber_eeek.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`

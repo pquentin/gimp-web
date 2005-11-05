@@ -1,3 +1,8 @@
+2005-11-05  Sven Neumann  <sven@gimp.org>
+
+	* index.htrw
+	* about/index.htrw: use "GIMP" instead of "The GIMP".
+
 2005-11-04  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.3.5 release.
@@ -1131,8 +1136,8 @@
 
 2004-08-06  Niklas M <scizzo@gimp.org>
 
-	* docs/index.htrw: Changed the name of "The GIMP Documentation" to "The GIMP
-	User Manual". Closes bug #149343
+	* docs/index.htrw: Changed the name of "The GIMP Documentation" to
+	"The GIMP User Manual". Closes bug #149343
 
 2004-08-06  Sven Neumann  <sven@gimp.org>
 

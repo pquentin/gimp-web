@@ -1,10 +1,10 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - About the GIMP</title>
+<title>GIMP - About GIMP</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>About the GIMP</h1>
-<h2>Introduction to The GIMP</h2>
+<h1>About GIMP</h1>
+<h2>Introduction</h2>
 <p>
   GIMP is an acronym for GNU Image Manipulation Program. It
   is a freely distributed program for such tasks
@@ -40,33 +40,33 @@
     <li><a href="Wilber_Construction_Kit_XP.xcf.gz">The latest Construction Kit</a></li>
   </ul>
   
-<h2>The GIMP Authors, Contributors, &amp; Maintainers</h2>
+<h2>GIMP Authors, Contributors, &amp; Maintainers</h2>
   <ul>
     <li><a href="wgo:about-authors">Authors and Contributors</a></li>
     <li><!-- a href="wgo:about-maintainers" -->Maintainers<!-- /a --></li>
     <li><!-- a href="wgo:about-maintainers-plugins" -->Plug-in Maintainers<!-- /a --></li>
   </ul>
-<h2>The GIMP On the Web</h2>
+<h2>GIMP On the Web</h2>
   <ul>
     <li><a href="online:flamingtext">Flaming Text Logo Generator</a></li>
     <li><a href="online:cooltext">Cooltext Logo Generator</a></li>
     <li><!-- a href="online:fu_gen" -->Fu_GEN<!-- /a --></li>
   </ul>
-<h2>The GIMP In Film</h2>
+<h2>GIMP In Film</h2>
   <ul>
     <li><a href="http://www.linuxjournal.com/article.php?sid=6148">Linux and <i>Scooby-Doo</i></a></li>
   </ul>
-<h2>The GIMP In Medicine &amp; Science</h2>
+<h2>GIMP In Medicine &amp; Science</h2>
   <ul>
     <li><a href="http://lists.xcf.berkeley.edu/lists/gimp-developer/2001-August/005513.html">Particle Size Analysis</a></li>
   </ul>
-<h2>The GIMP In the Computer World</h2>
+<h2>GIMP In the Computer World</h2>
   <ul>
-    <li><a href="http://www.advogato.org/article/550.html">The GIMP Transcends Bias</a></li>
+    <li><a href="http://www.advogato.org/article/550.html">GIMP Transcends Bias</a></li>
   </ul>
-<h2>The GIMP In Commercial Art</h2>
+<h2>GIMP In Commercial Art</h2>
   <ul>
-    <li><a href="http://lists.xcf.berkeley.edu/lists/gimp-user/2002-June/004709.html">The GIMP makes book covers</a></li>
+    <li><a href="http://lists.xcf.berkeley.edu/lists/gimp-user/2002-June/004709.html">GIMP makes book covers</a></li>
   </ul>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

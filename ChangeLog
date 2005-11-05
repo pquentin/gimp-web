@@ -3,6 +3,7 @@
 	* index.htrw
 	* about/index.htrw
 	* about/introduction.htrw
+	* tutorials/index.htrw
 	* includes/*.xhtml
 	* release-notes/gimp-2.2.htrw: use "GIMP" instead of "The GIMP".
 

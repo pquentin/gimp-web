@@ -14,7 +14,7 @@
 
 <h2><a name="Beginner"></a>Beginner</h2>
 <p>
-  <a href="Lite_Quickies/">GIMPLite Quickies</a>  Use The GIMP for your graphics
+  <a href="Lite_Quickies/">GIMPLite Quickies</a>  Use GIMP for your graphics
   needs without learning advanced computer graphics methods.
 </p>
 <p>
@@ -29,7 +29,7 @@
   the selection tools to draw simple or complex shapes.
 </p>
 <p>
-  <a href="Bezier_Selections/">Paths (Bezier Selections)</a>  Use paths (bezier curves) like The GIMP Masters do.
+  <a href="Bezier_Selections/">Paths (Bezier Selections)</a>  Use paths (bezier curves) like the GIMP Masters do.
 </p>
 <p>
   <a href="Quickmask/">Quickmask</a> Use Quickmask to make a vignette of your photos.
@@ -40,7 +40,7 @@
 </p>
 <p>
   <a href="Straight_Line/">Straight Line Tutorial</a>  'Tis somewhat rude. Perhaps the
-  exact right frame of mind which to approach The GIMP with though, at least 
+  exact right frame of mind which to approach GIMP with though, at least 
   the first few times ....
 </p>
 
@@ -172,13 +172,13 @@
   scripts.
 </p>
 <p>
-  <a href="Basic_Batch/">GIMP Batch Mode</a> A basic instruction about batch mode and The GIMP.
+  <a href="Basic_Batch/">GIMP Batch Mode</a> A basic instruction about batch mode and GIMP.
 </p>
 <p>
-  <a href="Basic_Scheme/">GIMP Script-Fu</a> Write Scheme for The GIMP.
+  <a href="Basic_Scheme/">GIMP Script-Fu</a> Write Scheme for GIMP.
 </p>
 <p>
-  <a href="Basic_Scheme2/">GIMP Script-Fu 2</a> Another Write Scheme for The GIMP.
+  <a href="Basic_Scheme2/">GIMP Script-Fu 2</a> Write More Scheme for GIMP.
 </p>
 
 <p class="navindex">[<a href="#Beginner">Beginner</a>

@@ -1,7 +1,10 @@
 2005-11-05  Sven Neumann  <sven@gimp.org>
 
 	* index.htrw
-	* about/index.htrw: use "GIMP" instead of "The GIMP".
+	* about/index.htrw
+	* about/introduction.htrw
+	* includes/*.xhtml
+	* release-notes/gimp-2.2.htrw: use "GIMP" instead of "The GIMP".
 
 2005-11-04  Sven Neumann  <sven@gimp.org>
 

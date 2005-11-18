@@ -69,10 +69,10 @@ Options:
 <p>
   This simple script takes a filename and some numeric parameters. It
   opens the respective file, applies the Unsharp Mask filter and saves
-  the image again (be careful, for the sake of the simplicity this
-  script overwrites the original image!). It does all this w/o any user
-  interaction, so we can run it without any user interface. In order to
-  do that, save the script with the .scm extension in the
+  the image again (be careful, for the sake of simplicity this script
+  overwrites the original image). It does all this w/o any user
+  interaction, so we can run it without any user interface. In order
+  to do that, save the script with the .scm extension in the
   <strong>~/.gimp-2.2/scripts</strong> directory. Then run it like this:
 </p>
 <pre class="code">

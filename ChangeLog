@@ -1,3 +1,8 @@
+2005-11-18  Simon Budig  <simon@gimp.org>
+
+	* tutorials/Basic_Batch/index.htrw: added a warning that the
+	simple example overwrites the original image.
+
 2005-11-15  Karine Delvare  <kdelvare@nerim.net>
 
 	* donating/sponsors.htrw: added Gimp-fr.org

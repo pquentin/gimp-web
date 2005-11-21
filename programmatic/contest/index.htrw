@@ -39,11 +39,14 @@
 
   <h3>Submissions</h3>
   <p>
-    You can view all the submissions in the
-    <a href="/contest/gallery.cgi">contest gallery page</a>. If you personally
-    like some of the other entries better, you can always choose whichever
-    you like and save it as ~/.gimp-2.2/gimp-splash.png or save several into your  
-    ~/.gimp-2.2/splashes/  directory to customize your GIMP.
+    Submit your splash image here: <a href="/contest/contest.cgi">Splash Submission Form</a>. The contest will be open until Sunday the
+    27th of November, at which point the winner will be announced and
+    committed to CVS.
+  </p>
+
+  <p>
+    You can view the submissions so far at the
+    <a href="/contest/gallery.cgi">contest gallery page</a>.
   </p>
 
   <h3>Good luck!</h3>

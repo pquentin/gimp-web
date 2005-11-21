@@ -1,38 +1,40 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GNOME - Splash Contest</title>
+<title>GIMP - 10th Anniversary Splash Contest</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>GNOME Splash Contest</h1>
+<h1>GIMP 10th Anniversary Splash Contest</h1>
 
   <p>
-    With the imminent release of the GNOME 2.10, the time has come
-    to find the ideal splash screen to go with it. Now is your
-    chance to join the ranks of the precious few who have had their 
-    artwork associated with a major release of the GNOME! 
+    It is <a 
+    href="http://groups.google.com/group/comp.os.linux.development.apps/msg/b5a9a98ef1e9fd4d?hl=en&">GIMP's Tenth Anniversary</a>
+    and close enough to the time for the 2.2.10 release of stable GIMP making it a very good time for a splash
+    contest.  This contest is very simple.  We are collecting images with tutorials and when it is all
+    done, the GIMP's Lead Developers will pick the one they find most appropriate. 
   </p>
 
-  <h3>Contest Results</h3>
+  <h3>Contest Requirements</h3>
   <p>
-    The contest is now closed. Thanks to everyone who submitted entries. In
-    just a few days, we gathered 262 entries - a tribute to the
-    popularity and success of GNOME. There were many high quality entries
-    which made choosing a final splash screen very difficult. However, a
-    decision had to be made, so, the splash screen chosen is:
+    New for this contest, is the requirement that a tutorial accompany your image.
+    The tutorials should have a text or html file that describes the steps you 
+    took and the plug-ins that you used to make your image with GIMP.  Screenshots are optional but will
+    be appreciated.  The tutorials files should be archived in either the zip format (.zip) or  in a gzipped
+    tarball (.tar.gz or .tgz).  All of these tutorials will be considered for a place in the www.gimp.org
+    tutorials.  Please provide your name and a valid email address so we can contact you if you are one
+    of the splash image winners and we find a teeshirt for you or if we need to get permission to use your
+    tutorial on the web site.
   </p>
-  <img src="/contest/images/gnome-final.png" alt="contest winner image" width="450" height="300">
   <p>
-    Thanks to Sami &quot;alump&quot; Viitanen for this wonderful splash screen.
+    Images should be in the Portable Network Graphic format (.png).  The template that jimmac made for
+    the last contest is <a 
+    href="template.xcf.bz2">available for use as a size guide</a>.  The image should contain 50 pixels of
+    somewhat solid color in the lower portion of the image for the text to scroll on.  The template is
+    300x290 pixels however, the last winner was not that size.  Use your best judgement.  There is no
+    way to know what those developers will like, so make an image that you like.
   </p>
   <p>
-    Here are some of the reasons it was chosen:
-
-    <ul>
-    <li>GNOME is growing fast, and it becomes more mature than ever after every release. The splash screen shows this with the height chart style background.</li>
-    <li>The colour scheme and design is clean and simple.</li>
-    <li>No English text: think localisation, all entries with texts such as &quot;loading&quot; &quot;blahblah&quot; would be no good for non-english users.</li>
-    <li>A matter of taste of the people running this contest.</li>
-    </ul>
+    If you have been wondering why no one does this or that beautiful effect with GIMP, now is your 
+    chance to show and tell.  Thank you for your consideration.
   </p>
 
   <h3>Submissions</h3>
@@ -40,11 +42,11 @@
     You can view all the submissions in the
     <a href="/contest/gallery.cgi">contest gallery page</a>. If you personally
     like some of the other entries better, you can always choose whichever
-    you like and set the appropriate GConf key to customize your splash.
+    you like and save it as ~/.gimp-2.2/gimp-splash.png or save several into your  
+    ~/.gimp-2.2/splashes/  directory to customize your GIMP.
   </p>
 
-  <!-- <h3>Good luck!</h3> -->
-
+  <h3>Good luck!</h3>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

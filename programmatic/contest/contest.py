@@ -31,6 +31,8 @@ import stat
 import sys
 import time
 import types
+import tarfile
+import zipfile
 import cgi
 import cgitb; cgitb.enable()
 
@@ -112,15 +114,15 @@ def submit_manually(args):
 
 
 def submit(form):
-  wgo_contest.folio_init("GNOME Splash Image Contest Submission")
+  wgo_contest.folio_init("GIMP 10th Anniversary Contest Submission")
   
   image = 'images/gimp-splash.png'
   author = "Wilber Gimp"
   email = "wilber@gimp.org"
 
-  print xhtml.h1("GNOME Splash Image Contest", {"class" : "heading"})
+  print xhtml.h1("GIMP 10th Anniversary Contest", {"class" : "heading"})
   #xhtml.div(thumb, {"class": "splash-thumb", "style" : "float: right; margin-left: 1em;"})
-  print xhtml.para("""Welcome to the GNOME 2.10 splash image contest.
+  print xhtml.para("""Welcome to the www.gimp.org 10th Anniversary Splash Contest.
   From here you may submit images to be considered as candidates
   for a splash image.""")
 
@@ -132,10 +134,11 @@ def submit(form):
   thumb = wgo_contest.image_generate("Your Image Here", image, "Wilber", "wilber@gimp.org")
 
   fields = (xhtml.table.init({"cellspacing" : 0})
-            + row(cell("File name:",     {"style" : "font-weight: bold"}) + cell(xhtml.input.file({"name" : "image"})))
+            + row(cell("Image File name:",     {"style" : "font-weight: bold"}) + cell(xhtml.input.file({"name" : "image"})))
             + row(cell("Title:",         {"style" : "font-weight: bold"}) + cell(xhtml.input.text({"name" : "title"})))
             + row(cell("Artist's Name:", {"style" : "font-weight: bold"}) + cell(xhtml.input.text({"name" : "author"})))
-            + row(cell("Artists Email:", {"style" : "font-weight: bold"}) + cell(xhtml.input.text({"name" : "email"})))
+            + row(cell("Artist's Email:", {"style" : "font-weight: bold"}) + cell(xhtml.input.text({"name" : "email"})))
+            + row(cell("Tutorial File name:",     {"style" : "font-weight: bold"}) + cell(xhtml.input.file({"name" : "tutorial"})))
             + row(cell(xhtml.input.hidden({"name" : "mode","value" : "preview"})) + cell(xhtml.input.submit({"name" : "preview", "value" : "PREVIEW"})))
             + xhtml.table.fini())
   
@@ -158,6 +161,8 @@ def submit(form):
 def preview(form):
   name = tempfile("")
 
+  tutorial_path = wgo_contest.spool_path(name, ".tut")
+
   image_path = wgo_contest.spool_path(name, ".png")
   thumb_path = wgo_contest.spool_path(name, "-t.png")
   thumb_path = wgo_contest.spool_path(name, "-t.jpg")
@@ -170,13 +175,38 @@ def preview(form):
   email = form.getvalue("email", "")
   title = form.getvalue("title", "")
 
+  if len(form["tutorial"].value) == 0:
+    wgo_contest.folio_init("GIMP 10th Anniversary Contest Preview Failed")
+    print wgo.error("You didn't submit a tutorial.")
+    wgo_contest.folio_fini()
+    return (1)
+
   if len(form["image"].value) == 0:
-    wgo_contest.folio_init("GNOME Splash Image Contest Preview Failed")
+    wgo_contest.folio_init("GIMP 10th Anniversary Contest Preview Failed")
     print wgo.error("You didn't submit an image.")
     wgo_contest.folio_fini()
     return (1)
 
-  execute_string = "convert - 'png:%s'" % (image_path)
+  try:
+    fp = open(tutorial_path, "w")
+    fp.write(form["tutorial"].value)
+    fp.close()
+  except Exception, e:
+    wgo_contest.folio_init("GIMP 10th Anniversary Contest Preview Failed")
+    try: os.remove(tutorial_path)
+    except: pass
+
+    print wgo.error(str(e))
+    wgo_contest.folio_fini()
+    return (1)
+
+  if (not tarfile.is_tarfile(tutorial_path) and
+      not zipfile.is_zipfile(tutorial_path)):
+    wgo_contest.folio_init("GIMP 10th Anniversary Contest Preview Failed")
+    print "Tutorial file is not a tarball or a zip file"
+    wgo_contest.folio_fini()
+    return (1)
+    
   try:
     fp = os.popen("/usr/bin/convert - 'png:%s'" % (image_path), "w")
     fp.write(form["image"].value)
@@ -184,7 +214,7 @@ def preview(form):
     os.system("/usr/bin/convert -geometry 150 '%s' 'png:%s'\n" % (image_path, thumb_path))
     os.system("/usr/bin/convert -geometry 150 '%s' 'jpg:%s'\n" % (image_path, thumb_path))
   except Exception, e:
-    wgo_contest.folio_init("GNOME Splash Image Contest Preview Failed")
+    wgo_contest.folio_init("GIMP 10th Anniversary Contest Preview Failed")
     try: os.remove(image_path)
     except: pass
     try: os.remove(thumb_path)
@@ -194,11 +224,11 @@ def preview(form):
     wgo_contest.folio_fini()
     return (1)
 
-  wgo_contest.folio_init("GNOME Splash Image Contest Preview")
+  wgo_contest.folio_init("GIMP 10th Anniversary Contest Preview")
 
-  print xhtml.h1("GNOME Splash Image Contest", {"class" : "heading"})
-  print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
-                   """From here you may submit images to be considered as candidates
+  print xhtml.h1("GIMP 10th Anniversary Contest", {"class" : "heading"})
+  print xhtml.para("""Welcome to the www.gimp.org 10th Anniversary Splash Contest. """
+                   """From here you may submit images with tutorials to be considered as candidates
                    for a "splash" image.  We appreciate your participation, but we
                    offer No Promises on what may become of your image here.""")
 
@@ -246,19 +276,21 @@ def preview(form):
 
 
 def approved(form):
-  wgo_contest.folio_init("GNOME Splash Image Contest Submission Approved")
+  wgo_contest.folio_init("GIMP 10th Anniversary Contest Submission Approved")
 
-  print xhtml.h1("GNOME Splash Image Contest", {"class" : "heading"})
-  print xhtml.para("""Welcome to the GNOME 2.10 splash image contest. """
-                   """From here you may submit images to be considered as candidates for a splash image.""")
+  print xhtml.h1("GIMP 10th Anniversary Contest", {"class" : "heading"})
+  print xhtml.para("""Welcome to the www.gimp.org splash image contest. """
+                   """From here you may submit images to be considered as candidates for a "splash" image.""")
   print xhtml.h2("Thank You!", {"class" : "subtitle"})
-  #print xhtml.para("Again, we offer No Promises on what may become of your image here.")
+  print xhtml.para("Again, we offer No Promises on what may become of your image here.")
   
   name = os.path.basename(form.getvalue("name", ""))
   entry = wgo_contest.gallery_image(name)
   entry["title"] = xhtml.quote(form.getvalue("title", ""))
   entry["author"] = xhtml.quote(form.getvalue("author", ""))
   entry["email"] = xhtml.quote(form.getvalue("email", ""))
+
+  tutorial_path = wgo_contest.spool_path(name, ".tut")
 
   image_path = wgo_contest.spool_path(name, ".png")
   thumb_path = wgo_contest.spool_path(name, "-t.png")
@@ -271,7 +303,7 @@ def approved(form):
   thumb_html = wgo_contest.gallery_path(name, "-t.html")
   
   #print "/bin/cp -f '%s' '%s' '%s'<br />" % (image_path, thumb_path, wgo_contest.config.gallery_path)
-  os.system("/bin/cp -f '%s' '%s' '%s'" % (image_path, thumb_path, wgo_contest.config.gallery_path))
+  os.system("/bin/cp -f '%s' '%s' '%s' '%s'" % (tutorial_path, image_path, thumb_path, wgo_contest.config.gallery_path))
 
   entry.save()
 
@@ -286,8 +318,6 @@ def approved(form):
   
 
 def main(argv):
-  return (0)
-
   form = cgi.FieldStorage()
 
   if os.environ.has_key("GATEWAY_INTERFACE"):

@@ -17,7 +17,7 @@ needed to test the site.
   To get a real life example of a httpd.conf file with SSI support you can also
   look at: http://wiki.gimp.org/gimp/GettingStartedWithGimpWeb/HttpdConfExample
 
-  2. Python 2.2 or better. The build system uses Python for the main build.
+  2. Python 2.3 or better. The build system uses Python for the main build.
 
 To build the site for the first time you will have to do some thinking about
 where to place the build you are doing, this means that you should have a
@@ -29,14 +29,14 @@ system works.
 Run the following command with the user root in the root directory of gimp-web.
 Username below means the username you will use on the machine.
 
-  % chown -R apache . ; PYTHON=python2.2 ./install.sh /home/wgo ; chown -R
+  % chown -R apache . ; PYTHON=python2.3 ./install.sh /home/wgo ; chown -R
     username .
 
 Note that you don't need to be root, the chown is simply to enable the
 news and the contest stuff to work. If you don't care about these, you
 can just run:
 
-  % PYTHON=python2.2 ./install.sh /home/wgo
+  % PYTHON=python2.3 ./install.sh /home/wgo
 
 The site will now be installed and should be available with html files in
 /home/wgo directory. To be able to test the things being changed in the
@@ -44,7 +44,7 @@ gimp-web module you just reinstall the site after doing the changes. So, first
 make the changes in gimp-web and then test them by building the site again
 with:
 
-  % chown -R apache . ; PYTHON=python2.2 ./install.sh /home/wgo ; chown -R
+  % chown -R apache . ; PYTHON=python2.3 ./install.sh /home/wgo ; chown -R
     username .
 
 And after doing this test you can commit it to the gimp-web module. Remember to

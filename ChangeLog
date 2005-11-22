@@ -1,14 +1,18 @@
+2005-11-22  Sven Neumann  <sven@gimp.org>
+
+	* programmatic/contest/gallery.py: s/GNOME/GIMP/g
+
 2005-11-21  Carol Spears  <carol@gimp.org>
 
-	* /programmatic/contest/contest.cgi Manish Singh changed the contest to 
+	* programmatic/contest/contest.cgi Manish Singh changed the contest to 
         also require a tutorial then I changed the text to reflect the new 
         contest
         
-	* /programmatic/contest/contest.py Manish Singh changed the contest to 
+	* programmatic/contest/contest.py Manish Singh changed the contest to 
         also require a tutorial then I changed the text to reflect the new 
         contest
 
-	* /programmatic/contest/index.htrw wrote new text for the Anniversary 
+	* programmatic/contest/index.htrw wrote new text for the Anniversary 
         splash contest.  Manish Singh was the spell check app used.
 
 2005-11-20  Manish Singh  <yosh@gimp.org>

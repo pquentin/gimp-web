@@ -13,37 +13,20 @@
     done, the GIMP's Lead Developers will pick the one they find most appropriate. 
   </p>
 
-  <h3>Contest Requirements</h3>
+  <h3>Contest Results</h3>
   <p>
-    New for this contest, is the requirement that a tutorial accompany your image.
-    The tutorials should have a text or html file that describes the steps you 
-    took and the plug-ins that you used to make your image with GIMP.  Screenshots are optional but will
-    be appreciated.  The tutorials files should be archived in either the zip format (.zip) or  in a gzipped
-    tarball (.tar.gz or .tgz).  All of these tutorials will be considered for a place in the www.gimp.org
-    tutorials.  Please provide your name and a valid email address so we can contact you if you are one
-    of the splash image winners and we find a teeshirt for you or if we need to get permission to use your
-    tutorial on the web site.
-  </p>
-  <p>
-    Images should be in the Portable Network Graphic format (.png).  The template that jimmac made for
-    the last contest is <a 
-    href="template.xcf.bz2">available for use as a size guide</a>.  The image should contain 50 pixels of
-    somewhat solid color in the lower portion of the image for the text to scroll on.  The template is
-    300x290 pixels however, the last winner was not that size.  Use your best judgement.  There is no
-    way to know what those developers will like, so make an image that you like.
-  </p>
-  <p>
-    If you have been wondering why no one does this or that beautiful effect with GIMP, now is your 
-    chance to show and tell.  Thank you for your consideration.
+    The contest is now closed. Thanks to everyone who submitted entries.
+    The winner will be decided in a few days.
   </p>
 
   <h3>Submissions</h3>
   <p>
     You can view all the submissions in the
-    <a href="/contest/gallery.cgi">contest gallery page</a>. If you personally
+    <a href="/contest/gallery.cgi">contest gallery page</a>. 
+    <!-- If you personally
     like some of the other entries better, you can always choose whichever
     you like and save it as ~/.gimp-2.2/gimp-splash.png or save several into your  
-    ~/.gimp-2.2/splashes/  directory to customize your GIMP.
+    ~/.gimp-2.2/splashes/  directory to customize your GIMP. -->
   </p>
 
   <h3>Good luck!</h3>

@@ -1,3 +1,9 @@
+2005-12-21  Raphaël Quinet  <raphael@gimp.org>
+
+	* mail_lists.htrw: Removed the "(broken)" comment for the XCF
+	mailing list archives.  There is a gap between September 2003 and
+	November 2005, but the current archives work again.
+
 2005-11-22  Sven Neumann  <sven@gimp.org>
 
 	* programmatic/contest/gallery.py: s/GNOME/GIMP/g

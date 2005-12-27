@@ -1,3 +1,12 @@
+2005-12-27  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/splash-images/gimp-splash-1.6.2.1-t.png
+	* about/splash/splash-images/gimp-splash-1.6.2.1.png: anniversairy
+	splash screen.
+
+	* admin/gimp-web-urls
+	* programmatic/contest/index.htrw: announced the contest winner.
+
 2005-12-21  Raphaël Quinet  <raphael@gimp.org>
 
 	* mail_lists.htrw: Removed the "(broken)" comment for the XCF

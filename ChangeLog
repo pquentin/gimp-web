@@ -1,3 +1,10 @@
+2006-01-05  Sven Neumann  <sven@gimp.org>
+
+	* includes/wgo-admin-fini.xhtml
+	* includes/wgo-develop-fini.xhtml
+	* includes/wgo-page-fini.xhtml
+	* includes/wgo-tutorial-fini.xhtml: updated copyright notices.
+
 2005-12-28  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.3.6 release.

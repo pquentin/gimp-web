@@ -85,10 +85,11 @@ also include a written offer to supply the source code on request.
 Note that you cannot simply give a link to the GIMP ftp mirrors: it
 should be the exact source code that was used to compile the binary
 package that you are selling and you have to cover the costs of
-redistribution yourself.  If sell and distribute the binaries online,
-the GPL requires you to make the source code available "from the same
-place" so giving a link to the GIMP mirrors is not sufficient (see
-also <a href="http://www.gnu.org/copyleft/gpl-faq.html#SourceAndBinaryOnDifferentSites">this
+redistribution yourself.  If you sell and distribute the binaries
+online, the GPL requires you to make the source code available "from
+the same place" so giving a link to the GIMP mirrors is not sufficient
+(see also <a
+href="http://www.gnu.org/copyleft/gpl-faq.html#SourceAndBinaryOnDifferentSites">this
 section of the GPL FAQ</a>).</li>
 
 <li><strong>Support your users</strong>.  If the version of the GIMP

@@ -18,7 +18,7 @@ to others as payment.</p>
 
 <p>Ways in which you can help:</p>
 <ul>
-  <li>program new features,</li>
+  <li><a href="wgo:dev">program</a> new features,</li>
   <li>debug existing features,</li>
   <li>report <a href="wgo:bugs">bugs</a>--errors in the program,</li>
   <li>add <a href="/docs/">documentation</a>,</li>

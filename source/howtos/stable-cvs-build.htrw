@@ -10,7 +10,7 @@
 </p>
 <p>
    This document assumes you are working with a fresh gimp-2.2 cvs checkout as described in the 
-   <a href="wgo:unix-howtos-stable_cvs_get">CVS Is Not That Scary or Get Your Stable GIMP from CVS</a> how to. 
+   <a href="wgo:source-howtos-stable_cvs_get">CVS Is Not That Scary or Get Your Stable GIMP from CVS</a> how to. 
 </p>
 
 <h2>Check Your Build Tools</h2>

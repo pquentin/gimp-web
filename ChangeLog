@@ -1,3 +1,7 @@
+2006-01-23  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Basic_Batch/index.htrw: s/PDB Browser/Procedure Browser/
+
 2006-01-20  Raphaël Quinet  <raphael@gimp.org>
 
 	* source/howtos/stable-cvs-build.htrw: fixed broken link.

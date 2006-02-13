@@ -1,3 +1,8 @@
+2006-02-13  Raphaël Quinet  <raphael@gimp.org>
+
+	* bugs/why_bugzilla.htrw: mention that it is possible to change
+	the e-mail address associated with a Bugzilla account.
+
 2006-02-08  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.3.7 release.

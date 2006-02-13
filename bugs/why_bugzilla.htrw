@@ -33,6 +33,12 @@ original reporter.  This is also useful for informing the reporter
 about any changes in the status of the bug report, such as when a
 patch is supplied or when the bug is fixed.</p>
 
+<p>The owner of a Bugzilla account can switch to a different e-mail
+address easily and can also configure the types of notifications that
+are sent via e-mail.  Being able to change e-mail addresses is
+important if some bug reports or proposals for enhancements remain
+open for a long time.</p>
+
 <h2>Several developers can provide feedback and work on the bug report</h2>
 
 <p>Although the requests for additional information could also be

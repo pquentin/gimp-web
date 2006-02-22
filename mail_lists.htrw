@@ -1,6 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Mailing Lists</title>
 <link rel="alternate" title="gimp-developer RSS" href="maillist:GIMP-developer-m-a-rss" type="application/rss+xml" />
+<link rel="alternate" title="gegl-developer RSS" href="maillist:GEGL-developer-m-a-rss" type="application/rss+xml" />
 <link rel="alternate" title="gimp-user RSS" href="maillist:GIMP-user-m-a-rss" type="application/rss+xml" />
 <link rel="alternate" title="gimpwin-users RSS" href="maillist:GIMP-user-windows-rss" type="application/rss+xml" />
 <link rel="alternate" title="gimpi RSS" href="maillist:GIMP-user-images-rss" type="application/rss+xml" />
@@ -40,6 +41,14 @@
   <a href="maillist:GIMP-developer-m-a-archive">mail-archive</a>,
   <a href="maillist:GIMP-developer-aims-archive">AIMS</a>,
   <a href="maillist:GIMP-developer-gmane-archive">Gmane</a></dd>
+
+  <dt><a href="maillist:GEGL-developer">GEGL Developer</a></dt>
+  <dd>The GEGL developer mail list. For developers interested in
+  contributing to <a href="http://www.gegl.org/">GEGL</a>, the new
+  architecture for image processing.<br />
+  Archives: <a href="maillist:GEGL-developer-archive">XCF</a>,
+  <a href="maillist:GEGL-developer-m-a-archive">mail-archive</a>,
+  <a href="maillist:GEGL-developer-gmane-archive">Gmane</a></dd>
 
   <dt><a href="maillist:GIMP-web">GIMP web</a></dt>
   <dd>The GIMP web mail list. For discussion about the contents and

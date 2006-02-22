@@ -1,3 +1,9 @@
+2006-02-22  Raphaël Quinet  <raphael@gimp.org>
+
+	* mail_lists.htrw
+	* admin/gimp-web-urls: added links to the archives and RSS feed
+	of the GEGL-developer mailing list.  Fixes bug #307059.
+
 2006-02-13  Raphaël Quinet  <raphael@gimp.org>
 
 	* bugs/why_bugzilla.htrw: mention that it is possible to change

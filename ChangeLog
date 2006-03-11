@@ -1,3 +1,9 @@
+2006-03-11  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Basic_Batch/index.htrw: removed the lines that Simon
+	added to the example script. It is supposed to be as simple as
+	possible.
+
 2006-03-11  Simon Budig  <simon@gimp.org>
 
 	* tutorials/Basic_Batch/index.htrw: added a warning and a workaround

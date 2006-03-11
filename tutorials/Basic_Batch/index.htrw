@@ -111,8 +111,6 @@ Options:
                   (drawable (car (gimp-image-get-active-layer image))))
              (plug-in-unsharp-mask RUN-NONINTERACTIVE
                                    image drawable radius amount threshold)
-	     ; just to be on the safe side...
-	     (set! drawable (car (gimp-image-get-active-layer image)))
              (gimp-file-save RUN-NONINTERACTIVE
                              image drawable filename filename)
              (gimp-image-delete image))

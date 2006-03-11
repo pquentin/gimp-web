@@ -79,6 +79,17 @@ Options:
   gimp -i -b '(simple-unsharp-mask "foo.png" 5.0 0.5 0)' '(gimp-quit 0)'
 </pre>
 
+<p>
+  There is a catch here: Some plugins or script-fu scripts create new
+  layers and then flatten the image again. This changes the drawable ID.
+  If this is the case insert the following line to get the current drawable
+  ID just before saving the image:
+</p>
+
+<pre class="code">
+	  (set! drawable (car (gimp-image-get-active-layer image)))
+</pre>
+
 <h2>Processing several files</h2>
 <p>
   You might want to apply an effect to a number of files, typically to
@@ -100,11 +111,14 @@ Options:
                   (drawable (car (gimp-image-get-active-layer image))))
              (plug-in-unsharp-mask RUN-NONINTERACTIVE
                                    image drawable radius amount threshold)
+	     ; just to be on the safe side...
+	     (set! drawable (car (gimp-image-get-active-layer image)))
              (gimp-file-save RUN-NONINTERACTIVE
                              image drawable filename filename)
              (gimp-image-delete image))
            (set! filelist (cdr filelist)))))
 </pre>
+
 <p>
   This version of the script takes a glob pattern instead of a
   filename and will apply the Unsharp Mask filter to all files

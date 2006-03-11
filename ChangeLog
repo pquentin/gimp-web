@@ -1,3 +1,8 @@
+2006-03-11  Simon Budig  <simon@gimp.org>
+
+	* tutorials/Basic_Batch/index.htrw: added a warning and a workaround
+	for changing drawable IDs.
+
 2006-02-22  Raphaël Quinet  <raphael@gimp.org>
 
 	* mail_lists.htrw

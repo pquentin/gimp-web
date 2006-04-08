@@ -1,3 +1,8 @@
+2006-04-08  Carol Spears  <carol@gimp.org>
+
+	* resources/gradients/Coffee.png: replaced Coffee.png with an image 
+        of the Coffee gradient. Fixes bug #337733.
+
 2006-03-19  Sven Neumann  <sven@gimp.org>
 
 	* includes/urls_go-developer.inc: fine-tuned some links.

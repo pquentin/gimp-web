@@ -4,7 +4,7 @@
   The main GIMP development website.
 </p>
 <p>
-  <a href="http://edhel.gimp.org/devnews.html">GIMP Development News</a>
+  <a href="http://edhel.gimp.org/devnews.html">GIMP Development News</a><br />
   What happens in GIMP development, updated regularily.
 </p>
 <p>

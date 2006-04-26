@@ -17,7 +17,7 @@ href="/about/linking.html">this other page</a>.</p>
   <li><a href="#org">The GIMP Organization</a></li>
   <li><a href="#tuts">Tutorials</a></li>
   <li><a href="#clubs">Communities</a></li>
-  <li><a href="#developer">Developer</a></li>
+  <li><a href="#development">Development</a></li>
   <li><a href="#created">Created with GIMP</a></li>
   <li><a href="#more">More GIMP-links</a></li>
   <li><a href="#other">Other Graphics Applications</a></li>
@@ -35,7 +35,6 @@ ettiquette.</p>
 <p><a href="org.html">More ...</a></p>
 
 
-<h2><a name="developer"></a>Developer</h2>
 <!--#include virtual="/includes/urls_go-developer.inc" -->
 
 

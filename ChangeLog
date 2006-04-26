@@ -1,3 +1,9 @@
+2006-04-26  Sven Neumann  <sven@gimp.org>
+
+	* includes/urls_go-developer.inc: added a link to the devnews.
+
+	* links/index.htrw: the anchor moved to the included file.
+
 2006-04-13  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.2.11 release.

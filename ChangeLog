@@ -1,3 +1,8 @@
+2006-05-05  Sven Neumann  <sven@gimp.org>
+
+	* windows/index.htrw: include a direct link to the FAQ and mention
+	the separate help package.
+
 2006-04-26  Sven Neumann  <sven@gimp.org>
 
 	* includes/urls_go-developer.inc: added a link to the devnews.

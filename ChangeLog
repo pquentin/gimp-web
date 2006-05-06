@@ -1,5 +1,8 @@
 2006-05-06  Carol Spears  <carol@gimp.org>
-	* includes/urls_important.htrw: added planets to the menu.
+	* includes/wgo-page-init.htrw: added planets to the menu.
+        
+2006-05-06  Carol Spears  <carol@gimp.org>
+	* includes/urls_important.htrw: added planets.
         
 2006-05-06  Carol Spears  <carol@gimp.org>
 	* images/thegimp.png: took "THE" out of the image.

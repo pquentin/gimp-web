@@ -1,3 +1,6 @@
+2006-05-06  Carol Spears  <carol@gimp.org>
+	* images/thegimp.png: took "THE" out of the image.
+        
 2006-05-05  Sven Neumann  <sven@gimp.org>
 
 	* windows/index.htrw: include a direct link to the FAQ and mention

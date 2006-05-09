@@ -1,3 +1,15 @@
+2006-05-08  Carol Spears  <carol@gimp.org>
+	* docs/python: removed outdated pages:
+        end-note.html gimp-module-procedures.html gimp-objects.html 
+        procedural-database.html structure-of-plugin.html 
+        support-modules.html
+        
+	* docs/python: updated pygimp.html as provided by Sylvain 
+        Fourmanoit
+        
+	* docs/python: added index.html xhtml11.css 
+        xhtml11-quirks.css, also provided by Sylvain Fourmanoit
+        
 2006-05-06  Carol Spears  <carol@gimp.org>
 	* includes/wgo-page-init.htrw: added planets to the menu.
         

@@ -329,41 +329,45 @@ is a translation of the clothify Script-Fu extension:</p>
 <h3><a id="example_plugin"></a>A sample python plugin</h3>
 <div class="listingblock">
 <div class="content">
-<pre><tt><i>#!/usr/bin/python</i>
+<pre><tt><i>#!/usr/bin/env python</i>
+
+
 <strong>import</strong> math
 <strong>from</strong> gimpfu <strong>import</strong> *
 
-have_gimp11 = gimp.major_version &gt; 1 <strong>or</strong> \
-              gimp.major_version == 1 <strong>and</strong> gimp.minor_version &gt;= 1
-
 <strong>def</strong> python_clothify(timg, tdrawable, bx=9, by=9,
                     azimuth=135, elevation=45, depth=3):
-        bx = 9 ; by = 9 ; azimuth = 135 ; elevation = 45 ; depth = 3
-        width = tdrawable.width
-        height = tdrawable.height
-        img = gimp.image(width, height, RGB)
-        layer_one = gimp.layer(img, "X Dots", width, height, RGB_IMAGE,
-                               100, NORMAL_MODE)
-        img.disable_undo()
-        <strong>if</strong> have_gimp11:
-                pdb.gimp_edit_fill(layer_one)
-        <strong>else</strong>:
-                pdb.gimp_edit_fill(img, layer_one)
-        img.add_layer(layer_one, 0)
-        pdb.plug_in_noisify(img, layer_one, 0, 0.7, 0.7, 0.7, 0.7)
-        layer_two = layer_one.copy()
-        layer_two.mode = MULTIPLY_MODE
-        layer_two.name = "Y Dots"
-        img.add_layer(layer_two, 0)
-        pdb.plug_in_gauss_rle(img, layer_one, bx, 1, 0)
-        pdb.plug_in_gauss_rle(img, layer_two, by, 0, 1)
-        img.flatten()
-        bump_layer = img.active_layer
-        pdb.plug_in_c_astretch(img, bump_layer)
-        pdb.plug_in_noisify(img, bump_layer, 0, 0.2, 0.2, 0.2, 0.2)
-        pdb.plug_in_bump_map(img, tdrawable, bump_layer, azimuth,
-                             elevation, depth, 0, 0, 0, 0, TRUE, FALSE, 0)
-        gimp.delete(img)
+    width = tdrawable.width
+    height = tdrawable.height
+
+    img = gimp.Image(width, height, RGB)
+    img.disable_undo()
+
+    layer_one = gimp.Layer(img, "X Dots", width, height, RGB_IMAGE,
+                           100, NORMAL_MODE)
+    img.add_layer(layer_one, 0)
+    pdb.gimp_edit_fill(layer_one, BACKGROUND_FILL)
+
+    pdb.plug_in_noisify(img, layer_one, 0, 0.7, 0.7, 0.7, 0.7)
+
+    layer_two = layer_one.copy()
+    layer_two.mode = MULTIPLY_MODE
+    layer_two.name = "Y Dots"
+    img.add_layer(layer_two, 0)
+
+    pdb.plug_in_gauss_rle(img, layer_one, bx, 1, 0)
+    pdb.plug_in_gauss_rle(img, layer_two, by, 0, 1)
+
+    img.flatten()
+
+    bump_layer = img.active_layer
+
+    pdb.plug_in_c_astretch(img, bump_layer)
+    pdb.plug_in_noisify(img, bump_layer, 0, 0.2, 0.2, 0.2, 0.2)
+    pdb.plug_in_bump_map(img, tdrawable, bump_layer, azimuth,
+                         elevation, depth, 0, 0, 0, 0, True, False, 0)
+
+    gimp.delete(img)
 
 register(
         "python_fu_clothify",
@@ -372,13 +376,13 @@ register(
         "James Henstridge",
         "James Henstridge",
         "1997-1999",
-        "&lt;Image&gt;/Filters/Artistic/Clothify",
+        "&lt;Image&gt;/Filters/Artistic/_Clothify...",
         "RGB*, GRAY*",
         [
-                (PF_INT, "x_blur", "X Blur", 9),
-                (PF_INT, "y_blur", "Y Blur", 9),
+                (PF_INT, "x_blur", "X blur", 9),
+                (PF_INT, "y_blur", "Y blur", 9),
                 (PF_INT, "azimuth", "Azimuth", 135),
-                (PF_INT, "elevation", "elevation", 45),
+                (PF_INT, "elevation", "Elevation", 45),
                 (PF_INT, "depth", "Depth", 3)
         ],
         [],
@@ -493,7 +497,7 @@ function
 </li>
 </ul>
 <p>Most of these parameters are quite self explanatory. The menupath
-option should start with &lt;Image%gt;/ for image plug-ins and &lt;Toolbox&gt;/
+option should start with &lt;Image&gt;;/ for image plug-ins and &lt;Toolbox&gt;/
 for toolbox plug-ins. The remainder of the menupath is a slash
 separated path to its menu item.</p>
 <p>The params parameter holds a list parameters for the function. It is a
@@ -1125,15 +1129,15 @@ gimpfu.</p>
 </p>
 </dd>
 <dt>
-<tt>gimp.progress_update</tt>(<tt>percnt</tt>)
+<tt>gimp.progress_update</tt>(<tt>percent</tt>)
 </dt>
 <dd>
 <p>
-  Set the progress meter to <tt>percnt</tt> done.
+  Set the progress meter to <tt>percent</tt> done.
 </p>
 </dd>
 <dt>
-<tt>gimp.query_images</tt>()
+<tt>gimp.image_list</tt>()
 </dt>
 <dd>
 <p>
@@ -2426,7 +2430,7 @@ useful as examples, please mail me at
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 13-May-2006 11:40:21 PDT
+Last updated 16-May-2006 11:38:57 PDT
 </div>
 </div>
 </body>

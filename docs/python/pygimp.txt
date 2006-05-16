@@ -75,60 +75,64 @@ A sample python plugin
 ~~~~~~~~~~~~~~~~~~~~~~
 [python]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#!/usr/bin/python
+#!/usr/bin/env python
+
+
 import math
 from gimpfu import *
 
-have_gimp11 = gimp.major_version > 1 or \
-	      gimp.major_version == 1 and gimp.minor_version >= 1
-
 def python_clothify(timg, tdrawable, bx=9, by=9,
-		    azimuth=135, elevation=45, depth=3):
-	bx = 9 ; by = 9 ; azimuth = 135 ; elevation = 45 ; depth = 3
-	width = tdrawable.width
-	height = tdrawable.height
-	img = gimp.image(width, height, RGB)
-	layer_one = gimp.layer(img, "X Dots", width, height, RGB_IMAGE,
-			       100, NORMAL_MODE)
-	img.disable_undo()
-	if have_gimp11:
-		pdb.gimp_edit_fill(layer_one)
-	else:
-		pdb.gimp_edit_fill(img, layer_one)
-	img.add_layer(layer_one, 0)
-	pdb.plug_in_noisify(img, layer_one, 0, 0.7, 0.7, 0.7, 0.7)
-	layer_two = layer_one.copy()
-	layer_two.mode = MULTIPLY_MODE
-	layer_two.name = "Y Dots"
-	img.add_layer(layer_two, 0)
-	pdb.plug_in_gauss_rle(img, layer_one, bx, 1, 0)
-	pdb.plug_in_gauss_rle(img, layer_two, by, 0, 1)
-	img.flatten()
-	bump_layer = img.active_layer
-	pdb.plug_in_c_astretch(img, bump_layer)
-	pdb.plug_in_noisify(img, bump_layer, 0, 0.2, 0.2, 0.2, 0.2)
-	pdb.plug_in_bump_map(img, tdrawable, bump_layer, azimuth,
-			     elevation, depth, 0, 0, 0, 0, TRUE, FALSE, 0)
-	gimp.delete(img)
+                    azimuth=135, elevation=45, depth=3):
+    width = tdrawable.width
+    height = tdrawable.height
+
+    img = gimp.Image(width, height, RGB)
+    img.disable_undo()
+
+    layer_one = gimp.Layer(img, "X Dots", width, height, RGB_IMAGE,
+                           100, NORMAL_MODE)
+    img.add_layer(layer_one, 0)
+    pdb.gimp_edit_fill(layer_one, BACKGROUND_FILL)
+
+    pdb.plug_in_noisify(img, layer_one, 0, 0.7, 0.7, 0.7, 0.7)
+
+    layer_two = layer_one.copy()
+    layer_two.mode = MULTIPLY_MODE
+    layer_two.name = "Y Dots"
+    img.add_layer(layer_two, 0)
+
+    pdb.plug_in_gauss_rle(img, layer_one, bx, 1, 0)
+    pdb.plug_in_gauss_rle(img, layer_two, by, 0, 1)
+
+    img.flatten()
+
+    bump_layer = img.active_layer
+
+    pdb.plug_in_c_astretch(img, bump_layer)
+    pdb.plug_in_noisify(img, bump_layer, 0, 0.2, 0.2, 0.2, 0.2)
+    pdb.plug_in_bump_map(img, tdrawable, bump_layer, azimuth,
+                         elevation, depth, 0, 0, 0, 0, True, False, 0)
+
+    gimp.delete(img)
 
 register(
-	"python_fu_clothify",
-	"Make the specified layer look like it is printed on cloth",
-	"Make the specified layer look like it is printed on cloth",
-	"James Henstridge",
-	"James Henstridge",
-	"1997-1999",
-	"<Image>/Filters/Artistic/Clothify",
-	"RGB*, GRAY*",
-	[
-		(PF_INT, "x_blur", "X Blur", 9),
-		(PF_INT, "y_blur", "Y Blur", 9),
-		(PF_INT, "azimuth", "Azimuth", 135),
-		(PF_INT, "elevation", "elevation", 45),
-		(PF_INT, "depth", "Depth", 3)
-	],
-	[],
-	python_clothify)
+        "python_fu_clothify",
+        "Make the specified layer look like it is printed on cloth",
+        "Make the specified layer look like it is printed on cloth",
+        "James Henstridge",
+        "James Henstridge",
+        "1997-1999",
+        "<Image>/Filters/Artistic/_Clothify...",
+        "RGB*, GRAY*",
+        [
+                (PF_INT, "x_blur", "X blur", 9),
+                (PF_INT, "y_blur", "Y blur", 9),
+                (PF_INT, "azimuth", "Azimuth", 135),
+                (PF_INT, "elevation", "Elevation", 45),
+                (PF_INT, "depth", "Depth", 3)
+        ],
+        [],
+        python_clothify)
 
 main()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -194,7 +198,7 @@ information is used to construct the GUI). The parameters to
 * function
 
 Most of these parameters are quite self explanatory. The menupath
-option should start with <Image%gt;/ for image plug-ins and <Toolbox>/
+option should start with <Image>;/ for image plug-ins and <Toolbox>/
 for toolbox plug-ins. The remainder of the menupath is a slash
 separated path to its menu item.
 
@@ -493,9 +497,9 @@ These are the other functions in the `gimp` module.
 `gimp.progress_init`(`[label]`)::
   (Re)Initialise the progress meter with `label` (or the plugin name)
   as a label in the window.
-`gimp.progress_update`(`percnt`)::
-  Set the progress meter to `percnt` done.
-`gimp.query_images`()::
+`gimp.progress_update`(`percent`)::
+  Set the progress meter to `percent` done.
+`gimp.image_list`()::
   Returns a list of all the image objects.
 `gimp.quit`()::
   Stops execution immediately and exits.

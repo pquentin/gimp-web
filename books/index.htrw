@@ -5,6 +5,28 @@
 
 <h1>Books about The GIMP</h1>
 
+<h2>Beginning GIMP: From Novice to Professional</h2>
+<p>
+  <img class="icon" src="wgo:image-book-beginning_gimp_from_novice_to_professional" 
+       alt="wgo:image-book-beginning_gimp_from_novice_to_professional"
+       width="wgo:image-book-beginning_gimp_from_novice_to_professional"
+       height="wgo:image-book-beginning_gimp_from_novice_to_professional"/>
+  <strong>Author:</strong> Akkana Peck<br/>
+  <strong>Format:</strong> Paperback, 552pp.<br/>
+  <strong>ISBN:</strong> 1-59059-587-4<br/>
+  <strong>Publisher/Date:</strong> Apress/May 2006<br/>
+  <strong>Website:</strong> <a
+href="wgo:book-beginning_gimp_from_novice_to_professional">http://gimpbook.com/</a><br/>
+  <br/>
+  <strong>Description:</strong> A complete guide to image editing with
+  the GIMP, beginning with basic photo manipulation procedures,
+  simple drawing and selection techniques, then proceeding to more
+  advanced concepts such as layer masks, color adjustment,
+  blending modes, stitching panoramas, image stacking,
+  and writing simple GIMP scripts and plug-ins.
+  Covers version 2.2 plus a look ahead to 2.4.
+</p>
+
 <h2>The Gimp 2.2 pour PC, Mac et Linux</h2>
 <p>
   <img class="icon" src="wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux" 

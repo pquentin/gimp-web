@@ -296,6 +296,12 @@
 ["alt",    "wgo:image-about-splash-unknown",  { "alt":    "unknown"}]
 
 
+["href",   "wgo:book-beginning_gimp_from_novice_to_professional",    { "href":       "http://gimpbook.com/"}]
+["src",    "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "src":    "/books/beginning_gimp_from_novice_to_professional.png"}]
+["width",  "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "width":  "100px"}]
+["height", "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "height": "132px"}]
+["alt",    "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "alt": "Akkana Peck"}]
+
 ["href",   "wgo:book-the_gimp_2_2_pour_pc_mac_et_linux",    { "href":       "http://www.p-n.fr/julienpons/"}]
 ["src",    "wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux",  { "src":    "/books/the_gimp_2_2_pour_pc_mac_et_linux.png"}]
 ["width",  "wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux",  { "width":  "100px"}]

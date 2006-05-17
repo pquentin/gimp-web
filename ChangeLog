@@ -1,4 +1,8 @@
 2006-05-16  Carol Spears  <carol@gimp.org>
+	* docs/python/pygimp.html, index.html, pygimp.txt: added PF_RADIO and
+        PF_PALETTE to the param params list.
+
+2006-05-16  Carol Spears  <carol@gimp.org>
 	* docs/python/pygimp.html, index.html, pygimp.txt: fixed more typos and 
         mis-spellings, replaced old clothify.py example with new one, updated 
         gimp.query_images() to gimp.image_list. 

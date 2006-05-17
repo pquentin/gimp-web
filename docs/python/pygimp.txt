@@ -230,6 +230,7 @@ extra]). The allowed type codes are:
 * PF_DRAWABLE
 * PF_TOGGLE
 * PF_BOOL
+* PF_RADIO
 * PF_SLIDER
 * PF_SPINNER
 * PF_ADJUSTMENT
@@ -238,6 +239,7 @@ extra]). The allowed type codes are:
 * PF_BRUSH
 * PF_PATTERN
 * PF_GRADIENT
+* PF_PALETTE
 
 These values map onto the standard PARAM_* constants. The reason to
 use the extra constants is that they give gimpfu more information, so

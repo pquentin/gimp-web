@@ -1,5 +1,7 @@
-2006-05-17  Carol Spears  <carol@gimp.org>
-	* books/index.htrw, admin/gimp-web-urls: Add Beginning GIMP book.
+2006-05-17  Akkana Peck  <akkana@gimp.org>
+	* books/index.htrw, admin/gimp-web-urls,
+          books/beginning_gimp_from_novice_to_professional.png: Add
+          Beginning GIMP book.
 
 2006-05-16  Carol Spears  <carol@gimp.org>
 	* docs/python/pygimp.html, index.html, pygimp.txt: added PF_RADIO and

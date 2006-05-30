@@ -1,4 +1,7 @@
 2006-05-16  Carol Spears  <carol@gimp.org>
+	* includes/urls_important.htrw: added GIMP wiki there.
+
+2006-05-16  Carol Spears  <carol@gimp.org>
 	* includes/wgo-page-init.htrw: pointed the news url to the new archive.
 
 2006-05-17  Akkana Peck  <akkana@gimp.org>

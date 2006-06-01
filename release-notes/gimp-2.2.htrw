@@ -1,9 +1,9 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - The GIMP 2.2 Release Notes</title>
+<title>GIMP 2.2 Release Notes</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>The GIMP 2.2 Release Notes</h1>
+<h1>GIMP 2.2 Release Notes</h1>
 <p>
   The GIMP developers are proud to release version 2.2 of the
   <b>GNU Image Manipulation Program</b>. About nine months after

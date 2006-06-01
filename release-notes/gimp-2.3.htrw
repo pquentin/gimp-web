@@ -3,7 +3,7 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>The GIMP 2.3 Release Notes</h1>
+<h1>GIMP 2.3 Release Notes</h1>
 <p>
 This is an unstable development version of the <b>GNU Image
 Manipulation Program</b>. Please realize that this is just a snapshot

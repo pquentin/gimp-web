@@ -1,3 +1,8 @@
+2006-06-01  Sven Neumann  <sven@gimp.org>
+
+	* release-notes/gimp-2.2.htrw
+	* release-notes/gimp-2.3.htrw: dropped redundant use of "The".
+
 2006-05-30  Carol Spears  <carol@gimp.org>
 	* includes/wgo-page-init.xhtml: added GIMP wiki there.
 
@@ -5,7 +10,8 @@
 	* includes/urls_important.xhtml: added GIMP wiki there.
 
 2006-05-16  Carol Spears  <carol@gimp.org>
-	* includes/wgo-page-init.xhtml: pointed the news url to the new archive.
+	* includes/wgo-page-init.xhtml: pointed the news url to the new
+	archive.
 
 2006-05-17  Akkana Peck  <akkana@gimp.org>
 	* books/index.htrw, admin/gimp-web-urls,
@@ -13,18 +19,19 @@
           Beginning GIMP book.
 
 2006-05-16  Carol Spears  <carol@gimp.org>
-	* docs/python/pygimp.html, index.html, pygimp.txt: added PF_RADIO and
-        PF_PALETTE to the param params list.
+	* docs/python/pygimp.html, index.html, pygimp.txt: added PF_RADIO
+	and PF_PALETTE to the param params list.
 
 2006-05-16  Carol Spears  <carol@gimp.org>
-	* docs/python/pygimp.html, index.html, pygimp.txt: fixed more typos and 
-        mis-spellings, replaced old clothify.py example with new one, updated 
-        gimp.query_images() to gimp.image_list. 
+	* docs/python/pygimp.html, index.html, pygimp.txt: fixed more
+	typos and mis-spellings, replaced old clothify.py example with new
+	one, updated gimp.query_images() to gimp.image_list.
 
 2006-05-13  Carol Spears  <carol@gimp.org>
-	* docs/python/pygimp.html, index.html: fixed typos and mis-spellings 
-        as discovered by Roman Fro³ow and reported on irc (#gimp).  An additional
-        run with ISpell found many more that it fixed... 
+	* docs/python/pygimp.html, index.html: fixed typos and
+	mis-spellings as discovered by Roman Fro³ow and reported on
+	irc (#gimp).  An additional run with ISpell found many more that
+	it fixed...
 
 	* docs/python/pygimp.txt: added the file which was originally provided 
         by Sylvain Fourmanoit

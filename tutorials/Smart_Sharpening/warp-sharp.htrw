@@ -176,7 +176,7 @@
 <h2>Getting the warp-sharp script</h2>
 <p>
   Here is a <a href="http://www.home.unix-ag.org/simon/gimp/warp-sharp.html">link to the script authors site</a>. 
-  Download the script and put it into your .gimp-1.2/scripts folder. 
+  Download the script and put it into your .gimp-2.2/scripts folder. 
   Restart the GIMP and you should see warp sharpen as an option off of the "Alchemy" script-fu menu.
 </p>
 

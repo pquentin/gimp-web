@@ -15,7 +15,7 @@
   functionality may be accessed through scripting.  The major
   scripting language for the GIMP that has been attached to it today
   is Scheme.  This document will try to be a brief introduction to
-  Scheme, just teaching the essentials in order to write script-fu
+  Scheme, just teaching the essentials in order to write Script-Fu
   scripts, without getting into the programming language theory that
   is so typical of other Scheme references.
 </p>
@@ -84,7 +84,7 @@
 (set! angle (* (/ 30 180) 3.141)
 </pre>
 <p>
-  Lisp and its variants make heavy use of lists. Script-fu is no
+  Lisp and its variants make heavy use of lists. Script-Fu is no
   exception and it uses e.g. a list of three elements to write a RGB
   color.  E.g. the color orange would be written
 </p>
@@ -208,7 +208,7 @@
 <h2>5. Registering the script with Script-Fu</h2>
 <p>
   After a function has been written it has to be registered with
-  script-fu before it can be used.  This is done through the scheme
+  Script-Fu before it can be used.  This is done through the scheme
   function script-fu-register. The registering has following purposes:
 </p>
 <ol>
@@ -257,7 +257,7 @@
      <dt><b>SF-VALUE</b></dt>
      <dd> Any scalar value, string, integer, or floating point.</dd>
      </dl></li>
-  <li> A label for script-fu to display when querying for the parameter.</li>
+  <li> A label for Script-Fu to display when querying for the parameter.</li>
   <li> A default value.</li>
 </ol>
 
@@ -267,7 +267,7 @@
   user, the size of the image, and a color and goes on to produce a
   uniform image of the requested size and the requested color. Not
   very useful, but it shows the essential steps in producing a
-  script-fu script.
+  Script-Fu script.
 </p>
 <pre class="code">
 ; Define the function of the script and list its parameters

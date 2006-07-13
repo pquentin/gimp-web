@@ -1,3 +1,9 @@
+2006-07-13  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Basic_Scheme/index.htrw:
+	* tutorials/Basic_Scheme2/index.htrw: some updates, still needs
+	more work and new screenshots.
+
 2006-07-06  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.2.12 release.

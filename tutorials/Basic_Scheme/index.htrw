@@ -4,33 +4,42 @@
 <!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
 <h1>Basic Scheme</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mail:People-Grobgeld_Dov">Dov Grobgeld</a> and may not be used without permission of the author.
+  Text and images Copyright (C)
+  2002 <a href="mail:People-Grobgeld_Dov">Dov Grobgeld</a> and may not
+  be used without permission of the author.
 </p>
 
 <h2>Intention</h2>
 <p>
-  One of the wonderful features of GIMP is that it all its functionality may be accessed through scripting. 
-  The major scripting language for the GIMP that has been attached to it today is Scheme. 
-  This document will try to be a brief introduction to Scheme, just teaching the essentials in order to write script-fu scripts, 
-  without getting into the programming language theory that is so typical of other Scheme references.
+  One of the wonderful features of GIMP is that it all its
+  functionality may be accessed through scripting.  The major
+  scripting language for the GIMP that has been attached to it today
+  is Scheme.  This document will try to be a brief introduction to
+  Scheme, just teaching the essentials in order to write script-fu
+  scripts, without getting into the programming language theory that
+  is so typical of other Scheme references.
 </p>
 
 <h2>1. Expressions</h2>
 <p>
-  Scheme is a lisp variants and all expressions are surrounded by parens. E.g. a list which will calculate the sum of 3 and 4 is written
+  Scheme is a lisp variants and all expressions are surrounded by
+  parens. E.g. a list which will calculate the sum of 3 and 4 is
+  written
 </p>
 <pre class="code">
 (+ 3 4)
 </pre>
 <p>
-  The + sign is the addition function and 3 and 4 are the first and second parameters to this function. 
-  Expressions may be nested, so the expression (3+4)*(5/6) would in Scheme be written
+  The + sign is the addition function and 3 and 4 are the first and
+  second parameters to this function.  Expressions may be nested, so
+  the expression (3+4)*(5/6) would in Scheme be written
 </p>
 <pre class="code">
 (* (+ 3 4) (/ 5 6))
 </pre>
 <p>
-  White space has no importance so the above expression may as well be written:
+  White space has no importance so the above expression may as well be
+  written:
 </p>
 <pre class="code">
 (*
@@ -41,15 +50,17 @@
 
 <h2>2. Functions</h2>
 <p>
-  Aside from the four arithmetic functions that are represented through the symbols + - * / there are lots of other functions built into the language. 
-  All of them have the form
+  Aside from the four arithmetic functions that are represented
+  through the symbols + - * / there are lots of other functions built
+  into the language.  All of them have the form
 </p>
 <pre class="code">
 (foo param1 param2 ...)
 </pre>
 <p>
-  Additional functions may be defined by the user through the define keyword. E.g. a function that 
-  calculates the square value of its single argument may be declared like this
+  Additional functions may be defined by the user through the define
+  keyword. E.g. a function that calculates the square value of its
+  single argument may be declared like this
 </p>
 <pre class="code">
 (define (square x) (* x x))
@@ -64,26 +75,31 @@
 
 <h2>3. Variables and lists</h2>
 <p>
-  Variables may be declared and set through the set! command. (These variables will be global but this should not bother the casual gimp programmer). 
-  Here are a couple of assignments:
+  Variables may be declared and set through the set! command. (These
+  variables will be global but this should not bother the casual gimp
+  programmer).  Here are a couple of assignments:
 </p>
 <pre class="code">
 (set! grey_value 85)
 (set! angle (* (/ 30 180) 3.141)
 </pre>
 <p>
-  Lisp and its variants make heavy use of lists. Script-fu is no exception and it uses e.g. a list of three elements to write a RGB color. 
-  E.g. the color orange would be written
+  Lisp and its variants make heavy use of lists. Script-fu is no
+  exception and it uses e.g. a list of three elements to write a RGB
+  color.  E.g. the color orange would be written
 </p>
 <pre class="code">
 '(255 127 0)
 </pre>
 <p>
-  The ' sign is necessary in order to tell scheme that this is a literal list. If the ' was omitted scheme would try to look up a function with 
-  the name 255 and send it the two parameters 127 and 0, which is obviously not what we wants.
+  The ' sign is necessary in order to tell scheme that this is a
+  literal list. If the ' was omitted scheme would try to look up a
+  function with the name 255 and send it the two parameters 127 and 0,
+  which is obviously not what we wants.
 </p>
 <p>
-  To create a variable called orange with the above value and then set the background color to it we may do
+  To create a variable called orange with the above value and then set
+  the background color to it we may do
 </p>
 <pre class="code">
 (set! orange '(255 127 0))
@@ -93,12 +109,17 @@
 
 <h2>3.1 car, cdr and friends (*)</h2>
 <p>
-  A list in Scheme is always composed of a head and a tail. The head is the first entry in the list, and the tail is the list of the rest of the elements. 
-  This means that the list (255 127 63) really means (255 (127 (63 ()))) but Scheme allows the previous form as a shortcut. 
-  The car function is used to return the head of the list and the cdr (usually pronounced cudder) is used to get the tail of the list.
+  A list in Scheme is always composed of a head and a tail. The head
+  is the first entry in the list, and the tail is the list of the rest
+  of the elements.  This means that the list (255 127 63) really means
+  (255 (127 (63 ()))) but Scheme allows the previous form as a
+  shortcut.  The car function is used to return the head of the list
+  and the cdr (usually pronounced cudder) is used to get the tail of
+  the list.
 </p>
 <p>
-  [The following is a test of the above functions which may interactively be conducted in the Script-Fu console.]
+  [The following is a test of the above functions which may
+  interactively be conducted in the Script-Fu console.]
 </p>
 <pre class="code">
 =&gt; (set! color '(255 127 63))
@@ -109,33 +130,42 @@
 (127 63)
 </pre>
 <p>
-  To get the blue component of a color it is necessary to apply the cdr function twice and then the car function.
+  To get the blue component of a color it is necessary to apply the
+  cdr function twice and then the car function.
 </p>
 <pre class="code">
 =&gt; (car (cdr (cdr color)))
 63
 </pre>
 <p>
-  This is very unconvenient to write. Therefore there have been defined abreviations of the form cadr, cddr, caddr, etc that concatinate the 
-  operations described above. The previous expression may therefore much more conveniently be written:
+  This is very unconvenient to write. Therefore there have been
+  defined abreviations of the form cadr, cddr, caddr, etc that
+  concatinate the operations described above. The previous expression
+  may therefore much more conveniently be written:
 </p>
 <pre class="code">
 =&gt; (caddr color)
 63
 </pre>
 <p>
-  For the Script-Fu writer one of the most important uses of the car function is to access the returned values from the built-in gimp functions. 
-  All gimp-functions return a list, and even if the list contains only one element it must be accessed by car. 
-  This is e.g. the case for the important functions gimp-new-image and gimp-new-layer used below.
+  For the Script-Fu writer one of the most important uses of the car
+  function is to access the returned values from the built-in gimp
+  functions.  All gimp-functions return a list, and even if the list
+  contains only one element it must be accessed by car.  This is
+  e.g. the case for the important functions gimp-new-image and
+  gimp-new-layer used below.
 </p>
 
 <h2>3.2 Local variables (*)</h2>
 <p>
-  More experienced scheme programmers mostly use local variables instead of the global variables described above. 
-  This is considered better programming practice and this construct should be recognized in order to be able to read others ScriptFu scripts.
+  More experienced scheme programmers mostly use local variables
+  instead of the global variables described above.  This is considered
+  better programming practice and this construct should be recognized
+  in order to be able to read others ScriptFu scripts.
 </p>
 <p>
-  Local variables are declared through the the let keyword as in the following example:
+  Local variables are declared through the the let keyword as in the
+  following example:
 </p>
 <pre class="code">
 (let* ((a 3)
@@ -143,13 +173,15 @@
       ((* a b)))
 </pre>
 <p>
-  Here a and b have a local scope and retain their values only up to the closing paren matching the one before let* .
+  Here a and b have a local scope and retain their values only up to
+  the closing paren matching the one before let* .
 </p>
 
 <h2>4. The GIMP PDB</h2>
 <p>
-  All functionality of GIMP is available through the procedural database (PDB). 
-  Each procedural database function has a corresponding scheme function mapping. E.g.
+  All functionality of GIMP is available through the procedural
+  database (PDB).  Each procedural database function has a
+  corresponding scheme function mapping. E.g.
 </p>
 <pre class="code">
 (gimp-image-new 100 150 RGB)
@@ -158,47 +190,58 @@
   produces a new gimp image of type RGB and size 100x150.
 </p>
 <p>
-  All the functions of the PDB may be accessed through the DB browser that is available from the main menu through 
-  <span class="filter"> Xtns -&gt; DB BROWSER</span>.... 
-  E.g. the DB Browser entry for uni-img, which we will define in the example below looks like this:
+  All the functions of the PDB may be accessed through the Procedure
+  Browser that is available from the main menu through
+  <span class="filter"> Xtns -&gt;Procedure Browser</span>....
+  E.g. the Procedure Browser entry for uni-img, which we will define
+  in the example below looks like this:
 </p>
 <p class="images">
   <img src="pdb-uni-entry.png" alt=""/>
 </p>
 <p>
-  For the Script-Fu programmer this information shows that uni-img may be called with three parameters of the types INT32, STRING and COLOR. 
-  The different types will be explained below.
+  For the Script-Fu programmer this information shows that uni-img may
+  be called with three parameters of the types INT32, STRING and
+  COLOR.  The different types will be explained below.
 </p>
 
 <h2>5. Registering the script with Script-Fu</h2>
 <p>
-  After a function has been written it has to be registered with script-fu before it can be used. 
-  This is done through the scheme function script-fu-register. The registering has following purposes:
+  After a function has been written it has to be registered with
+  script-fu before it can be used.  This is done through the scheme
+  function script-fu-register. The registering has following purposes:
 </p>
 <ol>
-  <li>Choose the place of the script in the Script-Fu pulldown menus.</li>
-  <li>Tell script-fu the type of parameters the script takes and give these parameters default values.</li>
+  <li>Tell Script-Fu the type of parameters the script takes and give
+  these parameters default values.</li>
+  <li>Give the script a name to be used as the menu label.</li>
   <li>Register the script as a command in the PDB.</li>
 </ol>
 <p>
-  The last point above actually means that a script is from Gimp's viewpoint in no way different from a built-in command or a plugin command. 
-  As long as a command is registered in the PDB it can be called by any script or plugin.
+  The last point above actually means that a script is from Gimp's
+  viewpoint in no way different from a built-in command or a plugin
+  command.  As long as a command is registered in the PDB it can be
+  called by any script or plugin.
 </p>
 <p>
-  The parameters of script-fu-register may be divided into two groups. The first group of seven parameters must always be given. These are:
+  The parameters of script-fu-register may be divided into two
+  groups. The first group of seven parameters must always be
+  given. These are:
 </p>
 <ol>
   <li>The name of the lisp function.</li>
-  <li>The position of the script in the gimp menus.</li>
+  <li>The name of the script to be used as a menu entry.</li>
   <li>A help string describing the function of the script.</li>
   <li>The script author.</li>
   <li>The script copyright.</li>
   <li>Script date.</li>
-  <li>List of valid image types for the script. This only has a meaning on scripts operating on images that already exist.</li>
+  <li>List of valid image types for the script. This only has a
+  meaning on scripts operating on images that already exist.</li>
 </ol>
 <p>
-  After these seven parameters have been given, follows a list of the parameters required by the script. 
-  Each parameter is given as a group of three items:
+  After these seven parameters have been given, follows a list of the
+  parameters required by the script.  Each parameter is given as a
+  group of three items:
 </p>
 <ol>
   <li> The type of the parameter. Valid types are
@@ -220,18 +263,22 @@
 
 <h2>6. A commented script</h2>
 <p>
-  The following script <b>uni.scm</b> receives two parameter from the user, the size of the image, and a color and goes on to 
-  produce a uniform image of the requested size and the requested color. Not very useful, but it shows the essential steps in producing a script-fu script.
+  The following script <b>uni.scm</b> receives two parameter from the
+  user, the size of the image, and a color and goes on to produce a
+  uniform image of the requested size and the requested color. Not
+  very useful, but it shows the essential steps in producing a
+  script-fu script.
 </p>
 <pre class="code">
 ; Define the function of the script and list its parameters
 ; The parameters will be matched with the parameters listed
 ; below in script-fu-register.
+
 (define (uni-img size color)
   ; Create an img and a layer
   (set! img (car (gimp-image-new size size RGB)))
   (set! layer (car (gimp-layer-new img size size
-                             RGB "layer 1" 100 NORMAL)))
+                                   RGB "layer 1" 100 NORMAL)))
 
  ; The following is done for all scripts
  (gimp-image-undo-disable img)
@@ -248,23 +295,28 @@
 
 ; Finally register our script with script-fu.
 (script-fu-register "uni-img"
-              "&lt;Toolbox&gt;/Xtns/Script-Fu/Tutorials/Uniform image"
-              "Creates a uniform image"
-              "Dov Grobgeld &lt;dov@imagic.weizmann.ac.il&gt;"
-              "Dov Grobgeld"
-              "2002-02-12"
-              ""
-              SF-VALUE "size" "100"
-              SF-COLOR "color" '(255 127 0))
+                    "Uniform image"
+                    "Creates a uniform image"
+                    "Dov Grobgeld &lt;dov@imagic.weizmann.ac.il&gt;"
+                    "Dov Grobgeld"
+                    "2002-02-12"
+                    ""
+                    SF-VALUE "size" "100"
+                    SF-COLOR "color" '(255 127 0))
+(script-fu-menu-register "uni-img" "&lt;Toolbox&gt;/Xtns/Script-Fu/Tutorials")
 </pre>
+
 <p>
-  To test the script save it in $HOME/.gimp-1.2/scripts/uni.scm and then select <span class="filter">Xtns -&gt; Script-Fu -&gt; Refresh</span>:
+  To test the script save it in $HOME/.gimp-2.2/scripts/uni.scm and
+  then select <span class="filter">Xtns -&gt; Script-Fu -&gt;
+  Refresh</span>:
 </p>
 <p class="images">
   <img src="refresh.png" alt=""/>
 </p>
 <p>
-  The script <b>Uniform image</b> should now appear in the pulldown menu 
+  The script <b>Uniform image</b> should now appear in the pulldown
+  menu
   <span class="filter">Xtns -&gt; Script-Fu -&gt; Tutorials -&gt; Uniform image</span>. 
   Selecting this script results in the following popup:
 </p>
@@ -272,13 +324,15 @@
   <img src="uni-img.png" alt=""/>
 </p>
 <p>
-  Accepting these default parameters through the <b>OK</b> button gives us the following new image:
+  Accepting these default parameters through the <b>OK</b> button gives us
+  the following new image:
 </p>
 <p class="images">
   <img src="uni-result.png" alt=""/>
 </p>
 <p>
-  It is also possible to access this script through the Script-Fu console by typing the command
+  It is also possible to access this script through the Script-Fu console by
+  typing the command
 </p>
 <pre class="code">
 (uni-img 100 '(0 255 127))
@@ -287,27 +341,32 @@
 
 <h2>6.1 Hanging a script in the image menu</h2>
 <p>
-  In the <b>uni-img</b> script it was placed under <b>Xtns/...</b> in the main Gimp window. 
+  In the <b>uni-img</b> script it was placed under <b>Xtns/...</b> in the
+  main Gimp window. 
   This is done to create a new image that is independant of earlier images. 
-  It is also possible to create a script which works on an already existing image. If in <b>script-fu-register</b> as the second argument is written:
+  It is also possible to create a script which works on an already existing
+  image. If in <b>script-fu-menu-register</b> the second argument is written:
 </p>
 <p>
   <span class="filter">&lt;Image&gt;/Script-Fu/...</span>
 </p>
 <p>
-  then the script will be available through the gimp menu that is launched by the right mouse button over an image. 
-  Such script must also have as their first and second argument a SF-IMAGE and a SF-DRAWABLE.
+  then the script will be available through the gimp menu that is launched
+  by the right mouse button over an image.  Such script must also have as
+  their first and second argument a SF-IMAGE and a SF-DRAWABLE.
 </p>
 <p>
-  Here is an example script which copies the current layer to a new layer, blurs it and inverts it.
+  Here is an example script which copies the current layer to a new layer,
+  blurs it and inverts it.
 </p>
 <pre class="code">
 ; An example script that blurs an image according to a blur radius.
 ; It illustrates how to hang a script in the image menu, and
 ; how a plug-in may be called.
+
 (define (script-fu-copy-blur img
-                       drawable
-                       blur-radius)
+                             drawable
+                             blur-radius)
   ; Create a new layer
   (set! new-layer (car (gimp-layer-copy drawable 0)))
 
@@ -328,21 +387,26 @@
 )
 
 (script-fu-register "script-fu-copy-blur"
-              "&lt;Image&gt;/Script-Fu/Tutorial/copy-blur"
-              "Copy and blur a layer"
-              "Dov Grobgeld"
-              "Dov Grobgeld"
-              "2002"
-              "RGB*, GRAY*"
-              SF-IMAGE "Image" 0
-              SF-DRAWABLE "Layer to blur" 0
-              SF-VALUE "Blur strength" "5")
+                    "Copy and Blur"
+                    "Copy and blur a layer"
+                    "Dov Grobgeld"
+                    "Dov Grobgeld"
+                    "2002"
+                    "RGB*, GRAY*"
+                    SF-IMAGE    "Image"         0
+                    SF-DRAWABLE "Layer to blur" 0
+                    SF-VALUE    "Blur strength" "5")
+(script-fu-menu-register "script-fu-copy-blur"
+                         "&lt;Image&gt;/Script-Fu/Tutorials")
+
 </pre>
 <br />
 
 <h2>7. Painting areas with selections</h2>
 <p>
-  In uni-img we called the procedure gimp-edit-fill to fill the whole image. Looking at the info for gimp-edit-fill in the DB browser we find the following:
+  In uni-img we called the procedure gimp-edit-fill to fill the whole
+  image. Looking at the info for gimp-edit-fill in the Procedure
+  Browser we find the following:
 </p>
 
     <table><tbody>
@@ -360,14 +424,18 @@
                 <th valign=top></th>
                 <td valign=top>INT32</td>
                 <td valign=top>fill_type</td>
-                <td valign=top>The type of fill: FG_IMAGE_FILL (0), BG_IMAGE_FILL (1), WHITE_IMAGE_FILL (2), TRANS_IMAGE_FILL (3), NO_IMAGE_FILL (4)</td>
+                <td valign=top>The type of fill: FG-IMAGE-FILL (0), BG-IMAGE-FILL (1), WHITE-IMAGE-FILL (2), TRANS-IMAGE-FILL (3), NO-IMAGE-FILL (4)</td>
               </tr>
               <tr>
                 <th valign=top valign=top>Help:</th>
                 <td colspan=3>
-                  This procedure fills the specified drawable with the fill mode. If the fill mode is foreground, the current foreground color is used. 
-                  If the fill mode is background, the current background color is used. Other fill modes should not be used. 
-                  This procedure only affects regions within a selection if there is a selection active.
+                  This procedure fills the specified drawable with the
+                  fill mode. If the fill mode is foreground, the
+                  current foreground color is used.  If the fill mode
+                  is background, the current background color is
+                  used. Other fill modes should not be used.  This
+                  procedure only affects regions within a selection if
+                  there is a selection active.
                 </td>
               </tr>
             </tbody></table>
@@ -375,9 +443,11 @@
     </tbody></table>
 
   <p>
-    Thus, if we have a selection active when the gimp-edit-fill is called only the selection is painted. 
-    There are lots of ways of choosing a selection as can be seen when searching for a ``select'' in the PDB. 
-    We will use gimp-rect-select, whose entry in the PDB looks as follows:
+    Thus, if we have a selection active when gimp-edit-fill is called,
+    then only the selection is painted.  There are lots of ways of
+    choosing a selection as can be seen when searching for a
+    ``select'' in the PDB.  We will use gimp-rect-select, whose entry
+    in the PDB looks as follows:
   </p>
 
   <table><tbody>
@@ -386,7 +456,8 @@
               <tr><th valign=top align=right>Name:</th>
                 <td style="background: #e0e0ff none;" colspan=3>gimp-rect-select</td></tr>
               <tr><th valign=top align=right>Blurb:</th>
-                <td valign=top colspan=3>Create a rectangular selection over the specified image</td></tr>
+                <td valign=top colspan=3>Create a rectangular
+                selection over the specified image</td></tr>
               <tr>
                 <th valign=top align=right valign=top>In:</th>
                 <td valign=top>IMAGE</td>
@@ -397,13 +468,15 @@
                 <th valign=top></th>
                 <td valign=top>FLOAT</td>
                 <td valign=top>x</td>
-                <td valign=top>x coordinate of upper-left corner of rectangle</td>
+                <td valign=top>x coordinate of upper-left corner of
+                rectangle</td>
               </tr>
               <tr>
                 <th valign=top></th>
                 <td valign=top>FLOAT</td>
                 <td valign=top>y</td>
-                <td valign=top>y coordinate of upper-left corner of rectangle</td>
+                <td valign=top>y coordinate of upper-left corner of
+                rectangle</td>
               </tr>
               <tr>
                 <th valign=top></th>
@@ -421,7 +494,8 @@
                 <th valign=top></th>
                 <td valign=top>INT32</td>
                 <td valign=top>operation</td>
-                <td valign=top>the selection operation: {ADD (0), SUB(1), REPLACE (2), INTERSECT (3) }</td>
+                <td valign=top>the selection operation: {ADD (0),
+                SUB(1), REPLACE (2), INTERSECT (3) }</td>
               </tr>
               <tr>
                 <th valign=top></th>
@@ -436,9 +510,14 @@
                 <td valign=top>radius for feather operation</td>
               </tr>
               <tr><th valign=top valign=top>Help:</th>
-                <td colspan=3>This tool creates a rectangular selection over the specified image. The rectangular region can be either added to, 
-                  subtracted from, or replace the contents of the previous selection mask. If the feather option is enabled, the resulting selection is blurred before combining. 
-                  The blur is a gaussian blur with the specified feather radius.
+                <td colspan=3>This tool creates a rectangular
+                  selection over the specified image. The rectangular
+                  region can be either added to, subtracted from, or
+                  replace the contents of the previous selection
+                  mask. If the feather option is enabled, the
+                  resulting selection is blurred before combining.
+                  The blur is a gaussian blur with the specified
+                  feather radius.
                 </td>
               </tr>
             </tbody></table>
@@ -446,7 +525,9 @@
     </tbody></table>
 
   <p>
-    A simple use of this function which selects the rectangle (x,y,width,height)=(0,25,100,50), paints this region blue, and releases the selection looks as follows:
+    A simple use of this function which selects the rectangle
+    (x,y,width,height) = (0,25,100,50), paints this region blue, and
+    releases the selection looks as follows:
   </p>
 <pre class="code">
 (gimp-rect-select img 0 25 100 50 REPLACE 0 0)
@@ -461,9 +542,8 @@
   The only looping construct that exists in Script-Fu is <b>while</b>
 </p>
 <p>
-  [Note: this constraint is due to the current scheme interpreter 
-  SIOD used for Script-Fu. Once the scheme interpreter as planned is changed to Guile, 
-  more looping constructs will probably be added.] The while loop looks as follows:
+  [Note: this constraint is due to the current scheme interpreter SIOD
+  used for Script-Fu.]  The while loop looks as follows:
 </p>
 <pre class="code">
 (while (condition)
@@ -486,19 +566,22 @@
 
 <h2>9. Floating selections</h2>
 <p>
-  When pasting an image from the clipboard, or when creating text 
-  in a a drawable, the result is not put directly in the drawable. 
-  Instead it is put into a special temporary layer known as a floating selection. 
-  The floating selection may be manipulated in several ways, and finally it is 
-  merged into its associated layer, a process known as anchoring.
+  When pasting an image from the clipboard, or when creating text in a
+  a drawable, the result is not put directly in the drawable.  Instead
+  it is put into a special temporary layer known as a floating
+  selection.  The floating selection may be manipulated in several
+  ways, and finally it is merged into its associated layer, a process
+  known as anchoring.
 </p>
 
 <h2>9.1 Hello World - writing text in an image</h2>
 <p>
-  When creating text through the gimp-text command, 
-  the text is always put into a temporary layer. This temporary layer then has to be anchored. 
-  Here is an example of creating some text which is pasted into the current drawable:
+  When creating text through the gimp-text command, the text is always
+  put into a temporary layer. This temporary layer then has to be
+  anchored.  Here is an example of creating some text which is pasted
+  into the current drawable:
 </p>
+
 <pre class="code">
 ; An example script that writes a fixed string in the current
 ; image.
@@ -508,17 +591,10 @@
   ; be carried out if an undo command is issued.
   (gimp-undo-push-group-start img)
 
-  ; Create the text. See DBbrowser for parameters of gimp-text.
-  (set! text-float (car (gimp-text-fontname
-  img
-  drawable
-  10 10
-  "Hello world"
-  0
-  1
-  50
-  0
-  "-*-utopia-*-r-*-*-*-*-*-*-*-*-*-*")))
+  ; Create the text. See the Procedure Browser for parameters of gimp-text.
+  (set! text-float (car (gimp-text-fontname img drawable
+                                            10 10 "Hello world" 0 1 50 0
+                                            "Sans")))
 
   ; Anchor the selection
   (gimp-floating-sel-anchor text-float)
@@ -530,29 +606,37 @@
   (gimp-displays-flush))
 
 (script-fu-register "script-fu-hello-world"
-              "&lt;Image&gt;/Script-Fu/Tutorial/Hello World"
-              "Write Hello World in the current image"
-              "Dov Grobgeld &lt;dov@imagic.weizmann.ac.il&gt;"
-              "Dov Grobgeld"
-              "2002-02-12"
-              "RGB*, GRAY*"
-              SF-IMAGE "Input Image" 0
-              SF-DRAWABLE "Input Drawable" 0)
+                    "Hello World"
+                    "Write Hello World in the current image"
+                    "Dov Grobgeld &lt;dov@imagic.weizmann.ac.il&gt;"
+                    "Dov Grobgeld"
+                    "2002-02-12"
+                    "RGB*, GRAY*"
+                    SF-IMAGE "Input Image" 0
+                    SF-DRAWABLE "Input Drawable" 0)
+(script-fu-menu-register "script-fu-hello-world"
+                          "&lt;Image&gt;/Script-Fu/Tutorials")
 </pre>
+
 <p>
-  This script shows another feature we haven't mentioned before. The possibility of creating an undo group. 
-  All the commands between the commands gimp-undo-push-group-begin and 
-  gimp-undo-push-group-end are undone together if the undo command is issued.
+  This script shows another feature we haven't mentioned before. The
+  possibility of creating an undo group.  All the commands between the
+  commands gimp-undo-push-group-begin and gimp-undo-push-group-end are
+  undone together if the undo command is issued.
 </p>
 
 <h2>9.2 Copying a selection</h2>
 <p>
-  To copy a selection, the command gimp-edit-copy is used. It places a copy of the selection contents in the cut-buffer. 
-  The contents of the cut-buffer may then be pasted into a layer, the same layer or another one, and it is then pasted as a floating layer.
+  To copy a selection, the command gimp-edit-copy is used. It places a
+  copy of the selection contents in the cut-buffer.  The contents of
+  the cut-buffer may then be pasted into a layer, the same layer or
+  another one, and it is then pasted as a floating layer.
 </p>
 <p>
-  In the following example the selection is copied, pasted into the same layer, offset a fixed distance, finally anchored. 
-  Try it by drawing a small blob in the middle of the image, select the blob, and then call this script.
+  In the following example the selection is copied, pasted into the
+  same layer, offset a fixed distance, finally anchored.  Try it by
+  drawing a small blob in the middle of the image, select the blob,
+  and then call this script.
 </p>
 <pre class="code">
 ; An example of how to create a floating layer and how to ancor it.
@@ -573,20 +657,22 @@
   ; Flush output
   (gimp-displays-flush))
 
-
 (script-fu-register "script-fu-sel-copy"
-              "&lt;Image&gt;/Script-Fu/Tutorial/Selection Copy"
-              "Copy the selection into the same layer"
-              "Dov Grobgeld"
-              "Dov Grobgeld"
-              "2002-02-12"
-              "RGB*, GRAY*"
-              SF-IMAGE "Image" 0
-              SF-DRAWABLE "Layer" 0)
+                    "Selection Copy"
+                    "Copy the selection into the same layer"
+                    "Dov Grobgeld"
+                    "Dov Grobgeld"
+                    "2002-02-12"
+                    "RGB*, GRAY*"
+                    SF-IMAGE "Image" 0
+                    SF-DRAWABLE "Layer" 0)
+(script-fu-menu-register "script-fu-sel-copy"
+                         "&lt;Image&gt;/Script-Fu/Tutorials")
 </pre>
 
 <p>
-  The original tutorial can be found <a href="tutorial:Basic_Scheme-Dov_Grobgeld">here</a>.
+  The original tutorial can be
+  found <a href="tutorial:Basic_Scheme-Dov_Grobgeld">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
     <div>

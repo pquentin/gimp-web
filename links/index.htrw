@@ -14,7 +14,7 @@ href="/about/linking.html">this other page</a>.</p>
 <h2>Other Useful Links</h2>
 <ul>
   <li><a href="#maillists">Mailinglists</a></li>
-  <li><a href="#org">The GIMP Organization</a></li>
+  <li><a href="#org">gimp.org</a></li>
   <li><a href="#tuts">Tutorials</a></li>
   <li><a href="#clubs">Communities</a></li>
   <li><a href="#development">Development</a></li>
@@ -25,12 +25,12 @@ href="/about/linking.html">this other page</a>.</p>
 
 <h2><a name="maillists"></a>Mailinglists</h2>
 
-<p><a href="/mail_lists.html">The GIMP Maillist Page</a><br /> A more
-thorough overview of The GIMP related mail lists and some mail list
+<p><a href="/mail_lists.html">GIMP Mailing Lists</a><br /> A more
+thorough overview of GIMP related mail lists and some mailing list
 ettiquette.</p>
 
 
-<h2><a name="org"></a>The GIMP Organization</h2>
+<h2><a name="org"></a>gimp.org</h2>
 <!--#include virtual="/includes/urls_go-utility.inc" -->
 <p><a href="org.html">More ...</a></p>
 
@@ -76,14 +76,14 @@ has lots of GIMP tutorials; most of the texts are in German and English.
 </p>
 <p>
   <a href="http://groups.yahoo.com/group/thegimp2/">English GIMP-club</a><br />
-  English-spoken community to discuss using The GIMP
+  English-spoken community to discuss usage of GIMP
 </p>
 <p>
   <a href="http://computer.clubs.nl/GIMP">Dutch GIMP-club</a><br />
   Dutch-spoken community to promote GIMP-usage in The Netherlands
 </p>
 <p>
-  <a href="http://www.gimp.ru">The GIMP in Russian</a><br />
+  <a href="http://www.gimp.ru">GIMP in Russian</a><br />
   Russian site about GIMP. Articles, tutorials, FAQ, forum.
 </p>
 <p>
@@ -95,7 +95,7 @@ has lots of GIMP tutorials; most of the texts are in German and English.
   A community site with news, tutorials and galleries.
 </p>
 <p>
-  <a href="http://www.gimp.cz">The GIMP in Czech and Slovak</a><br />
+  <a href="http://www.gimp.cz">GIMP in Czech and Slovak</a><br />
   A Czech and Slovak community site with news, tutorials and user forums.
 </p>
 <p>
@@ -104,11 +104,11 @@ has lots of GIMP tutorials; most of the texts are in German and English.
 </p>
 <p>
   <a href="http://www.gimpforum.de/">GIMPforum.de</a><br />
-  German-spoken forum focussing on The GIMP. News, tutorials, user-to-user help and galleries.
+  German-spoken forum focussing on GIMP. News, tutorials, user-to-user help and galleries.
 </p>
 <p>
-  <a href="http://gimp.akl.lt/">The GIMP in Lithuanian</a><br />
-  Lithuanian site about The GIMP, featuring news, tutorials, forum and galleries.
+  <a href="http://gimp.akl.lt/">GIMP in Lithuanian</a><br />
+  Lithuanian site about GIMP, featuring news, tutorials, forum and galleries.
 </p>
 <p>
   <a href="http://gimp.hispalinux.es">GIMP.es</a><br />
@@ -120,10 +120,10 @@ has lots of GIMP tutorials; most of the texts are in German and English.
 </p>
 <p>
   <a href="http://gimp.eu.org">gimp.eu.org</a><br />
-  The GIMP & Inkscape for Polish-speaking users: news, forum and wiki.
+  GIMP & Inkscape for Polish-speaking users: news, forum and wiki.
 </p>
 
-<h2><a name="created"></a>Created with the GIMP</h2>
+<h2><a name="created"></a>Created with GIMP</h2>
 <p>
   <a href="http://gug.sunsite.dk/gallery.php">Galleries from GUG</a><br />
   The largest collection of GIMP-created graphics

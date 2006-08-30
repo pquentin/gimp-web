@@ -1,3 +1,8 @@
+2006-08-30  Sven Neumann  <sven@gimp.org>
+
+	* includes/wgo-page-init.xhtml: removed some links from the side
+	navigation; it's still way too crowded.
+
 2006-08-24  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.2.13 release.

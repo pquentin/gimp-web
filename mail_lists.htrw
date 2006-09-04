@@ -9,7 +9,7 @@
 <link rel="alternate" title="gimp-os2 RSS" href="maillist:GIMP-user-os2-rss" type="application/rss+xml" />
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
-<h1>Mail List Links</h1>
+<h1>Mailing Lists</h1>
 
 <dl>
   <dt><a href="maillist:GIMP-user">GIMP User</a></dt>
@@ -62,7 +62,8 @@
   Archives: <a href="maillist:GIMP-docs-archive">XCF</a></dd>
 
   <dt><a href="maillist:GIMP-user-images">GIMPImages</a></dt>
-  <dd>GIMPI is a group dedicated to exchange of images created or manipulated with GIMP.<br />
+  <dd>GIMPI is a group dedicated to exchange of images created or
+  manipulated with GIMP.<br />
   Archives: <a href="maillist:GIMP-user-images-archive">Yahoo</a></dd>
 
   <dt><a href="maillist:GIMP-perl">GIMP-perl</a></dt>
@@ -228,16 +229,9 @@
   </li>
 </ul>
 <p>
-  Conclusion: the faster, easier and cheaper people can see what is
-  going in the mails, the better for all. And the topic is Gimp.
+  Conclusion: the faster and easier people can see what is
+  going in the mails, the better for all. And the topic is GIMP.
 </p>
-<!--
-<h2>Other Helpful Mail Lists</h2>
-<h2>os2 Lists</h2>
-<ul>
-  <li><a href="maillist:SANE-os2">SANE-os2</a> (<a href="maillist:SANE-os2-archive">archive</a>)</li>
-</ul>
--->
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,10 @@
+2006-12-05  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* gimp-tutorials/Basic_Batch/index.htrw: fixed error in
+	batch-unsharp-mask script. Fixed some typos.
+
+	* gimp-tutorials/Basic_Scheme/index.htrw: fixed a couple of typos.
+
 2006-11-24  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.3.13 release.

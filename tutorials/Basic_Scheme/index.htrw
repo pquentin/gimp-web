@@ -22,8 +22,8 @@
 
 <h2>1. Expressions</h2>
 <p>
-  Scheme is a lisp variants and all expressions are surrounded by
-  parens. E.g. a list which will calculate the sum of 3 and 4 is
+  Scheme is a Lisp variant and all expressions are surrounded by
+  parentheses. E.g. a list which will calculate the sum of 3 and 4 is
   written
 </p>
 <pre class="code">
@@ -76,7 +76,7 @@
 <h2>3. Variables and lists</h2>
 <p>
   Variables may be declared and set through the set! command. (These
-  variables will be global but this should not bother the casual gimp
+  variables will be global but this should not bother the casual GIMP
   programmer).  Here are a couple of assignments:
 </p>
 <pre class="code">
@@ -92,10 +92,10 @@
 '(255 127 0)
 </pre>
 <p>
-  The ' sign is necessary in order to tell scheme that this is a
-  literal list. If the ' was omitted scheme would try to look up a
+  The ' sign is necessary in order to tell Scheme that this is a
+  literal list. If the ' was omitted Scheme would try to look up a
   function with the name 255 and send it the two parameters 127 and 0,
-  which is obviously not what we wants.
+  which is obviously not what we want.
 </p>
 <p>
   To create a variable called orange with the above value and then set
@@ -110,16 +110,16 @@
 <h2>3.1 car, cdr and friends (*)</h2>
 <p>
   A list in Scheme is always composed of a head and a tail. The head
-  is the first entry in the list, and the tail is the list of the rest
-  of the elements.  This means that the list (255 127 63) really means
-  (255 (127 (63 ()))) but Scheme allows the previous form as a
+  is the first entry in the list, and the tail is the rest of the
+  elements in the list.  This means that the list (255 127 63) really
+  means (255 (127 (63 ()))) but Scheme allows the previous form as a
   shortcut.  The car function is used to return the head of the list
   and the cdr (usually pronounced cudder) is used to get the tail of
   the list.
 </p>
 <p>
-  [The following is a test of the above functions which may
-  interactively be conducted in the Script-Fu console.]
+  [The following is a test of the above functions which may be
+  interactively conducted in the Script-Fu console.]
 </p>
 <pre class="code">
 =&gt; (set! color '(255 127 63))
@@ -138,10 +138,10 @@
 63
 </pre>
 <p>
-  This is very unconvenient to write. Therefore there have been
+  This is very inconvenient to write. Therefore there have been
   defined abreviations of the form cadr, cddr, caddr, etc that
-  concatinate the operations described above. The previous expression
-  may therefore much more conveniently be written:
+  concatenate the operations described above. The previous expression
+  may therefore be much more conveniently written:
 </p>
 <pre class="code">
 =&gt; (caddr color)
@@ -149,7 +149,7 @@
 </pre>
 <p>
   For the Script-Fu writer one of the most important uses of the car
-  function is to access the returned values from the built-in gimp
+  function is to access the returned values from the built-in GIMP
   functions.  All gimp-functions return a list, and even if the list
   contains only one element it must be accessed by car.  This is
   e.g. the case for the important functions gimp-new-image and
@@ -158,10 +158,10 @@
 
 <h2>3.2 Local variables (*)</h2>
 <p>
-  More experienced scheme programmers mostly use local variables
+  More experienced Scheme programmers mostly use local variables
   instead of the global variables described above.  This is considered
   better programming practice and this construct should be recognized
-  in order to be able to read others ScriptFu scripts.
+  in order to be able to read others Script-Fu scripts.
 </p>
 <p>
   Local variables are declared through the the let keyword as in the
@@ -181,13 +181,13 @@
 <p>
   All functionality of GIMP is available through the procedural
   database (PDB).  Each procedural database function has a
-  corresponding scheme function mapping. E.g.
+  corresponding Scheme function mapping. E.g.
 </p>
 <pre class="code">
 (gimp-image-new 100 150 RGB)
 </pre>
 <p>
-  produces a new gimp image of type RGB and size 100x150.
+  produces a new GIMP image of type RGB and size 100x150.
 </p>
 <p>
   All the functions of the PDB may be accessed through the Procedure
@@ -208,7 +208,7 @@
 <h2>5. Registering the script with Script-Fu</h2>
 <p>
   After a function has been written it has to be registered with
-  Script-Fu before it can be used.  This is done through the scheme
+  Script-Fu before it can be used.  This is done through the Scheme
   function script-fu-register. The registering has following purposes:
 </p>
 <ol>
@@ -229,7 +229,7 @@
   given. These are:
 </p>
 <ol>
-  <li>The name of the lisp function.</li>
+  <li>The name of the function.</li>
   <li>The name of the script to be used as a menu entry.</li>
   <li>A help string describing the function of the script.</li>
   <li>The script author.</li>
@@ -239,23 +239,25 @@
   meaning on scripts operating on images that already exist.</li>
 </ol>
 <p>
-  After these seven parameters have been given, follows a list of the
-  parameters required by the script.  Each parameter is given as a
+  After these seven parameters have been given, a list of the parameters
+  required by the script follows.  Each parameter is given as a
   group of three items:
 </p>
 <ol>
-  <li> The type of the parameter. Valid types are
+  <li> The type of the parameter. Some of the valid types are:
     <dl>
      <dt><b>SF-COLOR</b></dt>
      <dd> An RGB color.</dd>
      <dt><b>SF-TOGGLE</b></dt>
      <dd> A true or false value.</dd>
+     <dt><b>SF-STRING</b></dt>
+     <dd> A string of characters enclosed in double quotes.</dd>
+     <dt><b>SF-VALUE</b></dt>
+     <dd> Any scalar value, integer, or floating point.</dd>
      <dt><b>SF-IMAGE</b></dt>
      <dd></dd>
      <dt><b>SF-DRAWABLE</b></dt>
      <dd></dd>
-     <dt><b>SF-VALUE</b></dt>
-     <dd> Any scalar value, string, integer, or floating point.</dd>
      </dl></li>
   <li> A label for Script-Fu to display when querying for the parameter.</li>
   <li> A default value.</li>
@@ -263,8 +265,8 @@
 
 <h2>6. A commented script</h2>
 <p>
-  The following script <b>uni.scm</b> receives two parameter from the
-  user, the size of the image, and a color and goes on to produce a
+  The following script <b>uni.scm</b> receives two parameters from the
+  user, the size of the image and a color, and goes on to produce a
   uniform image of the requested size and the requested color. Not
   very useful, but it shows the essential steps in producing a
   Script-Fu script.
@@ -351,7 +353,7 @@
   <span class="filter">&lt;Image&gt;/Script-Fu/...</span>
 </p>
 <p>
-  then the script will be available through the gimp menu that is launched
+  then the script will be available through the GIMP menu that is launched
   by the right mouse button over an image.  Such script must also have as
   their first and second argument a SF-IMAGE and a SF-DRAWABLE.
 </p>
@@ -542,7 +544,7 @@
   The only looping construct that exists in Script-Fu is <b>while</b>
 </p>
 <p>
-  [Note: this constraint is due to the current scheme interpreter SIOD
+  [Note: this constraint is due to the current Scheme interpreter SIOD
   used for Script-Fu.]  The while loop looks as follows:
 </p>
 <pre class="code">

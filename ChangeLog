@@ -1,5 +1,9 @@
 2007-01-23  Sven Neumann  <sven@gimp.org>
 
+	* downloads/index.htrw: updated for 2.3.14 release.
+
+2007-01-23  Sven Neumann  <sven@gimp.org>
+
 	* includes/wgo-page-init.xhtml: fix bug #348129 once more.
 
 2007-01-06  Michael Schumacher  <schumaml@cvs.gnome.org>

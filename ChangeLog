@@ -1,3 +1,10 @@
+2007-01-28  Sven Neumann  <sven@gimp.org>
+
+	* includes/wgo-howto-bugs-init.xhtml
+	* includes/wgo-howto-source-init.xhtml
+	* includes/wgo-tutorial-init.xhtml
+	* includes/wgo-howto-unix-init.xhtml: removed link to Resources page.
+
 2007-01-23  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.3.14 release.

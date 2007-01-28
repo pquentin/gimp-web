@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Drawing Shapes with Bezier Tool</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Drawing Shapes with the Path Tool</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Kuosmanen_Tuomas">Tuomas Kuosmanen</a> and may not be used 
@@ -155,7 +155,7 @@
   <br />
   It was updated for Gimp 2.0 by Raphaël Quinet.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Kuosmanen_Tuomas">Tuomas Kuosmanen (tigert)</a>

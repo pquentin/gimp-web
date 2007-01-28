@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Changing Background Color 1</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Changing Background Color 1</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Burgess_Seth">Seth Burgess</a> and may not be used without permission of the author.
@@ -131,7 +131,7 @@
 <p>
   The original tutorial can be found <a href="tutorial:Changing_Background1-Seth_Burgess">here</a>.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Burgess_Seth">Seth Burgess (sjburges)</a>

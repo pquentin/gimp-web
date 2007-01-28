@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Creating Icons</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Creating Icons</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Steiner_Jacub">Jacub Steiner</a> and may not be used without permission of the author.
@@ -269,7 +269,7 @@
 <p>
   The original tutorial can be found <a href="tutorial:Creating_Icons-Jakub_Steiner">here</a>.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Steiner_Jacub">Jakub Steiner (jimmac)</a>

@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Controlling GIMP with MIDI devices</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-howto-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Controlling GIMP with MIDI devices</h1>
 
@@ -95,7 +95,7 @@
    Have fun.
 </p>
 
-<!--#include virtual="/includes/wgo-howto-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
 	How To &copy; 2005 <a href="mail:People-Budig_Simon">Simon Budig</a>.

@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Basic Scheme2</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Basic Scheme2</h1>
 <p>
   This article was originally published
@@ -314,7 +314,7 @@
   in <a href="tutorial:Basic_Scheme2-John_Beppu">Linux Magazine,
   January 2002</a>. It has since then seen some minor updates.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Beppu_John">John Beppu</a>

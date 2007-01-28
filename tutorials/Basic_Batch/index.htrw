@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Batch Mode</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>GIMP Batch Mode</h1>
 
@@ -135,5 +135,5 @@ Options:
   detailed list of all commands.
 </p>
 
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

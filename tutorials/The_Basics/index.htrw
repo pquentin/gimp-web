@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - The Basics Tutorial</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>The Basics Tutorial</h1>
 <p>
   Text and images Copyright (C)
@@ -185,7 +185,7 @@
   The original tutorial can be
   found <a href="tutorial:The_Basics-Jens_Lautenbacher">here</a>.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Lautenbacher_Jens">Jens Lautenbacher (jtl)</a>

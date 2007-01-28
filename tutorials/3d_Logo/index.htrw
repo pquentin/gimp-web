@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - 3-d Floating Logo</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>3-d Floating Logo</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Boyce_Mel">Mel Boyce</a> and may not be used without permission of the author.
@@ -302,7 +302,7 @@
 <p>
  The original tutorial can be found <a href="tutorial:3-d_Floating_Logo-Mel_Boyce">here</a>.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Boyce_Mel">Mel Boyce (syngin)</a>

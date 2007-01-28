@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Image Pipes</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Image Pipes</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Likins_Adrian">Adrian Likins</a> and may not be used without permission of the author.
@@ -201,7 +201,7 @@
 <p>
   The original tutorial can be found <a href="tutorial:Image_Pipes-Adrian_Likins">here</a>.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Likins_Adrian">Adrian Likins (adrian)</a>

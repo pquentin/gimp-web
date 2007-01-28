@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Title goes here</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Title goes here</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Author_Name">Author name</a> and may not be used without permission of the author.
@@ -19,7 +19,7 @@
 <p>
   The original tutorial can be found <a href="tutorial:Nameoftutorial-Author_Name">here</a>.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:Author_Name">Author Name</a>

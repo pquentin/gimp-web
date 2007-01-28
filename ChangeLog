@@ -1,5 +1,16 @@
 2007-01-28  Sven Neumann  <sven@gimp.org>
 
+	* includes/wgo-howto-init.xhtml
+	* includes/wgo-tutorial-init.xhtml
+	* includes/wgo-howto-fini.xhtml
+	* includes/wgo-tutorial-fini.xhtml: removed. It doesn't make much
+	sense to maintain extra navigation bars for tutorials and howtos.
+
+	Changed all affected .htrw files and include wgo-page-init and
+	wgo-page-fini instead.
+
+2007-01-28  Sven Neumann  <sven@gimp.org>
+
 	* includes/wgo-develop-init.xhtml
 	* includes/wgo-develop-fini.xhtml: removed unused files.
 

@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Draw A Paint Brush</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-tutorial-init.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Draw A Paint Brush</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Kuosmanen_Tuomas">Tuomas Kuosmanen</a> and may not be used 
@@ -244,7 +244,7 @@
 <p>
   The original tutorial can be found <a href="tutorial:Draw_A_Paint_Brush-Tuomas_Kuosmanen">here</a>.
 </p>
-<!--#include virtual="/includes/wgo-tutorial-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
         Tutorial &copy; 2002 <a href="home:People-Kuosmanen_Tuomas">Tuomas Kuosmanen (tigert)</a>

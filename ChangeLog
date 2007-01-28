@@ -1,5 +1,9 @@
 2007-01-28  Sven Neumann  <sven@gimp.org>
 
+	* includes/wgo-page-init.xhtml: changed "The GIMP" to "GIMP".
+
+2007-01-28  Sven Neumann  <sven@gimp.org>
+
 	* resources: removed completely. This part of the web-site was
 	never finished and the information kept here was outdated and not
 	considered useful.

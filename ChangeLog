@@ -1,5 +1,10 @@
 2007-01-28  Sven Neumann  <sven@gimp.org>
 
+	* docs/scheme_plugin/scheme-overview.html: corrected link to the
+	SIOD reference (bug #372589).
+
+2007-01-28  Sven Neumann  <sven@gimp.org>
+
 	* downloads/index.htrw (href): corrected link to the user manual.
 
 	* includes/wgo-page-fini.xhtml: updated copyright.

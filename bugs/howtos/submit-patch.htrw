@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - How To Create and Submit a Patch</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-howto-bugs-init.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-init.xhtml" -->
 
 <h1>How To Create and Submit a Patch</h1>
 
@@ -128,7 +128,7 @@
   <li>write what version it is tested on. stable? development?</li>
 </ul>
 
-<!--#include virtual="/includes/wgo-howto-bugs-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-fini.xhtml" -->
     <div>
       <span id="footerleft">
         How To &copy; 2002-2003 <a href="mail:People-Mattisson_Niklas">Niklas Mattisson</a> and

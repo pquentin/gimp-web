@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Compile Your CVS Stable Tree</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-howto-source-init.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-init.xhtml" -->
 <h1>CVS Is Not That Scary</h1>
 
 <h2>or Build Your Stable GIMP from CVS</h2>
@@ -99,7 +99,7 @@ ftp://ftp.gnu.org/pub/gnu/config/.
 </p>
 <h2>Now type 'make' to compile GIMP.</h2>
 
-<!--#include virtual="/includes/wgo-howto-source-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-fini.xhtml" -->
     <div>
       <span id="footerleft">
         How To Build Your Stable GIMP from CVS &copy; 2002 <a href="mail:People-Spears_Carol">Carol Spears</a>

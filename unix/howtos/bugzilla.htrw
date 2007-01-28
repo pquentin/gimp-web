@@ -1,8 +1,8 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<!-- rewrite-attrs.py $Revision$ automatically generated this file from unix/howtos/bugzilla.htrw.  Do not edit.-->
+<!-- rewrite-attrs.py $Revision: 1.4 $ automatically generated this file from unix/howtos/bugzilla.htrw.  Do not edit.-->
 <title>GIMP - How To Report GIMP Bugs</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-howto-unix-init.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-init.xhtml" -->
 <h1>EEK! A Bug!</h1>
 
 <h2>or How To Report GIMP Bugs</h2>
@@ -212,7 +212,7 @@
   your bug, reproduced it, and fixed it. 
 </p>
 
-<!--#include virtual="/includes/wgo-howto-unix-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-fini.xhtml" -->
     <div>
       <span id="footerleft">
         How To Bugzilla &copy; 2002 <a href="mailto:bex@gimp.org">Rebecca J. Walter</a>

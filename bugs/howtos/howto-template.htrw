@@ -1,7 +1,7 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - How To Title</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
-<!--#include virtual="/includes/wgo-howto-bugs-init.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-init.xhtml" -->
 <!--                                                                      -->
 <!--                 How To Use This Template                             -->
 <!-- Any file with the extension .htrw will be sent through the attribute -->
@@ -56,7 +56,7 @@ main()
   More information.
 </p>
 
-<!--#include virtual="/includes/wgo-howto-bugs-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-howto-fini.xhtml" -->
     <div>
       <span id="footerleft">
         How To &copy; 2002 <a href="mailto:webmaster@gimp.org">Author name</a>

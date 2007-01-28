@@ -1,5 +1,23 @@
 2007-01-28  Sven Neumann  <sven@gimp.org>
 
+	* includes/wgo-howto-*-init.xhtml: merged into
+	* includes/wgo-howto-init.xhtml
+
+	* includes/wgo-howto-*-fini.xhtml: merged into
+	* includes/wgo-howto-fini.xhtml
+
+	* unix/howtos/gimp-midi.htrw
+	* unix/howtos/tile_cache.htrw
+	* unix/howtos/bugzilla.htrw
+	* unix/howtos/howto-template.htrw
+	* bugs/howtos/submit-patch.htrw
+	* bugs/howtos/bugzilla.htrw
+	* bugs/howtos/howto-template.htrw
+	* source/howtos/stable-cvs-build.htrw
+	* about/ancient_history.htrw: changed accordingly.
+
+2007-01-28  Sven Neumann  <sven@gimp.org>
+
 	* os2: removed completely.
 
 	* admin/gimp-web-urls: removed references to OS2 specific information.

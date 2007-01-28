@@ -1,5 +1,9 @@
 2007-01-28  Sven Neumann  <sven@gimp.org>
 
+	* includes/wgo-page-fini.xhtml: updated copyright.
+
+2007-01-28  Sven Neumann  <sven@gimp.org>
+
 	* includes/wgo-howto-init.xhtml
 	* includes/wgo-tutorial-init.xhtml
 	* includes/wgo-howto-fini.xhtml

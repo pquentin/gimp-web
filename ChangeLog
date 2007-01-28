@@ -1,5 +1,10 @@
 2007-01-28  Sven Neumann  <sven@gimp.org>
 
+	* includes/wgo-develop-init.xhtml
+	* includes/wgo-develop-fini.xhtml: removed unused files.
+
+2007-01-28  Sven Neumann  <sven@gimp.org>
+
 	* includes/wgo-howto-*-init.xhtml: merged into
 	* includes/wgo-howto-init.xhtml
 

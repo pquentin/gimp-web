@@ -1,5 +1,7 @@
 2007-01-29  Sven Neumann  <sven@gimp.org>
 
+	* source/index.htrw: updated for migration to Subversion.
+
 	* includes/urls_go-developer.inc: link to Subversion instead of CVS.
 
 2007-01-29  Sven Neumann  <sven@gimp.org>

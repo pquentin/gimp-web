@@ -16,11 +16,11 @@
 <ul>
   <li><a href="#source">GIMP Source Code</a></li>
   <li><a href="#requirements">GIMP Requirements</a></li>
-  <li><a href="#gimp_from_cvs">GIMP from CVS</a></li>
+  <li><a href="#gimp_from_cvs">GIMP from Subversion</a></li>
   <li><a href="#optional_packages">Optional packages</a></li>
 </ul>
 
-<h2>Stable version</h2>
+<h2>Stable releases</h2>
 <p>
   Is recommended for most users. Pre-compiled binaries of the stable
   GIMP are usually available for many platforms (see the
@@ -28,7 +28,7 @@
   compile the code yourself.
 </p>
 
-<h2>Development version</h2>
+<h2>Development releases</h2>
 <p>
   For those who want to check the progress towards the next stable
   release, and who want to help the developers by testing the code and
@@ -41,21 +41,21 @@
   discussions about new features and known bugs.
 </p>
 
-<h2>CVS versions</h2>
+<h2>Subversion repository</h2>
 <p>
   This is for those who want to live on the bleeding edge. 
   This will give you the latest version of the source code with 
   the latest features, but also with the latest bugs (eeek!). 
-  CVS maintains several versions of the code called "branches" so you can 
-  fetch the latest version ("HEAD") or a stable version from a maintenance
-  branch.
+  The repository contains several versions of the code called "branches"
+  so you can fetch the latest version ("trunk") or a stable version from
+  a maintenance branch.
 
   If you intend to <a href="wgo:develop">contribute</a> to the
-  development of the GIMP, then you should try CVS. As the code is
-  constantly evolving and features are added (or removed) every day,
-  you should have a look at the <a href="wgo:dev">developers' site</a> 
-  and subscribe to the gimp-developer mailing list if you compile the
-  code from CVS.
+  development of the GIMP, then you should try using Subversion. As
+  the code is constantly evolving and features are added (or removed)
+  every day, you should have a look at
+  the <a href="wgo:dev">developers' site</a> and subscribe to the
+  gimp-developer mailing list if you compile the code from SVN.
 </p>
 
 <h1><a name="source">GIMP Source Code</a></h1>
@@ -145,14 +145,11 @@
 <td>Vector rendering
 </td></tr></table>
 
-<h1><a name="gimp_from_cvs">GIMP from CVS</a></h1>
+<h1><a name="gimp_from_cvs">GIMP from Subversion</a></h1>
 <p>
-
-  If you want to work with GIMP from CVS, then the following howtos
-  are written to give you a fast introduction. To find out more about
-  GIMP and CVS related topics,
-  <a href="wgo:dev">http://developer.gimp.org/</a> should answer the
-  questions you have.
+  We only recently migrated from CVS to Subversion. Due to this change, the
+  following HOWTOs are somewhat outdated. We are looking for volunteers to
+  update them.
 </p>
 <ul>
   <li><a href="wgo:source-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
@@ -161,6 +158,11 @@
 <p>
   See the platform-specific pages for additional requirements and 
   instructions for each operating system.
+</p>
+<p>
+  To find out more about GIMP development,
+  <a href="wgo:dev">http://developer.gimp.org/</a> should answer the
+  questions you have.
 </p>
 
 <h1><a name="optional_packages">Optional packages</a></h1>

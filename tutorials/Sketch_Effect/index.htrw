@@ -79,7 +79,7 @@ After:<br />
 <p>
   Now, back to the image. Was the effect a bit too subtle,
 	perhaps? While not necessary, we can apply the
-	Levels tool (<span class="filter">Image-&gt;Colors-&gt;Levels</span>)
+	Levels tool (<span class="filter">Layer-&gt;Colors-&gt;Levels</span>)
 	to increase the contrast a bit, so that it's easier to inspect
 	visually. In this example, I set Input Levels to 100-155;
 </p>
@@ -92,7 +92,7 @@ After:<br />
 <h2>2. The sketch part</h2>
 <p>
   Now it's time to make the image background white.
-	First, <span class="filter">Image-&gt;Colors-&gt;Desaturate</span>
+	First, <span class="filter">Layer-&gt;Colors-&gt;Desaturate</span>
 	the image, and fire up that Levels tool again.
 	Here you need to experiment a bit to find
 	the best values for your image. But you will most likely want to set max

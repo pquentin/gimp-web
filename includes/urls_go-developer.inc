@@ -12,6 +12,6 @@
   An image processing library based on GObjects.
 </p>
 <p>
-  <a href="http://cvs.gnome.org/">GNOME CVS</a><br />
-  GNOME CVS source code repository
+  <a href="http://svn.gnome.org/">GNOME Subversion Services</a><br />
+  GNOME Subversion source code repository
 </p>

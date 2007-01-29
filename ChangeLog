@@ -1,5 +1,9 @@
 2007-01-29  Sven Neumann  <sven@gimp.org>
 
+	* includes/urls_go-developer.inc: link to Subversion instead of CVS.
+
+2007-01-29  Sven Neumann  <sven@gimp.org>
+
 	* tutorials/Sketch_Effect/index.htrw: updated menu paths.
 
 2007-01-28  Sven Neumann  <sven@gimp.org>

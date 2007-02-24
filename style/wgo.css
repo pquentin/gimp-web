@@ -30,7 +30,7 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+a[href]:hover {
   background: transparent;
   color: #991e1e;
   text-decoration: underline;

@@ -15,7 +15,7 @@
 </div>
 -->
 <div style="float: left;">
-  <a href="linux_screenshot2.png">
+  <a href="linux_screenshot2.png" style="margin-right: 1cm;">
   <img src="linux_screenshot2_thumb.jpg" alt="Linux Screenshot" />
   </a>
   <p style="text-align: left;">1280x1024 Swedish</p>

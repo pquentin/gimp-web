@@ -1,3 +1,8 @@
+2007-03-02  Simon Budig  <simon@gimp.org>
+
+	* screenshots/index.htrw: added new multihead screenshot.
+	* screenshots/linux_multihead_screenshot*: new files.
+
 2007-02-28  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* source/howtos/stable-svn-build.htrw: new file, partial rewrite

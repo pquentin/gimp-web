@@ -1,5 +1,11 @@
 2007-03-03  Simon Budig  <simon@gimp.org>
 
+        * screenshots/index.htrw: fix caption of multihead screenshot.
+	* screenshots/linux_screenshot2_thumb.jpg: rescaled to preserve
+	the aspect ratio.
+
+2007-03-03  Simon Budig  <simon@gimp.org>
+
 	* screenshots/index.htrw: fix right border.
 
 2007-03-02  Simon Budig  <simon@gimp.org>

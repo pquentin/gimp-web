@@ -11,14 +11,14 @@
 
 <p>A whole new default icon theme has been created for 2.4. The icons comply with the <a href="http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines">Tango style guidelines</a> so GIMP doesn't feel out of place on any of the supported platforms. Regardless of whether you run GIMP under Microsoft Windows, Mac OS X or Linux (<a href="http://www.gnome.org/">GNOME</a>, <a href="http://www.kde.org/">KDE</a> or <a href="http://www.xfce.org/">Xfce</a>), GIMP provides a polished, consistent look.</p>
 
-<img class="left" src="refreshed-look.png" alt="Refreshed Look" />
+<img class="left" src="images/2.4-refreshed-look.png" alt="Refreshed Look" />
 <p>Additionally the icons also have enhanced usability on dark widget themes, which is a common setting among digital artists.</p>
 
 <p>For artists preferring more desaturated color theme for their icons is an <a href="http://jimmac.musichall.cz/zip/GIMP-Greyscale-tools-0.1.tar.bz2">alternative icon theme</a> available for download.</p>
 
 <h3>Scalable Brushes</h3>
 
-<img class="right" src="scalable-brushes.png" alt="Scalable Brushes" />
+<img class="right" src="images/2.4-scalable-brushes.png" alt="Scalable Brushes" />
 
 <p>The tool options now include a brush size slider that affects both the parametric and bitmap brushes. This has been an oft-requested feature from both digital painters and photo editors.</p>
 
@@ -26,7 +26,7 @@
 
 <h3>Selection Tools</h3>
 
-<img class="right" src="selection-tools.png" alt="Selection Tools" />
+<img class="right" src="images/2.4-selection-tools.png" alt="Selection Tools" />
 
 <p>The selection tools have been rewritten from scratch to allow resizing of existing selections. Additionally the rectangular selection tool includes a setting for creating rounded corners as this has been identified as a very common task among web designers.</p>
 
@@ -71,7 +71,7 @@
 
 <h3>Color Management and Soft-proofing</h3>
 
-<img class="right" src="color-management.png" alt="Color Management" />
+<img class="right" src="images/2.4-color-management.png" alt="Color Management" />
 
 <p>GIMP now provides full support for color profiles allowing precise color modification throughout the whole 'digital darkroom' process.</p>
 

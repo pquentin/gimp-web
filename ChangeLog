@@ -1,5 +1,11 @@
 2007-03-12  Karine Delvare  <edhel@gimp.org>
 
+	* release-notes/*.png: renamed from these...
+	* release-notes/images/2.4-*.png: to these.
+	* release-notes/gimp-2.4.htrw: changed accordingly.
+
+2007-03-12  Karine Delvare  <edhel@gimp.org>
+
 	New page for 2.4 release notes, content contributed by Jakub Steiner.
 
 	* style/wgo.css: added classes for floating images.

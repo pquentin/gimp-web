@@ -1,0 +1,121 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - What is coming</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP 2.4 Release Notes</h1>
+
+<h2>General Improvements</h2>
+
+<h3>Refreshed Look</h3>
+
+<p>A whole new default icon theme has been created for 2.4. The icons comply with the <a href="http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines">Tango style guidelines</a> so GIMP doesn't feel out of place on any of the supported platforms. Regardless of whether you run GIMP under Microsoft Windows, Mac OS X or Linux (<a href="http://www.gnome.org/">GNOME</a>, <a href="http://www.kde.org/">KDE</a> or <a href="http://www.xfce.org/">Xfce</a>), GIMP provides a polished, consistent look.</p>
+
+<img class="left" src="refreshed-look.png" alt="Refreshed Look" />
+<p>Additionally the icons also have enhanced usability on dark widget themes, which is a common setting among digital artists.</p>
+
+<p>For artists preferring more desaturated color theme for their icons is an <a href="http://jimmac.musichall.cz/zip/GIMP-Greyscale-tools-0.1.tar.bz2">alternative icon theme</a> available for download.</p>
+
+<h3>Scalable Brushes</h3>
+
+<img class="right" src="scalable-brushes.png" alt="Scalable Brushes" />
+
+<p>The tool options now include a brush size slider that affects both the parametric and bitmap brushes. This has been an oft-requested feature from both digital painters and photo editors.</p>
+
+<p>Unlike previous versions of GIMP, regardless of whether you're using a bitmap brush, parametric brush or even a picture tube (mutiple bitmaps), you can easily set the brush size with either the tool options dock slider or an external device such as a MIDI slider or knob or a USB device like the griffin powermate.</p>
+
+<h3>Selection Tools</h3>
+
+<img class="right" src="selection-tools.png" alt="Selection Tools" />
+
+<p>The selection tools have been rewritten from scratch to allow resizing of existing selections. Additionally the rectangular selection tool includes a setting for creating rounded corners as this has been identified as a very common task among web designers.</p>
+
+<p>The learning curve for the tools has been flattened as the key functionality is available without obscure shortcuts that confused GIMP beginners. Most of the existing shortcuts still work, but the functionality is either available through the tool options or made obsolete due to the interactive move and resize on canvas.</p>
+
+<p>While the tools have been redesign to make them easier to understand for the newbies, all the former functionality is there. You can still constraint aspect ratios, specific sizes.</p>
+
+<h3>Foreground Select Tool</h3>
+
+<p>Selecting individual objects on images is easier now with a new foreground select tool. It is done in two steps. First, you make select region of interest which contains the entire object. Then you paint over selected area with a brush, not crossing object’s border. Release mouse button when you’re done and look, if there are dark blue spots on your objects. If there are some, paint with a brush over them again and release to refine selection. When there are no more blue areas inside the object, press Enter and there you have a perfectly selected object.</p>
+
+<em>Video to be added</em>
+
+<h3>Align Tool</h3>
+
+<p>While GIMP has provided a grid and guideline functionality, The actual alignment of objects had to be done manually. A new tool comes at rescue.</p>
+
+<em>Content to be added</em>
+
+<h3>Metadata Editor</h3>
+
+<em>Content to be added</em>
+
+<h3>Support for file formats</h3>
+
+<ul>
+<li>Support for Photoshop ABR brush format;</li>
+<li>Improved reading/writing EXIF in JPEG;</li>
+<li>Importing clipping paths in TIFF;</li>
+<li>Layer masks can be saved to PSD;</li>
+<li>16/32 bit bitmaps and alpha-channel support in BMP;</li>
+<li>24 bit and Vista icons can be opened and saved.</li>
+</ul>
+
+<h2>Digital Photography</h2>
+
+<h3>Fullscreen Editing</h3>
+
+<p>The fullscreen mode has been improved to not only allow getting a full scale preview of the artwork, but also allow comfortable editing. The artist has maximum screen estate available while all functionality is quickly accessible by pressing the Tab key (toggles visibility of all docks) when working fullscreen.</p>
+
+<p>Whether painting or touching up photos, fullscreen editing keeps all the distracting elements out of sight on a key press. It's like observing stars in a field as opposed to a light-polluted city.</p>
+
+<h3>Color Management and Soft-proofing</h3>
+
+<img class="right" src="color-management.png" alt="Color Management" />
+
+<p>GIMP now provides full support for color profiles allowing precise color modification throughout the whole 'digital darkroom' process.</p>
+
+<p>For more information, see color management.</p>
+
+<h3>New Crop Tool</h3>
+
+<em>Image to be added</em>
+
+<p>Just like the selection tools, the new crop tool has been enhanced since the last release. The resize handles actually resize the crop rectangle instead of providing both resize and move functionality. The tool behaves more naturally and consistently with other GIMP tools.</p>
+
+<p>To move, simply drag the rectangle clicking within the area. Resizing is possible in one or two axes at the same time dragging the handle-bars on the sides and corners. The outside area is darkened with a nice passepartout effect to better get the idea of how the final crop will look like.</p>
+
+<h3>Guides</h3>
+
+<em>Content to be added</em>
+
+<h3>Red Eye Removal</h3>
+
+While numerous red-eye workflows exist already, GIMP now features a very convenient auto-magic filter to remove red eye from your shots.
+
+<h3>Healing Brush</h3>
+
+<em>Video to be added</em>
+
+<h3>Perspective Clone</h3>
+
+<em>Video to be added</em>
+
+<h3>Lens Distortion</h3>
+
+<object class="right" style="width:400px; height:326px;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=1146746790574496439&hl=en" flashvars=""></object>
+
+<p>A very common problem exposing itself especially when using cheaper lenses is barrel distortion and vignetting. Luckily GIMP provides a brand new filter to compensate for both problems. Saving photographer's pocket is our mission!</p>
+
+<h2>Various Other Improvements</h2>
+
+<p>In addition to all the above, GIMP has been improved in other areas such as:</p>
+<ul>
+<li>Better status information for tools in the window status bar.</li>
+<li>Various speedups in compositing functions and gradient drawing.</li>
+<li>Zoomable preview widget for plugins.</li>
+</ul>
+
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

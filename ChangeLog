@@ -1,3 +1,12 @@
+2007-03-12  Karine Delvare  <edhel@gimp.org>
+
+	New page for 2.4 release notes, content contributed by Jakub Steiner.
+
+	* style/wgo.css: added classes for floating images.
+
+	* release-notes/gimp-2.4.htrw
+	* release-notes/*.png: new files.
+
 2007-03-09  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.3.15 release.

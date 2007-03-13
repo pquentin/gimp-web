@@ -167,7 +167,11 @@ has lots of GIMP tutorials; most of the texts are in German and English.
 </p>
 <p>
   <a href="http://www.inkscape.org/">Inkscape</a><br />
-  Another vector drawing program for Unix.
+  Very powerful <a href="http://www.w3.org/Graphics/SVG/">SVG</a> based illustration package distributed under the GNU GPL.
+</p>
+<p>
+  <a href="http://www.blender.org/">Blender</a><br />
+  <p>Multi-platform full featured 3D content creation suite, also distributed under the GPL.</p> 
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -1,5 +1,12 @@
 2007-03-15  Jakub Steiner <jimmac@ximian.com>
 
+	* images/frontsplash.png: make the wilberbaloon smile
+	* downloads/downloadsplash.png: more lively download page. Will
+	  need indexing, size shrinking. But not until the design is
+	  finalized.
+	
+2007-03-15  Jakub Steiner <jimmac@ximian.com>
+
 	* release-notes/gimp-2.4.htrw: markup and layout fixes.
 	* includes/wgo-page-init.htrw: make the titlebar link to the
 	  frontpage

@@ -3,6 +3,11 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
+<div class="splash">
+<img alt="#" 
+src="downloadsplash.png" width="640" height="200" />
+</div>
+
 <h1>Downloads</h1>
 
 <p>The GIMP releases available from gimp.org and its

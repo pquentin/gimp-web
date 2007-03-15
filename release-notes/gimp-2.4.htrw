@@ -22,7 +22,7 @@
 
 <p>The tool options now include a brush size slider that affects both the parametric and bitmap brushes. This has been an oft-requested feature from both digital painters and photo editors.</p>
 
-<p>Unlike previous versions of GIMP, regardless of whether you're using a bitmap brush, parametric brush or even a picture tube (mutiple bitmaps), you can easily set the brush size with either the tool options dock slider or an external device such as a MIDI slider or knob or a USB device like the griffin powermate.</p>
+<p>Unlike previous versions of GIMP, regardless of whether you're using a bitmap brush, parametric brush or even a picture tube (mutiple bitmaps), you can easily set the brush size with either the tool options dock slider or an external device such as a MIDI slider or knob or a USB device like the Griffin Powermate.</p>
 
 <h3>Selection Tools</h3>
 
@@ -32,23 +32,23 @@
 
 <p>The learning curve for the tools has been flattened as the key functionality is available without obscure shortcuts that confused GIMP beginners. Most of the existing shortcuts still work, but the functionality is either available through the tool options or made obsolete due to the interactive move and resize on canvas.</p>
 
-<p>While the tools have been redesign to make them easier to understand for the newbies, all the former functionality is there. You can still constraint aspect ratios, specific sizes.</p>
+<p>While the tools have been redesigned to make them easier to understand for the newbies, all the former functionality is there. You can still constrain aspect ratios or specific sizes.</p>
 
 <h3>Foreground Select Tool</h3>
 
 <p>Selecting individual objects on images is easier now with a new foreground select tool. It is done in two steps. First, you make select region of interest which contains the entire object. Then you paint over selected area with a brush, not crossing object’s border. Release mouse button when you’re done and look, if there are dark blue spots on your objects. If there are some, paint with a brush over them again and release to refine selection. When there are no more blue areas inside the object, press Enter and there you have a perfectly selected object.</p>
 
-<em>Video to be added</em>
+<p><em>Video to be added</em></p>
 
 <h3>Align Tool</h3>
 
 <p>While GIMP has provided a grid and guideline functionality, The actual alignment of objects had to be done manually. A new tool comes at rescue.</p>
 
-<em>Content to be added</em>
+<p><em>Content to be added</em></p>
 
 <h3>Metadata Editor</h3>
 
-<em>Content to be added</em>
+<p><em>Content to be added</em></p>
 
 <h3>Support for file formats</h3>
 
@@ -79,7 +79,7 @@
 
 <h3>New Crop Tool</h3>
 
-<em>Image to be added</em>
+<p><em>Image to be added</em></p>
 
 <p>Just like the selection tools, the new crop tool has been enhanced since the last release. The resize handles actually resize the crop rectangle instead of providing both resize and move functionality. The tool behaves more naturally and consistently with other GIMP tools.</p>
 
@@ -91,19 +91,19 @@
 
 <h3>Red Eye Removal</h3>
 
-While numerous red-eye workflows exist already, GIMP now features a very convenient auto-magic filter to remove red eye from your shots.
+<p>While numerous red-eye workflows exist already, GIMP now features a very convenient auto-magic filter to remove red eye from your shots.</p>
 
 <h3>Healing Brush</h3>
 
-<em>Video to be added</em>
+<p><em>Video to be added</em></p>
 
 <h3>Perspective Clone</h3>
 
-<em>Video to be added</em>
+<p><em>Video to be added</em></p>
 
 <h3>Lens Distortion</h3>
 
-<object style="width:400px; height:326px; margin: auto;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=1146746790574496439&hl=en" flashvars=""></object>
+<p><object style="width:520px; height:424px; margin: auto;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=1146746790574496439&hl=en" flashvars=""></object></p>
 
 <p>A very common problem exposing itself especially when using cheaper lenses is barrel distortion and vignetting. Luckily GIMP provides a brand new filter to compensate for both problems. Saving photographer's pocket is our mission!</p>
 

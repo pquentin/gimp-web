@@ -1,0 +1,9 @@
+/* Nasty workaround for IE browsers */
+
+#main {
+  width: 580px;
+}
+
+.intropara {
+   width: 588px;
+}

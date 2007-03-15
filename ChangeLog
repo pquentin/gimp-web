@@ -1,3 +1,13 @@
+2007-03-15  Jakub Steiner <jimmac@ximian.com>
+
+	* images/frontsplash.png
+	* images/titlebar.png
+	* images/awards.png: titlebar, front splash and awards images for
+		the front page.
+	* style/ie-nastiness.css: IE needs smaller width to flow
+	  correctly. I need to investigate his as I thought IE7's box model
+ 	  was fixed. Haven't tested with IE6-
+
 2007-03-13  Jakub Steiner <jimmac@ximian.com>
 
 	* links/index.htrw: add Blender and provide saner Inkscape

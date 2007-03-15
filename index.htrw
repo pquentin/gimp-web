@@ -6,10 +6,29 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<p>GIMP is the GNU Image Manipulation Program.  It is a freely
-distributed piece of software for such tasks as photo retouching,
-image composition and image authoring.  It works on many operating
-systems, in many languages.</p>
+<div class="splash">
+<img alt="#" 
+src="/images/frontsplash.png" width="640" height="200" usemap="#splashmap" />
+</div>
+
+<map name="splashmap">
+<area shape="rect" coords="458,119,593,154" href="/downloads/" />
+<area shape="rect" coords="316,119,449,154" href="/release-notes/gimp-2.4.html" />
+</map>
+
+
+<p class="intropara">GIMP is the GNU Image Manipulation Program.  It is a freely
+distributed piece of software for such tasks as <a href="http://gimp-web.jimmac.net/tutorials/Blur_Overlays/">photo retouching</a>,
+image composition and <a href="/tutorials/Draw_A_Paint_Brush/">image 
+authoring</a>.  It works on many operating systems, in many languages.</p>
+
+<div id="downloadgimp">
+</div>
+
+<div id="awards">
+<a href="/awards/"><img alt="#" title="GIMP Awards"
+width="300" height="140" src="/images/awards.png" /></a>
+</div>
 
 <p>This is the official GIMP web site. It contains information about
 downloading, installing, using, and enhancing it.  This site also

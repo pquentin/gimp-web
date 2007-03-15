@@ -16,24 +16,23 @@
  */
 
 body {
-  background: white;
-  color: black;
-  font-family: arial,helvetica,sans-serif;
+  background: #1e2426;
+  color: white;
+  font-family: candara,arial,"dejavu sans","bitstream vera sans",helvetica,sans-serif;
   margin: 0px;
   padding: 0px;
+  font-size: 10pt;
 }
 
 a {
   background: transparent;
-  color: #17457c;
-  text-decoration: none;
+  color: #f57900;
   font-weight: bold;
 }
 
 a[href]:hover {
   background: transparent;
-  color: #991e1e;
-  text-decoration: underline;
+  color: #fcaf3e;
   font-weight: bold;
 }
 
@@ -65,32 +64,37 @@ img.right, object.right {
 
 /* Main header. */
 h1 {
-  background: #f5f5f5;
-  color: black;
-  border-style: solid;
-  border-color: #d0d0d0;
-  border-width: 1px;
+  color: #999;
+  border-bottom: 1px solid #444;
+  max-width: 94%;
   padding: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
   font-weight: bold;
-  font-size: 110%;
-  text-align: center;
+  font-size: 120%;
   clear: left;
 }
 
 /* Subtitle header. */
 h2 {
+  color: #999;
   font-weight: bold;
-  clear: both;
   font-size: 110%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  clear: left;
 }
 
 /* Another subtitle using another font-size then the subtitle. */
 h3 {
+  color: #999;
   font-weight: bold;
-  clear: both;
-  font-size: 100%;
+  font-size: 110%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  clear: left;
 }
+
+
 
 div.book-of-wilber { 
   font-size: large;
@@ -131,6 +135,9 @@ p.logos img {
 p.images, p.logos {
   text-align: center;
 }
+
+
+
 
 /* Imageslices: work-around to keep the renderer from reserving 
 space for the descenders of images by making the images blocks 
@@ -263,34 +270,63 @@ form {
   margin-right: 40px;
 }
 
+.screenshot {
+  float: left;
+}
+
+.screenshot img {
+  width: 240px;
+}
+
 /* Changes here should only be done if you know exactly what you are doing.
  * Changes done here will change the appearence of the whole site and should
  * be left up to the designer of the site to change. Contact the designer for
  * more information about the values below. */
 
+#maincontainer {
+   max-width: 800px;
+   min-height: 600px;
+   margin: 0px auto;
+   /* border: 1px solid green; */
+   background-color: #2e3436;
+}
+
 #menu {
-  background: #f5f5f5;
-  color: black;
-  border-style: solid;
-  border-color: #d0d0d0;
-  border-width: 0px 1px 0px 0px;
-  padding: 10px;
+  width: 140px;
+  float: right;
+  /* border: 1px solid red; */
+  padding: 20px;
   font-weight: bold;
-  vertical-align: top;
   white-space: nowrap;
-  top: 100px;
   left: 0px;
   height: 100%;
+  margin: 0px;
+  background-color: #1e2426;
+  -moz-border-radius-bottomleft: 13px;
 }
 
 #menu a {
   display: block;
+  text-decoration: none;
+  width: 140px;
+  margin: 2px;
+  padding: 2px 4px 2px 8px;
+}
+
+#menu a:hover {
+  color: #ffdf6e;
+  border-left: 2px solid #f57900;
+  padding: 2px 2px 2px 6px;
 }
 
 #menu a.sub {
   display: block;
-  padding-left: 10px;
+  padding-left: 14px;
   font-size: 90%;
+}
+
+#menu a.sub:hover {
+  padding-left: 12px;
 }
 
 #menu span {
@@ -311,25 +347,74 @@ form {
 }
 
 #main {
-  padding: 10px;
-  vertical-align: top;
+  width: 600px;
+  margin: 0px;
+  padding: 20px;
+  /* border: 1px solid blue; */
 }
 
-#titlebar {
-  background-image: url("../images/barbg.png");
-  background-repeat: repeat-x;
-  height: 100px;
-}
 
 #linkbar, #navbar {
+  width: 790px;
+  margin: 0px auto 20px auto;
+  padding: 0px;
   clear: both;
-  background: #f5f5f5;
-  color: black;
-  border: solid #d0d0d0;
-  border-width: 1px 0px 1px 0px;
+  background: #111;
+  color: #aaa;
+  border-top: 1 px solid #666;
   padding: 5px 5px 5px 5px;
   font-weight: bold;
-  text-align: center;
+  font-size: 80%;
+  text-align: right;
+  height: 70px;
+  -moz-border-radius-bottomright: 7px;
+  -moz-border-radius-bottomleft: 7px;
+}
+
+#header {
+   margin: 10px 0px 0px 0px;
+   height: 43px;
+}
+
+#title {
+   width: 800px;
+   padding: 0px;
+   margin: 0px auto;
+   font-size: 12pt;
+   font-weight: bold;
+   background: #f57900 url('../images/titlebar.png') no-repeat;
+   height: 90px;
+}
+
+#awards {
+   width: 300px;
+   margin-left: auto;
+   margin-right: 20px;
+   text-align: right;
+}
+
+.splash {
+  width: 620px;
+  margin: -20px 0px 0px -20px;
+  background-color: #555;
+  height: 180px;
+  overflow: hidden;
+}
+
+.splash img {
+  overflow: hidden;
+}
+
+.intropara {
+  width: 590px;
+  margin: 0px 0px 0px -20px;
+  background-color: #444;
+  padding: 8px 32px 16px 32px;
+  line-height: 1.5em;
+}
+
+#downloadgimp {
+
 }
 
 #footerleft {
@@ -342,13 +427,7 @@ form {
   padding: 20px;
 }
 
-#titlebarleft {
-  float: left;
-}
 
-#titlebarright {
-  float: right;
-}
 
 @media print {
 #titlebar, #navbar, #linkbar, #menu {

@@ -394,14 +394,9 @@ form {
 }
 
 .splash {
-  width: 620px;
   margin: -20px 0px 0px -20px;
   background-color: #555;
   height: 180px;
-  overflow: hidden;
-}
-
-.splash img {
   overflow: hidden;
 }
 

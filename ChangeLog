@@ -1,5 +1,9 @@
 2007-03-17  Jakub Steiner <jimmac@ximian.com>
 
+	* style/wgo.css: fix the splash overflow issue.
+
+2007-03-17  Jakub Steiner <jimmac@ximian.com>
+
 	* release-notes/gimp-2.4.htrw
 	* release-notes/images/2.4-releasesplash.png: initial splash. The
 	  sheets of paper will need to vary a bit.

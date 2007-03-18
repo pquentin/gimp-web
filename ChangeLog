@@ -1,3 +1,12 @@
+2007-03-18  Karine Delvare  <edhel@gimp.org>
+
+	* includes/wgo-page-init.xhtml: menu restructuring
+	* includes/urls_important.inc: merged with the previous About list
+	* release-notes/index.htrw: added link to 2.4 notes, should be
+	reorganized
+	* about/index.htrw: moved "GIMP In ..." parts
+	* about/everywhere.htrw: to this new page.
+
 2007-03-17  Jakub Steiner <jimmac@ximian.com>
 
 	* style/wgo.css: fix the splash overflow issue.

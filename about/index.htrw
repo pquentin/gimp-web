@@ -15,13 +15,9 @@
 <p>
   (<a href="wgo:about-introduction">more ...</a>)
 </p>
-<h2>Important Links</h2>
-  <ul>
-    <li><a href="wgo:license">GNU General Public License</a></li>
-    <li><a href="home:gnu">GNU Project</a></li>
-    <li><a href="home:gimp-bugzilla-stable">GIMP Bugzilla</a></li>
-    <li><a href="home:gtk">The GIMP Tool Kit</a></li>
-  </ul>
+
+<!--#include virtual="/includes/urls_important.inc" -->
+
 <h2>GIMP History</h2>
   <ul>
     <li><a href="document:news-original">Two Questions</a></li>

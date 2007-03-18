@@ -2,9 +2,10 @@
   <ul>
     <li><a href="http://www.gimp.org">The GNU Image Manipulation Program</a></li>
     <li><a href="http://wiki.gimp.org/">GIMP Wiki</a></li>
-    <li><a href="http://bugs.gimp.org/">GIMP Bugzilla</a></li>
-    <li><a href="http://www.gtk.org/">The Gimp Tool Kit</a></li>
-    <li><a href="http://www.gnu.org/">GNU Project</a></li>
+    <li><a href="home:gimp-bugzilla-stable">GIMP Bugzilla</a></li>
+    <li><a href="home:gtk">The GIMP Tool Kit</a></li>
+    <li><a href="wgo:license">GNU General Public License</a></li>
+    <li><a href="home:gnu">GNU Project</a></li>
   </ul>
 <h2>GIMP Planets</h2>
   <ul>

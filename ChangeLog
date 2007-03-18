@@ -1,5 +1,9 @@
 2007-03-18  Karine Delvare  <edhel@gimp.org>
 
+	* includes/wgo-page-init.xhtml: changed download sub-items order.
+
+2007-03-18  Karine Delvare  <edhel@gimp.org>
+
 	* includes/wgo-page-init.xhtml: menu restructuring
 	* includes/urls_important.inc: merged with the previous About list
 	* release-notes/index.htrw: added link to 2.4 notes, should be

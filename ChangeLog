@@ -1,3 +1,11 @@
+2007-03-19  Jakub Steiner <jimmac@gimp.org>
+
+	* tutorials/Basic_Perl/index.htrw:
+	* tutorials/Basic_Scheme/index.htrw:
+	* downloads/index.htrw:
+	* source/index.htrw: remove inline CSS
+	* style/wgo.css: define generic table look
+
 2007-03-18  Karine Delvare  <edhel@gimp.org>
 
 	* includes/wgo-page-init.xhtml: changed download sub-items order.

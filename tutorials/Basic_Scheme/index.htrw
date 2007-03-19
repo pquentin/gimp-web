@@ -411,10 +411,9 @@
   Browser we find the following:
 </p>
 
-    <table><tbody>
-      <tr><td style="background: #e0e0e0 none;">
+
           <table><tbody>
-              <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp-edit-fill</td></tr>
+              <tr><th valign=top align=right>Name:</th><td class="emphesize" colspan=3>gimp-edit-fill</td></tr>
               <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Fill selected area of drawable</td></tr>
               <tr>
                 <th valign=top align=right valign=top>In:</th>
@@ -441,8 +440,7 @@
                 </td>
               </tr>
             </tbody></table>
-        </td></tr>
-    </tbody></table>
+
 
   <p>
     Thus, if we have a selection active when gimp-edit-fill is called,
@@ -452,11 +450,10 @@
     in the PDB looks as follows:
   </p>
 
-  <table><tbody>
-      <tr><td style="background: #e0e0e0 none;">
+
           <table><tbody>
               <tr><th valign=top align=right>Name:</th>
-                <td style="background: #e0e0ff none;" colspan=3>gimp-rect-select</td></tr>
+                <td colspan=3 class="emphesize">gimp-rect-select</td></tr>
               <tr><th valign=top align=right>Blurb:</th>
                 <td valign=top colspan=3>Create a rectangular
                 selection over the specified image</td></tr>
@@ -523,8 +520,7 @@
                 </td>
               </tr>
             </tbody></table>
-          </td></tr>
-    </tbody></table>
+
 
   <p>
     A simple use of this function which selects the rectangle

@@ -94,7 +94,33 @@ h3 {
   clear: left;
 }
 
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 86%;
+  border: 1px solid #ce5c00;
+}
 
+th {
+  background-color: #ce5c00;
+  text-align: left;
+  padding: .5em;
+}
+
+td {
+  text-align: left;
+  padding: .5em;
+}
+
+td.emphesize {
+  background-color:  #ae3c00;
+  font-weight: bold;
+}
+
+li table {
+  margin: 1em 0px;
+  width: 100%;
+}
 
 div.book-of-wilber { 
   font-size: large;

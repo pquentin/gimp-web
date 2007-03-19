@@ -74,22 +74,19 @@
   E.g. the PDB Explorer entry for gimp_image_new, which will be used in the example below looks like this:
 </p>
 
-<table><tbody>
-    <tr><td style="background: #e0e0e0 none;">
         <table><tbody>
-            <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp_image_new</td></tr>
+            <tr><th valign=top align=right>Name:</th><td colspan=3>gimp_image_new</td></tr>
             <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Creates a new Image with the specified with, height, and type</td></tr>
             <tr><th valign=top align=right valign=top>In:</th><td valign=top>INT32</td><td valign=top>width</td><td valign=top>The width of the image</td></tr>
             <tr><th valign=top></th><td valign=top>INT32</td><td valign=top>height</td><td valign=top>The height of the image</td></tr>
             <tr><th valign=top></th><td valign=top>INT32</td><td valign=top>type</td><td valign=top>The type of image { RGB (0), GRAY (1), INDEXED (2)</td></tr>
-            <tr><th valign=top align=right>Out:</th></tr><tr><td></td><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The ID of the newly created image</td></tr>
+            <tr><th valign=top align=right>Out:</th><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The ID of the newly created image</td></tr>
             <tr><th valign=top valign=top>Help:</th><td colspan=3>Creates a new image, undisplayed with the specified extents and type. A layer should be created and added before this image is displayed, 
 or subsequent calls to 'gimp_display_new' with this image as an argument will fail. Layers can be created using the 'gimp_layer_new' commands. 
 They can be added to an image using the 'gimp_image_add_layer' command
               </td></tr>
           </tbody></table>
-        </td></tr>
-</tbody></table>
+
 
 <p>
   All the the constants mentioned in the PDB Explorer have been defined within Gimp::Fu and may be used within perl. 
@@ -147,14 +144,16 @@ They can be added to an image using the 'gimp_image_add_layer' command
     The acceptable image types - a string. This list contains a list
     of image types acceptable. This field is only used for scripts
     that are in the "&lt;Image&gt;" hieararchy. Possible values are
-    listed in the table below:
+    listed in the table below:<br />
+
     <table><tbody>
-        <tr><th style="background: #dfdfdf none;">value</th><th style="background: #dfdfdf none;">meaning</th></tr>
-        <tr><td style="background: #dfdfee none;" valign=top>*   </td><td style="background: #dfdfee none;" valign=top>Any images are accepted</td></tr>
-        <tr><td style="background: #dfdfee none;" valign=top>RGB </td><td style="background: #dfdfee none;" valign=top>RGB images</td></tr>
-        <tr><td style="background: #dfdfee none;" valign=top>RGBA</td><td style="background: #dfdfee none;" valign=top>RGB images with alpha channels</td></tr>
-        <tr><td style="background: #dfdfee none;" valign=top>GREY</td><td style="background: #dfdfee none;" valign=top>Grey level images</td></tr>
+        <tr><th>value</th><th>meaning</th></tr>
+        <tr><td valign="top">*   </td><td valign=top>Any images are accepted</td></tr>
+        <tr><td valign=top>RGB </td><td valign=top>RGB images</td></tr>
+        <tr><td valign=top>RGBA</td><td valign=top>RGB images with alpha channels</td></tr>
+        <tr><td valign=top>GREY</td><td valign=top>Grey level images</td></tr>
       </tbody></table>
+  <br />
   </li>
   
   <li>
@@ -165,116 +164,119 @@ They can be added to an image using the 'gimp_image_add_layer' command
     <ol>
       <li>
         The type of the parameter. The types recognized by Gimp::Fu
-        and their perl are given in the following table:
+        and their perl are given in the following table:<br />
+
         <table><tbody>
             <tr>
-              <th style="background: #dfdfdf none;">Type</th>
-              <th style="background: #dfdfdf none; width: 30%;">Possible forms</th>
-              <th style="background: #dfdfdf none; width: 50%;">Comment</th>
+              <th>Type</th>
+              <th>Possible forms</th>
+              <th>Comment</th>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>
+              <td valign=top>
                 PF_INT<br />
                 PF_INT32<br />
                 PF_INT16<br />
                 PF_INT8<br />
               </td>
-              <td style="background: #dfdfee none;" valign=top>42</td>
-              <td style="background: #dfdfee none;" valign=top>A number. PF_INT is a synonym to PF_INT32.</td>
+              <td valign=top>42</td>
+              <td valign=top>A number. PF_INT is a synonym to PF_INT32.</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>
+              <td  valign=top>
                 PF_VALUE<br />
                 PF_FLOAT<br />
               </td>
-              <td style="background: #dfdfee none;" valign=top>3.141</td>
-              <td style="background: #dfdfee none;" valign=top>A floating point number.</td>
+              <td  valign=top>3.141</td>
+              <td  valign=top>A floating point number.</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>
+              <td  valign=top>
                 PF_TOGGLE<br />
                 PF_BOOLEAN
               </td>
-              <td style="background: #dfdfee none;" valign=top>
+              <td valign=top>
                 0<br />
                 1
               </td>
-              <td style="background: #dfdfee none;" valign=top>
+              <td  valign=top>
                 A boolean value.
               </td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>
+              <td  valign=top>
                 PF_SLIDER<br />
                 PF_SPINNER
               </td>
-              <td style="background: #dfdfee none;" valign=top>
+              <td valign=top>
                 An integer value through a slider and a spinner
                 interface. The range parameter should be specified and
                 is interpreted as minimum, maximum, and step,
                 e.g. [0,100,1].
               </td>
-              <td style="background: #dfdfee none;" valign=top>
+              <td valign=top>
                 <img src="tpix.gif" width=0 alt="" />
               </td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_FONT</td>
-              <td style="background: #dfdfee none;" valign=top>-*-blippo-*-*-*-*-24-*-*-*-*-*-*-*</td>
-              <td style="background: #dfdfee none;" valign=top>A font in X11 font format. This interface launches a font browser.</td>
+              <td  valign=top>PF_FONT</td>
+              <td  valign=top>-*-blippo-*-*-*-*-24-*-*-*-*-*-*-*</td>
+              <td  valign=top>A font in X11 font format. This interface launches a font browser.</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_STRING</td>
-              <td style="background: #dfdfee none;" valign=top>"A string"</td>
-              <td style="background: #dfdfee none;" valign=top>A string</td>
+              <td valign=top>PF_STRING</td>
+              <td valign=top>"A string"</td>
+              <td valign=top>A string</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>
+              <td  valign=top>
                 PF_COLOR<br />
                 PF_COLOUR
               </td>
-              <td style="background: #dfdfee none;" valign=top>
+              <td  valign=top>
                 [255,127,0]<br />
                 <tt>#ff7f00</tt>
               </td>
-              <td style="background: #dfdfee none;" valign=top>
+              <td valign=top>
                 A color may either be expressed as a reference to an
                 array of three components, or as a hexadecimal
                 triple, proceeded by the hash sign.
               </td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_TOGGLE</td>
-              <td style="background: #dfdfee none;" valign=top>0<br />1</td>
-              <td style="background: #dfdfee none;" valign=top>A boolean toggle</td>
+              <td valign=top>PF_TOGGLE</td>
+              <td valign=top>0<br />1</td>
+              <td valign=top>A boolean toggle</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_IMAGE</td>
-              <td style="background: #dfdfee none;" valign=top>-</td>
-              <td style="background: #dfdfee none;" valign=top>An image</td>
+              <td valign=top>PF_IMAGE</td>
+              <td valign=top>-</td>
+              <td valign=top>An image</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_DRAWABLE</td>
-              <td style="background: #dfdfee none;" valign=top>-</td>
-              <td style="background: #dfdfee none;" valign=top>A drawable.</td>
+              <td valign=top>PF_DRAWABLE</td>
+              <td valign=top>-</td>
+              <td valign=top>A drawable.</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_BRUSH</td>
-              <td style="background: #dfdfee none;" valign=top><img src="tpix.gif" width=0 alt="" /></td>
-              <td style="background: #dfdfee none;" valign=top>A brush</td>
+              <td valign=top>PF_BRUSH</td>
+              <td valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td valign=top>A brush</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_GRADIENT</td>
-              <td style="background: #dfdfee none;" valign=top><img src="tpix.gif" width=0 alt="" /></td>
-              <td style="background: #dfdfee none;" valign=top>A gradient</td>
+              <td valign=top>PF_GRADIENT</td>
+              <td valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td valign=top>A gradient</td>
             </tr>
             <tr>
-              <td style="background: #dfdfee none;" valign=top>PF_PATTERN</td>
-              <td style="background: #dfdfee none;" valign=top><img src="tpix.gif" width=0 alt="" /></td>
-              <td style="background: #dfdfee none;" valign=top>A pattern</td>
+              <td valign=top>PF_PATTERN</td>
+              <td valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td valign=top>A pattern</td>
             </tr>
           </tbody>
         </table>
+<br />
+
       </li>
       <li>The name of the parameter - a string</li>
       <li>A help text for the parameter</li>
@@ -395,16 +397,16 @@ They can be added to an image using the 'gimp_image_add_layer' command
   Here is a table showing the procedural vs the object oriented syntax for a few commands:
 </p>
 <table><tbody>
-    <tr><th style="background: #E0E0E0 none;">procedural syntax</th>
-      <th style="background: #E0E0E0 none;">object oriented syntax</th>
+    <tr><th>procedural syntax</th>
+      <th>object oriented syntax</th>
     </tr>
     <tr>
-      <td style="background: #FFE0E0 none;">gimp_image_add_layer($drw,-1);</td>
-      <td style="background: #FFE0E0 none;">$img-&gt;add_layer($drw, -1);</td>
+      <td>gimp_image_add_layer($drw,-1);</td>
+      <td>$img-&gt;add_layer($drw, -1);</td>
     </tr>
     <tr>
-      <td style="background: #FFE0E0 none;">gimp_drawable_width($drw);</td>
-      <td style="background: #FFE0E0 none;">$drw-&gt;width();</td>
+      <td>gimp_drawable_width($drw);</td>
+      <td>$drw-&gt;width();</td>
       </tr>
   </tbody></table>
 <p>
@@ -421,10 +423,8 @@ They can be added to an image using the 'gimp_image_add_layer' command
   In the uni script the function gimp_edit_fill was called to fill the whole image. Looking at the info for gimp_edit_fill in the DB browser we find the following:
 </p>
 
-  <table><tbody>
-    <tr><td style="background: #e0e0e0 none;">
         <table><tbody>
-            <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp_edit_fill</td></tr>
+            <tr><th valign=top align=right>Name:</th><td colspan=3>gimp_edit_fill</td></tr>
             <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Fill selected area of drawable</td></tr>
             <tr>
               <th valign=top align=right valign=top>In:</th>
@@ -445,8 +445,6 @@ They can be added to an image using the 'gimp_image_add_layer' command
               </td>
             </tr>
           </tbody></table>
-      </td></tr>
-  </tbody></table>
 
 <p>
   Thus, if a selection is active when gimp_edit_fill is called only the selection is painted. 
@@ -454,10 +452,8 @@ They can be added to an image using the 'gimp_image_add_layer' command
   The example below uses gimp_rect_select, whose entry in the PDB looks as follows:
 </p>
 
-<table><tbody>
-    <tr><td style="background: #e0e0e0 none;">
         <table><tbody>
-            <tr><th valign=top align=right>Name:</th><td style="background: #e0e0ff none;" colspan=3>gimp_rect_select</td></tr>
+            <tr><th valign=top align=right>Name:</th><td colspan=3>gimp_rect_select</td></tr>
             <tr><th valign=top align=right>Blurb:</th><td valign=top colspan=3>Create a rectangular selection over the specified image</td></tr>
             <tr><th valign=top align=right valign=top>In:</th><td valign=top>IMAGE</td><td valign=top>image</td><td valign=top>The image</td></tr>
             <tr><th valign=top></th><td valign=top>FLOAT</td><td valign=top>x</td><td valign=top>x coordinate of upper-left corner of rectangle</td></tr>
@@ -479,9 +475,6 @@ They can be added to an image using the 'gimp_image_add_layer' command
               </td>
             </tr>
           </tbody></table>
-      </td>
-    </tr>
-</tbody></table>
 
 <p>
   A simple use of this function which selects a rectangle in the middle of an image and paints that rectangle with a user defined color. 

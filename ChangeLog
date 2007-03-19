@@ -1,6 +1,14 @@
 2007-03-19  Jakub Steiner <jimmac@gimp.org>
 
 	* admin/gimp-web-urls:
+	* about/splash/splash-images/gimp1_1_splash-2.4.png:
+	* about/splash/splash-images/gimp1_1_splash-2.4-t.png:
+	* about/splash/splash-images/gimp-splash-2.4.png:
+	* about/splash/splash-images/gimp-splash-2.4-t.png: rename
+
+2007-03-19  Jakub Steiner <jimmac@gimp.org>
+
+	* admin/gimp-web-urls:
 	* style/wgo.css:
 	* about/splash/splash-images/gimp1_1_splash-2.4.png:
 	* about/splash/splash-images/gimp1_1_splash-2.4-t.png: 

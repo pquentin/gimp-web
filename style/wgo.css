@@ -122,6 +122,10 @@ li table {
   width: 100%;
 }
 
+table.gimpsplash td {
+  vertical-align: bottom;
+}
+
 dd {
   margin: .5em .5em .5em 5em;
 }
@@ -430,7 +434,7 @@ form {
    text-align: right;
 }
 
-.splash {
+div.splash {
   margin: -20px 0px 0px -20px;
   background-color: transparent;
   height: 180px;

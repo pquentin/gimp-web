@@ -1,5 +1,13 @@
 2007-03-19  Jakub Steiner <jimmac@gimp.org>
 
+	* admin/gimp-web-urls:
+	* style/wgo.css:
+	* about/splash/splash-images/gimp1_1_splash-2.4.png:
+	* about/splash/splash-images/gimp1_1_splash-2.4-t.png: 
+	  clean up the splash page, add a 2.4 splash
+
+2007-03-19  Jakub Steiner <jimmac@gimp.org>
+
 	* about/splash/splashsplash.png:
 	* about/splash/index.htrw:
 	* style/wgo.css: splash screens, erm, splash

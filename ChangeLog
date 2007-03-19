@@ -1,5 +1,9 @@
 2007-03-19  Karine Delvare  <edhel@gimp.org>
 
+	* docs/userfaq.htrw: reformatting, cleanup of the first part.
+
+2007-03-19  Karine Delvare  <edhel@gimp.org>
+
 	* includes/wgo-page-init.xhtml
 	* docs/index.htrw
 	* docs/userfaq.htrw: User FAQ contributed by David Marrs.

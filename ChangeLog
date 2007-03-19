@@ -1,5 +1,11 @@
 2007-03-19  Jakub Steiner <jimmac@gimp.org>
 
+	* about/splash/splashsplash.png:
+	* about/splash/index.htrw:
+	* style/wgo.css: splash screens, erm, splash
+
+2007-03-19  Jakub Steiner <jimmac@gimp.org>
+
 	* style/wgo.css: dd spacings
 
 2007-03-19  Jakub Steiner <jimmac@gimp.org>

@@ -432,7 +432,7 @@ form {
 
 .splash {
   margin: -20px 0px 0px -20px;
-  background-color: #555;
+  background-color: transparent;
   height: 180px;
   overflow: hidden;
 }

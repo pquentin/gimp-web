@@ -3,6 +3,11 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
+<div class="splash">
+<img alt="#" 
+src="splashsplash.png" width="640" height="200" />
+</div>
+
 <h1>GIMP Splash Archive</h1>
 <p>
   The splash screens archives shows us some of the history behind GIMP

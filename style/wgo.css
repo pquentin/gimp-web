@@ -96,7 +96,7 @@ h3 {
 
 table {
   border-collapse: collapse;
-  margin: auto;
+  margin: .2em auto 2em auto;
   width: 86%;
   border: 1px solid #ce5c00;
 }
@@ -120,6 +120,17 @@ td.emphesize {
 li table {
   margin: 1em 0px;
   width: 100%;
+}
+
+dd {
+  margin: .5em .5em .5em 5em;
+}
+
+dt {
+  font-weight: bold;
+  margin-left: 3em;
+  margin-top: 2em;
+  margin-bottom: .5em;
 }
 
 div.book-of-wilber { 

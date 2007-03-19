@@ -1,5 +1,9 @@
 2007-03-19  Jakub Steiner <jimmac@gimp.org>
 
+	* style/wgo.css: dd spacings
+
+2007-03-19  Jakub Steiner <jimmac@gimp.org>
+
 	* tutorials/Basic_Perl/index.htrw:
 	* tutorials/Basic_Scheme/index.htrw:
 	* downloads/index.htrw:

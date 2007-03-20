@@ -1,3 +1,9 @@
+2007-03-20  Jakub Steiner <jimmac@gimp.org>
+
+	* about/splash/stable.png
+	* about/splash/unstable.png
+	* style/wgo.css: make the splash list a bit fancier
+
 2007-03-20  Raphaël Quinet  <raphael@gimp.org>
 
 	* admin/gimp-web-urls

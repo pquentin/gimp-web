@@ -232,6 +232,17 @@ li {
   margin-right: 40px;
 }
 
+ul.splashes li {
+  /* list-style-image: url('/about/splash/unstable.png'); */
+  list-style-type: circle;
+}
+
+ul.splashes li:first-child {
+  list-style-image: url('/about/splash/stable.png');
+  list-style-type: square;
+  padding-bottom: .8em;
+}
+
 .list li {
   padding-bottom: 1.2em;
 }

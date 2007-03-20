@@ -1,3 +1,7 @@
+2007-03-21  Jakub Steiner <jimmac@gimp.org>
+
+	* release-notes/index.htrw: add a missing </a>
+
 2007-03-20  Jakub Steiner <jimmac@gimp.org>
 
 	* about/splash/stable.png

@@ -1,3 +1,12 @@
+2007-03-20  Raphaël Quinet  <raphael@gimp.org>
+
+	* admin/gimp-web-urls
+	* about/splash/index.htrw
+	* about/splash/splash-images/gimp-splash-r*.png
+	* about/splash/splash-images/gimp-splash-r*.gif
+	* about/splash/splash-images/splash-2.3.htrw: Splash screens and
+	thumbnails for the 2.3.x releases.
+
 2007-03-19  Karine Delvare  <edhel@gimp.org>
 
 	* docs/userfaq.htrw: reformatting, cleanup of the first part.

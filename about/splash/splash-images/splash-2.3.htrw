@@ -1,0 +1,107 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Splash History 2.3 Series</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Development Version Splash History</h1>
+<h2>GIMP 2.3 Development Series</h2>
+<table>
+<tr><td>
+  <h2>tarball: 2.3.0</h2>
+  <a href="gimp-splash-r17270.png"><img src="gimp-splash-r17270-t.png" width="150" height="93" alt="SVN r17270"/></a>
+  <p>SVN: 17270<br />
+  artist: rockwalrus</p>
+</td><td>
+  <h2>tarball: 2.3.1</h2>
+  <a href="gimp-splash-r17603.png"><img src="gimp-splash-r17603-t.png" width="150" height="137" alt="SVN r17603"/></a>
+  <p>SVN: 17603<br />
+  artist: Raphaël</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.2</h2>
+  <a href="gimp-splash-r17603.png"><img src="gimp-splash-r17603-t.png" width="150" height="62" alt="SVN r17603"/></a>
+  <p>SVN: 17603<br />
+  artist: Raphaël</p>
+</td><td>
+  <h2>tarball: 2.3.3</h2>
+  <a href="gimp-splash-r18203.png"><img src="gimp-splash-r18203-t.png" width="150" height="113" alt="SVN r18203"/></a>
+  <p>SVN: 18203<br />
+  artist: Antenne &amp; Sven</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.4</h2>
+  <a href="gimp-splash-r18203.png"><img src="gimp-splash-r18203-t.png" width="150" height="113" alt="SVN r18203"/></a>
+  <p>SVN: 18203<br />
+  artist: Antenne &amp; Sven</p>
+</td><td>
+  <h2>tarball: 2.3.5</h2>
+  <a href="gimp-splash-r18203.png"><img src="gimp-splash-r18203-t.png" width="150" height="113" alt="SVN r18203"/></a>
+  <p>SVN: 18203<br />
+  artist: Antenne &amp; Sven</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.6</h2>
+  <a href="gimp-splash-r19048.png"><img src="gimp-splash-r19048-t.png" width="131" height="150" alt="SVN r19048"/></a>
+  <p>SVN: 19048<br />
+  artist: Sven</p>
+</td><td>
+  <h2>tarball: 2.3.7</h2>
+  <a href="gimp-splash-r19225.png"><img src="gimp-splash-r19225-t.png" width="150" height="150" alt="SVN r19225"/></a>
+  <p>SVN: 19225<br />
+  artist: Roman</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.8</h2>
+  <a href="gimp-splash-r19620.png"><img src="gimp-splash-r19620-t.png" width="150" height="145" alt="SVN r19620"/></a>
+  <p>SVN: 19620<br />
+  artist: Carol</p>
+</td><td>
+  <h2>tarball: 2.3.9</h2>
+  <a href="gimp-splash-r19939.gif"><img src="gimp-splash-r19939-t.png" width="150" height="111" alt="SVN r19939"/></a>
+  <p>SVN: 19939<br />
+  artist: Raphaël</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.10</h2>
+  <a href="gimp-splash-r20261.png"><img src="gimp-splash-r20261-t.png" width="150" height="99" alt="SVN r20261"/></a>
+  <p>SVN: 20261<br />
+  artist: Philip Lafleur</p>
+</td><td>
+  <h2>tarball: 2.3.11</h2>
+  <a href="gimp-splash-r20261.png"><img src="gimp-splash-r20261-t.png" width="150" height="99" alt="SVN r20261"/></a>
+  <p>SVN: 20261<br />
+  artist: Philip Lafleur</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.12</h2>
+  <a href="gimp-splash-r20261.png"><img src="gimp-splash-r20261-t.png" width="150" height="99" alt="SVN r20261"/></a>
+  <p>SVN: 20261<br />
+  artist: Philip Lafleur</p>
+</td><td>
+  <h2>tarball: 2.3.13</h2>
+  <a href="gimp-splash-r21408.png"><img src="gimp-splash-r21408-t.png" width="150" height="113" alt="SVN r21408"/></a>
+  <p>SVN: 21408<br />
+  artist: Kristian Rietveld, Simon, Mitch</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.14</h2>
+  <a href="gimp-splash-r21408.png"><img src="gimp-splash-r21408-t.png" width="150" height="113" alt="SVN r21408"/></a>
+  <p>SVN: 21408<br />
+  artist: Kristian Rietveld, Simon, Mitch</p>
+</td><td>
+  <h2>tarball: 2.3.15</h2>
+  <a href="gimp-splash-r21408.png"><img src="gimp-splash-r21408-t.png" width="150" height="113" alt="SVN r21408"/></a>
+  <p>SVN: 21408<br />
+  artist: Kristian Rietveld, Simon, Mitch</p>
+</td></tr>
+
+</table>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -3,7 +3,7 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>The GIMP Release Notes</h1>
+<h1>GIMP Release Notes</h1>
 
 <p>
 Here are the release notes for the versions of GIMP that can be

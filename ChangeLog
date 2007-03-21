@@ -1,5 +1,14 @@
 2007-03-21  Jakub Steiner <jimmac@gimp.org>
 
+	* features: add a placeholder for GIMP's "ability showroom"
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-page-fini.xhtml: new menu structure
+	* style/wgo.css: verbose menu styling, interlinks
+	* style/ie-nastiness.css: make things look almost exactly as with
+	  web browsers :)
+
+2007-03-21  Jakub Steiner <jimmac@gimp.org>
+
 	* release-notes/index.htrw: add a missing </a>
 
 2007-03-20  Jakub Steiner <jimmac@gimp.org>

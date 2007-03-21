@@ -1,0 +1,23 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Feature Overview</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Feature Overview</h1>
+
+<p>
+GIMP is a versatile graphics manimupulation package. This page should help you get a taste of what GIMP is capable of.
+</p>
+
+<p><em>FIXME - nice page with lots of image and short feature/scenario rundown. Show what problems can GIMP solve.</em></p>
+
+<h2>Supported Platforms</h2>
+<ul>
+  <li>Linux (i386, PPC)</li>
+  <li>Microsoft Windows (XP, Vista)</li>
+  <li>Sun OpenSolaris</li>
+  <li>FreeBSD</li>
+</ul>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

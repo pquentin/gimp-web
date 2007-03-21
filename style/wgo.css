@@ -365,9 +365,19 @@ form {
   padding: 2px 4px 2px 8px;
 }
 
+#menu a[href^=http] {
+  color: #ce5c00;
+}
+
 #menu a:hover {
   color: #ffdf6e;
   border-left: 2px solid #f57900;
+  padding: 2px 2px 2px 6px;
+}
+
+#menu a[href^=http]:hover {
+  color: #3465a4;
+  border-left: 2px solid #729fcf;
   padding: 2px 2px 2px 6px;
 }
 
@@ -407,21 +417,75 @@ form {
 
 
 #linkbar, #navbar {
-  width: 790px;
+  width: 750px;
   margin: 0px auto 20px auto;
-  padding: 0px;
+  padding: 10px;
   clear: both;
   background: #111;
   color: #aaa;
   border-top: 1 px solid #666;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 25px 5px 25px;
   font-weight: bold;
   font-size: 80%;
-  text-align: right;
-  height: 70px;
+  text-align: center;
+  min-height: 70px;
   -moz-border-radius-bottomright: 7px;
   -moz-border-radius-bottomleft: 7px;
 }
+
+#linkbar div {
+  margin: 1em;
+}
+
+div#bottommenu {
+  width: 750px;
+  margin: 0px auto;
+  padding: 0px;
+  clear: both;
+  background: #151515;
+  color: #aaa;
+  padding: 5px 25px 5px 25px;
+  min-height: 10em;
+}
+
+div.bottomlinks {
+  display: block;
+  width: 15%;
+  margin: 1em;
+  font-size: x-small;
+  float: left;
+  text-align: left;
+}
+
+div.bottomlinks ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+div.bottomlinks a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+div.bottomlinks a:hover {
+  text-decoration: none;
+  padding-left: 6px;
+  border-left: 4px solid #f57900;
+}
+
+li.mainlink {
+  font-weight: bold;
+  font-size: small;
+  margin: 0em;
+  padding-top: .5em;
+}
+
+
+div.bottomlinks li {
+  list-style: none;
+  margin: 2px;
+}
+
 
 #header {
    margin: 10px 0px 0px 0px;
@@ -453,28 +517,17 @@ div.splash {
 }
 
 .intropara {
-  width: 590px;
+  width: 572px;
   margin: 0px 0px 0px -20px;
   background-color: #444;
-  padding: 8px 32px 16px 32px;
+  padding: 8px 16px 16px 32px;
   line-height: 1.5em;
+  overflow: hidden;
 }
 
 #downloadgimp {
 
 }
-
-#footerleft {
-  float: left;
-  padding: 20px;
-}
-
-#footerright {
-  float: right;
-  padding: 20px;
-}
-
-
 
 @media print {
 #titlebar, #navbar, #linkbar, #menu {

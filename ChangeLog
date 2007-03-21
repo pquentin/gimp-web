@@ -1,5 +1,12 @@
 2007-03-21  Jakub Steiner <jimmac@gimp.org>
 
+	* images/awards.png
+	* index.htrw
+	* style/wgo.css: remove the awards graphic from the frontpage
+	  for now.
+
+2007-03-21  Jakub Steiner <jimmac@gimp.org>
+
 	* features: add a placeholder for GIMP's "ability showroom"
 	* includes/wgo-page-init.xhtml
 	* includes/wgo-page-fini.xhtml: new menu structure

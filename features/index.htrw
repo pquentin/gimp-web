@@ -6,10 +6,33 @@
 <h1>Feature Overview</h1>
 
 <p>
-GIMP is a versatile graphics manimupulation package. This page should help you get a taste of what GIMP is capable of.
+GIMP is a versatile graphics manipulation package. This page should help you get a taste of what GIMP is capable of.
 </p>
 
 <p><em>FIXME - nice page with lots of image and short feature/scenario rundown. Show what problems can GIMP solve.</em></p>
+
+<h2>Customizable Interface</h2>
+<p>Each task requires a different environment and GIMP allows you to customize the view and behavior the way you like it. Starting from the widget theme, allowing you to change colors, widget spacings and icon sizes to custom tool sets in the toolbox. The interface is modulized into so called docks, allowing you to stack them into tabs or keep them open in their own window. Pressing the <em>tab</em> key will toggle them hidden.</p>
+
+<p>GIMP features a great <em>fullscreen mode</em> allowing you to not only preview your artwork but also do editing work while using the most of your screen estate.</p>
+
+
+
+<h2>Photo Enhancement</h2>
+<p>Numerous digital photo imperfections can be easily compensated for using GIMP. Fix <em>perspective distortion</em> caused by lens tilt simply choosing the <em>corrective mode</em> in the transform tools. Eliminate lens' <em>barrel distortion</em> and <em>vignetting</em> with a powerful filter but a simple interface.</p>
+
+<img class="figure" alt="#" title="Barrel Distortion" src="barrel-distortion.jpg"
+width="500" height="400" /> 
+
+<p>The included <em>channel mixer</em> gives you the flexibility and power to get your B/W photography stand out the way you need.</p>
+
+<img class="figure" alt="#" title="Perspective Transform, Sample Colorize" src="perspective.jpg"
+width="500" height="400" /> 
+
+<h2>Digital Retouching</h2>
+<p>GIMP is ideal for advanced photo retouching techniques. Get rid of unneeded details using the clone tool, or touch up minor details easily with the new healing tool.</p>
+
+
 
 <h2>Supported Platforms</h2>
 <ul>

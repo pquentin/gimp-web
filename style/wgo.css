@@ -62,6 +62,12 @@ img.right, object.right {
   margin-right: 40px;
 }
 
+img.figure {
+  display: block;
+  margin: 1em auto;
+  width: 500px;
+}
+
 /* Main header. */
 h1 {
   color: #999;
@@ -510,12 +516,14 @@ div.splash {
 }
 
 .intropara {
-  width: 572px;
-  margin: 0px 0px 0px -20px;
+  width: 546px;
+  margin: 0px 0px 2em -20px;
   background-color: #444;
-  padding: 8px 16px 16px 32px;
+  padding: 8px 16px 16px 58px;
   line-height: 1.5em;
   overflow: hidden;
+  font-style: italic;
+  font-size: small;
 }
 
 #downloadgimp {

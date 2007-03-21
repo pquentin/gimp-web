@@ -1,3 +1,11 @@
+2007-03-22  Jakub Steiner <jimmac@gimp.org>
+
+	* style/wgo.css
+	* features/barrel-distortion.jpg
+	* features/perspective.jpg
+	* features/index.htrw: Initial bits of the 'features' page. Maybe
+	  we want to use thumbnails instead...
+
 2007-03-22  Sven Neumann  <sven@gimp.org>
 
 	* develop/index.htrw: minor rephrasing, removed commented out content.

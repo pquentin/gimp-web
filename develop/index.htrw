@@ -18,18 +18,18 @@ to others as payment.</p>
 
 <p>Ways in which you can help:</p>
 <ul>
-  <li><a href="wgo:dev">program</a> new features,</li>
-  <li>debug existing features,</li>
-  <li>report <a href="wgo:bugs">bugs</a>--errors in the program,</li>
-  <li>add <a href="/docs/">documentation</a>,</li>
-  <li>translate the GIMP to your own language,</li>
-  <li>translate the documentation,</li>
-  <li>write <a href="/tutorials/">tutorials</a>,</li>
-  <li>improve this web site,</li>
-  <li>make artwork for the GIMP used in or with the GIMP,</li>
-  <li>let people know you used the GIMP for your artwork,</li>
-  <li>give away copies of the GIMP, or</li>
-  <li>help others to learn to use the GIMP.</li>
+  <li><a href="wgo:dev">program</a> new features</li>
+  <li>report <a href="wgo:bugs">bugs</a> (errors in the program)</li>
+  <li>debug existing features</li>
+  <li>add <a href="/docs/">documentation</a></li>
+  <li>translate GIMP to your own language</li>
+  <li>translate the documentation</li>
+  <li>write <a href="/tutorials/">tutorials</a></li>
+  <li>improve this web site</li>
+  <li>make artwork for GIMP used in or with GIMP</li>
+  <li>let people know you used GIMP for your artwork</li>
+  <li>give away copies of GIMP</li>
+  <li>help others to learn to use GIMP</li>
 </ul>
 
 <p>As you can see, everyone can help.</p>
@@ -64,7 +64,7 @@ how hacking is being done in the GIMP.</p>
 
 <p>The site you should keep updated with and the site that is updated
 all the time with new development help guides is located at <a
-href="wgo:dev">http://developer.gimp.org/</a>.  If you have the GIMP
+href="wgo:dev">http://developer.gimp.org/</a>.  If you have GIMP
 installed at the moment then there are some files you should look at
 in the source code that might help you a little.</p>
 
@@ -72,7 +72,7 @@ in the source code that might help you a little.</p>
   <li><a href="wgo:dev-hacking">HACKING</a><br />
   <i>(Contains a lot of information that you need to know if you want to start coding)</i></li>
   <li><a href="wgo:dev-readme">README</a><br />
-  <i>(The main README file for the GIMP and should be read by everyone)</i></li>
+  <i>(The main README for GIMP which should be read by everyone)</i></li>
   <li><a href="wgo:dev-readme-i18n">README.i18n</a><br />
   <i>(The internationalization README which should be read by translators)</i></li>
   <li><a href="wgo:dev-readme-win32">README.win32</a><br />
@@ -81,46 +81,6 @@ in the source code that might help you a little.</p>
 
 <!--#include virtual="/includes/urls_important.inc" -->
 <!--#include virtual="/includes/urls_go-developer.inc" -->
-
-<!-- ***FIXME*** section commented out until we find a better solution
-<h2>What is going on:</h2>
-<p>
-  <a href="unstable.html">The Unstable GIMP</a><br />
-  The last 10 ChangeLog entries from The Unstable GIMP.
-</p>
-<p>
-  <a href="bugzilla-new.html">The GIMP's New Bugs</a><br />
-  The last 10 new bug reports from The GIMP Bugzilla Database
-</p>
-<p>
-  <a href="bugzilla-fixed.html">The GIMP's New Bugs</a><br />
-  The last 10 FIXED bug reports from The GIMP Bugzilla Database
-</p>
-<p>
-  <a href="plugins.html">The Last 10 Plug-ins</a><br />
-  The last 10 plug-ins, new or updated.
-</p>
-<p>
-  <a href="stable.html">GIMP -r gimp-1-2 </a><br />
-  The last 10 ChangeLog entries from The Stable GIMP
-</p>
-<p>
-  <a href="help.html">GIMP Help</a><br />
-  The last 10 ChangeLog entries from The GIMP Help Project
-</p>
-<p>
-  <a href="print.html">GIMP Print</a><br />
-  The last 10 ChangeLog entries from The GIMP Help Project
-</p>
-<p>
-  <a href="film.html">FilmGIMP</a><br />
-  The last 10 ChangeLog entries from The FilmGIMP
-</p>
-<p>
-  <a href="gegl.html">GEGL</a><br />
-  The last 10 ChangeLog entries from GEGL
-</p>
-***FIXME*** -->
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -452,6 +452,7 @@ div#bottommenu {
   color: #aaa;
   padding: 5px 25px 5px 25px;
   min-height: 10em;
+  white-space: nowrap;
 }
 
 div.bottomlinks {

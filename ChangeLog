@@ -1,3 +1,11 @@
+2007-03-22  Jakub Steiner <jimmac@ximian.com>
+
+	* donating/*.png: tweak existing sponsor graphics
+	* donating/svg: add SVGs for easier updating in
+	  future
+	* includes/wgo-page-init.xhtml
+	* includes/wgo-page-fini.xhtml: make a donate button
+
 2007-03-22  Sven Neumann  <sven@gimp.org>
 
 	* donating/index.htrw: slightly rephrased.

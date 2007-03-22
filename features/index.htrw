@@ -12,6 +12,10 @@ GIMP is a versatile graphics manipulation package. This page should help you get
 <p><em>FIXME - nice page with lots of image and short feature/scenario rundown. Show what problems can GIMP solve.</em></p>
 
 <h2>Customizable Interface</h2>
+
+<img class="right" alt="#" title="GIMP Docks" src="histogram.png"
+width="250" height="287" /> 
+
 <p>Each task requires a different environment and GIMP allows you to customize the view and behavior the way you like it. Starting from the widget theme, allowing you to change colors, widget spacings and icon sizes to custom tool sets in the toolbox. The interface is modulized into so called docks, allowing you to stack them into tabs or keep them open in their own window. Pressing the <em>tab</em> key will toggle them hidden.</p>
 
 <p>GIMP features a great <em>fullscreen mode</em> allowing you to not only preview your artwork but also do editing work while using the most of your screen estate.</p>

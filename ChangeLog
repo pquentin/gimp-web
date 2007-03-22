@@ -1,5 +1,10 @@
 2007-03-22  Jakub Steiner <jimmac@gimp.org>
 
+	* features/histogram.png
+	* features/index.htrw: A bit of an image overload.
+
+2007-03-22  Jakub Steiner <jimmac@gimp.org>
+
 	* features/device-actions.png
 	* features/index.html
 	* features/formats.png

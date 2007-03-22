@@ -3,7 +3,7 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>Donating to the GIMP</h1>
+<h1>Donating to GIMP</h1>
 <form method="post" action="https://www.paypal.com/cgi-bin/webscr">
   <input value="_xclick" name="cmd" type="hidden" />
   <input value="gimp@gnome.org" name="business" type="hidden" />
@@ -12,11 +12,11 @@
   <!-- <input value="http://www.gimp.org/donating/thanks.html"
          name="return" type="hidden" /> -->
   <input value="1" name="no_shipping" type="hidden" />
-  <input alt="Support the GIMP" name="submit"
+  <input alt="Support GIMP" name="submit"
          src="donate.png" type="image" />
 </form>
 <p>
-  Donating money to the GIMP is easy! The 
+  Donating money to the GIMP project is easy! The 
   <a href="http:Package-Gnome">GNOME Foundation</a> 
   has graciously agreed to act as fiscal agents for us.
   Contributions to the GIMP project can be made by donating to the GNOME
@@ -24,11 +24,10 @@
   Foundation is a tax-exempt, non-profit 501(c)(3) organization and all
   donations are tax-deductible in the USA.  </p>
 <p> 
-  There are 3 ways to support the GIMP financially. Financial help is needed
-  for many different reasons. GIMPCon is one thing that the money will go to,
-  it helps us to get as many <a href="wgo:dev">GIMP Developers</a> to the
-  conference as possible. Financial help will also be needed to cover the
-  expenses associated with the establishment of the GIMP Foundation.  
+  There are 3 ways to support GIMP financially. Financial help is needed
+  for many different reasons. Our annual GIMP developer conference is one
+  things that the money will go to. It helps us to get as many
+  <a href="wgo:dev">GIMP Developers</a> to the conference as possible.
 </p> 
 <p>
   Remember that if you want to be anonymous on the list of contributers
@@ -54,7 +53,7 @@
 </p>
 <p>
   with a cover-letter (or a note in the "memo" field) saying it is for
-  the GIMP.  If you want, you can additionally send a mail to
+  the GIMP project.  If you want, you can additionally send a mail to
   <a href="mail:People-Neary_Dave">Dave Neary</a> saying that you have
   donated.
 </p>
@@ -70,12 +69,13 @@
 <h3>Paypal</h3>
 <p>
   Donate to gimp@gnome.org, this will notify us, and the GNOME board,
-  that funds have been donated to the GIMP.  Credit card donations are
-  also accepted via this route.
+  that funds have been donated to the GIMP project.  Credit card donations
+  are also accepted via this route.
 </p>
 <p>
-  Please indicate whether you would like your donation to remain anonymous, as
-  otherwise you will be listed as a sponsor of the GIMP on the gimp.org web-pages.
+  Please indicate whether you would like your donation to remain
+  anonymous, as otherwise you will be listed as a sponsor on the
+  gimp.org web-pages.
 </p>
 <form method="post" action="https://www.paypal.com/cgi-bin/webscr">
   <input value="_xclick" name="cmd" type="hidden" />
@@ -85,7 +85,7 @@
   <!-- <input value="http://www.gimp.org/donating/thanks.html"
          name="return" type="hidden" /> -->
   <input value="1" name="no_shipping" type="hidden" />
-  <input alt="Support the GIMP" name="submit"
+  <input alt="Support GIMP" name="submit"
          src="donate.png" type="image" />
 </form>
 

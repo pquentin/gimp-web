@@ -6,6 +6,13 @@
 
 2007-03-22  Jakub Steiner <jimmac@gimp.org>
 
+	* includes/wgo-page-init.xhtml: put donation page back in the main
+	  menu. We don't want them funds dry. Conference good. Money good.
+		Overloade menus bad. This commit is 60% ChangeLog. Have a nice
+		day.
+		
+2007-03-22  Jakub Steiner <jimmac@gimp.org>
+
 	* features/histogram.png
 	* features/index.htrw: A bit of an image overload.
 

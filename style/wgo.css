@@ -16,7 +16,7 @@
  */
 
 body {
-  background: #1e2426;
+  background: #0e2426;
   color: white;
   font-family: candara,arial,"dejavu sans","bitstream vera sans",helvetica,sans-serif;
   margin: 0px;
@@ -359,7 +359,7 @@ form {
   left: 0px;
   height: 100%;
   margin: 0px;
-  background-color: #1e2426;
+  background-color: #0e2426;
   -moz-border-radius-bottomleft: 13px;
 }
 

@@ -1,84 +1,216 @@
-This directory contains splash screens grabbed from the gimp cvs tree. 
-Eventually they (the guest lecturer) got sick of coaching me on how  to get them
-that they went ahead and got them for me.  Actually, the irc log is funny, sad
-and educational (good luck if you want to do it yourself):
-
-First day ...
--=[retrieving the splashes via cvs]=-
-13:25 (yosh) carol: run cvs status -v gimp_splash.ppm
-13:27 [carol] hmm, what is this output?
-13:28 (yosh) GIMP_1_1_26              (revision: 1.6)
-13:28 (yosh) tarball version    (cvs internal version)
-13:29 (yosh) and you can cvs up -r internalver to get each version
-13:29 (yosh) and the tags let you map them to the tarball version
-13:30 [carol] eh, will i have problems with where this saves them?
-13:31 (yosh) ?
-13:31 [carol] oh, it will save them into a module called internalver?
-13:31 (yosh) no
-13:31 (yosh) it'll save them in gimp_splash.ppm
-13:32 (yosh) you need to copy it out somewhere for each ver
-13:32 [carol] well, okie dokie then
-13:32 [carol] thanks for the cvs lesson :)
-13:32 (yosh) also, 1.0 splash is in gimp1_0_splash.ppm and 1.3 is in 
-          data/images/gimp_splash.png
-
-Later that day ...
-21:01 [carol] http://tigert.gimp.org/gimp/gimp-splash-history/splashes/1.02.png
-21:01 [carol] how do i get this?
-21:03 [yosh] hm
-21:03 [yosh] oh!
-21:03 [carol] well it didn't make it in a tarball
-21:03 [carol] but the 1.1's did
-21:03 [yosh] cvs co -r1.1 gimp/gimp1_1_splash.ppm
-21:03 [yosh] the files got renamed
-21:03 [yosh] cvs blows
-21:04 [carol] okie dokie
-21:04 [carol] how frustrating!
-21:04 [yosh] yes
-21:04 [yosh] cvs has no facility to actually rename things
-21:04 [yosh] there is gimp1_0_splash.ppm
-21:04 [yosh] gimp1_1_splash.ppm
-21:04 [yosh] gimp_splash.ppm
-21:04 [carol] ohohoh!
-21:05 [carol] interview with kitty karisle tomorrow on Sunday Weekend Edition
-21:05 [yosh] and data/images/gimp_splash.png
-21:05 [yosh] cool!
+Here is a little guide explaining how to fetch splash screen images
+from the gimp tree.  It assumes that you have SVN commit access using
+svn+ssh.  If this is not the case and you are using the anonymous SVN
+server, please adjust all SVN URLs as appropriate.
 
 
-New day now ...
-00:26 [yosh] for i in `seq 1 12`; do cvs up -r1.$i 
-          gimp1_1_splash.ppm; cp gimp1_1_splash.ppm 
-          gimp1_1_splash.ppm.1.$i; done
-00:26 [yosh] I let bash be sedated ;)
-00:26 [carol] that was the script?
-00:26 [carol] heh
-00:27 [yosh] had to do similar for gimp_splash.ppm and 
-          gimp_splash.png
+Q: How do I check the versions available for a splash screen?
 
-Trying to get a good version list (still) ...
-01:09 [carol] it gave me a huge list of existing tags
-01:10 [yosh] yes, that is what you want
-01:10 [yosh] GIMP_1_1_21              (revision: 1.3)
-01:10 [yosh] so gimp_splash.ppm.1.3 goes with 1.1.21
-01:11 [carol] so far they don't match then
-01:12 [yosh] they should..
-01:12 [carol] that is with tigerts version numbers
-01:12 [carol] i will check what i got from you
-01:15 [carol] my tarball for 1.1.0 had version 1.7 in it
-01:15 [yosh] where is the tarball?
-01:15 [carol] cvs says it is 1.1
-01:16 [carol] well it might be gone now
-01:17 [carol] okay right here
-01:18 [carol] my tarball had a different image in it
-01:18 [carol] this list says it has that warning one
-01:19 [yosh] 1.1.0 used gimp1_1_splash.ppm
-01:19 [yosh] GIMP_1_1_0: 1.5
-01:19 [yosh] so gimp1_1_splash.ppm.1.5 should match it
-01:19 [yosh] (and it does)
-01:20 [carol] wow
-01:20 [carol] finally
-01:22 [carol] man, i am not fun with this
-01:22 [yosh] it goes gimp_splash.ppm.1.1 for 1.0, gimp1_1_splash* 
-          -> gimp_splash for 1.1, gimp_splash.ppm.1.11 for 1.2, 
-          gimp_splash.ppm.1.12 for 1.3, then gimp_splash.{gif,png} 
-          for the rest
+A: Use "svn log" on the file.  Or if that file has been deleted from
+   the tree and is only available in previous releases, use "svn log"
+   with the full URL and revision number.  For example:
+
+   svn log svn+ssh://svn.gnome.org/svn/gimp/trunk/data/images/gimp-splash.png
+
+   You can then see the revisions available at the start of the first
+   line of each log entry (for example, r21408).
+
+
+Q: How do I check what other names were used previously for the splash screens?
+
+A: The location and name of the splash screen image has changed
+   several times during GIMP's history.  If you do not know what names
+   were used before, you can find it out by going backwards from the
+   current version.  You look at the output of "snv log" for the
+   current file and the last entry will probably say what it was
+   renamed from.  Note the revision number of this last entry, and
+   then try "svn log" on the previous name of the splash screen using
+   a revision just before the one that has caused the file to be
+   renamed (and therefore deleted).  For example, the last entry for
+   "gimp-splash.png" states that it was renamed from "gimp_splash.png"
+   and it has the revision 14796.  So now you will fetch the log of
+   the deleted file by looking at revision 14795:
+
+   svn log svn+ssh://svn.gnome.org/svn/gimp/trunk/data/images/gimp_splash.png@14795
+
+   Once you have this log, you can repeat the process for the older
+   versions of the file.
+
+
+Q: I'm lazy, how do I get all of them?
+
+A: Here:
+
+   svn log svn+ssh://svn.gnome.org/svn/gimp/trunk/data/images/gimp-splash.png
+   svn log svn+ssh://svn.gnome.org/svn/gimp/trunk/data/images/gimp_splash.png@14795
+   svn log svn+ssh://svn.gnome.org/svn/gimp/trunk/data/images/gimp_splash.ppm@6694
+   svn log svn+ssh://svn.gnome.org/svn/gimp/trunk/gimp1_1_splash.ppm@3891
+
+
+Q: Now that I have all these file names and all their revision
+   numbers, how do I actually get these old images on my disk?
+
+A: This is the easy part: use "svn cat" with the URL of the image and
+   the desired revision number.  This will give you the image on
+   standard output, which you probably want to redirect to a file.
+   For example, you could do this to get the oldest splash screen:
+
+   svn cat svn+ssh://svn.gnome.org/svn/gimp/trunk/data/images/gimp_splash.ppm@186 > gimp-splash-r186.ppm
+
+   Do this for all images that you want to fetch, and then use GIMP or
+   ImageMagick's convert to convert the old *.ppm files to *.png.
+
+
+Q: How to get the list of tags used for the various GIMP releases?
+
+A: Try this:
+   svn ls svn+ssh://svn.gnome.org/svn/gimp/tags/ | grep '^GIMP_[0-9]_[0-9]'
+
+
+Q: How do I get the corresponding SVN revision numbers?
+
+A: This is a bit more tricky.  This used to be easy with CVS, but SVN
+   handles tags in a very different way.  You can try running a script
+   that executes "svn info" on each tag directory and extracts the
+   "Last Changed Rev:" from the output.  This would result in
+   something like the following list:
+
+     SVN  Date        GIMP version
+
+      68  1997-12-15  0.99.16
+      98  1998-01-04  0.99.17
+     141  1998-01-26  0.99.18
+     247  1998-03-02  0.99.19
+     270  1998-03-12  0.99.20
+     298  1998-03-15  0.99.21
+     343  1998-03-20  0.99.22
+     393  1998-03-27  0.99.23
+     445  1998-04-08  0.99.24
+     463  1998-04-11  0.99.25
+     500  1998-04-18  0.99.27
+     522  1998-04-27  0.99.28
+     562  1998-05-05  0.99.29
+     638  1998-06-06  1.0.0
+    1080  1998-09-27  1.0.1
+    1142  1998-10-15  1.0.2
+    1318  1998-12-24  1.1.0
+    1391  1999-01-21  1.1.1
+    1428  1999-02-04  1.1.2
+    1529  1999-03-09  1.1.3
+    1651  1999-03-29  1.0.3
+    1659  1999-03-30  1.1.4
+    1671  1999-04-04  1.0.4
+    1814  1999-05-04  1.1.5
+    1972  1999-06-06  1.1.6
+    2160  1999-07-17  1.1.7
+    2248  1999-08-02  1.1.8
+    2548  1999-09-10  1.1.9
+    2718  1999-10-07  1.1.10
+    2854  1999-11-01  1.1.11
+    2986  1999-11-25  1.1.12
+    2993  1999-11-25  1.1.13
+    3085  1999-12-16  1.1.14
+    3314  2000-01-14  1.1.15
+    3511  2000-02-02  1.1.16
+    3605  2000-02-12  1.1.17
+    3795  2000-03-04  1.1.18
+    3952  2000-03-30  1.1.19
+    4110  2000-04-22  1.1.20
+    4185  2000-05-01  1.1.21
+    4279  2000-05-16  1.1.22
+    4350  2000-05-28  1.1.23
+    4490  2000-06-23  1.1.24
+    4693  2000-08-21  1.1.25
+    4825  2000-09-23  1.1.26
+    4892  2000-10-05  1.1.27
+    4946  2000-10-16  1.1.28
+    5011  2000-10-31  1.1.29
+    5126  2000-12-10  1.1.30
+    5222  2000-12-19  1.1.31
+    5235  2000-12-21  1.1.32
+    5266  2000-12-25  1.2.0
+    5497  2001-01-22  1.2.1
+    6033  2001-06-20  1.2.2_pre1
+    6055  2001-06-26  1.2.2_pre2
+    6077  2001-07-02  1.2.2_pre3
+    6194  2001-07-26  1.2.2
+    6491  2001-10-28  1.2.3_pre1
+    6530  2001-11-06  1.2.3_pre2
+    6587  2001-11-13  1.3.0
+    6715  2001-11-25  1.3.1
+    6921  2001-12-29  1.3.2
+    7056  2002-02-10  1.3.3
+    7273  2002-03-09  1.3.4
+    7392  2002-03-28  1.3.5
+    7692  2002-05-29  1.3.6
+    7708  2002-05-30  1.3.7
+    7882  2002-08-20  1.3.8
+    8080  2002-10-11  1.3.9
+    8206  2002-11-07  1.3.10
+    8513  2002-12-30  1.3.11
+    8895  2003-02-18  1.3.12
+    9168  2003-03-23  1.3.13
+    9396  2003-04-14  1.3.14
+    9567  2003-05-20  1.2.4
+    9729  2003-06-10  1.3.15
+    9769  2003-06-14  1.2.5
+    9857  2003-06-27  1.3.16
+   10105  2003-07-25  1.3.17
+   10199  2003-08-11  1.3.18
+   10394  2003-08-27  1.3.19
+   10597  2003-09-08  1.3.20
+   10962  2003-10-06  1.3.21
+   11264  2003-11-03  1.3.22
+   11589  2003-11-24  1.3.23
+   11925  2004-01-07  1.3.24
+   12090  2004-01-19  1.3.25
+   12274  2004-02-04  1.3.26
+   12511  2004-03-04  1.3.27
+   12765  2004-03-21  2.0.rc1
+   12818  2004-03-23  2.0.0
+   12940  2004-04-14  2.0.1
+   13497  2004-06-02  2.1.0
+   13634  2004-06-15  2.0.2
+   13744  2004-06-24  2.1.1
+   14039  2004-07-17  2.0.3
+   14080  2004-07-20  2.1.2
+   14329  2004-08-05  2.0.4
+   14339  2004-08-06  2.1.3
+   14635  2004-09-05  2.1.4
+   14778  2004-09-20  2.1.5
+   14854  2004-09-25  2.0.5
+   14981  2004-10-05  2.1.6
+   15139  2004-10-15  2.1.7
+   15404  2004-11-01  2.2.pre1
+   15449  2004-11-02  2.0.6
+   15710  2004-11-20  2.2.pre2
+   15983  2004-12-19  2.2.0
+   16045  2004-12-28  2.2.1
+   16181  2005-01-09  2.2.2
+   16305  2005-01-22  2.2.3
+   16694  2005-02-22  2.2.4
+   17138  2005-04-09  2.2.5
+   17146  2005-04-10  2.2.6
+   17397  2005-05-08  2.2.7
+   17459  2005-05-14  2.3.0
+   17676  2005-06-09  2.3.1
+   17827  2005-06-27  2.2.8
+   17862  2005-07-01  2.3.2
+   18205  2005-08-10  2.3.3
+   18607  2005-09-26  2.3.4
+   18821  2005-10-27  2.2.9
+   18894  2005-11-04  2.3.5
+   19043  2005-12-27  2.2.10
+   19051  2005-12-28  2.3.6
+   19227  2006-02-08  2.3.7
+   19632  2006-04-12  2.3.8
+   19642  2006-04-13  2.2.11
+   19995  2006-06-05  2.3.9
+   20265  2006-07-05  2.3.10
+   20292  2006-07-06  2.2.12
+   20622  2006-08-24  2.2.13
+   20756  2006-09-07  2.3.11
+   21044  2006-10-11  2.3.12
+   21427  2006-11-24  2.3.13
+   21769  2007-01-23  2.3.14
+   22090  2007-03-09  2.3.15

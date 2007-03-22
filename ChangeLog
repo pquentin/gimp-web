@@ -1,3 +1,10 @@
+2007-03-23  Raphaël Quinet  <raphael@gimp.org>
+
+	* about/splash/README.splash: Rewritten the file to explain how to
+	fetch old splash screens now that we are using SVN instead of CVS.
+	Note that with SVN it is much harder to list all tags (GIMP
+	releases) and corresponding revision numbers.
+
 2007-03-22  Raphaël Quinet  <raphael@gimp.org>
 
 	First part of the splash screen cleanup.  The next part will

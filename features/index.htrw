@@ -30,9 +30,26 @@ width="500" height="400" />
 width="500" height="400" /> 
 
 <h2>Digital Retouching</h2>
-<p>GIMP is ideal for advanced photo retouching techniques. Get rid of unneeded details using the clone tool, or touch up minor details easily with the new healing tool.</p>
+<p>GIMP is ideal for advanced photo retouching techniques. Get rid of unneeded details using the clone tool, or touch up minor details easily with the new healing tool. With the perspective clone tool, it's not difficult to clone objects with perspective in mind just as easily as with the orthogonal clone.</p>
 
 
+<h2>Hardware Support</h2>
+
+<p>GIMP includes a very unique support for various input devices out of the box. Pressure and tilt sensitive tablets, but also a wide range of USB or MIDI controllers. You can bind often-used actions to device events such as rotating a USB wheel or moving a MIDI controller's slider. Change the size, angle or opacity of a brush while you paint, bind your favorite scripts to buttons. Speed up your workflow!</p>
+
+<img style="display: block; width: 396px; margin: 1em auto;" alt="#" title="Mapping actions to device events" src="device-actions.png" width="396" height="478" />
+
+
+<h2>File Formats</h2>
+
+<img class="right" alt="#" title="Supported Formats" src="formats.png"
+width="180" height="200" /> 
+
+<p>The file format support ranges from the common likes of JPEG (JFIF), GIF, PNG, TIFF to special use formats such as the multi-resolution and multi-color-depth Windows icon files. The architecture allows to extend GIMP's format capabilities with a plug-in. You can find some rare format support in the <a href="http://registry.gimp.org">GIMP plugin registry</a>.</p>
+
+<p>Thanks to the transparent virtual file system, it is possible to load and save files to from remote locations using protocols such as FTP, HTTP or even SMB (MS&nbsp;Windows shares) and SFTP/SSH.</p>
+
+<p>To save disk space, any format can be saved with an archive extension such as ZIP, GZ or BZ2 and GIMP will transparently compress the file without you needing to do any extra steps.</p>
 
 <h2>Supported Platforms</h2>
 <ul>
@@ -41,6 +58,7 @@ width="500" height="400" />
   <li>Sun OpenSolaris</li>
   <li>FreeBSD</li>
 </ul>
+
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,5 +1,13 @@
 2007-03-22  Jakub Steiner <jimmac@gimp.org>
 
+	* features/device-actions.png
+	* features/index.html
+	* features/formats.png
+	* features/index.htrw: more marketroid stuff for the features
+	  page
+
+2007-03-22  Jakub Steiner <jimmac@gimp.org>
+
 	* style/wgo.css
 	* features/barrel-distortion.jpg
 	* features/perspective.jpg

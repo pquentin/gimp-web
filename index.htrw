@@ -17,10 +17,12 @@ src="/images/frontsplash.png" width="640" height="200" usemap="#splashmap" />
 </map>
 
 
-<p class="intropara">GIMP is the GNU Image Manipulation Program.  It is a freely
-distributed piece of software for such tasks as <a href="http://gimp-web.jimmac.net/tutorials/Blur_Overlays/">photo retouching</a>,
-image composition and <a href="/tutorials/Draw_A_Paint_Brush/">image 
-authoring</a>.  It works on many operating systems, in many languages.</p>
+<p class="intropara">GIMP is the GNU Image Manipulation Program.  It
+is a freely distributed piece of software for such tasks as
+<a href="/tutorials/Blur_Overlays/">photo retouching</a>, image composition
+and <a href="/tutorials/Draw_A_Paint_Brush/">image authoring</a>.
+It works on many operating systems, in many languages.
+</p>
 
 <div id="downloadgimp">
 </div>

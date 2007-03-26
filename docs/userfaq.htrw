@@ -38,7 +38,7 @@
   <ol>
     <li><a href="#Line">How can I draw a straight line with the GIMP?</a></li>
     <li><a href="#Circle">How can I draw a circle with the GIMP?</a></li>
-    <li><a href="#Outline">How can I create an outline around text? Do I need to download a plugin to make that happen? (I just want to add text to icons, avatars, etc. and don't know how to do it other than inserting a text box, etc.)</a></li>
+    <li><a href="#Outline">How can I create an outline around text?</a></li>
     <li><a href="#Layers">What are layers?</a></li>
     <li><a href="#Sub">How do I save a selected sub-image to a file?</a></li>
     <li><a href="#Alpha">How do I save an image with an alpha channel?</a></li>
@@ -355,12 +355,11 @@ allowing for the addition of long requested features like support for
 
 <h2 id="USE">Using the GIMP</h2>
 
-
 <h3 id="Line">How can I draw a straight line with the GIMP?</h3>
 
 <p>See <a
-href="http://docs.gimp.org/en/gimp-using-simpleobjects.html#gimp-using-line">section
-2.1</a> of the GIMP user manual.</p>
+href="http://docs.gimp.org/en/gimp-using-simpleobjects.html#gimp-using-line">Drawing
+a Straight Line</a> in the GIMP user manual.</p>
 
 <h3 id="Circle">How can I draw a circle with the GIMP?</h3>
 
@@ -370,16 +369,13 @@ area, choose SELECT, SHRINK, shrink selection by whatever number of
 pixels you want your circle width to be, right click again in selected
 area, choose EDIT, CUT. Voila, one beautifully antialased circle.</p>
 
-<h3 id="Outline">How can I create an outline around text? Do I need to
-download a plugin to make that happen? (I just want to add text to
-icons, avatars, etc. and don't know how to do it other than inserting a
-text box, etc.)</h3>
+<h3 id="Outline">How can I create an outline around text?</h3>
 
 <p>Place some text somewhere. Then click "Create path from text" in the
 "Text tool option"-window. Then use "Edit" -&gt; "Stroke path" and
 select the appropriate options in the following dialog. Please also see
-the sections "Paths" (Section 3) in the user manual at <a
-href="http://docs.gimp.org">http://docs.gimp.org</a>.</p>
+the <a href="http://docs.gimp.org/en/gimp-concepts-paths.html">Paths</a>
+section in the user manual.</p>
 
 <h3 id="Layers">What are layers?</h3>
 
@@ -391,16 +387,17 @@ walking because his legs could be animated independantly of his body,
 for example. Similarly, complex images can be broken down to layers
 within GIMP and each layer can be processed independentlly of every
 other. See the <a
-href="http://docs.gimp.org/en/gimp-concepts-layers.html">manual</a> for
-more information.</p>
+href="http://docs.gimp.org/en/gimp-concepts-layers.html">Layers</a>
+section in the manual for more information.</p>
 
 <h3 id="Sub">How do I save a selected sub-image to a file?</h3>
 
 <p>Create a new image large enough to hold the selection. Copy the
 selection, then paste it into the new image. Crop the new image.
-Flatten, etc, as necessary. Now save it.</p> <p>The
-script-fu-selection-to image can also be used to cut a selection out of
-an image and create a new image with it.</p>
+Flatten, etc, as necessary. Now save it.</p>
+
+<p>The script-fu-selection-to image can also be used to cut a selection
+out of an image and create a new image with it.</p>
 
 <h3 id="Alpha">How do I save an image with an alpha channel?</h3>
 
@@ -444,8 +441,8 @@ cursor? I have more than 400 layers in my image and I cannot remember
 each layers name.</h3>
 
 <p>Please turn on "move-tool-changes-active" in the preferences dialog.
-Then (after you did a restart of GIMP) hold down the shift-key while
-you drag or click a layer in the image. The layer will now be selected
+Then (after you did a restart of GIMP) hold down the shift-key while you
+drag or click a layer in the image. The layer will now be selected
 (active).</p>
 
 <h3 id="ManyWindows">I hate switching between windows in GIMP. Isn't
@@ -601,12 +598,11 @@ them.</h3>
 <strong>Windows</strong>: Right-click on an image in explorer and select
 "Open with..." in the context menu. Select GIMP and mark "Use this
 program as standard for openening this filetype". Now the filetype of
-that image should be properly associated with GIMP.</p> </li>
-<li><p> <strong>Linux (KDE)</strong>: Right-click on an image in
-konqueror, select "Open with..." -&gt; "Other" in the context menu,
-select GIMP and check the box "Associate filetype with this
-program".</p> </li> <li><p> For all other operating systems check the
-manual of the os.</p>
+that image should be properly associated with GIMP.</p> </li> <li><p>
+<strong>Linux (KDE)</strong>: Right-click on an image in konqueror,
+select "Open with..." -&gt; "Other" in the context menu, select GIMP and
+check the box "Associate filetype with this program".</p> </li> <li><p>
+For all other operating systems check the manual of the os.</p>
 
 </li> </ul>
 
@@ -1130,5 +1126,5 @@ authors, Spencer Kimball or Peter Mattis, we forget which.</p>
 <p>Portions of this FAQ have been taken from <a
 href="http://www.rru.com/~meo/gimp/faq-user.html">http://www.rru.com/~meo/gimp/faq-user.html</a></p>
 
-<!--#include virtual="/includes/wgo-page-fini.xhtml" --> <!--#include
-virtual="/includes/wgo-xhtml-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,3 +1,8 @@
+2007-03-26  Raphaël Quinet  <raphael@gimp.org>
+
+	* admin/gimp-web-urls: Temporary fix for the paths to stable
+	splash images.
+
 2007-03-23  Raphaël Quinet  <raphael@gimp.org>
 
 	* about/splash/README.splash: Rewritten the file to explain how to

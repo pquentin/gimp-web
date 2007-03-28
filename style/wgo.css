@@ -76,7 +76,7 @@ h1 {
   padding: 5px;
   margin-bottom: 1em;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 130%;
   clear: left;
 }
 
@@ -84,7 +84,7 @@ h1 {
 h2 {
   color: #999;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 120%;
   margin-top: 3em;
   margin-bottom: 1em;
   clear: left;
@@ -93,8 +93,9 @@ h2 {
 /* Another subtitle using another font-size then the subtitle. */
 h3 {
   color: #999;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 110%;
+	letter-spacing: .1em;
   margin-top: 3em;
   margin-bottom: 1em;
   clear: left;
@@ -503,10 +504,10 @@ div.bottomlinks li {
    width: 800px;
    padding: 0px;
    margin: 0px auto;
-   font-size: 12pt;
-   font-weight: bold;
+   font-size: 10pt;
    background: #f57900 url('../images/titlebar.png') no-repeat;
    height: 90px;
+   text-align: right;
 }
 
 div.splash {

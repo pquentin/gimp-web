@@ -7,7 +7,7 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">
-<img alt="#" 
+<img alt="GIMP 2.4 Released!" title="GIMP 2.4 Released!" 
 src="/images/frontsplash.png" width="640" height="200" usemap="#splashmap" />
 </div>
 

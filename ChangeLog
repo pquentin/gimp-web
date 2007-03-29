@@ -1,5 +1,11 @@
 2007-03-29  Jakub Steiner <jimmac@ximian.com>
 
+	* includes/wgo-page-init.xhtml:
+	* style/wgo.css: 
+	* images/titlebar.png: simplify the titlebar, use text.
+
+2007-03-29  Jakub Steiner <jimmac@ximian.com>
+
 	* style/wgo.css: make h2 and h3 differ more.
 
 2007-03-26  Karine Delvare  <edhel@gimp.org>

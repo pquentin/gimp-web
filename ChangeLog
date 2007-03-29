@@ -1,3 +1,8 @@
+2007-03-29  Jakub Steiner <jimmac@ximian.com>
+
+	* style/wgo.css: make headers only have bigger whitespace on top
+	  if they are preceeded by a regular paragraph.
+
 2007-03-29  Raphaël Quinet  <raphael@gimp.org>
 
 	* includes/news.inc: Added a message asking visitors to refrain

@@ -1,3 +1,8 @@
+2007-03-29  Raphaël Quinet  <raphael@gimp.org>
+
+	* includes/news.inc: Added a message asking visitors to refrain
+	from publishing links to this new design until it is official.
+
 2007-03-29  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/wgo-page-init.xhtml:

@@ -18,7 +18,7 @@
 body {
   background: #0e2426;
   color: white;
-  font-family: candara,arial,"dejavu sans","bitstream vera sans",helvetica,sans-serif;
+  font-family: Candara, Tahoma, Arial, "dejavu sans", "bitstream vera sans", Helvetica, Sans-Serif;
   margin: 0px;
   padding: 0px;
   font-size: 10pt;
@@ -78,6 +78,9 @@ h1 {
   font-weight: bold;
   font-size: 130%;
   clear: left;
+  text-transform: uppercase;
+  font-family: Segoe, Myriad, Tahoma, "Trebuchet MS", Sans-Serif;
+  font-weight: bold;
 }
 
 /* Subtitle header. */

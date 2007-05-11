@@ -78,9 +78,10 @@ src="images/2.4-releasesplash.png" width="640" height="200" />
 
 <img class="right" src="images/2.4-color-management.png" alt="Color Management" />
 
-<p>GIMP now provides full support for color profiles allowing precise color modification throughout the whole 'digital darkroom' process.</p>
+<p>GIMP now provides full support for color profiles allowing precise color
+modification throughout the whole 'digital darkroom' process.</p>
 
-<p>For more information, see color management.</p>
+<p>For more information, see <a href="gimp-2.4-cm.html">color management</a>.</p>
 
 <h3>New Crop Tool</h3>
 

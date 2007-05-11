@@ -1,3 +1,9 @@
+2007-05-12  Jakub Steiner <jimmac@ximian.com>
+
+	* release-notes/images/color-management.png
+	* release-notes/gimp-2.4-cm.html
+	* release-notes/gimp-2.4.htrw: start on color management.
+	
 2007-03-29  Jakub Steiner <jimmac@ximian.com>
 
 	* style/wgo.css: make headers only have bigger whitespace on top

@@ -1,5 +1,10 @@
 2007-05-14  Jakub Steiner <jimmac@ximian.com>
 
+	* index.htrw
+	* includes/wgo-page-fini.xhtml: make a valid xhtml again
+
+2007-05-14  Jakub Steiner <jimmac@ximian.com>
+
 	* style/wgo.css: a step towards more flexible layout. Will need
 		changes in the splashes and titlebar.
 	* includes/wgo-page-fini.xhtml: fiux non-matching tags

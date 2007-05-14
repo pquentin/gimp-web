@@ -11,9 +11,9 @@
 src="/images/frontsplash.png" width="640" height="200" usemap="#splashmap" />
 </div>
 
-<map name="splashmap">
-<area shape="rect" coords="458,119,593,154" href="/downloads/" />
-<area shape="rect" coords="316,119,449,154" href="/release-notes/gimp-2.4.html" />
+<map name="splashmap" id="splashmap">
+<area shape="rect" coords="458,119,593,154" href="/downloads/" alt="download" />
+<area shape="rect" coords="316,119,449,154" href="/release-notes/gimp-2.4.html" alt="release notes" />
 </map>
 
 

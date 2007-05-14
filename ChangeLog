@@ -1,3 +1,9 @@
+2007-05-14  Jakub Steiner <jimmac@ximian.com>
+
+	* style/wgo.css: a step towards more flexible layout. Will need
+		changes in the splashes and titlebar.
+	* includes/wgo-page-fini.xhtml: fiux non-matching tags
+
 2007-05-12  Jakub Steiner <jimmac@ximian.com>
 
 	* release-notes/images/color-management.png

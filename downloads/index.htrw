@@ -1,5 +1,8 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Downloads</title>
+<script type="text/javascript">
+	console.log("this worked");
+</script>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
@@ -10,89 +13,91 @@ src="downloadsplash.png" width="640" height="200" />
 
 <h1>Downloads</h1>
 
-<p>The GIMP releases available from gimp.org and its
-<a href="#mirrors">mirrors</a> contain the source code and have to be
-compiled in order to be installed on your system.  If you do not want
-to compile the GIMP yourself, there are several sites providing
-pre-compiled binaries for various platforms.  For detailed information
-on the install process and requirements, please take a look at the <a
-href="install_help.html">install help</a> page.</p>
+<div id="downloads">
+	<p>The GIMP releases available from gimp.org and its
+	<a href="#mirrors">mirrors</a> contain the source code and have to be
+	compiled in order to be installed on your system.  If you do not want
+	to compile the GIMP yourself, there are several sites providing
+	pre-compiled binaries for various platforms.  For detailed information
+	on the install process and requirements, please take a look at the <a
+	href="install_help.html">install help</a> page.</p>
 
-<h2>Source for version 2.2 (Stable)</h2>
+	<h2>Source for version 2.2 (Stable)</h2>
 
-<p>GIMP 2.2.13 is now available
-at <a
-href="ftp://ftp.gimp.org/pub/gimp/v2.2/">ftp://ftp.gimp.org/pub/gimp/v2.2/</a>.
-You may want to read the <a href="wgo:release-notes-stable">Release
-Notes for GIMP 2.2</a>.
-</p>
+	<p>GIMP 2.2.13 is now available
+	at <a
+	href="ftp://ftp.gimp.org/pub/gimp/v2.2/">ftp://ftp.gimp.org/pub/gimp/v2.2/</a>.
+	You may want to read the <a href="wgo:release-notes-stable">Release
+	Notes for GIMP 2.2</a>.
+	</p>
 
-<p> To allow you to check the integrity of the tarballs, here are the
-MD5 sum of the latest released tarballs:
-<table>
-<tr>
-  <th>File</th>
-  <th>MD5 sum</th>
-</tr>
-<tr>
-  <td>gimp-2.2.13.tar.gz</td>
-  <td><kbd><b>5d858953b8176e49c39d4cdcd7395eee</kbd></td>
-</tr>
-<tr>
-  <td>gimp-2.2.13.tar.bz2</td>
-  <td><kbd><b>d84a4a476a0c4fae24602db67f6fe49a</b></kbd></td>
-</tr>
-</table>
-</p>
+	<p> To allow you to check the integrity of the tarballs, here are the
+	MD5 sum of the latest released tarballs:
+	<table>
+	<tr>
+		<th>File</th>
+		<th>MD5 sum</th>
+	</tr>
+	<tr>
+		<td>gimp-2.2.13.tar.gz</td>
+		<td><kbd><b>5d858953b8176e49c39d4cdcd7395eee</kbd></td>
+	</tr>
+	<tr>
+		<td>gimp-2.2.13.tar.bz2</td>
+		<td><kbd><b>d84a4a476a0c4fae24602db67f6fe49a</b></kbd></td>
+	</tr>
+	</table>
+	</p>
 
-<p>GAP (the GIMP Animation Package) for 2.2 is available at
-<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.2/gap">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.2/gap</a>.
-</p>
+	<p>GAP (the GIMP Animation Package) for 2.2 is available at
+	<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.2/gap">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.2/gap</a>.
+	</p>
 
-<p>GIMP Freetype for 2.0 is available at
-<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/freetype">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/freetype</a>.
-</p>
+	<p>GIMP Freetype for 2.0 is available at
+	<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/freetype">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/freetype</a>.
+	</p>
 
-<p>GIMP help files are available at
-<a href="ftp://ftp.gimp.org/pub/gimp/help/">ftp://ftp.gimp.org/pub/gimp/help/</a>.
-</p>
+	<p>GIMP help files are available at
+	<a href="ftp://ftp.gimp.org/pub/gimp/help/">ftp://ftp.gimp.org/pub/gimp/help/</a>.
+	</p>
 
-<p>GIMP Perl for 2.0 is available at
-<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/perl">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/perl/</a>.
-</p>
+	<p>GIMP Perl for 2.0 is available at
+	<a href="ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/perl">ftp://ftp.gimp.org/pub/gimp/plug-ins/v2.0/perl/</a>.
+	</p>
 
-<p>Please consider using one of the mirrors listed below.</p>
+	<p>Please consider using one of the mirrors listed below.</p>
 
 
-<h2>Development version</h2>
+	<h2>Development version</h2>
 
-<p>GIMP 2.3.15 is a snapshot of current development towards GIMP 2.4. The
-source code is available from <a href="ftp://ftp.gimp.org/pub/gimp/v2.3/">ftp://ftp.gimp.org/pub/gimp/v2.3/</a>. Please make sure you read the <a
-href="wgo:release-notes-development">Release Notes for GIMP 2.3</a>.
-</p>
+	<p>GIMP 2.3.15 is a snapshot of current development towards GIMP 2.4. The
+	source code is available from <a href="ftp://ftp.gimp.org/pub/gimp/v2.3/">ftp://ftp.gimp.org/pub/gimp/v2.3/</a>. Please make sure you read the <a
+	href="wgo:release-notes-development">Release Notes for GIMP 2.3</a>.
+	</p>
 
-<p>A detailed list of changes in the development branch is available
-at <a href="wgo:dev-news">developer.gimp.org</a>.
-</p>
+	<p>A detailed list of changes in the development branch is available
+	at <a href="wgo:dev-news">developer.gimp.org</a>.
+	</p>
 
-<h2>Binaries for various platforms</h2>
+	<h2>Binaries for various platforms</h2>
 
-<p>Several sites are providing pre-compiled binaries of the GIMP for
-various platforms.  Some of them include an automatic installer that
-should help you to install the GIMP on your machine.  For more
-information, see our platform-specific sections:</p>
+	<p>Several sites are providing pre-compiled binaries of the GIMP for
+	various platforms.  Some of them include an automatic installer that
+	should help you to install the GIMP on your machine.  For more
+	information, see our platform-specific sections:</p>
 
-<ul>
-  <li><a href="/unix/">GIMP for UNIX</a> (including Linux).</li>
-  <li><a href="/windows/">GIMP for Windows</a>.</li>
-  <li><a href="/macintosh/">GIMP for MacOS X</a>.</li>
-</ul>
+	<ul>
+		<li><a href="/unix/">GIMP for UNIX</a> (including Linux).</li>
+		<li><a href="/windows/">GIMP for Windows</a>.</li>
+		<li><a href="/macintosh/">GIMP for MacOS X</a>.</li>
+	</ul>
 
-<h1><a name="mirrors"></a>FTP and Web Mirrors</h1>
-<!--#include virtual="/downloads/mirrors.xhtml" -->
+	<h1><a name="mirrors"></a>FTP and Web Mirrors</h1>
+	<!--#include virtual="/downloads/mirrors.xhtml" -->
 
-<p>If you want to add a new mirror, please <a
-href="wgo:webmasters">contact us</a>.</p>
+	<p>If you want to add a new mirror, please <a
+	href="wgo:webmasters">contact us</a>.</p>
+</div>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

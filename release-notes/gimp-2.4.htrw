@@ -109,7 +109,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>Lens Distortion</h3>
 
-<p><object style="width:520px; height:424px; margin: auto;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=1146746790574496439&hl=en" flashvars=""></object></p>
+<p><object style="width:520px; height:424px; margin: auto;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=1146746790574496439&amp;hl=en" flashvars=""></object></p>
 
 <p>A very common problem exposing itself especially when using cheaper lenses is barrel distortion and vignetting. Luckily GIMP provides a brand new filter to compensate for both problems. Saving photographer's pocket is our mission!</p>
 

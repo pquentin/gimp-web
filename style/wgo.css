@@ -18,7 +18,7 @@
 body {
   background: #0e2426;
   color: white;
-  font-family: Candara, Tahoma, Arial, "dejavu sans", "bitstream vera sans", Helvetica, Sans-Serif;
+  font-family: Candarra, Sans-Serif;
   margin: 0px;
   padding: 0px;
   font-size: 10pt;
@@ -373,7 +373,6 @@ form {
   height: 100%;
   margin: 0px;
   background-color: #0e2426;
-  -moz-border-radius-bottomleft: 13px;
 }
 
 #menu a {
@@ -445,8 +444,6 @@ form {
   border-top: 1 px solid #666;
   font-weight: bold;
   text-align: center;
-  -moz-border-radius-bottomright: 7px;
-  -moz-border-radius-bottomleft: 7px;
 	min-height: 8em;
 }
 

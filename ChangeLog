@@ -1,3 +1,18 @@
+2007-07-04  Jakub Steiner <jimmac@ximian.com>
+
+	* includes/jquery-latest.js
+	* includes/jqbrowser.js
+	* includes/jquery.corner.pack.js
+	* includes/excanvas.pack.js
+	* includes/jquery-old.js
+	* includes/wgo.js
+	* includes/wgo-scripts.xhtml
+	* includes/wgo-look-feel.xhtml
+	* style/wgo.css
+	* style/ie-nastiness.css
+	* downloads/index.htrw: infrastructure for doing 'smart'
+		downloads, easier to maintain cross-browser workarounds.
+
 2007-05-14  Jakub Steiner <jimmac@ximian.com>
 
 	* index.htrw

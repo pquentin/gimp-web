@@ -1,7 +1,9 @@
 /* Nasty workaround for IE browsers */
 
+
 #main {
-  width: 580px;
+  width: 40em;
+  max-width: 40em;
 }
 
 div.splash {

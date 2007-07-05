@@ -1,70 +1,15 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Screenshots</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/imagebox.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Everyone Loves Screenshots!</h1>
 
 <h2>Linux Screenshots</h2>
-<!--
 <div class="screenshot">
-  <a href="linux_screenshot1.png" style="margin-right: 1cm;">
-  <img src="linux_screenshot1_thumb.jpg" alt="Grid, Fullscreen Screenshot" />
-  </a>
-  <p style="text-align: left;">1024x768 English</p>
-</div>
--->
-<div class="screenshot">
-  <a href="linux_screenshot2.png" style="margin-right: 1cm;">
-  <img src="linux_screenshot2_thumb.jpg" alt="Linux Screenshot" />
-  </a>
-  <p style="text-align: left;">1280x1024 Swedish</p>
-</div>
-
-<div class="screenshot">
-  <a href="linux_multihead_screenshot.png">
-  <img src="linux_multihead_screenshot_thumb.jpg" alt="Linux Multihead Screenshot" />
-  </a>
-  <p style="text-align: left;">2560x1024 (Dual head setup), English, by courtesy of <a href="http://griatch-art.deviantart.com/">Griatch</a>.</p>
-</div>
-<br style="clear: both;"/>
-
-<h2>Unix Screenshots</h2>
-<div class="screenshot">
-  <a href="solaris_screenshot1.png">
-  <img src="solaris_screenshot1_thumb.jpg" alt="Solaris Screenshot" />
-  </a>
-  <p style="text-align: left;">1024x768 English</p>
-</div>
-<br style="clear: both;"/>
-
-<h2>Windows Screenshots</h2>
-<div class="screenshot">
-  <a href="windowsxp_screenshot1.png" style="margin-right: 1cm;">
-  <img src="windowsxp_screenshot1_thumb.jpg" alt="Windows XP Screenshot" />
-  </a>
-  <p style="text-align: left;">1024x768 German</p>
-</div>
-<div class="screenshot">
-  <a href="windowsxp_screenshot2.png" style="margin-right: 1cm;">
-  <img src="windowsxp_screenshot2_thumb.jpg" alt="Windows XP Screenshot2" />
-  </a>
-  <p style="text-align: left;">1024x768 German</p>
-</div>
-<div class="screenshot">
-  <a href="windowsxp_screenshot3.png">
-  <img src="windowsxp_screenshot3_thumb.jpg" alt="Windows XP Screenshot3" />
-  </a>
-  <p style="text-align: left;">1024x768 German</p>
-</div>
-<br style="clear: both;"/>
-
-<h2>Macintosh Screenshots</h2>
-<div class="screenshot">
-  <a href="macosx_screenshot1.png">
-  <img src="macosx_screenshot1_thumb.jpg" alt="MacOS X Screenshot" />
-  </a>
-  <p style="text-align: left;">1023x767 English</p>
+  <a href="linux_fullscreen.jpg" rel="imagebox" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>f-spot</a>."><img id="linux_screenshot"
+	src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" /></a>
 </div>
 <br style="clear: both;"/>
 

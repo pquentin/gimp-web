@@ -15,6 +15,8 @@
  * you wrote everything yourself).
  */
 
+@import url("/style/interface.css");
+
 body {
   background: #0e2426;
   color: white;
@@ -72,7 +74,7 @@ img.figure {
 h1 {
   color: #999;
   border-bottom: 1px solid #444;
-  max-width: 94%;
+  max-width: 74%;
   padding: 5px;
   margin-bottom: 1em;
   font-weight: bold;
@@ -346,7 +348,7 @@ form {
 }
 
 .screenshot img {
-  width: 240px;
+  width: 128px;
 }
 
 /* Changes here should only be done if you know exactly what you are doing.
@@ -510,8 +512,8 @@ div.bottomlinks li {
    padding: 0px;
    margin: 0px auto;
    font-size: 10pt;
-   background: #f57900 url('../images/titlebar.png') no-repeat;
-   height: 90px;
+   background: #f57900 url('../images/title.png') no-repeat 2px 2px;
+   height: 43px;
    text-align: right;
 }
 
@@ -520,6 +522,31 @@ div.splash {
   background-color: transparent;
   height: 180px;
   overflow: hidden;
+	position: relative;
+}
+
+.splash img#splashbg {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.splash img#splash24overlay {
+	display: block;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 300px;
+	height: 140px;
+}
+
+.splash img#fadesplash {
+	position: absolute;
+	display: block;
+	left: 900px;
+	width: 135px;
+	height: 200px;
 }
 
 .intropara {

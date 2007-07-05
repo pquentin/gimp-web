@@ -1,3 +1,23 @@
+2007-07-05  Jakub Steiner <jimmac@ximian.com>
+
+	* downloads/downloadsplash.png
+	* downloads/index.htrw
+	* images/loading.gif
+	* images/frontsplash24.png
+	* images/spacer.png
+	* images/close.png
+	* images/next_image.png
+	* images/title.png
+	* includes/wgo.js
+	* index.htrw
+	* style/wgo.css
+	* style/interface.css
+	* style/ie-nastiness.css
+	* screenshots/index.htrw
+	* screenshots/linux_fullscreen_thumb.jpg
+	* screenshots/linux_fullscreen.jpg: infrastructure for new
+		screenshots
+
 2007-07-04  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/jquery-latest.js

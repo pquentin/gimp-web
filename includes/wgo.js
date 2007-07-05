@@ -1,8 +1,9 @@
 //images
 
 function roundCorners () {
-	$("#linkbar").corner("7px bottom");
+	$("#linkbar").corner("12px bottom");
 	$("#menu").corner("14px bl");
+	$("#title").corner("12px top")
 }
 
 function mangleforIE() {
@@ -16,6 +17,9 @@ function renderDownload() {
 
 $(document).ready(function() {
 	$("#menu").fadeIn(2000);
+	$("p.intropara").click(function () {
+		$(this).slideUp(2000);
+	});
 	roundCorners();
 	if($.browser.msie) {
 		mangleforIE();

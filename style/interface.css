@@ -4,13 +4,13 @@
 }
 #ImageBoxCaption
 {
-	background-color: #F4F4EC;
+	background-color: #fff;
 }
 #ImageBoxContainer
 {
 	width: 250px;
 	height: 250px;
-	background-color: #F4F4EC;
+	background-color: #fff;
 }
 #ImageBoxCaptionText
 {
@@ -35,13 +35,13 @@
 }
 #ImageBoxNextImage:hover
 {
-	background-image: url('/images/next_image.jpg');
+	background-image: url('/images/next_image.png');
 	background-repeat:	no-repeat;
 	background-position: right top;
 }
 #ImageBoxPrevImage:hover
 {
-	background-image: url('/images/previous_image.jpg');
+	background-image: url('/images/previous_image.png');
 	background-repeat:	no-repeat;
 	background-position: left bottom;
 };

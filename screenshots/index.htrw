@@ -7,11 +7,15 @@
 <h1>Everyone Loves Screenshots!</h1>
 
 <h2>Linux Screenshots</h2>
-<div class="screenshot">
-  <a href="linux_fullscreen.jpg" rel="imagebox" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>f-spot</a>."><img id="linux_screenshot"
-	src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" /></a>
+
+<div class="screenshots">
+
+  <a href="linux_fullscreen.jpg" rel="imagebox-screenshots" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>f-spot</a>."><img	src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" /></a>
+
+  <a href="linux_mixer.jpg" rel="imagebox-screenshots" title="Full control over B/W process using the channel mixer.."><img	src="linux_mixer_thumb.jpg" alt="Channel Mixer" /></a>
+
 </div>
-<br style="clear: both;"/>
+
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

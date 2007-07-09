@@ -1,3 +1,20 @@
+2007-07-09  Jakub Steiner <jimmac@ximian.com>
+
+	* images/previous_image.png
+	* images/spacer.png
+	* images/next_image.png
+	* style/wgo.css
+	* style/interface.css
+	* screenshots/index.htrw: more screenshot infrastucture work. 
+
+	* images/fade.png
+	* images/frontsplash.jpg
+	* includes/imagebox.xhtml
+	* includes/iutil.js
+	* includes/imagebox.js: in a very typical fashion I forgot to add
+		some files. Nobody seemed to care :)
+
+
 2007-07-05  Jakub Steiner <jimmac@ximian.com>
 
 	* downloads/downloadsplash.png

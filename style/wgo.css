@@ -343,12 +343,18 @@ form {
   margin-right: 40px;
 }
 
-.screenshot {
+.screenshots a {
+	display: block;
   float: left;
+	margin: 4px;
+	border: 0px;
+  width: 128px;
+  height: 128px;
 }
 
-.screenshot img {
-  width: 128px;
+.screenshots a:hover {
+	margin: 2px;
+	border: 2px solid #f57900;
 }
 
 /* Changes here should only be done if you know exactly what you are doing.

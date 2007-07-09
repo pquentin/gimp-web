@@ -7,8 +7,9 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">
-<img alt="#" 
-src="downloadsplash.png" width="640" height="200" />
+<img alt="#" id="splashbg"
+src="downloadsplash.png" />
+<img id="fadesplash" src="/images/fade.png" />
 </div>
 
 <h1>Downloads</h1>

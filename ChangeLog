@@ -1,5 +1,14 @@
 2007-07-09  Jakub Steiner <jimmac@ximian.com>
 
+	* includes/wgo-page-init.xhtml: remove redundant max-width
+	* style/wgo.css
+	* downloads/downloadsplash.png
+	* downloads/index.htrw: make download splash work with flexible
+		width
+
+
+2007-07-09  Jakub Steiner <jimmac@ximian.com>
+
 	* screenshots/index.htrw: add a lame disclaimer for now. I wish to
 		create a loupe, but it appears to be beyond my abilities at the
 		moment.

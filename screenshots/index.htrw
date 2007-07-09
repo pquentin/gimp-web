@@ -6,13 +6,14 @@
 
 <h1>Everyone Loves Screenshots!</h1>
 
-<h2>Linux Screenshots</h2>
 
 <p>The images below are larger than the preview shown. If you want to see the image 1:1, choose 'view image' in your browser or save a local copy.</p>
 
+<h2>Linux Screenshots</h2>
+
 <div class="screenshots">
 
-  <a href="linux_fullscreen.jpg" rel="imagebox-screenshots" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>f-spot</a>."><img	src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" /></a>
+  <a href="linux_fullscreen.jpg" rel="imagebox-screenshots" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>F-Spot</a>."><img	src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" /></a>
 
   <a href="linux_mixer.jpg" rel="imagebox-screenshots" title="Full control over B/W process using the channel mixer.."><img	src="linux_mixer_thumb.jpg" alt="Channel Mixer" /></a>
 

@@ -343,6 +343,10 @@ form {
   margin-right: 40px;
 }
 
+.screenshots {
+	margin-left: 3em;
+}
+
 .screenshots a {
 	display: block;
   float: left;

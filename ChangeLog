@@ -1,5 +1,12 @@
 2007-07-09  Jakub Steiner <jimmac@ximian.com>
 
+	* screenshots/index.htrw: add a lame disclaimer for now. I wish to
+		create a loupe, but it appears to be beyond my abilities at the
+		moment.
+	* images/titlebar.png: no longer needed (removed).
+
+2007-07-09  Jakub Steiner <jimmac@ximian.com>
+
 	* images/previous_image.png
 	* images/spacer.png
 	* images/next_image.png

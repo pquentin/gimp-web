@@ -12,7 +12,9 @@ function mangleforIE() {
 
 //provide download page depending on OS
 function renderDownload() {
-	return $.browser.OS;
+	$("#downloads").html("<div id=\"os\">&nbsp;</div>\n<hr />\n<div id=\"source\">&nbsp;</diov>\n");
+	$("#os").load($.browser.OS + ".xhtml"); //OS specific
+	$("#source").load("source.xhtml"); //sources for all
 }
 
 $(document).ready(function() {
@@ -24,5 +26,5 @@ $(document).ready(function() {
 	if($.browser.msie) {
 		mangleforIE();
 	};
-	$("#downloads").empty().append(renderDownload());
+	renderDownload();
 })

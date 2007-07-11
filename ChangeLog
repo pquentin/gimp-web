@@ -1,5 +1,15 @@
 2007-07-11  Jakub Steiner <jimmac@ximian.com>
 
+	* downloads/Windows.xhtml
+	* downloads/mirrors.xhtml
+	* downloads/Linux.xhtml
+	* downloads/Mac.xhtml
+	* downloads/source.xhtml
+	* includes/wgo.js: Always rpovide source downloads, but if
+		detected, show a binary download for specific OS.
+
+2007-07-11  Jakub Steiner <jimmac@ximian.com>
+
 	* screenshots/linux_fullscreen.jpg
 	* screenshots/linux_fullscreen_huge.jpg: 1.4M is too much for a
 		screenshot. Going to limit to 200kB

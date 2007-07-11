@@ -174,6 +174,7 @@ div.news {
 
 p {
   margin: 1.33em 3em;
+	line-height: 1.2em;
 }
 
 p.news {
@@ -251,6 +252,9 @@ span.different {
 li {
   margin-left: 40px;
   margin-right: 40px;
+	list-style-type: image;
+	list-style-image: url('/images/bullet.png');
+	line-height: 1.5em;
 }
 
 ul.splashes li {
@@ -270,6 +274,12 @@ ul.splashes li:first-child {
 
 .list p {
   margin: 0 0 0 0;
+}
+
+code {
+	background-color: black;
+	padding: .2em;
+	color: #eee;
 }
 
 pre.code {

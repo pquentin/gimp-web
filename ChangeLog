@@ -1,5 +1,13 @@
 2007-07-11  Jakub Steiner <jimmac@ximian.com>
 
+	* downloads/Mac.xhtml: add a note about Fink and Macports
+	* downloads/source.xhtml: no .gz tarballs anymore I'm told.
+	* images/bullet.png:
+	* style/wgo.css: bigger line-height for paragraphs. Unordered
+		lists get an image. <code> is more like on a aterminal.
+
+2007-07-11  Jakub Steiner <jimmac@ximian.com>
+
 	* downloads/Windows.xhtml
 	* downloads/mirrors.xhtml
 	* downloads/Linux.xhtml

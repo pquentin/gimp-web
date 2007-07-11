@@ -8,7 +8,7 @@
 
 <div class="splash">
 <img alt="#" id="splashbg"
-src="downloadsplash.png" />
+src="downloadsplash.jpg" />
 <img id="fadesplash" src="/images/fade.png" />
 </div>
 

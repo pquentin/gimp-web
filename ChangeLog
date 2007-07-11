@@ -1,5 +1,14 @@
 2007-07-11  Jakub Steiner <jimmac@ximian.com>
 
+	* screenshots/linux_fullscreen.jpg
+	* screenshots/linux_fullscreen_huge.jpg: 1.4M is too much for a
+		screenshot. Going to limit to 200kB
+	* downloads/downloadsplash.jpg
+	* downloads/downloadsplash.png: again, limiting size
+
+
+2007-07-11  Jakub Steiner <jimmac@ximian.com>
+
 	* screenshots/linux_mixer*: forgot to add the new screenshot
 
 2007-07-09  Jakub Steiner <jimmac@ximian.com>

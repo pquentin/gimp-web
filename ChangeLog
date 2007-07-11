@@ -1,5 +1,11 @@
 2007-07-11  Jakub Steiner <jimmac@ximian.com>
 
+	* downloads/index.htrw
+	* includes/wgo.js: this way it actually does it for the download
+		page only.
+
+2007-07-11  Jakub Steiner <jimmac@ximian.com>
+
 	* downloads/Mac.xhtml: add a note about Fink and Macports
 	* downloads/source.xhtml: no .gz tarballs anymore I'm told.
 	* images/bullet.png:

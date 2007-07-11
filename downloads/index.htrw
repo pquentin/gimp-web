@@ -1,9 +1,11 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Downloads</title>
-<script type="text/javascript">
-	console.log("this worked");
-</script>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<script type="text/javascript">
+$(document).ready(function() {
+	renderDownload();
+});
+</script>
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">

@@ -1,5 +1,16 @@
 2007-07-11  Jakub Steiner <jimmac@ximian.com>
 
+	* screenshots/windows_crop.png
+	* screenshots/windows_crop_thumb.jpg
+	* screenshots/windows_crop.jpg
+	* style/wgo.css
+	* screenshots/index.htrw: add a windows screenshot;
+	* about/splash/stable.htrw: removed
+	* about/splash/stable.html: use flat file, javascript magic to
+		make nice thumbnails.
+
+2007-07-11  Jakub Steiner <jimmac@ximian.com>
+
 	* downloads/index.htrw
 	* includes/wgo.js: this way it actually does it for the download
 		page only.

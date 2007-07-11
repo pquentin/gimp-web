@@ -19,6 +19,13 @@
 
 </div>
 
+<h2>Windows Screenshots</h2>
+
+<div class="screenshots">
+  <a href="windows_crop.jpg" rel="imagebox-screenshots" title="GIMP running on windows features a widget theme mimicking the native environment."><img	src="windows_crop_thumb.jpg" alt="GIMP on Windows" /></a>
+
+</div>
+
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

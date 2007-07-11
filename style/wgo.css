@@ -257,10 +257,11 @@ li {
 	line-height: 1.5em;
 }
 
+/*
 ul.splashes li {
-  /* list-style-image: url('/about/splash/unstable.png'); */
-  list-style-type: circle;
+  list-style-image: url('/about/splash/unstable.png');
 }
+*/
 
 ul.splashes li:first-child {
   list-style-image: url('/about/splash/stable.png');
@@ -353,22 +354,44 @@ form {
   margin-right: 40px;
 }
 
-.screenshots {
+.screenshots, .splashes {
 	margin-left: 3em;
 }
 
-.screenshots a {
+.screenshots a, .splashes a {
 	display: block;
   float: left;
 	margin: 4px;
 	border: 0px;
   width: 128px;
   height: 128px;
+	text-decoration: none;
 }
 
-.screenshots a:hover {
+.screenshots a:hover, .splashes a:hover {
 	margin: 2px;
 	border: 2px solid #f57900;
+}
+
+.splashes a>p {
+	background-color: #222;
+	width: 108px;
+	height: 22px;
+	font-size: 70%;
+	font-weight: normal;
+	margin: 2px 0px;
+	padding: 10px;
+}
+
+.splashes a:hover>p {
+	margin: -2px;
+	padding: 14px 12px 10px 12px;
+	color: #555;
+  background-color: #f57900;
+}
+
+.screenshots+h2 {
+	padding-top: 3em;
 }
 
 /* Changes here should only be done if you know exactly what you are doing.

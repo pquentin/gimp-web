@@ -1,3 +1,7 @@
+2007-07-11  Jakub Steiner <jimmac@ximian.com>
+
+	* screenshots/linux_mixer*: forgot to add the new screenshot
+
 2007-07-09  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/wgo-page-init.xhtml: remove redundant max-width

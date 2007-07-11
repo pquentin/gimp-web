@@ -354,11 +354,11 @@ form {
   margin-right: 40px;
 }
 
-.screenshots, .splashes {
+.screenshots, div.splashes {
 	margin-left: 3em;
 }
 
-.screenshots a, .splashes a {
+.screenshots a, div.splashes a {
 	display: block;
   float: left;
 	margin: 4px;
@@ -368,12 +368,21 @@ form {
 	text-decoration: none;
 }
 
-.screenshots a:hover, .splashes a:hover {
+div.splashes a {
+	margin-bottom: 54px;
+}
+
+div.splashes a:hover {
+	margin: 2px 2px 52px 2px;
+	border: 2px solid #f57900;
+}
+
+.screenshots a:hover { 
 	margin: 2px;
 	border: 2px solid #f57900;
 }
 
-.splashes a>p {
+div.splashes a>p {
 	background-color: #222;
 	width: 108px;
 	height: 22px;
@@ -383,7 +392,7 @@ form {
 	padding: 10px;
 }
 
-.splashes a:hover>p {
+div.splashes a:hover>p {
 	margin: -2px;
 	padding: 14px 12px 10px 12px;
 	color: #555;

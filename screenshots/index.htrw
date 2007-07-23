@@ -26,6 +26,13 @@
 
 </div>
 
+<h2>Mac OS X Screenshots</h2>
+
+<div class="screenshots">
+  <a href="osx_aperture.jpg" rel="imagebox-screenshots" title="GIMP side by side with Apple Aperture on Mac OS X."><img	src="osx_aperture_thumb.jpg" alt="GIMP on the Mac" /></a>
+
+</div>
+
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

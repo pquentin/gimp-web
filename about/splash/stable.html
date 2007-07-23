@@ -17,10 +17,10 @@
 			$(".splashes img").each(function () {
 				//console.log("mangling thumbnail for " + this.id);
 				var img = this.src;
-				this.src = "/images/spacer.png";
-				$(this).css({
+				$(this).css({//real thumbnail when loaded
 					background:	"url('" + img + "') center no-repeat"
 				});
+				this.src = "/images/spacer.png";
 				$(this).parent().append(("<p>" + $(this).parent().attr("title"))+ "</p>\n");
 				$(".splashes a>p").corner("bottom 10px");
 			});

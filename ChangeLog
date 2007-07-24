@@ -1,5 +1,9 @@
 2007-07-25  Jakub Steiner <jimmac@ximian.com>
 
+	* about/splash/stable.html: use real names instead of nicknames
+
+2007-07-25  Jakub Steiner <jimmac@ximian.com>
+
 	* includes/imagebox.xhtml: also needs to validate
 
 2007-07-24  Jakub Steiner <jimmac@ximian.com>

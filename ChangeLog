@@ -1,3 +1,7 @@
+2007-07-25  Jakub Steiner <jimmac@ximian.com>
+
+	* includes/imagebox.xhtml: also needs to validate
+
 2007-07-24  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/wgo-page-fini.xhtml?: there is only one  download page

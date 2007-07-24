@@ -1,5 +1,12 @@
 2007-07-24  Jakub Steiner <jimmac@ximian.com>
 
+	* includes/wgo-page-fini.xhtml?: there is only one  download page
+		now.
+	* about/splash/stable.html: the page now validates.
+	* team.htrw: glory! (add myself as the chief [re]designer for 2.4)
+
+2007-07-24  Jakub Steiner <jimmac@ximian.com>
+
 	* docs/index.htrw: the first-time wizard is no more (thank god).
 
 2007-07-24  Jakub Steiner <jimmac@ximian.com>

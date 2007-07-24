@@ -6,11 +6,12 @@
 <script type="text/javascript" src="/includes/imagebox.js"></script>
 <script type="text/javascript">
 	//image preview
+	//<!--
 	$(document).ready(function() {
 			$.ImageBox.init(
 				{
 					loaderSRC: '/images/loading.gif',
-					closeHTML: '<img src="/images/close.png" />'
+					closeHTML: '<img src=\"/images/close.png\" alt=\"x\" />'
 				}
 			);
 			//replace the thumbnails with a crop view
@@ -25,6 +26,7 @@
 				$(".splashes a>p").corner("bottom 10px");
 			});
 	});
+	//-->
 </script>
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 

@@ -1,5 +1,9 @@
 2007-07-24  Jakub Steiner <jimmac@ximian.com>
 
+	* docs/index.htrw: the first-time wizard is no more (thank god).
+
+2007-07-24  Jakub Steiner <jimmac@ximian.com>
+
 	* about/splash/index.htrw: sort the list descending 
 	* style/wgo.css: get rid of table border
 

@@ -121,7 +121,7 @@ table {
   border-collapse: collapse;
   margin: .2em auto 2em auto;
   width: 86%;
-  border: 1px solid #ce5c00;
+  /* border: 1px solid #ce5c00; */
 }
 
 th {

@@ -66,12 +66,12 @@
 
 <h2>GIMP Help bugs</h2>
 <ul>
-  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;component=help&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">List of open bugs (all)</a></li>
-  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;component=help&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;&amp;bug_status=REOPENED&amp;bug_severity=blocker&amp;bug_severity=critical&amp;bug_severity=major&amp;bug_severity=normal&amp;bug_severity=minor&amp;bug_severity=trivial">List of open bugs (all excluding enhancement requests)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP-manual&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">List of open bugs (all)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP-manual&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;&amp;bug_status=REOPENED&amp;bug_severity=blocker&amp;bug_severity=critical&amp;bug_severity=major&amp;bug_severity=normal&amp;bug_severity=minor&amp;bug_severity=trivial">List of open bugs (all excluding enhancement requests)</a></li>
 </ul>
 
 <ul>
-  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;component=help&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;changedin=7">List of closed bugs (The past week)</a></li>
+  <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP-manual&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;changedin=7">List of closed bugs (The past week)</a></li>
 </ul>
 
 <h2>GIMP Website bugs</h2>

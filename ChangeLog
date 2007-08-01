@@ -1,5 +1,10 @@
 2007-08-01  Roman Joost  <romanofski@gimp.org>
 
+	* bugs/index.htrw: fixed link to bugzilla for GIMP-manual
+	product
+
+2007-08-01  Roman Joost  <romanofski@gimp.org>
+
 	* includes/urls_go-utility.inc: removed link to gimp.org itself
 	and added link to gui.gimp.org
 

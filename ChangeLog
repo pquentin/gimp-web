@@ -1,3 +1,12 @@
+2007-08-01  Roman Joost  <romanofski@gimp.org>
+
+	* includes/urls_go-utility.inc: removed link to gimp.org itself
+	and added link to gui.gimp.org
+
+	* links/index.htrw
+	* links/org.htrw: removed dead links and fixed one link to the
+	Gimp user group gallery
+
 2007-07-25  Jakub Steiner <jimmac@ximian.com>
 
 	* about/splash/stable.html: use real names instead of nicknames

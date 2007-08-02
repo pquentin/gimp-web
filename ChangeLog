@@ -1,3 +1,10 @@
+2007-08-02  Roman Joost  <romanofski@gimp.org>
+
+	* includes/imagebox.js: fixed bug of horizontal scrollbar
+	which is displayed during viewing of screenshots. The
+	ImageBoxOverlay calculates the width a bit too wide. Now it is
+	set to 100%.
+
 2007-08-01  Roman Joost  <romanofski@gimp.org>
 
 	* bugs/index.htrw: fixed link to bugzilla for GIMP-manual

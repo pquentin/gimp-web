@@ -1,3 +1,9 @@
+2007-08-02  Jakub Steiner <jimmac@ximian.com>
+
+	* images/frontsplash24.png:
+	* images/title.png: set appropriate background colors so IE6
+		doesn't look as bad.
+
 2007-08-02  Roman Joost  <romanofski@gimp.org>
 
 	* style/ie-nastiness.css: added fixes to set the width of the

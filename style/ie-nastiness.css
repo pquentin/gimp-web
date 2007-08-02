@@ -19,3 +19,7 @@ div.splash {
    width: 526px;
 }
 
+.bottomlinks li {
+		list-style-image: none;
+		display: block;
+}

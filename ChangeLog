@@ -1,5 +1,10 @@
 2007-08-02  Jakub Steiner <jimmac@ximian.com>
 
+	* style/ie-nastiness.css: hide list images in IE browsers
+		explicitly.
+
+2007-08-02  Jakub Steiner <jimmac@ximian.com>
+
 	* images/frontsplash24.png:
 	* images/title.png: set appropriate background colors so IE6
 		doesn't look as bad.

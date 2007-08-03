@@ -1,3 +1,7 @@
+2007-08-03  Roman Joost  <romanofski@gimp.org>
+
+	* includes/imagebox.js: applied fix for Safari
+
 2007-08-02  Jakub Steiner <jimmac@ximian.com>
 
 	* style/ie-nastiness.css: hide list images in IE browsers

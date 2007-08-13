@@ -1,11 +1,11 @@
 /**
  * Interface Elements for jQuery
  * ImageBox
- *
+ * 
  * http://interface.eyecon.ro
- *
+ * 
  * Copyright (c) 2006 Stefan Petre
- * Dual licensed under the MIT (MIT-LICENSE.txt)
+ * Dual licensed under the MIT (MIT-LICENSE.txt) 
  * and GPL (GPL-LICENSE.txt) licenses.
  *
  */
@@ -65,7 +65,7 @@
  *    background-repeat:  no-repeat;
  *    background-position: left bottom;
  *  }
- *
+ * 
  * @name Imagebox
  * @description This a jQuery equivalent for Lightbox2. Alternative to image popups that will display images in an overlay. All links that have attribute 'rel' starting with 'imagebox' and link to an image will display the image inside the page. Galleries can by build buy giving the value 'imagebox-galname' to attribute 'rel'. Attribute 'title' will be used as caption.
  * @param Hash hash A hash of parameters
@@ -76,15 +76,11 @@
  * @option String textImage when a galalry it is build then the iteration is displayed
  * @option String textImageFrom when a galalry it is build then the iteration is displayed
  * @option Integer fadeDuration fade duration in miliseconds
- * @option Integer showTextImage 0/1 : show or not the text 'image n from z'
  *
  * @type jQuery
  * @cat Plugins/Interface
  * @author Stefan Petre
  */
-
-var jQImageBox_imageEl=""; //rustine pour Safari
-
 jQuery.ImageBox = {
   options : {
     border        : 10,
@@ -93,17 +89,14 @@ jQuery.ImageBox = {
     overlayOpacity    : 0.8,
     textImage     : 'Showing image',
     textImageFrom   : 'from',
-    fadeDuration    : 400,
-    showTextImage   : true
+    fadeDuration    : 400
   },
   imageLoaded : false,
   firstResize : false,
   currentRel : null,
   animationInProgress : false,
   opened : false,
-  minWidth : 0,
-  heightClose : 0,
-
+  
   keyPressed : function(event)
   {
     if(!jQuery.ImageBox.opened || jQuery.ImageBox.animationInProgress)
@@ -161,7 +154,7 @@ jQuery.ImageBox = {
       break;
     }
   },
-
+  
   init : function(options)
   {
     if (options)
@@ -205,7 +198,7 @@ jQuery.ImageBox = {
         );
       jQuery('body').append(iframe);
     }
-
+    
     overlay = document.createElement('div');
     jQuery(overlay)
       .attr('id', 'ImageBoxOverlay')
@@ -220,7 +213,7 @@ jQuery.ImageBox = {
       )
       .append(document.createTextNode(' '))
       .bind('click', jQuery.ImageBox.hideImage);
-
+    
     captionText = document.createElement('div');
     jQuery(captionText)
       .attr('id', 'ImageBoxCaptionText')
@@ -230,7 +223,7 @@ jQuery.ImageBox = {
         }
       )
       .append(document.createTextNode(' '));
-
+      
     captionImages = document.createElement('div');
     jQuery(captionImages)
       .attr('id', 'ImageBoxCaptionImages')
@@ -241,7 +234,7 @@ jQuery.ImageBox = {
         }
       )
       .append(document.createTextNode(' '));
-
+      
     closeEl = document.createElement('a');
     jQuery(closeEl)
       .attr(
@@ -259,7 +252,7 @@ jQuery.ImageBox = {
       )
       .append(jQuery.ImageBox.options.closeHTML)
       .bind('click', jQuery.ImageBox.hideImage);
-
+      
     captionEl = document.createElement('div');
     jQuery(captionEl)
       .attr('id', 'ImageBoxCaption')
@@ -274,7 +267,7 @@ jQuery.ImageBox = {
       .append(captionText)
       .append(captionImages)
       .append(closeEl);
-
+    
     loader = document.createElement('img');
     loader.src = jQuery.ImageBox.options.loaderSRC;
     jQuery(loader)
@@ -284,7 +277,7 @@ jQuery.ImageBox = {
           position  : 'absolute'
         }
       );
-
+      
     prevImage = document.createElement('a');
     jQuery(prevImage)
       .attr(
@@ -302,7 +295,7 @@ jQuery.ImageBox = {
         }
       )
       .append(document.createTextNode(' '));
-
+      
     nextImage = document.createElement('a');
     jQuery(nextImage)
       .attr(
@@ -319,7 +312,7 @@ jQuery.ImageBox = {
         }
       )
       .append(document.createTextNode(' '));
-
+    
     container = document.createElement('div');
     jQuery(container)
       .attr('id', 'ImageBoxContainer')
@@ -336,7 +329,7 @@ jQuery.ImageBox = {
         }
       )
       .append([loader, prevImage, nextImage]);
-
+    
     outerContainer = document.createElement('div');
     jQuery(outerContainer)
       .attr('id', 'ImageBoxOuterContainer')
@@ -349,42 +342,17 @@ jQuery.ImageBox = {
           left    : '0',
           textAlign : 'center',
           backgroundColor : 'transparent',
-          lineHeigt : '0'
+          lineHeigt : '0',
+          maxWidth: '100%'
         }
       )
       .append([container,captionEl]);
-
+    
     jQuery('body')
       .append(overlay)
       .append(outerContainer);
-
-
-    //minimum width :
-    prevImageEl = jQuery('#ImageBoxPrevImage');
-    prevWidth = prevImageEl.css("width");
-    if (!prevWidth) {
-      prevWidth='';
-    }
-    else{
-      if(prevWidth!=''){
-        prevWidth = prevWidth.replace(/px/g,''); //on eleve le texte 'px' pour pouvoir faire des calculs
-      }
-    }
-    nextImageEl = jQuery('#ImageBoxNextImage');
-    nextWidth = nextImageEl.css("width");
-    if (!nextWidth) {
-      nextWidth='';
-    }
-    else{
-      if(nextWidth!=''){
-        nextWidth = nextWidth.replace(/px/g,''); //on eleve le texte 'px' pour pouvoir faire des calculs
-      }
-    }
-
-    jQuery.ImageBox.minWidth=-(-(jQuery.ImageBox.options.border * 2)-nextWidth-prevWidth); //2*border+nextWidth+prevWidth
-
   },
-
+  
   start : function(e, elm)
   {
     el = elm ? jQuery(elm) : jQuery(this);
@@ -400,10 +368,6 @@ jQuery.ImageBox = {
     }
     imageSrc =  el.attr('href');
     captionText = el.attr('title');
-    caption2 = el.attr('content') || "";
-    if (caption2!="") {
-      captionText+="<br>"+caption2;
-    }
     pageSize = jQuery.iUtil.getScroll();
     overlay = jQuery('#ImageBoxOverlay');
     if (!jQuery.ImageBox.opened) {
@@ -416,18 +380,18 @@ jQuery.ImageBox = {
       }
       overlay
         .css ('height', Math.max(pageSize.ih,pageSize.h) + 'px')
-        .css ('width', '100%')
+        .css ('width', '100%') // XXX quickfix
         .show()
-        .fadeTo(
+        .fadeTo( 
           300,
           jQuery.ImageBox.options.overlayOpacity,
           function()
           {
             jQuery.ImageBox.loadImage(
-              imageSrc,
-              captionText,
-              pageSize,
-              totalImages,
+              imageSrc, 
+              captionText, 
+              pageSize, 
+              totalImages, 
               iteration,
               prevImage,
               nextImage
@@ -439,10 +403,10 @@ jQuery.ImageBox = {
       jQuery('#ImageBoxPrevImage').get(0).onclick = null;
       jQuery('#ImageBoxNextImage').get(0).onclick = null;
       jQuery.ImageBox.loadImage(
-        imageSrc,
-        captionText,
-        pageSize,
-        totalImages,
+        imageSrc, 
+        captionText, 
+        pageSize, 
+        totalImages, 
         iteration,
         prevImage,
         nextImage
@@ -450,7 +414,7 @@ jQuery.ImageBox = {
     }
     return false;
   },
-
+    
   loadImage : function(imageSrc, captiontext, pageSize, totalImages, iteration, prevImage, nextImage)
   {
     jQuery('#ImageBoxCurrentImage').remove();
@@ -462,15 +426,13 @@ jQuery.ImageBox = {
     container = jQuery('#ImageBoxContainer');
     outerContainer = jQuery('#ImageBoxOuterContainer');
     captionEl = jQuery('#ImageBoxCaption').css('visibility', 'hidden');
-    //Avoid safari Bug :
-    //jQuery('#ImageBoxCaptionText').html(captionText);
-    jQuery('#ImageBoxCaptionText').html("<div id='ImageBoxCaptextcontainer' style='padding-right:4px'>"+captionText+"</div>");
+    jQuery('#ImageBoxCaptionText').html(captionText);
     jQuery.ImageBox.animationInProgress = true;
-    if (totalImages && jQuery.ImageBox.options.showTextImage)
+    if (totalImages)
       jQuery('#ImageBoxCaptionImages').html(
-        jQuery.ImageBox.options.textImage
+        jQuery.ImageBox.options.textImage 
         + ' ' + (iteration + 1) + ' '
-        + jQuery.ImageBox.options.textImageFrom
+        + jQuery.ImageBox.options.textImageFrom  
         + ' ' + totalImages
       );
     if (prevImage) {
@@ -519,25 +481,22 @@ jQuery.ImageBox = {
         );
     }
     imageEl = new Image;
-    // XXX
-    // jQuery(imageEl).css('max-width', '800px');
-    // jQuery(container).css('max-width', '800px');
-    // avoid Safari bug :
-    imageEl.id='ImageBoxCurrentImage';
-    imageEl.onload = function(){
-
-        if (jQuery.browser.safari) {
-          containerW = jQImageBox_imageEl.width + jQuery.ImageBox.options.border * 2;
-          containerH = jQImageBox_imageEl.height + jQuery.ImageBox.options.border * 2;
+    jQuery(imageEl)
+      .attr('id', 'ImageBoxCurrentImage')
+      .css('max-width', '800px')
+      .bind('load', 
+      function()
+      {
+        if (imageEl.width>800) {
+          // aspect ratio
+          var aspectHeight = imageEl.height/(imageEl.width/800)
+          //console.log("foobar " + aspectHeight);
+          containerW = 800 + jQuery.ImageBox.options.border * 2;
+          containerH = aspectHeight + jQuery.ImageBox.options.border * 2;
+        } else {
+          containerW = imageEl.width + jQuery.ImageBox.options.border * 2;
+          containerH = imageEl.height + jQuery.ImageBox.options.border * 2;
         }
-        containerW = imageEl.width + jQuery.ImageBox.options.border * 2;
-        containerH = imageEl.height + jQuery.ImageBox.options.border * 2;
-
-        //min width :
-        if (jQuery.ImageBox.minWidth > containerW ) {
-          containerW = jQuery.ImageBox.minWidth + jQuery.ImageBox.options.border * 2;
-        }
-
         loader.hide();
         container.animate(
           {
@@ -553,34 +512,12 @@ jQuery.ImageBox = {
               containerSize.wb != containerW ? jQuery.ImageBox.options.fadeDuration : 1,
               function()
               {
-
-
-                if (jQuery.browser.safari) {
-                  var imgtoprepend="<img src='"+jQImageBox_imageEl.src+"' id='imgboxtmp' style='display:none' >";
-                  container.prepend(imgtoprepend);
-                  var jqi_width = jQuery('#imgboxtmp').width();
-                  while(jqi_width==0){
-                    jqi_width = jQuery('#imgboxtmp').width();
-                  }
-                  jqi_height = jQuery('#imgboxtmp').height();
-                  jQuery('#imgboxtmp').remove();
-
-                  jqi_width = jqi_width - 2* jQuery.ImageBox.options.border;
-
-                  var imgtoprepend="<img src='"+jQImageBox_imageEl.src+"' id='"+jQImageBox_imageEl.id+"' >";
-                  container.prepend(imgtoprepend); //pour safari...
-
-                }
-                else{
-                  container.prepend(imageEl);
-                }
-
-
-                jQuery('#ImageBoxCurrentImage')
+                container.prepend(imageEl);
+                jQuery(imageEl)
                   .css(
                     {
                       position  : 'absolute',
-                      left    : (containerW-jQuery('#ImageBoxCurrentImage').width())/2+'px', //jQuery.ImageBox.options.border + 'px',
+                      left    : jQuery.ImageBox.options.border + 'px',
                       top     : jQuery.ImageBox.options.border + 'px'
                     }
                   )
@@ -589,19 +526,13 @@ jQuery.ImageBox = {
                     function()
                     {
                       captionSize = jQuery.iUtil.getSize(captionEl.get(0));
-
-                      //min width :
-                      if (jQuery.ImageBox.minWidth > containerW ) {
-                         containerW = jQuery.ImageBox.minWidth;
-                      }
-
                       if (prevImage) {
                         prevImageEl
                           .css(
                             {
                               left  : jQuery.ImageBox.options.border + 'px',
                               top   : jQuery.ImageBox.options.border + 'px',
-                              width : containerW/2 ,//- jQuery.ImageBox.options.border * 3 + 'px',
+                              width : containerW/2 - jQuery.ImageBox.options.border * 3 + 'px',
                               height  : containerH - jQuery.ImageBox.options.border * 2 + 'px'
                             }
                           )
@@ -611,7 +542,7 @@ jQuery.ImageBox = {
                         nextImageEl
                           .css(
                             {
-                              left  : containerW/2 + jQuery.ImageBox.options.border * 2 + 1 + 'px',
+                              left  : containerW/2 + jQuery.ImageBox.options.border * 2 + 'px',
                               top   : jQuery.ImageBox.options.border + 'px',
                               width : containerW/2 - jQuery.ImageBox.options.border * 3 + 'px',
                               height  : containerH - jQuery.ImageBox.options.border * 2 + 'px'
@@ -619,9 +550,6 @@ jQuery.ImageBox = {
                           )
                           .show();
                       }
-
-                      jQuery("#ImageBoxCaptextcontainer").css('padding-top',jQuery("#ImageBoxClose").height());
-
                       captionEl
                         .css(
                           {
@@ -647,19 +575,19 @@ jQuery.ImageBox = {
           }
         );
       }
+    );
     imageEl.src = imageSrc;
-
-    jQImageBox_imageEl = imageEl;
+      
   },
-
+  
   hideImage : function()
   {
     jQuery('#ImageBoxCurrentImage').remove();
     jQuery('#ImageBoxOuterContainer').hide();
     jQuery('#ImageBoxCaption').css('visibility', 'hidden');
     jQuery('#ImageBoxOverlay').fadeTo(
-      300,
-      0,
+      300, 
+      0, 
       function(){
         jQuery(this).hide();
         if (jQuery.browser.msie) {

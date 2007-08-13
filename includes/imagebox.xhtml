@@ -4,12 +4,15 @@
 	//image preview
 	//<!--
 	$(document).ready(function() {
-			$.ImageBox.init(
-				{
-					loaderSRC: '/images/loading.gif',
-					closeHTML: '<img src="/images/close.png" alt="x" />'
-				}
-			);
+		//alert("b: " + $.browser.safari + " v: " + $.browser.version.number.prototype);
+			if (!$.browser.safari) { //sadly no way to figure out v2 from v3 which would be able to handle it
+				$.ImageBox.init(
+					{
+						loaderSRC: '/images/loading.gif',
+						closeHTML: '<img src="/images/close.png" alt="x" />'
+					}
+				);
+			}
 	});
 	//-->
 </script>

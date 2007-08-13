@@ -18,7 +18,7 @@ function renderDownload() {
 }
 
 $(document).ready(function() {
-	$("#menu").fadeIn(2000);
+	$("#menu").hide().fadeIn(2000);
 	$("p.intropara").click(function () {
 		$(this).slideUp(2000);
 	});

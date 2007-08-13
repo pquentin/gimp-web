@@ -1,3 +1,10 @@
+2007-08-14  Jakub Steiner <jimmac@ximian.com>
+
+	* includes/imagebox.js: bring back scaling for non safari browsers
+	* includes/wgo.js
+	* includes/wgo-scripts.xhtml:
+	* includes/jquery.js: use faster jquery (latest).
+
 2007-08-03  Roman Joost  <romanofski@gimp.org>
 
 	* includes/imagebox.js: applied fix for Safari

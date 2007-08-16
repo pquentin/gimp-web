@@ -384,9 +384,6 @@ jQuery.ImageBox = {
 
     jQuery.ImageBox.minWidth=-(-(jQuery.ImageBox.options.border * 2)-nextWidth-prevWidth); //2*border+nextWidth+prevWidth
 
-    if ( jQuery.ImageBox.options.maxWidth > 0 ) {
-        
-    }
 
   },
 
@@ -533,8 +530,10 @@ jQuery.ImageBox = {
           containerH = jQImageBox_imageEl.height + jQuery.ImageBox.options.border * 2;
         }
 
-        if ( jQuery.ImageBox.options.maxWidth > 0 && !jQuery.browser.safari ) {
-          var maxWidth = jQuery.ImageBox.options.maxWidth;
+        var maxWidth = jQuery.ImageBox.options.maxWidth;
+        if ( jQuery.ImageBox.options.maxWidth > 0 && 
+             imageEl.width > maxWidth && 
+             !jQuery.browser.safari ) {
           var aspectHeight = imageEl.height/(imageEl.width/maxWidth);
           containerW = maxWidth + jQuery.ImageBox.options.border * 2;
           containerH = aspectHeight + jQuery.ImageBox.options.border * 2;

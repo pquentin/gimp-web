@@ -1,5 +1,10 @@
 2007-08-16  Roman Joost  <romanofski@gimp.org>
 
+	* includes/imagebox.js: removed missed code snipped and fixed
+	the condition which tests the width of the image
+
+2007-08-16  Roman Joost  <romanofski@gimp.org>
+
 	* style/wgo.css
 	* includes/imagebox.js: applied the fix for Safari Browsers +
 	Scaling support

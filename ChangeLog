@@ -1,3 +1,9 @@
+2007-08-16  Roman Joost  <romanofski@gimp.org>
+
+	* style/wgo.css
+	* includes/imagebox.js: applied the fix for Safari Browsers +
+	Scaling support
+
 2007-08-14  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/imagebox.js: bring back scaling for non safari browsers

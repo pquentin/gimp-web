@@ -17,6 +17,13 @@
 
 @import url("/style/interface.css");
 
+#ImageBoxCurrentImage {
+  max-width: 800px;
+}
+#ImageBoxOuterContainer {
+  width: 100% !important;
+}
+
 body {
   background: #0e2426;
   color: white;

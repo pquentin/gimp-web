@@ -292,12 +292,17 @@
 ["height", "wgo:image-about-splash-unknown",  { "height": "145px"}]
 ["alt",    "wgo:image-about-splash-unknown",  { "alt":    "unknown"}]
 
+["href",   "wgo:book-the_artists_guide_to_gimp_effects",    { "href":       "http://www.graphics-muse.org/artistsguide/"}]
+["src",    "wgo:image-book-the_artists_guide_to_gimp_effects",  { "src":    "/books/the_artists_guide_to_gimp_effects.png"}]
+["width",  "wgo:image-book-the_artists_guide_to_gimp_effects",  { "width":  "100px"}]
+["height", "wgo:image-book-the_artists_guide_to_gimp_effects",  { "height": "80px"}]
+["alt",    "wgo:image-book-the_artists_guide_to_gimp_effects",  { "alt": "Hammel_Michael_J"}]
 
 ["href",   "wgo:book-beginning_gimp_from_novice_to_professional",    { "href":       "http://gimpbook.com/"}]
 ["src",    "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "src":    "/books/beginning_gimp_from_novice_to_professional.png"}]
 ["width",  "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "width":  "100px"}]
 ["height", "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "height": "132px"}]
-["alt",    "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "alt": "Akkana Peck"}]
+["alt",    "wgo:image-book-beginning_gimp_from_novice_to_professional",  { "alt": "Peck_Akkana"}]
 
 ["href",   "wgo:book-the_gimp_2_2_pour_pc_mac_et_linux",    { "href":       "http://www.p-n.fr/julienpons/"}]
 ["src",    "wgo:image-book-the_gimp_2_2_pour_pc_mac_et_linux",  { "src":    "/books/the_gimp_2_2_pour_pc_mac_et_linux.png"}]

@@ -1,3 +1,11 @@
+2007-09-03  Raphaël Quinet  <raphael@gimp.org>
+
+	* admin/gimp-web-urls
+	* books/the_artists_guide_to_gimp_effects.png
+	* books/index.htrw: Added "The Artist's Guide to GIMP Effects".
+
+	* MAINTAINERS: added file required by pre-commit hook.
+
 2007-08-16  Roman Joost  <romanofski@gimp.org>
 
 	* includes/imagebox.js: removed missed code snipped and fixed

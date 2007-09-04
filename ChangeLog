@@ -1,3 +1,10 @@
+2007-09-04  Jakub Steiner <jimmac@ximian.com>
+
+	* includes/jquery.corner.pack.js (R):
+	* includes/jquery.corner.js:
+	* includes/wgo-scripts.xhtml: canvas is not supported across all
+		browsers. Make conditional.
+		
 2007-09-03  Raphaël Quinet  <raphael@gimp.org>
 
 	* admin/gimp-web-urls

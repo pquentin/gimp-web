@@ -1,5 +1,11 @@
 2007-09-04  Jakub Steiner <jimmac@ximian.com>
 
+	* includes/imagebox.js: disable opacity fades of the overlay,
+	addressing the speed issues Akkana has with this. Not as nice
+	looking though.
+
+2007-09-04  Jakub Steiner <jimmac@ximian.com>
+
 	* includes/jquery.corner.pack.js (R):
 	* includes/jquery.corner.js:
 	* includes/wgo-scripts.xhtml: canvas is not supported across all

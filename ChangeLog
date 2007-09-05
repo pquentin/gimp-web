@@ -1,3 +1,8 @@
+2007-09-05  Jakub Steiner <jimmac@ximian.com>
+
+	* includes/jquery.corner.pack.js: removed
+	* includes/jquery.corner.js: added the newly referenced script.
+
 2007-09-04  Jakub Steiner <jimmac@ximian.com>
 
 	* screenshots/index.htrw: remove confusing instructions.

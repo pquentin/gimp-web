@@ -1,3 +1,8 @@
+2007-09-07  Jakub Steiner <jimmac@ximian.com>
+
+	* release-notes/gimp-2.4.htrw: Additional information from
+	 	Alexandre Prokoudine.
+
 2007-09-06  Raphaël Quinet  <raphael@gimp.org>
 
 	* includes/wgo.js: fixed an old typo: </diov> should be </div>.

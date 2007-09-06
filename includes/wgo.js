@@ -17,6 +17,8 @@ function renderDownload() {
 	$("#source").load("source.xhtml"); //sources for all
 }
 
+var usertyped = ""; //for the easteregg
+
 function easterEgg(key) {
 	var keychar = String.fromCharCode(key.charCode);
 	usertyped += keychar;
@@ -26,6 +28,9 @@ function easterEgg(key) {
 		splash += "top: 50%; left: 50%; margin: -200px 0 0 -150px;\"";
 		splash += " src=\"/about/splash/images/eek.png\" alt=\"eeeeek!\" />";
 		$("body").append(splash);
+		$("#eek").click( function () {
+			$(this).fadeOut()
+		});
 		usertyped = "";
 	}
 	if (key.keyCode==27) {
@@ -34,7 +39,6 @@ function easterEgg(key) {
 }
 
 
-var usertyped = ""; //for the easteregg
 
 $(document).ready(function() {
 	$("#menu").hide().fadeIn(2000);

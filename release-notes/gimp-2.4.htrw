@@ -91,6 +91,10 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <p>To move, simply drag the rectangle clicking within the area. Resizing is possible in one or two axes at the same time dragging the handle-bars on the sides and corners. The outside area is darkened with a nice passepartout effect to better get the idea of how the final crop will look like.</p>
 
+<h3>Improved Printing</h3>
+
+<p><em>COntent to be added</em></p>
+
 <h3>Guides</h3>
 
 <em>Content to be added</em>
@@ -119,7 +123,13 @@ modification throughout the whole 'digital darkroom' process.</p>
 <ul>
 <li>Better status information for tools in the window status bar.</li>
 <li>Various speedups in compositing functions and gradient drawing.</li>
+<li>Gaussian Blur, Selective Gaussian Blur and Value Invert plug-ins work significantly faster now</li>
 <li>Zoomable preview widget for plugins.</li>
+<li>Motion Blur filter can blur outwards now, and its quality has improved</li>
+<li>A number of scripts were added: reversing the order of layers, sorting color palettes to name a few.</li>
+<li>New Scheme interpreter provides better debugging, handles UTF-8 coded characters and strings, has regex based pattern matching and more.</li>
+<li>New Screenshot plug-in offers more sophisticated options and is far easier to use</li>
+
 </ul>
 
 

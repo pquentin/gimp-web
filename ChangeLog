@@ -1,3 +1,7 @@
+2007-09-06  Jakub Steiner <jimmac@ximian.com>
+
+	* style/wgo.css: make some room for the splash author's name.
+
 2007-09-05  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/jquery.corner.pack.js: removed

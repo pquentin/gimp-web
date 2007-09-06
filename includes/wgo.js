@@ -17,6 +17,25 @@ function renderDownload() {
 	$("#source").load("source.xhtml"); //sources for all
 }
 
+function easterEgg(key) {
+	var keychar = String.fromCharCode(key.charCode);
+	usertyped += keychar;
+	if (usertyped.indexOf("eek")!=-1) {
+		var splash = "<img id=\"eek\" style=\"width: 300px; height: 400px; ";
+		splash += "display: block; position: fixed;";
+		splash += "top: 50%; left: 50%; margin: -200px 0 0 -150px;\"";
+		splash += " src=\"/about/splash/images/eek.png\" alt=\"eeeeek!\" />";
+		$("body").append(splash);
+		usertyped = "";
+	}
+	if (key.keyCode==27) {
+		$("#eek").fadeOut();
+	}
+}
+
+
+var usertyped = ""; //for the easteregg
+
 $(document).ready(function() {
 	$("#menu").hide().fadeIn(2000);
 	$("p.intropara").click(function () {
@@ -26,4 +45,7 @@ $(document).ready(function() {
 	if($.browser.msie) {
 		mangleforIE();
 	};
-})
+	$(document).keypress(function (key) {
+		easterEgg(key);
+	});
+});

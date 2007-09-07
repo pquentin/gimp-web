@@ -93,7 +93,9 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>Improved Printing</h3>
 
-<p><em>COntent to be added</em></p>
+<img class="figure" src="images/gimp-24-print-dark.png" alt="Improved Printing" />
+
+<p>Printing has been largely improved. GIMP makes use of the advancements in the gtk+ printing API so that you can control all aspects of the printout with an easy to understand interface and immidiate preview.</p>
 
 <h3>Guides</h3>
 

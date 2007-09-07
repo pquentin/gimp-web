@@ -1,5 +1,13 @@
 2007-09-07  Jakub Steiner <jimmac@ximian.com>
 
+	* release-notes/gimp-2.4.htrw:
+	* release-notes/images/gimp-24-print-dark.png: Alexandre's
+		screenshot. Had to use liquid resize to fit it into the 500px
+		limit. Sweet plugin. Maybe we should pitch it in the release
+		notes ;)
+
+2007-09-07  Jakub Steiner <jimmac@ximian.com>
+
 	* release-notes/gimp-2.4.htrw: Additional information from
 	 	Alexandre Prokoudine.
 

@@ -1,3 +1,10 @@
+2007-09-12  Raphaël Quinet  <raphael@gimp.org>
+
+	* release-notes/gimp-2.4.htrw
+	* release-notes/images/2.4-screenshot-plugin.png: Slightly
+	modified contribution from Alexandre Prokoudine, documenting
+	changes in the menus and various other improvements.
+
 2007-09-07  Jakub Steiner <jimmac@ximian.com>
 
 	* release-notes/gimp-2.4.htrw:

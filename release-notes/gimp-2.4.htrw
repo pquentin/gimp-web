@@ -19,7 +19,7 @@ src="images/2.4-releasesplash.png" width="640" height="200" />
 <img class="left" src="images/2.4-refreshed-look.png" alt="Refreshed Look" />
 <p>Additionally the icons also have enhanced usability on dark widget themes, which is a common setting among digital artists.</p>
 
-<p>For artists preferring more desaturated color theme for their icons is an <a href="http://jimmac.musichall.cz/zip/GIMP-Greyscale-tools-0.1.tar.bz2">alternative icon theme</a> available for download.</p>
+<p>For artists preferring more desaturated color theme for their icons, an <a href="http://jimmac.musichall.cz/zip/GIMP-Greyscale-tools-0.1.tar.bz2">alternative icon theme</a> is available for download.</p>
 
 <h3>Scalable Brushes</h3>
 
@@ -121,21 +121,23 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <p>A very common problem exposing itself especially when using cheaper lenses is barrel distortion and vignetting. Luckily GIMP provides a brand new filter to compensate for both problems. Saving photographer's pocket is our mission!</p>
 
+<h3>JPEG quality</h3>
+
+<p>When editing photographs, it is usually better to work with a lossless image format and only save the final result as JPEG. But if you have to work with JPEG images as input, then a new option allows you to use the same compression parameters as the original image when you re-save it.</p>
+
 <h2>Various Other Improvements</h2>
 
-<p>In addition to all the above, GIMP has been improved in other areas such as:</p>
-<ul>
-<li>Better status information for tools in the window status bar.</li>
-<li>Various speedups in compositing functions and gradient drawing.</li>
-</ul>
+<p>In addition to all the above, GIMP has been improved in other areas.  For instance, better status information and some hints have been added in the status bar of the image windows. You can easily discover new features and new shortcuts by trying the various keys and modifiers that are suggested while you are using the tools.</p>
 
 <p>A number of changes has gone into plug-ins and scripts. First of all, a new preview widget for plug-ins was introduced. Now you can zoom in and out using the mouse wheel or +/- buttons in plug-ins dialogs and pan around.</p>
 
-<p>Several plug-ins like Gaussian Blur, Selective Gaussian Blur and Value Invert have received special attention with regards to speed of processing and work significantly faster now. Additionally, Motion Blur filter can blur outwards now, and its quality has also improved. You will also note that the new Screenshot plug-in offers more sophisticated options and is far easier to use.</p>
+<p>Several plug-ins like Gaussian Blur, Selective Gaussian Blur and Value Invert have received special attention with regards to speed of processing and work significantly faster now. Additionally, the Motion Blur filter can blur outwards now, and its quality has also improved.</p>
+
+<p>You will also note that the new Screenshot plug-in offers more sophisticated options and is far easier to use.</p>
 
 <img class="figure" src="images/2.4-screenshot-plugin.png" alt="Screenshot plug-in">
 
-<p>GIMP 2.4 features a brand new Scheme interpreter which provides better debugging, handles UTF-8 coded characters and strings, has regex based pattern matching and many more useful features that power users were requesting. The latter will be pleased to find out that plug-ins and scripts can register menu entries in the &lt;Brushes&gt;, &lt;Gradients&gt;, &lt;Palettes&gt;, &lt;Patterns&gt; and &lt;Fonts&gt; menus now. Aslo, a fair amount of new scripts were added: reversing the order of layers, sorting color palettes etc.</p>
+<p>GIMP 2.4 features a brand new Scheme interpreter that provides better debugging, handles UTF-8 coded characters and strings, has regex based pattern matching and many more useful features that power users were requesting. The latter will be pleased to find out that plug-ins and scripts can register menu entries in the &lt;Brushes&gt;, &lt;Gradients&gt;, &lt;Palettes&gt;, &lt;Patterns&gt; and &lt;Fonts&gt; menus now. Also, a fair amount of new scripts were added: reversing the order of layers, sorting color palettes etc.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

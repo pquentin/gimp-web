@@ -1,3 +1,9 @@
+2007-10-04  Raphaël Quinet  <raphael@gimp.org>
+
+	* docs/script-fu-update.htrw: HTMLized version of the migration
+	guide from SIOD to TinyScheme written by Saul Goode, with some
+	additional bits taken from his previous list of differences.
+
 2007-09-13  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/gimp-2.4.htrw: updated text, fixed some typos.

@@ -1,0 +1,156 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Script-Fu Migration Guide</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Script-fu In GIMP 2.4</h1>
+
+<p>Since version 1.0 of GIMP, it has included a powerful scripting
+language which permits extending the program's capabilities and
+simplifying repetitive tasks. This scripting language, called
+"Script-fu", was based upon the Scheme programming language and
+implemented the SIOD interpreter written by George J. Carrette while
+he was a professor at Boston University in the late 80s.</p>
+
+<p>This Script-fu interpreter based upon Carrette's SIOD has served
+GIMP extremely well over the last decade -- thousands of scripts have
+been written and shared by GIMP users -- but it is starting to show
+its age and therefore the GIMP development team has decided to replace
+it with a more modern Scheme interpreter called TinyScheme. One of the
+main reasons for this changeover is to support international languages
+and fonts, for which SIOD offered no provision. There are other
+benefits as well, but lack of international support was the most
+significant.</p>
+
+<p>Though this switch has required an extensive effort on the part of
+GIMP developers (particularly Kevin Cozens) and some significant
+changes to the internals of the GIMP code, there should be very little
+visible change to GIMP users. The GIMP's scripting extension will
+still be called "Script-fu" and the vast majority of the scripts
+already available will still function using the new TinyScheme-based
+interpreter.</p>
+
+<p>Despite the desire to keep the impact of this change to GIMP
+internals to a minimum, there are some differences between the
+SIOD-based interpreter and the TinyScheme-based Script-fu which may
+crop up when trying to use older scripts with GIMP 2.4. What follows
+is a description of some of the problems which may be encountered and
+what steps need to be taken to correct them.</p>
+
+<h2 id="unbound">Setting an undeclared variable</h2>
+
+<p>By far, the most common problem that can be expected if using an
+older script is that it might assign a value to a variable without
+first declaring the variable. SIOD-based Script-fu would permit a
+statement such as <code>(set! x 4)</code> even if '<tt>x</tt>' had
+not been declared -- '<tt>x</tt>' would be defined automatically to
+be a global variable. The new Script-fu protects against this
+situation and the programmer <strong>must</strong> declare the
+variable first. The offending script would result in an error message
+stating, "<tt class="warn">Error: set!: unbound variable: x</tt>".</p>
+
+<p>The use of global variables is generally discouraged because
+another function (written by a different author) may have chosen to
+use the same name and the two functions would interfere with each
+other. For this reason, the correct method of declaring '<tt>x</tt>'
+in the preceding example is to use the <code>let</code>
+or <code>let*</code> statement:</p>
+
+<pre class="code">
+(let* ( (x 4) )
+  ...
+  ...
+  ...
+  )
+</pre>
+
+
+<h2 id="emptylist">The empty list in conditionals</h2>
+
+<p>SIOD treated the empty list to be FALSE when it appeared in a
+conditional test (if, while, cond, not, =, etc) whereas the Scheme
+standard specifies that it should evaluate to TRUE. Programmers have
+been aware of this difference since the beginning and it is unlikely
+that scripts will be encountered which rely upon SIOD's nonstandard
+behavior but it is possible. A simple solution is to use the 'pair?'
+function to test the list. For example, replace <code>(while lis
+... )</code> with <code>(while (pair? lis)
+...)</code>. Alternately, <code>(not (null? lis))</code> could be used
+instead of <code>(pair? lis)</code>.</p>
+
+
+<h2 id="carempty">Accessing the first element of an empty list</h2>
+
+<p>In SIOD, taking the 'car' of an empty list returned an empty list;
+in TinyScheme this is not permissible and will generate an error
+message ("<tt class="warn">Error: car: argument 1 must be:
+pair</tt>"). Like the case for conditionals, programmers have been
+aware of SIOD's nonstandard behavior and encountering this problem
+should be rare. Correcting such a problem, if encountered, should
+consist of testing whether a list is empty before accessing it.</p>
+
+
+<h2 id="cdrempty">Accessing beyond the last element of a list</h2>
+
+<p>Similar to the preceding problem, SIOD would permit you to access
+beyond the last element in a list, returning an empty list as a
+result. For example, taking the 'cdr' of an empty list or the 'cddr'
+of a one-element list. In GIMP 2.4, Script-fu will not allow this and
+it will result in an error message ("<tt class="warn">Error: cdr:
+argument 1 must be: pair</tt>"). Again, SIOD's behavior has long been
+realized to be non-standard and this problem's occurance should be
+rare. Correcting such a problem, if encountered, should consist of
+more precise testing when accessing a list.</p>
+
+
+<h2 id="cons">Constructing a pair</h2>
+
+<p>The Scheme <code>cons</code> function expects two arguments which
+are combined into a pair. In SIOD, if only one argument was provided
+then the second argument was assumed to be an empty list. In GIMP 2.4,
+if the second argument is not present than an error occurs
+("<tt class="warn">Error: cons: needs 2 argument(s)</tt>"). The
+solution, should this problem be encountered, is explicitly include an
+empty list as the second argument.</p>
+
+<h2 id="deprecated">Deprecated features</h2>
+
+<p>The following SIOD functions or constants are currently made
+available in TinyScheme Script-fu but may disappear in future
+versions.</p>
+
+<ul>
+  <li><code>aset</code> - replaced by TinyScheme's <code>vector-set!</code></li>
+  <li><code>aref</code> - replaced by TinyScheme's <code>vector-ref</code></li>
+  <li><code>fopen</code> - replaced by TinyScheme's <code>open-input-file</code></li>
+  <li><code>mapcar</code> - replaced by TinyScheme's <code>map</code></li>
+  <li><code>nil</code> - replaced by TinyScheme's <code>()</li>
+  <li><code>nreverse</code> - replaced by TinyScheme's <code>reverse</code></li>
+  <li><code>pow</code> - replaced by TinyScheme's <code>expt</code></li>
+  <li><code>prin1</code> - replaced by TinyScheme's <code>write</code></li>
+  <li><code>print</code> - replaced by TinyScheme's <code>write</code> (along with <code>newline</code>)</li>
+  <li><code>strcat</code> - replaced by TinyScheme's <code>string-append</code></li>
+  <li><code>string-lessp</code> - replaced by TinyScheme's <code>string<?</code></li>
+  <li><code>symbol-bound?</code> - replaced by TinyScheme's <code>defined?</code></li>
+  <li><code>the-environment</code> - replaced by TinyScheme's <code>current-environment</code></li>
+  <li><code>*pi*</code> - The constant *pi* is not predefined in TinyScheme but can be defined as <code>(* 4 (atan 1.0))</code></li>
+  <li><code>butlast</code> -  Is not available in TinyScheme but alternate coding using <code>(reverse (cdr (reverse x)))</code> is possible</li>
+  <li><code>cons-array</code> - replaced by TinyScheme's <code>make-vector</code></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>There are some other differences between the original Script-fu and
+the Script-fu of GIMP 2.4 but they should have little or no impact on
+existing scripts because of their rarity. These include the syntax for
+the <code>catch</code>/<code>throw</code> statements (which trap errors) and the
+<code>bytes-append</code> function (which does not seem to appear in
+any published Script-fu). If you encounter scripts containing such
+problems, please post on the GIMP developers mailing list outlining
+your problems.</p>
+
+<p><em>(insert credits here once Saul says how he wants to be credited
+for writing this guide)</em></p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

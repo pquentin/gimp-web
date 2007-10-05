@@ -84,7 +84,7 @@
   For any reference to the "LAB" image or "luminosity" channel below, substitute the "HSV" image/"value" window. 
   The LAB option was not in my initial version of the GIMP (ver 1.2.1), 
   but I got the newer version of the plug-in at the 
-  <a href="plugin-archive:gimp">GIMP Plug-in Registry</a> and compiled it myself. Don't worry if you don't have it; HSV works great too.
+  <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself. Don't worry if you don't have it; HSV works great too.
 </p>
 <p>
   <b>Note 2:</b> in the older version of the decompose plug-in there 

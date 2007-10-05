@@ -18,15 +18,17 @@
 
   <p>
     The user manual is available in several languages:
+
     <ul>
-      <li><a href="wgo:docs-gimp_help-en">English</a></li>
-      <li><a href="wgo:docs-gimp_help-zh_CN">Chinese</a></li>
-      <li><a href="wgo:docs-gimp_help-cs">Czech</a></li>
-      <li><a href="wgo:docs-gimp_help-nl">Dutch</a> (Nederlands)</li>
-      <li><a href="wgo:docs-gimp_help-fr">French</a> (Français)</li>
-      <li><a href="wgo:docs-gimp_help-de">German</a> (Deutsch)</li>
-      <li><a href="wgo:docs-gimp_help-it">Italian</a> (Italiano)</li>
-      <li><a href="wgo:docs-gimp_help-sv">Swedish</a> (Svenska)</li>
+      <li><a href="http://docs.gimp.org/en/">English</a></li>
+      <li><a href="http://docs.gimp.org/nl/">Dutch</a> (Nederlands)</li>
+      <li><a href="http://docs.gimp.org/fr/">French</a> (Français)</li>
+      <li><a href="http://docs.gimp.org/de/">German</a> (Deutsch)</li>
+      <li><a href="http://docs.gimp.org/it/">Italian</a> (Italiano)</li>
+      <li><a href="http://docs.gimp.org/ko/">Korean</a> (한국어)</li>
+      <li><a href="http://docs.gimp.org/no/">Norwegian</a> (Norsk)</li>
+      <li><a href="http://docs.gimp.org/ru/">Russian</a> (Pусский)</li>
+      <li><a href="http://docs.gimp.org/es/">Spanish</a> (Español)</li>
     </ul>
   </p>
 
@@ -52,10 +54,10 @@
 
 <h2>GIMP Manual Pages</h2>
   <ul>
-    <li><a href="wgo:manpage-gimp">gimp (1)</a></li>
-    <li><a href="wgo:manpage-gimprc">gimprc (5)</a></li>
-    <li><a href="wgo:manpage-gimp-remote">gimp-remote (1)</a></li>
-    <li><a href="wgo:manpage-gimptool">gimptool-2.0 (1)</a></li>
+    <li><a href="/man/gimp.html"><tt>gimp</tt> (1)</a></li>
+    <li><a href="/man/gimprc.html"><tt>gimprc</tt> (5)</a></li>
+    <li><a href="/man/gimp-remote.html"><tt>gimp-remote</tt> (1)</a></li>
+    <li><a href="/man/gimptool-2.0.html"><tt>gimptool-2.0</tt> (1)</a></li>
   </ul>
 
 <h2>GIMP Documentation for Developers and Script Authors</h2>

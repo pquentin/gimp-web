@@ -1,5 +1,46 @@
 2007-10-05  Raphaël Quinet  <raphael@gimp.org>
 
+	* includes/wgo-page-fini.xhtml: Fixed broken link.
+
+	* admin/gimp-web-urls: Trimmed down the list of substitutions by
+	removing most items that were never used, most specialized items
+	that were used only once (such as the mailing list archives or the
+	size of the thumbnail images of book covers), and items that were
+	anyway listed with their full URL in the text (such as references
+	to docs.gimp.org).
+
+	* mail_lists.htrw
+	* team.htrw
+	* about/index.htrw
+	* about/everywhere.htrw
+	* about/selling.htrw
+	* books/index.htrw
+	* release-notes/gimp-2.2.htrw
+	* release-notes/gimp-2.3.htrw
+	* tutorials/Draw_A_Paint_Brush/index.htrw
+	* tutorials/Smart_Sharpening/index.htrw: Replaced some single-use
+	substitutions by the corresponding URLs.  Should make maintenance
+	much easier for the list of books and mailing lists.
+	
+	* docs/index.htrw: Updated the list of languages for 2.4.
+
+	* about/splash/index.htrw: Improved instructions for 2.4, prefer
+	personal directories instead of system-wide installation of splash
+	screens.
+
+	* about/splash/contest/index.htrw: Rewritten, mention that all
+	contests are closed.  Alas, the links to the previous images are
+	gone.
+
+	* release-notes/index.htrw: 2.4 will be the stable release by the
+	time this site goes live.  Added links to older release notes.
+
+	* unix/index.htrw
+	* windows/index.htrw: Updated, recommend the installation of the
+	help files (user manual).
+
+2007-10-05  Raphaël Quinet  <raphael@gimp.org>
+
 	* docs/index.htrw: 
 	* release-notes/gimp-2.4.htrw: Link to the Script-Fu migration
 	guide.

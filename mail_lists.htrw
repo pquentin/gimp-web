@@ -1,81 +1,92 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Mailing Lists</title>
-<link rel="alternate" title="gimp-developer RSS" href="maillist:GIMP-developer-m-a-rss" type="application/rss+xml" />
-<link rel="alternate" title="gegl-developer RSS" href="maillist:GEGL-developer-m-a-rss" type="application/rss+xml" />
-<link rel="alternate" title="gimp-user RSS" href="maillist:GIMP-user-m-a-rss" type="application/rss+xml" />
-<link rel="alternate" title="gimpwin-users RSS" href="maillist:GIMP-user-windows-rss" type="application/rss+xml" />
-<link rel="alternate" title="gimpi RSS" href="maillist:GIMP-user-images-rss" type="application/rss+xml" />
-<link rel="alternate" title="gimp-perl RSS" href="maillist:GIMP-perl-rss" type="application/rss+xml" />
-<link rel="alternate" title="gimp-os2 RSS" href="maillist:GIMP-user-os2-rss" type="application/rss+xml" />
+<link rel="alternate" title="gimp-developer RSS" href="http://www.mail-archive.com/gimp-developer%40lists.xcf.berkeley.edu/maillist.xml" type="application/rss+xml" />
+<link rel="alternate" title="gegl-developer RSS" href="http://www.mail-archive.com/gegl-developer%40lists.xcf.berkeley.edu/maillist.xml" type="application/rss+xml" />
+<link rel="alternate" title="gimp-user RSS" href="http://www.mail-archive.com/gimp-user%40lists.xcf.berkeley.edu/maillist.xml" type="application/rss+xml" />
+<link rel="alternate" title="gimpwin-users RSS" href="http://rss.groups.yahoo.com/group/gimpwin-users/rss" type="application/rss+xml" />
+<link rel="alternate" title="gimpi RSS" href="http://rss.groups.yahoo.com/group/gimpi/rss" type="application/rss+xml" />
+<link rel="alternate" title="gimp-perl RSS" href="http://rss.groups.yahoo.com/group/gimp-perl/rss" type="application/rss+xml" />
+<link rel="alternate" title="gimp-os2 RSS" href="http://rss.groups.yahoo.com/group/gimp-os2/rss" type="application/rss+xml" />
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Mailing Lists</h1>
 
 <dl>
-  <dt><a href="maillist:GIMP-user">GIMP User</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-user">GIMP User</a></dt>
   <dd>The original (mostly unix based) user list. For the everyday user.
   Here you will find tips for doing cool effects, user questions, etc.<br />
-  Archives: <a href="maillist:GIMP-user-archive">XCF</a>,
-  <a href="maillist:GIMP-user-m-a-archive">mail-archive</a>,
-  <a href="maillist:GIMP-user-aims-archive">AIMS</a>,
-  <a href="maillist:GIMP-user-spin-archive">spinics</a>,
-  <a href="maillist:GIMP-user-gmane-archive">Gmane</a></dd>
+  Archives:
+  <a href="http://lists.xcf.berkeley.edu/lists/gimp-user">XCF</a>,
+  <a href="http://www.mail-archive.com/gimp-user%40lists.xcf.berkeley.edu/">mail-archive</a>,
+  <a href="http://marc.theaimsgroup.com/?l=gimp-user&amp;r=1&amp;w=2">AIMS</a>,
+  <a href="http://www.spinics.net/lists/gimp/">spinics</a>,
+  <a href="http://news.gmane.org/gmane.comp.video.gimp.user/">Gmane</a></dd>
 
-  <dt><a href="maillist:GIMP-announce">GIMP Announce</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-announce">GIMP Announce</a></dt>
   <dd>Learn of the new tarballs, without all of the help and development.
   This is a very low-traffic list.<br />
-  Archives: <a href="maillist:GIMP-announce-archive">XCF</a>,
-  <a href="maillist:GIMP-announce-aims-archive">AIMS (broken)</a>,
-  <a href="maillist:GIMP-announce-gmane-archive">Gmane</a></dd>
+  Archives:
+  <a href="http://lists.xcf.berkeley.edu/lists/gimp-announce">XCF</a>,
+  <a href="http://marc.theaimsgroup.com/?l=gimp-announce&amp;r=1&amp;w=2">AIMS (broken)</a>,
+  <a href="http://news.gmane.org/gmane.comp.video.gimp.announce/">Gmane</a></dd>
 
-  <dt><a href="maillist:GIMP-user-windows">GIMPwin-users</a></dt>
+  <dt><a href="http://groups.yahoo.com/group/gimpwin-users/">GIMPwin-users</a></dt>
   <dd>Especially for users of the Windows version of GIMP.<br />
-  Archives: <a href="maillist:GIMP-user-windows-archive">Yahoo</a>,
-  <a href="maillist:GIMP-user-windows-spin-archive">spinics</a>,
-  <a href="maillist:GIMP-user-windows-gmane-archive">Gmane</a></dd>
+  Archives:
+  <a href="http://groups.yahoo.com/group/gimpwin-users/messages">Yahoo</a>,
+  <a href="http://www.spinics.net/lists/gimpwin/">spinics</a>,
+  <a href="http://news.gmane.org/gmane.comp.video.gimp.windows.user/">Gmane</a></dd>
 
-  <dt><a href="maillist:GIMP-developer">GIMP Developer</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-developer">GIMP Developer</a></dt>
   <dd>The GIMP developer mail list. For plug-in developers and core program
   developers; discussion about the source code.<br />
-  Archives: <a href="maillist:GIMP-developer-archive">XCF</a>,
-  <a href="maillist:GIMP-developer-m-a-archive">mail-archive</a>,
-  <a href="maillist:GIMP-developer-aims-archive">AIMS</a>,
-  <a href="maillist:GIMP-developer-gmane-archive">Gmane</a></dd>
+  Archives:
+  <a href="http://lists.xcf.berkeley.edu/lists/gimp-developer/">XCF</a>,
+  <a href="http://www.mail-archive.com/gimp-developer%40lists.xcf.berkeley.edu/">mail-archive</a>,
+  <a href="http://marc.theaimsgroup.com/?l=gimp-developer&amp;r=1&amp;w=2">AIMS</a>,
+  <a href="http://news.gmane.org/gmane.comp.video.gimp.devel/">Gmane</a></dd>
 
-  <dt><a href="maillist:GEGL-developer">GEGL Developer</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gegl-developer">GEGL Developer</a></dt>
   <dd>The GEGL developer mail list. For developers interested in
   contributing to <a href="http://www.gegl.org/">GEGL</a>, the new
   architecture for image processing.<br />
-  Archives: <a href="maillist:GEGL-developer-archive">XCF</a>,
-  <a href="maillist:GEGL-developer-m-a-archive">mail-archive</a>,
-  <a href="maillist:GEGL-developer-gmane-archive">Gmane</a></dd>
+  Archives:
+  <a href="http://lists.xcf.berkeley.edu/lists/gegl-developer/">XCF</a>,
+  <a href="http://www.mail-archive.com/gegl-developer%40lists.xcf.berkeley.edu/">mail-archive</a>,
+  <a href="http://news.gmane.org/gmane.comp.video.gegl.devel/">Gmane</a></dd>
 
-  <dt><a href="maillist:GIMP-web">GIMP web</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-web/">GIMP web</a></dt>
   <dd>The GIMP web mail list. For discussion about the contents and
   structure of this web site.<br />
-  Archives: <a href="maillist:GIMP-web-archive">XCF</a>,
-  <a href="maillist:GIMP-web-gmane-archive">Gmane</a></dd>
+  Archives:
+  <a href="http://lists.xcf.berkeley.edu/lists/gimp-web/">XCF</a>,
+  <a href="http://news.gmane.org/gmane.comp.video.gimp.web/">Gmane</a></dd>
 
-  <dt><a href="maillist:GIMP-docs">GIMP docs</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-docs/">GIMP docs</a></dt>
   <dd>The GIMP documentation mail list. For discussion about the
   GIMP User Manual and all derivative work.<br />
-  Archives: <a href="maillist:GIMP-docs-archive">XCF</a></dd>
+  Archives:
+  <a href="http://lists.xcf.berkeley.edu/lists/gimp-docs/">XCF</a></dd>
 
-  <dt><a href="maillist:GIMP-user-images">GIMPImages</a></dt>
+  <dt><a href="http://groups.yahoo.com/group/gimpi/">GIMPImages</a></dt>
   <dd>GIMPI is a group dedicated to exchange of images created or
   manipulated with GIMP.<br />
-  Archives: <a href="maillist:GIMP-user-images-archive">Yahoo</a></dd>
+  Archives:
+  <a href="http://groups.yahoo.com/group/gimpi/messages">Yahoo</a></dd>
 
-  <dt><a href="maillist:GIMP-perl">GIMP-perl</a></dt>
+  <dt><a href="http://groups.yahoo.com/group/gimp-perl/">GIMP-perl</a></dt>
   <dd>GIMP and Perl.<br />
-  Archives: <a href="maillist:GIMP-perl-archive">Yahoo</a>,
-  <a href="maillist:GIMP-perl-aims-archive">AIMS</a></dd>
+  Archives:
+  <a href="http://groups.yahoo.com/group/gimp-perl/messages">Yahoo</a>,
+  <a href="http://marc.theaimsgroup.com/?l=gimp-perl&amp;r=1&amp;w=2">AIMS</a></dd>
 
-  <dt><a href="maillist:GIMP-user-os2">GIMP-OS2</a></dt>
+  <dt><a href="http://groups.yahoo.com/group/gimp-os2/">GIMP-OS2</a></dt>
   <dd>OS2/GIMP.<br />
-  Archives: <a href="maillist:GIMP-user-os2-archive">Yahoo</a></dd>
+  Archives:
+  <a href="http://groups.yahoo.com/group/gimp-os2/messages">Yahoo</a></dd>
 
 </dl>
+
 
 <h2>List Etiquette</h2>
   <p>

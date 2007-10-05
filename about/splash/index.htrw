@@ -17,35 +17,48 @@ src="splashsplash.png" width="640" height="200" />
 </p>
 
 <h2>Splash Screen galleries (image archives)</h2>
+
 <ul class="splashes">
-  <li><a href="wgo:about-splash-stable">Stable GIMP Splash Screens</a></li>
-  <li><a href="wgo:about-splash-2-3">GIMP 2.3 Development Splash Screens</a></li>
-  <li><a href="wgo:about-splash-2-1">GIMP 2.1 Development Splash Screens</a></li>
-  <li><a href="wgo:about-splash-1-3">GIMP 1.3 Development Splash Screens</a></li>
-  <li><a href="wgo:about-splash-1-1">GIMP 1.1 Development Splash Screens</a></li>
+  <li><a href="stable.html">Stable GIMP Splash Screens</a></li>
+  <li><a href="unstable-2.3.html">GIMP 2.3 Development Splash Screens</a></li>
+  <li><a href="unstable-2.1.html">GIMP 2.1 Development Splash Screens</a></li>
+  <li><a href="unstable-1.3.html">GIMP 1.3 Development Splash Screens</a></li>
+  <li><a href="unstable-1.1.html">GIMP 1.1 Development Splash Screens</a></li>
 </ul>
 
 <h1>Create your own splash screen</h1>
 <p>
-  The GIMP allows you to make your own splash screen and have that as
+  GIMP allows you to make your own splash screen and have that as
   startup splash instead of the one that comes with the archive. To do
   this you can simply follow the guidelines below.
 </p>
 <ul>
   <li>Make the splash <b>300x200</b> or more. (Smaller splashs will make
       text being cut off)</li>
-  <li>Then save the splash in <b>$PREFIX/gimp/2.0/images/gimp_splash.png</b></li>
-  <li>Starting with GIMP 2.2, the splash image is
-      called <b>gimp-splash.png</b> and will also be searched in your
-      personal GIMP directory (<b>~/.gimp-2.2/</b>). There's more info
-      in the <a href="wgo:manpage-gimp">gimp manual page</a>.
-  </li>
+  <li>Go to your personal GIMP directory.  For UNIX users, this is
+    usually in <b>/home/user_name/.gimp-2.4/</b>.  For Windows, this is
+    usually in <b>C:\Documents and Settings\user_name\.gimp-2.4\</b>
+    (you may have to enable the option "Show Hidden Files" in your file
+    browser).</li>
+  <li>Create a "splashes" directory if it does not exist.</li>
+  <li>Save your image in the "splashes" directory.</li>
 </ul>
 <p>
-  Restart GIMP and your splash screen should be the one being used by GIMP
-  instead of the one from the archive.
+  Restart GIMP and your splash screen should be the one being used by
+  GIMP instead of the one from the archive.  If you have more than one
+  splash screen, then GIMP will pick one at random.  More information
+  is available in the <a href="/man/gimp.html">gimp manual page</a>.
 </p>
-
+<p>
+  If there are multiple users on your system and you want to make a
+  single splash screen available for all of them, then you can save
+  your image in <b>$PREFIX/gimp/2.0/images/gimp-splash.png</b>.
+</p>
+<p>
+  Note that older older GIMP versions (2.0.x) used
+  <b>gimp_splash.png</b> instead of <b>gimp-splash.png</b> and did not
+  look for them in your personal GIMP directory.
+</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

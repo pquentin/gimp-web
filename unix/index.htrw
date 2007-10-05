@@ -5,15 +5,15 @@
 
 <h1>GIMP for Unix</h1>
 
-<h2>Getting and Installing the GIMP</h2>
+<h2>Getting and Installing GIMP</h2>
 
-<p>There are various ways to obtain and install the GIMP for Unix
+<p>There are various ways to obtain and install GIMP for UNIX
 systems.  In addition to the source code distribution here on
-www.gimp.org, you can get binaries for various flavors of Unix.</p>
+www.gimp.org, you can get binaries for various flavors of UNIX.</p>
 
-<p> At the moment we know about the following binary packages for GIMP
-2.2 on Unix. These binaries are provided by GIMP users. We did not
-test them; use at your own risk.
+<p>At the moment we know about the following binary packages for GIMP
+2.2 or 2.4 on UNIX. These binaries are provided by GIMP users. We did
+not test them; use at your own risk.
 
 <ul>
  <li>GNU/Linux
@@ -114,9 +114,13 @@ to build the GIMP.</p>
 
 <h2>Help and Documentation</h2>
 
-<ul>
-  <li><a href="wgo:docs">GIMP Documentation</a></li>
-</ul>
+<p>It is highly recommended that you install the help files (GIMP User
+Manual) that are provided as a separate package, usually called
+<code>gimp-help</code> if you install binary packages.  The
+documentation is also <a href="wgo:docs">available online</a>.</p>
+
+<p>Other useful links can be found at the bottom of each page on this
+site.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

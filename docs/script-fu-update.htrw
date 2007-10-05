@@ -37,6 +37,16 @@ crop up when trying to use older scripts with GIMP 2.4. What follows
 is a description of some of the problems which may be encountered and
 what steps need to be taken to correct them.</p>
 
+<ul>
+<li><a href="unbound">Setting an undeclared variable</a> (<tt>Error: set!: unbound variable: x</tt>)</li>
+<li><a href="condempty">Using the empty list in conditionals</a></li>
+<li><a href="carempty">Accessing the first element of an empty list</a> (<tt>Error: car: argument 1 must be: pair</tt>)</li>
+<li><a href="cdrempty">Accessing beyond the last element of a list</a> (<tt>Error: cdr: argument 1 must be: pair</tt>)</li>
+<li><a href="cons">Constructing a pair</a> (<tt>Error: cons: needs 2 argument(s)</tt>)</li>
+<li><a href="deprecated">Deprecated features</a></li>
+<li><a href="conclusion">Conclusion</a> (and other differences)</li>
+</ul>
+
 <h2 id="unbound">Setting an undeclared variable</h2>
 
 <p>By far, the most common problem that can be expected if using an
@@ -65,7 +75,7 @@ or <code>let*</code> statement:</p>
 </pre>
 
 
-<h2 id="emptylist">The empty list in conditionals</h2>
+<h2 id="condempty">The empty list in conditionals</h2>
 
 <p>SIOD treated the empty list to be FALSE when it appeared in a
 conditional test (if, while, cond, not, =, etc) whereas the Scheme
@@ -143,11 +153,11 @@ versions.</p>
 <p>There are some other differences between the original Script-fu and
 the Script-fu of GIMP 2.4 but they should have little or no impact on
 existing scripts because of their rarity. These include the syntax for
-the <code>catch</code>/<code>throw</code> statements (which trap errors) and the
-<code>bytes-append</code> function (which does not seem to appear in
-any published Script-fu). If you encounter scripts containing such
-problems, please post on the GIMP developers mailing list outlining
-your problems.</p>
+the <code>catch</code>/<code>throw</code> statements (which trap
+errors) and the <code>bytes-append</code> function (which does not
+seem to appear in any published Script-fu). If you encounter scripts
+containing such problems, please post on the GIMP developers mailing
+list outlining your problems.</p>
 
 <p><em>(insert credits here once Saul says how he wants to be credited
 for writing this guide)</em></p>

@@ -137,7 +137,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <img class="figure" src="images/2.4-screenshot-plugin.png" alt="Screenshot plug-in">
 
-<p>GIMP 2.4 features a brand new Scheme interpreter that provides better debugging, handles UTF-8 coded characters and strings, has regex based pattern matching and many more useful features that power users were requesting. The latter will be pleased to find out that plug-ins and scripts can register menu entries in the &lt;Brushes&gt;, &lt;Gradients&gt;, &lt;Palettes&gt;, &lt;Patterns&gt; and &lt;Fonts&gt; menus now. Also, a fair amount of new scripts were added: reversing the order of layers, sorting color palettes etc.</p>
+<p>GIMP 2.4 features a brand new Scheme interpreter that provides better debugging, handles UTF-8 coded characters and strings, has regex based pattern matching and many more useful features that power users were requesting. The latter will be pleased to find out that plug-ins and scripts can register menu entries in the &lt;Brushes&gt;, &lt;Gradients&gt;, &lt;Palettes&gt;, &lt;Patterns&gt; and &lt;Fonts&gt; menus now. Also, a fair amount of new scripts were added: reversing the order of layers, sorting color palettes etc. A few scripts that were using incorrect or deprecated constructs may have to be updated. A <a href="/docs/script-fu-update.html">Script-Fu migration guide</a> lists the most common errors and how to fix them.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

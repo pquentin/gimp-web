@@ -34,6 +34,7 @@
  <p>
   <a href="userfaq.html">Frequently Asked Questions</a>
  </p>
+
 <h2>Configuration</h2>
   <ul>
     <li><a href="wgo:unix-howtos-tile_cache">How to set the tile
@@ -57,18 +58,14 @@
     <li><a href="wgo:manpage-gimptool">gimptool-2.0 (1)</a></li>
   </ul>
 
-<h2>Other GIMP Documentation</h2>
+<h2>GIMP Documentation for Developers and Script Authors</h2>
   <ul>
-    <li><a href="python/index.html">GIMP Python Module Documentation</a></li>
-    <li><a href="scheme_plugin/">GIMP Script-fu Documentation</a></li>
+    <li><a href="wgo:dev">developer.gimp.org</a></li>
+    <li><a href="plug-in/plug-in.html">Writing a plug-in</a></li>
+    <li><a href="python/index.html">GIMP Python module documentation</a></li>
+    <li><a href="scheme_plugin/">GIMP Script-Fu documentation</a></li>
+    <li><a href="script-fu-update.html">GIMP Script-Fu changes in GIMP 2.4 (migration guide)</a></li>
   </ul>
-
-<h2>GIMP Developer Documentation</h2>
-  <ul>
-   <li><a href="wgo:dev">developer.gimp.org</a></li>
-   <li><a href="plug-in/plug-in.html">Writing a Plug-In</a></li>
-  </ul>
-
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

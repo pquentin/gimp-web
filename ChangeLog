@@ -1,3 +1,12 @@
+2007-10-05  Raphaël Quinet  <raphael@gimp.org>
+
+	* docs/index.htrw: 
+	* release-notes/gimp-2.4.htrw: Link to the Script-Fu migration
+	guide.
+
+	* docs/script-fu-update.htrw: Added a table of contents and
+	summary of common errors.
+
 2007-10-04  Raphaël Quinet  <raphael@gimp.org>
 
 	* docs/script-fu-update.htrw: HTMLized version of the migration

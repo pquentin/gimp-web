@@ -124,7 +124,7 @@ versions.</p>
   <li><code>aref</code> - replaced by TinyScheme's <code>vector-ref</code></li>
   <li><code>fopen</code> - replaced by TinyScheme's <code>open-input-file</code></li>
   <li><code>mapcar</code> - replaced by TinyScheme's <code>map</code></li>
-  <li><code>nil</code> - replaced by TinyScheme's <code>()</li>
+  <li><code>nil</code> - replaced by TinyScheme's <code>'()</code></li>
   <li><code>nreverse</code> - replaced by TinyScheme's <code>reverse</code></li>
   <li><code>pow</code> - replaced by TinyScheme's <code>expt</code></li>
   <li><code>prin1</code> - replaced by TinyScheme's <code>write</code></li>

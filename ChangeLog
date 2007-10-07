@@ -1,5 +1,11 @@
 2007-10-07  Raphaël Quinet  <raphael@gimp.org>
 
+	* */.cvsignore: Deleted about 80 .cvsignore files that are not
+	needed anymore now that we use the svn:ignore property.  Hint for
+	those who maintain gimp-web: "svn propedit svn:ignore <dirname>".
+
+2007-10-07  Raphaël Quinet  <raphael@gimp.org>
+
 	* install.sh
 	* programmatic/Makefile.defs: If $PYTHON is not specified in the
 	environment, use just 'python' (or 'python2.4' if available)

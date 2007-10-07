@@ -1,34 +1,45 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - The GIMP Team</title>
+<title>GIMP - The Team</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>The GIMP Team</h1>
 
-<h2>Core Team</h2>
+<h2>GIMP Development Team</h2>
+<!-- according to MAINTAINERS and authors.xml in gimp source tree -->
 <ul>
-  <li>Release Maintainer, N. N.</li>
+  <li>Michael Natterer (maintainer)</li>
+  <li>Sven Neumann (maintainer)</li>
+  <li>... and dozens of others listed in a <a href="/about/authors.html">separate page</a></li>
 </ul>
 
-<h2>Web Team</h2>
+<h2>GIMP Web Team</h2>
+<!-- according to MAINTAINERS, contributions in ChangeLog and Bugzilla -->
 <ul>
-  <li>2.4 Release Redesign, Jakub Steiner</li>
-  <li>Web Designer, Niklas Mattisson</li>
-  <li>Web Guru, Carol Spears</li>
-  <li>Web Guru, Raphaël Quinet</li>
-  <li>Guest Lecturer, Manish Singh</li>
-  <li>All Purpose Tool, Helvetix Victorinox</li>
-  <li>Macintosh Section, Mat Caughron</li>
-  <li>Windows Section, Branko Collin</li>
-  <li>Links Maintainer, Martijn Weisbeek</li>
-  <li>Contributor, Guillermo S. Romero</li>
-  <li>Contributor, Rebecca J. Walter</li>
-  <li>Contributor, Nathan C. Summers</li>
-  <li>Contributor, Christian Hennecke</li>
-  <li>Contributor, Sven Neumann</li>
-  <li>Contributor, Henrik Brix Andersen</li>
-  <li>Contributor, Shawn T. Amundson</li>
-  <li>Original Web Design by Ville Pätsi</li>
+  <li>Jakub Steiner (2.4 release redesign)</li>
+  <li>Raphaël Quinet (maintainer)</li>
+  <li>Michael Schumacher (maintainer)</li>
+  <li>Sven Neumann</li>
+  <li>Róman Joost</li>
+  <li>Karine Delvare</li>
+  <li>Simon Budig</li>
+  <li>Akkana Peck</li>
+  <li>Carol Spears</li>
+  <li>Manish Singh</li>
+  <li>Guillermo S. Romero</li>
+  <li>Jakub Friedl</li>
+  <li>Dave Neary</li>
+  <li>Niklas Mattisson</li>
+  <li>Helvetix Victorinox (build tools)</li>
+  <li>Henrik Brix Andersen</li>
+  <li>Ville Pätsi (2.0 release redesign)</li>
+  <li>Shawn T. Amundson</li>
+  <li>Mat Caughron</li>
+  <li>Branko Collin</li>
+  <li>Martijn Weisbeek</li>
+  <li>Rebecca J. Walter</li>
+  <li>Nathan C. Summers</li>
+  <li>Christian Hennecke</li>
 </ul>
 
 <h2>Tutorial Authors</h2>

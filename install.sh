@@ -18,22 +18,14 @@ if [ "x${HTDOCS_DIR}" = "x" ]; then
   exit 1
 fi
 
-if [ "x${DATA_DIR}" = "x" ]; then
-  echo ""
-  echo "DATA_DIR must be specified in install.config."
-  echo "See install.config.sample for an example."
-  echo ""
-  exit 1
-fi
-
-if [ -z "$PYTHON" ]; then
-  if [ "`which python2.4`" != "" ]; then
+if [ "x${PYTHON}" = "x" ]; then
+  if [ "x`which python2.4`" != "x" ]; then
     PYTHON=python2.4
   else
-    if [ "`which python2.3`" != "" ]; then
+    if [ "x`which python2.3`" != "x" ]; then
       PYTHON=python2.3
     else
-      if [ "`which python2.2`" != "" ]; then
+      if [ "x`which python2.2`" != "x" ]; then
         PYTHON=python2.2
       else
         PYTHON=python
@@ -42,10 +34,10 @@ if [ -z "$PYTHON" ]; then
   fi
 fi
 
-if test -z "$MAKE" ; then
+if [ -z "$MAKE" ]; then
   MAKE=make
 fi
 
-${MAKE} PYTHON=${PYTHON} DocumentRoot=${HTDOCS_DIR} DataRoot=${DATA_DIR} clean all programmatic install 2>&1 | tee make.out
+${MAKE} PYTHON=${PYTHON} DocumentRoot=${HTDOCS_DIR} clean all programmatic install 2>&1 | tee make.out
 echo done >> make.out
 

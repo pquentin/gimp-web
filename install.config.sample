@@ -1,2 +1,5 @@
+# Where all HTML files and images will be installed:
 export HTDOCS_DIR=/home/wgo/htdocs
-export DATA_DIR=/home/wgo/data
+
+# Uncomment the following line if you want to use a specific version of Python:
+#export PYTHON=/usr/bin/python

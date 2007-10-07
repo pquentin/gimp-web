@@ -1,5 +1,19 @@
 2007-10-07  Raphaël Quinet  <raphael@gimp.org>
 
+	* install.sh
+	* install.config.sample: Removed references to DataRoot and
+	DATA_DIR because they are not used anymore by any Makefile or
+	script.
+
+	* install.exclude: SVN has replaced CVS some time ago.  Some files
+	have been renamed or moved to a different location.
+
+	* team.htrw: Updated according to the contributions made in the
+	last years.  The "web team" list tries to follow the MAINTAINERS
+	file, the ChangeLog file and the contributions made in Bugzilla.
+
+2007-10-07  Raphaël Quinet  <raphael@gimp.org>
+
 	* install.sh: Try multiple versions of Python: 2.4, 2.3, 2.2.
 
 2007-10-07  Raphaël Quinet  <raphael@gimp.org>

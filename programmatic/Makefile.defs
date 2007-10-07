@@ -2,7 +2,7 @@
 export DocumentRoot=""
 export LIBDIR=${DocumentRoot}/cgi-common
 export PYTHONPATH:=${LIBDIR}:${PYTHONPATH}
-export PYTHON?=python2.2
+export PYTHON?=python
 export SRCDIR?=$(shell pwd)
 
 # a few convenient transforms for making cgi scripts, css files, and

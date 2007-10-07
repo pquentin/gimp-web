@@ -27,8 +27,8 @@ if [ "x${DATA_DIR}" = "x" ]; then
 fi
 
 if [ -z "$PYTHON" ]; then
-  if [ "`which python2.3`" != "" ]; then
-    PYTHON=python2.3
+  if [ "`which python2.4`" != "" ]; then
+    PYTHON=python2.4
   else
     PYTHON=python
   fi

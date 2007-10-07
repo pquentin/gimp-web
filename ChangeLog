@@ -1,5 +1,12 @@
 2007-10-07  Raphaël Quinet  <raphael@gimp.org>
 
+	* install.sh
+	* programmatic/Makefile.defs: If $PYTHON is not specified in the
+	environment, use just 'python' (or 'python2.4' if available)
+	instead of the obsolete 'python2.2'.
+
+2007-10-07  Raphaël Quinet  <raphael@gimp.org>
+
 	* about/*.htrw  (8 files)
 	* books/index.htrw
 	* bugs/howtos/bugzilla.htrw

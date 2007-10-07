@@ -30,7 +30,15 @@ if [ -z "$PYTHON" ]; then
   if [ "`which python2.4`" != "" ]; then
     PYTHON=python2.4
   else
-    PYTHON=python
+    if [ "`which python2.3`" != "" ]; then
+      PYTHON=python2.3
+    else
+      if [ "`which python2.2`" != "" ]; then
+        PYTHON=python2.2
+      else
+        PYTHON=python
+      fi
+    fi
   fi
 fi
 

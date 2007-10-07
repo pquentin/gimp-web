@@ -1,5 +1,9 @@
 2007-10-07  Raphaël Quinet  <raphael@gimp.org>
 
+	* install.sh: Try multiple versions of Python: 2.4, 2.3, 2.2.
+
+2007-10-07  Raphaël Quinet  <raphael@gimp.org>
+
 	* */.cvsignore: Deleted about 80 .cvsignore files that are not
 	needed anymore now that we use the svn:ignore property.  Hint for
 	those who maintain gimp-web: "svn propedit svn:ignore <dirname>".

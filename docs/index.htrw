@@ -7,13 +7,13 @@
 
 <h2>The GIMP User Manual</h2>
   <p>
-    The GIMP comes with extensive help files. Once you have started
+    GIMP comes with extensive help files. Once you have started
     the program, press <kbd>F1</kbd>. Should you get an error message
     at that time, you may need to set your help browser to 'Web
-    Browser' in the Preferences. This will tell the GIMP to use your
+    Browser' in the Preferences. This will tell GIMP to use your
     default web browser for viewing the help pages.  You may also have
     to install the help pages from a separate package (gimp-help),
-    depending on how your version of the GIMP was packaged.
+    depending on how your version of GIMP was packaged.
   </p>
 
   <p>
@@ -40,7 +40,7 @@
 <h2>Configuration</h2>
   <ul>
     <li><a href="wgo:unix-howtos-tile_cache">How to set the tile
-      cache</a>.<br />  The tile cache tells the GIMP how much memory
+      cache</a>.<br />  The tile cache tells GIMP how much memory
       it can use before swapping some image data to disk.  Setting the
       size of the tile cache can be critical for the performance of
       your system.</li>

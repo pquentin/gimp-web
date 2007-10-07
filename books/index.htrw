@@ -1,9 +1,9 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - Books about The GIMP</title>
+<title>GIMP - Books about GIMP</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>Books about The GIMP</h1>
+<h1>Books about GIMP</h1>
 
 <h2>The Artist's Guide to GIMP Effects</h2>
 <p>
@@ -16,7 +16,7 @@
   <strong>ISBN-10:</strong> 1-59327-121-2<br/>
   <strong>ISBN-13:</strong> 978-1-59327-153-4<br/>
   <strong>Publisher/Date:</strong> No Starch Press/August 2007<br/>
-  <strong>Website:</strong> <a href="http://www.graphics-muse.org/artistsguide/</a><br/>
+  <strong>Website:</strong> <a href="http://www.graphics-muse.org/artistsguide/">http://www.graphics-muse.org/artistsguide/</a><br/>
   <br/>
   <strong>Description:</strong> The Artist's Guide To GIMP Effects is
   a tutorial filled expedition into the powerful open-source graphics
@@ -24,7 +24,7 @@
   the gamut of design topics, from Web design and Photographic
   techniques to Advertising and Interface design.  The Artist's Guide
   To GIMP Effects is the followup text to the first book ever
-  published on the GIMP, The Artist's Guide to the GIMP.
+  published on GIMP, The Artist's Guide to the GIMP.
 </p>
 
 <h2>Beginning GIMP: From Novice to Professional</h2>
@@ -40,7 +40,7 @@
   <strong>Website:</strong> <a href="http://gimpbook.com/">http://gimpbook.com/</a><br/>
   <br/>
   <strong>Description:</strong> A complete guide to image editing with
-  the GIMP, beginning with basic photo manipulation procedures,
+  GIMP, beginning with basic photo manipulation procedures,
   simple drawing and selection techniques, then proceeding to
   more advanced concepts such as layer masks, color adjustment,
   blending modes, stitching panoramas, image stacking,
@@ -60,7 +60,7 @@
   <strong>Date:</strong> October 2005<br/>
   <strong>Website:</strong> <a href="http://www.p-n.fr/julienpons/">http://www.p-n.fr/julienpons/</a><br/>
   <br/>
-  <strong>Description:</strong> An in-depth reference for the GIMP
+  <strong>Description:</strong> An in-depth reference for GIMP
   that, like the rest of French publisher ENI's Studio Factory series,
   is aimed at the professional user. This book covers the interface,
   GIMP functions, and GIMP concepts such as layers and drawables, and
@@ -101,9 +101,9 @@ href="http://www.le-radar.com/">http://www.le-radar.com/</a><br/>
   <br/>
   <strong>Description:</strong> This book in French, released
   under the Free Documentation License, contains loads of tips
-  and tutorials for the GIMP, as well as giving a thorough tour 
+  and tutorials for GIMP, as well as giving a thorough tour 
   of the main tools and features. It is in its second edition,
-  and has recently been updated to cover the GIMP 2.2.
+  and has recently been updated to cover GIMP 2.2.
 </p>
 
 <h2>Essential GIMP for Web Professionals</h2>
@@ -120,7 +120,7 @@ href="http://www.le-radar.com/">http://www.le-radar.com/</a><br/>
   <br/>
   <strong>Description:</strong> This concise, example-rich guide shows
   Web professionals exactly how to create high-quality graphics with
-  the GIMP. It delivers no-nonsense, practical coverage based on
+  GIMP. It delivers no-nonsense, practical coverage based on
   real-world projects you can see and download from the above
   mentioned web site. Master layers, selections and masks, text, color
   management, drawing, painting, image maps, animation, working from
@@ -162,7 +162,7 @@ href="http://www.le-radar.com/">http://www.le-radar.com/</a><br/>
   <br/>
   <strong>Description:</strong> Grokking the GIMP is for the serious
   user of the GNU Image Manipulation Program, a premiere digital image
-  editing and painting program. It covers the GIMP in depth, and
+  editing and painting program. It covers GIMP in depth, and
   complex tasks are intuitively presented and explained using an
   interactive approach. In addition to emphasizing the theory and core
   concepts of image manipulation, Grokking the GIMP beautifully
@@ -246,7 +246,7 @@ href="http://www.le-radar.com/">http://www.le-radar.com/</a><br/>
   to quickly become familiar with the advanced user interface using a
   table-heavy format that will allow users to find what they're
   looking for quickly. Gimp Essential Reference is for users working
-  with the Gimp who know what they want to accomplish, but don't know
+  with GIMP who know what they want to accomplish, but don't know
   exactly how to do it.
 </p>
 

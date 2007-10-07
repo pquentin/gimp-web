@@ -10,7 +10,7 @@
 <h2>Intention</h2>
 <p>
   Thanks to Branko Collin for bringing to my attention <a href="http://www.home.unix-ag.org/simon/gimp/warp-sharp.html">Simon Budig's "warp sharp" script</a>. 
-  This is a Script-Fu script that you can put in your GIMP folder and run straight from the GIMP. 
+  This is a Script-Fu script that you can put in your GIMP folder and run straight from GIMP. 
   This is a very impressive script and a nice tool to have in your GIMP toolbox.
 </p>
 <p>
@@ -177,7 +177,7 @@
 <p>
   Here is a <a href="http://www.home.unix-ag.org/simon/gimp/warp-sharp.html">link to the script authors site</a>. 
   Download the script and put it into your .gimp-2.2/scripts folder. 
-  Restart the GIMP and you should see warp sharpen as an option off of the "Alchemy" script-fu menu.
+  Restart GIMP and you should see warp sharpen as an option off of the "Alchemy" script-fu menu.
 </p>
 
 <p>

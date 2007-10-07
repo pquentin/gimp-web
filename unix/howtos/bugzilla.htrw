@@ -1,8 +1,8 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<!-- rewrite-attrs.py $Revision: 1.4 $ automatically generated this file from unix/howtos/bugzilla.htrw.  Do not edit.-->
 <title>GIMP - How To Report GIMP Bugs</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>EEK! A Bug!</h1>
 
 <h2>or How To Report GIMP Bugs</h2>
@@ -26,7 +26,7 @@
 </p>
 <p>
   Third: Check to see if your bug has been reported yet. Go to the 
-  <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&version=1.1.x&version=1.2&version=1.2.1&version=1.2.2&version=1.2.2-pre1&version=1.2.2-pre2&version=1.2.2-pre3&version=1.2.3-pre1&version=unspecified&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&form_name=query">Current Bug List</a> to see if 
+  <a href="home:gimp-bugzilla_stable_current">Current Bug List</a> to see if 
   something that looks like your bug has been reported yet. Don't worry if it 
   has, you can still help. See the section: <a href="#enhance">Enhancing Bug Reports</a>. 
   If you can't find something that sounds like your bug there, you will need to 
@@ -44,7 +44,7 @@
   <li>
     <p>
        Use <kbd>gimp --version</kbd> or the about dialog to check your GIMP 
-       version. Next check with <a href="http://www.gimp.org">www.gimp.org</a> to see 
+       version. Next check with <a href="http://www.gimp.org/">www.gimp.org</a> to see 
        what the most recent GIMP release is. If your GIMP is old, update then 
        try to to reproduce the bug. Your bug may have been fixed in the most 
        recent release. If you are running GIMP from CVS, update your CVS and 
@@ -78,12 +78,13 @@
   </li>
   <li>
     <p>
-       Prepare to face the horror. Go to <a href="http://bugzilla.gnome.org">bugzilla.gnome.org</a>. 
+       Prepare to face the horror. Go to <a href="http://bugzilla.gnome.org/">bugzilla.gnome.org</a>. 
        If you don't have a login yet, follow the directions to create one. The 
        reason to do this and report a bug with your e-mail address is so the 
-       developers can contact you if they have any questions. That way if we 
-       miss some useful tidbit of debugging information, they can tell you what 
-       to do to get it. Log in.
+       developers can contact you if they have any questions (see also
+       <a href="/bugs/why_bugzilla.html">why we are using Bugzilla</a>). That
+       way if we miss some useful tidbit of debugging information, they can
+       tell you what to do to get it. Log in.
     </p>
   </li>
   <li>
@@ -103,21 +104,21 @@
   <ol>
      <li>
         <p>
-           Select the &quot;version&quot; that corresponds with the GIMP in which you 
-           found the bug. It is the information you got with <kbd>gimp --version</kbd>. 
+           Select the &quot;version&quot; that corresponds with the GIMP version in which you 
+           found the bug. It is the information you got with <kbd>gimp --version</kbd> or by looking in Help -&gt; About.
         </p>
      </li>
      <li>
         <p>
            Select the appropriate &quot;component&quot;. If you don't know what component 
            it is, submit the bug under General. Descriptions of the components 
-           are <a href="http://bugzilla.gnome.org/describecomponents.cgi?product=GIMP">available</a>.
+           are <a href="home:gimp-bugzilla_components">available</a>.
         </p>
      </li>
      <li>
         <p>
            Classify the &quot;severity&quot; of your bug. If the bug causes 
-           GIMP  to crash totally or do other really ucky things so you can't 
+           GIMP to crash totally or do other really ucky things so you can't 
            use the program at all, classify it as critical. If it completely 
            disables some part of GIMP, classify it as major (for example, keeps 
            you from using a tool). Most bugs are &quot;normal&quot;. If you don't know 
@@ -133,27 +134,21 @@
      </li>
      <li>
         <p>
-           Select your &quot;operating system&quot;. <a href="wgo:wingimp">WinGIMP</a> and 
-           <a href="wgo:gimp-unix">GNU/Linux GIMP</a> bugs are not always identical. It would be 
-           annoying to get a Linux GIMP developer trying to reproduce a WinGIMP-specific 
-           bug. &quot;Under OS Details&quot; (OS, operating system), provide specifics 
-           about the version of your operating system. For Linux, provide the distro and 
-           version. It is also useful to list the desktop or window manager you are using. 
-           Sometimes a problem is caused by an interaction between the two. It won't always 
-           be relevant, but it is good to get into the habit of listing it anyway.
+           Select your &quot;operating system&quot;. Bugs in <a
+           href="wgo:wingimp">GIMP for Windows</a> and <a
+           href="wgo:gimp-unix">GIMP for GNU/Linux</a> are not always
+           identical. It would be annoying to get a Linux GIMP developer
+           trying to reproduce a Windows-specific bug. Do not select
+           &quot;All&quot; for the operating system unless you have verified
+           yourself that the bug affects more than one.  The developers who
+           will take care of your bug may change that later, once the bug is
+           confirmed.
         </p>
      </li>
      <li>
         <p>
            Leave &quot;Assigned to:&quot; blank. Bugzilla will do that automatically. Only worry 
            about CC: if you want to send a copy of your bug report to someone else.
-        </p>
-     </li>
-     <li>
-        <p>
-           Use the &quot;URL&quot; (URL, Uniform Resource Locator) field to link to an 
-           online screenshot or file that can help clarify the bug. This field is not 
-           required.
         </p>
      </li>
      <li>

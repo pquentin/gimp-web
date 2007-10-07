@@ -15,7 +15,7 @@
 
 <h2>Check Your Build Tools</h2>
 <p>
-  First of all, it is best that you have some experience building The GIMP from a
+  First of all, it is best that you have some experience building GIMP from a
   tarball, but of course is not required. A list of the tools you need to build
   your gimp-2.2 cvs tree can always be found in <a href="wgo:dev-hacking">HACKING</a>
   in the root directory of your cvs tree.  Here is the current list (probably
@@ -37,13 +37,13 @@
 </p>
 <h2>Define your GIMP Build Environment</h2>
 <p>
-  Building The GIMP requires more knowledge of the paths to your software than the
+  Building GIMP requires more knowledge of the paths to your software than the
   typical *nix shell knows about.  The following instructions and scripts assume
   a shell that accepts &quot;export&quot; (as <a href="http:Package-bash">bash</a> does).  Users of other shells can try &quot;setenv&quot; instead.
 </p>
 <p>
   Just two additional paths need to be added to the environment to make the build
-  tools happy to build The GIMP: $ACLOCAL_FLAGS and $PKG_CONFIG_PATH.  There are
+  tools happy to build GIMP: $ACLOCAL_FLAGS and $PKG_CONFIG_PATH.  There are
   two ways to do this presented in this document.  The second one is the nicest.
 </p>
 <p>

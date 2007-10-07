@@ -7,6 +7,11 @@
   Text and images Copyright (C) 2002 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
 </p>
 
+<p><em>Editor's note: since this tutorial was written, the Red Eye
+Removal plug-in has been included in the default GIMP package (see
+Filters -&gt; Enhance -&gt; Red Eye Removal). This tutorial is still
+useful if you want to do things by hand.</em></p>
+
 <h2>Intention</h2>
 <p>
    It used to be that the photos with red eye weren't really worth fixing as only cheesy cameras had the flash built in 
@@ -14,7 +19,7 @@
    a camera with the flash built in. They do not have a button that works to prevent this yet, so don't even try it. 
    The best way to fix red eye on photos is to have those intense people look at the photographers shoulder. The cause of
    red eye is the flash reflecting from the back of the eye and into the lens. So, until this lovely child is able to understand
-   "look at my shoulder" it is good to know that red eye can be fixed, somewhat. I learned the following method from  tigert while
+   "look at my shoulder" it is good to know that red eye can be fixed, somewhat. I learned the following method from tigert while
    lurking on the irc late late one night.
 </p>
 
@@ -53,7 +58,7 @@
    choose burn and hightlights (as illustrated).
    Touch all of the red in the eyes with the burn tool. 
    I think that I used the burn tool on the midtones just a little bit also. 
-   The GIMP doesn't have a magic button to fix red eyes with, but it has the tools. 
+   GIMP doesn't have a magic button to fix red eyes with, but it has the tools. 
    It has been my experience that each image is slightly different and I sort of like the control that GIMP gives you ...
    <br />
    tigert warned that this method can leave the white spots in the eyes slightly green. I have found this to be true, 

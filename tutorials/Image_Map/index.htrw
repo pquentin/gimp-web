@@ -1,8 +1,9 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Image Map Tutorial</title>
+
   <script type="text/javascript" >
 
-<!-- Begin
+<!-- // Begin
 var newwindow = ''
 
 function popup(url, textbox)
@@ -28,6 +29,7 @@ function popup(url, textbox)
 
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Image Map Tutorial</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
@@ -46,11 +48,11 @@ function popup(url, textbox)
 <p>
   The image to the left comes from a previous tutorial about how to use 
   <a href="/tutorials/Perlotine/">perlotine</a>. The tutorial slices this image further, 
-  but since The GIMP Image Map Plug-in and image maps in general use coordinates, 
+  but since the GIMP Image Map Plug-in and image maps in general use coordinates, 
   we can use a less complicated table for this.
 </p>
 <p>
-  Above is a screenshot of The GIMP Image Map Plug-in, 
+  Above is a screenshot of the GIMP Image Map Plug-in, 
   it has been scaled down for a nicer page. It can be somewhat scary at first. 
   I tried to arrow and number the few areas I am worried about for this tutorial. So, relax.
 </p>
@@ -67,7 +69,7 @@ function popup(url, textbox)
 <p>
   I came to this tutorial prepared with a perfectly wonderful colorpicker script that I stole from 
   <a href="http://the-light.com/colclick.html">Victor S. Engel</a>. 
-  The only problem with his colorpicker is that it didn't look like The GIMP. :) 
+  The only problem with his colorpicker is that it didn't look like GIMP. :) 
   If you "View Source" of that page, you can see that there is a similar 
   line to each image map coordinate area. So, into the "Base URL" box, 
   put the stuff that will be the same on each. I am going to deal with 
@@ -78,13 +80,13 @@ function popup(url, textbox)
 <p>
   Once I started to write this tutorial, I discovered that the 
   Image Map Plug-in has the ability to do the zooming and such. 
-  Too late, for me, I guess as I used The GIMPs tools for measuring 
+  Too late, for me, I guess as I used GIMPs tools for measuring 
   to determine the information for the rest of the Create Guides information. 
   The original image was still open, so it was hard not to think about using it. 
   Here is a screen shot of <span class="filter">&lt;Image&gt; View -&gt; Zoom -&gt; 4:1</span>
 </p>
 <p>
-  I used The GIMPs nifty measure tool to determine that 
+  I used GIMP's nifty measure tool to determine that 
   the rectangles are all 10 pixels tall and 14 pixels wide. 
   The black lines in between are only one pixel wide also.
 </p>
@@ -122,9 +124,9 @@ function popup(url, textbox)
 <p>
   I am not going to bore you with the directions to <span class="filter">File-&gt;Save As</span>. 
   Instead, check out my product <a href="imap1.html">here</a>. 
-  It needs the colors placed at the end of the lines. This information is already found in The GIMP Palette directory, 
-  usually located at ~.gimp-1.2/palettes/. This was the <a href="Visibone2">Visibone2</a> palette. 
-  I posed this problem to my friend bex and went to sleep. 
+  It needs the colors placed at the end of the lines. This information is already found in the GIMP Palette directory, 
+  usually located at ~/.gimp-1.2/palettes/. This was the <a href="Visibone2">Visibone2</a> palette. 
+  I posed this problem to my friend Bex and went to sleep. 
   When I awoke, she had solved my dilemma by writing the <a href="bextruder.sh.txt">bextruder shell script</a>.
 </p>
 <p>

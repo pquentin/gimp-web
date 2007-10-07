@@ -18,15 +18,15 @@
     <li><a href="#Manual">Is there a user manual?</a></li>
     <li><a href="#Windows">What about a Windows version?</a></li>
     <li><a href="#Mac">What about a Mac version?</a></li>
-    <li><a href="#Easter">Are there any Easter eggs in the GIMP?</a></li>
+    <li><a href="#Easter">Are there any Easter eggs in GIMP?</a></li>
     <li><a href="#ML">Is there a mailing list?</a></li>
     <li><a href="#IRC">Is there an IRC channel?</a></li>
-    <li><a href="#Libs">Why does the GIMP complain about missing or wrong versions of libraries?</a></li>
+    <li><a href="#Libs">Why does GIMP complain about missing or wrong versions of libraries?</a></li>
     <li><a href="#Xinput">Is XInput support available?</a></li>
-    <li><a href="#Tablet">Does the GIMP support art tablets like the Wacom?</a></li>
-    <li><a href="#Scanner">Does the GIMP have scanner support?</a></li>
-    <li><a href="#Colormap">Can the GIMP install its own colormap?</a></li>
-    <li><a href="#MIT-SHM">The GIMP complains about MIT-SHM!</a></li>
+    <li><a href="#Tablet">Does GIMP support art tablets like the Wacom?</a></li>
+    <li><a href="#Scanner">Does GIMP have scanner support?</a></li>
+    <li><a href="#Colormap">Can GIMP install its own colormap?</a></li>
+    <li><a href="#MIT-SHM">GIMP complains about MIT-SHM!</a></li>
     <li><a href="#EOF">What does "wire_read: unexpected EOF" mean?</a></li>
     <li><a href="#Xserver">Do I need an X server to run in batch mode?</a></li>
     <li><a href="#System">What kind of system do I need to run GIMP?</a></li>
@@ -34,10 +34,10 @@
     <li><a href="#High">Does/could GIMP use high-level graphics operations for its operations?</a></li>
     <li><a href="#Future">What does the future hold?</a></li>
   </ol></li>
-  <li><a href="#USE">Using the GIMP</a>
+  <li><a href="#USE">Using GIMP</a>
   <ol>
-    <li><a href="#Line">How can I draw a straight line with the GIMP?</a></li>
-    <li><a href="#Circle">How can I draw a circle with the GIMP?</a></li>
+    <li><a href="#Line">How can I draw a straight line with GIMP?</a></li>
+    <li><a href="#Circle">How can I draw a circle with GIMP?</a></li>
     <li><a href="#Outline">How can I create an outline around text?</a></li>
     <li><a href="#Layers">What are layers?</a></li>
     <li><a href="#Sub">How do I save a selected sub-image to a file?</a></li>
@@ -102,7 +102,7 @@
     <li><a href="#Wmconfig">What is the gimp.wmconfig file?</a></li>
     <li><a href="#Slackware">Why don't GIF and JPEG work on Slackware Linux?</a></li>
     <li><a href="#Make">I get make errors on {Solaris, HP/UX, whatever}.</a></li>
-    <li><a href="#AcceleratedX">Why do I see weird things when I use the GIMP with AcceleratedX?</a></li>
+    <li><a href="#AcceleratedX">Why do I see weird things when I use GIMP with AcceleratedX?</a></li>
     <li><a href="#Beavis">What's this beavis.jpg image used in several scripts?</a></li>
   </ol>
   </li>
@@ -116,7 +116,7 @@
 <p>The "GNU Image Manipulation Program" (originally the General Image
 Manipulation Program) sired by Spencer Kimball &amp; Peter Mattis.</p>
 
-<p>In their own words, "The GIMP is our answer to the current lack of
+<p>In their own words, "GIMP is our answer to the current lack of
 free (or at least reasonably priced) image manipulation software for
 Linux and UNIX in general."</p>
 
@@ -163,8 +163,8 @@ thing it has in common is GTK.</p>
 <p>GTK was developed solely for GIMP, initially. Towards the end of the
 0.99 development cycle in 1998, GTK was split from being bundled with
 GIMP to being a separately available library. See <a
-href="/about/ancient_history.html">ancient history</a> for has some
-interesting tidbits, from the GIMP perspective.</p>
+href="/about/ancient_history.html">ancient history</a> for some
+interesting tidbits from the GIMP perspective.</p>
 
 <h3 id="Version">Which version should I use?</h3>
 
@@ -184,27 +184,27 @@ form, and in <a href="http://docs.gimp.org/download.html">PDF</a>.</p>
 
 <p>See <a href="/macintosh/">GIMP for Mac OS X</a>.</p>
 
-<h3 id="Easter">Are there any Easter eggs in the GIMP?</h3>
+<h3 id="Easter">Are there any Easter eggs in GIMP?</h3>
 
-<p>As of version 1.0, there is at least one Easter egg.</p>
+<p>Yes.</p>
 
 <h3 id="ML">Is there a mailing list?</h3>
 
-<p>See <a href="/mail_lists.html">Mailing Lists.html</a>.</p>
+<p>See our list of <a href="/mail_lists.html">Mailing Lists</a>.</p>
 
 <h3 id="IRC">Is there an IRC channel?</h3>
 
 <p>Yes. See <a href="http://wiki.gimp.org/gimp/Irc">IRC</a> for more
 information.</p>
 
-<h3 id="Libs">Why does the GIMP complain about missing or wrong versions
+<h3 id="Libs">Why does GIMP complain about missing or wrong versions
 of libraries?</h3>
 
 <p>Probably because it can't find them.</p>
 
 <p>There are a couple of solutions. The best one, if you have superuser
 access on your system, or a cooperative system administrator, is to add
-the GIMP's library directory to the system library configuration. To do
+GIMP's library directory to the system library configuration. To do
 this, edit /etc/ld.so.conf to include /usr/local/lib and then type
 <em>ldconfig</em> and things should work from then on.</p>
 
@@ -226,9 +226,9 @@ locations, or statically linking them to one or more programs.</p>
 
 <p>It's under development. For more information, see Owen Taylor's page
 about <a href="http://www.gtk.org/~otaylor/xinput/">XInput support for
-GTK and the GIMP</a>.</p>
+GTK and GIMP</a>.</p>
 
-<h3 id="Tablet">Does the GIMP support art tablets like the Wacom?</h3>
+<h3 id="Tablet">Does GIMP support art tablets like the Wacom?</h3>
 
 <p>In the more recent releases of most distros, installing the
 wacom-tools package should make tablet support "just work". Make sure
@@ -261,7 +261,7 @@ occured your artpad should work well</li>
 
 </ol>
 
-<h3 id="Scanner">Does the GIMP have scanner support?</h3>
+<h3 id="Scanner">Does GIMP have scanner support?</h3>
 
 <p>Yes. You can run xscanimage, the front end to SANE (Scanner Access
 Now Easy), either as a GIMP extension or in stand-alone mode. This
@@ -271,14 +271,14 @@ QuickCam camera.</p>
 <p>Further information is available at the <a
 href="http://www.sane-project.org/">SANE project</a>.</p>
 
-<h3 id="Colormap">Can the GIMP install its own colormap?</h3>
+<h3 id="Colormap">Can GIMP install its own colormap?</h3>
 
 <p>Yes. In either the system-wide gimprc file or your personal gimprc
 file, uncomment the line that includes <em>install-colormap</em>.</p>
 
-<h3 id="MIT-SHM">The GIMP complains about MIT-SHM!</h3>
+<h3 id="MIT-SHM">GIMP complains about MIT-SHM!</h3>
 
-<p>If the GIMP gives you a message similar to either of these when you
+<p>If GIMP gives you a message similar to either of these when you
 try to start it: <em>Xlib: extension "MIT-SHM" missing on display
 "198.51.29.58:0.0".</em> or <em>* WARNING **: XShmAttach failed!</em>
 then you need to run it with the --no-xshm option.</p>
@@ -309,8 +309,8 @@ doesn't require a graphics card or mess with your screen:</p>
 --no-interface --batch "commands" ... &amp;</em>
 
 <p>The first command starts the special X server; the second is an
-example of how to invoke the GIMP in batch mode. When you are done using
-the GIMP this way for a while, kill off Xvfb so it doesn't waste system
+example of how to invoke GIMP in batch mode. When you are done using
+GIMP this way for a while, kill off Xvfb so it doesn't waste system
 resources. If you expect to use GIMP this way a lot, you might want to
 leave Xvfb running for better response time.</p>
 
@@ -353,15 +353,15 @@ integrating it into GIMP. This will lay the foundations for version 3.0,
 allowing for the addition of long requested features like support for
 16+ bits per channel and adjustment layers, to name a couple.</p>
 
-<h2 id="USE">Using the GIMP</h2>
+<h2 id="USE">Using GIMP</h2>
 
-<h3 id="Line">How can I draw a straight line with the GIMP?</h3>
+<h3 id="Line">How can I draw a straight line with GIMP?</h3>
 
 <p>See <a
 href="http://docs.gimp.org/en/gimp-using-simpleobjects.html#gimp-using-line">Drawing
-a Straight Line</a> in the GIMP user manual.</p>
+a Straight Line</a> in the GIMP user manual or see our <a href="/tutorials/Straight_Line/">nice tutorial</a>.</p>
 
-<h3 id="Circle">How can I draw a circle with the GIMP?</h3>
+<h3 id="Circle">How can I draw a circle with GIMP?</h3>
 
 <p>Use the elliptical select tool, hold down SHIFT key to constrain as
 circle, fill the selected area with new color, right click on selected
@@ -697,17 +697,17 @@ Moss for the original registry!]</p>
 
 <p>First, copy the plug-in[s] to your plug-in directory (typically
 /usr/local/lib/gimp/$VERSION/plug-ins/).</p> <p>After copying the
-plug-in to its proper directory, just run the GIMP. It should
+plug-in to its proper directory, just run GIMP. It should
 automatically find new plug-ins.</p>
 
 <h3 id="BuildPlugin">How do I build new plug-ins?</h3>
 
-<p>You'll need a copy of the source directories. Build the GIMP. Place
+<p>You'll need a copy of the source directories. Build GIMP. Place
 the new plug-in in the plug-ins directory. The docs with the new plug-in
 hopefully identify any special libraries it needs. Look for a plug-in
 with similar libraries (if all else fails, look at xpm and
 whirlpinch).</p> <p>With newer versions, if the plug-in is contained in
-a single source file, you should just have to run the gimptool in the
+a single source file, you should just have to run gimptool in the
 plug-in's directory :</p> <ul> <li
 style="list-style-type:none"><p>gimptool --build plugin.c</p> </li>
 </ul> <p>For older versions, there are several methods. The first two
@@ -790,10 +790,10 @@ style="list-style-type:none"><p>Script-Fu is the first GIMP scripting
 extension. Extensions are separate processes that communicate with the
 GIMP in the same way that plug-ins do. The distinction is that
 extensions don't require an active image to operate on, instead
-extending the GIMP's functionality. GIMP internals for version 1.0 have
+extending GIMP's functionality. GIMP internals for version 1.0 have
 been completely overhauled from version 0.54. In particular, the plug-in
 API has been made far more general with the advent of the procedural
-database (PDB). The PDB allows the GIMP and its plug-ins to register
+database (PDB). The PDB allows GIMP and its plug-ins to register
 procedures which can then be called from anywhere: internally, from
 extensions, and from plug-ins. There are already over 200 internal GIMP
 procedures, and more being created all the time. Because all of these
@@ -944,7 +944,7 @@ href="http://www.dcs.ed.ac.uk/home/jec/programs/xfsft/">http://www.dcs.ed.ac.uk/
 
 <h3 id="Format">What is GIMP's native graphics file format?</h3>
 
-<p>XCF is the GIMP's "native" format. This will preserve all information
+<p>XCF is GIMP's "native" format. This will preserve all information
 about an image, including the layers.</p>
 
 <h3 id="Filetypes">What other graphics file types are supported?</h3>
@@ -972,25 +972,32 @@ transparency.</p>
 <h3 id="SaveLayers">Is there any way to keep the layers when I
 save?</h3>
 
-<p>Yes; the GIMP has a file format just for this - the XCF format. Don't
+<p>Yes; GIMP has a file format just for this - the XCF format. Don't
 flatten the image or merge the layers as you would to save to other
-formats! This will only work with the XCF type.</p> <p>* Why can't I
-open or save JPEG / JPG files? * Why can't I open or save GIF files? *
-Why can't I open or save PNG files? * Why can't I open or save XPM
-files? * Why can't I open or save TIFF / TIF files? * Why can't I open
-or save PSD files? * Why can't I open or save SOME_FORMAT files?</p>
+formats! This will only work with the XCF type.</p>
 
-<p>There are several possibilities.</p> <ol type="1"> <li><p>If the file
-type appears in the Save dialog but is grayed out, you may need to
-change the image type. For instance, you can't save an RGB as a GIF
-(convert to indexed first) or an indexed image to JPEG (convert to RGB
-first).</p> </li> <li><p>The GIMP comes with full support for a few
-types built in. If the type you want doesn't appear in file type format
-of the Open and Save dialogs, you need to check the Plug-in registry to
-see whether you need to download an optional plug-in.</p> </li>
-<li><p>Some of the file types, such as JPEG and TIFF, require extra
-libraries (described elsewhere). Make sure you have the correct versions
-of these on your system.</p> </li> </ol>
+<h3>Why can't I open or save JPEG / JPG files?<br />
+Why can't I open or save GIF files?<br />
+Why can't I open or save PNG files?<br />
+Why can't I open or save XPM files?<br />
+Why can't I open or save TIFF / TIF files?<br />
+Why can't I open or save PSD files?<br />
+Why can't I open or save SOME_FORMAT files?<br />
+
+<p>There are several possibilities.</p>
+<ol type="1">
+  <li>If the file type appears in the Save dialog but is grayed out,
+  you may need to change the image type. For instance, you can't save
+  an RGB as a GIF (convert to indexed first) or an indexed image to
+  JPEG (convert to RGB first).</li>
+  <li>GIMP comes with full support for a few types built in. If the
+  type you want doesn't appear in file type format of the Open and
+  Save dialogs, you need to check the Plug-in registry to see whether
+  you need to download an optional plug-in.</li>
+  <li>Some of the file types, such as JPEG and TIFF, require extra
+  libraries (described elsewhere). Make sure you have the correct
+  versions of these on your system.</li>
+</ol>
 
 <h2 id="Unix">Troubleshooting Unix Platforms</h2>
 
@@ -1022,7 +1029,7 @@ href="http://wuarchive.wustl.edu/systems/gnu/regex-0.12.tar.gz">http://wuarchive
 <h3 id="Solaris">Why does GIMP complain about X Input Methods under
 Solaris?</h3>
 
-<p>The GIMP is interacting in such a way with your system that it thinks
+<p>GIMP is interacting in such a way with your system that it thinks
 you have XIM extensions when you don't. Run the configure script again,
 with the `--disable-xim' option, and recompile.</p> <p>You can also try
 compiling with `--disable-shared'.</p> <p>Or you can install a version
@@ -1098,11 +1105,11 @@ gotten the mpeg stuff to compile.</p> </li> </ul>
 <p>You are probably not using the GNU make. Most, if not all, non-GNU
 makes will fail on the GIMP makefiles. Get the GNU make package.</p>
 
-<h3 id="AcceleratedX">Why do I see weird things when I use the GIMP with
+<h3 id="AcceleratedX">Why do I see weird things when I use GIMP with
 AcceleratedX?</h3>
 
 <p>It's a bug in AcceleratedX with shared memory. Turn off shared memory
-when you start the GIMP (--no-xshm) or pick up the patch to
+when you start GIMP (--no-xshm) or pick up the patch to
 AcceleratedX's X server from <a
 href="ftp://ftp.xinside.com/pub/update/">ftp://ftp.xinside.com/pub/update/</a>
 .</p> <p>At least one person has found this bug (or another one with the
@@ -1119,7 +1126,7 @@ sorta not" data to generate (for example) the crystal bands, or other
 texture maps. There are other ways to produce this data as well, but the
 author stuck with this one, found in a tutorial somewhere. # What lucky
 human does this adorable cat own?</p> <p>One of the original GIMP
-authors, Spencer Kimball or Peter Mattis, we forget which.</p>
+authors, Spencer Kimball or Peter Mattis, we forgot which.</p>
 
 <h2 id="Footnotes">Footnotes</h2>
 

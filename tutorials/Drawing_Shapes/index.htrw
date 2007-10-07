@@ -21,18 +21,18 @@
   <img src="box.png" alt=""/>
 </p>
 <p>
-  This tutorial is about making simple geometrical shapes with The Gimp. 
+  This tutorial is about making simple geometrical shapes with GIMP. 
   I will concentrate on the Path tool since I find it so useful for this purpose. 
-  I hope you get some help and new stuff to put in your Gimp Tricks Sack :) I personally use this technique for nearly all my work.
+  I hope you get some help and new stuff to put in your GIMP Tricks Sack :) I personally use this technique for nearly all my work.
 </p>
 <p>
   <b>Notice!</b>
-  This is not a 'back to basics' -tutorial. You should be familiar with Gimp's dialogs and menus. 
+  This is not a 'back to basics' -tutorial. You should be familiar with GIMP's dialogs and menus. 
   I was thinking about this, and I did not want to make this an 'entry level' thing, 
   basically to avoid bloating this too big and duplicating other people's work. 
   <a href="/tutorials/Bezier_Selections/">Paths are covered in my other tutorial</a>, 
   and I recommend you to read it before going further if you find the material here confusing. 
-  If you are new to Gimp I suggest you to go to the Gimp homepage in <a href="home:gimp">www.gimp.org</a> and 
+  If you are new to GIMP I suggest you to go to the GIMP homepage in <a href="home:gimp">www.gimp.org</a> and 
   first read through the Documentation section there. 
 </p>
 
@@ -40,7 +40,7 @@
 <p>
   First we must <b>create a new image</b> for our creation. Make the <b>size 256x256</b> pixels and choose <b>RGB</b> for the type. 
   The image background should be white. 
-  During this tutorial, you will have to use the Layers tab and optionally the Paths tab from the dock "Layers, Channels, Paths, Undo".  This dock is present in the default installation of the Gimp.  You can also get these tabs using
+  During this tutorial, you will have to use the Layers tab and optionally the Paths tab from the dock "Layers, Channels, Paths, Undo".  This dock is present in the default GIMP installation.  You can also get these tabs using
   <span class="filter">&lt;Image&gt; Dialogs -&gt; Layers</span> and
   <span class="filter">&lt;Image&gt; Dialogs -&gt; Paths</span>.
 </p>
@@ -122,7 +122,7 @@
   So I suggest you lighten the dark blue color a fair amount, it's easier to get a light gradient that way.
   This time you pull the gradient from left to right, according the arrow in the picture. Once you find the shading look good, 
   you can flatten the image and our little tutorial-cube is finished. 
-  Now apply for your 'Cube Gimp Licence' from the nearest Gimp Station ;)
+  Now apply for your 'Cube GIMP Licence' from the nearest GIMP Station ;)
 </p>
 
 <h2>4. Finished Work</h2>
@@ -153,7 +153,7 @@
 <p>
   The original tutorial can be found <a href="tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen">here</a>.
   <br />
-  It was updated for Gimp 2.0 by Raphaël Quinet.
+  It was updated for GIMP 2.0 by Raphaël Quinet.
 </p>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>

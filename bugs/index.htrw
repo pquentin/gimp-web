@@ -27,7 +27,7 @@
 <p>
   Since correctly submitting a bug report requires you to use tools you
   may have not used previously, we have created two documents. The first
-  helps you to learn Bugzilla, which is the bug system used by the GIMP
+  helps you to learn Bugzilla, which is the bug system used by GIMP
   developers to track bug reports. If you are fixing a problem yourself, 
   the second document shows you how to properly create and submit a patch.
 </p>

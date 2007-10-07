@@ -9,11 +9,16 @@
   be used without permission of the author.
 </p>
 
+<p><em>Editor's note: since this tutorial was published, the old GIMP
+Script-Fu interpreter (SIOD) has been replaced by a newer and better
+one (TinyScheme).  A <a href="/docs/script-fu-upgrade.html">Script-Fu
+migration guide</a> is available.</em></p>
+
 <h2>Intention</h2>
 <p>
   One of the wonderful features of GIMP is that it all its
   functionality may be accessed through scripting.  The major
-  scripting language for the GIMP that has been attached to it today
+  scripting language for GIMP that has been attached to it today
   is Scheme.  This document will try to be a brief introduction to
   Scheme, just teaching the essentials in order to write Script-Fu
   scripts, without getting into the programming language theory that
@@ -672,6 +677,7 @@
   The original tutorial can be
   found <a href="tutorial:Basic_Scheme-Dov_Grobgeld">here</a>.
 </p>
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
   <span id="footerleft">

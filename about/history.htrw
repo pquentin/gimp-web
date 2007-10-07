@@ -1,13 +1,14 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<!-- rewrite-attrs.py $Revision$ automatically generated this file from about/history.htrw.  Do not edit.-->
 <title>GIMP - History</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
+<!-- FIXME: this page should probably be deleted or re-organized.  Most of this is duplicated in about/index.htrw (which should also be re-organized) -->
+
 <h1>History</h1>
 <h2>Note Worthy Historical URLS</h2>
   <ul>
-    <li><a href="/about/history.html">History of The GIMP</a></li>
+    <li><a href="/about/history.html">History of GIMP</a></li>
     <li><a href="http://groups.google.com/groups?selm=petm-2907952329370001%40charnley.hip.berkeley.edu&amp;output=gplain">Two Questions</a></li>
     <li><a href="http://groups.google.com/groups?selm=3ua2hd%24bbv%40agate.berkeley.edu&amp;output=gplain">One Of Two Options</a></li>
     <li><a href="http://groups.google.com/groups?selm=48s543%24r7b%40agate.berkeley.edu&oe=UTF-8&output=gplain">An Announcement</a></li>

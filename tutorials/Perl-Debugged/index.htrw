@@ -2,6 +2,7 @@
 <title>GIMP - Perl Debugged</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Perl Debugged</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Burgess_Seth">Seth Burgess</a> and may not be used without permission of the author.
@@ -9,8 +10,8 @@
 
 <h2>Intention</h2>
 <p>
-  The Perl module for Gimp is a nice evolution of the scripting interface of Gimp. It removes the dependence on the relatively rarely encountered 
-  scheme language of script-fu and replaces it with one that is familiar to a much larger audience. In doing so, the perl interface to gimp also 
+  The Perl module for GIMP is a nice evolution of the scripting interface of GIMP. It removes the dependence on the relatively rarely encountered 
+  scheme language of script-fu and replaces it with one that is familiar to a much larger audience. In doing so, the perl interface to GIMP also 
   can take advantage of many of the features that have been added to perl over the years.
 </p>
 <p>
@@ -43,8 +44,8 @@ exit main;
 
 <h2>Gimp::set_trace</h2>
 <p>
-  The gimp module provides tracing ability, which is a form of debugging. 
-  To activate this, start gimp from an XTerm, and place the following at the top of the script:
+  The Gimp module provides tracing ability, which is a form of debugging. 
+  To activate this, start GIMP from an XTerm, and place the following at the top of the script:
 </p>
 <pre class="code">
 #!/usr/bin/perl
@@ -69,12 +70,12 @@ register "example", "Example", "Dumb example for debugging",
 exit main;
 </pre>
 <p>
-  This will give the maximum amount of tracing information, displayed on the console window you start gimp from. 
+  This will give the maximum amount of tracing information, displayed on the console window you start GIMP from. 
   You can cut back on what all gets displayed by using an "or'ed" combination of the following other options in place of TRACE_ALL:
 </p>
 <table style="background: #CCFFCC none;">
 <tr><td style="width: 20%;">TRACE_NONE</td><td style="width: 40%">         turn off tracing</td></tr>
-<tr><td>TRACE_CALL</td><td>     trace only Gimp Procedural Database (PDB) calls (including arguments and return values)</td></tr>
+<tr><td>TRACE_CALL</td><td>     trace only GIMP Procedural Database (PDB) calls (including arguments and return values)</td></tr>
 <tr><td>TRACE_TYPE</td><td>      also print the parameter types</td></tr>
 <tr><td>TRACE_NAME</td><td>     print the parameter names</td></tr>
 <tr><td>TRACE_DESC</td><td>     print the parameter descriptions</td></tr>
@@ -111,8 +112,8 @@ register "example", "Example", "Dumb example for debugging",
 exit main;
 </pre>
 <p>
-  If you change a Gimp-Perl script to utilize this, you'll notice gimp halting on startup. This is because gimp is querying the plug-in, 
-  and it is halting due to having debugging enabled. Just type 'c' in the window, and then 'q' to let gimp continue loading:
+  If you change a Gimp-Perl script to utilize this, you'll notice GIMP halting on startup. This is because GIMP is querying the plug-in, 
+  and it is halting due to having debugging enabled. Just type 'c' in the window, and then 'q' to let GIMP continue loading:
 </p>
 <pre class="debug">
 Enter h or `h h' for help, or `man perldebug' for more help.
@@ -126,14 +127,14 @@ Debugged program terminated.  Use q to quit or R to restart,
   DB&lt;1&gt; q
 </pre>
 <p>
-  This is not a part of the script we're really intrested in - its the registration of the plug-in with gimp. 
+  This is not a part of the script we're really intrested in - its the registration of the plug-in with GIMP. 
   It turns out to be a really annoying behaviour, 
   since every time we modify the script we'll need to do this on startup. Luckily we have another way of 
   attacking this provided by the Gimp module - that is the Perl Server.
   <br /><br />
-  First, move your script out of your plug-ins directory to somewhere else. Then startup gimp. Start the Perl Server by going to 
+  First, move your script out of your plug-ins directory to somewhere else. Then startup GIMP. Start the Perl Server by going to 
   <span class="filter">Xtns -&gt; Perl Server</span>. 
-  You'll see something like the following in the XTerm window of gimp:
+  You'll see something like the following in the XTerm window of GIMP:
 </p>
 <pre class="debug">
 989020828: server version 1.201 started

@@ -5,7 +5,7 @@
 
 <h1>GIMP from Source</h1>
 <p>
-  The official distribution of the GIMP is the source code,
+  The official distribution of GIMP is the source code,
   distributed in tar files from the GIMP FTP site and its <a
   href="wgo:downloads-mirrors">mirrors</a>. The same source code can be
   compiled to create binaries for different platforms such as <a
@@ -51,7 +51,7 @@
   a maintenance branch.
 
   If you intend to <a href="wgo:develop">contribute</a> to the
-  development of the GIMP, then you should try using Subversion. As
+  development of GIMP, then you should try using Subversion. As
   the code is constantly evolving and features are added (or removed)
   every day, you should have a look at
   the <a href="wgo:dev">developers' site</a> and subscribe to the

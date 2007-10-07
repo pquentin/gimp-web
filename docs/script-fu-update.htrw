@@ -38,13 +38,13 @@ is a description of some of the problems which may be encountered and
 what steps need to be taken to correct them.</p>
 
 <ul>
-<li><a href="unbound">Setting an undeclared variable</a> (<tt>Error: set!: unbound variable: x</tt>)</li>
-<li><a href="condempty">Using the empty list in conditionals</a></li>
-<li><a href="carempty">Accessing the first element of an empty list</a> (<tt>Error: car: argument 1 must be: pair</tt>)</li>
-<li><a href="cdrempty">Accessing beyond the last element of a list</a> (<tt>Error: cdr: argument 1 must be: pair</tt>)</li>
-<li><a href="cons">Constructing a pair</a> (<tt>Error: cons: needs 2 argument(s)</tt>)</li>
-<li><a href="deprecated">Deprecated features</a></li>
-<li><a href="conclusion">Conclusion</a> (and other differences)</li>
+<li><a href="#unbound">Setting an undeclared variable</a> (<tt>Error: set!: unbound variable: x</tt>)</li>
+<li><a href="#condempty">Using the empty list in conditionals</a></li>
+<li><a href="#carempty">Accessing the first element of an empty list</a> (<tt>Error: car: argument 1 must be: pair</tt>)</li>
+<li><a href="#cdrempty">Accessing beyond the last element of a list</a> (<tt>Error: cdr: argument 1 must be: pair</tt>)</li>
+<li><a href="#cons">Constructing a pair</a> (<tt>Error: cons: needs 2 argument(s)</tt>)</li>
+<li><a href="#deprecated">Deprecated features</a></li>
+<li><a href="#conclusion">Conclusion</a> (and other differences)</li>
 </ul>
 
 <h2 id="unbound">Setting an undeclared variable</h2>

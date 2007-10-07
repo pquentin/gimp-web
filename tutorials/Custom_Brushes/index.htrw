@@ -2,6 +2,7 @@
 <title>GIMP - Custom Brushes Tutorial</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Custom Brushes Tutorial</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Lad_Gautam_N">Gautam N. Lad</a> and may not be used without permission of the author.
@@ -51,7 +52,7 @@
 <p>
   The last step is to save your brush as a GIMP picture brush. The extension of this kind of brush is .GIH. So right click on the image, then choose 
   <span class="filter">&lt;Image&gt; File -&gt; Save As....</span>
-  IF you want the GIMP to be able to use your new brush, you have to save it in the "brushes" folder inside your personal GIMP folder (for Linux and other UNIX systems, this is usually in "~/.gimp-2.0/brushes/").  So select that folder and type in a name for the brush. For our example, the brush was named <b>happy.gih</b>
+  IF you want GIMP to be able to use your new brush, you have to save it in the "brushes" folder inside your personal GIMP folder (for Linux and other UNIX systems, this is usually in "~/.gimp-2.0/brushes/").  So select that folder and type in a name for the brush. For our example, the brush was named <b>happy.gih</b>
   <br />
   The Save As Pixmap Brush Pipe dialog will ask you how you want to save the image. Since we have 3 layers make sure to put 3 in the Ranks edit box.
   You can also choose how you want the images to appear as you move the mouse aruond. In most cases Random will do fine.

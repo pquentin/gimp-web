@@ -1,3 +1,44 @@
+2007-10-07  Raphaël Quinet  <raphael@gimp.org>
+
+	* about/*.htrw  (8 files)
+	* books/index.htrw
+	* bugs/howtos/bugzilla.htrw
+	* bugs/index.htrw
+	* bugs/why_bugzilla.htrw
+	* develop/index.htrw
+	* docs/index.htrw
+	* docs/userfaq.htrw
+	* donating/index.htrw
+	* downloads/install_help.htrw
+	* macintosh/index.htrw
+	* release-notes/gimp-2.2.htrw
+	* source/index.htrw
+	* source/howtos/stable-cvs-get.htrw
+	* source/howtos/stable-cvs-build.htrw
+	* template.htrw
+	* tutorials/*/index.htrw  (29 files)
+	* tutorials/Smart_Sharpening/warp-sharp.htrw
+	* tutorials/index.htrw: 
+	* unix/howtos/gimp-midi.htrw
+	* unix/howtos/tile_cache.htrw
+	* unix/howtos/bugzilla.htrw
+	* unix/user_install.htrw
+	* unix/index.htrw
+	* unix/fonts.htrw
+	* webmasters.htrw: Replaced "The GIMP" by "GIMP".  Also fixed the
+	capitalization and replaced "Gimp" or "gimp" by "GIMP" everywhere.
+	Other small changes to keep some of these files up-to-date and
+	prepared for the stable release 2.4.
+
+	* contest/index.htrw
+	* programmatic/contest/index.htrw: Mention that the contest is
+	closed and link to the terse results in /about/splash/contest/.
+
+	* about/splash/contest/index.htrw: Added link to the copy of the
+	2.2.10 splash screen and XCF file provided at sven.gimp.org.
+
+	* docs/script-fu-update.htrw: Restored missing '#' in links.
+
 2007-10-05  Raphaël Quinet  <raphael@gimp.org>
 
 	* includes/wgo-page-fini.xhtml: Fixed broken link.

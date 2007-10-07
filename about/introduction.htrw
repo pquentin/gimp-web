@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>About GIMP</h1>
-<h2>Introduction to the GIMP</h2>
+<h2>Introduction to GIMP</h2>
 <p>
   GIMP is an acronym for GNU Image Manipulation Program. It
   is a freely distributed program for such tasks

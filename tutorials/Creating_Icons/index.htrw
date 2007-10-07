@@ -228,7 +228,7 @@
   <img src="remote5.png" alt="" />
 </p>
 <p>
-  The GIMP may not grow that selection perfectly, and you will probably have to alter the result manually. In this case, we'll use the erase tool with a 1x1 pixel brush, 
+  GIMP may not grow that selection perfectly, and you will probably have to alter the result manually. In this case, we'll use the erase tool with a 1x1 pixel brush, 
   and opacity between 60 and 70 percent. Choose the "draw straight lines" option, and smooth the outline by drawing close to the border of the object.
 </p>
 <p class="images">

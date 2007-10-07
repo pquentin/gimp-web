@@ -55,62 +55,72 @@ not test them; use at your own risk.
 </ul>
 </p>
 
-<p>If you cannot find a pre-compiled package of GIMP 2.2 for your
-system, you can <a href="/source/">build and install the GIMP from the
+<p>If you cannot find a pre-compiled package of GIMP 2.4 for your
+system, you can <a href="wgo:source">build and install GIMP from the
 source code</a>.  This is not that hard, so don't be afraid and give
 it a try.</p>
 
 <h2>Requirements</h2>
 
-<p>The GIMP runs on most Unix systems using X11 (the X Window System).
+<p>GIMP runs on most Unix systems using X11 (the X Window System).
 If your system can run a graphical web browser, chances are that it
-can also run the GIMP.  It runs even on relatively old PCs (Pentium
-200) or on old workstations (Ultra1).  The amount of memory can be an
+can also run GIMP.  It runs even on relatively old PCs (Pentium
+200) or on old workstations (Sun Ultra1).  The amount of memory can be an
 important factor, especially if you intend to work on large images.  A
 minimum of 128 MB of RAM is recommended, but actually you should have
 256 MB or more, and several GB does not hurt when you want to edit
 <i>really</i> large images.  In addition to the basic X11 libraries,
-the following is a list of what you will need to run the GIMP on your
+the following is a list of what you will need to run GIMP on your
 system:</p>
 
-<p>For the stable version (2.2):</p>
+<p>For the stable version (2.4):</p>
 
 <ul>
   <li>
-    A recent version of <b>pkg-config</b> is needed and you can grab
-    them at <a href="http://www.freedesktop.org/software/pkgconfig/">
-    http://www.freedesktop.org/software/pkgconfig/</a>
+    <b>GTK+ 2.10.13</b> or better (Gimp Toolkit).
   </li>
   <li>
-    <b>GTK+ 2.4.4</b> or better (Gimp Toolkit). The GIMP toolkit can be found at
-    <a href="ftp://ftp.gtk.org/">ftp://ftp.gtk.org/</a> GTK+ 2.4.4 also needs
-    the following packages. (Either the version listed or newer)
-  <ul>
-    <li><b>GLib 2.4.5</b></li>
-    <li><b>Pango 1.4.0</b></li>
-    <li><b>ATK</b></li>
-  </ul></li>
-  <li>
-    <b>PangoFT2</b> a Pango backend that uses <b>FreeType2</b> 
-    (Make sure you have FreeType2 installed before installing Pango).
-    Downloads can be found at 
-    <a href="http://www.freetype.org/">http://www.freetype.org/</a>
+    <b>GLib 2.12.3</b> or better. 
   </li>
   <li>
-    <b>libart2</b> Grab the module libart_lgpl out of GNOME CVS or
-    fetch the tarball from <a href="ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/">
-    ftp://ftp.gnome.org/pub/gnome/sources/libart_lgpl/</a>
+    <b>PangoFT2</b> 1.12.2 or better.  PangoFT2 is a Pango backend that uses <b>FreeType2</b>.
+  </li>
+  <li>
+    <b>Fontconfig 2.2.0</b> or better.
+  </li>
+  <li>
+    <b>libart2</b>
   </li>
 </ul>
 
+<p>It is recommended that you use packages provided by your
+distribution whenever possible.  If your distribution does not have
+the required version of one of these packages, see <a
+href="wgo:source">how to build GIMP from sources</a> for a list of
+required source packages as well as where you can find them.</p>
 
-<p>Note that if you compile and install the GIMP from sources, you
-will need the header files for the required libraries.  On some Linux
-systems, these header files are usually included in a separate package
-using the suffix <code>-devel</code>.  So for example, you will need
-the packages <code>gtk</code> and <code>gtk-devel</code> if you want
-to build the GIMP.</p>
+<p>Note that if you compile and install GIMP from sources, you will
+need the header files for the required libraries.  On some Linux or
+BSD distributions, these header files are usually included in a
+separate package using the suffix <code>-devel</code>.  So for
+example, you will need the packages <code>gtk</code> and
+<code>gtk-devel</code> if you want to build GIMP.</p>
 
+<h2>Configuration</h2>
+
+<ul>
+  <li><a href="wgo:unix-user_install">The first time you
+  run GIMP</a>.<br />
+  When you run GIMP for the first time, it will install some files
+  in your home directory and it will show you some dialogs that give
+  you the opportunity to adapt it to your environment.</li>
+
+  <li><a href="wgo:unix-howtos-tile_cache">How to set the tile
+  cache</a>.<br />
+  The tile cache tells GIMP how much memory it can use before
+  swapping some image data to disk.  Setting the size of the tile
+  cache can be critical for the performance of your system.</li>
+</ul>
 
 <h2>Help and Documentation</h2>
 

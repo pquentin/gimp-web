@@ -19,7 +19,7 @@
   <br />
   The basic technique is to create a "Sepia Mask" that will apply a sepia color layer according to a layer mask that is based on the tonality of the image.
   <br />
-  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from 
+  Giving credit where credit is due: I did not come up with this method. I adapted it for GIMP from 
   <a href="http://www.retouchpro.com/tutorials/lum-mask-sepia.html">a Photoshop tutorial on the RetouchPRO web site</a>.
 </p>
 
@@ -28,7 +28,7 @@
   <img src="original.jpg" alt="" />
 </p>
 <p>
-  Here is the original image, loaded into the GIMP. It has a bit of an old-time look, so I thought it might work well as a sepia-toned image.
+  Here is the original image, loaded into GIMP. It has a bit of an old-time look, so I thought it might work well as a sepia-toned image.
 </p>
 
 <h2>Step 1</h2>
@@ -37,7 +37,7 @@
   <img src="image-wdecorfu.jpg" alt="" />
 </p>
 <p>
-  You can compare the result we will get below to the GIMP's built-in script-fu for sepia toning 
+  You can compare the result we will get below to GIMP's built-in Script-Fu for sepia toning 
   (<span class="filter">&lt;Image&gt; Script-Fu -&gt; Decor -&gt; Old Photo</span>) as shown at right.
   <br />
   Come back and compare to this when you get to the end of the tutorial.
@@ -151,8 +151,8 @@
   You can always compare the result to the base image. If you want to start over, just duplicate the base image again and off you go.
 </p>
 <p>
-  <b>Hint:</b> if the GIMP had adjustment layers, like Photoshop, we'd just create one of those to experiment with further adjustments. 
-  Since the GIMP does not have those, we have to flatten the image to apply some of the standard controls and filters. Ergo, 
+  <b>Hint:</b> if GIMP had adjustment layers, like Photoshop, we'd just create one of those to experiment with further adjustments. 
+  Since GIMP does not have those, we have to flatten the image to apply some of the standard controls and filters. Ergo, 
   work on a duplicate or save the base image..
 </p>
 <p>

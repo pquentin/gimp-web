@@ -10,12 +10,12 @@
   <h2>Intention</h2>
   <p style="text-justify: align;">
     <img src="perlotine1-guides.png" alt="" style="float: left; margin-right: 1em;" />
-      I made a pretty neat image map for my web site. These three tutorials demonstrate some of The GIMPs html 
+      I made a pretty neat image map for my web site. These three tutorials demonstrate some of GIMP's html 
       rendering plug-ins that I used to make the image map. In this tutorial, the first of three, I am going 
       to demonstrate how to run perlotine a couple of times to slice an image up and put it back together in some nested tables.
   </p>
   <p>
-    Since I am going to make a web page that emulates The GIMP palette colorpicker, I "Acquired" a screenshot of the dialog 
+    Since I am going to make a web page that emulates the GIMP palette colorpicker, I "Acquired" a screenshot of the dialog 
     with the Visibone2 palette selected. Here is a screenshot of the screenshot of the dialog with the guides placed for the first step.
   </p>
   <p>
@@ -27,7 +27,7 @@
   <h2 style="padding-top: 2em;">Step 1</h2>
   <p>
       Perl-O-Tine is a plug-in that slices an image along guides that you have placed and writes the html table that will put 
-      it back together again on a web page. If you are using The GIMP after experience with Photoshop LE, 
+      it back together again on a web page. If you are using GIMP after experience with Photoshop LE, 
       you might not be aware of guides or their usefulness. Put the curser on the ruler and drag toward the image.
     <img src="perlotine1-zoom.png" alt="" style="float: right; margin-left: 1em;" />
   </p>
@@ -41,7 +41,7 @@
   <h2 style="padding-top: 2em;">Step 2</h2>
   <p>
     <img src="dialog-perlotine.png" alt="" style="float: left; margin-right: 1em;" />
-      "Save path:" tells The GIMP where to put the slices. "Html file name:" names the perlotine html. 
+      "Save path:" tells GIMP where to put the slices. "Html file name:" names the perlotine html. 
       The Perlotine plug-in names the images very smartly, with the position name. My first round of slices were named imap-table1 and second round, imap-table2. 
       I opted for png, to be politically correct on a gimp.org site. Last, since I am running the plug-in a few times, 
       I opt for the separate directory to keep the images apart.
@@ -60,7 +60,7 @@
     This is the product of the first slicing with Perlotine.
   </p>
   <p>
-    This is a 3 element table. We will be slicing the middle section again, for The GIMP Table Magic Plug-in in the third tutorial, yet to be written. 
+    This is a 3 element table. We will be slicing the middle section again, for the GIMP Table Magic Plug-in in the third tutorial, yet to be written. 
     The bottom section will be sliced up to contain a dialog box for the color number to return to for both color pickers, so we will slice that next.
   </p>
   <p>

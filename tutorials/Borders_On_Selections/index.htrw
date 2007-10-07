@@ -10,11 +10,11 @@
 
 <h2>Intention</h2>
 <p>
-  Since Gimp is an image manipulation program and not a painting program 
+  Since GIMP is an image manipulation program and not a painting program 
   it doesn't include tools to draw shapes like squares and circles.
   However this doesn't mean you can't paint them, in fact there are 
-  some interesting options regarding this subject when it comes to the gimp.
-  The solution is to use the selection stroking capabilities of the Gimp. 
+  some interesting options regarding this subject when it comes to GIMP.
+  The solution is to use the selection stroking capabilities of GIMP. 
 </p>
 <p class="images">
   <img src="img14_step1.png" alt="" />

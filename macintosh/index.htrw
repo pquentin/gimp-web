@@ -5,11 +5,11 @@
 
 <h1>GIMP for Mac OS X</h1>
 
-<p class="images"><img alt="The GIMP" src="TiBookMacGIMP.jpg" /></p>
+<p class="images"><img alt="GIMP" src="TiBookMacGIMP.jpg" /></p>
 
-<h2>Getting and Installing the GIMP</h2>
+<h2>Getting and Installing GIMP</h2>
 
-<p>There are various ways to obtain and install the GIMP for your
+<p>There are various ways to obtain and install GIMP for your
 Macintosh.  In addition to the source code distribution here on
 www.gimp.org, there are various alternative sources for packaged and
 commercially distributed CDs, which aim to make installation and setup
@@ -17,7 +17,7 @@ an easier task. These include:</p>
 
 <ul>
   <li><a href="http://gimp-app.sourceforge.net/">Gimp.app</a> provides
-  a self contained application bundle of the GIMP for OS X. Gimp.app
+  a self contained application bundle of GIMP for OS X. Gimp.app
   requires Apple's X11.app. Gimp.app is packaged by Aaron Voisine.</li>
 
   <li><a href="http://fink.sourceforge.net/pdb/package.php/gimp2">Fink</a>
@@ -46,9 +46,9 @@ an easier task. These include:</p>
 
   <li>The <a href="http://www.macgimp.org/">MacGIMP project</a>
   provides the latest GIMP for Mac OS X in a packaged CD format.
-  The MacGIMP project installs the GIMP in <code>/opt/local/bin</code>.
+  The MacGIMP project installs GIMP in <code>/opt/local/bin</code>.
   MacGIMP efforts are led by
-  <a href="mail:People-Caughron-Mat">Mat Caughron</a>. Last year he helped
+  <a href="mail:People-Caughron-Mat">Mat Caughron</a>. In 2003 he helped
   the GIMP developers with a donation for their developers conference.
   </li>
 
@@ -56,15 +56,15 @@ an easier task. These include:</p>
 
 <h2>Requirements</h2>
 
-<p>The GIMP will only run on Mac OS X, not on version 9 or earlier of
+<p>GIMP will only run on Mac OS X, not on version 9 or earlier of
 the Macintosh operating system.  There are a number of reasons why it
-is unlikely that the GIMP will ever run on older versions of Mac OS.
+is unlikely that GIMP will ever run on older versions of Mac OS.
 In addition to Mac OS X, the following is a list of what you will need
-to run the GIMP on your Macintosh:</p>
+to run GIMP on your Macintosh:</p>
 
 <ul>
   <li>X Windowing Layer<br /> 
-  The GIMP uses a separate windowing layer, the X11 windowing
+  GIMP uses a separate windowing layer, the X11 windowing
   protocol, on Mac OS X, which must be installed first.  There are
   various ways to install an X11 protocol window server.  The <a
   href="http://www.xdarwin.org/">XDarwin project</a> provides this
@@ -74,7 +74,7 @@ to run the GIMP on your Macintosh:</p>
   href="http://www.apple.com/downloads/macosx/apple/x11formacosx.html">www.apple.com/downloads/macosx/apple/x11formacosx.html</a>.</li>
 
   <li>dlcompat<br /> 
-  In general, building the GIMP on Mac OS X is complicated by the fact
+  In general, building GIMP on Mac OS X is complicated by the fact
   that dynamic libraries from GNU projects require a GNU-specific
   dynamic loading library.  dlcompat provides the dlopen() interface
   for dynamic loading of modules for applications that need it.
@@ -86,17 +86,17 @@ to run the GIMP on your Macintosh:</p>
 
   <li>Graphics libraries and toolkits<br />
   Unlike most Linux distributions, Mac OS X does not come with the
-  open source libraries upon which the GIMP is built.  These are
-  typically installed along with the GIMP, but can be installed
+  open source libraries upon which GIMP is built.  These are
+  typically installed along with GIMP, but can be installed
   separately.  GTK can be built and installed via the various package
   management systems mentioned above: Fink, DarwinPorts, OSXGNU and
   others.  A complete list of the libraries necessary for a build of
-  the GIMP is given in the main source distribution.</li>
+  GIMP is given in the main source distribution.</li>
 </ul>
 
 <h2>Configuration</h2>
 
-<p>Once you have installed the GIMP on Mac OS X, the configuration is
+<p>Once you have installed GIMP on Mac OS X, the configuration is
 very similar to the other UNIX systems.  Please have a look at the
 configuration section on the <a href="wgo:unix">GIMP for UNIX</a> page
 for more details.</p>
@@ -112,8 +112,8 @@ one place to discuss compatibility and installation questions.<br />
 In addition, there are forums at the <a
 href="http://gug.sunsite.dk/">GIMP User Group</a>.</p>
 
-<p>The GIMP's user interface is designed to let you work as
-efficiently as possible.  Since the primary menu in the GIMP is
+<p>GIMP's user interface is designed to let you work as
+efficiently as possible.  Since the primary menu in GIMP is
 accessed by a right-click in the image window, it is advisable for Mac
 users (who all have a single mouse button by default) to obtain a
 multi-button USB mouse.  Another workaround for this problem is to

@@ -31,7 +31,7 @@
 </p>
 <p>
   Giving credit where credit is due: I did not come up with this method. 
-  I adapted it for The GIMP from a Photoshop tutorial on the luminous-landscape.com 
+  I adapted it for GIMP from a Photoshop tutorial on the luminous-landscape.com 
   photography web site (great web site BTW, I recommend it).
 </p>
 
@@ -48,7 +48,7 @@
   <img src="image-original-dark.jpg" alt="" />
 </p>
 <p>
-  Here are the two exposures, loaded into the GIMP. I am going to sandwich these 
+  Here are the two exposures, loaded into GIMP. I am going to sandwich these 
   on different layers and then combine them with a layer mask.
 </p>
 

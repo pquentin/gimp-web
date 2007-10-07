@@ -2,6 +2,7 @@
 <title>GIMP - Creating a Contrast Mask</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Creating a Contrast Mask</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
@@ -13,10 +14,10 @@
   <img src="after.jpg" alt="" />
 </p>
 <p>
-  In this tutorial I'll show you how to do create a contrast mask for your image in The GIMP. A contrast mask allows you to reduce overall contrast, 
+  In this tutorial I'll show you how to do create a contrast mask for your image in GIMP. A contrast mask allows you to reduce overall contrast, 
   simultaneously bringing out more detail in highlights and shadows. This may be necessary to obtain a decent print, because prints on paper do not 
   have as much dynamic range as a monitor; if you don't control the contrast, detail in the highlights may blow out and detail in the shadows can block 
-  up and become muddy or even black. You can of course modify your image directly in The GIMP to decrease contrast, but the advantage of the contrast mask 
+  up and become muddy or even black. You can of course modify your image directly in GIMP to decrease contrast, but the advantage of the contrast mask 
   technique is that it allows you much more precise control, and gives better results.
 </p>
 <p>
@@ -24,7 +25,7 @@
   light parts with dark. All the while your original image remains blissfully unchanged on its layer.
 </p>
 <p>
-  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a Photoshop tutorial on 
+  Giving credit where credit is due: I did not come up with this method. I adapted it for GIMP from a Photoshop tutorial on 
   the <a href="http://www.luminous-landscape.com/">luminous-landscape.com web site</a> (great photography web site BTW; I recommend it).
 </p>
 <p>
@@ -39,7 +40,7 @@
   <img src="original.jpg" alt="" />
 </p>
 <p>
-  Here is the original example image, loaded into The GIMP. 
+  Here is the original example image, loaded into GIMP. 
   The red leaves are a little too dark to make out the detail; if printed, the result would be pretty dark and muddy. 
   At the same time, the yellow flowers have a couple of specular highlights that would probably blow out the detail if printed.
 </p>
@@ -141,7 +142,7 @@
   <img src="layers5.jpg" alt="" />
 </p>
 <p>
-  You'll have to flatten the image if you are saving it to a typical image format like TIFF or JPEG (but not if you are saving to the GIMP's native XCF format). 
+  You'll have to flatten the image if you are saving it to a typical image format like TIFF or JPEG (but not if you are saving to GIMP's native XCF format). 
   To do that, right-click on the image and select <span class="filter">&lt;Image&gt; Layers -&gt; Flatten Image</span>.
 </p>
 

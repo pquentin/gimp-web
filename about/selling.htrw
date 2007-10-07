@@ -1,26 +1,26 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - Selling the GIMP</title>
+<title>GIMP - Selling GIMP</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>Selling the GIMP</h1>
+<h1>Selling GIMP</h1>
 
 <h2>Introduction</h2>
 
 <p>From time to time, we get questions from users who are surprised to
-see some individuals or companies selling the GIMP from their web site
+see some individuals or companies selling GIMP from their web site
 or as part of an auction.  Sometimes the software is advertised as
-being the GIMP but in some cases there is no mention of the fact that
-what is sold is the GIMP, and the GIMP is <span class="help"
+being GIMP but in some cases there is no mention of the fact that
+what is sold is GIMP, and GIMP is <span class="help"
 title="software that may be modified and distributed freely, as long
 as you do not deny other users these freedoms">Free Software</span>.
 This page tries to answer some of these questions and provides
-suggestions for those who would like to sell the GIMP.</p>
+suggestions for those who would like to sell GIMP.</p>
 
-<h2>Is it legal to sell copies of the GIMP?</h2>
+<h2>Is it legal to sell copies of GIMP?</h2>
 
 <p>Yes.  The terms and conditions for copying, distribution and
-modification of the GIMP are clearly listed in the <a
+modification of GIMP are clearly listed in the <a
 href="wgo:license">GNU General Public License</a>.  Redistribution for
 free or for profit is specifically allowed, as long as the license is
 included and the source code is made available.  See also <a
@@ -30,53 +30,65 @@ Foundation">FSF</span> site.</p>
 
 <p>Besides the rights and conditions given by the GPL, it would also
 be nice (but not required) to mention in any advertising that the
-product being sold is the GIMP (or a bundle including the GIMP).</p>
+product being sold is GIMP (or a bundle including GIMP) or is derived
+from it.</p>
 
-<h2>Are the developers associated with companies selling the GIMP?</h2>
+<h2>Are the developers associated with companies selling GIMP?</h2>
 
 <p>No.  The GIMP developers are not associated with the companies
-selling copies of the GIMP.  We may be in contact with some of them
-from time to time when they contribute some improvements to the GIMP.
+selling copies of GIMP.  We may be in contact with some of them
+from time to time when they contribute some improvements to GIMP.
 Some of them have also made <a href="wgo:donating">donations</a> to
 the GIMP developers (sponsoring for the GIMP developers' conference).
 But none of the developers has direct financial interest in these
 companies.</p>
 
-<h2>I bought the GIMP without knowing that it was Free Software</h2>
+<h2>I bought GIMP without knowing that it was Free Software</h2>
 
-<p>Unfortunately, some companies selling the GIMP do not always
+<p>Unfortunately, some companies selling GIMP do not always
 mention in their advertising that the software that they are selling
-can also be obtained for free.  Sometimes the GIMP is combined with
+can also be obtained for free.  Sometimes GIMP is combined with
 additional software or artwork that adds value to the package, but
 sometimes what you get is not much more than what could otherwise be
-downloaded for free.  If you have purchased such a copy of the GIMP
-and you feel cheated, then you should complain to the vendor.
+downloaded for free.  If you have purchased such a copy of GIMP
+and you feel cheated, then you should complain to the vendor.</p>
 
-<h2>Where can I buy a copy of the GIMP?</h2>
+<p>However, if the vendor did not make the complete corresponding
+source code for their version of GIMP available to you as required by
+the GPL, then the vendor may have violated the license and may be
+liable for copyright infringment.  Please try to clarify the situation
+with the vendor <i>before</i> reporting any GPL violation to the GIMP
+developers.  In any case, you should refrain from making public
+statements about the potential GPL violation before you have contacted
+the vendor.  Notifying the developers too early of making public
+statements about the potential GPL violation may limit the legal
+options available to the developers (copyright owners).<p>
 
-<p>We do not sell the GIMP from this web site.  However, the
+<h2>Where can I buy a copy of GIMP?</h2>
+
+<p>We do not sell GIMP from this web site.  However, the
 platfom-specific pages contain links to packages provided by several
-individuals or companies, and some of them are selling the GIMP.
+individuals or companies, and some of them are selling GIMP.
 Please have a look at the page related to the platform you are using
 (UNIX, Windows or MacOS) and see if you can find anything interesting
-there.
+there.</p>
 
-<h2>Recommendations for those who sell copies of the GIMP</h2>
+<h2>Recommendations for those who sell copies of GIMP</h2>
 
-<p>If you or your company intend to sell the GIMP, it would be nice to
+<p>If you or your company intend to sell GIMP, it would be nice to
 follow these guidelines:</p>
 
 <ol>
 
 <li><strong>Be honest</strong>.  Do not try to hide the fact that the
-product that you are selling is or contains the GIMP.  Mention it in
-any advertisement.</li>
+product that you are selling is or contains GIMP (the GNU Image
+Manipulation Program).  Mention it in any advertisement.</li>
 
 <li><strong>Add value</strong>.  Try to provide more than what can be
 found in the default GIMP package.  Include a nice installer,
 additional plug-ins, some nice artwork, some custom brushes and
 textures, your own tutorials and documentation, printed copies of the
-documentation, etc.  There are many ways to add value to the GIMP and
+documentation, etc.  There are many ways to add value to GIMP and
 to make your customers happy.</li>
 
 <li><strong>Respect the GPL</strong>.  The GPL requires you to make
@@ -93,7 +105,7 @@ the same place" so giving a link to the GIMP mirrors is not sufficient
 href="http://www.gnu.org/copyleft/gpl-faq.html#SourceAndBinaryOnDifferentSites">this
 section of the GPL FAQ</a>).</li>
 
-<li><strong>Support your users</strong>.  If the version of the GIMP
+<li><strong>Support your users</strong>.  If the version of GIMP
 that you are selling is modified in any way, you should inform your
 users and try to handle the support requests related to that version.
 Providing good support is another way to make your customers

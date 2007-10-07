@@ -2,6 +2,7 @@
 <title>GIMP - GIMPLite Quickies</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>GIMPLite Quickies</h1>
 <p>
   Text and images Copyright (C) 2004 <a href="mail:People-Spears_Carol">Carol Spears</a> and may not be used without permission of the author.
@@ -9,12 +10,12 @@
 
 <h2>Intention</h2>
 <p>
-  So, you have The GIMP installed on your computer, you need to make a quick change to an image for some project, but don't want to learn about 
+  So, you have GIMP installed on your computer, you need to make a quick change to an image for some project, but don't want to learn about 
   computer graphics right now in order to get the image changed. Totally understandable. 
-  The GIMP is a powerful image manipulator with many options and tools. 
+  GIMP is a powerful image manipulator with many options and tools. 
   However, it is quick and somewhat intuitive (after a time) for the small jobs as well. 
   Hopefully, these quickies will help you with your quick problem and help 
-  you to stay friends with The GIMP and ready for its more complex tools and methods later, when you have the time and inspiration.
+  you to stay friends with GIMP and ready for its more complex tools and methods later, when you have the time and inspiration.
 </p>
 <p>
   A couple of words about the images used here. The came from <a href="http://antwrp.gsfc.nasa.gov/apod/astropix.html">APOD</a>, 
@@ -31,13 +32,13 @@
   <a href="scale-dialog.png"><img src="scale-dialog-t.png" alt="scale-dialog"></img></a>
 </p>
 <p>
-  Problem: you have a huge image and you want to put it nicely for viewing on a web page. The GIMP is a quick solution. 
+  Problem: you have a huge image and you want to put it nicely for viewing on a web page. GIMP is a quick solution. 
   Our example image is this beauty <a href="m51_hallas_big.jpg">m51_hallas_big.jpg</a> from <a href="http://antwrp.gsfc.nasa.gov/apod/ap020710.html">APOD</a>.
 </p>
 <p>
-  The first thing that you might notice is that The GIMP opens the image at a logical size for viewing. 
+  The first thing that you might notice is that GIMP opens the image at a logical size for viewing. 
   So, if your image is really big (like the sample image) it will display it zoomed out until it fits nicely. 
-  You can tell if The GIMP has done this by the percentage number in the title bar. 
+  You can tell if GIMP has done this by the percentage number in the title bar. 
   (you can click on the little screenshot to see the full view of the screenshot) Just because it looks right in this "View" doesn't mean anything.
 </p>
 <p>
@@ -51,7 +52,7 @@
 </p>
 <p>
   If you have a desired width, put it in the dialog at the top where it says "New Width". If you don't have such a number in mind, 
-  you can steal the width of The GIMP's default image size, which is 256 pixels. This is demonstrated in this <a href="scale-dialog1.png">screenshot</a>. 
+  you can steal the width of GIMP's default image size, which is 256 pixels. This is demonstrated in this <a href="scale-dialog1.png">screenshot</a>. 
   You can see the image that this scale dialog produced <a href="m51_hallas_256.jpg">here</a>.
 </p>
 <p>
@@ -60,8 +61,8 @@
   You can see this dialog <a href="scale-dialog2.png">here</a>. The image this dialog produced <a href="m51_hallas_6x4.jpg">here</a>.
 </p>
 <p>
-  Let The GIMP choose the other dimension length for you. Meaning, it will take more image knowledge to change both width 
-  and height and have it look correct. So only change one and let The GIMP change the rest. To change the other length see the crop quickie.
+  Let GIMP choose the other dimension length for you. Meaning, it will take more image knowledge to change both width 
+  and height and have it look correct. So only change one and let GIMP change the rest. To change the other length see the crop quickie.
 </p>
 
 <h2><a id="reduce">Make jpegs Smaller</a></h2>
@@ -80,12 +81,12 @@
 </p>
 <p>
   I generally type the filename I want into the text box, but the Extension drop menu can tell you the available file formats 
-  (depending on the libraries you have installed and the conditions of the image you are trying to save). If The GIMP complains right now, 
+  (depending on the libraries you have installed and the conditions of the image you are trying to save). If GIMP complains right now, 
   or if "JPEG" is grayed out in the Extensions menu you should just cancel out of everything and step through the <a 
-  href="#mode">Change the Mode  Quickie</a>.
+  href="#mode">Change the Mode Quickie</a>.
 </p>
 <p>
-  In the JPEG Save Dialog, you can opt for The GIMP defaults which reduce the size quite a bit, without hurting the visual quality in a way that I can detect. 
+  In the JPEG Save Dialog, you can opt for GIMP defaults which reduce the size quite a bit, without hurting the visual quality in a way that I can detect. 
   This would be the safest and quickest thing to do.
 </p>
 <p>
@@ -170,7 +171,7 @@
   image to be printed on a machine like this; or if you are planning on a gallery
   where the images are from different sources, some intelligent cropping to fit the
   best size for the medium you have chosen will be a plus.  If this is confusing;
-  please blame the photo printing industry and not TheGIMP.
+  please blame the photo printing industry and not GIMP.
 </p>
 <p>
   You can change the Resolution of your image as well, using the same methods as we used in the Scale, although, in my somewhat limited use, 
@@ -192,7 +193,7 @@
 <p>As with anything else, images come in different kinds and serve
 different purposes. Sometimes, a small size is important (for web sites)
 and at other times, retaining a high colour depth in all its glory (a family portrait) is what you want. 
-The gimp can handle all of this, and more, primarily by converting
+GIMP can handle all of this, and more, primarily by converting
 between three fundamental modes, as seen in this menu.
 In order to switch your image to one of these modes, you open it and
 follow that menu and click the mode you want.</p>
@@ -227,7 +228,7 @@ href="AS17-148-22727_lrg.jpg">huge version<</p>
 <p><b>Indexed -</b> This is the mode usually used when file size is of
 concern, or when you are working with images with few colours. It
 involves using a fixed number of colours, 256 or less, at each point to
-represent the colour at that point. The gimp defaults to attempting to
+represent the colour at that point. GIMP defaults to attempting to
 figure out an "optimum palette" to best represent your image. Try it,
 you can undo it if you don't like the results, or use a custom palette
 or more colours.</p>
@@ -258,7 +259,7 @@ the pixels in your image, and suitably weighted averaging them to get an
 <i>intensity</i> at that point.</p>
 
 <p>There is no need to convert an image to a specific mode before saving
-it in your favourite format, as the gimp is smart enough to <a
+it in your favourite format, as GIMP is smart enough to <a
 href="mode-export.png">export</a>.</p>
 <h2><a id="flip">Flip An Image</a></h2>
 <p class="images">

@@ -2,6 +2,7 @@
 <title>GIMP - Coloring A BW Sketch</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Coloring A BW Sketch</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Lamberto_Marco">Marco (LM) Lamberto</a> and may not be used without permission of the author.
@@ -68,7 +69,7 @@
 </p>
 <p>
   Finally I've added a "Shadows" layer for making the doughnut and the other elements less flat.
-  This is the end. Still reading here? Now it's your turn! Quickly open the GIMP and start playing! ;) 
+  This is the end. Still reading here? Now it's your turn! Quickly open GIMP and start playing! ;) 
 </p>
 
 <p>

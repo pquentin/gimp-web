@@ -3,42 +3,12 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>GIMP 10th Anniversary Splash Contest</h1>
+<h1>GIMP 10th Anniversery Splash Contest (Closed)</h1>
 
-  <p>
-    It is <a 
-    href="http://groups.google.com/group/comp.os.linux.development.apps/msg/b5a9a98ef1e9fd4d?hl=en&">GIMP's Tenth Anniversary</a>
-    and close enough to the time for the 2.2.10 release of stable GIMP making it a very good time for a splash
-    contest.  This contest is very simple.  We are collecting images with tutorials and when it is all
-    done, the GIMP's Lead Developers will pick the one they find most appropriate. 
-  </p>
-
-  <h3>Contest Results</h3>
-  <p>
-    The contest is now closed. Thanks to everyone who submitted entries.
-  </p>
-  <p>
-    The winner of the <strong>GIMP 10th Anniversary Splash
-    Contest</strong> is <i>Dialed In</i>, a submission by
-    <i>ix</i>. This is the splash screen of the 2.2.10 anniversary
-    release:
-  </p>
-  <p align="center">
-    <a href="http://sven.gimp.org/gimp-2.2.10-splash-contest+ixyx_v0.2b.png"><img src="/about/splash/splash-images/gimp-splash-1.6.2.1.png" width="300" height="290" alt="GIMP 2.2.10 splash screen" /></a>
-  </p>
-  <p> Unfortunately the winning entry wasn't accompanied with a tutorial but
-  the artist has made available the complete <a
-  href="http://sven.gimp.org/gimp-2.2.10-splash-contest+ixyx_v0.2b.xcf.bz2">XCF
-  file</a> unveiling the making of this fabulous splash screen.
-  </p>
-
-  <h3>Submissions</h3>
-  <p>
-    You can view all the submissions at the
-    <a href="/contest/gallery.cgi">contest gallery page</a>.
-  </p>
-
-  <h3>Good luck!</h3>
+<p>For GIMP's tenth anniversary, we held a contest to select a splash
+screen for the 2.2.10 release of stable GIMP.  The results can be
+found on the <a href="/about/splash/contest/">splash contest
+page</a>.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -7,7 +7,7 @@
 
 <h2>Introduction</h2>
 <p>
-  The GIMP comes with a so called batch mode that allows you to do
+  GIMP comes with a so-called batch mode that allows you to do
   image processing from the command line. It also makes it easy to
   apply the same set of operations to a number of images. We have got
   a lot of questions on the mailing-lists on how to use the batch mode
@@ -80,7 +80,7 @@ Options:
 </pre>
 
 <p>
-  There is a catch here: Some plugins or script-fu scripts create new
+  There is a catch here: Some plugins or Script-Fu scripts create new
   layers and then flatten the image again. This changes the drawable ID.
   If this is the case insert the following line to get the current drawable
   ID just before saving the image:

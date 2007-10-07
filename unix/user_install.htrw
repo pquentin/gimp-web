@@ -4,12 +4,16 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Tips and Tricks for user_install</h1>
+
+<!-- FIXME: thumbnails of the screenshots should be appear inline -->
+<!-- FIXME: the first thumbnail should be right here -->
+
 <p>
-    This is the dialog you see when you open The GIMP for the first time.  
+    This is the dialog you see when you open GIMP for the first time.  
 </p>
 <p>
     There is probably no problem to just agree to all of the defaults. However,
-    The GIMP installation can use some tweaking here and there to make it appear
+    the GIMP installation can use some tweaking here and there to make it appear
     and behave perfectly for you.  Some of these options are set during this 
     dialog.  
 </p>
@@ -20,7 +24,7 @@
     (<a href="ui-welcome.png">screenshot</a>)
 </p>
 <p>
-    Also, note the "Continue" button.  The GIMP does not even ask that you agree to
+    Also, note the "Continue" button.  GIMP does not even ask that you agree to
     it, merely to continue.  Feel free to press the continue button.
     (<a href="ui-welcome.png">screenshot</a>)
 </p>
@@ -30,21 +34,22 @@
 </p>
 <h2>User Installation Log</h2>
 <p>
-    This window shows you the files that The GIMP will make.  It will have some
+    This window shows you the files that GIMP will make.  It will have some
     complaints if you told it to install some place that it didn't have permission
-    to be.  There is a scroll bar to see all the things The GIMP has for you.  
+    to be.  There is a scroll bar to see all the things GIMP has for you.  
     (<a href="ui-log.png">screenshot</a>).
 </p>
 <h2>GIMP Performance Tuning</h2>
 <p>
     Setting your memory usage is not an easy thing.  So much depends on what your needs
-    are for the gimp and what hardware you have to work with.  You have two options
+    are for GIMP and what hardware you have to work with.  You have two options
     at this point.  Go with the default value the developers have set here, or determine
     the best value.  A brief <a href="wgo:unix-howtos-tile_cache">tile-cache</a> explanation.
-    might help you determine this value.  
+    might help you determine this value.  Most users will want to set this value
+    to about 80% of the memory available on their systems. 
     The <a href="wgo:unix-howtos-tile_cache">tile-cache</a> information might also be helpful 
     to you if you are encountering memory problems when using the gimp.
-(<a href="ui-performance.png">screenshot</a>)
+    (<a href="ui-performance.png">screenshot</a>)
 </p>
 <p>
     /tmp might be a good place for the swap.

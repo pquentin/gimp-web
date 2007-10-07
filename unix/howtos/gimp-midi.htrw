@@ -7,18 +7,18 @@
 
 <h2>What?</h2>
 <p>
-   GIMP 2.2 comes with a module that allows to control it using MIDI
-   devices.  Currently this is only supported on Linux with either the
-   OSS or the ALSA sound drivers. It might work on other platforms as
-   well if there is a way to access the raw MIDI stream by opening a
-   device.
+   Since version 2.2, GIMP comes with a module that allows to control
+   it using MIDI devices.  Currently this is only supported on Linux
+   with either the OSS or the ALSA sound drivers. It might work on
+   other platforms as well if there is a way to access the raw MIDI
+   stream by opening a device.
 </p>
 
 <h2>Enabling the MIDI Module</h2>
 
 <p>
-   To make the UI of Gimp's MIDI controller visible you need to edit a
-   configuration file when the Gimp is not running. Open
+   To make the UI of GIMP's MIDI controller visible you need to edit a
+   configuration file when GIMP is not running. Open
    <tt>~/.gimp-2.2/controllerrc</tt> in an editor and add the following
    lines to the end of the file:
 </p>
@@ -34,7 +34,7 @@
 </pre>
 
 <p>
-   Then start the GIMP from a shell (so that you can see textual output we
+   Then start GIMP from a shell (so that you can see textual output we
    need later), open the preferences, go to the "Input Controllers" page in
    the "Input Devices" section and select the newly appeared "MIDI" Tab.
 </p>
@@ -43,11 +43,11 @@
 
 <h3>ALSA:</h3>
 <p>
-   Enter "alsa" in the "Device" entry in the configuration. Gimp then
+   Enter "alsa" in the "Device" entry in the configuration. GIMP then
    sets up an Alsa-Output-Port (check with "<tt>aconnect -lo</tt>"). You
    can then use your preferred tool to configure Alsa to connect a MIDI
-   source to the GIMP. When your MIDI device e.g. provides an Input-Port
-   72:0 and Gimp provides the Output-Port 128:0 you can connect the two
+   source to GIMP. When your MIDI device e.g. provides an Input-Port
+   72:0 and GIMP provides the Output-Port 128:0 you can connect the two
    Ports with "<tt>aconnect 72:0 128:0</tt>".
 </p>
 
@@ -62,7 +62,7 @@
 
 <p>
    Each MIDI source sends events on a specific "Channel" (0 to 15,
-   sometimes also referred as 1 to 16). You can configure if Gimp should
+   sometimes also referred as 1 to 16). You can configure if GIMP should
    listen to all channels (-1) or to just a specific channel.
 </p>
 
@@ -77,9 +77,9 @@
 <h2>Assigning Actions to Events</h2>
 
 <p>
-   You can now use this information to map MIDI Events to Actions in the
-   Gimp. At the bottom of the configuration page is a list with all events
-   that Gimp can recognize. Scroll to the event that you want to assign an
+   You can now use this information to map MIDI Events to Actions in
+   GIMP. At the bottom of the configuration page is a list with all events
+   that GIMP can recognize. Scroll to the event that you want to assign an
    action to and doubleclick its entry. Then select an Action from the
    dialog that pops up and doubleclick its entry. Now this action gets
    invoked when the specific MIDI event happens.

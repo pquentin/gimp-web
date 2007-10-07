@@ -2,6 +2,7 @@
 <title>GIMP - Gaussian Blur Overlays</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Gaussian Blur Overlays</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
@@ -13,14 +14,14 @@
   <img src="after.jpg" alt="" />
 </p>
 <p>
-  In this tutorial I'll show you how to do gaussian blur overlays using The GIMP. This is an interesting technique that intensifies 
+  In this tutorial I'll show you how to do gaussian blur overlays using GIMP. This is an interesting technique that intensifies 
   and saturates the colors in the image, increases contrast, and adds a slightly hazy, "dreamy" feel to the image.
 </p>
 <p>
   The basic technique is to create a duplicate layer in the image, lighten it and blur it, and combine it using a layer mode with the original.
 </p>
 <p>
-  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a Photoshop tutorial on the 
+  Giving credit where credit is due: I did not come up with this method. I adapted it for GIMP from a Photoshop tutorial on the 
   <a href="http://www.luminous-landscape.com/">luminous-landscape.com web site</a> (great photography web site BTW; I recommend it).
 </p>
 
@@ -29,7 +30,7 @@
   <img src="image-original.jpg" alt="" />
 </p>
 <p>
-  Here is the original example image, loaded into The GIMP.
+  Here is the original example image, loaded into GIMP.
 </p>
 
 <h2>Step 1</h2>

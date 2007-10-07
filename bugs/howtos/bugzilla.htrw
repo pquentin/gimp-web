@@ -103,7 +103,7 @@
   <ol>
      <li>
         <p>
-           Select the &quot;version&quot; that corresponds with the GIMP in which you 
+           Select the &quot;version&quot; that corresponds with the version of GIMP in which you 
            found the bug. It is the information you got with <kbd>gimp --version</kbd>. 
         </p>
      </li>

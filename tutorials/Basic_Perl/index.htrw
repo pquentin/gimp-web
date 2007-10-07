@@ -4,19 +4,23 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Basic Perl</h1>
 <p>
-  Text and images Copyright (C) 2002 <a href="mail:People-Grobgeld_Dov">Dov Grobgeld</a> and may not be used without permission of the author.
+  Text and images Copyright (C) 1999-2002 <a href="mail:People-Grobgeld_Dov">Dov Grobgeld</a> and may not be used without permission of the author.
 </p>
+
+<p><em>Editor's note: this tutorial was originally written for GIMP
+1.2.  Parts of it will not work with GIMP 2.x and later versions due
+to changes in font handling and PDB API.</em></p>
 
 <h2>Intention</h2>
 <p>
   One of the wonderful features of GIMP is that it all its functionality may be accessed through scripting. 
-  So far most of the script programming for Gimp has been done through Scheme through Script-Fu. 
-  Unfortunately the Scheme environment Gimp provides is very primitive, e.g. without any reasonable error handling. 
-  Furthermore, must users are not familiar with scheme as a language. Some users may therefore prefer to write scripts for the Gimp in Perl.
+  So far most of the script programming for GIMP has been done through Scheme through Script-Fu. 
+  Unfortunately the Scheme environment GIMP provides is very primitive, e.g. without any reasonable error handling. 
+  Furthermore, must users are not familiar with scheme as a language. Some users may therefore prefer to write scripts for GIMP in Perl.
 </p>
 <p>
   Perl as a language is probably more familiar to the web-literate users, as it is the major language for writing CGI scripts. 
-  Now, Gimp scripts may also be written with Perl. This tutorial will describe how to write such plug-ins and scripts for Gimp.
+  Now, GIMP scripts may also be written with Perl. This tutorial will describe how to write such plug-ins and scripts for GIMP.
   <br />
   As there are several excellent tutorial texts describing the perl language, this tutorial will assume at working knowledge of Perl, 
   and will instead concentrate on the use GIMP together with the of the perl modules Gimp and Gimp::Fu, 
@@ -28,7 +32,7 @@
   The Perl::Gimp tutorial scripts have been tested with the following versions:
 </p>
 <ol>
-  <li>Gimp version 1.2 or later, with all its prerequisites.</li>
+  <li>GIMP version 1.2 or later, with all its prerequisites.</li>
   <li>Perl version 5.005 or later.</li>
   <li>The perl module Gtk, version 0.7003</li>
   <li>The Gimp module, version 1.201 or later</li>
@@ -50,25 +54,25 @@
   #!/usr/local/bin/perl 
   use Gimp ":auto"; 
   use Gimp::Fu;
-  # Register extension to gimp
+  # Register extension to GIMP
   register ... ;
-  exit main();  # Handle over control to gimp 
+  exit main();  # Handle over control to GIMP 
 </pre>
 <p>
   The interesting items to note in the script is the use of the two modules Gimp and Gimp::Fu, 
   the register function, which will be described in detail below, and the way the control is handed over to Gimp module on line 9. 
-  The use of the ":auto" statement makes perl automatically include all of the gimp PDB functions and constants into the perl name space.
+  The use of the ":auto" statement makes perl automatically include all of the GIMP PDB functions and constants into the perl name space.
 </p>
 
 <h2>3. The GIMP PDB</h2>
 <p>
   Before going into the details of the Perl-Fu script, we will describe how to access the various the functionality of GIMP. 
   All functions known to GIMP are available through the procedural database (PDB). All the PDB functions may be called from perl, as will be seen below. 
-  These PDB functions are either internal to gimp, or have been made available through a plug-in or a script extension, but as far as the caller is concerned there is no difference. 
+  These PDB functions are either internal to GIMP, or have been made available through a plug-in or a script extension, but as far as the caller is concerned there is no difference. 
   As we will see below, when a perl function is registered through the register function, it will appear in the PDB as well.
 </p>
 <p>
-  Gimp/perl comes with a PDB browser available in <span class="filter">Xtns -&gt; PDB Explorer</span>. 
+  GIMP/perl comes with a PDB browser available in <span class="filter">Xtns -&gt; PDB Explorer</span>. 
   (There is another PDB browser available in <span class="filter">Xtns -&gt; DB Browser</span> but the PDB Explorer is more suited for Perl users.) 
   This browser provides a way of seeing all the functions in the PDB, as well as their input and output parameters. 
   E.g. the PDB Explorer entry for gimp_image_new, which will be used in the example below looks like this:
@@ -107,7 +111,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
                       "-*-utopia-*-r-*-*-72-*-*-*-*-*-*-*",
                       [0,0,0],[1,1,1]);</pre>
 <p>
-  Unfortunately, as of the writing, calling Script Fu from perl has proved a to make both ScriptFu and gimp very unstable and caused both of them to crash. 
+  Unfortunately, as of the writing, calling Script Fu from perl has proved a to make both ScriptFu and GIMP very unstable and caused both of them to crash. 
   If any of the readers is able to describe what is needed to get it to run successfully, I will happily include this in a future version of this tutorial.
 </p>
 <p>
@@ -120,7 +124,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
   Gimp-Fu is perl's answer to Script-Fu. It provides a simplified method for accepting parameters for a script through a Gtk interface, 
   just like script-fu, but as we shall see below, it has some additional bells and whistles.
    <br /><br />
-  The main function for a Gimp-Fu script is the register function. This function declares the interface of the script to gimp. 
+  The main function for a Gimp-Fu script is the register function. This function declares the interface of the script to GIMP. 
   The register function takes the following 10 parameters, that must all be provided:
 </p>
 <ol>
@@ -365,11 +369,11 @@ They can be added to an image using the 'gimp_image_add_layer' command
   <b>chmod +x $HOME/.gimp-1.2/plug-ins/uni</b>
   <br />
   <br />
-  Then start gimp. It is generally a good idea to test the syntax of the script with perl -c before starting gimp. 
+  Then start GIMP. It is generally a good idea to test the syntax of the script with perl -c before starting GIMP. 
   (A more official way to add scripts is to use the gimptool --install-bin command).
 </p>
 <p>
-  <b>Note:</b> Due to a bug in gimp (verified for version 1.2) it is not possible to add scripts once gimp is running. 
+  <b>Note:</b> Due to a bug in GIMP (verified for version 1.2) it is not possible to add scripts once GIMP is running. 
   On the other hand, it is possible to change a script which has already been registered, as long as the parameters don't change.
 </p>
 <p class="images">
@@ -487,7 +491,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
   <li>The use of the PDB functions gimp_undo_push_group_start  and gimp_undo_push_group_end. These functions declare an undo group. 
   When an undo is done on the image, instead of having the individual operators undo, all the actions between the undo start and the 
   undo group calls will be undone at once.</li>
-  <li>The return type of the register function defines what new images should be displayed by gimp. 
+  <li>The return type of the register function defines what new images should be displayed by GIMP. 
   In this case we don't want to display any new images and therefore return an empty array.</li>
 </ul>
 
@@ -517,7 +521,7 @@ register
         gimp_selection_none($img);
         gimp_displays_flush();
         gimp_undo_push_group_end($img);
-   # Tell gimp not to display a new image
+   # Tell GIMP not to display a new image
    return ();
      };
 exit main();
@@ -638,7 +642,7 @@ register "hello_world1", "basic text", "basic text", "Dov", "Dov",
      [PF_STRING, "text", "text", "Hello world!"]
     ],
     \&amp;text1;
-# Handle over control to gimp
+# Handle over control to GIMP
 exit main();
 </pre>
 <p class="images">
@@ -713,7 +717,7 @@ register "basic_logo", "basic logo", "basic logo",
      [PF_COLOR,  "fg_color", "Background color", [255,255,0]],
     ],
     \&amp;basic_logo;
-# Handle over control to gimp
+# Handle over control to GIMP
 exit main();
 </pre>
 
@@ -792,7 +796,7 @@ register "horiz_cat", "Horizontal concat", "Horizontal Concat",
      [PF_DRAWABLE,   "drawable",     "Drawable to concatinate",   undef],
     ],
     \&amp;horiz_cat;
-# Handle over control to gimp
+# Handle over control to GIMP
 exit main();
 </pre>
 
@@ -800,13 +804,13 @@ exit main();
 <p>
   So far the scripts have all been started from the menu structure within menu. 
   But there is another possibility and that is to run the scripts from the command line, 
-  as a normal perl program. When run this way the script tries to connect to the Perl-Server, and if it fails it will launch gimp on its own. 
-  If you plan to run several scripts this way, it is obviously much faster to run the Perl-Server since launching gimp takes quite a bit of time. 
+  as a normal perl program. When run this way the script tries to connect to the Perl-Server, and if it fails it will launch GIMP on its own. 
+  If you plan to run several scripts this way, it is obviously much faster to run the Perl-Server since launching GIMP takes quite a bit of time. 
   The perl-server may be started from the Xtns menu.
 </p>
 <p>
   When a perl-fu script is run from the command line, the result is the same as when it is run through the menus, 
-  except of the fact that it may be run with the --output parameter in case it will save the result to a file instead of displaying it within gimp. 
+  except of the fact that it may be run with the --output parameter in case it will save the result to a file instead of displaying it within GIMP. 
   This is great for batch creation of logos, etc.
 </p>
 <p>
@@ -825,11 +829,11 @@ exit main();
 <pre>uni -o /tmp/uni.ppm -size 100 -color "#5050ff"</pre>
 <pre>basic-logo -font '-*-utopia-*-r-*-*-100-*-*-*-*-*-*-*' -o /tmp/bl.ppm -text "Perl rules"</pre>
 <p>
-  <b>Note:</b> that due to a bug in my version of Gimp/Perl I was not able to output images in any format but in ppm and gif. Your milage may vary. 
+  <b>Note:</b> that due to a bug in my version of GIMP/Perl I was not able to output images in any format but in ppm and gif. Your milage may vary. 
   Another importent use of this interface is that it enables running the perl debugger on the perl-fu scripts.
 </p>
 <p>
-  <b>Note:</b>The image is saved to the directory where gimp was started from 
+  <b>Note:</b>The image is saved to the directory where GIMP was started from 
   and not to the directory in which the scripts were invoked, unless a complete path is given!
 </p>
 
@@ -852,7 +856,7 @@ exit main();
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        Tutorial &copy; 2002 <a href="home:People-Grobgeld_Dov">Dov Grobgeld</a>
+        Tutorial &copy; 1999-2002 <a href="home:People-Grobgeld_Dov">Dov Grobgeld</a>
       </span>
       <span id="footerright">
         <a href="mail:People-Grobgeld_Dov">dov@imagic.weizmann.ac.il</a>

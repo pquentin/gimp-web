@@ -3,6 +3,8 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
+<!-- FIXME: see the comment in about/index.htrw -->
+
 <h1>GIMP everywhere</h1>
 
 <h2>GIMP On the Web</h2>

@@ -1,8 +1,9 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
-<title>GIMP - 3-d Floating Logo</title>
+<title>GIMP - 3-D Floating Logo</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
-<h1>3-d Floating Logo</h1>
+
+<h1>3-D Floating Logo</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Boyce_Mel">Mel Boyce</a> and may not be used without permission of the author.
 </p>
@@ -19,7 +20,7 @@
   <img src="logo-00.png" alt="" />
 </p>
 <p>
-  Fire up The GIMP and create a new image. I used a white background at 500px by 200px. I feel this size it adequate as my
+  Fire up GIMP and create a new image. I used a white background at 500px by 200px. I feel this size it adequate as my
   website at the time of writing uses 500px tables.
 </p>
 

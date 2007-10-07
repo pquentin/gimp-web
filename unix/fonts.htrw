@@ -3,30 +3,30 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>Fonts in GIMP 2.0</h1>
+<h1>Fonts in GIMP 2.x</h1>
 
-<p>In GIMP 2.0 font rendering is handled significantly different from
-the way it was done in GIMP 1.0 and 1.2. GIMP no longer uses the X
-server to render the fonts. Instead it uses Pango and the FreeType
-library. Font configuration is handled by a small library called
-Fontconfig. As a result you get much better font rendering with real
-antialiasing, support for bidirectional text and various scripts.
-</p>
+<p>Starting with GIMP version 2.0, font rendering is handled
+significantly different from the way it was done in GIMP 1.0 and
+1.2. GIMP no longer uses the X server to render the fonts. Instead it
+uses Pango and the FreeType library. Font configuration is handled by
+a small library called Fontconfig. As a result you get much better
+font rendering with real antialiasing, support for bidirectional text
+and various scripts.</p>
 
-<p> GIMP 2.0 handles a variety of font formats, most notably TrueType,
+<p>GIMP 2.x handles a variety of font formats, most notably TrueType,
 OpenType and Type1. It should be emphasized that it does not use the X
 server or any X font server, so don't be surprised if GIMP doesn't see
 the fonts you configured in your X11 setup.
 </p>
 
-<h2>Setting up Fonts for GIMP 2.0</h2>
+<h2>Setting up Fonts for GIMP 2.x</h2>
 
 <p>GIMP uses Fontconfig to handle fonts, so setting up fonts for GIMP
-2.0 is merely a job of setting up Fontconfig. But GIMP is not the only
-application that uses Fontconfig. Recent desktops such as GNOME-2.4
-use it as well, so there's a good chance that everything is properly
-setup already and fonts will just work for you. If they don't, you
-will have to create or edit your font configuration file as explained
+2.x is merely a job of setting up Fontconfig. But GIMP is not the only
+application that uses Fontconfig. Desktops such as GNOME (starting with
+version 2.4) use it as well, so there's a good chance that everything is
+properly setup already and fonts will just work for you. If they don't,
+you will have to create or edit your font configuration file as explained
 in the <a
 href="http://pdx.freedesktop.org/fontconfig/fontconfig-user.html">Fontconfig
 User Manual</a>.</p>
@@ -45,10 +45,10 @@ way will be available to all applications using Fontconfig.</p>
 
 <p>You might want to install fonts for use with GIMP only or you might
 not have permissions to install fonts system-wide. To make this
-possible, GIMP 2.0 also looks for fonts in the GIMP specific font
+possible, GIMP 2.x also looks for fonts in the GIMP specific font
 search path that can be configured in your <tt>gimprc</tt> or from the
 <i>Preferences Dialog</i>. So, in order to install fonts to be used
-with GIMP, you can just copy them to <tt>~/.gimp-2.2/fonts</tt>, press
+with GIMP, you can just copy them to <tt>~/.gimp-2.4/fonts</tt>, press
 the <i>Refresh</i> button in the <i>Fonts</i> dialog and start using
 them.</p>
 
@@ -57,15 +57,8 @@ them.</p>
 <p>There have been reports of crashes at startup when GIMP scans your
 font directories. These crashes should go away as soon as you update
 to a newer version of fontconfig (>= 2.2.0). As a quick workaround you
-can start gimp with the <b>--no-fonts</b> command-line option but of
+can start gimp with the <kbd>--no-fonts</kbd> command-line option but of
 course you will not be able to use the text tool then.</p>
-
-<p>Another known problem is that Pango 1.2 cannot load fonts that
-don't provide an Unicode character mapping. A lot of symbol fonts fall
-into this category. On some systems using such a font can cause GIMP
-to crash. Updating to Pango 1.4 will fix this problem and makes symbol
-fonts available in The GIMP.</p>
-
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

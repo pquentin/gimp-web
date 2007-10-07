@@ -13,7 +13,7 @@
   memory resources. This system consists in sending old data to files
   in the disk. The decision point is what Tile Cache determines, the
   limit of operating system resources to use, and is measured in Bytes
-  (or multiples, like MegaBytes). It does not include GIMP own memory,
+  (or multiples, like MegaBytes). It does not include GIMP's own memory,
   just the space required for the image data.
 </p>
 <p>
@@ -70,7 +70,7 @@
   the operating system's swap and the directory used for GIMP's
   swap. You do not need to do disk tests, nor check the RPM of them,
   the thing is to see which one seems clearly faster or slower or all
-  similar. Remember you can change the GIMP's swap directory in
+  similar. Remember you can change GIMP's swap directory in
   &lt;Toolbox&gt; -&gt; File -&gt; Preferences -&gt; Folders -&gt;
   Swap Dir.
 </p>
@@ -109,7 +109,7 @@
   </li>
   <li>
     The disk that holds the swap is faster or same speed than the disk
-    that holds the GIMP swap? If slower, take only free RAM, if faster
+    that holds GIMP's swap? If slower, take only free RAM, if faster
     or similar, use free RAM and swap. This way we avoid a slow disk when
     there is a fast one doing nothing.
   </li>

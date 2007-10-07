@@ -2,6 +2,7 @@
 <title>GIMP - Selective Colorization</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Selective Colorization</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
@@ -23,7 +24,7 @@
   mask and then selectively paint transparency into the upper mask, exposing the color photograph underneath.
 </p>
 <p>
-  Giving credit where credit is due: I did not come up with this method. I adapted it for The GIMP from a reader comment I saw in 
+  Giving credit where credit is due: I did not come up with this method. I adapted it for GIMP from a reader comment I saw in 
   <a href="http://www.photo.net/digital/editing/hand-coloring">a "hand-coloring" tutorial on photo.net</a> (great web site by the way, I recommend it).
 </p>
 
@@ -32,7 +33,7 @@
   <img src="original.jpg" alt=""/>
 </p>
 <p>
-  Here is the original example image, loaded into The GIMP.
+  Here is the original example image, loaded into GIMP.
 </p>
 
 <h2>Step 1</h2>
@@ -121,7 +122,7 @@
   At the very boundaries of the colored image I typically zoom in to 300% or so. Switch to a small, feathered brush and very carefully paint the edges.
 </p>
 <p>
-  If you only paint a little at a time it makes it much easier to use the GIMP's excellent undo feature if you accidentally stray outside the boundary. 
+  If you only paint a little at a time it makes it much easier to use GIMP's excellent undo feature if you accidentally stray outside the boundary. 
   If for some reason you can't undo, don't worry: just switch to white paint and paint opacity back over your mistake to repair the mask.
 </p>
 

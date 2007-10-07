@@ -2,6 +2,7 @@
 <title>GIMP - "Smart" Sharpening</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>"Smart" Sharpening</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
@@ -28,7 +29,7 @@
 </ol>
 <p>
   Giving credit where credit is due: I did not come up with this method. 
-  I adapted it for The GIMP from a Photoshop tutorial on the luminous-landscape.com 
+  I adapted it for GIMP from a Photoshop tutorial on the luminous-landscape.com 
   photography web site (great web site BTW, I recommend it).
 </p>
 <p>
@@ -47,7 +48,7 @@
   <img src="image-original.jpg" alt="" />
 </p>
 <p>
-  Here's the original image loaded into the GIMP. It is noticeably soft, probably due to bad autofocus. It really shows up in prints.
+  Here's the original image loaded into GIMP. It is noticeably soft, probably due to bad autofocus. It really shows up in prints.
 </p>
 <p>
   <b>Note:</b> be sure to do any other editing that you want to on the image first, especially downsampling or upsampling (resizing). 
@@ -82,7 +83,7 @@
   <b>Note 1:</b> if you happen to have an older 
   version of the compose/decompose plug-in it may not have the LAB option. In that case use HSV (hue/saturation/value) instead. 
   For any reference to the "LAB" image or "luminosity" channel below, substitute the "HSV" image/"value" window. 
-  The LAB option was not in my initial version of the GIMP (ver 1.2.1), 
+  The LAB option was not in my initial version of GIMP (ver 1.2.1), 
   but I got the newer version of the plug-in at the 
   <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself. Don't worry if you don't have it; HSV works great too.
 </p>

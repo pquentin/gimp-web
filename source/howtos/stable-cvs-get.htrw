@@ -9,14 +9,14 @@
   Contributers: Branko Collins, Rodney Dawes, Will Lashell, Roger Leigh, Mitch Natterer, Sven Neumann, Rapha&euml;l Quinet, Manish Singh, Carol Spears, Nathan C. Summers, Jeff Trefftz, Lourens Veen, Chris Want, (and Kirstens grandparents). 
 </p>
 <p>
-   This document is intended for people who don't know very much about CVS served software. It assumes experience compiling The GIMP from a tarball (how to in 2 weeks!). The author was afraid of CVS when first starting but now loves it and is even going to proofread GIMP source and make her own commits! 
+   This document is intended for people who don't know very much about CVS served software. It assumes experience compiling GIMP from a tarball (how to in 2 weeks!). The author was afraid of CVS when first starting but now loves it and is even going to proofread GIMP source and make her own commits! 
 </p>
 <p>
-   CVS may seem like a dreadfully frightening way to get GIMP, but it is really a lot easier than it seems. In fact, if you want to stay up to date with The GIMP, CVS is the fastest and easiest way to do it. The following describes the basic procedure for setting up GIMP from CVS  on your GNU/Linux machine. 
+   CVS may seem like a dreadfully frightening way to get GIMP, but it is really a lot easier than it seems. In fact, if you want to stay up to date with GIMP, CVS is the fastest and easiest way to do it. The following describes the basic procedure for setting up GIMP from CVS  on your GNU/Linux machine. 
 </p>
 <p>
-   The first step is to download and compile
-   <a href="http:Package-GIMP-stable">The GIMP tarball</a>. 
+   The first step is to download and compile the
+   <a href="http:Package-GIMP-stable">GIMP tarball</a>. 
    This will help to clean any distribution problems up and give you experience with modern gimp compiling. This will also ensure that all libraries needed for building the plug-ins are correctly installed on your system (e.g., TIFF, PNG, JPEG, MPEG, perl, Gtk-Perl, etc.) 
 </p>
 <p>
@@ -38,7 +38,7 @@
    <dl>
       <dt>cvs -z3</dt>
       <dd>
-         z tells cvs to compress the communication between you and the server. The compression level is 1 to 9 with 9 being the highest. The the maintainers of the GIMP CVS server ask not to use above 3, because the compression gain is minimal but it dramatically increases the processor load on the server. The communication beteween the server and you is compressed. The files are not compressed on your machine unless you are one of those people who consider patching a form of compression.
+         z tells cvs to compress the communication between you and the server. The compression level is 1 to 9 with 9 being the highest. The maintainers of the GIMP CVS server ask not to use above 3, because the compression gain is minimal but it dramatically increases the processor load on the server. The communication beteween the server and you is compressed. The files are not compressed on your machine unless you are one of those people who consider patching a form of compression.
       </dd>
       <dt>update -Pd</dt>
       <dd>

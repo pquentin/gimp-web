@@ -2,6 +2,7 @@
 <title>GIMP - Converting Color Images to B&amp;W</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Converting Color Images to B&amp;W</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Jeschke_Eric_R">Eric R. Jeschke</a> and may not be used without permission of the author.
@@ -32,7 +33,7 @@
   <img src="image-original-481x397.jpg" alt="" />
 </p>
 <p>
-  Here is an example image, loaded into The GIMP. I thought it might look nice as a black and white image.
+  Here is an example image, loaded into GIMP. I thought it might look nice as a black and white image.
 </p>
 
 <h2><a name="grayscale">Via Grayscale</a></h2>
@@ -46,13 +47,13 @@
 <p>
   Duplicate the original image (<kbd>Ctrl+D</kbd>) and right-click on the copy. 
   Select <span class="filter">&lt;Image&gt; Image -&gt; Mode -&gt; Grayscale</span>. 
-  I don't know how this conversion works in the GIMP, but I have read that Photoshop uses a standard mix of the RGB channels for 
+  I don't know how this conversion works in GIMP, but I have read that Photoshop uses a standard mix of the RGB channels for 
   their grayscale conversion: RED=30%, GREEN=59% and BLUE=11%. Supposedly this mix accounts for the eye's sensitivity to different colors. 
   This formula does a pretty nice job in the general case, but some images do not work as well with it, 
   particularly if the green channel component is not strong.
 </p>
 <p>
-  I suspect the GIMP uses a similar formula. My experiments with the Channel Mixer (more on this below) support this.
+  I suspect GIMP uses a similar formula. My experiments with the Channel Mixer (more on this below) support this.
 </p>
 
 <h2><a name="desaturate">Via Desaturate</a></h2>
@@ -133,7 +134,7 @@
   Not often useful by itself, but it can be combined with other layers for interesting results (see Tips at end of article).
 </p>
 <p>
-  <b>Note:</b> the LAB decompose option was not distributed with the version of the GIMP I got (ver 1.2.3). 
+  <b>Note:</b> the LAB decompose option was not distributed with the version of GIMP I got (ver 1.2.3). 
   I don't know whether it comes bundled with newer versions. 
   I downloaded it from the <a href="http://registry.gimp.org/">GIMP Plug-in Registry</a> and compiled it myself.
 </p>
@@ -182,7 +183,7 @@
   good the grayscale version in terms of noise, but the noise isn't too bad, and the trade-off is a lot more contrast and interest in the overall tonalities of the image.
 </p>
 <p>
-  <b>Note:</b> the channel mixer plug-in was not distributed with the version of the GIMP I got (ver 1.2.3). 
+  <b>Note:</b> the channel mixer plug-in was not distributed with the version of GIMP I got (ver 1.2.3). 
   I don't know whether it comes bundled with newer versions. 
   I downloaded it from <a href="http://registry.gimp.org/plugin?id=1918">the GIMP Plug-in Registry</a> and compiled it myself.
 </p>

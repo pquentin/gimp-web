@@ -31,7 +31,7 @@ instead of paragraphs:
 
 <h2>Inserting images</h2>
 <p class="images">
-  <img src="images/thegimp.png" alt="The GIMP"/>
+  <img src="images/thegimp.png" alt="GIMP" />
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

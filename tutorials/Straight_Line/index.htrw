@@ -2,6 +2,7 @@
 <title>GIMP - Straight Line Tutorial</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Straight Line Tutorial</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Burgess_Seth">Seth Burgess</a> and may not be used without permission of the author.
@@ -12,7 +13,7 @@
   <img src="straight_line_example.png" alt="" />
 </p>
 <p>
-  This tutorial shows you how you can do straight lines with the gimp, using a feature called the Shift Key.
+  This tutorial shows you how you can do straight lines with GIMP, using a feature called the Shift Key.
   Straight lines are a convenient way to make things that aren't so terribly affected by the imprecision of 
   a mouse or tablet, and to take advantage of the power of a computer to make things look neat and orderly.
   This tutorial doesn't use Straight Lines for complex tasks; its intended to show how you can use it to create quick and easy line effects.
@@ -64,7 +65,7 @@
 </p>
 <p>
   After you have a starting point, and have held down the Shift Key, you'll see a line like above if you're running 
-  Gimp version 1.2.x or later. This feature was not present in Gimp version 1.0.4. However, the next step works the same way.
+  GIMP version 1.2.x or later. This feature was not present in GIMP version 1.0.4. However, the next step works the same way.
   <br />
   Press the first button on the Mouse (the leftmost one usually) and then let it go. During that whole "click" of the 
   Mouse button, you need to keep the Shift Key held down.

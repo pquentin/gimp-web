@@ -7,13 +7,13 @@
 
 <p>From time to time, we get questions about why we are <a
 href="wgo:bugs">using Bugzilla</a> for tracking bug reports related to
-the GIMP or to this web site.  Some users would prefer to send us a
+GIMP or to this web site.  Some users would prefer to send us a
 simple e-mail describing the problem or to fill in a web form without
 having to register and create a Bugzilla account.</p>
 
 <p>Besides the fact that the <a href="home:gimp-bugzilla">same
 instance of Bugzilla</a> is already used for tracking bugs related to
-GTK (the GIMP ToolKit) and GNOME, here are some reasons why we ask bug
+GTK+ (GIMP ToolKit) and GNOME, here are some reasons why we ask bug
 reporters to take the time to create a Bugzilla account:</p>
 
 <h2>Most bug reports need additional information from the reporter</h2>
@@ -71,7 +71,7 @@ the original bug report in order to be notified of any updates.</p>
 
 <p>Note that we have used other bug tracking systems in the past such
 as the Debian bug tracker, which is mostly e-mail based.  But the set
-of features currently provided by Bugzilla is what allows the GIMP
+of features currently provided by Bugzilla is what allows GIMP
 developers to work in the best way.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -2,6 +2,7 @@
 <title>GIMP - Simple Animations</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Simple Animations</h1>
 <p>
   Text and images Copyright (C) 2002
@@ -106,7 +107,7 @@
 <p>
   In the last step, we'll use a very handy function for <i>applying a
   filter to multiple layers</i>.  This function is provided by GAP,
-  the GIMP animation package. Please go to the
+  the GIMP Animation Package. Please go to the
   "<a href="/tutorials/Using_GAP/">Using GAP</a>" tutorial to learn
   more about the tool.
 </p>

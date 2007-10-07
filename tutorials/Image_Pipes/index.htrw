@@ -2,6 +2,7 @@
 <title>GIMP - Image Pipes</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
 <h1>Image Pipes</h1>
 <p>
   Text and images Copyright (C) 2002 <a href="mail:People-Likins_Adrian">Adrian Likins</a> and may not be used without permission of the author.
@@ -9,8 +10,8 @@
 
 <h2>Intention</h2>
 <p>
-  Gimp 1.2 introduced a lot of new features that have been further improved in version 2.0, including the ability to use full color "pixmap brushes". 
-  In addition, you can also combine single frame pixmap brushes into a "image pipe". A Gimp Image Pipe allows you to spray out 
+  GIMP 1.2 introduced a lot of new features that have been further improved in version 2.0, including the ability to use full color "pixmap brushes". 
+  In addition, you can also combine single frame pixmap brushes into a "image pipe". A GIMP Image Pipe allows you to spray out 
   series of full color pixmaps. To make it more flexible, the order the images are painted onto the canvas can depend on direction, angle, speed, or other factors.
 </p>
 <p>
@@ -32,13 +33,13 @@
   obvious what the various "ranks" do. 
 </p>
 <p>
-  Gimp versions older than 2.0 could not reload gih files (the gimp image pipe), so I include the source xcf images here.
+  GIMP versions older than 2.0 could not reload gih files (GIMP image pipes), so I include the source xcf images here.
   The <a href="example1.xcf.gz">example image</a>.
 </p>
 <p>
   To start creating a image pipe, you will need to save the file in the ".gih" extension. 
   To use the brush immediately, 
-  you probabaly want to save it in the brushes/ subdir of your gimp directory (probabaly ~/.gimp-2.0).
+  you probabaly want to save it in the brushes/ subdir of your GIMP directory (probabaly ~/.gimp-2.4).
   To save the image you will be presented with a save dialog for the GIH plugin. (Image above)
 </p>
 <p class="images">
@@ -164,19 +165,19 @@
 
 <h2>Example 5</h2>
 <p>
-  Converting a PSP image tube to a gimp Image Pipe 
+  Converting a PSP image tube to a GIMP Image Pipe 
 </p>
 <p class="images">
   <img src="example5_ss.png" alt=""/>
 </p>
 <p>
   There are lots of "Image Tubes" created with and for Paint Shop Pro available on the internet. 
-  Gimp can load these files and save them as gimp image pipes.
+  GIMP can load these files and save them as GIMP image pipes.
 </p>
 <p>
   Unfortunately, unless you really like pictures of teddy bears, puppy dogs, 
   and unicorns, finding good PSP Tubes isnt so easy. 
-  There is a .tub loader plugin in gimp that you can use to load .tub files you find on the net. 
+  There is a .tub loader plugin in GIMP that you can use to load .tub files you find on the net. 
   Then you can turn around and save these files as a .gih file.
 </p>
 <p>

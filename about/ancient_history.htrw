@@ -5,13 +5,15 @@
 
 <h1>A Brief History of GIMP </h1>
 
-<blockquote><p><em class="caution">NOTE:</em> This history has actually become a historical document
-all on its own. Some of the dates are not accurate (due to internet technology
-limitation (google hadn't indexed usenet yet). Yet still a good document with
-many of the details perfectly intact. (editor comment)</p></blockquote>
+<blockquote><p><em class="caution">Editor's note:</em> This history
+was written around the release of GIMP 1.0 in 1998 and has actually
+become a historical document all on its own. Some of the dates are not
+accurate (due to internet technology limitation (Google hadn't indexed
+Usenet yet). Yet still a good document with many of the details
+perfectly intact.</p></blockquote>
 
 <p>
-With all the talk and theorizing going on about free software development 
+With all the talk and theorizing going on about Free Software development 
 models, I thought that it might be a good idea to actually give an example.  
 I've tried to keep it as accurate as possible, and hope my experiences
 working on this team can benefit other projects as well.  
@@ -23,10 +25,10 @@ experience. This history would not have been possible without, specifically,
 the help of josh, Raph, Adrian, Xach, yosh, and more generally all of the
 guys on #gimp. This is NOT inclusive - there are many sites and people that 
 continue to contribute to the success of GIMP that are not listed here.
-I suggest visiting <A HREF="http://www.gimp.org">http://www.gimp.org</A> for a more complete listing of gimp links.
+I suggest visiting <a href="http://www.gimp.org/">http://www.gimp.org/</a> for a more complete listing of gimp links.
 </p>
 <p>
--- <A HREF="mailto:sjburges@ou.edu">Seth Burgess</A>
+-- <a href="mailto:sjburges@ou.edu">Seth Burgess</a>
 </p>
 <h3>In the beginning:</h3>
 
@@ -44,8 +46,8 @@ awhile before letting it anyone else have a crack at it - probably about
 had a functional product.
 </p>
 <p>
-The GIMP had a lot of neat stuff attached to its first public release, 
-version 0.54, (January 1996). It had a plug-in system, so developers 
+GIMP had a lot of neat stuff attached to its first public release, 
+version 0.54 (January 1996). It had a plug-in system, so developers 
 could make separate programs to add to GIMP without breaking anything
 in the main distribution. It had some basic tools to do drawing,
 and channel operations. It had an undo feature the likes of which was
@@ -53,7 +55,7 @@ not found in any known image manipulation program.  It had loyal users
 swearing by it. It was protected by the GPL. And it had a cool name.
 </p>
 <p>
-But all was not well with the GIMP. It had rather frequent crashes, that
+But all was not well with GIMP. It had rather frequent crashes, that
 could be caused by plug-ins or problems in the main code. It had a 
 dependency on Motif for its GUI toolkit, which made efficient distribution
 to a lot of users impossible. This restriction also alienated a lot of 
@@ -94,7 +96,7 @@ this program from many others is that a lot of sites sprung up on how to
 use the program.
 </p>
 <p>
-GIMP users, such as Zach Beane(Xach), started making tutorials for GIMP. Zach's
+GIMP users, such as Zach Beane (Xach), started making tutorials for GIMP. Zach's
 page, for awhile, featured a new date created with gimp per day. Others 
 followed suite, showing off artwork done and sharing techniques. It was
 clear that if you wanted to make something with GIMP, there were sites
@@ -108,10 +110,10 @@ showcased his own plug-ins.
 </p>
 <p>
 Larry Ewing got GIMP some early publicity by creating his now famous
-Linux Penguin, (some call him Tux), in GIMP 0.54. He put a 
+Linux Penguin (some call him Tux), in GIMP 0.54. He put a 
 <a href="http://www.isc.tamu.edu/~lewing/gimp">web page</a> up showing some of
 the steps he took to do it. This was probably the first huge exposure 
-the GIMP received. 
+GIMP received. 
 </p>
 
 <h3>A New Toolkit - The 0.60 Series:</h3>
@@ -193,7 +195,7 @@ which are already largely coded, have been kept out to move towards a
 stable release.
 </p>
 <p>
-Quartic kept the GIMP going, until he was pulled away on other (related) 
+Quartic kept GIMP going, until he was pulled away on other (related) 
 projects. However, no serious gap happened between Quartic's tenure and what came to replace it.
 </p>
 
@@ -224,7 +226,7 @@ Thats what the bazaar model would indicate. However, as with any model,
 there are situations that just aren't covered...
 </p>
 <p>
-In the new system, there are designated team members; Mainsh Singh (yosh), 
+In the new system, there are designated team members; Manish Singh (yosh), 
 for example, was in charge of making releases. Adrian Likins,
 maintaining data. Larry Ewing (lewing), Matthew Wilson (msw), and a host
 of others made bug fixes, and did other messier stuff. There's also
@@ -239,7 +241,7 @@ on #gimp, through this team effort.
 <h3>Differentiation:</h3>
 <p>
 In the past year or so, several very specific sites have sprung up
-that are meant to cater to a particular crowd of the gimp user and
+that are meant to cater to a particular crowd of the GIMP user and
 developer base.  
 </p>
 <p>
@@ -366,7 +368,7 @@ things to get you going with gimp, from the source to to tips and tricks.
 
 <h3>Publicity:</h3>
 <p>
-Michael J. Hammel wrote a four part series on the GIMP for inclusion in
+Michael J. Hammel wrote a four part series on GIMP for inclusion in
 <a href="http://www.linuxjournal.com/">Linux Journal</a> (October 1997 -
 January 1998). It went through some basics, but in reality barely
 skimmed the surface. But still, this well written and accurate set
@@ -392,13 +394,14 @@ Wilber. Wilber is cool. Wilber's eyes move, and thats kinda disturbing
 to some people, but I like him. Wilber is a GIMP. Created on Sept. 25,
 1997 by Tuomas Kuosmanen, Wilber has taken on a life of its own. For example,
 Wilber is pictured doing all sorts of stuff at the top left hand corner of
-the page at www.gimp.org. Wilber has become a recognized icon associated
-with GIMP, and may be seen at <a href="http://slashdot.org">slashdot</a>
-whenever GIMP is mentioned. He appears on the help screen when starting
-GIMP for the first time, offering useful advice. Now that GIMP is
-becoming more ready to be seen by the general public, Wilber is helping
-get GIMP out to the masses much like (the penguin some call) Tux is for 
-Linux.
+the page at www.gimp.org (<em>edit: the old web site now lives at <a
+href="http://classic.gimp.org/">classic.gimp.org</a></em>). Wilber has become
+a recognized icon associated with GIMP, and may be seen at <a
+href="http://slashdot.org">slashdot</a> whenever GIMP is mentioned. He
+appears on the help screen when starting GIMP for the first time, offering
+useful advice. Now that GIMP is becoming more ready to be seen by the
+general public, Wilber is helping get GIMP out to the masses much like
+(the penguin some call) Tux is for Linux.
 </p>
 
 <h3>And It Goes On:</h3>

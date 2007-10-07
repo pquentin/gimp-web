@@ -102,7 +102,7 @@ href="INSTALL">INSTALL</a> file from the main GIMP distribution.</p>
 
 <p>Starting with version 1.2.4, the print plug-in depends on
 libgimpprint, which is now distributed as a separate package.  The
-previous versions of the GIMP (up to 1.2.3) included all files as part
+previous versions of GIMP (up to 1.2.3) included all files as part
 of the GIMP distribution, but you should now download and install
 libgimpprint 4.2.6 separately from the Gimp-Print site:</p>
 

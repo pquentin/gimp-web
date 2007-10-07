@@ -3,6 +3,9 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
+<!-- FIXME: this page is linked from /contest/index.htrw and
+     /programmatic/contest/index.htrw.  Why do we have duplicate pages? -->
+
 <h1>GIMP Splash Contest (Closed)</h1>
 
 <p>This page used to contain a contest for GIMP splash screens.  We
@@ -15,23 +18,32 @@ are now closed and we currently have no plans for other contests.</p>
 to the limitation of the contest system):</p>
 
 <ul>
-  <li>"work in progress..." by Bill Luhtala has been choosen as the
+  <li>"Work in progress..." by <i>Bill Luhtala</i> has been choosen as the
     splash image for GIMP 2.2.</li>
-  <li>"Wilber painting Wilma" by Philip Lafleur has been used for the
+  <li>"Wilber painting Wilma" by <i>Philip Lafleur</i> has been used for the
     About dialog in GIMP 2.2.</li>
-  <li>"Digital Watercolors" by Morgan Quirk: Great concept.</li>
-  <li>"Grassy" by D. Brian Gosnell: Great modesty.</li>
-  <li>"Animals" by John Garcia & Alla Satinova: Great menagerie.</li>
-  <li>"Daisy" by Martin Thorsen Ranang: Great painting.</li>
-  <li>"Sailing" by Daniel Kenzelmann: Great mood.</li>
+  <li>"Digital Watercolors" by <i>Morgan Quirk</i>: Great concept.</li>
+  <li>"Grassy" by <i>D. Brian Gosnell</i>: Great modesty.</li>
+  <li>"Animals" by <i>John Garcia</i> &amp; <i>Alla Satinova</i>: Great menagerie.</li>
+  <li>"Daisy" by <i>Martin Thorsen Ranang</i>: Great painting.</li>
+  <li>"Sailing" by <i>Daniel Kenzelmann</i>: Great mood.</li>
 </ul>
 
 <p>The contest for the 10 years anniversary was won by:</p>
 
 <ul>
-  <li>"dialed in" by ix has been choosen as the splash image for
-     GIMP 2.2.10.</li>
+  <li>"<a href="http://sven.gimp.org/gimp-2.2.10-splash-contest+ixyx_v0.2b.png">Dialed In</a>"
+     by <i>ix</i> has been choosen as the splash image for GIMP
+     2.2.10.  The winning entry wasn't accompanied with a tutorial but
+     the artist has made available the complete <a
+     href="http://sven.gimp.org/gimp-2.2.10-splash-contest+ixyx_v0.2b.xcf.bz2">XCF
+     file</a> unveiling the making of this fabulous splash
+     screen.</li>
 </ul>
+
+<p>Some submissions may still be available from the <a
+href="/contest/gallery.cgi">contest gallery page</a>.  These pages and
+images may disappear at any time, so please do not link to them.</p>
 
 <p>It was fun to watch the enthusiasm and creativity of the
 contestants and we'd like to thank all participants for their

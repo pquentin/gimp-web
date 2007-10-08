@@ -11,8 +11,8 @@
 /admin/.htaccess
 /admin/README.repository
 /admin/README.tutorials
-/about/authorgen.pl
-/about/contributors
+/about/Makefile
+/about/authors.xsl
 /includes/news.inc
 /news.rdf
 /news

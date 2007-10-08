@@ -1,5 +1,19 @@
 2007-10-08  Raphaël Quinet  <raphael@gimp.org>
 
+	* about/Makefile
+	* about/authors.xsl: New way to generate authors.htrw directly
+	from authors.xml in the gimp module, without requiring a
+	duplicate copy in this gimp-web module.  Requires xsltproc.
+
+	* about/authors.htrw: Regenerated.
+
+	* about/contributors
+	* about/authorsgen.pl: Deleted, as they are not used anymore.
+
+	* install.exclude: Updated according to these changes.
+	
+2007-10-08  Raphaël Quinet  <raphael@gimp.org>
+
 	* about/index.htrw
 	* about/everywhere.htrw: Keep only one copy of the list "GIMP
 	everywhere" in its own page instead of duplicating it in /about/.

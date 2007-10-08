@@ -13,9 +13,14 @@
 
   <xsl:output method="text" />
 
-  <xsl:template name="contributor">
+  <xsl:template name="recent-contributor">
     <xsl:param name="role" />
-    <xsl:apply-templates select="dc:contributor[contains(@role, $role)]" />
+    <xsl:apply-templates select="dc:contributor[contains(@role, $role) and number(@last-active) >= 2.4]" />
+  </xsl:template>
+
+  <xsl:template name="former-contributor">
+    <xsl:param name="role" />
+    <xsl:apply-templates select="dc:contributor[contains(@role, $role) and number(@last-active) &lt; 2.4]" />
   </xsl:template>
 
   <xsl:template match="/dc:gimp-authors">
@@ -39,12 +44,12 @@
     <xsl:apply-templates select="dc:creator" />
     <xsl:text>&lt;/ul&gt;
 
-&lt;h2&gt;Developers&lt;/h2&gt;
+&lt;h2&gt;Current developers&lt;/h2&gt;
 &lt;p&gt;Contributing patches, fixes, plugins, extensions, scripts and other
-  &lt;a href="wgo:develop"&gt;improvements to the code&lt;/a&gt;&lt;/p&gt;
+  &lt;a href="wgo:develop"&gt;improvements to the code&lt;/a&gt; for GIMP 2.4.&lt;/p&gt;
 &lt;ul&gt;
 </xsl:text>
-    <xsl:call-template name="contributor">
+    <xsl:call-template name="recent-contributor">
       <xsl:with-param name="role" select="'author'"/>
     </xsl:call-template>
     <xsl:text>&lt;/ul&gt;
@@ -53,7 +58,7 @@
 &lt;p&gt;Contributing icons, cursors, brushes, gradients, patterns, etc.&lt;/p&gt;
 &lt;ul&gt;
 </xsl:text>
-    <xsl:call-template name="contributor">
+    <xsl:call-template name="recent-contributor">
       <xsl:with-param name="role" select="'artist'"/>
     </xsl:call-template>
     <xsl:text>&lt;/ul&gt;
@@ -62,10 +67,18 @@
 &lt;p&gt;Contributing &lt;a href="wgo:docs"&gt;documentation&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 </xsl:text>
-    <xsl:call-template name="contributor">
+    <xsl:call-template name="recent-contributor">
       <xsl:with-param name="role" select="'documenter'"/>
     </xsl:call-template>
   <xsl:text>&lt;/ul&gt;
+
+&lt;h2&gt;Former contributors&lt;/h2&gt;
+&lt;p&gt;People who contributed code, art or documentation to older
+    GIMP releases.&lt;/p&gt;
+&lt;ul&gt;
+</xsl:text>
+    <xsl:call-template name="former-contributor" />
+    <xsl:text>&lt;/ul&gt;
 
 &lt;!--#include virtual="/includes/wgo-page-fini.xhtml" --&gt;
 &lt;!--#include virtual="/includes/wgo-xhtml-fini.xhtml" --&gt;

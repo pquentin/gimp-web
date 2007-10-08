@@ -1,5 +1,12 @@
 2007-10-08  Raphaël Quinet  <raphael@gimp.org>
 
+	* about/authors.xsl: Split the lists according to the
+	'last-active' attribute.
+
+	* about/authors.htrw: Regenerated.
+
+2007-10-08  Raphaël Quinet  <raphael@gimp.org>
+
 	* about/Makefile
 	* about/authors.xsl: New way to generate authors.htrw directly
 	from authors.xml in the gimp module, without requiring a

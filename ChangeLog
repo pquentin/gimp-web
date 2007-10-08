@@ -1,3 +1,11 @@
+2007-10-08  Raphaël Quinet  <raphael@gimp.org>
+
+	* includes/wgo.js: Do not collapse the intropara on mouse click as
+	this breaks the navigation when clicking on a link and then using
+	the back button in the browser.  Thanks to Sven for reporting this
+	bug.  This might be re-enabled later if we add a clear way to
+	expand the intropara again after it has been hidden.
+
 2007-10-07  Raphaël Quinet  <raphael@gimp.org>
 
 	* install.sh

@@ -42,9 +42,6 @@ function easterEgg(key) {
 
 $(document).ready(function() {
 	$("#menu").hide().fadeIn(2000);
-	$("p.intropara").click(function () {
-		$(this).slideUp(2000);
-	});
 	roundCorners();
 	if($.browser.msie) {
 		mangleforIE();

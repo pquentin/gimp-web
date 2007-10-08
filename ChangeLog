@@ -1,5 +1,19 @@
 2007-10-08  Raphaël Quinet  <raphael@gimp.org>
 
+	* about/index.htrw
+	* about/everywhere.htrw: Keep only one copy of the list "GIMP
+	everywhere" in its own page instead of duplicating it in /about/.
+	The page /about/everywhere.html is linked directly from the footer
+	of every page, so it already has enough visibility.
+
+	* release-notes/gimp-2.4.htrw
+	* release-notes/images/2.4-statusbar-tips.png: Added small
+	screenshot of some hints displayed in the status bar.
+
+	* release-notes/index.htrw: One more "the GIMP" gone.
+
+2007-10-08  Raphaël Quinet  <raphael@gimp.org>
+
 	* docs/index.htrw: Added links to the older (2.2) versions of the
 	manual in Chinese, Croatian and Czech.  Fixes bug #484468.
 

@@ -13,15 +13,16 @@
 <ul>
 
   <li><a href="gimp-2.4.html">Release notes for the stable
-  version</a>.  This is the version that most users should be
-  running.
+  version, GIMP 2.4</a>.  This is the version that most users should
+  be running.
   </li>
 
-  <li><a href="gimp-2.3.html">Release notes for the
-  development snapshots</a>.  Snapshots of the development tree may be
-  unstable and contain incomplete features.  They are provided for
-  developers and interested users who want to help us to improve the
-  GIMP.
+  <li><!-- <a href="gimp-2.5.html">Release notes for the development
+  snapshots</a>. -->
+  <em>(No development snapshots have been released yet.)</em>
+  Snapshots of the development tree may be unstable and contain
+  incomplete features.  They are provided for developers and
+  interested users who want to help us to improve GIMP.
   </li>
 
 </ul>
@@ -30,9 +31,13 @@
   Older release notes may still have some historical value:
 </p>
 <ul>
-  <li><a href="gimp-2.3.html">2.3</a></li>
+  <!--
+  <li><a href="gimp-2.5.html">2.5</a> (development)</li>
+  <li><a href="gimp-2.4.html">2.4</a> (stable)</li>
+  -->
+  <li><a href="gimp-2.3.html">2.3</a> (development)</li>
   <li><a href="gimp-2.3.3.html">2.3.3</a> (SIOX release)</li>
-  <li><a href="gimp-2.2.html">2.2</a></li>
+  <li><a href="gimp-2.2.html">2.2</a> (stable)</li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

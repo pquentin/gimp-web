@@ -17,7 +17,8 @@
   </p>
 
   <p>
-    The user manual is available in several languages:
+    The user manual for the current GIMP release is available in several
+    languages:
 
     <ul>
       <li><a href="http://docs.gimp.org/en/">English</a></li>
@@ -29,6 +30,17 @@
       <li><a href="http://docs.gimp.org/no/">Norwegian</a> (Norsk)</li>
       <li><a href="http://docs.gimp.org/ru/">Russian</a> (Pусский)</li>
       <li><a href="http://docs.gimp.org/es/">Spanish</a> (Español)</li>
+    </ul>
+  </p>
+
+  <p>
+    Older versions of the manual for GIMP 2.2 are also available in
+    these languages:
+
+    <ul>
+      <li><a href="http://docs.gimp.org/2.2/zh_CN/">Chinese</a> (中文)</li>
+      <li><a href="http://docs.gimp.org/2.2/hr/">Croatian</a> (Hrvatski)</li>
+      <li><a href="http://docs.gimp.org/2.2/cs/">Czech</a> (Čeština)</li>
     </ul>
   </p>
 

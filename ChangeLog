@@ -1,5 +1,10 @@
 2007-10-08  Raphaël Quinet  <raphael@gimp.org>
 
+	* docs/index.htrw: Added links to the older (2.2) versions of the
+	manual in Chinese, Croatian and Czech.  Fixes bug #484468.
+
+2007-10-08  Raphaël Quinet  <raphael@gimp.org>
+
 	* includes/wgo.js: Do not collapse the intropara on mouse click as
 	this breaks the navigation when clicking on a link and then using
 	the back button in the browser.  Thanks to Sven for reporting this

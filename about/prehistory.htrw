@@ -274,14 +274,14 @@ URLs
 
 http://www.xcf.berkeley.edu/~gimp
 ftp://ftp.xcf.berkeley.edu/pub/gimp
-mailto:gimp<!--nospam-->&#40;xcf.berkeley.edu
+mailto:gimp<!--nospam-->&#64;xcf.berkeley.edu
 
 
 Brought to you by
 -----------------
 
-  Spencer Kimball (spencer<!--nospam-->&#40;xcf.berkeley.edu)
-  Peter Mattis (petm<!--nospam-->&#40;xcf.berkeley.edu)
+  Spencer Kimball (spencer<!--nospam-->&#64;xcf.berkeley.edu)
+  Peter Mattis (petm<!--nospam-->&#64;xcf.berkeley.edu)
 
 
 NOTE
@@ -291,7 +291,7 @@ This software is currently a beta release. This means that we haven't
 implemented all of the features we think are required for a full,
 unqualified release. There are undoubtedly bugs we haven't found yet
 just waiting to surface given the right conditions. If you run across
-one of these, please send mail to gimp<!--nospam-->&#40;xcf.berkeley.edu with
+one of these, please send mail to gimp<!--nospam-->&#64;xcf.berkeley.edu with
 precise details on how it can be reproduced.
 
 </pre></blockquote>

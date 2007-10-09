@@ -13,6 +13,7 @@
 /admin/README.tutorials
 /about/Makefile
 /about/authors.xsl
+/about/history.gnumeric
 /includes/news.inc
 /news.rdf
 /news

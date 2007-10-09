@@ -1,5 +1,9 @@
 2007-10-09  Raphaël Quinet  <raphael@gimp.org>
 
+	* install.exclude: Don't install about/history.gnumeric.
+
+2007-10-09  Raphaël Quinet  <raphael@gimp.org>
+
 	* about/index.htrw: Moved the history section and its links into
 	separate pages.
 

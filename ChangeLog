@@ -1,5 +1,12 @@
 2007-10-09  Raphaël Quinet  <raphael@gimp.org>
 
+	* about/prehistory.htrw: Added missing heading.
+
+	* about/history.png
+	* about/history.gnumeric: Removed the frame around the image.
+
+2007-10-09  Raphaël Quinet  <raphael@gimp.org>
+
 	* install.exclude: Don't install about/history.gnumeric.
 
 2007-10-09  Raphaël Quinet  <raphael@gimp.org>

@@ -1,3 +1,22 @@
+2007-10-09  Raphaël Quinet  <raphael@gimp.org>
+
+	* about/index.htrw: Moved the history section and its links into
+	separate pages.
+
+	* about/prehistory.htrw: New page including copies of the original
+	announcements from Peter Mattis about GIMP.
+
+	* about/history.htrw: Rewritten this page.  For the moment, this
+	is a placeholder the dates of past GIMP releases.
+
+	* about/history.gnumeric: List of dates, according to what I could
+	find in the various ChangeLogs (including the maintenance
+	branches), in the mailing list archives, and in old ftp mirrors.
+	Dates are still missing for several 0.99.x releases.
+
+	* about/history.png: Lame attempt at a release timeline derived
+	from the Gnumeric spreadsheet.
+
 2007-10-08  Raphaël Quinet  <raphael@gimp.org>
 
 	* about/authors.xsl: Split the lists according to the

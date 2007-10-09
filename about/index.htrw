@@ -18,16 +18,11 @@
 
 <!--#include virtual="/includes/urls_important.inc" -->
 
-<!-- FIXME: we also have about/history.htrw.  Maybe the history should be moved there in order to keep this page smaller? -->
 <h2>GIMP History</h2>
   <ul>
-    <li><a href="http://groups.google.com/groups?selm=petm-2907952329370001%40charnley.hip.berkeley.edu&amp;output=gplain">Two Questions</a></li>
-    <li><a href="http://groups.google.com/groups?selm=3ua2hd%24bbv%40agate.berkeley.edu&amp;output=gplain">One Of Two Options</a></li>
-    <li><a href="http://groups.google.com/groups?selm=48s543%24r7b%40agate.berkeley.edu&amp;oe=UTF-8&amp;output=gplain">An Announcement</a></li>
-    <li><a href="http://groups.google.com/groups?selm=cola-liw-824385260-28937-1%40oravannahka.helsinki.fi&amp;output=gplain">GIMP v0.54</a></li>
-    <li><a href="wgo:about-ancient_history">ancient history</a></li>
-    <li><a href="http://dmoz.org/Arts/Movies/Titles/P/Pulp_Fiction/">Pulp Fiction</a></li>
-    <li><a href="http://anoncvs.gnome.gr.jp/viewcvs.cgi/gimp-plugins-unstable/wilberdust?rev=1.1&amp;content-type=text/vnd.viewcvs-markup">wilberdust</a></li>
+    <li><a href="prehistory.html">Prehistory</a>: until GIMP 0.54 in 1996.</li>
+    <li><a href="ancient_history.html">Ancient history</a>: until GIMP 1.0 in 1998.</li>
+    <li><a href="history.html">History</a>: from 1.0 to the current GIMP.</li>
   </ul>
 
 <h2>GIMP Stuff</h2>
@@ -36,8 +31,6 @@
     <li><a href="wgo:about-selling">Is it legal to sell copies of GIMP?</a></li>
     <li><a href="everywhere.html">GIMP everywhere - where and how GIMP is used</a></li>
     <li><a href="wgo:about-authors">GIMP authors and contributors</a></li>
-    <li><a href="wilber-huge-alpha.png">The original Wilber (1080x902, 200KB)</a></li>
-    <li><a href="Wilber_Construction_Kit_XP.xcf.gz">The latest Construction Kit</a></li>
   </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

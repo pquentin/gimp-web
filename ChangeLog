@@ -1,5 +1,11 @@
 2007-10-10  Raphaël Quinet  <raphael@gimp.org>
 
+	* includes/urls_important.inc: Partially reverted the changes from
+	revision 1465 (2007-03-18) because attribute rewriting does not
+	work for included files.  Added domain names next to each link.
+
+2007-10-10  Raphaël Quinet  <raphael@gimp.org>
+
 	* features/index.htrw
 	* release-notes/gimp-2.4.htrw: Added class="warn" for FIXMEs.
 

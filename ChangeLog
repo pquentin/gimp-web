@@ -1,3 +1,16 @@
+2007-10-10  Raphaël Quinet  <raphael@gimp.org>
+
+	* features/index.htrw
+	* release-notes/gimp-2.4.htrw: Added class="warn" for FIXMEs.
+
+	* release-notes/gimp-2.4-cm.html
+	* release-notes/gimp-2.4-cm.htrw: Renamed.
+
+	* about/index.htrw: Moved the history section above the links
+	because the page footer already gives direct access to the links.
+
+	* about/history.htrw: Reformatted slightly.
+
 2007-10-09  Raphaël Quinet  <raphael@gimp.org>
 
 	* about/prehistory.htrw: Added missing heading.

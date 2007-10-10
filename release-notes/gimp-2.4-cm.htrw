@@ -24,7 +24,7 @@ src="images/color-management.png" class="figure" />
 
 <p>Most digital cameras embed a color profile to individual photo files without user interaction. Digital scanners usually come with a color profile, which they also attach to the scanned images.</p>
 
-<p>FIXME: To be able to preview photos with the intended colors, one has to calibrate the display device. And if you're on Linux, you're fscked at this point.</p>
+<p><em class="warn">FIXME: To be able to preview photos with the intended colors, one has to calibrate the display device. And if you're on Linux, you're fscked at this point.</em></p>
 
 <p><a href="gimp-2.4.html">Return to the release notes</a></p>
 

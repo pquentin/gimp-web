@@ -10,64 +10,56 @@ release of GIMP 0.54 by Spencer &amp; Peter and the <a
 href="ancient_history.html">ancient history</a> of the release of GIMP
 1.0, here is a description of the post-1.0 releases.</p>
 
-<p>Or maybe it would be more appropriate to write: here <em>should
-be</em> a description of the post-1.0 releases.  This section still
-has to be written.  Volunteers are welcome!</p>
+<p><em>Or maybe it would be more appropriate to write: here
+<strong>should be</strong> a description of the post-1.0 releases.
+This section still has to be written.  Volunteers are
+welcome!</em></p>
 
 <img class="figure" src="history.png" alt="GIMP release history">
 
 <p>In the meantime, here are some dates that you might be interested
-in (these are the orange bars in the graph above):</p>
+in (the stable releases are the orange bars in the graph above):</p>
 
 <ul>
   <li>1995-11-21 <a href="prehistory.html">GIMP announced</a></li>
   <li>1996-02-15 <a href="prehistory.html">GIMP 0.54</a></li>
-  <li>1998-06-03 <a href="ancient_history.html">GIMP 1.0.0</a>
-  <ul>
-    <li>1998-09-28 GIMP 1.0.1</li>
-    <li>1998-10-15 GIMP 1.0.2</li>
-    <li>1999-03-29 GIMP 1.0.2</li>
-    <li>1999-04-04 GIMP 1.0.3</li>
-  </ul></li>
-  <li>2000-12-25 GIMP 1.2.0
-  <ul>
-    <li>2001-01-22 GIMP 1.2.1</li>
-    <li>2001-07-26 GIMP 1.2.2</li>
-    <li>2002-02-12 GIMP 1.2.3</li>
-    <li>2003-05-19 GIMP 1.2.4</li>
-    <li>2003-06-14 GIMP 1.2.5</li>
-  </ul></li>
-  <li>2004-03-23 GIMP 2.0.0
-  <ul>
-    <li>2004-04-14 GIMP 2.0.1</li>
-    <li>2004-06-15 GIMP 2.0.2</li>
-    <li>2004-07-17 GIMP 2.0.3</li>
-    <li>2004-08-05 GIMP 2.0.4</li>
-    <li>2004-09-25 GIMP 2.0.5</li>
-    <li>2004-11-02 GIMP 2.0.6</li>
-  </ul></li>
-  <li>2004-12-19 GIMP 2.2.0
-  <ul>
-    <li>2004-12-28 GIMP 2.2.1</li>
-    <li>2005-01-09 GIMP 2.2.2</li>
-    <li>2005-01-22 GIMP 2.2.3</li>
-    <li>2005-02-22 GIMP 2.2.4</li>
-    <li>2005-04-09 GIMP 2.2.5</li>
-    <li>2005-04-10 GIMP 2.2.6</li>
-    <li>2005-05-08 GIMP 2.2.7</li>
-    <li>2005-06-27 GIMP 2.2.8</li>
-    <li>2005-10-27 GIMP 2.2.9</li>
-    <li>2005-12-27 GIMP 2.2.10</li>
-    <li>2006-04-13 GIMP 2.2.11</li>
-    <li>2006-07-06 GIMP 2.2.12</li>
-    <li>2006-08-24 GIMP 2.2.13</li>
-    <li>2007-04-18 GIMP 2.2.14</li>
-    <li>2007-05-26 GIMP 2.2.15</li>
-    <li>2007-07-06 GIMP 2.2.16</li>
-    <li>2007-07-13 GIMP 2.2.17</li>
-  </ul></li>
-  <li>(soon) GIMP 2.4.0
-  </li>
+  <li>1998-06-03 <strong><a href="ancient_history.html">GIMP 1.0.0</a></strong></li>
+  <li>1998-09-28 GIMP 1.0.1</li>
+  <li>1998-10-15 GIMP 1.0.2</li>
+  <li>1999-03-29 GIMP 1.0.2</li>
+  <li>1999-04-04 GIMP 1.0.3</li>
+  <li>2000-12-25 <strong>GIMP 1.2.0</strong></li>
+  <li>2001-01-22 GIMP 1.2.1</li>
+  <li>2001-07-26 GIMP 1.2.2</li>
+  <li>2002-02-12 GIMP 1.2.3</li>
+  <li>2003-05-19 GIMP 1.2.4</li>
+  <li>2003-06-14 GIMP 1.2.5</li>
+  <li>2004-03-23 GIMP <strong>2.0.0</strong></li>
+  <li>2004-04-14 GIMP 2.0.1</li>
+  <li>2004-06-15 GIMP 2.0.2</li>
+  <li>2004-07-17 GIMP 2.0.3</li>
+  <li>2004-08-05 GIMP 2.0.4</li>
+  <li>2004-09-25 GIMP 2.0.5</li>
+  <li>2004-11-02 GIMP 2.0.6</li>
+  <li>2004-12-19 GIMP <strong>2.2.0</strong></li>
+  <li>2004-12-28 GIMP 2.2.1</li>
+  <li>2005-01-09 GIMP 2.2.2</li>
+  <li>2005-01-22 GIMP 2.2.3</li>
+  <li>2005-02-22 GIMP 2.2.4</li>
+  <li>2005-04-09 GIMP 2.2.5</li>
+  <li>2005-04-10 GIMP 2.2.6</li>
+  <li>2005-05-08 GIMP 2.2.7</li>
+  <li>2005-06-27 GIMP 2.2.8</li>
+  <li>2005-10-27 GIMP 2.2.9</li>
+  <li>2005-12-27 GIMP 2.2.10</li>
+  <li>2006-04-13 GIMP 2.2.11</li>
+  <li>2006-07-06 GIMP 2.2.12</li>
+  <li>2006-08-24 GIMP 2.2.13</li>
+  <li>2007-04-18 GIMP 2.2.14</li>
+  <li>2007-05-26 GIMP 2.2.15</li>
+  <li>2007-07-06 GIMP 2.2.16</li>
+  <li>2007-07-13 GIMP 2.2.17</li>
+  <li><em>(soon)</em> <strong>GIMP 2.4.0</strong></li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -16,8 +16,6 @@
   (<a href="wgo:about-introduction">more ...</a>)
 </p>
 
-<!--#include virtual="/includes/urls_important.inc" -->
-
 <h2>GIMP History</h2>
   <ul>
     <li><a href="prehistory.html">Prehistory</a>: until GIMP 0.54 in 1996.</li>
@@ -32,6 +30,8 @@
     <li><a href="everywhere.html">GIMP everywhere - where and how GIMP is used</a></li>
     <li><a href="wgo:about-authors">GIMP authors and contributors</a></li>
   </ul>
+
+<!--#include virtual="/includes/urls_important.inc" -->
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

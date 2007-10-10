@@ -43,13 +43,13 @@ src="images/2.4-releasesplash.png" width="640" height="200" />
 
 <p>Selecting individual objects on images is easier now with a new foreground select tool. It is done in two steps. First, you make select region of interest which contains the entire object. Then you paint over selected area with a brush, not crossing object’s border. Release mouse button when you’re done and look, if there are dark blue spots on your objects. If there are some, paint with a brush over them again and release to refine selection. When there are no more blue areas inside the object, press Enter and there you have a perfectly selected object.</p>
 
-<p><em>Video to be added</em></p>
+<p><em class="warn">Video to be added</em></p>
 
 <h3>Align Tool</h3>
 
 <p>While GIMP has provided a grid and guideline functionality, The actual alignment of objects had to be done manually. A new tool comes at rescue.</p>
 
-<p><em>Content to be added</em></p>
+<p><em class="warn">Content to be added</em></p>
 
 <h3>Changes in menus</h3>
 
@@ -87,7 +87,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>New Crop Tool</h3>
 
-<p><em>Image to be added</em></p>
+<p><em class="warn">Image to be added</em></p>
 
 <p>Just like the selection tools, the new crop tool has been enhanced since the last release. The resize handles actually resize the crop rectangle instead of providing both resize and move functionality. The tool behaves more naturally and consistently with other GIMP tools.</p>
 
@@ -101,7 +101,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>Guides</h3>
 
-<em>Content to be added</em>
+<em class="warn">Content to be added</em>
 
 <h3>Red Eye Removal</h3>
 
@@ -109,11 +109,11 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>Healing Brush</h3>
 
-<p><em>Video to be added</em></p>
+<p><em class="warn">Video to be added</em></p>
 
 <h3>Perspective Clone</h3>
 
-<p><em>Video to be added</em></p>
+<p><em class="warn">Video to be added</em></p>
 
 <h3>Lens Distortion</h3>
 

@@ -1,18 +1,40 @@
-Installation instructions for gimp-web module
----------------------------------------------
+INSTALLATION INSTRUCTIONS FOR GIMP-WEB MODULE
+=============================================
 
 Below you will find the options and steps needed to build and test the gimp-web
-module for work in HEAD branch.
+module in SVN.
 
 Should you need more detailed instructions, have a look at Wilber's Wiki:
 http://wiki.gimp.org/gimp/GettingStartedWithGimpWeb
 
+Short summary
+-------------
+
+The web site is build from *.htrw files that are translated to *.html files.
+The main difference between both is that some attributes are rewritten, such
+as the 'href' attribute of 'a' elements.  This makes it easier to maintain a
+collection of links in a central place (/admin/gimp-web-urls).  You should
+always edit the *.htrw files, not the generated *.html files.
+
+When you commit some changes, it is important to check that you did not break
+the build, otherwise the web site cannot be updated anymore.  If you have an
+Apache server configured with Server-Side Includes (SSI), then you can use the
+script 'install.sh' to test the site.
+
+If you do not have Apache or it is not configured correctly, then please try
+at least 'make DocumentRoot=/tmp/wgo' or something similar before committing
+your changes in order to check that the build is still working.
+
+Detailled instructions
+----------------------
+
 To be able to build the site you will need a few things installed and running
-in a correct way to test the site, the list below tells you the dependencies
+in a correct way to test the site.  The list below tells you the dependencies
 needed to test the site.
 
   1. Apache with SSI support. The site uses SSI to use include files in the
-  html files. 
+  html files (header and footer of every page, as well as some other sections
+  included in a few pages). 
 
   To get a real life example of a httpd.conf file with SSI support you can also
   look at: http://wiki.gimp.org/gimp/GettingStartedWithGimpWeb/HttpdConfExample
@@ -26,17 +48,20 @@ system works.
 
   % mkdir /home/wgo   # Directory where the test site will be
 
+Create a file install.config from the existing sample install.config.sample.
+The main thing that you have to configure in that file is the location of the
+installation directory that you just created.
+
 Run the following command with the user root in the root directory of gimp-web.
 Username below means the username you will use on the machine.
 
-  % chown -R apache . ; PYTHON=python2.3 ./install.sh /home/wgo ; chown -R
-    username .
+  % chown -R apache . ; ./install.sh ; chown -R username .
 
 Note that you don't need to be root, the chown is simply to enable the
 news and the contest stuff to work. If you don't care about these, you
 can just run:
 
-  % PYTHON=python2.3 ./install.sh /home/wgo
+  % ./install.sh
 
 The site will now be installed and should be available with html files in
 /home/wgo directory. To be able to test the things being changed in the
@@ -44,9 +69,39 @@ gimp-web module you just reinstall the site after doing the changes. So, first
 make the changes in gimp-web and then test them by building the site again
 with:
 
-  % chown -R apache . ; PYTHON=python2.3 ./install.sh /home/wgo ; chown -R
-    username .
+  % chown -R apache . ; ./install.sh ; chown -R username .
 
-And after doing this test you can commit it to the gimp-web module. Remember to
-look in the .cvsignore file to find out what is going to be ignored when
-commiting.
+And after doing this test you can commit it to the gimp-web module. Remember
+to look in the svn:ignore SVN properties to find out what is going to be
+ignored when commiting.
+
+Adding new files
+----------------
+
+If you add a new *.htrw page, please also add the corresponding *.html page to
+the svn:ignore property of the directory that contains it.  If your $EDITOR is
+correctly configured, you can do this with:
+  svn propedit svn:ignore <directory>
+
+Never add *.html files directly.  Always use *.htrw files unless you have a
+very good reason to bypass the attribute-rewriting system.
+
+If you add a new image, you should check that the correct mime-type has been
+selected for that file (usually image/png).  You can do this with:
+  svn propedit svn:mime-type <image>
+
+If you add a new file that should not be installed in the web site, such as a
+script or source file, then you should add that file to /install.exclude.
+
+Links in *.htrw files
+---------------------
+
+If your *.htrw file links to some other pages, please consider using the
+pre-defined URLs from /admin/gimp-web-urls, such as "wgo:windows",
+"wgo:about-selling" and all links to tutorials, etc.
+
+If you several pages link to the same page and there is no pre-defined URL for
+that page in /admin/gimp-web-urls, then you should consider adding one.  There
+is no reason to add every single URL in that list, especially when these URLs
+are not likely to change or are not likely to be used more than once.  The
+goal is to make it easier to maintain these links, not harder.

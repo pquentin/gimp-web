@@ -1,3 +1,8 @@
+2007-10-14  Raphaël Quinet  <raphael@gimp.org>
+
+	* INSTALL: Updated instructions.  Added a short summary for those
+	who are in a hurry.  Suggested what to do when adding new files.
+
 2007-10-11  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/gimp-2.4.htrw: Added links to the videos provided

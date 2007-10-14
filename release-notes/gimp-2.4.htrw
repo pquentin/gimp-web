@@ -113,7 +113,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>Perspective Clone</h3>
 
-<p><em class="warn">Short description to be added</em></p>
+<p>A common task in image editing is to copy pixels from somewhere in an image to somewhere else. Traditionally this has been done using the Clone Tool. To make it easy to perform cloning while taking the perspective of an image into account, a new Perspective Clone Tool has been added to GIMP.</p>
 
 <p><object style="width:520px; height:424px; margin: auto;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=-3077868802879051003&amp;hl=en" flashvars=""></object></p>
 

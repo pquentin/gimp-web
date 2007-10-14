@@ -1,3 +1,9 @@
+2007-10-14  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.4.htrw
+	* release-notes/images/2.4-crop-tool.png: Added release note image
+	for the Crop Tool.
+
 2007-10-14  Raphaël Quinet  <raphael@gimp.org>
 
 	* INSTALL: Updated instructions.  Added a short summary for those

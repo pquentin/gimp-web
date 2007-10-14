@@ -87,7 +87,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>New Crop Tool</h3>
 
-<p><em class="warn">Image to be added</em></p>
+<img class="right" src="images/2.4-crop-tool.png" alt="Crop Tool" />
 
 <p>Just like the selection tools, the new crop tool has been enhanced since the last release. The resize handles actually resize the crop rectangle instead of providing both resize and move functionality. The tool behaves more naturally and consistently with other GIMP tools.</p>
 

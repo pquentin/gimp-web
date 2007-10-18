@@ -536,7 +536,16 @@
 	* release-notes/images/color-management.png
 	* release-notes/gimp-2.4-cm.html
 	* release-notes/gimp-2.4.htrw: start on color management.
-	
+
+2007-04-25  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* macintosh/index.htrw: changed the link to Apple's X11 and
+	reworded a bit. Fixes bug #427973.
+
+2007-04-25  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* links/index.htrw: added http://www.gimp.no
+
 2007-04-07  Kevin Cozens  <kcozens@cvs.gnome.org>
 
 	* docs/python/index.html: Correct the example command line used to

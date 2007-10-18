@@ -68,10 +68,11 @@ to run GIMP on your Macintosh:</p>
   protocol, on Mac OS X, which must be installed first.  There are
   various ways to install an X11 protocol window server.  The <a
   href="http://www.xdarwin.org/">XDarwin project</a> provides this
-  functionality.  Apple has recently started building their own
+  functionality.  Apple does provide their own
   version of this windowing layer, based on XFree86, which is called
-  X11.app.  It is available from <a
-  href="http://www.apple.com/downloads/macosx/apple/x11formacosx.html">www.apple.com/downloads/macosx/apple/x11formacosx.html</a>.</li>
+  X11.app.  If you do use OS X 10.3, you can grab it from the Apple <a
+  href="http://www.apple.com/support/downloads/x11formacosx.html">downloads site</a>. 
+  10.4 users will find it on the Tiger DVD installer disk.</li>
 
   <li>dlcompat<br /> 
   In general, building GIMP on Mac OS X is complicated by the fact

@@ -31,6 +31,9 @@ Ireland
      ftp://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/
      http://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/ (web access)
      rsync://ftp.esat.net/mirrors/ftp.gimp.org/pub (rsync access)
+     ftp://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/gimp/
+     http://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/gimp/ (web access)
+     rsync://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/gimp/ (rsync access)
 
 Japan
      ftp://SunSITE.sut.ac.jp/pub/archives/packages/gimp/

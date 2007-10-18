@@ -399,6 +399,10 @@
 	* screenshots/osx_aperture_thumb.jpg:
 	* screenshots/index.htrw: OSX screenshot. Courtesy of Axel Wernicke.
 
+2007-07-21  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* programmatic/downloads/MIRRORS: added HEAnet
+
 2007-07-12  Jakub Steiner <jimmac@ximian.com>
 
 	* about/splash/stable.html

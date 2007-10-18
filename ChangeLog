@@ -310,6 +310,16 @@
 
 	* MAINTAINERS: added file required by pre-commit hook.
 
+2007-08-30  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* links/index.htrw: removed gimp.cz. The site is dead and has been
+	taken over by a script kiddie, apparently.
+
+2007-08-28  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* macintosh/index.htrw: Changed link to port file, reworded to
+	reflect MacPorts' change to 2.3. More details welcome.
+
 2007-08-15  Manish Singh  <yosh@gimp.org>
 
 	* develop/index.htrw: Fix ytpo.

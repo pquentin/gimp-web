@@ -18,12 +18,15 @@ an easier task. These include:</p>
 <ul>
   <li><a href="http://www.macports.org/">MacPorts</a>
   provide an easy way to install various open-source software products
-  on Mac OS X. The <a href="http://trac.macosforge.org/projects/macports/browser/trunk/dports/graphics/gimp2/Portfile">gimp2 portfile</a> is maintained by
-  <a href="mailto:yvesNOSPAM@macports.org">Yves de Champlain</a>. 
+  on Mac OS X. They have switched to GIMP 2.3/2.4-rc1 in the latest 
+  revisions, but you can still grab a previous one for <a href="http://trac.macosforge.org/projects/macports/browser/trunk/dports/graphics/gimp/Portfile?rev=27042&format=raw">GIMP 2.2.17</a>.
   MacPorts places the GIMP binary into
   <code>/opt/local/bin</code>.<br/>
   There's a port file for the <a href="http://trac.macosforge.org/projects/macports/browser/trunk/dports/graphics/gimp-dev/Portfile">GIMP 2.3 development version</a>, too. 
-  The 2.3 binary is installed to <code>/opt/local/gimp-2.3/bin</code>.</li>
+  The 2.3 binary is installed to <code>/opt/local/gimp-2.3/bin</code>.<br/>
+  <br/>	
+  Both files are maintained by
+  <a href="mailto:yvesNOSPAM@macports.org">Yves de Champlain</a>. </li>
 
   <li><a href="http://gimp-app.sourceforge.net/">Gimp.app</a> provides
   a self contained application bundle of GIMP 2.2.11 for OS X. Apple's

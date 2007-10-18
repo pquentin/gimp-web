@@ -537,6 +537,12 @@
 	* release-notes/gimp-2.4-cm.html
 	* release-notes/gimp-2.4.htrw: start on color management.
 
+2007-05-09  Sven Neumann  <sven@gimp.org>
+
+	* docs/index.htrw
+	* admin/gimp-web-urls: applied patches from Axel Wernicke
+	(bug #408901).
+
 2007-04-25  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* macintosh/index.htrw: changed the link to Apple's X11 and

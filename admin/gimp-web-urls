@@ -40,7 +40,7 @@
 ["href", "home:People-Beane_Zach",             { "href": "http://www.xach.com/"}]
 
 ["href", "mail:People-Beppu_John",             { "href": "mailto:beppuNOSPAM@cpan.org"}]
-["href", "home:People-Beppu_John",        { "href": "http://beppu.lbox.org/"}]
+["href", "home:People-Beppu_John",             { "href": "http://beppu.lbox.org/"}]
 
 ["href", "mail:People-Boyce_Mel",              { "href": "mailto:syngin-at-gimp-dot-org"}]
 ["href", "home:People-Boyce_Mel",              { "href": "http://syngin.gimp.org/"}]
@@ -51,8 +51,8 @@
 ["href", "mail:People-Burgess_Seth",           { "href": "mailto:sjburgesNOSPAM@gimp.org"}]
 ["href", "home:People-Burgess_Seth",           { "href": "http://www.gimp.org/~sjburges/"}]
 
-["href", "mail:People-Caughron-Mat",	       { "href": "mailto:matNOSPAM@macgimp.org"}]
-["href", "home:People-Caughron-Mat",	       { "href": "http://www.phpconsulting.com/"}]
+["href", "mail:People-Caughron-Mat",	         { "href": "mailto:matNOSPAM@macgimp.org"}]
+["href", "home:People-Caughron-Mat",	         { "href": "http://www.phpconsulting.com/"}]
 
 ["href", "mail:People-Collin_Branko",          { "href": "mailto:collinNOSPAM@xs4all.nl"}]
 ["href", "home:People-Collin_Branko",          { "href": "http://www.xs4all.nl/~collin/"}]
@@ -76,13 +76,13 @@
 ["href", "home:People-Jensen_Atte_André",      { "href": "http://home.wanadoo.nl/atte/"}]
 
 ["href", "mail:People-Jeschke_Eric_R",         { "href": "mailto:ericNOSPAM@redskiesatnight.com"}]
-["href", "home:People-Jeschke_Eric_R",        { "href": "http://redskiesatnight.com/"}]
+["href", "home:People-Jeschke_Eric_R",         { "href": "http://redskiesatnight.com/"}]
 
 ["href", "mail:People-Jones_Sam",              { "href": "mailto:samjonesNOSPAM@io.com"}]
-["href", "home:People-Jones_Sam",        { "href": "http://www.electricossuary.com/"}]
+["href", "home:People-Jones_Sam",              { "href": "http://www.electricossuary.com/"}]
 
 ["href", "mail:People-Kidd_Eric",              { "href": "mailto:eric.kiddNOSPAM@pobox.com"}]
-["href", "home:People-Kidd_Eric",        { "href": "http://www.randomhacks.net/"}]
+["href", "home:People-Kidd_Eric",              { "href": "http://www.randomhacks.net/"}]
 
 ["href", "mail:People-Kuosmanen_Tuomas",       { "href": "mailto:tigertNOSPAM@gimp.org"}]
 ["href", "home:People-Kuosmanen_Tuomas",       { "href": "http://tigert.gimp.org/"}]
@@ -96,7 +96,7 @@
 ["href", "mail:People-Lautenbacher_Jens",      { "href": "mailto:jtlNOSPAM@gimp.org"}]
 ["href", "home:People-Lautenbacher_Jens",      { "href": "http://www.gimp.org/"}]
 
-["href", "mail:People-Lehmann_Marc",        { "href": "mailto:pcgNOSPAM@goof.com"}]
+["href", "mail:People-Lehmann_Marc",           { "href": "mailto:pcgNOSPAM@goof.com"}]
 
 ["href", "mail:People-Likins_Adrian",          { "href": "mailto:adrianNOSPAM@gimp.org"}]
 ["href", "home:People-Likins_Adrian",          { "href": "http://adrian.gimp.org/"}]
@@ -111,7 +111,7 @@
 ["href", "home:People-Mena-Quintero_Federico", { "href": "http://primates.helixcode.com/~federico/"}]
 
 ["href", "mail:People-Neary_Dave",             { "href": "mailto:bolshNOSPAM@gimp.org"}]
-["href", "home:People-Neary_Dave",        { "href": "http://www.gimp.org/"}]
+["href", "home:People-Neary_Dave",             { "href": "http://www.gimp.org/"}]
 
 ["href", "mail:People-Neumann_Sven",           { "href": "mailto:svenNOSPAM@gimp.org"}]
 ["href", "home:People-Neumann_Sven",           { "href": "http://sven.gimp.org/"}]
@@ -119,8 +119,8 @@
 ["href", "mail:People-Pätsi_Ville",            { "href": "mailto:drcNOSPAM@gimp.org"}]
 ["href", "home:People-Pätsi_Ville",            { "href": "http://drc.gnome.org/"}]
 
-["href", "mail:People-Quinet_Raphaël",            { "href": "mailto:quinetNOSPAM@gamers.org"}]
-["href", "home:People-Quinet_Raphaël",            { "href": "http://www.gimp.org/~raphael/"}]
+["href", "mail:People-Quinet_Raphaël",         { "href": "mailto:quinetNOSPAM@gamers.org"}]
+["href", "home:People-Quinet_Raphaël",         { "href": "http://www.gimp.org/~raphael/"}]
 
 ["href", "mail:People-Romero_Guillermo_S",     { "href": "mailto:famromNOSPAM@infernal-iceberg.com"}]
 ["href", "home:People-Romero_Guillermo_S",     { "href": "http://www.infernal-iceberg.com/gimp/"}]
@@ -138,7 +138,7 @@
 ["href", "home:People-Summers_Nathan_C",       { "href": "http://www.gimp.org/~rock/"}]
 
 ["href", "mail:People-Turner_Kevin",           { "href": "http://sourceforge.net/sendmessage.php?touser=9300"}]
-["href", "home:People-Turner_Kevin",        { "href": "http://sourceforge.net/users/acapnotic/"}]
+["href", "home:People-Turner_Kevin",           { "href": "http://sourceforge.net/users/acapnotic/"}]
 
 ["href", "mail:People-Victorinox_Helvetix",    { "href": "mailto:helvetixNOSPAM@mysterious.org"}]
 ["href", "home:People-Victorinox_Helvetix",    { "href": "http://www.mysterious.org/"}]
@@ -171,8 +171,23 @@
 ["href", "wgo:develop",                        { "href": "/develop/"}]
 ["href", "wgo:bugs",                           { "href": "/bugs/"}]
 ["href", "wgo:dev-howtos-bugzilla",            { "href": "/bugs/howtos/bugzilla.html"}]
-["href", "wgo:dev-howtos-subpatch",	       { "href": "/bugs/howtos/submit-patch.html"}]
+["href", "wgo:dev-howtos-subpatch",	           { "href": "/bugs/howtos/submit-patch.html"}]
 ["href", "wgo:docs",                           { "href": "/docs/"}]
+
+["href", "wgo:docs-gimp_help",                 { "href": "http://docs.gimp.org/"}]
+["href", "wgo:docs-gimp_help-en",              { "href": "http://docs.gimp.org/en/"}]
+["href", "wgo:docs-gimp_help-cs",              { "href": "http://docs.gimp.org/cs/"}]
+["href", "wgo:docs-gimp_help-de",              { "href": "http://docs.gimp.org/de/"}]
+["href", "wgo:docs-gimp_help-es",              { "href": "http://docs.gimp.org/es/"}]
+["href", "wgo:docs-gimp_help-fr",              { "href": "http://docs.gimp.org/fr/"}]
+["href", "wgo:docs-gimp_help-hr",              { "href": "http://docs.gimp.org/hr/"}]
+["href", "wgo:docs-gimp_help-it",              { "href": "http://docs.gimp.org/it/"}]
+["href", "wgo:docs-gimp_help-ko",              { "href": "http://docs.gimp.org/ko/"}]
+["href", "wgo:docs-gimp_help-nl",              { "href": "http://docs.gimp.org/nl/"}]
+["href", "wgo:docs-gimp_help-no",              { "href": "http://docs.gimp.org/no/"}]
+["href", "wgo:docs-gimp_help-ru",              { "href": "http://docs.gimp.org/ru/"}]
+["href", "wgo:docs-gimp_help-sv",              { "href": "http://docs.gimp.org/sv/"}]
+["href", "wgo:docs-gimp_help-zh_CN",           { "href": "http://docs.gimp.org/zh_CN/"}]
 
 ["href", "wgo:downloads",                      { "href": "/downloads/"}]
 ["href", "wgo:downloads-mirrors",              { "href": "/downloads/#mirrors"}]
@@ -203,7 +218,6 @@
 ["href", "wgo:windows",                        { "href": "/windows/"}]
 ["href", "wgo:macintosh",                      { "href": "/macintosh/"}]
 
-
 ["href", "tutorial:GIMPLite_Quickies-Carol_Spears",         { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
 ["href", "tutorial:The_Basics-Jens_Lautenbacher",           { "href": "http://classic.gimp.org/tut-basic.html"}]
 ["href", "tutorial:Straight_Line-Seth_Burgess",             { "href": "http://classic.gimp.org/~sjburges/straightline/straightline.html"}]
@@ -222,7 +236,7 @@
 ["href", "tutorial:Tilable_Textures-Adrian_Likins",         { "href": "http://adrian.gimp.org/texture_tut/"}]
 ["href", "tutorial:Simple_Animations-Jakub_Steiner",        { "href": "http://jimmac.musichall.cz/tutor1.php3"}]
  ["href", "tutorial:Image_Pipes-Adrian_Likins",              { "href": "http://adrian.gimp.org/gimppipe/"}]
-["href", "tutorial:Image_Pipes2-Sam_Jones",      { "href": "http://carol.gimp.org/gimp/tutorials/pipe_more/"}]
+["href", "tutorial:Image_Pipes2-Sam_Jones",                 { "href": "http://carol.gimp.org/gimp/tutorials/pipe_more/"}]
 ["href", "tutorial:Golden_Text-Simon_Budig",                { "href": "http://www.home.unix-ag.org/simon/gimp/golden.html"}]
 ["href", "tutorial:Draw_A_Paint_Brush-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/drawing_a_paintbrush/"}]
 ["href", "tutorial:Creating_Icons-Jakub_Steiner",           { "href": "http://developer.ximian.com/articles/tutorials/icons/output/index.html"}]
@@ -238,9 +252,9 @@
 ["href", "tutorial:Blending_Exposures-Eric_R_Jeschke",      { "href": "http://www.gimpguru.org/"}]
 ["href", "tutorial:Smart_Sharpening-Eric_R_Jeschke",        { "href": "http://www.gimpguru.org/"}]
 ["href", "tutorial:Selective_Color-Eric_R_Jeschke",         { "href": "http://www.gimpguru.org/"}]
-["href", "tutorial:Perlotine-Carol_Spears",      { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
-["href", "tutorial:Image_Map-Carol_Spears",      { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
-["href", "tutorial:Drawables-Kevin_Turner",      { "href": "http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro"}]
+["href", "tutorial:Perlotine-Carol_Spears",                 { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
+["href", "tutorial:Image_Map-Carol_Spears",                 { "href": "http://carol.gimp.org/mygimp/tutorials/"}]
+["href", "tutorial:Drawables-Kevin_Turner",                 { "href": "http://gimp-plug-ins.sourceforge.net/doc/Writing/html/sect-image.html#sect-image-intro"}]
 ["href", "tutorial:Basic_Perl-Dov_Grobgeld",                { "href": "http://imagic.weizmann.ac.il/~dov/gimp/perl-tut.html"}]
 ["href", "tutorial:Perl_Debugged-Seth_Burgess",             { "href": "http://classic.gimp.org/~sjburges/perl_debug/intro.html"}]
 ["href", "tutorial:Basic_Scheme-Dov_Grobgeld",              { "href": "http://imagic.weizmann.ac.il/~dov/gimp/scheme-tut.html"}]

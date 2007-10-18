@@ -16,14 +16,23 @@ commercially distributed CDs, which aim to make installation and setup
 an easier task. These include:</p>
 
 <ul>
+  <li><a href="http://www.macports.org/">MacPorts</a>
+  provide an easy way to install various open-source software products
+  on Mac OS X. The <a href="http://trac.macosforge.org/projects/macports/browser/trunk/dports/graphics/gimp2/Portfile">gimp2 portfile</a> is maintained by
+  <a href="mailto:yvesNOSPAM@macports.org">Yves de Champlain</a>. 
+  MacPorts places the GIMP binary into
+  <code>/opt/local/bin</code>.<br/>
+  There's a port file for the <a href="http://trac.macosforge.org/projects/macports/browser/trunk/dports/graphics/gimp-dev/Portfile">GIMP 2.3 development version</a>, too. 
+  The 2.3 binary is installed to <code>/opt/local/gimp-2.3/bin</code>.</li>
+
   <li><a href="http://gimp-app.sourceforge.net/">Gimp.app</a> provides
-  a self contained application bundle of GIMP for OS X. Gimp.app
-  requires Apple's X11.app. Gimp.app is packaged by Aaron Voisine.</li>
+  a self contained application bundle of GIMP 2.2.11 for OS X. Apple's
+  X11 is required. Gimp.app is packaged by Aaron Voisine.</li> 
 
   <li><a href="http://fink.sourceforge.net/pdb/package.php/gimp2">Fink</a>
   is a package management system that provides everything necessary to
-  build GIMP. The Fink project is based upon the Debian apt-get package
-  management tools, and can resolve dependencies among the various
+  build GIMP 2.0.6. The Fink project is based upon the Debian apt-get
+  package management tools, and can resolve dependencies among the various
   components necessary for a working GIMP installation. A typical install,
   however, will require that you have a working C compiler, which Apple
   supplies on a companion CD to Mac OS X.  The current gimp package
@@ -32,20 +41,13 @@ an easier task. These include:</p>
   The default location for GIMP when installed with fink is
   <code>/sw/bin/gimp</code>. </li>
 
-  <li>In a similar approach,
-  <a href="http://darwinports.opendarwin.org/">DarwinPorts</a>
-  provide an easy way to install various open-source software products
-  on Mac OS X. The <a href="http://darwinports.opendarwin.org/darwinports/dports/graphics/gimp2/Portfile">gimp2 portfile</a> is maintained by
-  <a href="mailto:tobyNOSPAM@opendarwin.org">Toby Peterson</a>. 
-  DarwinPorts places the GIMP binary into <code>/opt/local/bin</code>.</li>
-
   <li>In the future, it is hoped that the <a
   href="http://www.metapkg.org/">MetaPkg</a> project will unify
   several of these installation methods, but the meta packaging system
   is not yet usable.</li>
 
   <li>The <a href="http://www.macgimp.org/">MacGIMP project</a>
-  provides the latest GIMP for Mac OS X in a packaged CD format.
+  provides GIMP for Mac OS X in a packaged CD format.
   The MacGIMP project installs GIMP in <code>/opt/local/bin</code>.
   MacGIMP efforts are led by
   <a href="mail:People-Caughron-Mat">Mat Caughron</a>. In 2003 he helped
@@ -73,17 +75,6 @@ to run GIMP on your Macintosh:</p>
   X11.app.  If you do use OS X 10.3, you can grab it from the Apple <a
   href="http://www.apple.com/support/downloads/x11formacosx.html">downloads site</a>. 
   10.4 users will find it on the Tiger DVD installer disk.</li>
-
-  <li>dlcompat<br /> 
-  In general, building GIMP on Mac OS X is complicated by the fact
-  that dynamic libraries from GNU projects require a GNU-specific
-  dynamic loading library.  dlcompat provides the dlopen() interface
-  for dynamic loading of modules for applications that need it.
-  dlcompat is provided by <a
-  href="http://fink.sourceforge.net/doc/porting/index.php">Fink</a>
-  and in an <a
-  href="http://www.opendarwin.org/cgi-bin/cvsweb.cgi/proj/dlcompat/">OpenDarwin
-  dlcompat package</a></li>
 
   <li>Graphics libraries and toolkits<br />
   Unlike most Linux distributions, Mac OS X does not come with the

@@ -520,6 +520,15 @@
 	* downloads/index.htrw: infrastructure for doing 'smart'
 		downloads, easier to maintain cross-browser workarounds.
 
+2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* macintosh/index.htrw: formatting change.
+
+2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* macintosh/index.htrw: changed DarwinPorts to Macports; removed
+	note about dlcompat. Fixes bug #433164 and bug #433164.
+
 2007-05-16  Sven Neumann  <sven@gimp.org>
 
 	* programmatic/downloads/MIRRORS: replaced dutch mirror with a

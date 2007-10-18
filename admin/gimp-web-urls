@@ -226,7 +226,6 @@
 ["href", "tutorial:Bezier_Selections-Tuomas_Kuosmanen",     { "href": "http://tigert.gimp.org/gimp/tutorials/bezier/"}]
 ["href", "tutorial:Quickmask-Zach_Beane",                   { "href": "http://www.xach.com/gimp/tutorials/quickmask/"}]
 ["href", "tutorial:Red_Eye_Removal-Carol_Spears",           { "href": "http://carol.gimp.org/other/sloth/diary/redeye.html"}]
-["href", "tutorial:Custom_Brushes-Lad_Gautam_N",            { "href": "http://www.cubicdesign.com/"}]
 ["href", "tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen",    { "href": "http://tigert.gimp.org/gimp/tutorials/bezier_shapes/"}]
 ["href", "tutorial:Film_Grain-Eric_Kidd",                   { "href": "http://carol.gimp.org/gimp/tutorials/film-grain/"}]
 ["href", "tutorial:Changing_Background1-Seth_Burgess",      { "href": "http://classic.gimp.org/~sjburges/color_to_alpha/demo/color2alpha.html"}]

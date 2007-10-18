@@ -15,10 +15,10 @@ Other recommendations can be found at the bottom of this page.</p>
 
 <dl>
   <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp-users">#gimp-users</a></dt>
-  <dl>The main support channel for GIMP users. This is probably the right
+  <dd>The main support channel for GIMP users. This is probably the right
   place to ask questions (but please see the hints at the bottom of this
   page). This channel might be less scary than #gimp, especially for new
-  users...</dl>
+  users...</dd>
 
   <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp">#gimp</a></dt>
   <dd>This is the main GIMP channel, created in early 1997. Both users and

@@ -452,6 +452,11 @@
 
 	* screenshots/linux_mixer*: forgot to add the new screenshot
 
+2007-07-10  Raphaël Quinet  <raphael@gimp.org>
+
+	* bugs/index.htrw: mention an alternate way to report
+	security-related bugs.
+
 2007-07-09  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/wgo-page-init.xhtml: remove redundant max-width

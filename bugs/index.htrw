@@ -84,5 +84,25 @@
   <li><a href="http://bugzilla.gnome.org/buglist.cgi?product=gimp-web&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;changedin=7">List of closed bugs (The past week)</a></li>
 </ul>
 
+<h1>Security bugs</h1>
+
+<p>
+  Some bug reports may be related to security issues.  For example, a file
+  plug-in may be vulnerable to a buffer overflow allowing arbitrary code
+  execution when loading an image.  We believe that the best way to report
+  these vulnerabilities is through Bugzilla, as described above.  This will
+  ensure that the bug is reviewed and handled quickly (if necessary, a
+  developer may decide to hide a sensitive bug report from other users
+  until it is fixed).  But if you really do not want to use Bugzilla for
+  security reports and you do not mind some extra delay, you can also
+  contact a limited set of GIMP developers by mail @gimp.org, using the
+  special alias "security".  What will happen next is that a developer will
+  review the issue and submit it in Bugzilla, usually as a hidden bug
+  report only visible to developers.  This will take a bit longer than if
+  you directly submit the bug yourself, but we know that some people have a
+  policy of not disclosing security vulnerabilities publicly, so we provide
+  that address for their convenience.
+</p>
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

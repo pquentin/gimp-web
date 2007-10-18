@@ -2412,7 +2412,7 @@ Script-Fu is able to process strings, integer and floats literals, and
 </li>
 <li>
 <p>
-All other special purposes gimpfu parameter types ( <tt>PF_FILE</tt> , etc.)
+All other special purposes gimpfu parameter types (<tt>PF_FILE</tt> , etc.)
   can be constructed using those simple literals and list constructs,
   and received as appropriate objects in Python. If you need booleans,
   pass them as integers.
@@ -2425,7 +2425,7 @@ as the one above directly from your shell using the <tt>(plug-in-script-
 fu-eval &#8230;)</tt> evaluator:</p>
 <div class="listingblock">
 <div class="content">
-<pre><tt>gimp --no-interface --batch='(python-fu-console-echo RUN-NONINTERACTIVE "another string" 777 3.1416 (list 1 0 0))' --batch='(gimp-quit 1)'</tt></pre>
+<pre><tt>gimp --no-interface --batch '(python-fu-console-echo RUN-NONINTERACTIVE "another string" 777 3.1416 (list 1 0 0))' '(gimp-quit 1)'</tt></pre>
 </div></div>
 <p>The invocation here was done without an interface since this specific
 procedure didn't need any.</p>

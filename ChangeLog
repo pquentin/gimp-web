@@ -537,6 +537,11 @@
 	* release-notes/gimp-2.4-cm.html
 	* release-notes/gimp-2.4.htrw: start on color management.
 	
+2007-04-07  Kevin Cozens  <kcozens@cvs.gnome.org>
+
+	* docs/python/index.html: Correct the example command line used to
+	invoke Python from the shell. Spotted by Jorge Vargas.
+
 2007-03-29  Jakub Steiner <jimmac@ximian.com>
 
 	* style/wgo.css: make headers only have bigger whitespace on top

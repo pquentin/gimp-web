@@ -310,6 +310,16 @@
 
 	* MAINTAINERS: added file required by pre-commit hook.
 
+2007-08-15  Manish Singh  <yosh@gimp.org>
+
+	* develop/index.htrw: Fix ytpo.
+
+2007-08-15  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* tutorials/Lite_Quickies/modex-alpha-t.png: 
+	* tutorials/Lite_Quickies/modex-index-t.png: added two of the
+	missing images mentioned in bug #168606.
+
 2007-08-15  Raphaël Quinet  <raphael@gimp.org>
 
 	* admin/gimp-web-urls: removed obsolete links to old ChangeLogs,

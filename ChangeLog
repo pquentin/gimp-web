@@ -312,8 +312,18 @@
 
 2007-08-15  Raphaël Quinet  <raphael@gimp.org>
 
-	* about/merchandise.htrw: Removed link to SourceWear (the domain
-	name does not exist anymore) and corrected link to Kernel
+	* tutorials/The_Basics/index.htrw: reverted an incorrect change
+	about how to anchor a floating selection, rewrote several sections
+	to reflect the changes in user interface or tool behavior since
+	GIMP 1.x.  Fixes bug #454584.
+
+	* bugs/index.htrw: How Tos or How-Tos seem to be more correct
+	English than How To's.  Fixes bug #453784.
+
+2007-08-15  Raphaël Quinet  <raphael@gimp.org>
+
+	* about/merchandise.htrw: removed link to SourceWear (the domain
+	name does not exist anymore) and corrected the link to Kernel
 	concepts.  Fixes bug #464038.
 
 2007-08-15  Raphaël Quinet  <raphael@gimp.org>

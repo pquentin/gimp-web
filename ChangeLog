@@ -520,6 +520,11 @@
 	* downloads/index.htrw: infrastructure for doing 'smart'
 		downloads, easier to maintain cross-browser workarounds.
 
+2007-05-16  Sven Neumann  <sven@gimp.org>
+
+	* programmatic/downloads/MIRRORS: replaced dutch mirror with a
+	working one (ftp.snt.utwente.nl).
+
 2007-05-14  Jakub Steiner <jimmac@ximian.com>
 
 	* index.htrw

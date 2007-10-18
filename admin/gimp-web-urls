@@ -162,6 +162,8 @@
 
 ["href", "wgo:mail_lists",                     { "href": "/mail_lists.html"}]
 ["href", "wgo:dev",                            { "href": "http://developer.gimp.org/"}]
+["href", "wgo:dev-changelog",                  { "href": "http://developer.gimp.org/ChangeLog"}]
+["href", "wgo:dev-changelog-html",             { "href": "http://developer.gimp.org/changelog.html"}]
 ["href", "wgo:dev-hacking",                    { "href": "http://developer.gimp.org/HACKING"}]
 ["href", "wgo:dev-news",                       { "href": "http://developer.gimp.org/NEWS"}]
 ["href", "wgo:dev-screenshots",                { "href": "http://developer.gimp.org/screenshots.html"}]

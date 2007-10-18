@@ -82,5 +82,11 @@ in the source code that might help you a little.</p>
 <!--#include virtual="/includes/urls_important.inc" -->
 <!--#include virtual="/includes/urls_go-developer.inc" -->
 
+<h2>What is going on:</h2>
+<p>
+  <a href=wgo:dev-changelog-html">The Unstable GIMP</a><br />
+  The lastest ChangeLog entries from The Unstable GIMP.
+</p>
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

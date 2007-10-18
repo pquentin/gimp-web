@@ -520,8 +520,18 @@
 	* downloads/index.htrw: infrastructure for doing 'smart'
 		downloads, easier to maintain cross-browser workarounds.
 
+2007-06-01  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* programmatic/admin/news/Makefile (news_config.py): we decided
+	that the time zone is not needed, bug #161498 is WONTFIX. 
+
 2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
 
+	* programmatic/admin/news/Makefile (news_config.py): change
+	datetime_format to include the time zone name; addresses bug #161498.
+
+2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
+	
 	* docs/index.htrw: Hrvatski is Croatian, not Hungarian. 
 	Fixes bug #440576.
 

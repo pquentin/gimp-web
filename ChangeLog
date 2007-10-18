@@ -244,6 +244,10 @@
 	guide from SIOD to TinyScheme written by Saul Goode, with some
 	additional bits taken from his previous list of differences.
 
+2007-09-23  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.4.0-rc3.
+
 2007-09-13  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/gimp-2.4.htrw: updated text, fixed some typos.
@@ -301,7 +305,11 @@
 	* includes/jquery.corner.js:
 	* includes/wgo-scripts.xhtml: canvas is not supported across all
 		browsers. Make conditional.
-		
+
+2007-09-03  Michael Natterer  <mitch@gimp.org>
+
+	* downloads/index.htrw: updated for 2.4.0-rc2.
+
 2007-09-03  Raphaël Quinet  <raphael@gimp.org>
 
 	* admin/gimp-web-urls
@@ -319,6 +327,10 @@
 
 	* macintosh/index.htrw: Changed link to port file, reworded to
 	reflect MacPorts' change to 2.3. More details welcome.
+
+2007-08-16  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.4.0-rc1.
 
 2007-08-15  Manish Singh  <yosh@gimp.org>
 
@@ -469,6 +481,10 @@
 	* about/splash/index.htrw: sort the list descending 
 	* style/wgo.css: get rid of table border
 
+2007-07-24  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.3.19 release.
+
 2007-07-23  Jakub Steiner <jimmac@ximian.com>
 
 	* screenshots/osx_aperture.jpg:
@@ -478,6 +494,10 @@
 2007-07-21  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* programmatic/downloads/MIRRORS: added HEAnet
+
+2007-07-13  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.2.17 release.
 
 2007-07-12  Jakub Steiner <jimmac@ximian.com>
 
@@ -569,6 +589,9 @@
 	* includes/imagebox.js: in a very typical fashion I forgot to add
 		some files. Nobody seemed to care :)
 
+2007-07-06  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.2.16 release.
 
 2007-07-05  Jakub Steiner <jimmac@ximian.com>
 
@@ -605,6 +628,10 @@
 	* downloads/index.htrw: infrastructure for doing 'smart'
 		downloads, easier to maintain cross-browser workarounds.
 
+2007-06-12  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.3.18 release.
+
 2007-06-01  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* programmatic/admin/news/Makefile (news_config.py): we decided
@@ -629,6 +656,14 @@
 	* macintosh/index.htrw: changed DarwinPorts to Macports; removed
 	note about dlcompat. Fixes bug #433164 and bug #433164.
 
+2007-05-26  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.3.17 release.
+
+2007-05-26  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.2.15 release.
+
 2007-05-16  Sven Neumann  <sven@gimp.org>
 
 	* programmatic/downloads/MIRRORS: replaced dutch mirror with a
@@ -644,6 +679,10 @@
 	* style/wgo.css: a step towards more flexible layout. Will need
 		changes in the splashes and titlebar.
 	* includes/wgo-page-fini.xhtml: fiux non-matching tags
+
+2007-05-14  Sven Neumann  <sven@gimp.org>
+
+	* unix/fonts.htrw: minor update.
 
 2007-05-12  Jakub Steiner <jimmac@ximian.com>
 
@@ -671,6 +710,14 @@
 2007-04-25  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* links/index.htrw: added http://www.gimp.no
+
+2007-04-24  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.3.16 release.
+
+2007-04-18  Sven Neumann  <sven@gimp.org>
+
+	* downloads/index.htrw: updated for 2.2.14 release.
 
 2007-04-07  Kevin Cozens  <kcozens@cvs.gnome.org>
 

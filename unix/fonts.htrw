@@ -28,8 +28,8 @@ version 2.4) use it as well, so there's a good chance that everything is
 properly setup already and fonts will just work for you. If they don't,
 you will have to create or edit your font configuration file as explained
 in the <a
-href="http://pdx.freedesktop.org/fontconfig/fontconfig-user.html">Fontconfig
-User Manual</a>.</p>
+href="http://www.fontconfig.org/fontconfig-user.html">Fontconfig User
+Manual</a>.</p>
 
 <h2>Adding Fonts (system-wide)</h2>
 

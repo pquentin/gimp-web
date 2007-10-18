@@ -1,3 +1,19 @@
+2007-10-19  Raphaël Quinet  <raphael@gimp.org>
+
+	* irc.htrw: New page describing the GIMP IRC channels, based on
+	the contents of the "Irc" page in our wiki.
+
+	* mail_lists.htrw: Restored missing commas, minor updates.
+
+	* release-notes/gimp-2.4.htrw: Updated video for the Foreground
+	Select tool provided by Filipe Soares Dilly.  Removed some
+	sections that will not be advertised for 2.4.
+
+2007-10-18  Sven Neumann  <sven@gimp.org>
+            Raphaël Quinet  <raphael@gimp.org>
+
+	* (many files): Merged all changes between trunk and v2.4 branch.
+
 2007-10-14  Martin Nordholts  <martinn@svn.gnome.org>
 
 	* release-notes/gimp-2.4.htrw: Added a description to the

@@ -43,13 +43,11 @@ src="images/2.4-releasesplash.png" width="640" height="200" />
 
 <p>Selecting individual objects on images is easier now with a new foreground select tool. It is done in two steps. First, you make select region of interest which contains the entire object. Then you paint over selected area with a brush, not crossing object’s border. Release mouse button when you’re done and look, if there are dark blue spots on your objects. If there are some, paint with a brush over them again and release to refine selection. When there are no more blue areas inside the object, press Enter and there you have a perfectly selected object.</p>
 
-<p><object style="width:520px; height:424px; margin: auto;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=7167027894616825688&amp;hl=en" flashvars=""></object></p>
+<p><object style="width:520px; height:424px; margin: auto;" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=2540655610648907719&amp;hl=en" flashvars=""></object></p>
 
 <h3>Align Tool</h3>
 
-<p>While GIMP has provided a grid and guideline functionality, The actual alignment of objects had to be done manually. A new tool comes at rescue.</p>
-
-<p><em class="warn">Content to be added</em></p>
+<p>While GIMP has provided a grid and guideline functionality, the actual alignment of objects had to be done manually. In a few clicks, the new Align Tool allows you to align or distribute a list of layers, paths or guides. You can align these objects with another object, with the selection or with the image.</p>
 
 <h3>Changes in menus</h3>
 
@@ -99,17 +97,9 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <p>Printing has been largely improved. GIMP makes use of the advancements in the gtk+ printing API so that you can control all aspects of the printout with an easy to understand interface and immidiate preview.</p>
 
-<h3>Guides</h3>
-
-<em class="warn">Content to be added</em>
-
 <h3>Red Eye Removal</h3>
 
 <p>While numerous red-eye workflows exist already, GIMP now features a very convenient auto-magic filter to remove red eye from your shots.</p>
-
-<h3>Healing Brush</h3>
-
-<p><em class="warn">Video to be added</em></p>
 
 <h3>Perspective Clone</h3>
 

@@ -522,6 +522,11 @@
 
 2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
 
+	* docs/index.htrw: Hrvatski is Croatian, not Hungarian. 
+	Fixes bug #440576.
+
+2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>	
+
 	* macintosh/index.htrw: formatting change.
 
 2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>

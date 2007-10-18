@@ -312,6 +312,20 @@
 
 2007-08-15  Raphaël Quinet  <raphael@gimp.org>
 
+	* links/org.htrw
+	* includes/urls_go-utility.inc: removed obsolete links, fixed
+	typos, use existing include file instead of duplicating content.
+
+2007-08-15  Raphaël Quinet  <raphael@gimp.org>
+
+	* links/index.htrw: replaced old hispalinux link by
+	www.gimp.org.es (bug #435468).  Updated descriptions of
+	gimpusers.de, added gimpusers.com (bug #437314).  Added links to
+	two sites offering lists of links to GIMP tutorials:
+	pixel2life.com (bug #352208) and ghuj.com (bug #464099).
+
+2007-08-15  Raphaël Quinet  <raphael@gimp.org>
+
 	* tutorials/The_Basics/index.htrw: reverted an incorrect change
 	about how to anchor a floating selection, rewrote several sections
 	to reflect the changes in user interface or tool behavior since

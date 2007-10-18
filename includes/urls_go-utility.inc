@@ -13,13 +13,9 @@
 </p>
 <p>
   <a href="http://manual.gimp.org">manual.gimp.org</a><br />
-  The GIMP User Maunual (GUM)
+  The GIMP User Manual (GUM)
 </p>
 <p>
   <a href="http://registry.gimp.org">registry.gimp.org</a><br />
   Plug-ins.
-</p>
-<p>
-  <a href="http://ircd.gimp.org">ircd.gimp.org</a><br />
-  The Official site of GIMPNet.
 </p>

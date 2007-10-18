@@ -341,6 +341,13 @@
 
 2007-08-15  Raphaël Quinet  <raphael@gimp.org>
 
+	* mail_lists.htrw
+	* admin/gimp-web-urls: added links to several searchable mailing
+	list archives hosted by free.net.ph (Free Network Group,
+	Philippines).  Fixes bug #313437.
+
+2007-08-15  Raphaël Quinet  <raphael@gimp.org>
+
 	* links/org.htrw
 	* includes/urls_go-utility.inc: removed obsolete links, fixed
 	typos, use existing include file instead of duplicating content.

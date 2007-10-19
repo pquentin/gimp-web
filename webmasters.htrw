@@ -29,21 +29,25 @@ database regularly so this is probably the best way to tell us about
 these problems and to get a timely response.  See also <a
 href="/bugs/why_bugzilla.html">why we are using Bugzilla</a>.</p>
 
+<p>You can also subscribe to the <a href="wgo:mail_lists">gimp-web
+mailing list</a> and then submit your improvement proposals to the
+list.</p>
+
 <h2>Download mirrors</h2>
 
 <p>You can also use Bugzilla to <a
 href="home:gimp-bugzilla-wgo-ftp-submit">notify us</a> if a mirror of
 ftp.gimp.org is gone or if a new one has recently been added.  If you
-want to set up a new mirror, you will have to request rsync access
-from the ftp-admin.  We can provide more details through Bugzilla.</p>
+want to set up a new mirror, you may want to request rsync access from
+the ftp admin.  We can provide more details through Bugzilla.</p>
 
 <h2>Last resort</h2>
 
 <p>If you really want to send us some mail, then you can send it to
 webmasters<!--nospam-->@<!--nospam-->gimp.<!--nospam-->org.  We'll try
 and help you out as much as possible, but this e-mail alias is not
-read frequently.  Using Bugzilla will usually provide a much faster
-response (hours instead of months).</p>
+read frequently (not even once per month).  Using Bugzilla will
+usually provide a much faster response (hours instead of months).</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -1,5 +1,17 @@
 2007-10-19  Raphaël Quinet  <raphael@gimp.org>
 
+	* webmasters.htrw: Suggest using the gimp-web mailing list.
+
+	* about/everywhere.htrw: Ask for contributions.
+
+	* irc.htrw: Added anchors #just_ask and #rules, added and fixed
+	some links.
+
+	* includes/wgo-page-fini.xhtml: Added "IRC" link, moved "Wiki" to
+	the first column and "GIMP everywhere" to the fourth one.
+
+2007-10-19  Raphaël Quinet  <raphael@gimp.org>
+
 	* irc.htrw: New page describing the GIMP IRC channels, based on
 	the contents of the "Irc" page in our wiki.
 

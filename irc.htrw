@@ -5,7 +5,7 @@
 
 <h1>IRC channels related to GIMP</h1>
 
-<p>Several IRC channels and <a href="/mail_lists.htrw">mailing lists</a> are
+<p>Several IRC channels and <a href="/mail_lists.html">mailing lists</a> are
 available for discussing GIMP-related topics.  IRC offers real-time
 communication, but be aware that there may be long periods of silence in the
 channels when other users are busy or away from their keyboards.  When you
@@ -50,12 +50,14 @@ GNOME.  However, several channels also exist on other IRC networks:</p>
 
 <dl>
   <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp">#gimp</a></dt>
-  <dd>It is recommended that users migrate from that channel to #gimp-users on
-  GIMPNet, described above.</dd>
+  <dd>It is recommended that users migrate from that channel to <a
+  href="irc://irc.gimp.org/#gimp-users">#gimp-users</a> on GIMPNet, described
+  above.</dd>
 
   <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp-fr">#gimp-fr</a></dt>
-  <dd>It is recommended that users migrate from that channel to #gimp-fr on
-  GIMPNet, described above.</dd>
+  <dd>It is recommended that users migrate from that channel to <a
+  href="irc://irc.gimp.org/#gimp-fr">#gimp-fr</a> on GIMPNet, described
+  above.</dd>
 
   <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp-de">#gimp-de</a></dt>
   <dd>GIMP in German.</dd>
@@ -65,15 +67,16 @@ GNOME.  However, several channels also exist on other IRC networks:</p>
 
 </dl>
 
-<h2>Rules and hints</h2>
+<h2><a name="rules"></a>Rules and hints</h2>
 
 <ul>
   <li>Don't expect to be greeted. Start talking or listen.</li>
 
-  <li>Don't ask to ask, just ask. Questions like "May I ask a question?" are
-  obsolete, you have obviously joined the channel to do something.  Questions
-  like "Can someone help me?" cannot be answered until you have described your
-  problem. Be direct and describe your problem or question immediately.</li>
+  <li><a name="just_ask"></a>Don't ask to ask, just ask. Questions like "May I
+  ask a question?" are obsolete, you have obviously joined the channel to do
+  something.  Questions like "Can someone help me?" cannot be answered until
+  you have described your problem. Be direct and describe your problem or
+  question immediately.</li>
 
   <li>Be patient. This is not a phone support line.</li>
 
@@ -99,8 +102,8 @@ GNOME.  However, several channels also exist on other IRC networks:</p>
   the amount of your ontopic contribution.</li>
 
   <li>In #gimp (the main channel), the GIMP developers have special privileges
-  and may use and abuse them.  If you are not comfortable with that, then
-  consider visiting #gimp-users.</li>
+  and may use and abuse them.  If you are not comfortable with that, then you
+  should join #gimp-users instead.</li>
 
   <li>Don't mess with the admins. You will regret it.</li>
 

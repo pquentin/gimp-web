@@ -1,3 +1,11 @@
+2007-10-20  Raphaël Quinet  <raphael@gimp.org>
+
+	* includes/wgo-page-fini.xhtml: Re-added the links to the
+	platform-specific sections: Unix, Windows, Mac OS X.  This
+	placement is not ideal and should be retought in the future.
+
+	* webmasters.htrw: Also suggest IRC.
+
 2007-10-19  Raphaël Quinet  <raphael@gimp.org>
 
 	* webmasters.htrw: Suggest using the gimp-web mailing list.

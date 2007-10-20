@@ -1,5 +1,15 @@
 2007-10-20  Raphaël Quinet  <raphael@gimp.org>
 
+	* style/wgo.css: h2 and h3 sub-headings should also allow a bit
+	more space if a paragraph ends with a list or a code example.
+
+	* irc.htrw
+	* release-notes/gimp-2.3.htrw
+	* release-notes/gimp-2.4.htrw
+	* release-notes/gimp-2.4-cm.htrw: Updated HTML titles.
+
+2007-10-20  Raphaël Quinet  <raphael@gimp.org>
+
 	* includes/wgo-page-fini.xhtml: Re-added the links to the
 	platform-specific sections: Unix, Windows, Mac OS X.  This
 	placement is not ideal and should be retought in the future.

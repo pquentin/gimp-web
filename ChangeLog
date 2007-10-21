@@ -1,5 +1,9 @@
 2007-10-21  Sven Neumann  <sven@gimp.org>
 
+	* downloads/Mac.xhtml: also point to the 2.4 Gimp.app for Intel.
+
+2007-10-21  Sven Neumann  <sven@gimp.org>
+
 	* downloads/Mac.xhtml: call it "Mac OS X" instead of just "Mac OS".
 	Also make it clear that gimp.app is GIMP 2.2.
 

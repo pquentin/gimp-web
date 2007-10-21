@@ -1,10 +1,10 @@
 /* Default style sheet for www.gimp.org -- be careful if you edit it. */
 /* $Id$ */
 
-/* Copyright (C) 2002-2005 by The GIMP Web Team - Contributions by:
+/* Copyright (C) 2002-2007 by The GIMP Web Team - Contributions by:
  * Ville Pätsi (drc), Henrik Brix Andersen (brix), Carol Spears
- * (carol), Niklas Mattisson (scizzo), Raphaël Quinet (raphael) and
- * Branko Collin (branko).
+ * (carol), Niklas Mattisson (scizzo), Raphaël Quinet (raphael),
+ * Branko Collin (branko) and Jakub Steiner (jimmac).
  *
  * This style sheet and corresponding site layout are designed to be
  * used on official GIMP web sites only.  You may copy some parts of
@@ -102,9 +102,9 @@ h2 {
   clear: left;
 }
 
-p+h2, pre+h2, ul+h2, ol+h2 {
+p+h2, pre+h2, ul+h2, ol+h2, dl+h2 {
   /* all headings that follow a paragraph should be indented more */
-  margin-top: 3em;
+  margin-top: 4em;
 }
 
 
@@ -119,9 +119,9 @@ h3 {
   clear: left;
 }
 
-p+h3, pre+h3, ul+h3, ol+h3 {
+p+h3, pre+h3, ul+h3, ol+h3, dl+h3 {
   /* all headings that follow a paragraph should be indented more */
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 table {
@@ -176,12 +176,12 @@ div.book-of-wilber {
 }
 
 div.news {
-    clear: both;
+  clear: both;
 }
 
 p {
   margin: 1.33em 3em;
-	line-height: 1.2em;
+  line-height: 1.2em;
 }
 
 p.news {
@@ -190,8 +190,8 @@ p.news {
 }
 
 div.news img {
-    float: left;
-    padding: 0em 1em 0em 0em;
+  float: left;
+  padding: 0em 1em 0em 0em;
 }
 
 p.images img, p.logos img {
@@ -259,9 +259,9 @@ span.different {
 li {
   margin-left: 40px;
   margin-right: 40px;
-	list-style-type: image;
-	list-style-image: url('/images/bullet.png');
-	line-height: 1.5em;
+  list-style-type: image;
+  list-style-image: url('/images/bullet.png');
+  line-height: 1.5em;
 }
 
 /*
@@ -285,9 +285,9 @@ ul.splashes li:first-child {
 }
 
 code {
-	background-color: black;
-	padding: .2em;
-	color: #eee;
+  background-color: black;
+  padding: .2em;
+  color: #eee;
 }
 
 pre.code {
@@ -313,7 +313,6 @@ pre.debug {
   margin-right: 40px;
   padding: 1.33em;
 }
-
 
 pre.text {
   color: black;
@@ -362,52 +361,52 @@ form {
 }
 
 .screenshots, div.splashes {
-	margin-left: 3em;
+  margin-left: 3em;
 }
 
 .screenshots a, div.splashes a {
-	display: block;
+  display: block;
   float: left;
-	margin: 4px;
-	border: 0px;
+  margin: 4px;
+  border: 0px;
   width: 128px;
   height: 128px;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 div.splashes a {
-	margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 div.splashes a:hover {
-	margin: 2px 2px 62px 2px;
-	border: 2px solid #f57900;
+  margin: 2px 2px 62px 2px;
+  border: 2px solid #f57900;
 }
 
 .screenshots a:hover { 
-	margin: 2px;
-	border: 2px solid #f57900;
+  margin: 2px;
+  border: 2px solid #f57900;
 }
 
 div.splashes a>p {
-	background-color: #222;
-	width: 108px;
-	height: 4em;
-	font-size: 70%;
-	font-weight: normal;
-	margin: 2px 0px;
-	padding: 10px;
+  background-color: #222;
+  width: 108px;
+  height: 4em;
+  font-size: 70%;
+  font-weight: normal;
+  margin: 2px 0px;
+  padding: 10px;
 }
 
 div.splashes a:hover>p {
-	margin: -2px;
-	padding: 14px 12px 10px 12px;
-	color: #555;
+  margin: -2px;
+  padding: 14px 12px 10px 12px;
+  color: #555;
   background-color: #f57900;
 }
 
 .screenshots+h2 {
-	padding-top: 3em;
+  padding-top: 3em;
 }
 
 /* Changes here should only be done if you know exactly what you are doing.
@@ -416,11 +415,11 @@ div.splashes a:hover>p {
  * more information about the values below. */
 
 #maincontainer {
-   max-width: 60em;
-   min-height: 80em;
-   margin: 0px auto;
-   /* border: 1px solid green; */
-   background-color: #2e3436;
+  max-width: 60em;
+  min-height: 80em;
+  margin: 0px auto;
+  /* border: 1px solid green; */
+  background-color: #2e3436;
 }
 
 #menu {
@@ -505,7 +504,7 @@ div.splashes a:hover>p {
   border-top: 1 px solid #666;
   font-weight: bold;
   text-align: center;
-	min-height: 8em;
+  min-height: 8em;
 }
 
 #linkbar div {
@@ -562,18 +561,18 @@ div.bottomlinks li {
 
 
 #header {
-   margin: 10px 0px 0px 0px;
-   height: 43px;
+  margin: 10px 0px 0px 0px;
+  height: 43px;
 }
 
 #title {
-   max-width: 60em;
-   padding: 0px;
-   margin: 0px auto;
-   font-size: 10pt;
-   background: #f57900 url('../images/title.png') no-repeat 2px 2px;
-   height: 43px;
-   text-align: right;
+  max-width: 60em;
+  padding: 0px;
+  margin: 0px auto;
+  font-size: 10pt;
+  background: #f57900 url('../images/title.png') no-repeat 2px 2px;
+  height: 43px;
+  text-align: right;
 }
 
 div.splash {
@@ -581,31 +580,31 @@ div.splash {
   background-color: transparent;
   height: 180px;
   overflow: hidden;
-	position: relative;
+  position: relative;
 }
 
 .splash img#splashbg {
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: 0px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .splash img#splash24overlay {
-	display: block;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	width: 300px;
-	height: 140px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 140px;
 }
 
 .splash img#fadesplash {
-	position: absolute;
-	display: block;
-	left: 900px;
-	width: 135px;
-	height: 200px;
+  position: absolute;
+  display: block;
+  left: 900px;
+  width: 135px;
+  height: 200px;
 }
 
 .intropara {
@@ -622,7 +621,10 @@ div.splash {
 
 }
 
+/* some elements do not need to be printed */
+
 @media print {
+
 #titlebar, #navbar, #linkbar, #menu {
   display: none
 }

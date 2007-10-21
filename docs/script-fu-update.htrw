@@ -140,11 +140,11 @@ versions.</p>
   <li><code>prin1</code> - replaced by TinyScheme's <code>write</code></li>
   <li><code>print</code> - replaced by TinyScheme's <code>write</code> (along with <code>newline</code>)</li>
   <li><code>strcat</code> - replaced by TinyScheme's <code>string-append</code></li>
-  <li><code>string-lessp</code> - replaced by TinyScheme's <code>string<?</code></li>
+  <li><code>string-lessp</code> - replaced by TinyScheme's <code>string&lt;?</code></li>
   <li><code>symbol-bound?</code> - replaced by TinyScheme's <code>defined?</code></li>
   <li><code>the-environment</code> - replaced by TinyScheme's <code>current-environment</code></li>
-  <li><code>*pi*</code> - The constant *pi* is not predefined in TinyScheme but can be defined as <code>(* 4 (atan 1.0))</code></li>
-  <li><code>butlast</code> -  Is not available in TinyScheme but alternate coding using <code>(reverse (cdr (reverse x)))</code> is possible</li>
+  <li><code>*pi*</code> - the constant *pi* is not predefined in TinyScheme but can be defined as <code>(* 4 (atan 1.0))</code></li>
+  <li><code>butlast</code> - is not available in TinyScheme but alternate coding using <code>(reverse (cdr (reverse x)))</code> is possible</li>
   <li><code>cons-array</code> - replaced by TinyScheme's <code>make-vector</code></li>
 </ul>
 
@@ -159,8 +159,7 @@ seem to appear in any published Script-fu). If you encounter scripts
 containing such problems, please post on the GIMP developers mailing
 list outlining your problems.</p>
 
-<p><em>(insert credits here once Saul says how he wants to be credited
-for writing this guide)</em></p>
+<p><em>This migration guide was written by Saul Goode.</em></p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

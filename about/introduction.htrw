@@ -30,7 +30,9 @@
 
 <h2>Features and Capabilities</h2>
 <p>
-  This is only a very quickly thrown together list of GIMP features.
+  This is only a very quickly thrown together list of GIMP features.  You
+  can also have a look at the illustrated <a href="/features/">features
+  overview</a>.
 </p>
 
 <ul>
@@ -55,7 +57,8 @@
     <li>Multiple Undo/Redo (limited only by diskspace)</li>
     <li>Editable text layers</li> 
     <li>Transformation tools including rotate, scale, shear and flip</li>
-    <li>Selection tools including rectangle, ellipse, free, fuzzy and intelligent</li>
+    <li>Selection tools including rectangle, rounded rectangle, ellipse, free, fuzzy</li>
+    <li>Foreground extraction tool</li>
     <li>Advanced path tool doing bezier and polygonal selections.</li>
     <li>Transformable paths, transformable selections.</li>
     <li>Quickmask to paint a selection.</li>

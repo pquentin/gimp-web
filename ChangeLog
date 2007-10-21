@@ -1,3 +1,14 @@
+2007-10-22  Raphaël Quinet  <raphael@gimp.org>
+
+	* docs/script-fu-update.htrw: Fixed some minor errors reported by
+	Kevin Cozens.
+
+	* style/wgo.css: Updated copyright message and indentation.
+
+	* index.htrw
+	* features/index.htrw
+	* about/introduction.htrw: Minor updates and cross-linking.
+
 2007-10-21  Sven Neumann  <sven@gimp.org>
 
 	* downloads/Mac.xhtml: also point to the 2.4 Gimp.app for Intel.

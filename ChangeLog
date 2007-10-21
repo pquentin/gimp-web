@@ -1,3 +1,8 @@
+2007-10-21  Sven Neumann  <sven@gimp.org>
+
+	* downloads/Mac.xhtml: call it "Mac OS X" instead of just "Mac OS".
+	Also make it clear that gimp.app is GIMP 2.2.
+
 2007-10-20  Raphaël Quinet  <raphael@gimp.org>
 
 	* style/wgo.css: h2 and h3 sub-headings should also allow a bit

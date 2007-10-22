@@ -102,6 +102,38 @@
   artist: Kristian Rietveld, Simon, Mitch</p>
 </td></tr>
 
+<tr><td>
+  <h2>tarball: 2.3.16</h2>
+  <a href="images/gimp-splash-r21408.png"><img src="images/gimp-splash-r21408-t.png" width="150" height="113" alt="SVN r21408"/></a>
+  <p>SVN: 21408<br />
+  artist: Kristian Rietveld, Simon, Mitch</p>
+</td><td>
+  <h2>tarball: 2.3.17</h2>
+  <a href="images/gimp-splash-r21408.png"><img src="images/gimp-splash-r21408-t.png" width="150" height="113" alt="SVN r21408"/></a>
+  <p>SVN: 21408<br />
+  artist: Kristian Rietveld, Simon, Mitch</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.3.18</h2>
+  <a href="images/gimp-splash-r21408.png"><img src="images/gimp-splash-r21408-t.png" width="150" height="113" alt="SVN r21408"/></a>
+  <p>SVN: 21408<br />
+  artist: Kristian Rietveld, Simon, Mitch</p>
+</td><td>
+  <h2>tarball: 2.3.19</h2>
+  <a href="images/gimp-splash-r21408.png"><img src="images/gimp-splash-r21408-t.png" width="150" height="113" alt="SVN r21408"/></a>
+  <p>SVN: 21408<br />
+  artist: Kristian Rietveld, Simon, Mitch</p>
+</td></tr>
+
+<tr><td>
+  <h2>tarball: 2.4 release candidates</h2>
+  <a href="images/gimp-splash-r23679.png"><img src="images/gimp-splash-r23679-t.png" width="150" height="200" alt="SVN r23679"/></a>
+  <p>SVN: 23679<br />
+  artist: Jimmac</p>
+</td>
+</tr>
+
 </table>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

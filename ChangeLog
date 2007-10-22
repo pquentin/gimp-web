@@ -1,5 +1,13 @@
 2007-10-22  Sven Neumann  <sven@gimp.org>
 
+	* about/splash/images/gimp-splash-r23679.png
+	* about/splash/images/gimp-splash-r23679-t.png: added splash
+	screens of the 2.4 release candidates.
+
+	* about/splash/unstable-2.3.htrw: updated.
+
+2007-10-22  Sven Neumann  <sven@gimp.org>
+
 	* about/splash/images/gimp-splash-2.4-t.png
 	* about/splash/images/gimp-splash-2.4.png
 	* about/splash/images/eek.png: flattened splash images.

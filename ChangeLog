@@ -1,3 +1,9 @@
+2007-10-22  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/images/gimp-splash-2.4-t.png
+	* about/splash/images/gimp-splash-2.4.png
+	* about/splash/images/eek.png: flattened splash images.
+
 2007-10-22  Raphaël Quinet  <raphael@gimp.org>
 
 	* docs/script-fu-update.htrw: Fixed some minor errors reported by

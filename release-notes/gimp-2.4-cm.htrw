@@ -24,7 +24,7 @@ src="images/color-management.png" class="figure" />
 
 <p>Most digital cameras embed a color profile to individual photo files without user interaction. Digital scanners usually come with a color profile, which they also attach to the scanned images.</p>
 
-<p>When opening an image with an embedded color profile, GIMP 2.4 offers to convert the file to the RGB work color space. This is <emph>sRGB</emph> by default and it is recommended that all work is done in that color space. Should the user decide to keep the embedded color profile, the image will however still be displayed correctly.</p>
+<p>When opening an image with an embedded color profile, GIMP 2.4 offers to convert the file to the RGB work color space. This is <em>sRGB</em> by default and it is recommended that all work is done in that color space. Should the user decide to keep the embedded color profile, the image will however still be displayed correctly.</p>
 
 <h3>Display</h3>
 
@@ -33,11 +33,9 @@ src="images/color-management.png" class="figure" />
 
 <h3>Print Simulation</h3>
 
-<p>Using GIMP 2.4, you can easily get a preview of what your image will look like on paper. Given a color profile for your printer, the display can be switched into <emph>Soft Proof</emph> mode. In such a simulated printout, colors that can not be reproduced will optionally be marked, allowing you to correct such mistakes before the sending your images to the printer.
-</p>
+<p>Using GIMP 2.4, you can easily get a preview of what your image will look like on paper. Given a color profile for your printer, the display can be switched into <em>Soft Proof</em> mode. In such a simulated printout, colors that cannot be reproduced will optionally be marked, allowing you to correct such mistakes before sending your images to the printer.</p>
 
-<p><a href="gimp-2.4.html">Return to the release
-notes</a></p>
+<p><a href="gimp-2.4.html">Return to the release notes</a></p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

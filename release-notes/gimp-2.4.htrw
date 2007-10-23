@@ -53,7 +53,7 @@ src="images/2.4-releasesplash.png" width="640" height="200" />
 
 <h3>Changes in menus</h3>
 
-<p>Most notable is the new top-level Color menu that accumulates most tools, plug-ins and scripts that adjust colors in RGB/Grayscale mode and color palettes in Indexed mode. So now you can reach functions like Levels or Curves much faster than before, unless you define your own keyboard shortcuts for them using the improved keyboard shortcuts manager.</p>
+<p>Most notable is the new top-level Color menu that accumulates most tools, plug-ins and scripts that adjust colors in RGB/Grayscale mode and color palettes in Indexed mode. So now you can reach functions like Levels or Curves much faster than before.  You can also define your own keyboard shortcuts for them using the improved keyboard shortcuts manager.</p>
 
 <p>In the new version of GIMP, some menu entries have changed their names and position. It was done mostly to simplify learning curve and improve user experience. After all, "HSV Noise" and "RGB Noise" sound more meaningful than "Scatter HSV" and "Scatter RGB", don't they? And status bar hints for all plug-ins and scripts are quite helpful too.</p>
 

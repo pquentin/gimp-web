@@ -362,24 +362,26 @@ form {
 
 .screenshots, div.splashes {
   margin-left: 3em;
+  margin-right: 1em;
 }
 
 .screenshots a, div.splashes a {
   display: block;
   float: left;
-  margin: 4px;
   border: 0px;
   width: 128px;
-  height: 128px;
+  height: 138px;
   text-decoration: none;
 }
 
 div.splashes a {
-  margin-bottom: 64px;
+  margin: 4px;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
 div.splashes a:hover {
-  margin: 2px 2px 62px 2px;
+  margin: 2px;
   border: 2px solid #f57900;
 }
 
@@ -394,13 +396,11 @@ div.splashes a>p {
   height: 4em;
   font-size: 70%;
   font-weight: normal;
-  margin: 2px 0px;
+  margin: 0px;
   padding: 10px;
 }
 
 div.splashes a:hover>p {
-  margin: -2px;
-  padding: 14px 12px 10px 12px;
   color: #555;
   background-color: #f57900;
 }

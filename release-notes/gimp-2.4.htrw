@@ -47,6 +47,8 @@ src="images/2.4-releasesplash.png" width="640" height="200" />
 
 <h3>Align Tool</h3>
 
+<img class="right" src="images/2.4-align-tool.png" alt="Align Tool" />
+
 <p>While GIMP has provided a grid and guideline functionality, the actual alignment of objects had to be done manually. In a few clicks, the new Align Tool allows you to align or distribute a list of layers, paths or guides. You can align these objects with another object, with the selection or with the image.</p>
 
 <h3>Changes in menus</h3>
@@ -83,7 +85,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <p>For more information, see <a href="gimp-2.4-cm.html">color management</a>.</p>
 
-<h3>New Crop Tool</h3>
+<h3 style="clear:right">New Crop Tool</h3>
 
 <img class="right" src="images/2.4-crop-tool.png" alt="Crop Tool" />
 

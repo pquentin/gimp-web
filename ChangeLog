@@ -1,5 +1,11 @@
 2007-10-23  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/gimp-2.4.htrw
+	* release-notes/images/2.4-align-tool.png: Added screenshot of the
+	Align Tool in action.
+
+2007-10-23  Raphaël Quinet  <raphael@gimp.org>
+
 	* docs/script-fu-update.htrw: Got rid of the last 'The GIMP' that
 	should have been 'GIMP'.  Removed last line at Saul Goode's
 	request.

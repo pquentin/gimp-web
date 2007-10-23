@@ -1,3 +1,7 @@
+2007-10-23  Jakub Steiner <jimmac@ximian.com>
+
+	* features/index.htrw: add a link to the tutorials page.
+
 2007-10-23  Sven Neumann  <sven@gimp.org>
 
 	* release-notes/gimp-2.4-cm.htrw: extended the section about color

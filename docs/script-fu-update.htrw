@@ -25,9 +25,9 @@ significant.</p>
 <p>Though this switch has required an extensive effort on the part of
 GIMP developers (particularly Kevin Cozens) and some significant
 changes to the internals of the GIMP code, there should be very little
-visible change to GIMP users. The GIMP's scripting extension will
-still be called "Script-fu" and the vast majority of the scripts
-already available will still function using the new TinyScheme-based
+visible change to GIMP users. GIMP's scripting extension is still
+called "Script-fu" and the vast majority of the scripts already
+available will still function using the new TinyScheme-based
 interpreter.</p>
 
 <p>Despite the desire to keep the impact of this change to GIMP
@@ -158,8 +158,6 @@ errors) and the <code>bytes-append</code> function (which does not
 seem to appear in any published Script-fu). If you encounter scripts
 containing such problems, please post on the GIMP developers mailing
 list outlining your problems.</p>
-
-<p><em>This migration guide was written by Saul Goode.</em></p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

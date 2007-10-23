@@ -1,5 +1,11 @@
 2007-10-23  Jakub Steiner <jimmac@ximian.com>
 
+	* style/wgo.css: the menu should have margin, splashes need
+		workaround (negative margin). Maybe extra menu class would be
+		cleaner, but not when dealing with pretty static website.
+
+2007-10-23  Jakub Steiner <jimmac@ximian.com>
+
 	* about/splash/stable.html:
 	* style/wgo.css: unbreak layout. corners had glitches, are gone
 		now :(

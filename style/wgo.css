@@ -431,7 +431,7 @@ div.splashes a:hover>p {
   white-space: nowrap;
   left: 0px;
   height: 100%;
-  margin: 0px;
+  margin: 0 0 1em 1em;
   background-color: #0e2426;
 }
 
@@ -576,7 +576,7 @@ div.bottomlinks li {
 }
 
 div.splash {
-  margin: -20px 0px 0px -20px;
+  margin: -20px -1em 0 -20px;
   background-color: transparent;
   height: 180px;
   overflow: hidden;
@@ -608,7 +608,7 @@ div.splash {
 }
 
 .intropara {
-  margin: 0px 0px 2em -20px;
+  margin: 0 -1em 2em -20px;
   background-color: #444;
   padding: 8px 16px 16px 58px;
   line-height: 1.5em;

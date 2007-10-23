@@ -365,49 +365,46 @@ form {
   margin-right: 1em;
 }
 
-.screenshots a, div.splashes a {
-  display: block;
-  float: left;
-  border: 0px;
-  width: 128px;
-  height: 138px;
-  text-decoration: none;
-}
+  .screenshots a, div.splashes a {
+    display: block;
+    float: left;
+    border: 0px;
+    width: 128px;
+    height: 128px;
+    text-decoration: none;
+    margin: 4px;
+    padding: 0;
+  }
 
-div.splashes a {
-  margin: 4px;
-  overflow: hidden;
-  padding-bottom: 40px;
-}
+  div.splashes a {
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
 
-div.splashes a:hover {
-  margin: 2px;
-  border: 2px solid #f57900;
-}
+  div.splashes a:hover, .screenshots a:hover {
+    margin: 2px;
+    border: 2px solid #f57900;
+  }
 
-.screenshots a:hover { 
-  margin: 2px;
-  border: 2px solid #f57900;
-}
 
-div.splashes a>p {
-  background-color: #222;
-  width: 108px;
-  height: 4em;
-  font-size: 70%;
-  font-weight: normal;
-  margin: 0px;
-  padding: 10px;
-}
+  div.splashes a>p {
+    background-color: #222;
+    width: 108px;
+    height: 4em;
+    font-size: 70%;
+    font-weight: normal;
+    margin: 0px;
+    padding: 10px;
+  }
 
-div.splashes a:hover>p {
-  color: #555;
-  background-color: #f57900;
-}
+  div.splashes a:hover>p {
+    color: #555;
+    background-color: #f57900;
+  }
 
-.screenshots+h2 {
-  padding-top: 3em;
-}
+  .screenshots+h2 {
+    padding-top: 3em;
+  }
 
 /* Changes here should only be done if you know exactly what you are doing.
  * Changes done here will change the appearence of the whole site and should

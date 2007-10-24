@@ -9,8 +9,8 @@
 <div class="splash">
 <img id="splashbg" alt="GIMP 2.4 Released!" title="GIMP 2.4 Released!" 
 src="/images/frontsplash.jpg" />
-<img id="fadesplash" src="/images/fade.png" />
-<img id="splash24overlay" src="/images/frontsplash24.png" usemap="#splashmap" />
+<img id="fadesplash" alt="-" src="/images/fade.png" />
+<img id="splash24overlay" alt="-" src="/images/frontsplash24.png" usemap="#splashmap" />
 </div>
 
 <map name="splashmap" id="splashmap">

@@ -55,6 +55,7 @@ width="180" height="200" />
 <ul>
   <li>Linux (i386, PPC)</li>
   <li>Microsoft Windows (XP, Vista)</li>
+  <li>Mac OS X</li>
   <li>Sun OpenSolaris</li>
   <li>FreeBSD</li>
 </ul>

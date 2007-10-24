@@ -78,7 +78,7 @@ img.right, object.right {
   margin-right: 40px;
 }
 
-img.figure {
+img.figure, .flash {
   display: block;
   margin: 1em auto;
   max-width: 500px;
@@ -504,7 +504,7 @@ form {
   clear: both;
   background: #111;
   color: #aaa;
-  border-top: 1px solid #666;
+ /* border-top: 1px solid #666; */
   font-weight: bold;
   text-align: center;
   min-height: 8em;

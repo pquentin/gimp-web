@@ -1,3 +1,8 @@
+2007-10-24  Jakub Steiner <jimmac@ximian.com>
+
+	* style/wgo.css:
+	* release-notes/gimp-2.4.htrw: center the embedded flash movies.
+
 2007-10-24  Sven Neumann  <sven@gimp.org>
 
 	* macintosh/index.htrw

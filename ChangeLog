@@ -1,5 +1,11 @@
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
+	* downloads/Windows.xhtml: Link to the download page for the
+	stable version (now updated to 2.4) and mention that it requires
+	at least Windows 2000.
+
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
 	* release-notes/gimp-2.4.htrw: made the color management image
 	clickable.
 

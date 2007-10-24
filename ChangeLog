@@ -1,5 +1,10 @@
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/gimp-2.4-cm.htrw: fixed the broken link to the
+	title image.
+
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
 	* windows/index.htrw
 	* downloads/Windows.xhtml: fixed the spelling of Jernej's name.
 

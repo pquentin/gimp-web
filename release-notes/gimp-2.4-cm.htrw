@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">
-<img alt="#" height="200" src="images/2.4-releasesplash.png" width="640" />
+<img alt="#" src="images/2.4-releasesplash.jpg" width="640" height="200" />
 </div>
 
 <h1>GIMP 2.4 Color Management</h1>

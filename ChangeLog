@@ -1,5 +1,13 @@
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
+	* includes/wgo-page-fini.xhtml: Removed "GIMP everywhere" until we
+	have useful testimonials.  That page can still be accessed from
+	/about/.
+
+	* about/history.htrw: Link GIMP 2.4.0 to the release notes.
+
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
 	* index.htrw: Put a space in the empty paragraph.
 
 2007-10-24  Sven Neumann  <sven@gimp.org>

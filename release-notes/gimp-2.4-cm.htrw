@@ -24,7 +24,7 @@ src="images/color-management.png" class="figure" />
 
 <p>When opening an image with an embedded color profile, GIMP 2.4 offers to convert the file to the RGB working color space. This is <strong>sRGB</strong> by default and it is recommended that all work is done in that color space. Should the user decide to keep the embedded color profile, the image will however still be displayed correctly.</p>
 
-<p>In case for some reason a color profile is not embedded in the image and you know (or have a good guess) which one it should be, you can manually assign it to that image. This should be done using the command "<span class="filter">Image -&gt; Mode -&gt; Assign Color Profile...</span>". You can also convert an image from one color space to another using "<span class="filter">Image -&gt; Mode -&gt; Convert to Color Profile...</span>". This is useful for conversions between color spaces with different (wider or narrower) gamuts.</p>
+<p>In case for some reason a color profile is not embedded in the image and you know (or have a good guess) which one it should be, you can manually assign it to that image.</p>
 
 <h3>Display</h3>
 

@@ -4,8 +4,15 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>How To Set Your Tile Cache</h1>
-
 <h2>or Tile Cache Recommendations</h2>
+
+<p><em><strong>Quick summary</strong> for those who do not want to
+read all this: if your system has good swapping behavior (like most
+Linux systems) and if you have enough virtual memory (swap), then set
+the tile cache size as high as possible.  If not, then set it to about
+80% of the available RAM on your system.  If you are not satisfied
+with this quick advice, then keep on reading...</em></p>
+
 <p>
   Image processing can require a lot of memory. GIMP uses the
   operating system services to handle memory, up to a given point,

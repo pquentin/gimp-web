@@ -1,3 +1,8 @@
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
+	* unix/howtos/tile_cache.htrw: Added a quick summary for the
+	impatient.
+
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
 	* style/wgo.css:

@@ -259,7 +259,6 @@ span.different {
 li {
   margin-left: 40px;
   margin-right: 40px;
-  list-style-type: image;
   list-style-image: url('/images/bullet.png');
   line-height: 1.5em;
 }
@@ -498,7 +497,7 @@ form {
   clear: both;
   background: #111;
   color: #aaa;
-  border-top: 1 px solid #666;
+  border-top: 1px solid #666;
   font-weight: bold;
   text-align: center;
   min-height: 8em;

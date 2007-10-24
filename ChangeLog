@@ -1,5 +1,10 @@
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
+	* styles/wgo.css: 
+	* styles/interface.css: fix validation issues.
+
+2007-10-24  Jakub Steiner <jimmac@ximian.com>
+
 	* index.htrw: add alt to be valid
 	* /features/index.htrw: add mac os
 

@@ -1,5 +1,9 @@
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/images/2.4-align-tool.png: shifted by one pixel.
+
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
 	* release-notes/gimp-2.4.htrw
 	* release-notes/images/2.4-zoom-display.png: added text and image
 	describing some improvements to the display code in GIMP 2.4.

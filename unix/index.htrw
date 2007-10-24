@@ -106,21 +106,6 @@ separate package using the suffix <code>-devel</code>.  So for
 example, you will need the packages <code>gtk</code> and
 <code>gtk-devel</code> if you want to build GIMP.</p>
 
-<h2>Configuration</h2>
-
-<ul>
-  <li><a href="wgo:unix-user_install">The first time you
-  run GIMP</a>.<br />
-  When you run GIMP for the first time, it will install some files
-  in your home directory and it will show you some dialogs that give
-  you the opportunity to adapt it to your environment.</li>
-
-  <li><a href="wgo:unix-howtos-tile_cache">How to set the tile
-  cache</a>.<br />
-  The tile cache tells GIMP how much memory it can use before
-  swapping some image data to disk.  Setting the size of the tile
-  cache can be critical for the performance of your system.</li>
-</ul>
 
 <h2>Help and Documentation</h2>
 

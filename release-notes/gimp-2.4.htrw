@@ -84,7 +84,7 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 
 <h3>Color Management and Soft-proofing</h3>
 
-<img class="right" src="images/2.4-color-management.png" alt="Color Management" />
+<a href="gimp-2.4-cm.html"><img class="right" src="images/2.4-color-management.png" alt="Color Management" /></a>
 
 <p>GIMP now provides full support for color profiles allowing precise color
 modification throughout the whole 'digital darkroom' process.</p>

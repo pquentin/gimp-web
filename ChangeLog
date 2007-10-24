@@ -1,3 +1,8 @@
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
+	* release-notes/gimp-2.4.htrw: made the color management image
+	clickable.
+
 2007-10-24  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: fixed grammar.

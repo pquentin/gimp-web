@@ -1,3 +1,10 @@
+2007-10-24  Sven Neumann  <sven@gimp.org>
+
+	* index.htrw: use an empty paragraph to introduce some spacing.
+
+	* downloads/source.xhtml: updated for 2.4.0. Fixed link to GAP and
+	changed the pointer to the development version.
+
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
 	* features/index.htrw: removed the plea for help.

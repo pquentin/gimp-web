@@ -23,8 +23,9 @@ src="/images/frontsplash.jpg" />
 freely distributed piece of software for such tasks as <a
 href="/tutorials/Blur_Overlays/">photo retouching</a>, image composition and
 <a href="/tutorials/Draw_A_Paint_Brush/">image authoring</a>.  It works on
-many operating systems, in many languages. (<a
-href="/about/introduction.html">more...</a>)</p>
+many operating systems, in many languages.
+(<a href="/about/introduction.html">more...</a>)
+</p>
 
 <div id="downloadgimp">
 </div>
@@ -35,6 +36,9 @@ serves as a distribution point for the latest releases.  We try to
 provide as much information about the GIMP community and related
 projects as possible.  Hopefully you will find what you need here.
 Grab a properly chilled beverage and enjoy.</p>
+
+<p>
+</p>
 
 <!--#include virtual="/includes/news.inc" -->
 

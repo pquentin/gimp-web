@@ -5,14 +5,11 @@
 
 <h1>Documentation</h1>
 
-<h2>The GIMP User Manual</h2>
+<h2>GIMP User Manual</h2>
   <p>
-    GIMP comes with extensive help files. Once you have started
-    the program, press <kbd>F1</kbd>. Should you get an error message
-    at that time, you may need to set your help browser to 'Web
-    Browser' in the Preferences. This will tell GIMP to use your
-    default web browser for viewing the help pages.  You may also have
-    to install the help pages from a separate package (gimp-help),
+    GIMP comes with a built-in help system. Once you have started
+    the program, press <kbd>F1</kbd> for context-sensitive help.
+    You may have to install the help pages from a separate package (gimp-help),
     depending on how your version of GIMP was packaged.
   </p>
 
@@ -37,18 +34,7 @@
     </ul>
   </p>
 
-  <p>
-    Older versions of the manual for GIMP 2.2 are also available in
-    these languages:
-
-    <ul>
-      <li><a href="http://docs.gimp.org/2.2/zh_CN/">Chinese</a> (中文)</li>
-      <li><a href="http://docs.gimp.org/2.2/hr/">Croatian</a> (Hrvatski)</li>
-      <li><a href="http://docs.gimp.org/2.2/cs/">Czech</a> (Čeština)</li>
-    </ul>
-  </p>
-
-<h2>The User FAQ</h2>
+<h2>GIMP User FAQ</h2>
  <p>
   <a href="userfaq.html">Frequently Asked Questions</a>
  </p>

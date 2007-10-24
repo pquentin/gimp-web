@@ -1,3 +1,8 @@
+2007-10-24  Sven Neumann  <sven@gimp.org>
+
+	* docs/index.htrw: simplified; removed links to old versions of
+	the manual.
+
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/gimp-2.4-cm.htrw: fixed the broken link to the

@@ -1,5 +1,10 @@
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
+	* downloads/Mac.xhtml: added warning about release candidates,
+	until the 2.4.0 binaries are available.
+
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
 	* bugs/index.htrw: added link to the gnome-love bugs.
 
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>

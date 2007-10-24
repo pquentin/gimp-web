@@ -1,5 +1,9 @@
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
+	* bugs/index.htrw: added link to the gnome-love bugs.
+
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
 	* docs/index.htrw: restored the links to the languages that are
 	not available yet for 2.4.
 

@@ -1,5 +1,13 @@
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
+	* style/wgo.css: add <hr> styling (For the download page). 
+
+2007-10-24  Jakub Steiner <jimmac@ximian.com>
+
+	* downloads/Windows.xhtml: remove some misinformation
+
+2007-10-24  Jakub Steiner <jimmac@ximian.com>
+
 	* styles/wgo.css: 
 	* styles/interface.css: fix validation issues.
 

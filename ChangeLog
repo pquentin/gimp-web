@@ -1,5 +1,10 @@
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/images/2.4-zoom-display.png: redid the screenshot
+	without inverting the colors and without a transparency gradient.
+
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
 	* unix/howtos/tile_cache.htrw: Added a quick summary for the
 	impatient.
 

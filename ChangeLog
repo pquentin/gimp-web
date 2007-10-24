@@ -1,3 +1,12 @@
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
+	* docs/index.htrw: restored the links to the languages that are
+	not available yet for 2.4.
+
+	* admin/gimp-web-urls: removed the links to docs.gimp.org because
+	they were only used in one page and it is easier to maintain them
+	there.
+
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
 	* style/wgo.css: another microfix to lower the whitespace at the

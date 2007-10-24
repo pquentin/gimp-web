@@ -419,7 +419,7 @@ form {
 
 #maincontainer {
   max-width: 60em;
-  min-height: 80em;
+  min-height: 60em;
   margin: 0px auto;
   /* border: 1px solid green; */
   background-color: #2e3436;

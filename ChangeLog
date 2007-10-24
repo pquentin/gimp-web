@@ -1,3 +1,7 @@
+2007-10-24  Raphaël Quinet  <raphael@gimp.org>
+
+	* index.htrw: Put a space in the empty paragraph.
+
 2007-10-24  Sven Neumann  <sven@gimp.org>
 
 	* index.htrw: use an empty paragraph to introduce some spacing.

@@ -1,3 +1,8 @@
+2007-10-24  Jakub Steiner <jimmac@ximian.com>
+
+	* style/wgo.css: another microfix to lower the whitespace at the
+	bottom of the news page.
+
 2007-10-24  Sven Neumann  <sven@gimp.org>
 
 	* docs/index.htrw: simplified; removed links to old versions of

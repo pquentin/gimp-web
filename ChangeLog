@@ -1,3 +1,8 @@
+2007-10-24  Sven Neumann  <sven@gimp.org>
+
+	* release-notes/images/2.4-refreshed-look.png: manipulated the
+	window title of the (outdated) OS X screenshot.
+
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
 	* downloads/Windows.xhtml: Link to the download page for the

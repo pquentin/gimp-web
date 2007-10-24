@@ -1,5 +1,9 @@
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
+	* images/frontsplash24.png: pngcrushed 5kB off it.
+
+2007-10-24  Jakub Steiner <jimmac@ximian.com>
+
 	* style/wgo.css: add <hr> styling (For the download page). 
 
 2007-10-24  Jakub Steiner <jimmac@ximian.com>

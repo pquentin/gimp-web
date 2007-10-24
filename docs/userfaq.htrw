@@ -5,6 +5,8 @@
 
 <h1>Frequently Asked Questions</h1>
 
+<p><em class="warn">This FAQ is still a work in progress.  Some sections are very outdated, other sections should probably be removed, and some new questions and answers should be added.  Please <a href="/webmasters.html">contact us</a> if you can improve it.</em></p>
+
 <ol type="A">
   <li><a href="#GI">General Information</a>
   <ol>
@@ -155,8 +157,10 @@ apologise for your rudeness.</p>
 
 <h3 id="Gnome">Is GIMP a GNOME application?</h3>
 
-<p>Not really. It doesn't use the GNOME application framework. The only
-thing it has in common is GTK.</p>
+<p>Not really. It doesn't use the GNOME application framework. The
+only thing it has in common is GTK+. GIMP can optionally use
+gnome-vfs, allowing you to load and edit images from remote
+servers.</p>
 
 <h3 id="Gtk">Is GTK+ still under the aegis of GIMP? Was it ever?</h3>
 
@@ -168,8 +172,8 @@ interesting tidbits from the GIMP perspective.</p>
 
 <h3 id="Version">Which version should I use?</h3>
 
-<p>You should use the latest stable release. As of March 2007, this is
-GIMP 2.2.15. This is a bug-fix release in the stable 2.2 series.</p>
+<p>You should use the latest stable release.  See our <a
+href="/downloads/">downloads page</a>.</p>
 
 <h3 id="Manual">Is there a user manual?</h3>
 
@@ -194,13 +198,15 @@ form, and in <a href="http://docs.gimp.org/download.html">PDF</a>.</p>
 
 <h3 id="IRC">Is there an IRC channel?</h3>
 
-<p>Yes. See <a href="http://wiki.gimp.org/gimp/Irc">IRC</a> for more
-information.</p>
+<p>See our list of <a href="/irc.html">IRC channels</a>.</p>
 
 <h3 id="Libs">Why does GIMP complain about missing or wrong versions
 of libraries?</h3>
 
 <p>Probably because it can't find them.</p>
+
+<p><em class="warn">FIXME: some of the advice given here is incorrect
+and even dangerous.</em></p>
 
 <p>There are a couple of solutions. The best one, if you have superuser
 access on your system, or a cooperative system administrator, is to add
@@ -224,11 +230,15 @@ locations, or statically linking them to one or more programs.</p>
 
 <h3 id="Xinput">Is XInput support available?</h3>
 
+<p><em class="warn">FIXME: obsolete advice.</em></p>
+
 <p>It's under development. For more information, see Owen Taylor's page
 about <a href="http://www.gtk.org/~otaylor/xinput/">XInput support for
 GTK and GIMP</a>.</p>
 
 <h3 id="Tablet">Does GIMP support art tablets like the Wacom?</h3>
+
+<p><em class="warn">FIXME: obsolete advice.</em></p>
 
 <p>In the more recent releases of most distros, installing the
 wacom-tools package should make tablet support "just work". Make sure
@@ -263,6 +273,8 @@ occured your artpad should work well</li>
 
 <h3 id="Scanner">Does GIMP have scanner support?</h3>
 
+<!-- FIXME: to be updated -->
+
 <p>Yes. You can run xscanimage, the front end to SANE (Scanner Access
 Now Easy), either as a GIMP extension or in stand-alone mode. This
 supports Mustek and HP flatbed scanners, as well as the Connectix color
@@ -273,10 +285,14 @@ href="http://www.sane-project.org/">SANE project</a>.</p>
 
 <h3 id="Colormap">Can GIMP install its own colormap?</h3>
 
+<!-- FIXME: obsolete answer? -->
+
 <p>Yes. In either the system-wide gimprc file or your personal gimprc
 file, uncomment the line that includes <em>install-colormap</em>.</p>
 
 <h3 id="MIT-SHM">GIMP complains about MIT-SHM!</h3>
+
+<!-- FIXME: obsolete answer? -->
 
 <p>If GIMP gives you a message similar to either of these when you
 try to start it: <em>Xlib: extension "MIT-SHM" missing on display
@@ -298,6 +314,8 @@ main GIMP app) I was talking to has exited before returning any results,
 so I assume that it has crashed."</p>
 
 <h3 id="Xserver">Do I need an X server to run in batch mode?</h3>
+
+<!-- FIXME: obsolete answer? -->
 
 <p>Yes, you have to have some form of X server (unless you're running
 Windows, of course). It needs an X server for image processing, and for
@@ -343,6 +361,8 @@ this kind of thing.</p>
 
 <h3 id="Future">What does the future hold?</h3>
 
+<!-- FIXME: obsolete answer -->
+
 <p>Version 2.4 will bring some much needed usability improvements
 including a revamped select tool, a revamped crop tool and a reorganised
 menu. It will also bring some important new editing tools, such as
@@ -363,6 +383,8 @@ a Straight Line</a> in the GIMP user manual or see our <a href="/tutorials/Strai
 
 <h3 id="Circle">How can I draw a circle with GIMP?</h3>
 
+<!-- FIXME: obsolete answer: stroking a path should work as well -->
+
 <p>Use the elliptical select tool, hold down SHIFT key to constrain as
 circle, fill the selected area with new color, right click on selected
 area, choose SELECT, SHRINK, shrink selection by whatever number of
@@ -379,6 +401,8 @@ section in the user manual.</p>
 
 <h3 id="Layers">What are layers?</h3>
 
+<!-- FIXME: is this the right place for this? -->
+
 <p>The best analogy is to the way cartoons used to be animated. Each
 component of a scene would be painted on a transparent film, and then
 each film would be stacked or layered over the other to produce the
@@ -392,6 +416,8 @@ section in the manual for more information.</p>
 
 <h3 id="Sub">How do I save a selected sub-image to a file?</h3>
 
+<!-- FIXME: use Paste As... New Image -->
+
 <p>Create a new image large enough to hold the selection. Copy the
 selection, then paste it into the new image. Crop the new image.
 Flatten, etc, as necessary. Now save it.</p>
@@ -401,6 +427,8 @@ out of an image and create a new image with it.</p>
 
 <h3 id="Alpha">How do I save an image with an alpha channel?</h3>
 
+<!-- FIXME: is this necessary?  we have the Export dialog since a while... -->
+
 <p>Before saving the image, select "Layers-&gt;Flatten Image". It would
 be more intuitive if it was called something like "Remove Alpha"...but
 that's generally not its primary function. It just happens to remove
@@ -408,6 +436,8 @@ alpha.</p>
 
 <h3 id="Merge">How do I merge an image from a file to the current
 image?</h3>
+
+<!-- FIXME: mention drag and drop -->
 
 <p>Open the additional image via the File-&gt;Open menu. Then
 Select-&gt;Select all. Edit-&gt;Copy. Move the cursor to the edited
@@ -417,6 +447,8 @@ it.</p>
 
 <h3 id="Fonts">How do I get small fonts to look as nice as large
 ones?</h3>
+
+<p><em class="warn">FIXME: obsolete advice.</em></p>
 
 <p>In general, small fonts won't ever look quite as nice as large ones.
 But there are a couple of things to try.</p> <ol type="1"> <li><p>Make
@@ -429,6 +461,8 @@ turns antialiased text on and off. It's on by default in GRAYSCALE or
 RGB modes, and forever off in INDEXED mode." --Adam Moss</p> </li> </ol>
 
 <h3 id="Bind">How do I bind keys to menus for shortcuts?</h3>
+
+<!-- FIXME: this should be enabled in the Preferences first -->
 
 <p>Go to the menu selection you are interested in. Keeping it selected
 (hold the mouse's menu selection down if necessary), press the key

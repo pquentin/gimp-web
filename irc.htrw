@@ -9,16 +9,17 @@
 available for discussing GIMP-related topics.  IRC offers real-time
 communication, but be aware that there may be long periods of silence in the
 channels when other users are busy or away from their keyboards.  When you
-join the GIMP IRC channels, do not ask if somebody can help you.  If you have
-a question, ask directly and then wait patiently to see if someone answers.
-Other recommendations can be found at the bottom of this page.</p>
+join the GIMP IRC channels, please do not ask if somebody can help you.  If
+you have a question, ask directly and then wait patiently to see if someone
+answers.  Other recommendations can be found <a href="#rules">at the bottom of
+this page</a>.</p>
 
 <dl>
   <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp-users">#gimp-users</a></dt>
   <dd>The main support channel for GIMP users. This is probably the right
-  place to ask questions (but please see the hints at the bottom of this
-  page). This channel might be less scary than #gimp, especially for new
-  users...</dd>
+  place to ask questions (but please see the <a href="#rules">hints</a> at the
+  bottom of this page). This channel might be less scary than #gimp,
+  especially for new users...</dd>
 
   <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp">#gimp</a></dt>
   <dd>This is the main GIMP channel, created in early 1997. Both users and

@@ -17,9 +17,8 @@
   be running.
   </li>
 
-  <li><!-- <a href="gimp-2.5.html">Release notes for the development
-  snapshots</a>. -->
-  <em>(No development snapshots have been released yet.)</em>
+  <li><a href="#">Release notes for the development
+  snapshots</a>. <em>(Not available yet.)</em>
   Snapshots of the development tree may be unstable and contain
   incomplete features.  They are provided for developers and
   interested users who want to help us to improve GIMP.

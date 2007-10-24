@@ -57,6 +57,12 @@ src="images/2.4-releasesplash.png" width="640" height="200" />
 
 <p>In the new version of GIMP, some menu entries have changed their names and position. It was done mostly to simplify learning curve and improve user experience. After all, "HSV Noise" and "RGB Noise" sound more meaningful than "Scatter HSV" and "Scatter RGB", don't they? And status bar hints for all plug-ins and scripts are quite helpful too.</p>
 
+<h3>Improved display when zooming in or out</h3>
+
+<img class="right" src="images/2.4-zoom-display.png" alt="Zoomed out display" />
+
+<p>Previous versions of GIMP used a fast but inaccurate way of displaying images at various zoom levels. When zooming out, some rows and columns of pixels where simply omitted from the display. The result was sometimes confusing, especially if the image contained many thin lines or small features. GIMP 2.4 avoids these problems and provides a better view of the zoomed-out images.</p>
+
 <h3>Support for file formats</h3>
 
 <ul>

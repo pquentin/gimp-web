@@ -1,5 +1,10 @@
 2007-10-25  Jakub Steiner <jimmac@ximian.com>
 
+	* release-notes/images/video-thumb.png: thumbnail image for
+	external videos for Raphael.
+
+2007-10-25  Jakub Steiner <jimmac@ximian.com>
+
 	* includes/wgo.js:
 	* style/wgo.css:
 	* style/opera.css: Workaround for worarounds. I will surely be

@@ -9,8 +9,9 @@
 
 <p><em>Editor's note: since this tutorial was written, the Red Eye
 Removal plug-in has been included in the default GIMP package (see
-Filters -&gt; Enhance -&gt; Red Eye Removal). This tutorial is still
-useful if you want to do things by hand.</em></p>
+<span class="filter">Filters -&gt; Enhance -&gt; Red Eye
+Removal</a>). This tutorial is still useful if you want to do things
+by hand.</em></p>
 
 <h2>Intention</h2>
 <p>
@@ -97,7 +98,7 @@ useful if you want to do things by hand.</em></p>
 </p>
 
 <p>
-  The original tutorial can be found <a href="tutorial:Red_Eye_Removal-Carol_Spears">here</a>
+  The original tutorial can be found <a href="http://carol.gimp.org/gimp2/photography/redeye/">here</a>
 </p>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>

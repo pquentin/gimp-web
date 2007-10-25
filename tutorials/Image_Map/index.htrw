@@ -146,9 +146,6 @@ function popup(url, textbox)
     </p>
  </form>
 
-<p>
-  The original tutorial can be found <a href="tutorial:Image_Map-Carol_Spears">here</a>.
-</p>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">

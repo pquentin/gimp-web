@@ -1,3 +1,14 @@
+2007-10-25  Raphaël Quinet  <raphael@gimp.org>
+
+	* admin/gimp-web-urls
+	* tutorials/Smart_Sharpening/shortcuts.htrw
+	* tutorials/Smart_Sharpening/warp-sharp.htrw
+	* tutorials/Perlotine/nested.htrw
+	* tutorials/*/index.htrw: (41 additional files) moved the links to
+	the original tutorials from admin/gimp-web-urls to the pages using
+	them so that it is easier to maintain them.  Corrected or removed
+	some broken links.  Fixes bug #487856.
+
 2007-10-25  Sven Neumann  <sven@gimp.org>
 
 	* release-notes/gimp-2.4.htrw: fixed a typo.

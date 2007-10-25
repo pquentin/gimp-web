@@ -855,7 +855,7 @@ exit main();
 </ul>
 
 <p>
-  The original tutorial can be found <a href="tutorial:Basic_Perl-Dov_Grobgeld">here</a>.
+  The original tutorial can be found <a href="http://imagic.weizmann.ac.il/~dov/gimp/perl-tut.html">here</a> and an updated version for GIMP 2.0 can be found <a href="http://imagic.weizmann.ac.il/~dov/gimp/perl-tut-2.0/">here</a>.
 </p>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>

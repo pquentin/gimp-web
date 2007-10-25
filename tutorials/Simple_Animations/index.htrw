@@ -175,10 +175,6 @@
   <img src="flower-banner.gif" alt=""/>
 </p>
 
-<p>
-  The original tutorial can be
-  found <a href="tutorial:Simple_Animations-Jakub_Steiner">here</a>.
-</p>
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">

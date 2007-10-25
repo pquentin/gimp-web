@@ -1,5 +1,14 @@
 2007-10-25  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/gimp-2.4.htrw: un-break the layout.
+
+	* release-notes/images/2.4-video-fgselect.jpg: improved version.
+
+	* docs/script-fu-update.htrw: Added a note about numbers written
+	with a leading decimal point.
+
+2007-10-25  Raphaël Quinet  <raphael@gimp.org>
+
 	* tutorials/Basic_Perl/index.htrw: no need to link to a 1-pixel
 	transparent GIF in the tables.
 

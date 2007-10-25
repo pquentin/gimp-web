@@ -43,6 +43,7 @@ what steps need to be taken to correct them.</p>
 <li><a href="#carempty">Accessing the first element of an empty list</a> (<tt>Error: car: argument 1 must be: pair</tt>)</li>
 <li><a href="#cdrempty">Accessing beyond the last element of a list</a> (<tt>Error: cdr: argument 1 must be: pair</tt>)</li>
 <li><a href="#cons">Constructing a pair</a> (<tt>Error: cons: needs 2 argument(s)</tt>)</li>
+<li><a href="#leadingdot">Fractional numbers must not start with a dot</a> (<tt>Error: eval: unbound variable: . </tt>)</li>
 <li><a href="#deprecated">Deprecated features</a></li>
 <li><a href="#conclusion">Conclusion</a> (and other differences)</li>
 </ul>
@@ -122,6 +123,14 @@ if the second argument is not present than an error occurs
 ("<tt class="warn">Error: cons: needs 2 argument(s)</tt>"). The
 solution, should this problem be encountered, is explicitly include an
 empty list as the second argument.</p>
+
+<h2 id="leadingdot">Fractional numbers must not start with a dot</h2>
+
+<p>If you had some numbers written as '.5' instead of '0.5', then you
+may get the error "<tt class="warn">Error: eval: unbound variable:
+. </tt>".  The solution is to make sure that all numbers start with a
+digit and add a leading '0' if necessary. (Note: this is considered as
+a bug and this may be fixed in a future GIMP release.)</p>
 
 <h2 id="deprecated">Deprecated features</h2>
 

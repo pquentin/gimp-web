@@ -423,6 +423,7 @@ form {
   margin: 0px auto;
   /* border: 1px solid green; */
   background-color: #2e3436;
+  padding: 0;
 }
 
 #menu {
@@ -433,65 +434,64 @@ form {
   font-weight: bold;
   white-space: nowrap;
   left: 0px;
-  height: 100%;
-  margin: 0 0 1em 1em;
+  margin: 0 0 1em 20px;
   background-color: #0e2426;
 }
 
-#menu a {
-  display: block;
-  text-decoration: none;
-  width: 12em;
-  margin: 2px;
-  padding: 2px 4px 2px 8px;
-}
+  #menu a {
+    display: block;
+    text-decoration: none;
+    width: 12em;
+    margin: 2px;
+    padding: 2px 4px 2px 8px;
+  }
 
-#menu a[href^=http] {
-  color: #ce5c00;
-}
+  #menu a[href^=http] {
+    color: #ce5c00;
+  }
 
-#menu a:hover {
-  color: #ffdf6e;
-  border-left: 2px solid #f57900;
-  padding: 2px 2px 2px 6px;
-}
+  #menu a:hover {
+    color: #ffdf6e;
+    border-left: 2px solid #f57900;
+    padding: 2px 2px 2px 6px;
+  }
 
-#menu a[href^=http]:hover {
-  color: #3465a4;
-  border-left: 2px solid #729fcf;
-  padding: 2px 2px 2px 6px;
-}
+  #menu a[href^=http]:hover {
+    color: #3465a4;
+    border-left: 2px solid #729fcf;
+    padding: 2px 2px 2px 6px;
+  }
 
-#menu a.sub {
-  display: block;
-  padding-left: 14px;
-  font-size: 90%;
-}
+  #menu a.sub {
+    display: block;
+    padding-left: 14px;
+    font-size: 90%;
+  }
 
-#menu a.sub:hover {
-  padding-left: 12px;
-}
+  #menu a.sub:hover {
+    padding-left: 12px;
+  }
 
-#menu span {
-  display: none;
-}
+  #menu span {
+    display: none;
+  }
 
-#menu p {
-  display: none;
-}
+  #menu p {
+    display: none;
+  }
 
-#menubutton {
-  background-color: transparent;
-  padding: 0;
-  position: absolute;
-  top: 100px;
-  left: 0px;
-  cursor: w-resize;
-}
+  #menubutton {
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    cursor: w-resize;
+  }
 
 #main {
   max-width: 60em;
-  margin: 0px;
+  margin: 0;
   padding: 20px;
   /* border: 1px solid blue; */
 }
@@ -570,8 +570,8 @@ div.bottomlinks li {
 
 #title {
   max-width: 60em;
-  padding: 0px;
-  margin: 0px auto;
+  padding: 0;
+  margin: 0 auto;
   font-size: 10pt;
   background: #f57900 url('../images/title.png') no-repeat 2px 2px;
   height: 43px;
@@ -579,7 +579,7 @@ div.bottomlinks li {
 }
 
 div.splash {
-  margin: -20px -1em 0 -20px;
+  margin: -20px -20px 0 -20px;
   background-color: transparent;
   height: 180px;
   overflow: hidden;
@@ -611,7 +611,7 @@ div.splash {
 }
 
 .intropara {
-  margin: 0 -1em 2em -20px;
+  margin: 0 -20px 2em -20px;
   background-color: #444;
   padding: 8px 16px 16px 58px;
   line-height: 1.5em;

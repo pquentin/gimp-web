@@ -1,3 +1,18 @@
+2007-10-25  Jakub Steiner <jimmac@ximian.com>
+
+	* includes/wgo.js:
+	* style/wgo.css:
+	* style/opera.css: Workaround for worarounds. I will surely be
+	beaten for doing this. The problem is that div.splash is
+	inside the #main container. The menu needs to have a margin around
+	it for text in #main to flow nicely around it. Yet div.splash
+	needs no margin there, thus all the negative margins. IN opera,
+	those margins don't add to the width of the whole container
+	though, so it's just shifted, not stretched, thus the gap. This
+	patch uses javascript to get rid of the margin when there is a
+	splash (still sucks in some cases) and have it there if there's no
+	splash. I'm surely be spanked for this.
+
 2007-10-24  Raphaël Quinet  <raphael@gimp.org>
 
 	* downloads/Mac.xhtml: added warning about release candidates,

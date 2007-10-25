@@ -10,6 +10,19 @@ function mangleforIE() {
 	//alert("ohno!");
 }
 
+function mangleforOpera() {
+  var link = document.createElement('link');
+  link.type = 'text/css';
+  link.rel = 'stylesheet';
+  link.href = '/style/opera.css';
+  $('head').append(link);
+
+  //if there's no splash, add padding. yes it's so eeky.
+  if (!$('div.splash').text()) {
+    $("#menu").css("margin","0 0 1em 1em");
+  }
+}
+
 //provide download page depending on OS
 function renderDownload() {
 	$("#downloads").html("<div id=\"os\">&nbsp;</div>\n<hr />\n<div id=\"source\">&nbsp;</div>\n");
@@ -45,7 +58,9 @@ $(document).ready(function() {
 	roundCorners();
 	if($.browser.msie) {
 		mangleforIE();
-	};
+  } else if ($.browser.opera) {
+    mangleforOpera();
+  }
 	$(document).keypress(function (key) {
 		easterEgg(key);
 	});

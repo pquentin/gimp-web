@@ -29,8 +29,9 @@ an easier task. These include:</p>
   <a href="mailto:yvesNOSPAM@macports.org">Yves de Champlain</a>. </li>
 
   <li><a href="http://gimp-app.sourceforge.net/">Gimp.app</a> provides
-  a self contained application bundle of GIMP 2.2.11 for OS X. Apple's
-  X11 is required. Gimp.app is packaged by Aaron Voisine.</li> 
+  a self contained application bundle of GIMP 2.2.11 or GIMP 2.4-rc3
+  for OS X. Apple's X11 is required. Gimp.app is packaged by Aaron
+  Voisine.</li>
 
   <li><a href="http://fink.sourceforge.net/pdb/package.php/gimp2">Fink</a>
   is a package management system that provides everything necessary to

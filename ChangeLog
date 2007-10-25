@@ -1,5 +1,12 @@
 2007-10-25  Raphaël Quinet  <raphael@gimp.org>
 
+	* macintosh/index.htrw: mention that gimp.app has 2.4-rc3.
+
+	* downloads/Mac.xhtml: corrected typo and added missing parameter
+	to the links to the gimp.app binaries.  Fixes bug #490199.
+
+2007-10-25  Raphaël Quinet  <raphael@gimp.org>
+
 	* release-notes/gimp-2.4-videos.htrw: mention that it is also
 	possible to download low-res versions from Google Video.
 

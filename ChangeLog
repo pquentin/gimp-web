@@ -1,5 +1,10 @@
 2007-10-25  Raphaël Quinet  <raphael@gimp.org>
 
+	* style/wgo.css: added top and bottom margins to img.right and
+	img.left.
+
+2007-10-25  Raphaël Quinet  <raphael@gimp.org>
+
 	* macintosh/index.htrw: mention that gimp.app has 2.4-rc3.
 
 	* downloads/Mac.xhtml: corrected typo and added missing parameter

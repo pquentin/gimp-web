@@ -70,12 +70,16 @@ img.left {
   float: left;
   margin-left: 40px;
   margin-right: 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 img.right, object.right {
   float: right;
   margin-left: 20px;
   margin-right: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 img.figure, .flash {

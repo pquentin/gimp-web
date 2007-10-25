@@ -41,9 +41,11 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 
 <h3>Foreground Select Tool</h3>
 
+<a href="http://video.google.com/videoplay?docid=2540655610648907719"><img class="right" src="images/2.4-video-fgselect.jpg" alt="Foreground Select Demo" /></a>
+
 <p>Selecting individual objects on images is easier now with a new foreground select tool. It is done in two steps. First, you make select region of interest which contains the entire object. Then you paint over selected area with a brush, not crossing object’s border. Release mouse button when you’re done and look, if there are dark blue spots on your objects. If there are some, paint with a brush over them again and release to refine selection. When there are no more blue areas inside the object, press Enter and there you have a perfectly selected object.</p>
 
-<object class="flash" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=2540655610648907719&amp;hl=en" flashvars="" width="500" height="400"></object>
+<p><small>All video demonstrations can also be viewed or downloaded from a <a href="gimp-2.4-videos.html">separate page</a>.</small></p>
 
 <h3>Align Tool</h3>
 
@@ -111,15 +113,19 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <h3>Perspective Clone</h3>
 
+<a href="http://video.google.com/videoplay?docid=-3077868802879051003"><img class="right" src="images/2.4-video-perspective.jpg" alt="Perspective Clone Demo" /></a>
+
 <p>A common task in image editing is to copy pixels from somewhere in an image to somewhere else. Traditionally this has been done using the Clone Tool. To make it easy to perform cloning while taking the perspective of an image into account, a new Perspective Clone Tool has been added to GIMP.</p>
 
-<object class="flash" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=-3077868802879051003&amp;hl=en" flashvars="" width="500" height="400"></object>
+<p><small>All video demonstrations can also be viewed or downloaded from a <a href="gimp-2.4-videos.html">separate page</a>.</small></p>
 
 <h3>Lens Distortion</h3>
 
+<a href="http://video.google.com/videoplay?docid=1146746790574496439"><img class="right" src="images/2.4-video-lens.jpg" alt="Lens Distortion Demo" /></a>
+
 <p>A very common problem exposing itself especially when using cheaper lenses or expensive lenses pushed to their limits, is barrel distortion and vignetting. Luckily GIMP provides a brand new filter to compensate for both problems. Saving photographer's pocket is our mission!</p>
 
-<object class="flash" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=1146746790574496439&amp;hl=en" flashvars="" width="500" height="400"></object>
+<p><small>All video demonstrations can also be viewed or downloaded from a <a href="gimp-2.4-videos.html">separate page</a>.</small></p>
 
 <h3>JPEG quality</h3>
 

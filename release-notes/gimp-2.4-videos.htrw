@@ -1,0 +1,50 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP 2.4 Release Notes - Videos</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<div class="splash">
+<img alt="#" src="images/2.4-releasesplash.jpg" width="640" height="200" />
+</div>
+
+<h1>GIMP 2.4 Release Notes - Videos</h1>
+
+<p>This page includes the video demonstrations that have been kindly
+offered to us by GIMP users.  If you would like to convert some of
+these videos to a different format so that we can offer them to a
+wider audience, please <a href="/webmasters.html">contact us</a> and
+we will add the links to this page.</p>
+
+<h2>Foreground Select Tool</h2>
+
+<object class="flash" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=2540655610648907719&amp;hl=en" flashvars="" width="500" height="400"></object>
+
+<p>Versions available:</p>
+<ul>
+  <li><a href="http://video.google.com/videoplay?docid=2540655610648907719">Google Video</a></li>
+  <li><a href="http://www.mediafire.com/?0w1yilbxtmh">High-resolution MPEG file</a> (800x600 MPEG-4, 38 MB zipped)</li>
+</ul>
+
+<h2>Perspective Clone</h2>
+
+<object class="flash" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=-3077868802879051003&amp;hl=en" flashvars="" width="500" height="400"></object>
+
+<p>Versions available:</p>
+<ul>
+  <li><a href="http://video.google.com/videoplay?docid=-3077868802879051003">Google Video</a></li>
+  <li><a href="http://www.mediafire.com/?fim1wkdx1nj">High-resolution MPEG file</a> (800x600 MPEG-4, 41 MB zipped)</li>
+</ul>
+
+<h2>Lens Distortion</h2>
+
+<object class="flash" type="application/x-shockwave-flash" data="http://video.google.com/googleplayer.swf?docId=1146746790574496439&amp;hl=en" flashvars="" width="500" height="400"></object>
+
+<p>Versions available:</p>
+<ul>
+  <li><a href="http://video.google.com/videoplay?docid=1146746790574496439">Google Video</a></li>
+</ul>
+
+<p><a href="gimp-2.4.html">Return to the release notes</a></p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

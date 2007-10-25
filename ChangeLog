@@ -1,3 +1,14 @@
+2007-10-25  Raphaël Quinet  <raphael@gimp.org>
+
+	* release-notes/images/2.4-video-fgselect.jpg
+	* release-notes/images/2.4-video-perspective.jpg
+	* release-notes/images/2.4-video-lens.jpg
+	* release-notes/gimp-2.4.htrw
+	* release-notes/gimp-2.4-videos.htrw: moved the embedded videos to
+	a separate page that also offers downloads in other formats.
+	Added thumbnail images to the main release notes, linking to the
+	corresponding videos.
+
 2007-10-25  Jakub Steiner <jimmac@ximian.com>
 
 	* release-notes/images/video-thumb.png: thumbnail image for

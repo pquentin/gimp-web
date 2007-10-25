@@ -1,5 +1,10 @@
 2007-10-25  Raphaël Quinet  <raphael@gimp.org>
 
+	* release-notes/gimp-2.4-videos.htrw: mention that it is also
+	possible to download low-res versions from Google Video.
+
+2007-10-25  Raphaël Quinet  <raphael@gimp.org>
+
 	* release-notes/gimp-2.4.htrw: un-break the layout.
 
 	* release-notes/images/2.4-video-fgselect.jpg: improved version.

@@ -1,3 +1,8 @@
+2007-10-26  Raphaël Quinet  <raphael@gimp.org>
+
+	* style/wgo.css: removed the top margins because they caused all
+	images to be shifted down and not aligned anymore with the text.
+
 2007-10-25  Raphaël Quinet  <raphael@gimp.org>
 
 	* style/wgo.css: added top and bottom margins to img.right and

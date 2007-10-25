@@ -1,5 +1,13 @@
 2007-10-25  Raphaël Quinet  <raphael@gimp.org>
 
+	* tutorials/Basic_Perl/index.htrw: no need to link to a 1-pixel
+	transparent GIF in the tables.
+
+	* tutorials/Lite_Quickies/index.htrw: removed remaining broken
+	link that was never used anyway.  Fixes bug #168606.
+
+2007-10-25  Raphaël Quinet  <raphael@gimp.org>
+
 	* admin/gimp-web-urls
 	* tutorials/Smart_Sharpening/shortcuts.htrw
 	* tutorials/Smart_Sharpening/warp-sharp.htrw

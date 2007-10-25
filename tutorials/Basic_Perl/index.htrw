@@ -222,9 +222,7 @@ They can be added to an image using the 'gimp_image_add_layer' command
                 is interpreted as minimum, maximum, and step,
                 e.g. [0,100,1].
               </td>
-              <td valign=top>
-                <img src="tpix.gif" width=0 alt="" />
-              </td>
+              <td valign=top></td>
             </tr>
             <tr>
               <td  valign=top>PF_FONT</td>
@@ -268,17 +266,17 @@ They can be added to an image using the 'gimp_image_add_layer' command
             </tr>
             <tr>
               <td valign=top>PF_BRUSH</td>
-              <td valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td valign=top></td>
               <td valign=top>A brush</td>
             </tr>
             <tr>
               <td valign=top>PF_GRADIENT</td>
-              <td valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td valign=top></td>
               <td valign=top>A gradient</td>
             </tr>
             <tr>
               <td valign=top>PF_PATTERN</td>
-              <td valign=top><img src="tpix.gif" width=0 alt="" /></td>
+              <td valign=top></td>
               <td valign=top>A pattern</td>
             </tr>
           </tbody>

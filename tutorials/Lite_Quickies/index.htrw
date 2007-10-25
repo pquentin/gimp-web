@@ -238,14 +238,14 @@ or more colours.</p>
 </p>
 <p>As you might expect, since the information needed to represent the
 colour at each pixel is less, the file size is a lot smaller. However,
-sometimes, there will be options in the various menus that seem to have
-been <a href="mode-menu-greyed.png">"greyed"</a> out for no apparent
-reason. This usually means the filter or option cannot be applied when
-your image is in its current mode. Changing the mode to RGB as
-outlined above should solve this issue. If that doesn't work either,
-perhaps the option you're trying requires your layer to have the ability
-to be transparent. This can be done just as easily via
-(Image)->Layer->Transparency->Add Alpha Channel.</p>
+sometimes, there will be options in the various menus that seem to
+have been "greyed" out for no apparent reason. This usually means the
+filter or option cannot be applied when your image is in its current
+mode. Changing the mode to RGB as outlined above should solve this
+issue. If that doesn't work either, perhaps the option you're trying
+requires your layer to have the ability to be transparent. This can be
+done just as easily via (Image)->Layer->Transparency->Add Alpha
+Channel.</p>
 <p class="images">
 <a href="mode-alpha.png">
 <img src="mode-alpha-t.png" alt="mode-alpha"></img></a>

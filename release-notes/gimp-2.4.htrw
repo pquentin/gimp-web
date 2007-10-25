@@ -137,7 +137,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <img class="figure" src="images/2.4-statusbar-tips.png" alt="Hints in the status bar">
 
-<p>A number of changes has gone into plug-ins and scripts. First of all, a new preview widget for plug-ins was introduced. Now you can zoom in and out using the mouse wheel or +/- buttons in plug-ins dialogs and pan around.</p>
+<p>A number of changes has gone into plug-ins and scripts. First of all, a new preview widget for plug-ins was introduced. Now you can zoom in and out using the mouse wheel or +/- buttons in plug-in dialogs and pan around.</p>
 
 <p>Several plug-ins like Gaussian Blur, Selective Gaussian Blur and Value Invert have received special attention with regards to speed of processing and work significantly faster now. Additionally, the Motion Blur filter can blur outwards now, and its quality has also improved.</p>
 

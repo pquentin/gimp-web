@@ -1,5 +1,11 @@
 2007-10-26  Raphaël Quinet  <raphael@gimp.org>
 
+	* tutorials/Basic_Scheme/index.htrw
+	* tutorials/Basic_Scheme2/index.htrw: corrected the broken links
+	to the Script-Fu migration guide.  Fixes bug #490439.
+
+2007-10-26  Raphaël Quinet  <raphael@gimp.org>
+
 	* style/wgo.css: removed the top margins because they caused all
 	images to be shifted down and not aligned anymore with the text.
 

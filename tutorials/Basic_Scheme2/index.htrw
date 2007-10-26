@@ -11,7 +11,7 @@
 
 <p><em>Editor's note: since this tutorial was published, the old GIMP
 Script-Fu interpreter (SIOD) has been replaced by a newer and better
-one (TinyScheme).  A <a href="/docs/script-fu-upgrade.html">Script-Fu
+one (TinyScheme).  A <a href="/docs/script-fu-update.html">Script-Fu
 migration guide</a> is available.</em></p>
 
 <h2>Intention</h2>

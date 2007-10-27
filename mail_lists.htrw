@@ -25,7 +25,8 @@ href="/irc.html">IRC channels</a> for you.</p>
   <a href="http://marc.theaimsgroup.com/?l=gimp-user&amp;r=1&amp;w=2">AIMS</a>,
   <a href="http://www.spinics.net/lists/gimp/">spinics</a>,
   <a href="http://news.gmane.org/gmane.comp.video.gimp.user/">Gmane</a>,
-  <a href="http://archives.free.net.ph/list/gimp-user.en.html">free.net.ph</a></dd>
+  <a href="http://archives.free.net.ph/list/gimp-user.en.html">free.net.ph</a>,
+  <a href="http://www.nabble.com/Gimp-User-f84.html">nabble</a></dd>
 
   <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-announce">GIMP Announce</a></dt>
   <dd>Learn of the new releases of the source code (tarballs) without all of
@@ -41,7 +42,8 @@ href="/irc.html">IRC channels</a> for you.</p>
   Archives:
   <a href="http://groups.yahoo.com/group/gimpwin-users/messages">Yahoo</a>,
   <a href="http://www.spinics.net/lists/gimpwin/">spinics</a>,
-  <a href="http://news.gmane.org/gmane.comp.video.gimp.windows.user/">Gmane</a></dd>
+  <a href="http://news.gmane.org/gmane.comp.video.gimp.windows.user/">Gmane</a>,
+  <a href="http://www.nabble.com/Gimpwin-Users-f86.html">nabble</a></dd>
 
   <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-developer">GIMP Developer</a></dt>
   <dd>The GIMP developer list. For plug-in developers and core program
@@ -51,7 +53,8 @@ href="/irc.html">IRC channels</a> for you.</p>
   <a href="http://www.mail-archive.com/gimp-developer%40lists.xcf.berkeley.edu/">mail-archive</a>,
   <a href="http://marc.theaimsgroup.com/?l=gimp-developer&amp;r=1&amp;w=2">AIMS</a>,
   <a href="http://news.gmane.org/gmane.comp.video.gimp.devel/">Gmane</a>,
-  <a href="http://archives.free.net.ph/list/gimp-developer.en.html">free.net.ph</a></dd>
+  <a href="http://archives.free.net.ph/list/gimp-developer.en.html">free.net.ph</a>,
+  <a href="http://www.nabble.com/Gimp-Developer-f85.html">nabble</a></dd>
 
   <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gegl-developer">GEGL Developer</a></dt>
   <dd>The GEGL developer list. For developers interested in

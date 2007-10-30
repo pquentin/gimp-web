@@ -1,3 +1,14 @@
+2007-10-30  Raphaël Quinet  <raphael@gimp.org>
+
+	* programmatic/downloads/MIRRORS: updated from the master copy on
+	the ftp server: corrected links to Dutch mirror, corrected link to
+	South African mirror.  Fixes bug #491740.
+
+	* programmatic/downloads/mirrorfmt.py: more visible warning.
+
+        * downloads/mirrors.xhtml: deleted generated file that should not
+	have been added to SVN.
+
 2007-10-27  Raphaël Quinet  <raphael@gimp.org>
 
 	* develop/index.htrw: added link to the UI brainstorm.

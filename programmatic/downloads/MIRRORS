@@ -1,8 +1,8 @@
-#Mirror Sites
-#------------
+# Mirror Sites
+#-------------
 
 Africa
-     ftp://ftp.is.co.za/applications/gimp/
+     ftp://ftp.is.co.za/mirror/ftp.gimp.org/gimp/
 
 Australia
      ftp://ftp.planetmirror.com/pub/gimp/
@@ -45,7 +45,8 @@ Korea
      ftp://ftp.kreonet.re.kr/pub/tools/X11/ftp.gimp.org/
 
 Netherlands
-     ftp://ftp.snt.utwente.nl/pub/software/gimp
+     ftp://ftp.snt.utwente.nl/pub/software/gimp/gimp/
+     http://ftp.snt.utwente.nl/pub/software/gimp/gimp/ (web access)
 
 Norway
      ftp://sunsite.uio.no/pub/gimp/

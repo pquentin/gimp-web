@@ -14,31 +14,37 @@ you have a question, ask directly and then wait patiently to see if someone
 answers.  Other recommendations can be found <a href="#rules">at the bottom of
 this page</a>.</p>
 
+<p>The official GIMP IRC channels are on GIMPNet (<a
+href="irc://irc.gimp.org/">irc.gimp.org</a>) and have existed for more
+than 10 years.  Many <a
+href="http://live.gnome.org/GnomeIrcChannels">channels related to GTK+
+and GNOME</a> are also on GIMPNet.</p>
+
 <dl>
-  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp-users">#gimp-users</a></dt>
+  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/gimp-users">#gimp-users</a></dt>
   <dd>The main support channel for GIMP users. This is probably the right
   place to ask questions (but please see the <a href="#rules">hints</a> at the
   bottom of this page). This channel might be less scary than #gimp,
   especially for new users...</dd>
 
-  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp">#gimp</a></dt>
+  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/gimp">#gimp</a></dt>
   <dd>This is the main GIMP channel, created in early 1997. Both users and
   developers hang around, and almost any question about GIMP is ontopic. From
   a user's point of view, this can be a downside: discussion often focuses on
   GIMP development and the bleeding edge version of GIMP.</dd>
 
-  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp-web">#gimp-web</a></dt>
+  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/gimp-web">#gimp-web</a></dt>
   <dd>A channel devoted to this web site and related GIMP sites. Most active
   when the migration from <a
   href="http://classic.gimp.org/">classic.gimp.org</a> happened a few years
   ago, it is pretty quiet now. But if you have suggestions or issues with the
   current website, this channel is for you.</dd>
 
-  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimps">#gimps</a></dt>
+  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/gimps">#gimps</a></dt>
   <dd>Being an abbreviation of "gimp social", this channel is for the GIMP
   people, and anything but GIMP is ontopic here.</dd>
 
-  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/#gimp-fr">#gimp-fr</a></dt>
+  <dt>irc://irc.gimp.org/<a href="irc://irc.gimp.org/gimp-fr">#gimp-fr</a></dt>
   <dd>GIMP in French</dd>
 
 </dl>
@@ -52,18 +58,18 @@ GNOME.  However, several channels also exist on other IRC networks:</p>
 <dl>
   <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp">#gimp</a></dt>
   <dd>It is recommended that users migrate from that channel to <a
-  href="irc://irc.gimp.org/#gimp-users">#gimp-users</a> on GIMPNet, described
+  href="irc://irc.gimp.org/gimp-users">#gimp-users</a> on GIMPNet, described
   above.</dd>
 
   <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp-fr">#gimp-fr</a></dt>
   <dd>It is recommended that users migrate from that channel to <a
-  href="irc://irc.gimp.org/#gimp-fr">#gimp-fr</a> on GIMPNet, described
+  href="irc://irc.gimp.org/gimp-fr">#gimp-fr</a> on GIMPNet, described
   above.</dd>
 
-  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp-de">#gimp-de</a></dt>
+  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/gimp-de">#gimp-de</a></dt>
   <dd>GIMP in German.</dd>
 
-  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp-es">#gimp-es</a></dt>
+  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/gimp-es">#gimp-es</a></dt>
   <dd>GIMP in Spanish.</dd>
 
 </dl>

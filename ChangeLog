@@ -1,5 +1,10 @@
 2007-10-31  Raphaël Quinet  <raphael@gimp.org>
 
+	* irc.htrw: link to the information about GTK+ and GNOME channels,
+	fixed the URLs, emphasise that the main channels are on GIMPNet.
+
+2007-10-31  Raphaël Quinet  <raphael@gimp.org>
+
 	* release-notes/gimp-2.4-videos.htrw: Added Ogg/Theora versions of
 	two of the videos (converted using ffmpeg2theora, quality 3).
 

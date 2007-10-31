@@ -158,5 +158,8 @@
 </td></tr>
 
 </table>
+
+<!--#include virtual="/includes/image-license.inc" -->
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

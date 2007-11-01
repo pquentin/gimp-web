@@ -1,3 +1,8 @@
+2007-11-01  Raphaël Quinet  <raphael@gimp.org>
+
+	* about/splash/stable.html: added a break so that the license text
+	does not show up next to the thumbnails.
+
 2007-10-31  Raphaël Quinet  <raphael@gimp.org>
 
 	* about/history.htrw: added the release date of GIMP 2.4.1.

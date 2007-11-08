@@ -1,3 +1,7 @@
+2007-11-08  Sven Neumann  <sven@gimp.org>
+
+	* tutorials/Basic_Batch/index.htrw: updated for GIMP 2.4.
+
 2007-11-01  Raphaël Quinet  <raphael@gimp.org>
 
 	* about/splash/stable.html: added a break so that the license text

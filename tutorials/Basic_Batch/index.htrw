@@ -20,20 +20,20 @@
 </p>
 
 <pre class="code">
-GIMP version 2.2.7
+GIMP version 2.4.1
 
 Usage: gimp [option ... ] [file ... ]
 
 Options:
-  -h, --help              Output this help.
-  -v, --version           Output version information.
-  --verbose               Show startup messages.
-  -d, --no-data           Do not load brushes, gradients, palettes, patterns.
-  -f, --no-fonts          Do not load any fonts.
-  -i, --no-interface      Run without a user interface.
-  --batch-interpreter &lt;procedure&gt;
-                          The procedure to process batch commands with.
-  -b, --batch &lt;commands&gt;  Process commands in batch mode.
+  -?, --help              Show help options
+  -v, --version           Show version information and exit
+  --verbose               Be more verbose
+  -d, --no-data           Do not load brushes, gradients, palettes, patterns, ...
+  -f, --no-fonts          Do not load any fonts
+  -i, --no-interface      Run without a user interface
+  --batch-interpreter=&lt;procedure&gt;
+                          The procedure to process batch commands with
+  -b, --batch=&lt;commands&gt;  Batch command to run (can be used multiple times)
   ...
 </pre>
 <p>
@@ -73,10 +73,10 @@ Options:
   overwrites the original image). It does all this w/o any user
   interaction, so we can run it without any user interface. In order
   to do that, save the script with the .scm extension in the
-  <strong>~/.gimp-2.2/scripts</strong> directory. Then run it like this:
+  <strong>~/.gimp-2.4/scripts</strong> directory. Then run it like this:
 </p>
 <pre class="code">
-  gimp -i -b '(simple-unsharp-mask "foo.png" 5.0 0.5 0)' '(gimp-quit 0)'
+  gimp -i -b '(simple-unsharp-mask "foo.png" 5.0 0.5 0)' -b '(gimp-quit 0)'
 </pre>
 
 <p>
@@ -124,7 +124,7 @@ Options:
   current directory, you would run the following command:
 </p>
 <pre class="code">
-  gimp -i -b '(batch-unsharp-mask "*.png" 5.0 0.5 0)' '(gimp-quit 0)'
+  gimp -i -b '(batch-unsharp-mask "*.png" 5.0 0.5 0)' -b '(gimp-quit 0)'
 </pre>
 
 <h2>Further information</h2>

@@ -1,3 +1,7 @@
+2007-11-10  Simon Budig  <simon@gimp.org>
+
+        * about/merchandise.htrw: fixed link to kernelconcepts.
+
 2007-11-08  Sven Neumann  <sven@gimp.org>
 
 	* tutorials/Basic_Batch/index.htrw: updated for GIMP 2.4.

@@ -12,50 +12,23 @@
 <p>There are various ways to obtain and install GIMP for your
 Macintosh.  In addition to the source code distribution here on
 www.gimp.org, there are various alternative sources for packaged and
-commercially distributed CDs, which aim to make installation and setup
-an easier task. These include:</p>
+even commercially distributed CDs, which aim to make installation and
+setup an easier task. These include:
+</p>
 
 <ul>
-  <li><a href="http://www.macports.org/">MacPorts</a>
-  provide an easy way to install various open-source software products
-  on Mac OS X. They have switched to GIMP 2.3/2.4-rc1 in the latest 
-  revisions, but you can still grab a previous one for <a href="http://trac.macosforge.org/projects/macports/browser/trunk/dports/graphics/gimp/Portfile?rev=27042&format=raw">GIMP 2.2.17</a>.
-  MacPorts places the GIMP binary into
-  <code>/opt/local/bin</code>.<br/>
-  There's a port file for the <a href="http://trac.macosforge.org/projects/macports/browser/trunk/dports/graphics/gimp-dev/Portfile">GIMP 2.3 development version</a>, too. 
-  The 2.3 binary is installed to <code>/opt/local/gimp-2.3/bin</code>.<br/>
-  <br/>	
-  Both files are maintained by
-  <a href="mailto:yvesNOSPAM@macports.org">Yves de Champlain</a>. </li>
+  <li><a href="http://wilber-loves-apple.org/">Wilber loves Apple</a>
+  is a community that provides GIMP packages and help for Mac OS X users.
+  </li>
 
-  <li><a href="http://gimp-app.sourceforge.net/">Gimp.app</a> provides
-  a self contained application bundle of GIMP 2.2.11 or GIMP 2.4-rc3
-  for OS X. Apple's X11 is required. Gimp.app is packaged by Aaron
-  Voisine.</li>
-
-  <li><a href="http://fink.sourceforge.net/pdb/package.php/gimp2">Fink</a>
-  is a package management system that provides everything necessary to
-  build GIMP 2.0.6. The Fink project is based upon the Debian apt-get
-  package management tools, and can resolve dependencies among the various
-  components necessary for a working GIMP installation. A typical install,
-  however, will require that you have a working C compiler, which Apple
-  supplies on a companion CD to Mac OS X.  The current gimp package
-  maintainer for the Fink project is
-  <a href="mailto:astrangeNOSPAM@ithinksw.com">Alexander Strange</a>.
-  The default location for GIMP when installed with fink is
-  <code>/sw/bin/gimp</code>. </li>
-
-  <li>In the future, it is hoped that the <a
-  href="http://www.metapkg.org/">MetaPkg</a> project will unify
-  several of these installation methods, but the meta packaging system
-  is not yet usable.</li>
+  <li><a href="http://www.macports.org/">MacPorts</a> provide an easy
+  way to install various open-source software products on Mac OS X.
+  They have GIMP 2.4 in the latest revisions.
+  </li>
 
   <li>The <a href="http://www.macgimp.org/">MacGIMP project</a>
-  provides GIMP for Mac OS X in a packaged CD format.
-  The MacGIMP project installs GIMP in <code>/opt/local/bin</code>.
-  MacGIMP efforts are led by
-  <a href="mail:People-Caughron-Mat">Mat Caughron</a>. In 2003 he helped
-  the GIMP developers with a donation for their developers conference.
+  provides GIMP for Mac OS X in a packaged CD format. But they don't
+  offer GIMP 2.4 yet.
   </li>
 
 </ul>
@@ -78,7 +51,7 @@ to run GIMP on your Macintosh:</p>
   version of this windowing layer, based on XFree86, which is called
   X11.app.  If you do use OS X 10.3, you can grab it from the Apple <a
   href="http://www.apple.com/support/downloads/x11formacosx.html">downloads site</a>. 
-  10.4 users will find it on the Tiger DVD installer disk.</li>
+  Tiger and Leopard users will find it on the DVD installer disk.</li>
 
   <li>Graphics libraries and toolkits<br />
   Unlike most Linux distributions, Mac OS X does not come with the

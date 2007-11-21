@@ -1,5 +1,10 @@
 2007-11-21  Sven Neumann  <sven@gimp.org>
 
+	* downloads/Windows.xhtml: link directly to the installer as we do
+	for the Mac.
+
+2007-11-21  Sven Neumann  <sven@gimp.org>
+
 	* downloads/Mac.xhtml: link to 2.4.2 binary for Intel Leopard and
 	2.4.1 binary for Intel Tiger.
 

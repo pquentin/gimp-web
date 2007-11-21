@@ -1,3 +1,8 @@
+2007-11-21  Sven Neumann  <sven@gimp.org>
+
+	* downloads/Mac.xhtml: link to 2.4.2 binary for Intel Leopard and
+	2.4.1 binary for Intel Tiger.
+
 2007-11-21  Raphaël Quinet  <raphael@gimp.org>
 
 	* release-notes/gimp-2.4.htrw: corrected typos reported by

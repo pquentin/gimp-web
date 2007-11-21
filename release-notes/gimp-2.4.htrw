@@ -27,7 +27,7 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 
 <p>The tool options now include a brush size slider that affects both the parametric and bitmap brushes. This has been an oft-requested feature from both digital painters and photo editors.</p>
 
-<p>Unlike previous versions of GIMP, regardless of whether you're using a bitmap brush, parametric brush or even a picture tube (mutiple bitmaps), you can easily set the brush size with either the tool options dock slider or an external device such as a MIDI slider or knob or a USB device like the Griffin Powermate.</p>
+<p>Unlike previous versions of GIMP, regardless of whether you're using a bitmap brush, parametric brush or even a picture tube (multiple bitmaps), you can easily set the brush size with either the tool options dock slider or an external device such as a MIDI slider or knob or a USB device like the Griffin Powermate.</p>
 
 <h3>Selection Tools</h3>
 
@@ -105,7 +105,7 @@ modification throughout the whole 'digital darkroom' process.</p>
 
 <img class="figure" src="images/gimp-24-print-dark.png" alt="Improved Printing" />
 
-<p>Printing has been largely improved. GIMP makes use of the advancements in the gtk+ printing API so that you can control all aspects of the printout with an easy to understand interface and immidiate preview.</p>
+<p>Printing has been largely improved. GIMP makes use of the advancements in the gtk+ printing API so that you can control all aspects of the printout with an easy to understand interface and immediate preview.</p>
 
 <h3>Red Eye Removal</h3>
 

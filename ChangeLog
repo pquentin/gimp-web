@@ -1,3 +1,11 @@
+2007-11-21  Raphaël Quinet  <raphael@gimp.org>
+
+	* release-notes/gimp-2.4.htrw: corrected typos reported by
+	techtonik.  Fixes bug #496166.
+
+	* develop/index.htrw: corrected typo reported by Jacob Taylor.
+	Fixes bug #494481.
+
 2007-11-21  Sven Neumann  <sven@gimp.org>
 
 	* about/history.htrw

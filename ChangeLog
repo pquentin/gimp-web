@@ -1,3 +1,8 @@
+2007-11-22  Raphaël Quinet  <raphael@gimp.org>
+
+	* downloads/Linux.xhtml: added information for Mandriva.  Fixes
+	the main part of bug #498825.
+
 2007-11-22  Sven Neumann  <sven@gimp.org>
 
 	* downloads/Windows.xhtml: updated download link for 2.4.2.

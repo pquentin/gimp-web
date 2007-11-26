@@ -43,24 +43,23 @@ to run GIMP on your Macintosh:</p>
 
 <ul>
   <li>X Windowing Layer<br /> 
-  GIMP uses a separate windowing layer, the X11 windowing
-  protocol, on Mac OS X, which must be installed first.  There are
-  various ways to install an X11 protocol window server.  The <a
-  href="http://www.xdarwin.org/">XDarwin project</a> provides this
-  functionality.  Apple does provide their own
-  version of this windowing layer, based on XFree86, which is called
-  X11.app.  If you do use OS X 10.3, you can grab it from the Apple <a
-  href="http://www.apple.com/support/downloads/x11formacosx.html">downloads site</a>. 
-  Tiger and Leopard users will find it on the DVD installer disk.</li>
+  GIMP uses a separate windowing layer, the X11 windowing protocol, on
+  Mac OS X, which must be installed first. The <a
+  href="http://www.x.org/wiki/XDarwin">XDarwin project</a> provides this
+  functionality.  Apple used to provide their own
+  version of this windowing layer, based on XFree86.  Mac OS X
+  10.5 (Leopard) now ships with an X11.app based on the X.Org 7.2 release.
+ </li>
 
   <li>Graphics libraries and toolkits<br />
   Unlike most Linux distributions, Mac OS X does not come with the
   open source libraries upon which GIMP is built.  These are
   typically installed along with GIMP, but can be installed
-  separately.  GTK can be built and installed via the various package
-  management systems mentioned above: Fink, DarwinPorts, OSXGNU and
-  others.  A complete list of the libraries necessary for a build of
-  GIMP is given in the main source distribution.</li>
+  separately.  If you want to compile GIMP from source, we suggest that
+  you use <a href="http://www.macports.org/">MacPorts</a> or
+  <a href="http://finkproject.org/">fink</a> to install the libraries
+  it depends on.
+  </li>
 </ul>
 
 

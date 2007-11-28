@@ -1,5 +1,9 @@
 2007-11-28  Sven Neumann  <sven@gimp.org>
 
+	* unix/index.htrw: link to Debian package search.
+
+2007-11-28  Sven Neumann  <sven@gimp.org>
+
 	* unix/index.htrw: added link to Ubuntu package; sorted distros
 	alphabetically.
 

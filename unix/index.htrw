@@ -19,7 +19,7 @@ not test them; use at your own risk.
  <li>GNU/Linux
    <ul>
      <li>
-       <a href="http://packages.debian.org/unstable/graphics/gimp">Debian (deb)</a>
+       <a href="http://packages.debian.org/search?searchon=names&keywords=gimp">Debian (deb)</a>
      </li>
      <li>
        <a href="http://download.fedora.redhat.com/pub/fedora/linux/core/updates/3/i386/">Fedora Core 3 (RPM)</a>

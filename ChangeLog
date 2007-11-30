@@ -1,5 +1,10 @@
 2007-11-30  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/icons/wilber_eeek.png
+	* images/wilber_eeek.png: updated using stock-wilber-eek-64.png.
+
+2007-11-30  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/about: removed directory full of outdated scripts.
 
 	* programmatic/Makefile: removed targets for about.

@@ -1,5 +1,10 @@
 2007-11-30  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/Makefile (install-news): adapted for
+	changed icons.
+
+2007-11-30  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/icons/wilber.png: added plain Wilber.
 
 	* programmatic/admin/news/icons/gimp_code.png

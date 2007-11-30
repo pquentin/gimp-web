@@ -1,5 +1,5 @@
 #!/usr/bin/env make
-# $Id$
+# $Id: Makefile,v 1.14 2005/11/04 21:27:04 neo Exp $
 #
 include ../../Makefile.defs
 
@@ -75,11 +75,10 @@ install-news: all
 	install news-index.cgi                   `${PYTHON} -c 'import news_config; print news_config.news_path'`
 
 	if [ ! -d "`${PYTHON} -c 'import news_config; print news_config.icon_path'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; print news_config.icon_path'`; fi
-	install icons/gimp_code.png              `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/gimp_construction.png      `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/lgm-banner-small.png       `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/release-0.1.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/release-dev.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
+	install icons/wilber.png                 `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/wilber_eeek.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/wilber_painter.png         `${PYTHON} -c 'import news_config; print news_config.icon_path'`
 	install icons/wilber_reading.png         `${PYTHON} -c 'import news_config; print news_config.icon_path'`

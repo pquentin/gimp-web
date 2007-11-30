@@ -1,5 +1,15 @@
 2007-11-30  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/icons/wilber.png: added plain Wilber.
+
+	* programmatic/admin/news/icons/gimp_code.png
+	* programmatic/admin/news/icons/gimp_construction.png: removed.
+
+	* programmatic/admin/news/wgo_news.py: changed accordingly. Also
+	removed broken code for icon descriptions.
+
+2007-11-30  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/icons/wilber_eeek.png
 	* images/wilber_eeek.png: updated using stock-wilber-eek-64.png.
 

@@ -160,7 +160,7 @@ class news:
 
     img = ""
     if icon_by_name(self["image"]) != "":
-      img = xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"]), "alt" : icon_desc_by_name(self["image"])})
+      img = xhtml.image({"src" : config.icon_dir + icon_by_name(self["image"])})
       pass
 
     s += str(xhtml.div(img + as_para(self["body"]), {"class" : "news"}))
@@ -221,8 +221,7 @@ def footer(prefix=None):
 
 icons = {
   "--none--"                   : "",             # must be present
-  "Default"                    : "gimp_construction.png", # must be present
-  "Developer"                  : "gimp_code.png",
+  "Default"                    : "wilber.png",   # must be present
   "Developer Release"          : "release-dev.png",
   "Libre Graphics Meeting"     : "lgm-banner-small.png",
   "Release"                    : "release-0.1.png",
@@ -252,27 +251,6 @@ def icon_by_name(name):
   if icons.has_key(name):
     return (icons[name])
   return (icons["Default"])
-
-# Must match the names in "icons" above
-icon_descs = {
-  "--none--"          : "",
-  "Default"           : "[?]",
-  "construction"      : "[Wilber the Builder]",
-  "developer"         : "[Developers]",
-  "developer-release" : "[Developer Release]",
-  "lgm-banner-small"  : "[Libre Graphics Meeting]",
-  "release"           : "[Release]",
-  "wilber_painter"    : "[Wilber the Painter]",
-  "wilber_wizard"     : "[Wilber the Wizard]",
-  "wilber_work"       : "[Wilber the Painting Builder]",
-  "wilber_reading"    : "[Wilber Reading]",
-  "wilber_eeek"       : "[Wilber Shocked]"
-}
-
-def icon_desc_by_name(name):
-  if icon_descs.has_key(name):
-    return (icon_descs[name])
-  return (icon_descs["Default"])
 
 # Embeds body in para element, but only if needed (FIXME: should be smarter)
 def as_para(body):

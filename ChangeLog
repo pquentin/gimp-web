@@ -1,5 +1,11 @@
 2007-11-30  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/about: removed directory full of outdated scripts.
+
+	* programmatic/Makefile: removed targets for about.
+
+2007-11-30  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/icons/wilber_reading.png: also update
 	the icon here.
 

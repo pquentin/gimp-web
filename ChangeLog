@@ -1,3 +1,8 @@
+2007-11-30  Sven Neumann  <sven@gimp.org>
+
+	* images/wilber_reading.png: updated using wilber-reading.svg from
+	the GIMP helpbrowser sources.
+
 2007-11-29  Sven Neumann  <sven@gimp.org>
 
 	* downloads/Mac.xhtml: point to the Download page at

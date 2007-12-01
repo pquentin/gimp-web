@@ -2,9 +2,9 @@
 #
 include Makefile.defs
 
-.PHONY: all usage clean install admin contest develop webtools downloads
+.PHONY: all usage clean install admin contest webtools downloads
 
-all: webtools usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest develop downloads
+all: webtools usage wgo_config.py extended.css rdf-news.css wgo-css.cpp admin contest downloads
 
 usage:
 	@if [ ${DocumentRoot} = "" ]; then echo "USAGE: make DocumentRoot=<DocumentRoot>target"; exit 1; fi
@@ -43,9 +43,6 @@ admin: wgo_config.py
 contest: wgo_config.py
 	$(MAKE) -C contest all
 
-develop: wgo_config.py
-	$(MAKE) -C develop all
-
 downloads: wgo_config.py
 	$(MAKE) -C downloads all
 
@@ -60,15 +57,13 @@ clean mrproper:
 	/bin/rm -f wgo_config.py extended.css *.pyc *~ rdf-news.css
 	$(MAKE) -C contest clean
 	$(MAKE) -C admin clean
-	$(MAKE) -C develop clean
 	$(MAKE) -C tools clean
 
-install: install-common install-admin install-contest install-develop install-downloads
+install: install-common install-admin install-contest install-downloads
 
 install-common: all
 	install -m 755 -d ${LIBDIR}
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo.py        > ${LIBDIR}/wgo.py
-	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' wgo_develop.py        > ${LIBDIR}/wgo_develop.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' apache_ssi.py > ${LIBDIR}/apache_ssi.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' xhtml.py      > ${LIBDIR}/xhtml.py
 	sed -e 's|$${PYTHON}|${PYTHON}|g' -e 's|$${LIBDIR}|${LIBDIR}|g' rdf.py        > ${LIBDIR}/rdf.py
@@ -83,9 +78,6 @@ install-admin: admin
 
 install-contest: contest
 	$(MAKE) -C contest install
-
-install-develop: develop
-	$(MAKE) -C develop install
 
 install-downloads: downloads
 	$(MAKE) -C downloads install

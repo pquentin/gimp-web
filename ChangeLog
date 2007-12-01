@@ -1,5 +1,13 @@
 2007-12-01  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/Makefile
+	* programmatic/develop: removed unused directory.
+
+	* programmatic/admin/Makefile
+	* programmatic/admin/develop: removed unused directory.
+
+2007-12-01  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/admin/news/icons: removed old news icons.
 
 2007-12-01  Sven Neumann  <sven@gimp.org>

@@ -74,17 +74,6 @@ install-news: all
 	install news-edit.cgi                    `${PYTHON} -c 'import news_config; print news_config.news_path'`
 	install news-index.cgi                   `${PYTHON} -c 'import news_config; print news_config.news_path'`
 
-	if [ ! -d "`${PYTHON} -c 'import news_config; print news_config.icon_path'`" ]; then install -m 755 -d `${PYTHON} -c 'import news_config; print news_config.icon_path'`; fi
-	install icons/lgm-banner-small.png       `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/release-0.1.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/release-dev.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/wilber.png                 `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/wilber_eeek.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/wilber_painter.png         `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/wilber_reading.png         `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/wilber_wizard.png          `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-	install icons/wilber_work.png            `${PYTHON} -c 'import news_config; print news_config.icon_path'`
-
 	install news_config.py ${LIBDIR}
 	install news-receiver  ${LIBDIR}
 

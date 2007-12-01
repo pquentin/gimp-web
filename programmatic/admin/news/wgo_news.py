@@ -222,14 +222,10 @@ def footer(prefix=None):
 icons = {
   "--none--"                   : "",             # must be present
   "Default"                    : "wilber.png",   # must be present
-  "Developer Release"          : "release-dev.png",
-  "Libre Graphics Meeting"     : "lgm-banner-small.png",
-  "Release"                    : "release-0.1.png",
-  "Wilber the Painter"         : "wilber_painter.png",
-  "Wilber the Wizard"          : "wilber_wizard.png",
-  "Wilber the Painter Builder" : "wilber_work.png",
-  "Wilber Reading"             : "wilber_reading.png",
-  "Wilber Shocked"             : "wilber_eeek.png"
+  "Developer Release"          : "release-development.png",
+  "Release"                    : "release-stable.png",
+  "Wilber Reading"             : "wilber-reading.png",
+  "Wilber Shocked"             : "wilber-eeek.png"
 }
 
 def icon_option_list(selected):

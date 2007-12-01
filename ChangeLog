@@ -1,5 +1,16 @@
 2007-12-01  Sven Neumann  <sven@gimp.org>
 
+	* images/news-icons: added directory with icons that used to live
+	in programmatic/admin/news.
+
+	* programmatic/admin/news/Makefile: removed targets that used to
+	install the news-icons.
+
+	* programmatic/admin/news/wgo_news.py: removed old icons, we can
+	add new ones when they are done.
+
+2007-12-01  Sven Neumann  <sven@gimp.org>
+
 	* images/old: removed this directory.
 
 2007-11-30  Sven Neumann  <sven@gimp.org>

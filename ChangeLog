@@ -1,5 +1,10 @@
 2007-12-01  Sven Neumann  <sven@gimp.org>
 
+	* images/news-icons/release-stable.png: replaced by a combination
+	of the Tange package-x-generic icon and the Wilber mascot.
+
+2007-12-01  Sven Neumann  <sven@gimp.org>
+
 	* programmatic/Makefile
 	* programmatic/develop: removed unused directory.
 

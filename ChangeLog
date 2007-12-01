@@ -1,3 +1,7 @@
+2007-12-01  Sven Neumann  <sven@gimp.org>
+
+	* images/old: removed this directory.
+
 2007-11-30  Sven Neumann  <sven@gimp.org>
 
 	* programmatic/admin/news/Makefile (install-news): adapted for

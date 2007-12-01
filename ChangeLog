@@ -1,5 +1,9 @@
 2007-12-01  Sven Neumann  <sven@gimp.org>
 
+	* programmatic/admin/news/icons: removed old news icons.
+
+2007-12-01  Sven Neumann  <sven@gimp.org>
+
 	* images/news-icons: added directory with icons that used to live
 	in programmatic/admin/news.
 

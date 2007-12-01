@@ -1,5 +1,13 @@
 2007-12-01  Sven Neumann  <sven@gimp.org>
 
+	* images/news-icons/wilber.svg
+	* images/news-icons/release-stable.svg
+	* images/news-icons/wilber-reading.svg: added SVG versions.
+
+	* install.exclude: exclude the SVG files.
+
+2007-12-01  Sven Neumann  <sven@gimp.org>
+
 	* images/news-icons/release-stable.png: replaced by a combination
 	of the Tange package-x-generic icon and the Wilber mascot.
 

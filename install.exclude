@@ -14,6 +14,7 @@
 /about/Makefile
 /about/authors.xsl
 /about/history.gnumeric
+/images/news-icons/*.svg
 /includes/news.inc
 /news.rdf
 /news

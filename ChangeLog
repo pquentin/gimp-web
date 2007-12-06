@@ -1,3 +1,8 @@
+2007-12-06  Raphaël Quinet  <raphael@gimp.org>
+
+	* images/news-icons/release-development.png: new icon for unstable
+	releases based on some additions to the stable version.
+
 2007-12-06  Sven Neumann  <sven@gimp.org>
 
 	* images/news-icons/release-stable.png: cleaned up some pixels. No

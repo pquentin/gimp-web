@@ -1,3 +1,9 @@
+2007-12-06  Sven Neumann  <sven@gimp.org>
+
+	* images/news-icons/release-stable.png: cleaned up some pixels. No
+	idea why Inkscape and rsvg are both not exporting what they show
+	on screen...
+
 2007-12-01  Sven Neumann  <sven@gimp.org>
 
 	* images/news-icons/wilber.svg

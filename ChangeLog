@@ -1,3 +1,7 @@
+2007-12-20  Sven Neumann  <sven@gimp.org>
+
+	* windows/index.htrw: link to the "stable" version.
+
 2007-12-16  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated for GIMP 2.4.3 release.

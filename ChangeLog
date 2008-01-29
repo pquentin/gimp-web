@@ -1,3 +1,7 @@
+2008-01-29  Sven Neumann  <sven@gimp.org>
+
+	* downloads/source.xhtml: updated for GAP 2.4.0 release.
+
 2008-01-29  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* downloads/Windows.xhtml: updated link to 2.4.3.

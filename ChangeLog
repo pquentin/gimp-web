@@ -1,5 +1,11 @@
 2008-02-20  Raphaël Quinet  <raphael@gimp.org>
 
+	* tutorials/Using_GAP/gap-big.png
+	* tutorials/Using_GAP/gap4-big.png: Better images provided by
+	Daniel Hornung.  Fixes bug #516281.
+
+2008-02-20  Raphaël Quinet  <raphael@gimp.org>
+
 	* docs/userfaq.htrw: Fixed broken link to Adrian's example script
 	test.scm (bug #515995)
 

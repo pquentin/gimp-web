@@ -1,3 +1,8 @@
+2008-02-20  Raphaël Quinet  <raphael@gimp.org>
+
+	* docs/userfaq.htrw: Fixed broken link to Adrian's example script
+	test.scm (bug #515995)
+
 2008-01-31  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* downloads/Windows.xhtml: updated link to 2.4.4 installer.

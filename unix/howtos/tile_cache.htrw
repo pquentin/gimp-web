@@ -184,15 +184,15 @@ with this quick advice, then keep on reading...</em></p>
 <p>
   First is the memory for the pixel data. Each layer requires layer width
   * layer height * 3 bytes for RGB background without alpha or * 4 for RGB
-  layers with alpha. In general and to simplify, take the * 4, as for some
-  filters you will require to add alpha to the background, and in any case
-  math are simple if you do not have to remember to treat a layer specially.
+  layers with alpha.
 </p>
 <p>
-  Then GIMP needs to know the selection, which is a width * height of
-  the total image. Next, the composed image, which is what you see in
-  your work windows, requires image width * height * 4. You can
-  combine these two values as image width * height * 5.
+  Then GIMP needs to store the selection mask, which is a width *
+  height of the total image.  Next, the composed image, which is what
+  you see in your screen, requires image width * height * 5,33. The
+  fractional part is because, starting with GIMP 2.4, the composed
+  image is kept in several sizes. You can combine these two values as
+  image width * height * 6,33.
 </p>
 <p>
   Last, there is some overhead GIMP needs to know where pixels are stored,

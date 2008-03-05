@@ -1,3 +1,8 @@
+2008-03-06  Sven Neumann  <sven@gimp.org>
+
+	* unix/howtos/tile_cache.htrw: updated size calculation to take
+	the projection pyramid into account.
+
 2008-02-29  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated for GIMP 2.4.5 release.

@@ -1,0 +1,122 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Release Notes for the 2.5 development snapshots</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP 2.5 Release Notes</h1>
+<p>
+This is an unstable development version of the <b>GNU Image
+Manipulation Program</b>. Please realize that this is just a snapshot
+of the development tree. We are working hard towards GIMP 2.6, the next
+stable release. GIMP 2.5 is in no way a final product. A lot of new
+features are incomplete and some things may even be completely broken.
+If you need to get work done, please use the stable version, GIMP 2.4.
+</p>
+
+<h2>What's New in GIMP 2.5</h2>
+<p>
+  The most notable change in GIMP 2.5 happened under the hood. The
+  color tools in GIMP have been ported
+  to <a href="http://gegl.org">GEGL</a>.  This does not yet have much
+  impact on the user experience but it is a first and important step
+  forward. With full GEGL integration GIMP will finally get support
+  for higher color depths, more colorspaces and eventually
+  non-destructive editing.
+</p>
+<p>
+  With the help of the <a href="http://gui.gimp.org/">UI team</a>, the
+  Toolbox menu has been merged into the image window. GIMP now always
+  keeps an image window open and the default configuration treats the
+  toolbox and docks as utility windows.
+</p>
+<p>
+  An often requested tool for simple polygonal selections has been
+  added and work has started to improve the text tool. Please see
+  the <a href="wgo:dev-news">NEWS</a> file on developer.gimp.org for a
+  more detailed list of changes.
+  <a href="wgo:dev-screenshots">Screenshots</a> of the development
+  version can also be found there.
+</p>
+
+<h2>Download</h2>
+<p>
+  The development snapshots of GIMP can be downloaded as source code
+  from ftp.gimp.org or from one of the mirrors listed in
+  the <a href="wgo:downloads-mirrors">Downloads</a> section.
+</p>
+<p>
+  Distribution of binary packages of the development version is
+  discouraged unless it is made clear that this is an early development
+  snapshot. Users should be referred to these release notes or similar
+  information.
+</p>
+
+<h2>Installation</h2>
+<p>
+GIMP 2.5 must <strong>not</strong> be installed in the same prefix as
+other GIMP 2.x versions. If you want to keep your GIMP 2.4
+installation in parallel to GIMP 2.5, you have to choose a separate
+installation prefix at compile-time and ensure that you use different
+library search paths for each version. If you do not set up your
+environment differently for each version, you will experience
+conflicts with the libraries and at least one version is likely to
+fail.
+</p>
+
+<p>
+You install the new version into a separate prefix, say /opt/gimp-2.5
+by passing <kbd>--prefix=/opt/gimp-2.5</kbd> to the configure
+script. Then, in order to run the binary installed there, you change
+your environment to look for executables in /opt/gimp-2.5/bin by
+setting <kbd>PATH=/opt/gimp-2.5/bin</kbd> and you tell your linker to
+pick up libraries from /opt/gimp-2.5/lib by setting
+<kbd>LD_LIBRARY_PATH=/opt/gimp-2.5/lib</kbd>.  Do not forget to
+<kbd>export</kbd> both variables.
+</p>
+
+<p>
+You can use a tiny wrapper script called gimp-2.5 and place it into
+/usr/local/bin or elsewhere in your PATH. The script would look
+something like this:
+</p>
+
+<pre class="code">
+#!/bin/sh
+
+PATH=/opt/gimp-2.5/bin:$PATH
+export PATH
+LD_LIBRARY_PATH=/opt/gimp-2.5/lib
+export LD_LIBRARY_PATH
+
+/opt/gimp-2.5/bin/gimp-2.5 "$@"
+</pre>
+
+<h2>Bugs</h2>
+<p>
+If you think you found a bug in a development version, please make
+sure that it hasn't been already reported.
+Search <a href="home:gimp-bugzilla">Bugzilla</a> before filing a new
+bug-report. Here are some interesting Bugzilla queries:
+<ul>
+  <li>
+    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.6&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">Open bugs with milestone 2.6</a>
+  </li>
+  <li>
+    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.6&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED">Resolved bugs with milestone 2.6</a>
+  </li>
+</ul>
+</p>
+
+<h2>Contributing</h2>
+<p>
+We need your help to make GIMP 2.6 a success. There's still a lot to
+do.  If you want to join us hacking, show up in #gimp or introduce
+yourself on the gimp-developer mailing-list. We are also looking for
+people to look after the web-site and update the tutorials. Or you
+might want to join the
+<a href="http://docs.gimp.org/">documentation team</a>.
+</p>
+
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

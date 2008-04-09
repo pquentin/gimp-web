@@ -1,5 +1,9 @@
 2008-04-09  Sven Neumann  <sven@gimp.org>
 
+	* downloads/source.xhtml: updated for GIMP 2.5.0 release.
+
+2008-04-09  Sven Neumann  <sven@gimp.org>
+
 	* release-notes/gimp-2.5.htrw: added release notes for 2.5.
 
 	* release-notes/index.htrw: link to the 2.5 release notes.

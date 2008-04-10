@@ -426,6 +426,7 @@ form {
   /* border: 1px solid green; */
   background-color: #2e3436;
   padding: 0;
+  position: relative;
 }
 
 #menu {
@@ -438,6 +439,7 @@ form {
   left: 0px;
   margin: 0 0 1em 20px;
   background-color: #0e2426;
+  z-index: 1;
 }
 
   #menu a {
@@ -588,29 +590,35 @@ div.splash {
   position: relative;
 }
 
-.splash img#splashbg {
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
+  /*
+  .splash+h1 {
+    margin-top: 180px;
+  }
+  */
 
-.splash img#splash24overlay {
-  display: block;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 300px;
-  height: 140px;
-}
+  .splash img#splashbg, .splash>img:first-child {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 
-.splash img#fadesplash {
-  position: absolute;
-  display: block;
-  left: 900px;
-  width: 135px;
-  height: 200px;
-}
+  .splash img#splash24overlay {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 140px;
+  }
+
+  .splash img#fadesplash {
+    position: absolute;
+    display: block;
+    left: 900px;
+    width: 135px;
+    height: 200px;
+  }
 
 .intropara {
   margin: 0 -20px 2em -20px;

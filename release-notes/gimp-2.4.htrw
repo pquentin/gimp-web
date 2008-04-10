@@ -4,7 +4,7 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">
-<img alt="#" 
+<img class="splashbg" alt="#" 
 src="images/2.4-releasesplash.jpg" width="640" height="200" />
 </div>
 

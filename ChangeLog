@@ -1,3 +1,9 @@
+2008-05-30  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* webmasters.htrw: added link to bugs.gimp.org (gimp bugs overview
+	page in Bugzilla) and mention that discussions should be done on
+	the gimp-developer list.
+
 2008-05-29  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated for GIMP 2.4.6 release.

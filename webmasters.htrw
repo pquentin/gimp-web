@@ -17,7 +17,13 @@ channels</a>, or to the GIMP newsgroup (comp.graphics.apps.gimp).</p>
 <p>If you have a problem with GIMP and you think that you have
 found a bug or if you would like to suggest a new feature, you can
 also take a look at our <a href="wgo:bugs">bugs page</a>.  Your
-problem may have been solved already.</p>
+problem may have been reported or solved already, so please 
+<a href="http://bugs.gimp.org">search and browse</a> for existing 
+reports first.</p> 
+
+<p>If you have the feeling that your report will require (longer) 
+discussion - this is true for most feature requests - then you should 
+bring this topic up on the gimp-developer mailing list first.</p>
 
 <h2>Problems on this web site?</h2>
 

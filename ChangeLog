@@ -1,3 +1,7 @@
+2008-06-03  Sven Neumann  <sven@gimp.org>
+
+	* downloads/Windows.xhtml: updated link to 2.4.6 installer.
+
 2008-05-30  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* webmasters.htrw: added link to bugs.gimp.org (gimp bugs overview
@@ -48,7 +52,7 @@
 
 2008-03-08  Michael Schumacher  <schumaml@cvs.gnome.org>
 
-	* downloads/Windows.xhtml: updated link to 2.4.5 installer. 
+	* downloads/Windows.xhtml: updated link to 2.4.5 installer.
 
 2008-03-06  Sven Neumann  <sven@gimp.org>
 
@@ -516,7 +520,7 @@
 
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
-	* style/wgo.css: add <hr> styling (For the download page). 
+	* style/wgo.css: add <hr> styling (For the download page).
 
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
@@ -524,7 +528,7 @@
 
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
 
-	* styles/wgo.css: 
+	* styles/wgo.css:
 	* styles/interface.css: fix validation issues.
 
 2007-10-24  Jakub Steiner <jimmac@ximian.com>
@@ -816,7 +820,7 @@
 	* about/authorsgen.pl: Deleted, as they are not used anymore.
 
 	* install.exclude: Updated according to these changes.
-	
+
 2007-10-08  Raphaël Quinet  <raphael@gimp.org>
 
 	* about/index.htrw
@@ -895,7 +899,7 @@
 	* template.htrw
 	* tutorials/*/index.htrw  (29 files)
 	* tutorials/Smart_Sharpening/warp-sharp.htrw
-	* tutorials/index.htrw: 
+	* tutorials/index.htrw:
 	* unix/howtos/gimp-midi.htrw
 	* unix/howtos/tile_cache.htrw
 	* unix/howtos/bugzilla.htrw
@@ -939,7 +943,7 @@
 	* tutorials/Smart_Sharpening/index.htrw: Replaced some single-use
 	substitutions by the corresponding URLs.  Should make maintenance
 	much easier for the list of books and mailing lists.
-	
+
 	* docs/index.htrw: Updated the list of languages for 2.4.
 
 	* about/splash/index.htrw: Improved instructions for 2.4, prefer
@@ -959,7 +963,7 @@
 
 2007-10-05  Raphaël Quinet  <raphael@gimp.org>
 
-	* docs/index.htrw: 
+	* docs/index.htrw:
 	* release-notes/gimp-2.4.htrw: Link to the Script-Fu migration
 	guide.
 
@@ -1066,7 +1070,7 @@
 
 2007-08-15  Michael Schumacher  <schumaml@cvs.gnome.org>
 
-	* tutorials/Lite_Quickies/modex-alpha-t.png: 
+	* tutorials/Lite_Quickies/modex-alpha-t.png:
 	* tutorials/Lite_Quickies/modex-index-t.png: added two of the
 	missing images mentioned in bug #168606.
 
@@ -1206,7 +1210,7 @@
 
 2007-07-24  Jakub Steiner <jimmac@ximian.com>
 
-	* about/splash/index.htrw: sort the list descending 
+	* about/splash/index.htrw: sort the list descending
 	* style/wgo.css: get rid of table border
 
 2007-07-24  Sven Neumann  <sven@gimp.org>
@@ -1308,7 +1312,7 @@
 	* images/next_image.png
 	* style/wgo.css
 	* style/interface.css
-	* screenshots/index.htrw: more screenshot infrastucture work. 
+	* screenshots/index.htrw: more screenshot infrastucture work.
 
 	* images/fade.png
 	* images/frontsplash.jpg
@@ -1363,7 +1367,7 @@
 2007-06-01  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* programmatic/admin/news/Makefile (news_config.py): we decided
-	that the time zone is not needed, bug #161498 is WONTFIX. 
+	that the time zone is not needed, bug #161498 is WONTFIX.
 
 2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
 
@@ -1371,11 +1375,11 @@
 	datetime_format to include the time zone name; addresses bug #161498.
 
 2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
-	
-	* docs/index.htrw: Hrvatski is Croatian, not Hungarian. 
+
+	* docs/index.htrw: Hrvatski is Croatian, not Hungarian.
 	Fixes bug #440576.
 
-2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>	
+2007-05-31  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* macintosh/index.htrw: formatting change.
 
@@ -1465,7 +1469,7 @@
 2007-03-29  Jakub Steiner <jimmac@ximian.com>
 
 	* includes/wgo-page-init.xhtml:
-	* style/wgo.css: 
+	* style/wgo.css:
 	* images/titlebar.png: simplify the titlebar, use text.
 
 2007-03-29  Jakub Steiner <jimmac@ximian.com>
@@ -1507,11 +1511,11 @@
 	* about/splash/unstable-2.1.htrw
 	* about/splash/unstable-2.3.htrw: renamed and moved up one dir,
 	adjusted the paths to all images.
-	
+
 	* about/splash/splash-images/*
 	* about/splash/images/*: renamed to avoid unnecessary redundancy
 	in the URLs.
-	
+
 	* admin/gimp-web-urls: New locations for wgo:about-splash-*.
 
 2007-03-22  Jakub Steiner <jimmac@ximian.com>
@@ -1534,7 +1538,7 @@
 	  menu. We don't want them funds dry. Conference good. Money good.
 		Overloade menus bad. This commit is 60% ChangeLog. Have a nice
 		day.
-		
+
 2007-03-22  Jakub Steiner <jimmac@gimp.org>
 
 	* features/histogram.png
@@ -1628,7 +1632,7 @@
 	* admin/gimp-web-urls:
 	* style/wgo.css:
 	* about/splash/splash-images/gimp1_1_splash-2.4.png:
-	* about/splash/splash-images/gimp1_1_splash-2.4-t.png: 
+	* about/splash/splash-images/gimp1_1_splash-2.4-t.png:
 	  clean up the splash page, add a 2.4 splash
 
 2007-03-19  Jakub Steiner <jimmac@gimp.org>
@@ -1678,7 +1682,7 @@
 	* downloads/downloadsplash.png: more lively download page. Will
 	  need indexing, size shrinking. But not until the design is
 	  finalized.
-	
+
 2007-03-15  Jakub Steiner <jimmac@ximian.com>
 
 	* release-notes/gimp-2.4.htrw: markup and layout fixes.
@@ -1699,7 +1703,7 @@
 
 	* links/index.htrw: add Blender and provide saner Inkscape
 	  description.
-	
+
 2007-03-12  Karine Delvare  <edhel@gimp.org>
 
 	* release-notes/*.png: renamed from these...
@@ -1842,7 +1846,7 @@
 
 2007-01-06  Michael Schumacher  <schumaml@cvs.gnome.org>
 
-	* 
+	*
 
 2006-12-05  Kevin Cozens  <kcozens@cvs.gnome.org>
 
@@ -1966,35 +1970,35 @@
 	irc (#gimp).  An additional run with ISpell found many more that
 	it fixed...
 
-	* docs/python/pygimp.txt: added the file which was originally provided 
+	* docs/python/pygimp.txt: added the file which was originally provided
         by Sylvain Fourmanoit
 
 2006-05-09  Carol Spears  <carol@gimp.org>
-	* docs/python/pygimp.html, index.html: added some missing information 
+	* docs/python/pygimp.html, index.html: added some missing information
 
 	* docs/index.htrw: removed the entry about gimp-print
 
 2006-05-08  Carol Spears  <carol@gimp.org>
 	* docs/python: removed outdated pages:
-        end-note.html gimp-module-procedures.html gimp-objects.html 
-        procedural-database.html structure-of-plugin.html 
+        end-note.html gimp-module-procedures.html gimp-objects.html
+        procedural-database.html structure-of-plugin.html
         support-modules.html
-        
-	* docs/python: updated pygimp.html as provided by Sylvain 
+
+	* docs/python: updated pygimp.html as provided by Sylvain
         Fourmanoit
-        
-	* docs/python: added index.html xhtml11.css 
+
+	* docs/python: added index.html xhtml11.css
         xhtml11-quirks.css, also provided by Sylvain Fourmanoit
-        
+
 2006-05-06  Carol Spears  <carol@gimp.org>
 	* includes/wgo-page-init.htrw: added planets to the menu.
-        
+
 2006-05-06  Carol Spears  <carol@gimp.org>
 	* includes/urls_important.htrw: added planets.
-        
+
 2006-05-06  Carol Spears  <carol@gimp.org>
 	* images/thegimp.png: took "THE" out of the image.
-        
+
 2006-05-05  Sven Neumann  <sven@gimp.org>
 
 	* windows/index.htrw: include a direct link to the FAQ and mention
@@ -2016,7 +2020,7 @@
 
 2006-04-08  Carol Spears  <carol@gimp.org>
 
-	* resources/gradients/Coffee.png: replaced Coffee.png with an image 
+	* resources/gradients/Coffee.png: replaced Coffee.png with an image
         of the Coffee gradient. Fixes bug #337733.
 
 2006-03-19  Sven Neumann  <sven@gimp.org>
@@ -2104,15 +2108,15 @@
 
 2005-11-21  Carol Spears  <carol@gimp.org>
 
-	* programmatic/contest/contest.cgi Manish Singh changed the contest to 
-        also require a tutorial then I changed the text to reflect the new 
-        contest
-        
-	* programmatic/contest/contest.py Manish Singh changed the contest to 
-        also require a tutorial then I changed the text to reflect the new 
+	* programmatic/contest/contest.cgi Manish Singh changed the contest to
+        also require a tutorial then I changed the text to reflect the new
         contest
 
-	* programmatic/contest/index.htrw wrote new text for the Anniversary 
+	* programmatic/contest/contest.py Manish Singh changed the contest to
+        also require a tutorial then I changed the text to reflect the new
+        contest
+
+	* programmatic/contest/index.htrw wrote new text for the Anniversary
         splash contest.  Manish Singh was the spell check app used.
 
 2005-11-20  Manish Singh  <yosh@gimp.org>
@@ -2147,7 +2151,7 @@
 	* programmatic/admin/news/Makefile
 	* programmatic/admin/news/icons/lgm-banner-small.png: added news
 	icon for the Libre Graphics Meeting.
-	
+
 	* programmatic/admin/news/wgo_news.py: register it.
 
 2005-10-28  Sven Neumann  <sven@gimp.org>
@@ -2188,7 +2192,7 @@
 
 	* unix/howtos/tile_cache.htrw: updates and some info about the
 	memory calculation.
-	
+
 2005-09-27  Sven Neumann  <sven@gimp.org>
 
 	* admin/gimp-web-urls
@@ -2252,7 +2256,7 @@
 
 	* programmatic/xhtml.py (absolutize): added this function which is
 	supposed to turn relative links into absolute ones.
-	
+
 	* programmatic/admin/news/wgo_news.py: use the new function on links
 	in the RSS feed.
 
@@ -2322,7 +2326,7 @@
 
 	* release-notes/gimp-2.3.3.htrw: fixed small typo/germanism.
 
-2005-08-11  Michael Schumacher  <schumaml@cvs.gnome.org> 
+2005-08-11  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* links/index.htrw: added link to Carol Spears' tutorials
 
@@ -2341,11 +2345,11 @@
 
 	* downloads/index.htrw: updated for 2.3.3 release.
 
-2005-08-06  Michael Schumacher  <schumaml@cvs.gnome.org> 
+2005-08-06  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* links/index.htrw: added lt, hu, es and pl sites
 
-2005-07-31  Michael Schumacher  <schumaml@cvs.gnome.org> 
+2005-07-31  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* mail_lists.htrw
 	* admin/gimp-web-urls: added RSS feeds for some mailing lists.
@@ -2359,8 +2363,8 @@
 2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* programmatic/downloads/MIRRORS: ftp://gimp.zeta.org.au/ doesn't
-	mirror gimp anymore 
-	ftp://ftp.snt.utwente.nl/ doesn't mirror gimp anymore 
+	mirror gimp anymore
+	ftp://ftp.snt.utwente.nl/ doesn't mirror gimp anymore
 
 2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
 
@@ -2369,7 +2373,7 @@
 
 2005-07-17  Michael Schumacher  <schumaml@cvs.gnome.org>
 
-	* admin/gimp-web-urls: 
+	* admin/gimp-web-urls:
 	* books/index.htrw: wgo:book-gimp_the_official_handbook is no
 	longer http://manual.gimp.org, but we have a copy on the ftp
 	ftp://ftp.gimp.org/pub/gimp/docs/
@@ -2447,7 +2451,7 @@
 
 2005-06-09  Sven Neumann  <sven@gimp.org>
 
-	* downloads/index.htrw: updated for 2.3.1 release. 
+	* downloads/index.htrw: updated for 2.3.1 release.
 
 2005-05-31  Raphaël Quinet  <raphael@gimp.org>
 
@@ -2531,7 +2535,7 @@
 
 2005-05-09  Dave Neary  <bolsh@gimp.org>
 
-	* links/index.htrw: Add a link to "GIMP talk" - a community site 
+	* links/index.htrw: Add a link to "GIMP talk" - a community site
 	with tutorials, user forum and other stuff.
 
 2005-05-09  Sven Neumann  <sven@gimp.org>
@@ -2638,7 +2642,7 @@
 
 	* books/a_la_sos_gimp.png:
 	* admin/gimp-web-urls:
-	* books/index.htrw: Added Cédric Gemy's free book on the 
+	* books/index.htrw: Added Cédric Gemy's free book on the
 	GIMP - in French - which he has recently updated for the GIMP
 	2.2.
 
@@ -2774,7 +2778,7 @@
 	* programmatic/contest/wgo_contest.py
 
 	Display 12 images per page.  Code cleanup.
-	
+
 	* programmatic/admin/wgo-admin.cpp
 	* programmatic/admin/news/news-edit-action.py
 	* programmatic/admin/news/news-edit.py
@@ -2792,7 +2796,7 @@
 
 	* mail_lists.htrw: added "broken" to all XCF archives links
 	changed wrongly labeled archives links of gimp-perl and os2
-	
+
 2004-12-19  Sven Neumann  <sven@gimp.org>
 
 	* admin/gimp-web-urls: added URL for NEWS on dgo.
@@ -2807,7 +2811,7 @@
 
 2004-12-19  Niklas M <scizzo@gimp.org>
 
-	* release-notes/gimp-2.2.html: Added file and directory with 
+	* release-notes/gimp-2.2.html: Added file and directory with
 	information about 2.2 release.
 
 2004-12-19  Niklas M  <scizzo@gimp.org>
@@ -2890,13 +2894,13 @@
 	* unix/index.htrw
 	* windows/index.htrw: added links to /docs/ on all platform-specific
 	pages and collected common links in the platform-neutral section.
-	
+
 	* admin/gimp-web-urls: removed links to old man-pages.
 
 2004-12-18  Sven Neumann  <sven@gimp.org>
 
 	* docs/index.htrw: link to man-pages.
-	
+
 	* admin/gimp-web-urls
 	* man/gimp-remote.html
 	* man/gimp.html
@@ -2925,11 +2929,11 @@
 
 	* about/selling.htrw: fixed minor spelling error. Fixes bug
 	#156508
-	
+
 2004-12-10  Michael Schumacher <schumaml@cvs.gnome.org>
 
 	* source/index.htrw: changed links to fontconfig from
-	http://x2.freedesktop.org/software/fontconfig to 
+	http://x2.freedesktop.org/software/fontconfig to
 	http://freedesktop.org/fontconfig/release/
 	Fixes bug #159449
 
@@ -2947,12 +2951,12 @@
 
 2004-12-06  Dave Neary <bolsh@gimp.org>
 
-	* index.htrw: Changed news entry to include links to sponsors 
+	* index.htrw: Changed news entry to include links to sponsors
 	sites.
 
 2004-12-05  Helvetix Victorinox  <helvetix@gimp.org>
 
-	* programmatic/admin/contest/gallery-edit.py (display_gallery): 
+	* programmatic/admin/contest/gallery-edit.py (display_gallery):
 	Some visual changes in the indicator of where the currently
 	display page is versus the total of all gallery images.
 
@@ -2963,10 +2967,10 @@
 
 2004-12-03  Helvetix Victorinox  <helvetix@gimp.org>
 
-	* programmatic/admin/contest/gallery-edit.py (display_gallery): 
+	* programmatic/admin/contest/gallery-edit.py (display_gallery):
 	Removed some dead code.
 
-	* programmatic/admin/contest/gallery-edit.py (display_gallery): 
+	* programmatic/admin/contest/gallery-edit.py (display_gallery):
 	Fixed a fencepost error in computing the number of images per
 	page.  Added a visual indicator of where the currently displayed
 	page is versus the total of all gallery images.
@@ -2974,7 +2978,7 @@
 
 2004-12-01  Helvetix Victorinox  <helvetix@gimp.org>
 
-	* programmatic/contest/contest.py (submit_manually): 
+	* programmatic/contest/contest.py (submit_manually):
 	Fixed up manual addition by fixing the DataDir problem.
 
 	* programmatic/admin/news/news-edit.py:
@@ -3077,7 +3081,7 @@
 	* index.htrw: reverted Dave's change until we figured out a
 	reasonable submission process. The change also had the titles all
 	messed up.
- 
+
 2004-11-29  Dave Neary  <bolsh@gimp.org>
 
 	* index.htrw: Announce the splash screen contest.
@@ -3189,12 +3193,12 @@
 2004-10-06  Niklas M <scizzo@gimp.org>
 
 	* donating/index.htrw: Updated information.
-	
-	* donating/oreilly.jpg, 
-	  donating/dw.png, 
-	  donating/wilber-macgimp.org, 
+
+	* donating/oreilly.jpg,
+	  donating/dw.png,
+	  donating/wilber-macgimp.org,
 	  donating/gnu-head-sm.jpg: Added new images of sponsors.
-	  
+
 	* donating/sponsors.htrw: Added the sponsors.
 
 2004-10-05  Sven Neumann  <sven@gimp.org>
@@ -3246,7 +3250,7 @@
 
 2004-08-27  Raphaël Quinet  <quinet@gamers.org>
 
-	* docs/index.htrw: 
+	* docs/index.htrw:
 	* admin/gimp-web-urls: Added a link to the Chinese version of the
 	GIMP user manual.
 
@@ -3277,7 +3281,7 @@
 2004-08-06  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.1.3 release.
-	
+
 2004-08-06  Sven Neumann  <sven@gimp.org>
 
 	* downloads/index.htrw: updated for 2.0.4 release.
@@ -3343,7 +3347,7 @@
 
 	* admin/gimp-web-urls: Added vidar madsen to the list of people.
 	  Changed address to my website.
-	
+
 	* tutorials/Sketch_Effect/: Added this tutorial provided by
 	Vidar. Closes bug #142766. Not validated yet.
 
@@ -3443,7 +3447,7 @@
 
 2004-04-21  Dave Neary  <bolsh@gimp.org>
 
-	* screenshots: Removed screenshot of my son following a comment 
+	* screenshots: Removed screenshot of my son following a comment
 	that it was inappropriate (which I can understand).
 
 2004-04-19  Raphaël Quinet  <quinet@gamers.org>
@@ -3573,7 +3577,7 @@
 
 	* admin/gimp-web-urls: link to the .html versions of gimprc and
 	gtkrc.
-	
+
 2004-03-30  Sven Neumann  <sven@gimp.org>
 
 	* unix/index.htrw: added link to RedHat 9 RPMs.
@@ -3593,7 +3597,7 @@
 
 	* unix/gimprc.html
 	* unix/gtkrc.html: updated these pages
-	
+
 2004-03-29  Sven Neumann  <sven@gimp.org>
 
 	* unix/index.htrw: fiddled with the layout a bit.
@@ -3654,8 +3658,8 @@
 
 2004-03-26  Dave Neary  <bolsh@gimp.org>
 
-	* downloads/index.htrw: Add links to the various gimp.org downloads 
-	like GAP, freetype, help, gimp-perl. Should perhaps have 
+	* downloads/index.htrw: Add links to the various gimp.org downloads
+	like GAP, freetype, help, gimp-perl. Should perhaps have
 	gimp-data-extras there too. Fixes bug #138177.
 
 2004-03-26  Sven Neumann  <sven@gimp.org>
@@ -3682,7 +3686,7 @@
 	2.0.
 
 	* tutorials/Image_Pipes/example*.gif: Removed.
-	
+
 	* tutorials/Image_Pipes/index.htrw: Updated for 2.0, replaced
 	links to *.gif by *.png, fixed a few typos.  Mention that Hood's
 	site for PSP Tubes is closed.
@@ -3877,7 +3881,7 @@
 
 2004-03-22  Sven Neumann  <sven@gimp.org>
 
-	* about/splash/stable.htrw: 
+	* about/splash/stable.htrw:
 	* about/splash/splash-images/splash-1.1.htrw
 	* about/splash/splash-images/splash-1.3.htrw: slightly more verbose.
 
@@ -3970,7 +3974,7 @@
 	* about/splash*.htrw: Moved the files to splash/splash-images/, now
 	all splashes are in one place. about/splash/.
 	* about/splash/index.htrw: Updated with a little more information.
-	
+
 	* includes/wgo-page-init.xhtml, wgo-howto-unix-init.xhtml,
 	wgo-howto-bugs-init.xhtml, wgo-howto-source-init.xhtml,
 	wgo-tutorial-init.xhtml: Added "Splash archive" to the main menu.
@@ -4002,11 +4006,11 @@
 	* fixed a typo in /unix/user_install.htrw
 	* updated images in /tutorials/Lite_Quickies
 	* added quintet_hst_big.jpg, crop-dialog.png, info-dialog.png
-	* added AS17-148-22727.jpg, AS17-148-22727_lrg.jpg, 
+	* added AS17-148-22727.jpg, AS17-148-22727_lrg.jpg,
 	  earth_1_apollo17_big.gif
 	* fixed xhtml /tutorials/Lite_Quickies/index.htrw,jpegrace.htrw,
 	  flips.htrw
-	* removed mode-alphano.png, mode-flatten-menu.png, mode-gifno.png, 
+	* removed mode-alphano.png, mode-flatten-menu.png, mode-gifno.png,
 	  mode-jpegno.png, mode-menu2.png, mode-sample.png, mode-sample2.png
 
 2004-03-18  Raphaël Quinet  <quinet@gamers.org>
@@ -4059,7 +4063,7 @@
 	* M install.sh
 	  M programmatic/admin/news/Makefile
 	  M programmatic/contest/Makefile: install.sh now tries to
-	detect the presence of python2.2 if $PYTHON is not set; 
+	detect the presence of python2.2 if $PYTHON is not set;
 	changed Makefiles to check for existance of data directories
 	before running install to create them
 
@@ -4095,7 +4099,7 @@
 
 	* M team.htrw: change Carol from "Contributor" to "Web Guru";
 	changed; remove "Former Web Coordinator" line; change Raphael
-	from "Web Coordinator" to "Web Guru"; added me as a Contributor. 
+	from "Web Coordinator" to "Web Guru"; added me as a Contributor.
 
 2004-03-15  Sven Neumann  <sven@gimp.org>
 
@@ -4231,8 +4235,8 @@
 
 2004-03-11  Dave Neary  <bolsh@gimp.org>
 
-	* tutorials/Photo_To_Sketch/index.htrw: Updated the photo to 
-	sketch tutorial text for 2.0. I'll updated the screenshots in 
+	* tutorials/Photo_To_Sketch/index.htrw: Updated the photo to
+	sketch tutorial text for 2.0. I'll updated the screenshots in
 	a while.
 
 2004-03-10  Niklas M <scizzo@gimp.org>
@@ -4501,9 +4505,9 @@
 	* unix/man-gimprc.1.html
 	* unix/man-gimptool-1.2.html
 	* unix/man-gtk-config.html
-	* windows/index.htrw: Fixes in the hope to produce valid 
+	* windows/index.htrw: Fixes in the hope to produce valid
 	(X)HTML.
-	
+
 2003-09-21  Raphael Quinet  <quinet@gamers.org>
 
 	* index.htrw: Changed the text according to the suggestions from
@@ -4597,7 +4601,7 @@
 
 2003-09-21 scizzo <scizzo@gimp.org>
 
-	* /unix/index.htrw: Commented out "File -> Preferenses" and 
+	* /unix/index.htrw: Commented out "File -> Preferenses" and
 	"Help Documentation" again.
 
 2003-09-21 scizzo <scizzo@gimp.org>
@@ -4625,7 +4629,7 @@
 
 2003-09-21 scizzo <scizzo@gimp.org>
 
-	* /unix/index.htrw: Commented out "Help Documentation" and 
+	* /unix/index.htrw: Commented out "Help Documentation" and
 	"File -->Preferences".
 
 2003-09-21 scizzo <scizzo@gimp.org>
@@ -4638,7 +4642,7 @@
 	* /docs/index.htrw: Commented out "The GIMP Documentation".
 	* /os2/index.htrw: Add a link to os2files for "OS/2 Software".
 	* /includes/wgo-xhtml-fini.xhtml: Commented out Validation link.
-	
+
 	* /unix/man-gimp-1.2.html
 	* /unix/man-gimp-remote-1.2.html
 	* /unix/man-gimprc.1.html
@@ -4656,7 +4660,7 @@
 	link to a file that Raphaël hve removed. Removed the (dis) in the
 	header for Organisation.
 	* /links/org.htrw: Removed broken links.
-	
+
 	* /includes/wgo-howto-bugs-init.xhtml
 	* /includes/wgo-howto-source-init.xhtml
 	* /includes/wgo-howto-unix-init.xhtml
@@ -4725,21 +4729,21 @@
 
 2003-09-19 scizzo <scizzo@gimp.org>
 
-	* /includes/wgo-howto-unix-init.xhtml 
+	* /includes/wgo-howto-unix-init.xhtml
 	* wgo-howto-unix-fini.xhtml
 	* wgo-howto-bugs-init.xhtml
 	* wgo-howto-bugs-fini.xhtml: Added the menus to the files to make them work like the others.
-	
-	* /includes/urls_go-developer.inc: 
+
+	* /includes/urls_go-developer.inc:
 	Add developer.gimp.org to the list of important developer links.
-	
-	* /includes/urls_important.inc: 
+
+	* /includes/urls_important.inc:
 	Changed the header a little so it uses Links instead of URLs.
-	
+
 	* /includes/wgo-howto-source-init.xhtml, wgo-howto-source-fini.xhtml:
 	Added files wich are going to be used for the source howtos for now.
-	
-	* /source/howtos/stable-cvs-build.htrw, stable-cvs-get.htrw: 
+
+	* /source/howtos/stable-cvs-build.htrw, stable-cvs-get.htrw:
 	Now using the new include files.
 
 	* /downloads/install_help.html: Fixed a typo.
@@ -4759,22 +4763,22 @@
 
 	* about/index.html
 	* about/introduction.html: Spelling, naming, links and real lists.
-	I commented out A tags for broken links, but left the link text as 
+	I commented out A tags for broken links, but left the link text as
 	a reminder.
-	
+
 	* resources/palettes
 	* resources/palettes/index.html
 	* resources/palettes/op2.png
 	* resources/palettes/plasma.png
 	* resources/palettes/visibone.png
 	* resources/palettes/visibone2.png
-	* resources/palettes/web.png: Added a Palettes directory in the 
+	* resources/palettes/web.png: Added a Palettes directory in the
 	resources section, including a few palettes and an index file.
-	
+
 	* mail_lists.htrw
 	* develop/index.htrw
 	* links/index.html: Changed the word 'URLs' to 'Links' where it
-	was incorrectly used. A URL is a string of the form 
+	was incorrectly used. A URL is a string of the form
 	protocol://address, whereas a link is a text or image or other
 	object tied to a URL that can be activated. Probably not very
 	important in the grand scheme of things, but it has been bugging
@@ -4824,10 +4828,10 @@
 	* Makefile: changed chown to chmod
 
 	* install.exclude: Readded /includes/news.inc
-	
+
 	* Makefile: backed-out combined SSI preprocessing and attribute
 	  rewriting for .htrw files.  Need to redo the installation order so
-	  include files are available at build time.  
+	  include files are available at build time.
 
 2003-09-16 scizzo <scizzo@gimp.org>
 
@@ -4854,7 +4858,7 @@
 
 2003-09-11  Helvetix Victorinox  <helvetix@gimp.org>
 	* install.exclude: Readded /includes/news.inc
-	
+
 	* Makefile: backed-out combined SSI preprocessing and attribute
 	  rewriting for .htrw files.  Need to redo the installation order so
 	  include files are available at build time.
@@ -4869,7 +4873,7 @@
 	* Makefile: Added ssi preprocessing for .htrw files
 
 	* admin/index.ssi: renamed admin/index.htrw
-	
+
 
 2003-09-09  Raphael Quinet  <quinet@gamers.org>
 
@@ -4923,7 +4927,7 @@
 	* Makefile (%.html): remove the intermediate file in processing
 	the attributes and SSI.
 
-	* programmatic/admin/news/wgo_news.py (news.as_news_item): 
+	* programmatic/admin/news/wgo_news.py (news.as_news_item):
 	  Changed P to DIV for a news article.
 
 	* Makefile: apply both the attribute rewriter and the SSI
@@ -5181,7 +5185,7 @@
 
 2003-08-17 scizzo <scizzo@gimp.org>
 
-	* /images/wilberright.jpeg: Added this image provided by Branko. 
+	* /images/wilberright.jpeg: Added this image provided by Branko.
 	Closes bug: #119819
 	* /includes/wgo-page-init.xhtml: Changed the header to use the new
 	jpeg image.
@@ -5220,10 +5224,10 @@
 	have.
 
 	* /screenshots/: Add this for the menu to use.
-	
+
 	* /about/index.htrw: Removed the link to the screenshots. Moved things
-	around a little this change should be enough to close bug #119478. 
-	Removed a few headlines and changed so that the headlines 
+	around a little this change should be enough to close bug #119478.
+	Removed a few headlines and changed so that the headlines
 	would be h2 and not both h2 and h3. Add text to warn about big file
 	reported in bug #119561
 	* /about/history.htrw: Removed this file. Content included in
@@ -5231,7 +5235,7 @@
 	* /about/screenshots.html: Removed this file.
 	* /about/mediakit.html: Removed this file. Content included in
 	index.htrw now.
-	
+
 	* /downloads/index.htrw: Moved things around a little and add a link
 	to install_help.html.
 	* /downloads/install_help.html: Add this file with some content. This
@@ -5247,7 +5251,7 @@
 	* bugs/howtos/.cvsignore
 	* macintosh/.cvsignore
 	* windows/.cvsignore
-	* docs/.cvsignore: files updated 
+	* docs/.cvsignore: files updated
 
 2003-08-10  Raphael Quinet  <quinet@gamers.org>
 
@@ -5290,7 +5294,7 @@
 
 	* /bugs.htrw, bugzilla.htrw, registry.htrw, /bugs/index.html,
 	* /about/awards.html: Removed the files.
-	
+
 	* /admin/gimp-web-urls: Changed the bugzilla link to be
 	/bugs/howtos/bugzilla.htrw. Add Mat Caughron to the list of people.
 	* /team.htrw: Add Mat as the macintosh info maintainer.
@@ -5377,36 +5381,36 @@
 
         * /windows/index.htrw: Add this file that finishes the windows
         section.
-        
+
         * /windows/index.html, develop.html, download.html, get_started.html:
         Removed these files.
 
 2003-06-20 scizzo <scizzo@gimp.org>
 
         * /admin/todo.xhtml: Add that the tutorials are done.
-        
+
         * tutorials/Image_Pipes/example1.xcf.gz, example_arrows.xcf.gz,
         * example_patter2.xcf.gz, tater_tot.gih.gz: The files and links where
         missing in the tutorial.
-        
+
         * /tutorials/Image_Pipes/: A lot of bug fixes. Add more tags to make
         it look more like the original tutorial. Fixed a few missing links.
         Fixed position of paragraphs and add some more paragraphs.
-        
+
         * /tutorials/Image_Pipes2/: Center the text in the "How Do You Make a
         New Brush?" step.
-        
+
         * /tutorials/Draw_A_Paint_Brush/tutorial.xcf.gz: Add this file it was
         missing in the tutorial. Fixed a link to gimp-savvy.
-        
+
         * /tutorials/Using_GAP/: Fixed a few missing tags.
         * /tutorials/Advanced_Animations/: Fixed a few missing tags. Fixed a
         few missing links. Fixed a few typos.
-        
+
         * /tutorials/Image_Map/: Updated a filter path. Add the perlotine link.
-        * /tutorials/Basic_Scheme/: Changed the code a bit. Fixed a few small problems 
+        * /tutorials/Basic_Scheme/: Changed the code a bit. Fixed a few small problems
         with the look of the code examples.
-        
+
         * /tutorials/Basic_Perl/: Removed a few <br /> that was breaking the
         look of the <pre>.
 
@@ -5416,37 +5420,37 @@
         * index.htrw, bugs.htrw, registry.htrw, template.htrw: Added files.
         * /style/default.css: Removed the borders around the images. This
         makes a lot of images look better then with the border.
-        
+
         * /tutorials/The_Basics: Bug fix that said image to the left instead
         of image above. Add Keep Trans to the drop shadow step.
-        
+
         * /tutorials/Borders_On_Selections/: Fixed a typo.
         * /tutorials/Anti-Aliased_Threshold: Changed (Image|Colors|Desaturate)
         to "<Image> Image -> Colors -> Desaturate".
-        
+
         * /tutorials/Bezier_Selections/: Bug fix in "What is it?" about image
         placement in the tutorial. Intention: Linked "Drawing Shapes with
         Bezier" to the tutorial on the site.
-        
+
         * /tutorials/Custom_Brushes/: Note: needs a class.
         * /tutorials/Drawing_Shapes/: Fixed the missing links in the tutorial.
         Missing tags from the original tutorial fixed.
-        
+
         * /tutorials/Film_Grain/film-grain-vertical.pat: Add this file it was
         missing in the tutorial.
-        
+
         * /tutorials/Film_Grain/gimp-grey-modes.diff: This was also missing.
         Fixed the links to the files.
-        
+
         * /tutorials/Film_Grain/index.htrw: Fixed some tags to go with the
         original tutorial. Fixed a few links that was not added.
-        
+
         * /tutorials/Changing_Background_Color_1/: Did some changes in the
         paragraphs to make them more clear and look more like the original tutorial.
-        
+
         * /tutorials/Changing_Background_Color_2/: Changed the words "below"
         to "above". Add some paragraphs to make the tutorial more readable.
-        
+
         * /tutorials/Simple_Animations/: Fixed a few missing tags that is
         being used in the original tutorial. Fixed a small typo.
 
@@ -5502,7 +5506,7 @@
           the SSI preprocessor
 
         * install.exclude: added .cvsignore
- 
+
 
 2003-05-02 scizzo <scizzo@gimp.org>
 
@@ -5586,10 +5590,10 @@
 
 2003-04-27  Helvetix Victorinox  <helvetix@mysterious.org>
 
-        * programmatic/admin/develop/: 
-        * programmatic/tools/: 
+        * programmatic/admin/develop/:
+        * programmatic/tools/:
         * programmatic/develop/.cvsignore: Tuning up .cvsignore files
-        
+
 
 2003-04-26  Helvetix Victorinox  <helvetix@mysterious.org>
 
@@ -5644,13 +5648,13 @@
 
         * /admin/gimp-web-urls: Updated with some more home: and tutorial:
         links.
-        
+
         * /tutorials/*/*.html: Removed all the html files in the tutorials.
         * /tutorials/*/*.htrw: Add the new htrw files to be used in the
         tutorials. All of them uses the htrw files now. All files also have a
         copyright of the text and images in the tutorial in the top of the
         tutorial now.
-        
+
 2003-04-21  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * bwerp: left behind a bit of debugging code.
@@ -5668,7 +5672,7 @@
     * /about/splash/stable.htrw, added the missing </tr>
     * /about/index.htrw, changed this to reflect the changes to /about/splash/stable.htrw
     * /admin/gimp-web-urls, changed this to reflect the changes to /about/splash/stable.htrw
-    
+
 2003-04-20  Helvetix Victorinox  <helvetix@mysterious.org>
 
         * News RSS is available via http at
@@ -5688,13 +5692,13 @@
         * tutorials/Blown_Out_Highlights/
         * tutorials/Blur_Overlays/
         * tutorials/Color2BW/: Updated with the new gimp-web-urls.
-        
+
         * tutorials/Anti-Aliased_Threshold/index.html
         * tutorials/Coloring_A_BW_Sketch/index.html
         * tutorials/ContrastMask/index.html
         * tutorials/Creating_Icons/index.html
         * tutorials/Custom_Brushes/index.html: Removed these files.
-        
+
         * tutorials/Anti-Aliased_Threshold/index.htrw
         * tutorials/Coloring_A_BW_Sketch/index.htrw
         * tutorials/ContrastMask/index.htrw
@@ -5702,7 +5706,7 @@
         * tutorials/Custom_Brushes/index.htrw: Added these files.
 
 2003-04-20 scizzo <scizzo@gimp.org>
-         
+
         * admin/gimp-web-urls: Added home:People-Jeschke_Eric_R.
         * tutorials/Blending_Exposures/, tutorials/Blown_Out_Highlights/,
         tutorials/Blur_Overlays/, tutorials/Color2BW/: Changed tutorial: to
@@ -5746,7 +5750,7 @@
 
 2003-04-16 carol <cspears@cablespeed.com>
 
-        * /admin/gimp-web-urls, added the attributes for the images in the books 
+        * /admin/gimp-web-urls, added the attributes for the images in the books
       section
 
 2003-04-16 carol <cspears@cablespeed.com>
@@ -5761,7 +5765,7 @@
         * /tutorials/Changing_Background_Color_1/index.html,
         * /tutorials/Changing_Background_Color_2/index.html,
         * /tutorials/Color2BW/index.html: Removed these files.
-        
+
         * /tutorials/Blown_Out_Highlights/index.htrw,
         * /tutorials/Blur_Overlays/index.htrw,
         * /tutorials/Borders_On_Selections/index.htrw,
@@ -5892,7 +5896,7 @@
     * mail_lists.html, removed this file.
     * os2/index.htrw, added useful mail list urls.
     * os2/howtos/install_gimp__xfree86.htrw, name changes.
-                                             
+
 
 2003-04-12  Carol Spears  <carol@gimp.org>
 
@@ -5906,10 +5910,10 @@
                          windows section.  i copied the span.filter class into
                          span.path.  we should consider using it named this way, as
                          even the filter is a path.  i hope the designer doesn't get
-                         angry .... 
+                         angry ....
     * admin/gimp-web-urls, added some from suggestions from the gimp-os2 list.
     * os2/index.htrw, screenshots, whee! (also added epplets.jpg, gimp118-1.jpg,
-                      gimp118-2.jpg, gimp118-3.jpg, gimp118-4.jpg, mydesk.jpg, 
+                      gimp118-2.jpg, gimp118-3.jpg, gimp118-4.jpg, mydesk.jpg,
                       mydesk2.jpg, and mEgEdtop.jpg.
     * os2/howtos/install_font__xfree86.htrw, put the authors meta tags on the page.
                                              some style changes.
@@ -5920,7 +5924,7 @@
     * os2/howtos/XF86Config_Files_original.html, twiddled with the style.
     * os2/howtos/XF86Config_Files.html, twiddled with the style.
     * os2/howtos/services.html, twiddled with the style.
-                                             
+
 
 2003-04-11  Carol Spears  <carol@gimp.org>
 
@@ -5932,7 +5936,7 @@
     * os2/howtos/XF86Config_Files.html, sample config section added.
     * os2/howtos/services.html, sample config section added.
     * admin/gimp-web-urls, added some, changed some (eek!).
-    * style/default.css, added span style (different) for changed text in 
+    * style/default.css, added span style (different) for changed text in
                          configuration sample html.
     * index.html, put a BLURB on the front.
 
@@ -6004,7 +6008,7 @@
         * A left border on the news index admin pages.
         * Little css tweaks on the news administration pages to make lines line up.
         * Reversed the order in which the news blotter was displayed.  New news is at the top.
-                
+
 
 2003-03-31  Helvetix Victorinox  <helvetix@mysterious.org>
 
@@ -6028,7 +6032,7 @@
 2003-03-22 scizzo <scizzo@gimp.org>
 
         * style/old-default.css: This is the old default.css file.
-        
+
         * style/default.css: Add a new updated and cleaned up css file. Hope
           this looks better then the old one. Bug fix. Images where not
           centered with the <p class="images"></p>.
@@ -6036,7 +6040,7 @@
 2003-03-21 scizzo <scizzo@gimp.org>
 
         * Site: Now uses <hx> instead of <div class=""> tags.
-        
+
         * example.html, example.ssi: Moved them to /admin/.
 
 2003-03-20 scizzo <scizzo@gimp.org>
@@ -6055,7 +6059,7 @@
 
         * Fixed a bug in rewrite_attrs.py which caused URLs containing an
           octothorpe to be truncated and breaking rewrite_attrs.
-        
+
 
 2003-03-19 scizzo <scizzo@gimp.org>
 
@@ -6109,9 +6113,9 @@
 
         * Fixed some typos in unix/:
                 unix/index-in.html
-                unix/howtos/bugzilla-in.html 
-                unix/howtos/stable-cvs-get-in.html 
-                unix/howtos/stable-cvs-build-in.html 
+                unix/howtos/bugzilla-in.html
+                unix/howtos/stable-cvs-get-in.html
+                unix/howtos/stable-cvs-build-in.html
                 admin/gimp-web-urls
 
 2003-03-04  Helvetix Victorinox  <helvetix@oak.mysterious.org>
@@ -6130,14 +6134,14 @@
                     to the logical <hn />.
                 unix/howtos/bugzilla-in.html and bugzilla.html added bex how-to to the
                     list.  made it use the /admin/gimp-web-url dictionary for the urls.
-                unix/howtos/cvs-stable.html this file has been removed, split up and 
+                unix/howtos/cvs-stable.html this file has been removed, split up and
                     replaced with:
-                unix/howtos/stable-cvs-get.html which is generated from 
+                unix/howtos/stable-cvs-get.html which is generated from
                 unix/howtos/stable-cvs-get-in.html which i also added.
-                unix/howtos/stable-cvs-build.html which is generated from 
+                unix/howtos/stable-cvs-build.html which is generated from
                 unix/howtos/stable-cvs-build-in.html which i added.
                 unix/howtos/template.html this file has been removed and replaced with:
-                unix/howtos/howto-template.html which is generated from 
+                unix/howtos/howto-template.html which is generated from
                 unix/howtos/howto-template-in.html which i also added.
                 style/default.css hopefully was fixed to reflect the addition of the <hn>'s.
                 admin/gimp-web-urls is the dictionary for the attribute-rewriter
@@ -6193,7 +6197,7 @@
 2003-02-24 scizzo <scizzo@gimp.org>
 
         * /includes/wgo-howto-unix-init{fini}.xhtml: Add the include files for the unix HOWTOs.
-        
+
         * /about/authors.html: I changed the include files but haven? changed
         anything in the .pl file this is the authors job IMHO. Or should I do that?
 
@@ -6201,7 +6205,7 @@
         * /links/org.html, /macintosh/index.html, /os2/index.html,
         * /windows/*.html, /unix/*.html, /unix/*/*.html, /resources/*.html,
         * /resources/*/*.html: Ported them to use the new include files.
-        
+
         * /unix/user_install.html: New includes and Removed the <p></p> tags
         before and after the list of <ol> to make the site valid. Fixed the
         link to tile-cache.html and changed it to be tile-cache on the page.
@@ -6231,7 +6235,7 @@
           representations of the ChangeLogs
 
         * Added programmatic/about/ChangeLogs/ChangeLog.py
-        
+
         * Deleted programmatic/about/ChangeLogs/ChangeLog-xhtml.py
 
 2003-02-22 scizzo <scizzo@gimp.org>
@@ -6260,7 +6264,7 @@
         * Created admin/ directory
           Moved programmatic/admin/index.html to admin/index.html
           Moved todo.xhtml to admin/todo.xhtml
-        
+
 
 2003-02-16  Helvetix Victorinox  <helvetix@mysterious.org>
 
@@ -6278,10 +6282,10 @@
 2003-02-16 scizzo <scizzo@gimp.org>
 
         * /about/*.html, /books/index.html, /bugs/*: Using new include files.
-        
+
         * /about/index.html: Add a <br/> to the mediakit so that there is
-        space between that link and the next subtitle. 
-        
+        space between that link and the next subtitle.
+
         * index.html, bugs.html, mail_lists.html, registry.html, team.html:
         Using the new include files.
 
@@ -6316,8 +6320,8 @@
 2003-02-12 scizzo <scizzo@gimp.org>
 
         * 3d_Logo/*, Advanced_Animations/*, Anti-Aliased_Threshold/*,
-        Basic_Perl/*, Basic_Scheme/*, Basic_Scheme2/*, Bezier_Selections/*, 
-        Blending_Exposures/*, Blown_Out_Highlights/*, Blur_Overlays/*, 
+        Basic_Perl/*, Basic_Scheme/*, Basic_Scheme2/*, Bezier_Selections/*,
+        Blending_Exposures/*, Blown_Out_Highlights/*, Blur_Overlays/*,
         Borders_On_Selections/*, Changing_Background_Color_1/*,
         Changing_Background_Color_2/*, Color2BW/*, Coloring_A_BW_Sketch/*,
         ContrastMask/*, Creating_Icons/*, Custom_Brushes/*,
@@ -6403,9 +6407,9 @@
           to be valid. Add </a> before the </li>. Add <p> before artist.
 
         * books/index.html: Changed a few <img src=""> to <img src=""/>
-        
+
         * develop/index.html: Fixed a few <A> that should be <a> to be valid.
-        
+
         * links/index.html
           links/org.html: Fixed all the <a name=""> and <br /> now valid site.
           Fixed all <A href=""> to <a href="">.
@@ -6423,12 +6427,12 @@
         programmatic/tools/rewrite and/or me for details on how to use it.
 
         * Added programmatic/tools to contain various programmes for the web developers
-        
+
 
 2003-01-27 scizzo <scizzo@gimp.org>
 
         * todo.xhtml: Remove me from the mailinglist.
-        
+
 2003-01-26 scizzo <scizzo@gimp.org>
 
         * mailing_list.html: Fixed some typos. Fixed some more typos.
@@ -6468,7 +6472,7 @@
 
         * Supporting ChangeLogs
         * RDF and RSS support
-        
+
 
 2003-01-13  Helvetix Victorinox  <helvetix@mysterious.org>
 
@@ -6503,9 +6507,9 @@
 2003-01-05 brix <brix@gimp.org>
 
         * style/default.css: Changed div.code and div.debug to pre.code
-        and pre.debug to solve the IE line-wrap problem. 
+        and pre.debug to solve the IE line-wrap problem.
         tutorials/*/index.html should be changed accordingly.
-        
+
 2003-01-05 scizzo <scizzo@gimp.org>
 
         * tutorials/Perl-Debugged/index.html: Trying to fix the line-wrap
@@ -6526,7 +6530,7 @@
 
         * style/default.css: added a div.debug class. maybe the background
         color needs to change?
-        
+
 2002-12-27 scizzo <scizzo@gimp.org>
 
         * tutorials/Changing_Background_Color_1/index.html: Moved the icon for
@@ -6576,7 +6580,7 @@
 
 2002-12-22 carol <carol@gimp.org>
 
-        * style/default.css: added a style for kbd 
+        * style/default.css: added a style for kbd
 
 2002-12-22 scizzo <scizzo@gimp.org>
 
@@ -6584,29 +6588,29 @@
 
 2002-12-20 carol <carol@gimp.org>
 
-        * tutorials/Drawables/index.html: fixed author email addy. 
+        * tutorials/Drawables/index.html: fixed author email addy.
 
 2002-12-20 carol <carol@gimp.org>
 
-        * team.html: added a thank you to the previous web masters 
+        * team.html: added a thank you to the previous web masters
 
 2002-12-20 carol <carol@gimp.org>
 
-        * team.html: put jtl's real name there for google to find!! 
+        * team.html: put jtl's real name there for google to find!!
 
         * docs/index.html: reflected the new addition (doh)
 
 2002-12-19 carol <carol@gimp.org>
 
-        * docs/plug-ins/: added 
+        * docs/plug-ins/: added
 
         * style/default.css: added div.book-of-wilber :)
 
-        * images/wilberbook.jpg: added 
+        * images/wilberbook.jpg: added
 
 2002-12-18 carol <carol@gimp.org>
 
-        * tutorials/Script_Image/: removed 
+        * tutorials/Script_Image/: removed
 
         * tutorials/Drawables/index.html: added and edited down to drawables only.
 
@@ -6617,7 +6621,7 @@
         * developer/bugzilla*: moved the scripts to develop/
 
         * developer/, development/:  trying once again to remove these.
-    
+
     * team.html: added Helvetix
 
     * tutorials/Liquid_Metal_Ripple/: removed this directory
@@ -6641,8 +6645,8 @@
 
 2002-12-10 carol <carol@gimp.org>
 
-        * develop/, includes/menu.inc:  i got a CVS directory into the wrong develop___/  
-    things were messed up bad.  i completely changed the name and was careful 
+        * develop/, includes/menu.inc:  i got a CVS directory into the wrong develop___/
+    things were messed up bad.  i completely changed the name and was careful
     with CVS/ this time. made the change in the menu.inc file
 
 2002-12-09 carol <carol@gimp.org>
@@ -6691,10 +6695,10 @@
 
         * bugs.html:  added.
         * bugs/index.html:  removed.
-        * developer/index.html:  minor edit 
+        * developer/index.html:  minor edit
 
   Me and CVS had issues with these so i removed them:
-        * development/index.html, 
+        * development/index.html,
     * development/people.jpg
         * development/stable.html
         * development/unstable.html
@@ -6706,7 +6710,7 @@
         * development/help.html
 
   Added these:
-        * developer/index.html, 
+        * developer/index.html,
     * developer/people.jpg
         * developer/stable.html
         * developer/unstable.html
@@ -6746,7 +6750,7 @@
 
         * style/default.css: clear: left; to div.newsheading
 
-        * development/index.html, development/people.jpg: made this file, added that 
+        * development/index.html, development/people.jpg: made this file, added that
     jpeg.
 
         * includes/menu.inc: changed the url from development.html to /development/ and
@@ -6772,7 +6776,7 @@
     removed the mispelled directory and added the (i hope) properly spelled one.
 
         * tutorials/Channel_Mixer:  removed this directory.
-    
+
 2002-11-30 carol <carol@gimp.org>
 
         * TODO:  a big list of everything that needs to be done.
@@ -6790,9 +6794,9 @@
         * docs/index.html, docs/gimp-help, docs/devlop-docs:  added the directories and
     reflected the additions in the index page.
 
-        * maillists.html, mail_lists.html, includes/linkbar.inc, links/index:  changed 
+        * maillists.html, mail_lists.html, includes/linkbar.inc, links/index:  changed
     the file name from maillists.html to mail_lists.html as i saw this one printed
-    in a book as a wgo document.  the change was reflected everywhere that i can 
+    in a book as a wgo document.  the change was reflected everywhere that i can
     think of.
 
 2002-11-27 carol <carol@gimp.org>
@@ -6826,23 +6830,23 @@
     about/splash/gimp-1.3/*: the original images from cvs and instructions on
     how to get them.
 
-        * tutorials/Photo_Edit/*: removed these files 
+        * tutorials/Photo_Edit/*: removed these files
 
         * tutorials/*: added the Photo_Edit files to the tutorial directory
 
         * tutorials/index.html: changed the index to reflect the directory change
 
-        * style/default.css, tutorials/Perlotine/index.html: added a tag that will 
+        * style/default.css, tutorials/Perlotine/index.html: added a tag that will
     hopefully help the tables in the perlotine tutorial. img.map
 
         * tutorials/Image_Map/index.html: added the javascript into the "invisible"
     head so the pop-up window will work.
-    
+
         * tutorials/Image_Map/bexcolorpicker-tutpop.html: fixed the image paths.
-    
-        * style/default.css, tutorials/Perlotine/index.html: added a tag that will 
+
+        * style/default.css, tutorials/Perlotine/index.html: added a tag that will
     hopefully help the tables in the perlotine tutorial. td.map
-    
+
     * about/splash-cvs.html: added the missing two splashes.
 
 2002-11-25 carol <carol@gimp.org>
@@ -6855,7 +6859,7 @@
 
         * about/splash.html: more image name fixing and some cosmetics.
 
-        * about/splash/gimp/*, about/splash/gimp-1.1/* and about/splash/gimp-1.3/*: 
+        * about/splash/gimp/*, about/splash/gimp-1.1/* and about/splash/gimp-1.3/*:
     added the complete cvs archives of the splashscreens (as gathered by yosh)
 
         * about/splash.html: some cosmetics.
@@ -6864,11 +6868,11 @@
 
         * about/splash.html: added this file.
 
-        * about/splash.html and about/splash/*.png  added some gallery images and 
+        * about/splash.html and about/splash/*.png  added some gallery images and
     started on a gallery layout.
 
         * about/splash.html and about/splash/*.png  removed all the images (starting
-    over) 
+    over)
 
 2002-11-24 scizzo <scizzo@gimp.org>
 
@@ -6944,12 +6948,12 @@
     change in linkbar.inc
 
         * links.html, includes/urls_important.inc, about/index.html:  moved the
-    important GIMP urls into an includes file.  
+    important GIMP urls into an includes file.
 
         * links.html, includes/urls_maillists.inc, maillists.html:  separated the
     maillists urls into an includes file and added that to maillists.html
 
-        * links.html, includes/urls_go-utiltity.inc, includes/urls_go-developer.inc:  
+        * links.html, includes/urls_go-utiltity.inc, includes/urls_go-developer.inc:
     separated more of the links into includes files.
 
         * docs/gimp-print/ and files therein:  grabbed the gimp-print docs
@@ -6960,7 +6964,7 @@
         * links.html: moved some of the clusters around, added a few others
 
         * links/index.html: added the directory and copied links.html into it,
-    getting it ready for that magical "more ..." stuff brix did to 
+    getting it ready for that magical "more ..." stuff brix did to
     about/index.html
 
 2002-11-20 brix <brix@gimp.org>
@@ -6971,7 +6975,7 @@
 
         * ChangeLog: extracted martijns entry from cvs log and added to
         ChangeLog file
-        
+
 2002-11-20 martijn <m.weisbeek@home.nl>
 
         * links.html: Links-page now contains the best GIMP-links
@@ -7016,7 +7020,7 @@
 
 2002-11-14 scizzo <scizzo@gimp.org>
 
-        * tutorials/index.html: Removed the Python Docbook 
+        * tutorials/index.html: Removed the Python Docbook
         tutorial (going to be moved to documents section).
 
         * tutorials/Script_Image/: Add the first port of the
@@ -7064,13 +7068,13 @@
         * books/index.html: added more descriptions and website links
 
         * style/default.css: added margins to div.code
-        
+
 2002-11-09 scizzo <scizzo@gimp.org>
 
         * tutorials/Photo_Edit/Selective_Color/: First port of the
         Selective Color tutorial. A few image fixes also.
 
-        * tutorials/Photo_Edit/Smart_Sharpening: First port of the 
+        * tutorials/Photo_Edit/Smart_Sharpening: First port of the
         Smart Sharpening tutorial. Fixed the Further read links.
 
         * tutorials/Photo_Edit/Reducing_CCD_Noise/index.html: Add
@@ -7102,7 +7106,7 @@
         books/teach_yourself_gimp_in_24_hours.png,
         books/the_gimp_for_linux_and_unix:_visual_quickstart_guide.png:
         unused images removed
-        
+
 2002-11-08 scizzo <scizzo@gimp.org>
 
         * tutorials/Photo_Edit/Blending_Exposures/: First port of the
@@ -7126,7 +7130,7 @@
         * tutorials/Photo_Edit/Channel_Mixer/: First port for the Channel
         Mixer tutorial.
 
-        * tutorials/Photo_Edit/Reducing_CCD_Noise/: First port for the 
+        * tutorials/Photo_Edit/Reducing_CCD_Noise/: First port for the
         CCD Noise tutorial.
 
         * tutorials/Photo_Edit/ContrastMask/: First port for the Contrast Mask
@@ -7142,11 +7146,11 @@
 2002-11-03 carol <carol@gimp.org>
 
         * about/index.html:  added some historical urls to the history list
-    
+
         * tutorials/index.html:  shuffled the index page around a bit
-    
+
         * unix/index.html:  clean up of some bad tags
-    
+
 2002-11-03 rockwlrs <rock@gimp.org>
 
         * about/ChangeLogs/ChangeLog.pl: a script that autogenerates web pages
@@ -7189,12 +7193,12 @@
         rockwlrs url on this document.  mitch gave me a list of things he
         wanted on the developer section, they need to be dug up before we
         start adding new things here.
-    
+
         * docs/index.html: added the things that should be quick to grab
         and put into place and one wishlist item.  added the directory
         docs/ , docs/gimp-docs docs/scriptfu, docs/print, docs/python,
         docs/cookbook.  i also removed documentation.html.
-    
+
         * unix/user_install.html: added this file.  set up an outline and
         generated screenshots (ui-calibrate.png, ui-log.png, ui-moniter,
         ui-performance.png, ui-personal.png, ui-performance.png,
@@ -7224,27 +7228,27 @@
 
         * style/default.css, README.tutorials: added "code" class to make
         example code stand out in tutorials
-        
+
 2002-10-26 gsromero
 
         * unix/tile-cache.html: new file, first guesses about how to set a
         decent tile cache value.
-        
+
 2002-10-22 brix <brix@gimp.org>
-        
+
         * books.html, books/index.html: renamed /books.html to /books/index.html
 
         * includes/linkbar.inc: changed link from /books.html to /books/
-        
+
 2002-10-21 carol <carol@gimp.org>
-        
+
         * resources/gradients/index.html, resources/gradients/mgo-gradients.py
         and team.html: put some padding around the little thumbnails and added
-        gsromero and rockwlrs to the team (finally, yay!) 
+        gsromero and rockwlrs to the team (finally, yay!)
 
-        * about/mediakit.html, Wilber_Construction_Kit_XP.xcf.gz and 
+        * about/mediakit.html, Wilber_Construction_Kit_XP.xcf.gz and
         wilber-huge-alpha.png. best descibed as humble beginnings.
-        
+
 2002-10-21 scizzo <scizzo@gimp.org>
 
         * tutorials/Straight_Line/: Add the webpage for original tutorial.
@@ -7259,7 +7263,7 @@
 2002-10-21 rockwlrs <rock@gimp.org>
 
         * about/authors.html: list of authors and contributors
-        
+
         * about/authorsgen.pl: tools/authorsgen/authorsgen.pl from the GIMP
         source distribution, modified to create a webpage instead
 
@@ -7274,7 +7278,7 @@
 2002-10-21 gsromero
 
         * maillists.html: fixed a missing LI.
-        
+
 2002-10-21 brix <brix@gimp.org>
 
         * template.html: added more code examples.
@@ -7286,18 +7290,18 @@
         * windows/winmenu.inc: file removed
 
 2002-10-21 gsromero
-        
+
         * maillists.html: added first try with list etiquette, using ul
         for the items.
 
 2002-10-20 carol <carol@gimp.org>
-        
-        * resources/brushes/index.html, resources/patterns/index.html, 
+
+        * resources/brushes/index.html, resources/patterns/index.html,
         mgo-brushes.py, and mgo-patterns.py removed a very naughty and
         in error </p>
-        
+
         * resources/gradients.html and mgo-gradients.py: changed the style
-        tag. 
+        tag.
 
         * resources/gradients.html and mgo-gradients.py: put the style tag
         back into the img tags
@@ -7306,48 +7310,48 @@
 
         * README.repository: Fixed some typos and added validator url. (A
         test with CVS)
-        
+
 2002-10-19 carol <carol@gimp.org>
-        
+
         * style/default.css: centered the bottom navigation by adding
         "text-align: center;" to the linkbar.
 
         * readme.repository:  added my name (carol) to the people who can
         make style changes.
-        
+
         * resources/brushes/index.html and mgo-brushes.py:  added a style
         to the <div>'s and removed the <p>'s in each brush entry.
-        
+
         * resources/gradients/index.html and mgo-gradients.py:  added a style
         to the <div>'s and removed the <p>'s in each brush entry.
-        
+
         * resources/patterns/index.html and mgo-patterns.py:  added a style
         to the <div>'s and removed the <p>'s in each brush entry.
-        
+
 2002-10-19 scizzo <scizzo@gimp.org>
 
         * tutorials/Advanced_Animations/: Forgot to add the .xcf.bz2
         file to make the tutorial complete.
 
 2002-10-18 carol <carol@gimp.org>
-        
+
         * resources/gradients/index.html: changed the <li>'s to <div>'s
-        
+
         * resources/gradients/mgo-gradients.py the script is added
-        
+
         * resources/patterns/index.html: changed the <li>'s to <div>'s
-        
+
         * resources/patterns/mgo-patterns.py the script is added
-        
+
         * resources/patterns/index.html: manually removed some patterns
-        i have in my home directory that were added to the list 
+        i have in my home directory that were added to the list
         incorrectly
-       
+
         * resources/brushes/index.html: changed the <li>'s to <div>'s
-        
+
         * resources/brushes/mgo-brushes.py: the script is added
-        
-        
+
+
 2002-10-18 scizzo <scizzo@gimp.org>
 
         * tutorials/Advanced_Animations/: Add the Advanced Animation
@@ -7400,7 +7404,7 @@
 
         * install.exclude: added /resources/brushes/mgo-brushes.py to list
         of excluded files
-        
+
 2002-10-18 carol <carol@gimp.org>
 
         * resources/gradients/index.html and mgo-gradients.py: added the
@@ -7418,10 +7422,10 @@
 
         * resources/brushes/index.html and mgo-brushes.py: divided the
         brush listing in the middle
-        
+
         * resources/brushes/ and mgo-brushes.py: added the directory,
         images, and the index page.
-    
+
 2002-10-16 scizzo <scizzo@gimp.org>
 
         * tutorials/Simple_Animations: Add the first version of the Simple
@@ -7437,7 +7441,7 @@
 2002-10-15 carol <carol@gimp.org>
 
         * added the wgo screenshot font to the sample gtkrc
-    
+
 2002-10-15 scizzo <scizzo@gimp.org>
 
         * tutorials/Image_Pipes/: Did the last porting to the tutorial.
@@ -7449,7 +7453,7 @@
         make them look better with the layout.
 
         * README.tutorials: Add a standard font to use in the screenshots.
-        
+
 2002-10-13 scizzo <scizzo@gimp.org>
 
         * tutorials/3d_Logo/index.html: Changed the steps in the tutorial.
@@ -7460,7 +7464,7 @@
 
 2002-10-13 carol <carol@gimp.org>
 
-        * added brush images to resources/brushes/index.html and put them 
+        * added brush images to resources/brushes/index.html and put them
     into a list.  included the script that was used to generate them.
 
 2002-10-11 scizzo <scizzo@gimp.org>
@@ -7475,7 +7479,7 @@
         tutorial width problem in mozilla.
 
 2002-10-10 brix <brix@gimp.org>
-        
+
         * includes/tutnavbar.inc: changed the href to work with the (new)
         tutorials/index.html
 
@@ -7487,7 +7491,7 @@
 
         * style/default.css: added an image borders for screenshots used
         in tutorials
-        
+
 2002-10-09  scizzo <scizzo@gimp.org>
 
         * tutorials/Image_Pipes/: Started to work on the tutorial Image Pipes.
@@ -7506,7 +7510,7 @@
         tutorial.
 
         * tutorials/index.html: Removed underscores in the name of
-        Coloring_A_BW_Sketch. Looked weird with the rest of the 
+        Coloring_A_BW_Sketch. Looked weird with the rest of the
         layout IMHO.
 
         * tutorials/Coloring_A_BW_Sketch/: Added the Coloring Sketch
@@ -7520,21 +7524,21 @@
 
         * tutorials/Film_Grain: Added the Film Grain tutorial.
         Fixed the index a bit more.
-        
+
         * Changelog: Added the scizzo@gimp.org address instead of
         scizzo@se.debian.net
-        
+
 2002-10-06  carol <carol@gimp.org>
 
-        * team.html: added scizzo to the team and made a section for tutorial 
+        * team.html: added scizzo to the team and made a section for tutorial
         authors
-        
+
 2002-10-06  scizzo <scizzo@gimp.org>
 
         * tutorials/Custom_Brushes: Added the Custom Brushes tutorial.
 
         * tutorials/Red_Eye_Removal: Added the Red Eye tutorial.
-        
+
         * tutorials/Quickmask/: Added the Quickmask tutorial.
 
         * tutorials/index.html: Changed the Bezier_Curves to Bezier_Selections.
@@ -7546,17 +7550,17 @@
 
         * tutorials/Bezier_Curves/: Added the tutorial for beginner Bezier.
         Also in this changed to "Image above" because of the layout.
-        
+
         * tutorials/Straight_Line/index.html: Main title was not set.
-        
+
 2002-10-05  carol <carol@gimp.org>
 
         * tutorials/index.html: corrected the link to the Straight Line Tutorial
-        
+
 2002-10-05  scizzo <scizzo@gimp.org>
 
         * tutorials/Straight_Line/: Added the Straight_Line tutorial.
-        
+
 2002-10-02  scizzo  <scizzo@fungus>
 
         * README.tutorials:

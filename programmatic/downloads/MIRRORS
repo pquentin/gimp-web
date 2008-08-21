@@ -13,19 +13,18 @@ Australia
 Austria
      ftp://gd.tuwien.ac.at/graphics/gimp/
 
-Denmark
-     ftp://ftp.jaquet.dk/pub/gimp/
-
 Finland
      ftp://ftp.funet.fi/pub/sci/graphics/packages/gimp/
 
 France
      http://ftp.iut-bm.univ-fcomte.fr/gimp/gimp/ (web access)
+     http://gimp.krecio.pl/gimp/ (web access)
 
 Germany
      ftp://ftp.gwdg.de/pub/misc/grafik/gimp/
      http://ftp.gwdg.de/pub/misc/grafik/gimp/ (web access)
      rsync://ftp.gwdg.de/pub/misc/grafik/gimp/ (rsync access)
+     http://mirrors.zerg.biz/gimp/ (web access)
 
 Ireland
      ftp://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/
@@ -54,6 +53,9 @@ Norway
 Poland
      ftp://ftp.tuniv.szczecin.pl/pub/Linux/gimp/
      ftp://sunsite.icm.edu.pl/pub/graphics/gimp/
+     ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.gimp.org
+     http://piotrkosoft.net/pub/mirrors/ftp.gimp.org (web access)
+     rsync://piotrkosoft.net/mirrors/ftp.gimp.org (rsync access)
 
 Romania
      ftp://ftp.kappa.ro/pub/mirrors/ftp.gimp.org/
@@ -82,3 +84,7 @@ United Kingdom
 United States
      ftp://ftp.cs.umn.edu/pub/gimp/
      http://gimp.mirrors.hoobly.com/gimp/ (web access)
+     http://gimp.site2nd.org/ (web access)
+     http://mirror.umoss.org/gimp/ (web access)
+     rsync://mirror.umoss.org/gimp/ (rsync access)
+

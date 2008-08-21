@@ -5,7 +5,9 @@
 
 <h1>Development Version Splash History</h1>
 <h2>GIMP 2.5 Development Series</h2>
+
 <table>
+
 <tr>
   <td>
     <h2>tarball: 2.5.0</h2>
@@ -13,6 +15,22 @@
     <p>SVN: 25458<br />artist: Jimmac</p>
   </td>
   <td>
+    <h2>tarball: 2.5.1</h2>
+    <a href="images/gimp-splash-r25458.png"><img src="images/gimp-splash-r25458-t.png" width="150" height="200" alt="SVN r25458"/></a>
+    <p>SVN: 25458<br />artist: Jimmac</p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <h2>tarball: 2.5.2</h2>
+    <a href="images/gimp-splash-r25458.png"><img src="images/gimp-splash-r25458-t.png" width="150" height="200" alt="SVN r25458"/></a>
+    <p>SVN: 25458<br />artist: Jimmac</p>
+  </td>
+  <td>
+    <h2>tarball: 2.5.3</h2>
+    <a href="images/gimp-splash-r26342.png"><img src="images/gimp-splash-r26342-t.png" width="150" height="200" alt="SVN r26342"/></a>
+    <p>SVN: 26342<br />artist: Aurore Derriennic</p>
   </td>
 </tr>
 

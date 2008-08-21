@@ -1,3 +1,22 @@
+2008-08-21  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* about/merchandise.htrw: 
+	* bugs/howtos/bugzilla.htrw: 
+	* docs/userfaq.htrw: 
+	* downloads/install_help.htrw: 
+	* features/index.htrw: 
+	* links/index.htrw: 
+	* macintosh/index.htrw: 
+	* release-notes/gimp-2.4.htrw: 
+	* screenshots/index.htrw: 
+	* source/index.htrw: 
+	* tutorials/Basic_Scheme2/index.htrw: 
+	* tutorials/index.htrw: 
+	* unix/howtos/gimp-midi.htrw: 
+	* unix/howtos/tile_cache.htrw: 
+	* unix/index.htrw: replaced Linux with GNU/Linux where
+	appropriate. See bug #529973.
+	
 2008-08-21  Bill Skaggs  <weskaggs@primate.ucdavis.edu>
 
 	* release-notes/gimp-2.5.htrw: applied modified patch by

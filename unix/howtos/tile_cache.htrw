@@ -8,7 +8,7 @@
 
 <p><em><strong>Quick summary</strong> for those who do not want to
 read all this: if your system has good swapping behavior (like most
-Linux systems) and if you have enough virtual memory (swap), then set
+GNU/Linux systems) and if you have enough virtual memory (swap), then set
 the tile cache size as high as possible.  If not, then set it to about
 80% of the available RAM on your system.  If you are not satisfied
 with this quick advice, then keep on reading...</em></p>
@@ -88,7 +88,7 @@ with this quick advice, then keep on reading...</em></p>
   the usage. You can use applications like free or top, depends in
   what OS and what environment you use. The numbers you want is the
   memory left, including file cache. Modern UNIX keep a really small
-  area free, to be able to keep big file and buffer caches. Linux's
+  area free, to be able to keep big file and buffer caches. GNU/Linux's
   free does the maths for you, check the column that says
   &quot;free&quot;, and the line &quot;-/+ buffers/cache&quot;. Note
   down also the free swap.

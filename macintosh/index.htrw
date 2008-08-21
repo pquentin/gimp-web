@@ -52,7 +52,7 @@ to run GIMP on your Macintosh:</p>
  </li>
 
   <li>Graphics libraries and toolkits<br />
-  Unlike most Linux distributions, Mac OS X does not come with the
+  Unlike most GNU/Linux distributions, Mac OS X does not come with the
   open source libraries upon which GIMP is built.  These are
   typically installed along with GIMP, but can be installed
   separately.  If you want to compile GIMP from source, we suggest that

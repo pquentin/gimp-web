@@ -7,7 +7,7 @@
 <h1>Everyone Loves Screenshots!</h1>
 
 
-<h2>Linux Screenshots</h2>
+<h2>GNU/Linux Screenshots</h2>
 
 <div class="screenshots">
 
@@ -17,10 +17,10 @@
 
 </div>
 
-<h2>Windows Screenshots</h2>
+<h2>Microsoft Windows Screenshots</h2>
 
 <div class="screenshots">
-  <a href="windows_crop.jpg" rel="imagebox-screenshots" title="GIMP running on windows features a widget theme mimicking the native environment."><img	src="windows_crop_thumb.jpg" alt="GIMP on Windows" /></a>
+  <a href="windows_crop.jpg" rel="imagebox-screenshots" title="GIMP running on Microsoft Windows features a widget theme mimicking the native environment."><img	src="windows_crop_thumb.jpg" alt="GIMP on Microsoft Windows" /></a>
 
 </div>
 

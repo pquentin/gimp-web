@@ -14,7 +14,7 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 
 <h3>Refreshed Look</h3>
 
-<p>A whole new default icon theme has been created for 2.4. The icons comply with the <a href="http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines">Tango style guidelines</a> so GIMP doesn't feel out of place on any of the supported platforms. Regardless of whether you run GIMP under Microsoft Windows, Mac OS X or Linux (<a href="http://www.gnome.org/">GNOME</a>, <a href="http://www.kde.org/">KDE</a> or <a href="http://www.xfce.org/">Xfce</a>), GIMP provides a polished, consistent look.</p>
+<p>A whole new default icon theme has been created for 2.4. The icons comply with the <a href="http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines">Tango style guidelines</a> so GIMP doesn't feel out of place on any of the supported platforms. Regardless of whether you run GIMP under Microsoft Windows, Mac OS X or GNU/Linux (<a href="http://www.gnome.org/">GNOME</a>, <a href="http://www.kde.org/">KDE</a> or <a href="http://www.xfce.org/">Xfce</a>), GIMP provides a polished, consistent look.</p>
 
 <img class="left" src="images/2.4-refreshed-look.png" alt="Refreshed Look" />
 <p>Additionally the icons also have enhanced usability on dark widget themes, which is a common setting among digital artists.</p>

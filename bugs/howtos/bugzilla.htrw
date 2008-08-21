@@ -135,9 +135,9 @@
         <p>
            Select your &quot;operating system&quot;. <a href="wgo:windows">WinGIMP</a> and 
            <a href="wgo:unix">GNU/Linux GIMP</a> bugs are not always identical. It would be 
-           annoying to get a Linux GIMP developer trying to reproduce a WinGIMP-specific 
+           annoying to get a GNU/Linux GIMP developer trying to reproduce a WinGIMP-specific 
            bug. Under &quot;OS Details&quot; (OS, operating system), provide specifics 
-           about the version of your operating system. For Linux, provide the distro and 
+           about the version of your operating system. For GNU/Linux, provide the distro and 
            version. It is also useful to list the desktop or window manager you are using. 
            Sometimes a problem is caused by an interaction between the two. It won't always 
            be relevant, but it is good to get into the habit of listing it anyway.

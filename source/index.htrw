@@ -9,8 +9,8 @@
   distributed in tar files from the GIMP FTP site and its <a
   href="wgo:downloads-mirrors">mirrors</a>. The same source code can be
   compiled to create binaries for different platforms such as <a
-  href="wgo:unix">Linux</a>, <a href="wgo:windows">Windows</a>, <a
-  href="wgo:macintosh">MacOS X</a>, <a href="wgo:unix">Solaris</a> and
+  href="wgo:unix">GNU/Linux</a>, <a href="wgo:windows">Microsoft Windows</a>, <a
+  href="wgo:macintosh">Mac OS X</a>, <a href="wgo:unix">Solaris</a> and
   many others.
 </p>
 <ul>

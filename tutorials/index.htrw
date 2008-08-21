@@ -165,7 +165,7 @@
 </p>
 <p>
   <a href="Basic_Perl/">Basic GIMP Perl</a> Learn how to write simple perl scripts
-  using the gimp-perl module (linux users only).
+  using the gimp-perl module (GNU/Linux users only).
 </p>
 <p>
   <a href="Perl-Debugged/">GIMP-Perl Debugged</a>  Ways to debug your gimp-perl

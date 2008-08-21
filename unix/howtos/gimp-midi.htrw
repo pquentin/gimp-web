@@ -8,7 +8,7 @@
 <h2>What?</h2>
 <p>
    Since version 2.2, GIMP comes with a module that allows to control
-   it using MIDI devices.  Currently this is only supported on Linux
+   it using MIDI devices.  Currently this is only supported on GNU/Linux
    with either the OSS or the ALSA sound drivers. It might work on
    other platforms as well if there is a way to access the raw MIDI
    stream by opening a device.

@@ -40,7 +40,7 @@ more.</p>
 200 or K-6 200 with 64 megs of RAM. On a P4 or Athlon with 256 megs 
 of RAM, a build can take 20-30 minutes.
 In general, expect about 3-4 times as long as a Linux kernel 2.2
-compile (for Linux systems of course).  In other words, its a long
+compile (for GNU/Linux systems of course).  In other words, its a long
 compile.  That's what 300,000+ lines of code get you.</p>
 
 <h2>Stable version (2.2.x)</h2>

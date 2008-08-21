@@ -100,8 +100,8 @@ href="wgo:source">how to build GIMP from sources</a> for a list of
 required source packages as well as where you can find them.</p>
 
 <p>Note that if you compile and install GIMP from sources, you will
-need the header files for the required libraries.  On some Linux or
-BSD distributions, these header files are usually included in a
+need the header files for the required libraries.  On some GNU/Linux 
+or BSD distributions, these header files are usually included in a
 separate package using the suffix <code>-devel</code>.  So for
 example, you will need the packages <code>gtk</code> and
 <code>gtk-devel</code> if you want to build GIMP.</p>

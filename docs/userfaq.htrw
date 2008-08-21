@@ -120,7 +120,7 @@ Manipulation Program) sired by Spencer Kimball &amp; Peter Mattis.</p>
 
 <p>In their own words, "GIMP is our answer to the current lack of
 free (or at least reasonably priced) image manipulation software for
-Linux and UNIX in general."</p>
+GNU/Linux and UNIX in general."</p>
 
 <p>It is a raster editor, which means that it performs operations
 directly on the pixels that make up the image, and not a vector editor.
@@ -134,9 +134,9 @@ tastes.</p>
 
 <h3 id="Where">Where do I get it?</h3>
 
-<p>Most (if not all) Linux distributions will support GIMP through their
+<p>Most (if not all) GNU/Linux distributions will support GIMP through their
 package management systems and may even come with GIMP preinstalled. You
-can follow links to <a href="/unix">Linux and UNIX</a>, <a
+can follow links to <a href="/unix">GNU/Linux and UNIX</a>, <a
 href="/windows/">Microsoft Windows</a> and <a href="/macintosh">Apple
 Mac OS X</a> for the latest binaries. Of course, this is <a
 href="http://www.gnu.org/philosophy/free-sw.html">free software</a> so
@@ -252,7 +252,7 @@ Schlag:</p>
 
 <ol type="1">
 
-<li>run Linux with a X11 server which supports the Xinput-Section (my
+<li>run GNU/Linux with a X11 server which supports the Xinput-Section (my
 old S3-Board running under the XFree-Server works well, but the XSuSE-
 Server for PERMEDIA2-Boards doesn't work :-(</li>
 
@@ -482,7 +482,7 @@ drag or click a layer in the image. The layer will now be selected
 <h3 id="ManyWindows">I hate switching between windows in GIMP. Isn't
 there an easier way?</h3>
 
-<p>Yes there is. Most Linux window managers allow you make a window
+<p>Yes there is. Most GNU/Linux window managers allow you make a window
 always visible. I find it useful to apply this property to the toolbox
 and layers dialogue. They also allow you to focus, or even raise, a
 window whenever you move the mouse over it (usually you have to click on
@@ -633,7 +633,7 @@ them.</h3>
 "Open with..." in the context menu. Select GIMP and mark "Use this
 program as standard for openening this filetype". Now the filetype of
 that image should be properly associated with GIMP.</p> </li> <li><p>
-<strong>Linux (KDE)</strong>: Right-click on an image in konqueror,
+<strong>GNU/Linux (KDE)</strong>: Right-click on an image in konqueror,
 select "Open with..." -&gt; "Other" in the context menu, select GIMP and
 check the box "Associate filetype with this program".</p> </li> <li><p>
 For all other operating systems check the manual of the os.</p>

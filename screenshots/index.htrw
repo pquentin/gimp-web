@@ -11,12 +11,14 @@
 
 <div class="screenshots">
 
+<p>
   <a href="linux_fullscreen.jpg" rel="imagebox-screenshots" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>F-Spot</a>."><img	src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" /></a>
 
   <a href="linux_mixer.jpg" rel="imagebox-screenshots" title="Full control over B/W process using the channel mixer.."><img	src="linux_mixer_thumb.jpg" alt="Channel Mixer" /></a>
-
+</p>
+<p>
 <a href="linux_dualscreen_griatch_art.jpg" rel="imagebox-screenshots" title="Digital artwork from scratch in GIMP."><img	src="linux_dualscreen_griatch_art_thumb.jpg" alt="Digital artwork" /></a>
-
+</p>
 
 </div>
 

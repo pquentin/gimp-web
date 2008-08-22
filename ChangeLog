@@ -1,3 +1,8 @@
+2008-08-23  Sven Neumann  <sven@gimp.org>
+
+	* screenshots/index.htrw: moved new screenshot into its own
+	paragraph.
+
 2008-08-22  Sven Neumann  <sven@gimp.org>
 
 	* screenshots/index.htrw

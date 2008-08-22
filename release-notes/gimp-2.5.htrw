@@ -87,7 +87,7 @@ If you need to get work done, please use the stable version, GIMP 2.4.
   is now a check box under the "paint tool" option, for emulating brush 
   dynamics if you stroke using a paint tool. What this means is that when your 
   stroke is being painted by GIMP, it tells the brush that its pressure and 
-  velocity are also varying along the length of the stroke. Pressure 
+  velocity are varying along the length of the stroke. Pressure 
   starts with zero, ramps up to full pressure and then ramps down 
   again to no pressure. Velocity starts from zero and ramps up to full 
   speed by the end of the stroke.

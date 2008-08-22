@@ -1,3 +1,11 @@
+2008-08-22  Sven Neumann  <sven@gimp.org>
+
+	* screenshots/index.htrw
+	* screenshots/linux_dualscreen_griatch_art.jpg
+	
+	* screenshots/linux_dualscreen_griatch_art_thumb.jpg: added
+	screenshot contributed by Griatch.
+
 2008-08-21  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated for GIMP 2.5.3 release.

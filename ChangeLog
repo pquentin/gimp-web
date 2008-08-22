@@ -1,5 +1,12 @@
 2008-08-23  Sven Neumann  <sven@gimp.org>
 
+	* screenshots/index.htrw: reverted last change.
+
+	* screenshots/linux_dualscreen_griatch_art_thumb.jpg: cropped the
+	thumbnail to the proper size instead.
+
+2008-08-23  Sven Neumann  <sven@gimp.org>
+
 	* screenshots/index.htrw: moved new screenshot into its own
 	paragraph.
 

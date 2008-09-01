@@ -1,5 +1,9 @@
 2008-09-01  Michael Schumacher  <schumaml@cvs.gnome.org>
 
+	* programmatic/admin/news/wgo_news.py: module rfc822 is obsolete.
+
+2008-09-01  Michael Schumacher  <schumaml@cvs.gnome.org>	
+
 	* irc.htrw: added Polish IRC channel #gimp-pl on Freenode.
 
 2008-09-01  Michael Schumacher  <schumaml@cvs.gnome.org>	

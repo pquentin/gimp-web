@@ -32,7 +32,6 @@ import xhtml
 import mimetypes
 import os
 import re
-import rfc822
 import stat
 import string
 import sys
@@ -67,7 +66,7 @@ class news:
     try:
       if source == None:
         self.msg = email.Message.Message()
-        self.msg["Date"] = rfc822.formatdate()
+        self.msg["Date"] = email.formatdate()
         self.msg["From"] = "<wilber@news.gimp.org> Wilber Gimp"
         self.msg["Message-Id"] = "<" + time.strftime("%Y%m%d%H%M%S-") + str(os.getpid()) + "@news.gimp.org>" 
         self.msg["Reply-To"] = ""
@@ -79,7 +78,7 @@ class news:
         self.valid = True
       elif str(source.__class__) == 'cgi.FieldStorage':
         self.msg = email.Message.Message()
-        self.msg["Date"] = rfc822.formatdate(calendar.timegm(rfc822.parsedate(xhtml.unescape(source["date"].value))))
+        self.msg["Date"] = email.formatdate(calendar.timegm(email.parsedate(xhtml.unescape(source["date"].value))))
         self.msg["From"] = xhtml.unescape(source["from"].value)
         self.msg["Message-Id"] = xhtml.unescape(source["message-id"].value)
         self.msg["Reply-To"] = ""
@@ -151,7 +150,8 @@ class news:
 
        
   def as_news_item(self):               # As a line in the blotter
-    iso_date = time.strftime(config.datetime_format, rfc822.parsedate(self["date"]))
+    iso_date = time.strftime(config.datetime_format,
+                             time.gmtime(calendar.timegm(email.parsedate(xhtml.unescape(self["date"])))))
 
     s = str(xhtml.comment("$Id$")) + str(xhtml.span(xhtml.quote(self["subject"]), {"class" : "newstitle"})
                       + xhtml.span(xhtml.quote(iso_date), {"class" : "newsdate"}))
@@ -175,7 +175,7 @@ class news:
       pass
 
     url = "http://" + http_host
-    date = rfc822.formatdate(calendar.timegm(rfc822.parsedate(xhtml.unescape(self["date"]))))
+    date = email.formatdate(calendar.timegm(email.parsedate(xhtml.unescape(self["date"]))))
     s = rdf.item(rdf.title(rdf.quote(self["subject"]))
                  + rdf.description(rdf.quote(xhtml.absolutize(self["body"], url)))
                  + "\n"

@@ -1,3 +1,8 @@
+2008-09-17  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* style/wgo.css: replaced Candarra by Candara in the body font
+	family rule. Fixes bug #523175. 
+
 2008-09-16  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated for GIMP 2.5.4 release.

@@ -1,3 +1,8 @@
+2008-09-19  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Added, waiting to be fed with
+	release notes.
+
 2008-09-17  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* style/wgo.css: replaced Candarra by Candara in the body font

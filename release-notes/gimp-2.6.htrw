@@ -1,0 +1,20 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP 2.6 Release Notes</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<div class="splash">
+<img class="splashbg" alt="#" 
+src="images/2.4-releasesplash.jpg" width="640" height="200" />
+</div>
+
+<h1>GIMP 2.6 Release Notes</h1>
+
+<h2>General Improvements</h2>
+
+<h3>Eeeeek!</h3>
+
+<p>Start adding release notes here.</p>
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

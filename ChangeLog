@@ -1,5 +1,11 @@
 2008-09-20  Martin Nordholts  <martinn@svn.gnome.org>
 
+	* release-notes/gimp-2.6.htrw: Deleted. The GIMP 2.6 site shall be
+	developed on the newly created v2.6 branch instead. The 2.6 branch
+	will be merged to trunk when it's time for the release.
+
+2008-09-20  Martin Nordholts  <martinn@svn.gnome.org>
+
 	* release-notes/gimp-2.6.htrw: Added an Introduction paragraph and
 	copied most of the notes from gimp-2.5.htrw to here, and also did
 	some restructuring.

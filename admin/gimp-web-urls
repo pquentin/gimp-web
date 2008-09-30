@@ -1,3 +1,7 @@
+["href", "http:gegl",                          { "href": "http://gegl.org/"}]
+["href", "http:babl",                          { "href": "http://gegl.org/babl"}]
+["href", "http:gtk",                           { "href": "http://gtk.org/"}]
+
 ["href", "http:Package-autoconf",              { "href": "http://www.gnu.org/software/autoconf/"}]
 ["href", "http:Package-automake",              { "href": "http://www.gnu.org/software/automake/automake.html"}]
 ["href", "http:Package-bash",                  { "href": "http://www.gnu.org/software/bash/bash.html"}]

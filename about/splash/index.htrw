@@ -37,8 +37,8 @@ src="splashsplash.png" width="640" height="200" />
   <li>Make the splash <b>300x200</b> or more. (Smaller splashs will make
       text being cut off)</li>
   <li>Go to your personal GIMP directory.  For UNIX users, this is
-    usually in <b>/home/username/.gimp-2.4/</b>.  For Windows, this is
-    usually in <b>C:\Documents and Settings\username\.gimp-2.4\</b>
+    usually in <b>/home/username/.gimp-2.6/</b>.  For Windows, this is
+    usually in <b>C:\Documents and Settings\username\.gimp-2.6\</b>
     (you may have to enable the option "Show Hidden Files" in your file
     browser).</li>
   <li>Create a "splashes" directory if it does not exist.</li>

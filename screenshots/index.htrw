@@ -11,27 +11,36 @@
 
 <div class="screenshots">
 
-  <a href="linux_fullscreen.jpg" rel="imagebox-screenshots" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>F-Spot</a>."><img	src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" /></a>
+  <!-- TODO: Make it easy to add new screenshots and add the rest of
+  the screenshots that are in this directory. -->
 
-  <a href="linux_mixer.jpg" rel="imagebox-screenshots" title="Full control over B/W process using the channel mixer.."><img	src="linux_mixer_thumb.jpg" alt="Channel Mixer" /></a>
+  <a href="linux_fullscreen.jpg" rel="imagebox-screenshots" title="GIMP running fullscreen, side by side with <a href='http://f-spot.org'>F-Spot</a>.">
+    <img src="linux_fullscreen_thumb.jpg" alt="Grid, Fullscreen Screenshot" />
+  </a>
 
-<a href="linux_dualscreen_griatch_art.jpg" rel="imagebox-screenshots" title="Digital artwork from scratch in GIMP."><img	src="linux_dualscreen_griatch_art_thumb.jpg" alt="Digital artwork" /></a>
+  <a href="linux_mixer.jpg" rel="imagebox-screenshots" title="Full control over B/W process using the channel mixer..">
+    <img src="linux_mixer_thumb.jpg" alt="Channel Mixer" />
+  </a>
 
-
+  <a href="linux_dualscreen_griatch_art.jpg" rel="imagebox-screenshots" title="Digital artwork from scratch in GIMP.">
+    <img src="linux_dualscreen_griatch_art_thumb.jpg" alt="Digital artwork" />
+  </a>
 </div>
 
 <h2>Microsoft Windows Screenshots</h2>
 
 <div class="screenshots">
-  <a href="windows_crop.jpg" rel="imagebox-screenshots" title="GIMP running on Microsoft Windows features a widget theme mimicking the native environment."><img	src="windows_crop_thumb.jpg" alt="GIMP on Microsoft Windows" /></a>
-
+  <a href="windows_crop.jpg" rel="imagebox-screenshots" title="GIMP running on Microsoft Windows features a widget theme mimicking the native environment.">
+    <img src="windows_crop_thumb.jpg" alt="GIMP on Microsoft Windows" />
+  </a>
 </div>
 
 <h2>Mac OS X Screenshots</h2>
 
 <div class="screenshots">
-  <a href="osx_aperture.jpg" rel="imagebox-screenshots" title="GIMP side by side with Apple Aperture on Mac OS X."><img	src="osx_aperture_thumb.jpg" alt="GIMP on the Mac" /></a>
-
+  <a href="osx_aperture.jpg" rel="imagebox-screenshots" title="GIMP side by side with Apple Aperture on Mac OS X.">
+    <img src="osx_aperture_thumb.jpg" alt="GIMP on the Mac" />
+  </a>
 </div>
 
 

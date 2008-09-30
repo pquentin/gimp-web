@@ -1,0 +1,347 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP&nbsp;2.6 Release Notes</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<div class="splash">
+<img class="splashbg" alt="#" 
+src="images/2.4-releasesplash.jpg" width="640" height="200" />
+</div>
+
+
+
+<h1>GIMP&nbsp;2.6 Release Notes</h1>
+
+
+
+<h2>Introduction</h2>
+
+<p>
+  GIMP&nbsp;2.6 is an important release from a development point of view.
+  It features changes to the user interface addressing some often
+  received complaints, and a tentative integration of GEGL, the graph
+  based image processing library that will eventually bring high
+  bit-depth and non-destructive editing to GIMP.
+</p>
+
+
+<h2>User Interface</h2>
+
+<h3>Toolbox Menubar Removed</h3>
+<img class="right" src="images/2.6-empty-image-window.png" alt="Empty Image Window screenshot" />
+<p>
+  The toolbox menubar has been removed and merged with the image
+  window menubar. To be able to do this a window called the <i>empty
+  image window</i> has been introduced. It hosts the menubar and keeps
+  the application instance alive when no images are opened. It also
+  acts as a drag and drop target. When opening the first image the
+  empty image window is transformed into a normal image window, and
+  when closing the last image, that window becomes the empty image
+  window.
+</p>
+
+<h3>Toolbox and Docks are Utility windows</h3>
+<p>
+  With the empty image window acting as a natural main window, the
+  default window hints for the Toolbox and Docks have been
+  changed to <i>Utility window</i>. This enables window managers to do
+  a much better job of managing the GIMP windows, including omitting
+  the Toolbox and Docks from the taskbar and ensuring that the Toolbox
+  and Docks always are above image windows.
+</p>
+
+<h3>Ability to Pan Beyond Image Border</h3>
+<img class="right" src="images/2.6-scroll-beyond-border.png" alt="Scroll Beyond Border illustration" />
+<p>
+  It is now possible to pan beyond the image border, making image
+  window navigation much less constrained. It is no longer a problem
+  to use the edge of a brush on the edge of an image while being
+  zoomed in, and one can adapt the canvas to any utility windows
+  covering parts of the image window.
+</p>
+
+<h3>Minor Changes</h3>
+<ul>
+  <li>
+    Renamed Dialogs menu to Windows.
+  </li>
+  <li>
+    Keep a list of recently closed Docks and allow reopening them.
+  </li>
+  <li>
+    Make opening images in already running GIMP instances work better
+    on Windows.
+  </li>
+  <li>
+    You can now enter the image zoom ratio directly in the status bar.
+  </li>
+  <li>
+    Added support for using online help instead of a locally
+    installed GIMP Help package.
+  </li>
+  <li>
+    Make it possible to lock tabs in docks to prevent accidental
+    moving.
+  </li>
+</ul>
+
+
+<h2>Tools, Filters & Plug-ins</h2>
+
+<h3>Improved Free Select Tool</h3>
+<img class="right" src="images/2.6-new-free-select-tool.png" alt="New Free Select Tool in action" />
+<p>
+  The freehand select tool has been enhanced to support polygonal
+  selections. It also allows mixing free hand segments with polygonal
+  segments, editing of existing segments, applying angle-constraints
+  to segments, and of course the normal selection tool operations like
+  add and subtract. Altoghether this ends up making the Free Select
+  Tool a very versatile, powerful and easy-to-use selection tool.
+</p>
+
+<h3>Brush Dynamics</h3>
+<img class="right" src="images/2.6-brush-dynamics.jpg" alt="Brush Dynamics illustration" />
+<p>
+  Brush dynamics let you map different brush parameters, commonly at
+  least size and opacity, to one or more of three input dynamics:
+  pressure, velocity and random. Velocity and random are usable with a
+  mouse. The Ink tool, that supported velocity before, has been
+  overhauled and now handles velocity-dependent painting much better.
+</p>
+<p>
+  Brush dynamics have enabled a new feature in stroking paths. There
+  is now a check box under the "paint tool" option, for emulating
+  brush dynamics if you stroke using a paint tool. What this means is
+  that when your stroke is being painted by GIMP, it tells the brush
+  that its pressure and velocity are varying along the length of the
+  stroke. Pressure starts with zero, ramps up to full pressure and
+  then ramps down again to no pressure. Velocity starts from zero and
+  ramps up to full speed by the end of the stroke.
+</p>
+
+<h3>Minor Changes</h3>
+<ul>
+  <img class="right"
+       src="images/2.6-text-tool-and-rectangle-handles.png"
+       alt="Text Tool bounding box and outside rectangle handles screenshot" />
+  <li>
+    Added a bounding box for the Text Tool that supports automatic
+    wrapping of text within that bounding box.
+  </li>
+  <li>
+    Move handles for rectangle based tools like Crop and Rectangle
+    Select to the outside of the rectangle when the rectangle is
+    narrow.
+  </li>
+  <li>
+    Added motion constraints to the Move Tool.
+  </li>
+  <li>
+    Improved event smoothing for paint tools.
+  </li>
+  <li>
+    Mark the center of rectangles while they are moved, and snap the
+    center to grid and rulers.
+  </li>
+  <li>
+    Enable brush scaling for the Smudge tool.
+  </li>
+  <li>
+    Added ability to save presets in all color tools for color
+    adjustments you use frequently.
+  </li>
+  <li>
+     Allow to transfer settings from <i>Brightness-Contrast</i> to
+     <i>Levels</i>, and from <i>Levels</i> to <i>Curves</i>.
+  </li>
+  <li>
+    Allow changing opacity on transform tool previews.
+  </li>
+  <li>
+    The Screenshot plug-in has been given the ability to capture the
+    mouse cursor (using Xfixes).
+  </li>
+  <li>
+    Display aspect ratio of the Crop and Rectangle Select Tool
+    rectangles in the status bar.
+  </li>
+  <li>
+    Desaturate has been given an on-canvas preview.
+  </li>
+  <li>
+    The Flame plug-in has been extended with 22 new variations.
+  </li>
+  <li>
+    Data file folders like brush folders are searched recursively for
+    files.
+  </li>
+  <li>
+    Replaced the PSD import plug-in with a rewritten version that does
+    what the old version did plus some other things, for example
+    reading of ICC color profiles.
+  </li>
+</ul>
+
+
+<h2>Under the Hood</h2>
+
+<h3>GEGL</h3>
+<p>
+  Important progress towards high bit-depth and non-destructive
+  editing in GIMP has been made. Most color operations in GIMP are now
+  ported to the powerful graph based image processing
+  framework <a href="http:gegl">GEGL</a>, meaning that the
+  interal processing is being done in 32bit floating point linear
+  light RGBA. By default the legacy 8bit code paths are still used,
+  but a curious user can turn on the use of GEGL for the color
+  operations with <i>Colors / Use GEGL</i>.
+</p>
+<img class="right" src="images/2.6-experimental-gegl-tool.png" alt="Experimental GEGL tool screenshot" />
+<p>
+  In addition to porting color operations to GEGL, an
+  experimental <i>GEGL Operation</i> tool has been added, found in
+  the <i>Tools</i> menu. It enables applying GEGL operations to an
+  image and it gives on-canvas previews of the results. The screenshot
+  to the right shows this for a Gaussian Blur.
+</p>
+
+<h3>Minor Changes</h3>
+<ul>
+  <li>
+    Ported many widgets to use the 2D graphics
+    library <a href="http://www.cairographics.org/">cairo</a> for
+    drawing. See
+    this <a href="images/gimp-curves-tool-2-4-vs-2-6.png">comparison</a>
+    for an example of how much better this looks.
+  </li>
+</ul>
+
+
+<h2>Miscellaneous</h2>
+
+<h3>Plug-in Development</h3>
+<p>
+  There are new things for a plug-in developer to enjoy as well. For
+  example, procedures can now give a detailed error description in
+  case of an error, and the error can be propagated to the user. Here
+  is
+  a <a href="http://developer.gimp.org/api/2.0/libgimp/libgimp-index-new-in-2-6.html">list
+  of new symbols in GIMP 2.6</a>.
+</p>
+
+<h3>Backwards Compatibility</h3>
+<p>
+  Script-Fu has undergone some clean up and includes several bug
+  fixes. One important bug fix,
+  for <a href="http://bugzilla.gnome.org/show_bug.cgi?id=512105">bug&nbsp;#508020</a>,
+  prevents a possible crash of Script-Fu. A side effect of the fix
+  will break any script which does not provide an initial value for a
+  variable in the binding portion of a <i>let</i>, <i>let*</i>,
+  or <i>letrec</i> block.
+</p>
+<p>
+  An initial value for a variable is required as stated in
+  the <a href="http://www.schemers.org/Documents/Standards/R5RS/r5rs.pdf">R5RS
+  Scheme standard document</a>. The initial value can be provided as a
+  simple constant, or as the result of a function call. The following
+  examples will illustrate the problem and show a simple change that
+  will fix a broken script.
+</p>
+<p>
+  This example shows a <i>let*</i> block with incorrect syntax that
+  will no longer work in Script-Fu.
+</p>
+<pre class="code">
+(let* (
+      (four (+ 2 2))
+      (this-is-wrong)
+      )
+</pre>
+<p>
+  This example shows a <i>let*</i> block with the correct syntax.
+</P>
+<pre class="code">
+(let* (
+      (four (+ 2 2))
+      (this-is-correct 0)
+      )
+</pre>
+
+<h3>Known Problems</h3>
+<ul>
+  <li>The <i>Utility window</i> hint is currently only known to work
+    well in the GNOME desktop environment.
+  </li>
+  <li>
+    Using the Text Tool is currently not an optimal experience. Making
+    it work better is a goal for GIMP&nbsp;2.8.
+  </li>
+  <li>
+    If you build GIMP yourself and don't
+    have <a href="http://en.wikipedia.org/wiki/GVFS">GVfs</a> support
+    on your platform you need to explicitly
+    pass <kbd>--without-gvfs</kbd> to configure, otherwise opening
+    remote files will not work properly.
+  </li>
+</ul>
+
+<h3>What's Planned</h3>
+<p>
+  For the interested, here is roughly what is planned for GIMP&nbsp;2.8,
+  the next stable release:
+</p>
+<ul>
+  <li>
+    Merging Google Summer of Code 2008 projects to trunk, namely
+    on-canvas text editing, tagging of GIMP resources and Python
+    scripting enhancements.
+  </li>
+  <li>
+    Continue integration of GEGL.
+  </li>
+  <li>
+    And of course many other improvements...
+  </li>
+</ul>
+
+<h2>GIMP 2.6 Screenshots</h2>
+<div class="plain-screenshots">
+  <a href="../screenshots/gnome-1280x800-fresh-start.jpg" />
+    <img src="../screenshots/gnome-1280x800-fresh-start-thumb.jpg" alt="First GIMP&nbsp;2.6 startup" />
+  </a>
+  <p>First startup of GIMP&nbsp;2.6 on a 1280x800 GNOME desktop.</p>
+
+  <a href="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg" />
+    <img src="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6-thumb.jpg" alt="On-canvas Gaussian Blur" />
+  </a>
+  <p>Full screenshot of on-canvas preview of Gaussian Blur using the experimental GEGL Operation tool.</p>
+
+  <a href="../screenshots/alternative-2-6-ui-layout-example-one.jpg" />
+    <img src="../screenshots/alternative-2-6-ui-layout-example-one-thumb.jpg" alt="Alternative UI example" />
+  </a>
+  <p>UI layout example: Tool Options moved out of the toolbox.</p>
+
+  <a href="../screenshots/alternative-2-6-ui-layout-example-two.jpg" />
+    <img src="../screenshots/alternative-2-6-ui-layout-example-two-thumb.jpg" alt="Another alternative UI example" />
+  </a>
+  <p>UI layout example: Using the image window as a background window.</p>
+
+  <a href="../screenshots/2.6-brush-dynamics-example.jpg" />
+    <img src="../screenshots/2.6-brush-dynamics-example-thumb.jpg" alt="Brush Dynamics at use" />
+  </a>
+  <p>Demonstrating the kind of effects the new Brush Dynamics can create.</p>
+</div>
+
+
+<h2>We Hope You Enjoy GIMP&nbsp;2.6!</h2>
+
+<img class="figure" src="images/2.6-lgm-2008-groupshot.jpg" alt="LGM 2008 shot of the GIMP team" />
+<p>
+  <i>A picture of (mostly) GIMP developers, taken by Garrett LeSage at
+  Libre Graphics Meeting 2008, licenced
+  under <a href="http://creativecommons.org/licenses/by/2.0/deed.en">CC-By</a></i>
+</p>
+
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -48,7 +48,7 @@ not have permissions to install fonts system-wide. To make this
 possible, GIMP 2.x also looks for fonts in the GIMP specific font
 search path that can be configured in your <tt>gimprc</tt> or from the
 <i>Preferences Dialog</i>. So, in order to install fonts to be used
-with GIMP, you can just copy them to <tt>~/.gimp-2.4/fonts</tt>, press
+with GIMP, you can just copy them to <tt>~/.gimp-2.6/fonts</tt>, press
 the <i>Refresh</i> button in the <i>Fonts</i> dialog and start using
 them.</p>
 

@@ -6,167 +6,198 @@
 
 <h2>or How To Report GIMP Bugs</h2>
 <p>
-  If you find a bug or think you find a bug, it is very important to report it. 
-  If the developers don't know it is broken (or might be broken), they can't 
-  fix it. So there you are at your computer trying to do something with GIMP 
-  and it freaks out at you. It can be a frightening experience at times. 
+  If you find a bug or think you find a bug, it is very important to
+  report it.  If the developers don't know it is broken (or might be
+  broken), they can't fix it. So there you are at your computer trying
+  to do something with GIMP and it freaks out at you. It can be a
+  frightening experience at times.
 </p>
 
 <h3>First, Next, Third</h3>
 <p>
-  First: Get out a piece of paper or open a text file and scribble down 
-  everything you can remember about what you were doing when it happened. Also 
-  write down the exact wording of any error messages you received. 
+  First: Get out a piece of paper or open a text file and scribble
+  down everything you can remember about what you were doing when it
+  happened. Also write down the exact wording of any error messages
+  you received.
 </p>
 <p>
-  Next: Go away and yell and scream and do whatever you need to do to relax 
-  again. Your next step will be to brave Bugzilla, the GNOME bug tracker. It is 
-  used to track bug reports and requests for enhancements for GIMP and <span
-  class="help" title="the GIMP ToolKit">GTK+</span> (see also <a
-  href="/bugs/why_bugzilla.html">why we are using Bugzilla</a>).
+  Next: Go away and yell and scream and do whatever you need to do to
+  relax again. Your next step will be to brave Bugzilla, the GNOME bug
+  tracker. It is used to track bug reports and requests for
+  enhancements for GIMP and <span class="help" title="the GIMP
+  ToolKit">GTK+</span> (see also <a href="/bugs/why_bugzilla.html">why
+  we are using Bugzilla</a>).
 </p>
 <p>
-  Third: Check to see if your bug has been reported yet. Go to the 
-  <a href="home:gimp-bugzilla_stable_current">Current Bug List</a> to see if 
-  something that looks like your bug has been reported yet. Don't worry if it 
-  has, you can still help. See the section: <a href="#enhance">Enhancing Bug Reports</a>. 
-  If you can't find something that sounds like your bug there, you will need to 
+  Third: Check to see if your bug has been reported yet. Go to the
+  <a href="home:gimp-bugzilla_stable_current">Current Bug List</a> to
+  see if something that looks like your bug has been reported
+  yet. Don't worry if it has, you can still help. See the
+  section: <a href="#enhance">Enhancing Bug Reports</a>.  If you can't
+  find something that sounds like your bug there, you will need to
   report it.
 </p>
 
 <h2>Getting Ready to Report and Reporting a Bug</h2>
 <p>
-  The goal of the following is to give the developers as much information about 
-  what goes wrong as possible. This helps them find out what needs to be fixed.
+  The goal of the following is to give the developers as much
+  information about what goes wrong as possible. This helps them find
+  out what needs to be fixed.
 </p>
 
 <h3>The Steps</h3>
 <ol>
   <li>
     <p>
-       Use <kbd>gimp --version</kbd> or the about dialog to check your GIMP 
-       version. Next check with <a href="home:gimp">www.gimp.org</a> to see 
-       what the most recent GIMP release is. If your GIMP is old, update then 
-       try to to reproduce the bug. Your bug may have been fixed in the most 
-       recent release. If you are running GIMP from CVS, update your CVS and 
-       recompile. 
+       Use <kbd>gimp --version</kbd> or the about dialog to check your
+       GIMP version. Next check
+       with <a href="home:gimp">www.gimp.org</a> to see what the most
+       recent GIMP release is. If your GIMP is old, update then try to
+       to reproduce the bug. Your bug may have been fixed in the most
+       recent release. If you are running GIMP from CVS, update your
+       CVS and recompile.
+    </p>
+
+  </li>
+  <li>
+    <p>
+       Attempt to reproduce the problem. Go do what you were doing
+       when it happened and see if you can do it again.
+    </p>
+    <p>
+       If using GIMP for GNU/Linux, start the program from a terminal
+       with the command <kbd>gimp</kbd>. Sometimes the program will
+       output error messages that can help. This is especially
+       important if GIMP crashes completely without warning. After
+       reproducing the bug, copy the error messages from your terminal
+       into somewhere where you can save them for the bug report.  It
+       is better to give too much information than not enough.
+    </p>
+    <p>
+       To narrow down the exact cause of the problem, attempt to
+       reproduce it in other ways. Prepare yourself to explain how to
+       reproduce it in your bug report. If you are running GIMP in
+       another language, try switching your GIMP to English so you can
+       report menu items exactly with the English menu item name. It
+       helps. (Developers generally understand English) If you cannot
+       reproduce the bug, assume it was some weird freak event and
+       don't report it. If it recurs, consult with your
+       appropriate <a href="wgo:mail_lists">user mailing
+       list</a>. Perhaps someone else can find the key to reproducing
+       it.
     </p>
   </li>
   <li>
     <p>
-       Attempt to reproduce the problem. Go do what you were doing when it 
-       happened and see if you can do it again. 
-    </p>
-    <p>
-       If using GIMP for GNU/Linux, start the program from a terminal with the 
-       command <kbd>gimp</kbd>. Sometimes the program will output error messages 
-       that can help. This is especially important if GIMP crashes completely 
-       without warning. After reproducing the bug, copy the error messages from 
-       your terminal into somewhere where you can save them for the bug report. 
-       It is better to give too much information than not enough.
-    </p>
-    <p>
-       To narrow down the exact cause of the problem, attempt to reproduce it 
-       in other ways. Prepare yourself to explain how to reproduce it in your 
-       bug report. If you are running GIMP in another language, try switching 
-       your GIMP to English so you can report menu items exactly with the 
-       English menu item name. It helps. (Developers generally understand 
-       English) If you cannot reproduce the bug, assume it was some weird 
-       freak event and don't report it. If it recurs, consult with your 
-       appropriate <a href="wgo:mail_lists">user mailing list</a>. Perhaps 
-       someone else can find the key to reproducing it.
+       Prepare to face the horror. Go
+       to <a href="home:gimp-bugzilla">bugzilla.gnome.org</a>.  If you
+       don't have a login yet, follow the directions to create
+       one. The reason to do this and report a bug with your e-mail
+       address is so the developers can contact you if they have any
+       questions. That way if we miss some useful tidbit of debugging
+       information, they can tell you what to do to get it. Log in.
     </p>
   </li>
   <li>
     <p>
-       Prepare to face the horror. Go to <a href="home:gimp-bugzilla">bugzilla.gnome.org</a>. 
-       If you don't have a login yet, follow the directions to create one. The 
-       reason to do this and report a bug with your e-mail address is so the 
-       developers can contact you if they have any questions. That way if we 
-       miss some useful tidbit of debugging information, they can tell you what 
-       to do to get it. Log in.
+       Select &quot;Enter a New Bug Report&quot;. From the list of
+       products provided, select GIMP. This opens the actual entry
+       form.
     </p>
   </li>
   <li>
     <p>
-       Select &quot;Enter a New Bug Report&quot;. From the list of products 
-       provided, select GIMP. This opens the actual entry form.
-    </p>
-  </li>
-  <li>
-    <p>
-       Here you have to tell the developers everything about your system, your 
-       version of GIMP, and your bug. Just do your best to tell them about it. 
-       A crappy bug report is better than no report at all, but if you write 
-       down everything you can clearly, you will create a decent bug report.
+       Here you have to tell the developers everything about your
+       system, your version of GIMP, and your bug. Just do your best
+       to tell them about it.  A crappy bug report is better than no
+       report at all, but if you write down everything you can
+       clearly, you will create a decent bug report.
     </p>
   <ol>
      <li>
         <p>
-           Select the &quot;version&quot; that corresponds with the version of GIMP in which you 
-           found the bug. It is the information you got with <kbd>gimp --version</kbd>. 
+           Select the &quot;version&quot; that corresponds with the
+           version of GIMP in which you found the bug. It is the
+           information you got with <kbd>gimp --version</kbd>.
         </p>
      </li>
      <li>
         <p>
-           Select the appropriate &quot;component&quot;. If you don't know what component 
-           it is, submit the bug under General. Descriptions of the components 
+           Select the appropriate &quot;component&quot;. If you don't
+           know what component it is, submit the bug under
+           General. Descriptions of the components
            are <a href="home:gimp-bugzilla_components">available</a>.
         </p>
      </li>
      <li>
         <p>
-           Classify the &quot;severity&quot; of your bug. If the bug causes 
-           GIMP  to crash totally or do other really ucky things so you can't 
-           use the program at all, classify it as critical. If it completely 
-           disables some part of GIMP, classify it as major (for example, keeps 
-           you from using a tool). Most bugs are &quot;normal&quot;. If you don't know 
-           what severity to use, call it &quot;normal&quot;. Trivial bugs are 
-           annoying but don't really keep you from using the program. Cosmetic 
-           bugs are things like spelling errors or UI (User Interface, 
-           &quot;the look and feel&quot;) issues. If you are requesting a new 
-           feature, choose &quot;enhancement&quot;. Don't worry if you choose 
-           the wrong severity. The people getting your bug report will adjust 
-           it. Don't mark it higher than it really is just to get their 
-           attention.
+           Classify the &quot;severity&quot; of your bug. If the bug
+           causes GIMP to crash totally or do other really ucky things
+           so you can't use the program at all, classify it as
+           critical. If it completely disables some part of GIMP,
+           classify it as major (for example, keeps you from using a
+           tool). Most bugs are &quot;normal&quot;. If you don't know
+           what severity to use, call it &quot;normal&quot;. Trivial
+           bugs are annoying but don't really keep you from using the
+           program. Cosmetic bugs are things like spelling errors or
+           UI (User Interface, &quot;the look and feel&quot;)
+           issues. If you are requesting a new feature, choose
+           &quot;enhancement&quot;. Don't worry if you choose the
+           wrong severity. The people getting your bug report will
+           adjust it. Don't mark it higher than it really is just to
+           get their attention.
         </p>
      </li>
      <li>
         <p>
-           Select your &quot;operating system&quot;. <a href="wgo:windows">WinGIMP</a> and 
-           <a href="wgo:unix">GNU/Linux GIMP</a> bugs are not always identical. It would be 
-           annoying to get a GNU/Linux GIMP developer trying to reproduce a WinGIMP-specific 
-           bug. Under &quot;OS Details&quot; (OS, operating system), provide specifics 
-           about the version of your operating system. For GNU/Linux, provide the distro and 
-           version. It is also useful to list the desktop or window manager you are using. 
-           Sometimes a problem is caused by an interaction between the two. It won't always 
-           be relevant, but it is good to get into the habit of listing it anyway.
+           Select your &quot;operating
+           system&quot;. <a href="wgo:windows">WinGIMP</a> and
+           <a href="wgo:unix">GNU/Linux GIMP</a> bugs are not always
+           identical. It would be annoying to get a GNU/Linux GIMP
+           developer trying to reproduce a WinGIMP-specific bug. Under
+           &quot;OS Details&quot; (OS, operating system), provide
+           specifics about the version of your operating system. For
+           GNU/Linux, provide the distro and version. It is also
+           useful to list the desktop or window manager you are using.
+           Sometimes a problem is caused by an interaction between the
+           two. It won't always be relevant, but it is good to get
+           into the habit of listing it anyway.
         </p>
      </li>
      <li>
         <p>
-           Leave &quot;Assigned to:&quot; blank. Bugzilla will do that automatically. Only worry 
-           about CC: if you want to send a copy of your bug report to someone else.
+           Leave &quot;Assigned to:&quot; blank. Bugzilla will do that
+           automatically. Only worry about CC: if you want to send a
+           copy of your bug report to someone else.
         </p>
      </li>
      <li>
         <p>
-           For &quot;Summary&quot;, write a brief description of your bug. This summary 
-           will help other users see if their bug might be like your bug. Write something 
-           that would help you if you were looking for a bug like yours.
+           For &quot;Summary&quot;, write a brief description of your
+           bug. This summary will help other users see if their bug
+           might be like your bug. Write something that would help you
+           if you were looking for a bug like yours.
         </p>
      </li>
      <li>
         <p>
-          &quot;Description&quot; is the hard part. It is the actual bug report. First 
-          provide the detailed description of your bug: a brief overview of when it 
-          happened and exactly what went wrong (including error messages). Next, 
-          describe step-by-step how to reproduce the bug. Use the exact name of menu 
-          items. Describe tools, windows, and clicks as precisely as possible. If they 
-          can't reproduce the bug, it will be very hard for them to fix it. Last, tell 
-          them anything else you can think of that might be relevant. This could include 
-          recently installed programs or hardware that might interfere with  GIMP. 
+          &quot;Description&quot; is the hard part. It is the actual
+          bug report. First provide the detailed description of your
+          bug: a brief overview of when it happened and exactly what
+          went wrong (including error messages). Next, describe
+          step-by-step how to reproduce the bug. Use the exact name of
+          menu items. Describe tools, windows, and clicks as precisely
+          as possible. If they can't reproduce the bug, it will be
+          very hard for them to fix it. Last, tell them anything else
+          you can think of that might be relevant. This could include
+          recently installed programs or hardware that might interfere
+          with GIMP.
         </p>
+	<p>
+	  Finally, please add the output you get from
+	  running <kbd>gimp --version --verbose</kbd> to your bug
+	  report.
+	</p>
      </li>
  </ol>
  </li>
@@ -174,42 +205,46 @@
 
 <h2><a name="enhance"></a>Enhancing Bug Reports</h2>
 <p>
-  If someone has already reported a bug like yours, read the bug report 
-  carefully. Read through all the additional comments. Make sure every bit of 
-  information you know about the bug is in there. If your version is different 
-  or you had a slightly different experience with the bug, add a comment 
-  providing your information. Check the status of the bug carefully. If it is 
-  marked &quot;NEEDINFO&quot;, see if you can provide the information needed. Do not add 
-  a &quot;me too&quot; comment unless your comment provides additional information that 
-  might be helpful for the developer. 
+  If someone has already reported a bug like yours, read the bug
+  report carefully. Read through all the additional comments. Make
+  sure every bit of information you know about the bug is in there. If
+  your version is different or you had a slightly different experience
+  with the bug, add a comment providing your information. Check the
+  status of the bug carefully. If it is marked &quot;NEEDINFO&quot;,
+  see if you can provide the information needed. Do not add a &quot;me
+  too&quot; comment unless your comment provides additional
+  information that might be helpful for the developer.
 </p>
 <p>
-  If you have provided a bug report and later get more information (like a more 
-  specific error message or fancy stuff like a trace), add a comment to your 
-  original bug with that information. It is especially important to add a 
-  comment if you somehow resolve your bug. For example, you update something 
-  else on your system and the bug no longer appears. In that case, add a comment 
-  describing what you updated from what version to what version that resolved 
-  the bug. 
+  If you have provided a bug report and later get more information
+  (like a more specific error message or fancy stuff like a trace),
+  add a comment to your original bug with that information. It is
+  especially important to add a comment if you somehow resolve your
+  bug. For example, you update something else on your system and the
+  bug no longer appears. In that case, add a comment describing what
+  you updated from what version to what version that resolved the bug.
 </p>
 
 <h2>The Wait Patiently Part</h2>
 <p>
-  <cite>Whee!!</cite> You survived! If you managed to get through all this and submit your 
-  bug report, be happy. Be proud. You will later get e-mails about your bug. 
-  It might include a request for more information. If you get something that 
-  says your bug is not a bug, do not be discouraged from reporting in the future.
-  Next time it might be. Submitting careful bug reports and providing additional 
-  information where possible helps make GIMP better. The day will come where you 
-  submit a bug and later get an e-mail that says your bug is &quot;FIXED&quot; 
-  or &quot;RESOLVED&quot;. Then you will know that some developer out there found 
-  your bug, reproduced it, and fixed it. 
+  <cite>Whee!!</cite> You survived! If you managed to get through all
+  this and submit your bug report, be happy. Be proud. You will later
+  get e-mails about your bug.  It might include a request for more
+  information. If you get something that says your bug is not a bug,
+  do not be discouraged from reporting in the future.  Next time it
+  might be. Submitting careful bug reports and providing additional
+  information where possible helps make GIMP better. The day will come
+  where you submit a bug and later get an e-mail that says your bug is
+  &quot;FIXED&quot; or &quot;RESOLVED&quot;. Then you will know that
+  some developer out there found your bug, reproduced it, and fixed
+  it.
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        How To Bugzilla &copy; 2002 <a href="mail:People-Walter_Rebecca_J">Rebecca J. Walter</a>
+        How To Bugzilla
+	&copy; 2002 <a href="mail:People-Walter_Rebecca_J">Rebecca J. Walter</a>
       </span>
       <span id="footerright">
         <a href="mail:People-webmaster">webmaster@gimp.org</a>

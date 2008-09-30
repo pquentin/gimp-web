@@ -368,6 +368,33 @@ form {
   margin-right: 40px;
 }
 
+div.plain-screenshots {
+  margin-left: 3em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+div.plain-screenshots p {
+  margin: 0;
+  margin-bottom: 1.5em;
+  padding: 0;
+  max-width: 380px;
+}
+
+div.plain-screenshots a {
+  border: 0px;
+}
+
+div.plain-screenshots img {
+  margin: 2px;
+}
+
+div.plain-screenshots img:hover {
+  margin: 0;
+  border: 2px solid #f57900;
+  padding: 0px;
+}
+
 .screenshots, div.splashes {
   margin-left: 3em;
   margin-right: 1em;

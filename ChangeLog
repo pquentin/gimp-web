@@ -1,8 +1,400 @@
-2008-09-20  Martin Nordholts  <martinn@svn.gnome.org>
+2008-10-01  Martin Nordholts  <martinn@svn.gnome.org>
 
-	* release-notes/gimp-2.6.htrw: Deleted. The GIMP 2.6 site shall be
-	developed on the newly created v2.6 branch instead. The 2.6 branch
-	will be merged to trunk when it's time for the release.
+	Merged the GIMP 2.6 branch (branches/v2.6, r1808:1875) to trunk.
+
+2008-09-30  Sven Neumann  <sven@gimp.org>
+
+	* downloads/source.xhtml: updated for GIMP 2.6.0 release.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* screenshots/2.6-brush-dynamics-example(-thumb).jpg: Screenshot
+	from Alexia Death exemplifying use of Brush Dynamics.
+
+	* release-notes/gimp-2.6.htrw: Renamed 'Screenshots' to 'GIMP 2.6
+	Screenshots' and made it into a separate sub-section and added the
+	new screenshot.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-empty-image-window.png: Updated for 3:1
+	aspect ratio.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Miscellaneous/Plug-in Development):
+	New paragraph mentioning improved procedure error reporting and
+	giving a link to new symbols in 2.6.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Put a no-break space between 'GIMP'
+	and '2.x'.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* style/wgo.css: Limit the width of the screenshot descriptions.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/gimp-curves-tool-2-4-vs-2-6.png: Image
+	demonstrating how much better the Curves are drawn after the port
+	to cairo.
+
+	* release-notes/gimp-2.6.htrw (Under the Hood/Minor Changes): Link
+	to it.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* screenshots/alternative-2-6-ui-layout-example-two.jpg
+	* screenshots/alternative-2-6-ui-layout-example-one.jpg: Examples
+	of UI layouts (plus thumbs).
+
+	* release-notes/gimp-2.6.htrw (Miscellaneous/Screenshots): Add the
+	screenshots.
+
+	* style/wgo.css: Tweak distance between screenshots.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg
+	* screenshots/on-canvas-preview-of-gaussian-blur-in-2-6-thumb.jpg:
+	Full screenshot of on-canvas preview of Gaussian Blur using the
+	experimental GEGL Operation tool.
+
+	* release-notes/gimp-2.6.htrw (Miscellaneous/Screenshots): Add it
+	here, and make descriptions be under the thumbs instead of as img
+	titles.
+
+	* style/wgo.css: Adapt plain-screenshots paragraph style.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* screenshots/gnome-1280x800-fresh-start.jpg:
+	* screenshots/gnome-1280x800-fresh-start-thumb.jpg: Screenshot of
+	how the first startup of GIMP 2.6 on a 1280x800 GNOME desktop
+	looks.
+
+	* style/wgo.css: Added a 'plain-screenshots' style for divs.
+
+	* release-notes/gimp-2.6.htrw (Miscellaneous/Screenshots): New
+	section containing thumbnailed screenshots.
+
+	* screenshots/index.htrw: Added a TODO about that adding a
+	screenshot should be as easy as adding an img-tag. Currently
+	thumbs are forced to be 128x128 and the JavaScipt gallery doesn't
+	seem to be dynamic.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* screenshots/index.htrw: Tag formating.
+
+2008-09-30  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw
+	(Tools, Filters & Plug-ins/Minor Changes): Add items about
+	improved event smoothing for paint tools and the
+	Brightness-Contrast to Levels to Curves settings transfer.
+
+2008-09-29  Sven Neumann  <sven@gimp.org>
+
+	* unix/fonts.htrw: 
+	* about/splash/index.htrw: updated GIMP user directory for the
+	upcoming 2.6 release.
+
+2008-09-29  Sven Neumann  <sven@gimp.org>
+
+	* about/history.htrw: added missing 2.4 release dates.
+
+2008-09-29  Sven Neumann  <sven@gimp.org>
+
+	* about/splash/images/gimp-splash-2.6.png
+	* about/splash/stable.html: added splash for GIMP 2.6.
+
+2008-09-28  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (We Hope You Enjoy GIMP 2.6!):
+	Use the layout class "figure" instead of "groupshot" for the
+	image.
+
+	* style/wgo.css: Remove the unused "groupshot" class.
+
+2008-09-28  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-text-tool-and-rectangle-handles.png:
+	Screenshots of the Text Tool bounding box and when the handles are
+	outside the crop rectangle.
+
+	* release-notes/gimp-2.6.htrw
+	(Tools, Filters & Plug-ins/Minor Changes): Reorder items and
+	include the above image.
+
+2008-09-28  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-scroll-beyond-border.png: Remade, looks
+	much nicer now.
+
+2008-09-25  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Renamed the 'Tools' section to
+	'Tools, Filters & Plug-ins' and addad a bunch of stuff to the
+	'Minor Changes' list.
+
+2008-09-24  Sven Neumann  <sven@gimp.org>
+
+	* source/index.htrw: updated in preparation of the upcoming 2.6 release.
+
+2008-09-24  Sven Neumann  <sven@gimp.org>
+
+	* release-notes/gimp-2.6.htrw: fixed error introduced by my last
+	commit.
+
+	* admin/gimp-web-urls: added links for babl, GEGL and GTK+.
+
+	* unix/index.htrw: updated in preparation of the upcoming 2.6 release.
+
+2008-09-24  Sven Neumann  <sven@gimp.org>
+
+	* release-notes/gimp-2.6.htrw: minor changes. Added link to
+	Wikipedia article about GVfs.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Fix markup and express GEGL tool
+	applicability better.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Known Problems): Put the Building
+	sub section into here instead, it was too small for having its own
+	sub section anyway.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Fix typos and use proper English.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw
+	(Miscellaneous/Backwards Compatibility): Replaced with a much
+	better text by Kevin Cozens containing sample code and proper
+	references (regarding the Script-Fu let*-syntax bug fix breaking
+	old scripts).
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Put What's Planned and Known
+	Problems as sub sections to Miscellaneous, and split Miscellaneous
+	to Backwards Compatibility and Building sub sections.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Known Problems): New section
+	mentioning the known problems with the Utility window hint only
+	working good on GNOME, and the non-optimal experience when using
+	the Text Tool.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Fix typos.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-lgm-2008-groupshot.jpg: A 34kb big,
+	480px wide shot of the GIMP hackers, taken at LGM 2008 by
+	Garret LeSage, licenced under CC-By:
+	http://creativecommons.org/licenses/by/2.0/deed.en
+
+	* style/wgo.css: Added new img.groupshot class for the new image.
+
+	* release-notes/gimp-2.6.htrw (We Hope You Enjoy GIMP 2.6!): New
+	section at the end, containing the image and some text.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Miscellaneous): New section
+	containing basic references to the GVfs URI plug-in problem and
+	the Script-Fu change that breaks a lot of scripts.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (What's Planned): New
+	section. Mention GSoC 2008 projects and continued GEGL
+	integration.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-scroll-beyond-border.png: Fix
+	transparency.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Installation): Removed, wasn't part
+	of the 2.4 release notes and indeed doesn't fit in the release
+	notes of a stable release.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-experimental-gegl-tool.png: Screenshot
+	of on-canvas preview of gaussian blur with GEGL tool.
+
+	* release-notes/gimp-2.6.htrw (Under the Hood/GEGL): Add and refer
+	to it here.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-scroll-beyond-border.png: New image
+	illustrating scroll-beyond-border. I wouldn't mind tips from
+	people with illustrative talent on how to improve it.
+
+	* release-notes/gimp-2.6.htrw
+	(User Interface/Ability to Scroll Beyond Image Border): Add the
+	image here.
+
+2008-09-23  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Under the Hood/GEGL):
+	Rewritten. Mention the ported color operations and the
+	experimental GEGL Operation tool.
+
+	(Under the Hood/Minor Changes): New section, mention that many
+	widgets have been ported to cairo.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-brush-dynamics.jpg: New image by Alexia
+	Death illustrating the brush dynamics.
+
+	* release-notes/gimp-2.6.htrw (Tools/Brush Dynamics): Include the
+	image here.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-new-free-select-tool.png: Remade, with
+	a bit more effort put into it.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Put the online help support item in
+	the list of minor user interface changes, it's not worth having a
+	separate category for this.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Cairo For UI Elements): Dump this
+	one, it's not interesting enough to keep in the release notes.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Renamed the User Interface Change
+	section to just User Interface.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: s/Other Changes/Minor Changes/ and
+	don't keep the bullet lists within paragraph tags.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw
+	(Documentation/Other Changes): Keep a single bullet-list of items.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw
+	(User Interface Changes/Other Changes): Add a bunch of nice user
+	interface improvements to the bulleted list.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Tools/Other Changes): New section
+	with a bulleted list of small but nice changes for tools.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Other changes): New section in User
+	Interface Changes containg a bullet list of minor changes. Split
+	up "Lockable Docks" into this new section.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Improved help system): Move from
+	the User Interface Changes sub section to a new Documentation sub
+	section.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw
+	(Ability to Scroll Beyond Image Border): Rewritten (old header:
+	Scroll Beyond Image Border) with a more formal tone.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Lockable Docks): Moved to the
+	bottom of the list of User Interface Changes, it's the most minor
+	change.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw
+	(Toolbox and Docks are Utility windows): New paragraph explaining
+	that the Toolbox and Docks now are utility windows by
+	default. Also explain what that means.
+
+2008-09-22  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-emtpy-image-window.png: Updated with a
+	better look.
+
+	* release-notes/gimp-2.6.htrw (Toolbox Menubar Removed): A
+	rewritten version of the "The Empty Image Window" parapgrah that
+	now has an explanational undertone. The new paragraph header is
+	better because it has more meaning to those unfamiliar with the
+	new GIMP UI.
+
+2008-09-21  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-new-free-select-tool.png: New image
+	showing off the new Free Select Tool in action.
+
+	* release-notes/gimp-2.6.htrw (Improved Free Select Tool):
+	Rewritten, and included the above image.
+
+2008-09-21  Sven Neumann  <sven@gimp.org>
+
+	* bugs/howtos/bugzilla.htrw: formatting. Ask bug reporters to
+	include the output from 'gimp --version --verbose'.
+
+2008-09-21  Sven Neumann  <sven@gimp.org>
+
+	* downloads/source.xhtml: prepared for the upcoming 2.6 release.
+
+2008-09-21  Sven Neumann  <sven@gimp.org>
+
+	* images/frontsplash24.png: removed.
+	* images/frontsplash26.png: added version for GIMP 2.6.
+
+	* index.htrw: changed for 2.6 release.
+
+2008-09-21  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw (Introduction): Rewritten, and
+	emphasize that GEGL only has been tentativly integrated.
+
+2008-09-21  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/images/2.6-emtpy-image-window.png: New image. It's
+	a screenshot of the empty image window taken with the Darkilouche
+	GTK+ theme set to use Glossy-like titlebars. Scaled to be 320
+	pixels wide, and processed with the pngcrush utility.
+
+	* release-notes/gimp-2.6.htrw (The Empty Image Window): Include
+	this image here.
+
+2008-09-21  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: Remove link to GEGL in the
+	Introduction paragraph, it becomes too noisy.
 
 2008-09-20  Martin Nordholts  <martinn@svn.gnome.org>
 

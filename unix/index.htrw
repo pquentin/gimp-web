@@ -12,7 +12,7 @@ systems.  In addition to the source code distribution here on
 www.gimp.org, you can get binaries for various flavors of UNIX.</p>
 
 <p>At the moment we know about the following binary packages for GIMP
-2.2 or 2.4 on UNIX. These binaries are provided by GIMP users. We did
+2.4 or 2.6 on UNIX. These binaries are provided by GIMP users. We did
 not test them; use at your own risk.
 
 <ul>
@@ -55,7 +55,7 @@ not test them; use at your own risk.
 </ul>
 </p>
 
-<p>If you cannot find a pre-compiled package of GIMP 2.4 for your
+<p>If you cannot find a pre-compiled package of GIMP 2.6 for your
 system, you can <a href="wgo:source">build and install GIMP from the
 source code</a>.  This is not that hard, so don't be afraid and give
 it a try.</p>
@@ -73,23 +73,26 @@ minimum of 128 MB of RAM is recommended, but actually you should have
 the following is a list of what you will need to run GIMP on your
 system:</p>
 
-<p>For the stable version (2.4):</p>
+<p>For the stable version (2.6):</p>
 
 <ul>
   <li>
-    <b>GTK+ 2.10.13</b> or better (Gimp Toolkit).
+    <b>GLib 2.16.1</b> or better. 
   </li>
   <li>
-    <b>GLib 2.12.3</b> or better. 
+    <b><a href="http:gtk">GTK+</a> 2.12.1</b> or better.
   </li>
   <li>
-    <b>PangoFT2</b> 1.12.2 or better.  PangoFT2 is a Pango backend that uses <b>FreeType2</b>.
+    <b><a href="http:babl">babl</a> 0.0.22</b> or better.
+  </li>
+  <li>
+    <b><a href="http:gegl">GEGL</a> 0.0.18</b> or better.
+  </li>
+  <li>
+    <b>PangoFT2</b> 1.18.0 or better.  PangoFT2 is a Pango backend that uses <b>FreeType2</b>.
   </li>
   <li>
     <b>Fontconfig 2.2.0</b> or better.
-  </li>
-  <li>
-    <b>libart2</b>
   </li>
 </ul>
 

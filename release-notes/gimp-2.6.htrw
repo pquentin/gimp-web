@@ -315,11 +315,6 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
   </a>
   <p>First startup of GIMP&nbsp;2.6 on a 1280x800 GNOME desktop.</p>
 
-  <a href="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg" />
-    <img src="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6-thumb.jpg" alt="On-canvas Gaussian Blur" />
-  </a>
-  <p>Full screenshot of on-canvas preview of Gaussian Blur using the experimental GEGL Operation tool.</p>
-
   <a href="../screenshots/alternative-2-6-ui-layout-example-one.jpg" />
     <img src="../screenshots/alternative-2-6-ui-layout-example-one-thumb.jpg" alt="Alternative UI example" />
   </a>
@@ -334,6 +329,11 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
     <img src="../screenshots/2.6-brush-dynamics-example-thumb.jpg" alt="Brush Dynamics at use" />
   </a>
   <p>Demonstrating the kind of effects the new Brush Dynamics can create.</p>
+
+  <a href="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg" />
+    <img src="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6-thumb.jpg" alt="On-canvas Gaussian Blur" />
+  </a>
+  <p>Full screenshot of on-canvas preview of Gaussian Blur using the experimental GEGL Operation tool.</p>
 </div>
 
 

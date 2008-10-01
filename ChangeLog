@@ -1,5 +1,11 @@
 2008-10-01  Sven Neumann  <sven@gimp.org>
 
+	* index.htrw
+	* style/wgo.css: removed version number from image ID for the
+	splash overlay.
+
+2008-10-01  Sven Neumann  <sven@gimp.org>
+
 	* index.htrw: replaced generated news with a static version that
 	includes a news entry about the 2.6.0 release. The news admin
 	interface appears to have problems. As soon as this has been

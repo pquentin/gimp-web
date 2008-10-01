@@ -630,7 +630,7 @@ div.splash {
     left: 0px;
   }
 
-  .splash img#splash24overlay {
+  .splash img#splashoverlay {
     display: block;
     position: absolute;
     right: 0px;

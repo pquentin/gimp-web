@@ -223,8 +223,12 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 <p>
   There are new things for a plug-in developer to enjoy as well. For
   example, procedures can now give a detailed error description in
-  case of an error, and the error can be propagated to the user. Here
-  is
+  case of an error, and the error can be propagated to the user.
+</p>
+<p>
+  GIMP 2.6 also further enhances its scripting abilities. In
+  particular there is now a much richer API for the creation and
+  manipulation of text layers. Here is
   a <a href="http://developer.gimp.org/api/2.0/libgimp/libgimp-index-new-in-2-6.html">list
   of new symbols in GIMP 2.6</a>.
 </p>

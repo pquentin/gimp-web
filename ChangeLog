@@ -1,3 +1,10 @@
+2008-10-01  Sven Neumann  <sven@gimp.org>
+
+	* downloads/source.xhtml: updated the MD5 sum for the fixed 2.6.0
+	tarball.
+
+	* index.htrw: updated the release news entry.
+
 2008-10-01  Martin Nordholts  <martinn@svn.gnome.org>
 
 	* index.htrw: Added last minute build fix instructions for the

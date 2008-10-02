@@ -1,9 +1,6 @@
 # Mirror Sites
 #-------------
 
-Africa
-     ftp://ftp.is.co.za/mirror/ftp.gimp.org/gimp/
-
 Australia
      ftp://ftp.planetmirror.com/pub/gimp/
      http://ftp.planetmirror.com/pub/gimp/ (web access)
@@ -65,6 +62,9 @@ Romania
 Russia
      ftp://ftp.sai.msu.su/pub/unix/graphics/gimp/mirror/
      http://gimp.tsuren.net/mirror/gimp/ (web access)
+
+South Africa
+     ftp://ftp.is.co.za/mirror/ftp.gimp.org/gimp/
 
 Spain
      http://sunsite.rediris.es/mirror/gimp/ (web access)

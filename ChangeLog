@@ -1,3 +1,8 @@
+2008-10-02  Michael Natterer  <mitch@gimp.org>
+
+	* programmatic/downloads/MIRRORS: fixed mirror location to be
+	"South Africa", not just "Africa".
+
 2008-10-02  Martin Nordholts  <martinn@svn.gnome.org>
 
 	* style/wgo.css: Add a div.figure-placeholder class so we can

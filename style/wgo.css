@@ -80,6 +80,10 @@ img.right, object.right {
   margin-bottom: 1em;
 }
 
+div.figure-placeholder {
+  text-align: center;
+}
+
 img.figure, .flash {
   display: block;
   margin: 1em auto;

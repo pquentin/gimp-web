@@ -1,3 +1,12 @@
+2008-10-02  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* style/wgo.css: Add a div.figure-placeholder class so we can
+	center the image and still have it as a link.
+
+	* release-notes/gimp-2.6.htrw (We Hope You Enjoy GIMP 2.6!): Link
+	the groupshot image to its flickr page, and make the LGM 2008
+	reference into a link to the LGM 2008 page.
+
 2008-10-02  Sven Neumann  <sven@gimp.org>
 
 	* downloads/Windows.xhtml: updated link to the Windows binary.

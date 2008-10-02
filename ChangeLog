@@ -1,3 +1,7 @@
+2008-10-02  Sven Neumann  <sven@gimp.org>
+
+	* downloads/Windows.xhtml: updated link to the Windows binary.
+
 2008-10-01  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated the MD5 sum for the fixed 2.6.0

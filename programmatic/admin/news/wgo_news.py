@@ -67,7 +67,7 @@ class news:
     try:
       if source == None:
         self.msg = email.Message.Message()
-        self.msg["Date"] = email.formatdate()
+        self.msg["Date"] = email.Utils.formatdate()
         self.msg["From"] = "<wilber@news.gimp.org> Wilber Gimp"
         self.msg["Message-Id"] = "<" + time.strftime("%Y%m%d%H%M%S-") + str(os.getpid()) + "@news.gimp.org>" 
         self.msg["Reply-To"] = ""
@@ -79,7 +79,7 @@ class news:
         self.valid = True
       elif str(source.__class__) == 'cgi.FieldStorage':
         self.msg = email.Message.Message()
-        self.msg["Date"] = email.formatdate(calendar.timegm(email.Utils.parsedate(xhtml.unescape(source["date"].value))))
+        self.msg["Date"] = email.Utils.formatdate(calendar.timegm(email.Utils.parsedate(xhtml.unescape(source["date"].value))))
         self.msg["From"] = xhtml.unescape(source["from"].value)
         self.msg["Message-Id"] = xhtml.unescape(source["message-id"].value)
         self.msg["Reply-To"] = ""
@@ -176,7 +176,7 @@ class news:
       pass
 
     url = "http://" + http_host
-    date = email.formatdate(calendar.timegm(email.Utils.parsedate(xhtml.unescape(self["date"]))))
+    date = email.Utils.formatdate(calendar.timegm(email.Utils.parsedate(xhtml.unescape(self["date"]))))
     s = rdf.item(rdf.title(rdf.quote(self["subject"]))
                  + rdf.description(rdf.quote(xhtml.absolutize(self["body"], url)))
                  + "\n"

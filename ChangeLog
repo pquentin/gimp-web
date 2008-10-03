@@ -1,3 +1,7 @@
+2008-10-03  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* programmatic/admin/news/wgo_news.py: parsedate is in email.Utils 
+
 2008-10-03  Martin Nordholts  <martinn@svn.gnome.org>
 
 	* release-notes/gimp-2.6.htrw (Known Problems): Some people might

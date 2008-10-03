@@ -23,6 +23,7 @@
 # USA
 
 import email
+import email.Utils
 import email.MIMEMessage
 import cgi
 import errno
@@ -78,7 +79,7 @@ class news:
         self.valid = True
       elif str(source.__class__) == 'cgi.FieldStorage':
         self.msg = email.Message.Message()
-        self.msg["Date"] = email.formatdate(calendar.timegm(email.parsedate(xhtml.unescape(source["date"].value))))
+        self.msg["Date"] = email.formatdate(calendar.timegm(email.Utils.parsedate(xhtml.unescape(source["date"].value))))
         self.msg["From"] = xhtml.unescape(source["from"].value)
         self.msg["Message-Id"] = xhtml.unescape(source["message-id"].value)
         self.msg["Reply-To"] = ""
@@ -151,7 +152,7 @@ class news:
        
   def as_news_item(self):               # As a line in the blotter
     iso_date = time.strftime(config.datetime_format,
-                             time.gmtime(calendar.timegm(email.parsedate(xhtml.unescape(self["date"])))))
+                             time.gmtime(calendar.timegm(email.Utils.parsedate(xhtml.unescape(self["date"])))))
 
     s = str(xhtml.comment("$Id$")) + str(xhtml.span(xhtml.quote(self["subject"]), {"class" : "newstitle"})
                       + xhtml.span(xhtml.quote(iso_date), {"class" : "newsdate"}))
@@ -175,7 +176,7 @@ class news:
       pass
 
     url = "http://" + http_host
-    date = email.formatdate(calendar.timegm(email.parsedate(xhtml.unescape(self["date"]))))
+    date = email.formatdate(calendar.timegm(email.Utils.parsedate(xhtml.unescape(self["date"]))))
     s = rdf.item(rdf.title(rdf.quote(self["subject"]))
                  + rdf.description(rdf.quote(xhtml.absolutize(self["body"], url)))
                  + "\n"

@@ -1,3 +1,8 @@
+2008-10-06  Sven Neumann  <sven@gimp.org>
+
+	* index.htrw: now that the news system is working again, remove
+	the workaround and include the generated news again.
+
 2008-10-03  Manish Singh  <yosh@gimp.org>
 
 	* programmatic/admin/news/wgo_news.py: formatdate is also in

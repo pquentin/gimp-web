@@ -215,12 +215,6 @@ extra]). The allowed type codes are:
 * PF_FLOAT
 * PF_STRING
 * PF_VALUE
-* PF_INT8ARRAY
-* PF_INT16ARRAY
-* PF_INT32ARRAY
-* PF_INTARRAY
-* PF_FLOATARRAY
-* PF_STRINGARRAY
 * PF_COLOR
 * PF_COLOUR
 * PF_REGION
@@ -367,22 +361,22 @@ There are a number of functions in the `gimp` module that are used to
 create the objects used to make up an image in GIMP. Here is a set of
 descriptions of these constructors:
 
-`gimp.image`(`width`, `height`, `type`)::
+`gimp.Image`(`width`, `height`, `type`)::
   This procedure creates an image with the given dimensions and type
   (type is one of `RGB` , `GRAY` or `INDEXED` ).
-`gimp.layer`(`img`, `name`, `width`, `height`, `type`, `opacity`, `mode`)::
+`gimp.Layer`(`img`, `name`, `width`, `height`, `type`, `opacity`, `mode`)::
   Create a new layer called `name`, with the given dimensions and
   `type` (one of the `*_IMAGE` constants), `opacity` (float between 0
   and 100) and a `mode` (one of the `*_MODE` constants). The layer can
   then be added to the image with the `img.add_layer` method.
-`gimp.channel`(`img`, `name`, `width`, `height`, `opacity`, `colour`)::
+`gimp.Channel`(`img`, `name`, `width`, `height`, `opacity`, `colour`)::
   Create a new channel object with the given dimensions, `opacity` and
   `colour` (one of the `*_CHANNEL` constants). This channel can then
   be added to an image.
-`gimp.display`(`img`)::
+`gimp.Display`(`img`)::
   Create a new display window for the given image. The window will not
   be displayed until a call to `gimp.displays_flush` is made.
-`gimp.parasite(name, flags, data)`::
+`gimp.Parasite(name, flags, data)`::
   Create a new parasite. The parasite can then be attached to gimp, an
   image or a drawable. This is only available in gimp >= 1.1
 

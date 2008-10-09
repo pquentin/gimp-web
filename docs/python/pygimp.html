@@ -543,36 +543,6 @@ PF_VALUE
 </li>
 <li>
 <p>
-PF_INT8ARRAY
-</p>
-</li>
-<li>
-<p>
-PF_INT16ARRAY
-</p>
-</li>
-<li>
-<p>
-PF_INT32ARRAY
-</p>
-</li>
-<li>
-<p>
-PF_INTARRAY
-</p>
-</li>
-<li>
-<p>
-PF_FLOATARRAY
-</p>
-</li>
-<li>
-<p>
-PF_STRINGARRAY
-</p>
-</li>
-<li>
-<p>
 PF_COLOR
 </p>
 </li>
@@ -851,7 +821,7 @@ create the objects used to make up an image in GIMP. Here is a set of
 descriptions of these constructors:</p>
 <dl>
 <dt>
-<tt>gimp.image</tt>(<tt>width</tt>, <tt>height</tt>, <tt>type</tt>)
+<tt>gimp.Image</tt>(<tt>width</tt>, <tt>height</tt>, <tt>type</tt>)
 </dt>
 <dd>
 <p>
@@ -860,7 +830,7 @@ descriptions of these constructors:</p>
 </p>
 </dd>
 <dt>
-<tt>gimp.layer</tt>(<tt>img</tt>, <tt>name</tt>, <tt>width</tt>, <tt>height</tt>, <tt>type</tt>, <tt>opacity</tt>, <tt>mode</tt>)
+<tt>gimp.Layer</tt>(<tt>img</tt>, <tt>name</tt>, <tt>width</tt>, <tt>height</tt>, <tt>type</tt>, <tt>opacity</tt>, <tt>mode</tt>)
 </dt>
 <dd>
 <p>
@@ -871,7 +841,7 @@ descriptions of these constructors:</p>
 </p>
 </dd>
 <dt>
-<tt>gimp.channel</tt>(<tt>img</tt>, <tt>name</tt>, <tt>width</tt>, <tt>height</tt>, <tt>opacity</tt>, <tt>colour</tt>)
+<tt>gimp.Channel</tt>(<tt>img</tt>, <tt>name</tt>, <tt>width</tt>, <tt>height</tt>, <tt>opacity</tt>, <tt>colour</tt>)
 </dt>
 <dd>
 <p>
@@ -881,7 +851,7 @@ descriptions of these constructors:</p>
 </p>
 </dd>
 <dt>
-<tt>gimp.display</tt>(<tt>img</tt>)
+<tt>gimp.Display</tt>(<tt>img</tt>)
 </dt>
 <dd>
 <p>
@@ -890,7 +860,7 @@ descriptions of these constructors:</p>
 </p>
 </dd>
 <dt>
-<tt>gimp.parasite(name, flags, data)</tt>
+<tt>gimp.Parasite(name, flags, data)</tt>
 </dt>
 <dd>
 <p>

@@ -1,5 +1,12 @@
 2008-10-09  Sven Neumann  <sven@gimp.org>
 
+	* docs/python/pygimp.txt
+	* docs/python/pygimp.html
+	* docs/python/index.html: applied patches from tks (bug #555535
+	and bug #555021).
+
+2008-10-09  Sven Neumann  <sven@gimp.org>
+
 	* downloads/source.xhtml: updated for GIMP 2.6.1 release.
 
 2008-10-06  Sven Neumann  <sven@gimp.org>

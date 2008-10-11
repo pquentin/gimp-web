@@ -1,5 +1,9 @@
 2008-10-11  Martin Nordholts  <martinn@svn.gnome.org>
 
+	* downloads/Windows.xhtml: updated link to 2.6.1 installer.
+
+2008-10-11  Martin Nordholts  <martinn@svn.gnome.org>
+
 	* release-notes/gimp-2.6.htrw (Miscellaneous/Known Problems): Add
 	a note saying that the Utility window hint works well on Windows
 	starting with GIMP 2.6.1.

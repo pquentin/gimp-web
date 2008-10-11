@@ -275,7 +275,8 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 <ul>
   <li>
     The <i>Utility window</i> hint is currently only known to work
-    well in the Linux GNOME desktop environment.
+    well in the Linux GNOME desktop environment and on Windows
+    starting with GIMP 2.6.1.
   </li>
   <li>
     Using the Text Tool is currently not an optimal experience. Making

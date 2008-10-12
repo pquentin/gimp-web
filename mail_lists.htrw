@@ -3,10 +3,6 @@
 <link rel="alternate" title="gimp-developer RSS" href="http://www.mail-archive.com/gimp-developer%40lists.xcf.berkeley.edu/maillist.xml" type="application/rss+xml" />
 <link rel="alternate" title="gegl-developer RSS" href="http://www.mail-archive.com/gegl-developer%40lists.xcf.berkeley.edu/maillist.xml" type="application/rss+xml" />
 <link rel="alternate" title="gimp-user RSS" href="http://www.mail-archive.com/gimp-user%40lists.xcf.berkeley.edu/maillist.xml" type="application/rss+xml" />
-<link rel="alternate" title="gimpwin-users RSS" href="http://rss.groups.yahoo.com/group/gimpwin-users/rss" type="application/rss+xml" />
-<link rel="alternate" title="gimpi RSS" href="http://rss.groups.yahoo.com/group/gimpi/rss" type="application/rss+xml" />
-<link rel="alternate" title="gimp-perl RSS" href="http://rss.groups.yahoo.com/group/gimp-perl/rss" type="application/rss+xml" />
-<link rel="alternate" title="gimp-os2 RSS" href="http://rss.groups.yahoo.com/group/gimp-os2/rss" type="application/rss+xml" />
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <h1>Mailing Lists</h1>
@@ -37,10 +33,9 @@ href="/irc.html">IRC channels</a> for you.</p>
   <a href="http://news.gmane.org/gmane.comp.video.gimp.announce/">Gmane</a>,
   <a href="http://archives.free.net.ph/list/gimp-announce.en.html">free.net.ph</a></dd>
 
-  <dt><a href="http://groups.yahoo.com/group/gimpwin-users/">GIMPwin-Users</a></dt>
+  <dt>GIMPwin-Users (not active anymore)</dt>
   <dd>Especially for users of the Windows version of GIMP.<br />
   Archives:
-  <a href="http://groups.yahoo.com/group/gimpwin-users/messages">Yahoo</a>,
   <a href="http://www.spinics.net/lists/gimpwin/">spinics</a>,
   <a href="http://news.gmane.org/gmane.comp.video.gimp.windows.user/">Gmane</a>,
   <a href="http://www.nabble.com/Gimpwin-Users-f86.html">nabble</a></dd>
@@ -85,17 +80,6 @@ href="/irc.html">IRC channels</a> for you.</p>
   manipulated with GIMP.<br />
   Archives:
   <a href="http://groups.yahoo.com/group/gimpi/messages">Yahoo</a></dd>
-
-  <dt><a href="http://groups.yahoo.com/group/gimp-perl/">GIMP-perl</a></dt>
-  <dd>GIMP and Perl.<br />
-  Archives:
-  <a href="http://groups.yahoo.com/group/gimp-perl/messages">Yahoo</a>,
-  <a href="http://marc.theaimsgroup.com/?l=gimp-perl&amp;r=1&amp;w=2">AIMS</a></dd>
-
-  <dt><a href="http://groups.yahoo.com/group/gimp-os2/">GIMP-OS2</a></dt>
-  <dd>OS2/GIMP.<br />
-  Archives:
-  <a href="http://groups.yahoo.com/group/gimp-os2/messages">Yahoo</a></dd>
 
 </dl>
 

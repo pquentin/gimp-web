@@ -230,11 +230,7 @@ locations, or statically linking them to one or more programs.</p>
 
 <h3 id="Xinput">Is XInput support available?</h3>
 
-<p><em class="warn">FIXME: obsolete advice.</em></p>
-
-<p>It's under development. For more information, see Owen Taylor's page
-about <a href="http://www.gtk.org/~otaylor/xinput/">XInput support for
-GTK and GIMP</a>.</p>
+<p>Yes.</p>
 
 <h3 id="Tablet">Does GIMP support art tablets like the Wacom?</h3>
 
@@ -273,12 +269,9 @@ occured your artpad should work well</li>
 
 <h3 id="Scanner">Does GIMP have scanner support?</h3>
 
-<!-- FIXME: to be updated -->
-
-<p>Yes. You can run xscanimage, the front end to SANE (Scanner Access
-Now Easy), either as a GIMP extension or in stand-alone mode. This
-supports Mustek and HP flatbed scanners, as well as the Connectix color
-QuickCam camera.</p>
+<p>Yes. It's available on Windows and uses TWAIN, and on GNU/Linux you 
+even have a choice between XSane and gnome-scan&nbsp;&mdash; both can be 
+used as GIMP plug-ins.</p>
 
 <p>Further information is available at the <a
 href="http://www.sane-project.org/">SANE project</a>.</p>
@@ -361,17 +354,13 @@ this kind of thing.</p>
 
 <h3 id="Future">What does the future hold?</h3>
 
-<!-- FIXME: obsolete answer -->
-
-<p>Version 2.4 will bring some much needed usability improvements
-including a revamped select tool, a revamped crop tool and a reorganised
-menu. It will also bring some important new editing tools, such as
-foreground select and additional clone options.</p>
-
-<p>We now have a working GEGL and, once 2.4 is released, will begin
-integrating it into GIMP. This will lay the foundations for version 3.0,
-allowing for the addition of long requested features like support for
-16+ bits per channel and adjustment layers, to name a couple.</p>
+<p>Version 2.8 will bring combined Transform tool (Scale, Rotate, Shear, 
+Flip and Perspective), more use of Cairo for beautiful antialiased graphics 
+and more usability improvements. We will also make GIMP use more of 
+<a href="http://www.gegl.org/">GEGL</a>, namely for projection 
+(everything you see in a visible stack of layers). This will be another 
+step to version 3.0, which will bring long requested features like support 
+for 16+ bits per channel and adjustment layers, to name a few.</p>
 
 <h2 id="USE">Using GIMP</h2>
 
@@ -383,18 +372,14 @@ a Straight Line</a> in the GIMP user manual or see our <a href="/tutorials/Strai
 
 <h3 id="Circle">How can I draw a circle with GIMP?</h3>
 
-<!-- FIXME: obsolete answer: stroking a path should work as well -->
-
-<p>Use the elliptical select tool, hold down SHIFT key to constrain as
-circle, fill the selected area with new color, right click on selected
-area, choose SELECT, SHRINK, shrink selection by whatever number of
-pixels you want your circle width to be, right click again in selected
-area, choose EDIT, CUT. Voila, one beautifully antialased circle.</p>
+<p>The easiest way is to create a new selection with Ellipse Select tool 
+and stroke it (Edit -&gt; Stroke Selection...). We welcome patches that 
+add tools to draw geometric primitives on canvas.</p>
 
 <h3 id="Outline">How can I create an outline around text?</h3>
 
 <p>Place some text somewhere. Then click "Create path from text" in the
-"Text tool option"-window. Then use "Edit" -&gt; "Stroke path" and
+"Text tool option" window. Then use "Edit" -&gt; "Stroke path" and
 select the appropriate options in the following dialog. Please also see
 the <a href="http://docs.gimp.org/en/gimp-concepts-paths.html">Paths</a>
 section in the user manual.</p>
@@ -416,11 +401,8 @@ section in the manual for more information.</p>
 
 <h3 id="Sub">How do I save a selected sub-image to a file?</h3>
 
-<!-- FIXME: use Paste As... New Image -->
-
-<p>Create a new image large enough to hold the selection. Copy the
-selection, then paste it into the new image. Crop the new image.
-Flatten, etc, as necessary. Now save it.</p>
+<p>Use "Edit-&gt;Paste As-&gt;New Image" menu command or press 
+Ctrl-Shift-V key combination, then save newly created image.</p>
 
 <p>The script-fu-selection-to image can also be used to cut a selection
 out of an image and create a new image with it.</p>
@@ -437,38 +419,26 @@ alpha.</p>
 <h3 id="Merge">How do I merge an image from a file to the current
 image?</h3>
 
-<!-- FIXME: mention drag and drop -->
-
-<p>Open the additional image via the File-&gt;Open menu. Then
-Select-&gt;Select all. Edit-&gt;Copy. Move the cursor to the edited
-image. Edit-&gt;Paste. This drops the new image (selection) into the
-middle of the edited image. Move it around as necessary, then anchor
-it.</p>
+<p>Use "File-&gt;Open As Layers" menu command or just drag the file 
+to a window and drop it there. The file will be added as a new layer 
+on top of the layers stack.</p>
 
 <h3 id="Fonts">How do I get small fonts to look as nice as large
 ones?</h3>
 
-<p><em class="warn">FIXME: obsolete advice.</em></p>
-
-<p>In general, small fonts won't ever look quite as nice as large ones.
-But there are a couple of things to try.</p> <ol type="1"> <li><p>Make
-sure you are using an outline font as opposed to a bitmapped font. For
-details, check any book on using the X Window System, such as O'Reilly
-&amp; Associates X Window System User's Guide (Volume 3 of their
-excellent X series).</p> </li> <li><p>"If your image is GRAYSCALE or RGB
-(ie. not INDEXED) when there's a toggle button in the text tool which
-turns antialiased text on and off. It's on by default in GRAYSCALE or
-RGB modes, and forever off in INDEXED mode." --Adam Moss</p> </li> </ol>
+<p>Make sure you have "Hinting" and "Antialiasing" options enabled 
+in Text tool options dialog.</p>
 
 <h3 id="Bind">How do I bind keys to menus for shortcuts?</h3>
 
-<!-- FIXME: this should be enabled in the Preferences first -->
-
-<p>Go to the menu selection you are interested in. Keeping it selected
-(hold the mouse's menu selection down if necessary), press the key
-sequence you wish to assign to the menu. It will appear on the right of
-the menu. The new binding will be saved and used in future GIMP
-sessions.</p>
+<p>Make sure that "Use dynamic keyboard shortcuts" option in "Interface" 
+tab of Preferences dialog is enabled, then go to the menu selection you 
+are interested in. Keeping it selected (hold the mouse's menu selection 
+down if necessary), press the key sequence you wish to assign to the menu. 
+It will appear on the right of the menu. The new binding will be saved 
+and used in future GIMP sessions. You can also use "Keyboard Shortcuts" 
+dialog ("Edit-&gt;Keyboard Shortcuts") to assign keys to menus and 
+functions.</p>
 
 <h3 id="MouseLayer">How do I select a layer "sitting" under the mouse
 cursor? I have more than 400 layers in my image and I cannot remember
@@ -482,21 +452,33 @@ drag or click a layer in the image. The layer will now be selected
 <h3 id="ManyWindows">I hate switching between windows in GIMP. Isn't
 there an easier way?</h3>
 
-<p>Yes there is. Most GNU/Linux window managers allow you make a window
-always visible. I find it useful to apply this property to the toolbox
-and layers dialogue. They also allow you to focus, or even raise, a
-window whenever you move the mouse over it (usually you have to click on
-a window before it will focus). Fluxbox allows you to stack windows
-together and the tab between them, much like Firefox can tab between web
-pages. Combined with focus-follows-mouse, this increases my work flow
-considerably. Fluxbox also requires very few resources meaning more
-memory for your images. Finally, don't forget about keyboard shortcuts
-and modifiers. Learning these means you rarely have to visit the
+<p>You are probably using Windows or some GNU/Linux window manager that 
+does not support the "Utility window" hint. Right now you can use list 
+of currently opened images in "Windows" menu.</p>
+
+<p>If you are using GNU/Linux or some free UNIX-like system and not 
+willing to use GNOME and Metacity (its window manager) which does support 
+"Utility window" hint, alternatively you can use a window manager like 
+Fluxbox where you can apply this "always on top" property to the toolbox 
+and layers dialogue. Window managers like Fluxbox also allow you to focus, 
+or even raise, a window whenever you move the mouse over it (usually you 
+have to click on a window before it will focus). Fluxbox allows you to 
+stack windows together and the tab between them, much like Firefox can tab 
+between web pages. Combined with focus-follows-mouse, this may increase
+one's workflow considerably. Fluxbox also requires very few resources 
+meaning more memory for your images. Finally, don't forget about keyboard 
+shortcuts and modifiers. Learning these means you rarely have to visit the
 toolbox.</p>
+
+<p>In the mean time, during 2.7.x development cycle we will do our best to 
+switch to tabbed user interface with docked palettes.</p>
 
 <h3 id="Macro">Is there a macro recording interface?</h3>
 
-<p>Not at this time. It's in the works for a future release.</p>
+<p>Not at this time. With GIMP based on GEGL, so that all changes are 
+non-destructive, it will be much easier to implement this feature by just 
+remembering all nodes in given range and reapplying them to other images. 
+This is something that can be part of a future release of GIMP like 3.0.</p>
 
 <h3 id="Gamma">How do I configure my X server to do global gamma
 correction?</h3>
@@ -566,7 +548,7 @@ Reference" - Sven Neumann<br>
  Check your local books-dealer!</p>
 
 <h3 id="Rectangle">How can I paint easily an (OutLined) rectangle using
-GIMP ?.</h3>
+GIMP?</h3>
 
 <p>Use "Rectangle Select" tool (see <a
 href="http://docs.gimp.org/en/gimp-tools-selection.html">http://docs.gimp.org/en/gimp-tools-selection.html</a>)
@@ -615,14 +597,11 @@ at each edge of the rectangular selection.)</p>
 saved in Photoshop "Save for Web -> High (15K to 30K Optimized)" format.
 Is there an equivalent in GIMP?</h3>
 
-<p>(Stay tuned, according to <a
-href="http://edhel.gimp.org/devnews.html">http://edhel.gimp.org/devnews.html</a>
-somebody is working on that feature.)</p> <p><strong>Update</strong>:
-GIMP Development News: "Aurimas Juška finished the SOC project "Save for
-Web", and made the Save for Web plug-in available in the registry. It
+<p>Yes, there is a plug-in for GIMP which is called "Save for Web" and 
+created by Aurimas Juška as a Google Summer of Code SOC project. It
 allows visual adjustment of various image parameters such as quality,
 number of colors, dimensions, etc to reach optimal file size.", see <a
-href="http://registry.gimp.org/plugin?id=8799">http://registry.gimp.org/plugin?id=8799</a></p>
+href="http://registry.gimp.org/node/33">http://registry.gimp.org/node/33</a>.</p>
 
 <h3 id="Default">How do I get GIMP to be by default image tool i.e. I
 installed another program &amp; it is now associated to auto-opening

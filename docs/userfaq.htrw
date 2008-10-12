@@ -354,9 +354,10 @@ this kind of thing.</p>
 
 <h3 id="Future">What does the future hold?</h3>
 
-<p>Version 2.8 will bring combined Transform tool (Scale, Rotate, Shear, 
-Flip and Perspective), more use of Cairo for beautiful antialiased graphics 
-and more usability improvements. We will also make GIMP use more of 
+<p>Version 2.8 may bring a combined Transform tool (Scale, Rotate,
+Shear, Flip and Perspective), more use of Cairo for beautiful
+antialiased graphics and more usability improvements. We will also
+make GIMP use more of
 <a href="http://www.gegl.org/">GEGL</a>, namely for projection 
 (everything you see in a visible stack of layers). This will be another 
 step to version 3.0, which will bring long requested features like support 

@@ -37,13 +37,11 @@ In addition to Mac OS X, the following is a list of what you will need
 to run GIMP on your Macintosh:</p>
 
 <ul>
-  <li>X Windowing Layer<br /> 
-  GIMP uses a separate windowing layer, the X11 windowing protocol, on
-  Mac OS X, which must be installed first. The <a
-  href="http://xquartz.macosforge.org">XQuartz project</a> provides this
-  functionality.  Apple used to provide their own
-  version of this windowing layer, based on XFree86.  Mac OS X
-  10.5 (Leopard) now ships with an X11.app based on the X.Org 7.2 release.
+  <li>X Windowing Layer<br /> GIMP uses a separate windowing layer,
+  the X11 windowing protocol, on Mac OS X, which must be installed
+  first. The <a href="http://xquartz.macosforge.org">XQuartz
+  project</a> provides this functionality.  There you can download the
+  most recent version of X11.app.
  </li>
 
   <li>Graphics libraries and toolkits<br />
@@ -64,18 +62,12 @@ to run GIMP on your Macintosh:</p>
   <li><a href="wgo:docs">GIMP Documentation</a></li>
 </ul>
 
-<p>The <a href="http://www.xdarwin.org/forum">XDarwin forums</a> are
-one place to discuss compatibility and installation questions.<br />
-In addition, there are forums at the <a
-href="http://gug.sunsite.dk/">GIMP User Group</a>.</p>
-
-<p>GIMP's user interface is designed to let you work as
-efficiently as possible.  Since the primary menu in GIMP is
-accessed by a right-click in the image window, it is advisable for Mac
-users (who all have a single mouse button by default) to obtain a
-multi-button USB mouse.  Another workaround for this problem is to
-configure your window manager, say for example under XDarwin, to map
-the control-click to be right-click.</p>
+<p>
+Gimper.net is the home of
+the <a href="http://gimper.net/viewforum.php?f=19">wilber-loves-apple
+forum</a>, where you can find many useful information about GIMP on
+Mac OS X.
+</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

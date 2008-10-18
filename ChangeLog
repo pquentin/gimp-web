@@ -1,3 +1,14 @@
+2008-10-18  Sven Neumann  <sven@gimp.org>
+
+	* downloads/Mac.xhtml: point to the GIMP 2.6 packages for Mac OS X
+	at lisanet.de.
+
+	* macintosh/index.htrw: updated and remoted outdated links.
+
+2008-10-12  Sven Neumann  <sven@gimp.org>
+
+	* docs/userfaq.htrw: applied patch from Alexandre Prokoudine.
+
 2008-10-12  Sven Neumann  <sven@gimp.org>
 
 	* mail_lists.htrw: applied patch from Richard H.

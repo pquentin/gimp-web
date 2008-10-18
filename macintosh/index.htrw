@@ -17,18 +17,13 @@ setup an easier task. These include:
 </p>
 
 <ul>
-  <li><a href="http://darwingimp.sourceforge.net/">Wilber loves Apple</a>
-  is a community that provides GIMP packages and help for Mac OS X users.
+  <li><a href="http://gimp.lisanet.de/">GIMP on OS X</a>
+  provides application bundles of of GIMP 2.6 for Mac OS X users.
   </li>
 
   <li><a href="http://www.macports.org/">MacPorts</a> provide an easy
   way to install various open-source software products on Mac OS X.
-  They have GIMP 2.4 in the latest revisions.
-  </li>
-
-  <li>The <a href="http://www.macgimp.org/">MacGIMP project</a>
-  provides GIMP for Mac OS X in a packaged CD format. But they don't
-  offer GIMP 2.4 yet.
+  They have GIMP 2.6 in the latest revisions.
   </li>
 
 </ul>
@@ -45,7 +40,7 @@ to run GIMP on your Macintosh:</p>
   <li>X Windowing Layer<br /> 
   GIMP uses a separate windowing layer, the X11 windowing protocol, on
   Mac OS X, which must be installed first. The <a
-  href="http://www.x.org/wiki/XDarwin">XDarwin project</a> provides this
+  href="http://xquartz.macosforge.org">XQuartz project</a> provides this
   functionality.  Apple used to provide their own
   version of this windowing layer, based on XFree86.  Mac OS X
   10.5 (Leopard) now ships with an X11.app based on the X.Org 7.2 release.

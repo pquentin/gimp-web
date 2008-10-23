@@ -86,18 +86,18 @@ href="/irc.html">IRC channels</a> for you.</p>
 
 <h2>List Etiquette</h2>
   <p>
-  When sending mails to the lists there are some recommendations you should
-  follow, at least in The Gimp official lists, but probably are nice
-  for all lists to make everyone life easier:
+
+  When sending mails to the lists there are some recommendations you
+  should follow to make everyone's life easier:
   </p>
 <ul class="list">
   <li>
     <b>The topic is GIMP.</b> Stay on topic. If the discussion goes
-    off topic, use direct mail and not the mailing list. Gimp User
+    off topic, use direct mail and not the mailing list. GIMP User
     list topics are user problems, techniques, hardware advice
     (tablets, scanners, monitors), request for comments about images
-    and usage in general. Gimp Devel list topics are coding, patches,
-    bugs and other Gimp's guts things.
+    and usage in general. GIMP Devel list topics are coding, patches,
+    bugs and other GIMP's guts things.
   </li>
   <li>
     <b>Use the English language.</b> English is the official
@@ -136,7 +136,7 @@ href="/irc.html">IRC channels</a> for you.</p>
           attachments or URLs.  Remember that you can compress .xcf
           files with gzip or bzip2 (.xcf.gz or .xcf.bz2,
           respec.). Those compressors are free and <em>gratis</em> and
-          at least gzip should be handled by all Gimp versions known,
+          at least gzip should be handled by all GIMP versions known,
           so no excuses. For images you can use PNG (ie. when showing
           bad results and you need the image to be the one you are
           seeing in your monitor) or JPEG (asking how to do something,
@@ -152,10 +152,10 @@ href="/irc.html">IRC channels</a> for you.</p>
         <li>
           <b>Use the 7-bit ASCII character set.</b>
           Do not expect people to see other character sets beyond 7 bit ASCII
-          and images supported by Gimp. You can hope they will, but do not
+          and images supported by GIMP. You can hope they will, but do not
           think they will. The same applies to you, if you see text with weird
           characters, maybe your computer has no support for them. Or you do
-          not have the loader plug-in for Gimp, if the problem is an error
+          not have the loader plug-in for GIMP, if the problem is an error
           with an image. Be permisive about these problems and never force
           them (aka do not send things you are sure most people will be unable
           to see, and make sure your mailer sets the correct MIME type, not a
@@ -205,9 +205,9 @@ href="/irc.html">IRC channels</a> for you.</p>
     (hehehe) sense to decide what, you do not need to post the size of
     the computer box, but be ready to provide more info in next mails. A
     good start is a small description of the computer (CPU family and
-    OS) plus versions of related software (Gimp, libraries, compiler)
+    OS) plus versions of related software (GIMP, libraries, compiler)
     and the steps you followed to find the problem (write your &quot;How
-    to crash Gimp in X steps with Y tool&quot; tutorial). If you have
+    to crash GIMP in X steps with Y tool&quot; tutorial). If you have
     the solution, even better.
   </li>
   <li>
@@ -220,7 +220,7 @@ href="/irc.html">IRC channels</a> for you.</p>
   </li>
   <li>
     <b>No spam, or even a hint of spam allowed.</b> No chain
-    letters, no virus alarms, only Gimp. Violating this is
+    letters, no virus alarms, only GIMP. Violating this is
     equivalent to asking to be removed from the list.
   </li>
   <li>

@@ -1,3 +1,9 @@
+2008-10-31  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* programmatic/downloads/MIRRORS: 2ndsite does just redirect to
+	ftp.gimp.org now, thus removing. There have also been reports of
+	mismatching md5 checksums for this site.
+
 2008-10-30  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated for GIMP 2.6.2 release.

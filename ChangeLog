@@ -1,3 +1,7 @@
+2008-11-01  Sven Neumann  <sven@gimp.org>
+
+	* downloads/Windows.xhtml: updated link to 2.6.2 installer.
+
 2008-10-31  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* programmatic/downloads/MIRRORS: 2ndsite does just redirect to

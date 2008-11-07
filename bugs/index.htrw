@@ -5,19 +5,27 @@
 
 <h1>Bugs, bugs, bugs!</h1>
 <p>
-  Bug reporting is an extremely important aspect of GIMP development.
-  Reporting bugs correctly is the best way to help the developers identify
-  problems. The better the bug report, the faster a developer can
-  reproduce the issue and therefore work on a solution. On this page,
-  you will find the information you need to start writing good bug
-  reports. In addition, if you would like to work on fixing the problem
-  yourself, you will find instructions here on how.
+  Making good bug reports is a great way to help increase the software
+  quality of GIMP. A good bug report is a bug report that provides
+  unambigous step-by-step instructions on how to reproduce the bug,
+  what result that is expected, and what the actual result it. Good
+  bug reports makes it easy for the developers to reproduce and fix
+  the bug.
 </p>
 <p>
-  More information about Bugzilla, and bug hunting in general, can be found 
-  at <a href="wgo:dev">http://developer.gimp.org/</a>.  See also <a
-  href="why_bugzilla.html">why we are using Bugzilla</a> to handle bug
-  reports.
+  Related to bug reports are enhancement requests. An enhancement
+  request should never be filed without prior discussion on the
+  gimp-developer
+  <a href="/mail_lists.html">mailing list</a>. This is to make sure
+  that the enhancement requests that are filed are well-specified and
+  aligned with the overall goals the developers have for GIMP.
+</p>
+<p>
+  More information about Bugzilla, and bug hunting in general, can be
+  found at <a href="wgo:dev">http://developer.gimp.org/</a>. See
+  also <a href="why_bugzilla.html">why we are using Bugzilla</a> to
+  handle bug reports. The rest of this page contains more detailed
+  information regarding bug reports.
 </p>
 <p>
   <a href="http://bugzilla.gnome.org/enter_bug.cgi?product=GIMP">Submit a bug report</a>

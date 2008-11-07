@@ -1,5 +1,7 @@
 2008-11-07  Martin Nordholts  <martinn@svn.gnome.org>
 
+	Applied patch from Richard Hirner.
+
 	* includes/wgo-page-init.xhtml: Removed GUG link.
 
 	* links/index.htrw: Updated with a couple of new sites, and

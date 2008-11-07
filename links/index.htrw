@@ -13,7 +13,6 @@ href="/about/linking.html">this other page</a>.</p>
 
 <h2>Other Useful Links</h2>
 <ul>
-  <li><a href="#maillists">Mailinglists</a></li>
   <li><a href="#org">gimp.org</a></li>
   <li><a href="#tuts">Tutorials</a></li>
   <li><a href="#clubs">Communities</a></li>
@@ -22,12 +21,6 @@ href="/about/linking.html">this other page</a>.</p>
   <li><a href="#more">More GIMP-links</a></li>
   <li><a href="#other">Other Graphics Applications</a></li>
 </ul>
-
-<h2><a name="maillists"></a>Mailinglists</h2>
-
-<p><a href="/mail_lists.html">GIMP Mailing Lists</a><br /> A more
-thorough overview of GIMP related mail lists and some mailing list
-ettiquette.</p>
 
 
 <h2><a name="org"></a>gimp.org</h2>
@@ -40,13 +33,6 @@ ettiquette.</p>
 
 <h2><a name="tuts"></a>Tutorials</h2>
 
-<p><a href="http://gug.sunsite.dk/?page=tutorials">Tutorials page from GIMP Usergroup (GUG)</a><br />
-The GUG-website has some cool GIMP-tutorials online.
-</p>
-
-<p><a href="http://empyrean.lib.ndsu.nodak.edu/~nem/gimp/tuts/">Pointers to GIMP-tutorials</a><br />
-This site has pointers to GIMP-tutorials all over the Internet. Some are outdated, but most tutorials show nice GIMP-tips &amp; tricks.</p>
-
 <p><a href="http://carol.gimp.org/gimp2/">Carol Spears' GIMP2 tutorials</a><br />
 Carol took care of updating some of the existing tutorials to current GIMP versions and also likes to present other great works of her own.</p>
 
@@ -56,8 +42,21 @@ This site lets you find and rate GIMP tutorials hosted on other sites (note: wit
 <p><a href="http://www.ghuj.com/">Gimp.Tutorials</a><br />
 This site lets you find and comment on GIMP tutorials hosted on other sites (note: with advertisements).</p>
 
+<p><a href="http://www.gimpusers.com/tutorials.php">gimpusers.com Tutorials</a><br/>
+Tutorials on gimpusers.com (English + German)</p>
+
+<p><a href="http://gimps.de/">gimps.de</a><br />
+has lots of GIMP tutorials; most of the texts are in German and English.</p>
+
+<p><a href="http://gimpology.com/">Gimpology</a><br />
+Tutorials for the gimp</p>
+
+<p><a href="http://gimp-tutorials.net/">gimp-tutorials.net</a><br />
+More GIMP tutorials</p>
+
 
 <h2><a name="more"></a>More GIMP-links</h2>
+
 <p><a href="http://gimp.pagina.nl">GIMP-startpagina</a> <small>(Dutch version)</small><br />
 Just one page, but contains the most up-to-date collection of links to GIMP-sites.</p>
 
@@ -67,19 +66,11 @@ Essentially the same as the one above, but this time in English.</p>
 <p><a href="http://dmoz.org/Computers/Software/Graphics/Image_Editing/The_GIMP/">GIMP-category from ODP</a><br />
 This OpenDirectoryProject-category holds links to GIMP-sites (like this page).</p>
 
-<p><a href="http://dmoz.org/World/Nederlands/Computers/Graphics/Software/GIMP/">Dutch GIMP-category from ODP</a><br />
-This OpenDirectoryProject-category contains only links to Dutch GIMP-sites.</p>
-
-<p><a href="http://gimps.de/">gimps.de</a><br />
-has lots of GIMP tutorials; most of the texts are in German and English.
-</p>
+<p><a href="http://www.meetthegimp.org">Meet the GIMP!</a><br />
+A videopodcast about the free graphics program GIMP</p>
 
 
 <h2><a name="clubs"></a>Clubs &amp; Communities</h2>
-<p>
-  <a href="http://www.gimpforce.org">GIMP Usergroup (GUG)</a><br />
-  Meet fellow-GIMP-users here and see what they created using GIMP
-</p>
 <p>
   <a href="http://groups.yahoo.com/group/thegimp2/">English GIMP-club</a><br />
   English-spoken community to discuss usage of GIMP
@@ -136,11 +127,8 @@ has lots of GIMP tutorials; most of the texts are in German and English.
   Forum and galleries in Norwegian.
 </p>
 
+
 <h2><a name="created"></a>Created with GIMP</h2>
-<p>
-  <a href="http://gug.sunsite.dk/gallery/">Galleries from GUG</a><br />
-  The largest collection of GIMP-created graphics
-</p>
 <p>
   <a href="http://computer.clubs.nl/GIMP">Dutch GIMP-club</a><br />
   Dutch-spoken community to promote GIMP-usage in The Netherlands.

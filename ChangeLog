@@ -1,3 +1,10 @@
+2008-11-07  Martin Nordholts  <martinn@svn.gnome.org>
+
+	* includes/wgo-page-init.xhtml: Removed GUG link.
+
+	* links/index.htrw: Updated with a couple of new sites, and
+	removed a copule of old ones.
+
 2008-11-01  Sven Neumann  <sven@gimp.org>
 
 	* downloads/Windows.xhtml: updated link to 2.6.2 installer.

@@ -1,3 +1,7 @@
+2008-11-21  Sven Neumann  <sven@gimp.org>
+
+	* downloads/source.xhtml: updated for GIMP 2.6.3 release.
+
 2008-11-07  Martin Nordholts  <martinn@svn.gnome.org>
 
 	* bugs/index.htrw (Bugs, bugs, bugs!): Rewritten to provide more

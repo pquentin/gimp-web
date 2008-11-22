@@ -1,5 +1,10 @@
 2008-11-22  Martin Nordholts  <martinn@svn.gnome.org>
 
+	* bugs/index.htrw: (Bugs): New header instead of
+	"Bugs, bugs, bugs!".
+
+2008-11-22  Martin Nordholts  <martinn@svn.gnome.org>
+
 	* webmasters.htrw (Last resort): Remove confusing reference to the
 	bug tracker.
 

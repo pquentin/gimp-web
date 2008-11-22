@@ -3,7 +3,7 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>Bugs, bugs, bugs!</h1>
+<h1>Bugs</h1>
 <p>
   Making good bug reports is a great way to help increase the software
   quality of GIMP. A good bug report is a bug report that provides

@@ -1,3 +1,7 @@
+2008-11-23  Sven Neumann  <sven@gimp.org>
+
+	* downloads/Windows.xhtml: updated link to 2.6.3 installer.
+
 2008-11-22  Martin Nordholts  <martinn@svn.gnome.org>
 
 	* bugs/index.htrw: (Bugs): New header instead of

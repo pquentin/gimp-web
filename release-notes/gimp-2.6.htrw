@@ -191,7 +191,7 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
   editing in GIMP has been made. Most color operations in GIMP are now
   ported to the powerful graph based image processing
   framework <a href="http:gegl">GEGL</a>, meaning that the
-  interal processing is being done in 32bit floating point linear
+  internal processing is being done in 32bit floating point linear
   light RGBA. By default the legacy 8bit code paths are still used,
   but a curious user can turn on the use of GEGL for the color
   operations with <i>Colors / Use GEGL</i>.

@@ -1,3 +1,10 @@
+2009-01-12  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* release-notes/gimp-2.6.htrw: fix typo.
+
+	* release-notes/index.htrw: current version is 2.6; added 2.4 and
+	2.5 in historical section; hide 2.7 for the moment.
+
 2009-01-02  Sven Neumann  <sven@gimp.org>
 
 	* downloads/Windows.xhtml: updated link to 2.6.4 installer.

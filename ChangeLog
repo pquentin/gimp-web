@@ -1,5 +1,9 @@
 2009-01-14  Michael Schumacher  <schumaml@cvs.gnome.org>
 
+	* programmatic/apache_ssi.py: correcting accidental commit.
+
+2009-01-14  Michael Schumacher  <schumaml@cvs.gnome.org>
+	
 	* books/index.htrw: added an invisible template for new book
 	entries to the beginning. 
 	Added books "GIMP for Textile Design" and "Beginning GIMP, Second

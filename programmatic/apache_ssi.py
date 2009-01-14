@@ -23,7 +23,7 @@
 #
 import sys
 import os
-import sre as re
+import re
 import string
 import getopt
 

@@ -5,6 +5,69 @@
 
 <h1>Books about GIMP</h1>
 
+<!-- template
+<h2>Book Title</h2>
+<p>
+  <img class="icon" src="book_title.png" 
+       alt=""
+       width="100px"
+       height="HHHpx"/>
+  <strong>Author:</strong> John Doe<br/>
+  <strong>Format:</strong> Paperback, +INFpp.<br/>
+  <strong>ISBN-10:</strong> 0-12345-678-9<br/>
+  <strong>ISBN-13:</strong> 012-3-45678-901-2<br/>
+  <strong>Publisher/Date:</strong> ACME/Checkuary 2038<br/>
+  <strong>Website:</strong> <a href="http://www.example.com/book/">www.example.com/book/</a><br/>
+  <br/>
+  <strong>Description:</strong> Description goes here.
+</p>
+-->
+
+<h2>Beginning GIMP: From Novice to Professional, Second Edition</h2>
+<p>
+  <img class="icon"
+       src="beginning_gimp_from_novice_to_professional_second_edition.png" 
+       alt=""
+       width="100px"
+       height="132px"/>
+  <strong>Author:</strong> Akkana Peck<br/>
+  <strong>Format:</strong> Paperback, 584pp.<br/>
+  <strong>ISBN-10:</strong> 1-43021-070-2<br/>
+  <strong>ISBN-13:</strong> 978-1-43021-070-2<br/>
+  <strong>Publisher/Date:</strong> Apress/December 2008<br/>
+  <strong>Website:</strong> <a href="http://gimpbook.com/">http://gimpbook.com/</a><br/>
+  <br/>
+  <strong>Description:</strong> A complete guide to image editing with
+  GIMP, beginning with basic photo manipulation procedures,
+  simple drawing and selection techniques, then proceeding to
+  more advanced concepts such as layer masks, color adjustment,
+  blending modes, stitching panoramas, image stacking,
+  and writing simple GIMP scripts and plug-ins. The second edition adds
+  more advanced tutorials and discusses some of the changes in GIMP 2.6. 
+</p>
+
+<h2>GIMP for Textile Design</h2>
+<p>
+  <img class="icon" src="gimp_for_textile_design.png" 
+       alt=""
+       width="100px"
+       height="124px"/>
+  <strong>Author:</strong> Frederick L. Chipkin<br/>
+  <strong>Format:</strong> Spiral-bound<br/>
+  <strong>ISBN-10:</strong> 0-97273-172-5<br/>
+  <strong>ISBN-13:</strong> 978-0-97273-172-0<br/>
+  <strong>Publisher/Date:</strong> Origin inc/2008<br/>
+  <strong>Website:</strong> <a href="http://members.tripod.com/origininc/GIMP/GIMP_BOOK_MAIN/GBOOK.htm">http://members.tripod.com/origininc/GIMP/GIMP_BOOK_MAIN/GBOOK.htm</a><br/>
+  <br/>
+  <strong>Description:</strong> The book GIMP for Textile Design is a 
+  collection of lessons that will take you from simple textile design
+  techniques to the more advanced design techniques needed to take on
+  the most challenging textile design projects. Everything is
+  explained in a simple uniform manner so that nothing is overwhelming
+  to the textile designer just starting out and so that the more
+  experienced textile designer can grasp key concepts more quickly.   
+</p>
+
 <h2>The Artist's Guide to GIMP Effects</h2>
 <p>
   <img class="icon" src="the_artists_guide_to_gimp_effects.png" 

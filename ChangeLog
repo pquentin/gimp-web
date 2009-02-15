@@ -1,3 +1,7 @@
+2009-02-15  Sven Neumann  <sven@gimp.org>
+
+	* downloads/source.xhtml: updated for GIMP 2.6.5 release.
+
 2009-01-14  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* programmatic/apache_ssi.py: correcting accidental commit.

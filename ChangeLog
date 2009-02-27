@@ -1,5 +1,9 @@
 2009-02-27  Jakub Steiner <jimmac@ximian.com>
 
+	* style/wgo.css: fixed px width for the menu due to the splash
+
+2009-02-27  Jakub Steiner <jimmac@ximian.com>
+
 	* about/splash/stable.html
 	*	includes/fancybox/fancy.css
 	*	includes/fancybox/fancy_closebox.png

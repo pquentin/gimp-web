@@ -528,6 +528,7 @@ div.plain-screenshots img:hover {
   max-width: 60em;
   margin: 0;
   padding: 20px;
+  position: relative;
   /* border: 1px solid blue; */
 }
 
@@ -614,18 +615,17 @@ div.bottomlinks li {
 }
 
 div.splash {
-  margin: -20px -20px 0 -20px;
+  margin: 0;
   background-color: transparent;
   height: 180px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 0; left: 0; right: 200px;
 }
 
-  /*
   .splash+h1 {
     margin-top: 180px;
-  }
-  */
+   }
 
   .splash img#splashbg, .splash>img:first-child {
     display: block;
@@ -652,17 +652,19 @@ div.splash {
   }
 
 .intropara {
-  margin: 0 -20px 2em -20px;
+  position: absolute !important;
+  top: 180px; left: 0; right: 200px;
   background-color: #444;
   padding: 8px 16px 16px 58px;
   line-height: 1.5em;
   overflow: hidden;
   font-style: italic;
   font-size: 90%;
+  margin: 0;
 }
 
 #downloadgimp {
-
+  margin-top: 20em;
 }
 
 /* some elements do not need to be printed */

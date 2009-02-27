@@ -1,3 +1,8 @@
+2009-02-27  Jakub Steiner <jimmac@ximian.com>
+
+	* style/wgo.css: avoid using negative margins on the splash.
+	Renders correctly on ff3 at last.
+
 2009-02-27  Michael Schumacher  <schumaml@cvs.gnome.org>
 
 	* fn.txt: new temporary file for freenode channel ownership

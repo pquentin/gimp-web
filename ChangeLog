@@ -1,5 +1,10 @@
 2009-02-27  Michael Schumacher  <schumaml@cvs.gnome.org>
 
+	* fn.txt: new temporary file for freenode channel ownership
+	verification. 
+
+2009-02-27  Michael Schumacher  <schumaml@cvs.gnome.org>	
+
 	* ChangeLog: adding forgotten 2009-01-15 ChangeLog entry.
 
 2009-02-15  Sven Neumann  <sven@gimp.org>

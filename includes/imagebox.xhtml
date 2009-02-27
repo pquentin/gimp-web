@@ -1,15 +1,11 @@
-<script type="text/javascript" src="/includes/iutil.js"></script>
-<script type="text/javascript" src="/includes/imagebox.js"></script>
+<link rel="stylesheet" type="text/css" href="/includes/fancybox/fancy.css" />
+<script type="text/javascript" src="/includes/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/includes/fancybox/jquery.pngFix.pack.js"></script>
 <script type="text/javascript">
+	<!--
 	//image preview
-	//<!--
 	$(document).ready(function() {
-				$.ImageBox.init(
-					{
-						loaderSRC: '/images/loading.gif',
-						closeHTML: '<img src="/images/close.png" alt="x" />'
-					}
-				);
+    $(".splashes>a, .screenshots>a").fancybox();
 	});
-	//-->
+	-->
 </script>

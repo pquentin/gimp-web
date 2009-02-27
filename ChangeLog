@@ -1,6 +1,15 @@
+2009-02-27  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* ChangeLog: adding forgotten 2009-01-15 ChangeLog entry.
+
 2009-02-15  Sven Neumann  <sven@gimp.org>
 
 	* downloads/source.xhtml: updated for GIMP 2.6.5 release.
+
+2009-01-15  Michael Schumacher  <schumaml@cvs.gnome.org>
+
+	* books/index.htrw: added "GIMP 2 for Photographers".
+	* books/gimp_2_for_photographers.png: new file.
 
 2009-01-14  Michael Schumacher  <schumaml@cvs.gnome.org>
 

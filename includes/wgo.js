@@ -58,8 +58,6 @@ $(document).ready(function() {
 	roundCorners();
 	if($.browser.msie) {
 		mangleforIE();
-  } else if ($.browser.opera) {
-    mangleforOpera();
   }
 	$(document).keypress(function (key) {
 		easterEgg(key);

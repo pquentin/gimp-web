@@ -570,6 +570,7 @@ div.bottomlinks {
 }
 
 div.bottomlinks ul {
+  display: block;
   margin: 0px;
   padding: 0px;
 }
@@ -594,6 +595,7 @@ li.mainlink {
 
 
 div.bottomlinks li {
+  display: block;
   list-style: none;
   margin: 2px;
 }

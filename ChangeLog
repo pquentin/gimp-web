@@ -1,3 +1,7 @@
+2009-03-02  Jakub Steiner <jimmac@ximian.com>
+
+	* style/wgo.css: prevent IE from drawing bullets.
+
 2009-02-28  Jakub Steiner <jimmac@ximian.com>
 
 	* style/opera.css(r):

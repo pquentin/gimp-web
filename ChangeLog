@@ -1,3 +1,7 @@
+2009-03-16  Sven Neumann  <sven@gimp.org>
+
+	* downloads/source.xhtml: updated for GIMP 2.6.6 release.
+
 2009-03-02  Jakub Steiner <jimmac@ximian.com>
 
 	* style/wgo.css: prevent IE from drawing bullets.

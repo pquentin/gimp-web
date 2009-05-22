@@ -14,31 +14,21 @@
   </p>
 
   <p>
-    The user manual for the current GIMP release is available in several
+    The user manual for the GIMP 2.6 release is available in several
     languages:
 
     <ul>
-      <li><a href="http://docs.gimp.org/en/">English</a></li>
-      <li><a href="http://docs.gimp.org/hr/">Croatian</a> (Hrvatski)</li>
-      <li><a href="http://docs.gimp.org/nl/">Dutch</a> (Nederlands)</li>
-      <li><a href="http://docs.gimp.org/fr/">French</a> (Français)</li>
-      <li><a href="http://docs.gimp.org/de/">German</a> (Deutsch)</li>
-      <li><a href="http://docs.gimp.org/it/">Italian</a> (Italiano)</li>
-      <li><a href="http://docs.gimp.org/ko/">Korean</a> (한국어)</li>
-      <li><a href="http://docs.gimp.org/no/">Norwegian</a></li>
-      <li><a href="http://docs.gimp.org/ru/">Russian</a> (Pусский)</li>
-      <li><a href="http://docs.gimp.org/es/">Spain</a> (Español)</li>
-      <li><a href="http://docs.gimp.org/sv/">Swedish</a> (Svenska)</li>
-    </ul>
-  </p>
-
-  <p>
-    Older versions of the manual for GIMP 2.2 are also available in
-    these languages:
-
-    <ul>
-      <li><a href="http://docs.gimp.org/2.2/zh_CN/">Chinese</a> (中文)</li>
-      <li><a href="http://docs.gimp.org/2.2/cs/">Czech</a> (Čeština)</li>
+      <li><a href="http://docs.gimp.org/2.6/en/">English</a></li>
+      <li><a href="http://docs.gimp.org/2.6/hr/">Croatian</a> (Hrvatski)</li>
+      <li><a href="http://docs.gimp.org/2.6/nl/">Dutch</a> (Nederlands)</li>
+      <li><a href="http://docs.gimp.org/2.6/fr/">French</a> (Français)</li>
+      <li><a href="http://docs.gimp.org/2.6/de/">German</a> (Deutsch)</li>
+      <li><a href="http://docs.gimp.org/2.6/it/">Italian</a> (Italiano)</li>
+      <li><a href="http://docs.gimp.org/2.6/ko/">Korean</a> (한국어)</li>
+      <li><a href="http://docs.gimp.org/2.6/no/">Norwegian</a></li>
+      <li><a href="http://docs.gimp.org/2.6/ru/">Russian</a> (Pусский)</li>
+      <li><a href="http://docs.gimp.org/2.6/es/">Spain</a> (Español)</li>
+      <li><a href="http://docs.gimp.org/2.6/sv/">Swedish</a> (Svenska)</li>
     </ul>
   </p>
 

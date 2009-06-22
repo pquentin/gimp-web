@@ -43,9 +43,11 @@ list.</p>
 
 <p>You can also use Bugzilla to <a
 href="home:gimp-bugzilla-wgo-ftp-submit">notify us</a> if a mirror of
-ftp.gimp.org is gone or if a new one has recently been added.  If you
-want to set up a new mirror, you may want to request rsync access from
-the ftp admin.  We can provide more details through Bugzilla.</p>
+ftp.gimp.org is gone or if a new one has recently been added. If you
+want to set up a new mirror, you may want to use one of the existing 
+rsync mirrors to update your server. Please do include the country of
+your server in the summary of the bug, and all of the urls (ftp, http,
+rsync) into the description.</p>
 
 <h2>Last resort</h2>
 

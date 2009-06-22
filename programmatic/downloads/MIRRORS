@@ -2,8 +2,6 @@
 #-------------
 
 Australia
-     ftp://ftp.planetmirror.com/pub/gimp/
-     http://ftp.planetmirror.com/pub/gimp/ (web access)
      ftp://mirrors.wamug.org.au/gimp/ (WAIX only)
      http://mirrors.wamug.org.au/gimp/ (web access, WAIX only)
 
@@ -27,18 +25,14 @@ Ireland
      ftp://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/
      http://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/ (web access)
      rsync://ftp.esat.net/mirrors/ftp.gimp.org/pub (rsync access)
-     ftp://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/gimp/
-     http://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/gimp/ (web access)
-     rsync://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/gimp/ (rsync access)
+     ftp://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/
+     http://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/ (web access)
+     rsync://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/ (rsync access)
 
 Japan
-     ftp://SunSITE.sut.ac.jp/pub/archives/packages/gimp/
      ftp://ftp.u-aizu.ac.jp/pub/graphics/tools/gimp/
      ftp://ftp.ring.gr.jp/pub/graphics/gimp/
      http://www.ring.gr.jp/pub/graphics/gimp/ (web access)
-
-Korea
-     ftp://ftp.kreonet.re.kr/pub/tools/X11/ftp.gimp.org/
 
 Netherlands
      ftp://ftp.snt.utwente.nl/pub/software/gimp/gimp/
@@ -50,18 +44,13 @@ Norway
 Poland
      ftp://ftp.tuniv.szczecin.pl/pub/Linux/gimp/
      ftp://sunsite.icm.edu.pl/pub/graphics/gimp/
-     ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.gimp.org
-     http://piotrkosoft.net/pub/mirrors/ftp.gimp.org (web access)
-     rsync://piotrkosoft.net/mirrors/ftp.gimp.org (rsync access)
 
 Romania
-     ftp://ftp.kappa.ro/pub/mirrors/ftp.gimp.org/
      ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.gimp.org/
      http://ftp.iasi.roedu.net/mirrors/ftp.gimp.org/ (web access)
 
 Russia
      ftp://ftp.sai.msu.su/pub/unix/graphics/gimp/mirror/
-     http://gimp.tsuren.net/mirror/gimp/ (web access)
      http://mirror.prvtgeo.com/gimp/ (web access)
      rsync://mirror.prvtgeo.com/gimp/ (rsync access)
 
@@ -78,7 +67,6 @@ Sweden
      http://ftp.sunet.se/pub/gnu/gimp/ (web access)
 
 United Kingdom
-     ftp://ftp.flirble.org/pub/X/gimp/gimp/
      ftp://ftp.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/
      http://www.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/ (web access)
      rsync://rsync.mirrorservice.org/ftp.gimp.org/pub/gimp/ (rsync access)

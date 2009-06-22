@@ -62,6 +62,8 @@ Romania
 Russia
      ftp://ftp.sai.msu.su/pub/unix/graphics/gimp/mirror/
      http://gimp.tsuren.net/mirror/gimp/ (web access)
+     http://mirror.prvtgeo.com/gimp/ (web access)
+     rsync://mirror.prvtgeo.com/gimp/ (rsync access)
 
 South Africa
      ftp://ftp.is.co.za/mirror/ftp.gimp.org/gimp/
@@ -82,8 +84,8 @@ United Kingdom
      rsync://rsync.mirrorservice.org/ftp.gimp.org/pub/gimp/ (rsync access)
 
 United States
-     ftp://ftp.cs.umn.edu/pub/gimp/
      http://gimp.mirrors.hoobly.com/gimp/ (web access)
-     http://mirror.umoss.org/gimp/ (web access)
+     http://mirror.umoss.org/gimp/gimp/ (web access)
      rsync://mirror.umoss.org/gimp/ (rsync access)
+     http://mirrors.zerg.biz/gimp/ (web access)
 

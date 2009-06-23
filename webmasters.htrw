@@ -49,6 +49,9 @@ rsync mirrors to update your server. Please do include the country of
 your server in the summary of the bug, and all of the urls (ftp, http,
 rsync) into the description.</p>
 
+<p>The size of the data as seen on <a href="ftp://ftp.gimp.org/pub/">ftp://ftp.gimp.org/pub/</a> is currently around 4.1 GiB, with gimp and gtk subdirectories amounting to about 3.4 GiB.<br/>
+New releases do get uploaded some time before the announcement is made, so snycing every few days should do.</p>
+
 <h2>Last resort</h2>
 
 <p>If you really want to send us some mail, then you can send it to

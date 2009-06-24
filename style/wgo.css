@@ -470,6 +470,7 @@ div.plain-screenshots img:hover {
   left: 0px;
   margin: 0 0 1em 20px;
   background-color: #0e2426;
+  position:relative;
   z-index: 1;
 }
 

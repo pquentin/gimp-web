@@ -5,13 +5,13 @@
 </p>
 <p>
   <a href="http://edhel.gimp.org/devnews.html">GIMP Development News</a><br />
-  What happens in GIMP development, updated regularily.
+  What happens in GIMP development (on hiatus).
 </p>
 <p>
   <a href="http://www.gegl.org/">GEGL</a><br />
   An image processing library based on GObjects.
 </p>
 <p>
-  <a href="http://svn.gnome.org/">GNOME Subversion Services</a><br />
-  GNOME Subversion source code repository
+  <a href="http://git.gnome.org/">GNOME GIT</a><br />
+  GNOME GIT source code repository
 </p>

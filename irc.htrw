@@ -56,12 +56,12 @@ and GNOME</a> are also on GIMPNet.</p>
 GNOME.  However, several channels also exist on other IRC networks:</p>
 
 <dl>
-  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp">#gimp</a></dt>
+  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/gimp">#gimp</a></dt>
   <dd>It is recommended that users migrate from that channel to <a
   href="irc://irc.gimp.org/gimp-users">#gimp-users</a> on GIMPNet, described
   above.</dd>
 
-  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/#gimp-fr">#gimp-fr</a></dt>
+  <dt>irc://irc.freenode.net/<a href="irc://irc.freenode.net/gimp-fr">#gimp-fr</a></dt>
   <dd>It is recommended that users migrate from that channel to <a
   href="irc://irc.gimp.org/gimp-fr">#gimp-fr</a> on GIMPNet, described
   above.</dd>

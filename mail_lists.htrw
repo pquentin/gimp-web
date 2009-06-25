@@ -12,11 +12,11 @@ development of GIMP, then we have several useful mailing lists and <a
 href="/irc.html">IRC channels</a> for you.</p>
 
 <dl>
-  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-user">GIMP User</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-user/">GIMP User</a></dt>
   <dd>The original (mostly unix based) user list. For the everyday user.
   Here you will find tips for doing cool effects, user questions, etc.<br />
   Archives:
-  <a href="http://lists.xcf.berkeley.edu/lists/gimp-user">XCF</a>,
+  <a href="http://lists.xcf.berkeley.edu/lists/gimp-user/">XCF</a>,
   <a href="http://www.mail-archive.com/gimp-user%40lists.xcf.berkeley.edu/">mail-archive</a>,
   <a href="http://marc.theaimsgroup.com/?l=gimp-user&amp;r=1&amp;w=2">AIMS</a>,
   <a href="http://www.spinics.net/lists/gimp/">spinics</a>,
@@ -24,11 +24,11 @@ href="/irc.html">IRC channels</a> for you.</p>
   <a href="http://archives.free.net.ph/list/gimp-user.en.html">free.net.ph</a>,
   <a href="http://www.nabble.com/Gimp-User-f84.html">nabble</a></dd>
 
-  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-announce">GIMP Announce</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-announce/">GIMP Announce</a></dt>
   <dd>Learn of the new releases of the source code (tarballs) without all of
   the help and development. This is a very low-traffic list.<br />
   Archives:
-  <a href="http://lists.xcf.berkeley.edu/lists/gimp-announce">XCF</a>,
+  <a href="http://lists.xcf.berkeley.edu/lists/gimp-announce/">XCF</a>,
   <a href="http://marc.theaimsgroup.com/?l=gimp-announce&amp;r=1&amp;w=2">AIMS (broken)</a>,
   <a href="http://news.gmane.org/gmane.comp.video.gimp.announce/">Gmane</a>,
   <a href="http://archives.free.net.ph/list/gimp-announce.en.html">free.net.ph</a></dd>
@@ -40,7 +40,7 @@ href="/irc.html">IRC channels</a> for you.</p>
   <a href="http://news.gmane.org/gmane.comp.video.gimp.windows.user/">Gmane</a>,
   <a href="http://www.nabble.com/Gimpwin-Users-f86.html">nabble</a></dd>
 
-  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-developer">GIMP Developer</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gimp-developer/">GIMP Developer</a></dt>
   <dd>The GIMP developer list. For plug-in developers and core program
   developers; discussion about the source code.<br />
   Archives:
@@ -51,7 +51,7 @@ href="/irc.html">IRC channels</a> for you.</p>
   <a href="http://archives.free.net.ph/list/gimp-developer.en.html">free.net.ph</a>,
   <a href="http://www.nabble.com/Gimp-Developer-f85.html">nabble</a></dd>
 
-  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gegl-developer">GEGL Developer</a></dt>
+  <dt><a href="http://lists.xcf.berkeley.edu/mailman/listinfo/gegl-developer/">GEGL Developer</a></dt>
   <dd>The GEGL developer list. For developers interested in
   contributing to <a href="http://www.gegl.org/">GEGL</a>, the new
   architecture for image processing.<br />

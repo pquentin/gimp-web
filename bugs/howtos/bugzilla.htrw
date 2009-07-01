@@ -50,12 +50,12 @@
   <li>
     <p>
        Use <kbd>gimp --version</kbd> or the about dialog to check your
-       GIMP version. Next check
-       with <a href="home:gimp">www.gimp.org</a> to see what the most
+       GIMP version. Next check 
+       with <a href="home:gimp">www.gimp.org</a> to see what the most 
        recent GIMP release is. If your GIMP is old, update then try to
        to reproduce the bug. Your bug may have been fixed in the most
-       recent release. If you are running GIMP from CVS, update your
-       CVS and recompile.
+       recent release. If you are running GIMP from GIT, update and
+       and recompile.
     </p>
 
   </li>
@@ -151,13 +151,11 @@
      <li>
         <p>
            Select your &quot;operating
-           system&quot;. <a href="wgo:windows">WinGIMP</a> and
-           <a href="wgo:unix">GNU/Linux GIMP</a> bugs are not always
-           identical. It would be annoying to get a GNU/Linux GIMP
-           developer trying to reproduce a WinGIMP-specific bug. Under
-           &quot;OS Details&quot; (OS, operating system), provide
-           specifics about the version of your operating system. For
-           GNU/Linux, provide the distro and version. It is also
+           system&quot;. Bugs on <a href="wgo:windows">Microsoft Windows</a>,
+           <a href="wgo:unix">GNU/Linux GIMP</a> or 
+	   <a href="wgo:macintosh">OS X</a> are not always identical. 
+           It would be annoying to get a GNU/Linux GIMP developer
+           trying to reproduce a OS X-specific bug. It is also
            useful to list the desktop or window manager you are using.
            Sometimes a problem is caused by an interaction between the
            two. It won't always be relevant, but it is good to get

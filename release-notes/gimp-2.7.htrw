@@ -1,0 +1,196 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Release Notes for the 2.7 development snapshots</title>
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP 2.7 Release Notes</h1>
+<p>
+This is an unstable development version of the <b>GNU Image
+Manipulation Program</b>. Please realize that this is just a snapshot
+of the development tree. We are working hard towards GIMP 2.8, the next
+stable release. GIMP 2.7 is in no way a final product. A lot of new
+features are incomplete and some things may even be completely broken.
+If you need to get work done, please use the stable version, GIMP 2.6.
+</p>
+
+<h2>What's New in GIMP 2.7</h2>
+
+<h3>GEGL</h3>
+
+<p>
+  The projection code, the code that composes a single image from
+  layers, have been ported to GEGL. This includes the layer
+  modes. Refactorings to prepare for adding support for nested layers
+  aka layer groups has also been performed.
+</p>
+
+
+<h3>UI changes</h3>
+
+<p>
+  The layer modes have been rearranged into more logical and useful
+  groups based on the effect they have on compositing of a layer.
+</p>
+
+<p>
+  The Vector Layers branch from Google Summer of Code 2006 has been
+  started to get merge, but the UI for it is still unmerged.
+</p>
+
+<p>
+  The On-Canvas Text Editing branch from Google Summer of Code 2008
+  has been merged, there should just be some minor polishing left.
+</p>
+
+<p>
+  The Tagging of Gimp Resources branch from Google Summer of Code 2008
+  has been merged. It is now possible to tag resources such as brushes
+  and patterns and filter display of resources based on these tags.
+</p>
+
+<p>
+  Painting strokes are now interpolated based on Catmull-Rom Splines
+  so that sharp edges when painting no longer is a big issue.
+</p>
+
+<p>
+  Gimp now supports rotating brushes and has had additional
+  enhancements to the brush dynamics engine, for example allowing to
+  base dynamics on tilt and dynamically change the aspect ratio of
+  brushes.
+</p>
+
+<p>
+  A rather big conceptual change is that saving and exporting images
+  are clearly separated activities. The base parts of the <a
+  href="http://gui.gimp.org/index.php/Save_%2B_export_specification">Save+export
+  UI spec</a> has been implemented. Some things, in particular a
+  cleaning up current mess with various export dialogs, have not yet
+  been addressed but that is planned to happen soon.
+</p>
+
+<p>
+
+  Since the keyboard shortcuts Ctrl+E and Ctrl+Shift+E has been taken
+  over by the image export mechanisms, new keyboard shortcuts have
+  been setup for "Shrink Wrap" and "Fit in Window", namely Ctrl+R and
+  Ctrl+Shift+R respectively.
+</p>
+
+<p>
+  Enhancements have also been made to the size entry widget, the
+  widgets that are used for most of the x, y, width, height input. For
+  example, in the scale dialog it is now possible to write "50%" in
+  the Width field to scale the image to 50% of the width. Expressions
+  such as "30in + 40px" and "4 * 5.4in" works too.
+</p>
+
+<h3>Plug-ins</h3>
+
+<p>
+  A plug-in for loading JPEG2000 images have been added, and also a
+  plug-in for X11 Mouse Cursor files.
+</p>
+
+
+<h3>General</h3>
+
+<p>
+  GIMP is now (L)GPLv3+.
+</p>
+
+
+<h3>What's Left To Do</h3>
+
+<p>
+  This is an incomplete list of things we want to do before releasing GIMP 2.8:
+
+  <ul>
+    <li>Finish merging the vector layer branch</li>
+    <li>Merge the GSoC 2009 projects for brush dynamics and improved SIOX.</li>
+    <li>Polish new features</li>
+  </ul>
+</p>
+
+<h2>Download</h2>
+<p>
+  The development snapshots of GIMP can be downloaded as source code
+  from ftp.gimp.org or from one of the mirrors listed in
+  the <a href="wgo:downloads-mirrors">Downloads</a> section.
+</p>
+<p>
+  Distribution of binary packages of the development version is
+  discouraged unless it is made clear that this is an early development
+  snapshot. Users should be referred to these release notes or similar
+  information.
+</p>
+
+<h2>Installation</h2>
+<p>
+GIMP 2.7 must <strong>not</strong> be installed in the same prefix as
+other GIMP 2.x versions. If you want to keep your GIMP 2.4
+installation in parallel to GIMP 2.7, you have to choose a separate
+installation prefix at compile-time and ensure that you use different
+library search paths for each version. If you do not set up your
+environment differently for each version, you will experience
+conflicts with the libraries and at least one version is likely to
+fail.
+</p>
+
+<p>
+You install the new version into a separate prefix, say /opt/gimp-2.7
+by passing <kbd>--prefix=/opt/gimp-2.7</kbd> to the configure
+script. Then, in order to run the binary installed there, you change
+your environment to look for executables in /opt/gimp-2.7/bin by
+setting <kbd>PATH=/opt/gimp-2.7/bin</kbd> and you tell your linker to
+pick up libraries from /opt/gimp-2.7/lib by setting
+<kbd>LD_LIBRARY_PATH=/opt/gimp-2.7/lib</kbd>.  Do not forget to
+<kbd>export</kbd> both variables.
+</p>
+
+<p>
+You can use a tiny wrapper script called gimp-2.7 and place it into
+/usr/local/bin or elsewhere in your PATH. The script would look
+something like this:
+</p>
+
+<pre class="code">
+#!/bin/sh
+
+PATH=/opt/gimp-2.7/bin:$PATH
+export PATH
+LD_LIBRARY_PATH=/opt/gimp-2.7/lib
+export LD_LIBRARY_PATH
+
+/opt/gimp-2.7/bin/gimp-2.7 "$@"
+</pre>
+
+<h2>Bugs</h2>
+<p>
+If you think you found a bug in a development version, please make
+sure that it hasn't been already reported.
+Search <a href="home:gimp-bugzilla">Bugzilla</a> before filing a new
+bug-report. Here are some interesting Bugzilla queries:
+<ul>
+  <li>
+    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.8&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">Open bugs with milestone 2.8</a>
+  </li>
+  <li>
+    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.8&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED">Resolved bugs with milestone 2.8</a>
+  </li>
+</ul>
+</p>
+
+<h2>Contributing</h2>
+<p>
+We need your help to make GIMP 2.8 a success. There's still a lot to
+do.  If you want to join us hacking, show up in #gimp or introduce
+yourself on the gimp-developer mailing-list. We are also looking for
+people to look after the web-site and update the tutorials. Or you
+might want to join the
+<a href="http://docs.gimp.org/">documentation team</a>.
+</p>
+
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

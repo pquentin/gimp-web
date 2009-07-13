@@ -15,62 +15,48 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <h2>What's New in GIMP 2.7</h2>
 
-<h3>GEGL</h3>
-
 <p>
-  The projection code, the code that composes a single image from
-  layers, have been ported to GEGL. This includes the layer
-  modes. Refactorings to prepare for adding support for nested layers
-  aka layer groups has also been performed.
+  For a complete, summarized list of changes, refer to
+  the <a href="http://git.gnome.org/cgit/gimp/tree/NEWS">NEWS</a>
+  file.
 </p>
 
-
-<h3>UI changes</h3>
-
-<p>
-  The layer modes have been rearranged into more logical and useful
-  groups based on the effect they have on compositing of a layer.
-</p>
+<h3>UI Changes and Improvements</h3>
 
 <p>
-  The Vector Layers branch from Google Summer of Code 2006 has been
-  started to get merge, but the UI for it is still unmerged.
+  Text editing with the Text Tool is now performed on-canvas instead
+  of in a separate window. The editing on-canvas is rather
+  sophisticated and tries to mimic text editing capabilities of
+  gedit. There are still some polishing left to do here, but it works
+  rather nice already. This features was developed during GSoC 2008.
 </p>
 
 <p>
-  The On-Canvas Text Editing branch from Google Summer of Code 2008
-  has been merged, there should just be some minor polishing left.
-</p>
-
-<p>
-  The Tagging of Gimp Resources branch from Google Summer of Code 2008
-  has been merged. It is now possible to tag resources such as brushes
-  and patterns and filter display of resources based on these tags.
-</p>
-
-<p>
-  Painting strokes are now interpolated based on Catmull-Rom Splines
-  so that sharp edges when painting no longer is a big issue.
-</p>
-
-<p>
-  Gimp now supports rotating brushes and has had additional
-  enhancements to the brush dynamics engine, for example allowing to
-  base dynamics on tilt and dynamically change the aspect ratio of
-  brushes.
+  It is now possible to tag GIMP resources such as brushes and
+  patterns. The tagging is performed from the respective dockables
+  e.g. the Brushes dockable, and it is possible to filter resources
+  based on these tags. The tags are saved to an XML file, external to
+  the data files themselves. This feature finally enables grouping of
+  resources and the plan is to add a bigger set of default resources
+  for GIMP 2.8. There are still work that needs to be done here, for
+  example providing a set of default brushes. This feature was
+  developed during GSoC 2008.
 </p>
 
 <p>
   A rather big conceptual change is that saving and exporting images
-  are clearly separated activities. The base parts of the <a
-  href="http://gui.gimp.org/index.php/Save_%2B_export_specification">Save+export
-  UI spec</a> has been implemented. Some things, in particular a
-  cleaning up current mess with various export dialogs, have not yet
-  been addressed but that is planned to happen soon.
+  are clearly separated activities. Saving an image can only be done
+  in the XCF format, to export into other formats File->Export... needs
+  to be used. There are some optimizations for alternative workflows
+  such as opening a jpg, polishing it, and quickly exporting back to
+  the original file. Things still needs to be done, such as cleaning
+  up the current mess with having to deal with multiple dialogs in
+  order to export to some formats. The complete UI spec for this can
+  be found
+  <a href="http://gui.gimp.org/index.php/Save_%2B_export_specification">here</a>.
 </p>
 
 <p>
-
   Since the keyboard shortcuts Ctrl+E and Ctrl+Shift+E has been taken
   over by the image export mechanisms, new keyboard shortcuts have
   been setup for "Shrink Wrap" and "Fit in Window", namely Ctrl+R and
@@ -85,6 +71,21 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   such as "30in + 40px" and "4 * 5.4in" works too.
 </p>
 
+<p>
+  The layer modes have been rearranged into more logical and useful
+  groups based on the effect they have on compositing of a
+  layer. Layer modes that makes the composite lighter are in one
+  group, layer modes that makes the composite darker in another group,
+  and so on.
+</p>
+
+<p>
+  Gimp now supports rotating brushes and has had additional
+  enhancements to the brush dynamics engine, for example allowing to
+  base dynamics on tilt and dynamically change the aspect ratio of
+  brushes.
+</p>
+
 <h3>Plug-ins</h3>
 
 <p>
@@ -93,10 +94,14 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 
-<h3>General</h3>
+<h3>GEGL</h3>
 
 <p>
-  GIMP is now (L)GPLv3+.
+  The projection code, the code that composes a single image from
+  layers, have been ported to GEGL. This includes the layer
+  modes. Refactorings to prepare for adding support for nested layers
+  aka layer groups has also been performed, such as preparations for
+  better and more intuitive handling of the floating selection.
 </p>
 
 
@@ -106,8 +111,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   This is an incomplete list of things we want to do before releasing GIMP 2.8:
 
   <ul>
-    <li>Finish merging the vector layer branch</li>
+    <li>Finish merging of the GSoC 2006 vector layer stuff</li>
     <li>Merge the GSoC 2009 projects for brush dynamics and improved SIOX.</li>
+    <li>Add a better set of defaul resoures such as brushes</li>
+    <li>Provide default tags for the default resources</li>
     <li>Polish new features</li>
   </ul>
 </p>
@@ -184,7 +191,7 @@ bug-report. Here are some interesting Bugzilla queries:
 <h2>Contributing</h2>
 <p>
 We need your help to make GIMP 2.8 a success. There's still a lot to
-do.  If you want to join us hacking, show up in #gimp or introduce
+do. If you want to join us hacking, show up in #gimp or introduce
 yourself on the gimp-developer mailing-list. We are also looking for
 people to look after the web-site and update the tutorials. Or you
 might want to join the

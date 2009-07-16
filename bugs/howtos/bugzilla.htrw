@@ -141,11 +141,9 @@
            bugs are annoying but don't really keep you from using the
            program. Cosmetic bugs are things like spelling errors or
            UI (User Interface, &quot;the look and feel&quot;)
-           issues. If you are requesting a new feature, choose
-           &quot;enhancement&quot;. Don't worry if you choose the
-           wrong severity. The people getting your bug report will
-           adjust it. Don't mark it higher than it really is just to
-           get their attention.
+           issues. Don't worry if you choose the wrong severity. 
+           The people getting your bug report will adjust it. Don't 
+           mark it higher than it really is just to get their attention.
         </p>
      </li>
      <li>

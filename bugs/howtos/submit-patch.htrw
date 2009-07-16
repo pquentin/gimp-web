@@ -21,23 +21,26 @@
   apply the patch.
 </p>
 <p>
-  Clone the git repository which is
-  <pre>
-git clone git://git.gnome.org/gimp
-</pre>
+  Clone the git repository which is<br/><br/>
+
+  <kbd>git clone git://git.gnome.org/gimp</kbd><br/><br/>
+
   Create commits that fixes the problem. For small problems it will
   only be a single commit. Be sure to provide your name and email in
-  the commits. Refer to git guides on the net on how to work with git.
+  the commits - you can <a href="http://live.gnome.org/Git/Developers#head-2ad4a3239be27d5312d1be06debb39d4550baaf8">set
+  up your git repository</a> to do this for you. Please make sure to 
+  provide useful commit messages; you may refer to
+  <a href="http://live.gnome.org/Git/CommitMessages">GNOME's guidelines</a>.
 </p>
 <p>
-  Now that you have commits that fixes the problem, create patches by doing
-  <pre>
-git format-patch origin/master
-</pre>
-  This will give you patch files in the form of git commits with names like
-  <pre>
-0001-plug-ins-Use-string-literal-as-format-in-metadata-p.patch
-</pre>
+  Now that you have commits that fixes the problem, create patches by doing<br/><br/>
+
+  <kbd>git format-patch origin/master</kbd><br/><br/>
+
+  This will give you patch files in the form of git commits with names like<br/><br/>
+
+  <kbd>0001-plug-ins-Use-string-literal-as-format-in-metadata-p.patch</kbd><br/><br/>
+
   We prefer to have the patches attached to bug reports in Bugzilla (see
   below) but it is also fine to send them to the mailing list if they
   are reasonably small.
@@ -51,8 +54,12 @@ git format-patch origin/master
   To generate the patch you will need two copies of the source code: one that is unmodified and one containing
   your changes to the source. Start by downloading the source code of the latest release, extract it and make a copy
   of the entire source directory. After you have made your changes to one of the source directories and made sure it
-  compiles and works as expected, you can create the patch file using the command
-  <kbd>diff -rup /path/to/unmodified/source /path/to/modified/source &gt; /path/to/patchfile.patch</kbd>. To summarize the steps:
+  compiles and works as expected, you can create the patch file using the command:<br/><br/>
+
+  <kbd>diff -rup /path/to/unmodified/source /path/to/modified/source &gt; patchfile.patch</kbd></p>
+
+<p>
+  To summarize the steps:
 </p>
 <ul>
   <li>Download the source code of the latest release</li>
@@ -61,7 +68,8 @@ git format-patch origin/master
   <li>Apply your changes to the copy of the source code</li>
   <li>Re-compile and make sure it works as expected</li>
   <li>Do a <kbd>make clean</kbd> to remove files generated during build</li>
-  <li>Generate the patch file using <kbd>diff -rup /path/to/unmodified/source /path/to/modified/source &gt; /path/to/patchfile.patch</kbd></li>
+  <li>Generate the patch file using<br/><br/>
+      <kbd>diff -rup /path/to/unmodified/source /path/to/modified/source &gt; patchfile.patch</kbd></li>
   <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
   <li>Submit the patch using Bugzilla, see below</li>
 </ul>
@@ -130,8 +138,8 @@ git format-patch origin/master
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
     <div>
       <span id="footerleft">
-        How To &copy; 2002-2003 <a href="mail:People-Mattisson_Niklas">Niklas Mattisson</a> and
-        <a href="mail:People-Andersen_Henrik_Brix">Henrik Brix Andersen</a>
+        How To &copy; 2002-200) <a href="mail:People-Mattisson_Niklas">Niklas Mattisson</a> and
+        <a href="mail:People-Andersen_Henrik_Brix">Henrik Brix Andersen</a> and Martin Nordholts and Michael Schumacher
       </span>
       <span id="footerright">
         <a href="mailto:webmaster@gimp.org">webmaster@gimp.org</a>

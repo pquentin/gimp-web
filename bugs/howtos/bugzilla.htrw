@@ -79,7 +79,7 @@
        reproduce it in your bug report. If you are running GIMP in
        another language, try switching your GIMP to English so you can
        report menu items exactly with the English menu item name. It
-       helps. (Developers generally understand English) If you cannot
+       helps (Developers generally understand English). If you cannot
        reproduce the bug, assume it was some weird freak event and
        don't report it. If it recurs, consult with your
        appropriate <a href="wgo:mail_lists">user mailing

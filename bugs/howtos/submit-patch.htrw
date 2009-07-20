@@ -68,7 +68,7 @@
   <li>Apply your changes to the copy of the source code</li>
   <li>Re-compile and make sure it works as expected</li>
   <li>Do a <kbd>make clean</kbd> to remove files generated during build</li>
-  <li>Generate the patch file using<br/><br/>
+  <li>Generate the patch file using<br/>
       <kbd>diff -rup /path/to/unmodified/source /path/to/modified/source &gt; patchfile.patch</kbd></li>
   <li>Examine the resulting .patch file to make sure it contains only the intended changes</li>
   <li>Submit the patch using Bugzilla, see below</li>

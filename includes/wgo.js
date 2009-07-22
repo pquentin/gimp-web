@@ -33,9 +33,10 @@ function renderDownload(platform) {
 	$("#moreos").html("<a href=\"javascript:renderDownload('all');\">Show other downloads</a>");
     }
     else if (platform == "all") {
-	$("#os").load("Linux.xhtml");
-	$("#os").load("Mac.xhtml");
-	$("#os").load("Windows.xhtml");
+	$("#os").html("<div id=\"oslinux\"></div>\n<div id=\"osmac\"></div>\n<div id=\"oswindows\"></div>\n");
+	$("#oslinux").load("Linux.xhtml");
+	$("#osmac").load("Mac.xhtml");
+	$("#oswindows").load("Windows.xhtml");
     }
     else
     {

@@ -10,18 +10,18 @@
   <mailing-list rdf:resource="http://lists.xcf.berkeley.edu/lists/gimp-web/" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#infrastructure" />
 
-  <doap:maintainer>
+  <maintainer>
     <foaf:Person>
       <foaf:name>Martin Nordholts</foaf:name>
       <gnome:userid>martinn</gnome:userid>
     </foaf:Person>
-  </doap:maintainer>
+  </maintainer>
 
-  <doap:maintainer>
+  <maintainer>
     <foaf:Person>
       <foaf:name>Michael Schumacher</foaf:name>
       <gnome:userid>schumaml</gnome:userid>
     </foaf:Person>
-  </doap:maintainer>
+  </maintainer>
 
 </Project>

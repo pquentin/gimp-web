@@ -33,9 +33,9 @@ interpreter.</p>
 <p>Despite the desire to keep the impact of this change to GIMP
 internals to a minimum, there are some differences between the
 SIOD-based interpreter and the TinyScheme-based Script-fu which may
-crop up when trying to use older scripts with GIMP 2.4. What follows
-is a description of some of the problems which may be encountered and
-what steps need to be taken to correct them.</p>
+crop up when trying to use older scripts with GIMP 2.4 and more recent
+releases. What follows is a description of some of the problems which 
+may be encountered and what steps need to be taken to correct them.</p>
 
 <ul>
 <li><a href="#unbound">Setting an undeclared variable</a> (<tt>Error: set!: unbound variable: x</tt>)</li>
@@ -167,6 +167,8 @@ errors) and the <code>bytes-append</code> function (which does not
 seem to appear in any published Script-fu). If you encounter scripts
 containing such problems, please post on the GIMP developers mailing
 list outlining your problems.</p>
+
+<p>More information about the Scheme syntax of Script-Fu can be found in the <i>Revised<sup>5</sup> Report on the Algorithmic Language Scheme</i>, also know as <a  href="http://schemers.org/Documents/Standards/R5RS/HTML/">R5RS</a>. Tinyscheme does not support all features of R5RS, but if a precedure is available, it is supposed to behave like documented.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

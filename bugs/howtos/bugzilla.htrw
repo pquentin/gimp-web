@@ -77,14 +77,13 @@
        To narrow down the exact cause of the problem, attempt to
        reproduce it in other ways. Prepare yourself to explain how to
        reproduce it in your bug report. If you are running GIMP in
-       another language, try switching your GIMP to English so you can
-       report menu items exactly with the English menu item name. It
-       helps (Developers generally understand English). If you cannot
-       reproduce the bug, assume it was some weird freak event and
-       don't report it. If it recurs, consult with your
-       appropriate <a href="wgo:mail_lists">user mailing
-       list</a>. Perhaps someone else can find the key to reproducing
-       it.
+       another language, try <a href="http://docs.gimp.org/en/gimp-fire-up.html#gimp-concepts-running-language">switching
+       your GIMP to English</a> so you can report menu items exactly with 
+       the English menu item name. It helps - developers generally understand
+       English). If you cannot reproduce the bug, assume it was some weird 
+       freak event and don't report it. If it recurs, consult with your
+       appropriate <a href="wgo:mail_lists">user mailing list</a>. 
+       Perhaps someone else can find the key to reproducing it.
     </p>
   </li>
   <li>

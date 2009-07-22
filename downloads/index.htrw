@@ -6,6 +6,8 @@ $(document).ready(function() {
 	renderDownload();
 });
 </script>
+<noscript>
+</noscript>
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">
@@ -17,6 +19,11 @@ src="downloadsplash.jpg" />
 <h1>Downloads</h1>
 
 <div id="downloads">
+	<noscript>
+		<!--#include virtual="/downloads/Linux.xhtml"   -->
+		<!--#include virtual="/downloads/Mac.xhtml"     -->
+		<!--#include virtual="/downloads/Windows.xhtml" -->
+	</noscript>
 		<!--#include virtual="/downloads/source.xhtml" -->
 </div>
 

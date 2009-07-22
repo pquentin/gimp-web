@@ -19,6 +19,9 @@ France
      http://gimp.krecio.pl/gimp/ (web access)
 
 Germany
+     ftp://ftp.fernuni-hagen.de/pub/mirrors/www.gimp.org/
+     http://ftp.fernuni-hagen.de/ftp-dir/pub/mirrors/www.gimp.org/ (web access) 
+     rsync://ftp.fernuni-hagen.de/gimp (rsync access)
      ftp://ftp.gwdg.de/pub/misc/grafik/gimp/
      http://ftp.gwdg.de/pub/misc/grafik/gimp/ (web access)
      rsync://ftp.gwdg.de/pub/misc/grafik/gimp/ (rsync access)

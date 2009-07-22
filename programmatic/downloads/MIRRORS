@@ -32,6 +32,9 @@ Ireland
      http://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/ (web access)
      rsync://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/ (rsync access)
 
+Italy
+     http://www.photo-university.com/download/ (web access)
+
 Japan
      ftp://ftp.u-aizu.ac.jp/pub/graphics/tools/gimp/
      ftp://ftp.ring.gr.jp/pub/graphics/gimp/
@@ -78,6 +81,8 @@ United Kingdom
      rsync://rsync.mirrorservice.org/ftp.gimp.org/pub/gimp/ (rsync access)
 
 United States
+     ftp://gimp.g5selfstorage.com/gimp/
+     http://gimp.g5selfstorage.com/ (web access)
      http://gimp.mirrors.hoobly.com/gimp/ (web access)
      http://gimp.promotionalpromos.com/ (web access)
      http://mirror.umoss.org/gimp/gimp/ (web access)

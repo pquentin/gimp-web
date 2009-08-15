@@ -16,7 +16,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h2>What's New in GIMP 2.7</h2>
 
 <p>
-  For a complete, summarized list of changes, refer to
+  These release notes are very sketchy. More complete release notes
+  will be written when GIMP 2.8 is released. For a complete,
+  summarized list of changes, refer to
   the <a href="http://git.gnome.org/cgit/gimp/tree/NEWS">NEWS</a>
   file.
 </p>
@@ -86,6 +88,13 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   brushes.
 </p>
 
+<h3>Data</h3>
+
+<p>
+  We have started to overhaul the default set of resources and in this
+  version there have been some changes to the default set of brushes.
+</p
+
 <h3>Plug-ins</h3>
 
 <p>
@@ -113,7 +122,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   <ul>
     <li>Finish merging of the GSoC 2006 vector layer stuff</li>
     <li>Merge the GSoC 2009 projects for brush dynamics and improved SIOX.</li>
-    <li>Add a better set of defaul resoures such as brushes</li>
+    <li>Add a better set of default resoures</li>
     <li>Provide default tags for the default resources</li>
     <li>Polish new features</li>
   </ul>

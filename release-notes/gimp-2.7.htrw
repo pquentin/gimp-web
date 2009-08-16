@@ -48,13 +48,13 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   A rather big conceptual change is that saving and exporting images
   are clearly separated activities. Saving an image can only be done
-  in the XCF format, to export into other formats File->Export... needs
-  to be used. There are some optimizations for alternative workflows
-  such as opening a jpg, polishing it, and quickly exporting back to
-  the original file. Things still needs to be done, such as cleaning
-  up the current mess with having to deal with multiple dialogs in
-  order to export to some formats. The complete UI spec for this can
-  be found
+  in the XCF format, to export into other formats 'File->Export...'
+  needs to be used. There are some optimizations for alternative
+  workflows such as opening a jpg, polishing it, and quickly exporting
+  back to the original file. This conceptual change has also allowed
+  us to get rid of the annoying dialogs that warned about the flatting
+  of images when saving to non-layered formats. The complete UI spec
+  for this can be found
   <a href="http://gui.gimp.org/index.php/Save_%2B_export_specification">here</a>.
 </p>
 

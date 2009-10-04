@@ -55,11 +55,13 @@ Norway
      ftp://sunsite.uio.no/pub/gimp/
 
 Poland
-     ftp://ftp.tuniv.szczecin.pl/pub/Linux/gimp/
-     ftp://sunsite.icm.edu.pl/pub/graphics/gimp/
      ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.gimp.org
      http://piotrkosoft.net/pub/mirrors/ftp.gimp.org (web access)
      rsync://piotrkosoft.net/mirrors/ftp.gimp.org (rsync access)
+     ftp://sunsite.icm.edu.pl/pub/graphics/gimp/
+     ftp://ftp.tpnet.pl/d10/graphics/gimp/
+     rsync://ftp.tpnet.pl/gimp/ (rsync access)
+     ftp://ftp.tuniv.szczecin.pl/pub/Linux/gimp/
 
 Romania
      ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.gimp.org/
@@ -90,6 +92,7 @@ United Kingdom
 United States
      ftp://gimp.g5selfstorage.com/gimp/
      http://gimp.g5selfstorage.com/ (web access)
+     http://gimp.goldcoastinformation.com.au/ (web access)
      http://gimp.mirrors.hoobly.com/gimp/ (web access)
      http://gimp.promotionalpromos.com/ (web access)
      http://gimp.sixsigmaonline.org/ (web access)

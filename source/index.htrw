@@ -16,7 +16,7 @@
 <ul>
   <li><a href="#source">GIMP Source Code</a></li>
   <li><a href="#requirements">GIMP Requirements</a></li>
-  <li><a href="#gimp_from_cvs">GIMP from Subversion</a></li>
+  <li><a href="#gimp_from_git">GIMP from Git</a></li>
   <li><a href="#optional_packages">Optional packages</a></li>
 </ul>
 
@@ -41,7 +41,7 @@
   discussions about new features and known bugs.
 </p>
 
-<h2>Subversion repository</h2>
+<h2>Git repository</h2>
 <p>
   This is for those who want to live on the bleeding edge. 
   This will give you the latest version of the source code with 
@@ -51,11 +51,11 @@
   a maintenance branch.
 
   If you intend to <a href="wgo:develop">contribute</a> to the
-  development of GIMP, then you should try using Subversion. As
+  development of GIMP, then you should try using Git. As
   the code is constantly evolving and features are added (or removed)
   every day, you should have a look at
   the <a href="wgo:dev">developers' site</a> and subscribe to the
-  gimp-developer mailing list if you compile the code from SVN.
+  gimp-developer mailing list if you compile the code from Git.
 </p>
 
 <h1><a name="source">GIMP Source Code</a></h1>
@@ -121,15 +121,15 @@
 <td>Font Configuration</td>
 </tr>
 
-<h1><a name="gimp_from_cvs">GIMP from Subversion</a></h1>
+<h1><a name="gimp_from_git">GIMP from Git</a></h1>
 <p>
   At some point in the source code was migrated from CVS to
-  Subversion. Due to this change, the following HOWTOs are somewhat
-  outdated. We are looking for volunteers to update them.
+  Subversion and then to Git. Due to this change, the following HOWTOs
+  are somewhat outdated. We are looking for volunteers to update them.
 </p>
 <ul>
-  <li><a href="wgo:source-howtos-stable_cvs_get">Get The Stable GIMP from CVS</a></li>
-  <li><a href="wgo:source-howtos-stable_cvs_build">Build The Stable GIMP from CVS</a></li>
+  <li><a href="wgo:source-howtos-stable_cvs_get">Get Stable GIMP from CVS</a></li>
+  <li><a href="wgo:source-howtos-stable_cvs_build">Build Stable GIMP from CVS</a></li>
 </ul>
 <p>
   See the platform-specific pages for additional requirements and 

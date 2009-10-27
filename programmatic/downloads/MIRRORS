@@ -12,8 +12,9 @@ Belarus
      http://gimp.promotionalpro.com/ (web access)
 
 Canada
-     http://gimp.parentinginformed.com (web access)
+     http://gimp.parentinginformed.com/ (web access)
      http://gimp.raffsoftware.com/ (web access)
+     http://gimp.skazkaforyou.com/ (web access)
 
 Finland
      ftp://ftp.funet.fi/pub/sci/graphics/packages/gimp/
@@ -23,10 +24,10 @@ France
      http://gimp.krecio.pl/gimp/ (web access)
 
 Germany
-     http://gimp.cybermirror.org (web access)
+     http://gimp.cybermirror.org/ (web access)
      ftp://ftp.fernuni-hagen.de/pub/mirrors/www.gimp.org/
      http://ftp.fernuni-hagen.de/ftp-dir/pub/mirrors/www.gimp.org/ (web access)
-     rsync://ftp.fernuni-hagen.de/gimp (rsync access)
+     rsync://ftp.fernuni-hagen.de/gimp/ (rsync access)
      ftp://ftp.gwdg.de/pub/misc/grafik/gimp/
      http://ftp.gwdg.de/pub/misc/grafik/gimp/ (web access)
      rsync://ftp.gwdg.de/pub/misc/grafik/gimp/ (rsync access)
@@ -56,9 +57,9 @@ Norway
      ftp://sunsite.uio.no/pub/gimp/
 
 Poland
-     ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.gimp.org
-     http://piotrkosoft.net/pub/mirrors/ftp.gimp.org (web access)
-     rsync://piotrkosoft.net/mirrors/ftp.gimp.org (rsync access)
+     ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.gimp.org/
+     http://piotrkosoft.net/pub/mirrors/ftp.gimp.org/ (web access)
+     rsync://piotrkosoft.net/mirrors/ftp.gimp.org/ (rsync access)
      ftp://sunsite.icm.edu.pl/pub/graphics/gimp/
      ftp://ftp.tpnet.pl/d10/graphics/gimp/
      rsync://ftp.tpnet.pl/gimp/ (rsync access)

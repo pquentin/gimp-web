@@ -28,9 +28,10 @@ packages (these are not needed for normal users):</p>
 
 <ul>
   <li>
-    <a href="http://www.gimp.org/~tml/gimp/win32/downloads.html">Individual
-    .zip packages for GTK+, GLib and other libraries</a> - for
-    developers and advanced users (provided by Tor Lillqvist).
+    <a href="ftp://ftp.gnome.org/pub/gnome/binaries/win32/">Individual
+    .zip packages for GTK+, GLib and other libraries</a>, 
+     - for developers and advanced users. If you follow these links, 
+    you should know what you want, why you need it and how to use it.
   </li>
 </ul>
 

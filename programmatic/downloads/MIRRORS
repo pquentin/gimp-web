@@ -65,6 +65,11 @@ Poland
      rsync://ftp.tpnet.pl/gimp/ (rsync access)
      ftp://ftp.tuniv.szczecin.pl/pub/Linux/gimp/
 
+Portugal
+     ftp://mirrors.fe.up.pt/mirrors/ftp.gimp.org/
+     http://mirrors.fe.up.pt/mirrors/ftp.gimp.org/ (web access)
+     rsync://mirrors.fe.up.pt/mirrors/ftp.gimp.org/ (rsync access)
+
 Romania
      ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.gimp.org/
      http://ftp.iasi.roedu.net/mirrors/ftp.gimp.org/ (web access)

@@ -4,8 +4,8 @@
   The main GIMP development website.
 </p>
 <p>
-  <a href="http://edhel.gimp.org/devnews.html">GIMP Development News</a><br />
-  What happens in GIMP development (on hiatus).
+  <a href="http://www.chromecode.com/">Martin Nordholts' GIMP Blog</a><br />
+  What happens in GIMP development.
 </p>
 <p>
   <a href="http://www.gegl.org/">GEGL</a><br />

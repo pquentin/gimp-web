@@ -26,11 +26,31 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>UI Changes and Improvements</h3>
 
 <p>
+  There have been some significant changes to the UI. The docking bars
+  have been removed and replaced with overlayed highlights. The
+  dockble drag handle has been removed and the dockable menu button
+  has been moved up to the tabs. A new Automatic tab style has been
+  added which makes dockable tabs use the available space. It has been
+  made possible to have many columns of docks in a single dock
+  window. To make dock window titles managable, only show the active
+  dockable in the dock window title. A single-window mode has been
+  added (still in the works, in particular, it is not possible to
+  start up in single-window mode yet).
+</p>
+
+<p>
+  Support for layer groups have been added. They allow you to organize
+  your image into small parts. Still some things missing, like
+  allowing to apply layer masks to groups, and a PDB API.
+</p>
+
+<p>
   Text editing with the Text Tool is now performed on-canvas instead
   of in a separate window. The editing on-canvas is rather
   sophisticated and tries to mimic text editing capabilities of
   gedit. There are still some polishing left to do here, but it works
-  rather nice already. This features was developed during GSoC 2008.
+  rather nice already. This feature was developed during Google Summer
+  of Code 2008.
 </p>
 
 <p>
@@ -40,9 +60,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   based on these tags. The tags are saved to an XML file, external to
   the data files themselves. This feature finally enables grouping of
   resources and the plan is to add a bigger set of default resources
-  for GIMP 2.8. There are still work that needs to be done here, for
-  example providing a set of default brushes. This feature was
-  developed during GSoC 2008.
+  for GIMP 2.8. It is possible to tag multiple resources
+  simultaneously in the UI. There are still work that needs to be done
+  here, for example providing a set of default brushes. This feature
+  was developed during Google Summer of Code 2008.
 </p>
 
 <p>
@@ -85,8 +106,38 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Gimp now supports rotating brushes and has had additional
   enhancements to the brush dynamics engine, for example allowing to
   base dynamics on tilt and dynamically change the aspect ratio of
-  brushes.
+  brushes. The Google Summer of Code 2009 Advanced GUI for Brush
+  Dynamics code has also been merged, enabling such things as brush
+  dynamics presets.
 </p>
+
+<p>
+  A question that often arises is how to change the UI language in
+  GIMP, which has traditionally been a bit cumbersome. Not any longer,
+  it is now possible to change language in Preferences.
+</p>
+
+
+<h3>Minor Changes</h3>
+<ul>
+  <li>
+    Add "lock content" button to the layers, channels and paths
+    dialogs, make the lock buttons more compact.
+  </li>
+  <li>
+    In the Preferences, only have one setting for the window hint for
+    both the toolbox and the docks.
+  </li>
+  <li>
+    Default to non-fixed-aspect in Canvas Size dialog.
+  </li>
+  <li>
+    Improve Free Select Tool on-canvas feedback.
+  </li>
+  <li>
+    Make it possible to use GEGL for Image Scale.
+  </li>
+</ul>
 
 <h3>Data</h3>
 
@@ -99,7 +150,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <p>
   A plug-in for loading JPEG2000 images have been added, and also a
-  plug-in for X11 Mouse Cursor files.
+  plug-in for X11 Mouse Cursor files. Also add fundamental OpenRaster
+  (.ora) import and export support. Add RGB565 support to the csource
+  plug-in.
 </p>
 
 
@@ -120,8 +173,8 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   This is an incomplete list of things we want to do before releasing GIMP 2.8:
 
   <ul>
-    <li>Finish merging of the GSoC 2006 vector layer stuff</li>
-    <li>Merge the GSoC 2009 projects for brush dynamics and improved SIOX.</li>
+    <li>Finish single-window mode implementation</li>
+    <li>Add layer group PDB API</li>
     <li>Add a better set of default resoures</li>
     <li>Provide default tags for the default resources</li>
     <li>Polish new features</li>

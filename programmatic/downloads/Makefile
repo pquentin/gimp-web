@@ -12,4 +12,4 @@ clean:
 
 install: mirrors.xhtml
 	-mkdir `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/downloads
-	install -m 755 mirrors.xhtml `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/downloads/mirrors.xhtml
+	install -m 644 mirrors.xhtml `${PYTHON} -c 'import wgo_config; print wgo_config.DocumentRoot_path'`/downloads/mirrors.xhtml

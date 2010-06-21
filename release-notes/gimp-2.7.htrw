@@ -103,7 +103,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
-  Gimp now supports rotating brushes and has had additional
+  GIMP now supports rotating brushes and has had additional
   enhancements to the brush dynamics engine, for example allowing to
   base dynamics on tilt and dynamically change the aspect ratio of
   brushes. The Google Summer of Code 2009 Advanced GUI for Brush

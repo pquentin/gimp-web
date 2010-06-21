@@ -313,7 +313,7 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 <h2>GIMP 2.6 Screenshots</h2>
 <div class="plain-screenshots">
   <a href="../screenshots/gnome-1280x800-fresh-start.jpg">
-    <img src="../screenshots/gnome-1280x800-fresh-start-thumb.jpg" alt="First GIMP&nbsp;2.6 startup" />
+    <img src="../screenshots/gnome-1280x800-fresh-start-thumb.jpg" alt="First GIMP 2.6 startup" />
   </a>
   <p>First startup of GIMP&nbsp;2.6 on a 1280x800 GNOME desktop.</p>
 

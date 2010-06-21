@@ -312,27 +312,27 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 
 <h2>GIMP 2.6 Screenshots</h2>
 <div class="plain-screenshots">
-  <a href="../screenshots/gnome-1280x800-fresh-start.jpg" />
+  <a href="../screenshots/gnome-1280x800-fresh-start.jpg">
     <img src="../screenshots/gnome-1280x800-fresh-start-thumb.jpg" alt="First GIMP&nbsp;2.6 startup" />
   </a>
   <p>First startup of GIMP&nbsp;2.6 on a 1280x800 GNOME desktop.</p>
 
-  <a href="../screenshots/alternative-2-6-ui-layout-example-one.jpg" />
+  <a href="../screenshots/alternative-2-6-ui-layout-example-one.jpg">
     <img src="../screenshots/alternative-2-6-ui-layout-example-one-thumb.jpg" alt="Alternative UI example" />
   </a>
   <p>UI layout example: Tool Options moved out of the toolbox.</p>
 
-  <a href="../screenshots/alternative-2-6-ui-layout-example-two.jpg" />
+  <a href="../screenshots/alternative-2-6-ui-layout-example-two.jpg">
     <img src="../screenshots/alternative-2-6-ui-layout-example-two-thumb.jpg" alt="Another alternative UI example" />
   </a>
   <p>UI layout example: Using the image window as a background window.</p>
 
-  <a href="../screenshots/2.6-brush-dynamics-example.jpg" />
+  <a href="../screenshots/2.6-brush-dynamics-example.jpg">
     <img src="../screenshots/2.6-brush-dynamics-example-thumb.jpg" alt="Brush Dynamics at use" />
   </a>
   <p>Demonstrating the kind of effects the new Brush Dynamics can create.</p>
 
-  <a href="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg" />
+  <a href="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg">
     <img src="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6-thumb.jpg" alt="On-canvas Gaussian Blur" />
   </a>
   <p>Full screenshot of on-canvas preview of Gaussian Blur using the experimental GEGL Operation tool.</p>

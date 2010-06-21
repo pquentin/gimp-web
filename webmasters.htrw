@@ -45,22 +45,27 @@ list.</p>
 href="home:gimp-bugzilla-wgo-ftp-submit">notify us</a> if a mirror of
 ftp.gimp.org is gone or if a new one has recently been added. If you
 want to set up a new mirror, you may want to use one of the existing 
-rsync mirrors to update your server. Please do include the country of
-your server in the summary of the bug, and all of the urls (ftp, http,
-rsync) into the description.</p>
+rsync mirrors to update your server. Please include the country of
+your server in the summary of the bug.</p>
+
+<p>Some hints on the server setup:</p>
+
+<ul>
+  <li>Please try to offer HTTP, FTP and rsync access</li>
+  <li>Check that all README files are present</li>
+  <li>Check that README, MIRRORS and *.md5 are sent as text/plain</li>
+</ul>
 
 <p>The size of the data as seen on <a
 href="ftp://ftp.gimp.org/pub/">ftp://ftp.gimp.org/pub/</a> is
 currently around 4.1 GiB, with gimp and gtk subdirectories amounting
-to about 3.4 GiB. New releases do get uploaded some time before the
-announcement is made, so syncing every few days should do.</p> 
+to about 3.4 GiB. New releases are uploaded some time before the
+announcement is made, so syncing every few days should be sufficient.</p>
 
 <h2>Last resort</h2>
 
-<p>If you really want to send us some mail, then you can send it to
-webmasters<!--nospam-->@<!--nospam-->gimp.<!--nospam-->org.  We'll try
-and help you out as much as possible, but this e-mail alias is not
-read frequently (not even once per month).</p>
+<p>If you want to contact us by e-mail, then post to the
+<a href="/mail_lists.html">gimp-developer mailing list</a>.</p> 
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

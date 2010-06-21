@@ -197,7 +197,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h2>Installation</h2>
 <p>
 GIMP 2.7 must <strong>not</strong> be installed in the same prefix as
-other GIMP 2.x versions. If you want to keep your GIMP 2.4
+other GIMP 2.x versions. If you want to keep your GIMP 2.6
 installation in parallel to GIMP 2.7, you have to choose a separate
 installation prefix at compile-time and ensure that you use different
 library search paths for each version. If you do not set up your

@@ -110,6 +110,14 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
+  It has been made possible to Alt+Click on a layer to create a
+  selection from it. Add, subtract and intersect modifiers Ctrl, Shift
+  and Ctrl+Shift keys works too. This makes it easy to compose
+  contents of a layer based on the contents of other layers, without
+  detours.
+</p>
+
+<p>
   GIMP now supports rotating brushes and has had additional
   enhancements to the brush dynamics engine, for example allowing to
   base dynamics on tilt and dynamically change the aspect ratio of

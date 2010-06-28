@@ -48,9 +48,16 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Text editing with the Text Tool is now performed on-canvas instead
   of in a separate window. The editing on-canvas is rather
   sophisticated and tries to mimic text editing capabilities of
-  gedit. There are still some polishing left to do here, but it works
-  rather nice already. This feature was developed during Google Summer
-  of Code 2008.
+  GtkTextView. There are still some polishing left to do here, but it
+  works rather nice already. This feature was developed during Google
+  Summer of Code 2008.
+</p>
+
+<p>
+  An infrastructure has been added that allows to embed user interface
+  elements on the canvas. This is currently used for text styles in the
+  text tool, and (experimentally) when a color correction tool is invoked
+  while the canvas is in full-screen mode.
 </p>
 
 <p>
@@ -160,10 +167,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <p>
   The projection code, the code that composes a single image from
-  layers, have been ported to GEGL. This includes the layer
-  modes. Refactorings to prepare for adding support for nested layers
-  aka layer groups has also been performed, such as preparations for
-  better and more intuitive handling of the floating selection.
+  layers, have been ported to GEGL. This includes the layer modes, as
+  well as support for nested layers aka layer groups. Also,
+  preparations have been made for better and more intuitive handling
+  of the floating selection.
 </p>
 
 
@@ -204,6 +211,14 @@ library search paths for each version. If you do not set up your
 environment differently for each version, you will experience
 conflicts with the libraries and at least one version is likely to
 fail.
+</p>
+
+<p>
+Also, do <strong>not</strong> install GIMP 2.7 to /usr/local because
+on most systems, its libraries would override the libraries of a stable
+GIMP 2.6 installed into /usr, breaking your distribution-installed
+GIMP from slightly to completely. The same applies to any prefix
+your system uses for the purpose or overriding things in /usr/lib.
 </p>
 
 <p>

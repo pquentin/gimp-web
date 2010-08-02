@@ -54,15 +54,12 @@
 { "wgo:unix-manpage-stable_gimprc"       : "/unix/man-gimprc.1.html"}
 { "wgo:unix-manpage-stable_gimptool"     : "/unix/man-gimptool-1.2.html"}
 
-{ "tutorial:GIMPLite_Quickies-Carol_Spears"  : "http://carol.gimp.org/mygimp/tutorials/"}
 { "tutorial:Straight_Line-Seth_Burgess"   : "http://www.gimp.org/~sjburges/straightline/straightline.html"}
 { "tutorial:Borders_On_Selections-Francisco_Bustamante_Hempe"  : "http://bitbit.org/cms.php/gimp/tutorials/stroke_selection.html"}
 { "tutorial:Anti-Aliased_Threshold-Ville_Pätsi"  : "http://drc.gimp.org/"}
 { "tutorial:Bezier_Selections-Tuomas_Kuosmanen"  : "http://tigert.gimp.org/gimp/tutorials/bezier/"}
 { "tutorial:Quickmask-Zach_Beane"   : "http://www.xach.com/gimp/tutorials/quickmask/"}
-{ "tutorial:Red_Eye_Removal-Carol_Spears"  : "http://carol.gimp.org/other/sloth/diary/redeye.html"}
 { "tutorial:Drawing_Shapes_with_Bezier_Tool-Tuomas_Kuosmanen"  : "http://tigert.gimp.org/gimp/tutorials/bezier_shapes/"}
-{ "tutorial:Film_Grain-Eric_Kidd"  : "http://carol.gimp.org/gimp/tutorials/film-grain/"}
 { "tutorial:Changing_Background1-Seth_Burgess"  : "http://www.gimp.org/~sjburges/color_to_alpha/demo/color2alpha.html"}
 { "tutorial:Changing_Background2-Francisco_Bustamante_Hempe"  : "http://bitbit.org/cms.php/gimp/tutorials/remove_one_color.html"}
 { "tutorial:Coloring_A_BW_Sketch-Marco_LM_Lamberto"  : "http://the.sunnyspot.org/slm/tut_skcol.html"}

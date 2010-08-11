@@ -397,7 +397,7 @@ walking because his legs could be animated independantly of his body,
 for example. Similarly, complex images can be broken down to layers
 within GIMP and each layer can be processed independentlly of every
 other. See the <a
-href="http://docs.gimp.org/en/gimp-concepts-layers.html">Layers</a>
+href="http://docs.gimp.org/en/gimp-image-combining.html#gimp-concepts-layers">Layers</a>
 section in the manual for more information.</p>
 
 <h3 id="Sub">How do I save a selected sub-image to a file?</h3>

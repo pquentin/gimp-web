@@ -634,11 +634,12 @@ easier to program once GEGL has been integrated into GIMP.</p>
 <h3 id="16bit">When can we see 16-bit per channel support (or
 better)?</h3>
 
-<p>For some industries, especially photography, 24-bit colour depths (8
-bits per channel) are a real barrier to entry. Once again, it's GEGL to
-the rescue. Work on integrating GEGL into GIMP will begin after 2.4 is
-released. Once that work is completed, GIMP will support 16 bits per
-channel. If you need such support now and can't wait, <a
+<p>For some industries, especially photography, 24-bit colour depths
+(8 bits per channel) are a real barrier to entry. Once again, it's
+GEGL to the rescue. Work on integrating GEGL into GIMP began after 2.4
+was released, and will span across several stable releases. This work
+will be completed in GIMP 3.0, which will have full support for high
+bit depths. If you need such support now and can't wait, <a
 href="http://www.cinepaint.org/">cinepaint</a> and <a
 href="http://www.koffice.org/krita/">krita</a> support 16 bits per
 channel now.</p>

@@ -68,6 +68,7 @@
   <ol>
     <li><a href="#LayerGroups">When can we see layer groups?</a></li>
     <li><a href="#16bit">When can we see 16-bit per channel support (or better)?</a></li>
+    <li><a href="#cmyk">When can we see native CMYK support?</a></li>
     <li><a href="#MDI">When will an MDI/nested windows be implemented?</a></li>
     <li><a href="#Requests">How should I make feature requests?</a></li>
   </ol>
@@ -625,11 +626,7 @@ For all other operating systems check the manual of the os.</p>
 
 <h3 id="LayerGroups">When can we see layer groups?</h3>
 
-<p>Sometimes it is nice to place layers in groups. It makes them easier
-to organise when you have lots of them. It also means you can easily
-apply the same effect to lots of layers, without directly affecting
-those layers. Long story short, it makes life easier. This will be much
-easier to program once GEGL has been integrated into GIMP.</p>
+<p>GIMP 2.8 will have layer groups.</p>
 
 <h3 id="16bit">When can we see 16-bit per channel support (or
 better)?</h3>
@@ -647,19 +644,20 @@ channel now.</p>
 <p>It should be noted that for publishing to the web, the current GIMP
 release is good enough.</p>
 
+<h3 id="cmyk">When can we see native CMYK support?</h3>
+
+<p>It is clear from the <a
+href="http://gui.gimp.org/index.php/GIMP_UI_Redesign#product_vision">product
+vision</a> that GIMP eventually needs to support CMYK, but it is
+impossible to say when someone finds the free time and motivation to
+add it. In the meantime it is possible to work with CMYK to some
+extent using plug-ins, such as the <a
+href="http://registry.gimp.org/node/471">Separate+</a> plug-in.</p>
+
 <h3 id="MDI">When will an MDI/nested windows be implemented?</h3>
 
-<p>This is often requested by MS Windows users who lack some of the
-window management features common in other operating systems. An MDI
-interface is largely considered a step backwards by interface designers.
-The core GIMP developers share this sentiment, so don't expect them to
-implement the feature any time soon. However, there are no objections to
-the feature itself. So far only the <a
-href="http://registry.gimp.org/plugin?id=3892">Deweirifyer plugin</a>
-attempts any sort of a fix. It seems to be good enough for some, but not
-for others. If you are interested in implementing MDI support <a
-href="http://bugzilla.gnome.org/show_bug.cgi?id=7379">bug 7379</a> is
-the place to start.</p>
+<p>GIMP will not get an MDI, but GIMP 2.8 will feature a single-window
+mode.</p>
 
 <h3 id="Requests">How should I make feature requests?</h3>
 

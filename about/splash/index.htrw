@@ -20,6 +20,7 @@ src="splashsplash.png" width="640" height="200" />
 
 <ul class="splashes">
   <li><a href="stable.html">Stable GIMP Splash Screens</a></li>
+  <li><a href="unstable-2.7.html">GIMP 2.7 Development Splash Screens</a></li>
   <li><a href="unstable-2.5.html">GIMP 2.5 Development Splash Screens</a></li>
   <li><a href="unstable-2.3.html">GIMP 2.3 Development Splash Screens</a></li>
   <li><a href="unstable-2.1.html">GIMP 2.1 Development Splash Screens</a></li>

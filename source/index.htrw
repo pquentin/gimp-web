@@ -123,18 +123,15 @@
 
 <h1><a name="gimp_from_git">GIMP from Git</a></h1>
 <p>
-  At some point in the source code was migrated from CVS to
-  Subversion and then to Git. Due to this change, the following HOWTOs
-  are somewhat outdated. We are looking for volunteers to update them.
+  The source code of GIMP is maintained in the GNOME Git
+  repository. Besides offering version tracking, branching, avanced
+  diff support and else, this repository grants everyone access to the 
+  latest revision of the GIMP source code.<br/>
+  Follow this guide and you will have the most recent GIMP in no time:
 </p>
 <ul>
-  <li><a href="wgo:source-howtos-stable_cvs_get">Get Stable GIMP from CVS</a></li>
-  <li><a href="wgo:source-howtos-stable_cvs_build">Build Stable GIMP from CVS</a></li>
+  <li><a href="wgo:source-howtos-gimp-git">Best way to keep up with GIMP from git</a></li>
 </ul>
-<p>
-  See the platform-specific pages for additional requirements and 
-  instructions for each operating system.
-</p>
 <p>
   To find out more about GIMP development,
   <a href="wgo:dev">http://developer.gimp.org/</a> should answer the

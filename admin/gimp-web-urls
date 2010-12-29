@@ -197,8 +197,7 @@
 ["href", "wgo:webmasters",                     { "href": "/webmasters.html"}]
 
 ["href", "wgo:source",                         { "href": "/source/"}]
-["href", "wgo:source-howtos-stable_cvs_build", { "href": "/source/howtos/stable-cvs-build.html"}]
-["href", "wgo:source-howtos-stable_cvs_get",   { "href": "/source/howtos/stable-cvs-get.html"}]
+["href", "wgo:source-howtos-gimp-git",         { "href": "/source/howtos/gimp-git-build.html"}]
 
 ["href", "wgo:unix",                           { "href": "/unix/"}]
 ["href", "wgo:unix-fonts",                     { "href": "/unix/fonts.html"}]

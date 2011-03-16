@@ -57,10 +57,22 @@
 
 <h2>Wire Transfer</h2>
 <p>
-  Send an email to <a
-  href="mailto:fundraising@gnome.org">fundraising@gnome.org</a>,
-  requesting bank details, and specifying that you are donating to the
-  GIMP.
+  Transfer the money to:
+</p>
+
+<p>
+  Account Name: GNOME Foundation<br />
+  Bank Name: Citizens Bank<br />
+  Bank Address: 1 Citizens Dr., Riverside, RI  02915<br />
+  ABA: 011500120<br />
+  Account: 1310181397<br />
+  SWIFT: CTZIUS33<br />
+</p>
+
+<p>
+  And send an e-mail to fundraising@gnome.org with the transfer date and
+  amounts, for tracking purposes. If available, please add a "For GIMP"
+  note to your transfer.
 </p>
 
 <h3>Paypal</h3>

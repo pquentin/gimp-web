@@ -6,14 +6,12 @@ $(document).ready(function() {
 	renderDownload();
 });
 </script>
-<noscript>
-</noscript>
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">
 <img alt="#" id="splashbg"
 src="downloadsplash.jpg" />
-<img id="fadesplash" src="/images/fade.png" />
+<img alt="#" id="fadesplash" src="/images/fade.png" />
 </div>
 
 <h1>Downloads</h1>

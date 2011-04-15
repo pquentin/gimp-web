@@ -28,11 +28,11 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   There have been some significant changes to the UI. The docking bars
   have been removed and replaced with overlayed highlights. The
-  dockble drag handle has been removed and the dockable menu button
+  dockable drag handle has been removed and the dockable menu button
   has been moved up to the tabs. A new Automatic tab style has been
   added which makes dockable tabs use the available space. It has been
   made possible to have many columns of docks in a single dock
-  window. To make dock window titles managable, only show the active
+  window. To make dock window titles manageable, only show the active
   dockable in the dock window title. A single-window mode has been
   added (still in the works, in particular, it is not possible to
   start up in single-window mode yet).
@@ -45,12 +45,31 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
+  All tools rendering on canvas has been ported to Cairo to provide 
+  smooth antialiased graphics and make GIMP's look and feel match 
+  modern users expectations. All but a few plug-ins have been ported over 
+  to Cairo as well. Additionally all tools now use an on-canvas progress
+  indicator instead of the one in the statusbar.
+</p>
+
+<p>
   Text editing with the Text Tool is now performed on-canvas instead
   of in a separate window. The editing on-canvas is rather
-  sophisticated and tries to mimic text editing capabilities of
-  GtkTextView. There are still some polishing left to do here, but it
-  works rather nice already. This feature was developed during Google
-  Summer of Code 2008.
+  sophisticated: apart from the usual text formatting features like
+  font family, style and size selectors you get numeric control over
+  baseline offset and kerning, as well as ability to change text color
+  for a selection. You can also use a combination of Alt and arrow
+  keys to change baseline offset and kerning. This feature was
+  originally developed during Google Summer of Code 2008 and heavily
+  improved since.
+</p>
+
+<p>
+  A completely new Cage transform tool has been added thanks to excellent 
+  work of one of our Google Summer of Code 2010 students. The tool 
+  implements an innovative approach to free transformation and makes it 
+  possible to easily warp parts of objects using an adjustable user-defined 
+  polygonal frame.
 </p>
 
 <p>
@@ -71,6 +90,32 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   simultaneously in the UI. There are still work that needs to be done
   here, for example providing a set of default brushes. This feature
   was developed during Google Summer of Code 2008.
+</p>
+
+<p>
+  You can now save existing state of any tool as a preset and give it 
+  a meaningful name. The presets are accessible from a new Tool Presets 
+  dockable dialog and additionally can be tagged so that you could easily 
+  manage a lot of presets. This new feature completely replaces the previously
+  existing tool presets system to a new level of accessibility. A script
+  for converting old tool presets to new ones will be provided with the
+  next development release.
+</p>
+
+<p>
+  A new experimental widget was added to meet requirements of graphic 
+  tablets users. The widget combines a slider, a label and a numeric 
+  value control which both simplifies adjusting value using a stylus, 
+  better visualizes the current value and provides more compact UI. 
+  It is now used in the Tools Options dockable dialog for opacity control 
+  and most options of brush based tools.
+</p>
+
+<p>
+  Another useful feature for users of advanced input devices such as 
+  graphic tablets is a completely new dialog for input device configuration
+  that allows to configure per-device pressure curves to compensate
+  for hardware differences and personal per-pen preferences.
 </p>
 
 <p>
@@ -170,6 +215,16 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   plug-in.
 </p>
 
+<p>
+  A Cairo based PDF exporter was implemented. While being somewhat simplistic 
+  the exporter saves text, embedding fonts into final PDF file, and attempts 
+  to convert all flat filled aread to vector objects.
+</p>
+
+<p>
+  Last, but not least a Web-page plug-in was added to render any
+  web page into an image using Webkit.
+</p>
 
 <h3>GEGL</h3>
 
@@ -189,8 +244,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
   <ul>
     <li>Finish single-window mode implementation</li>
-    <li>Add layer group PDB API</li>
-    <li>Add a better set of default resoures</li>
+    <li>Add a better set of default resources</li>
     <li>Provide default tags for the default resources</li>
     <li>Polish new features</li>
   </ul>

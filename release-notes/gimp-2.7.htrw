@@ -41,7 +41,8 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   Support for layer groups have been added. They allow you to organize
   your image into small parts. Still some things missing, like
-  allowing to apply layer masks to groups, and a PDB API.
+  allowing to apply layer masks to groups. Layer groups are fully
+  accessible from plug-ins via the PDB.
 </p>
 
 <p>
@@ -197,6 +198,16 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   <li>
     Make it possible to use GEGL for Image Scale.
   </li>
+  <li>
+    Add a new compact number entry widget for tool options that
+    combines a scale with numeric input in one control.
+  </li>
+  <li>
+    Allow to rename list items with F2.
+  </li>
+  <li>
+    Allow to bind arbitrary actions to extra mouse buttons.
+  </li>
 </ul>
 
 <h3>Data</h3>
@@ -204,6 +215,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   We have started to overhaul the default set of resources and in this
   version there have been some changes to the default set of brushes.
+  The silly "Untitled" has been removed from unnamed palette entries.
 </p>
 
 <h3>Plug-ins</h3>

@@ -23,6 +23,27 @@
 </p>
 -->
 
+<h2>GIMP</h2>
+<p>
+  <img class="icon"
+       src="gimp_olivier_karine.jpg" 
+       alt=""
+       width="100px"
+       height="123px"/>
+  <strong>Author:</strong> Olivier Lecarme, Karine Delvare<br/>
+  <strong>Format:</strong> Hardcover, 732pp.<br/>
+  <strong>ISBN-10:</strong> 2-74402305-1<br/>
+  <strong>ISBN-13:</strong> 978-2-74402305-7<br/>
+  <strong>Publisher/Date:</strong> Pearson Education/April 2011<br/>
+  <strong>Website:</strong> <a href="http://www.pearson.fr/livre/?GCOI=27440100358850">http://www.pearson.fr/livre/?GCOI=27440100358850</a><br/>
+  <br/>
+
+  <strong>Description:</strong> A complete user manual and a reference 
+  to GIMP features that explains basics of digital imaging, retouching 
+  photos, creating animations, preparing pictures for publishing on the 
+  Web etc.
+</p>
+
 <h2>GIMP 2.6 Cookbook</h2>
 <p>
   <img class="icon"
@@ -39,7 +60,7 @@
   <br/>
 
   <strong>Description:</strong> This book is packed with answers to
-  get you preparing great images with the GMP immediately. Even if you
+  get you preparing great images with the GIMP immediately. Even if you
   are a relative novice to this powerhouse application, the
   straightforward instructions will guide you through the tasks to
   unleash your true creativity without being hindered by the system.
@@ -108,7 +129,7 @@
   design tool, the GNU Image Manipulation Program.  Tutorials cover
   the gamut of design topics, from Web design and Photographic
   techniques to Advertising and Interface design.  The Artist's Guide
-  To GIMP Effects is the followup text to the first book ever
+  To GIMP Effects is the follow-up text to the first book ever
   published on GIMP, The Artist's Guide to the GIMP.
 </p>
 
@@ -130,7 +151,7 @@
   and workshops on image editing with the GIMP. It covers the basics
   of image editing and guides the reader through the functions and
   tools of the GIMP from simple adjustments to more advanced
-  techniques of  working with layers and masks. The more important
+  techniques of working with layers and masks. The more important
   editing functions are presented in individual workshops. Moreover,
   the book covers the stitching of panoramic images and preparation of
   high-quality black and white images.  
@@ -281,7 +302,7 @@ retouching.
   steps and an abundance of color images walk the reader through
   real-world examples of color correction, image enhancement, collage,
   photo montage, rendering, and web-graphics creation. The entire book
-  is available online at the above mentioned website.
+  is available on-line at the above mentioned website.
 </p>
 
 <h2>Guerilla Guide to Great Graphics with The GIMP</h2>
@@ -334,8 +355,8 @@ retouching.
   plug-ins. Beats the competition by teaching the program from cover
   to cover. Other books gloss over key features and focus on learning
   the program quickly, or are theoretical and provide no practical
-  information on the product.The entire book is available online at
-  the above mentioned website.
+  information on the product.The entire book is available on-line at
+  the aforementioned website.
 </p>
 
 <h2>GIMP Essential Reference</h2>

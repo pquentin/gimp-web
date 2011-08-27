@@ -13,46 +13,69 @@ features are incomplete and some things may even be completely broken.
 If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
-<h2>What's New in GIMP 2.7</h2>
+<h2>Introduction</h2>
 
 <p>
-  These release notes are very sketchy. More complete release notes
-  will be written when GIMP 2.8 is released. For a complete,
-  summarized list of changes, refer to
-  the <a href="http://git.gnome.org/cgit/gimp/tree/NEWS">NEWS</a>
-  file.
+  GIMP&nbsp;2.7 is the result of three years of hard work and
+  collaborative development. This version of GIMP is equiped with a
+  wealth of new features, including some highly requsted ones. Keep
+  reading to find out exactly what GIMP&nbsp;2.7 has to offer you in
+  areas such as the user interface, tools, and plug-ins.
 </p>
 
-<h3>UI Changes and Improvements</h3>
 
+<h2>User Interface</h2>
+
+<h3>Single-Window Mode</h3>
+<img class="right" src="images/2.8-single-window-mode.png" alt="Single-window mode screenshot" />
 <p>
-  There have been some significant changes to the UI. The docking bars
-  have been removed and replaced with overlayed highlights. The
-  dockable drag handle has been removed and the dockable menu button
-  has been moved up to the tabs. A new Automatic tab style has been
-  added which makes dockable tabs use the available space. It has been
-  made possible to have many columns of docks in a single dock
-  window. To make dock window titles manageable, only show the active
-  dockable in the dock window title. A single-window mode has been
-  added (still in the works, in particular, it is not possible to
-  start up in single-window mode yet).
+  GIMP&nbsp;2.7 introduces an optional single-window mode. You can
+  toggle between the default multi-window mode and the new
+  single-window mode through the <i>Single-window mode</i> checkbox in
+  the <i>Windows</i> menu. In single-window mode, GIMP will put
+  dockable dialogs and images in a single, tabbed image window. The
+  single-window mode setting is of course preserved if you quit and
+  start GIMP again. Single-window mode liberates the user from the
+  burden to manage windows. <b>Developers:</b> Martin Nordholts,
+  Michael Natterer <b>Interaction Architect:</b> Peter Sikking
 </p>
 
+<h3>Layer Groups</h3>
+<img class="right" src="images/2.8-layer-groups.png" alt="Layer groups screenshot" />
 <p>
-  Support for layer groups have been added. They allow you to organize
-  your image into small parts. Still some things missing, like
-  allowing to apply layer masks to groups. Layer groups are fully
-  accessible from plug-ins via the PDB.
+  For complex compositions, a flat layer structure is very
+  limitating. GIMP&nbsp;2.7 enables users to better organize their
+  compositions through the introduction of layer groups. Layer groups
+  allow layers to be organized in tree-like structures. Layer groups
+  are fully scriptable through the GIMP plug-in API. <b>Developer:</b>
+  Michael Natterer <b>Interaction Architect:</b> Peter Sikking
 </p>
 
+<h3>Multi-Column Dock Windows</h3>
+<img class="right" src="images/2.8-multi-column-dock-windows.png" alt="Multi-column dock windows screenshot" />
 <p>
-  All tools rendering on canvas has been ported to Cairo to provide 
-  smooth antialiased graphics and make GIMP's look and feel match 
-  modern users expectations. All but a few plug-ins have been ported over 
-  to Cairo as well. Additionally all tools now use an on-canvas progress
-  indicator instead of the one in the statusbar.
+  GIMP&nbsp;2.7 allows dockable dialogs in a dock window to be placed
+  in multiple columns. To create a new column in a dock window, drag
+  and drop a dockable dialog on the vertical edges of the dock
+  window. This is an appealing feature for multi-monitor users where
+  on screen can have a big dock window with the all dialogs and the
+  tools, while all images are on other displays. <b>Developer:</b>
+  Martin Nordholts <b>Interaction Architect:</b> Peter Sikking
 </p>
 
+<h3>Tools drawn with cairo</h3>
+<img class="right" src="images/2.8-tools-drawn-with-cairo.png" alt="Tools drawn with cairo screenshot" />
+<p>
+  All tools rendering on canvas has been ported to Cairo to provide
+  smooth antialiased graphics and make GIMP's look and feel match
+  modern users expectations. All but a few plug-ins have been ported
+  over to Cairo as well. Additionally all tools now use an on-canvas
+  progress indicator instead of the one in the statusbar. <b>Developer:</b>
+  Michael Natterer
+</p>
+
+<h3>On-Canvas Text Editing</h3>
+<img class="right" src="images/2.8-on-canvas-text-editing.png" alt="On-canvas text editing screenshot" />
 <p>
   Text editing with the Text Tool is now performed on-canvas instead
   of in a separate window. The editing on-canvas is rather
@@ -62,141 +85,128 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   for a selection. You can also use a combination of Alt and arrow
   keys to change baseline offset and kerning. This feature was
   originally developed during Google Summer of Code 2008 and heavily
-  improved since.
+  improved since.  Change the Text Tool to perform text editing
+  on-canvas (GSoC 2008) and add the ability to mix different text
+  styles in the same layer Add support for color tags in text layers
+  <b>Developers:</b> Daniel Eddeland, Michael Natterer
 </p>
 
-<p>
-  A completely new Cage transform tool has been added thanks to excellent 
-  work of one of our Google Summer of Code 2010 students. The tool 
-  implements an innovative approach to free transformation and makes it 
-  possible to easily warp parts of objects using an adjustable user-defined 
-  polygonal frame.
-</p>
-
-<p>
-  An infrastructure has been added that allows to embed user interface
-  elements on the canvas. This is currently used for text styles in the
-  text tool, and (experimentally) when a color correction tool is invoked
-  while the canvas is in full-screen mode.
-</p>
-
-<p>
-  It is now possible to tag GIMP resources such as brushes and
-  patterns. The tagging is performed from the respective dockables
-  e.g. the Brushes dockable, and it is possible to filter resources
-  based on these tags. The tags are saved to an XML file, external to
-  the data files themselves. This feature finally enables grouping of
-  resources and the plan is to add a bigger set of default resources
-  for GIMP 2.8. It is possible to tag multiple resources
-  simultaneously in the UI. There are still work that needs to be done
-  here, for example providing a set of default brushes. This feature
-  was developed during Google Summer of Code 2008.
-</p>
-
-<p>
-  You can now save existing state of any tool as a preset and give it 
-  a meaningful name. The presets are accessible from a new Tool Presets 
-  dockable dialog and additionally can be tagged so that you could easily 
-  manage a lot of presets. This new feature completely replaces the previously
-  existing tool presets system to a new level of accessibility. A script
-  for converting old tool presets to new ones will be provided with the
-  next development release.
-</p>
-
-<p>
-  A new experimental widget was added to meet requirements of graphic 
-  tablets users. The widget combines a slider, a label and a numeric 
-  value control which both simplifies adjusting value using a stylus, 
-  better visualizes the current value and provides more compact UI. 
-  It is now used in the Tools Options dockable dialog for opacity control 
-  and most options of brush based tools.
-</p>
-
-<p>
-  Another useful feature for users of advanced input devices such as 
-  graphic tablets is a completely new dialog for input device configuration
-  that allows to configure per-device pressure curves to compensate
-  for hardware differences and personal per-pen preferences.
-</p>
-
+<h3>Save And Export</h3>
+<img class="right" src="images/2.8-save-and-export.png" alt="Save and export screenshot" />
 <p>
   A rather big conceptual change is that saving and exporting images
-  are clearly separated activities. Saving an image can only be done
-  in the XCF format, to export into other formats 'File->Export...'
-  needs to be used. There are some optimizations for alternative
-  workflows such as opening a jpg, polishing it, and quickly exporting
-  back to the original file. This conceptual change has also allowed
-  us to get rid of the annoying dialogs that warned about the flatting
-  of images when saving to non-layered formats. The complete UI spec
-  for this can be found
-  <a href="http://gui.gimp.org/index.php/Save_%2B_export_specification">here</a>.
+  now are clearly separated activities. Saving an image can only be
+  done in the XCF format. To export into other formats
+  <i>File->Export...</i> needs to be used. There are some
+  optimizations for alternative workflows such as opening a jpg,
+  polishing it, and quickly exporting back to the original file. This
+  conceptual change has also allowed us to get rid of the annoying
+  dialogs that warned about the flatting of images when saving to
+  non-layered formats. <b>Developer:</b> Martin Nordholts
 </p>
 
+<h3>Keyboard Shortcut Changes</h3>
 <p>
   Since the keyboard shortcuts Ctrl+E and Ctrl+Shift+E has been taken
   over by the image export mechanisms, new keyboard shortcuts have
   been setup for "Shrink Wrap" and "Fit in Window", namely Ctrl+J and
-  Ctrl+Shift+J respectively.
+  Ctrl+Shift+J respectively. <b>Developer:</b> Martin Nordholts
 </p>
 
+<h3>Simple math in size entries</h3>
+<img class="right" src="images/2.8-math-in-size-entries.png" alt="Math in size entries screenshot" />
 <p>
   Enhancements have also been made to the size entry widget, the
   widgets that are used for most of the x, y, width, height input. For
   example, in the scale dialog it is now possible to write "50%" in
   the Width field to scale the image to 50% of the width. Expressions
-  such as "30in + 40px" and "4 * 5.4in" works too.
+  such as "30in + 40px" and "4 * 5.4in" works too. <b>Developer:</b> Fredrik
+  Alströmer
 </p>
 
+<h3>More screen real estate for dockable dialogs</h3>
+<img class="right" src="images/2.8-removed-docking-bars.png" alt="Removed docking bars screenshot" />
 <p>
-  The layer modes have been rearranged into more logical and useful
-  groups based on the effect they have on compositing of a
-  layer. Layer modes that makes the composite lighter are in one
-  group, layer modes that makes the composite darker in another group,
-  and so on.
+  The docking bars have been removed and replaced with overlayed
+  highlights. The dockable drag handle has been removed and the
+  dockable menu button has been moved up to the tabs. A new Automatic
+  tab style has been added which makes dockable tabs use the available
+  space. <b>Developer:</b> Martin Nordholts
 </p>
-
-<p>
-  It has been made possible to Alt+Click on layers in the Layers
-  dialog to create a selection from it. Add, subtract and intersect
-  modifiers Ctrl, Shift and Ctrl+Shift keys works too. This makes it
-  easy to compose contents of a layer based on the contents of other
-  layers, without detours.
-</p>
-
-<p>
-  GIMP now supports rotating brushes and has had additional
-  enhancements to the brush dynamics engine, for example allowing to
-  base dynamics on tilt and dynamically change the aspect ratio of
-  brushes. The Google Summer of Code 2009 Advanced GUI for Brush
-  Dynamics code has also been merged, enabling such things as brush
-  dynamics presets.
-</p>
-
-<p>
-  A question that often arises is how to change the UI language in
-  GIMP, which has traditionally been a bit cumbersome. Not any longer,
-  it is now possible to change language in Preferences.
-</p>
-
 
 <h3>Minor Changes</h3>
+<img class="right" src="images/2.8-math-in-size-entries.png" alt="Math in size entries screenshot" />
 <ul>
   <li>
-    Add "lock content" button to the layers, channels and paths
-    dialogs, make the lock buttons more compact.
+    Add 'Windows→Hide docks' menu item that does what 'Tab' does and also displays
+    its state. Make the state persistent across sessions, too.
+  </li>
+  <li>
+    An infrastructure has been added that allows to embed user interface
+    elements on the canvas. This is currently used for text styles in the
+    text tool, and (experimentally) when a color correction tool is invoked
+    while the canvas is in full-screen mode.
+  </li>
+  <li>
+    To make dock window titles manageable, only show the active
+    dockable in the dock window title.
+  </li>
+  <li>
+    The layer modes have been rearranged into more logical and useful
+    groups based on the effect they have on compositing of a
+    layer. Layer modes that makes the composite lighter are in one
+    group, layer modes that makes the composite darker in another group,
+    and so on.
+  </li>
+  <li>
+    It has been made possible to Alt+Click on layers in the Layers
+    dialog to create a selection from it. Add, subtract and intersect
+    modifiers Ctrl, Shift and Ctrl+Shift keys works too. This makes it
+    easy to compose contents of a layer based on the contents of other
+    layers, without detours.
+  </li>
+  <li>
+    New docks are created at the pointer position
+  </li>
+  <li>
+    Make all GimpItems lockable so their contents can't be changed
+  </li>
+  <li>
+    Don't have Toolbox in list of Recently Closed Docks, handle that
+    directly in the Windows menu
+  </li>
+  <li>
+    Allow closing the toolbox without closing the whole application
+  </li>
+  <li>
+    Put name of active dockables in dock window titles
+  </li>
+  <li>
+    Add new widget GimpSpinScale which is a scale with number entry,
+    and use it in all tool options
+  </li>
+  <li>
+    Default to non-fixed-aspect in Canvas Size dialog
   </li>
   <li>
     In the Preferences, only have one setting for the window hint for
     both the toolbox and the docks.
   </li>
   <li>
-    Default to non-fixed-aspect in Canvas Size dialog.
+    Add support for arbitrary affine transforms of brushes
   </li>
   <li>
-    Improve Free Select Tool on-canvas feedback.
+    Get rid of the Tools dockable and move toolbox configuration to
+    Preferences
   </li>
   <li>
-    Make it possible to use GEGL for Image Scale.
+    A question that often arises is how to change the UI language in
+    GIMP, which has traditionally been a bit cumbersome. Not any longer,
+    it is now possible to change language in Preferences.
+  </li>
+  <li>
+    Add "lock content" button to the layers, channels and paths
+    dialogs, make the lock buttons more compact.
   </li>
   <li>
     Add a new compact number entry widget for tool options that
@@ -209,58 +219,228 @@ If you need to get work done, please use the stable version, GIMP 2.6.
     Allow to bind arbitrary actions to extra mouse buttons.
   </li>
 </ul>
-
-<h3>Data</h3>
-
 <p>
-  We have started to overhaul the default set of resources and in this
-  version there have been some changes to the default set of brushes.
-  The silly "Untitled" has been removed from unnamed palette entries.
+  <b>Developers:</b> TODO
+<p>
+
+
+
+<h2>Tools & Plug-ins</h2>
+
+<h3>Brush System Improvements</h3>
+<img class="right" src="images/2.8-brush-system-improvements.png" alt="Brush system improvements screenshot" />
+<p>
+  GIMP now supports rotating brushes and has had additional
+  enhancements to the brush dynamics engine, for example allowing to
+  base dynamics on tilt and dynamically change the aspect ratio of
+  brushes. The Google Summer of Code 2009 Advanced GUI for Brush
+  Dynamics code has also been merged, enabling such things as brush
+  dynamics presets. <b>Developers:</b> TODO
 </p>
 
-<h3>Plug-ins</h3>
+<h3>Tool preset improvements</h3>
+<p>
+  You can now save existing state of any tool as a preset and give it
+  a meaningful name. The presets are accessible from a new Tool
+  Presets dockable dialog and additionally can be tagged so that you
+  could easily manage a lot of presets. This new feature completely
+  replaces the previously existing tool presets system to a new level
+  of accessibility. A script for converting old tool presets to new
+  ones will be provided with the next development release. <b>Developers:</b>
+  TODO
+</p>
 
+<h3>Cage Transform Tool</h3>
+<img class="right" src="images/2.8-cage-transform-tool.png" alt="Cage transform tool screenshot" />
+<p>
+  A completely new Cage transform tool has been added thanks to
+  excellent work of one of our Google Summer of Code 2010
+  students. The tool implements an innovative approach to free
+  transformation and makes it possible to easily warp parts of objects
+  using an adjustable user-defined polygonal frame. <b>Developers:</b>
+  Michael Muré
+</p>
+
+<h3>File Plug-Ins</h3>
 <p>
   A plug-in for loading JPEG2000 images have been added, and also a
   plug-in for X11 Mouse Cursor files. Also add fundamental OpenRaster
   (.ora) import and export support. Add RGB565 support to the csource
-  plug-in.
+  plug-in. <b>Developers:</b> Aurimas Juška, Takeshi Matsuyama
 </p>
 
 <p>
-  A Cairo based PDF exporter was implemented. While being somewhat simplistic 
-  the exporter saves text, embedding fonts into final PDF file, and attempts 
-  to convert all flat filled aread to vector objects.
+  A Cairo based PDF exporter was implemented. While being somewhat
+  simplistic the exporter saves text, embedding fonts into final PDF
+  file, and attempts to convert all flat filled areas to vector
+  objects. <b>Developer:</b> Barat Itkin
 </p>
 
 <p>
-  Last, but not least a Web-page plug-in was added to render any
-  web page into an image using Webkit.
+  Last, but not least a Web-page plug-in was added to render any web
+  page into an image using Webkit. <b>Developer:</b> Mukund Sivaraman
+</p>
+
+<h3>For Stylus Users</h3>
+<img class="right" src="images/2.8-for-stylus-users.png" alt="For stylus users screenshot" />
+<p>
+  A new experimental widget was added to meet requirements of graphic
+  tablets users. The widget combines a slider, a label and a numeric
+  value control which both simplifies adjusting value using a stylus,
+  better visualizes the current value and provides more compact UI.
+  It is now used in the Tools Options dockable dialog for opacity
+  control and most options of brush based tools. <b>Developers:</b> TODO
+</p>
+
+<p>
+  Another useful feature for users of advanced input devices such as
+  graphic tablets is a completely new dialog for input device
+  configuration that allows to configure per-device pressure curves to
+  compensate for hardware differences and personal per-pen
+  preferences. <b>Developers:</b> TODO
+</p>
+
+<h3>Resource tagging</h3>
+<img class="right" src="images/2.8-resource-tagging.png" alt="Resource tagging screenshot" />
+<p>
+  It is now possible to tag GIMP resources such as brushes and
+  patterns. The tagging is performed from the respective dockables
+  e.g. the Brushes dockable, and it is possible to filter resources
+  based on these tags. The tags are saved to an XML file, external to
+  the data files themselves. This feature finally enables grouping of
+  resources and the plan is to add a bigger set of default resources
+  for GIMP 2.8. It is possible to tag multiple resources
+  simultaneously in the UI. There are still work that needs to be done
+  here, for example providing a set of default brushes. This feature
+  was developed during Google Summer of Code 2008. <b>Developers:</b>
+  Aurimas Juška <b>Interaction Architect:</b> Peter Sikking
+</p>
+
+<h3>Resources</h3>
+<p>
+  We have started to overhaul the default set of resources and in this
+  version there have been some changes to the default set of brushes.
+  The silly "Untitled" has been removed from unnamed palette
+  entries. <b>Developers:</b> Martin Nordholts
+</p>
+
+<h3>Minor Changes</h3>
+<ul>
+  <li>
+    Allow to specify written language in the Text Tool
+  </li>
+  <li>
+    Move 'Text along path' from tool options to text context menu
+  </li>
+  <li>
+    Add diagonal guides to the Crop Tool
+  </li>
+  <li>
+    Added support for rotation of brushes
+  </li>
+  <li>
+    Add fundamental OpenRaster (.ora) import and export support
+  </li>
+  <li>
+    Use GEGL for layer scaling if use-gegl is TRUE
+  </li>
+  <li>
+    Add 'Rule of fifths' crop guide overlay
+  </li>
+  <li>
+    Add an icon for the desaturate tool
+  </li>
+  <li>
+    Add support for loading 16bit (RGB565) raw data
+  </li>
+  <li>
+    Add palette exporter for CSS, PHP, Python, txt and Java, accessed
+    through palette context menu
+  </li>
+  <li>
+    Add support for printing crop marks for images
+  </li>
+  <li>
+    Make the Pointer dockable show information about selection position
+    and size
+  </li>
+  <li>
+    Replace the brush scale control in tool options by a brush size
+    one that works in pixels, and does the right thing when the brush
+    changes
+  </li>
+  <li>
+    Improve Free Select Tool on-canvas feedback.
+  </li>
+  <li>
+    Make it possible to use GEGL for Image Scale.
+  </li>
+</ul>
+<p>
+  <b>Developers:</b> TODO
+</p>
+
+
+<h2>Miscelanous</h2>
+
+<h3>Plug-in Development</h3>
+<p>
+  GIMP 2.6 also further enhances its scripting abilities. For example,
+  API changes to support layer groups have been made. Here is
+  a <a href="http://developer.gimp.org/api/2.0/libgimp/libgimp-index-new-in-2-8.html">list
+  of new symbols in GIMP 2.8</a>.
+</p>
+
+<h3>Licence</h3>
+<p>
+  The GIMP licence has been changed to (L)GPLv3+.
 </p>
 
 <h3>GEGL</h3>
-
 <p>
   The projection code, the code that composes a single image from
   layers, have been ported to GEGL. This includes the layer modes, as
   well as support for nested layers aka layer groups. Also,
   preparations have been made for better and more intuitive handling
-  of the floating selection.
+  of the floating selection. <b>Developers:</b> Michael Natterer, Martin
+  Nordholts
 </p>
 
-
-<h3>What's Left To Do</h3>
-
+<h3>Roadmap</h3>
 <p>
-  This is an incomplete list of things we want to do before releasing GIMP 2.8:
-
-  <ul>
-    <li>Finish single-window mode implementation</li>
-    <li>Add a better set of default resources</li>
-    <li>Provide default tags for the default resources</li>
-    <li>Polish new features</li>
-  </ul>
+  The GIMP developers now maintain a roadmap for GIMP development
+  found here:
+  <a href="http://wiki.gimp.org/index.php/Roadmap">http://wiki.gimp.org/index.php/Roadmap</a>
 </p>
+
+<h2>GIMP 2.7 Screenshots (Todo, these are from 2.6)</h2>
+<div class="plain-screenshots">
+  <a href="../screenshots/gnome-1280x800-fresh-start.jpg">
+    <img src="../screenshots/gnome-1280x800-fresh-start-thumb.jpg" alt="First GIMP 2.6 startup" />
+  </a>
+  <p>First startup of GIMP&nbsp;2.6 on a 1280x800 GNOME desktop.</p>
+
+  <a href="../screenshots/alternative-2-6-ui-layout-example-one.jpg">
+    <img src="../screenshots/alternative-2-6-ui-layout-example-one-thumb.jpg" alt="Alternative UI example" />
+  </a>
+  <p>UI layout example: Tool Options moved out of the toolbox.</p>
+
+  <a href="../screenshots/alternative-2-6-ui-layout-example-two.jpg">
+    <img src="../screenshots/alternative-2-6-ui-layout-example-two-thumb.jpg" alt="Another alternative UI example" />
+  </a>
+  <p>UI layout example: Using the image window as a background window.</p>
+
+  <a href="../screenshots/2.6-brush-dynamics-example.jpg">
+    <img src="../screenshots/2.6-brush-dynamics-example-thumb.jpg" alt="Brush Dynamics at use" />
+  </a>
+  <p>Demonstrating the kind of effects the new Brush Dynamics can create.</p>
+
+  <a href="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg">
+    <img src="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6-thumb.jpg" alt="On-canvas Gaussian Blur" />
+  </a>
+  <p>Full screenshot of on-canvas preview of Gaussian Blur using the experimental GEGL Operation tool.</p>
+</div>
+
 
 <h2>Download</h2>
 <p>
@@ -341,11 +521,10 @@ bug-report. Here are some interesting Bugzilla queries:
 
 <h2>Contributing</h2>
 <p>
-We need your help to make GIMP 2.8 a success. There's still a lot to
-do. If you want to join us hacking, show up in #gimp or introduce
-yourself on the gimp-developer mailing-list. We are also looking for
-people to look after the web-site and update the tutorials. Or you
-might want to join the
+We need your help to make GIMP 2.8 a success. If you want to join us
+hacking, show up in #gimp or introduce yourself on the gimp-developer
+mailing-list. We are also looking for people to look after the
+web-site and update the tutorials. Or you might want to join the
 <a href="http://docs.gimp.org/">documentation team</a>.
 </p>
 

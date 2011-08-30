@@ -17,8 +17,8 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <p>
   GIMP&nbsp;2.7 is the result of three years of hard work and
-  collaborative development. This version of GIMP is equiped with a
-  wealth of new features, including some highly requsted ones. Keep
+  collaborative development. This version of GIMP is equipped with a
+  wealth of new features, including some highly requested ones. Keep
   reading to find out exactly what GIMP&nbsp;2.7 has to offer you in
   areas such as the user interface, tools, and plug-ins.
 </p>
@@ -44,7 +44,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <img class="right" src="images/2.8-layer-groups.png" alt="Layer groups screenshot" />
 <p>
   For complex compositions, a flat layer structure is very
-  limitating. GIMP&nbsp;2.7 enables users to better organize their
+  limiting. GIMP&nbsp;2.7 enables users to better organize their
   compositions through the introduction of layer groups. Layer groups
   allow layers to be organized in tree-like structures. Layer groups
   are fully scriptable through the GIMP plug-in API. <b>Developer:</b>
@@ -127,7 +127,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>More screen real estate for dockable dialogs</h3>
 <img class="right" src="images/2.8-removed-docking-bars.png" alt="Removed docking bars screenshot" />
 <p>
-  The docking bars have been removed and replaced with overlayed
+  The docking bars have been removed and replaced with overlaid
   highlights. The dockable drag handle has been removed and the
   dockable menu button has been moved up to the tabs. A new Automatic
   tab style has been added which makes dockable tabs use the available

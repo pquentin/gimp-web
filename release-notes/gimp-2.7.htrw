@@ -230,13 +230,13 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>Brush System Improvements</h3>
 <img class="right" src="images/2.8-brush-system-improvements.png" alt="Brush system improvements screenshot" />
 <p>
-  Brush dynamics engine has been expanded considerably, making almost
+  The brush dynamics engine has been expanded considerably, making almost
   all aspects of the brush engine drivable by a multitude of inputs,
   all of them configurable with their own response curve.
-  Because of the expansion dynamics were separated from tool options
-  and converted into a resource in its own right. Google Summer
+  Because of the expansion, dynamics were separated from tool options
+  and converted into a resource in their own right. The Google Summer
   of Code 2009 Advanced GUI for Brush Dynamics project was the start
-  of it's development.
+  of its development.
   <b>Developers:</b> Alexia Death, Michael Natterer, Zhenfeng Zhao
 </p>
 
@@ -293,9 +293,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   value control which both simplifies adjusting value using a stylus,
   better visualizes the current value and provides more compact UI.
   It is now used in the Tools Options dockable dialog for opacity
-  control and most options of brush based tools. People with Intuos tables
-  and either Artpen or Airbrush sylus will be glad to find that airbrush wheel
-  and artpen rotation are available for drving dynamics via "Wheel" input of dynamics.
+  control and most options of brush based tools.
   <b>Developers:</b> TODO
 </p>
 
@@ -308,9 +306,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
-  People with Intuos tables and either Artpen or Airbrush sylus will be
+  People with Intuos tablets and either Artpen or Airbrush styluses will be
   glad to find that Airbrush wheel and Artpen rotation are available
-  for drving dynamics via "Wheel" input.
+  for driving dynamics via the "Wheel" input.
   <b>Developers:</b> TODO
 </p>
 
@@ -353,7 +351,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
     Added support for rotation of brushes
   </li>
   <li>
-    Stroke smooth from GIMP Painter was ported to GIMP.
+    The Smooth Stroke feature from GIMP Painter was ported to GIMP.
   </li>
   <li>
     Add fundamental OpenRaster (.ora) import and export support

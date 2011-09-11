@@ -230,12 +230,14 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>Brush System Improvements</h3>
 <img class="right" src="images/2.8-brush-system-improvements.png" alt="Brush system improvements screenshot" />
 <p>
-  GIMP now supports rotating brushes and has had additional
-  enhancements to the brush dynamics engine, for example allowing to
-  base dynamics on tilt and dynamically change the aspect ratio of
-  brushes. The Google Summer of Code 2009 Advanced GUI for Brush
-  Dynamics code has also been merged, enabling such things as brush
-  dynamics presets. <b>Developers:</b> TODO
+  Brush dynamics engine has been expanded considerably, making almost
+  all aspects of the brush engine drivable by a multitude of inputs,
+  all of them configurable with their own response curve.
+  Because of the expansion dynamics were separated from tool options
+  and converted into a resource in its own right. Google Summer
+  of Code 2009 Advanced GUI for Brush Dynamics project was the start
+  of it's development.
+  <b>Developers:</b> Alexia Death, Michael Natterer, Zhenfeng Zhao
 </p>
 
 <h3>Tool preset improvements</h3>
@@ -245,9 +247,11 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Presets dockable dialog and additionally can be tagged so that you
   could easily manage a lot of presets. This new feature completely
   replaces the previously existing tool presets system to a new level
-  of accessibility. A script for converting old tool presets to new
-  ones will be provided with the next development release. <b>Developers:</b>
-  TODO
+  of accessibility. It also makes it possible to distribute tool presets just
+  like any other resource because each preset is saved as an individual file.
+  A python script for converting old tool presets to new
+  ones will be provided with the next development release.
+  <b>Developers:</b> Michael Natterer, Alexia Death
 </p>
 
 <h3>Cage Transform Tool</h3>
@@ -281,7 +285,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   page into an image using Webkit. <b>Developer:</b> Mukund Sivaraman
 </p>
 
-<h3>For Stylus Users</h3>
+<h3>For Tablet Users</h3>
 <img class="right" src="images/2.8-for-stylus-users.png" alt="For stylus users screenshot" />
 <p>
   A new experimental widget was added to meet requirements of graphic
@@ -289,7 +293,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   value control which both simplifies adjusting value using a stylus,
   better visualizes the current value and provides more compact UI.
   It is now used in the Tools Options dockable dialog for opacity
-  control and most options of brush based tools. <b>Developers:</b> TODO
+  control and most options of brush based tools. People with Intuos tables
+  and either Artpen or Airbrush sylus will be glad to find that airbrush wheel
+  and artpen rotation are available for drving dynamics via "Wheel" input of dynamics.
+  <b>Developers:</b> TODO
 </p>
 
 <p>
@@ -298,6 +305,13 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   configuration that allows to configure per-device pressure curves to
   compensate for hardware differences and personal per-pen
   preferences. <b>Developers:</b> TODO
+</p>
+
+<p>
+  People with Intuos tables and either Artpen or Airbrush sylus will be
+  glad to find that Airbrush wheel and Artpen rotation are available
+  for drving dynamics via "Wheel" input.
+  <b>Developers:</b> TODO
 </p>
 
 <h3>Resource tagging</h3>
@@ -337,6 +351,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   </li>
   <li>
     Added support for rotation of brushes
+  </li>
+  <li>
+    Stroke smooth from GIMP Painter was ported to GIMP.
   </li>
   <li>
     Add fundamental OpenRaster (.ora) import and export support

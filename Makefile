@@ -31,7 +31,7 @@ TARGETS=$(SOURCES:.htrw=.html)
 .PHONY: all usage webtools mirrors install clean cvsignore programmatic includes crontab target
 
 all: usage includes webtools mirrors crontab ${TARGETS}
-	rsync -rlt --delete --exclude-from=install.exclude ./ ${DocumentRoot}
+	rsync -rlt --delete --omit-dir-times --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
 
 # Install all includes files to the target directory (FIXME: this should not
@@ -40,7 +40,7 @@ all: usage includes webtools mirrors crontab ${TARGETS}
 #
 # kludge: install includes/news.inc if it does not exist yet in the target dir
 includes:
-	rsync -rlt --delete --exclude-from=install.exclude includes ${DocumentRoot}
+	rsync -rlt --delete --omit-dir-times --exclude-from=install.exclude includes ${DocumentRoot}
 	@if [ -r ${DocumentRoot}/includes/news.inc ]; then :; else cp -p includes/news.inc ${DocumentRoot}/includes/news.inc ; fi
 
 usage:

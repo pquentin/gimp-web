@@ -294,7 +294,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   better visualizes the current value and provides more compact UI.
   It is now used in the Tools Options dockable dialog for opacity
   control and most options of brush based tools.
-  <b>Developers:</b> TODO
+  <b>Developer:</b> Michael Natterer
 </p>
 
 <p>
@@ -302,14 +302,14 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   graphic tablets is a completely new dialog for input device
   configuration that allows to configure per-device pressure curves to
   compensate for hardware differences and personal per-pen
-  preferences. <b>Developers:</b> TODO
+  preferences. <b>Developer:</b> Michael Natterer
 </p>
 
 <p>
   People with Intuos tablets and either Artpen or Airbrush styluses will be
   glad to find that Airbrush wheel and Artpen rotation are available
   for driving dynamics via the "Wheel" input.
-  <b>Developers:</b> TODO
+  <b>Developer:</b> Alexia Death
 </p>
 
 <h3>Resource tagging</h3>
@@ -324,7 +324,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   for GIMP 2.8. It is possible to tag multiple resources
   simultaneously in the UI. There are still work that needs to be done
   here, for example providing a set of default brushes. This feature
-  was developed during Google Summer of Code 2008. <b>Developers:</b>
+  was developed during Google Summer of Code 2008. <b>Developer:</b>
   Aurimas Juška <b>Interaction Architect:</b> Peter Sikking
 </p>
 
@@ -333,7 +333,8 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   We have started to overhaul the default set of resources and in this
   version there have been some changes to the default set of brushes.
   The silly "Untitled" has been removed from unnamed palette
-  entries. <b>Developers:</b> Martin Nordholts
+  entries. <b>Developer:</b> Martin Nordholts <b>Artist:</b> Johannes 
+  Engelhardt
 </p>
 
 <h3>Minor Changes</h3>
@@ -363,7 +364,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
     Add 'Rule of fifths' crop guide overlay
   </li>
   <li>
-    Add an icon for the desaturate tool
+    Add an icon for the Desaturate tool
   </li>
   <li>
     Add support for loading 16bit (RGB565) raw data
@@ -392,13 +393,16 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   </li>
 </ul>
 <p>
-  <b>Developers:</b> TODO
+  <b>Developers:</b> Alexia Death, gcpatch, Mikael Magnusson, Jon Nordby, Martin Nordholts, 
+	Jakub Steiner, Mukund Sivamarand, Massimo Valentini, TODO
 </p>
 
 
-<h2>Miscelanous</h2>
+<h2>Miscellaneous</h2>
 
 <h3>Plug-in Development</h3>
+
+<!-- FIXME the link below doesn't work -->
 <p>
   GIMP 2.6 also further enhances its scripting abilities. For example,
   API changes to support layer groups have been made. Here is
@@ -406,9 +410,17 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   of new symbols in GIMP 2.8</a>.
 </p>
 
+<h3>API changes</h3>
+
+<!--FIXME new object API, moving stuff to contexts etc. -->
+
+<p>
+  A lot of GIMP's APIs have been refactored to simplify developing new scripts.
+</p>
+
 <h3>Licence</h3>
 <p>
-  The GIMP licence has been changed to (L)GPLv3+.
+  The GIMP license has been changed to (L)GPLv3+.
 </p>
 
 <h3>GEGL</h3>
@@ -456,6 +468,22 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   <p>Full screenshot of on-canvas preview of Gaussian Blur using the experimental GEGL Operation tool.</p>
 </div>
 
+<h2>Known Regressions</h2>
+<p>
+  GIMP 2.8 relies on a newer version of GTK+2 that unfortunately has partially 
+  broken support for graphics tablets such as Wacom. If your graphic tablet 
+  doesn't work in GIMP 2.8 as it should, we recommend downgrading to 2.6 until 
+  we release GIMP 3.0 that relies on GTK+3 which has fully functional support 
+  for advanced input devices.
+</p>
+
+<p>
+  To address the needs to migrate from the old tools presets system to the new 
+  one we provide a <a href="http://wiki.gimp.org/index.php/Mindstorm:Preset_converter">script</a> 
+  in Python. However, the old tools presets are not 100% convertible to the new 
+  tool presets. For instance, brush scale from 2.6 can't be converted to brush 
+  size in 2.8.
+</p>
 
 <h2>Download</h2>
 <p>

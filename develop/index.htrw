@@ -59,7 +59,7 @@ the public to understand what the application is all about.</p>
 <h2>Hacking</h2>
 
 <p>This is the part where people are always needed to help with the
-development and this is also the part that is the hardest to start
+development, and this is also the part that is the hardest to start
 with.  Though there are websites and files to give you a good look at
 how hacking is being done in GIMP.</p>
 
@@ -71,7 +71,7 @@ in the source code that might help you a little.</p>
 
 <ul>
   <li><a href="wgo:dev-hacking">HACKING</a><br />
-  <i>(Contains a lot of information that you need to know if you want to start coding)</i></li>
+  <i>(Contains a lot of information that you need to know if you want to start coding, beginning with how to build GIMP from source code)</i></li>
   <li><a href="wgo:dev-readme">README</a><br />
   <i>(The main README for GIMP which should be read by everyone)</i></li>
   <li><a href="wgo:dev-readme-i18n">README.i18n</a><br />

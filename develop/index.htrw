@@ -70,8 +70,10 @@ installed at the moment then there are some files you should look at
 in the source code that might help you a little.</p>
 
 <ul>
+  <li><a href="wgo:dev-hacking">INSTALL</a><br />
+  <i>(Contains most up-to-date information on building GIMP from source code)</i></li>
   <li><a href="wgo:dev-hacking">HACKING</a><br />
-  <i>(Contains a lot of information that you need to know if you want to start coding, beginning with how to build GIMP from source code)</i></li>
+  <i>(Contains a lot of information that you need to know if you want to start coding)</i></li>
   <li><a href="wgo:dev-readme">README</a><br />
   <i>(The main README for GIMP which should be read by everyone)</i></li>
   <li><a href="wgo:dev-readme-i18n">README.i18n</a><br />

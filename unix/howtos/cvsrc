@@ -1,4 +1,0 @@
-cvs -z3
-update -Pd
-diff -pu
-rdiff -pu

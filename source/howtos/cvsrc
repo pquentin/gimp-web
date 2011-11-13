@@ -1,7 +1,0 @@
-cvs -z3
-diff -up
-rdiff -up
-update -Pd
-checkout -P
-co -P
-get -P

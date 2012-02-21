@@ -205,10 +205,6 @@ If you need to get work done, please use the stable version, GIMP 2.6.
     dialogs, make the lock buttons more compact.
   </li>
   <li>
-    Add a new compact number entry widget (GimpSpinScale) for tool 
-    options that combines a scale with numeric input in one control.
-  </li>
-  <li>
     Allow to rename list items with F2.
   </li>
   <li>
@@ -229,10 +225,16 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   The brush dynamics engine has been expanded considerably, making almost
   all aspects of the brush engine drivable by a multitude of inputs,
   all of them configurable with their own response curve.
+</p>
+
+<p>
   Because of the expansion, dynamics were separated from tool options
   and converted into a resource in their own right. The Google Summer
   of Code 2009 Advanced GUI for Brush Dynamics project was the start
   of its development.
+</p>
+
+<p>
   <b>Developers:</b> Alexia Death, Michael Natterer, Zhenfeng Zhao
 </p>
 
@@ -241,19 +243,30 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   You can now save existing state of any tool as a preset and give it
   a meaningful name. The presets are accessible from a new Tool
   Presets dockable dialog and additionally can be tagged so that you
-  could easily manage a lot of presets. This new feature completely
-  replaces the previously existing tool presets system to a new level
-  of accessibility. It also makes it possible to distribute tool presets just
-  like any other resource because each preset is saved as an individual file.
-  A python script for converting old tool presets to new
+  could easily manage a lot of presets.
+</p>
+
+<p>
+  This new feature completely replaces the previously existing tool 
+  presets system to a new level of accessibility. It also makes it 
+  possible to distribute tool presets just like any other resource 
+  because each preset is saved as an individual file.
+</p>
+
+<!--
+<p>
+  A Python script for converting old tool presets to new
   ones will be provided with the next development release.
+</p>-->
+
+<p>
   <b>Developers:</b> Michael Natterer, Alexia Death
 </p>
 
 <h3>Cage Transform Tool</h3>
 <img class="right" src="images/2.8-cage-transform-tool.png" alt="Cage transform tool screenshot" />
 <p>
-  A completely new Cage transform tool has been added thanks to
+  A completely new <em>Cage transform</em> tool has been added thanks to
   excellent work of one of our Google Summer of Code 2010
   students. The tool implements an innovative approach to free
   transformation and makes it possible to easily warp parts of objects
@@ -273,7 +286,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   A Cairo based PDF exporter was implemented. While being somewhat
   simplistic the exporter saves text, embedding fonts into final PDF
   file, and attempts to convert all flat filled areas to vector
-  objects. <b>Developer:</b> Barat Itkin
+  objects. <b>Developer:</b> Barak Itkin
 </p>
 
 <p>
@@ -290,7 +303,6 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   better visualizes the current value and provides more compact UI.
   It is now used in the Tools Options dockable dialog for opacity
   control and most options of brush based tools.
-  <b>Developer:</b> Michael Natterer
 </p>
 
 <p>
@@ -298,39 +310,53 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   graphic tablets is a completely new dialog for input device
   configuration that allows to configure per-device pressure curves to
   compensate for hardware differences and personal per-pen
-  preferences. <b>Developer:</b> Michael Natterer
+  preferences.
 </p>
 
 <p>
   People with Intuos tablets and either Artpen or Airbrush styluses will be
   glad to find that Airbrush wheel and Artpen rotation are available
   for driving dynamics via the "Wheel" input.
-  <b>Developer:</b> Alexia Death
+</p>
+
+</p>
+  <b>Developers:</b> Michael Natterer, Alexia Death
 </p>
 
 <h3>Resource tagging</h3>
 <img class="right" src="images/2.8-resource-tagging.png" alt="Resource tagging screenshot" />
 <p>
   It is now possible to tag GIMP resources such as brushes and
-  patterns. The tagging is performed from the respective dockables
-  e.g. the Brushes dockable, and it is possible to filter resources
-  based on these tags. The tags are saved to an XML file, external to
-  the data files themselves. This feature finally enables grouping of
-  resources and the plan is to add a bigger set of default resources
-  for GIMP 2.8. It is possible to tag multiple resources
-  simultaneously in the UI. There are still work that needs to be done
-  here, for example providing a set of default brushes. This feature
-  was developed during Google Summer of Code 2008. <b>Developer:</b>
-  Aurimas Juška <b>Interaction Architect:</b> Peter Sikking
+  patterns to group them. The tagging is performed from the 
+  respective dockables e.g. the <em>Brushes</em> dockable, and it is 
+  possible to filter resources based on these tags.
+</p>
+
+<p>
+  The tags are saved to an XML file, external to the data files 
+  themselves. It is possible to tag multiple resources simultaneously 
+  in the UI, but currently only when they are viewed as a list. 
+  This feature was developed during Google Summer of Code 2008.
+</p>
+
+<p>
+  <b>Developer:</b> Aurimas Juška 
+  <b>Interaction Architect:</b> Peter Sikking
 </p>
 
 <h3>Resources</h3>
+<img class="right" src="images/2.8-brushes.png" alt="New brushes in GIMP 2.8" />
 <p>
   We have started to overhaul the default set of resources and in this
   version there have been some changes to the default set of brushes.
   The silly "Untitled" has been removed from unnamed palette
-  entries. <b>Developer:</b> Martin Nordholts <b>Artist:</b> Johannes 
-  Engelhardt
+  entries. A whole new set of brushes for painting has been added and 
+  makes use of the new tagging system.
+</p>
+
+<p>
+  <b>Developer:</b> Martin Nordholts 
+  <b>Artists:</b> Johannes Engelhardt, Ramón Miranda, Guillermo Espertino
 </p>
 
 <h3>Minor Changes</h3>

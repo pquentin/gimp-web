@@ -448,7 +448,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>GEGL</h3>
 <p>
   The projection code, the code that composes a single image from
-  layers, have been ported to GEGL. This includes the layer modes, as
+  layers, has been ported to GEGL. This includes the layer modes, as
   well as support for nested layers aka layer groups. Also,
   preparations have been made for better and more intuitive handling
   of the floating selection. <b>Developers:</b> Michael Natterer, Martin

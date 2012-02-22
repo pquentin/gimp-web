@@ -35,9 +35,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   the <i>Windows</i> menu. In single-window mode, GIMP will put
   dockable dialogs and images in a single, tabbed image window. The
   single-window mode setting is of course preserved if you quit and
-  start GIMP again. Single-window mode liberates the user from the
-  burden to manage windows. <b>Developers:</b> Martin Nordholts,
-  Michael Natterer <b>Interaction Architect:</b> Peter Sikking
+  start GIMP again. Single-window mode removes the necessity for users
+  of having to deal with multiple windows. <b>Developers:</b> Martin
+  Nordholts, Michael Natterer <b>Interaction Architect:</b> Peter Sikking
 </p>
 
 <h3>Multi-Column Dock Windows</h3>

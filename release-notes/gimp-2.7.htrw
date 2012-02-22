@@ -78,7 +78,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   back to the original file. This conceptual change has also allowed us
   to get rid of the annoying dialogs that warned about the flatting of
   images when saving to non-layered formats. <b>Developer:</b> Martin
-  Nordholts
+  Nordholts <b>Interaction Architect:</b> Peter Sikking
 </p>
 
 <h3>Layer Groups</h3>
@@ -89,7 +89,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   compositions through the introduction of layer groups. Layer groups
   allow layers to be organized in tree-like structures. Layer groups
   are fully scriptable through the GIMP plug-in API. <b>Developer:</b>
-  Michael Natterer <b>Interaction Architect:</b> Peter Sikking
+  Michael Natterer
 </p>
 
 <h3>Tools drawn with cairo</h3>

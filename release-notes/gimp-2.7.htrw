@@ -124,7 +124,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   Since the keyboard shortcuts Ctrl+E and Ctrl+Shift+E has been taken
   over by the image export mechanisms, new keyboard shortcuts have
-  been setup for "Shrink Wrap" and "Fit in Window", namely Ctrl+J and
+  been setup for 'Shrink Wrap' and 'Fit in Window', namely Ctrl+J and
   Ctrl+Shift+J respectively. <b>Developer:</b> Martin Nordholts
 </p>
 
@@ -133,9 +133,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   Enhancements have also been made to the size entry widget, the
   widgets that are used for most of the x, y, width, height input. For
-  example, in the scale dialog it is now possible to write "50%" in
+  example, in the scale dialog it is now possible to write '50%' in
   the Width field to scale the image to 50% of the width. Expressions
-  such as "30in + 40px" and "4 * 5.4in" works too. <b>Developer:</b> Fredrik
+  such as '30in + 40px' and '4 * 5.4in' works too. <b>Developer:</b> Fredrik
   Alströmer
 </p>
 
@@ -206,7 +206,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
     it is now possible to change language in Preferences.
   </li>
   <li>
-    Add "lock content" button to the layers, channels and paths
+    Add 'lock content' button to the layers, channels and paths
     dialogs, make the lock buttons more compact.
   </li>
   <li>
@@ -321,7 +321,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   People with Intuos tablets and either Artpen or Airbrush styluses will be
   glad to find that Airbrush wheel and Artpen rotation are available
-  for driving dynamics via the "Wheel" input.
+  for driving dynamics via the 'Wheel' input.
 </p>
 
 </p>
@@ -354,7 +354,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   We have started to overhaul the default set of resources and in this
   version there have been some changes to the default set of brushes.
-  The silly "Untitled" has been removed from unnamed palette
+  The silly 'Untitled' has been removed from unnamed palette
   entries. A whole new set of brushes for painting has been added and 
   makes use of the new tagging system.
 </p>

@@ -52,7 +52,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Martin Nordholts <b>Interaction Architect:</b> Peter Sikking
 </p>
 
-<h3>More screen real estate for dockable dialogs</h3>
+<h3>More Screen Real Estate For Dockable Dialogs</h3>
 <img class="right" src="images/2.8-removed-docking-bars.png" alt="Removed docking bars screenshot" />
 <p>
   The docking bars have been removed and replaced with overlaid
@@ -92,7 +92,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Michael Natterer
 </p>
 
-<h3>Tools drawn with cairo</h3>
+<h3>Tools Drawn With Cairo</h3>
 <img class="right" src="images/2.8-tools-drawn-with-cairo.png" alt="Tools drawn with cairo screenshot" />
 <p>
   All tools rendering on canvas has been ported to Cairo to provide
@@ -128,7 +128,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Ctrl+Shift+J respectively. <b>Developer:</b> Martin Nordholts
 </p>
 
-<h3>Simple math in size entries</h3>
+<h3>Simple Math In Size Entries</h3>
 <img class="right" src="images/2.8-math-in-size-entries.png" alt="Math in size entries screenshot" />
 <p>
   Enhancements have also been made to the size entry widget, the
@@ -243,7 +243,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   <b>Developers:</b> Alexia Death, Michael Natterer, Zhenfeng Zhao
 </p>
 
-<h3>Tool preset improvements</h3>
+<h3>Tool Preset Improvements</h3>
 <p>
   You can now save existing state of any tool as a preset and give it
   a meaningful name. The presets are accessible from a new Tool
@@ -328,7 +328,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   <b>Developers:</b> Michael Natterer, Alexia Death
 </p>
 
-<h3>Resource tagging</h3>
+<h3>Resource Tagging</h3>
 <img class="right" src="images/2.8-resource-tagging.png" alt="Resource tagging screenshot" />
 <p>
   It is now possible to tag GIMP resources such as brushes and
@@ -437,7 +437,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   of new symbols in GIMP 2.8</a>.
 </p>
 
-<h3>API changes</h3>
+<h3>API Changes</h3>
 
 <!--FIXME new object API, moving stuff to contexts etc. -->
 

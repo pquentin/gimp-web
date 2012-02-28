@@ -363,7 +363,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>Minor Changes</h3>
 <ul>
   <li>
-    Allow specifying the written language in the Text Tool.
+    Allow specifying the written language in the Text Tool. This helps
+    with choosing an appropriate font, or appropriate glyphs for the
+    selected language.
   </li>
   <li>
     Moved 'Text along path' from tool options to the text context menu.

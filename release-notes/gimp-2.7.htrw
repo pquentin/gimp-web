@@ -37,7 +37,8 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   single-window mode setting is of course preserved if you quit and
   start GIMP again. Single-window mode removes the necessity for users
   of having to deal with multiple windows. <b>Developers:</b> Martin
-  Nordholts, Michael Natterer <b>Interaction Architect:</b> Peter Sikking
+  Nordholts, Michael Natterer <b>Interaction Architect:</b> Peter
+  Sikking
 </p>
 
 <h3>Multi-Column Dock Windows</h3>
@@ -84,23 +85,22 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>Layer Groups</h3>
 <img class="right" src="images/2.8-layer-groups.png" alt="Layer groups screenshot" />
 <p>
-  For complex compositions, a flat layer structure is very
-  limiting. GIMP&nbsp;2.7 enables users to better organize their
-  compositions through the introduction of layer groups. Layer groups
-  allow layers to be organized in tree-like structures. Layer groups
-  are fully scriptable through the GIMP plug-in API. <b>Developer:</b>
-  Michael Natterer
+  For complex compositions, a flat layer structure is very limiting.
+  GIMP&nbsp;2.7 lets users organize their compositions better through
+  the introduction of layer groups which allow layers to be organized in
+  tree-like structures. Layer groups are fully scriptable through the
+  GIMP plug-in API. <b>Developer:</b> Michael Natterer
 </p>
 
 <h3>Tools Drawn With Cairo</h3>
 <img class="right" src="images/2.8-tools-drawn-with-cairo.png" alt="Tools drawn with cairo screenshot" />
 <p>
-  All tools rendering on canvas has been ported to Cairo to provide
+  All tools rendering on canvas have been ported to Cairo to provide
   smooth antialiased graphics and make GIMP's look and feel match
   modern users expectations. All but a few plug-ins have been ported
   over to Cairo as well. Additionally all tools now use an on-canvas
-  progress indicator instead of the one in the statusbar. <b>Developer:</b>
-  Michael Natterer
+  progress indicator instead of the one in the statusbar.
+  <b>Developer:</b> Michael Natterer
 </p>
 
 <h3>On-Canvas Text Editing</h3>
@@ -114,106 +114,102 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   for a selection. You can also use a combination of Alt and arrow
   keys to change baseline offset and kerning. This feature was
   originally developed during Google Summer of Code 2008 and heavily
-  improved since.  Change the Text Tool to perform text editing
-  on-canvas (GSoC 2008) and add the ability to mix different text
-  styles in the same layer Add support for color tags in text layers
-  <b>Developers:</b> Daniel Eddeland, Michael Natterer
+  improved since. <b>Developers:</b> Daniel Eddeland, Michael Natterer
 </p>
 
 <h3>Keyboard Shortcut Changes</h3>
 <p>
-  Since the keyboard shortcuts Ctrl+E and Ctrl+Shift+E has been taken
-  over by the image export mechanisms, new keyboard shortcuts have
-  been setup for 'Shrink Wrap' and 'Fit in Window', namely Ctrl+J and
-  Ctrl+Shift+J respectively. <b>Developer:</b> Martin Nordholts
+  Since the keyboard shortcuts Ctrl+E and Ctrl+Shift+E have been
+  repurposed for the image export mechanisms, new keyboard shortcuts
+  have been setup for 'Shrink Wrap' and 'Fit in Window', namely Ctrl+J
+  and Ctrl+Shift+J respectively. <b>Developer:</b> Martin Nordholts
 </p>
 
 <h3>Simple Math In Size Entries</h3>
 <img class="right" src="images/2.8-math-in-size-entries.png" alt="Math in size entries screenshot" />
 <p>
-  Enhancements have also been made to the size entry widget, the
-  widgets that are used for most of the x, y, width, height input. For
-  example, in the scale dialog it is now possible to write '50%' in
-  the Width field to scale the image to 50% of the width. Expressions
-  such as '30in + 40px' and '4 * 5.4in' works too. <b>Developer:</b> Fredrik
-  Alströmer
+  Enhancements have also been made to the size entry widget, which is used for
+  inputting most of the x, y, width, height parameters. For example, in the
+  scale dialog it is now possible to write '50%' in the Width field to scale
+  the image to 50% of the width. Expressions such as '30in&nbsp;+&nbsp;40px'
+  and '4&nbsp;*&nbsp;5.4in' work, too. <b>Developer:</b> Fredrik Alströmer
 </p>
 
 <h3>Minor Changes</h3>
 <img class="right" src="images/2.8-math-in-size-entries.png" alt="Math in size entries screenshot" />
 <ul>
   <li>
-    Add 'Windows→Hide docks' menu item that does what 'Tab' does and also displays
-    its state. Make the state persistent across sessions, too.
+    Added 'Windows→Hide docks' menu item that does what 'Tab' does and
+    also displays its state, which is now persistent across sessions, too.
   </li>
   <li>
-    An infrastructure has been added that allows to embed user interface
-    elements on the canvas. This is currently used for text styles in the
-    text tool, and (experimentally) when a color correction tool is invoked
-    while the canvas is in full-screen mode.
+    Added infrastructure allowing to embed user interface elements on
+    the canvas. This is currently used for text styles in the text tool,
+    and (experimentally) when a color correction tool is invoked while
+    the canvas is in full-screen mode.
   </li>
   <li>
-    To make dock window titles manageable, only show the active
-    dockable in the dock window title.
+    To make dock window titles manageable, only show the active dockable
+    in the dock window title.
   </li>
   <li>
     The layer modes have been rearranged into more logical and useful
     groups based on the effect they have on compositing of a
-    layer. Layer modes that makes the composite lighter are in one
-    group, layer modes that makes the composite darker in another group,
-    and so on.
+    layer. Layer modes that make the composite lighter are in one group,
+    layer modes that make the composite darker in another group, and so
+    forth.
   </li>
   <li>
-    It has been made possible to Alt+Click on layers in the Layers
-    dialog to create a selection from it. Add, subtract and intersect
-    modifiers Ctrl, Shift and Ctrl+Shift keys works too. This makes it
-    easy to compose contents of a layer based on the contents of other
-    layers, without detours.
+    You can now Alt+Click on layers in the Layers dialog to create a
+    selection from it. Add, subtract and intersect modifiers Ctrl, Shift
+    and Ctrl+Shift keys work too. This makes it easy to compose contents
+    of a layer based on the contents of other layers, without detours.
   </li>
   <li>
-    New docks are created at the pointer position
+    New docks are created at the pointer position.
   </li>
   <li>
-    Make all GimpItems lockable so their contents can't be changed
+    Made all GimpItems lockable to prevent unintentional changes to
+    their contents.
   </li>
   <li>
-    Don't have Toolbox in list of Recently Closed Docks, handle that
-    directly in the Windows menu
+    Removed Toolbox from list of Recently Closed Docks, handle that
+    directly in the Windows menu.
   </li>
   <li>
-    Allow closing the toolbox without closing the whole application
+    Allow closing the toolbox without closing the whole application.
   </li>
   <li>
-    Put name of active dockables in dock window titles
+    Put the name of active dockables in their dock window titles.
   </li>
   <li>
-    Default to non-fixed-aspect in Canvas Size dialog
+    Default to non-fixed-aspect in Canvas Size dialog.
   </li>
   <li>
-    In the Preferences, only have one setting for the window hint for
-    both the toolbox and the docks.
+    In the Preferences dialog, only have one setting for the window hint
+    for both the toolbox and the docks.
   </li>
   <li>
-    Add support for arbitrary affine transforms of brushes
+    Support arbitrary affine transforms of brushes.
   </li>
   <li>
-    Get rid of the Tools dockable and move toolbox configuration to
-    Preferences
+    Got rid of the Tools dockable and move toolbox configuration to
+    Preferences.
   </li>
   <li>
     A question that often arises is how to change the UI language in
     GIMP, which has traditionally been a bit cumbersome. Not any longer,
-    it is now possible to change language in Preferences.
+    it is now possible to change the language in Preferences.
   </li>
   <li>
-    Add 'Lock content' button to the layers, channels and paths
-    dialogs, make the lock buttons more compact.
+    Added 'Lock content' button to the layers, channels and paths
+    dialogs, made the lock buttons more compact.
   </li>
   <li>
-    Allow to rename list items with F2.
+    Allow renaming list items with F2.
   </li>
   <li>
-    Allow to bind arbitrary actions to extra mouse buttons.
+    Allow binding arbitrary actions to extra mouse buttons.
   </li>
 </ul>
 <p>
@@ -272,7 +268,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <img class="right" src="images/2.8-cage-transform-tool.png" alt="Cage transform tool screenshot" />
 <p>
   A completely new <em>Cage transform</em> tool has been added thanks to
-  excellent work of one of our Google Summer of Code 2010
+  the excellent work of one of our Google Summer of Code 2010
   students. The tool implements an innovative approach to free
   transformation and makes it possible to easily warp parts of objects
   using an adjustable user-defined polygonal frame. <b>Developers:</b>
@@ -281,9 +277,9 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <h3>File Plug-Ins</h3>
 <p>
-  A plug-in for loading JPEG2000 images have been added, and also a
-  plug-in for X11 Mouse Cursor files. Also add fundamental OpenRaster
-  (.ora) import and export support. Add RGB565 support to the csource
+  A plug-in for loading JPEG2000 images have been added, as well as
+  plug-ins for X11 Mouse Cursor files and fundamental OpenRaster (.ora)
+  import and export support. Added RGB565 support to the csource
   plug-in. <b>Developers:</b> Aurimas Juška, Takeshi Matsuyama
 </p>
 
@@ -295,17 +291,17 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
-  Last, but not least a Web-page plug-in was added to render any web
+  Last, but not least, a Web-page plug-in was added to render any web
   page into an image using Webkit.
 </p>
 
 <h3>For Tablet Users</h3>
 <img class="right" src="images/2.8-for-stylus-users.png" alt="For stylus users screenshot" />
 <p>
-  A new experimental widget was added to meet requirements of graphic
+  A new experimental widget was added to meet the requirements of graphic
   tablets users. The widget combines a slider, a label and a numeric
-  value control which both simplifies adjusting value using a stylus,
-  better visualizes the current value and provides more compact UI.
+  value control which simplifies adjusting a value using a stylus,
+  better visualizes the current value and provides a more compact UI.
   It is now used in the Tools Options dockable dialog for opacity
   control and most options of brush based tools.
 </p>
@@ -313,7 +309,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <p>
   Another useful feature for users of advanced input devices such as
   graphic tablets is a completely new dialog for input device
-  configuration that allows to configure per-device pressure curves to
+  configuration which allows configuring per-device pressure curves to
   compensate for hardware differences and personal per-pen
   preferences.
 </p>
@@ -338,10 +334,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
-  The tags are saved to an XML file, external to the data files 
-  themselves. It is possible to tag multiple resources simultaneously 
-  in the UI, but currently only when they are viewed as a list. 
-  This feature was developed during Google Summer of Code 2008.
+  The tags are saved to an XML file, external to the data files
+  themselves. It is possible to tag multiple resources simultaneously in
+  the UI, but currently only while being viewed as a list. This feature
+  was developed during Google Summer of Code 2008.
 </p>
 
 <p>
@@ -352,10 +348,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>Resources</h3>
 <img class="right" src="images/2.8-brushes.png" alt="New brushes in GIMP 2.8" />
 <p>
-  We have started to overhaul the default set of resources and in this
+  We have started overhauling the default set of resources and in this
   version there have been some changes to the default set of brushes.
-  The silly 'Untitled' has been removed from unnamed palette
-  entries. A whole new set of brushes for painting has been added and 
+  The silly 'Untitled' title has been removed from unnamed palette
+  entries. A wholly new set of brushes for painting has been added and
   makes use of the new tagging system.
 </p>
 
@@ -367,56 +363,56 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <h3>Minor Changes</h3>
 <ul>
   <li>
-    Allow to specify written language in the Text Tool
+    Allow specifying the written language in the Text Tool.
   </li>
   <li>
-    Move 'Text along path' from tool options to text context menu
+    Moved 'Text along path' from tool options to the text context menu.
   </li>
   <li>
-    Add diagonal guides to the Crop Tool
+    Add diagonal guides to the Crop Tool.
   </li>
   <li>
-    Added support for rotation of brushes
+    Support rotating brushes.
   </li>
   <li>
     The Smooth Stroke feature from GIMP Painter was ported to GIMP.
   </li>
   <li>
-    Add fundamental OpenRaster (.ora) import and export support
+    Added fundamental OpenRaster (.ora) import and export support.
   </li>
   <li>
-    Use GEGL for layer scaling if use-gegl is TRUE
+    Use GEGL for layer scaling if use-gegl is TRUE.
   </li>
   <li>
-    Add 'Rule of fifths' crop guide overlay
+    Added 'Rule of fifths' crop guide overlay.
   </li>
   <li>
-    Add an icon for the Desaturate tool
+    Added an icon for the Desaturate tool.
   </li>
   <li>
-    Add support for loading 16bit (RGB565) raw data
+    Support loading 16bit (RGB565) raw data.
   </li>
   <li>
-    Add palette exporter for CSS, PHP, Python, txt and Java, accessed
-    through palette context menu
+    Added palette exporter for CSS, PHP, Python, txt and Java, accessed
+    through the palette context menu.
   </li>
   <li>
-    Add support for printing crop marks for images
+    Support printing crop marks for images.
   </li>
   <li>
-    Make the Pointer dockable show information about selection position
-    and size
+    Made the Pointer dockable show information about selection position
+    and size.
   </li>
   <li>
-    Replace the brush scale control in tool options by a brush size
+    Replaced the brush scale control in tool options by a brush size
     one that works in pixels, and does the right thing when the brush
-    changes
+    changes.
   </li>
   <li>
-    Improve Free Select Tool on-canvas feedback.
+    Improved the Free Select Tool on-canvas feedback.
   </li>
   <li>
-    Make it possible to use GEGL for Image Scale.
+    Made it possible to use GEGL for scaling images.
   </li>
 </ul>
 <p>
@@ -442,7 +438,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 <!--FIXME new object API, moving stuff to contexts etc. -->
 
 <p>
-  A lot of GIMP's APIs have been refactored to simplify developing new scripts.
+  A lot of GIMP APIs have been refactored to simplify developing new scripts.
 </p>
 
 <h3>License</h3>
@@ -452,12 +448,11 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <h3>GEGL</h3>
 <p>
-  The projection code, the code that composes a single image from
-  layers, has been ported to GEGL. This includes the layer modes, as
-  well as support for nested layers aka layer groups. Also,
-  preparations have been made for better and more intuitive handling
-  of the floating selection. <b>Developers:</b> Michael Natterer, Martin
-  Nordholts
+  The projection code which composes a single image from layers has been
+  ported to GEGL. This includes the layer modes, as well as support for
+  layer groups. Also, preparations have been made for better and more
+  intuitive handling of the floating selection. <b>Developers:</b>
+  Michael Natterer, Martin Nordholts
 </p>
 
 <h3>Roadmap</h3>

@@ -136,7 +136,6 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <h3>Minor Changes</h3>
-<img class="right" src="images/2.8-math-in-size-entries.png" alt="Math in size entries screenshot" />
 <ul>
   <li>
     Added 'Windows→Hide docks' menu item that does what 'Tab' does and

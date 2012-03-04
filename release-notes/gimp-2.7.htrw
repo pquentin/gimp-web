@@ -48,7 +48,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   in multiple columns. To create a new column in a dock window, drag
   and drop a dockable dialog on the vertical edges of the dock
   window. This is an appealing feature for multi-monitor users where
-  on screen can have a big dock window with the all dialogs and the
+  one screen can have a big dock window with all the dialogs and the
   tools, while all images are on other displays. <b>Developer:</b>
   Martin Nordholts <b>Interaction Architect:</b> Peter Sikking
 </p>
@@ -110,7 +110,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   of in a separate window. The editing on-canvas is rather
   sophisticated: apart from the usual text formatting features like
   font family, style and size selectors you get numeric control over
-  baseline offset and kerning, as well as ability to change text color
+  baseline offset and kerning, as well as the ability to change text color
   for a selection. You can also use a combination of Alt and arrow
   keys to change baseline offset and kerning. This feature was
   originally developed during Google Summer of Code 2008 and heavily
@@ -168,18 +168,11 @@ If you need to get work done, please use the stable version, GIMP 2.6.
     New docks are created at the pointer position.
   </li>
   <li>
-    Made all GimpItems lockable to prevent unintentional changes to
-    their contents.
-  </li>
-  <li>
     Removed Toolbox from list of Recently Closed Docks, handle that
     directly in the Windows menu.
   </li>
   <li>
     Allow closing the toolbox without closing the whole application.
-  </li>
-  <li>
-    Put the name of active dockables in their dock window titles.
   </li>
   <li>
     Default to non-fixed-aspect in Canvas Size dialog.
@@ -243,7 +236,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   You can now save existing state of any tool as a preset and give it
   a meaningful name. The presets are accessible from a new Tool
   Presets dockable dialog and additionally can be tagged so that you
-  could easily manage a lot of presets.
+  can easily manage a lot of presets.
 </p>
 
 <p>
@@ -276,7 +269,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <h3>File Plug-Ins</h3>
 <p>
-  A plug-in for loading JPEG2000 images have been added, as well as
+  A plug-in for loading JPEG2000 images has been added, as well as
   plug-ins for X11 Mouse Cursor files and fundamental OpenRaster (.ora)
   import and export support. Added RGB565 support to the csource
   plug-in. <b>Developers:</b> Aurimas Juška, Takeshi Matsuyama
@@ -284,7 +277,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <p>
   A Cairo based PDF exporter was implemented. While being somewhat
-  simplistic the exporter saves text, embedding fonts into final PDF
+  simplistic the exporter saves text, embedding fonts into the final PDF
   file, and attempts to convert all flat filled areas to vector
   objects. <b>Developer:</b> Barak Itkin
 </p>
@@ -377,12 +370,6 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   </li>
   <li>
     The Smooth Stroke feature from GIMP Painter was ported to GIMP.
-  </li>
-  <li>
-    Added fundamental OpenRaster (.ora) import and export support.
-  </li>
-  <li>
-    Use GEGL for layer scaling if use-gegl is TRUE.
   </li>
   <li>
     Added 'Rule of fifths' crop guide overlay.

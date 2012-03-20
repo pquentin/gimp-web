@@ -415,7 +415,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <!-- FIXME the link below doesn't work -->
 <p>
-  GIMP 2.6 also further enhances its scripting abilities. For example,
+  GIMP 2.8 also further enhances its scripting abilities. For example,
   API changes to support layer groups have been made. Here is
   a <a href="http://developer.gimp.org/api/2.0/libgimp/libgimp-index-new-in-2-8.html">list
   of new symbols in GIMP 2.8</a>.

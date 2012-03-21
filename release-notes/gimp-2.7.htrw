@@ -317,7 +317,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <h3>Resource Tagging</h3>
-<img class="right" src="images/2.8-resource-tagging.png" alt="Resource tagging screenshot" />
+<img class="right" src="images/2.8-resource-tagging-brushes.png" alt="Resource tagging screenshot with brushes" />
 <p>
   It is now possible to tag GIMP resources such as brushes and
   patterns to group them. The tagging is performed from the 
@@ -338,7 +338,6 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <h3>Resources</h3>
-<img class="right" src="images/2.8-brushes.png" alt="New brushes in GIMP 2.8" />
 <p>
   We have started overhauling the default set of resources and in this
   version there have been some changes to the default set of brushes.

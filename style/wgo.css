@@ -129,7 +129,7 @@ h3 {
   letter-spacing: .1em;
   margin-top: 1.5em;
   margin-bottom: 1em;
-  clear: left;
+  clear: both;
 }
 
 p+h3, pre+h3, ul+h3, ol+h3, dl+h3 {

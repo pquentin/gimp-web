@@ -19,7 +19,7 @@ not test them; use at your own risk.
  <li>GNU/Linux
    <ul>
      <li>
-       <a href="http://packages.debian.org/search?searchon=names&keywords=gimp">Debian (deb)</a>
+       <a href="http://packages.debian.org/search?searchon=names&amp;keywords=gimp">Debian (deb)</a>
      </li>
      <li>
        <a href="http://download.fedora.redhat.com/pub/fedora/linux/releases/9/Fedora/i386/os/Packages/">Fedora 9 (RPM)</a>
@@ -28,20 +28,20 @@ not test them; use at your own risk.
        <a href="http://packages.gentoo.org/package/media-gfx/gimp">Gentoo Portage</a>
      </li>
      <li>
-       <a href="http://www.linuxpackages.net/search_view.php?by=name&name=gimp">Slackware</a>
+       <a href="http://www.linuxpackages.net/search_view.php?by=name&amp;name=gimp">Slackware</a>
      </li>
      <li>
        <a href="http://software.opensuse.org/search?q=gimp">openSUSE 11.0 (RPM)</a>
      </li>
      <li>
-       <a href="http://packages.ubuntu.com/search?searchon=names&keywords=gimp">Ubuntu (deb)</a>
+       <a href="http://packages.ubuntu.com/search?searchon=names&amp;keywords=gimp">Ubuntu (deb)</a>
      </li>
    </ul>
  </li>
  <li>BSD
    <ul>
      <li>
-       <a href="http://www.freebsd.org/cgi/ports.cgi?query=gimp&stype=name">FreeBSD</a>
+       <a href="http://www.freebsd.org/cgi/ports.cgi?query=gimp&amp;stype=name">FreeBSD</a>
      </li>
    </ul>
  </li>

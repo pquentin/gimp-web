@@ -83,10 +83,10 @@ earlier. Search <a href="home:gimp-bugzilla">Bugzilla</a> before
 filing a new bug-report. Here are some interesting Bugzilla queries:
 <ul>
   <li>
-    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.4&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">Open bugs with milestone 2.4</a>
+    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.4&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">Open bugs with milestone 2.4</a>
   </li>
   <li>
-    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&target_milestone=2.4&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED">Resolved bugs with milestone 2.4</a>
+    <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.4&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED">Resolved bugs with milestone 2.4</a>
   </li>
 </ul>
 </p>

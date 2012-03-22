@@ -451,10 +451,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <h2>GIMP 2.7 Screenshots (Todo, these are from 2.6)</h2>
 <div class="plain-screenshots">
-  <a href="../screenshots/gnome-1280x800-fresh-start.jpg">
-    <img src="../screenshots/gnome-1280x800-fresh-start-thumb.jpg" alt="First GIMP 2.6 startup" />
+  <a href="../screenshots/1280x800-fresh-start.jpg">
+    <img src="../screenshots/1280x800-fresh-start-thumb.jpg" alt="First GIMP 2.8 startup" />
   </a>
-  <p>First startup of GIMP&nbsp;2.6 on a 1280x800 GNOME desktop.</p>
+  <p>First startup of GIMP&nbsp;2.8 on a 1280x800 desktop.</p>
 
   <a href="../screenshots/alternative-2-6-ui-layout-example-one.jpg">
     <img src="../screenshots/alternative-2-6-ui-layout-example-one-thumb.jpg" alt="Alternative UI example" />

@@ -231,7 +231,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   <b>Developers:</b> Alexia Death, Michael Natterer, Zhenfeng Zhao
 </p>
 
-<h3>Tool Preset Improvements</h3>
+<h3 class="spillover">Tool Preset Improvements</h3>
 <p>
   You can now save existing state of any tool as a preset and give it
   a meaningful name. The presets are accessible from a new Tool
@@ -267,7 +267,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Michael Muré
 </p>
 
-<h3>File Plug-Ins</h3>
+<h3 class="spillover">File Plug-Ins</h3>
 <p>
   A plug-in for loading JPEG2000 images has been added, as well as
   plug-ins for X11 Mouse Cursor files and fundamental OpenRaster (.ora)
@@ -337,7 +337,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   <b>Interaction Architect:</b> Peter Sikking
 </p>
 
-<h3>Resources</h3>
+<h3 class="spillover">Resources</h3>
 <p>
   We have started overhauling the default set of resources and in this
   version there have been some changes to the default set of brushes.

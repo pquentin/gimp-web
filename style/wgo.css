@@ -137,6 +137,11 @@ p+h3, pre+h3, ul+h3, ol+h3, dl+h3 {
   margin-top: 2em;
 }
 
+h1.spillover, h2.spillover, h3.spillover {
+  /* allow images from previous headings to spill over into this one */
+  clear: left;
+}
+
 table {
   border-collapse: collapse;
   margin: .2em auto 2em auto;

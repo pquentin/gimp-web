@@ -224,11 +224,8 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   Because of the expansion, dynamics were separated from tool options
   and converted into a resource in their own right. The Google Summer
   of Code 2009 Advanced GUI for Brush Dynamics project was the start
-  of its development.
-</p>
-
-<p>
-  <b>Developers:</b> Alexia Death, Michael Natterer, Zhenfeng Zhao
+  of its development. <b>Developers:</b> Alexia Death, Michael
+  Natterer, Zhenfeng Zhao
 </p>
 
 <h3 class="spillover">Tool Preset Improvements</h3>
@@ -240,10 +237,11 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
-  This new feature completely replaces the previously existing tool 
-  presets system to a new level of accessibility. It also makes it 
-  possible to distribute tool presets just like any other resource 
-  because each preset is saved as an individual file.
+  This new feature completely replaces the previously existing tool
+  presets system to a new level of accessibility. It also makes it
+  possible to distribute tool presets just like any other resource
+  because each preset is saved as an individual
+  file. <b>Developers:</b> Michael Natterer, Alexia Death
 </p>
 
 <!--
@@ -252,18 +250,14 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   ones will be provided with the next development release.
 </p>-->
 
-<p>
-  <b>Developers:</b> Michael Natterer, Alexia Death
-</p>
-
 <h3>Cage Transform Tool</h3>
 <img class="right" src="images/2.8-cage-transform-tool.png" alt="Cage transform tool screenshot" />
 <p>
-  A completely new <em>Cage transform</em> tool has been added thanks to
-  the excellent work of one of our Google Summer of Code 2010
+  A completely new <em>Cage transform</em> tool has been added thanks
+  to the excellent work of one of our Google Summer of Code 2010
   students. The tool implements an innovative approach to free
   transformation and makes it possible to easily warp parts of objects
-  using an adjustable user-defined polygonal frame. <b>Developers:</b>
+  using an adjustable user-defined polygonal frame. <b>Developer:</b>
   Michael Muré
 </p>
 
@@ -284,7 +278,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <p>
   Last, but not least, a Web-page plug-in was added to render any web
-  page into an image using Webkit.
+  page into an image using Webkit. <b>Developer:</b> Mukund Sivaraman
 </p>
 
 <h3>For Tablet Users</h3>
@@ -307,13 +301,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 </p>
 
 <p>
-  People with Intuos tablets and either Artpen or Airbrush styluses will be
-  glad to find that Airbrush wheel and Artpen rotation are available
-  for driving dynamics via the 'Wheel' input.
-</p>
-
-</p>
-  <b>Developers:</b> Michael Natterer, Alexia Death
+  People with Intuos tablets and either Artpen or Airbrush styluses
+  will be glad to find that Airbrush wheel and Artpen rotation are
+  available for driving dynamics via the 'Wheel'
+  input. <b>Developers:</b> Michael Natterer, Alexia Death
 </p>
 
 <h3>Resource Tagging</h3>
@@ -327,13 +318,10 @@ If you need to get work done, please use the stable version, GIMP 2.6.
 
 <p>
   The tags are saved to an XML file, external to the data files
-  themselves. It is possible to tag multiple resources simultaneously in
-  the UI, but currently only while being viewed as a list. This feature
-  was developed during Google Summer of Code 2008.
-</p>
-
-<p>
-  <b>Developer:</b> Aurimas Juška 
+  themselves. It is possible to tag multiple resources simultaneously
+  in the UI, but currently only while being viewed as a list. This
+  feature was developed during Google Summer of Code
+  2008. <b>Developer:</b> Aurimas Juška
   <b>Interaction Architect:</b> Peter Sikking
 </p>
 
@@ -343,11 +331,7 @@ If you need to get work done, please use the stable version, GIMP 2.6.
   version there have been some changes to the default set of brushes.
   The silly 'Untitled' title has been removed from unnamed palette
   entries. A wholly new set of brushes for painting has been added and
-  makes use of the new tagging system.
-</p>
-
-<p>
-  <b>Developer:</b> Martin Nordholts 
+  makes use of the new tagging system. <b>Developer:</b> Martin Nordholts 
   <b>Artists:</b> Johannes Engelhardt, Ramón Miranda, Guillermo Espertino
 </p>
 

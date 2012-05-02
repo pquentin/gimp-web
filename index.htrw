@@ -7,7 +7,7 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <div class="splash">
-<img id="splashbg" alt="GIMP 2.6 Released!" title="GIMP 2.6 Released!" 
+<img id="splashbg" alt="GIMP 2.8 Released!" title="GIMP 2.8 Released!" 
 src="/images/frontsplash.jpg" />
 <img id="fadesplash" alt="-" src="/images/fade.png" />
 <img id="splashoverlay" alt="-" src="/images/frontsplash26.png" usemap="#splashmap" />
@@ -15,7 +15,7 @@ src="/images/frontsplash.jpg" />
 
 <map name="splashmap" id="splashmap">
 <area shape="rect" coords="152,99,288,133" href="/downloads/" alt="download" />
-<area shape="rect" coords="10,99,144,133" href="/release-notes/gimp-2.6.html" alt="release notes" />
+<area shape="rect" coords="10,99,144,133" href="/release-notes/gimp-2.8.html" alt="release notes" />
 </map>
 
 

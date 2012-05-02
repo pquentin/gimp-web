@@ -12,17 +12,19 @@
 
 <ul>
 
-  <li><a href="gimp-2.6.html">Release notes for the stable
-  version, GIMP 2.6</a>.  This is the version that most users should
+  <li><a href="gimp-2.8.html">Release notes for the stable
+  version, GIMP 2.8</a>.  This is the version that most users should
   be running.
   </li>
 
-  <li><a href="gimp-2.7.html">Release notes for the development
+  <!--
+  <li><a href="gimp-2.9.html">Release notes for the development
   snapshots</a>.
   Snapshots of the development tree may be unstable and contain
   incomplete features.  They are provided for developers and
   interested users who want to help us to improve GIMP.
   </li>
+  -->
 
 </ul>
 
@@ -30,6 +32,8 @@
   Older release notes may still have some historical value:
 </p>
 <ul>
+  <li><a href="gimp-2.7.html">2.7</a> (development)</li>
+  <li><a href="gimp-2.6.html">2.6</a> (stable)</li>
   <li><a href="gimp-2.5.html">2.5</a> (development)</li>
   <li><a href="gimp-2.4.html">2.4</a> (stable)</li>
   <li><a href="gimp-2.3.html">2.3</a> (development)</li>

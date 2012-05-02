@@ -10,7 +10,7 @@
 <img id="splashbg" alt="GIMP 2.8 Released!" title="GIMP 2.8 Released!" 
 src="/images/frontsplash.jpg" />
 <img id="fadesplash" alt="-" src="/images/fade.png" />
-<img id="splashoverlay" alt="-" src="/images/frontsplash26.png" usemap="#splashmap" />
+<img id="splashoverlay" alt="-" src="/images/frontsplash28.png" usemap="#splashmap" />
 </div>
 
 <map name="splashmap" id="splashmap">

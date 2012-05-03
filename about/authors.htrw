@@ -20,110 +20,135 @@
 
 <h2>Current developers</h2>
 <p>Contributing patches, fixes, plugins, extensions, scripts and other
-  <a href="wgo:develop">improvements to the code</a> for GIMP 2.4.</p>
+  <a href="wgo:develop">improvements to the code</a> for GIMP 2.6.</p>
 <ul>
-  <li>Henrik Brix Andersen</li>
+  <li>Fredrik Alströmer</li>
+  <li>Rob Antonishen</li>
   <li>Nicola Archibald</li>
+  <li>Luis Barrancos</li>
+  <li>Jerry Baker</li>
+  <li>Hendrik Boom</li>
+  <li>Richard Bowers</li>
   <li>Hans Breuer</li>
   <li>Simon Budig</li>
-  <li>João S. O. Bueno Calligaris</li>
+  <li>João S. O. Bueno</li>
   <li>Seth Burgess</li>
-  <li>Stephane Chauveau</li>
-  <li>Zbigniew Chyla</li>
-  <li>David Costanzo</li>
-  <li>Jay Cox</li>
+  <li>Marco Ciampa</li>
+  <li>Winston Chang</li>
+  <li>Lars-Peter Clausen</li>
   <li>Kevin Cozens</li>
-  <li>Karine Delvare</li>
-  <li>Daniel Egger</li>
-  <li>Pedro Alonso Ferrer</li>
-  <li>Piotr Filiciak</li>
-  <li>Shlomi Fish</li>
-  <li>Sylvain Foret</li>
-  <li>Gerald Friedland</li>
-  <li>Daniel Richard G</li>
-  <li>GG</li>
+  <li>Michael Deal</li>
+  <li>Alexia Death</li>
+  <li>Nicholas Doyle</li>
+  <li>Daniel Eddeland</li>
+  <li>Ulf-D. Ehlert</li>
   <li>Saul Goode</li>
   <li>David Gowers</li>
-  <li>Dov Grobgeld</li>
-  <li>Michael Hammel</li>
-  <li>Robert Helgesson</li>
-  <li>Kristian Jantz</li>
+  <li>Cameron Gregory</li>
+  <li>Eric Grivel</li>
+  <li>Stephen Griffiths</li>
+  <li>Tim Harder</li>
+  <li>Marcus Heese</li>
+  <li>Lukasz Hladowski</li>
+  <li>Patrick Horgan</li>
+  <li>Daniel Hornung</li>
+  <li>Christopher Howard</li>
+  <li>Alexander Hämmerle</li>
+  <li>Barak Itkin</li>
+  <li>Javier Jardón</li>
+  <li>Tim Jedlicka</li>
   <li>Róman Joost</li>
+  <li>Alexander Jones</li>
   <li>Geert Jordaens</li>
   <li>Aurimas Juška</li>
+  <li>Malay Keshav</li>
   <li>Øyvind Kolås</li>
-  <li>Robert L Krawitz</li>
+  <li>Lloyd Konneker</li>
+  <li>Kretynofil</li>
+  <li>Christian Krippendorf</li>
   <li>Eric Lamarque</li>
-  <li>Tobias Lenz</li>
-  <li>Frederic Leroy</li>
-  <li>Adrian Likins</li>
+  <li>Tom Lechner</li>
+  <li>Dave Lichterman</li>
   <li>Tor Lillqvist</li>
-  <li>Kjartan Maraas</li>
+  <li>Mikael Magnusson</li>
+  <li>Luidnel Maignan</li>
   <li>John Marshall</li>
-  <li>Loren Merritt</li>
-  <li>Chris Mohler</li>
-  <li>Chris Moller</li>
-  <li>Tim Mooney</li>
-  <li>Adam D Moss</li>
-  <li>Michael Natterer</li>
-  <li>David Neary</li>
-  <li>Sven Neumann</li>
+  <li>Takeshi Matsuyama</li>
+  <li>Mike Melancon</li>
+  <li>Christopher Montgomery</li>
+  <li>Tobias Mueller</li>
+  <li>Michael Muré</li>
+  <li>Andreas Neustifter</li>
+  <li>Jon Nordby</li>
   <li>Martin Nordholts</li>
   <li>David Odin</li>
-  <li>Robert Ögren</li>
+  <li>Nelson A. de Oliveira</li>
+  <li>Victor Oliveira</li>
+  <li>Benjamin Otte</li>
+  <li>Petr Ovtchenkov</li>
+  <li>Ville Pätsi</li>
   <li>Akkana Peck</li>
   <li>Nils Philippsen</li>
-  <li>Ari Pollak</li>
+  <li>Mircea Purdea</li>
   <li>Raphaël Quinet</li>
-  <li>Maurits Rijk</li>
-  <li>Clarence Risher</li>
-  <li>Stefan Röllin</li>
-  <li>Guillermo S. Romero</li>
+  <li>Dennis Ranke</li>
+  <li>Martin Renold</li>
+  <li>Gilles Rochefort</li>
+  <li>Marco Rossini</li>
+  <li>Karthikeyan S</li>
+  <li>Enrico Schröder</li>
   <li>Michael Schumacher</li>
   <li>Peter Sikking</li>
-  <li>Ted Shaneyfelt</li>
+  <li>RyōTa SimaMoto</li>
+  <li>SHIRAKAWA Akira</li>
   <li>Jernej Simončič</li>
   <li>Manish Singh</li>
   <li>Mukund Sivaraman</li>
   <li>William Skaggs</li>
-  <li>Kevin Sookocheff</li>
+  <li>Ville Sokk</li>
   <li>Jakub Steiner</li>
-  <li>Nathan Summers</li>
-  <li>Owen Taylor</li>
-  <li>Patrice Tremblay</li>
-  <li>Helvetix Victorinox</li>
-  <li>Matthew Wilson</li>
-  <li>Karl Günter Wünsch</li>
+  <li>Omari Stephens</li>
+  <li>Bogdan Szczurek</li>
+  <li>Tal Trachtman</li>
+  <li>Mason Thomas</li>
+  <li>Andreas Turtschan</li>
+  <li>Massimo Valentini</li>
+  <li>Thorsten Vollmer</li>
+  <li>Rupert Weber</li>
+  <li>Alexis Wilhelm</li>
+  <li>Andrew Wyatt</li>
   <li>Yoshinori Yamakawa</li>
+  <li>Zhenfeng Zhao</li>
+  <li>Simon Zilliken</li>
+  <li>Przemyslaw Zych</li>
 </ul>
 
 <h2>Artists</h2>
 <p>Contributing icons, cursors, brushes, gradients, patterns, etc.</p>
 <ul>
-  <li>Lapo Calamandrei</li>
-  <li>Paul Davey</li>
-  <li>Karl La Rocca</li>
-  <li>Andreas Nilsson</li>
-  <li>Carol Spears</li>
+  <li>Alexia Death</li>
+  <li>Aurore Derriennic</li>
+  <li>Ville Pätsi</li>
   <li>Jakub Steiner</li>
-  <li>William Szilveszter</li>
 </ul>
 
 <h2>Documenters</h2>
 <p>Contributing <a href="wgo:docs">documentation</a></p>
 <ul>
+  <li>Ignacio AntI</li>
+  <li>Žygimantas Beručka</li>
   <li>Marco Ciampa</li>
   <li>Dust</li>
   <li>Ulf-D. Ehlert</li>
   <li>Alessandro Falappa</li>
-  <li>Jakub Friedl</li>
-  <li>Michael Hammel</li>
   <li>Julien Hardelin</li>
   <li>Róman Joost</li>
-  <li>Hans de Jonge</li>
-  <li>Semka Kuloviæ-Debals</li>
-  <li>Manuel Quiñones</li>
-  <li>Nickolay V. Shmyrev</li>
+  <li>Jean-Pierre Litzler</li>
+  <li>Vitaly Lomov</li>
+  <li>Pierre Perrier</li>
+  <li>Alexandre Prokoudine</li>
+  <li>Patrycja Stawiarska</li>
+  <li>Kolbjørn Stuestøl</li>
   <li>Axel Wernicke</li>
 </ul>
 
@@ -134,6 +159,7 @@
   <li>Lauri Alanko</li>
   <li>Shawn Amundson</li>
   <li>Sven Anders</li>
+  <li>Henrik Brix Andersen</li>
   <li>Karl-Johan Andersson</li>
   <li>John Beale</li>
   <li>Zach Beane</li>
@@ -148,34 +174,51 @@
   <li>Brent Burton</li>
   <li>Francisco Bustamante</li>
   <li>Albert Cahalan</li>
+  <li>Lapo Calamandrei</li>
   <li>George J. Carrette</li>
   <li>Sean Cier</li>
-  <li>Winston Chang</li>
+  <li>Stephane Chauveau</li>
+  <li>Zbigniew Chyla</li>
   <li>Branko Collin</li>
   <li>Ed Connel</li>
   <li>Piers Cornwell</li>
+  <li>David Costanzo</li>
   <li>Daniel Cotting</li>
+  <li>Jay Cox</li>
+  <li>Paul Davey</li>
   <li>Brian Degenhardt</li>
+  <li>Karine Delvare</li>
   <li>Andreas Dilger</li>
   <li>Austin Donnelly</li>
   <li>Scott Draves</li>
   <li>Daniel Dunbar</li>
   <li>Misha Dynin</li>
+  <li>Daniel Egger</li>
   <li>Morton Eriksen</li>
   <li>Larry Ewing</li>
+  <li>Pedro Alonso Ferrer</li>
   <li>Nick Fetchak</li>
+  <li>Piotr Filiciak</li>
+  <li>Shlomi Fish</li>
+  <li>Sylvain Foret</li>
   <li>David Forsyth</li>
   <li>Raphael Francois</li>
+  <li>Jakub Friedl</li>
+  <li>Gerald Friedland</li>
   <li>Jochen Friedrich</li>
+  <li>Daniel Richard G</li>
   <li>Jordi Gay</li>
   <li>Jim Geuther</li>
+  <li>GG</li>
   <li>Graeme Gill</li>
   <li>Pedro Gimeno</li>
   <li>Scott Goehring</li>
   <li>Heiko Goller</li>
   <li>Marcelo de Gomensoro Malheiros</li>
-  <li>Cameron Gregory</li>
   <li>Pavel Grinfeld</li>
+  <li>Dov Grobgeld</li>
+  <li>Michael Hammel</li>
+  <li>Robert Helgesson</li>
   <li>James Henstridge</li>
   <li>Eric Hernes</li>
   <li>David Hodson</li>
@@ -186,14 +229,19 @@
   <li>Ben Jackson</li>
   <li>Simon Janes</li>
   <li>Tim Janik</li>
+  <li>Kristian Jantz</li>
+  <li>Hans de Jonge</li>
   <li>Andrew Kieschnick</li>
   <li>Peter Kirchgessner</li>
   <li>Philipp Klaus</li>
   <li>David Koblas</li>
   <li>Daniel Kobras</li>
+  <li>Robert L Krawitz</li>
+  <li>Semka Kuloviæ-Debals</li>
   <li>Tuomas Kuosmanen</li>
   <li>Karin Kylander</li>
   <li>Olof S Kylander</li>
+  <li>Karl La Rocca</li>
   <li>Philip Lafleur</li>
   <li>Chris Lahey</li>
   <li>Nick Lamb</li>
@@ -203,27 +251,38 @@
   <li>Elliot Lee</li>
   <li>Marc Lehmann</li>
   <li>Ray Lehtiniemi</li>
+  <li>Tobias Lenz</li>
+  <li>Frederic Leroy</li>
   <li>Raph Levien</li>
   <li>Wing Tung Leung</li>
+  <li>Adrian Likins</li>
   <li>Ingo Lütkebohle</li>
   <li>Josh MacDonald</li>
   <li>Ed Mackey</li>
   <li>Vidar Madsen</li>
   <li>Ian Main</li>
+  <li>Kjartan Maraas</li>
   <li>Kelly Martin</li>
   <li>Torsten Martinsen</li>
   <li>Gordon Matzigkeit</li>
   <li>Gregory McLean</li>
   <li>Federico Mena Quintero</li>
+  <li>Loren Merritt</li>
   <li>Jim Meyer</li>
   <li>James Mitchell</li>
   <li>Hirotsuna Mizuno</li>
+  <li>Chris Mohler</li>
+  <li>Chris Moller</li>
   <li>David Monniaux</li>
+  <li>Tim Mooney</li>
+  <li>Adam D Moss</li>
   <li>Balazs Nagy</li>
   <li>Yukihiro Nakai</li>
   <li>Shuji Narazaki</li>
   <li>Felix Natter</li>
+  <li>David Neary</li>
   <li>David Necas</li>
+  <li>Andreas Nilsson</li>
   <li>Stephen Robert Norris</li>
   <li>Tim Newsome</li>
   <li>Erik Nygren</li>
@@ -232,13 +291,18 @@
   <li>Garry R. Osgood</li>
   <li>Alan Paeth</li>
   <li>Jay Painter</li>
-  <li>Ville Pätsi</li>
   <li>Asbjorn Pettersen</li>
   <li>Mike Phillips</li>
+  <li>Ari Pollak</li>
+  <li>Manuel Quiñones</li>
   <li>Tom Rathborne</li>
   <li>Jens Restemeier</li>
+  <li>Maurits Rijk</li>
   <li>Daniel Risacher</li>
+  <li>Clarence Risher</li>
   <li>James Robinson</li>
+  <li>Stefan Röllin</li>
+  <li>Guillermo S. Romero</li>
   <li>Tim Rowley</li>
   <li>Mike Schaeffer</li>
   <li>John Schlag</li>
@@ -247,24 +311,36 @@
   <li>Alexander Schulz</li>
   <li>Tracy Scott</li>
   <li>Craig Setera</li>
+  <li>Ted Shaneyfelt</li>
   <li>Aaron Sherman</li>
+  <li>Nickolay V. Shmyrev</li>
   <li>Daniel Skarda</li>
+  <li>Kevin Sookocheff</li>
+  <li>Carol Spears</li>
   <li>Adam Spiers</li>
+  <li>Nathan Summers</li>
   <li>Mike Sweet</li>
+  <li>William Szilveszter</li>
   <li>Eiichi Takamori</li>
   <li>Tristan Tarrant</li>
   <li>Michael Taylor</li>
+  <li>Owen Taylor</li>
   <li>Ian Tester</li>
   <li>Andy Thomas</li>
+  <li>Patrice Tremblay</li>
   <li>Kevin Turner</li>
   <li>Brion Vibber</li>
+  <li>Helvetix Victorinox</li>
   <li>Rebecca Walter</li>
   <li>Martin Weber</li>
   <li>James Wang</li>
   <li>Kris Wehner</li>
   <li>Nigel Wetten</li>
   <li>Calvin Williamson</li>
+  <li>Matthew Wilson</li>
+  <li>Karl Günter Wünsch</li>
   <li>Shirasaki Yasuhiro</li>
+  <li>Robert Ögren</li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

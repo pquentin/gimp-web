@@ -15,12 +15,12 @@
 
   <xsl:template name="recent-contributor">
     <xsl:param name="role" />
-    <xsl:apply-templates select="dc:contributor[contains(@role, $role) and number(@last-active) >= 2.4]" />
+    <xsl:apply-templates select="dc:contributor[contains(@role, $role) and number(@last-active) >= 2.6]" />
   </xsl:template>
 
   <xsl:template name="former-contributor">
     <xsl:param name="role" />
-    <xsl:apply-templates select="dc:contributor[contains(@role, $role) and number(@last-active) &lt; 2.4]" />
+    <xsl:apply-templates select="dc:contributor[contains(@role, $role) and number(@last-active) &lt; 2.6]" />
   </xsl:template>
 
   <xsl:template match="/dc:gimp-authors">
@@ -46,7 +46,7 @@
 
 &lt;h2&gt;Current developers&lt;/h2&gt;
 &lt;p&gt;Contributing patches, fixes, plugins, extensions, scripts and other
-  &lt;a href="wgo:develop"&gt;improvements to the code&lt;/a&gt; for GIMP 2.4.&lt;/p&gt;
+  &lt;a href="wgo:develop"&gt;improvements to the code&lt;/a&gt; for GIMP 2.6.&lt;/p&gt;
 &lt;ul&gt;
 </xsl:text>
     <xsl:call-template name="recent-contributor">

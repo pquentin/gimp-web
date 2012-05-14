@@ -20,6 +20,9 @@ France
      http://ftp.iut-bm.univ-fcomte.fr/gimp/gimp/ (web access)
 #     http://gimp.krecio.pl/gimp/ (web access)
      http://mirror.ibcp.fr/pub/gimp/ (web access)
+ 
+Estonia
+     http://servingzone.com/mirrors/gimp/ (web access)
 
 Germany
      ftp://artfiles.org/gimp.org/
@@ -31,7 +34,7 @@ Germany
      ftp://ftp.gwdg.de/pub/misc/grafik/gimp/
      http://ftp.gwdg.de/pub/misc/grafik/gimp/ (web access)
      rsync://ftp.gwdg.de/pub/misc/grafik/gimp/ (rsync access)
-     http://gimp.mywatchinfo.info/ (web access)
+#     http://gimp.mywatchinfo.info/ (web access)
 #     http://www.online-laptop.com/gimp/ (web access)
 #     http://gimp.trafictransfer.com/ (web access) 
      http://mirrors.zerg.biz/gimp/ (web access)

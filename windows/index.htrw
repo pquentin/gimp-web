@@ -3,7 +3,7 @@
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
-<h1>GIMP for Windows</h1>
+<h1>GIMP for Microsoft Windows</h1>
 
 <h2>Getting and Installing GIMP</h2>
 
@@ -38,9 +38,9 @@ packages (these are not needed for normal users):</p>
 
 <h2>Requirements</h2>
 
-<p>GIMP should run on any NT-based version of Windows (NT4, 2000, XP
-or Vista).  Older GIMP versions (2.0.x) could also work with older
-versions of Windows such as Windows 95 but they are not supported
+<p>GIMP 2.8.x should run on Microsoft Windows XP SP3, Vista and 7.
+Older GIMP versions (2.6.x, 2.4.x, 2.2.x, 2.0.x) could also work with 
+older versions of Microsoft Windows, but they are not supported
 anymore.  The amount of memory can be an important factor, especially
 if you intend to work on large images.  A minimum of 128 MB of RAM is
 recommended, but the more RAM the better.</p>

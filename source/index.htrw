@@ -72,7 +72,7 @@
   README in the tarballs for details.
 </p>
 
-<h2>Stable version 2.6.x</h2>
+<h2>Stable version 2.8.x</h2>
 <table>
 <tr>
   <th>Package</th>
@@ -91,7 +91,7 @@
 
 <tr>
 <td>GTK+</td>
-<td>2.12.1 or newer</td>
+<td>2.24.10 or newer</td>
 <td><a href="ftp://ftp.gtk.org/pub/gtk/">Download</a></td>
 <td>-</td>
 <td>The GIMP toolkit</td>
@@ -99,7 +99,7 @@
 
 <tr>
 <td>GLib</td>
-<td>2.16.1 or newer</td>
+<td>2.30.2 or newer</td>
 <td><a href="ftp://ftp.gtk.org/pub/glib">Download</a></td>
 <td>-</td>
 <td>Glib Convenience Library</td>
@@ -107,10 +107,10 @@
 
 <tr>
 <td>Pango</td>
-<td>1.18.0 or newer</td>
+<td>1.29.4 or newer</td>
 <td><a href="ftp://ftp.gtk.org/pub/pango">Download</a></td>
 <td>-</td>
-<td>Text layout engine</td>
+<td>Text layout engine, GIMP also requires PangoCairo&nbsp;— a Pango backend using Cairo</td>
 </tr>
 
 <tr>
@@ -119,6 +119,22 @@
 <td>-</td>
 <td><a href="http://freedesktop.org/fontconfig/release/">Download</a></td>
 <td>Font Configuration</td>
+</tr>
+
+<tr>
+<td>babl</td>
+<td>0.1.10 or newer</td>
+<td><a href="ftp://ftp.gimp.org/pub/babl/">Download</a></td>
+<td>-</td>
+<td>Pixel format translation library</td>
+</tr>
+
+<tr>
+<td>GEGL</td>
+<td>0.2.0 or newer</td>
+<td><a href="ftp://ftp.gimp.org/pub/gegl/">Download</a></td>
+<td>-</td>
+<td>Generic Graphics Library</td>
 </tr>
 
 <h1><a name="gimp_from_git">GIMP from Git</a></h1>

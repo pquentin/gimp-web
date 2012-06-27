@@ -396,7 +396,7 @@ retouching.
   exactly how to do it.
 </p>
 
-<h2>The Artist Guide to the Gimp</h2>
+<h2>The Artists' Guide to the GIMP</h2>
 <p>
   <img class="icon" src="the_artist_guide_to_the_gimp.png"
        alt=""
@@ -419,6 +419,29 @@ retouching.
   to these the extensive discussions on printing and scanning, and the
   result is a text that will be an integral part of any graphic
   artist's tool chest.
+</p>
+
+<h2>The Artist's Guide to GIMP, 2nd Edition</h2>
+<p>
+  <img class="icon" src="the_artists_guide_to_gimp_2ed.png"
+       alt=""
+       width="100px"
+       height="80px"/>
+  <strong>Author:</strong> Michael J. Hammel<br/>
+  <strong>Format:</strong> Horizontal, 320pp.<br/>
+  <strong>ISBN-10:</strong> 1593274149<br/>
+  <strong>ISBN-13:</strong> 978-1-59327-414-6<br/>
+  <strong>Publisher/Date:</strong> No Starch Press/June 2012<br/>
+  <strong>Website:</strong> <a href="http://nostarch.com/gimp2">http://nostarch.com/gimp2</a><br/>
+  <br/>
+  <strong>Description:</strong> 
+  The Artist's Guide to GIMP teaches you how to use GIMP without a tedious
+  list of menu paths and options. Instead, as you follow along with Michael
+  J. Hammel's step-by-step instructions, you'll learn to produce
+  professional-looking advertisements, apply impressive photographic effects,
+  and design cool logos and text effects. These extensively illustrated
+  tutorials are perfect for hands-on learning or as templates for your own
+  artistic experiments.
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

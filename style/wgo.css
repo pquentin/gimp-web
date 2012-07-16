@@ -692,7 +692,7 @@ div.splash {
 }
 
 /* fix the flattr button alignment */
-iframe.FlattButton
+iframe.FlattrButton
 {
 	margin-left: 3px;
 	padding-left: 8px;

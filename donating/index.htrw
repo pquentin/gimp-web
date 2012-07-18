@@ -75,7 +75,7 @@
   note to your transfer.
 </p>
 
-<h3>Paypal</h3>
+<h2>Paypal</h2>
 <p>
   Donate to gimp@gnome.org, this will notify us, and the GNOME board,
   that funds have been donated to the GIMP project.  Credit card donations
@@ -97,6 +97,17 @@
   <input alt="Support GIMP" name="submit"
          src="donate.png" type="image" />
 </form>
+
+<h3>Flattr</h3>
+<p>
+	Flattr is a microdonation system. Users are able to pay a small amount 
+	every month (minimum 2 euros) and then click Flattr buttons on sites 
+	to share the money they paid among those sites, comparable to an Internet 
+	tip jar (for more details see Wikipedia's <a href="http://en.wikipedia.org/wiki/Flattr">Flattr</> article).
+</p>
+<p>
+	<iframe width="292" height="420" src="http://tools.flattr.net/widgets/thing.html?thing=707850"></iframe>
+</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

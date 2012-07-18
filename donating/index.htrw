@@ -106,7 +106,7 @@
 	tip jar (for more details see Wikipedia's <a href="http://en.wikipedia.org/wiki/Flattr">Flattr</a> article).
 </p>
 <p>
-	<iframe width="292" height="420" src="http://tools.flattr.net/widgets/thing.html?thing=707850"></iframe>
+	<iframe width="292" height="420" frameborder="0" src="http://tools.flattr.net/widgets/thing.html?thing=707850"></iframe>
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

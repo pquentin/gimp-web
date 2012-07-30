@@ -698,7 +698,12 @@ iframe.FlattrButton
 	padding-left: 8px;
 }
 
-/* fix the ohlog widget formatting */
+/* fix the ohloh widget formatting */
+div.gadget {
+	color: black;
+	background-color: white;
+}
+
 div.gadget h3 {
 	clear: none;
 }

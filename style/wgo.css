@@ -697,3 +697,12 @@ iframe.FlattrButton
 	margin-left: 3px;
 	padding-left: 8px;
 }
+
+/* fix the ohlog widget formatting */
+div.gadget h3 {
+	clear: none;
+}
+
+div.gadget div {
+    clear: none ! important;
+}

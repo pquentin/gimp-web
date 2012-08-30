@@ -137,11 +137,11 @@ tastes.</p>
 
 <p>Most (if not all) GNU/Linux distributions will support GIMP through their
 package management systems and may even come with GIMP preinstalled. You
-can follow links to <a href="/unix">GNU/Linux and UNIX</a>, <a
-href="/windows/">Microsoft Windows</a> and <a href="/macintosh">Apple
-Mac OS X</a> for the latest binaries. Of course, this is <a
-href="http://www.gnu.org/philosophy/free-sw.html">free software</a> so
-the <a href="/source/">source code</a> is available to, along with
+can find the latest version for GNU/Linux, Microsoft Windows and
+Apple Mac OS X on <a href="/downloads/">the download page</a>.
+Of course, this is
+<a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>
+so the <a href="/source/">source code</a> is available to, along with
 instruction on how to compile it.</p>
 
 <h3 id="Gimp">Why and when was GIMP changed from "general image
@@ -183,11 +183,11 @@ form, and in <a href="http://docs.gimp.org/download.html">PDF</a>.</p>
 
 <h3 id="Windows">What about a Windows version?</h3>
 
-<p>See <a href="/windows/">GIMP for Windows</a>.</p>
+<p>See <a href="/downloads/">the download page</a>.</p>
 
 <h3 id="Mac">What about a Mac version?</h3>
 
-<p>See <a href="/macintosh/">GIMP for Mac OS X</a>.</p>
+<p>See <a href="/downloads/">the download page</a>.</p>
 
 <h3 id="Easter">Are there any Easter eggs in GIMP?</h3>
 

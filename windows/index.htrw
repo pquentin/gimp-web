@@ -5,59 +5,10 @@
 
 <h1>GIMP for Microsoft Windows</h1>
 
-<h2>Getting and Installing GIMP</h2>
-
-<p>This site, www.gimp.org, only distributes the GIMP source code (the
-building blocks). You can however download executable versions from
-the following site:</p>
-
-<ul>
-  <li>
-    <a href="http://gimp-win.sourceforge.net/stable.html">Installer</a>
-    (provided by Jernej Simončič) - Choose this if you just want to
-    install GIMP.  Note that the user manual is an extra package; make
-    sure that you get it as well. And have a look at the
-    <a href="http://gimp-win.sourceforge.net/faq.html">FAQ</a> if you run
-    into any problems.
-  </li>
-</ul>
-
-<p>If you are a developer interested in creating plug-ins or working
-on the GIMP source code, you may want to download some additional
-packages (these are not needed for normal users):</p>
-
-<ul>
-  <li>
-    <a href="ftp://ftp.gnome.org/pub/gnome/binaries/win32/">Individual
-    .zip packages for GTK+, GLib and other libraries</a>, 
-     - for developers and advanced users. If you follow these links, 
-    you should know what you want, why you need it and how to use it.
-  </li>
-</ul>
-
-
-<h2>Requirements</h2>
-
-<p>GIMP 2.8.x should run on Microsoft Windows XP SP3, Vista and 7.
-Older GIMP versions (2.6.x, 2.4.x, 2.2.x, 2.0.x) could also work with 
-older versions of Microsoft Windows, but they are not supported
-anymore.  The amount of memory can be an important factor, especially
-if you intend to work on large images.  A minimum of 128 MB of RAM is
-recommended, but the more RAM the better.</p>
-
-
-<h2>Help and Documentation</h2>
-
-<ul>
-  <li><a href="wgo:docs">GIMP Documentation</a></li>
-</ul>
-
-<p>It is highly recommended that you install the help files (GIMP User
-Manual) that are provided as a separate package (see above).  The
-documentation is also <a href="wgo:docs">available online</a>.</p>
-
-<p>Other useful links can be found at the bottom of each page on this
-site.</p>
+<p>
+This page is obsolete, please see
+<a href="/downloads/">the downloads page</a>.
+</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

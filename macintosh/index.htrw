@@ -5,68 +5,9 @@
 
 <h1>GIMP for Mac OS X</h1>
 
-<p class="images"><img alt="GIMP" src="TiBookMacGIMP.jpg" /></p>
-
-<h2>Getting and Installing GIMP</h2>
-
-<p>There are various ways to obtain and install GIMP for your
-Macintosh.  In addition to the source code distribution here on
-www.gimp.org, there are various alternative sources for packaged and
-even commercially distributed CDs, which aim to make installation and
-setup an easier task. These include:
-</p>
-
-<ul>
-  <li><a href="http://gimp.lisanet.de/">GIMP on OS X</a>
-  provides application bundles of of GIMP 2.6 for Mac OS X users.
-  </li>
-
-  <li><a href="http://www.macports.org/">MacPorts</a> provide an easy
-  way to install various open-source software products on Mac OS X.
-  They have GIMP 2.6 in the latest revisions.
-  </li>
-
-</ul>
-
-<h2>Requirements</h2>
-
-<p>GIMP will only run on Mac OS X, not on version 9 or earlier of
-the Macintosh operating system.  There are a number of reasons why it
-is unlikely that GIMP will ever run on older versions of Mac OS.
-In addition to Mac OS X, the following is a list of what you will need
-to run GIMP on your Macintosh:</p>
-
-<ul>
-  <li>X Windowing Layer<br /> GIMP uses a separate windowing layer,
-  the X11 windowing protocol, on Mac OS X, which must be installed
-  first. The <a href="http://xquartz.macosforge.org">XQuartz
-  project</a> provides this functionality.  There you can download the
-  most recent version of X11.app.
- </li>
-
-  <li>Graphics libraries and toolkits<br />
-  Unlike most GNU/Linux distributions, Mac OS X does not come with the
-  open source libraries upon which GIMP is built.  These are
-  typically installed along with GIMP, but can be installed
-  separately.  If you want to compile GIMP from source, we suggest that
-  you use <a href="http://www.macports.org/">MacPorts</a> or
-  <a href="http://finkproject.org/">fink</a> to install the libraries
-  it depends on.
-  </li>
-</ul>
-
-
-<h2>Help and Documentation</h2>
-
-<ul>
-  <li><a href="wgo:docs">GIMP Documentation</a></li>
-</ul>
-
 <p>
-Gimper.net is the home of
-the <a href="http://gimper.net/viewforum.php?f=19">wilber-loves-apple
-forum</a>, where you can find many useful information about GIMP on
-Mac OS X.
+This page is obsolete, please see
+<a href="/downloads/">the downloads page</a>.
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

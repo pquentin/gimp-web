@@ -68,7 +68,7 @@ class RDF(x_xml.Xml):
   pass
 
 class rss(x_xml.Xml):
-  defaults = { "version" : "1.0" }
+  defaults = { }
   tag = "rss"
 
   class init(x_xml.xml_init):

@@ -1,6 +1,6 @@
 include ../Makefile.defs
 
-.PHONY: all clean install
+.PHONY: all install
 
 all: mirrors.xhtml
 

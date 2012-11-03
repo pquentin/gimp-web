@@ -17,8 +17,9 @@
 <!-- according to MAINTAINERS, contributions in ChangeLog and Bugzilla -->
 <ul>
   <li>Jakub Steiner (2.4 release redesign)</li>
-  <li>Raphaël Quinet (maintainer)</li>
   <li>Michael Schumacher (maintainer)</li>
+  <li>Alexandre Prokoudine (maintainer)</li>
+  <li>Raphaël Quinet</li>
   <li>Sven Neumann</li>
   <li>Róman Joost</li>
   <li>Karine Delvare</li>
@@ -70,10 +71,6 @@
 
 <h2>Previous Web Site</h2>
 
-<p>The previous version of www.gimp.org, now available as <a
-href="http://classic.gimp.org/">classic.gimp.org</a> was maintained
-differently, usually with one or two webmasters and a few
-contributors.</p>
 <ul>
   <li>From 1997 to 2000, the webmaster's hat was worn by Jens
   T. Lautenbacher (jtl) and Adrian Likins (Adrian).  In addition, Zach

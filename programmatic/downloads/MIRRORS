@@ -47,6 +47,9 @@ Japan
      ftp://ftp.u-aizu.ac.jp/pub/graphics/tools/gimp/
      ftp://ftp.ring.gr.jp/pub/graphics/gimp/
      http://www.ring.gr.jp/pub/graphics/gimp/ (web access)
+     ftp://mirrors.go-part.com/gimp/
+     http://mirrors.go-part.com/gimp/ (web access)
+     rsync://mirrors.go-part.com/gimp/
 
 Netherlands
      ftp://ftp.snt.utwente.nl/pub/software/gimp/gimp/

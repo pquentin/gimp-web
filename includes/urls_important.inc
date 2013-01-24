@@ -10,5 +10,5 @@
 
 <h2>GIMP RSS feeds</h2>
   <ul>
-    <li><a href="https://bugzilla.gnome.org/buglist.cgi?bug_file_loc_type=substring&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=NEEDINFO&bug_status=REOPENED&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&changedin=7&chfieldto=Now&product=GIMP&query_format=advanced&title=Bug%20List:%20GIMP%20-%20Current%20Bug%20Week&ctype=atom">GIMP Active Bugs</a></li>
+    <li><a href="https://bugzilla.gnome.org/buglist.cgi?bug_file_loc_type=substring&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=NEEDINFO&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;changedin=7&amp;chfieldto=Now&amp;product=GIMP&amp;query_format=advanced&amp;title=Bug%20List:%20GIMP%20-%20Current%20Bug%20Week&amp;ctype=atom">GIMP Active Bugs</a></li>
   </ul>

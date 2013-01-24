@@ -127,8 +127,8 @@ GNU/Linux and UNIX in general."</p>
 directly on the pixels that make up the image, and not a vector editor.
 Other (proprietary) raster editors include Adobe Photoshop, Jasc
 Paintshop Pro and the humble Microsoft Paint. An alternative free editor
-is the KOffice project, <a
-href="http://www.koffice.org/krita/">Krita</a>. Users wanting to edit
+is <a
+href="http://www.krita.org/">Krita</a>. Users wanting to edit
 photographs will certainly want a raster editor like GIMP. Graphic
 designers and illustrators may prefer a vector editor depending on their
 tastes.</p>
@@ -638,11 +638,11 @@ was released, and will span across several stable releases. This work
 will be completed in GIMP 3.0, which will have full support for high
 bit depths. If you need such support now and can't wait, <a
 href="http://www.cinepaint.org/">cinepaint</a> and <a
-href="http://www.koffice.org/krita/">krita</a> support 16 bits per
+href="http://www.krita.org/">Krita</a> support 16 bits per
 channel now.</p>
 
-<p>It should be noted that for publishing to the web, the current GIMP
-release is good enough.</p>
+<p>The current development branch, GIMP 2.9.x, supports higher bit 
+depths than the 2.8 and older 8-Bit-per-component...</p>
 
 <h3 id="cmyk">When can we see native CMYK support?</h3>
 

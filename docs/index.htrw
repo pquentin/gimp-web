@@ -18,17 +18,17 @@
     languages:
 
     <ul>
-      <li><a href="http://docs.gimp.org/2.8/de">Deutsch</a></li>
-      <li><a href="http://docs.gimp.org/2.8/en">English</a></li>
-      <li><a href="http://docs.gimp.org/2.8/fr">Français</a></li>
-      <li><a href="http://docs.gimp.org/2.8/it">Italiano</a></li>
-      <li><a href="http://docs.gimp.org/2.8/ja">日本語(Japanese)</a></li>
-      <li><a href="http://docs.gimp.org/2.8/nl">Nederlands</a></li>
-      <li><a href="http://docs.gimp.org/2.8/es">Español</a></li>
-      <li><a href="http://docs.gimp.org/2.8/ko">한국어(Korean)</a></li>
-      <li><a href="http://docs.gimp.org/2.8/nn">Norwegian</a></li>
-      <li><a href="http://docs.gimp.org/2.8/ru">Pусский</a></li>
-      <li><a href="http://docs.gimp.org/2.8/el">Ελληνικά</a></li>
+      <li><a href="http://docs.gimp.org/2.8/de/">Deutsch</a></li>
+      <li><a href="http://docs.gimp.org/2.8/en/">English</a></li>
+      <li><a href="http://docs.gimp.org/2.8/fr/">Français</a></li>
+      <li><a href="http://docs.gimp.org/2.8/it/">Italiano</a></li>
+      <li><a href="http://docs.gimp.org/2.8/ja/">日本語(Japanese)</a></li>
+      <li><a href="http://docs.gimp.org/2.8/nl/">Nederlands</a></li>
+      <li><a href="http://docs.gimp.org/2.8/es/">Español</a></li>
+      <li><a href="http://docs.gimp.org/2.8/ko/">한국어(Korean)</a></li>
+      <li><a href="http://docs.gimp.org/2.8/nn/">Norwegian</a></li>
+      <li><a href="http://docs.gimp.org/2.8/ru/">Pусский</a></li>
+      <li><a href="http://docs.gimp.org/2.8/el/">Ελληνικά</a></li>
     </ul>
   </p>
 
@@ -67,7 +67,7 @@
     <li><a href="/man/gimp.html"><tt>gimp</tt> (1)</a></li>
     <li><a href="/man/gimprc.html"><tt>gimprc</tt> (5)</a></li>
     <li><a href="/man/gimp-remote.html"><tt>gimp-remote</tt> (1)</a></li>
-    <li><a href="/man/gimptool-2.0.html"><tt>gimptool-2.0</tt> (1)</a></li>
+    <li><a href="/man/gimptool.html"><tt>gimptool-2.0</tt> (1)</a></li>
   </ul>
 
 <h2>GIMP Documentation for Developers and Script Authors</h2>

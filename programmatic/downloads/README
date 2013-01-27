@@ -1,0 +1,18 @@
+This is the root directory of the official GIMP ftp site.
+
+These subdirectories contain various versions of the source code of
+the GIMP.  Binaries contributed by third parties are also available
+for various platforms.  Please visit http://www.gimp.org/ for details.
+
+The subdirectories and their contents:
+
+  v2.7      - Unstable development snapshots.
+  v2.6      - The current stable subdirectory.  Here you'll find the most
+              recent stable version of the GIMP source packages.
+  v2.4      - The former stable version, now replaced by GIMP 2.6.
+  v2.2      - Older stable version, obsolete.
+  v2.0      - Even older version, obsolete.
+  v1.2      - Much older version, obsolete.
+  extras    - Additional data files: patterns, brushes, ...
+  plug-ins  - Additional plug-ins for GIMP
+  net-fu    - A WWW based method for remote GIMP generation of logos, etc.

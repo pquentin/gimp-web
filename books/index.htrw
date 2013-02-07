@@ -23,19 +23,35 @@
 </p>
 -->
 
+<h2>The Book of GIMP</h2>
+<p>
+  <img class="icon" src="book_of_gimp.png" 
+       alt="The Book of GIMP"
+       width="100px"
+       height="132px"/>
+  <strong>Authors:</strong> Olivier Lecarme, Karine Delvare<br/>
+  <strong>Format:</strong> Paperback, 676pp.<br/>
+  <strong>ISBN-10:</strong> N/A<br/>
+  <strong>ISBN-13:</strong> 978-1-59327-383-5<br/>
+  <strong>Publisher/Date:</strong> No Starch Press/2013<br/>
+  <strong>Website:</strong> <a href="http://nostarch.com/gimp">http://nostarch.com/gimp</a><br/>
+  <br/>
+  <br/>
+  <strong>Description:</strong> GIMP is a free alternative to Adobe Photoshop with tons of professional-grade features. But with so many powerful tools and menu options, GIMP can be difficult to master. Whether you're struggling to get started or trying to master some of GIMP's more complex features, you'll find the answers you're looking for in The Book of GIMP.
+</p>
+
 <h2>Before and After. A Beginner's GIMP Book</h2>
 <p>
   <img class="icon" src="before-and-after-cover.jpg" 
        alt="Before and After. A Beginner's GIMP Book"
        width="100px"
        height="135px"/>
-  <strong>Authors:</strong> Kat Landreth<br/>
+  <strong>Author:</strong> Kat Landreth<br/>
   <strong>Format:</strong> PDF ebook<br/>
   <strong>ISBN-10:</strong> N/A<br/>
   <strong>ISBN-13:</strong> N/A<br/>
   <strong>Publisher/Date:</strong>  Self-published/May 2012<br/>
   <strong>Website:</strong> <a href="http://how-to-gimp.com/gimp-book/">http://how-to-gimp.com/gimp-book/</a><br/>
-  <br/>
   <strong>Description:</strong> A beginner's guide to using GIMP for photo editing, and basic graphics like using text on images. The book starts from the very beginning. You'll work through clearly written tutorials using over 30 high quality practice images to learn everything from drawing simple shapes, to using advanced tools like layers, and layer masks. You'll learn how to use tools effectively, rather than on memorizing steps in tutorials. By the end of the book, you'll be ready to follow and adapt online tutorials with ease. You'll even have the confidence to use GIMP without tutorials. 
 </p>
 
@@ -45,7 +61,7 @@
        alt="Blanco y Negro con The GIMP"
        width="100px"
        height="143px"/>
-  <strong>Authors:</strong> Alberto García Briz<br/>
+  <strong>Author:</strong> Alberto García Briz<br/>
   <strong>Format:</strong> Paperback, 232pp.<br/>
   <strong>ISBN-10:</strong> 1-47835-391-0<br/>
   <strong>ISBN-13:</strong> 978-1-47835-391-1<br/>

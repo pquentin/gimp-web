@@ -31,7 +31,7 @@ TARGETS=$(SOURCES:.htrw=.html)
 .PHONY: all usage webtools mirrors install clean cvsignore programmatic includes crontab target
 
 all: usage includes webtools mirrors crontab ${TARGETS}
-	rsync -rlt --delete --omit-dir-times --exclude-from=install.exclude ./ ${DocumentRoot}
+	rsync -rlt --omit-dir-times --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
 
 # Install all includes files to the target directory (FIXME: this should not

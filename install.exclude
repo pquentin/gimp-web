@@ -1,4 +1,5 @@
 .git
+.gitignore
 /ChangeLog
 /install.config
 /install.config.sample
@@ -20,7 +21,6 @@
 /news
 /contest/gallery
 /programmatic
-/crontab
 /var
 *.*~
 *~

@@ -28,9 +28,9 @@ export PYTHONPATH=$(shell pwd)/programmatic:
 SOURCES=$(shell find . -name '*.htrw' -print)
 TARGETS=$(SOURCES:.htrw=.html)
 
-.PHONY: all usage webtools mirrors install clean cvsignore programmatic includes crontab target
+.PHONY: all usage webtools mirrors install clean cvsignore programmatic includes target
 
-all: usage includes webtools mirrors crontab ${TARGETS}
+all: usage includes webtools mirrors ${TARGETS}
 	rsync -rlt --omit-dir-times --exclude-from=install.exclude ./ ${DocumentRoot}
 	echo ${TARGETS}
 
@@ -59,12 +59,8 @@ webtools:
 programmatic:
 	$(MAKE) -C programmatic all
 
-crontab:
-	$(MAKE) -C crontab all
-
 install: all
 	$(MAKE) -C programmatic install
-	$(MAKE) -C crontab install
 
 clean:
 	$(MAKE) -C programmatic clean

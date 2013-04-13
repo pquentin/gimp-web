@@ -109,5 +109,21 @@
 	<iframe width="292" height="420" frameborder="0" src="http://tools.flattr.net/widgets/thing.html?thing=707850"></iframe>
 </p>
 
+<h3>Bitcoin</h3>
+<p>
+	Bitcoin (BTC) is an online digital currency that is based on an 
+	open-source, peer-to-peer encryption protocol first described in 2009
+	by a pseudonymous developer (or developers) Satoshi Nakamoto.
+	Bitcoin is not managed by any government or central authority. 
+	Instead, it relies on an Internet-based network (for more details see 
+	Wikipedia's <a href="http://en.wikipedia.org/wiki/Bitcoin">Bitcoin</a> 
+	article).
+</p>
+<p>
+	Bitcoin address: 1NVMCeoBfTAJQ1qwX2Dx1C8zkcRCQWwHBq
+</p>
+
+
+
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

@@ -98,7 +98,7 @@
          src="donate.png" type="image" />
 </form>
 
-<h3>Flattr</h3>
+<h2>Flattr</h2>
 <p>
 	Flattr is a microdonation system. Users are able to pay a small amount 
 	every month (minimum 2 euros) and then click Flattr buttons on sites 
@@ -109,7 +109,7 @@
 	<iframe width="292" height="420" frameborder="0" src="http://tools.flattr.net/widgets/thing.html?thing=707850"></iframe>
 </p>
 
-<h3>Bitcoin</h3>
+<h2>Bitcoin</h2>
 <p>
 	Bitcoin (BTC) is an online digital currency that is based on an 
 	open-source, peer-to-peer encryption protocol first described in 2009

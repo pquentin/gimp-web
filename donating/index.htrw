@@ -29,11 +29,11 @@
 </p>
 
 <ul>
-	<li><a href="cheque">Cheque</a></li>
-	<li><a href="wire">Wire Transfer</a></li>
-	<li><a href="paypal">Paypal</a></li>
-	<li><a href="flattr">Flattr</a></li>
-	<li><a href="bitcoin">Bitcoin</a></li>
+	<li><a href="#cheque">Cheque</a></li>
+	<li><a href="#wire">Wire Transfer</a></li>
+	<li><a href="#paypal">Paypal</a></li>
+	<li><a href="#flattr">Flattr</a></li>
+	<li><a href="#bitcoin">Bitcoin</a></li>
 </ul>
 
 <p>

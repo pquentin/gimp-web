@@ -26,7 +26,7 @@ href="/irc.html">IRC channels</a> for you.</p>
   <a href="http://news.gmane.org/gmane.comp.video.gimp.user/">Gmane</a>,
   <a href="http://www.nabble.com/Gimp-User-f84.html">nabble</a><br/>
   Old Archives: 
-  <a href="http://www.mail-archive.com/gegl-user%40lists.xcf.berkeley.edu/">mail-archive</a>  
+  <a href="http://www.mail-archive.com/gimp-user%40lists.xcf.berkeley.edu/">mail-archive</a>  
   </dd>
 
   <dt><a href="https://mail.gnome.org/mailman/listinfo/gimp-developer-list">GIMP Developer</a></dt>
@@ -59,14 +59,18 @@ href="/irc.html">IRC channels</a> for you.</p>
   Archives:
   <a href="https://mail.gnome.org/archives/gimp-web-list/">GNOME</a>,
   <a href="http://www.mail-archive.com/gimp-web-list%40gnome.org/">mail-archive</a>,  
-  <a href="http://news.gmane.org/gmane.comp.video.gimp.web/">Gmane</a></dd>
+  <a href="http://news.gmane.org/gmane.comp.video.gimp.web/">Gmane</a><br/>
+  </dd>
 
   <dt><a href="https://mail.gnome.org/mailman/listinfo/gimp-docs-list">GIMP Docs</a></dt>
   <dd>The GIMP documentation list. For discussion about the
   <a href="http://docs.gimp.org">GIMP User Manual</a> and all derivative works.<br />
   Archives:
   <a href="https://mail.gnome.org/archives/gimp-docs-list/">GNOME</a>,
-  <a href="http://www.mail-archive.com/gimp-docs-list%40gnome.org/">mail-archive</a></dd>
+  <a href="http://www.mail-archive.com/gimp-docs-list%40gnome.org/">mail-archive</a><br/>
+  Old Archives: 
+  <a href="http://www.mail-archive.com/gimp-docs%40lists.xcf.berkeley.edu/">mail-archive</a>
+  </dd>
 
 </dl>
 

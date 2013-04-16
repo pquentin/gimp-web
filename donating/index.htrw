@@ -33,10 +33,9 @@
   the conference as possible.
 </p> 
 <p>
-  Remember that if you want to be anonymous on the list of contributers
-  you need to tell this when donating. You can do this as a message in
-  paypal, then we will see that you do not want to be mentioned on the
-  site.
+	If applicable, please specify whether you want to remain anonymous. 
+	While we usually don't publish the names of donors, this may be 
+	considered for exceptional donations.<br/>
 </p>
 <p>
   Many thanks to all our <a href="sponsors.html">sponsors</a>!
@@ -48,11 +47,7 @@
   that funds have been donated to the GIMP project.  Credit card donations
   are also accepted via this route.
 </p>
-<p>
-  Please indicate whether you would like your donation to remain
-  anonymous, as otherwise you will be listed as a sponsor on the
-  gimp.org web-pages.
-</p>
+
 <form method="post" action="https://www.paypal.com/cgi-bin/webscr">
   <input value="_xclick" name="cmd" type="hidden" />
   <input value="gimp@gnome.org" name="business" type="hidden" />

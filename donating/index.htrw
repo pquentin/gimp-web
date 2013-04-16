@@ -4,17 +4,7 @@
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Donating to GIMP</h1>
-<form method="post" action="https://www.paypal.com/cgi-bin/webscr">
-  <input value="_xclick" name="cmd" type="hidden" />
-  <input value="gimp@gnome.org" name="business" type="hidden" />
-  <input value="Donation to GIMP Project" name="item_name" type="hidden" />
-  <input value="106" name="item_number" type="hidden" />
-  <!-- <input value="http://www.gimp.org/donating/thanks.html"
-         name="return" type="hidden" /> -->
-  <input value="1" name="no_shipping" type="hidden" />
-  <input alt="Support GIMP" name="submit"
-         src="donate.png" type="image" />
-</form>
+
 <p>
   Donating money to the GIMP project is easy! The 
   <a href="http:Package-Gnome">GNOME Foundation</a> 
@@ -25,15 +15,15 @@
   donations are tax-deductible in the USA.  </p>
   
 <p> 
-  There are serveral ways to support GIMP financially: 
+  You can choose from several options to support GIMP financially: 
 </p>
 
 <ul>
-	<li><a href="#cheque">Cheque</a></li>
-	<li><a href="#wire">Wire Transfer</a></li>
 	<li><a href="#paypal">Paypal</a></li>
 	<li><a href="#flattr">Flattr</a></li>
 	<li><a href="#bitcoin">Bitcoin</a></li>
+	<li><a href="#wire">Wire Transfer</a></li>	
+	<li><a href="#cheque">Cheque</a></li>
 </ul>
 
 <p>
@@ -50,42 +40,6 @@
 </p>
 <p>
   Many thanks to all our <a href="sponsors.html">sponsors</a>!
-</p>
-
-<h2 id="cheque">Cheque</h2>
-<p>
-  Cheque, made payable to the 
-  <a href="http:Package-Gnome">GNOME Foundation</a>, and sent to:
-</p>
-<p>
-  GNOME Foundation<br />
-  PO Box 101<br />
-  Groton, MA  01450<br />
-  USA
-</p>
-<p>
-  with a cover-letter (or a note in the "memo" field) saying it is for
-  the GIMP project.
-</p>
-
-<h2 id="wire">Wire Transfer</h2>
-<p>
-  Transfer the money to:
-</p>
-
-<p>
-  Account Name: GNOME Foundation<br />
-  Bank Name: Citizens Bank<br />
-  Bank Address: 1 Citizens Dr., Riverside, RI  02915<br />
-  ABA: 011500120<br />
-  Account: 1310181397<br />
-  SWIFT: CTZIUS33<br />
-</p>
-
-<p>
-  And send an e-mail to fundraising@gnome.org with the transfer date and
-  amounts, for tracking purposes. If available, please add a "For GIMP"
-  note to your transfer.
 </p>
 
 <h2 id="paypal">Paypal</h2>
@@ -134,6 +88,42 @@
 </p>
 <p>
 	Bitcoin address: <a href="bitcoin:1NVMCeoBfTAJQ1qwX2Dx1C8zkcRCQWwHBq?label=GIMP%20Donation">1NVMCeoBfTAJQ1qwX2Dx1C8zkcRCQWwHBq</a>
+</p>
+
+<h2 id="wire">Wire Transfer</h2>
+<p>
+  Transfer the money to:
+</p>
+
+<p>
+  Account Name: GNOME Foundation<br />
+  Bank Name: Citizens Bank<br />
+  Bank Address: 1 Citizens Dr., Riverside, RI  02915<br />
+  ABA: 011500120<br />
+  Account: 1310181397<br />
+  SWIFT: CTZIUS33<br />
+</p>
+
+<p>
+  And send an e-mail to fundraising@gnome.org with the transfer date and
+  amounts, for tracking purposes. If available, please add a "For GIMP"
+  note to your transfer.
+</p>
+
+<h2 id="cheque">Cheque</h2>
+<p>
+  Cheque, made payable to the 
+  <a href="http:Package-Gnome">GNOME Foundation</a>, and sent to:
+</p>
+<p>
+  GNOME Foundation<br />
+  PO Box 101<br />
+  Groton, MA  01450<br />
+  USA
+</p>
+<p>
+  with a cover-letter (or a note in the "memo" field) saying it is for
+  the GIMP project.
 </p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

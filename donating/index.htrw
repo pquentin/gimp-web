@@ -23,11 +23,24 @@
   Foundation and specifying the GIMP project as the recipient. The GNOME
   Foundation is a tax-exempt, non-profit 501(c)(3) organization and all
   donations are tax-deductible in the USA.  </p>
+  
 <p> 
-  There are 3 ways to support GIMP financially. Financial help is needed
-  for many different reasons. Our annual GIMP developer conference is one
-  things that the money will go to. It helps us to get as many
-  <a href="wgo:dev">GIMP Developers</a> to the conference as possible.
+  There are serveral ways to support GIMP financially: 
+</p>
+
+<ul>
+	<li><a href="cheque">Cheque</a></li>
+	<li><a href="wire">Wire Transfer</a></li>
+	<li><a href="paypal">Paypal</a></li>
+	<li><a href="flattr">Flattr</a></li>
+	<li><a href="bitcoin">Bitcoin</a></li>
+</ul>
+
+<p>
+  Financial help is needed for many different reasons. The annual 
+  Libre Graphics Meeting is one things that the money will go to. It 
+  helps us to get as many <a href="wgo:dev">GIMP Developers</a> to 
+  the conference as possible.
 </p> 
 <p>
   Remember that if you want to be anonymous on the list of contributers
@@ -39,7 +52,7 @@
   Many thanks to all our <a href="sponsors.html">sponsors</a>!
 </p>
 
-<h2>Cheque</h2>
+<h2 id="cheque">Cheque</h2>
 <p>
   Cheque, made payable to the 
   <a href="http:Package-Gnome">GNOME Foundation</a>, and sent to:
@@ -55,7 +68,7 @@
   the GIMP project.
 </p>
 
-<h2>Wire Transfer</h2>
+<h2 id="wire">Wire Transfer</h2>
 <p>
   Transfer the money to:
 </p>
@@ -75,7 +88,7 @@
   note to your transfer.
 </p>
 
-<h2>Paypal</h2>
+<h2 id="paypal">Paypal</h2>
 <p>
   Donate to gimp@gnome.org, this will notify us, and the GNOME board,
   that funds have been donated to the GIMP project.  Credit card donations
@@ -98,7 +111,7 @@
          src="donate.png" type="image" />
 </form>
 
-<h2>Flattr</h2>
+<h2 id="flattr">Flattr</h2>
 <p>
 	Flattr is a microdonation system. Users are able to pay a small amount 
 	every month (minimum 2 euros) and then click Flattr buttons on sites 
@@ -109,7 +122,7 @@
 	<iframe width="292" height="420" frameborder="0" src="http://tools.flattr.net/widgets/thing.html?thing=707850"></iframe>
 </p>
 
-<h2>Bitcoin</h2>
+<h2 id="bitcoin">Bitcoin</h2>
 <p>
 	Bitcoin (BTC) is an online digital currency that is based on an 
 	open-source, peer-to-peer encryption protocol first described in 2009
@@ -120,10 +133,10 @@
 	article).
 </p>
 <p>
-	Bitcoin address: 1NVMCeoBfTAJQ1qwX2Dx1C8zkcRCQWwHBq
+	Bitcoin address: <a href="bitcoin:1NVMCeoBfTAJQ1qwX2Dx1C8zkcRCQWwHBq?label=GIMP%20Donation">1NVMCeoBfTAJQ1qwX2Dx1C8zkcRCQWwHBq</a>
 </p>
 
-
+n
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

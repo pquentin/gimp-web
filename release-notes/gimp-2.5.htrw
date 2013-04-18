@@ -184,6 +184,8 @@ If you think you found a bug in a development version, please make
 sure that it hasn't been already reported.
 Search <a href="home:gimp-bugzilla">Bugzilla</a> before filing a new
 bug-report. Here are some interesting Bugzilla queries:
+</p>
+
 <ul>
   <li>
     <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.6&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">Open bugs with milestone 2.6</a>
@@ -192,7 +194,7 @@ bug-report. Here are some interesting Bugzilla queries:
     <a href="http://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.6&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED">Resolved bugs with milestone 2.6</a>
   </li>
 </ul>
-</p>
+
 
 <h2>Contributing</h2>
 <p>

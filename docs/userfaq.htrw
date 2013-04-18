@@ -1,4 +1,4 @@
-<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" --
 <title>GIMP - Documentation</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
@@ -409,14 +409,16 @@ Ctrl-Shift-V key combination, then save newly created image.</p>
 <p>The script-fu-selection-to image can also be used to cut a selection
 out of an image and create a new image with it.</p>
 
+<!-- This is the wrong answer
 <h3 id="Alpha">How do I save an image with an alpha channel?</h3>
 
-<!-- FIXME: is this necessary?  we have the Export dialog since a while... -->
+<!- FIXME: is this necessary?  we have the Export dialog since a while... ->
 
 <p>Before saving the image, select "Layers-&gt;Flatten Image". It would
 be more intuitive if it was called something like "Remove Alpha"...but
 that's generally not its primary function. It just happens to remove
 alpha.</p>
+-->
 
 <h3 id="Merge">How do I merge an image from a file to the current
 image?</h3>
@@ -540,13 +542,13 @@ channels and layers, etc).</h3>
 <p>There is plenty of documentation. See <a
 href="http://docs.gimp.org/en/">http://docs.gimp.org/en/</a> If you need
 a complete course about photoediting, image manipulation etc. then a
-book would be the best to start with.<br> Example books:<br> "Beginning
-GIMP: From Novice to Professional" - Akkana Peck<br> "GIMP Pocket
-Reference" - Sven Neumann<br>
+book would be the best to start with.<br/> Example books:<br/> "Beginning
+GIMP: From Novice to Professional" - Akkana Peck<br/> "GIMP Pocket
+Reference" - Sven Neumann<br/>
 
- "Gimp: The Official Handbook" - Karin Kylander, Olof S. Kylander<br>
- "GIMP Visual Quickstart Guide" - Phyllis Davis<br> "Guerrilla Guide to
- Great Graphics With the Gimp" - David D. Busch<br> and many many more!
+ "Gimp: The Official Handbook" - Karin Kylander, Olof S. Kylander<br/>
+ "GIMP Visual Quickstart Guide" - Phyllis Davis<br/> "Guerrilla Guide to
+ Great Graphics With the Gimp" - David D. Busch<br/> and many many more!
  Check your local books-dealer!</p>
 
 <h3 id="Rectangle">How can I paint easily an (OutLined) rectangle using
@@ -986,27 +988,21 @@ transparency.</p>
 <h3 id="SaveLayers">Is there any way to keep the layers when I
 save?</h3>
 
-<p>Yes; GIMP has a file format just for this - the XCF format. Don't
-flatten the image or merge the layers as you would to save to other
-formats! This will only work with the XCF type.</p>
+<p>Yes; GIMP has a file format just for this - the XCF format.</p>
 
-<h3>Why can't I open or save JPEG / JPG files?<br />
-Why can't I open or save GIF files?<br />
-Why can't I open or save PNG files?<br />
-Why can't I open or save XPM files?<br />
-Why can't I open or save TIFF / TIF files?<br />
-Why can't I open or save PSD files?<br />
-Why can't I open or save SOME_FORMAT files?<br />
+<h3>Why can't I open or export JPEG / JPG files?<br />
+Why can't I open or export GIF files?<br />
+Why can't I open or export PNG files?<br />
+Why can't I open or export XPM files?<br />
+Why can't I open or export TIFF / TIF files?<br />
+Why can't I open or export PSD files?<br />
+Why can't I open or export SOME_FORMAT files?<br /></h3>
 
 <p>There are several possibilities.</p>
 <ol type="1">
-  <li>If the file type appears in the Save dialog but is grayed out,
-  you may need to change the image type. For instance, you can't save
-  an RGB as a GIF (convert to indexed first) or an indexed image to
-  JPEG (convert to RGB first).</li>
   <li>GIMP comes with full support for a few types built in. If the
   type you want doesn't appear in file type format of the Open and
-  Save dialogs, you need to check the Plug-in registry to see whether
+  Export dialogs, you need to check the Plug-in registry to see whether
   you need to download an optional plug-in.</li>
   <li>Some of the file types, such as JPEG and TIFF, require extra
   libraries (described elsewhere). Make sure you have the correct

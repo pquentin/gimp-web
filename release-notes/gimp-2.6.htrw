@@ -86,7 +86,7 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 </ul>
 
 
-<h2>Tools, Filters & Plug-ins</h2>
+<h2>Tools, Filters &amp; Plug-ins</h2>
 
 <h3>Improved Free Select Tool</h3>
 <img class="right" src="images/2.6-new-free-select-tool.png" alt="New Free Select Tool in action" />
@@ -121,10 +121,10 @@ src="images/2.4-releasesplash.jpg" width="640" height="200" />
 
 <h3>Minor Changes</h3>
 <ul>
-  <img class="right"
-       src="images/2.6-text-tool-and-rectangle-handles.png"
-       alt="Text Tool bounding box and outside rectangle handles screenshot" />
-  <li>
+  <li>  
+    <img class="right"
+         src="images/2.6-text-tool-and-rectangle-handles.png"
+         alt="Text Tool bounding box and outside rectangle handles screenshot" />
     Added a bounding box for the Text Tool that supports automatic
     wrapping of text within that bounding box.
   </li>

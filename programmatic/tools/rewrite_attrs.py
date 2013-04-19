@@ -131,7 +131,7 @@ class xhtml_parser(HTMLParser.HTMLParser):
     return
   
   def handle_charref(self, name):
-    self.output.write("&#" + name)
+    self.output.write("&#" + name + ";")
     return
   
   def handle_entityref(self, name):

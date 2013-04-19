@@ -17,5 +17,5 @@
 </p>
 <p>
   <a href="http://registry.gimp.org">registry.gimp.org</a><br />
-  Plug-ins & Scripts
+  Plug-ins &amp; Scripts
 </p>

@@ -1,7 +1,9 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Splash History</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
 <!--#include virtual="/includes/imagebox.xhtml" -->
+
 <script type="text/javascript">
 	//image preview
 	//<!--

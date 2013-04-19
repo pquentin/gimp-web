@@ -51,6 +51,7 @@ import os
 import re
 import HTMLParser
 import getopt
+import cgi
 
 sys.path = ['${SRCDIR}'] + sys.path
 
@@ -68,6 +69,9 @@ def substitute(a, v):
     if d.has_key(v):
       return (d[v])
     pass
+
+  if a == 'href' :
+    v = cgi.escape(v)
 
   return ({a: v})
 

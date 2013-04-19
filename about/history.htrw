@@ -15,7 +15,7 @@ href="ancient_history.html">ancient history</a> of the release of GIMP
 This section still has to be written.  Volunteers are
 welcome!</em></p>
 
-<img class="figure" src="history.png" alt="GIMP release history">
+<img class="figure" src="history.png" alt="GIMP release history" />
 
 <p>In the meantime, here are some dates that you might be interested
 in (the stable releases are the orange bars in the graph above):</p>
@@ -67,6 +67,21 @@ in (the stable releases are the orange bars in the graph above):</p>
   <li>2008-02-29 GIMP 2.4.5</li>
   <li>2008-05-29 GIMP 2.4.6</li>
   <li>2008-08-21 GIMP 2.4.7</li>
+  <li>2008-09-30 <strong><a href="/release-notes/gimp-2.6.html">GIMP 2.6.0</a></strong></li>
+  <li>2008-10-08 GIMP 2.6.1</li>
+  <li>2008-10-30 GIMP 2.6.2</li>
+  <li>2008-11-21 GIMP 2.6.3</li>
+  <li>2009-01-01 GIMP 2.6.4</li>
+  <li>2009-02-15 GIMP 2.6.5</li>
+  <li>2009-03-16 GIMP 2.6.6</li>
+  <li>2009-08-13 GIMP 2.6.7</li>
+  <li>2009-12-10 GIMP 2.6.8</li>
+  <li>2010-06-22 GIMP 2.6.9</li>
+  <li>2010-07-07 GIMP 2.6.10</li>
+  <li>2010-10-03 GIMP 2.6.11</li>
+  <li>2012-05-02 <strong><a href="/release-notes/gimp-2.8.html">GIMP 2.8.0</a></strong></li>
+  <li>2012-08-23 GIMP 2.8.2</li>
+  <li>2013-02-05 GIMP 2.8.4</li>
 </ul>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->

@@ -178,6 +178,7 @@
 <td><a href="http://aa-project.sourceforge.net/aalib/">Download</a></td>
 <td>ASCII art library</td>
 <td>Optional</td>
+</tr>
 
 <tr>
 <td>libexif</td>

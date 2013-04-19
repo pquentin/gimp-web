@@ -113,7 +113,7 @@ major features:
    *  Painting tools including bucket, brush, airbrush, clone, convolve,
       blend and text.
    *  Effects filters (such as blur, edge detect).
-   *  Channel & color operations (such as add, composite, decompose).
+   *  Channel &amp; color operations (such as add, composite, decompose).
    *  Plug-ins which allow for the easy addition of new file formats and
       new effect filters.
    *  Multiple undo/redo.
@@ -243,7 +243,7 @@ major features:
    *  Painting tools including bucket, brush, airbrush, clone, convolve,
       blend and text.
    *  Effects filters (such as blur, edge detect).
-   *  Channel & color operations (such as add, composite, decompose).
+   *  Channel &amp; color operations (such as add, composite, decompose).
    *  Plug-ins which allow for the easy addition of new file formats and
       new effect filters.
    *  Multiple undo/redo.

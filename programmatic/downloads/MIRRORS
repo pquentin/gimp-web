@@ -55,6 +55,9 @@ Netherlands
      ftp://ftp.snt.utwente.nl/pub/software/gimp/gimp/
      http://ftp.snt.utwente.nl/pub/software/gimp/gimp/ (web access)
      http://mirrors-eu.spyrush.com/gimp/ (web access)
+     ftp://ftp.nluug.nl/pub/graphics/gimp/
+     http://ftp.nluug.nl/graphics/gimp/ (web access)
+     rsync://ftp.nluug.nl/gimp/ (rsync access)
 
 Poland
      ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.gimp.org/
@@ -102,4 +105,5 @@ United States
      http://mirror.umoss.org/gimp/gimp/ (web access)
      rsync://mirror.umoss.org/gimp/ (rsync access)
      http://mirrors.zerg.biz/gimp/ (web access)
-     http://classivox.com/pub/gimp/(web access)
+     http://classivox.com/pub/gimp/ (web access)
+     http://gimp.spectralcoding.com/ (web access)

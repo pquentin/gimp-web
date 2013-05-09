@@ -13,7 +13,9 @@ China
      http://mirror.bjtu.edu.cn/gimp (web access, outdated)
 
 France
-     http://ftp.iut-bm.univ-fcomte.fr/gimp/gimp/ (web access)
+     ftp://ftp.iut-bm.univ-fcomte.fr/gimp/
+	 http://ftp.iut-bm.univ-fcomte.fr/gimp/ (web access)
+	 rsync://ftp.iut-bm.univ-fcomte.fr/gimp/ (rsync access)
      http://mirror.ibcp.fr/pub/gimp/ (web access)
  
 Estonia
@@ -98,7 +100,7 @@ United Kingdom
      rsync://rsync.mirrorservice.org/ftp.gimp.org/pub/gimp/ (rsync access)
 
 United States
-     http://gimp.cp-dev.com/ (web access, outdated)
+     http://gimp.cp-dev.com/ (web access)
      http://gimp.mirrors.hoobly.com/gimp/ (web access)
      http://gimp.promotionalpromos.com/ (web access)
      http://gimp.sixsigmaonline.org/ (web access)
@@ -106,4 +108,5 @@ United States
      rsync://mirror.umoss.org/gimp/ (rsync access)
      http://mirrors.zerg.biz/gimp/ (web access)
      http://classivox.com/pub/gimp/ (web access)
-     http://gimp.spectralcoding.com/ (web access)
+     ftp://ftp.spectralcoding.com/gimp/
+	 http://ftp.spectralcoding.com/gimp/ (web access)

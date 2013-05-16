@@ -39,7 +39,7 @@
   <img src="layers2.jpg" alt="" />
 </p>
 <p>
-  Open the Layers dialog. Right-click on the Background layer and select Duplicate (there is also a button for this in the bottom button bar of the 
+  Open the Layers dialog (if it is not already open, it can be accessed through: <span class="filter">&lt;Image&gt; Windows &rarr; Dockable Dialogs &rarr; Layers</span>).  Right-click on the Background layer and select Duplicate (there is also a button for this in the bottom button bar of the 
   Layers dialog (<img src="layerdup.jpg" alt="" />).
 </p>
 

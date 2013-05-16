@@ -33,8 +33,7 @@
   use the move tool to move the text where you like to have it. Then
   merge it with the white layer below by choosing <i>Merge Down</i>
   from the Layer menu. You should now have one layer with black text
-  on white background. Using <span class="filter">&lt;Image&gt; Layer
-  -&gt; Colors -&gt; Invert</span> you will achieve something like the
+  on white background. Using <span class="filter">&lt;Image&gt; Colors &rarr; Invert</span> you will achieve something like the
   picture above.
 </p>
 
@@ -44,8 +43,7 @@
   <img src="tut-basic-3.gif" alt="" />
 </p>
 <p>
-  First of all: Blur the image a bit (Gaussian blur at 5 may be a good
-  start). Now add a new layer to the image with the help of the New
+  First of all: Blur the image a bit using <span class="filter">&lt;Image&gt; Filters &rarr; Blur &rarr; Gaussian Blur</span> (a value of 5 may be a good start). Now add a new layer to the image with the help of the New
   Layer button in the layers dialog. Choose it to be white. It will be
   created above the just made text layer effectively hiding it.  It
   will be active which can be seen from the fact that it has a blue
@@ -53,7 +51,7 @@
   to see how you can make a layer invisible and make the other layer
   active by clicking on its small preview in the layer dialog. At the
   end, leave the new white layer visible and active.  Use the plasma
-  plugin to make this layer a little colorful (Yes, you are invited to
+  plugin to make this layer a little colorful: <span class="filter">&lt;Image&gt; Filters &rarr; Render &rarr; Clouds &rarr; Plasma</span> (Yes, you are invited to
   experiment with the parameters...).  The layer dialog should look
   something like this now:
 </p>

@@ -179,11 +179,11 @@ class Xml:
 
 
 def header():
-  return ('<?xml version="1.0" encoding="utf-8"?>')
+  return ('<?xml version="2.0" encoding="utf-8"?>')
 
 
 def xml_(**attrs):
-  defaults = {"version" : "1.0", "encoding" : "utf-8"}
+  defaults = {"version" : "2.0", "encoding" : "utf-8"}
   a = dict(defaults)
   a.update(attrs)
   return '<?xml' + format_attrs(a) + '?>'

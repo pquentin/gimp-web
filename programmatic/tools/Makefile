@@ -21,4 +21,4 @@ gimpwebtool: gimpwebtool.py
 	chmod 755 $@
 
 clean:
-	/bin/rm -f *.pyc *~ rewrite_attrs ssi-pp
+	/bin/rm -f *.pyc *~ rewrite_attrs ssi-pp gimpwebtool subst

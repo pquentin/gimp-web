@@ -58,6 +58,7 @@ clean mrproper:
 	$(MAKE) -C contest clean
 	$(MAKE) -C admin clean
 	$(MAKE) -C tools clean
+	$(MAKE) -C downloads clean
 
 install: install-common install-admin install-contest install-downloads
 

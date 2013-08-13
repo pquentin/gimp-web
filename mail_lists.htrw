@@ -69,162 +69,32 @@ href="/irc.html">IRC channels</a> for you.</p>
 
 </dl>
 
+<h2>Code of Conduct</h2>
 
-<h2>List Etiquette</h2>
-  <p>
+<p>Mailing lists are an important communication channel between contributors and users of GIMP. Therefore we urge you to follow the following common etiquette rules. Failure to observe them, or instructions from the moderators, may be grounds for reprimand, probation, or removal.</p>
 
-  When sending mails to the lists there are some recommendations you
-  should follow to make everyone's life easier:
-  </p>
-<ul class="list">
-  <li>
-    <b>The topic is GIMP.</b> Stay on topic. If the discussion goes
-    off topic, use direct mail and not the mailing list. GIMP User
-    list topics are user problems, techniques, hardware advice
-    (tablets, scanners, monitors), request for comments about images
-    and usage in general. GIMP Devel list topics are coding, patches,
-    bugs and other GIMP's guts things.
-  </li>
-  <li>
-    <b>Use the English language.</b> English is the official
-    language of the lists. There is people from all around the globe
-    so we use it. If you have problems with English, a small note in
-    your message saying so is enough, and never apologise. Listing
-    which languages do you speak better will also help. Maybe someone
-    can help clarifying the obscure parts of your mail.
-  </li>
-  <li>
-    <b>Check your facts.</b> Before reporting problems, check
-    again.  Make sure you are following the intructions correctly and
-    that your version is not old (or that the problem also appears in
-    modern versions).  It is very helpful to get a friend to test
-    your problem with other computer, maybe you discover what is your
-    problem, or can provide info about what cases are free (for
-    example bugs that only happen in Alpha computers).
-  </li>
-  <li>
-    <b>Be aware of your readers.</b>
-      <ul><li><b>Do not use HTML formatted email.</b>
-          Some people will have problems reading HTML formatted email
-          and will ignore you even if they have alternative methods to
-          view it (like reading the HTML code or launching a
-          browser). Others will flame you (some maybe even have bot
-          for that). So to be sure everyone can read it, use plain
-          text mail, with monospace font.
-        </li>
-        <li><b>Avoid sending email attachments.</b> If you must, send only
-          useful attachments critical to what you're discussing.  If it is
-          more than a few KB (say more than 10), you should/must upload
-          somewhere and post the URL instead.
-        </li>
-        <li><b>Compress attachments.</b> If you must send an
-          attachement, use (the best) compression you can find for
-          attachments or URLs.  Remember that you can compress .xcf
-          files with gzip or bzip2 (.xcf.gz or .xcf.bz2,
-          respec.). Those compressors are free and <em>gratis</em> and
-          at least gzip should be handled by all GIMP versions known,
-          so no excuses. For images you can use PNG (ie. when showing
-          bad results and you need the image to be the one you are
-          seeing in your monitor) or JPEG (asking how to do something,
-          so if the image is a bit damaged due JPEG algorithm, it does
-          not matter).
-        </li>
-        <li><b>Keep lines short.</b> Cut text lines to 70 or so
-          chars, so it can be viewed anywhere. If you have a big
-          screen, good for you, others do not or just want to use the
-          big monitor to have more than one thing on screen at the
-          same time. Most mail apps should do it for you.
-        </li>
-        <li>
-          <b>Use the 7-bit ASCII character set.</b>
-          Do not expect people to see other character sets beyond 7 bit ASCII
-          and images supported by GIMP. You can hope they will, but do not
-          think they will. The same applies to you, if you see text with weird
-          characters, maybe your computer has no support for them. Or you do
-          not have the loader plug-in for GIMP, if the problem is an error
-          with an image. Be permisive about these problems and never force
-          them (aka do not send things you are sure most people will be unable
-          to see, and make sure your mailer sets the correct MIME type, not a
-          general one).
-        </li>
-      </ul>
-  </li>
-  <li>
-    <b>Quote prior messages only for context.</b>
-      When replying to messages, quote the important phrases to give
-      context. Use something like &quot;&gt;&quot;, &quot;&gt; &quot;
-      (yep, &quot;&gt;&quot; and space), &quot;]&quot; or any other
-      character(s) that seem logical. As most repetitive things, your mail
-      app should do it for you. But do not include the full mail again,
-      select that part not useful and delete them (yeah, another thing
-      computers can do, delete full areas).
-  </li>
-  <li>
-    <b>Try to be grammatical.</b>
-    Do not write all in one big chunk, use blank lines to separate
-    things. Also use blank lines to separate your text from quoted
-    text. Try to read 100 lines of text in one paragraph, then the same
-    text with some blank lines, each 5-10 lines (20-10 paragraphs).
-    Some people just ignore the things that they can not read easily.
-  </li>
-  <li>
-    <b>NO auto-replies</b>
-    No auto replies ("I am on holidays"). They just waste space, and
-    people will think they got something when they are only talking to a
-    bot. Unsubscribe or set you subscription to no mail mode if you
-    need.
-  </li>
-  <li>
-    <b>Filter your email.</b>
-    If you have few time, you can filter the messages. Message headers
-    can help a lot to make your life easier, most mail apps can filter
-    by headers, or use a helper app for that. The subjects have tags to
-    help you identify mail if you sort by hand all incoming mail in one
-    mailbox. You can delete the tag and use different mailbox too (use
-    other header as filter, like X-BeenThere). Another option is to
-    receive the mails in digest mode, all in one mail, so it saves space
-    and you can scan the on-going talks quickly.
-  </li>
-  <li>
-    <b>Include relevant information.</b>
-    When posting reports, paste all the interesting info. Use common
-    (hehehe) sense to decide what, you do not need to post the size of
-    the computer box, but be ready to provide more info in next mails. A
-    good start is a small description of the computer (CPU family and
-    OS) plus versions of related software (GIMP, libraries, compiler)
-    and the steps you followed to find the problem (write your &quot;How
-    to crash GIMP in X steps with Y tool&quot; tutorial). If you have
-    the solution, even better.
-  </li>
-  <li>
-    <b>Ignore spam.</b>
-    If you receive spam, do not reply to it. The list has filters, but
-    they are not perfect. The best way to handle garbage is to ignore
-    it. In general, you should delete spam, via list or direct, cos the
-    best solution is to desintegrate the spammers, and the second best
-    to ignore them (guess which one is legal).
-  </li>
-  <li>
-    <b>No spam, or even a hint of spam allowed.</b> No chain
-    letters, no virus alarms, only GIMP. Violating this is
-    equivalent to asking to be removed from the list.
-  </li>
-  <li>
-    <b>Follow those before you.</b>
-    If you have doubts about the rules, read the archives. Or subscribe
-    and just read it until you see how things are. We do not bite people
-    for just reading, but some can get very unfriendly with those that
-    ignore the basic rules. We do not ask for ultra complex things and
-    etiquette, but things that computers can do for you and a nice
-    behaviour on the rest. Most (if not all) of the rules have been in
-    use for very long on Internet (they are a tradition, but what is
-    more important is that they work).
-  </li>
+<ul>
+<li><strong>Be considerate and respectful</strong>.  Every email in our most popular mailing lists, gimp-user@ and gimp-developer@, will be read by ca. 1,000 subscribers and then aggregated to be seen by an even larger audience. Please make sure that you add value to the discussion, avoid repetitive arguments, flamewars, trolling, and personal attacks.</li>
+<li><strong>Write in English</strong>. While GIMP community is multinational, we need a <em>lingua franca</em> for communication which happens to be English. It's OK to have bad skills in English as long as you do your best.</li>
+<li><strong>Do basic research</strong>. Chances are that your questions, feature requests, or bug reports have already been thoroughly discussed, and decisions have already been made. See the list of source for reference below.</li>
+<li><strong>Stick to standards</strong>. Please send emails in plain text instead of HTML. </li>
+<li><strong>Be specific</strong>. When describing a bug you discovered, please always mention: operating system and its version, architecture (32bit or 64bit), exact version of GIMP (use <tt>File-&gt;About</tt> for reference).</li>
+<li><strong>Keep it short</strong>. When replying long threads, please trim unnecessary content and write your replies inline instead of "top posting".</li>
 </ul>
-<p>
-  Conclusion: the faster and easier people can see what is
-  going in the mails, the better for all. And the topic is GIMP.
-</p>
+
+<p>The code may change in the future, followed by a notification to subscribers.</p>
+
+<p>Please use these sources to check for information on the project, roadmap, feature requests, bug reports etc.:</p>
+
+<ul>
+<li><a href="https://bugzilla.gnome.org/browse.cgi?product=GIMP" target="_blank">Bug tracker</a>. Useful for checking bug reports and feature reqursts.</li>
+<li><a href="http://wiki.gimp.org/index.php/Roadmap" target="_blank">Roadmap</a>. We do not schedule releases, but we plan what things we work on next.</li>
+<li><a href="http://www.gimp.org/docs/userfaq.html" target="_blank">FAQ</a>. There are some frequently asked questions we already replied.</li>
+<li><a href="http://gui.gimp.org" target="_blank">Usability</a>. There's ongoing work to improve user experience of GIMP.</li>
+<li><a href="http://wiki.gimp.org/index.php/Main_Page" target="_blank">Development</a>. If you wish to contribute, please check the wiki for basic information for developers.</li>
+</ul>
+
+<p>We also suggest checking archives of the mailing lists for existing discussions.</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

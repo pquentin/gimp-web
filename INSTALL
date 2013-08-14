@@ -1,11 +1,16 @@
 INSTALLATION INSTRUCTIONS FOR GIMP-WEB MODULE
 =============================================
 
-Below you will find the options and steps needed to build and test the gimp-web
-module in SVN.
+Below you will find the options and steps needed to build and test the
+gimp-web module from the git repository. These instructions assume
+that you are already acquainted with git. If not please consult
+https://wiki.gnome.org/Git.
 
-Should you need more detailed instructions, have a look at Wilber's Wiki:
-http://wiki.gimp.org/gimp/GettingStartedWithGimpWeb
+To download a fresh copy of the site (anonymous, read-only) use 
+the following command:
+
+git clone git://git.gnome.org/gimp-web
+
 
 Short summary
 -------------
@@ -25,7 +30,7 @@ If you do not have Apache or it is not configured correctly, then please try
 at least 'make DocumentRoot=/tmp/wgo' or something similar before committing
 your changes in order to check that the build is still working.
 
-Detailled instructions
+Detailed instructions
 ----------------------
 
 To be able to build the site you will need a few things installed and running
@@ -35,9 +40,6 @@ needed to test the site.
   1. Apache with SSI support. The site uses SSI to use include files in the
   html files (header and footer of every page, as well as some other sections
   included in a few pages). 
-
-  To get a real life example of a httpd.conf file with SSI support you can also
-  look at: http://wiki.gimp.org/gimp/GettingStartedWithGimpWeb/HttpdConfExample
 
   2. Python 2.3 or better. The build system uses Python for the main build.
 
@@ -71,24 +73,11 @@ with:
 
   % chown -R apache . ; ./install.sh ; chown -R username .
 
-And after doing this test you can commit it to the gimp-web module. Remember
-to look in the svn:ignore SVN properties to find out what is going to be
-ignored when commiting.
-
 Adding new files
 ----------------
 
-If you add a new *.htrw page, please also add the corresponding *.html page to
-the svn:ignore property of the directory that contains it.  If your $EDITOR is
-correctly configured, you can do this with:
-  svn propedit svn:ignore <directory>
-
 Never add *.html files directly.  Always use *.htrw files unless you have a
 very good reason to bypass the attribute-rewriting system.
-
-If you add a new image, you should check that the correct mime-type has been
-selected for that file (usually image/png).  You can do this with:
-  svn propedit svn:mime-type <image>
 
 If you add a new file that should not be installed in the web site, such as a
 script or source file, then you should add that file to /install.exclude.

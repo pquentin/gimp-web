@@ -12,7 +12,7 @@
   <ol>
     <li><a href="#What">What is this GIMP?</a></li>
     <li><a href="#Where">Where do I get it?</a></li>
-    <li><a href="#Gimp">Why and when was GIMP changed from "general image manipulation program" to "GNU image manipulation program"?</a></li>
+    <li><a href="#Gimp">Why and when was GIMP changed from &ldquo;general image manipulation program&rdquo; to &ldquo;GNU image manipulation program&rdquo;?</a></li>
     <li><a href="#Name">GIMP is a stupid name. Why can't you change it?</a></li>
     <li><a href="#Gnome">Is GIMP a GNOME application?</a></li>
     <li><a href="#Gtk">Is GTK+ still under the aegis of GIMP? Was it ever?</a></li>
@@ -29,7 +29,7 @@
     <li><a href="#Scanner">Does GIMP have scanner support?</a></li>
     <li><a href="#Colormap">Can GIMP install its own colormap?</a></li>
     <li><a href="#MIT-SHM">GIMP complains about MIT-SHM!</a></li>
-    <li><a href="#EOF">What does "wire_read: unexpected EOF" mean?</a></li>
+    <li><a href="#EOF">What does &ldquo;wire_read: unexpected EOF&rdquo; mean?</a></li>
     <li><a href="#Xserver">Do I need an X server to run in batch mode?</a></li>
     <li><a href="#System">What kind of system do I need to run GIMP?</a></li>
     <li><a href="#Bugs">Is there a bug list somewhere?</a></li>
@@ -47,7 +47,7 @@
     <li><a href="#Merge">How do I merge an image from a file to the current image?</a></li>
     <li><a href="#Fonts">How do I get small fonts to look as nice as large ones?</a></li>
     <li><a href="#Bind">How do I bind keys to menus for shortcuts?</a></li>
-    <li><a href="#MouseLayer">How do I select a layer "sitting" under the mouse cursor? I have more than 400 layers in my image and I cannot remember each layers name.</a></li>
+    <li><a href="#MouseLayer">How do I select a layer &ldquo;sitting&rdquo; under the mouse cursor? I have more than 400 layers in my image and I cannot remember each layers name.</a></li>
     <li><a href="#ManyWindows">I hate switching between windows in GIMP. Isn't there an easier way?</a></li>
     <li><a href="#Macro">Is there a macro recording interface?</a></li>
     <li><a href="#Gamma">How do I configure my X server to do global gamma correction?</a></li>
@@ -61,7 +61,7 @@
     <li><a href="#SelectLayer">How do I select the layer currently shown under the mouse cursor? Is there a shortcut?</a></li>
     <li><a href="#Wrap">How can you wrap text using the Font tool? There are alignment buttons (including justified) but they have little effect since I can't work out how to make the text wrap.</a></li>
     <li><a href="#Handles">Why do I have to make my rectangular selection exactly right the first time? Why can't I move and resize a rectangular selection using handles?</a></li>
-    <li><a href="#Web">I recently saw a project that specified files were to be saved in Photoshop "Save for Web -> High (15K to 30K Optimized)" format. Is there an equivalent in GIMP?</a></li>
+    <li><a href="#Web">I recently saw a project that specified files were to be saved in Photoshop &ldquo;Save for Web -> High (15K to 30K Optimized)&rdquo; format. Is there an equivalent in GIMP?</a></li>
     <li><a href="#Default">How do I get GIMP to be by default image tool i.e. I installed another program &amp; it is now associated to auto-opening them.</a></li>
   </ol></li>
   <li><a href="#FeatureRequests">Common Feature Requests</a>
@@ -116,12 +116,12 @@
 
 <h3 id="What">What is this GIMP?</h3>
 
-<p>The "GNU Image Manipulation Program" (originally the General Image
+<p>The &ldquo;GNU Image Manipulation Program&rdquo; (originally the General Image
 Manipulation Program) sired by Spencer Kimball &amp; Peter Mattis.</p>
 
-<p>In their own words, "GIMP is our answer to the current lack of
+<p>In their own words, &ldquo;GIMP is our answer to the current lack of
 free (or at least reasonably priced) image manipulation software for
-GNU/Linux and UNIX in general."</p>
+GNU/Linux and UNIX in general.&rdquo;</p>
 
 <p>It is a raster editor, which means that it performs operations
 directly on the pixels that make up the image, and not a vector editor.
@@ -238,7 +238,7 @@ locations, or statically linking them to one or more programs.</p>
 <p><em class="warn">FIXME: obsolete advice.</em></p>
 
 <p>In the more recent releases of most distros, installing the
-wacom-tools package should make tablet support "just work". Make sure
+wacom-tools package should make tablet support &ldquo;just work&rdquo;. Make sure
 that you enable the input devices in GIMP, too.</p>
 
 <p>Otherwise, you have to do a little extra work to compile it in.</p>
@@ -289,8 +289,8 @@ file, uncomment the line that includes <em>install-colormap</em>.</p>
 <!-- FIXME: obsolete answer? -->
 
 <p>If GIMP gives you a message similar to either of these when you
-try to start it: <em>Xlib: extension "MIT-SHM" missing on display
-"198.51.29.58:0.0".</em> or <em>* WARNING **: XShmAttach failed!</em>
+try to start it: <em>Xlib: extension &ldquo;MIT-SHM&rdquo; missing on display
+&ldquo;198.51.29.58:0.0&rdquo;.</em> or <em>* WARNING **: XShmAttach failed!</em>
 then you need to run it with the --no-xshm option.</p>
 
 <p>This happens for one of two reasons. Either your X display server
@@ -301,11 +301,11 @@ memory can give you MUCH better performance. In the latter case, you
 will just have to live with it, since different systems can't generally
 share the same memory space.</p>
 
-<h3 id="EOF">What does "wire_read: unexpected EOF" mean?</h3>
+<h3 id="EOF">What does &ldquo;wire_read: unexpected EOF&rdquo; mean?</h3>
 
-<p>This error message should say something like "the plug-in (or the
+<p>This error message should say something like &ldquo;the plug-in (or the
 main GIMP app) I was talking to has exited before returning any results,
-so I assume that it has crashed."</p>
+so I assume that it has crashed.&rdquo;</p>
 
 <h3 id="Xserver">Do I need an X server to run in batch mode?</h3>
 
@@ -380,8 +380,8 @@ add tools to draw geometric primitives on canvas.</p>
 
 <h3 id="Outline">How can I create an outline around text?</h3>
 
-<p>Place some text somewhere. Then click "Create path from text" in the
-"Text tool option" window. Then use "Edit" -&gt; "Stroke path" and
+<p>Place some text somewhere. Then click &ldquo;Create path from text&rdquo; in the
+&ldquo;Text tool option&rdquo; window. Then use &ldquo;Edit&rdquo; -&gt; &ldquo;Stroke path&rdquo; and
 select the appropriate options in the following dialog. Please also see
 the <a href="http://docs.gimp.org/en/gimp-concepts-paths.html">Paths</a>
 section in the user manual.</p>
@@ -403,7 +403,7 @@ section in the manual for more information.</p>
 
 <h3 id="Sub">How do I save a selected sub-image to a file?</h3>
 
-<p>Use "Edit-&gt;Paste As-&gt;New Image" menu command or press 
+<p>Use &ldquo;Edit-&gt;Paste As-&gt;New Image&rdquo; menu command or press 
 Ctrl-Shift-V key combination, then save newly created image.</p>
 
 <p>The script-fu-selection-to image can also be used to cut a selection

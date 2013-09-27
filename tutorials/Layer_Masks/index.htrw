@@ -1,0 +1,131 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Layer Masks</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Layer Masks</h1>
+<p>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIMP Tutorial - Layer Masks (text & images)</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://blog.patdavid.net" property="cc:attributionName" rel="cc:attributionURL">Pat David</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</p>
+
+<h2>Intention</h2>
+<p>
+Layer masks are a fundamental tool in image manipulations. They allow you to selectively modify the opacity (transparency) of the layer they belong to.  This differs from the use of the layer <b>Opacity</b> slider as a mask has the ability to <i>selectively </i> modify the opacity of different areas across a single layer.
+</p>
+<p>
+This modification of a layer&rsquo;s transparency through a mask is non-destructive to the layer itself.
+</p>
+<p>
+This flexibility to define the opacity of different areas of a layer is the basis for more interesting image manipulation techniques such as selective coloring and luminosity masking.
+</p>
+
+<h2>Adding a Mask to a Layer</h2>
+<p>Layer masks need to be added to a layer before they can be used.  The process for adding them is simple.</p>
+<div style="text-align: center;"><img src="Layers-Base.png"/><br/><span class='caption'>Layers dialog for the image.</span></div>
+<p>
+For this example I will use a simple image with only two layers, as shown above.  There is a base image at the bottom of the stack, and a single layer of teal over it.  The teal layer is the active layer (look for the white border), and the one which we will add a layer mask to.
+</p>
+<p>
+<b>Right-Click</b> on the layer you want to add a mask to (the &ldquo;Teal&rdquo; layer in my example), and the Context menu will show an option to <b>Add Layer Mask&hellip;</b>:
+</p>
+<div style="text-align: center;"><img src="Layers-Add-Mask-Dialog.png"/><br/><span class='caption'>Add Layer Mask in the context menu.</span></div>
+<p>
+You can also add a layer mask through the menus: </p>
+<div class="MenuCmd"><span><u>L</u>ayer &rarr; <u>M</u>ask &rarr; Add Layer Mask&hellip;</span></div>
+<p>
+This will then bring up the &ldquo;<b>Add a Mask to the Layer</b>&rdquo; dialog with some options:
+</p>
+<div style="text-align: center;"><img src="Add-Mask-Dialog.png" /><br /><span class="caption">Add mask options dialog.</span></div>
+<p>
+There are many options for initializing the Layer Mask.  Notice that the first option is to set the entire mask to White, which will result in full opacity on the layer (no transparency from the mask).  The option to initialize to Black shows that the mask will make the entire layer fully transparent.
+</p>
+<p>
+For the purposes of this tutorial, we will let the mask initialize to <b>White</b> (full opacity).  You should notice a change in your Layers dialog now that shows the layer mask thumbnail to the right of the layer it applies to (in this case the &ldquo;Teal&rdquo; layer):
+</p>
+<div style="text-align: center;"><img src="Layers-with-Mask.png" /><br /><span class="caption">Layers dialog with mask applied to Teal layer.</span></div>
+<p>
+The layer mask has now been added to the &ldquo;Teal&rdquo; layer.  It is also active (there is a white border around the thumbnail in the dialog, but is not visible due to the mask being white as well) and ready for modification.
+</p>
+<h2>Modifying a Layers Transparency with the Mask</h2>
+<p>
+At this point, any operations performed on the canvas will apply to the mask, and not to any layers themselves.  To illustrate how masks can affect its layers transparency, let&rsquo;s paint!
+</p>
+<p>
+I am going to use the <b>Rectangle Select</b> tool to select roughly the top third of the image, and I&rsquo;ll fill this selection with black.
+</p>
+<div class="MenuCmd"><span><u>T</u>ools &rarr; <u>S</u>election Tools &rarr; <u>R</u>ectangle Select</span></div>
+<div style="text-align: center;"><img src="Tool-Rectangle-Select.png" /><br /><span class="caption">Activating the <b>Rectangle Select</b> tool.</span></div>
+<p>
+Using the <b>Rectangle Select</b> tool, I'll select roughly the top third of the image:
+</p>
+<div style="text-align: center;"><img src="Selection-Top-Third.png" /><br /><span class="caption">Top third of the image selected.</span></div>
+<p>
+I want to fill this selection with black, but before I do I need to make sure that my foreground color is black.  Click on the foreground color in the <b>Color area</b> to bring up the &ldquo;Change Foreground Color&rdquo; dialog:
+</p>
+<div style="text-align: center;"><img src="Change-Foreground-Color.png" /><br /><span class="caption">Click the <span style="color: #00FF00;">foreground color</span> to change.</span></div>
+<p>
+The &ldquo;Change Foreground Color&rdquo; dialog allows you to set the foreground color.  For this example set the color to black, RGB(0, 0, 0):
+</p>
+<div style="text-align: center;"><img src="Change-Foreground-Dialog.png" /><br /><span class="caption">Change the color to black.</span></div>
+<p>
+With the foreground color set, you can now use the <b>Bucket Fill Tool</b> to fill in the selection.
+</p>
+<div class="MenuCmd"><span><u>T</u>ools &rarr; <u>P</u>aint Tools &rarr; <u>B</u>ucket Fill</span></div>
+<div style="text-align: center;"><img src="Bucket-Fill-Tool.png" /><br /><span class="caption">Activating the <b style="color: #00FF00;">Bucket Fill</b> tool.</span></div>
+<p>
+You can now click inside the selection to fill it with the foreground color (black).  As soon as you do, you'll be presented with a new view of your image on the canvas:
+</p>
+<div style="text-align: center;"><img src="Masked-Top-Black.png" /></div>
+<p>
+As you can see, filling the selected portion of the layer mask with black resulted in that area having 100% transparency, showing the layer below it.
+</p>
+<p>
+If you <b>Rectangle Select</b> a different area of the mask, you can fill it in with a different shade of gray to produce a variable opacity.  For example, I will select a few different regions of the mask, and fill it with different levels of gray:
+</p>
+<div style="text-align: center;"><img src="Masked-Various.png" /></div>
+<p>
+If you examine the layer mask, you'll see that there are different levels of gray being applied (black to white, from top to bottom), and their value is what determines the opacity of the layer.
+</p>
+<h2>Selective Colorization Example</h2>
+<p>
+A good example of the application of layer masks is doing selective colorization of an image (selectively allowing color to show through a mostly black and white image). I'll walk through how to easily do this with an image from Mardi Gras 2013:
+</p>
+<div style="text-align: center;"><img src="SelCol-Base.jpg" /><br /><span class="caption">Mardi Gras 2013, Mobile, AL</span></div>
+<p>
+Start the process by duplicating the base image (Shift+Ctrl+D, or Right-Click layer &rarr; Duplicate Layer). From the menu:
+</p>
+<div class="MenuCmd"><span><u>L</u>ayer &rarr; D<u>u</u>plicate Layer</span></div>
+<p>
+Following the steps above, add a layer mask to the desaturated layer and initialize it to White (full opacity). At this point, the Layers dialog should look like this:
+</p>
+<div style="text-align: center;"><img src="SelCol-Layers.png" /><br /><span class="caption"></span></div>
+<p>
+As before, set your foreground color to black.  This time, rather than filling selections, we are going to use the <b>Paintbrush Tool</b> to paint areas of the image we want the color to show through from the layer below.
+</p>
+<p>
+I decided to paint the boy on the fence.  Using the <b>Paintbrush Tool</b> I painted over his shirt and head.  This allowed those colors to show through from the layer below.  Here are the results after painting:
+</p>
+<div style="text-align: center;"><img src="SelCol-Boy.jpg" /><br /><span class="caption">Simple Selective Colorization Example</span></div>
+<p>
+To illustrate what was done, here is the layer mask I painted to achieve the above result:
+</p>
+<div style="text-align: center;"><img src="SelCol-Boy-Mask.jpg" /><br /><span class="caption">Layer mask isolated to illustrate</span></div>
+<p>
+Of course, I could have chosen a different color than black to create the mask.  If I wanted a slightly more muted color I could have painted with a more middle gray vs. black:
+</p>
+<div style="text-align: center;"><img src="SelCol-Boy-50.jpg" /><br /><span class="caption">Simple Selective Colorization Example (painted with gray vs. black).</span></div>
+<h2>Further Reading</h2>
+<ul>
+        <li><a href="../Selective_Color">Selective Colorization</a></li>
+        <li><a href="http://blog.patdavid.net/2011/10/getting-around-in-gimp-layer-masks.html">Getting Around in GIMP - Layer Masks</a></li>
+        <li><a href="http://blog.patdavid.net/2011/10/getting-around-in-gimp-luminosity-masks.html">Getting Around in GIMP - Luminosity Masks & Split Toning</a></li>
+</ul>
+<p>
+The original tutorial this was adapted from may be found <a href="http://blog.patdavid.net/2011/10/getting-around-in-gimp-layer-masks.html">here</a> (possibly with updated information).
+</p>
+<div style='text-align: left;'>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIMP Tutorial - Layer Masks (text & images)</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://blog.patdavid.net" property="cc:attributionName" rel="cc:attributionURL">Pat David</a>.<br/>Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

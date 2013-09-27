@@ -46,6 +46,9 @@
 ["href", "mail:People-Beppu_John",             { "href": "mailto:beppuNOSPAM@cpan.org"}]
 ["href", "home:People-Beppu_John",             { "href": "http://beppu.lbox.org/"}]
 
+["href", "mail:People-David_Pat",             { "href": "mailto:pat@patdavid.net"}]
+["href", "home:People-David_Pat",             { "href": "http://blog.patdavid.net/"}]
+
 ["href", "mail:People-Boyce_Mel",              { "href": "mailto:syngin-at-gimp-dot-org"}]
 ["href", "home:People-Boyce_Mel",              { "href": "http://syngin.gimp.org/"}]
 

@@ -1,0 +1,274 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - GIMP Quickies</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>GIMP Quickies</h1>
+
+<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US" rel="license"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" style="border-width:0"></a><br/>
+<span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">GIMP Tutorial - GIMP Quickies (text &amp; images)</span> 
+by <a href="http://blog.patdavid.net" property="cc:attributionName" rel="cc:attributionURL" xmlns:cc="http://creativecommons.org/ns#">Pat David</a> <br/> 
+is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US" rel="license">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+
+<h2>Intention</h2>
+
+<p>
+So you installed GIMP on your computer, congratulations!  GIMP is a very powerful image manipulation software, but don&rsquo;t let that intimidate you.  Even if you don&rsquo;t have time to learn advanced computer graphics, GIMP can still be a very useful and handy tool for quick image modifications.
+</p>
+<p>
+It is my hope that these few examples will help to solve those small, quick modifications that you may need to apply to an image.  Hopefully this will lead to learning even more powerful image editing capabilities that GIMP is capable of as well.
+</p>
+<p>
+For quick access, these are the four main points I&rsquo;ll cover in this quick tutorial:
+</p>
+<ul>
+        <li><a href="#scale">Changing the Size (Dimensions) of an Image (Scale)</a></li>
+        <li><a href="#compress">Changing the Size (Filesize) of a JPEG</a></li>
+        <li><a href="#crop">Crop an Image</a></li>
+        <li><a href="#transform">Rotate or Flip an Image</a></li>
+</ul>
+<p>
+In keeping with the spirit of the predecessor to this page, I will be using images from the Astronomy Picture of the Day (<a href="http://apod.nasa.gov/apod/astropix.html">APOD</a>), provided by NASA.
+</p>
+<p>
+All you need to know how to do to follow these quick examples is to be able to find your image and open it:
+</p>
+
+<div class="MenuCmd"><span><u>F</u>ile &rarr; <u>O</u>pen</span></div>
+
+<h2 id="scale" class="hilite">Changing the Size (Dimensions) of an Image (Scale)</h2>
+<p>
+It&rsquo;s a common problem that you may have an image that is too large for a particular purpose (embedding in a webpage, posting somewhere online, or including in an email for instance).  In this case you will often want to <i>scale </i> the image down to a smaller size more suitable for your use.
+</p>
+<p>
+This is a very simple task to accomplish in GIMP easily.
+</p>
+<p>
+The image we&rsquo;ll be using to illustrate this with is <a href="http://apod.nasa.gov/apod/ap130422.html" target="_blank">The Horsehead Nebula in Infrared</a>.
+</p>
+<p>
+When you first open your image in GIMP, chances are that the image will be zoomed so that the entire image fits in your canvas.  The thing to notice for this example is that by default the window decoration at the top of GIMP will show you some information about the image.
+</p>
+<div class="centerImg"><img src="Scale-View-Pixel-Size-Original.png" alt="GIMP Scale Image Tutorial Nebula" /><br/><span class="caption">View of the GIMP canvas, with information at the top of the window.</span></div>
+<p>
+Notice that the information at the top of the window shows the <span style="color: #00FF00;">current pixel dimensions</span> of the image (in this case, the pixel size is 1225&times;1280).
+</p>
+<p>
+To resize the image to new dimensions, we need only invoke the <b>Scale Image</b> dialog:
+</p>
+<div class="MenuCmd"><span><u>I</u>mage &rarr; <u>S</u>cale Image&hellip;</span></div>
+<p>
+This will then open the <b>Scale Image</b> dialog:
+</p>
+<div class="centerImg"><img src="Scale-Image-Dialog.png" alt="GIMP Scale Image Tutorial Dialog" /><br/><span class="caption">The <b>Scale Image</b> dialog.</span></div>
+<p>
+In the <b>Scale Image</b> dialog, you&rsquo;ll find a <span style="color: #00FF00;">place to enter new values</span> for <b>Width</b> and <b>Height</b>.  If you know one of the new dimensions you&rsquo;d like for the image, fill in the appropriate one here.  
+</p>
+<p>
+You&rsquo;ll also <span style="color: #0080FF;">notice a small chain</span> just to the right of the <b>Width</b> and <b>Height</b> entry boxes.  This icon shows that the Width and Height values are locked with respect to each other, meaning that changing one value will cause the other to change in order to keep the same aspect ratio (no strange compression or stretching in the image).
+</p>
+<p>
+For example, if you knew that you wanted your image to have a new width of 600px, you can enter that value in the <b>Width</b> input, and the <b>Height</b> will automatically change to maintain the aspect ratio of the image:
+</p>
+<div class="centerImg"><img src="Scale-Image-Dialog-Scaled.png" alt="GIMP Scale Image Tutorial Dialog Scaled Values" />
+		<br/>
+		<span class="caption">Changing the <b>Width</b> to 600px.</span>
+</div>
+<p>
+As you can see, entering <b>600px</b> for the width automatically changes the height to <b>627px</b>.
+</p>
+<p>
+Also notice I have shown a different option under <b>Quality</b> &rarr; Interpolation.  The default value for this is <b>Cubic</b>, but to retain the best quality it would better to use <b>Sinc (Lanczos3)</b>.
+</p>
+<p>
+If you want to specify a new size using a different type of value (other than Pixel size), you can change the type by clicking on the &ldquo;<b>px</b>&rdquo; spinner:
+</p>
+<div class="centerImg"><img src="Scale-Image-Dialog-Value-Types.png" alt="GIMP Scale Image Value Types" />
+		<br/>
+		<span class="caption">Changing input value types.</span>
+</div>
+<p>
+A common use for this could be if you wanted to specify a new size as a percentage of the old one.  In this case you could change to &ldquo;percent&rdquo;, and then enter 50 in either field to scale the image in half.
+</p>
+<p>
+Once you are done scaling the image, don&rsquo;t forget to export the changes you&rsquo;ve made:
+</p>
+<div class="MenuCmd"><span>File &rarr; Export&hellip;</span></div>
+<p>to export as a new filename, or:</p>
+<div class="MenuCmd"><span>File &rarr; Overwrite {FILENAME}</span></div>
+<p>to overwrite the original file (use caution).</p>
+<p>
+For more detail about using <b>Scale Image</b>, you can see <a href="http://docs.gimp.org/2.8/en/gimp-image-scale.html">the documentation</a>.
+</p>
+
+<h2 id="compress" class="hilite">Changing the Size (Filesize) of a JPEG</h2>
+
+<p>
+You can also modify the filesize of an image when exporting it to a format like JPEG.  JPEG is a <i><b>lossy</b></i> compression algorithm, meaning that when saving images to the JPEG format, you will sacrifice some image quality to gain a smaller filesize.
+</p>
+<p>
+Using the same Horsehead Nebula image from above, I have resized it to 200px wide (see above), and exported it using different levels of JPEG compression:
+</p>
+<div class="centerImg"><img src="JPG-Compression-Sample.png" alt="GIMP JPEG compression example different quality" />
+		<br/>
+		<span class="caption">Comparison of different JPEG compression levels.</span>
+</div>
+<p>
+As you can see, even at a quality setting of 80, the image is significantly smaller in filesize (77% size reduction), while the image quality is still quite reasonable.
+</p>
+<p>
+When you&rsquo;ve finished any image modifications you are doing, and are ready to export, simply invoke the export dialog with:
+</p>
+<div class="MenuCmd"><span><u>F</u>ile &rarr; Export&hellip;</span></div>
+<p>
+This will invoke the <b>Export Image</b> dialog:
+</p>
+<div class="centerImg"><img src="Export-Image-Dialog.png" alt="GIMP JPEG compression export name filetype dialog" />
+		<br/>
+		<span class="caption"></span>
+</div>
+<p>
+You can now enter a <span style="color: #00FF00;">new name for your file here</span>.  If you include the filetype extension (in this case, .jpg), GIMP will automatically try to export in that file format for you.  Here I am exporting the image as a JPEG file.
+</p>
+<p>
+You can also navigate to a new location on your computer through the <b>Places</b> pane, if you need to export the file to a different location.  When you are ready to export the image, just hit <span style="color: #0080FF;">the <b>Export</b> button.</span></p>
+<p>
+This will then bring up the <b>Export Image as JPEG</b> dialog, where you can change the quality of the export:
+</p>
+<div class="centerImg"><img src="Export-Image-as-JPEG.png" alt="GIMP Export JPEG options dialog" />
+		<br/>
+		<span class="caption"></span>
+</div>
+<p>
+From this dialog you can now <span style="color: #00FF00;">change the quality of the export</span>.  If you also have the &ldquo;Show preview in image window&rdquo; option checked, the image on the canvas will update to reflect the quality value you input.  This will also enable the &ldquo;File size:&rdquo; information to tell you what the resulting file size will be. (You may need to move some windows around to view the preview on the canvas in the background).
+</p>
+<p>
+When you are happy with the results, hit the <b><u>E</u>xport</b> button to export.
+</p>
+<p>
+To see more details about exporting different image formats, see <a href="http://docs.gimp.org/2.8/en/gimp-images-out.html">Getting Images out of GIMP</a> in the manual.
+</p>
+
+<h2 id="crop" class="hilite">Crop an Image</h2>
+
+<p>
+There are numerous reasons you may want to crop an image. 
+You may want to remove useless borders or information for aesthetic reasons, or you may want the focus of the final image to be of some particular detail for instance.  
+</p>
+<p>
+In a nutshell, cropping is just an operation to trim the image down to a smaller region than what you started with:
+</p>
+<div class="centerImg"><img src="Crop-Example.png" alt="GIMP Crop Example" />
+		<br/>
+		<span class="caption">Original image (left), cropped image (right)</span>
+</div>
+<p>
+The procedure to crop an image is straightforward.  You can either get to <span style="color: #00FF00;">the <b>Crop Tool</b></span> through the tools palette:
+</p>
+<div class="centerImg"><img src="Crop-Tool.png" alt="GIMP Crop Tool Palette" />
+		<br/>
+		<span class="caption">Crop Tool on the Tools Palette.</span>
+</div>
+<p>
+Or you can access the crop tool through the menus:
+</p>
+<div class="MenuCmd"><span><u>T</u>ools &rarr; <u>T</u>ransform Tools &rarr; <u>C</u>rop</span></div>
+<p>
+<img src="Crop-Cursor.png" style="float: left; margin-right: 0.5em;" alt="GIMP Crop Tool cursor" />
+Once the tool is activated, you&rsquo;ll notice that your mouse cursor on the canvas will change to indicate the <b>Crop Tool</b> is being used. 
+</p>
+<p>
+Now you can Left-Click anywhere on your image canvas, and drag the mouse to a new location to highlight an initial selection to crop.  You don&rsquo;t have to worry about being exact at this point, as you will be able to modify the final selection before actually cropping.
+</p>
+<div class="centerImg"><img src="Crop-First.png" alt="GIMP Crop Tutorial Example first pass" />
+		<br/>
+        <span class="caption">Initial pass with the Crop Tool.<br/>
+        Crop Tool options (left), cropping on the canvas (right).</span>
+</div>
+<p>
+After making the initial selection of a region to crop, you&rsquo;ll find the selection still active.  At this point hovering your mouse cursor over any of the four corners or sides of the selection will change the mouse cursor, and highlight that region.
+</p>
+<p>
+This allows you to now fine-tune the selection for cropping.  You can click and drag any side or corner to move that portion of the selection.
+</p>
+<p>
+Once you are happy with the region to crop, you can just press the &ldquo;<b>Enter</b>&rdquo; key on your keyboard to commit the crop. If at any time you&rsquo;d like to start over or decide not to crop at all, you can press the &ldquo;<b>Esc</b>&rdquo; key on your keyboard to back out of the operation.
+</p>
+<p>
+See <a href="http://docs.gimp.org/2.8/en/gimp-tool-crop.html">the documentation</a> for more information on cropping in GIMP.
+</p>
+<h3>Another Method</h3>
+<p>
+Another way to crop an image is to make a selection first, using the <b>Rectangle Select Tool</b>:
+</p>
+<div class="centerImg"><img src="Crop-Select-Tool.png" alt="GIMP rectangle select tool crop image" />
+		<br/>
+        <span class="caption">Rectangle Select Tool.</span>
+</div>
+<p>
+Or through the menus:
+</p>
+<div class="MenuCmd"><span><u>T</u>ools &rarr; <u>S</u>election Tools &rarr; <u>R</u>ectangle Select</span></div>
+<p>
+You can then highlight a selection the same way as the <b>Crop Tool</b>, and adjust the selection as well.  Once you have a selection you like, you can crop the image to fit that selection through:
+</p>
+<div class="MenuCmd"><span><u>I</u>mage &rarr; <u>C</u>rop to Selection</span></div>
+
+
+<h2 id="transform" class="hilite">Rotate and/or Flip an Image</h2>
+<p>
+There may be a time that you would need to rotate an image.  For instance, you may have taken the image with your camera in a vertical orientation, and for some reason it wasn&rsquo;t detected by GIMP as needing to be rotated (GIMP will normally figure this out for you, but not always).
+</p>
+<p>
+There may also be a time that you&rsquo;d like to flip an image as well.  These commands are grouped together under the same menu item:
+</p>
+<div class="MenuCmd"><span><u>I</u>mage &rarr; <u>T</u>ransform</span></div>
+<h3>Flip an Image</h3>
+<p>
+If you want to flip your image, the <b>Transform</b> menu offers two options, <b>Flip <u>H</u>orizontally</b>, or <b>Flip <u>V</u>ertically</b>.  This operation will mirror your image along the specified axis.  For example, here are all of the flip operations shown in a single image:
+</p>
+<div class="centerImg"><img src="Flip-Sample-Arrow.jpg" alt="GIMP flip image samples" />
+		<br/>
+        <span class="caption">All flips applied to base image (top left).</span>
+</div>
+<h3>Rotate an Image</h3>
+<p>
+Image rotation from the <b>Transform</b> menu is contrained to either 90&deg; clockwise/counter-clockwise, or 180&deg;.
+</p>
+<p>
+Don&rsquo;t mis-interpret this to mean that GIMP cannot do arbitrary rotations (any angle).  Arbitrary rotations are handled on a per-layer basis, while the image rotation described here is applicable to the entire image at once.
+</p>
+<div class="centerImg"><img src="Rotate-Sample.jpg" alt="GIMP rotate image samples" />
+		<br/>
+        <span class="caption">Original (top left), 90&deg; clockwise (top right)<br/>
+                90&deg; counter-clockwise (bottom left), 180&deg; (bottom right)</span>
+</div>
+
+<h2>In Conclusion</h2>
+<p>
+The simple examples shown here are just the tip of a really, really large iceberg.  These are, however, common modifications that many people are often looking to make without having to learn too much about image processing.  Hopefully they have been helpful.
+</p>
+<p>
+I encourage you to peruse the <a href="/tutorials/">other tutorials</a> for more advanced methods of image processing as well!
+</p>
+<p>
+The original tutorial this was adapted from can be found <a href="../Lite_Quickies">here</a>.
+</p>
+
+
+<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US" rel="license">
+        <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" style="border-width:0"></a><br/>
+<span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">GIMP Tutorial - GIMP Quickies (text &amp; images)</span>
+by <a href="http://blog.patdavid.net" property="cc:attributionName" rel="cc:attributionURL" xmlns:cc="http://creativecommons.org/ns#">Pat David</a><br/>
+Licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US" rel="license">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+
+
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+    <div>
+      <span id="footerleft">
+      </span>
+      <span id="footerright">
+      </span>
+    </div>
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

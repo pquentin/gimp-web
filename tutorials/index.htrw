@@ -18,11 +18,9 @@
   without having to learn advanced image manipulation methods.
 </p>
 <p>
-  <a href="The_Basics/">Simple Floating Logo</a>  The famous &quot;GIMP Floating Logos&quot; 
-  rescued from the original GIMP web site and slightly modified to fit here.  Even
-  if you hate images of text on the web, this tutorial gives you some of the basic
-  layer manipulation techniques.  The knowledge can be applied to many many imaging
-  projects and the logo *is* pretty cool ... 
+<a href="Floating_Logo/">Simple Floating Logo</a>  This is an updated tutorial for creating
+  the floating logo image.  This tutorial walks through some basic image and layer manipulation
+  techniques to produce a neat result.
 </p>
 <p>
   <a href="Borders_On_Selections/">Draw On Selections Borders</a>  Use

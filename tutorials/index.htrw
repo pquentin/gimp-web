@@ -183,12 +183,20 @@
   <a href="Basic_Scheme2/">GIMP Script-Fu 2</a> Write More Scheme for GIMP.
 </p>
 
+<h2><a name="Automation"></a>Automating Gimp</h2>
+<p>
+  <a href="AutomatedJpgToXcf/">Automated Jpg to Xcf</a> Import Xcf Images a Directory at a Time.
+</p>
+
 <p class="navindex">[<a href="#Beginner">Beginner</a>
 | <a href="#Intermediate">Intermediate</a>
 | <a href="#Expert">Expert</a>
 | <a href="#Photo">Photo Editing</a>
 | <a href="#Web">Web</a>
-| <a href="#Script">Script Authoring</a>]</p>
+| <a href="#Script">Script Authoring</a>
+| <a href="#Automation">Automating Gimp</a>]
+
+</p>
 
 <!--#include virtual="/includes/wgo-page-fini.xhtml" -->
 <!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

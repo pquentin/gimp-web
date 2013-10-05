@@ -16,18 +16,18 @@
 	<img src="gimp_jpg_to_xcf_popup.jpg" alt="" />
 </p>
 <p>While it is easy to do, opening a Jpeg file and saving it in the native 
-	gimp *.xcf format is tedious and time consuming. You may also want to 
+	GIMP *.xcf format is tedious and time consuming. You may also want to 
 	perform the same operation, like setting the grid spacing as an example, 
 	on all of the images that you import as part of the process. Automating 
 	the parts of the editing process that are the same for each image saves 
 	time, produces consistent results, and allows you to focus your attention 
 	on the part of the image editing process that really needs your attention.
 </p>
-<p>This tutorial is a scripting example is intended to illustrate automating 
+<p>This tutorial is a scripting example that is intended to illustrate automating 
 	part of the editing process. The script opens all of the Jpeg images in 
 	the source directory, and saves them as xcf files in the target directory. 
 	This is not a basic scripting tutorial, a basic understanding of writing 
-	gimp scripts is assumed.
+	GIMP scripts is assumed.
 </p>
 
 <h2>Requirements that are different than most scripts.</h2>
@@ -50,10 +50,10 @@
 <p>Let's look at the <b>first requirement</b>, to be able to run the script 
 	without an open image. We are working on a group of several images not 
 	just one, and since we want to start our script from a know point, we 
-	don't want to have an image open for edit, just the gimp framework or 
+	don't want to have an image open for edit, just the GIMP framework or 
 	application.
 </p>
-<p>The availability of a script from within the Gimp application is 
+<p>The availability of a script from within the GIMP application is 
 	established and controlled within the script-fu-register block. After the 
 	function name are an ordered set of strings of required information 
 	followed by an optional number of GUI widget declarations that may feed 
@@ -97,9 +97,9 @@
 ( script-fu-register "script-fu-example-jpg-to-xcf" ; Function Name
    "1 ) Import JPG to XCF (Directory)"    ; Menu Label
    "This script is an interactive script to convert all of the jpegs 
-   in a source directory into Gimp xcf format files in a target 
+   in a source directory into GIMP xcf format files in a target 
    directory.  The script is designed to be run WITHOUT ANY IMAGE 
-   LOADED. Runs from Gimp shell in Linux and Windows."
+   LOADED. Runs from GIMP shell in Linux and Windows."
    "Stephen Kiel"       ; Author
    "2013, Stephen Kiel" ; Copyright
    "July 2013"          ; Creation Date
@@ -188,7 +188,7 @@
 	similar functions might be to convert a directory of xcf files 
 	to jpg files, to scale original jpg files to a smaller size, etc.
 </p>
-<p>When using the gimp widgets to Browse through the file system, 
+<p>When using the GIMP widgets to Browse through the file system, 
 	you will probably need to select "Other" to get to navigate where 
 	you really want. When using an automated script it is 
 	<b>ALWAYS</b> a good idea to run on a <b>COPY</b> of your original 
@@ -228,12 +228,12 @@
 ;   GNU General Public License for more details.
 ;
 ;   You should have received a copy of the GNU General Public License
-;   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;   along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 ;
 ;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 ;;;  Function - script-fu-example-jpg-to-xcf
 ;;;
-;;;  Converts all jpeg images in selected directory to gimp xcf
+;;;  Converts all jpeg images in selected directory to GIMP xcf
 ;;;  format.
 ;;;
 ;;;  Filename Case insensitive. (converts xyz.jpg or XYZ.JPG)
@@ -327,7 +327,7 @@
                      ; Get / set Drawable ID, need it for file save.
                      ( set! theDrawable ( car 
                         ( gimp-image-merge-visible-layers theImage 0 ) ) )
-                     ; Save file - gimp xcf format
+                     ; Save file - GIMP xcf format
                      ( gimp-xcf-save 
                         RUN-NONINTERACTIVE theImage theDrawable
                         outFilename outFilename )
@@ -346,9 +346,9 @@
 ( script-fu-register "script-fu-example-jpg-to-xcf" ; Function Name
    "1 ) Import JPG to XCF (Directory)"    ; Menu Label
    "This script is an interactive script to convert all of the jpegs 
-   in a source directory into Gimp xcf format files in a target 
+   in a source directory into GIMP xcf format files in a target 
    directory.  The script is designed to be run WITHOUT ANY IMAGE 
-   LOADED. Runs from Gimp shell in Linux and Windows."
+   LOADED. Runs from GIMP shell in Linux and Windows."
    "Stephen Kiel"       ; Author
    "2013, Stephen Kiel" ; Copyright
    "July 2013"          ; Creation Date
@@ -384,7 +384,7 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#   along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 #
 ############################################################################
 #

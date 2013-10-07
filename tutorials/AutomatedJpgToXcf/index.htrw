@@ -157,7 +157,7 @@
 	<h4>Script-fu file-glob and strbreakup</h4>
 </div>
 <pre class="code">
-         ( isLinux (  >  
+         ( isLinux (  &gt;  
             ( length ( strbreakup sourceDirectory "/" ) )
             ( length ( strbreakup sourceDirectory "\\" ) ) ) )
          ; Form path/file patternSource based on OS 
@@ -254,7 +254,7 @@
          ; Declare and Init local variables
          ( returnVal #f )
          ; Guess host OS based on directory path separator
-         ( isLinux (  >  
+         ( isLinux (  &gt;  
             ( length ( strbreakup sourceDirectory "/" ) )
             ( length ( strbreakup sourceDirectory "\\" ) ) ) )
          ; Form path/file patternSource based on OS 
@@ -281,7 +281,7 @@
       ) ; End declaration of Local Variables
       ;
       ; Run if images closed, message if not.
-      ( if ( < 0 ( car ( gimp-image-list ) ) )
+      ( if ( &lt; 0 ( car ( gimp-image-list ) ) )
          ( gimp-message "Close open Images & Rerun" )
          ( begin
             ;
@@ -400,7 +400,7 @@ def exampleJpgToXcf(srcPath, tgtPath):
     """
     ###
     open_images, image_ids = pdb.gimp_image_list()
-    if open_images > 0:
+    if open_images &gt; 0:
         pdb.gimp_message ("Close open Images & Rerun")
     else:
         # list all of the files in source & target directories
@@ -412,7 +412,7 @@ def exampleJpgToXcf(srcPath, tgtPath):
         # Find all of the jpeg files in the list & make xcf file names
         for fname in allFileList:
             fnameLow = fname.lower()
-            if fnameLow.count('.jpg') > 0:
+            if fnameLow.count('.jpg') &gt; 0:
                 srcFileList.append(fname)
                 tgtFileList.append(xform.sub('.xcf',fname))
         # Dictionary - source & target file names

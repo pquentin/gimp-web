@@ -147,7 +147,10 @@
   <a href="Blending_Exposures/">Blending Exposures</a> Increase dynamic range by combining different exposures of the same scene.
 </p>
 <p>
-  <a href="Smart_Sharpening/">"Smart" Sharpening</a> Sharpen images without making noise more noticable.
+  <a href="Smart_Sharpening/">&ldquo;Smart&rdquo; Sharpening</a> Sharpen images without making noise more noticable.
+</p>
+<p>
+  <a href="Luminosity_Masks/">Luminosity Masks</a> Isolate specific luminosity tones in your image for editing.
 </p>
 
 <h2><a name="Web"></a>Web</h2>

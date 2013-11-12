@@ -1,0 +1,5 @@
+.MenuCmd { text-align: center; margin-bottom: 1em;}
+.MenuCmd span { font-size: 1.1em; border: dashed 1px gray; padding: 0.2em 1em; background-color: #222; }
+u { text-decoration: underline; }
+.caption {text-align: center; margin-bottom: 1em;}
+.caption img {margin-bottom: 0.3em;}

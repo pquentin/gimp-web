@@ -1,0 +1,367 @@
+<!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
+<title>GIMP - Layer Masks</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!--#include virtual="/includes/wgo-page-init.xhtml" -->
+
+<h1>Layer Masks</h1>
+<p>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIMP Tutorial - Layer Masks (text)</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://blog.patdavid.net" property="cc:attributionName" rel="cc:attributionURL">Pat David</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</p>
+
+<h2>Intention</h2>
+<p>
+Luminosity masks are basically layer masks that are built around specific tones in an image.  They are derived from the image data itself, and focused on a specific range of tonal values.  The benefit of using these types of masks is that when targeting tonal ranges the mask itself is self-feathering, helping to avoid problems with blending and hard transitions.
+</p>
+<p>
+Being able to selectively modify an image based on particular tonal regions can be a very powerful method of editing. Need to brighten up the mid-tones in an image without effecting shadows or highlights?  Want to split-tone an image with different colors?  Need to increase contrast only in the darkest shadows?  All of these are trivially easy once you begin considering your image as a collection of tonal ranges.
+</p>
+<p>
+This tutorial will assume you are already familiar with layer masks.  If not (or you just want to brush up), I recommend you read through the <a href="../Layer_Masks">Layer Masks</a> tutorial first.
+</p>
+<p>
+For this tutorial I'll be using this image by the West Arctic National Parklands:
+</p>
+<div class="caption"><a href="Mountains-Full-Size.jpg"><img src="Mountains.jpg" /></a><br/><span><a style="font-style: italic;" href="http://www.flickr.com/photos/nps_wear/8517263428/">Mountains as Far as the Eye Can See</a> (<a href="http://creativecommons.org/licenses/by/2.0/">cc-by</a>)</span></div>
+<p>
+After going through this tutorial, we will generate channels in GIMP corresponding to these six different luminosity regions in the image:
+</p>
+
+<div class="caption"><img src="All-Masks.jpg" /><br/><span >Example luminosity masks.  Lights (left), Mids (center), and Darks (right)</span></div>
+
+<h2>Creating the Masks</h2>
+<p>
+To begin creating the masks we will need to first get a luminosity representation of the image.  This is easily achieved by duplicating the base layer, and desaturating it using <b>Luminosity</b> as the conversion option.
+</p>
+<h3>Duplicate the Base Layer</h3>
+<p>
+Either through the menus, or by Right-Clicking on the base layer in the <b>Layer Dialog</b>:
+</p>
+<div class="MenuCmd"><span><u>L</u>ayer &rarr; D<u>u</u>plicate Layer</span></div>
+<div class="caption"><img src="Layer-Duplicate.png" /><br/><span></span></div>
+
+<h3>Desaturate the Duplicated Layer</h3>
+<p>
+Now desaturate the duplicated layer using <b>Luminosity</b> as the method:
+</p>
+<div class="MenuCmd"><span>Colors &rarr; Desaturate&hellip;</span></div>
+<div class="caption"><img src="Layer-Desaturate.png" /><br/><span></span></div>
+<p>
+This desaturate copy of your color image represents the &ldquo;Lights&rdquo; channel.  Now we want to create a new channel based on thsi layer.
+</p>
+
+
+<h3>Create a New Channel &ldquo;Lights&rdquo;</h3>
+<p>
+The easiest way to do this is through the <b>Channels</b> Dialog. If you don't see it, you can open it by going to:
+</p>
+<div class="MenuCmd"><span>Windows &rarr; Dockable Dialogs &rarr; Channels</span></div>
+<div class="caption"><img src="Channels-Dialog.png" /><br/><span>The <b>Channels</b> Dialog</span></div>
+<p>
+On the <span style="color: #ff5500;">top half</span> of this window you&rsquo;ll see the an entry for each channel in your image (Red, Green, Blue, and Alpha). On <span style="color: #00aaff;">the bottom</span> will be a list of any channels you have previously defined.
+</p>
+<p>
+To create a new channel that will become your &ldquo;Lights&rdquo; channel, drag any one of the <span style="color: #ff5500;">RGB channels</span> down to the <span style="color: #00aaff;">lower window</span> (it doesn&rsquo;t matter which - they all have the same data due to the desaturation operation).
+</p>
+<p>
+Now rename this channel to something meaningful (like &ldquo;<b>L</b>&rdquo; for instance!), by double-clicking on its name (in my case it&lsquo;s called &ldquo;Blue Channel Copy&rdquo;) and entering a new one.
+</p>
+<p>
+This now gives us our &ldquo;<b>Lights</b>&rdquo; channel, <b>L </b>:
+</p>
+<div class="caption"><img src="L-Channel.png" /><br/><span></span></div>
+<p>
+With the &ldquo;Lights&rdquo; channel created, we can use it to create the inverse, the &ldquo;Darks&rdquo; channel.
+</p>
+
+
+<h3>Create a New Channel &ldquo;Darks&rdquo;</h3>
+<p>
+To create the &ldquo;Darks&rdquo; channel, it helps to realize that it should simply be the inverse of the &ldquo;Lights&rdquo; channel.  We can get this selection through a few simple operations.
+</p>
+<p>
+We are going to basically select the entire image, then subtract the &ldquo;Lights&rdquo; channel from it.  What is left should be our new &ldquo;Darks&rdquo; channel.
+</p>
+
+<h4>Select the Entire Image</h4>
+<p>
+First, select the entire image:
+</p>
+<div class="MenuCmd"><span>Select &rarr; All</span></div>
+<p>
+Remember that you should be seeing the &ldquo;marching ants&rdquo; around your selection - in this case the entire image.
+</p>
+
+<h4>Subtract the &ldquo;Lights&rdquo; Channel</h4>
+<p>
+With the entire image selected, we just have to subtract the &ldquo;Lights&rdquo; channel.  In the <b>Channels</b> dialog, just Right-Click on the &ldquo;Lights&rdquo; channel, and choose &ldquo;<b>Subtract from Selection</b>&rdquo;:
+</p>
+<div class="caption"><img src="L-Channel-Subtract.png" /><br/><span>Subtracting the <b>L</b> channel</span></div>
+<p>
+You’ll now see a new selection on your image. This selection represents the inverse of the “Lights” channel&hellip;
+</p>
+
+<h4>Create a New &ldquo;Darks&rdquo; Channel from the Selection</h4>
+<p>
+Now we just need to save the current selection to a new channel (which we’ll call... Darks!). To save the current selection to a channel, we can just use:
+</p>
+<div class="MenuCmd"><span>Select &rarr; Save to Channel</span></div>
+<p>
+This will create a new channel in the Channel dialog (probably named “Selection Mask copy”). To give it a better name, just Double-Click on the name to rename it. Let's choose something exciting, like “<b>D</b>”!
+</p>
+
+<h4>Create Even Darker Masks</h4>
+<p>
+At this point, you’ll have a “Lights” and a “Darks” channel. If you wanted to create some channels that target darker and darker regions of the image, you can subtract the “Lights” channel again (this time from the current selection, “Darks”, as opposed to the entire image).
+</p>
+<p>
+Once you’ve subtracted the “Lights” channel again, don’t forget to save the selection to a new channel (and name it appropriately - I like to name subsequent masks things like “DD” in this case - if I subtracted again, I'd call the next one “DDD” and so on…).
+</p>
+<p>
+I&rsquo;ll usually make 3 levels of &ldquo;Darks&rdquo; channels: <b>D</b>, <b>DD</b>, and <b>DDD</b>:
+</p>
+<div class="caption"><img src="D-Channels.png" /><br/><span>Three levels of Dark masks created</span></div>
+<p>
+Here is what the three different channels of Darks look like:
+</p>
+<div class="caption"><img src="Darks-All.jpg" /><br/><span>The <b>D</b>, <b>DD</b>, and <b>DDD</b> channels, respectively</span></div>
+
+<h3>Create the Lighter Masks</h3>
+<p>
+At this point we have one “Lights” channel, and three “Darks” channels. Now we can go ahead and create two more “Lights” channels, to target lighter and lighter tones.
+</p>
+<p>
+The process is identical to creating the darker channels, just in reverse.
+</p>
+
+<h4>Lights Channel to Selection</h4>
+<p>
+To get started, activate the &ldquo;Lights&rdquo; channel as a selection (Right-Click on the &ldquo;Lights&rdquo; Channel):
+</p>
+<div class="caption"><img src="L-Channel-Activate.png" /><br/><span></span></div>
+<p>
+With the “Lights” channel as a selection, now all we have to do is <b>Subtract</b> the “Darks” channel from it. Then save that selection as a new channel (which will become our “LL” channel, and so on…):
+</p>
+<div class="caption"><img src="D-Subtract.png" /><br/><span>Subtracting the <b>D</b> channel from the <b>L</b> selection</span></div>
+<p>
+To get an even lighter channel, you can subtract <b>D</b> one more time from the selection so far as well.
+</p>
+<p>
+Here are what the three channels look like, starting with <b>L</b> up to <b>LLL</b>:
+</p>
+<div class="caption"><img src="Lights-All.jpg" /><br/><span>The <b>L</b>, <b>LL</b>, and <b>LLL</b> channels, respectively</span></div>
+
+
+<h3>Mid Tones Channels</h3>
+<p>
+By this point, we&rsquo;ve got 6 new channels, three each for light and dark tones:
+</p>
+<div class="caption"><img src="L+D.png" /><br/><span></span></div>
+<p>
+Now we can generate our mid-tone channels from these.
+</p>
+<p>
+The concept of generating the mid-tones is relatively simple - we’re just going to intersect dark and light channels to produce whats left - midtones.
+</p>
+
+<h4>Intersecting Channels for Mid-Tones</h4>
+<p>
+To get started, first select the “L” channel, and set it to the current selection (just like above). Right-Click → Channel to Selection.
+</p>
+<p>
+Then, Right-Click on the “D” channel, and choose “Intersect with Selection”.
+</p>
+<p>
+You likely won’t see any selection active on your image, but it’s there, I promise. Now as before, just save the selection to a channel:
+</p>
+<div class="MenuCmd"><span>Select &rarr; Save to Channel</span></div>
+<p>
+Give it a neat name. Sayyy, “<b>M</b>”? :)
+</p>
+<p>
+You can repeat for each of the other levels, creating an MM and MMM if you'd like (using LL/DD and LLL/DDD respectively).
+</p>
+<p>
+Now remember, the mid-tones channels are intended to isolate mid values as a mask, so they can look a little strange at first glance. Here's what the basic mid-tones mask looks like:
+</p>
+<div class="caption"><img src="Mid.jpg" /><br/><span>Basic Mid-Tones channel</span></div>
+<p>
+Remember, black tones in this mask represent full transparency to the layer below, while white represents full opacity, from the associated layer.
+</p>
+
+
+
+
+<h2>Using the Masks</h2>
+<p>
+The basic idea behind creating these channels is that you can now mask particular tonal ranges in your images, and the mask will be self-feathering (due to how we created them). So we can now isolate specific tones in the image for manipulation.
+</p>
+<p>
+<a href="http://blog.patdavid.net/2011/10/getting-around-in-gimp-luminosity-masks.html">Previously</a>, I had shown how this could be used to do some simple split-toning of an image. In that case I worked on a B&W image, and tinted it. Here I'll do the same with our image we’ve been working on so far...
+<p>
+
+<h3>Split Toning</h3>
+<p>
+Using the image I've been working through so far, we have the base layer to start with:
+</p>
+<div class="caption"><img src="Split-Base.png" /><br/><span></span></div>
+
+<h4>Create Duplicates</h4>
+<p>
+We are going to want two duplicates of this base layer. One to tone the lighter values, and another to tone the darker ones. We'll start by considering the dark tones first. Duplicate the base layer:
+</p>
+<div class="MenuCmd"><span>Layer &rarr; Duplicate Layer</span></div>
+<p>
+Then rename the copy something descriptive. In my example, I'll call this layer “Dark” (original, I know):
+</p>
+<div class="caption"><img src="Split-Dark.png" /><br/><span></span></div>
+
+<h4>Add a Mask</h4>
+<p>
+Now we can add a layer mask to this layer. You can either Right-Click the layer, and choose “Add Layer Mask”, or you can go through the menus:
+</p>
+<div class="MenuCmd"><span>Layer &rarr; Mask &rarr; Add Layer Mask</span></div>
+<p>
+You’ll then be presented with options about how to initialize the mask. You’ll want to <b>Initialize Layer Mask to:</b> “Channel”, then choose one of your luminosity masks from the drop-down. In my case, I’ll use the <b>DD</b> mask we previously made:
+</p>
+<div class="caption"><img src="AddLayerMask.png" /><br/><span></span></div>
+
+<h4>Adjust the Layer</h4>
+<img style="float: right;" src="Dark-Active.png"/>
+<p>
+Now you’ll have a Dark layer with a DD mask that will restrict any modification you do to this layer to only apply to the darker tones.
+</p>
+<p>
+Make sure you select the layer, and not it’s mask, by clicking on it (you’ll see a white outline around the active layer). Otherwise any operations you do may accidentally get applied to the mask, and not the layer.
+</p>
+<p>
+At this point, we now want to modify the colors of this layer in some way. There are literally endless ways to approach this, bounded only by your creativity and imagination. For this example, we are going to tone the image with a cool teal/blue color (just like before), which combined with the <b>DD</b> layer mask, will restrict it to modifying only the darker tones.
+</p>
+<br style="clear:both;"/>
+<p>
+So I’ll use the <b>Colorize</b> option to tone the entire layer a new color:
+</p>
+<div class="MenuCmd"><span>Colors &rarr; Colorize</span></div>
+<p>
+To get a Teal-ish color, I'll pull the Hue slider over to about 200:
+</p>
+<div class="caption"><img src="Colorize-200.png" /><br/><span></span></div>
+<p>
+Now, pay attention to what’s happening on your image canvas at this point. Drag the Hue slider around and see how it changes the colors in your image. Especially note that the color shifts will be restricted to the darker tones thanks to the DD mask being used!
+</p>
+<p>
+To illustrate, here are four images where the <b>Hue</b> has been changed in each one.  Notice how the color shifts are constrained to darker tones due to the <b>DD</b> mask being active:
+</p>
+<div class="caption"><img src="All-Hues.jpg" /><br/><span></span></div>
+<p>
+So after I choose a new Hue of 200 for my layer, I should be seeing this:
+</p>
+<div class="caption"><img src="Dark-Tinted.png" /><br/><span></span></div>
+
+<h4>Repeat for Light Tones</h4>
+<p>
+Now just repeat the above steps, but this time for the light tones. So duplicate the base layer again, and add a layer mask, but this time try using the LL channel as a mask.
+</p>
+<p>
+For the lighter tones, I chose a Hue of around 25 instead (more orange-ish than blue):
+</p>
+<div class="caption"><img src="Light-Tinted.png" /><br/><span></span></div>
+<p>
+In the end, here are the results that I achieved:
+</p>
+<div class="caption"><img src="Mountains-Split.jpg" /><br/><span></span></div>
+<p>
+Compared to the original we started with:
+</p>
+<div class="caption"><img src="Mountains.jpg" /><br/><span></span></div>
+<p>
+The real power here comes from experimentation. I encourage you to try using a different mask to restrict the changes to different areas (try the LLL for instance). You can also adjust the opacity of the layers now to modify how strongly the color tones will effect those areas as well. Play!
+</p>
+
+
+
+<h3>Mid-Tones Masks</h3>
+<p>
+The mid-tone masks were very interesting to me. In Tony's original article, he mentioned how much he loved using them to provide a nice boost to contrast and saturation in the image. Well, he&rsquo;s right. It certainly does do that! (He also feels that it’s similar to shooting the image on Velvia).
+</p>
+
+<img style="float:right; margin-left: 1em;" src="Mid-Layer.png"/>
+<p>
+Let’s have a look.
+</p>
+<p>
+I’ve deleted the layers from my split-toning exercise above, and am back to just the base image layer again.
+</p>
+<p>
+To try out the mid-tones mask, we only need to duplicate the base layer, and apply a layer mask to it.
+</p>
+<p>
+This time I’ll choose the basic mid-tones mask M.
+</p>
+<p>
+What’s interesting about using this mask is that you can use pretty aggressive curve modifications to it, and still keep the image from blowing up. We are only targeting the mid-tones.
+</p>
+<br style="clear:both;"/>
+<p>
+To illustrate, I’m going to apply a fairly aggressive compression to the curves by using <b>Adjust Color Curves</b>:
+</p>
+<div class="MenuCmd"><span>Colors &rarr; Curves</span></div>
+<p>
+When I say aggressive, here is what I’m referring to:
+</p>
+<div class="caption"><img src="Mid-Curve.png" /><br/><span></span></div>
+<p>
+Here is the effect it has on the image when using the <b>M</b> mid-tones mask:
+</p>
+
+<div class="caption"><img src="Mid-Boost.jpg" /><br/><span></span></div>
+<p>
+Compared to the original we started with:
+</p>
+<div class="caption"><img src="Mountains.jpg" /><br/><span></span></div>
+<p>
+As you can see, there is an increase in contrast across the image, as well a nice little boost to saturation. You don't need to worry about blowing out highlights or losing shadow detail, because the mask will not allow you to modify those values.
+</p>
+
+<h4>More Samples of the Mid-Tones Mask in use</h4>
+<div class="caption"><img src="stignygaard-3654106828-original.jpg" /><br/><span>Original<br/><a href="http://www.flickr.com/photos/stignygaard/3654106828/">Brorfelde landscape</a> by <a href="http://www.flickr.com/photos/stignygaard">Stig Nygaard</a> (<a href="http://creativecommons.org/licenses/by/2.0/">cc-by</a>)</span></div>
+<div class="caption"><img src="stignygaard-3654106828.png" /><br/><span>After an aggressive curve + Mid-Tone mask</span></div>
+
+<br/>
+<br/>
+
+<div class="caption"><img src="Landscapes.jpg" /><br/><span>Original<br/><a href="http://www.flickr.com/photos/thomasjhannigan/8387450301/">Landscapes</a> by <a href="http://www.flickr.com/photos/thomasjhannigan/">Tom Hannigan</a>  (<a href="http://creativecommons.org/licenses/by/2.0/">cc-by</a>)</span></div>
+<div class="caption"><img src="Landscapes-Mid-Mask.jpg" /><br/><span>After an aggressive curve + Mid-Tone mask</span></div>
+
+<br/>
+<br/>
+
+<div class="caption"><img src="Craters-of-the-Moon.jpg" /><br/><span>Original<br/><a href="http://www.flickr.com/photos/72213316@N00/3725266971/">Stitched photos of the Idaho landscape near Craters of the Moon National Monument</a><br>by <a href="http://www.flickr.com/photos/72213316@N00/">Frank Kovalchek</a> (<a href="http://creativecommons.org/licenses/by/2.0/">cc-by</a>)</a></span></div>
+<div class="caption"><img src="Craters-of-the-Moon-Mid-Mask.jpg" /><br/><span>After an aggressive curve + Mid-Tone mask</span></div>
+
+<h2>In Conclusion</h2>
+<p>
+This is just another tool in our mental toolbox of image manipulation, but it’s a very powerful tool indeed. When considering your images, you can now look at them as a function of luminosity - with a neat and powerful way to isolate and target specific tones for modification.
+</p>
+<p>
+As always, I encourage you to experiment and play!
+</p>
+
+
+
+<h2>Further Reading</h2>
+<ul>
+        <li><a href="../Selective_Color">Selective Colorization</a></li>
+        <li><a href="../Layer_Masks">Layer Masks</a></li>
+        <li><a href="http://blog.patdavid.net/2011/10/getting-around-in-gimp-layer-masks.html">Getting Around in GIMP - Layer Masks</a></li>
+        <li><a href="http://blog.patdavid.net/2011/10/getting-around-in-gimp-luminosity-masks.html">Getting Around in GIMP - Luminosity Masks & Split Toning</a></li>
+        <li><a href="http://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html">Getting Around in GIMP - Luminosity Masks Revisited</a></li>
+</ul>
+<p>
+The original tutorial this was adapted from may be found <a href="http://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html">here</a> (possibly with updated information).
+</p>
+<div style='text-align: left;'>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIMP Tutorial - Layer Masks (text)</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://blog.patdavid.net" property="cc:attributionName" rel="cc:attributionURL">Pat David</a>.<br/>Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</div>
+<!--#include virtual="/includes/wgo-page-fini.xhtml" -->
+<!--#include virtual="/includes/wgo-xhtml-fini.xhtml" -->

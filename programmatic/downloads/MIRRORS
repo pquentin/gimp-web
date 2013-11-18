@@ -24,8 +24,8 @@ China
 
 France
      ftp://ftp.iut-bm.univ-fcomte.fr/gimp/
-	http://ftp.iut-bm.univ-fcomte.fr/gimp/ (web access)
-	rsync://ftp.iut-bm.univ-fcomte.fr/gimp/ (rsync access)
+     http://ftp.iut-bm.univ-fcomte.fr/gimp/ (web access)
+     rsync://ftp.iut-bm.univ-fcomte.fr/gimp/ (rsync access)
      http://mirror.ibcp.fr/pub/gimp/ (web access)
  
 Estonia
@@ -99,7 +99,8 @@ Spain
      ftp://ftp.rediris.es/mirror/gimp/ (outdated)
 
 Sweden
-     ftp://ftp.acc.umu.se/pub/gimp/ (outdated)
+     ftp://ftp.acc.umu.se/pub/gimp/
+     http://ftp.acc.umu.se/pub/gimp/ (web access)
      ftp://ftp.sunet.se/pub/gnu/gimp/
      http://ftp.sunet.se/pub/gnu/gimp/ (web access)
 
@@ -108,6 +109,9 @@ United Kingdom
      ftp://ftp.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/
      http://www.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/ (web access)
      rsync://rsync.mirrorservice.org/ftp.gimp.org/pub/gimp/ (rsync access)
+     ftp://anorien.csc.warwick.ac.uk/ftp.gimp.org/
+     https://anorien.csc.warwick.ac.uk/ftp.gimp.org/ (web access)
+     rsync://anorien.csc.warwick.ac.uk/ftp.gimp.org/ (rsync access)
 
 United States
      http://gimp.cp-dev.com/ (web access)
@@ -119,4 +123,7 @@ United States
      http://mirrors.zerg.biz/gimp/ (web access)
      http://classivox.com/pub/gimp/ (web access)
      ftp://ftp.spectralcoding.com/gimp/
-	http://ftp.spectralcoding.com/gimp/ (web access)
+     http://ftp.spectralcoding.com/gimp/ (web access)
+     ftp://mirrors.xmission.com/gimp/
+     http://mirrors.xmission.com/gimp/ (web access)
+     rsync://mirrors.xmission.com/gimp/ (rsync access)

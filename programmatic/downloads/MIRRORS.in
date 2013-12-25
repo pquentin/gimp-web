@@ -1,6 +1,14 @@
 ## Mirror Sites
 ##-------------
 
+#Australia
+#     ftp://mirrors-au.go-parts.com/gimp/
+#     http://mirrors-au.go-parts.com/gimp/ (web access)
+#     rsync://mirrors-au.go-parts.com/mirrors/gimp/ (rsync access)
+
+#Austria
+#     ftp://gd.tuwien.ac.at/graphics/gimp/
+
 Brazil
      ftp://mirrors-br.go-parts.com/gimp/
      http://mirrors-br.go-parts.com/gimp/ (web access)
@@ -10,6 +18,9 @@ Canada
      http://gimp.parentingamerica.com/ (web access)
      http://gimp.raffsoftware.com/ (web access)
      http://gimp.skazkaforyou.com/ (web access)
+
+#China
+#     http://mirror.bjtu.edu.cn/gimp (web access, outdated)
 
 France
      ftp://ftp.iut-bm.univ-fcomte.fr/gimp/
@@ -37,6 +48,9 @@ Greece
      http://ftp.cc.uoc.gr/mirrors/gimp/ (web access)
 
 Ireland
+#     ftp://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/ (outdated)
+#     http://ftp.esat.net/mirrors/ftp.gimp.org/pub/gimp/ (web access, outdated)
+#     rsync://ftp.esat.net/mirrors/ftp.gimp.org/pub (rsync access)
      ftp://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/
      http://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/ (web access)
      rsync://ftp.heanet.ie/mirrors/ftp.gimp.org/pub/gimp/ (rsync access)
@@ -45,10 +59,14 @@ Japan
      ftp://ftp.u-aizu.ac.jp/pub/graphics/tools/gimp/
      ftp://ftp.ring.gr.jp/pub/graphics/gimp/
      http://www.ring.gr.jp/pub/graphics/gimp/ (web access)
+#     ftp://mirrors.go-parts.com/gimp/
+#     http://mirrors.go-parts.com/gimp/ (web access)
+#     rsync://mirrors.go-parts.com/mirrors/gimp/ (rsync access)
 
 Netherlands
      ftp://ftp.snt.utwente.nl/pub/software/gimp/gimp/
      http://ftp.snt.utwente.nl/pub/software/gimp/gimp/ (web access)
+#     http://mirrors-eu.spyrush.com/gimp/ (web access)
      ftp://ftp.nluug.nl/pub/graphics/gimp/
      http://ftp.nluug.nl/graphics/gimp/ (web access)
      rsync://ftp.nluug.nl/gimp/ (rsync access)
@@ -60,6 +78,7 @@ Poland
      ftp://sunsite.icm.edu.pl/pub/graphics/gimp/
      ftp://ftp.tpnet.pl/pub/graphics/gimp/
      rsync://ftp.tpnet.pl/gimp/ (rsync access)
+#     ftp://ftp.tuniv.szczecin.pl/pub/Linux/gimp/
 
 Portugal
      ftp://mirrors.dominios.pt/pub/ftp.gimp.org
@@ -67,6 +86,10 @@ Portugal
      ftp://mirrors.fe.up.pt/mirrors/ftp.gimp.org/
      http://mirrors.fe.up.pt/mirrors/ftp.gimp.org/ (web access)
      rsync://mirrors.fe.up.pt/mirrors/ftp.gimp.org/ (rsync access)
+
+#Romania
+#     ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.gimp.org/
+#     http://ftp.iasi.roedu.net/mirrors/ftp.gimp.org/ (web access)
 
 South Africa
      ftp://ftp.is.co.za/mirror/ftp.gimp.org/gimp/
@@ -76,10 +99,13 @@ Spain
      ftp://ftp.rediris.es/mirror/gimp/ (outdated)
 
 Sweden
+#     ftp://ftp.acc.umu.se/pub/gimp/
+#     http://ftp.acc.umu.se/pub/gimp/ (web access)
      ftp://ftp.sunet.se/pub/gnu/gimp/
      http://ftp.sunet.se/pub/gnu/gimp/ (web access)
 
 United Kingdom
+#     http://gimp.favoritelinks.net/ (web access)
      ftp://ftp.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/
      http://www.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/ (web access)
      rsync://rsync.mirrorservice.org/ftp.gimp.org/pub/gimp/ (rsync access)
@@ -91,9 +117,12 @@ United States
      http://gimp.cp-dev.com/ (web access)
      http://mirror.hessmo.com/gimp/ (web access)
      http://gimp.mirrors.hoobly.com/gimp/ (web access)
+#     http://gimp.promotionalpromos.com/ (web access)
+#     http://gimp.sixsigmaonline.org/ (web access)
      http://mirror.umd.edu/gimp/gimp/ (web access)
      rsync://mirror.umd.edu/gimp/ (rsync access)
      http://mirrors.zerg.biz/gimp/ (web access)
+#     http://classivox.com/pub/gimp/ (web access)
      ftp://ftp.spectralcoding.com/gimp/
      http://ftp.spectralcoding.com/gimp/ (web access)
      ftp://mirrors.xmission.com/gimp/

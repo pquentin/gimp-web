@@ -27,24 +27,23 @@ Since the 2.8.2 version GIMP runs on OSX natively. No X11 environment is require
 
 <h3>Macports</h3>
 
-<p>Disclaimer: we have not investigated if it's possible to build
-GIMP 2.8 from Macports</p>
-
-<p>An easy way to compile and install GIMP and other great <a
+<p>A (easy?) way to compile and install GIMP and other great <a
 href="http://www.gnu.org/philosophy/free-sw.html">Free software</a> on your Mac
 is by using <a href="http://www.macports.org/">Macports</a>. The installer
 allows you to choose from a large directory of packages. To install gimp
 using Macports, you simply do <code>sudo port install gimp</code> once you have
 Macports installed.</p>
 
+<p>Disclaimer: we have not investigated if it's feasible to build
+GIMP 2.8 from Macports. The <a
+href="https://trac.macports.org/browser/trunk/dports/graphics/gimp/Portfile">GIMP
+port file</a> mentions 2.8.10, and appears to be maintained, however.</p>
+
 <ul>
   <li><a href="http://macports.org">Download Macports</a>.</li>
 </ul>
 
 <h3>Fink</h3>
-
-<p>Disclaimer: we have not investigated if it is possible to build
-GIMP 2.8 from Fink</p>
 
 <p>Fink is a package repository that offer mostly precompiled
   binaries. It provides the apt-get command known to e.g. Debian and
@@ -54,6 +53,12 @@ GIMP 2.8 from Fink</p>
     installer</a>.<br/>
   If there's no binary package, then <code>fink install gimp</code>
   will compile GIMP from source.</p>
+
+<p>Disclaimer: we have been able to determine if it is possible to install or build
+GIMP 2.8 from Fink. GIMP 2.6.12 appears to be the most recent <a
+href="http://pdb.finkproject.org/pdb/browse.php?summary=gimp 
+">GIMP package</a> that is <a
+href="http://pdb.finkproject.org/pdb/package.php/gimp2">offered there</a>.</p>  
 
 <ul>
 <li><a href="http://www.finkproject.org">Download Fink</a>.</li>

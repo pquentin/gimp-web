@@ -1,6 +1,10 @@
 <!--#include virtual="/includes/wgo-xhtml-init.xhtml" -->
 <title>GIMP - Development</title>
 <!--#include virtual="/includes/wgo-look-feel.xhtml" -->
+<!-- fix the ohloh widget -->
+<style type="text/css">
+@import url("/style/fixes-ohloh.css");
+</style>
 <!--#include virtual="/includes/wgo-page-init.xhtml" -->
 
 <h1>Getting Involved</h1>

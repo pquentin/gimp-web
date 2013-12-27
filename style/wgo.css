@@ -697,17 +697,3 @@ iframe.FlattrButton
 	margin-left: 3px;
 	padding-left: 8px;
 }
-
-/* fix the ohloh widget formatting */
-div.gadget {
-	color: black;
-	background-color: white;
-}
-
-div.gadget h3 {
-	clear: none;
-}
-
-div.gadget div {
-    clear: none ! important;
-}

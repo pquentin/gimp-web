@@ -1,0 +1,22 @@
+/* fix the ohloh widget formatting */
+div.gadget {
+	color: black;
+	background-color: white;
+}
+
+div.gadget h3 {
+	clear: none;
+}
+
+div.gadget div {
+    clear: none ! important;
+}
+
+/* hack the ohloh iframe ;) */
+iframe {
+    background-color: #fff;
+    border-radius: 10px;
+    border: thin solid #000;
+    width: 333px ! important;
+    height: 189px ! important;
+}
